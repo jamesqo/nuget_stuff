@@ -7,5 +7,16 @@ class PackageDetails(object):
         self.summary = summary
         self.version = version
 
-    def write_to(csv_writer):
+    def write_header(csv_writer):
+        # TODO: Use reflection
+        csv_writer.writerow(["authors", "description", "id", "is_prerelease", "summary", "version"])
 
+    def write_to(self, csv_writer):
+        csv_writer.writerow([
+            ",".join(self.authors),
+            self.description,
+            self.id,
+            self.is_prerelease,
+            self.summary,
+            self.version
+        ])

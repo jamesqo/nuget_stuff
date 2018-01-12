@@ -30,7 +30,7 @@ if __name__ == "__main__":
     page_url = next(get_page_urls(catalog_data)) # TODO: Proper way to get first elem?
     page_data = get_json(page_url)
     packages = get_packages(page_data)
-    with open('package_database.csv', 'wb+') as csv_file:
+    with open('package_database.csv', 'w+') as csv_file:
         csv_writer = csv.writer(csv_file)
         for package in packages:
             process_package(package, csv_writer)
