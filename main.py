@@ -2,6 +2,7 @@
 
 import csv
 from Package import Package
+from PackageDetails import PackageDetails
 from pprint import pprint
 from util import *
 
@@ -32,5 +33,6 @@ if __name__ == "__main__":
     packages = get_packages(page_data)
     with open('package_database.csv', 'w+') as csv_file:
         csv_writer = csv.writer(csv_file)
+        PackageDetails.write_header(csv_writer)
         for package in packages:
             process_package(package, csv_writer)
