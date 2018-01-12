@@ -1,0 +1,60 @@
+{
+    "@context": {
+        "@vocab": "http://schema.nuget.org/schema#",
+        "catalog": "http://schema.nuget.org/catalog#",
+        "catalog:commitTimeStamp": {
+            "@type": "xsd:dateTime"
+        },
+        "created": {
+            "@type": "xsd:dateTime"
+        },
+        "dependencies": {
+            "@container": "@set",
+            "@id": "dependency"
+        },
+        "dependencyGroups": {
+            "@container": "@set",
+            "@id": "dependencyGroup"
+        },
+        "lastEdited": {
+            "@type": "xsd:dateTime"
+        },
+        "packageEntries": {
+            "@container": "@set",
+            "@id": "packageEntry"
+        },
+        "published": {
+            "@type": "xsd:dateTime"
+        },
+        "supportedFrameworks": {
+            "@container": "@set",
+            "@id": "supportedFramework"
+        },
+        "tags": {
+            "@container": "@set",
+            "@id": "tag"
+        },
+        "xsd": "http://www.w3.org/2001/XMLSchema#"
+    },
+    "@id": "https://api.nuget.org/v3/catalog0/data/2015.02.01.06.22.45/adam.jsgenerator.1.1.0.json",
+    "@type": [
+        "PackageDetails",
+        "catalog:Permalink"
+    ],
+    "authors": "Dave Van den Eynde,Wouter Demuynck",
+    "catalog:commitId": "b3f4fc8a-7522-42a3-8fee-a91d5488c0b1",
+    "catalog:commitTimeStamp": "2015-02-01T06:22:45.8488496Z",
+    "created": "2011-01-07T07:49:35.947Z",
+    "description": "Adam.JSGenerator helps producing snippets of JavaScript code from managed code.",
+    "id": "Adam.JSGenerator",
+    "isPrerelease": false,
+    "language": "en-US",
+    "lastEdited": "0001-01-01T00:00:00Z",
+    "packageHash": "/2ow1BS6W2npy9nlNDM+Qxt0wvNmhJw6MzEE2pwFvmVgxWqTfCSbkU9RulDtH3BJL/6BbBDiBm8HcfO0Lhajgw==",
+    "packageHashAlgorithm": "SHA512",
+    "packageSize": 144008,
+    "published": "2011-03-07T12:34:36.83Z",
+    "requireLicenseAcceptance": false,
+    "summary": "Adam.JSGenerator helps producing snippets of JavaScript code from managed code.",
+    "version": "1.1.0"
+}

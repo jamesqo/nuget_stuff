@@ -1,15 +1,9 @@
 #!/usr/bin/python3
 
-import json
+import csv
+from Package import Package
 from pprint import pprint
-import requests
-
-def dump_json(data):
-    print(json.dumps(data, indent=4, sort_keys=True))
-
-def get_json(url):
-    res = requests.get(url)
-    return json.loads(res.text)
+from util import *
 
 def get_catalog_url(index_data):
     for resource in index_data["resources"]:
@@ -21,14 +15,22 @@ def get_page_urls(catalog_data):
     for item in catalog_data["items"]:
         yield item["@id"]
 
+def get_packages(page_data):
+    for item in page_data["items"]:
+        yield Package(id=item["nuget:id"], version=item["nuget:version"], details_url=item["@id"])
+
+def process_package(package, csv_writer):
+    details = package.get_details()
+    details.write_to(csv_writer)
+
 if __name__ == "__main__":
     index_data = get_json("https://api.nuget.org/v3/index.json")
     catalog_url = get_catalog_url(index_data)
-    # print("Getting catalog data from:", id_endpoint)
     catalog_data = get_json(catalog_url)
-    # dump_json(catalog_data)
-    # for page_url in get_page_urls(catalog_data):
-    #     print(page_url)
     page_url = next(get_page_urls(catalog_data)) # TODO: Proper way to get first elem?
     page_data = get_json(page_url)
-    dump_json(page_data)
+    packages = get_packages(page_data)
+    with open('package_database.csv', 'wb+') as csv_file:
+        csv_writer = csv.writer(csv_file)
+        for package in packages:
+            process_package(package, csv_writer)
