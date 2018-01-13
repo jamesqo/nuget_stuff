@@ -7,8 +7,8 @@ class Package(object):
         self.version = version
         self._details_url = details_url
     
-    def get_details(self):
-        details_data = get_json(self._details_url)
+    def get_details(self, timeout):
+        details_data = get_json(self._details_url, timeout=timeout)
         return PackageDetails(
             authors=list(map(lambda a: a.strip(), details_data["authors"].split(","))),
             description=details_data["description"],

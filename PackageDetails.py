@@ -1,3 +1,5 @@
+from util import *
+
 class PackageDetails(object):
     def __init__(self, authors, description, id, is_prerelease, summary, version):
         self.authors = authors
@@ -12,11 +14,13 @@ class PackageDetails(object):
         csv_writer.writerow(["authors", "description", "id", "is_prerelease", "summary", "version"])
 
     def write_to(self, csv_writer):
-        csv_writer.writerow([
+        row = [
             ",".join(self.authors),
             self.description,
             self.id,
             self.is_prerelease,
             self.summary,
             self.version
-        ])
+        ]
+        try_print("Writing CSV entry: %s" % row)
+        csv_writer.writerow(row)
