@@ -8,6 +8,7 @@ import csv
 import os
 import pandas as pd
 from pprint import pprint
+from requests.exceptions import Timeout
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
@@ -29,17 +30,16 @@ def process_package(package, csv_writer):
     try:
         details = package.get_details(timeout=10)
         details.write_to(csv_writer)
-    except TimeoutError:
+    except Timeout:
         pass
 
-def process_page(page_url):
-    page_data = get_json(page_url)
-    packages = get_packages(page_data)
-    with open('package_database.csv', 'w+', encoding='utf-8') as csv_file:
-        csv_writer = csv.writer(csv_file)
-        PackageDetails.write_header(csv_writer)
-        for package in packages:
+def process_page(page_url, csv_writer):
+    try:
+        page_data = get_json(page_url, timeout=100)
+        for package in get_packages(page_data):
             process_package(package, csv_writer)
+    except Timeout:
+        pass
 
 def train(dataframe):
     tfidf = TfidfVectorizer(analyzer='word',
@@ -64,10 +64,12 @@ def main():
     index_data = get_json("https://api.nuget.org/v3/index.json")
     catalog_url = get_catalog_url(index_data)
     catalog_data = get_json(catalog_url)
-    # page_url = next(get_page_urls(catalog_data)) # TODO: Proper way to get first elem?
     if not os.path.isfile('package_database.csv') or os.getenv("REFRESH_PACKAGE_DATABASE") == "1":
-        for page_url in get_page_urls(catalog_data):
-            process_page(page_url)
+        with open('package_database.csv', 'w', encoding='utf-8') as csv_file:
+            csv_writer = csv.writer(csv_file)
+            PackageDetails.write_header(csv_writer)
+            for page_url in get_page_urls(catalog_data):
+                process_page(page_url, csv_writer)
 
     # TODO: Fix program so it reads directly into a DataFrame instead of putting into a CSV?
     dataframe = pd.read_csv('package_database.csv')
