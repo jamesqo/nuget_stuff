@@ -43,7 +43,7 @@ def read_infos_file():
         'summary': str,
         'tags': str,
         'version': str
-    })
+    }, na_filter=False)
 
 def main():
     args = parse_args()
