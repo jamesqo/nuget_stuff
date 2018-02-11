@@ -1,4 +1,5 @@
 import csv
+import logging as log
 
 class CsvInfoWriter(object):
     def __init__(self, filename):
@@ -8,9 +9,21 @@ class CsvInfoWriter(object):
         self._file = open(self._filename, mode='w', encoding='utf-8')
         self._file.__enter__()
         self._writer = csv.writer(self._file)
+        return self
     
-    def __exit__(self):
-        self._file.__exit__()
+    def __exit__(self, type, value, traceback):
+        self._file.__exit__(type, value, traceback)
+    
+    def write_header(self):
+        row = [
+            'authors',
+            'description',
+            'id',
+            'is_prerelease',
+            'summary',
+            'version'
+        ]
+        self._writer.writerow(row)
 
     def write_info(self, info):
         row = [
@@ -21,4 +34,5 @@ class CsvInfoWriter(object):
             info.summary,
             info.version
         ]
+        log.debug(f"Writing CSV row {row}")
         self._writer.writerow(row)
