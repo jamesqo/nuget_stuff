@@ -52,7 +52,7 @@ def main():
     write_infos_file()
     df = read_infos_file()
     recs = compute_recommendations(df)
-    # TODO: Print first 50 recs
+    print(list(recs.items())[:50])
 
 if __name__ == '__main__':
     main()

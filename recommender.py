@@ -1,3 +1,5 @@
+import numpy as np
+
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
@@ -9,7 +11,14 @@ def compute_recommendations(df):
     :returns: A dict with package ids as its keys and the top 3 recommendations as its values.
     """
 
-    matrix = _compute_score_matrix(df)
+    scores = _compute_score_matrix(df)
+    dict = {}
+    for index, row in df.iterrows():
+        package_id = df['id'][index]
+        recommendation_indices = scores[index].argsort()[:-3:-1]
+        recommendations = [df['id'][i] for i in recommendation_indices]
+        dict[package_id] = recommendations
+    return dict
 
 def _compute_score_matrix(df):
     # Strategy:
@@ -22,6 +31,14 @@ def _compute_score_matrix(df):
         _compute_description_scores(df),
         _compute_tags_scores(df)
     ]
+
+    # TODO: Find the optimum weights using grid search
+    score_weights = [
+        0.7,
+        0.3
+    ]
+
+    return np.average(feature_scores, weights=score_weights, axis=0)
 
 def _compute_description_scores(df):
     vectorizer = TfidfVectorizer(ngram_range=(1, 3),
