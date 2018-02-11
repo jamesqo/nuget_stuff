@@ -34,7 +34,16 @@ def write_infos_file():
                     writer.write_info(package.info)
 
 def read_infos_file():
-    return pd.read_csv(INFOS_FILENAME)
+    return pd.read_csv(INFOS_FILENAME, dtype={
+        'authors': str,
+        'description': str,
+        'id': str,
+        'is_prerelease': bool,
+        'listed': bool,
+        'summary': str,
+        'tags': str,
+        'version': str
+    })
 
 def main():
     args = parse_args()
