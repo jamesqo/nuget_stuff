@@ -20,6 +20,7 @@ class CsvInfoWriter(object):
             'description',
             'id',
             'is_prerelease',
+            'listed',
             'summary',
             'tags',
             'version'
