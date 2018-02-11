@@ -5,11 +5,14 @@ import logging as log
 import os
 import pandas as pd
 
+from itertools import islice
+
 from CsvInfoWriter import CsvInfoWriter
 from NugetCatalog import NugetCatalog
 from recommender import compute_recommendations
 
 INFOS_FILENAME = 'package_infos.csv'
+PAGES_LIMIT = 1
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -22,11 +25,11 @@ def parse_args():
     return parser.parse_args()
 
 def write_infos_file():
-    if not os.path.isfile(INFOS_FILENAME) or os.getenv('REFRESH_PACKAGE_DATABASE') == '1':
+    if not os.path.isfile(INFOS_FILENAME) or os.getenv('REFRESH_PACKAGE_INFOS') == '1':
         catalog = NugetCatalog()
         with CsvInfoWriter(filename=INFOS_FILENAME) as writer:
             writer.write_header()
-            for page in catalog.all_pages:
+            for page in islice(catalog.all_pages, PAGES_LIMIT):
                 for package in page.packages:
                     writer.write_info(package.info)
 

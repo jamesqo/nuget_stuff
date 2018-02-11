@@ -21,6 +21,7 @@ class CsvInfoWriter(object):
             'id',
             'is_prerelease',
             'summary',
+            'tags',
             'version'
         ]
         self._writer.writerow(row)
@@ -32,6 +33,7 @@ class CsvInfoWriter(object):
             info.id,
             info.is_prerelease,
             info.summary,
+            ','.join(info.tags),
             info.version
         ]
         log.debug(f"Writing CSV row {row}")
