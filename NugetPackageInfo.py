@@ -4,6 +4,7 @@ class NugetPackageInfo(object):
         self.description = info_json['description']
         self.id = info_json['id']
         self.is_prerelease = info_json['isPrerelease']
+        self.listed = info_json.get('listed') or True
         self.summary = info_json.get('summary')
-        self.tags = info_json['tags']
+        self.tags = info_json.get('tags') or []
         self.version = info_json['version']

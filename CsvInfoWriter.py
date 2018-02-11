@@ -32,6 +32,7 @@ class CsvInfoWriter(object):
             info.description,
             info.id,
             info.is_prerelease,
+            info.listed,
             info.summary,
             ','.join(info.tags),
             info.version
