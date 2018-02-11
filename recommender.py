@@ -18,6 +18,7 @@ def compute_recommendations(df):
         recommendation_indices = scores[index].argsort()[:-3:-1]
         recommendations = [df['id'][i] for i in recommendation_indices]
         dict[package_id] = recommendations
+
     return dict
 
 def _compute_score_matrix(df):
@@ -32,13 +33,13 @@ def _compute_score_matrix(df):
         _compute_tags_scores(df)
     ]
 
-    # TODO: Find the optimum weights using grid search
-    score_weights = [
+    # TODO: Find optimum weights using grid search
+    feature_weights = [
         0.7,
         0.3
     ]
 
-    return np.average(feature_scores, weights=score_weights, axis=0)
+    return np.average(feature_scores, weights=feature_weights, axis=0)
 
 def _compute_description_scores(df):
     vectorizer = TfidfVectorizer(ngram_range=(1, 3),
