@@ -11,6 +11,13 @@ def _compute_description_scores(df):
     cosine_similarities = linear_kernel(tfidf_matrix, tfidf_matrix)
     return cosine_similarities
 
+def _compute_id_scores(df):
+    vectorizer = TfidfVectorizer(ngram_range=(1, 2))
+    adjusted_ids = [id_.replace('.', ' ') for id_ in df['id']]
+    tfidf_matrix = vectorizer.fit_transform(adjusted_ids)
+    cosine_similarities = linear_kernel(tfidf_matrix, tfidf_matrix)
+    return cosine_similarities
+
 def _compute_tags_scores(df):
     vectorizer = TfidfVectorizer()
     space_separated_tags = [tags.replace(',', ' ') for tags in df['tags']]
@@ -19,7 +26,7 @@ def _compute_tags_scores(df):
     return cosine_similarities
 
 class NugetRecommender(object):
-    def __init__(self, weights={'description': 0.5, 'tags': 0.5}):
+    def __init__(self, weights={'description': 1, 'id': 2, 'tags': 1}):
         self.weights_ = weights
 
     def fit(self, df):
@@ -31,11 +38,13 @@ class NugetRecommender(object):
 
         feature_scores = [
             _compute_description_scores(df),
+            _compute_id_scores(df),
             _compute_tags_scores(df),
         ]
 
         feature_weights = [
             self.weights_['description'],
+            self.weights_['id'],
             self.weights_['tags'],
         ]
 
