@@ -61,8 +61,8 @@ def main():
     nr.fit(df)
     recs = nr.predict(top_n=3)
 
-    sample = list(recs.items())[:50]
-    print('\n'.join(map(str, sample)))
+    head = list(recs.items())[:50]
+    print('\n'.join(map(str, head)))
 
 if __name__ == '__main__':
     main()

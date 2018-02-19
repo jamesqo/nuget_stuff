@@ -18,12 +18,13 @@ class CsvInfoWriter(object):
         row = [
             'authors',
             'description',
+            'downloads_per_day',
             'id',
             'is_prerelease',
             'listed',
             'summary',
             'tags',
-            'version'
+            'version',
         ]
         self._writer.writerow(row)
 
@@ -31,12 +32,13 @@ class CsvInfoWriter(object):
         row = [
             ','.join(info.authors),
             info.description,
+            info.downloads_per_day,
             info.id,
             info.is_prerelease,
             info.listed,
             info.summary,
             ','.join(info.tags),
-            info.version
+            info.version,
         ]
-        log.debug(f"Writing CSV row {row}")
+        log.debug("Writing CSV row %s", row)
         self._writer.writerow(row)

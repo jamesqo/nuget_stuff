@@ -26,16 +26,17 @@ def _compute_tags_scores(df):
     return cosine_similarities
 
 class NugetRecommender(object):
-    def __init__(self, weights={'description': 1, 'id': 2, 'tags': 1}):
-        self.weights_ = weights
+    def __init__(self,
+                 weights={'description': 1, 'id': 2, 'tags': 1},
+                 popularity_scale=.5):
+        self.weights = weights
+        self.popularity_scale = popularity_scale
 
     def fit(self, df):
         # Let m be the number of packages. For each relevant feature like shared tags or similar names/descriptions,
-        # compute a m x m matrix called M, where M[i][j] represents how relevant package j is to package i based on
+        # compute a m x m matrix called M, where M[i, j] represents how relevant package j is to package i based on
         # that feature alone.
         # Set self.scores_ to an m x m matrix of aggregate scores by taking a weighted average of these matrices.
-        self._df = df
-
         feature_scores = [
             _compute_description_scores(df),
             _compute_id_scores(df),
@@ -43,16 +44,26 @@ class NugetRecommender(object):
         ]
 
         feature_weights = [
-            self.weights_['description'],
-            self.weights_['id'],
-            self.weights_['tags'],
+            self.weights['description'],
+            self.weights['id'],
+            self.weights['tags'],
         ]
 
-        self.scores_ = np.average(feature_scores, weights=feature_weights, axis=0)
+        scores = np.average(feature_scores, weights=feature_weights, axis=0)
+
+        # Scale the scores according to popularity.
+        ps = df['downloads_per_day'] / max(df['downloads_per_day'])
+        for i in range(len(scores)):
+            p = popularities[i]
+            adjusted_p = p * 1 + (1 - p) * self.popularity_scale
+            scores[:, i] *= adjusted_p
 
         # We don't want to recommend the same package based on itself, so set all scores along the diagonal to 0.
-        for i in range(len(self.scores_)):
-            self.scores_[i][i] = 0
+        for i in range(len(scores)):
+            scores[i, i] = 0
+
+        self._df = df
+        self.scores_ = scores
 
     def predict(self, top_n):
         dict = {}
