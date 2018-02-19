@@ -1,3 +1,4 @@
+import logging as log
 import numpy as np
 
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -18,7 +19,7 @@ def _compute_tags_scores(df):
     return cosine_similarities
 
 class NugetRecommender(object):
-    def __init__(self, weights={'description': 0.7, 'tags': 0.3}):
+    def __init__(self, weights={'description': 0.5, 'tags': 0.5}):
         self.weights_ = weights
 
     def fit(self, df):
@@ -40,12 +41,22 @@ class NugetRecommender(object):
 
         self.scores_ = np.average(feature_scores, weights=feature_weights, axis=0)
 
+        # We don't want to recommend the same package based on itself, so set all scores along the diagonal to 0.
+        for i in range(len(self.scores_)):
+            self.scores_[i][i] = 0
+
     def predict(self, top_n):
         dict = {}
         for index, row in self._df.iterrows():
-            package_id = self._df['id'][index]
+            id_ = self._df['id'][index]
             recommendation_indices = self.scores_[index].argsort()[:-top_n:-1]
             recommendations = [self._df['id'][i] for i in recommendation_indices]
-            dict[package_id] = recommendations
+            dict[id_] = recommendations
+
+            if id_ in recommendations:
+                log.debug("%s was in its own recommendation list!", id_)
+                log.debug("Index of %s: %d", id_, index)
+                log.debug("Recommendation indices for %s: %s", id_, recommendation_indices)
+                log.debug("Recommendations for %s: %s", id_, recommendations)
 
         return dict

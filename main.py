@@ -5,6 +5,7 @@ import logging as log
 import os
 import pandas as pd
 
+from distutils.version import LooseVersion
 from itertools import islice
 
 from CsvInfoWriter import CsvInfoWriter
@@ -34,7 +35,7 @@ def write_infos_file():
                     writer.write_info(package.info)
 
 def read_infos_file():
-    return pd.read_csv(INFOS_FILENAME, dtype={
+    df = pd.read_csv(INFOS_FILENAME, dtype={
         'authors': str,
         'description': str,
         'id': str,
@@ -44,6 +45,11 @@ def read_infos_file():
         'tags': str,
         'version': str
     }, na_filter=False)
+
+    # Remove entries with the same id, keeping the one with the highest version
+    df['version'] = df['version'].map(LooseVersion)
+    df = df.sort_values('version', ascending=False).drop_duplicates('id').sort_index()
+    return df
 
 def main():
     args = parse_args()
@@ -56,7 +62,8 @@ def main():
     nr.fit(df)
     recs = nr.predict(top_n=3)
 
-    print(list(recs.items())[:50])
+    sample = list(recs.items())[:50]
+    print('\n'.join(map(str, sample)))
 
 if __name__ == '__main__':
     main()
