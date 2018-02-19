@@ -9,7 +9,7 @@ from itertools import islice
 
 from CsvInfoWriter import CsvInfoWriter
 from NugetCatalog import NugetCatalog
-from recommender import compute_recommendations
+from NugetRecommender import NugetRecommender
 
 INFOS_FILENAME = 'package_infos.csv'
 PAGES_LIMIT = 1
@@ -51,7 +51,11 @@ def main():
 
     write_infos_file()
     df = read_infos_file()
-    recs = compute_recommendations(df)
+
+    nr = NugetRecommender()
+    nr.fit(df)
+    recs = nr.predict(top_n=3)
+
     print(list(recs.items())[:50])
 
 if __name__ == '__main__':
