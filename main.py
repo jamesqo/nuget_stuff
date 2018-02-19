@@ -47,8 +47,7 @@ def read_infos_file():
     }, na_filter=False)
 
     # Remove entries with the same id, keeping the one with the highest version
-    df['version'] = df['version'].map(LooseVersion)
-    df = df.sort_values('version', ascending=False).drop_duplicates('id').sort_index()
+    df = df.drop_duplicates(subset='id', keep='last').reset_index(drop=True)
     return df
 
 def main():
