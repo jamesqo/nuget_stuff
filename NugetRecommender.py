@@ -36,7 +36,8 @@ class NugetRecommender(object):
         # Let m be the number of packages. For each relevant feature like shared tags or similar names/descriptions,
         # compute a m x m matrix called M, where M[i, j] represents how relevant package j is to package i based on
         # that feature alone.
-        # Set self.scores_ to an m x m matrix of aggregate scores by taking a weighted average of these matrices.
+        # Set 'scores' to an m x m matrix of aggregate scores by taking a weighted average of these matrices.
+
         feature_scores = [
             _compute_description_scores(df),
             _compute_id_scores(df),
