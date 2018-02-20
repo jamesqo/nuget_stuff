@@ -72,7 +72,7 @@ def main():
     tagger = SmartTagger()
     df = tagger.fit_transform(df)
 
-    nr = NugetRecommender()
+    nr = NugetRecommender(tags_vocab=tagger.tags_vocab_)
     nr.fit(df)
     recs = nr.predict(top_n=5)
 

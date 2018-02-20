@@ -1,6 +1,8 @@
 import logging as log
 import numpy as np
+import pandas as pd
 
+from scipy.sparse import csr_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
@@ -16,11 +18,22 @@ def _compute_description_scores(df):
     tfidf_matrix = vectorizer.fit_transform(df['description'])
     return linear_kernel(tfidf_matrix, tfidf_matrix)
 
-def _compute_etags_scores(df):
-    vectorizer = TfidfVectorizer(stop_words='english')
-    # Won't work for a df. It would for a row.
-    #tag_weights = {etag.split()[0]: etag.split()[1] for etag in df['etags']}
-    # TODO
+def _compute_etags_scores(df, tags_vocab):
+    # Let m be the number of packages and t be the number of tags.
+    # Build an m x t matrix where M[i, j] represents the weight of package i along tag j.
+    # Return an m x m matrix of cosine similarities.
+
+    m = df.shape[0]
+    tag_weights = pd.DataFrame(0, index=range(m), columns=sorted(tags_vocab))
+    for index, etags in enumerate(df['etags']):
+        for etag in etags.split(','):
+            if not etag:
+                continue
+            tag, weight = etag.split()
+            tag_weights[tag][index] = int(weight)
+
+    tag_weights = csr_matrix(tag_weights.values)
+    return linear_kernel(tag_weights, tag_weights)
 
 def _compute_id_scores(df):
     vectorizer = TfidfVectorizer(ngram_range=(1, 2))
@@ -30,8 +43,10 @@ def _compute_id_scores(df):
 
 class NugetRecommender(object):
     def __init__(self,
+                 tags_vocab,
                  weights={'authors': 1, 'description': 2, 'etags': 6, 'id': 3},
                  popularity_scale=.5):
+        self.tags_vocab = tags_vocab
         self.weights = weights
         self.popularity_scale = popularity_scale
 
@@ -44,7 +59,7 @@ class NugetRecommender(object):
         feature_scores = [
             _compute_authors_scores(df),
             _compute_description_scores(df),
-            _compute_etags_scores(df),
+            _compute_etags_scores(df, self.tags_vocab),
             _compute_id_scores(df),
         ]
 
