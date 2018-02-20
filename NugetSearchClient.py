@@ -5,5 +5,5 @@ class NugetSearchClient(object):
         search_url = next(res['@id'] for res in index_json['resources'] if res['@type'] == 'SearchQueryService'))
         self._search_url = search_url
 
-    def search(self, q, skip, take, prerelease, semver_level):
+    def search(self, q, skip=None, take=None, prerelease=True, semver_level=None):
         qstring = f''
