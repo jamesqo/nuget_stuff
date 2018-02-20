@@ -34,15 +34,16 @@ def parse_args():
     return parser.parse_args()
 
 def write_infos_file():
-    catalog_cli = NugetCatalogClient()
-    catalog_cli.load_index()
+    cli = NugetCatalogClient()
+    cli.load_index()
+    cli.load_catalog()
 
     with CsvInfoWriter(filename=INFOS_FILENAME) as writer:
         writer.write_header()
-        for page in islice(catalog_cli.pages, PAGES_LIMIT):
-            for package in page.packages:
+        for page in islice(catalog_cli.load_pages(), PAGES_LIMIT):
+            for package in page.load_packages()
                 try:
-                    writer.write_info(package.info)
+                    writer.write_info(package.load_info())
                 except RequestException as e:
                     log.debug("RequestException raised:\n%s", e)
                     continue
