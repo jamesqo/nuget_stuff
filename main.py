@@ -7,6 +7,7 @@ import pandas as pd
 
 from distutils.version import LooseVersion
 from itertools import islice
+from requests.exceptions import RequestException
 
 from CsvInfoWriter import CsvInfoWriter
 from NugetCatalog import NugetCatalog
@@ -37,7 +38,11 @@ def write_infos_file():
         writer.write_header()
         for page in islice(catalog.all_pages, PAGES_LIMIT):
             for package in page.packages:
-                writer.write_info(package.info)
+                try:
+                    writer.write_info(package.info)
+                except RequestException as e:
+                    log.debug("RequestException raised:\n%s", e)
+                    continue
 
 def read_infos_file():
     df = pd.read_csv(INFOS_FILENAME, dtype={
