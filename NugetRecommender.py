@@ -16,21 +16,21 @@ def _compute_description_scores(df):
     tfidf_matrix = vectorizer.fit_transform(df['description'])
     return linear_kernel(tfidf_matrix, tfidf_matrix)
 
+def _compute_etags_scores(df):
+    vectorizer = TfidfVectorizer(stop_words='english')
+    # Won't work for a df. It would for a row.
+    #tag_weights = {etag.split()[0]: etag.split()[1] for etag in df['etags']}
+    # TODO
+
 def _compute_id_scores(df):
     vectorizer = TfidfVectorizer(ngram_range=(1, 2))
     adjusted_ids = [id_.replace('.', ' ') for id_ in df['id']]
     tfidf_matrix = vectorizer.fit_transform(adjusted_ids)
     return linear_kernel(tfidf_matrix, tfidf_matrix)
 
-def _compute_tags_scores(df):
-    vectorizer = TfidfVectorizer(stop_words='english')
-    space_separated_tags = [tags.replace(',', ' ') for tags in df['tags']]
-    tfidf_matrix = vectorizer.fit_transform(space_separated_tags)
-    return linear_kernel(tfidf_matrix, tfidf_matrix)
-
 class NugetRecommender(object):
     def __init__(self,
-                 weights={'authors': 1, 'description': 2, 'id': 3, 'tags': 5},
+                 weights={'authors': 1, 'description': 2, 'etags': 6, 'id': 3},
                  popularity_scale=.5):
         self.weights = weights
         self.popularity_scale = popularity_scale
@@ -44,15 +44,15 @@ class NugetRecommender(object):
         feature_scores = [
             _compute_authors_scores(df),
             _compute_description_scores(df),
+            _compute_etags_scores(df),
             _compute_id_scores(df),
-            _compute_tags_scores(df),
         ]
 
         feature_weights = [
             self.weights['authors'],
             self.weights['description'],
+            self.weights['etags'],
             self.weights['id'],
-            self.weights['tags'],
         ]
 
         scores = np.average(feature_scores, weights=feature_weights, axis=0)
