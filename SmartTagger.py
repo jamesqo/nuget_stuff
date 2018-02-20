@@ -1,7 +1,9 @@
+import enchant
 import logging as log
 
 class SmartTagger(object):
     def __init__(self, weights={'description': 3, 'id': 5, 'tags': 1}):
+        self._english = enchant.Dict('en_US')
         self.weights = weights
     
     def _enrich_tags(self, row):
@@ -13,12 +15,12 @@ class SmartTagger(object):
 
         for term in row['description'].split():
             term = term.lower()
-            if term in self.tags_vocab_:
+            if term in self.tags_vocab_ and not self._english.check(term):
                 tag_weights[term] = tag_weights.get(term, 0) + self.weights['description']
 
         for term in row['id'].split('.'):
             term = term.lower()
-            if term in self.tags_vocab_:
+            if term in self.tags_vocab_ and not self._english.check(term):
                 tag_weights[term] = tag_weights.get(term, 0) + self.weights['id']
 
         etags = [f'{pair[0]} {pair[1]}' for pair in sorted(tag_weights.items())]
