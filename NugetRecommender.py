@@ -8,8 +8,7 @@ from sklearn.metrics.pairwise import linear_kernel
 
 def _compute_authors_scores(df):
     vectorizer = TfidfVectorizer(ngram_range=(2, 2))
-    space_separated_authors = [authors.replace(',', ' ') for authors in df['authors']]
-    tfidf_matrix = vectorizer.fit_transform(space_separated_authors)
+    tfidf_matrix = vectorizer.fit_transform(df['authors'])
     return linear_kernel(tfidf_matrix, tfidf_matrix)
 
 def _compute_description_scores(df):
@@ -37,8 +36,7 @@ def _compute_etags_scores(df, tags_vocab):
 
 def _compute_id_scores(df):
     vectorizer = TfidfVectorizer(ngram_range=(1, 2))
-    adjusted_ids = [id_.replace('.', ' ') for id_ in df['id']]
-    tfidf_matrix = vectorizer.fit_transform(adjusted_ids)
+    tfidf_matrix = vectorizer.fit_transform(df['id'])
     return linear_kernel(tfidf_matrix, tfidf_matrix)
 
 class NugetRecommender(object):
