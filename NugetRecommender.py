@@ -4,30 +4,33 @@ import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
+def _compute_authors_scores(df):
+    vectorizer = TfidfVectorizer(ngram_range=(2, 2))
+    space_separated_authors = [authors.replace(',', ' ') for authors in df['authors']]
+    tfidf_matrix = vectorizer.fit_transform(space_separated_authors)
+    return linear_kernel(tfidf_matrix, tfidf_matrix)
+
 def _compute_description_scores(df):
     vectorizer = TfidfVectorizer(ngram_range=(1, 3),
                                  stop_words='english')
     tfidf_matrix = vectorizer.fit_transform(df['description'])
-    cosine_similarities = linear_kernel(tfidf_matrix, tfidf_matrix)
-    return cosine_similarities
+    return linear_kernel(tfidf_matrix, tfidf_matrix)
 
 def _compute_id_scores(df):
     vectorizer = TfidfVectorizer(ngram_range=(1, 2))
     adjusted_ids = [id_.replace('.', ' ') for id_ in df['id']]
     tfidf_matrix = vectorizer.fit_transform(adjusted_ids)
-    cosine_similarities = linear_kernel(tfidf_matrix, tfidf_matrix)
-    return cosine_similarities
+    return linear_kernel(tfidf_matrix, tfidf_matrix)
 
 def _compute_tags_scores(df):
     vectorizer = TfidfVectorizer()
     space_separated_tags = [tags.replace(',', ' ') for tags in df['tags']]
     tfidf_matrix = vectorizer.fit_transform(space_separated_tags)
-    cosine_similarities = linear_kernel(tfidf_matrix, tfidf_matrix)
-    return cosine_similarities
+    return linear_kernel(tfidf_matrix, tfidf_matrix)
 
 class NugetRecommender(object):
     def __init__(self,
-                 weights={'description': 1, 'id': 2, 'tags': 1},
+                 weights={'authors': 1, 'description': 2, 'id': 3, 'tags': 2},
                  popularity_scale=.5):
         self.weights = weights
         self.popularity_scale = popularity_scale
@@ -39,12 +42,14 @@ class NugetRecommender(object):
         # Set 'scores' to an m x m matrix of aggregate scores by taking a weighted average of these matrices.
 
         feature_scores = [
+            _compute_authors_scores(df),
             _compute_description_scores(df),
             _compute_id_scores(df),
             _compute_tags_scores(df),
         ]
 
         feature_weights = [
+            self.weights['authors'],
             self.weights['description'],
             self.weights['id'],
             self.weights['tags'],
@@ -52,12 +57,14 @@ class NugetRecommender(object):
 
         scores = np.average(feature_scores, weights=feature_weights, axis=0)
 
+        '''
         # Scale the scores according to popularity.
         ps = df['downloads_per_day'] / max(df['downloads_per_day'])
         for i in range(len(scores)):
             p = popularities[i]
             adjusted_p = p * 1 + (1 - p) * self.popularity_scale
             scores[:, i] *= adjusted_p
+        '''
 
         # We don't want to recommend the same package based on itself, so set all scores along the diagonal to 0.
         for i in range(len(scores)):
