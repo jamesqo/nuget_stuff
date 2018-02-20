@@ -30,7 +30,7 @@ def _compute_tags_scores(df):
 
 class NugetRecommender(object):
     def __init__(self,
-                 weights={'authors': 1, 'description': 1, 'id': 2, 'tags': 3},
+                 weights={'authors': 1, 'description': 2, 'id': 3, 'tags': 5},
                  popularity_scale=.5):
         self.weights = weights
         self.popularity_scale = popularity_scale
