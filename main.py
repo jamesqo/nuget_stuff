@@ -13,7 +13,7 @@ from NugetCatalog import NugetCatalog
 from NugetRecommender import NugetRecommender
 
 INFOS_FILENAME = 'package_infos.csv'
-PAGES_LIMIT = 1
+PAGES_LIMIT = 10
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -23,16 +23,21 @@ def parse_args():
         action='store_const', dest='log_level', const=log.DEBUG,
         default=log.WARNING
     )
+    parser.add_argument(
+        '-r', '--refresh-infos',
+        help="Refresh package information",
+        action='store_const', dest='refresh_infos', const=True,
+        default=False
+    )
     return parser.parse_args()
 
 def write_infos_file():
-    if not os.path.isfile(INFOS_FILENAME) or os.getenv('REFRESH_PACKAGE_INFOS') == '1':
-        catalog = NugetCatalog()
-        with CsvInfoWriter(filename=INFOS_FILENAME) as writer:
-            writer.write_header()
-            for page in islice(catalog.all_pages, PAGES_LIMIT):
-                for package in page.packages:
-                    writer.write_info(package.info)
+    catalog = NugetCatalog()
+    with CsvInfoWriter(filename=INFOS_FILENAME) as writer:
+        writer.write_header()
+        for page in islice(catalog.all_pages, PAGES_LIMIT):
+            for package in page.packages:
+                writer.write_info(package.info)
 
 def read_infos_file():
     df = pd.read_csv(INFOS_FILENAME, dtype={
@@ -54,7 +59,8 @@ def main():
     args = parse_args()
     log.basicConfig(level=args.log_level)
 
-    write_infos_file()
+    if args.refresh_infos or not os.path.isfile(INFOS_FILENAME):
+        write_infos_file()
     df = read_infos_file()
 
     nr = NugetRecommender()

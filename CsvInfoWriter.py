@@ -18,7 +18,7 @@ class CsvInfoWriter(object):
         row = [
             'authors',
             'description',
-            'downloads_per_day',
+            #'downloads_per_day',
             'id',
             'is_prerelease',
             'listed',
@@ -32,7 +32,7 @@ class CsvInfoWriter(object):
         row = [
             ','.join(info.authors),
             info.description,
-            info.downloads_per_day,
+            #info.downloads_per_day,
             info.id,
             info.is_prerelease,
             info.listed,
