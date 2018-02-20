@@ -1,10 +1,10 @@
 class NugetPackageInfo(object):
-    def __init__(self, info_json):
-        self.authors = [name.strip() for name in info_json['authors'].split(',')]
-        self.description = info_json['description']
-        self.id = info_json['id']
-        self.is_prerelease = info_json['isPrerelease']
-        self.listed = info_json.get('listed') or True
-        self.summary = info_json.get('summary')
-        self.tags = info_json.get('tags') or []
-        self.version = info_json['version']
+    def __init__(self, json):
+        self.authors = [name.strip() for name in json['authors'].split(',')]
+        self.description = json['description']
+        self.id = json['id']
+        self.is_prerelease = json['isPrerelease']
+        self.listed = json.get('listed', True)
+        self.summary = json.get('summary')
+        self.tags = json.get('tags', [])
+        self.version = json['version']

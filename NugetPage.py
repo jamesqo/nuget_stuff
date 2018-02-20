@@ -1,13 +1,15 @@
 import logging as log
 
 from NugetPackage import NugetPackage
+from util import get_as_json
 
 class NugetPage(object):
-    def __init__(self, page_json):
-        log.debug("Creating NugetPage object")
-        self._page_json = page_json
+    def __init__(self, url):
+        self._url = url
     
-    @property
-    def packages(self):
-        packages = [NugetPackage(package_json=item) for item in self._page_json['items']]
-        return packages
+    def load(self):
+        self._json = get_as_json(self._url)
+        return self
+
+    def load_packages(self):
+        return (NugetPackage(json=node) for node in self._page_json['items'])

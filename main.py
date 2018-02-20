@@ -35,9 +35,11 @@ def parse_args():
 
 def write_infos_file():
     catalog_cli = NugetCatalogClient()
+    catalog_cli.load_index()
+
     with CsvInfoWriter(filename=INFOS_FILENAME) as writer:
         writer.write_header()
-        for page in islice(catalog_cli.all_pages, PAGES_LIMIT):
+        for page in islice(catalog_cli.pages, PAGES_LIMIT):
             for package in page.packages:
                 try:
                     writer.write_info(package.info)
