@@ -34,15 +34,10 @@ def _compute_etags_scores(df, tags_vocab):
     tag_weights = csr_matrix(tag_weights.values)
     return linear_kernel(tag_weights, tag_weights)
 
-def _compute_id_scores(df):
-    vectorizer = TfidfVectorizer(ngram_range=(1, 2))
-    tfidf_matrix = vectorizer.fit_transform(df['id'])
-    return linear_kernel(tfidf_matrix, tfidf_matrix)
-
 class NugetRecommender(object):
     def __init__(self,
                  tags_vocab,
-                 weights={'authors': 1, 'description': 2, 'etags': 6, 'id': 3},
+                 weights={'authors': 1, 'description': 2, 'etags': 6},
                  popularity_scale=.5):
         self.tags_vocab = tags_vocab
         self.weights = weights
@@ -58,14 +53,12 @@ class NugetRecommender(object):
             _compute_authors_scores(df),
             _compute_description_scores(df),
             _compute_etags_scores(df, self.tags_vocab),
-            _compute_id_scores(df),
         ]
 
         feature_weights = [
             self.weights['authors'],
             self.weights['description'],
             self.weights['etags'],
-            self.weights['id'],
         ]
 
         scores = np.average(feature_scores, weights=feature_weights, axis=0)
