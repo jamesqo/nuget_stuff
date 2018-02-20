@@ -10,7 +10,7 @@ from itertools import islice
 from requests.exceptions import RequestException
 
 from CsvInfoWriter import CsvInfoWriter
-from NugetCatalog import NugetCatalog
+from NugetCatalogClient import NugetCatalogClient
 from NugetRecommender import NugetRecommender
 from SmartTagger import SmartTagger
 
@@ -34,10 +34,10 @@ def parse_args():
     return parser.parse_args()
 
 def write_infos_file():
-    catalog = NugetCatalog()
+    catalog_cli = NugetCatalogClient()
     with CsvInfoWriter(filename=INFOS_FILENAME) as writer:
         writer.write_header()
-        for page in islice(catalog.all_pages, PAGES_LIMIT):
+        for page in islice(catalog_cli.all_pages, PAGES_LIMIT):
             for package in page.packages:
                 try:
                     writer.write_info(package.info)

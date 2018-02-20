@@ -3,11 +3,10 @@ import logging as log
 from NugetPage import NugetPage
 from util import get_as_json
 
-class NugetCatalog(object):
-    def __init__(self):
-        INDEX_URL = 'https://api.nuget.org/v3/index.json'
-
-        index_json = get_as_json(INDEX_URL)
+class NugetCatalogClient(object):
+    def __init__(self,
+                 index_url='https://api.nuget.org/v3/index.json'):
+        index_json = get_as_json(index_url)
         catalog_url = next(res['@id'] for res in index_json['resources'] if res['@type'] == 'Catalog/3.0.0')
         self._catalog_json = get_as_json(catalog_url)
 
