@@ -70,10 +70,11 @@ def main():
 
     nr = NugetRecommender()
     nr.fit(df)
-    recs = nr.predict(top_n=3)
+    recs = nr.predict(top_n=5)
 
-    head = list(recs.items())[:50]
-    print('\n'.join(map(str, head)))
+    pairs = list(recs.items())
+    pairs.sort(key=lambda pair: pair[0].lower())
+    print('\n'.join(map(str, pairs)))
 
 if __name__ == '__main__':
     main()

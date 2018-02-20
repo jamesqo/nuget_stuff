@@ -30,7 +30,7 @@ def _compute_tags_scores(df):
 
 class NugetRecommender(object):
     def __init__(self,
-                 weights={'authors': 1, 'description': 2, 'id': 3, 'tags': 2},
+                 weights={'authors': 1, 'description': 1, 'id': 2, 'tags': 3},
                  popularity_scale=.5):
         self.weights = weights
         self.popularity_scale = popularity_scale
@@ -77,7 +77,7 @@ class NugetRecommender(object):
         dict = {}
         for index, row in self._df.iterrows():
             id_ = self._df['id'][index]
-            recommendation_indices = self.scores_[index].argsort()[:-top_n:-1]
+            recommendation_indices = self.scores_[index].argsort()[:(-top_n - 1):-1]
             recommendations = [self._df['id'][i] for i in recommendation_indices]
             dict[id_] = recommendations
 
