@@ -12,6 +12,7 @@ from requests.exceptions import RequestException
 from CsvInfoWriter import CsvInfoWriter
 from NugetCatalog import NugetCatalog
 from NugetRecommender import NugetRecommender
+from SmartTagger import SmartTagger
 
 INFOS_FILENAME = 'package_infos.csv'
 PAGES_LIMIT = 10
@@ -67,6 +68,9 @@ def main():
     if args.refresh_infos or not os.path.isfile(INFOS_FILENAME):
         write_infos_file()
     df = read_infos_file()
+
+    tagger = SmartTagger()
+    df = tagger.fit_transform(df)
 
     nr = NugetRecommender()
     nr.fit(df)

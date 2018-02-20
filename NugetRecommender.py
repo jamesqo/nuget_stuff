@@ -23,7 +23,7 @@ def _compute_id_scores(df):
     return linear_kernel(tfidf_matrix, tfidf_matrix)
 
 def _compute_tags_scores(df):
-    vectorizer = TfidfVectorizer()
+    vectorizer = TfidfVectorizer(stop_words='english')
     space_separated_tags = [tags.replace(',', ' ') for tags in df['tags']]
     tfidf_matrix = vectorizer.fit_transform(space_separated_tags)
     return linear_kernel(tfidf_matrix, tfidf_matrix)
