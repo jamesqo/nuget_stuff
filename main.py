@@ -70,7 +70,7 @@ def main():
     df = read_infos_file()
 
     tagger = SmartTagger()
-    df = tagger.fit_transform(df)
+    tag_weights = tagger.fit_transform(df)
 
     nr = NugetRecommender(tags_vocab=tagger.tags_vocab_)
     nr.fit(df)

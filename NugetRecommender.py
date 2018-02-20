@@ -19,10 +19,6 @@ def _compute_description_scores(df):
     return linear_kernel(tfidf_matrix, tfidf_matrix)
 
 def _compute_etags_scores(df, tags_vocab):
-    # Let m be the number of packages and t be the number of tags.
-    # Build an m x t matrix where M[i, j] represents the weight of package i along tag j.
-    # Return an m x m matrix of cosine similarities.
-
     m = df.shape[0]
     tag_weights = pd.DataFrame(0, index=range(m), columns=sorted(tags_vocab))
     for index, etags in enumerate(df['etags']):

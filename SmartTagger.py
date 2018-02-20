@@ -1,36 +1,40 @@
 import enchant
 import logging as log
+import pandas as pd
+
+from sklearn.feature_extraction.text import CountVectorizer
 
 class SmartTagger(object):
     def __init__(self, weights={'description': 3, 'id': 5, 'tags': 1}):
         self._english = enchant.Dict('en_US')
         self.weights = weights
     
-    def _enrich_tags(self, row):
-        tags = row['tags']
-        if tags:
-            tag_weights = {tag.lower(): self.weights['tags'] for tag in tags.split(',')}
-        else:
-            tag_weights = {}
-
-        for term in row['description'].split():
-            term = term.lower()
-            if term in self.tags_vocab_ and not self._english.check(term):
-                tag_weights[term] = tag_weights.get(term, 0) + self.weights['description']
-
-        for term in row['id'].split('.'):
-            term = term.lower()
-            if term in self.tags_vocab_ and not self._english.check(term):
-                tag_weights[term] = tag_weights.get(term, 0) + self.weights['id']
-
-        etags = [f'{pair[0]} {pair[1]}' for pair in sorted(tag_weights.items())]
-        rowcopy = row.copy()
-        rowcopy['etags'] = ','.join(etags)
-
-        log.debug("Original tags: %s", tags)
-        log.debug("Enriched tags: %s", etags)
-        return rowcopy
-
     def fit_transform(self, df):
-        self.tags_vocab_ = set([tag.lower() for tags in df['tags'] for tag in tags.split(',')])
-        return df.apply(self._enrich_tags, axis=1)
+        vocab = sorted(set([tag.lower() for tags in df['tags'] for tag in tags.split(',') if tag]))
+        vocab_eng = sorted([tag for tag in vocab if self._english.check(tag)])
+        vocab_noneng = sorted([tag for tag in vocab if not self._english.check(tag)])
+
+        m = df.shape[0]
+        weights_eng = pd.DataFrame(0, index=range(m), columns=vocab_eng)
+        weights_noneng = pd.DataFrame(0, index=range(m), columns=vocab_noneng)
+
+        for index, tags in enumerate(df['tags']):
+            for tag in tags.split(','):
+                if not tag:
+                    continue
+                tag = tag.lower()
+                if self._english.check(tag):
+                    weights_eng[tag][index] = self.weights['tags']
+                else:
+                    weights_noneng[tag][index] = self.weights['tags']
+        
+        for feature in 'description', 'id':
+            cv = CountVectorizer(vocabulary=vocab_noneng)
+            counts = cv.fit_transform(df[feature]).todense()
+            weights_noneng += (self.weights[feature] * counts)
+
+        weights = pd.concat([weights_eng, weights_noneng], axis=1)
+        weights.sort_index(axis=1, inplace=True)
+
+        self.vocab_ = vocab
+        return weights
