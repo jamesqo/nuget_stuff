@@ -10,7 +10,8 @@ class NugetCatalogClient(object):
     def load_index(self, index_url='https://api.nuget.org/v3/index.json'):
         index_json = get_as_json(index_url)
         nodes = index_json['resources']
-        self._catalog_url = next(node['@id'] for node in nodes if node['@type'] == 'Catalog/3.0.0')
+        catalog_url = next(node['@id'] for node in nodes if node['@type'] == 'Catalog/3.0.0')
+        self._catalog_url = catalog_url.rstrip('/')
 
     def load_catalog(self):
         self._catalog_json = get_as_json(self._catalog_url)
