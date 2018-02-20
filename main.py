@@ -80,7 +80,7 @@ def main():
 
     pairs = list(recs.items())
     pairs.sort(key=lambda pair: pair[0].lower())
-    print('\n'.join(map(str, pairs)))
+    print('\n'.join([f"{pair[0]}: {pair[1]}" for pair in pairs]))
 
 if __name__ == '__main__':
     main()
