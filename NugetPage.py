@@ -12,4 +12,4 @@ class NugetPage(object):
         return self
 
     def load_packages(self):
-        return (NugetPackage(json=node) for node in self._page_json['items'])
+        return (NugetPackage(json=node) for node in self._json['items'])

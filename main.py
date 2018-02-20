@@ -40,8 +40,8 @@ def write_infos_file():
 
     with CsvInfoWriter(filename=INFOS_FILENAME) as writer:
         writer.write_header()
-        for page in islice(catalog_cli.load_pages(), PAGES_LIMIT):
-            for package in page.load_packages()
+        for page in islice(cli.load_pages(), PAGES_LIMIT):
+            for package in page.load_packages():
                 try:
                     writer.write_info(package.load_info())
                 except RequestException as e:
