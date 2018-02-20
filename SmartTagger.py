@@ -12,11 +12,11 @@ class SmartTagger(object):
             tag_weights = {}
 
         for term in row['description'].split():
-            if term in self.tags_vocab_:
+            if term.lower() in self.tags_vocab_:
                 tag_weights[term] = tag_weights.get(term, 0) + self.weights['description']
         
         for term in row['id'].split('.'):
-            if term in self.tags_vocab_:
+            if term.lower() in self.tags_vocab_:
                 tag_weights[term] = tag_weights.get(term, 0) + self.weights['id']
         
         etags = [f'{pair[0]} {pair[1]}' for pair in sorted(tag_weights.items())]
@@ -28,5 +28,5 @@ class SmartTagger(object):
         return rowcopy
 
     def fit_transform(self, df):
-        self.tags_vocab_ = set([tag for tags in df['tags'] for tag in tags.split(',')])
+        self.tags_vocab_ = set([tag.lower() for tags in df['tags'] for tag in tags.split(',')])
         return df.apply(self._enrich_tags, axis=1)
