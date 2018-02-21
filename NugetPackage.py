@@ -28,9 +28,9 @@ class NugetPackage(object):
         cli = NugetSearchClient()
         query = f'id:"{self.id}"'
         results = cli.search(q=query)
-        self.search = next((d for d in results if d._id.lower() == self.id.lower()),
+        self.search = next((d for d in results if d.id.lower() == self.id.lower()),
                            NullPackageSearchInfo())
 
     def _load_reg_info(self):
         cli = NugetRegistrationClient()
-        self.reg = cli.load(self.id)
+        self.reg = cli.load_package(self.id)
