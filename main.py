@@ -10,8 +10,6 @@ import traceback as tb
 
 from aiohttp.client_exceptions import ClientError
 from datetime import datetime
-from distutils.version import LooseVersion
-from itertools import islice
 
 from CsvPackageWriter import CsvPackageWriter
 from NugetCatalogClient import NugetCatalogClient
@@ -53,9 +51,9 @@ async def write_infos_file():
                         writer.write(package)
                     else:
                         exc = result
-                        if isinstance(exc, ClientError):
+                        if isinstance(exc, ClientError) or isinstance(exc, aio.TimeoutError):
                             # TODO: Figure out how to get arguments needed for tb.format_exception()
-                            log.debug("ClientError raised while loading %s:\n%s", package.id, tb.format_exc())
+                            log.debug("Error raised while loading %s:\n%s", package.id, tb.format_exc())
                             continue
                         raise exc
 
