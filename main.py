@@ -2,10 +2,12 @@
 
 import argparse
 import logging as log
+import numpy as np
 import os
 import pandas as pd
 import traceback as tb
 
+from datetime import datetime
 from distutils.version import LooseVersion
 from itertools import islice
 from requests.exceptions import RequestException
@@ -49,20 +51,37 @@ def write_infos_file():
 def read_infos_file():
     df = pd.read_csv(INFOS_FILENAME, dtype={
         'authors': str,
+        'created': object,
         'description': str,
         'id': str,
         'is_prerelease': bool,
         'listed': bool,
         'summary': str,
         'tags': str,
+        'total_downloads': np.int32,
+        'verified': bool,
         'version': str
-    }, na_filter=False)
+    }, na_filter=False,
+       parse_dates=['created'])
 
     # Remove entries with the same id, keeping the one with the highest version
     df['id_lower'] = df['id'].apply(str.lower)
     df = df.drop_duplicates(subset='id_lower', keep='last').reset_index(drop=True)
     df.drop('id_lower', axis=1, inplace=True)
     return df
+
+def add_days_alive(df):
+    df['days_alive'] = (datetime.now() - df['created']).day
+    return df
+
+def add_downloads_per_day(df):
+    df['downloads_per_day'] = df['total_downloads'] / df['days_alive']
+    return df
+
+def add_etags(df):
+    tagger = SmartTagger()
+    df = tagger.fit_transform(df)
+    return df, tagger
 
 def main():
     args = parse_args()
@@ -72,9 +91,10 @@ def main():
         write_infos_file()
     df = read_infos_file()
 
-    tagger = SmartTagger()
-    df = tagger.fit_transform(df)
-
+    df = add_days_alive(df)
+    df = add_downloads_per_day(df)
+    df, tagger = add_etags(df)
+    
     nr = NugetRecommender(tags_vocab=tagger.tags_vocab_)
     nr.fit(df)
     recs = nr.predict(top_n=5)
