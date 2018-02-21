@@ -1,5 +1,11 @@
+from RegistrationPage import RegistrationPage
+
 class PackageRegistrationInfo(object):
     def __init__(self, json):
-        if json['count'] != 1:
+        self.count = json['count']
+        if self.count != 1:
             raise ValueError(f"We have ourselves a winner!\n{json}")
-        self.pages = [RegistrationPage(node) for node in json['items']]
+        self._pages = [RegistrationPage(node) for node in json['items']]
+
+    def __iter__(self):
+        return iter(self._pages)
