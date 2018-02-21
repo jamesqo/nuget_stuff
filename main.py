@@ -68,6 +68,9 @@ def read_infos_file():
     df['id_lower'] = df['id'].apply(str.lower)
     df = df.drop_duplicates(subset='id_lower', keep='last').reset_index(drop=True)
     df.drop('id_lower', axis=1, inplace=True)
+
+    # Since the id is unique, we can set it as the index
+    #df.set_index('id', inplace=True)
     return df
 
 def add_days_alive(df):
@@ -111,7 +114,14 @@ def main():
 
     # Print packages and their recommendations, sorted by popularity
     pairs = list(recs.items())
-    pairs.sort(key=lambda pair: df['downloads_per_day'][pair[0]], reverse=False)
+    
+    # This is necessary so we don't run through the dataframe every time sort calls
+    # the key function, which would result in quadratic running time
+    index_map = {}
+    for index, row in df.iterrows():
+        index_map[row['id']] = index
+
+    pairs.sort(key=lambda pair: df['downloads_per_day'][index_map[pair[0]]], reverse=False)
     print('\n'.join([f"{pair[0]}: {pair[1]}" for pair in pairs]))
 
 if __name__ == '__main__':
