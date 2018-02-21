@@ -65,6 +65,7 @@ class NugetRecommender(object):
 
         scores = np.average(feature_scores, weights=feature_weights, axis=0)
 
+        '''
         # Scale the scores according to popularity.
         dpds = df['downloads_per_day']
         ldpds = np.log(dpds[dpds != -1])
@@ -93,7 +94,9 @@ class NugetRecommender(object):
 
             adjusted_p  = p * 1 + (1 - p) * self.min_scale_popularity
             scores[:, index] *= adjusted_p
+        '''
 
+        '''
         # Scale the scores according to 'freshness' (e.g. how recently the package has been updated).
         das = df['days_abandoned'][~df['last_updated'].isnull()]
         mean_da, max_da = np.average(das), np.max(das)
@@ -107,6 +110,7 @@ class NugetRecommender(object):
 
             adjusted_f = f * 1 + (1 - f) * self.min_scale_freshness
             scores[:, index] *= adjusted_f
+        '''
 
         # We don't want to recommend the same package based on itself, so set all scores along the diagonal to 0.
         for i in range(len(scores)):
