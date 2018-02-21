@@ -1,7 +1,6 @@
 import logging as log
 
 from NugetPackage import NugetPackage
-from util import get_as_json
 
 class NugetPage(object):
     def __init__(self, url, ctx):

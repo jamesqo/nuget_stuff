@@ -1,5 +1,4 @@
 from PackageRegistrationInfo import PackageRegistrationInfo
-from util import get_as_json
 
 class NugetRegistrationClient(object):
     def __init__(self, ctx):

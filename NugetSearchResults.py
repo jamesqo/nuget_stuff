@@ -1,5 +1,4 @@
 from PackageSearchInfo import PackageSearchInfo
-from util import get_as_json
 
 class NugetSearchResults(object):
     def __init__(self, url, ctx):

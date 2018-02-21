@@ -2,7 +2,6 @@ from collections import OrderedDict
 from urllib.parse import urlencode
 
 from NugetSearchResults import NugetSearchResults
-from util import get_as_json
 
 class NugetSearchClient(object):
     def __init__(self, ctx):

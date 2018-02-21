@@ -1,5 +1,4 @@
 from RegistrationLeaf import RegistrationLeaf
-from util import get_as_json
 
 class RegistrationPage(object):
     def __init__(self, json, ctx):

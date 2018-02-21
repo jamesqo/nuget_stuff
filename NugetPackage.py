@@ -4,7 +4,6 @@ from NugetRegistrationClient import NugetRegistrationClient
 from NugetSearchClient import NugetSearchClient
 from NullPackageSearchInfo import NullPackageSearchInfo
 from PackageCatalogInfo import PackageCatalogInfo
-from util import get_as_json
 
 class NugetPackage(object):
     def __init__(self, json, ctx):
