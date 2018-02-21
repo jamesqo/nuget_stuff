@@ -71,6 +71,11 @@ def read_infos_file():
 
     # Since the id is unique, we can set it as the index
     #df.set_index('id', inplace=True)
+
+    # Remove unlisted packages
+    df = df[df['listed']]
+    df.drop('listed', axis=1, inplace=True)
+
     return df
 
 def add_days_alive(df):
