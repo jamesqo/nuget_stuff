@@ -1,5 +1,5 @@
-class NugetPackageDetails(object):
+class PackageSearchInfo(object):
     def __init__(self, json):
-        self._id = json['id']
+        self.id = json['id']
         self.total_downloads = json['totalDownloads']
         self.verified = json['verified']

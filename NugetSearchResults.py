@@ -1,4 +1,4 @@
-from NugetPackageDetails import NugetPackageDetails
+from PackageSearchInfo import PackageSearchInfo
 from util import get_as_json
 
 class NugetSearchResults(object):
@@ -7,7 +7,7 @@ class NugetSearchResults(object):
     
     def __iter__(self):
         for node in self._json['data']:
-            yield NugetPackageDetails(json=node)
+            yield PackageSearchInfo(json=node)
     
     def load(self):
         self._json = get_as_json(self._url)
