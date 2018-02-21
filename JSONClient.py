@@ -3,6 +3,7 @@ import json
 import logging as log
 
 from aiohttp import ClientSession
+from json.decoder import JSONDecodeError
 
 class JSONClient(object):
     def __init__(self):
@@ -16,12 +17,11 @@ class JSONClient(object):
         await self._sess.__aexit__(type, value, traceback)
 
     async def get(self, url, timeout=10):
-        log.debug("GET %s", url)
         async with async_timeout.timeout(timeout):
             async with self._sess.get(url) as response:
                 text = await response.text()
                 try:
                     return json.loads(text)
                 except JSONDecodeError:
-                    log.debug("Could not decode as JSON:\n%s", text)
+                    log.debug("Could not decode JSON from %s:\n%s", url, text)
                     raise

@@ -45,5 +45,5 @@ class CsvPackageWriter(object):
             sinfo.verified,
             pkg.version,
         ]
-        log.debug("Writing CSV row %s", row)
+        #log.debug("Writing CSV row %s", row)
         self._writer.writerow(row)
