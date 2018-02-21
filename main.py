@@ -113,6 +113,11 @@ def add_etags(df):
     df = tagger.fit_transform(df)
     return df, tagger
 
+def rank_package(id_, df, imap):
+    # Take advantage of the fact that python sorts tuples lexicographically
+    # (first by 1st element, then by 2nd element, and so on)
+    return -df['downloads_per_day'][imap[id_]], id_.lower()
+
 async def main():
     args = parse_args()
     log.basicConfig(level=args.log_level)
@@ -134,11 +139,11 @@ async def main():
 
     # This is necessary so we don't run through the dataframe every time sort calls
     # the key function, which would result in quadratic running time
-    index_map = {}
+    imap = {}
     for index, row in df.iterrows():
-        index_map[row['id']] = index
+        imap[row['id']] = index
 
-    pairs.sort(key=lambda pair: df['downloads_per_day'][index_map[pair[0]]], reverse=True)
+    pairs.sort(key=lambda pair: rank_package(pair[0], df, imap))
     print('\n'.join([f"{pair[0]}: {pair[1]}" for pair in pairs]))
 
 if __name__ == '__main__':
