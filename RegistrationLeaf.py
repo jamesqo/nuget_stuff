@@ -7,6 +7,7 @@ class RegistrationLeaf(object):
         self.license_url = json.get('licenseUrl', '')
         self.listed = json.get('listed', True)
         self.project_url = json.get('project_url', '')
+        self.published = json.get('published', '')
         self.summary = json.get('summary', "")
         self.tags = json.get('tags', [])
         self.version = json['version']

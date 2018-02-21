@@ -15,6 +15,10 @@ class PackageRegistrationInfo(object):
         return self
 
     @property
+    def last_updated(self):
+        return self.newest_leaf.published
+
+    @property
     def listed(self):
         return self.newest_leaf.listed
 

@@ -66,6 +66,7 @@ def read_infos_file():
         'description': str,
         'id': str,
         'is_prerelease': bool,
+        'last_updated': object,
         'listed': bool,
         'summary': str,
         'tags': str,
@@ -73,7 +74,7 @@ def read_infos_file():
         'verified': bool,
         'version': str
     }, na_filter=False,
-       parse_dates=['created'])
+       parse_dates=['created', 'last_updated'])
 
     # Remove entries with the same id, keeping the one with the highest version
     df['id_lower'] = df['id'].apply(str.lower)
