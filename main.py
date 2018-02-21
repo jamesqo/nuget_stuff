@@ -36,16 +36,13 @@ def parse_args():
 
 def write_infos_file():
     cli = NugetCatalogClient()
-    cli.load_index()
-    cli.load_catalog()
-
     with CsvPackageWriter(filename=INFOS_FILENAME) as writer:
         writer.write_header()
         for page in islice(cli.load_pages(), PAGES_LIMIT):
             for package in page.packages:
                 try:
                     writer.write(package.load())
-                except RequestException as e:
+                except RequestException:
                     log.debug("RequestException raised while loading package %s:\n%s", package.id, tb.format_exc())
                     continue
 

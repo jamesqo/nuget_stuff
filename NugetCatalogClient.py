@@ -4,8 +4,10 @@ from NugetPage import NugetPage
 from util import get_as_json
 
 class NugetCatalogClient(object):
-    def __init__(self):
-        pass
+    def __init__(self, load=True):
+        if load:
+            self.load_index()
+            self.load_catalog()
     
     def load_index(self, index_url='https://api.nuget.org/v3/index.json'):
         index_json = get_as_json(index_url)

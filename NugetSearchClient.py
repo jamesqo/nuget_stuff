@@ -1,13 +1,18 @@
 from collections import OrderedDict
-from urllib import urlencode
+from urllib.parse import urlencode
+
+from NugetSearchResults import NugetSearchResults
+from util import get_as_json
 
 class NugetSearchClient(object):
-    def __init__(self):
-        pass
+    def __init__(self, load=True):
+        if load:
+            self.load_index()
 
     def load_index(self, index_url='https://api.nuget.org/v3/index.json'):
         index_json = get_as_json(index_url)
-        search_base = next(res['@id'] for res in index_json['resources'] if res['@type'] == 'SearchQueryService'))
+        nodes = index_json['resources']
+        search_base = next(node['@id'] for node in nodes if node['@type'] == 'SearchQueryService')
         self._search_base = search_base.rstrip('/')
 
     def search(self, q, skip=None, take=None, prerelease=True, semver_level=None):
@@ -27,5 +32,5 @@ class NugetSearchClient(object):
             params['semVerLevel'] = semver_level
 
         qstring = urlencode(params)
-        search_url = f'{self._search_base}/?{qstring}'
-        # TODO
+        search_url = f'{self._search_base}?{qstring}'
+        return NugetSearchResults(url=search_url).load()

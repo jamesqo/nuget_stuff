@@ -17,13 +17,15 @@ class CsvPackageWriter(object):
     def write_header(self):
         row = [
             'authors',
+            'created',
             'description',
-            #'downloads_per_day',
             'id',
             'is_prerelease',
             'listed',
             'summary',
             'tags',
+            'total_downloads',
+            'verified',
             'version',
         ]
         self._writer.writerow(row)
@@ -31,13 +33,15 @@ class CsvPackageWriter(object):
     def write(self, package):
         row = [
             ','.join(package.authors),
+            package.created,
             package.description,
-            #package.downloads_per_day,
             package.id,
             package.is_prerelease,
             package.listed,
             package.summary,
             ','.join(package.tags),
+            package.details.total_downloads,
+            package.details.verified,
             package.version,
         ]
         log.debug("Writing CSV row %s", row)
