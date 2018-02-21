@@ -19,9 +19,9 @@ class JSONClient(object):
     async def get(self, url, timeout=10):
         async with async_timeout.timeout(timeout):
             async with self._sess.get(url) as response:
-                text = await response.text()
+                response.raise_for_status()
                 try:
-                    return json.loads(text)
+                    return await response.json()
                 except JSONDecodeError:
                     log.debug("Could not decode JSON from %s:\n%s", url, text)
                     raise
