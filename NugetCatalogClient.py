@@ -20,4 +20,4 @@ class NugetCatalogClient(object):
 
     def load_pages(self):
         page_urls = [node['@id'] for node in self._catalog_json['items']]
-        return (NugetPage(url).load() for url in page_urls)
+        return (NugetPage(url) for url in page_urls)

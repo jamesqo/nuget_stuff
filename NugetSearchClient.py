@@ -33,4 +33,4 @@ class NugetSearchClient(object):
 
         qstring = urlencode(params)
         search_url = f'{self._search_base}?{qstring}'
-        return NugetSearchResults(url=search_url).load()
+        return NugetSearchResults(url=search_url)

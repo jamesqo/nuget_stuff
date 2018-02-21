@@ -43,10 +43,11 @@ def write_infos_file():
         for page in islice(cli.load_pages(), PAGES_LIMIT):
             for package in page.packages:
                 try:
-                    writer.write(package.load())
+                    package.load()
                 except RequestException:
                     log.debug("RequestException raised while loading package %s:\n%s", package.id, tb.format_exc())
                     continue
+                writer.write(package)
 
 def read_infos_file():
     df = pd.read_csv(INFOS_FILENAME, dtype={

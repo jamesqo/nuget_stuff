@@ -15,4 +15,3 @@ class RegistrationPage(object):
             url = self._json['@id']
             self._json = get_as_json(url)
         self._leaves = [RegistrationLeaf(json=node['catalogEntry']) for node in self._json['items']]
-        return self

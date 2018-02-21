@@ -19,7 +19,6 @@ class NugetPackage(object):
             self._load_reg_info()
         if search:
             self._load_search_info()
-        return self
 
     def _load_catalog_info(self):
         self.catalog = PackageCatalogInfo(json=get_as_json(self._catalog_url))
