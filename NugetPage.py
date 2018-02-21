@@ -8,7 +8,7 @@ class NugetPage(object):
         self._ctx = ctx
     
     async def load(self):
-        self._json = self._ctx.client.get(self._url)
+        self._json = await self._ctx.client.get(self._url)
         return self
 
     @property

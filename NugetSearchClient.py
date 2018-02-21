@@ -7,7 +7,7 @@ class NugetSearchClient(object):
     def __init__(self, ctx):
         self._ctx = ctx
 
-    async def load():
+    async def load(self):
         await self.load_index()
         return self
 

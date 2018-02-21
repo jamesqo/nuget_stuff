@@ -12,3 +12,4 @@ class NugetSearchResults(object):
     async def load(self):
         self._json = await self._ctx.client.get(self._url)
         self.total_hits = self._json['totalHits']
+        return self

@@ -5,7 +5,8 @@ class NugetContext(object):
         self.client = JSONClient()
 
     async def __aenter__(self):
-        self.client.__aenter__()
+        await self.client.__aenter__()
+        return self
 
     async def __aexit__(self, type, value, traceback):
-        self.client.__aexit__(type, value, traceback)
+        await self.client.__aexit__(type, value, traceback)

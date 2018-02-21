@@ -1,15 +1,22 @@
-import json
-import logging as log
-import requests
+# Taken from https://stackoverflow.com/a/42379188/4077294
+async def aenumerate(aiterable):
+    i = 0
+    async for x in aiterable:
+        yield i, x
+        i += 1
 
-from json.decoder import JSONDecodeError
-
-def get_as_json(url, timeout=10):
-    log.debug("Sending GET request to %s", url)
-    response = requests.get(url, timeout=timeout)
-
+# Taken from https://stackoverflow.com/a/42379188/4077294
+async def aislice(aiterable, *args):
+    s = slice(*args)
+    it = iter(range(s.start or 0, s.stop or sys.maxsize, s.step or 1))
     try:
-        return json.loads(response.text)
-    except JSONDecodeError:
-        log.debug("A JSONDecodeError was raised for the following response text:\n%s", response.text)
-        raise
+        nexti = next(it)
+    except StopIteration:
+        return
+    async for i, element in aenumerate(aiterable):
+        if i == nexti:
+            yield element
+            try:
+                nexti = next(it)
+            except StopIteration:
+                return

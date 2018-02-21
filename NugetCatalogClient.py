@@ -7,8 +7,8 @@ class NugetCatalogClient(object):
         self._ctx = ctx
 
     async def load(self):
-        self.load_index()
-        self.load_catalog()
+        await self.load_index()
+        await self.load_catalog()
         return self
 
     async def load_index(self, index_url='https://api.nuget.org/v3/index.json'):
@@ -22,4 +22,5 @@ class NugetCatalogClient(object):
 
     async def load_pages(self):
         page_urls = [node['@id'] for node in self._catalog_json['items']]
-        return (await NugetPage(url, self._ctx).load() for url in page_urls)
+        for url in page_urls:
+            yield await NugetPage(url, self._ctx).load()

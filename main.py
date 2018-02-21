@@ -14,10 +14,11 @@ from itertools import islice
 from requests.exceptions import RequestException
 
 from CsvPackageWriter import CsvPackageWriter
-from JSONClient import JSONClient
 from NugetCatalogClient import NugetCatalogClient
+from NugetContext import NugetContext
 from NugetRecommender import NugetRecommender
 from SmartTagger import SmartTagger
+from util import aislice
 
 INFOS_FILENAME = 'package_infos.csv'
 PAGES_LIMIT = 10
@@ -44,7 +45,7 @@ async def write_infos_file():
             writer.write_header()
 
             client = await NugetCatalogClient(ctx).load()
-            for page in islice(await client.load_pages(), PAGES_LIMIT):
+            async for page in aislice(client.load_pages(), PAGES_LIMIT):
                 for package in page.packages:
                     try:
                         await package.load()
