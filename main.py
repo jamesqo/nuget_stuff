@@ -54,6 +54,7 @@ async def write_infos_file():
                     else:
                         exc = result
                         if isinstance(exc, ClientError):
+                            # TODO: Figure out how to get arguments needed for tb.format_exception()
                             log.debug("ClientError raised while loading %s:\n%s", package.id, tb.format_exc())
                             continue
                         raise exc
@@ -76,7 +77,7 @@ def read_infos_file():
 
     # Remove entries with the same id, keeping the one with the highest version
     df['id_lower'] = df['id'].apply(str.lower)
-    df = df.drop_duplicates(subset='id_lower', keep='last').reset_index(drop=True)
+    df.drop_duplicates(subset='id_lower', keep='last', inplace=True)
     df.drop('id_lower', axis=1, inplace=True)
 
     # Since the id is unique, we can set it as the index
@@ -86,6 +87,7 @@ def read_infos_file():
     df = df[df['listed']]
     df.drop('listed', axis=1, inplace=True)
 
+    df.reset_index(drop=True, inplace=True)
     return df
 
 def add_days_alive(df):

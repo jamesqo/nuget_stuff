@@ -27,9 +27,8 @@ class SmartTagger(object):
         etags = [f'{pair[0]} {pair[1]}' for pair in sorted(tag_weights.items())]
         rowcopy = row.copy()
         rowcopy['etags'] = ','.join(etags)
-
-        log.debug("Original tags: %s", tags)
-        log.debug("Enriched tags: %s", etags)
+        #log.debug("Original tags: %s", tags)
+        #log.debug("Enriched tags: %s", etags)
         return rowcopy
 
     def fit_transform(self, df):
