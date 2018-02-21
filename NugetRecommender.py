@@ -37,7 +37,7 @@ def _compute_etags_scores(df, tags_vocab):
 class NugetRecommender(object):
     def __init__(self,
                  tags_vocab,
-                 weights={'authors': 1, 'description': 2, 'etags': 6},
+                 weights={'authors': 1, 'description': 2, 'etags': 8},
                  min_scale_popularity=.25,
                  min_scale_freshness=.5):
         self.tags_vocab = tags_vocab

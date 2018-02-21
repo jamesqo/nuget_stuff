@@ -4,7 +4,7 @@ import logging as log
 from sklearn.feature_extraction.text import CountVectorizer
 
 class SmartTagger(object):
-    def __init__(self, weights={'description': 3, 'id': 5, 'tags': 1}):
+    def __init__(self, weights={'description': 4, 'id': 6, 'tags': 2}):
         self._english = enchant.Dict('en_US')
         self.weights = weights
     
