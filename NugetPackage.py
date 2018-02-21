@@ -1,32 +1,36 @@
 import logging as log
 
+from NugetRegistrationClient import NugetRegistrationClient
 from NugetSearchClient import NugetSearchClient
-from NullPackageDetails import NullPackageDetails
+from NullPackageSearchInfo import NullPackageSearchInfo
+from PackageCatalogInfo import PackageCatalogInfo
 from util import get_as_json
 
 class NugetPackage(object):
     def __init__(self, json):
         self.id = json['nuget:id']
         self.version = json['nuget:version']
-        self._url = json['@id']
+        self._catalog_url = json['@id']
 
-    def load(self, details=True):
-        json = get_as_json(self._url)
-        self.authors = [name.strip() for name in json['authors'].split(',')]
-        self.created = json['created']
-        self.description = json['description']
-        self.id = json['id']
-        self.is_prerelease = json['isPrerelease']
-        self.listed = json.get('listed', True)
-        self.summary = json.get('summary')
-        self.tags = json.get('tags', [])
-        self.version = json['version']
-        if details:
-            self._load_details()
+    def load(self, catalog=True, search=True, registration=True):
+        if catalog:
+            self._load_catalog_info()
+        if search:
+            self._load_search_info()
+        if registration:
+            self._load_registration_info()
         return self
 
-    def _load_details(self):
+    def _load_catalog_info(self):
+        self.catalog = PackageCatalogInfo(json=get_as_json(self._catalog_url))
+
+    def _load_search_info(self):
         cli = NugetSearchClient()
-        results = cli.search(q=f'id:"{self.id}"')
-        self.details = next((d for d in results if d._id.lower() == self.id.lower()),
-                            NullPackageDetails())
+        query = f'id:"{self.id}"'
+        results = cli.search(q=query)
+        self.search = next((d for d in results if d._id.lower() == self.id.lower()),
+                           NullPackageSearchInfo())
+
+    def _load_registration_info(self):
+        cli = NugetRegistrationClient()
+        self.registration = cli.load(self.id)
