@@ -67,14 +67,29 @@ class NugetRecommender(object):
         dpds = df['downloads_per_day']
         ldpds = np.log(dpds[dpds != -1])
         mean_ldpd = np.average(ldpds)
+        max_ldpd = np.max(ldpds)
 
         for index, row in df.iterrows():
             dpd = row['downloads_per_day']
             if dpd == -1:
-                # TODO: How should we handle this?
+                # We don't have the downloads_per_day metric for this package, so let's assume that
+                # this is an "average" package.
+                # On average p will be 1, meaning adjusted_p will be 1, meaning we don't have to bother
+                # scaling the scores for this package.
                 continue
+
+            # The number of downloads per day can vary widely (from single-digits to 100k+).
+            # We want to give a higher score to more popular packages, but not by a factor of 100k.
+            # We take the logarithm of dpd to make the packages more evenly distributed, and make
+            # the popularity (and the scale factor, adjusted popularity) roughly proportional to this.
             ldpd = np.log(dpd)
-            p = ldpd / mean_ldpd
+
+            # This follows the formula for mean normalization described here:
+            # https://en.wikipedia.org/wiki/Feature_scaling#Mean_normalisation
+            # The only difference is that we add 1 to make p = 1 on average.
+            # min(ldpd) is 0 since we assume no package has less than 1 dpd, and log(1) = 0.
+            p = ((ldpd - mean_ldpd) / max_ldpd) + 1
+
             adjusted_p  = p * 1 + (1 - p) * self.min_scale_popularity
             scores[:, index] *= adjusted_p
 
