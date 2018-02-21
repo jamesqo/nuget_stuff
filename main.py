@@ -19,7 +19,7 @@ from SmartTagger import SmartTagger
 from util import aislice
 
 INFOS_FILENAME = 'package_infos.csv'
-PAGES_LIMIT = 10
+PAGES_LIMIT = 100
 
 def parse_args():
     parser = argparse.ArgumentParser()
