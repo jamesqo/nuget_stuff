@@ -12,13 +12,13 @@ class NugetPackage(object):
         self.version = json['nuget:version']
         self._catalog_url = json['@id']
 
-    def load(self, catalog=True, search=True, registration=True):
+    def load(self, catalog=True, reg=True, search=True):
         if catalog:
             self._load_catalog_info()
+        if reg:
+            self._load_reg_info()
         if search:
             self._load_search_info()
-        if registration:
-            self._load_registration_info()
         return self
 
     def _load_catalog_info(self):
@@ -31,6 +31,6 @@ class NugetPackage(object):
         self.search = next((d for d in results if d._id.lower() == self.id.lower()),
                            NullPackageSearchInfo())
 
-    def _load_registration_info(self):
+    def _load_reg_info(self):
         cli = NugetRegistrationClient()
-        self.registration = cli.load(self.id)
+        self.reg = cli.load(self.id)

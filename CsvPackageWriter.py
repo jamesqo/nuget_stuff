@@ -30,19 +30,20 @@ class CsvPackageWriter(object):
         ]
         self._writer.writerow(row)
 
-    def write(self, package):
+    def write(self, pkg):
+        cinfo, sinfo, rinfo = pkg.catalog, pkg.search, pkg.reg
         row = [
-            ','.join(package.authors),
-            package.created,
-            package.description,
-            package.id,
-            package.is_prerelease,
-            package.listed,
-            package.summary,
-            ','.join(package.tags),
-            package.details.total_downloads,
-            package.details.verified,
-            package.version,
+            ','.join(cinfo.authors),
+            cinfo.created,
+            cinfo.description,
+            pkg.id,
+            cinfo.is_prerelease,
+            cinfo.listed,
+            cinfo.summary,
+            ','.join(cinfo.tags),
+            sinfo.total_downloads,
+            sinfo.verified,
+            pkg.version,
         ]
         log.debug("Writing CSV row %s", row)
         self._writer.writerow(row)
