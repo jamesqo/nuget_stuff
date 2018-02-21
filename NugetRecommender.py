@@ -39,7 +39,7 @@ class NugetRecommender(object):
                  tags_vocab,
                  weights={'authors': 1, 'description': 2, 'etags': 8},
                  min_scale_popularity=0,
-                 min_scale_freshness=.5):
+                 min_scale_freshness=.25):
         self.tags_vocab = tags_vocab
         self.weights = weights
         self.min_scale_popularity = min_scale_popularity
