@@ -71,7 +71,8 @@ def read_infos_file():
     return df
 
 def add_days_alive(df):
-    df['days_alive'] = (datetime.now() - df['created']).day
+    now = datetime.now()
+    df['days_alive'] = df['created'].apply(lambda date: max((now - date).days, 1))
     return df
 
 def add_downloads_per_day(df):
