@@ -39,7 +39,7 @@ class NugetRecommender(object):
                  tags_vocab,
                  weights={'authors': 1, 'description': 2, 'etags': 6},
                  min_scale_popularity=.5,
-                 min_scale_freshness=.75):
+                 min_scale_freshness=.5):
         self.tags_vocab = tags_vocab
         self.weights = weights
         self.min_scale_popularity = min_scale_popularity
@@ -95,7 +95,7 @@ class NugetRecommender(object):
             scores[:, index] *= adjusted_p
 
         # Scale the scores according to 'freshness' (e.g. how recently the package has been updated).
-        das = df['days_abandoned'][df['last_updated'].isnull()]
+        das = df['days_abandoned'][~df['last_updated'].isnull()]
         mean_da, max_da = np.average(das), np.max(das)
 
         for index, row in df.iterrows():
