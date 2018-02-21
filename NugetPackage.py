@@ -1,6 +1,7 @@
 import logging as log
 
 from NugetSearchClient import NugetSearchClient
+from NullPackageDetails import NullPackageDetails
 from util import get_as_json
 
 class NugetPackage(object):
@@ -27,7 +28,5 @@ class NugetPackage(object):
     def _load_details(self):
         cli = NugetSearchClient()
         results = cli.search(q=self.id)
-        try:
-            self.details = next(d for d in results if d._id.lower() == self.id.lower())
-        except StopIteration:
-            pass
+        self.details = next((d for d in results if d._id.lower() == self.id.lower()),
+                            NullPackageDetails())
