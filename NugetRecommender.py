@@ -94,7 +94,6 @@ class NugetRecommender(object):
             adjusted_p  = p * 1 + (1 - p) * self.min_scale_popularity
             scores[:, index] *= adjusted_p
 
-        '''
         # Scale the scores according to 'freshness' (e.g. how recently the package has been updated).
         das = df['days_abandoned'][~df['last_updated'].isnull()]
         mean_da, max_da = np.average(das), np.max(das)
@@ -102,13 +101,12 @@ class NugetRecommender(object):
         for index, row in df.iterrows():
             if row['last_updated'] is None:
                 continue
-            da = df['days_abandoned']
+            da = row['days_abandoned']
             s = ((da - mean_da) / max_da) + 1 # stinkiness
             f = 1 + (1 - s) # freshness
 
             adjusted_f = f * 1 + (1 - f) * self.min_scale_freshness
             scores[:, index] *= adjusted_f
-        '''
 
         # We don't want to recommend the same package based on itself, so set all scores along the diagonal to 0.
         for i in range(len(scores)):
