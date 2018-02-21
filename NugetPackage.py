@@ -27,6 +27,6 @@ class NugetPackage(object):
 
     def _load_details(self):
         cli = NugetSearchClient()
-        results = cli.search(q=self.id)
+        results = cli.search(q=f'id:"{self.id}"')
         self.details = next((d for d in results if d._id.lower() == self.id.lower()),
                             NullPackageDetails())
