@@ -80,6 +80,7 @@ def add_downloads_per_day(df):
     
     m = df.shape[0]
     for index in range(m):
+        # Needed to use .loc[] here to get rid of some warnings.
         if df.loc[index, 'downloads_per_day'] < 0:
             df.loc[index, 'downloads_per_day'] = -1 # total_downloads wasn't available
         elif df.loc[index, 'downloads_per_day'] < 1:
@@ -108,8 +109,9 @@ def main():
     nr.fit(df)
     recs = nr.predict(top_n=5)
 
+    # Print packages and their recommendations, sorted by popularity
     pairs = list(recs.items())
-    pairs.sort(key=lambda pair: pair[0].lower())
+    pairs.sort(key=lambda pair: df['downloads_per_day'][pair[0]], reverse=False)
     print('\n'.join([f"{pair[0]}: {pair[1]}" for pair in pairs]))
 
 if __name__ == '__main__':
