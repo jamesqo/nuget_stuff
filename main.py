@@ -96,6 +96,11 @@ def add_days_alive(df):
     df['days_alive'] = df['created'].apply(lambda date: max((now - date).days, 1))
     return df
 
+def add_days_abandoned(df):
+    now = datetime.now()
+    df['days_abandoned'] = df['last_updated'].apply(lambda date: (now - date).days)
+    return df
+
 def add_downloads_per_day(df):
     df['downloads_per_day'] = df['total_downloads'] / df['days_alive']
     
@@ -128,6 +133,7 @@ async def main():
     df = read_infos_file()
 
     df = add_days_alive(df)
+    df = add_days_abandoned(df)
     df = add_downloads_per_day(df)
     df, tagger = add_etags(df)
     

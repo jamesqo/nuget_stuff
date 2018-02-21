@@ -38,10 +38,12 @@ class NugetRecommender(object):
     def __init__(self,
                  tags_vocab,
                  weights={'authors': 1, 'description': 2, 'etags': 6},
-                 min_scale_popularity=.5):
+                 min_scale_popularity=.5,
+                 min_scale_freshness=.75):
         self.tags_vocab = tags_vocab
         self.weights = weights
         self.min_scale_popularity = min_scale_popularity
+        self.min_scale_freshness = min_scale_freshness
 
     def fit(self, df):
         # Let m be the number of packages. For each relevant feature like shared tags or similar names/descriptions,
@@ -66,8 +68,7 @@ class NugetRecommender(object):
         # Scale the scores according to popularity.
         dpds = df['downloads_per_day']
         ldpds = np.log(dpds[dpds != -1])
-        mean_ldpd = np.average(ldpds)
-        max_ldpd = np.max(ldpds)
+        mean_ldpd, max_ldpd = np.average(ldpds), np.max(ldpds)
 
         for index, row in df.iterrows():
             dpd = row['downloads_per_day']
@@ -92,6 +93,20 @@ class NugetRecommender(object):
 
             adjusted_p  = p * 1 + (1 - p) * self.min_scale_popularity
             scores[:, index] *= adjusted_p
+
+        # Scale the scores according to 'freshness' (e.g. how recently the package has been updated).
+        das = df['days_abandoned'][df['last_updated'].isnull()]
+        mean_da, max_da = np.average(das), np.max(das)
+
+        for index, row in df.iterrows():
+            if row['last_updated'] is None:
+                continue
+            da = df['days_abandoned']
+            s = ((da - mean_da) / max_da) + 1 # stinkiness
+            f = 1 + (1 - s) # freshness
+
+            adjusted_f = f * 1 + (1 - f) * self.min_scale_freshness
+            scores[:, index] *= adjusted_f
 
         # We don't want to recommend the same package based on itself, so set all scores along the diagonal to 0.
         for i in range(len(scores)):
