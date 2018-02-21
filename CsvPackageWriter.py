@@ -38,7 +38,7 @@ class CsvPackageWriter(object):
             cinfo.description,
             pkg.id,
             cinfo.is_prerelease,
-            cinfo.listed,
+            cinfo.listed and rinfo.listed,
             cinfo.summary,
             ','.join(cinfo.tags),
             sinfo.total_downloads,
