@@ -9,7 +9,7 @@ class SmartTagger(object):
         self.weights = weights
     
     def _is_hack_word(self, term):
-        return True
+        return not self._english.check(term)
     
     def _enrich_tags(self, row):
         tags = row['tags']
