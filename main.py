@@ -114,14 +114,14 @@ def main():
 
     # Print packages and their recommendations, sorted by popularity
     pairs = list(recs.items())
-    
+
     # This is necessary so we don't run through the dataframe every time sort calls
     # the key function, which would result in quadratic running time
     index_map = {}
     for index, row in df.iterrows():
         index_map[row['id']] = index
 
-    pairs.sort(key=lambda pair: df['downloads_per_day'][index_map[pair[0]]], reverse=False)
+    pairs.sort(key=lambda pair: df['downloads_per_day'][index_map[pair[0]]], reverse=True)
     print('\n'.join([f"{pair[0]}: {pair[1]}" for pair in pairs]))
 
 if __name__ == '__main__':
