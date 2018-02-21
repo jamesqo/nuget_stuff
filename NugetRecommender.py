@@ -63,7 +63,15 @@ class NugetRecommender(object):
             self.weights['etags'],
         ]
 
-        scores = np.average(feature_scores, weights=feature_weights, axis=0)
+        # The below line is causing NumPy to raise a MemoryError for large datasets, because it allocates a whole
+        # new m x m matrices. Instead, we'll modify existing matrices in place to forego allocations.
+        #scores = np.average(feature_scores, weights=feature_weights, axis=0)
+        scores = feature_scores[0]
+        scores *= feature_weights[0]
+        for i in range(1, len(feature_scores)):
+            feature_scores[i] *= feature_weights[i]
+            scores += feature_scores[i]
+        scores /= sum(feature_weights)
 
         # Scale the scores according to popularity.
         dpds = df['downloads_per_day']
