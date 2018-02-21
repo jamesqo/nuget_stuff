@@ -8,10 +8,10 @@ import os
 import pandas as pd
 import traceback as tb
 
+from aiohttp.client_exceptions import ClientError
 from datetime import datetime
 from distutils.version import LooseVersion
 from itertools import islice
-from requests.exceptions import RequestException
 
 from CsvPackageWriter import CsvPackageWriter
 from NugetCatalogClient import NugetCatalogClient
@@ -46,13 +46,17 @@ async def write_infos_file():
 
             client = await NugetCatalogClient(ctx).load()
             async for page in aislice(client.load_pages(), PAGES_LIMIT):
-                for package in page.packages:
-                    try:
-                        await package.load()
-                    except RequestException:
-                        log.debug("RequestException raised while loading package %s:\n%s", package.id, tb.format_exc())
-                        continue
-                    writer.write(package)
+                results = await aio.gather(*[package.load() for package in page.packages], return_exceptions=True)
+                for result in results:
+                    if not isinstance(result, Exception):
+                        package = result
+                        writer.write(package)
+                    else:
+                        exc = result
+                        if isinstance(exc, ClientError):
+                            log.debug("ClientError raised while loading %s:\n%s", package.id, tb.format_exc())
+                            continue
+                        raise exc
 
 def read_infos_file():
     df = pd.read_csv(INFOS_FILENAME, dtype={
@@ -95,9 +99,9 @@ def add_downloads_per_day(df):
     m = df.shape[0]
     for index in range(m):
         # Needed to use .loc[] here to get rid of some warnings.
-        if df.loc[index, 'downloads_per_day'] < 0:
+        if df['downloads_per_day'][index] < 0:
             df.loc[index, 'downloads_per_day'] = -1 # total_downloads wasn't available
-        elif df.loc[index, 'downloads_per_day'] < 1:
+        elif df['downloads_per_day'][index] < 1:
             df.loc[index, 'downloads_per_day'] = 1 # Important so np.log doesn't spazz out later
 
     return df

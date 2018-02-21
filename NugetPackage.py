@@ -19,6 +19,7 @@ class NugetPackage(object):
             await self._load_reg_info()
         if search:
             await self._load_search_info()
+        return self
 
     async def _load_catalog_info(self):
         self.catalog = PackageCatalogInfo(await self._ctx.client.get(self._catalog_url))
