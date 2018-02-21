@@ -2,15 +2,14 @@ from PackageSearchInfo import PackageSearchInfo
 from util import get_as_json
 
 class NugetSearchResults(object):
-    def __init__(self, url, load=True):
+    def __init__(self, url, ctx):
         self._url = url
-        if load:
-            self.load()
+        self._ctx = ctx
     
     def __iter__(self):
         for node in self._json['data']:
-            yield PackageSearchInfo(json=node)
+            yield PackageSearchInfo(node)
     
-    def load(self):
-        self._json = get_as_json(self._url)
+    async def load(self):
+        self._json = await self._ctx.client.get(self._url)
         self.total_hits = self._json['totalHits']

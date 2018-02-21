@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import argparse
+import asyncio as aio
 import logging as log
 import numpy as np
 import os
@@ -13,6 +14,7 @@ from itertools import islice
 from requests.exceptions import RequestException
 
 from CsvPackageWriter import CsvPackageWriter
+from JSONClient import JSONClient
 from NugetCatalogClient import NugetCatalogClient
 from NugetRecommender import NugetRecommender
 from SmartTagger import SmartTagger
@@ -36,18 +38,20 @@ def parse_args():
     )
     return parser.parse_args()
 
-def write_infos_file():
-    cli = NugetCatalogClient()
-    with CsvPackageWriter(filename=INFOS_FILENAME) as writer:
-        writer.write_header()
-        for page in islice(cli.load_pages(), PAGES_LIMIT):
-            for package in page.packages:
-                try:
-                    package.load()
-                except RequestException:
-                    log.debug("RequestException raised while loading package %s:\n%s", package.id, tb.format_exc())
-                    continue
-                writer.write(package)
+async def write_infos_file():
+    async with NugetContext() as ctx:
+        with CsvPackageWriter(filename=INFOS_FILENAME) as writer:
+            writer.write_header()
+
+            client = await NugetCatalogClient(ctx).load()
+            for page in islice(await client.load_pages(), PAGES_LIMIT):
+                for package in page.packages:
+                    try:
+                        await package.load()
+                    except RequestException:
+                        log.debug("RequestException raised while loading package %s:\n%s", package.id, tb.format_exc())
+                        continue
+                    writer.write(package)
 
 def read_infos_file():
     df = pd.read_csv(INFOS_FILENAME, dtype={
@@ -102,12 +106,12 @@ def add_etags(df):
     df = tagger.fit_transform(df)
     return df, tagger
 
-def main():
+async def main():
     args = parse_args()
     log.basicConfig(level=args.log_level)
 
     if args.refresh_infos or not os.path.isfile(INFOS_FILENAME):
-        write_infos_file()
+        await write_infos_file()
     df = read_infos_file()
 
     df = add_days_alive(df)
@@ -131,4 +135,5 @@ def main():
     print('\n'.join([f"{pair[0]}: {pair[1]}" for pair in pairs]))
 
 if __name__ == '__main__':
-    main()
+    loop = aio.get_event_loop()
+    loop.run_until_complete(main())

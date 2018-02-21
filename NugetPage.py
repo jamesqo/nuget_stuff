@@ -4,14 +4,14 @@ from NugetPackage import NugetPackage
 from util import get_as_json
 
 class NugetPage(object):
-    def __init__(self, url, load=True):
+    def __init__(self, url, ctx):
         self._url = url
-        if load:
-            self.load()
+        self._ctx = ctx
     
-    def load(self):
-        self._json = get_as_json(self._url)
+    async def load(self):
+        self._json = self._ctx.client.get(self._url)
+        return self
 
     @property
     def packages(self):
-        return (NugetPackage(json=node) for node in self._json['items'])
+        return (NugetPackage(node, self._ctx) for node in self._json['items'])

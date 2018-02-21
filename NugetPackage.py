@@ -7,29 +7,30 @@ from PackageCatalogInfo import PackageCatalogInfo
 from util import get_as_json
 
 class NugetPackage(object):
-    def __init__(self, json):
+    def __init__(self, json, ctx):
         self.id = json['nuget:id']
         self.version = json['nuget:version']
         self._catalog_url = json['@id']
+        self._ctx = ctx
 
-    def load(self, catalog=True, reg=True, search=True):
+    async def load(self, catalog=True, reg=True, search=True):
         if catalog:
-            self._load_catalog_info()
+            await self._load_catalog_info()
         if reg:
-            self._load_reg_info()
+            await self._load_reg_info()
         if search:
-            self._load_search_info()
+            await self._load_search_info()
 
-    def _load_catalog_info(self):
-        self.catalog = PackageCatalogInfo(json=get_as_json(self._catalog_url))
+    async def _load_catalog_info(self):
+        self.catalog = PackageCatalogInfo(await self._ctx.client.get(self._catalog_url))
 
-    def _load_search_info(self):
-        cli = NugetSearchClient()
+    async def _load_search_info(self):
+        cli = await NugetSearchClient(self._ctx).load()
         query = f'id:"{self.id}"'
-        results = cli.search(q=query)
+        results = await cli.search(q=query)
         self.search = next((d for d in results if d.id.lower() == self.id.lower()),
                            NullPackageSearchInfo())
 
-    def _load_reg_info(self):
-        cli = NugetRegistrationClient()
-        self.reg = cli.load_package(self.id)
+    async def _load_reg_info(self):
+        cli = await NugetRegistrationClient(self._ctx).load()
+        self.reg = await cli.load_package(self.id)
