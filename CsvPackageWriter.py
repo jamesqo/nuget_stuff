@@ -1,7 +1,7 @@
 import csv
 import logging as log
 
-class CsvInfoWriter(object):
+class CsvPackageWriter(object):
     def __init__(self, filename):
         self._filename = filename
 
@@ -28,17 +28,17 @@ class CsvInfoWriter(object):
         ]
         self._writer.writerow(row)
 
-    def write_info(self, info):
+    def write(self, package):
         row = [
-            ','.join(info.authors),
-            info.description,
-            #info.downloads_per_day,
-            info.id,
-            info.is_prerelease,
-            info.listed,
-            info.summary,
-            ','.join(info.tags),
-            info.version,
+            ','.join(package.authors),
+            package.description,
+            #package.downloads_per_day,
+            package.id,
+            package.is_prerelease,
+            package.listed,
+            package.summary,
+            ','.join(package.tags),
+            package.version,
         ]
         log.debug("Writing CSV row %s", row)
         self._writer.writerow(row)

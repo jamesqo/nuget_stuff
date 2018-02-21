@@ -11,5 +11,6 @@ class NugetPage(object):
         self._json = get_as_json(self._url)
         return self
 
-    def load_packages(self):
+    @property
+    def packages(self):
         return (NugetPackage(json=node) for node in self._json['items'])

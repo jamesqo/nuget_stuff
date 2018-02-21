@@ -9,7 +9,7 @@ from distutils.version import LooseVersion
 from itertools import islice
 from requests.exceptions import RequestException
 
-from CsvInfoWriter import CsvInfoWriter
+from CsvPackageWriter import CsvPackageWriter
 from NugetCatalogClient import NugetCatalogClient
 from NugetRecommender import NugetRecommender
 from SmartTagger import SmartTagger
@@ -38,14 +38,14 @@ def write_infos_file():
     cli.load_index()
     cli.load_catalog()
 
-    with CsvInfoWriter(filename=INFOS_FILENAME) as writer:
+    with CsvPackageWriter(filename=INFOS_FILENAME) as writer:
         writer.write_header()
         for page in islice(cli.load_pages(), PAGES_LIMIT):
-            for package in page.load_packages():
+            for package in page.packages:
                 try:
-                    writer.write_info(package.load_info())
+                    writer.write(package.load())
                 except RequestException as e:
-                    log.debug("RequestException raised:\n%s", e)
+                    log.debug("RequestException raised while loading package %s:\n%s", package.id, e)
                     continue
 
 def read_infos_file():
