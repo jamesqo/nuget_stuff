@@ -29,7 +29,7 @@ def _compute_etags_scores(df, tags_vocab):
             if not etag:
                 continue
             tag, weight = etag.split()
-            tag_weights.loc[index, tag] = int(weight)
+            tag_weights[tag][index] = int(weight)
 
     tag_weights = csr_matrix(tag_weights.values)
     return linear_kernel(tag_weights, tag_weights)
@@ -103,9 +103,9 @@ class NugetRecommender(object):
     def predict(self, top_n):
         dict = {}
         for index, row in self._df.iterrows():
-            id_ = self._df.loc[index, 'id']
+            id_ = self._df['id'][index]
             recommendation_indices = self.scores_[index].argsort()[:(-top_n - 1):-1]
-            recommendations = [self._df.loc[i, 'id'] for i in recommendation_indices]
+            recommendations = [self._df['id'][i] for i in recommendation_indices]
             dict[id_] = recommendations
 
             if id_ in recommendations:
