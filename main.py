@@ -77,6 +77,14 @@ def add_days_alive(df):
 
 def add_downloads_per_day(df):
     df['downloads_per_day'] = df['total_downloads'] / df['days_alive']
+    
+    m = df.shape[0]
+    for index in range(m):
+        if df.loc[index, 'downloads_per_day'] < 0:
+            df.loc[index, 'downloads_per_day'] = -1 # total_downloads wasn't available
+        elif df.loc[index, 'downloads_per_day'] < 1:
+            df.loc[index, 'downloads_per_day'] = 1 # Important so np.log doesn't spazz out later
+
     return df
 
 def add_etags(df):

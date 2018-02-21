@@ -38,10 +38,10 @@ class NugetRecommender(object):
     def __init__(self,
                  tags_vocab,
                  weights={'authors': 1, 'description': 2, 'etags': 6},
-                 popularity_scale=.5):
+                 min_scale_popularity=.5):
         self.tags_vocab = tags_vocab
         self.weights = weights
-        self.popularity_scale = popularity_scale
+        self.min_scale_popularity = min_scale_popularity
 
     def fit(self, df):
         # Let m be the number of packages. For each relevant feature like shared tags or similar names/descriptions,
@@ -63,14 +63,20 @@ class NugetRecommender(object):
 
         scores = np.average(feature_scores, weights=feature_weights, axis=0)
 
-        '''
         # Scale the scores according to popularity.
-        ps = df['downloads_per_day'] / max(df['downloads_per_day'])
-        for i in range(len(scores)):
-            p = popularities[i]
-            adjusted_p = p * 1 + (1 - p) * self.popularity_scale
-            scores[:, i] *= adjusted_p
-        '''
+        dpds = df['downloads_per_day']
+        ldpds = np.log(dpds[dpds != -1])
+        mean_ldpd = np.average(ldpds)
+
+        for index, row in df.iterrows():
+            dpd = row['downloads_per_day']
+            if dpd == -1:
+                # TODO: How should we handle this?
+                continue
+            ldpd = np.log(dpd)
+            p = ldpd / mean_ldpd
+            adjusted_p  = p * 1 + (1 - p) * self.min_scale_popularity
+            scores[:, index] *= adjusted_p
 
         # We don't want to recommend the same package based on itself, so set all scores along the diagonal to 0.
         for i in range(len(scores)):
