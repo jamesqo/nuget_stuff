@@ -4,6 +4,7 @@ import argparse
 import logging as log
 import os
 import pandas as pd
+import traceback as tb
 
 from distutils.version import LooseVersion
 from itertools import islice
@@ -45,7 +46,7 @@ def write_infos_file():
                 try:
                     writer.write(package.load())
                 except RequestException as e:
-                    log.debug("RequestException raised while loading package %s:\n%s", package.id, e)
+                    log.debug("RequestException raised while loading package %s:\n%s", package.id, tb.format_exc())
                     continue
 
 def read_infos_file():
