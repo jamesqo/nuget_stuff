@@ -38,7 +38,7 @@ class NugetRecommender(object):
     def __init__(self,
                  tags_vocab,
                  weights={'authors': 1, 'description': 2, 'etags': 8},
-                 min_scale_popularity=.1,
+                 min_scale_popularity=0,
                  min_scale_freshness=.5):
         self.tags_vocab = tags_vocab
         self.weights = weights
