@@ -1,3 +1,7 @@
+import logging as log
+
+from inspect import stack
+
 # Taken from https://stackoverflow.com/a/42379188/4077294
 async def aenumerate(aiterable):
     i = 0
@@ -20,3 +24,7 @@ async def aislice(aiterable, *args):
                 nexti = next(it)
             except StopIteration:
                 return
+
+def log_mcall(level=log.DEBUG):
+    method = stack()[1].function
+    log.log(level, "%s() called", method)
