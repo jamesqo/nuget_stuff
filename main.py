@@ -6,6 +6,7 @@ import logging as log
 import numpy as np
 import os
 import pandas as pd
+import sys
 import traceback as tb
 
 from aiohttp.client_exceptions import ClientError
@@ -152,5 +153,9 @@ async def main():
     print('\n'.join([f"{pair[0]}: {pair[1]}" for pair in pairs]))
 
 if __name__ == '__main__':
+    start = datetime.now()
     loop = aio.get_event_loop()
     loop.run_until_complete(main())
+    end = datetime.now()
+    seconds = (end - start).seconds
+    print(f"Finished generating recommendations in {seconds}s", file=sys.stderr)
