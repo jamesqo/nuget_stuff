@@ -1,7 +1,10 @@
 import enchant
 import logging as log
 import numpy as np
+import pandas as pd
+import sys
 
+from scipy.sparse import csr_matrix
 from sklearn.feature_extraction.text import CountVectorizer
 
 from util import log_mcall
@@ -64,15 +67,15 @@ class SmartTagger(object):
         # IDF (inverse document frequency) formula: log N / n_t
         # N is the number of documents (aka packages)
         # n_t is the number of documents tagged with term t
-        N = df.shape[0]
+        m = df.shape[0] # aka N
         nts = {}
-        for index, row in df.iterrows():
+        for index in range(m):
             #seen = {}
-            for tag in  row['tags'].split(','):
+            for tag in df['tags'][index].split(','):
                 tag = tag.lower()
                 if tag: #and not seen.get(tag, False):
                     nts[tag] = nts.get(tag, 0) + 1
                     #seen[tag] = True
 
-        log10_N = np.log10(N)
-        return {tag: log10_N - np.log10(nt) for tag, nt in nts.items()}
+        log10_m = np.log10(m)
+        return {tag: log10_m - np.log10(nt) for tag, nt in nts.items()}
