@@ -1,80 +1,156 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 
-from Package import Package
-from PackageDetails import PackageDetails
-from util import *
-
-import csv
+import argparse
+import asyncio as aio
+import logging as log
+import numpy as np
 import os
 import pandas as pd
-from pprint import pprint
-from requests.exceptions import Timeout
-from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import linear_kernel
+import traceback as tb
 
-def get_catalog_url(index_data):
-    for resource in index_data["resources"]:
-        if resource["@type"] == "Catalog/3.0.0":
-            return resource["@id"]
-    return None
+from aiohttp.client_exceptions import ClientError
+from datetime import datetime
 
-def get_page_urls(catalog_data):
-    for item in catalog_data["items"]:
-        yield item["@id"]
+from CsvPackageWriter import CsvPackageWriter
+from NugetCatalogClient import NugetCatalogClient
+from NugetContext import NugetContext
+from NugetRecommender import NugetRecommender
+from SmartTagger import SmartTagger
+from util import aislice
 
-def get_packages(page_data):
-    for item in page_data["items"]:
-        yield Package(id=item["nuget:id"], version=item["nuget:version"], details_url=item["@id"])
+INFOS_FILENAME = 'package_infos.csv'
+PAGES_LIMIT = 100
 
-def process_package(package, csv_writer):
-    try:
-        details = package.get_details(timeout=10)
-        details.write_to(csv_writer)
-    except Timeout:
-        pass
+def parse_args():
+    parser = argparse.ArgumentParser()
+    parser.add_argument(
+        '-d', '--debug',
+        help="Print debug information",
+        action='store_const', dest='log_level', const=log.DEBUG,
+        default=log.WARNING
+    )
+    parser.add_argument(
+        '-r', '--refresh-infos',
+        help="Refresh package information",
+        action='store_const', dest='refresh_infos', const=True,
+        default=False
+    )
+    return parser.parse_args()
 
-def process_page(page_url, csv_writer):
-    try:
-        page_data = get_json(page_url, timeout=100)
-        for package in get_packages(page_data):
-            process_package(package, csv_writer)
-    except Timeout:
-        pass
+async def write_infos_file():
+    async with NugetContext() as ctx:
+        with CsvPackageWriter(filename=INFOS_FILENAME) as writer:
+            writer.write_header()
 
-def train(dataframe):
-    tfidf = TfidfVectorizer(analyzer='word',
-                            ngram_range=(1, 3),
-                            min_df=0,
-                            stop_words='english')
-    tfidf_matrix = tfidf.fit_transform(dataframe['description'])
-    cosine_similarities = linear_kernel(tfidf_matrix, tfidf_matrix)
-    for idx, row in dataframe.iterrows():
-        similar_indices = cosine_similarities[idx].argsort()[:-10:-1]
-        similar_items = [(dataframe['id'][i], cosine_similarities[idx][i])
-                        for i in similar_indices]
+            client = await NugetCatalogClient(ctx).load()
+            async for page in aislice(client.load_pages(), PAGES_LIMIT):
+                results = await aio.gather(*[package.load() for package in page.packages], return_exceptions=True)
+                for result in results:
+                    if not isinstance(result, Exception):
+                        package = result
+                        writer.write(package)
+                    else:
+                        exc = result
+                        if isinstance(exc, ClientError) or isinstance(exc, aio.TimeoutError):
+                            # TODO: Figure out how to get arguments needed for tb.format_exception()
+                            log.debug("Error raised while loading %s:\n%s", package.id, tb.format_exc())
+                            continue
+                        raise exc
 
-        id = row['id']
-        similar_items = [it for it in similar_items if it[0] != id]
-        # This 'sum' is turns a list of tuples into a single tuple:
-        # [(1,2), (3,4)] -> (1,2,3,4)
-        flattened = sum(similar_items, ())
-        try_print("Top 10 recommendations for %s: %s" % (id, flattened))
+def read_infos_file():
+    df = pd.read_csv(INFOS_FILENAME, dtype={
+        'authors': str,
+        'created': object,
+        'description': str,
+        'id': str,
+        'is_prerelease': bool,
+        'last_updated': object,
+        'listed': bool,
+        'summary': str,
+        'tags': str,
+        'total_downloads': np.int32,
+        'verified': bool,
+        'version': str
+    }, na_filter=False,
+       parse_dates=['created', 'last_updated'])
 
-def main():
-    index_data = get_json("https://api.nuget.org/v3/index.json")
-    catalog_url = get_catalog_url(index_data)
-    catalog_data = get_json(catalog_url)
-    if not os.path.isfile('package_database.csv') or os.getenv("REFRESH_PACKAGE_DATABASE") == "1":
-        with open('package_database.csv', 'w', encoding='utf-8') as csv_file:
-            csv_writer = csv.writer(csv_file)
-            PackageDetails.write_header(csv_writer)
-            for page_url in get_page_urls(catalog_data):
-                process_page(page_url, csv_writer)
+    # Remove entries with the same id, keeping the one with the highest version
+    df['id_lower'] = df['id'].apply(str.lower)
+    df.drop_duplicates(subset='id_lower', keep='last', inplace=True)
+    df.drop('id_lower', axis=1, inplace=True)
 
-    # TODO: Fix program so it reads directly into a DataFrame instead of putting into a CSV?
-    dataframe = pd.read_csv('package_database.csv')
-    train(dataframe)
+    # Since the id is unique, we can set it as the index
+    #df.set_index('id', inplace=True)
 
-# This allows this file to be both treated as an executable/library
-if __name__ == "__main__":
-    main()
+    # Remove unlisted packages
+    df = df[df['listed']]
+    df.drop('listed', axis=1, inplace=True)
+
+    df.reset_index(drop=True, inplace=True)
+    return df
+
+def add_days_alive(df):
+    now = datetime.now()
+    df['days_alive'] = df['created'].apply(lambda date: max((now - date).days, 1))
+    return df
+
+def add_days_abandoned(df):
+    now = datetime.now()
+    df['days_abandoned'] = df['last_updated'].apply(lambda date: (now - date).days)
+    return df
+
+def add_downloads_per_day(df):
+    df['downloads_per_day'] = df['total_downloads'] / df['days_alive']
+    
+    m = df.shape[0]
+    for index in range(m):
+        # Needed to use .loc[] here to get rid of some warnings.
+        if df['downloads_per_day'][index] < 0:
+            df.loc[index, 'downloads_per_day'] = -1 # total_downloads wasn't available
+        elif df['downloads_per_day'][index] < 1:
+            df.loc[index, 'downloads_per_day'] = 1 # Important so np.log doesn't spazz out later
+
+    return df
+
+def add_etags(df):
+    tagger = SmartTagger()
+    df = tagger.fit_transform(df)
+    return df, tagger
+
+def rank_package(id_, df, imap):
+    # Take advantage of the fact that python sorts tuples lexicographically
+    # (first by 1st element, then by 2nd element, and so on)
+    return -df['downloads_per_day'][imap[id_]], id_.lower()
+
+async def main():
+    args = parse_args()
+    log.basicConfig(level=args.log_level)
+
+    if args.refresh_infos or not os.path.isfile(INFOS_FILENAME):
+        await write_infos_file()
+    df = read_infos_file()
+
+    df = add_days_alive(df)
+    df = add_days_abandoned(df)
+    df = add_downloads_per_day(df)
+    df, tagger = add_etags(df)
+    
+    nr = NugetRecommender(tags_vocab=tagger.tags_vocab_)
+    nr.fit(df)
+    recs = nr.predict(top_n=5)
+
+    # Print packages and their recommendations, sorted by popularity
+    pairs = list(recs.items())
+
+    # This is necessary so we don't run through the dataframe every time sort calls
+    # the key function, which would result in quadratic running time
+    imap = {}
+    for index, row in df.iterrows():
+        imap[row['id']] = index
+
+    pairs.sort(key=lambda pair: rank_package(pair[0], df, imap))
+    print('\n'.join([f"{pair[0]}: {pair[1]}" for pair in pairs]))
+
+if __name__ == '__main__':
+    loop = aio.get_event_loop()
+    loop.run_until_complete(main())

@@ -1,16 +1,22 @@
-import json
-import requests
+# Taken from https://stackoverflow.com/a/42379188/4077294
+async def aenumerate(aiterable):
+    i = 0
+    async for x in aiterable:
+        yield i, x
+        i += 1
 
-def dump_json(data):
-    try_print(json.dumps(data, indent=4, sort_keys=True))
-
-def get_json(url, **kwargs):
-    try_print("Getting JSON from %s" % url)
-    res = requests.get(url, **kwargs)
-    return json.loads(res.text)
-
-def try_print(str):
+# Taken from https://stackoverflow.com/a/42379188/4077294
+async def aislice(aiterable, *args):
+    s = slice(*args)
+    it = iter(range(s.start or 0, s.stop or sys.maxsize, s.step or 1))
     try:
-        print(str)
-    except Exception as e:
-        print("Error printing str: %s" % e)
+        nexti = next(it)
+    except StopIteration:
+        return
+    async for i, element in aenumerate(aiterable):
+        if i == nexti:
+            yield element
+            try:
+                nexti = next(it)
+            except StopIteration:
+                return
