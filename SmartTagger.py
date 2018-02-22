@@ -24,6 +24,11 @@ class SmartTagger(object):
             tag_counts = self._cv.transform([row[feature]])
             for index in tag_counts.nonzero()[1]:
                 term = self._cv_vocab[index]
+                '''
+                # Using tf is the 'correct' implementation but seems to give worse results.
+                tfidf = tag_counts[0, index] * self.idfs_[term]
+                tag_weights[term] = tag_weights.get(term, 0) + weight * tfidf
+                '''
                 idf = self.idfs_[term]
                 tag_weights[term] = tag_weights.get(term, 0) + weight * idf
 
