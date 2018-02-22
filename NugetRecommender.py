@@ -23,13 +23,14 @@ def _compute_etags_scores(df, tags_vocab):
     # Return an m x m matrix of cosine similarities.
 
     m = df.shape[0]
-    tag_weights = pd.DataFrame(0, index=range(m), columns=sorted(tags_vocab))
+    tag_weights = pd.DataFrame(0, dtype=np.float32, index=range(m), columns=sorted(tags_vocab))
+
     for index, etags in enumerate(df['etags']):
         for etag in etags.split(','):
             if not etag:
                 continue
             tag, weight = etag.split()
-            tag_weights[tag][index] = int(weight)
+            tag_weights[tag][index] = np.float32(weight)
 
     tag_weights = csr_matrix(tag_weights.values)
     return linear_kernel(tag_weights, tag_weights)
