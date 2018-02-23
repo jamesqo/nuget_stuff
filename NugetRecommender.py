@@ -3,7 +3,7 @@ import numpy as np
 import pandas as pd
 import sys
 
-from scipy.sparse import csr_matrix
+from scipy.sparse import csr_matrix, lil_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
@@ -29,16 +29,18 @@ def _compute_etags_scores(df, tags_vocab):
     # Return an m x m matrix of cosine similarities.
 
     m = df.shape[0]
-    tag_weights = pd.DataFrame(0, dtype=np.float32, index=range(m), columns=sorted(tags_vocab))
+    t = len(tags_vocab)
+    tag_weights = lil_matrix((m, t))
+    imap = {tag: index for index, tag in enumerate(tags_vocab)}
 
-    for index, etags in enumerate(df['etags']):
+    for rowidx, etags in enumerate(df['etags']):
+        if not etags:
+            continue
         for etag in etags.split(','):
-            if not etag:
-                continue
             tag, weight = etag.split()
-            tag_weights[tag][index] = np.float32(weight)
+            colidx = imap[tag]
+            tag_weights[rowidx, colidx] = np.float32(weight)
 
-    tag_weights = csr_matrix(tag_weights.values)
     return linear_kernel(tag_weights, tag_weights)
 
 class NugetRecommender(object):
