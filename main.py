@@ -142,7 +142,7 @@ async def main():
     df = add_downloads_per_day(df)
     df, tagger = add_etags(df)
     
-    nr = NugetRecommender(tags_vocab=tagger.tags_vocab_)
+    nr = NugetRecommender(tags_vocab=tagger.vocab_)
     nr.fit(df)
     recs = nr.predict(top_n=5)
 
