@@ -56,8 +56,8 @@ class SmartTagger(object):
                     idf = self.idfs_[term]
                     weights[rowidx, colidx] += weight * idf
 
-        etags_col = pd.Series(dtype=str, index=range(m))
-        etags_col[:] = ''
+        # Workaround for pandas-dev/pandas#19851
+        etags_col = pd.Series('', dtype=object, index=range(m))
         weights = weights.tocsr()
         nonzero = zip(*weights.nonzero())
         for rowidx, entries in groupby(nonzero, key=lambda entry: entry[0]):

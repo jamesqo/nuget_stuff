@@ -62,18 +62,18 @@ async def write_infos_file():
 def read_infos_file():
     log_mcall()
     df = pd.read_csv(INFOS_FILENAME, dtype={
-        'authors': str,
+        'authors': object,
         'created': object,
-        'description': str,
-        'id': str,
+        'description': object,
+        'id': object,
         'is_prerelease': bool,
         'last_updated': object,
         'listed': bool,
-        'summary': str,
-        'tags': str,
+        'summary': object,
+        'tags': object,
         'total_downloads': np.int32,
         'verified': bool,
-        'version': str
+        'version': object
     }, na_filter=False,
        parse_dates=['created', 'last_updated'])
 
