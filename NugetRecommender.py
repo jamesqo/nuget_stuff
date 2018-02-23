@@ -1,6 +1,7 @@
 import logging as log
 import numpy as np
 import pandas as pd
+import sys
 
 from scipy.sparse import csr_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -56,12 +57,13 @@ class NugetRecommender(object):
     def _scale_by_popularity(self, scores, df):
         log_mcall()
         dpds = df['downloads_per_day']
-        ldpds = np.log(dpds[dpds != -1])
-        mean_ldpd, max_ldpd = np.average(ldpds), np.max(ldpds)
+        dpds_valid = dpds[dpds != -1]
+        ldpds_valid = np.log(dpds_valid)
+        mean_ldpd, max_ldpd = np.average(ldpds_valid), np.max(ldpds_valid)
 
         m = df.shape[0]
         for index in range(m):
-            dpd = df['downloads_per_day'][index]
+            dpd = dpds[index]
             if dpd == -1:
                 # We don't have the downloads_per_day metric for this package, so let's assume that
                 # this is an "average" package.
@@ -87,15 +89,19 @@ class NugetRecommender(object):
     def _scale_by_freshness(self, scores, df):
         log_mcall()
         # 'Freshness' corresponds to how recently the package was updated
-        das = df['days_abandoned'][~df['last_updated'].isnull()]
-        mean_da, max_da = np.average(das), np.max(das)
+        das = df['days_abandoned']
+        #das_valid = das[~das.isna()]
+        assert all(~das.isna())
+        das_valid = das
+        mean_da, max_da = np.average(das_valid), np.max(das_valid)
 
         m = df.shape[0]
         for index in range(m):
-            if df['last_updated'][index] is None:
-                # TODO: This never actually runs.
+            '''
+            if pd.isna(das[index]):
                 continue
-            da = df['days_abandoned'][index]
+            '''
+            da = das[index]
             s = ((da - mean_da) / max_da) + 1 # Stinkiness
             f = 1 + (1 - s) # Freshness
 

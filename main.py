@@ -11,6 +11,7 @@ import traceback as tb
 
 from aiohttp.client_exceptions import ClientError
 from datetime import datetime
+from math import nan
 
 from CsvPackageWriter import CsvPackageWriter
 from NugetCatalogClient import NugetCatalogClient
@@ -60,7 +61,10 @@ async def write_infos_file():
                         raise exc
 
 def read_infos_file():
+    #DEFAULT_DATETIME = datetime(year=1900, month=1, day=1)
+
     log_mcall()
+    date_features = ['created', 'last_updated']
     df = pd.read_csv(INFOS_FILENAME, dtype={
         'authors': object,
         'created': object,
@@ -75,7 +79,7 @@ def read_infos_file():
         'verified': bool,
         'version': object
     }, na_filter=False,
-       parse_dates=['created', 'last_updated'])
+       parse_dates=date_features)
 
     # Remove entries with the same id, keeping the one with the highest version
     df['id_lower'] = df['id'].apply(str.lower)
@@ -89,6 +93,14 @@ def read_infos_file():
     df = df[df['listed']]
     df.drop('listed', axis=1, inplace=True)
 
+    # This doesn't appear to be necessary, as all the relevant rows are gone after
+    # removing duplicates and dropping unlisted packages
+    '''
+    # Set missing date values to NaN
+    for feature in date_features:
+        df.loc[df[feature] == DEFAULT_DATETIME, feature] = nan
+    '''
+
     df.reset_index(drop=True, inplace=True)
     return df
 
@@ -101,7 +113,7 @@ def add_days_alive(df):
 def add_days_abandoned(df):
     log_mcall()
     now = datetime.now()
-    df['days_abandoned'] = df['last_updated'].apply(lambda date: (now - date).days)
+    df['days_abandoned'] = df['last_updated'].apply(lambda date: max((now - date).days, 1))
     return df
 
 def add_downloads_per_day(df):
@@ -110,8 +122,8 @@ def add_downloads_per_day(df):
     
     m = df.shape[0]
     for index in range(m):
-        # Needed to use .loc[] here to get rid of some warnings.
         if df['downloads_per_day'][index] < 0:
+            # Needed to use .loc[] here to get rid of some warnings.
             df.loc[index, 'downloads_per_day'] = -1 # total_downloads wasn't available
         elif df['downloads_per_day'][index] < 1:
             df.loc[index, 'downloads_per_day'] = 1 # Important so np.log doesn't spazz out later
