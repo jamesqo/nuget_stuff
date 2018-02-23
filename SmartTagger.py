@@ -14,11 +14,29 @@ class SmartTagger(object):
     def __init__(self, weights={'description': 4, 'id': 6, 'tags': 2}):
         self._english = enchant.Dict('en_US')
         self.weights = weights
+        self._hack_word_cache = {}
     
     def _is_hack_word(self, term):
-        return not self._english.check(term)
+        cache = self._hack_word_cache
+        result = cache.get(term, None)
+        if result is not None:
+            return result
+        result = not self._english.check(term)
+        cache[term] = result
+        return result
 
-    def _make_etags(self, rowidx, colidxs, weights):
+    def _make_etags(self, weights):
+        log_mcall()
+        m = weights.shape[0]
+        etags_col = pd.Series('', dtype=object, index=range(m))
+        nonzero = zip(*weights.nonzero())
+        for rowidx, entries in groupby(nonzero, key=lambda entry: entry[0]):
+            colidxs = [entry[1] for entry in entries]
+            etags = ','.join(self._make_etags_for_row(weights, rowidx, colidxs))
+            etags_col[rowidx] = etags
+        return etags_col
+
+    def _make_etags_for_row(self, weights, rowidx, colidxs):
         etags = []
         for colidx in colidxs:
             tag = self.vocab_[colidx]
@@ -26,9 +44,8 @@ class SmartTagger(object):
             etags.append(f'{tag} {weight}')
         return etags
 
-    def _enrich_tags(self, df):
+    def _compute_weights(self, df):
         log_mcall()
-
         m = df.shape[0]
         t = len(self.vocab_)
         weights = lil_matrix((m, t))
@@ -56,16 +73,11 @@ class SmartTagger(object):
                     idf = self.idfs_[term]
                     weights[rowidx, colidx] += weight * idf
 
-        # Workaround for pandas-dev/pandas#19851
-        etags_col = pd.Series('', dtype=object, index=range(m))
-        weights = weights.tocsr()
-        nonzero = zip(*weights.nonzero())
-        for rowidx, entries in groupby(nonzero, key=lambda entry: entry[0]):
-            colidxs = [entry[1] for entry in entries]
-            etags = ','.join(self._make_etags(rowidx, colidxs, weights))
-            etags_col[rowidx] = etags
+        return weights
 
-        df['etags'] = etags_col
+    def _enrich_tags(self, df):
+        weights = self._compute_weights(df)
+        df['etags'] = self._make_etags(weights)
         return df
 
     def fit_transform(self, df):
