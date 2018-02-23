@@ -6,6 +6,7 @@ import logging as log
 import numpy as np
 import os
 import pandas as pd
+import sys
 import traceback as tb
 
 from aiohttp.client_exceptions import ClientError
@@ -16,7 +17,7 @@ from NugetCatalogClient import NugetCatalogClient
 from NugetContext import NugetContext
 from NugetRecommender import NugetRecommender
 from SmartTagger import SmartTagger
-from util import aislice
+from util import aislice, log_mcall
 
 INFOS_FILENAME = 'package_infos.csv'
 PAGES_LIMIT = 100
@@ -38,6 +39,7 @@ def parse_args():
     return parser.parse_args()
 
 async def write_infos_file():
+    log_mcall()
     async with NugetContext() as ctx:
         with CsvPackageWriter(filename=INFOS_FILENAME) as writer:
             writer.write_header()
@@ -58,6 +60,7 @@ async def write_infos_file():
                         raise exc
 
 def read_infos_file():
+    log_mcall()
     df = pd.read_csv(INFOS_FILENAME, dtype={
         'authors': str,
         'created': object,
@@ -90,16 +93,19 @@ def read_infos_file():
     return df
 
 def add_days_alive(df):
+    log_mcall()
     now = datetime.now()
     df['days_alive'] = df['created'].apply(lambda date: max((now - date).days, 1))
     return df
 
 def add_days_abandoned(df):
+    log_mcall()
     now = datetime.now()
     df['days_abandoned'] = df['last_updated'].apply(lambda date: (now - date).days)
     return df
 
 def add_downloads_per_day(df):
+    log_mcall()
     df['downloads_per_day'] = df['total_downloads'] / df['days_alive']
     
     m = df.shape[0]
@@ -113,6 +119,7 @@ def add_downloads_per_day(df):
     return df
 
 def add_etags(df):
+    log_mcall()
     tagger = SmartTagger()
     df = tagger.fit_transform(df)
     return df, tagger
@@ -135,7 +142,7 @@ async def main():
     df = add_downloads_per_day(df)
     df, tagger = add_etags(df)
     
-    nr = NugetRecommender(tags_vocab=tagger.tags_vocab_)
+    nr = NugetRecommender(tags_vocab=tagger.vocab_)
     nr.fit(df)
     recs = nr.predict(top_n=5)
 
@@ -152,5 +159,9 @@ async def main():
     print('\n'.join([f"{pair[0]}: {pair[1]}" for pair in pairs]))
 
 if __name__ == '__main__':
+    start = datetime.now()
     loop = aio.get_event_loop()
     loop.run_until_complete(main())
+    end = datetime.now()
+    seconds = (end - start).seconds
+    print(f"Finished generating recommendations in {seconds}s", file=sys.stderr)

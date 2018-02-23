@@ -6,18 +6,23 @@ from scipy.sparse import csr_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
+from util import log_mcall
+
 def _compute_authors_scores(df):
+    log_mcall()
     vectorizer = TfidfVectorizer(ngram_range=(2, 2))
     tfidf_matrix = vectorizer.fit_transform(df['authors'])
     return linear_kernel(tfidf_matrix, tfidf_matrix)
 
 def _compute_description_scores(df):
+    log_mcall()
     vectorizer = TfidfVectorizer(ngram_range=(1, 3),
                                  stop_words='english')
     tfidf_matrix = vectorizer.fit_transform(df['description'])
     return linear_kernel(tfidf_matrix, tfidf_matrix)
 
 def _compute_etags_scores(df, tags_vocab):
+    log_mcall()
     # Let m be the number of packages and t be the number of tags.
     # Build an m x t matrix where M[i, j] represents the weight of package i along tag j.
     # Return an m x m matrix of cosine similarities.
@@ -40,41 +45,16 @@ class NugetRecommender(object):
                  tags_vocab,
                  weights={'authors': 1, 'description': 2, 'etags': 8},
                  min_scale_popularity=0,
-                 min_scale_freshness=.25):
+                 min_scale_freshness=.25,
+                 icon_bonus=.1):
         self.tags_vocab = tags_vocab
         self.weights = weights
         self.min_scale_popularity = min_scale_popularity
         self.min_scale_freshness = min_scale_freshness
+        self.icon_bonus = icon_bonus
 
-    def fit(self, df):
-        # Let m be the number of packages. For each relevant feature like shared tags or similar names/descriptions,
-        # compute a m x m matrix called M, where M[i, j] represents how relevant package j is to package i based on
-        # that feature alone.
-        # Set 'scores' to an m x m matrix of aggregate scores by taking a weighted average of these matrices.
-
-        feature_scores = [
-            _compute_authors_scores(df),
-            _compute_description_scores(df),
-            _compute_etags_scores(df, self.tags_vocab),
-        ]
-
-        feature_weights = [
-            self.weights['authors'],
-            self.weights['description'],
-            self.weights['etags'],
-        ]
-
-        # The below line is causing NumPy to raise a MemoryError for large datasets, because it allocates a whole
-        # new m x m matrices. Instead, we'll modify existing matrices in place to forego allocations.
-        #scores = np.average(feature_scores, weights=feature_weights, axis=0)
-        scores = feature_scores[0]
-        scores *= feature_weights[0]
-        for i in range(1, len(feature_scores)):
-            feature_scores[i] *= feature_weights[i]
-            scores += feature_scores[i]
-        scores /= sum(feature_weights)
-
-        # Scale the scores according to popularity.
+    def _scale_by_popularity(self, scores, df):
+        log_mcall()
         dpds = df['downloads_per_day']
         ldpds = np.log(dpds[dpds != -1])
         mean_ldpd, max_ldpd = np.average(ldpds), np.max(ldpds)
@@ -103,7 +83,9 @@ class NugetRecommender(object):
             adjusted_p  = p * 1 + (1 - p) * self.min_scale_popularity
             scores[:, index] *= adjusted_p
 
-        # Scale the scores according to 'freshness' (e.g. how recently the package has been updated).
+    def _scale_by_freshness(self, scores, df):
+        log_mcall()
+        # 'Freshness' corresponds to how recently the package was updated
         das = df['days_abandoned'][~df['last_updated'].isnull()]
         mean_da, max_da = np.average(das), np.max(das)
 
@@ -117,14 +99,49 @@ class NugetRecommender(object):
             adjusted_f = f * 1 + (1 - f) * self.min_scale_freshness
             scores[:, index] *= adjusted_f
 
+    def _remove_diagonal(self, scores):
         # We don't want to recommend the same package based on itself, so set all scores along the diagonal to 0.
         for i in range(len(scores)):
             scores[i, i] = 0
+
+    def fit(self, df):
+        log_mcall()
+        # Let m be the number of packages. For each relevant feature like shared tags or similar names/descriptions,
+        # compute a m x m matrix called M, where M[i, j] represents how relevant package j is to package i based on
+        # that feature alone.
+        # Set 'scores' to an m x m matrix of aggregate scores by taking a weighted average of these matrices.
+
+        feature_scores = [
+            _compute_authors_scores(df),
+            _compute_description_scores(df),
+            _compute_etags_scores(df, self.tags_vocab),
+        ]
+
+        feature_weights = [
+            self.weights['authors'],
+            self.weights['description'],
+            self.weights['etags'],
+        ]
+
+        # The below line is causing NumPy to raise a MemoryError for large datasets, because it allocates a whole
+        # new m x m matrices. Instead, we'll modify existing matrices in place to forego allocations.
+        #scores = np.average(feature_scores, weights=feature_weights, axis=0)
+        scores = feature_scores[0]
+        scores *= feature_weights[0]
+        for i in range(1, len(feature_scores)):
+            feature_scores[i] *= feature_weights[i]
+            scores += feature_scores[i]
+        scores /= sum(feature_weights)
+
+        self._scale_by_popularity(scores, df)
+        self._scale_by_freshness(scores, df)
+        self._remove_diagonal(scores)
 
         self._df = df
         self.scores_ = scores
 
     def predict(self, top_n):
+        log_mcall()
         dict = {}
         for index, row in self._df.iterrows():
             id_ = self._df['id'][index]
