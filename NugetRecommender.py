@@ -59,8 +59,9 @@ class NugetRecommender(object):
         ldpds = np.log(dpds[dpds != -1])
         mean_ldpd, max_ldpd = np.average(ldpds), np.max(ldpds)
 
-        for index, row in df.iterrows():
-            dpd = row['downloads_per_day']
+        m = df.shape[0]
+        for index in range(m):
+            dpd = df['downloads_per_day'][index]
             if dpd == -1:
                 # We don't have the downloads_per_day metric for this package, so let's assume that
                 # this is an "average" package.
@@ -89,12 +90,14 @@ class NugetRecommender(object):
         das = df['days_abandoned'][~df['last_updated'].isnull()]
         mean_da, max_da = np.average(das), np.max(das)
 
-        for index, row in df.iterrows():
-            if row['last_updated'] is None:
+        m = df.shape[0]
+        for index in range(m):
+            if df['last_updated'][index] is None:
+                # TODO: This never actually runs.
                 continue
-            da = row['days_abandoned']
-            s = ((da - mean_da) / max_da) + 1 # stinkiness
-            f = 1 + (1 - s) # freshness
+            da = df['days_abandoned'][index]
+            s = ((da - mean_da) / max_da) + 1 # Stinkiness
+            f = 1 + (1 - s) # Freshness
 
             adjusted_f = f * 1 + (1 - f) * self.min_scale_freshness
             scores[:, index] *= adjusted_f
@@ -142,17 +145,13 @@ class NugetRecommender(object):
 
     def predict(self, top_n):
         log_mcall()
-        dict = {}
-        for index, row in self._df.iterrows():
+
+        result = {}
+        m = self._df.shape[0]
+        for index in range(m):
             id_ = self._df['id'][index]
             recommendation_indices = self.scores_[index].argsort()[:(-top_n - 1):-1]
             recommendations = [self._df['id'][i] for i in recommendation_indices]
-            dict[id_] = recommendations
+            result[id_] = recommendations
 
-            if id_ in recommendations:
-                log.debug("%s was in its own recommendation list!", id_)
-                log.debug("Index of %s: %d", id_, index)
-                log.debug("Recommendation indices for %s: %s", id_, recommendation_indices)
-                log.debug("Recommendations for %s: %s", id_, recommendations)
-
-        return dict
+        return result
