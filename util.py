@@ -1,5 +1,6 @@
 import logging as log
 
+from datetime import date, datetime, timedelta
 from inspect import stack
 
 # Taken from https://stackoverflow.com/a/42379188/4077294
@@ -28,3 +29,9 @@ async def aislice(aiterable, *args):
 def log_mcall(level=log.DEBUG):
     method = stack()[1].function
     log.log(level, "%s() called", method)
+
+def tomorrow(as_datetime=False):
+    result = date.today() + timedelta(days=1)
+    if as_datetime:
+        result = datetime.fromordinal(result.toordinal())
+    return result

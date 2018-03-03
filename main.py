@@ -18,10 +18,11 @@ from NugetCatalogClient import NugetCatalogClient
 from NugetContext import NugetContext
 from NugetRecommender import NugetRecommender
 from SmartTagger import SmartTagger
-from util import aislice, log_mcall
+from util import aislice, log_mcall, tomorrow
 
 INFOS_FILENAME = 'package_infos.csv'
 PAGES_LIMIT = 100
+BASE_DATETIME = tomorrow(as_datetime=True)
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -106,14 +107,12 @@ def read_infos_file():
 
 def add_days_alive(df):
     log_mcall()
-    now = datetime.now()
-    df['days_alive'] = df['created'].apply(lambda date: max((now - date).days, 1))
+    df['days_alive'] = df['created'].apply(lambda dt: max((BASE_DATETIME - dt).days, 1))
     return df
 
 def add_days_abandoned(df):
     log_mcall()
-    now = datetime.now()
-    df['days_abandoned'] = df['last_updated'].apply(lambda date: max((now - date).days, 1))
+    df['days_abandoned'] = df['last_updated'].apply(lambda dt: max((BASE_DATETIME - dt).days, 1))
     return df
 
 def add_downloads_per_day(df):
