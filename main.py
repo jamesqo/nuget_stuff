@@ -122,10 +122,12 @@ def add_downloads_per_day(df):
     
     m = df.shape[0]
     for index in range(m):
+        '''
         if df['downloads_per_day'][index] < 0:
             # Needed to use .loc[] here to get rid of some warnings.
             df.loc[index, 'downloads_per_day'] = -1 # total_downloads wasn't available
-        elif df['downloads_per_day'][index] < 1:
+        '''
+        if df['downloads_per_day'][index] < 1:
             df.loc[index, 'downloads_per_day'] = 1 # Important so np.log doesn't spazz out later
 
     return df
