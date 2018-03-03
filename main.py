@@ -119,17 +119,9 @@ def add_days_abandoned(df):
 def add_downloads_per_day(df):
     log_mcall()
     df['downloads_per_day'] = df['total_downloads'] / df['days_alive']
-    
-    m = df.shape[0]
-    for index in range(m):
-        '''
-        if df['downloads_per_day'][index] < 0:
-            # Needed to use .loc[] here to get rid of some warnings.
-            df.loc[index, 'downloads_per_day'] = -1 # total_downloads wasn't available
-        '''
-        if df['downloads_per_day'][index] < 1:
-            df.loc[index, 'downloads_per_day'] = 1 # Important so np.log doesn't spazz out later
-
+    #df.loc[df['downloads_per_day'] < 0, 'downloads_per_day'] = -1 # total_downloads wasn't available
+    assert all(df['downloads_per_day'] >= 0)
+    df.loc[df['downloads_per_day'] < 1, 'downloads_per_day'] = 1 # Important so np.log doesn't spazz out later
     return df
 
 def add_etags(df):
