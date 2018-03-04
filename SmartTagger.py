@@ -94,12 +94,12 @@ class SmartTagger(object):
         m = df.shape[0] # aka N
         nts = {}
         for index in range(m):
-            #seen = {}
+            seen = {}
             for tag in df['tags'][index].split(','):
                 tag = tag.lower()
-                if tag: #and not seen.get(tag, False):
+                if tag and not seen.get(tag, False):
                     nts[tag] = nts.get(tag, 0) + 1
-                    #seen[tag] = True
+                    seen[tag] = True
 
         log10_m = np.log10(m)
         return {tag: log10_m - np.log10(nt) for tag, nt in nts.items()}
