@@ -160,7 +160,7 @@ class NugetRecommender(object):
             id_ = self._df['id'][index]
             # Negating the scores is a trick to make argsort sort by descending.
             recommendation_indices = (-self.scores_[index]).argsort()
-            #recommendation_indices = (i for i in recommendation_indices if self._df['downloads_per_day'][i] >= 10)
+            recommendation_indices = (i for i in recommendation_indices if self._df['downloads_per_day'][i] > 1)
             recommendation_indices = islice(recommendation_indices, top_n)
             recommendations = [self._df['id'][i] for i in recommendation_indices]
             result[id_] = recommendations
