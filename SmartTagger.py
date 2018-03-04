@@ -1,3 +1,4 @@
+import enchant
 import logging as log
 import numpy as np
 import pandas as pd
@@ -11,13 +12,19 @@ from util import log_mcall
 
 class SmartTagger(object):
     def __init__(self,
-                 blackwords,
                  weights={'description': 4, 'id': 6, 'tags': 2}):
-        self.blackwords = set([word.lower() for word in blackwords])
         self.weights = weights
+        self._english = enchant.Dict('en_US')
+        self._hackword_cache = {}
     
     def _is_hackword(self, term):
-        return term not in self.blackwords
+        cache = self._hackword_cache
+        result = cache.get(term, None)
+        if result is not None:
+            return result
+        result = not self._english.check(term)
+        cache[term] = result
+        return result
 
     def _make_etags(self, weights):
         log_mcall()

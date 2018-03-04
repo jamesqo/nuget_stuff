@@ -22,7 +22,7 @@ from SmartTagger import SmartTagger
 from util import aislice, log_mcall, tomorrow
 
 INFOS_FILENAME = 'package_infos.csv'
-WORDS_FILENAME = 'wordlist.csv'
+#WORDS_FILENAME = 'wordlist.csv'
 ETAGS_FILENAME = 'etags.log'
 
 PAGES_LIMIT = 100
@@ -148,11 +148,14 @@ def add_downloads_per_day(df):
 
 def add_etags(df):
     log_mcall()
+    '''
     words_df = pd.read_csv(WORDS_FILENAME,
                            usecols=['Word'],
                            dtype={'Word': object})
     ignored_words = list(words_df['Word'])
     tagger = SmartTagger(blackwords=ignored_words)
+    '''
+    tagger = SmartTagger()
     df = tagger.fit_transform(df)
     return df, tagger
 
