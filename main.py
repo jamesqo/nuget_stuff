@@ -142,12 +142,20 @@ def add_downloads_per_day(df):
 def add_etags(df):
     log_mcall()
     words_df = pd.read_csv(WORDS_FILENAME,
-                            usecols=['Word'],
-                            dtype={'Word': object})
+                           usecols=['Word'],
+                           dtype={'Word': object})
     ignored_words = list(words_df['Word'])
     tagger = SmartTagger(blackwords=ignored_words)
     df = tagger.fit_transform(df)
     return df, tagger
+
+def dump_etags(df, filename):
+    log_mcall()
+    m = df.shape[0]
+    with open(filename, 'w', encoding='utf-8') as file:
+        for index in range(m):
+            line = f"{df['id'][index]}: {df['etags'][index]}\n"
+            file.write(line)
 
 def rank_package(id_, df, imap):
     # Take advantage of the fact that python sorts tuples lexicographically
@@ -166,6 +174,9 @@ async def main():
     df = add_days_abandoned(df)
     df = add_downloads_per_day(df)
     df, tagger = add_etags(df)
+
+    if args.etags_filename is not None:
+        dump_etags(df, filename=args.etags_filename)
     
     nr = NugetRecommender(tags_vocab=tagger.vocab_)
     nr.fit(df)
