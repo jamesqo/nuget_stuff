@@ -155,14 +155,20 @@ class NugetRecommender(object):
         log_mcall()
 
         result = {}
-        m = self._df.shape[0]
+        df = self._df
+        m = df.shape[0]
         for index in range(m):
-            id_ = self._df['id'][index]
+            ids, dpds = df['id'], df['downloads_per_day']
+            id_, dpd = ids[index], dpds[index]
+
             # Negating the scores is a trick to make argsort sort by descending.
             recommendation_indices = (-self.scores_[index]).argsort()
-            recommendation_indices = (i for i in recommendation_indices if self._df['downloads_per_day'][i] > 1)
+            # Filter out unpopular packages.
+            recommendation_indices = (i for i in recommendation_indices if dpds[i] > 1)
+            # Filter out packages that are more than 100x unpopular relative to this one.
+            recommendation_indices = (i for i in recommendation_indices if dpd < 500 * dpds[i])
             recommendation_indices = islice(recommendation_indices, top_n)
-            recommendations = [self._df['id'][i] for i in recommendation_indices]
+            recommendations = [ids[i] for i in recommendation_indices]
             result[id_] = recommendations
 
         return result
