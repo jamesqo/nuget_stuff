@@ -1,4 +1,3 @@
-import enchant
 import logging as log
 import numpy as np
 import pandas as pd
@@ -11,19 +10,14 @@ from sklearn.feature_extraction.text import CountVectorizer
 from util import log_mcall
 
 class SmartTagger(object):
-    def __init__(self, weights={'description': 4, 'id': 6, 'tags': 2}):
-        self._english = enchant.Dict('en_US')
+    def __init__(self,
+                 blackwords,
+                 weights={'description': 4, 'id': 6, 'tags': 2}):
+        self.blackwords = set(blackwords)
         self.weights = weights
-        self._hack_word_cache = {}
     
     def _is_hack_word(self, term):
-        cache = self._hack_word_cache
-        result = cache.get(term, None)
-        if result is not None:
-            return result
-        result = not self._english.check(term)
-        cache[term] = result
-        return result
+        return term not in self.blackwords
 
     def _make_etags(self, weights):
         log_mcall()

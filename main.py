@@ -21,6 +21,7 @@ from SmartTagger import SmartTagger
 from util import aislice, log_mcall, tomorrow
 
 INFOS_FILENAME = 'package_infos.csv'
+WORDS_FILENAME = 'wordlist.csv'
 PAGES_LIMIT = 100
 BASE_DATETIME = tomorrow(as_datetime=True)
 
@@ -125,7 +126,11 @@ def add_downloads_per_day(df):
 
 def add_etags(df):
     log_mcall()
-    tagger = SmartTagger()
+    words_df = pd.read_csv(WORDS_FILENAME,
+                            usecols=['Word'],
+                            dtype={'Word': object})
+    ignored_words = list(words_df['Word'])
+    tagger = SmartTagger(blackwords=ignored_words)
     df = tagger.fit_transform(df)
     return df, tagger
 
