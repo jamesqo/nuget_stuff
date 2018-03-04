@@ -10,6 +10,7 @@ import sys
 import traceback as tb
 
 from aiohttp.client_exceptions import ClientError
+from argparse import ArgumentParser
 from datetime import datetime
 from math import nan
 
@@ -22,22 +23,36 @@ from util import aislice, log_mcall, tomorrow
 
 INFOS_FILENAME = 'package_infos.csv'
 WORDS_FILENAME = 'wordlist.csv'
+ETAGS_FILENAME = 'etags.log'
+
 PAGES_LIMIT = 100
 BASE_DATETIME = tomorrow(as_datetime=True)
 
 def parse_args():
-    parser = argparse.ArgumentParser()
+    parser = ArgumentParser()
     parser.add_argument(
         '-d', '--debug',
-        help="Print debug information",
-        action='store_const', dest='log_level', const=log.DEBUG,
-        default=log.WARNING
+        help="print debug information",
+        action='store_const',
+        const=log.DEBUG,
+        default=log.WARNING,
+        dest='log_level'
     )
     parser.add_argument(
         '-r', '--refresh-infos',
-        help="Refresh package information",
-        action='store_const', dest='refresh_infos', const=True,
-        default=False
+        help="refresh package information",
+        action='store_true',
+        default=False,
+        dest='refresh_infos'
+    )
+    parser.add_argument(
+        '-t', '--tag-dump',
+        metavar='FILE',
+        help=f"dump enriched tags to FILE (default: {ETAGS_FILENAME})",
+        action='store',
+        nargs='?',
+        const=ETAGS_FILENAME,
+        dest='etags_filename'
     )
     return parser.parse_args()
 
