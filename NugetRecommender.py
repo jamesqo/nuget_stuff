@@ -166,7 +166,7 @@ class NugetRecommender(object):
             # Filter out unpopular packages.
             recommendation_indices = (i for i in recommendation_indices if dpds[i] > 1)
             # Filter out packages that are more than 100x unpopular relative to this one.
-            recommendation_indices = (i for i in recommendation_indices if dpd < 500 * dpds[i])
+            recommendation_indices = (i for i in recommendation_indices if dpd < 250 * dpds[i])
             recommendation_indices = islice(recommendation_indices, top_n)
             recommendations = [ids[i] for i in recommendation_indices]
             result[id_] = recommendations
