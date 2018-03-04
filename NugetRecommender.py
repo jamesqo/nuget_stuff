@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import sys
 
+from itertools import islice
 from scipy.sparse import csr_matrix, lil_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
@@ -157,7 +158,10 @@ class NugetRecommender(object):
         m = self._df.shape[0]
         for index in range(m):
             id_ = self._df['id'][index]
-            recommendation_indices = self.scores_[index].argsort()[:(-top_n - 1):-1]
+            # Negating the scores is a trick to make argsort sort by descending.
+            recommendation_indices = (-self.scores_[index]).argsort()
+            #recommendation_indices = (i for i in recommendation_indices if self._df['downloads_per_day'][i] >= 10)
+            recommendation_indices = islice(recommendation_indices, top_n)
             recommendations = [self._df['id'][i] for i in recommendation_indices]
             result[id_] = recommendations
 
