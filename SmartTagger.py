@@ -13,10 +13,10 @@ class SmartTagger(object):
     def __init__(self,
                  blackwords,
                  weights={'description': 4, 'id': 6, 'tags': 2}):
-        self.blackwords = set(blackwords)
+        self.blackwords = set([word.lower() for word in blackwords])
         self.weights = weights
     
-    def _is_hack_word(self, term):
+    def _is_hackword(self, term):
         return term not in self.blackwords
 
     def _make_etags(self, weights):
@@ -47,8 +47,7 @@ class SmartTagger(object):
 
         weight = self.weights['tags']
         for rowidx in range(m):
-            tags = df['tags'][rowidx]
-            for tag in tags.split(','):
+            for tag in df['tags'][rowidx].split(','):
                 tag = tag.lower()
                 if tag:
                     colidx = imap[tag]
@@ -61,8 +60,7 @@ class SmartTagger(object):
             counts = cv.transform(df[feature])
             for rowidx, colidx in zip(*counts.nonzero()):
                 term = self.vocab_[colidx]
-                # Ignore words that aren't related to programming
-                if self._is_hack_word(term):
+                if self._is_hackword(term):
                     # IDF alone seems to be working better than TF-IDF, so ignore TF
                     idf = self.idfs_[term]
                     weights[rowidx, colidx] += weight * idf
@@ -76,7 +74,9 @@ class SmartTagger(object):
 
     def fit_transform(self, df):
         log_mcall()
-        self.vocab_ = sorted(set([tag.lower() for tags in df['tags'] for tag in tags.split(',') if tag]))
+        self.vocab_ = sorted(set([tag.lower() for tags in df['tags']
+                                              for tag in tags.split(',')
+                                              if tag]))
         self.idfs_ = self._compute_idfs(df)
         return self._enrich_tags(df)
 
