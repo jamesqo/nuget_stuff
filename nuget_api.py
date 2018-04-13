@@ -5,6 +5,12 @@ from urllib.parse import urlencode
 
 from utils.http import JSONClient
 
+DEFAULT_INDEX = 'https://api.nuget.org/v3/index.json'
+
+CATALOG_TYPE = 'Catalog/3.0.0'
+REGISTRATION_TYPE = 'RegistrationsBaseUrl'
+SEARCH_TYPE = 'SearchQueryService'
+
 class NugetCatalogClient(object):
     def __init__(self, ctx):
         self._ctx = ctx
@@ -14,10 +20,10 @@ class NugetCatalogClient(object):
         await self.load_catalog()
         return self
 
-    async def load_index(self, index_url='https://api.nuget.org/v3/index.json'):
+    async def load_index(self, index_url=DEFAULT_INDEX):
         index_json = await self._ctx.client.get(index_url)
         nodes = index_json['resources']
-        catalog_url = next(node['@id'] for node in nodes if node['@type'] == 'Catalog/3.0.0')
+        catalog_url = next(node['@id'] for node in nodes if node['@type'] == CATALOG_TYPE)
         self._catalog_url = catalog_url.rstrip('/')
 
     async def load_catalog(self):
@@ -25,6 +31,8 @@ class NugetCatalogClient(object):
 
     async def load_pages(self):
         page_urls = [node['@id'] for node in self._catalog_json['items']]
+        # Note: Do NOT attempt to use asyncio.gather here. It's crucial that we only load one page at a time,
+        # so we don't bite off more than we can chew.
         for url in page_urls:
             yield await NugetPage(url, self._ctx).load()
 
@@ -94,10 +102,10 @@ class NugetRegistrationClient(object):
         await self.load_index()
         return self
 
-    async def load_index(self, index_url='https://api.nuget.org/v3/index.json'):
+    async def load_index(self, index_url=DEFAULT_INDEX):
         index_json = await self._ctx.client.get(index_url)
         nodes = index_json['resources']
-        reg_base = next(node['@id'] for node in nodes if node['@type'] == 'RegistrationsBaseUrl')
+        reg_base = next(node['@id'] for node in nodes if node['@type'] == REGISTRATION_TYPE)
         self._reg_base = reg_base.rstrip('/')
 
     async def load_package(self, id_):
@@ -113,29 +121,23 @@ class NugetSearchClient(object):
         await self.load_index()
         return self
 
-    async def load_index(self, index_url='https://api.nuget.org/v3/index.json'):
+    async def load_index(self, index_url=DEFAULT_INDEX):
         index_json = await self._ctx.client.get(index_url)
         nodes = index_json['resources']
-        search_base = next(node['@id'] for node in nodes if node['@type'] == 'SearchQueryService')
+        search_base = next(node['@id'] for node in nodes if node['@type'] == SEARCH_TYPE)
         self._search_base = search_base.rstrip('/')
 
-    async def search(self, q, skip=None, take=None, prerelease=True, semver_level=None):
-        params = OrderedDict()
+    async def search(self, **search_params):
+        # See https://docs.microsoft.com/en-us/nuget/api/search-query-service-resource for a full list of params.
+        REQUIRED_PARAMS = ['q']
 
-        # None of these are actually required parameters: see https://docs.microsoft.com/en-us/nuget/api/search-query-service-resource.
-        # Typically you'd want to specify q though.
-        if q is not None:
-            params['q'] = q
-        if skip is not None:
-            params['skip'] = skip
-        if take is not None:
-            params['take'] = take
-        if prerelease is not None:
-            params['prerelease'] = prerelease
-        if semver_level is not None:
-            params['semVerLevel'] = semver_level
+        for param_name in REQUIRED_PARAMS:
+            if param_name not in search_params:
+                raise ValueError(
+                    "Required parameter {} is not in {}".format(
+                        repr(param_name), search_params))
 
-        qstring = urlencode(params)
+        qstring = urlencode(search_params)
         search_url = '{}?{}'.format(self._search_base, qstring)
         return await NugetSearchResults(search_url, self._ctx).load()
 
