@@ -30,6 +30,6 @@ class StyleAdapter(LoggerAdapter):
 
 LOG = StyleAdapter(logging.getLogger(__name__))
 
-def log_mcall(level=logging.DEBUG):
+def log_call(level=logging.DEBUG):
     method = stack()[1].function
     LOG.log(level, "{}() called", method)

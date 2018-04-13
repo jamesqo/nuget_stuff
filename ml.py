@@ -7,23 +7,23 @@ from scipy.sparse import csr_matrix, lil_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
-from utils.logging import log_mcall
+from utils.logging import log_call
 
 def _compute_authors_scores(df):
-    log_mcall()
+    log_call()
     vectorizer = TfidfVectorizer(ngram_range=(2, 2))
     tfidf_matrix = vectorizer.fit_transform(df['authors'])
     return linear_kernel(tfidf_matrix, tfidf_matrix)
 
 def _compute_description_scores(df):
-    log_mcall()
+    log_call()
     vectorizer = TfidfVectorizer(ngram_range=(1, 3),
                                  stop_words='english')
     tfidf_matrix = vectorizer.fit_transform(df['description'])
     return linear_kernel(tfidf_matrix, tfidf_matrix)
 
 def _compute_etags_scores(df, tags_vocab):
-    log_mcall()
+    log_call()
     # Let m be the number of packages and t be the number of tags.
     # Build an m x t matrix where M[i, j] represents the weight of package i along tag j.
     # Return an m x m matrix of cosine similarities.
@@ -57,7 +57,7 @@ class NugetRecommender(object):
         self.icon_bonus = icon_bonus
 
     def _scale_by_popularity(self, scores, df):
-        log_mcall()
+        log_call()
         dpds = df['downloads_per_day']
         #dpds_valid = dpds[dpds != -1]
         assert all(dpds >= 1)
@@ -88,7 +88,7 @@ class NugetRecommender(object):
             scores[:, index] *= adjusted_p
 
     def _scale_by_freshness(self, scores, df):
-        log_mcall()
+        log_call()
         # 'Freshness' corresponds to how recently the package was updated
         das = df['days_abandoned']
         #das_valid = das[~das.isna()]
@@ -115,7 +115,7 @@ class NugetRecommender(object):
             scores[i, i] = 0
 
     def fit(self, df):
-        log_mcall()
+        log_call()
         # Let m be the number of packages. For each relevant feature like shared tags or similar names/descriptions,
         # compute a m x m matrix called M, where M[i, j] represents how relevant package j is to package i based on
         # that feature alone.
@@ -151,7 +151,7 @@ class NugetRecommender(object):
         self.scores_ = scores
 
     def predict(self, top):
-        log_mcall()
+        log_call()
 
         result = {}
         df = self._df

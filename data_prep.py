@@ -12,7 +12,7 @@ from serializer import CsvSerializer
 from tagger import SmartTagger
 
 from utils.iter import aislice
-from utils.logging import log_mcall, StyleAdapter
+from utils.logging import log_call, StyleAdapter
 
 LOG = StyleAdapter(logging.getLogger(__name__))
 
@@ -36,7 +36,7 @@ SCHEMA = {
 }
 
 async def write_infos_file(fname, page_limit=100):
-    log_mcall()
+    log_call()
     async with NugetContext() as ctx:
         with CsvSerializer(infos_fname) as writer:
             writer.write_header()
@@ -59,7 +59,7 @@ async def write_infos_file(fname, page_limit=100):
 def read_infos_file(fname):
     DEFAULT_DATETIME = datetime(year=1900, month=1, day=1)
 
-    log_mcall()
+    log_call()
     date_features = ['created', 'last_updated']
     df = pd.read_csv(fname, dtype=SCHEMA, na_filter=False, parse_dates=date_features)
 
@@ -79,24 +79,24 @@ def read_infos_file(fname):
     return df
 
 def add_days_alive(df):
-    log_mcall()
+    log_call()
     df['days_alive'] = df['created'].apply(lambda dt: max((TOMORROW - dt).days, 1))
     return df
 
 def add_days_abandoned(df):
-    log_mcall()
+    log_call()
     df['days_abandoned'] = df['last_updated'].apply(lambda dt: max((TOMORROW - dt).days, 1))
     return df
 
 def add_downloads_per_day(df):
-    log_mcall()
+    log_call()
     df['downloads_per_day'] = df['total_downloads'] / df['days_alive']
     assert all(df['downloads_per_day'] >= 0)
     df.loc[df['downloads_per_day'] < 1, 'downloads_per_day'] = 1 # Important so np.log doesn't spazz out later
     return df
 
 def add_etags(df):
-    log_mcall()
+    log_call()
     tagger = SmartTagger()
     df = tagger.fit_transform(df)
     return df, tagger
@@ -106,7 +106,7 @@ def dump_etags(df, fname, include_weights):
         tag, weight = etag.split(' ')
         return tag
 
-    log_mcall()
+    log_call()
     m = df.shape[0]
     with open(fname, 'w', encoding='utf-8') as file:
         for index in range(m):
