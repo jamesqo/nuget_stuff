@@ -62,7 +62,8 @@ def print_recommendations(df, recs):
     for index, row in df.iterrows():
         imap[row['id']] = index
 
-    def sortkey(id_, _):
+    def sortkey(pair):
+        id_ = pair[0]
         # Take advantage of the fact that python sorts tuples lexicographically
         # (first by 1st element, then by 2nd element, and so on)
         return -df['downloads_per_day'][imap[id_]], id_.lower()
