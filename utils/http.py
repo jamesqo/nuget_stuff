@@ -1,16 +1,16 @@
 import async_timeout
-import json
-import logging as log
+import logging
 
 from aiohttp import ClientSession
 from json.decoder import JSONDecodeError
 
-class JSONClient(object):
-    def __init__(self):
-        self._sess = ClientSession()
+from utils.logging import StyleAdapter
 
+LOG = StyleAdapter(logging.getLogger(__name__))
+
+class JSONClient(object):
     async def __aenter__(self):
-        await self._sess.__aenter__()
+        self._sess = await ClientSession().__aenter__()
         return self
 
     async def __aexit__(self, type, value, traceback):
@@ -23,5 +23,6 @@ class JSONClient(object):
                 try:
                     return await response.json()
                 except JSONDecodeError:
-                    log.debug("Could not decode JSON from %s:\n%s", url, text)
+                    text = await response.text()
+                    LOG.debug("Could not decode JSON from {}:\n{}", url, text)
                     raise

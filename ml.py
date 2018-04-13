@@ -1,4 +1,3 @@
-import logging as log
 import numpy as np
 import pandas as pd
 import sys
@@ -8,23 +7,23 @@ from scipy.sparse import csr_matrix, lil_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
-from util import log_mcall
+from utils.logging import log_call
 
 def _compute_authors_scores(df):
-    log_mcall()
+    log_call()
     vectorizer = TfidfVectorizer(ngram_range=(2, 2))
     tfidf_matrix = vectorizer.fit_transform(df['authors'])
     return linear_kernel(tfidf_matrix, tfidf_matrix)
 
 def _compute_description_scores(df):
-    log_mcall()
+    log_call()
     vectorizer = TfidfVectorizer(ngram_range=(1, 3),
                                  stop_words='english')
     tfidf_matrix = vectorizer.fit_transform(df['description'])
     return linear_kernel(tfidf_matrix, tfidf_matrix)
 
 def _compute_etags_scores(df, tags_vocab):
-    log_mcall()
+    log_call()
     # Let m be the number of packages and t be the number of tags.
     # Build an m x t matrix where M[i, j] represents the weight of package i along tag j.
     # Return an m x m matrix of cosine similarities.
@@ -32,14 +31,14 @@ def _compute_etags_scores(df, tags_vocab):
     m = df.shape[0]
     t = len(tags_vocab)
     tag_weights = lil_matrix((m, t))
-    imap = {tag: index for index, tag in enumerate(tags_vocab)}
+    index_map = {tag: index for index, tag in enumerate(tags_vocab)}
 
     for rowidx, etags in enumerate(df['etags']):
         if not etags:
             continue
         for etag in etags.split(','):
             tag, weight = etag.split()
-            colidx = imap[tag]
+            colidx = index_map[tag]
             tag_weights[rowidx, colidx] = np.float32(weight)
 
     return linear_kernel(tag_weights, tag_weights)
@@ -58,7 +57,7 @@ class NugetRecommender(object):
         self.icon_bonus = icon_bonus
 
     def _scale_by_popularity(self, scores, df):
-        log_mcall()
+        log_call()
         dpds = df['downloads_per_day']
         #dpds_valid = dpds[dpds != -1]
         assert all(dpds >= 1)
@@ -69,10 +68,7 @@ class NugetRecommender(object):
         m = df.shape[0]
         for index in range(m):
             dpd = dpds[index]
-            '''
-            if dpd == -1:
-                continue
-            '''
+            assert dpd > 0
             # The number of downloads per day can vary widely (from single-digits to 100k+).
             # We want to give a higher score to more popular packages, but not by a factor of 100k.
             # We take the logarithm of dpd to make the packages more evenly distributed, and make
@@ -89,7 +85,7 @@ class NugetRecommender(object):
             scores[:, index] *= adjusted_p
 
     def _scale_by_freshness(self, scores, df):
-        log_mcall()
+        log_call()
         # 'Freshness' corresponds to how recently the package was updated
         das = df['days_abandoned']
         #das_valid = das[~das.isna()]
@@ -99,10 +95,7 @@ class NugetRecommender(object):
 
         m = df.shape[0]
         for index in range(m):
-            '''
-            if pd.isna(das[index]):
-                continue
-            '''
+            assert not pd.isna(das[index])
             da = das[index]
             s = ((da - mean_da) / max_da) + 1 # Stinkiness
             f = 1 + (1 - s) # Freshness
@@ -116,7 +109,7 @@ class NugetRecommender(object):
             scores[i, i] = 0
 
     def fit(self, df):
-        log_mcall()
+        log_call()
         # Let m be the number of packages. For each relevant feature like shared tags or similar names/descriptions,
         # compute a m x m matrix called M, where M[i, j] represents how relevant package j is to package i based on
         # that feature alone.
@@ -135,7 +128,7 @@ class NugetRecommender(object):
         ]
 
         # The below line is causing NumPy to raise a MemoryError for large datasets, because it allocates a whole
-        # new m x m matrices. Instead, we'll modify existing matrices in place to forego allocations.
+        # new m x m matrix. Instead, we'll modify existing matrices in place to forego allocations.
         #scores = np.average(feature_scores, weights=feature_weights, axis=0)
         scores = feature_scores[0]
         scores *= feature_weights[0]
@@ -151,8 +144,8 @@ class NugetRecommender(object):
         self._df = df
         self.scores_ = scores
 
-    def predict(self, top_n):
-        log_mcall()
+    def predict(self, top):
+        log_call()
 
         result = {}
         df = self._df
@@ -165,7 +158,7 @@ class NugetRecommender(object):
             recommendation_indices = (-self.scores_[index]).argsort()
             # Filter out barely-used packages (<=1 downloads per day), and ones that are unpopular relative to this one.
             recommendation_indices = (i for i in recommendation_indices if dpds[i] > 1 and 250 * dpds[i] > dpd)
-            recommendation_indices = islice(recommendation_indices, top_n)
+            recommendation_indices = islice(recommendation_indices, top)
             recommendations = [ids[i] for i in recommendation_indices]
             result[id_] = recommendations
 

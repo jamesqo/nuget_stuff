@@ -1,16 +1,14 @@
 import csv
-import logging as log
 
-class CsvPackageWriter(object):
-    def __init__(self, filename):
-        self._filename = filename
+class CsvSerializer(object):
+    def __init__(self, fname):
+        self._fname = fname
 
     def __enter__(self):
-        self._file = open(self._filename, mode='w', encoding='utf-8')
-        self._file.__enter__()
+        self._file = open(self._fname, mode='w', encoding='utf-8').__enter__()
         self._writer = csv.writer(self._file)
         return self
-    
+
     def __exit__(self, type, value, traceback):
         self._file.__exit__(type, value, traceback)
     
@@ -47,5 +45,4 @@ class CsvPackageWriter(object):
             sinfo.verified,
             pkg.version,
         ]
-        #log.debug("Writing CSV row %s", row)
         self._writer.writerow(row)
