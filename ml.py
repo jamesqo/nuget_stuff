@@ -150,7 +150,7 @@ class NugetRecommender(object):
         self._df = df
         self.scores_ = scores
 
-    def predict(self, top_n):
+    def predict(self, top):
         log_mcall()
 
         result = {}
@@ -164,7 +164,7 @@ class NugetRecommender(object):
             recommendation_indices = (-self.scores_[index]).argsort()
             # Filter out barely-used packages (<=1 downloads per day), and ones that are unpopular relative to this one.
             recommendation_indices = (i for i in recommendation_indices if dpds[i] > 1 and 250 * dpds[i] > dpd)
-            recommendation_indices = islice(recommendation_indices, top_n)
+            recommendation_indices = islice(recommendation_indices, top)
             recommendations = [ids[i] for i in recommendation_indices]
             result[id_] = recommendations
 
