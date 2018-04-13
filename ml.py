@@ -31,14 +31,14 @@ def _compute_etags_scores(df, tags_vocab):
     m = df.shape[0]
     t = len(tags_vocab)
     tag_weights = lil_matrix((m, t))
-    imap = {tag: index for index, tag in enumerate(tags_vocab)}
+    index_map = {tag: index for index, tag in enumerate(tags_vocab)}
 
     for rowidx, etags in enumerate(df['etags']):
         if not etags:
             continue
         for etag in etags.split(','):
             tag, weight = etag.split()
-            colidx = imap[tag]
+            colidx = index_map[tag]
             tag_weights[rowidx, colidx] = np.float32(weight)
 
     return linear_kernel(tag_weights, tag_weights)

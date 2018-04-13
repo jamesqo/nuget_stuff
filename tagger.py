@@ -49,14 +49,14 @@ class SmartTagger(object):
         m = df.shape[0]
         t = len(self.vocab_)
         weights = lil_matrix((m, t))
-        imap = {tag: index for index, tag in enumerate(self.vocab_)}
+        index_map = {tag: index for index, tag in enumerate(self.vocab_)}
 
         weight = self.weights['tags']
         for rowidx in range(m):
             for tag in df['tags'][rowidx].split(','):
                 tag = tag.lower()
                 if tag:
-                    colidx = imap[tag]
+                    colidx = index_map[tag]
                     idf = self.idfs_[tag]
                     weights[rowidx, colidx] = weight * idf
 

@@ -1,3 +1,5 @@
+import traceback as tb
+
 from collections import OrderedDict
 from urllib.parse import urlencode
 
@@ -45,13 +47,17 @@ class NugetPackage(object):
         self._ctx = ctx
 
     async def load(self, catalog=True, reg=True, search=True):
-        if catalog:
-            await self._load_catalog_info()
-        if reg:
-            await self._load_reg_info()
-        if search:
-            await self._load_search_info()
-        return self
+        try:
+            if catalog:
+                await self._load_catalog_info()
+            if reg:
+                await self._load_reg_info()
+            if search:
+                await self._load_search_info()
+            return self
+        except:
+            message = tb.format_exc()
+            raise PackageLoadError(message)
 
     async def _load_catalog_info(self):
         self.catalog = PackageCatalogInfo(await self._ctx.client.get(self._catalog_url))
@@ -164,6 +170,9 @@ class PackageCatalogInfo(object):
         self.summary = json.get('summary')
         self.tags = json.get('tags', [])
         self.version = json['version']
+
+class PackageLoadError(Exception):
+    pass
 
 class PackageRegistrationInfo(object):
     def __init__(self, json, ctx):

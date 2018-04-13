@@ -23,22 +23,20 @@ def parse_args():
         '-d', '--debug',
         help="print debug information",
         action='store_const',
+        dest='log_level',
         const=logging.DEBUG,
-        default=logging.WARNING,
-        dest='log_level'
+        default=logging.WARNING
     )
     parser.add_argument(
         '--include-weights',
         help="when used with --tag-dump, includes tag weights in output file",
         action='store_true',
-        default=False,
         dest='include_weights'
     )
     parser.add_argument(
         '-r', '--refresh-packages',
         help="refresh package database",
         action='store_true',
-        default=False,
         dest='refresh_packages'
     )
     parser.add_argument(
@@ -46,9 +44,9 @@ def parse_args():
         metavar='FILE',
         help="dump enriched tags to FILE (default: {})".format(ETAGS_FNAME),
         action='store',
+        dest='etags_fname',
         nargs='?',
-        const=ETAGS_FNAME,
-        dest='etags_fname'
+        const=ETAGS_FNAME
     )
     return parser.parse_args()
 
@@ -58,15 +56,15 @@ def print_recommendations(df, recs):
 
     # This is necessary so we don't run through the dataframe every time sort calls
     # the key function, which would result in quadratic running time
-    imap = {}
+    index_map = {}
     for index, row in df.iterrows():
-        imap[row['id']] = index
+        index_map[row['id']] = index
 
     def sortkey(pair):
         id_ = pair[0]
         # Take advantage of the fact that python sorts tuples lexicographically
         # (first by 1st element, then by 2nd element, and so on)
-        return -df['downloads_per_day'][imap[id_]], id_.lower()
+        return -df['downloads_per_day'][index_map[id_]], id_.lower()
 
     pairs.sort(key=sortkey)
     lines = ["{}: {}".format(*pair) for pair in pairs]
