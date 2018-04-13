@@ -32,4 +32,4 @@ LOG = StyleAdapter(logging.getLogger(__name__))
 
 def log_mcall(level=logging.DEBUG):
     method = stack()[1].function
-    log.log(level, "{}() called", method)
+    LOG.log(level, "{}() called", method)

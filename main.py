@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
-import asyncio as aio
-import logging as log
+import asyncio
+import logging
 import numpy as np
 import os
 import pandas as pd
@@ -10,7 +10,7 @@ import traceback as tb
 
 from aiohttp.client_exceptions import ClientError
 from argparse import ArgumentParser
-from datetime import datetime
+from datetime import date, datetime, timedelta
 from math import nan
 
 from nuget_api import NugetCatalogClient, NugetContext
@@ -21,11 +21,13 @@ from tagger import SmartTagger
 from utils.iter import aislice
 from utils.logging import log_mcall, StyleAdapter
 
-INFOS_FILENAME = 'package_infos.csv'
-ETAGS_FILENAME = 'etags.log'
+INFOS_FNAME = 'package_infos.csv'
+ETAGS_FNAME = 'etags.log'
 
 PAGES_LIMIT = 100
-BASE_DATETIME = tomorrow(as_datetime=True)
+BASE_DATETIME = datetime.fromordinal(
+    (date.today() + timedelta(days=1)).toordinal()
+)
 
 LOG = StyleAdapter(logging.getLogger(__name__))
 
@@ -56,30 +58,30 @@ def parse_args():
     parser.add_argument(
         '-t', '--tag-dump',
         metavar='FILE',
-        help=f"dump enriched tags to FILE (default: {ETAGS_FILENAME})",
+        help=f"dump enriched tags to FILE (default: {ETAGS_FNAME})",
         action='store',
         nargs='?',
-        const=ETAGS_FILENAME,
-        dest='etags_filename'
+        const=ETAGS_FNAME,
+        dest='etags_fname'
     )
     return parser.parse_args()
 
 async def write_infos_file():
     log_mcall()
     async with NugetContext() as ctx:
-        with CsvPackageWriter(filename=INFOS_FILENAME) as writer:
+        with CsvSerializer(INFOS_FNAME) as writer:
             writer.write_header()
 
             client = await NugetCatalogClient(ctx).load()
             async for page in aislice(client.load_pages(), PAGES_LIMIT):
-                results = await aio.gather(*[package.load() for package in page.packages], return_exceptions=True)
+                results = await asyncio.gather(*[package.load() for package in page.packages], return_exceptions=True)
                 for result in results:
                     if not isinstance(result, Exception):
                         package = result
                         writer.write(package)
                     else:
                         exc = result
-                        if isinstance(exc, ClientError) or isinstance(exc, aio.TimeoutError):
+                        if isinstance(exc, ClientError) or isinstance(exc, asyncio.TimeoutError):
                             # TODO: Figure out how to get arguments needed for tb.format_exception()
                             LOG.debug("Error raised while loading {}:\n{}", package.id, tb.format_exc())
                             continue
@@ -90,7 +92,7 @@ def read_infos_file():
 
     log_mcall()
     date_features = ['created', 'last_updated']
-    df = pd.read_csv(INFOS_FILENAME, dtype={
+    df = pd.read_csv(INFOS_FNAME, dtype={
         'authors': object,
         'created': object,
         'description': object,
@@ -150,7 +152,7 @@ def add_downloads_per_day(df):
 def add_etags(df):
     log_mcall()
     '''
-    words_df = pd.read_csv(WORDS_FILENAME,
+    words_df = pd.read_csv(WORDS_FNAME,
                            usecols=['Word'],
                            dtype={'Word': object})
     ignored_words = list(words_df['Word'])
@@ -160,14 +162,14 @@ def add_etags(df):
     df = tagger.fit_transform(df)
     return df, tagger
 
-def dump_etags(df, filename, include_weights):
+def dump_etags(df, fname, include_weights):
     def get_tag(etag):
         tag, weight = etag.split(' ')
         return tag
 
     log_mcall()
     m = df.shape[0]
-    with open(filename, 'w', encoding='utf-8') as file:
+    with open(fname, 'w', encoding='utf-8') as file:
         for index in range(m):
             id_, etags = df['id'][index], df['etags'][index]
             if not include_weights and etags:
@@ -184,7 +186,7 @@ async def main():
     args = parse_args()
     logging.basicConfig(level=args.log_level)
 
-    if args.refresh_infos or not os.path.isfile(INFOS_FILENAME):
+    if args.refresh_infos or not os.path.isfile(INFOS_FNAME):
         await write_infos_file()
     df = read_infos_file()
 
@@ -193,8 +195,8 @@ async def main():
     df = add_downloads_per_day(df)
     df, tagger = add_etags(df)
 
-    if args.etags_filename is not None:
-        dump_etags(df, filename=args.etags_filename, include_weights=args.include_weights)
+    if args.etags_fname is not None:
+        dump_etags(df, fname=args.etags_fname, include_weights=args.include_weights)
     
     nr = NugetRecommender(tags_vocab=tagger.vocab_)
     nr.fit(df)
@@ -214,7 +216,7 @@ async def main():
 
 if __name__ == '__main__':
     start = datetime.now()
-    loop = aio.get_event_loop()
+    loop = asyncio.get_event_loop()
     loop.run_until_complete(main())
     end = datetime.now()
     seconds = (end - start).seconds
