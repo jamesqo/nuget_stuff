@@ -9,11 +9,17 @@ from sklearn.feature_extraction.text import CountVectorizer
 
 from utils.logging import log_call
 
+DEFAULT_WEIGHTS = {
+    'description': 4,
+    'id': 6,
+    'tags': 2,
+}
+
+ENGLISH = enchant.Dict('en_US')
+
 class SmartTagger(object):
-    def __init__(self,
-                 weights={'description': 4, 'id': 6, 'tags': 2}):
-        self.weights = weights
-        self._english = enchant.Dict('en_US')
+    def __init__(self, weights=None):
+        self.weights = weights or DEFAULT_WEIGHTS
         self._hackword_cache = {}
     
     def _is_hackword(self, term):
@@ -21,14 +27,14 @@ class SmartTagger(object):
         result = cache.get(term, None)
         if result is not None:
             return result
-        result = not self._english.check(term)
+        result = not ENGLISH.check(term)
         cache[term] = result
         return result
 
     def _make_etags(self, weights):
         log_call()
         m = weights.shape[0]
-        etags_col = pd.Series('', dtype=object, index=range(m))
+        etags_col = pd.Series('', index=np.arange(m))
         nonzero = zip(*weights.nonzero())
         for rowidx, entries in groupby(nonzero, key=lambda entry: entry[0]):
             colidxs = [entry[1] for entry in entries]

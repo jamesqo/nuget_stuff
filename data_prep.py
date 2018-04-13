@@ -111,6 +111,7 @@ def dump_etags(df, fname, include_weights):
     with open(fname, 'w', encoding='utf-8') as file:
         for index in range(m):
             id_, etags = df['id'][index], df['etags'][index]
+            # TODO: Inconsistent type of etags depending on 'include_weights'
             if not include_weights and etags:
                 etags = ','.join(map(get_tag, etags.split(',')))
             line = "{}: {}\n".format(id_, etags)
