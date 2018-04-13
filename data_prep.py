@@ -35,10 +35,10 @@ SCHEMA = {
     'version': object,
 }
 
-async def write_infos_file(fname, page_limit=100):
+async def write_packages_file(fname, page_limit=100):
     log_call()
     async with NugetContext() as ctx:
-        with CsvSerializer(infos_fname) as writer:
+        with CsvSerializer(fname) as writer:
             writer.write_header()
 
             client = await NugetCatalogClient(ctx).load()
@@ -56,7 +56,7 @@ async def write_infos_file(fname, page_limit=100):
                             continue
                         raise exc
 
-def read_infos_file(fname):
+def read_packages_file(fname):
     DEFAULT_DATETIME = datetime(year=1900, month=1, day=1)
 
     log_call()
@@ -116,10 +116,10 @@ def dump_etags(df, fname, include_weights):
             line = f"{id_}: {etags}\n"
             file.write(line)
 
-async def load_packages(infos_fname, args):
-    if args.refresh_infos or not os.path.isfile(infos_fname):
-        await write_infos_file(infos_fname)
-    df = read_infos_file(infos_fname)
+async def load_packages(fname, args):
+    if args.refresh_infos or not os.path.isfile(fname):
+        await write_packages_file(fname)
+    df = read_packages_file(fname)
 
     df = add_days_alive(df)
     df = add_days_abandoned(df)

@@ -12,7 +12,7 @@ from ml import NugetRecommender
 
 from utils.logging import log_call, StyleAdapter
 
-INFOS_FNAME = 'package_infos.csv'
+PACKAGES_FNAME = 'packages.csv'
 ETAGS_FNAME = 'etags.log'
 
 LOG = StyleAdapter(logging.getLogger(__name__))
@@ -61,7 +61,7 @@ async def main():
     args = parse_args()
     logging.basicConfig(level=args.log_level)
 
-    df, tagger = await load_packages(INFOS_FNAME, args)
+    df, tagger = await load_packages(PACKAGES_FNAME, args)
     magic = NugetRecommender(tags_vocab=tagger.vocab_)
     magic.fit(df)
     recs = magic.predict(top=5)
