@@ -68,10 +68,7 @@ class NugetRecommender(object):
         m = df.shape[0]
         for index in range(m):
             dpd = dpds[index]
-            '''
-            if dpd == -1:
-                continue
-            '''
+            assert dpd > 0
             # The number of downloads per day can vary widely (from single-digits to 100k+).
             # We want to give a higher score to more popular packages, but not by a factor of 100k.
             # We take the logarithm of dpd to make the packages more evenly distributed, and make
@@ -98,10 +95,7 @@ class NugetRecommender(object):
 
         m = df.shape[0]
         for index in range(m):
-            '''
-            if pd.isna(das[index]):
-                continue
-            '''
+            assert not pd.isna(das[index])
             da = das[index]
             s = ((da - mean_da) / max_da) + 1 # Stinkiness
             f = 1 + (1 - s) # Freshness
@@ -134,7 +128,7 @@ class NugetRecommender(object):
         ]
 
         # The below line is causing NumPy to raise a MemoryError for large datasets, because it allocates a whole
-        # new m x m matrices. Instead, we'll modify existing matrices in place to forego allocations.
+        # new m x m matrix. Instead, we'll modify existing matrices in place to forego allocations.
         #scores = np.average(feature_scores, weights=feature_weights, axis=0)
         scores = feature_scores[0]
         scores *= feature_weights[0]
