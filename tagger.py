@@ -1,5 +1,4 @@
 import enchant
-import logging as log
 import numpy as np
 import pandas as pd
 import sys
@@ -8,7 +7,7 @@ from itertools import groupby
 from scipy.sparse import csr_matrix, lil_matrix
 from sklearn.feature_extraction.text import CountVectorizer
 
-from util import log_mcall
+from utils.logging import log_mcall
 
 class SmartTagger(object):
     def __init__(self,

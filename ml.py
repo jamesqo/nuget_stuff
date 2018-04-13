@@ -1,4 +1,3 @@
-import logging as log
 import numpy as np
 import pandas as pd
 import sys
@@ -8,7 +7,7 @@ from scipy.sparse import csr_matrix, lil_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
-from util import log_mcall
+from utils.logging import log_mcall
 
 def _compute_authors_scores(df):
     log_mcall()

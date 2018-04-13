@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import argparse
 import asyncio as aio
 import logging as log
 import numpy as np
@@ -14,19 +13,21 @@ from argparse import ArgumentParser
 from datetime import datetime
 from math import nan
 
-from CsvPackageWriter import CsvPackageWriter
-from NugetCatalogClient import NugetCatalogClient
-from NugetContext import NugetContext
-from NugetRecommender import NugetRecommender
-from SmartTagger import SmartTagger
-from util import aislice, log_mcall, tomorrow
+from nuget_api import NugetCatalogClient, NugetContext
+from ml import NugetRecommender
+from serializer import CsvSerializer
+from tagger import SmartTagger
+
+from utils.iter import aislice
+from utils.logging import log_mcall, StyleAdapter
 
 INFOS_FILENAME = 'package_infos.csv'
-#WORDS_FILENAME = 'wordlist.csv'
 ETAGS_FILENAME = 'etags.log'
 
 PAGES_LIMIT = 100
 BASE_DATETIME = tomorrow(as_datetime=True)
+
+LOG = StyleAdapter(logging.getLogger(__name__))
 
 def parse_args():
     parser = ArgumentParser()
@@ -34,8 +35,8 @@ def parse_args():
         '-d', '--debug',
         help="print debug information",
         action='store_const',
-        const=log.DEBUG,
-        default=log.WARNING,
+        const=logging.DEBUG,
+        default=logging.WARNING,
         dest='log_level'
     )
     parser.add_argument(
@@ -80,7 +81,7 @@ async def write_infos_file():
                         exc = result
                         if isinstance(exc, ClientError) or isinstance(exc, aio.TimeoutError):
                             # TODO: Figure out how to get arguments needed for tb.format_exception()
-                            log.debug("Error raised while loading %s:\n%s", package.id, tb.format_exc())
+                            LOG.debug("Error raised while loading {}:\n{}", package.id, tb.format_exc())
                             continue
                         raise exc
 
@@ -181,7 +182,7 @@ def rank_package(id_, df, imap):
 
 async def main():
     args = parse_args()
-    log.basicConfig(level=args.log_level)
+    logging.basicConfig(level=args.log_level)
 
     if args.refresh_infos or not os.path.isfile(INFOS_FILENAME):
         await write_infos_file()
