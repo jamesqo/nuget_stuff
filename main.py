@@ -35,16 +35,16 @@ def parse_args():
         dest='include_weights'
     )
     parser.add_argument(
-        '-r', '--refresh-infos',
-        help="refresh package information",
+        '-r', '--refresh-packages',
+        help="refresh package database",
         action='store_true',
         default=False,
-        dest='refresh_infos'
+        dest='refresh_packages'
     )
     parser.add_argument(
         '-t', '--tag-dump',
         metavar='FILE',
-        help=f"dump enriched tags to FILE (default: {ETAGS_FNAME})",
+        help="dump enriched tags to FILE (default: {})".format(ETAGS_FNAME),
         action='store',
         nargs='?',
         const=ETAGS_FNAME,
@@ -52,10 +52,24 @@ def parse_args():
     )
     return parser.parse_args()
 
-def rank_package(id_, df, imap):
-    # Take advantage of the fact that python sorts tuples lexicographically
-    # (first by 1st element, then by 2nd element, and so on)
-    return -df['downloads_per_day'][imap[id_]], id_.lower()
+# Print package ids and their recommendations, sorted by popularity
+def print_recommendations(df, recs):
+    pairs = list(recs.items())
+
+    # This is necessary so we don't run through the dataframe every time sort calls
+    # the key function, which would result in quadratic running time
+    imap = {}
+    for index, row in df.iterrows():
+        imap[row['id']] = index
+
+    def sortkey(id_, _):
+        # Take advantage of the fact that python sorts tuples lexicographically
+        # (first by 1st element, then by 2nd element, and so on)
+        return -df['downloads_per_day'][imap[id_]], id_.lower()
+
+    pairs.sort(key=sortkey)
+    lines = ["{}: {}".format(*pair) for pair in pairs]
+    print('\n'.join(lines))
 
 async def main():
     args = parse_args()
@@ -66,17 +80,7 @@ async def main():
     magic.fit(df)
     recs = magic.predict(top=5)
 
-    # Print packages and their recommendations, sorted by popularity
-    pairs = list(recs.items())
-
-    # This is necessary so we don't run through the dataframe every time sort calls
-    # the key function, which would result in quadratic running time
-    imap = {}
-    for index, row in df.iterrows():
-        imap[row['id']] = index
-
-    pairs.sort(key=lambda pair: rank_package(pair[0], df, imap))
-    print('\n'.join([f"{pair[0]}: {pair[1]}" for pair in pairs]))
+    print_recommendations(df, recs)
 
 if __name__ == '__main__':
     start = datetime.now()
@@ -84,4 +88,4 @@ if __name__ == '__main__':
     loop.run_until_complete(main())
     end = datetime.now()
     seconds = (end - start).seconds
-    print(f"Finished generating recommendations in {seconds}s", file=sys.stderr)
+    print("Finished generating recommendations in {}s".format(seconds), file=sys.stderr)

@@ -41,7 +41,7 @@ class SmartTagger(object):
         for colidx in colidxs:
             tag = self.vocab_[colidx]
             weight = weights[rowidx, colidx]
-            etags.append(f'{tag} {weight}')
+            etags.append('{} {}'.format(tag, weight))
         return etags
 
     def _compute_weights(self, df):

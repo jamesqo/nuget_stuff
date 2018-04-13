@@ -113,11 +113,11 @@ def dump_etags(df, fname, include_weights):
             id_, etags = df['id'][index], df['etags'][index]
             if not include_weights and etags:
                 etags = ','.join(map(get_tag, etags.split(',')))
-            line = f"{id_}: {etags}\n"
+            line = "{}: {}\n".format(id_, etags)
             file.write(line)
 
 async def load_packages(fname, args):
-    if args.refresh_infos or not os.path.isfile(fname):
+    if args.refresh_packages or not os.path.isfile(fname):
         await write_packages_file(fname)
     df = read_packages_file(fname)
 

@@ -58,7 +58,7 @@ class NugetPackage(object):
 
     async def _load_search_info(self):
         cli = await NugetSearchClient(self._ctx).load()
-        query = f'id:"{self.id}"'
+        query = 'id:"{}"'.format(self.id)
         results = await cli.search(q=query)
         self.search = next((d for d in results if d.id.lower() == self.id.lower()),
                            NullPackageSearchInfo())
@@ -95,7 +95,7 @@ class NugetRegistrationClient(object):
         self._reg_base = reg_base.rstrip('/')
 
     async def load_package(self, id_):
-        reg_url = f'{self._reg_base}/{id_.lower()}/index.json'
+        reg_url = '{}/{}/index.json'.format(self._reg_base, id_.lower())
         reg_json = await self._ctx.client.get(reg_url)
         return await PackageRegistrationInfo(reg_json, self._ctx).load()
 
@@ -130,7 +130,7 @@ class NugetSearchClient(object):
             params['semVerLevel'] = semver_level
 
         qstring = urlencode(params)
-        search_url = f'{self._search_base}?{qstring}'
+        search_url = '{}?{}'.format(self._search_base, qstring)
         return await NugetSearchResults(search_url, self._ctx).load()
 
 class NugetSearchResults(object):
