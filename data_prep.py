@@ -3,7 +3,6 @@ import logging
 import numpy as np
 import os
 import pandas as pd
-import traceback as tb
 
 from aiohttp.client_exceptions import ClientError
 from datetime import date, datetime, timedelta
@@ -49,9 +48,9 @@ async def write_packages_file(fname, page_limit=100):
                 for result in results:
                     if isinstance(result, Exception):
                         exc = result
-                        if isinstance(exc, ClientError) or isinstance(exc, asyncio.TimeoutError):
-                            continue
-                        raise exc
+                        if not isinstance(exc, (ClientError, asyncio.TimeoutError)):
+                            raise exc
+                        continue
                     package = result
                     writer.write(package)
 
@@ -72,7 +71,7 @@ def read_packages_file(fname):
     df.drop('listed', axis=1, inplace=True)
 
     assert all([DEFAULT_DATETIME not in df[feature] for feature in date_features]), \
-           "Certain packages should have their date values set to nan instead of the default datetime."
+           "Certain packages are missing date values."
 
     df.reset_index(drop=True, inplace=True)
     return df
@@ -91,7 +90,7 @@ def add_downloads_per_day(df):
     log_call()
     df['downloads_per_day'] = df['total_downloads'] / df['days_alive']
     assert all(df['downloads_per_day'] >= 0)
-    df.loc[df['downloads_per_day'] < 1, 'downloads_per_day'] = 1 # Important so np.log doesn't spazz out later
+    df.loc[df['downloads_per_day'] < 1, 'downloads_per_day'] = 1 # So np.log doesn't spazz out later
     return df
 
 def add_etags(df):
@@ -102,7 +101,7 @@ def add_etags(df):
 
 def dump_etags(df, fname, include_weights):
     def get_tag(etag):
-        tag, weight = etag.split(' ')
+        tag, _ = etag.split(' ')
         return tag
 
     log_call()

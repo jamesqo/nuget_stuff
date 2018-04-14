@@ -1,9 +1,8 @@
 import numpy as np
 import pandas as pd
-import sys
 
 from itertools import islice
-from scipy.sparse import csr_matrix, lil_matrix
+from scipy.sparse import lil_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import linear_kernel
 
@@ -43,18 +42,32 @@ def _compute_etags_scores(df, tags_vocab):
 
     return linear_kernel(tag_weights, tag_weights)
 
+def _remove_diagonal(scores):
+    # We don't want to recommend the same package based on itself, so set all scores along the diagonal to 0.
+    for i in range(len(scores)):
+        scores[i, i] = 0
+
+DEFAULT_WEIGHTS = {
+    'authors': 1,
+    'description': 2,
+    'etags': 8
+}
+
 class NugetRecommender(object):
     def __init__(self,
                  tags_vocab,
-                 weights={'authors': 1, 'description': 2, 'etags': 8},
+                 weights=None,
                  min_scale_popularity=0,
                  min_scale_freshness=.25,
                  icon_bonus=.1):
         self.tags_vocab = tags_vocab
-        self.weights = weights
+        self.weights = weights or DEFAULT_WEIGHTS
         self.min_scale_popularity = min_scale_popularity
         self.min_scale_freshness = min_scale_freshness
         self.icon_bonus = icon_bonus
+
+        self._df = None
+        self.scores_ = None
 
     def _scale_by_popularity(self, scores, df):
         log_call()
@@ -81,7 +94,7 @@ class NugetRecommender(object):
             # min(ldpd) is 0 since we assume no package has less than 1 dpd, and log(1) = 0.
             p = ((ldpd - mean_ldpd) / max_ldpd) + 1
 
-            adjusted_p  = p * 1 + (1 - p) * self.min_scale_popularity
+            adjusted_p = p * 1 + (1 - p) * self.min_scale_popularity
             scores[:, index] *= adjusted_p
 
     def _scale_by_freshness(self, scores, df):
@@ -103,16 +116,10 @@ class NugetRecommender(object):
             adjusted_f = f * 1 + (1 - f) * self.min_scale_freshness
             scores[:, index] *= adjusted_f
 
-    def _remove_diagonal(self, scores):
-        # We don't want to recommend the same package based on itself, so set all scores along the diagonal to 0.
-        for i in range(len(scores)):
-            scores[i, i] = 0
-
     def fit(self, df):
         log_call()
-        # Let m be the number of packages. For each relevant feature like shared tags or similar names/descriptions,
-        # compute a m x m matrix called M, where M[i, j] represents how relevant package j is to package i based on
-        # that feature alone.
+        # Let m be the number of packages. For each relevant feature, compute a m x m matrix called M,
+        # where M[i, j] represents how relevant package j is to package i based on that feature alone.
         # Set 'scores' to an m x m matrix of aggregate scores by taking a weighted average of these matrices.
 
         feature_scores = [
@@ -139,7 +146,7 @@ class NugetRecommender(object):
 
         self._scale_by_popularity(scores, df)
         self._scale_by_freshness(scores, df)
-        self._remove_diagonal(scores)
+        _remove_diagonal(scores)
 
         self._df = df
         self.scores_ = scores
@@ -156,8 +163,10 @@ class NugetRecommender(object):
 
             # Negating the scores is a trick to make argsort sort by descending.
             recommendation_indices = (-self.scores_[index]).argsort()
-            # Filter out barely-used packages (<=1 downloads per day), and ones that are unpopular relative to this one.
-            recommendation_indices = (i for i in recommendation_indices if dpds[i] > 1 and 250 * dpds[i] > dpd)
+            # Filter out barely-used packages (<=1 downloads per day), and ones that are
+            # unpopular relative to this one.
+            recommendation_indices = (i for i in recommendation_indices
+                                      if dpds[i] > 1 and 250 * dpds[i] > dpd)
             recommendation_indices = islice(recommendation_indices, top)
             recommendations = [ids[i] for i in recommendation_indices]
             result[id_] = recommendations

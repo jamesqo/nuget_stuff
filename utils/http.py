@@ -9,6 +9,9 @@ from utils.logging import StyleAdapter
 LOG = StyleAdapter(logging.getLogger(__name__))
 
 class JSONClient(object):
+    def __init__(self):
+        self._sess = None
+
     async def __aenter__(self):
         self._sess = await ClientSession().__aenter__()
         return self

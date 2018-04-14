@@ -10,7 +10,7 @@ from datetime import datetime
 from data_prep import load_packages
 from ml import NugetRecommender
 
-from utils.logging import log_call, StyleAdapter
+from utils.logging import StyleAdapter
 
 PACKAGES_FNAME = 'packages.csv'
 ETAGS_FNAME = 'etags.log'

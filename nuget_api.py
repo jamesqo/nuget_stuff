@@ -1,6 +1,5 @@
 import traceback as tb
 
-from collections import OrderedDict
 from urllib.parse import urlencode
 
 from utils.http import JSONClient
@@ -23,6 +22,7 @@ class NugetClient(object):
     def __init__(self, type_, ctx):
         self._type = type_
         self._ctx = ctx
+        self._endpoint_url = None
 
     async def load(self):
         await self.load_index()
@@ -37,6 +37,7 @@ class NugetClient(object):
 class NugetCatalogClient(NugetClient):
     def __init__(self, ctx):
         super().__init__(CATALOG_TYPE, ctx)
+        self._catalog_json = None
 
     async def load(self):
         await super().load()
@@ -48,8 +49,8 @@ class NugetCatalogClient(NugetClient):
 
     async def load_pages(self):
         page_urls = [node['@id'] for node in self._catalog_json['items']]
-        # Note: Do NOT attempt to use asyncio.gather here. It's crucial that we only load one page at a time,
-        # so that we don't bite off more than we can chew.
+        # Note: Do NOT attempt to use asyncio.gather here. It's crucial that we only load one page
+        # at a time, so that we don't bite off more than we can chew.
         for url in page_urls:
             yield await NugetPage(url, self._ctx).load()
 
@@ -66,7 +67,7 @@ class NugetSearchClient(NugetClient):
     def __init__(self, ctx):
         super().__init__(SEARCH_TYPE, ctx)
 
-    # See https://docs.microsoft.com/en-us/nuget/api/search-query-service-resource for a full list of params.
+    # Full list of params: https://docs.microsoft.com/en-us/nuget/api/search-query-service-resource
     async def search(self, q, **search_params):
         search_params['q'] = q
         search_params.setdefault('prerelease', True)
@@ -76,6 +77,9 @@ class NugetSearchClient(NugetClient):
         return await NugetSearchResults(search_url, self._ctx).load()
 
 class NugetContext(object):
+    def __init__(self):
+        self.client = None
+
     async def __aenter__(self):
         self.client = await JSONClient().__aenter__()
         return self
@@ -89,6 +93,10 @@ class NugetPackage(object):
         self.version = json['nuget:version']
         self._catalog_url = json['@id']
         self._ctx = ctx
+
+        self.catalog = None
+        self.reg = None
+        self.search = None
 
     async def load(self, catalog=True, reg=True, search=True):
         try:
@@ -108,6 +116,10 @@ class NugetPackage(object):
     async def _load_catalog_info(self):
         self.catalog = PackageCatalogInfo(await self._ctx.client.get(self._catalog_url))
 
+    async def _load_reg_info(self):
+        cli = await NugetRegistrationClient(self._ctx).load()
+        self.reg = await cli.load_package(self.id)
+
     async def _load_search_info(self):
         cli = await NugetSearchClient(self._ctx).load()
         query = 'id:"{}"'.format(self.id)
@@ -115,15 +127,12 @@ class NugetPackage(object):
         self.search = next((d for d in results if d.id.lower() == self.id.lower()),
                            NULL_SEARCH_INFO)
 
-    async def _load_reg_info(self):
-        cli = await NugetRegistrationClient(self._ctx).load()
-        self.reg = await cli.load_package(self.id)
-
 class NugetPage(object):
     def __init__(self, url, ctx):
         self._url = url
         self._ctx = ctx
-    
+        self._json = None
+
     async def load(self):
         self._json = await self._ctx.client.get(self._url)
         return self
@@ -136,11 +145,14 @@ class NugetSearchResults(object):
     def __init__(self, url, ctx):
         self._url = url
         self._ctx = ctx
-    
+
+        self._json = None
+        self.total_hits = None
+
     def __iter__(self):
         for node in self._json['data']:
             yield PackageSearchInfo(node)
-    
+
     async def load(self):
         self._json = await self._ctx.client.get(self._url)
         self.total_hits = self._json['totalHits']
@@ -209,7 +221,8 @@ class RegistrationPage(object):
         self.count = json['count']
         self._json = json
         self._ctx = ctx
-    
+        self._leaves = None
+
     def __iter__(self):
         return iter(self._leaves)
 

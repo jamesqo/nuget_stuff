@@ -1,6 +1,6 @@
 import logging
 
-from inspect import getargspec, stack
+from inspect import signature, stack
 from logging import LoggerAdapter
 
 # Copied from https://stackoverflow.com/a/24683360/4077294
@@ -16,17 +16,16 @@ class BraceMessage(object):
 # Copied from https://stackoverflow.com/a/24683360/4077294
 class StyleAdapter(LoggerAdapter):
     def __init__(self, logger):
-        self.logger = logger
+        super().__init__(logger, {})
 
     def log(self, level, msg, *args, **kwargs):
         if self.isEnabledFor(level):
             msg, log_kwargs = self.process(msg, kwargs)
-            self.logger._log(level, BraceMessage(msg, args, kwargs), (), 
-                    **log_kwargs)
+            self.logger._log(level, BraceMessage(msg, args, kwargs), (), **log_kwargs) # pylint: disable=protected-access
 
     def process(self, msg, kwargs):
-        return msg, {key: kwargs[key] 
-                for key in getargspec(self.logger._log).args[1:] if key in kwargs}
+        param_names = signature(self.logger._log).parameters.keys() # pylint: disable=protected-access
+        return msg, {name: kwargs[name] for name in param_names if name in kwargs}
 
 LOG = StyleAdapter(logging.getLogger(__name__))
 

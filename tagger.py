@@ -1,11 +1,10 @@
 import enchant
 import numpy as np
 import pandas as pd
-import sys
 
 from functools import lru_cache
 from itertools import groupby
-from scipy.sparse import csr_matrix, lil_matrix
+from scipy.sparse import lil_matrix
 from sklearn.feature_extraction.text import CountVectorizer
 
 from utils.logging import log_call
@@ -19,15 +18,34 @@ DEFAULT_WEIGHTS = {
 ENGLISH = enchant.Dict('en_US')
 
 @lru_cache(maxsize=None)
-def _is_hackword(self, term):
+def _is_hackword(term):
     return not ENGLISH.check(term)
 
 def _parse_tags(text):
     return [tag.lower() for tag in text.split(',') if tag]
 
+def _compute_idfs(df):
+    log_call()
+    # IDF (inverse document frequency) formula: log N / n_t
+    # N is the number of documents (aka packages)
+    # n_t is the number of documents tagged with term t
+    m = df.shape[0] # aka N
+    nts = {}
+    for index in range(m):
+        seen = {}
+        for tag in _parse_tags(df['tags'][index]):
+            if not seen.get(tag, False):
+                nts[tag] = nts.get(tag, 0) + 1
+                seen[tag] = True
+
+    log10_m = np.log10(m)
+    return {tag: log10_m - np.log10(nt) for tag, nt in nts.items()}
+
 class SmartTagger(object):
     def __init__(self, weights=None):
         self.weights = weights or DEFAULT_WEIGHTS
+        self.vocab_ = None
+        self.idfs_ = None
 
     def _make_etags(self, weights):
         log_call()
@@ -64,7 +82,7 @@ class SmartTagger(object):
                 weights[rowidx, colidx] = weight * idf
 
         cv = CountVectorizer(vocabulary=self.vocab_)
-        for feature in 'description', 'id':
+        for feature in ('description', 'id'):
             weight = self.weights[feature]
             counts = cv.transform(df[feature])
             for rowidx, colidx in zip(*counts.nonzero()):
@@ -84,22 +102,5 @@ class SmartTagger(object):
     def fit_transform(self, df):
         log_call()
         self.vocab_ = sorted(set([tag for tags in df['tags'] for tag in _parse_tags(tags)]))
-        self.idfs_ = self._compute_idfs(df)
+        self.idfs_ = _compute_idfs(df)
         return self._enrich_tags(df)
-
-    def _compute_idfs(self, df):
-        log_call()
-        # IDF (inverse document frequency) formula: log N / n_t
-        # N is the number of documents (aka packages)
-        # n_t is the number of documents tagged with term t
-        m = df.shape[0] # aka N
-        nts = {}
-        for index in range(m):
-            seen = {}
-            for tag in _parse_tags(df['tags'][index]):
-                if not seen.get(tag, False):
-                    nts[tag] = nts.get(tag, 0) + 1
-                    seen[tag] = True
-
-        log10_m = np.log10(m)
-        return {tag: log10_m - np.log10(nt) for tag, nt in nts.items()}
