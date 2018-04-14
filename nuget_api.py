@@ -5,43 +5,79 @@ from urllib.parse import urlencode
 
 from utils.http import JSONClient
 
+class NullPackageSearchInfo(object):
+    def __init__(self):
+        self.id = ''
+        self.total_downloads = -1
+        self.verified = False
+
 DEFAULT_INDEX = 'https://api.nuget.org/v3/index.json'
 
 CATALOG_TYPE = 'Catalog/3.0.0'
 REGISTRATION_TYPE = 'RegistrationsBaseUrl'
 SEARCH_TYPE = 'SearchQueryService'
 
-class NugetCatalogClient(object):
-    def __init__(self, ctx):
+NULL_SEARCH_INFO = NullPackageSearchInfo()
+
+class NugetClient(object):
+    def __init__(self, type, ctx):
+        self._type = type
         self._ctx = ctx
 
     async def load(self):
         await self.load_index()
-        await self.load_catalog()
         return self
 
     async def load_index(self, index_url=DEFAULT_INDEX):
         index_json = await self._ctx.client.get(index_url)
         nodes = index_json['resources']
-        catalog_url = next(node['@id'] for node in nodes if node['@type'] == CATALOG_TYPE)
-        self._catalog_url = catalog_url.rstrip('/')
+        endpoint_url = next(node['@id'] for node in nodes if node['@type'] == self._type)
+        self._endpoint_url = endpoint_url.rstrip('/')
+
+class NugetCatalogClient(NugetClient):
+    def __init__(self, ctx):
+        super().__init__(CATALOG_TYPE, ctx)
+
+    async def load(self):
+        await super().load()
+        await self.load_catalog()
+        return self
 
     async def load_catalog(self):
-        self._catalog_json = await self._ctx.client.get(self._catalog_url)
+        self._catalog_json = await self._ctx.client.get(self._endpoint_url)
 
     async def load_pages(self):
         page_urls = [node['@id'] for node in self._catalog_json['items']]
         # Note: Do NOT attempt to use asyncio.gather here. It's crucial that we only load one page at a time,
-        # so we don't bite off more than we can chew.
+        # so that we don't bite off more than we can chew.
         for url in page_urls:
             yield await NugetPage(url, self._ctx).load()
 
-class NugetContext(object):
-    def __init__(self):
-        self.client = JSONClient()
+class NugetRegistrationClient(NugetClient):
+    def __init__(self, ctx):
+        super().__init__(REGISTRATION_TYPE, ctx)
 
+    async def load_package(self, id_):
+        reg_url = '{}/{}/index.json'.format(self._endpoint_url, id_.lower())
+        reg_json = await self._ctx.client.get(reg_url)
+        return await PackageRegistrationInfo(reg_json, self._ctx).load()
+
+class NugetSearchClient(NugetClient):
+    def __init__(self, ctx):
+        super().__init__(SEARCH_TYPE, ctx)
+
+    # See https://docs.microsoft.com/en-us/nuget/api/search-query-service-resource for a full list of params.
+    async def search(self, q, **search_params):
+        search_params['q'] = q
+        search_params.setdefault('prerelease', True)
+
+        qstring = urlencode(search_params)
+        search_url = '{}?{}'.format(self._endpoint_url, qstring)
+        return await NugetSearchResults(search_url, self._ctx).load()
+
+class NugetContext(object):
     async def __aenter__(self):
-        await self.client.__aenter__()
+        self.client = await JSONClient().__aenter__()
         return self
 
     async def __aexit__(self, type, value, traceback):
@@ -64,8 +100,10 @@ class NugetPackage(object):
                 await self._load_search_info()
             return self
         except:
-            message = tb.format_exc()
-            raise PackageLoadError(message)
+            # asyncio.gather with return_exceptions=True kills our ability to look at the traceback
+            # once we've caught the exception, so print it here.
+            tb.print_exc()
+            raise
 
     async def _load_catalog_info(self):
         self.catalog = PackageCatalogInfo(await self._ctx.client.get(self._catalog_url))
@@ -75,7 +113,7 @@ class NugetPackage(object):
         query = 'id:"{}"'.format(self.id)
         results = await cli.search(q=query)
         self.search = next((d for d in results if d.id.lower() == self.id.lower()),
-                           NullPackageSearchInfo())
+                           NULL_SEARCH_INFO)
 
     async def _load_reg_info(self):
         cli = await NugetRegistrationClient(self._ctx).load()
@@ -94,53 +132,6 @@ class NugetPage(object):
     def packages(self):
         return (NugetPackage(node, self._ctx) for node in self._json['items'])
 
-class NugetRegistrationClient(object):
-    def __init__(self, ctx):
-        self._ctx = ctx
-
-    async def load(self):
-        await self.load_index()
-        return self
-
-    async def load_index(self, index_url=DEFAULT_INDEX):
-        index_json = await self._ctx.client.get(index_url)
-        nodes = index_json['resources']
-        reg_base = next(node['@id'] for node in nodes if node['@type'] == REGISTRATION_TYPE)
-        self._reg_base = reg_base.rstrip('/')
-
-    async def load_package(self, id_):
-        reg_url = '{}/{}/index.json'.format(self._reg_base, id_.lower())
-        reg_json = await self._ctx.client.get(reg_url)
-        return await PackageRegistrationInfo(reg_json, self._ctx).load()
-
-class NugetSearchClient(object):
-    def __init__(self, ctx):
-        self._ctx = ctx
-
-    async def load(self):
-        await self.load_index()
-        return self
-
-    async def load_index(self, index_url=DEFAULT_INDEX):
-        index_json = await self._ctx.client.get(index_url)
-        nodes = index_json['resources']
-        search_base = next(node['@id'] for node in nodes if node['@type'] == SEARCH_TYPE)
-        self._search_base = search_base.rstrip('/')
-
-    async def search(self, **search_params):
-        # See https://docs.microsoft.com/en-us/nuget/api/search-query-service-resource for a full list of params.
-        REQUIRED_PARAMS = ['q']
-
-        for param_name in REQUIRED_PARAMS:
-            if param_name not in search_params:
-                raise ValueError(
-                    "Required parameter {} is not in {}".format(
-                        repr(param_name), search_params))
-
-        qstring = urlencode(search_params)
-        search_url = '{}?{}'.format(self._search_base, qstring)
-        return await NugetSearchResults(search_url, self._ctx).load()
-
 class NugetSearchResults(object):
     def __init__(self, url, ctx):
         self._url = url
@@ -155,12 +146,6 @@ class NugetSearchResults(object):
         self.total_hits = self._json['totalHits']
         return self
 
-class NullPackageSearchInfo(object):
-    def __init__(self):
-        self.id = ''
-        self.total_downloads = -1
-        self.verified = False
-
 class PackageCatalogInfo(object):
     def __init__(self, json):
         self.authors = [name.strip() for name in json['authors'].split(',')]
@@ -172,9 +157,6 @@ class PackageCatalogInfo(object):
         self.summary = json.get('summary')
         self.tags = json.get('tags', [])
         self.version = json['version']
-
-class PackageLoadError(Exception):
-    pass
 
 class PackageRegistrationInfo(object):
     def __init__(self, json, ctx):
@@ -232,7 +214,7 @@ class RegistrationPage(object):
         return iter(self._leaves)
 
     async def load(self):
-        if not 'items' in self._json:
+        if 'items' not in self._json:
             url = self._json['@id']
             self._json = await self._ctx.client.get(url)
         self._leaves = [RegistrationLeaf(node['catalogEntry']) for node in self._json['items']]
