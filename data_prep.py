@@ -1,3 +1,4 @@
+import asyncio
 import logging
 import numpy as np
 import os
@@ -43,18 +44,16 @@ async def write_packages_file(fname, page_limit=100):
 
             client = await NugetCatalogClient(ctx).load()
             async for page in aislice(client.load_pages(), page_limit):
-                results = await asyncio.gather(*[package.load() for package in page.packages], return_exceptions=True)
+                results = await asyncio.gather(*[package.load() for package in page.packages],
+                                               return_exceptions=True)
                 for result in results:
-                    if not isinstance(result, Exception):
-                        package = result
-                        writer.write(package)
-                    else:
+                    if isinstance(result, Exception):
                         exc = result
                         if isinstance(exc, ClientError) or isinstance(exc, asyncio.TimeoutError):
-                            # TODO: Figure out how to get arguments needed for tb.format_exception()
-                            LOG.debug("Error raised while loading {}:\n{}", package.id, tb.format_exc())
                             continue
                         raise exc
+                    package = result
+                    writer.write(package)
 
 def read_packages_file(fname):
     DEFAULT_DATETIME = datetime(year=1900, month=1, day=1)
@@ -111,7 +110,6 @@ def dump_etags(df, fname, include_weights):
     with open(fname, 'w', encoding='utf-8') as file:
         for index in range(m):
             id_, etags = df['id'][index], df['etags'][index]
-            # TODO: Inconsistent type of etags depending on 'include_weights'
             if not include_weights and etags:
                 etags = ','.join(map(get_tag, etags.split(',')))
             line = "{}: {}\n".format(id_, etags)

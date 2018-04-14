@@ -20,8 +20,8 @@ SEARCH_TYPE = 'SearchQueryService'
 NULL_SEARCH_INFO = NullPackageSearchInfo()
 
 class NugetClient(object):
-    def __init__(self, type, ctx):
-        self._type = type
+    def __init__(self, type_, ctx):
+        self._type = type_
         self._ctx = ctx
 
     async def load(self):
@@ -80,8 +80,8 @@ class NugetContext(object):
         self.client = await JSONClient().__aenter__()
         return self
 
-    async def __aexit__(self, type, value, traceback):
-        await self.client.__aexit__(type, value, traceback)
+    async def __aexit__(self, type_, value, traceback):
+        await self.client.__aexit__(type_, value, traceback)
 
 class NugetPackage(object):
     def __init__(self, json, ctx):

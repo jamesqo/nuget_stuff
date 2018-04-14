@@ -9,8 +9,8 @@ class CsvSerializer(object):
         self._writer = csv.writer(self._file)
         return self
 
-    def __exit__(self, type, value, traceback):
-        self._file.__exit__(type, value, traceback)
+    def __exit__(self, type_, value, traceback):
+        self._file.__exit__(type_, value, traceback)
     
     def write_header(self):
         row = [

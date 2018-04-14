@@ -13,8 +13,8 @@ class JSONClient(object):
         self._sess = await ClientSession().__aenter__()
         return self
 
-    async def __aexit__(self, type, value, traceback):
-        await self._sess.__aexit__(type, value, traceback)
+    async def __aexit__(self, type_, value, traceback):
+        await self._sess.__aexit__(type_, value, traceback)
 
     async def get(self, url, timeout=10):
         async with async_timeout.timeout(timeout):
