@@ -43,8 +43,8 @@ async def write_packages_file(fname, args):
             client = await NugetCatalogClient(ctx).load()
 
             page_limit = args.page_limit
-            pages = client.load_pages() if page_limit > 0 else aislice(client.load_pages(), page_limit)
-            
+            pages = client.load_pages() if page_limit == 0 else aislice(client.load_pages(), page_limit)
+
             async for page in pages:
                 results = await asyncio.gather(*[package.load() for package in page.packages],
                                                return_exceptions=True)
