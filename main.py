@@ -35,7 +35,7 @@ def parse_args():
     )
     parser.add_argument(
         '-l', '--page-limit',
-        help="limit the number of pages downloaded from the catalog. 0 means download all pages." \
+        help="limit the number of pages downloaded from the catalog. 0 means download all pages. " \
              "must be used in conjunction with -r.",
         action='store',
         dest='page_limit',
