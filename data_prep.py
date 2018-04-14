@@ -35,14 +35,17 @@ SCHEMA = {
     'version': object,
 }
 
-async def write_packages_file(fname, page_limit=100):
+async def write_packages_file(fname, args):
     log_call()
     async with NugetContext() as ctx:
         with CsvSerializer(fname) as writer:
             writer.write_header()
-
             client = await NugetCatalogClient(ctx).load()
-            async for page in aislice(client.load_pages(), page_limit):
+
+            page_limit = args.page_limit
+            pages = client.load_pages() if page_limit > 0 else aislice(client.load_pages(), page_limit)
+            
+            async for page in pages:
                 results = await asyncio.gather(*[package.load() for package in page.packages],
                                                return_exceptions=True)
                 for result in results:
@@ -116,7 +119,7 @@ def dump_etags(df, fname, include_weights):
 
 async def load_packages(fname, args):
     if args.refresh_packages or not os.path.isfile(fname):
-        await write_packages_file(fname)
+        await write_packages_file(fname, args)
     df = read_packages_file(fname)
 
     df = add_days_alive(df)

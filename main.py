@@ -34,6 +34,15 @@ def parse_args():
         dest='include_weights'
     )
     parser.add_argument(
+        '-l', '--page-limit',
+        help="limit the number of pages downloaded from the catalog. " \
+             "0 means download all pages.",
+        action='store',
+        dest='page_limit',
+        type=int,
+        default=100
+    )
+    parser.add_argument(
         '-r', '--refresh-packages',
         help="refresh package database",
         action='store_true',
