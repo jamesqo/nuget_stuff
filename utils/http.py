@@ -9,12 +9,15 @@ from utils.logging import StyleAdapter
 LOG = StyleAdapter(logging.getLogger(__name__))
 
 class JSONClient(object):
+    def __init__(self):
+        self._sess = None
+
     async def __aenter__(self):
         self._sess = await ClientSession().__aenter__()
         return self
 
-    async def __aexit__(self, type, value, traceback):
-        await self._sess.__aexit__(type, value, traceback)
+    async def __aexit__(self, type_, value, traceback):
+        await self._sess.__aexit__(type_, value, traceback)
 
     async def get(self, url, timeout=10):
         async with async_timeout.timeout(timeout):

@@ -1,8 +1,8 @@
+import asyncio
 import logging
 import numpy as np
 import os
 import pandas as pd
-import traceback as tb
 
 from aiohttp.client_exceptions import ClientError
 from datetime import date, datetime, timedelta
@@ -43,18 +43,16 @@ async def write_packages_file(fname, page_limit=100):
 
             client = await NugetCatalogClient(ctx).load()
             async for page in aislice(client.load_pages(), page_limit):
-                results = await asyncio.gather(*[package.load() for package in page.packages], return_exceptions=True)
+                results = await asyncio.gather(*[package.load() for package in page.packages],
+                                               return_exceptions=True)
                 for result in results:
-                    if not isinstance(result, Exception):
-                        package = result
-                        writer.write(package)
-                    else:
+                    if isinstance(result, Exception):
                         exc = result
-                        if isinstance(exc, ClientError) or isinstance(exc, asyncio.TimeoutError):
-                            # TODO: Figure out how to get arguments needed for tb.format_exception()
-                            LOG.debug("Error raised while loading {}:\n{}", package.id, tb.format_exc())
-                            continue
-                        raise exc
+                        if not isinstance(exc, (ClientError, asyncio.TimeoutError)):
+                            raise exc
+                        continue
+                    package = result
+                    writer.write(package)
 
 def read_packages_file(fname):
     DEFAULT_DATETIME = datetime(year=1900, month=1, day=1)
@@ -73,7 +71,7 @@ def read_packages_file(fname):
     df.drop('listed', axis=1, inplace=True)
 
     assert all([DEFAULT_DATETIME not in df[feature] for feature in date_features]), \
-           "Certain packages should have their date values set to nan instead of the default datetime."
+           "Certain packages are missing date values."
 
     df.reset_index(drop=True, inplace=True)
     return df
@@ -92,7 +90,7 @@ def add_downloads_per_day(df):
     log_call()
     df['downloads_per_day'] = df['total_downloads'] / df['days_alive']
     assert all(df['downloads_per_day'] >= 0)
-    df.loc[df['downloads_per_day'] < 1, 'downloads_per_day'] = 1 # Important so np.log doesn't spazz out later
+    df.loc[df['downloads_per_day'] < 1, 'downloads_per_day'] = 1 # So np.log doesn't spazz out later
     return df
 
 def add_etags(df):
@@ -103,7 +101,7 @@ def add_etags(df):
 
 def dump_etags(df, fname, include_weights):
     def get_tag(etag):
-        tag, weight = etag.split(' ')
+        tag, _ = etag.split(' ')
         return tag
 
     log_call()
@@ -111,7 +109,6 @@ def dump_etags(df, fname, include_weights):
     with open(fname, 'w', encoding='utf-8') as file:
         for index in range(m):
             id_, etags = df['id'][index], df['etags'][index]
-            # TODO: Inconsistent type of etags depending on 'include_weights'
             if not include_weights and etags:
                 etags = ','.join(map(get_tag, etags.split(',')))
             line = "{}: {}\n".format(id_, etags)

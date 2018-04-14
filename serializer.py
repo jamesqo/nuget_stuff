@@ -3,15 +3,17 @@ import csv
 class CsvSerializer(object):
     def __init__(self, fname):
         self._fname = fname
+        self._file = None
+        self._writer = None
 
     def __enter__(self):
         self._file = open(self._fname, mode='w', encoding='utf-8').__enter__()
         self._writer = csv.writer(self._file)
         return self
 
-    def __exit__(self, type, value, traceback):
-        self._file.__exit__(type, value, traceback)
-    
+    def __exit__(self, type_, value, traceback):
+        self._file.__exit__(type_, value, traceback)
+
     def write_header(self):
         row = [
             'authors',
