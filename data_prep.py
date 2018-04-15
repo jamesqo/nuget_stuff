@@ -3,6 +3,7 @@ import logging
 import numpy as np
 import os
 import pandas as pd
+import sys
 
 from aiohttp.client_exceptions import ClientError
 from datetime import date, datetime, timedelta
@@ -41,14 +42,15 @@ async def write_packages(packages_root, args):
     os.makedirs(packages_root, exist_ok=True)
     async with NugetContext() as ctx:
         client = await NugetCatalogClient(ctx).load()
-        page_limit = args.page_limit
-        pages = client.load_pages() if page_limit == 0 else aislice(client.load_pages(), page_limit)
+        page_start, page_limit = args.page_start, args.page_limit or sys.maxsize
+        pages = aislice(client.load_pages(), page_start, page_limit)
 
         async for i, page in aenumerate(pages):
-            assert i == page.pageno
-            LOG.debug("Fetching packages for page #{}".format(i))
+            pageno = page.pageno
+            assert page_start + i == pageno
+            LOG.debug("Fetching packages for page #{}".format(pageno))
 
-            fname = os.path.join(packages_root, 'page{}.csv'.format(i))
+            fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
             with CsvSerializer(fname) as writer:
                 writer.write_header()
                 results = await asyncio.gather(*[package.load() for package in page.packages],

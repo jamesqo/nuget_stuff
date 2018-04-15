@@ -1,7 +1,12 @@
 import async_timeout
+import asyncio
+import json
 import logging
+import math
+import numpy as np
 
 from aiohttp import ClientSession
+from asyncio import CancelledError
 from json.decoder import JSONDecodeError
 
 from utils.logging import StyleAdapter
@@ -23,9 +28,52 @@ class JSONClient(object):
         async with async_timeout.timeout(timeout):
             async with self._sess.get(url) as response:
                 response.raise_for_status()
+                text = await response.text()
                 try:
-                    return await response.json()
+                    return json.loads(text)
                 except JSONDecodeError:
-                    text = await response.text()
                     LOG.debug("Could not decode JSON from {}:\n{}", url, text)
                     raise
+
+def _fuzz(delay):
+    BASE = 2
+    log_delay = math.log(delay, BASE)
+    blur = np.random.standard_normal(size=1)[0]
+    return int(np.ceil(BASE ** (log_delay + blur)))
+
+def _log_failure(url, attemptno, delay, excname):
+    LOG.debug("GET {} failed with {}. Beginning attempt #{} in {}s...".format(url, excname, attemptno, delay))
+
+class RetryClient(object):
+    def __init__(self,
+                 inner,
+                 ok_exceptions,
+                 retry_limit=5,
+                 delay=10,
+                 delay_strategy='fuzz'):
+        self._inner = inner
+        self._ok_exceptions = ok_exceptions
+        self._retry_limit = retry_limit
+        self._delay = delay
+        assert delay_strategy == 'fuzz'
+
+    async def __aenter__(self):
+        await self._inner.__aenter__()
+        return self
+
+    async def __aexit__(self, type_, value, traceback):
+        await self._inner.__aexit__(type_, value, traceback)
+
+    def _is_ok(self, exc):
+        return isinstance(exc, self._ok_exceptions)
+
+    async def get(self, url, *args, **kwargs):
+        for i in range(self._retry_limit):
+            try:
+                return await self._inner.get(url, *args, **kwargs)
+            except Exception as exc: # pylint: disable=W0703
+                if not self._is_ok(exc):
+                    raise
+                excname, attemptno, delay = type(exc).__name__, i + 2, _fuzz(self._delay)
+                _log_failure(url, attemptno, delay, excname)
+                await asyncio.sleep(delay)

@@ -36,6 +36,7 @@ def parse_args():
     )
     parser.add_argument(
         '-l', '--page-limit',
+        metavar='LIMIT',
         help="limit the number of pages downloaded from the catalog. 0 means download all pages. " \
              "must be used in conjunction with -r.", # TODO: Enforce this.
         action='store',
@@ -48,6 +49,15 @@ def parse_args():
         help="refresh package database",
         action='store_true',
         dest='refresh_packages'
+    )
+    parser.add_argument(
+        '-s', '--page-start',
+        metavar='START',
+        help="start from page START. must be used in conjunction with -r.",
+        action='store',
+        dest='page_start',
+        type=int,
+        default=0,
     )
     parser.add_argument(
         '-t', '--tag-dump',
