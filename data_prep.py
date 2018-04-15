@@ -9,10 +9,11 @@ from aiohttp.client_exceptions import ClientError
 from datetime import date, datetime, timedelta
 from glob import glob
 
-from nuget_api import NugetCatalogClient, NugetContext, OK_EXCEPTIONS
+from nuget_api import NugetCatalogClient, NugetContext
 from serializer import CsvSerializer
 from tagger import SmartTagger
 
+from utils.http import is_404
 from utils.iter import aenumerate, aislice
 from utils.logging import log_call, StyleAdapter
 
@@ -48,7 +49,7 @@ async def write_packages(packages_root, args):
         async for i, page in aenumerate(pages):
             pageno = page.pageno
             assert page_start + i == pageno
-            LOG.debug("Fetching packages for page #{}".format(pageno))
+            LOG.debug("Fetching packages for page #{}", pageno)
 
             fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
             with CsvSerializer(fname) as writer:
@@ -57,12 +58,10 @@ async def write_packages(packages_root, args):
                                                 return_exceptions=True)
                 for result in results:
                     if isinstance(result, Exception):
-                        exc = result
-                        if not isinstance(exc, OK_EXCEPTIONS):
-                            raise exc
+                        if not is_404(result):
+                            raise result
                     else:
-                        package = result
-                        writer.write(package)
+                        writer.write(result)
 
 def read_packages(packages_root):
     DEFAULT_DATETIME = datetime(year=1900, month=1, day=1)

@@ -1,20 +1,21 @@
 import asyncio
+import logging
 import re
 import traceback as tb
 
-from aiohttp.client_exceptions import ClientError
 from asyncio import CancelledError
 from urllib.parse import urlencode
 
-from utils.http import JSONClient, RetryClient
+from utils.http import is_404, JSONClient, RetryClient
+from utils.logging import StyleAdapter
+
+LOG = StyleAdapter(logging.getLogger(__name__))
 
 DEFAULT_INDEX = 'https://api.nuget.org/v3/index.json'
 
 CATALOG_TYPE = 'Catalog/3.0.0'
 REGISTRATION_TYPE = 'RegistrationsBaseUrl'
 SEARCH_TYPE = 'SearchQueryService'
-
-OK_EXCEPTIONS = (CancelledError, ClientError, asyncio.TimeoutError)
 
 class NullPackageSearchInfo(object):
     def __init__(self):
@@ -82,12 +83,15 @@ class NugetSearchClient(NugetClient):
         search_url = '{}?{}'.format(self._endpoint_url, qstring)
         return await NugetSearchResults(search_url, self._ctx).load()
 
+def _ok_filter(exc):
+    return isinstance(exc, (CancelledError, asyncio.TimeoutError))
+
 class NugetContext(object):
     def __init__(self):
         self.client = None
 
     async def __aenter__(self):
-        self.client = await RetryClient(JSONClient(), OK_EXCEPTIONS).__aenter__()
+        self.client = await RetryClient(JSONClient(), _ok_filter).__aenter__()
         return self
 
     async def __aexit__(self, type_, value, traceback):
@@ -116,7 +120,9 @@ class NugetPackage(object):
         except Exception as exc:
             # asyncio.gather with return_exceptions=True kills our ability to look at the traceback
             # once we've caught the exception, so print it here.
-            if not isinstance(exc, OK_EXCEPTIONS):
+            if is_404(exc):
+                LOG.debug("Got 404 while loading info for {}. This package will not be serialized.", self.id)
+            else:
                 tb.print_exc()
             raise
 
