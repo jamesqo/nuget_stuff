@@ -5,15 +5,13 @@ import os
 import pandas as pd
 import sys
 
-from aiohttp.client_exceptions import ClientError
 from datetime import date, datetime, timedelta
 from glob import glob
 
-from nuget_api import NugetCatalogClient, NugetContext
+from nuget_api import can_ignore_exception, NugetCatalogClient, NugetContext
 from serializer import CsvSerializer
 from tagger import SmartTagger
 
-from utils.http import is_404
 from utils.iter import aenumerate, aislice
 from utils.logging import log_call, StyleAdapter
 
@@ -58,7 +56,7 @@ async def write_packages(packages_root, args):
                                                 return_exceptions=True)
                 for result in results:
                     if isinstance(result, Exception):
-                        if not is_404(result):
+                        if not can_ignore_exception(result):
                             raise result
                     else:
                         writer.write(result)

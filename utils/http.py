@@ -4,15 +4,11 @@ import json
 import logging
 
 from aiohttp import ClientSession
-from aiohttp.client_exceptions import ClientResponseError
 from json.decoder import JSONDecodeError
 
 from utils.logging import StyleAdapter
 
 LOG = StyleAdapter(logging.getLogger(__name__))
-
-def is_404(exc):
-    return isinstance(exc, ClientResponseError) and exc.code == 404
 
 class JSONClient(object):
     def __init__(self):
@@ -43,7 +39,7 @@ class RetryClient(object):
     def __init__(self,
                  inner,
                  ok_filter,
-                 retry_limit=5,
+                 retry_limit=3,
                  delay=1):
         self._inner = inner
         self._ok_filter = ok_filter
