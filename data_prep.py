@@ -45,7 +45,7 @@ async def write_packages(packages_root, args):
         pages = client.load_pages() if page_limit == 0 else aislice(client.load_pages(), page_limit)
 
         async for i, page in aenumerate(pages):
-            assert i == page.page_number
+            assert i == page.pageno
             LOG.debug("Fetching packages for page #{}".format(i))
 
             fname = os.path.join(packages_root, 'page{}.csv'.format(i))

@@ -1,4 +1,5 @@
 import asyncio
+import re
 import traceback as tb
 
 from aiohttp.client_exceptions import ClientError
@@ -7,21 +8,21 @@ from urllib.parse import urlencode
 
 from utils.http import JSONClient
 
-class NullPackageSearchInfo(object):
-    def __init__(self):
-        self.id = ''
-        self.total_downloads = -1
-        self.verified = False
-
 DEFAULT_INDEX = 'https://api.nuget.org/v3/index.json'
 
 CATALOG_TYPE = 'Catalog/3.0.0'
 REGISTRATION_TYPE = 'RegistrationsBaseUrl'
 SEARCH_TYPE = 'SearchQueryService'
 
-NULL_SEARCH_INFO = NullPackageSearchInfo()
-
 OK_EXCEPTIONS = (CancelledError, ClientError, asyncio.TimeoutError)
+
+class NullPackageSearchInfo(object):
+    def __init__(self):
+        self.id = ''
+        self.total_downloads = -1
+        self.verified = False
+
+NullPackageSearchInfo.INSTANCE = NullPackageSearchInfo()
 
 class NugetClient(object):
     def __init__(self, type_, ctx):
@@ -131,10 +132,13 @@ class NugetPackage(object):
         query = 'id:"{}"'.format(self.id)
         results = await cli.search(q=query)
         self.search = next((d for d in results if d.id.lower() == self.id.lower()),
-                           NULL_SEARCH_INFO)
+                           NullPackageSearchInfo.INSTANCE)
 
 class NugetPage(object):
     def __init__(self, url, ctx):
+        match = re.search(r'page([0-9]+)\.json$', url)
+        self.pageno = int(match.group(1))
+
         self._url = url
         self._ctx = ctx
         self._json = None
