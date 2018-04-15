@@ -26,13 +26,14 @@ SCHEMA = {
     'created': object,
     'description': object,
     'id': object,
-    'is_prerelease': bool,
+    'is_prerelease': object, # bool (missing values)
     'last_updated': object,
-    'listed': bool,
+    'listed': object, # bool (missing values)
+    'missing_info': bool,
     'summary': object,
     'tags': object,
-    'total_downloads': np.int32,
-    'verified': bool,
+    'total_downloads': object, # np.int32 (missing values)
+    'verified': object, # bool (missing values)
     'version': object,
 }
 
@@ -76,6 +77,14 @@ def read_packages(packages_root):
         df['id_lower'] = df['id'].apply(str.lower)
         df.drop_duplicates(subset='id_lower', keep='last', inplace=True)
         df.drop('id_lower', axis=1, inplace=True)
+
+        # Remove entries with missing_info = True, then set columns which no longer
+        # have missing data to the correct type.
+        df = df[~df['missing_info']]
+        df['is_prerelease'] = df['is_prerelease'].astype(bool)
+        df['listed'] = df['listed'].astype(bool)
+        df['total_downloads'] = df['total_downloads'].astype(np.int32)
+        df['verified'] = df['verified'].astype(bool)
 
         # Remove unlisted packages
         df = df[df['listed']]
