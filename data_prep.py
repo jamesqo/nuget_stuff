@@ -103,7 +103,9 @@ def read_packages(packages_root):
 
 def add_days_alive(df):
     log_call()
-    df['days_alive'] = df['created'].apply(lambda dt: max((TOMORROW - dt).days, 1))
+    pred = ~df['created'].isna()
+    df.loc[~pred, 'days_alive'] = math.nan
+    df.loc[pred, 'days_alive'] = df.loc[pred, 'created'].apply(lambda dt: max((TOMORROW - dt).days, 1))
     return df
 
 def add_days_abandoned(df):
