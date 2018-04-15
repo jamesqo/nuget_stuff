@@ -4,22 +4,29 @@ import pandas as pd
 from itertools import islice
 from scipy.sparse import lil_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import linear_kernel
+from sklearn.metrics.pairwise import check_pairwise_arrays
+from sklearn.utils.extmath import safe_sparse_dot
 
 from utils.logging import log_call
+
+# Copied from https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/metrics/pairwise.py
+# Needed to control the `dense_output` parameter so this didn't throw a MemoryError.
+def linear_kernel(X, Y=None, dense_output=True):
+    X, Y = check_pairwise_arrays(X, Y)
+    return safe_sparse_dot(X, Y.T, dense_output)
 
 def _compute_authors_scores(df):
     log_call()
     vectorizer = TfidfVectorizer(ngram_range=(2, 2))
     tfidf_matrix = vectorizer.fit_transform(df['authors'])
-    return linear_kernel(tfidf_matrix, tfidf_matrix)
+    return linear_kernel(tfidf_matrix, tfidf_matrix, dense_output=False)
 
 def _compute_description_scores(df):
     log_call()
     vectorizer = TfidfVectorizer(ngram_range=(1, 3),
                                  stop_words='english')
     tfidf_matrix = vectorizer.fit_transform(df['description'])
-    return linear_kernel(tfidf_matrix, tfidf_matrix)
+    return linear_kernel(tfidf_matrix, tfidf_matrix, dense_output=False)
 
 def _compute_etags_scores(df, tags_vocab):
     log_call()
@@ -40,7 +47,7 @@ def _compute_etags_scores(df, tags_vocab):
             colidx = index_map[tag]
             tag_weights[rowidx, colidx] = np.float32(weight)
 
-    return linear_kernel(tag_weights, tag_weights)
+    return linear_kernel(tag_weights, tag_weights, dense_output=False)
 
 def _remove_diagonal(scores):
     # We don't want to recommend the same package based on itself, so set all scores along the diagonal to 0.
