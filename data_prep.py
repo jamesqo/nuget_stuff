@@ -52,7 +52,7 @@ async def write_packages(packages_root, args):
             fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
             with CsvSerializer(fname) as writer:
                 writer.write_header()
-                packages = page.packages
+                packages = list(page.packages)
                 results = await asyncio.gather(*[package.load() for package in packages],
                                                return_exceptions=True)
                 for package, result in zip(packages, results):
