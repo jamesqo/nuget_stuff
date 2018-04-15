@@ -63,7 +63,7 @@ async def write_packages(packages_root, args):
 
 def read_packages(packages_root):
     DEFAULT_DATETIME = datetime(year=1900, month=1, day=1)
-    DATE_FEATURES = ('created', 'last_updated')
+    DATE_FEATURES = ['created', 'last_updated']
 
     log_call()
     dfs = []
