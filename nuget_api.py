@@ -1,5 +1,8 @@
+import asyncio
 import traceback as tb
 
+from aiohttp.client_exceptions import ClientError
+from asyncio import CancelledError
 from urllib.parse import urlencode
 
 from utils.http import JSONClient
@@ -17,6 +20,8 @@ REGISTRATION_TYPE = 'RegistrationsBaseUrl'
 SEARCH_TYPE = 'SearchQueryService'
 
 NULL_SEARCH_INFO = NullPackageSearchInfo()
+
+OK_EXCEPTIONS = (CancelledError, ClientError, asyncio.TimeoutError)
 
 class NugetClient(object):
     def __init__(self, type_, ctx):
@@ -107,10 +112,11 @@ class NugetPackage(object):
             if search:
                 await self._load_search_info()
             return self
-        except:
+        except Exception as exc:
             # asyncio.gather with return_exceptions=True kills our ability to look at the traceback
             # once we've caught the exception, so print it here.
-            tb.print_exc()
+            if not isinstance(exc, OK_EXCEPTIONS):
+                tb.print_exc()
             raise
 
     async def _load_catalog_info(self):

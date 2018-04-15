@@ -6,12 +6,13 @@ import pandas as pd
 
 from aiohttp.client_exceptions import ClientError
 from datetime import date, datetime, timedelta
+from glob import glob
 
-from nuget_api import NugetCatalogClient, NugetContext
+from nuget_api import NugetCatalogClient, NugetContext, OK_EXCEPTIONS
 from serializer import CsvSerializer
 from tagger import SmartTagger
 
-from utils.iter import aislice
+from utils.iter import aenumerate, aislice
 from utils.logging import log_call, StyleAdapter
 
 LOG = StyleAdapter(logging.getLogger(__name__))
@@ -35,49 +36,59 @@ SCHEMA = {
     'version': object,
 }
 
-async def write_packages_file(fname, args):
+async def write_packages(packages_root, args):
     log_call()
+    os.makedirs(packages_root, exist_ok=True)
     async with NugetContext() as ctx:
-        with CsvSerializer(fname) as writer:
-            writer.write_header()
-            client = await NugetCatalogClient(ctx).load()
+        client = await NugetCatalogClient(ctx).load()
+        page_limit = args.page_limit
+        pages = client.load_pages() if page_limit == 0 else aislice(client.load_pages(), page_limit)
 
-            page_limit = args.page_limit
-            pages = client.load_pages() if page_limit == 0 else aislice(client.load_pages(), page_limit)
+        async for i, page in aenumerate(pages):
+            assert i == page.page_number
+            LOG.debug("Fetching packages for page #{}".format(i))
 
-            async for page in pages:
+            fname = os.path.join(packages_root, 'page{}.csv'.format(i))
+            with CsvSerializer(fname) as writer:
+                writer.write_header()
                 results = await asyncio.gather(*[package.load() for package in page.packages],
-                                               return_exceptions=True)
+                                                return_exceptions=True)
                 for result in results:
                     if isinstance(result, Exception):
                         exc = result
-                        if not isinstance(exc, (ClientError, asyncio.TimeoutError)):
+                        if not isinstance(exc, OK_EXCEPTIONS):
                             raise exc
-                        continue
-                    package = result
-                    writer.write(package)
+                    else:
+                        package = result
+                        writer.write(package)
 
-def read_packages_file(fname):
+def read_packages(packages_root):
     DEFAULT_DATETIME = datetime(year=1900, month=1, day=1)
+    DATE_FEATURES = ('created', 'last_updated')
 
     log_call()
-    date_features = ['created', 'last_updated']
-    df = pd.read_csv(fname, dtype=SCHEMA, na_filter=False, parse_dates=date_features)
+    dfs = []
+    pattern = os.path.join(packages_root, 'page*.csv')
 
-    # Remove entries with the same id, keeping the one with the highest version
-    df['id_lower'] = df['id'].apply(str.lower)
-    df.drop_duplicates(subset='id_lower', keep='last', inplace=True)
-    df.drop('id_lower', axis=1, inplace=True)
+    for fname in glob(pattern):
+        df = pd.read_csv(fname, dtype=SCHEMA, na_filter=False, parse_dates=DATE_FEATURES)
 
-    # Remove unlisted packages
-    df = df[df['listed']]
-    df.drop('listed', axis=1, inplace=True)
+        # Remove entries with the same id, keeping the one with the highest version
+        df['id_lower'] = df['id'].apply(str.lower)
+        df.drop_duplicates(subset='id_lower', keep='last', inplace=True)
+        df.drop('id_lower', axis=1, inplace=True)
 
-    assert all([DEFAULT_DATETIME not in df[feature] for feature in date_features]), \
-           "Certain packages are missing date values."
+        # Remove unlisted packages
+        df = df[df['listed']]
+        df.drop('listed', axis=1, inplace=True)
 
-    df.reset_index(drop=True, inplace=True)
-    return df
+        assert all([DEFAULT_DATETIME not in df[feature] for feature in DATE_FEATURES]), \
+            "Certain packages are missing date values."
+
+        df.reset_index(drop=True, inplace=True)
+        dfs.append(df)
+
+    return pd.concat(dfs)
 
 def add_days_alive(df):
     log_call()
@@ -117,10 +128,10 @@ def dump_etags(df, fname, include_weights):
             line = "{}: {}\n".format(id_, etags)
             file.write(line)
 
-async def load_packages(fname, args):
-    if args.refresh_packages or not os.path.isfile(fname):
-        await write_packages_file(fname, args)
-    df = read_packages_file(fname)
+async def load_packages(packages_root, args):
+    if args.refresh_packages:
+        await write_packages(packages_root, args)
+    df = read_packages(packages_root)
 
     df = add_days_alive(df)
     df = add_days_abandoned(df)
