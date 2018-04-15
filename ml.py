@@ -72,16 +72,16 @@ class NugetRecommender(object):
     def _scale_by_popularity(self, scores, df):
         log_call()
         dpds = df['downloads_per_day']
-        #dpds_valid = dpds[dpds != -1]
-        assert all(dpds >= 1)
-        dpds_valid = dpds
+        dpds_valid = dpds[dpds != -1]
         ldpds_valid = np.log(dpds_valid)
         mean_ldpd, max_ldpd = np.average(ldpds_valid), np.max(ldpds_valid)
 
         m = df.shape[0]
         for index in range(m):
             dpd = dpds[index]
-            assert dpd > 0
+            if dpd == -1:
+                continue
+
             # The number of downloads per day can vary widely (from single-digits to 100k+).
             # We want to give a higher score to more popular packages, but not by a factor of 100k.
             # We take the logarithm of dpd to make the packages more evenly distributed, and make

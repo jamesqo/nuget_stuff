@@ -96,7 +96,7 @@ def read_packages(packages_root):
         df.reset_index(drop=True, inplace=True)
         dfs.append(df)
 
-    return pd.concat(dfs)
+    return pd.concat(dfs, ignore_index=True)
 
 def add_days_alive(df):
     log_call()
@@ -111,7 +111,7 @@ def add_days_abandoned(df):
 def add_downloads_per_day(df):
     log_call()
     df['downloads_per_day'] = df['total_downloads'] / df['days_alive']
-    assert all(df['downloads_per_day'] >= 0)
+    df.loc[df['total_downloads'] == -1, 'downloads_per_day'] = -1
     df.loc[df['downloads_per_day'] < 1, 'downloads_per_day'] = 1 # So np.log doesn't spazz out later
     return df
 
