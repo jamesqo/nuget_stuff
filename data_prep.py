@@ -41,8 +41,8 @@ async def write_packages(packages_root, args):
     os.makedirs(packages_root, exist_ok=True)
     async with NugetContext() as ctx:
         client = await NugetCatalogClient(ctx).load()
-        page_start, page_limit = args.page_start, args.page_limit or sys.maxsize
-        pages = aislice(client.load_pages(), page_start, page_limit)
+        page_start, page_end = args.page_start, args._page_start + (args.page_limit or sys.maxsize)
+        pages = aislice(client.load_pages(), page_start, page_end)
 
         async for i, page in aenumerate(pages):
             pageno = page.pageno
@@ -52,14 +52,14 @@ async def write_packages(packages_root, args):
             fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
             with CsvSerializer(fname) as writer:
                 writer.write_header()
-                results = await asyncio.gather(*[package.load() for package in page.packages],
+                packages = page.packages
+                results = await asyncio.gather(*[package.load() for package in packages],
                                                 return_exceptions=True)
-                for result in results:
+                for package, result in zip(packages, results):
                     if isinstance(result, Exception):
                         if not can_ignore_exception(result):
                             raise result
-                    else:
-                        writer.write(result)
+                    writer.write(package)
 
 def read_packages(packages_root):
     DEFAULT_DATETIME = datetime(year=1900, month=1, day=1)

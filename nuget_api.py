@@ -123,6 +123,7 @@ class NugetPackage(object):
         self.catalog = None
         self.reg = None
         self.search = None
+        self.loaded = False
 
     async def load(self, catalog=True, reg=True, search=True):
         try:
@@ -132,6 +133,8 @@ class NugetPackage(object):
                 await self._load_reg_info()
             if search:
                 await self._load_search_info()
+
+            self.loaded = bool(self.catalog and self.reg and self.search)
             return self
         except Exception as exc:
             # asyncio.gather with return_exceptions=True kills our ability to look at the traceback
