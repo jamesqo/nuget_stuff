@@ -6,7 +6,7 @@ from aiohttp.client_exceptions import ClientError
 from asyncio import CancelledError
 from urllib.parse import urlencode
 
-from utils.http import JSONClient
+from utils.http import JSONClient, RetryClient
 
 DEFAULT_INDEX = 'https://api.nuget.org/v3/index.json'
 
@@ -87,7 +87,7 @@ class NugetContext(object):
         self.client = None
 
     async def __aenter__(self):
-        self.client = await JSONClient().__aenter__()
+        self.client = await RetryClient(JSONClient(), OK_EXCEPTIONS).__aenter__()
         return self
 
     async def __aexit__(self, type_, value, traceback):
