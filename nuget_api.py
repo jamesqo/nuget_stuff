@@ -141,7 +141,7 @@ class NugetPackage(object):
             # once we've caught the exception, so print it here.
             if can_ignore_exception(exc):
                 excname = type(exc).__name__
-                LOG.debug("{} will not be serialized because a {} was raised", self.id, excname)
+                LOG.debug("{} will be serialized with missing info because a {} was raised", self.id, excname)
             else:
                 tb.print_exc()
             raise

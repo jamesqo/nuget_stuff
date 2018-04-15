@@ -41,7 +41,7 @@ async def write_packages(packages_root, args):
     os.makedirs(packages_root, exist_ok=True)
     async with NugetContext() as ctx:
         client = await NugetCatalogClient(ctx).load()
-        page_start, page_end = args.page_start, args._page_start + (args.page_limit or sys.maxsize)
+        page_start, page_end = args.page_start, args.page_start + (args.page_limit or sys.maxsize)
         pages = aislice(client.load_pages(), page_start, page_end)
 
         async for i, page in aenumerate(pages):
@@ -54,7 +54,7 @@ async def write_packages(packages_root, args):
                 writer.write_header()
                 packages = page.packages
                 results = await asyncio.gather(*[package.load() for package in packages],
-                                                return_exceptions=True)
+                                               return_exceptions=True)
                 for package, result in zip(packages, results):
                     if isinstance(result, Exception):
                         if not can_ignore_exception(result):
