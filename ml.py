@@ -57,21 +57,23 @@ def _remove_diagonal(scores):
 DEFAULT_WEIGHTS = {
     'authors': 1,
     'description': 2,
-    'etags': 8
+    'etags': 8,
+}
+
+DEFAULT_PENALTIES = {
+    'freshness': .75,
+    'icon': .1,
+    'popularity': 1,
 }
 
 class NugetRecommender(object):
     def __init__(self,
                  tags_vocab,
                  weights=None,
-                 min_scale_popularity=0,
-                 min_scale_freshness=.25,
-                 icon_bonus=.1):
+                 penalties=None):
         self.tags_vocab = tags_vocab
         self.weights = weights or DEFAULT_WEIGHTS
-        self.min_scale_popularity = min_scale_popularity
-        self.min_scale_freshness = min_scale_freshness
-        self.icon_bonus = icon_bonus
+        self.penalties = penalties or DEFAULT_PENALTIES
 
         self._df = None
         self.scores_ = None
@@ -84,6 +86,7 @@ class NugetRecommender(object):
         mean_ldpd, max_ldpd = np.average(ldpds_valid), np.max(ldpds_valid)
 
         m = df.shape[0]
+        penalty = self.penalties['popularity']
         for index in range(m):
             dpd = dpds[index]
             if dpd == -1: # TODO: use nan instead of -1
@@ -101,7 +104,7 @@ class NugetRecommender(object):
             # min(ldpd) is 0 since we assume no package has less than 1 dpd, and log(1) = 0.
             p = ((ldpd - mean_ldpd) / max_ldpd) + 1
 
-            adjusted_p = p * 1 + (1 - p) * self.min_scale_popularity
+            adjusted_p = p * 1 + (1 - p) * (1 - penalty)
             scores[:, index] *= adjusted_p
 
     def _scale_by_freshness(self, scores, df):
@@ -112,6 +115,7 @@ class NugetRecommender(object):
         mean_da, max_da = np.average(das_valid), np.max(das_valid)
 
         m = df.shape[0]
+        penalty = self.penalties['freshness']
         for index in range(m):
             if pd.isna(das[index]):
                 continue
@@ -120,7 +124,7 @@ class NugetRecommender(object):
             s = ((da - mean_da) / max_da) + 1 # Stinkiness
             f = 1 + (1 - s) # Freshness
 
-            adjusted_f = f * 1 + (1 - f) * self.min_scale_freshness
+            adjusted_f = f * 1 + (1 - f) * (1 - penalty)
             scores[:, index] *= adjusted_f
 
     def fit(self, df):
