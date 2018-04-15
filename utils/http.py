@@ -35,13 +35,7 @@ class JSONClient(object):
                     LOG.debug("Could not decode JSON from {}:\n{}", url, text)
                     raise
 
-def _fuzz(delay):
-    BASE = 2
-    log_delay = math.log(delay, BASE)
-    blur = np.random.standard_normal(size=1)[0]
-    return int(np.ceil(BASE ** (log_delay + blur)))
-
-def _log_failure(url, attemptno, delay, excname):
+def _log_failure(url, excname, attemptno, delay):
     LOG.debug("GET {} failed with {}. Beginning attempt #{} in {}s...".format(url, excname, attemptno, delay))
 
 class RetryClient(object):
@@ -49,13 +43,11 @@ class RetryClient(object):
                  inner,
                  ok_exceptions,
                  retry_limit=5,
-                 delay=10,
-                 delay_strategy='fuzz'):
+                 delay=1):
         self._inner = inner
         self._ok_exceptions = ok_exceptions
         self._retry_limit = retry_limit
         self._delay = delay
-        assert delay_strategy == 'fuzz'
 
     async def __aenter__(self):
         await self._inner.__aenter__()
@@ -74,6 +66,6 @@ class RetryClient(object):
             except Exception as exc: # pylint: disable=W0703
                 if not self._is_ok(exc):
                     raise
-                excname, attemptno, delay = type(exc).__name__, i + 2, _fuzz(self._delay)
-                _log_failure(url, attemptno, delay, excname)
+                excname, attemptno, delay = type(exc).__name__, (i + 2), self._delay
+                _log_failure(url, excname, attemptno, delay)
                 await asyncio.sleep(delay)
