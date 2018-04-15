@@ -1,5 +1,6 @@
 import asyncio
 import logging
+import math
 import numpy as np
 import os
 import pandas as pd
@@ -90,8 +91,10 @@ def read_packages(packages_root):
         df = df[df['listed']]
         df.drop('listed', axis=1, inplace=True)
 
-        assert all([DEFAULT_DATETIME not in df[feature] for feature in DATE_FEATURES]), \
-            "Certain packages are missing date values."
+        # pandas doesn't do as it claims: it represents missing date values with 1900-01-01
+        # rather than NaT as advertised. Correct that.
+        for feature in DATE_FEATURES:
+            df.loc[df[feature] == DEFAULT_DATETIME, feature] = math.nan
 
         df.reset_index(drop=True, inplace=True)
         dfs.append(df)
@@ -105,7 +108,9 @@ def add_days_alive(df):
 
 def add_days_abandoned(df):
     log_call()
-    df['days_abandoned'] = df['last_updated'].apply(lambda dt: max((TOMORROW - dt).days, 1))
+    pred = ~df['last_updated'].isna()
+    df.loc[~pred, 'days_abandoned'] = math.nan
+    df.loc[pred, 'days_abandoned'] = df.loc[pred, 'last_updated'].apply(lambda dt: max((TOMORROW - dt).days, 1))
     return df
 
 def add_downloads_per_day(df):

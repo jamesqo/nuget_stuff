@@ -86,7 +86,7 @@ class NugetRecommender(object):
         m = df.shape[0]
         for index in range(m):
             dpd = dpds[index]
-            if dpd == -1:
+            if dpd == -1: # TODO: use nan instead of -1
                 continue
 
             # The number of downloads per day can vary widely (from single-digits to 100k+).
@@ -108,14 +108,14 @@ class NugetRecommender(object):
         log_call()
         # 'Freshness' corresponds to how recently the package was updated
         das = df['days_abandoned']
-        #das_valid = das[~das.isna()]
-        assert all(~das.isna())
-        das_valid = das
+        das_valid = das[~das.isna()]
         mean_da, max_da = np.average(das_valid), np.max(das_valid)
 
         m = df.shape[0]
         for index in range(m):
-            assert not pd.isna(das[index])
+            if pd.isna(das[index]):
+                continue
+
             da = das[index]
             s = ((da - mean_da) / max_da) + 1 # Stinkiness
             f = 1 + (1 - s) # Freshness
