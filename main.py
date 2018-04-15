@@ -2,6 +2,7 @@
 
 import asyncio
 import logging
+import os
 import sys
 
 from argparse import ArgumentParser
@@ -12,7 +13,7 @@ from ml import NugetRecommender
 
 from utils.logging import StyleAdapter
 
-PACKAGES_FNAME = 'packages.csv'
+PACKAGES_ROOT = os.path.join('.', 'packages')
 ETAGS_FNAME = 'etags.log'
 
 LOG = StyleAdapter(logging.getLogger(__name__))
@@ -35,8 +36,9 @@ def parse_args():
     )
     parser.add_argument(
         '-l', '--page-limit',
-        help="limit the number of pages downloaded from the catalog. " \
-             "0 means download all pages.",
+        metavar='LIMIT',
+        help="limit the number of pages downloaded from the catalog. 0 means download all pages. " \
+             "must be used in conjunction with -r.", # TODO: Enforce this.
         action='store',
         dest='page_limit',
         type=int,
@@ -47,6 +49,15 @@ def parse_args():
         help="refresh package database",
         action='store_true',
         dest='refresh_packages'
+    )
+    parser.add_argument(
+        '-s', '--page-start',
+        metavar='START',
+        help="start from page START. must be used in conjunction with -r.",
+        action='store',
+        dest='page_start',
+        type=int,
+        default=0,
     )
     parser.add_argument(
         '-t', '--tag-dump',
@@ -83,7 +94,7 @@ async def main():
     args = parse_args()
     logging.basicConfig(level=args.log_level)
 
-    df, tagger = await load_packages(PACKAGES_FNAME, args)
+    df, tagger = await load_packages(PACKAGES_ROOT, args)
     magic = NugetRecommender(tags_vocab=tagger.vocab_)
     magic.fit(df)
     recs = magic.predict(top=5)

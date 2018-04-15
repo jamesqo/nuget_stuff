@@ -1,17 +1,19 @@
 import asyncio
 import logging
+import math
 import numpy as np
 import os
 import pandas as pd
+import sys
 
-from aiohttp.client_exceptions import ClientError
 from datetime import date, datetime, timedelta
+from glob import glob
 
-from nuget_api import NugetCatalogClient, NugetContext
+from nuget_api import can_ignore_exception, NugetCatalogClient, NugetContext
 from serializer import CsvSerializer
 from tagger import SmartTagger
 
-from utils.iter import aislice
+from utils.iter import aenumerate, aislice
 from utils.logging import log_call, StyleAdapter
 
 LOG = StyleAdapter(logging.getLogger(__name__))
@@ -25,74 +27,98 @@ SCHEMA = {
     'created': object,
     'description': object,
     'id': object,
-    'is_prerelease': bool,
+    'is_prerelease': object, # bool (missing values)
     'last_updated': object,
-    'listed': bool,
+    'listed': object, # bool (missing values)
+    'missing_info': bool,
     'summary': object,
     'tags': object,
-    'total_downloads': np.int32,
-    'verified': bool,
+    'total_downloads': object, # np.int32 (missing values)
+    'verified': object, # bool (missing values)
     'version': object,
 }
 
-async def write_packages_file(fname, args):
+async def write_packages(packages_root, args):
     log_call()
+    os.makedirs(packages_root, exist_ok=True)
     async with NugetContext() as ctx:
-        with CsvSerializer(fname) as writer:
-            writer.write_header()
-            client = await NugetCatalogClient(ctx).load()
+        client = await NugetCatalogClient(ctx).load()
+        page_start, page_end = args.page_start, args.page_start + (args.page_limit or sys.maxsize)
+        pages = aislice(client.load_pages(), page_start, page_end)
 
-            page_limit = args.page_limit
-            pages = client.load_pages() if page_limit > 0 else aislice(client.load_pages(), page_limit)
-            
-            async for page in pages:
-                results = await asyncio.gather(*[package.load() for package in page.packages],
+        async for i, page in aenumerate(pages):
+            pageno = page.pageno
+            assert page_start + i == pageno
+            LOG.debug("Fetching packages for page #{}", pageno)
+
+            fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
+            with CsvSerializer(fname) as writer:
+                writer.write_header()
+                packages = list(page.packages)
+                results = await asyncio.gather(*[package.load() for package in packages],
                                                return_exceptions=True)
-                for result in results:
+                for package, result in zip(packages, results):
                     if isinstance(result, Exception):
-                        exc = result
-                        if not isinstance(exc, (ClientError, asyncio.TimeoutError)):
-                            raise exc
-                        continue
-                    package = result
+                        if not can_ignore_exception(result):
+                            raise result
                     writer.write(package)
 
-def read_packages_file(fname):
+def read_packages(packages_root):
     DEFAULT_DATETIME = datetime(year=1900, month=1, day=1)
+    DATE_FEATURES = ['created', 'last_updated']
 
     log_call()
-    date_features = ['created', 'last_updated']
-    df = pd.read_csv(fname, dtype=SCHEMA, na_filter=False, parse_dates=date_features)
+    dfs = []
+    pattern = os.path.join(packages_root, 'page*.csv')
 
-    # Remove entries with the same id, keeping the one with the highest version
-    df['id_lower'] = df['id'].apply(str.lower)
-    df.drop_duplicates(subset='id_lower', keep='last', inplace=True)
-    df.drop('id_lower', axis=1, inplace=True)
+    for fname in glob(pattern):
+        df = pd.read_csv(fname, dtype=SCHEMA, na_filter=False, parse_dates=DATE_FEATURES)
 
-    # Remove unlisted packages
-    df = df[df['listed']]
-    df.drop('listed', axis=1, inplace=True)
+        # Remove entries with the same id, keeping the one with the highest version
+        df['id_lower'] = df['id'].apply(str.lower)
+        df.drop_duplicates(subset='id_lower', keep='last', inplace=True)
+        df.drop('id_lower', axis=1, inplace=True)
 
-    assert all([DEFAULT_DATETIME not in df[feature] for feature in date_features]), \
-           "Certain packages are missing date values."
+        # Remove entries with missing_info = True, then set columns which no longer
+        # have missing data to the correct type.
+        df = df[~df['missing_info']]
+        df['is_prerelease'] = df['is_prerelease'].astype(bool)
+        df['listed'] = df['listed'].astype(bool)
+        df['total_downloads'] = df['total_downloads'].astype(np.int32)
+        df['verified'] = df['verified'].astype(bool)
 
-    df.reset_index(drop=True, inplace=True)
-    return df
+        # Remove unlisted packages
+        df = df[df['listed']]
+        df.drop('listed', axis=1, inplace=True)
+
+        # pandas doesn't do as it claims: it represents missing date values with 1900-01-01
+        # rather than NaT as advertised. Correct that.
+        for feature in DATE_FEATURES:
+            df.loc[df[feature] == DEFAULT_DATETIME, feature] = math.nan
+
+        df.reset_index(drop=True, inplace=True)
+        dfs.append(df)
+
+    return pd.concat(dfs, ignore_index=True)
 
 def add_days_alive(df):
     log_call()
-    df['days_alive'] = df['created'].apply(lambda dt: max((TOMORROW - dt).days, 1))
+    pred = ~df['created'].isna()
+    df.loc[~pred, 'days_alive'] = math.nan
+    df.loc[pred, 'days_alive'] = df.loc[pred, 'created'].apply(lambda dt: max((TOMORROW - dt).days, 1))
     return df
 
 def add_days_abandoned(df):
     log_call()
-    df['days_abandoned'] = df['last_updated'].apply(lambda dt: max((TOMORROW - dt).days, 1))
+    pred = ~df['last_updated'].isna()
+    df.loc[~pred, 'days_abandoned'] = math.nan
+    df.loc[pred, 'days_abandoned'] = df.loc[pred, 'last_updated'].apply(lambda dt: max((TOMORROW - dt).days, 1))
     return df
 
 def add_downloads_per_day(df):
     log_call()
     df['downloads_per_day'] = df['total_downloads'] / df['days_alive']
-    assert all(df['downloads_per_day'] >= 0)
+    df.loc[df['total_downloads'] == -1, 'downloads_per_day'] = -1
     df.loc[df['downloads_per_day'] < 1, 'downloads_per_day'] = 1 # So np.log doesn't spazz out later
     return df
 
@@ -117,10 +143,10 @@ def dump_etags(df, fname, include_weights):
             line = "{}: {}\n".format(id_, etags)
             file.write(line)
 
-async def load_packages(fname, args):
-    if args.refresh_packages or not os.path.isfile(fname):
-        await write_packages_file(fname, args)
-    df = read_packages_file(fname)
+async def load_packages(packages_root, args):
+    if args.refresh_packages:
+        await write_packages(packages_root, args)
+    df = read_packages(packages_root)
 
     df = add_days_alive(df)
     df = add_days_abandoned(df)

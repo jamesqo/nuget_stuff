@@ -1,14 +1,16 @@
+import asyncio
+import logging
+import re
 import traceback as tb
 
+from aiohttp.client_exceptions import ClientResponseError, ServerDisconnectedError
+from asyncio import CancelledError
 from urllib.parse import urlencode
 
-from utils.http import JSONClient
+from utils.http import JSONClient, RetryClient
+from utils.logging import StyleAdapter
 
-class NullPackageSearchInfo(object):
-    def __init__(self):
-        self.id = ''
-        self.total_downloads = -1
-        self.verified = False
+LOG = StyleAdapter(logging.getLogger(__name__))
 
 DEFAULT_INDEX = 'https://api.nuget.org/v3/index.json'
 
@@ -16,7 +18,31 @@ CATALOG_TYPE = 'Catalog/3.0.0'
 REGISTRATION_TYPE = 'RegistrationsBaseUrl'
 SEARCH_TYPE = 'SearchQueryService'
 
-NULL_SEARCH_INFO = NullPackageSearchInfo()
+def ok_filter(exc):
+    if isinstance(exc, (CancelledError, asyncio.TimeoutError)):
+        return True
+    elif isinstance(exc, ClientResponseError) and exc.code >= 500:
+        return True
+
+    return False
+
+def can_ignore_exception(exc):
+    if ok_filter(exc):
+        return True
+    elif isinstance(exc, ServerDisconnectedError):
+        return True
+    elif isinstance(exc, ClientResponseError) and exc.code == 404:
+        return True
+
+    return False
+
+class NullPackageSearchInfo(object):
+    def __init__(self):
+        self.id = ''
+        self.total_downloads = -1
+        self.verified = False
+
+NullPackageSearchInfo.INSTANCE = NullPackageSearchInfo()
 
 class NugetClient(object):
     def __init__(self, type_, ctx):
@@ -81,7 +107,7 @@ class NugetContext(object):
         self.client = None
 
     async def __aenter__(self):
-        self.client = await JSONClient().__aenter__()
+        self.client = await RetryClient(JSONClient(), ok_filter).__aenter__()
         return self
 
     async def __aexit__(self, type_, value, traceback):
@@ -97,6 +123,7 @@ class NugetPackage(object):
         self.catalog = None
         self.reg = None
         self.search = None
+        self.loaded = False
 
     async def load(self, catalog=True, reg=True, search=True):
         try:
@@ -106,11 +133,17 @@ class NugetPackage(object):
                 await self._load_reg_info()
             if search:
                 await self._load_search_info()
+
+            self.loaded = bool(self.catalog and self.reg and self.search)
             return self
-        except:
+        except Exception as exc:
             # asyncio.gather with return_exceptions=True kills our ability to look at the traceback
             # once we've caught the exception, so print it here.
-            tb.print_exc()
+            if can_ignore_exception(exc):
+                excname = type(exc).__name__
+                LOG.debug("{} will be serialized with missing info because a {} was raised", self.id, excname)
+            else:
+                tb.print_exc()
             raise
 
     async def _load_catalog_info(self):
@@ -125,10 +158,13 @@ class NugetPackage(object):
         query = 'id:"{}"'.format(self.id)
         results = await cli.search(q=query)
         self.search = next((d for d in results if d.id.lower() == self.id.lower()),
-                           NULL_SEARCH_INFO)
+                           NullPackageSearchInfo.INSTANCE)
 
 class NugetPage(object):
     def __init__(self, url, ctx):
+        match = re.search(r'page([0-9]+)\.json$', url)
+        self.pageno = int(match.group(1))
+
         self._url = url
         self._ctx = ctx
         self._json = None

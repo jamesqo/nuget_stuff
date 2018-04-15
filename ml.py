@@ -4,22 +4,29 @@ import pandas as pd
 from itertools import islice
 from scipy.sparse import lil_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import linear_kernel
+from sklearn.metrics.pairwise import check_pairwise_arrays
+from sklearn.utils.extmath import safe_sparse_dot
 
 from utils.logging import log_call
+
+# Copied from https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/metrics/pairwise.py
+# Needed to control the `dense_output` parameter so this didn't throw a MemoryError.
+def linear_kernel(X, Y=None, dense_output=True):
+    X, Y = check_pairwise_arrays(X, Y)
+    return safe_sparse_dot(X, Y.T, dense_output)
 
 def _compute_authors_scores(df):
     log_call()
     vectorizer = TfidfVectorizer(ngram_range=(2, 2))
     tfidf_matrix = vectorizer.fit_transform(df['authors'])
-    return linear_kernel(tfidf_matrix, tfidf_matrix)
+    return linear_kernel(tfidf_matrix, tfidf_matrix, dense_output=False)
 
 def _compute_description_scores(df):
     log_call()
     vectorizer = TfidfVectorizer(ngram_range=(1, 3),
                                  stop_words='english')
     tfidf_matrix = vectorizer.fit_transform(df['description'])
-    return linear_kernel(tfidf_matrix, tfidf_matrix)
+    return linear_kernel(tfidf_matrix, tfidf_matrix, dense_output=False)
 
 def _compute_etags_scores(df, tags_vocab):
     log_call()
@@ -40,7 +47,7 @@ def _compute_etags_scores(df, tags_vocab):
             colidx = index_map[tag]
             tag_weights[rowidx, colidx] = np.float32(weight)
 
-    return linear_kernel(tag_weights, tag_weights)
+    return linear_kernel(tag_weights, tag_weights, dense_output=False)
 
 def _remove_diagonal(scores):
     # We don't want to recommend the same package based on itself, so set all scores along the diagonal to 0.
@@ -72,16 +79,16 @@ class NugetRecommender(object):
     def _scale_by_popularity(self, scores, df):
         log_call()
         dpds = df['downloads_per_day']
-        #dpds_valid = dpds[dpds != -1]
-        assert all(dpds >= 1)
-        dpds_valid = dpds
+        dpds_valid = dpds[dpds != -1]
         ldpds_valid = np.log(dpds_valid)
         mean_ldpd, max_ldpd = np.average(ldpds_valid), np.max(ldpds_valid)
 
         m = df.shape[0]
         for index in range(m):
             dpd = dpds[index]
-            assert dpd > 0
+            if dpd == -1: # TODO: use nan instead of -1
+                continue
+
             # The number of downloads per day can vary widely (from single-digits to 100k+).
             # We want to give a higher score to more popular packages, but not by a factor of 100k.
             # We take the logarithm of dpd to make the packages more evenly distributed, and make
@@ -101,14 +108,14 @@ class NugetRecommender(object):
         log_call()
         # 'Freshness' corresponds to how recently the package was updated
         das = df['days_abandoned']
-        #das_valid = das[~das.isna()]
-        assert all(~das.isna())
-        das_valid = das
+        das_valid = das[~das.isna()]
         mean_da, max_da = np.average(das_valid), np.max(das_valid)
 
         m = df.shape[0]
         for index in range(m):
-            assert not pd.isna(das[index])
+            if pd.isna(das[index]):
+                continue
+
             da = das[index]
             s = ((da - mean_da) / max_da) + 1 # Stinkiness
             f = 1 + (1 - s) # Freshness
