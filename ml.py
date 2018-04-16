@@ -1,8 +1,8 @@
 import numpy as np
-import pandas as pd
 
 from itertools import islice
 from scipy.sparse import hstack, lil_matrix
+from sklearn.decomposition import PCA
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
@@ -126,7 +126,10 @@ class NugetRecommender(object):
             (_description_matrix(X), self.weights['description']),
             (_etags_matrix(X, self.tags_vocab), self.weights['etags']),
         ]
+
         knn_matrix = _weighted_hstack(*zip(*matrices_and_weights))
+        pca = PCA(n_components=0.95)
+        knn_matrix = pca.fit_transform(knn_matrix)
 
         n_neighbors = min(self.n_neighbors, X.shape[0])
         knn = NearestNeighbors(n_neighbors=n_neighbors,
