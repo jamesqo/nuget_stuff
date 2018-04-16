@@ -5,7 +5,6 @@ from itertools import islice
 from scipy.sparse import hstack, lil_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
-from sklearn.preprocessing import MinMaxScaler
 
 from utils.logging import log_call
 
@@ -69,19 +68,21 @@ def _weighted_hstack(matrices, weights):
     return hstack(matrices)
 
 def _freshness_vector(X):
-    da = X['days_abandoned']
+    da = X['days_abandoned'].values
     da[np.isnan(da)] = np.nanmean(da)
 
-    scaler = MinMaxScaler()
-    return 1 - scaler.fit_transform(da)
+    m, M = np.min(da), np.max(da)
+    da = (da - m) / (M - m)
+    return 1 - da
 
 def _popularity_vector(X):
-    dpd = X['downloads_per_day']
+    dpd = X['downloads_per_day'].values
     log_dpd = np.log1p(dpd)
     log_dpd[np.isnan(log_dpd)] = np.nanmean(log_dpd)
 
-    scaler = MinMaxScaler()
-    return scaler.fit_transform(log_dpd)
+    m, M = np.min(log_dpd), np.max(log_dpd)
+    log_dpd = (log_dpd - m) / (M - m)
+    return log_dpd
 
 def _apply_penalties(metrics, penalties):
     assert len(metrics) == len(penalties)
@@ -136,7 +137,8 @@ class NugetRecommender(object):
             (_popularity_vector(X), self.penalties['popularity']),
         ]
 
-        scales = _apply_penalties(*zip(*metrics_and_penalties))
+        scale_vectors = _apply_penalties(*zip(*metrics_and_penalties))
+        scales = np.multiply(*scale_vectors)
         m, k = X.shape[0], self.n_neighbors
 
         for i in range(m):
