@@ -96,9 +96,9 @@ async def main():
     logging.basicConfig(level=args.log_level)
 
     df, tagger = await load_packages(PACKAGES_ROOT, args)
-    magic = NugetRecommender(tags_vocab=tagger.vocab_)
+    magic = NugetRecommender(tags_vocab=tagger.vocab_, n_recs=5)
     magic.fit(df)
-    recs = magic.predict(top=5)
+    recs = magic.predict()
 
     print_recommendations(df, recs)
 
