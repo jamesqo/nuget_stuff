@@ -1,8 +1,9 @@
+import matplotlib.pyplot as plt
 import numpy as np
 
 from itertools import islice
 from scipy.sparse import hstack, lil_matrix
-from sklearn.decomposition import PCA
+from sklearn.decomposition import TruncatedSVD
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
@@ -67,6 +68,20 @@ def _weighted_hstack(matrices, weights):
 
     return hstack(matrices)
 
+def _apply_svd(X):
+    def get_svd(**kwargs):
+        return TruncatedSVD(algorithm='randomized',
+                            random_state=42,
+                            **kwargs)
+
+    svd = get_svd(n_components=100)
+    svd.fit(X)
+    cumsum = np.cumsum(svd.explained_variance_ratio_)
+    d = np.argmax(cumsum >= 0.99) + 1
+
+    svd = get_svd(n_components=2)
+    return svd.fit_transform(X)
+
 def _freshness_vector(X):
     da = X['days_abandoned'].values
     da[np.isnan(da)] = np.nanmean(da)
@@ -128,8 +143,18 @@ class NugetRecommender(object):
         ]
 
         knn_matrix = _weighted_hstack(*zip(*matrices_and_weights))
-        pca = PCA(n_components=0.95)
-        knn_matrix = pca.fit_transform(knn_matrix)
+        print(knn_matrix.shape)
+        nnz = list(zip(*knn_matrix.nonzero()))
+        print(len(nnz))
+        print(*knn_matrix.nonzero())
+        knn_matrix = knn_matrix.tocsr()
+        knn_matrix = _apply_svd(knn_matrix)
+        print(knn_matrix.shape)
+        fst = knn_matrix[:, 0].T
+        snd = knn_matrix[:, 1].T
+        print(fst.shape, snd.shape)
+        plt.plot(fst, snd, 'ro')
+        plt.show()
 
         n_neighbors = min(self.n_neighbors, X.shape[0])
         knn = NearestNeighbors(n_neighbors=n_neighbors,
