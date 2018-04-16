@@ -11,8 +11,8 @@ from utils.logging import log_call
 
 DEFAULT_WEIGHTS = {
     'authors': 1,
-    'description': 2,
-    'etags': 8,
+    'description': 0,
+    'etags': 0,
 }
 
 DEFAULT_PENALTIES = {
