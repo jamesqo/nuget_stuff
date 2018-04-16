@@ -15,9 +15,9 @@ DEFAULT_WEIGHTS = {
 }
 
 DEFAULT_PENALTIES = {
-    'freshness': .75,
-    'icon': .1,
-    'popularity': .9,
+    'freshness': .90,
+    'icon': .10,
+    'popularity': .90,
 }
 
 def _authors_matrix(X):
@@ -100,13 +100,15 @@ class NugetRecommender(object):
                  min_dpd_ratio=250):
         self.tags_vocab = tags_vocab
         self.n_recs = n_recs
-        self.n_neighbors = n_neighbors or 100 * n_recs
+        self.n_neighbors = n_neighbors or 1000 * n_recs
         self.weights = weights or DEFAULT_WEIGHTS
         self.penalties = penalties or DEFAULT_PENALTIES
         self.min_dpd_ratio = min_dpd_ratio
 
         self._X = None
         self.scores_ = None
+        self.knn_distances_ = None
+        self.knn_indices_ = None
 
     def fit(self, X):
         log_call()
@@ -124,13 +126,18 @@ class NugetRecommender(object):
             (_description_matrix(X), self.weights['description']),
             (_etags_matrix(X, self.tags_vocab), self.weights['etags']),
         ]
-
         knn_matrix = _weighted_hstack(*zip(*matrices_and_weights))
-        knn = NearestNeighbors(n_neighbors=self.n_neighbors, metric='l2')
+
+        n_neighbors = min(self.n_neighbors, X.shape[0])
+        knn = NearestNeighbors(n_neighbors=n_neighbors,
+                               metric='l2',
+                               algorithm='ball_tree')
         knn.fit(knn_matrix)
         return knn.kneighbors(knn_matrix)
 
     def _scale_distances(self, X, knn_distances, knn_indices):
+        assert knn_distances.shape == knn_indices.shape
+
         metrics_and_penalties = [
             (_freshness_vector(X), self.penalties['freshness']),
             #(_icon_vector(X), self.penalties['icon']),
@@ -138,13 +145,13 @@ class NugetRecommender(object):
         ]
 
         scale_vectors = _apply_penalties(*zip(*metrics_and_penalties))
-        scales = np.multiply(*scale_vectors)
-        m, k = X.shape[0], self.n_neighbors
+        combined_scales = np.multiply(*scale_vectors)
+        m, k = knn_distances.shape
 
         for i in range(m):
             for j in range(k):
                 index = knn_indices[i, j]
-                scale = scales[index]
+                scale = combined_scales[index]
                 knn_distances[i, j] *= scale
 
     def predict(self):
