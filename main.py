@@ -37,8 +37,8 @@ def parse_args():
     parser.add_argument(
         '-l', '--page-limit',
         metavar='LIMIT',
-        help="limit the number of pages downloaded from the catalog. 0 means download all pages. " \
-             "must be used in conjunction with -r.", # TODO: Enforce this.
+        help="limit the number of pages loaded. 0 means load all pages. " \
+             "if used in conjunction with -r, limit the number of pages downloaded from the catalog. 0 means download all pages.",
         action='store',
         dest='page_limit',
         type=int,
@@ -53,7 +53,8 @@ def parse_args():
     parser.add_argument(
         '-s', '--page-start',
         metavar='START',
-        help="start from page START. must be used in conjunction with -r.",
+        help="start loading from page START. " \
+             "if used in conjunction with -r, start downloading from page START.",
         action='store',
         dest='page_start',
         type=int,
@@ -95,9 +96,9 @@ async def main():
     logging.basicConfig(level=args.log_level)
 
     df, tagger = await load_packages(PACKAGES_ROOT, args)
-    magic = NugetRecommender(tags_vocab=tagger.vocab_)
+    magic = NugetRecommender(tags_vocab=tagger.vocab_, n_recs=5)
     magic.fit(df)
-    recs = magic.predict(top=5)
+    recs = magic.predict()
 
     print_recommendations(df, recs)
 

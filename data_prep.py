@@ -7,7 +7,6 @@ import pandas as pd
 import sys
 
 from datetime import date, datetime, timedelta
-from glob import glob
 
 from nuget_api import can_ignore_exception, NugetCatalogClient, NugetContext
 from serializer import CsvSerializer
@@ -63,15 +62,16 @@ async def write_packages(packages_root, args):
                             raise result
                     writer.write(package)
 
-def read_packages(packages_root):
+def read_packages(packages_root, args):
     DEFAULT_DATETIME = datetime(year=1900, month=1, day=1)
     DATE_FEATURES = ['created', 'last_updated']
 
     log_call()
     dfs = []
-    pattern = os.path.join(packages_root, 'page*.csv')
+    start, end = args.page_start, args.page_start + (args.page_limit or sys.maxsize)
 
-    for fname in glob(pattern):
+    for pageno in range(start, end):
+        fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
         df = pd.read_csv(fname, dtype=SCHEMA, na_filter=False, parse_dates=DATE_FEATURES)
 
         # Remove entries with the same id, keeping the one with the highest version
@@ -118,8 +118,7 @@ def add_days_abandoned(df):
 def add_downloads_per_day(df):
     log_call()
     df['downloads_per_day'] = df['total_downloads'] / df['days_alive']
-    df.loc[df['total_downloads'] == -1, 'downloads_per_day'] = -1
-    df.loc[df['downloads_per_day'] < 1, 'downloads_per_day'] = 1 # So np.log doesn't spazz out later
+    df.loc[df['total_downloads'] == -1, 'downloads_per_day'] = math.nan
     return df
 
 def add_etags(df):
@@ -146,7 +145,7 @@ def dump_etags(df, fname, include_weights):
 async def load_packages(packages_root, args):
     if args.refresh_packages:
         await write_packages(packages_root, args)
-    df = read_packages(packages_root)
+    df = read_packages(packages_root, args)
 
     df = add_days_alive(df)
     df = add_days_abandoned(df)
