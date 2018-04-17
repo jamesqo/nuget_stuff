@@ -168,7 +168,7 @@ class NugetRecommender(object):
             id_, dpd = ids[index], dpds[index]
 
             rec_indices = self.similarities_[index].argsort(reverse=True)
-            rec_indices = [i for i in rec_indices if dpds[i] > 1 and dpds[i] > dpd / self.min_dpd_ratio]
+            rec_indices = [i for i in rec_indices if dpds[i] > 1 and dpds[i] > (dpd / self.min_dpd_ratio)]
             rec_indices = islice(rec_indices, self.n_recs)
 
             recs = [ids[i] for i in rec_indices]
