@@ -40,7 +40,8 @@ def parse_args():
         '-l', '--page-limit',
         metavar='LIMIT',
         help="limit the number of pages loaded. 0 means load all pages. " \
-             "if used in conjunction with -r, limit the number of pages downloaded from the catalog. 0 means download all pages.",
+             "if used in conjunction with -r, limit the number of pages downloaded from the catalog. " \
+             "0 means download all pages.",
         action='store',
         dest='page_limit',
         type=int,
