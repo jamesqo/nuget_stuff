@@ -78,8 +78,8 @@ def print_recommendations(df, recs):
     # This is necessary so we don't run through the dataframe every time sort calls
     # the key function, which would result in quadratic running time
     index_map = {}
-    for index, row in df.iterrows():
-        index_map[row['id']] = index
+    for index, row in enumerate(df.itertuples()):
+        index_map[row.id] = index
 
     def sortkey(pair):
         id_ = pair[0]
