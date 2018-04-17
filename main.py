@@ -31,6 +31,12 @@ def parse_args():
         default=logging.WARNING
     )
     parser.add_argument(
+        '-f', '--force-refresh',
+        help="fetch packages for page X even if pageX.csv already exists",
+        action='store_true',
+        dest='force_refresh'
+    )
+    parser.add_argument(
         '--include-weights',
         help="when used with --tag-dump, includes tag weights in output file",
         action='store_true',
@@ -61,7 +67,7 @@ def parse_args():
         action='store',
         dest='page_start',
         type=int,
-        default=0,
+        default=0
     )
     parser.add_argument(
         '-t', '--tag-dump',

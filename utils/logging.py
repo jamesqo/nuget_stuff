@@ -29,6 +29,10 @@ class StyleAdapter(LoggerAdapter):
 
 LOG = StyleAdapter(logging.getLogger(__name__))
 
+_funcs_logged = set()
+
 def log_call(level=logging.DEBUG):
-    method = stack()[1].function
-    LOG.log(level, "{}() called", method)
+    funcname = stack()[1].function
+    if funcname not in _funcs_logged:
+        LOG.log(level, "{}() called", funcname)
+        _funcs_logged.add(funcname)

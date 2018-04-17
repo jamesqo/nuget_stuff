@@ -48,9 +48,13 @@ async def write_packages(packages_root, args):
         async for i, page in aenumerate(pages):
             pageno = page.pageno
             assert page_start + i == pageno
-            LOG.debug("Fetching packages for page #{}", pageno)
 
             fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
+            if not args.force_refresh and os.path.isfile(fname):
+                LOG.debug("{} exists, skipping".format(fname))
+                continue
+
+            LOG.debug("Fetching packages for page #{}", pageno)
             with CsvSerializer(fname) as writer:
                 writer.write_header()
                 packages = list(page.packages)
