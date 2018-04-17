@@ -4,7 +4,7 @@ import pandas as pd
 
 from functools import lru_cache
 from itertools import groupby
-from scipy.sparse import lil_matrix
+from scipy import sparse
 from sklearn.feature_extraction.text import CountVectorizer
 
 from utils.logging import log_call
@@ -71,7 +71,7 @@ class SmartTagger(object):
         log_call()
         m = df.shape[0]
         t = len(self.vocab_)
-        weights = lil_matrix((m, t))
+        weights = sparse.lil_matrix((m, t))
         index_map = {tag: index for index, tag in enumerate(self.vocab_)}
 
         weight = self.weights['tags']

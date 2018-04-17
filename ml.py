@@ -1,44 +1,51 @@
-import matplotlib.pyplot as plt
 import numpy as np
 
 from itertools import islice
-from scipy.sparse import hstack, lil_matrix
-from sklearn.decomposition import TruncatedSVD
+from scipy import sparse
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.neighbors import NearestNeighbors
+from sklearn.metrics.pairwise import check_pairwise_arrays
+from sklearn.utils.extmath import safe_sparse_dot
 
 from utils.logging import log_call
 
 DEFAULT_WEIGHTS = {
     'authors': 1,
-    'description': 0,
-    'etags': 0,
+    'description': 2,
+    'etags': 8,
 }
 
 DEFAULT_PENALTIES = {
-    'freshness': .90,
-    'icon': .10,
-    'popularity': .90,
+    'freshness': .75,
+    'icon': .1,
+    'popularity': .9,
 }
 
-def _authors_matrix(X):
+# Copied from https://github.com/scikit-learn/scikit-learn/blob/master/sklearn/metrics/pairwise.py
+# Needed to control the `dense_output` parameter so this didn't throw a MemoryError.
+def linear_kernel(X, Y=None, dense_output=True):
+    X, Y = check_pairwise_arrays(X, Y)
+    return safe_sparse_dot(X, Y.T, dense_output)
+
+def _authors_similarities(X):
     log_call()
     vectorizer = TfidfVectorizer(ngram_range=(2, 2))
-    return vectorizer.fit_transform(X['authors'])
+    matrix = vectorizer.fit_transform(X['authors'])
+    # TODO: Use cosine_similarity instead
+    return linear_kernel(matrix, matrix, dense_output=False)
 
-def _description_matrix(X):
+def _description_similarities(X):
     log_call()
     vectorizer = TfidfVectorizer(ngram_range=(1, 3),
                                  stop_words='english')
-    return vectorizer.fit_transform(X['description'])
+    matrix = vectorizer.fit_transform(X['description'])
+    # TODO: Use cosine_similarity instead
+    return linear_kernel(matrix, matrix, dense_output=False)
 
-def _etags_matrix(X, tags_vocab):
+def _etags_similarities(X, tags_vocab):
     log_call()
-    # m = number of packages, t = number of tags
-    # Returns m x t matrix where M_ij represents the weight of package i along tag j.
 
     m, t = X.shape[0], len(tags_vocab)
-    tag_weights = lil_matrix((m, t))
+    tag_weights = sparse.lil_matrix((m, t))
     index_map = {tag: index for index, tag in enumerate(tags_vocab)}
 
     for rowidx, etags in enumerate(X['etags']):
@@ -48,41 +55,24 @@ def _etags_matrix(X, tags_vocab):
                 colidx = index_map[tag]
                 tag_weights[rowidx, colidx] = np.float64(weight)
 
-    return tag_weights
+    # TODO: Use cosine_similarity instead
+    return linear_kernel(tag_weights, tag_weights, dense_output=False)
 
-def _weighted_hstack(matrices, weights):
-    # Suppose we are given matrices A and B with dimens m x d1 and m x d2. WLOG let sum(weights) = 1.
-    # This function hstacks A and B so that K(xi, xj) = w1(ai dot aj) + w2(bi dot bj).
-    # (ai is the ith row vector of A, bi the ith row vector of B. xi is the ith row vector of hstack([A, B]).)
+def _inplace_weighted_average(matrices, weights):
+    assert len(matrices) == len(weights) > 0 # pylint: disable=C1801
 
-    assert len(matrices) == len(weights)
-
-    total = sum(weights)
-    weights = [weight / total for weight in weights]
-
+    result = None
     for matrix, weight in zip(matrices, weights):
-        # xi = sqrt(w1) * ai + sqrt(w2) * bi
-        # Note: If we did *= weight instead of the sqrt here, K(xi, xj) would not work out to
-        # w1(ai dot aj) + w2(bi dot bj).
-        matrix *= np.sqrt(weight)
+        matrix *= weight
+        if result is None:
+            result = matrix
+        else:
+            result += matrix
 
-    return hstack(matrices)
-
-def _apply_svd(X):
-    def get_svd(**kwargs):
-        return TruncatedSVD(algorithm='randomized',
-                            random_state=42,
-                            **kwargs)
-
-    svd = get_svd(n_components=100)
-    svd.fit(X)
-    cumsum = np.cumsum(svd.explained_variance_ratio_)
-    d = np.argmax(cumsum >= 0.99) + 1
-
-    svd = get_svd(n_components=2)
-    return svd.fit_transform(X)
+    return result
 
 def _freshness_vector(X):
+    log_call()
     da = X['days_abandoned'].values
     da[np.isnan(da)] = np.nanmean(da)
 
@@ -91,6 +81,7 @@ def _freshness_vector(X):
     return 1 - da
 
 def _popularity_vector(X):
+    log_call()
     dpd = X['downloads_per_day'].values
     log_dpd = np.log1p(dpd)
     log_dpd[np.isnan(log_dpd)] = np.nanmean(log_dpd)
@@ -100,10 +91,11 @@ def _popularity_vector(X):
     return log_dpd
 
 def _apply_penalties(metrics, penalties):
+    log_call()
     assert len(metrics) == len(penalties)
 
-    max_scales = [1 / (1 - p) for p in penalties]
-    return [1 * m + max_scale * (1 - m) for m, max_scale in zip(metrics, max_scales)]
+    min_scales = [(1 - p) for p in penalties]
+    return [1 * m + min_scale * (1 - m) for m, min_scale in zip(metrics, min_scales)]
 
 class NugetRecommender(object):
     def __init__(self,
@@ -121,66 +113,38 @@ class NugetRecommender(object):
         self.min_dpd_ratio = min_dpd_ratio
 
         self._X = None
-        self.scores_ = None
-        self.knn_distances_ = None
-        self.knn_indices_ = None
+        self.similarities_ = None
 
     def fit(self, X):
         log_call()
-        knn_distances, knn_indices = self._get_knn(X)
-        self._scale_distances(X, knn_distances, knn_indices)
+        similarities_and_weights = [
+            (_authors_similarities(X), self.weights['authors']),
+            (_description_similarities(X), self.weights['description']),
+            (_etags_similarities(X, self.tags_vocab), self.weights['etags']),
+        ]
+        similarities, weights = zip(*similarities_and_weights)
+        net_similarities = _inplace_weighted_average(similarities, weights)
+        self._scale_similarities(X, net_similarities)
 
         self._X = X
-        self.knn_distances_ = knn_distances
-        self.knn_indices_ = knn_indices
+        self.similarities_ = similarities
         return self
 
-    def _get_knn(self, X):
-        matrices_and_weights = [
-            (_authors_matrix(X), self.weights['authors']),
-            (_description_matrix(X), self.weights['description']),
-            (_etags_matrix(X, self.tags_vocab), self.weights['etags']),
-        ]
-
-        knn_matrix = _weighted_hstack(*zip(*matrices_and_weights))
-        print(knn_matrix.shape)
-        nnz = list(zip(*knn_matrix.nonzero()))
-        print(len(nnz))
-        print(*knn_matrix.nonzero())
-        knn_matrix = knn_matrix.tocsr()
-        knn_matrix = _apply_svd(knn_matrix)
-        print(knn_matrix.shape)
-        fst = knn_matrix[:, 0].T
-        snd = knn_matrix[:, 1].T
-        print(fst.shape, snd.shape)
-        plt.plot(fst, snd, 'ro')
-        plt.show()
-
-        n_neighbors = min(self.n_neighbors, X.shape[0])
-        knn = NearestNeighbors(n_neighbors=n_neighbors,
-                               metric='l2',
-                               algorithm='ball_tree')
-        knn.fit(knn_matrix)
-        return knn.kneighbors(knn_matrix)
-
-    def _scale_distances(self, X, knn_distances, knn_indices):
-        assert knn_distances.shape == knn_indices.shape
+    def _scale_similarities(self, X, similarities):
+        log_call()
+        m = X.shape[0]
+        assert sparse.issparse(similarities)
+        assert similarities.shape == (m, m)
 
         metrics_and_penalties = [
             (_freshness_vector(X), self.penalties['freshness']),
             #(_icon_vector(X), self.penalties['icon']),
             (_popularity_vector(X), self.penalties['popularity']),
         ]
-
-        scale_vectors = _apply_penalties(*zip(*metrics_and_penalties))
+        metrics, penalties = zip(*metrics_and_penalties)
+        scale_vectors = _apply_penalties(metrics, penalties)
         combined_scales = np.multiply(*scale_vectors)
-        m, k = knn_distances.shape
-
-        for i in range(m):
-            for j in range(k):
-                index = knn_indices[i, j]
-                scale = combined_scales[index]
-                knn_distances[i, j] *= scale
+        similarities *= sparse.diags(combined_scales)
 
     def predict(self):
         log_call()
@@ -193,10 +157,10 @@ class NugetRecommender(object):
             ids, dpds = X['id'], X['downloads_per_day']
             id_, dpd = ids[index], dpds[index]
 
-            rec_indices = self.knn_distances_[index].argsort()
+            rec_indices = (-self.similarities_[index]).argsort()
             rec_indices = [i for i in rec_indices if dpds[i] > 1 and dpds[i] > dpd / self.min_dpd_ratio]
             rec_indices = islice(rec_indices, self.n_recs)
-            
+
             recs = [ids[i] for i in rec_indices]
             result[id_] = recs
 
