@@ -113,10 +113,10 @@ async def main():
     df, tagger = await load_packages(PACKAGES_ROOT, args)
 
     trans = FeatureTransformer(tags_vocab=tagger.vocab_)
-    X = trans.fit_transform(df)
+    feats = trans.fit_transform(df)
 
     magic = NugetRecommender(n_recs=5)
-    magic.fit(X)
+    magic.fit(df, feats)
     recs = magic.predict()
 
     print_recommendations(df, recs)

@@ -67,6 +67,7 @@ async def write_packages(packages_root, args):
                                 raise result
                         writer.write(package)
             except:
+                LOG.debug("Exception thrown, deleting {}".format(fname))
                 with contextlib.suppress(FileNotFoundError):
                     os.remove(fname)
                 raise

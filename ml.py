@@ -126,9 +126,9 @@ class NugetRecommender(object):
         self._X = None
         self.similarities_ = None
 
-    def fit(self, X):
+    def fit(self, X, feats):
         log_call()
-        similarities = linear_kernel(X, X, dense_output=False)
+        similarities = linear_kernel(feats, feats, dense_output=False)
         self._scale_similarities(X, similarities)
         _remove_diagonal(similarities)
 
