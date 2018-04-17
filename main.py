@@ -87,6 +87,7 @@ def print_recommendations(df, recs):
         # (first by 1st element, then by 2nd element, and so on)
         return -df['downloads_per_day'][index_map[id_]], id_.lower()
 
+    # TODO: This is no longer ordering the recs as expected.
     pairs.sort(key=sortkey)
     lines = ["{}: {}".format(*pair) for pair in pairs]
     print('\n'.join(lines))
