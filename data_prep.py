@@ -104,11 +104,15 @@ def read_packages(packages_root, args):
 
     df = pd.concat(pagedfs, ignore_index=True)
 
-    df = remove_duplicate_ids(df)
-    df = remove_missing_info(df)
-    df = remove_unlisted(df)
-    df = correct_missing_dates(df)
-    df.reset_index(drop=True, inplace=True)
+    pd.options.mode.chained_assignment = None
+    try:
+        df = remove_duplicate_ids(df)
+        df = remove_missing_info(df)
+        df = remove_unlisted(df)
+        df = correct_missing_dates(df)
+        df.reset_index(drop=True, inplace=True)
+    finally:
+        pd.options.mode.chained_assignment = 'warn'
 
     return df
 

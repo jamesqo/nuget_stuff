@@ -101,12 +101,14 @@ class NugetRecommender(object):
                  n_neighbors=0,
                  weights=None,
                  penalties=None,
+                 min_dpd=5,
                  min_dpd_ratio=250):
         self.tags_vocab = tags_vocab
         self.n_recs = n_recs
         self.n_neighbors = n_neighbors or 1000 * n_recs
         self.weights = weights or DEFAULT_WEIGHTS
         self.penalties = penalties or DEFAULT_PENALTIES
+        self.min_dpd = min_dpd
         self.min_dpd_ratio = min_dpd_ratio
 
         self._X = None
@@ -159,7 +161,7 @@ class NugetRecommender(object):
             indices, similarities = csr.indices[left:right], csr.data[left:right]
 
             rec_indices = indices[(-similarities).argsort()]
-            rec_indices = [i for i in rec_indices if dpds[i] > 1 and dpds[i] > (dpd / self.min_dpd_ratio)]
+            rec_indices = [i for i in rec_indices if dpds[i] >= max(self.min_dpd, (dpd / self.min_dpd_ratio))]
             rec_indices = islice(rec_indices, self.n_recs)
 
             recs = [ids[i] for i in rec_indices]
