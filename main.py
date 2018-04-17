@@ -51,7 +51,7 @@ def parse_args():
         action='store',
         dest='page_limit',
         type=int,
-        default=100
+        default=0
     )
     parser.add_argument(
         '-r', '--refresh-packages',

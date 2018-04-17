@@ -63,8 +63,7 @@ async def write_packages(packages_root, args):
                     results = await asyncio.gather(*[package.load() for package in packages],
                                                    return_exceptions=True)
                     for package, result in zip(packages, results):
-                        if isinstance(result, Exception):
-                            if not can_ignore_exception(result):
+                        if isinstance(result, Exception) and not can_ignore_exception(result):
                                 raise result
                         writer.write(package)
             except:
