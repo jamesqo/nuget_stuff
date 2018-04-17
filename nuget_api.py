@@ -1,9 +1,10 @@
 import asyncio
 import logging
+import platform
 import re
 import traceback as tb
 
-from aiohttp.client_exceptions import ClientResponseError, ServerDisconnectedError
+from aiohttp.client_exceptions import ClientOSError, ClientResponseError, ServerDisconnectedError
 from asyncio import CancelledError
 from urllib.parse import urlencode
 
@@ -17,6 +18,8 @@ DEFAULT_INDEX = 'https://api.nuget.org/v3/index.json'
 CATALOG_TYPE = 'Catalog/3.0.0'
 REGISTRATION_TYPE = 'RegistrationsBaseUrl'
 SEARCH_TYPE = 'SearchQueryService'
+
+WINDOWS = platform.system() == 'Windows'
 
 def ok_filter(exc):
     if isinstance(exc, (CancelledError, asyncio.TimeoutError)):
@@ -32,6 +35,8 @@ def can_ignore_exception(exc):
     elif isinstance(exc, ServerDisconnectedError):
         return True
     elif isinstance(exc, ClientResponseError) and exc.code == 404:
+        return True
+    elif isinstance(exc, ClientOSError) and WINDOWS and exc.errno == 10054:
         return True
 
     return False
