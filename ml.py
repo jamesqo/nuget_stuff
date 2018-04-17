@@ -1,5 +1,7 @@
 import numpy as np
 
+import utils.sparse # pylint: disable=W0611
+
 from itertools import islice
 from scipy import sparse
 from sklearn.feature_extraction.text import TfidfVectorizer
@@ -97,6 +99,13 @@ def _apply_penalties(metrics, penalties):
     min_scales = [(1 - p) for p in penalties]
     return [1 * m + min_scale * (1 - m) for m, min_scale in zip(metrics, min_scales)]
 
+def _remove_diagonal(matrix):
+    m = matrix.shape[0]
+    assert matrix.shape == (m, m)
+
+    for i in range(m):
+        matrix[i, i] = 0
+
 class NugetRecommender(object):
     def __init__(self,
                  tags_vocab,
@@ -125,9 +134,10 @@ class NugetRecommender(object):
         similarities, weights = zip(*similarities_and_weights)
         net_similarities = _inplace_weighted_average(similarities, weights)
         self._scale_similarities(X, net_similarities)
+        _remove_diagonal(net_similarities)
 
         self._X = X
-        self.similarities_ = similarities
+        self.similarities_ = net_similarities
         return self
 
     def _scale_similarities(self, X, similarities):
@@ -157,7 +167,7 @@ class NugetRecommender(object):
             ids, dpds = X['id'], X['downloads_per_day']
             id_, dpd = ids[index], dpds[index]
 
-            rec_indices = (-self.similarities_[index]).argsort()
+            rec_indices = self.similarities_[index].argsort(reverse=True)
             rec_indices = [i for i in rec_indices if dpds[i] > 1 and dpds[i] > dpd / self.min_dpd_ratio]
             rec_indices = islice(rec_indices, self.n_recs)
 
