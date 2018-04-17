@@ -1,0 +1,1025 @@
+authors,created,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+TestingApi,2015-05-15T14:07:11.44Z,Testing project for nuget,TestApiClient,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Dmytro Aleksandrov and co.,2015-05-18T08:34:43.117Z,Message classes for Eventsourcing library.,EventSourcing.Cqrs.Messages,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+Dmytro Aleksandrov and co.,2015-05-18T09:48:17.367Z,Core interfaces Neventstore integration for EventSourcing library.,EventSourcing.Interfaces,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+KWPDev,2015-05-18T05:48:08.19Z,"To release memory from web view while navigating between xaml pages.
+
+Add namespace to xaml.   xmlns:ws=""using:WebMemLeakSuppressor""
+
+set    ws:Suppressor.IsMemorySupressed=""True""
+
+inside webview control",WebViewLeakSupressor,False,2015-05-18T05:54:09.957-07:00,True,False,,"Web,view,memory.",782,False,1.0.1
+cdmdotnet Limited,2015-05-18T10:07:01.783Z,Components for implementing the event store using Greg Youngs EventStore for the Cqrs package,Cqrs.EventStore,False,2018-03-29T02:24:06.923+00:00,True,False,,,50917,False,1.500.541.431
+Oystein Bjorke,2015-05-18T13:00:15.027Z,OxyPlot is a plotting library for .NET. This package targets Android apps based on MonoAndroid.,OxyPlot.Xamarin.Android,True,1899-12-31T16:00:00-08:00,False,False,,"xamarin,android,plotting,plot,charting,chart",53900,False,2015.1.889-alpha
+Adrian IORGU,2015-05-18T06:39:00.17Z,Cognifide.SiteCore.Extension.VersionFromLanguage.dll,CognifideSiteCoreVersionFromLanguage,False,1899-12-31T16:00:00-08:00,False,False,,"Cognifide,VersionFromLanguage,SSI",-1,False,1.0.0
+Dmytro Aleksandrov and co.,2015-05-18T09:52:59.593Z,Mongo utils.,EventSourcing.Misc.Mongo,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Oystein Bjorke,2015-05-18T13:01:24.947Z,OxyPlot is a plotting library for .NET. This package targets Xamarin.iOS apps (both classic and unified APIs).,OxyPlot.Xamarin.iOS,True,1899-12-31T16:00:00-08:00,False,False,,"xamarin,iOS,plotting,plot,charting,chart",47604,False,2015.1.889-alpha
+Flllexa,2015-05-18T05:41:16.513Z,ug-api is a implementation of IUGU payment modules (http://iugu.com),ug-api,False,2015-12-13T14:25:58.393-08:00,False,False,,,4819,False,0.8.5616.4826
+KWPDev,2015-05-18T05:44:27.603Z,"Add namespace to xaml.
+
+   xmlns:ws=""using:WebMemLeakSuppressor""
+
+set    ws:Suppressor.IsMemorySupressed=""True""
+
+inside webview control",WebViewLeakSupressor,False,2015-05-18T05:54:09.957-07:00,False,False,,"Web,view,memory.",782,False,1.0.0
+"Andrew Gubskiy,Oleh Formaniuk",2015-05-18T11:14:53.047Z,Base classes for implementing API.,campus.core,False,1899-12-31T16:00:00-08:00,False,False,campus:core API library,"campus,dois,kpi,kbis,api,json,кпи,КБ,ИС,ntuu",-1,False,1.5.1.1400
+GeertvanHorrik,2015-05-18T14:45:35.96Z,Catel.Extensions.Interception library which provides interception capabilities.,Catel.Extensions.Interception,True,2016-11-29T13:36:15.02+00:00,True,False,,"catel,interception",80561,True,4.2.0-unstable0119
+MoonStorm,2015-05-18T05:40:48.467Z,"Fast Dapper CRUD extensions added to the IDbConnection for convenience and a less error prone experience. This library is 2x faster than Dapper.SimpleCRUD.
+For Dapper constructs in general, it is recommended to use Visual Studio 2015 for features such as nameof and string interpolation but that's not a requirement.
+
+The package contains .NET 4.5 and 4.6 DLLs, one of which will be installed based on the target framework in your project. 
+For .NET 4.5, the code contains the polyfills for the missing FormattableString class, which is required when targetting that framework version and using string interpolation with the C# 6 compiler in VS 2015.
+
+Features:
+----------
+- Support for LocalDb and Ms Sql Server (more coming soon)
+- Entities having composite primary keys are supported
+- All the CRUD methods accept a transaction and a command timeout
+- Fast pre-computed entity queries
+- A generic T4 template is also provided for convenience. Entity domain partitioning and generation can be achieved via separate template configurations.
+Existing POCO entities are also supported which can be decorated with attributes such as Table, Key and DatabaseGenerated.
+Column name overrides are not supported and not recommended. As you'll end up writing more complex SQL queries, outside of the domain of this library, you'll want to use the nameof operator as much as possible.
+
+Examples of usage:
+-------------------
+- dbConnection.Insert(newEntity);
+- dbConnection.Get()
+- dbConnection.Get(new Entity() {Id = 10});
+- dbConnection.Update(updatedEntity);
+- dbConnection.Delete(entity)
+- dbConnection.GetTableName<Entity>()
+- dbConnection.Find<Entity>(
+        whereClause:$""{nameof(Entity.FirstName)}=@FirstNameParam"",
+        orderClause:$""{nameof(Entity.LastName)} DESC"",
+        skipRowsCount:10, limitRowsCount:20,
+        queryParameters: new {FirstNameParam: ""John""});
+
+This is where the power of the C# 6 compiler comes into play, and leaves no chance to mistypings or to problems arising from db entity refactorings.
+More details and benchmarks are available on the project site.",Dapper.FastCrud,False,2016-10-27T02:14:24.093+00:00,True,False,Fast CRUD extensions added to the IDbConnection for convenience and a less error prone experience with Dapper.,"Dapper,CRUD",57654,False,1.0.2
+Michael Janulaitis,2015-05-18T14:21:33.287Z,"A portable assembly that contains shared classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived Windows server, client and mobile applications.",UpperSetting.OpenServer.Shared,False,2016-03-17T01:10:53.323-07:00,True,False,,"TCP,Socket,Server",6617,False,1.0.0.7
+Tatham Oddie,2015-05-18T13:54:51.087Z,"Just like System.Web.Abstractions, but for System.IO. Yay for testable IO access! Be sure to check out the System.IO.Abstractions.TestingHelpers package too.",System.IO.Abstractions,False,2018-01-11T23:41:38.67+00:00,True,False,,testing,531425,False,2.0.0.115
+曹明杰,2015-05-18T11:22:44.73Z,针对 .net framework 4.5 一些方法的扩展,CmjExtensions,False,2016-09-18T00:53:46.463-07:00,True,False,,,6233,False,1.1.6.6
+Flllexa,2015-05-18T05:37:49.127Z,UgApi is a implementation of IUGU payment modules (http://iugu.com),ugApi,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.5616.4648
+Wade Womersley,2015-05-15T18:26:51.12Z,Generic parallelisation,com.xcitestudios.Parallelisation,False,2015-09-16T04:14:26.977-07:00,False,False,,"xcitestudios,parallelisation,events",3119,False,1.0.16
+cdmdotnet Limited,2015-05-18T10:17:52.467Z,Components for implementing repositories using Sql for the Cqrs package,Cqrs.Sql,False,2018-03-29T02:29:20.07+00:00,True,False,,,24229,False,1.500.541.431
+KWPDev,2015-05-18T05:48:08.19Z,"To release memory from web view while navigating between xaml pages.
+
+Add namespace to xaml.   xmlns:ws=""using:WebMemLeakSuppressor""
+
+set    ws:Suppressor.IsMemorySupressed=""True""
+
+inside webview control",WebViewLeakSupressor,False,2015-05-18T05:54:09.957-07:00,False,False,,"Web,view,memory.",782,False,1.0.1
+GeertvanHorrik,2015-05-18T14:45:43.087Z,Catel.Extensions.Prism4 library which contains helper classes for prism.,Catel.Extensions.Prism,True,2016-11-29T13:36:21.16+00:00,True,False,,"prism,catel,mvvm",129402,True,4.2.0-unstable0119
+Jonathan Oliver and co.,2015-05-18T09:48:51.877Z,Embedded version of CommonDomain library with some fixes.,EventSourcing.CommonDomain,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Bastian Eicher,2015-05-18T15:19:55.393Z,"The Zero Install Publishing API provides methods for creating and modifying feed files.
+The Zero Install Publishing Tools (including the Feed Editor) are built upon this API. You can use the API to automate complex feed creation/update tasks.",ZeroInstall.Publish,False,2018-02-16T15:37:25.5+00:00,True,False,Zero Install Publishing API (create and modify feeds),,7264,False,2.8.1
+Duncan Roosma(@viper128),2015-05-18T08:31:28.303Z,Core library for static map image services,StaticMap.Core,False,2015-05-20T03:14:39.957-07:00,True,False,,,865,False,1.0.1
+BusinessLine,2015-05-18T11:10:08.71Z,This a common tools library,BLS.Infrastructure,False,2017-02-10T06:57:46.34-08:00,True,False,,"Infrastructure,Common,outils,utilitaires",20905,False,1.0.13.7
+Xerox,2015-05-18T07:52:32.263Z,EnterpriseCloud.ServiceBus.Receive using WCF service bus model,EnterpriseCloud.ServiceBus.ReceiveClient,False,2015-05-19T00:45:55.113-07:00,True,False,EnterpriseCloud.ServiceBus.Receive,,1202,False,1.0.4
+Dmytro Aleksandrov and co.,2015-05-18T09:51:55.717Z,Projections rebuild and remote polling client wrapper utilities.,EventSourcing.Rebuild,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+KWPDev,2015-05-18T05:48:08.19Z,"To release memory from web view while navigating between xaml pages.
+
+Add namespace to xaml.   xmlns:ws=""using:WebMemLeakSuppressor""
+
+set    ws:Suppressor.IsMemorySupressed=""True""
+
+inside webview control",WebViewLeakSupressor,False,2015-05-18T05:54:09.957-07:00,True,False,,"Web,view,memory.",782,False,1.0.1
+"Nikolai Mynkow,Simeon Dimov",2015-05-18T12:29:03.5Z,Protobuf-net wrapper,Protoreg,False,2015-05-18T05:29:03.5-07:00,True,False,Protobuf-net wrapper,"CQRS,DDD,ES,Event,store,sourcing",2674,False,2.0.0
+TARGIT Core Development,2015-05-18T07:20:45.597Z,"A chart is a visual representation of data. It could be a bar chart, cross tab or a gauge. It could also just be a plain white number on a colored background.
+
+      Traditionally, TARGIT Decision Suite has provided several standard charts, such as the ones mentioned above. After selecting measures and dimensions for a data object, switching between such standard charts has always been quick and easy.
+
+      Should you wish to view your data as, say, a pie chart that looks like an actual real-world pie or as a bunch of green pulsating dots on an animated radar screen, you would not have been unable to do. Until now.
+
+      Creating and using custom chart is made available for C# developers through our TARGIT Chart API NuGet package, free of charge.
+
+      Through our chart API, a C#/Wpf developer can create custom data object types that literally look like anything you could think of, and effortlessly make them available to end users of TARGIT Decision Suite.",TargitChartApi,False,2016-10-28T06:15:52.653-07:00,True,False,An API for building custom charts for use in Targit Decision Suite,TARGIT,20226,False,0.131.0
+Penshurst Inc.,2015-05-18T13:39:03.067Z,Markout Input Parser,Markout.Input,False,2016-10-31T10:54:23.15-07:00,True,False,,"markup,WPF,TextBox,Inlines",1638,False,1.2.0
+Dmytro Aleksandrov and co.,2015-05-18T09:52:27.317Z,Log4net implementation of EventSourcing.Cqrs.Services.ILogger interface.,EventSourcing.Logging,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Dimension15,2015-05-18T11:44:54.637Z,"Does object mapping between two objects.
+For further usage information goto: http://www.dimension15.co.za/Pages/ObjectMapper",Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,False,False,,"mapper,map,object,clone,copy",1601,False,1.1.1
+Wade Womersley,2015-05-15T18:26:51.12Z,Generic parallelisation,com.xcitestudios.Parallelisation,False,2015-09-16T04:14:26.977-07:00,False,False,,"xcitestudios,parallelisation,events",3119,False,1.0.16
+scott,2015-05-18T12:55:06.417Z,ScottIsAFool.Mdl2.Xaml,ScottIsAFool.Mdl2.Xaml,False,2015-06-04T06:44:58.69-07:00,True,False,ScottIsAFool.Mdl2.Xaml,ScottIsAFool.Mdl2.Xaml,939,False,1.0.0
+amatkivskiy,2015-05-18T08:31:13.223Z,"C# bindings for Android Iconics library.
+
+Android-Iconics is a library to use (almost) any alternative iconfont in your projects. It allows you to add any Android-Iconics compatible typeface-library-addon to your project and you are able to start using that font.
+http://mikepenz.github.io/Android-Iconics",Mikepenz.Android.Iconics.Xamarin.Binding,False,2015-12-15T02:12:00.223-08:00,True,False,Xamarin binding for Android Iconics https://github.com/mikepenz/Android-Iconics,"Android,Xamarin,Icons,Material",10159,False,0.9.1.2
+cdmdotnet Limited,2015-05-18T10:12:50.077Z,Components for implementing the I.O.C. via Ninject for the Greg Youngs EventStore Cqrs package,Cqrs.Ninject.EventStore,False,2018-03-29T02:27:26.593+00:00,True,False,,,50274,False,1.500.541.431
+Administrator,2015-05-18T09:42:31.147Z,Description,LJ.Base.Web,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.6.0
+pecord,2015-05-18T14:20:10.503Z,WebApi Proxy,WebApiProxy-pecord,False,2015-05-18T07:20:10.503-07:00,True,False,,WebApi,573,False,1.2.0
+,,,SanPackage,,,,True,,,,,1.0.0
+DuoCode,2015-05-18T07:31:19.18Z,C#-to-JavaScript compiler powered by Microsoft Roslyn,DuoCode,True,2017-05-01T06:38:23.203-07:00,True,False,C#-to-JavaScript compiler powered by Microsoft Roslyn,"javascript,compiler,roslyn,js,duo,duocode,nodejs,node,webgl",10754,False,0.6.1251-beta
+GeertvanHorrik,2015-05-18T14:45:15.58Z,"Catel.Extensions.Controls library which contains user controls, such as the StackGrid.",Catel.Extensions.Controls,True,2016-11-29T13:35:55.627+00:00,True,False,,"windows,controls,stackgrid,styles,stylehelper",170050,True,4.2.0-unstable0119
+Jason Jarrett,2015-05-18T06:07:41.813Z,TypeScript Definitions (d.ts) for tcomb. Generated based off the DefinitelyTyped repository [git commit: e42bef3a8f9024a50468b12202df69519315b023]. http://github.com/DefinitelyTyped,tcomb.TypeScript.DefinitelyTyped,False,2016-03-22T13:04:55.35-07:00,True,False,,"TypeScript,JavaScript",759,False,0.0.2
+Sayed Ibrahim Hashimi,2015-05-18T07:34:03.183Z,This is a NuGet package which contains a module that simplifies downloading NuGet packages.,nuget-powershell,True,2016-04-30T13:51:10.88-07:00,True,False,,"nuget,powershell",4200,False,0.2.1-beta
+Mackey Kinard,2015-05-18T15:05:08.943Z,Ajax Gateway Web Application Toolkit - Core Runtime - 0.1.1.16-beta,AjaxGateway.Core,True,1900-01-01T00:00:00+00:00,False,False,The Ajax Gateway Core Runtime module allows for the development of back-end high performance AJAX-RPC 1.0 remote procedure call services.,"Owin,Ajax,Gateway,DuoCode,Remoting,REST,JSON,RPC,XML",31523,False,0.1.1.16-beta
+aswanikumarc,2015-05-18T09:26:56.747Z,Upn Components dependencies,UpnComponentsDependencies,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+BTCTrader,2015-05-18T08:50:58.393Z,"C# client for the broker API of BTCTrader. You can use this client to connect to the APIs of btcturk.com, btcgreece.com, btcexchange.ph and other BTCTrader partners.
+
+The _baseUrl, public and private key variables needs must be set.
+
+To use with BTCTurk, set the _baseUrl to ""https://www.btcturk.com"" for BTCExchange.PH, use ""https://btcexchange.ph"" etc..
+
+The public and private keys can be found under Account->API Access or similar pages in your account on each exchange.",BTCTrader.APIClient,False,2016-09-22T13:03:13.1+00:00,True,False,"C# client for the broker API of BTCTrader. You can use this client to connect to the APIs of btcturk.com, btcgreece.com, btcexchange.ph and other BTCTrader partners.",,5556,False,1.0.4
+,,,SanPackage,,,,True,,,,,1.0.0
+GeertvanHorrik,2015-05-18T14:45:11.453Z,Catel.MVC 5 library which includes the MVC 5 related features.,Catel.MVC5,True,2016-11-29T13:35:50.27+00:00,True,False,,"mvc,catel",52776,True,4.2.0-unstable0119
+Flllexa,2015-05-18T05:41:16.513Z,ug-api is a implementation of IUGU payment modules (http://iugu.com),ug-api,False,2015-12-13T14:25:58.393-08:00,True,False,,,4819,False,0.8.5616.4826
+christoforosl,2015-05-18T11:28:58.6Z,"See GitHub wiki for more information: 
+https://github.com/christoforosl/codegen-lib/wiki",CodeGen.Model.Library,False,2017-12-18T16:16:53.147+00:00,True,False,,,6165,False,4.0.5.1
+WrocTrackerTeam,2015-05-18T06:10:43.59Z,Nuget package library exposing positions of Wroclaw's MPK public transport vehicles,WrocTracker,False,2015-05-22T06:42:05.233-07:00,True,False,,"MPK,Wrocław,Wroclaw,pozycja,tramwaj,autobus,bus,tram,position",545,False,1.0.0
+objo,2015-05-18T11:14:31.077Z,Provides custom controls and extensions for WPF 3D.,HelixToolkit.Wpf,False,1900-01-01T00:00:00+00:00,False,False,,"wpf,wpf3d,3D",100724,False,2015.1.515
+Patrick Evers,2015-05-18T12:21:35.52Z,A MVC Mail Action Result,Panther.Mail.Mvc,False,1899-12-31T16:00:00-08:00,False,False,,Smtp,-1,False,1.0.0
+scott,2015-05-18T12:54:04.407Z,ScottIsAFool.Mdl2.Cs,ScottIsAFool.Mdl2.Cs,False,2015-05-21T10:05:00.117-07:00,True,False,ScottIsAFool.Mdl2.Cs,ScottIsAFool.Mdl2.Cs,732,False,1.0.0
+Jason Jarrett,2015-05-18T06:06:39.41Z,TypeScript Definitions (d.ts) for localForage. Generated based off the DefinitelyTyped repository [git commit: e42bef3a8f9024a50468b12202df69519315b023]. http://github.com/DefinitelyTyped,localForage.TypeScript.DefinitelyTyped,False,2016-11-29T18:01:37.01-08:00,True,False,,"TypeScript,JavaScript",9052,False,0.0.2
+Dalmiro Granas,2015-05-18T05:54:31.557Z,The Octopus Deploy Powershell Module,OctoPosh,False,1899-12-31T16:00:00-08:00,False,False,,"Octopus,Powershell",-1,False,0.2.26
+Umair Chagani,2015-05-18T07:38:03.287Z,factory-girl allows you to easily create test data for your .NET objects.  Supports creating default and named factories.,factory-girl,False,1899-12-31T16:00:00-08:00,False,False,,"factory-girl,factorygirl,factory_girl,factorygirl.NET,objectmother,plant,blueprint",1463,False,0.0.21
+BTCTrader,2015-05-18T14:37:19.657Z,"C# client for the broker API of BTCTrader. You can use this client to connect to the APIs of btcturk.com, btcgreece.com, btcexchange.ph and other BTCTrader partners.
+
+The _baseUrl, public and private key variables needs must be set.
+
+To use with BTCTurk, set the _baseUrl to ""https://www.btcturk.com"" for BTCExchange.PH, use ""https://btcexchange.ph"" etc..
+
+The public and private keys can be found under Account->API Access or similar pages in your account on each exchange.",BTCTrader.APIClient,False,2016-09-22T13:03:13.1+00:00,True,False,"C# client for the broker API of BTCTrader. You can use this client to connect to the APIs of btcturk.com, btcgreece.com, btcexchange.ph and other BTCTrader partners.",,5556,False,1.0.5
+"Nikolai Mynkow,Simeon Dimov",2015-05-18T13:22:59.863Z,Elders.Cronus.Persistence.Cassandra,Cronus.Persistence.Cassandra,False,2018-04-01T19:46:45.623+00:00,True,False,Elders.Cronus.Persistence.Cassandra,"cronus,cassandra,event,store,sourcing",6421,False,2.0.0
+BTCTrader,2015-05-18T08:27:08.587Z,"C# client for the broker API of BTCTrader. You can use this client to connect to the APIs of btcturk.com, btcgreece.com, btcexchange.ph and other BTCTrader partners.
+
+The _baseUrl, public and private key variables needs must be set.
+
+To use with BTCTurk, set the _baseUrl to ""https://www.btcturk.com"" for BTCExchange.PH, use ""https://btcexchange.ph"" etc..
+
+The public and private keys can be found under Account->API Access or similar pages in your account on each exchange.",BTCTrader.APIClient,False,2016-09-22T13:03:13.1+00:00,True,False,"C# client for the broker API of BTCTrader. You can use this client to connect to the APIs of btcturk.com, btcgreece.com, btcexchange.ph and other BTCTrader partners.",,5556,False,1.0.1
+Dimension15,2015-05-18T11:44:54.637Z,"Does object mapping between two objects.
+For further usage information goto: http://www.dimension15.co.za/Pages/ObjectMapper",Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,True,False,,"mapper,map,object,clone,copy",1601,False,1.1.1
+Ove Andersen,2015-05-18T09:37:44.643Z,"An easy to use OAuth 2 authentication provider for ASP.NET WebAPI 2.
+	
+This package lets you add OAuth authentication to your API quickly and securely.",Sentinel.OAuth,False,2016-11-22T07:34:50.4-08:00,True,False,An easy to use OAuth 2 authentication provider for ASP.NET WebAPI 2.,"oauth,webapi,security,authentication,authorization,eyecatch",7915,False,1.2.6
+Dmytro Aleksandrov and co.,2015-05-18T08:39:38.117Z,Log4net implementation of EventSourcing.Cqrs.Services.ILogger interface.,EventSourcing.Logging,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+aswanikumarc,2015-05-18T07:28:38.973Z,My package description.,Upn_Components_Dependencies,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Dmytro Aleksandrov and co.,2015-05-18T09:51:55.717Z,Projections rebuild and remote polling client wrapper utilities.,EventSourcing.Rebuild,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+"Andrew Gubskiy,Oleh Formaniuk",2015-05-18T11:14:53.047Z,Base classes for implementing API.,campus.core,False,1899-12-31T16:00:00-08:00,False,False,campus:core API library,"campus,dois,kpi,kbis,api,json,кпи,КБ,ИС,ntuu",-1,False,1.5.1.1400
+www.homethic.com,2015-05-18T07:41:39.697Z,Fozzy is an Intelligence Layer,Fozzy.Server,False,2016-07-11T02:10:25.023-07:00,True,False,,"Semantic,API",7990,False,1.2.3.19
+MoonStorm,2015-05-18T05:40:48.467Z,"Fast Dapper CRUD extensions added to the IDbConnection for convenience and a less error prone experience. This library is 2x faster than Dapper.SimpleCRUD.
+For Dapper constructs in general, it is recommended to use Visual Studio 2015 for features such as nameof and string interpolation but that's not a requirement.
+
+The package contains .NET 4.5 and 4.6 DLLs, one of which will be installed based on the target framework in your project. 
+For .NET 4.5, the code contains the polyfills for the missing FormattableString class, which is required when targetting that framework version and using string interpolation with the C# 6 compiler in VS 2015.
+
+Features:
+----------
+- Support for LocalDb and Ms Sql Server (more coming soon)
+- Entities having composite primary keys are supported
+- All the CRUD methods accept a transaction and a command timeout
+- Fast pre-computed entity queries
+- A generic T4 template is also provided for convenience. Entity domain partitioning and generation can be achieved via separate template configurations.
+Existing POCO entities are also supported which can be decorated with attributes such as Table, Key and DatabaseGenerated.
+Column name overrides are not supported and not recommended. As you'll end up writing more complex SQL queries, outside of the domain of this library, you'll want to use the nameof operator as much as possible.
+
+Examples of usage:
+-------------------
+- dbConnection.Insert(newEntity);
+- dbConnection.Get()
+- dbConnection.Get(new Entity() {Id = 10});
+- dbConnection.Update(updatedEntity);
+- dbConnection.Delete(entity)
+- dbConnection.GetTableName<Entity>()
+- dbConnection.Find<Entity>(
+        whereClause:$""{nameof(Entity.FirstName)}=@FirstNameParam"",
+        orderClause:$""{nameof(Entity.LastName)} DESC"",
+        skipRowsCount:10, limitRowsCount:20,
+        queryParameters: new {FirstNameParam: ""John""});
+
+This is where the power of the C# 6 compiler comes into play, and leaves no chance to mistypings or to problems arising from db entity refactorings.
+More details and benchmarks are available on the project site.",Dapper.FastCrud,False,2016-10-27T02:14:24.093+00:00,True,False,Fast CRUD extensions added to the IDbConnection for convenience and a less error prone experience with Dapper.,"Dapper,CRUD",57654,False,1.0.2
+cdmdotnet Limited,2015-05-18T10:10:32.653Z,Components for implementing the I.O.C. via Ninject for the Cqrs package,Cqrs.Ninject,False,2018-03-29T02:25:08.757+00:00,True,False,,,51783,False,1.500.541.431
+Michael Janulaitis,2015-05-18T14:26:44.637Z,"A portable assembly that contains shared classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived server, client and mobile applications.",UpperSetting.OpenServer.Protocols.WinAuth.Shared,False,2016-03-17T01:11:54.3-07:00,True,False,,"TCP,Socket,Server",5725,False,1.0.0.7
+Dmytro Aleksandrov and co.,2015-05-18T09:49:29.297Z,Core classes for Eventsourcing library.,EventSourcing.Cqrs,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Dmytro Aleksandrov and co.,2015-05-18T08:39:00.853Z,Projections rebuild and remote polling client wrapper utilities.,EventSourcing.Rebuild,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+Dmytro Aleksandrov and co.,2015-05-18T08:36:33.147Z,Core classes for Eventsourcing library.,EventSourcing.Cqrs,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+ubershmekel,2015-05-18T05:21:49.1Z,Mustache.js compliant templating engine for .NET,Mustache.cs,False,1899-12-31T16:00:00-08:00,False,False,,"mustache,handlebars.js,text,generation,building,template,mustache.js,mustache.cs",1108,False,0.1.9.2
+KWPDev,2015-05-18T05:44:27.603Z,"Add namespace to xaml.
+
+   xmlns:ws=""using:WebMemLeakSuppressor""
+
+set    ws:Suppressor.IsMemorySupressed=""True""
+
+inside webview control",WebViewLeakSupressor,False,2015-05-18T05:54:09.957-07:00,True,False,,"Web,view,memory.",782,False,1.0.0
+Harry McIntyre,2015-05-18T10:01:45.967Z,Strongly type html helpers for rendering jquery.datatables tables from IQueryables,Mvc.JQuery.Datatables,False,2018-02-13T13:32:31.3+00:00,True,False,,"jquery,datatables,iqueryable,razor",126112,False,1.2.150
+GeertvanHorrik,2015-05-18T14:45:26.983Z,"Catel.Extensions.EntityFramework5 library which provides data classes such as repositories, unit of work, DbContextManager and more.",Catel.Extensions.EntityFramework5,True,2016-11-29T13:36:06.393+00:00,True,False,,"catel,entity,framework,entityframework,EF,EF5,UnitOfWork,unit,of,work,DbContextManager,repository,repositories,database",96703,True,4.2.0-unstable0119
+Maciej Raczkowski,2015-05-18T13:11:34.97Z,Active Campaign C# wrapper,ActiveCampaign,True,1899-12-31T16:00:00-08:00,False,False,,"Active,Campaign,wrapper,c#",-1,False,1.0.1-beta2
+Dmytro Aleksandrov and co.,2015-05-18T08:37:05.64Z,Autofac utilities for Eventsourcing library.,EventSourcing.Cqrs.Autofac,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+cdmdotnet Limited,2015-05-18T10:12:15.527Z,Components for implementing I.O.C. requirements via Ninject for using Azure Servuce Bus as the event bus.,Cqrs.Ninject.Azure.ServiceBus.EventBus,False,2018-03-29T02:26:43.153+00:00,True,False,,,26057,False,1.500.541.431
+"Andrew Gubskiy,Oleh Formaniuk",2014-11-29T21:48:44.773Z,Base classes for implementing API.,campus.core,True,1899-12-31T16:00:00-08:00,False,False,campus:core API library,"campus,dois,kpi,kbis,api,json,кпи,КБ,ИС,ntuu",-1,False,2.0.0.1000-beta
+Dmytro Aleksandrov and co.,2015-05-18T08:40:12.8Z,Mongo utils.,EventSourcing.Misc.Mongo,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+Mackey Kinard,2015-05-18T14:31:08.64Z,Ajax Gateway Web Application Toolkit - Host Services - 0.1.1.15-beta,AjaxGateway.Host,True,1899-12-31T16:00:00-08:00,False,False,"The Ajax Gateway is a GWT like development toolkit for building complex enterprise AJAX host applications in the C# language. Its goal is to enable productive development of cross platform, self contained server or service host applications for C# developers.","Owin,Ajax,Gateway,DuoCode,Remoting,REST,JSON,RPC,XML",29898,False,0.1.1.15-beta
+Rob Ladbrook (The App Business),2015-05-18T10:41:18.2Z,A simple library which allows you to make calls to Slack via it's Web API,Tab.Slack.WebApi,True,2015-07-15T06:40:24.153-07:00,True,False,,,1222,False,0.1.1-alpha
+a.molcanovas@gmail.com,2015-05-18T09:10:53.04Z,"AloFramework is an incredibly lightweight and flexible MVC framework for PHP 5.4+. It has a lot of built-in functionality including but not limited to:
+
+* Memcached wrapper
+* Database connection class
+* MySQL or Memcached-based session manager
+* HTML form validator
+* Code testing suite
+* Email sender
+* Crontab editor
+* Object-oriented cURL wrapper
+* Object-oriented file manager
+* Remote SFTP file manager
+* Code profiler",AloFramework,False,1899-12-31T16:00:00-08:00,False,False,AloFramework is an incredibly lightweight and flexible MVC framework for PHP 5.4+,"php,mvc,framework,lightweight,5.4",-1,False,1.0.0
+Streamcoders.com,2015-05-18T13:16:39.987Z,Is a comprehensive library for handling audio/video codecs and streaming technologies.,Streamcoders.MediaSuite.x86,False,2017-04-24T01:50:45.473-07:00,True,False,,"audio,video,streaming,html5,rtsp,rtp,h.264,vp8",101110,False,4.0.620
+Dmytro Aleksandrov and co.,2015-05-18T08:34:43.117Z,Message classes for Eventsourcing library.,EventSourcing.Cqrs.Messages,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+MoonStorm,2015-05-18T05:40:48.467Z,"Fast Dapper CRUD extensions added to the IDbConnection for convenience and a less error prone experience. This library is 2x faster than Dapper.SimpleCRUD.
+For Dapper constructs in general, it is recommended to use Visual Studio 2015 for features such as nameof and string interpolation but that's not a requirement.
+
+The package contains .NET 4.5 and 4.6 DLLs, one of which will be installed based on the target framework in your project. 
+For .NET 4.5, the code contains the polyfills for the missing FormattableString class, which is required when targetting that framework version and using string interpolation with the C# 6 compiler in VS 2015.
+
+Features:
+----------
+- Support for LocalDb and Ms Sql Server (more coming soon)
+- Entities having composite primary keys are supported
+- All the CRUD methods accept a transaction and a command timeout
+- Fast pre-computed entity queries
+- A generic T4 template is also provided for convenience. Entity domain partitioning and generation can be achieved via separate template configurations.
+Existing POCO entities are also supported which can be decorated with attributes such as Table, Key and DatabaseGenerated.
+Column name overrides are not supported and not recommended. As you'll end up writing more complex SQL queries, outside of the domain of this library, you'll want to use the nameof operator as much as possible.
+
+Examples of usage:
+-------------------
+- dbConnection.Insert(newEntity);
+- dbConnection.Get()
+- dbConnection.Get(new Entity() {Id = 10});
+- dbConnection.Update(updatedEntity);
+- dbConnection.Delete(entity)
+- dbConnection.GetTableName<Entity>()
+- dbConnection.Find<Entity>(
+        whereClause:$""{nameof(Entity.FirstName)}=@FirstNameParam"",
+        orderClause:$""{nameof(Entity.LastName)} DESC"",
+        queryParameters: new {FirstNameParam: ""John""});
+
+This is where the power of the C# 6 compiler comes into play, and leaves no chance to mistypings or to problems arising from db entity refactorings.
+More examples are available on the project site.",Dapper.FastCrud,False,2016-10-27T02:14:24.093+00:00,True,False,Fast CRUD extensions added to the IDbConnection for convenience and a less error prone experience with Dapper.,"Dapper,CRUD",57654,False,1.0.2
+Michael Janulaitis,2015-05-18T14:21:33.287Z,"A portable assembly that contains shared classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived Windows server, client and mobile applications.",UpperSetting.OpenServer.Shared,False,2016-03-17T01:10:53.323-07:00,True,False,,"TCP,Socket,Server",6617,False,1.0.0.7
+Gonçalo Lopes,2015-05-18T08:14:47.557Z,Bonsai Design Library containing visualizer and editor classes for image processing types.,Bonsai.Vision.Design,False,2017-01-24T06:34:35.2-08:00,True,False,,"Bonsai,Vision,Visualizers",4124,False,2.1.1
+ericbarnard,2015-05-18T09:45:02.937Z,A Validation Library plugin for KnockoutJS. An extensible and pluggable framework for performing model-based Form and UI validation.,Knockout.Validation,False,2015-05-18T02:45:02.937-07:00,True,False,A Validation Library plugin for KnockoutJS,,626750,False,2.0.3
+Dimension15,2015-05-18T12:03:11.107Z,"Does object mapping between two objects.
+For further usage information goto: http://www.dimension15.co.za/Pages/ObjectMapper",Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,False,False,,"mapper,map,object,clone,copy",1601,False,1.1.3
+Thocun,2015-05-18T08:16:38.197Z,"Store and retrieve data object to any type of storage (memory, database, file)",MagicalStorage,False,2015-09-11T00:48:08.503-07:00,True,False,,,6153,False,1.0.0
+magelia,2015-05-18T09:16:03.087Z,"Build powerful e-commerce client applications such as websites, smartphone apps, using the Magelia WebStore e-commerce software. With this Nuget package, ease the project set-up, and start developing your e-commerce store in minutes.",Magelia.WebStore.Client,False,2016-06-20T03:34:23.36-07:00,True,False,,"magelia,e-commerce",9584,False,3.1.354.27
+rynn.wang,2015-05-18T15:14:25.06Z,"Common library for .NET projects. Including REST Api handler, exception handler, AOP, Reflection, Extensions, Configurations, etc.
+
+NOTE: version 2.x is not compatible for version 1.x in exception handler methods.",ifunction.Common,False,2015-12-07T22:29:02.52-08:00,True,False,"Common library for .NET projects. Including REST Api handler, exception handler, AOP, Reflection, Extensions, Configurations, etc.",,68169,False,2.14.0
+Dimension15,2015-05-18T13:19:56.637Z,Does property and field mapping between two objects. Can also ignore specified members or map between members with different names.,Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,True,False,,"mapper,map,object,clone,copy,duplicate,mapping,property,properties,member,variable,field",1601,False,1.1.6
+Administrator,2015-05-18T09:28:42.337Z,Description,LJ.Data.SqlServer,False,2015-05-18T02:28:42.337-07:00,True,False,,,508,False,0.6.1
+Walter M. Soto Reyes,2015-05-18T13:27:10.437Z,LittlePack allows you to archive multiple file into one compressed package.,LittlePack,False,2015-05-18T08:45:17.24-07:00,True,False,LittlePack allows you to archive multiple file into one compressed package.,archive,475,False,1.0.0
+"Srinivasan Kidambi,srinivas@semantics3.com",2015-04-08T00:19:45.4Z,C# Client Library for querying Semantics3 APIs,Semantics3,False,2015-05-18T06:52:41.41-07:00,False,False,,"Semantics3,API,C#,OAuth,Products,Data",18728,False,1.0.0.24
+TARGIT Core Development,2015-05-12T17:11:55.273Z,"A chart is a visual representation of data. It could be a bar chart, cross tab or a gauge. It could also just be a plain white number on a colored background.
+
+      Traditionally, TARGIT Decision Suite has provided several standard charts, such as the ones mentioned above. After selecting measures and dimensions for a data object, switching between such standard charts has always been quick and easy.
+
+      Should you wish to view your data as, say, a pie chart that looks like an actual real-world pie or as a bunch of green pulsating dots on an animated radar screen, you would not have been unable to do. Until now.
+
+      Creating and using custom chart is made available for C# developers through our TARGIT Chart API NuGet package, free of charge.
+
+      Through our chart API, a C#/Wpf developer can create custom data object types that literally look like anything you could think of, and effortlessly make them available to end users of TARGIT Decision Suite.",TargitChartApi,False,2016-10-28T06:15:52.653-07:00,False,False,An API for building custom charts for use in Targit Decision Suite,TARGIT,20226,False,0.130.0
+Bastian Eicher,2015-05-18T15:21:23.25Z,"The Zero Install Storage API contains data models and management functions for all local file storage used by Zero Install.
+This API provides a common basis for the packages ZeroInstall.Services and ZeroInstall.Publish. You will usually get this package indirectly as a dependency from there.",ZeroInstall.Store,False,2018-02-16T15:38:12.72+00:00,True,False,Zero Install Storage API (data models and management functions),,7835,False,2.8.1
+www.homethic.com,2015-05-18T07:41:39.697Z,Fozzy is an Intelligence Layer,Fozzy.Server,False,2016-07-11T02:10:25.023-07:00,True,False,,"Semantic,API",7990,False,1.2.3.19
+StaufAd,2015-05-18T08:00:18.717Z,My Description,RoutePlannerLib.dll,False,2015-05-18T01:00:18.717-07:00,True,False,,ECNF,292,False,1.0.0
+Dmytro Aleksandrov and co.,2015-05-18T08:40:12.8Z,Mongo utils.,EventSourcing.Misc.Mongo,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+kirk,2015-05-18T13:24:10.22Z,Fody extension to generate RaisePropertyChange notifications for properties and ObservableAsPropertyHelper properties.,ReactiveUI.Fody,False,2017-07-21T15:48:05.057+00:00,True,False,,"reactiveui,fody",42461,True,1.0.51
+Geeks ltd,2015-05-18T14:28:26.27Z,"M# components, data access tools and extension methods.",MSharp.Framework,False,2018-04-15T10:39:20.087+00:00,True,False,,,122672,False,2.1.0.129
+BTCTrader,2015-05-18T08:41:45.453Z,"C# client for the broker API of BTCTrader. You can use this client to connect to the APIs of btcturk.com, btcgreece.com, btcexchange.ph and other BTCTrader partners.
+
+The _baseUrl, public and private key variables needs must be set.
+
+To use with BTCTurk, set the _baseUrl to ""https://www.btcturk.com"" for BTCExchange.PH, use ""https://btcexchange.ph"" etc..
+
+The public and private keys can be found under Account->API Access or similar pages in your account on each exchange.",BTCTrader.APIClient,False,2016-09-22T13:03:13.1+00:00,True,False,"C# client for the broker API of BTCTrader. You can use this client to connect to the APIs of btcturk.com, btcgreece.com, btcexchange.ph and other BTCTrader partners.",,5556,False,1.0.2
+Synercoding,2015-05-18T11:44:17.507Z,A library that helps you implement a UnitOfWork pattern,Synercoding.UnitOfWork,True,2015-12-10T09:24:26.333-08:00,True,False,,"EF,UnitOfWork,Database,Data,vNext",2780,False,3.0.0-alpha
+cdmdotnet Limited,2015-05-18T10:07:37.833Z,Uml templates and a Visual Studio VISX profile package for the lightweight CQRS framework. Using this package you can generate much of the boiler plate code involved in implementing a CQRS project.,Cqrs.Modelling,False,2018-03-29T02:24:22.753+00:00,True,False,,,46070,False,1.500.541.431
+GeertvanHorrik,2015-05-18T14:45:26.983Z,"Catel.Extensions.EntityFramework5 library which provides data classes such as repositories, unit of work, DbContextManager and more.",Catel.Extensions.EntityFramework5,True,2016-11-29T13:36:06.393+00:00,True,False,,"catel,entity,framework,entityframework,EF,EF5,UnitOfWork,unit,of,work,DbContextManager,repository,repositories,database",96703,True,4.2.0-unstable0119
+Dimension15,2015-05-18T13:07:37.86Z,Does property and field mapping between two objects. Can also ignore specified members or map between members with different names.,Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,False,False,,"mapper,map,object,clone,copy",1601,False,1.1.5
+BTCTrader,2015-05-18T08:50:58.393Z,"C# client for the broker API of BTCTrader. You can use this client to connect to the APIs of btcturk.com, btcgreece.com, btcexchange.ph and other BTCTrader partners.
+
+The _baseUrl, public and private key variables needs must be set.
+
+To use with BTCTurk, set the _baseUrl to ""https://www.btcturk.com"" for BTCExchange.PH, use ""https://btcexchange.ph"" etc..
+
+The public and private keys can be found under Account->API Access or similar pages in your account on each exchange.",BTCTrader.APIClient,False,2016-09-22T13:03:13.1+00:00,True,False,"C# client for the broker API of BTCTrader. You can use this client to connect to the APIs of btcturk.com, btcgreece.com, btcexchange.ph and other BTCTrader partners.",,5556,False,1.0.4
+Synercoding,2015-05-18T12:53:42.487Z,A library that helps you implement a UnitOfWork pattern,Synercoding.UnitOfWork,True,2015-12-10T09:24:26.333-08:00,True,False,,"EF,UnitOfWork,Database,Data,vNext",2780,False,3.0.0-alpha1
+Flllexa,2015-05-18T05:37:49.127Z,UgApi is a implementation of IUGU payment modules (http://iugu.com),ugApi,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.5616.4648
+Thocun,2015-05-18T08:16:38.197Z,"Store and retrieve data object to any type of storage (memory, database, file)",MagicalStorage,False,2015-09-11T00:48:08.503-07:00,True,False,,,6153,False,1.0.0
+Igor Rončević,2015-05-18T13:13:00.423Z,Pragmatic core abstractions.,Pragmatic,False,2015-10-30T10:28:40.973+00:00,True,False,Pragmatic core abstractions.,,4023,False,0.7.2
+Dmytro Aleksandrov and co.,2015-05-18T08:36:33.147Z,Core classes for Eventsourcing library.,EventSourcing.Cqrs,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+Mackey Kinard,2015-05-18T11:30:50.89Z,Ajax Gateway Web Application Toolkit - Host Services - 0.1.1.14-beta,AjaxGateway.Host,True,1899-12-31T16:00:00-08:00,False,False,"The Ajax Gateway is a GWT like development toolkit for building enterprise AJAX host applications in the C# language. Its goal is to enable productive development of cross platform, self contained server or service host applications for C# developers.","Owin,Ajax,Gateway,DuoCode,Remoting,REST,JSON,RPC,XML",29898,False,0.1.1.14-beta
+ubershmekel,2015-05-18T05:43:58.743Z,Mustache.js compliant templating engine for .NET,MustacheCs,False,2015-05-17T22:43:58.743-07:00,True,False,,"mustache,handlebars.js,text,generation,building,template,mustache.js,MustacheCs,mustache.cs",415,False,0.1.9.2
+Dmytro Aleksandrov and co.,2015-05-18T09:50:43.587Z,In-process event dispatcher for EventSourcing library.,EventSourcing.EventDispatcher,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+magelia,2015-05-18T09:17:30.927Z,"This package is used by the Magelia WebStore extensibility project to get references to Magelia WebStore runtime library.
+      Please don't use directly, install the Magelia WebStore extensibility project and create a new Magelia WebStore extension Visual Studio project.",Magelia.WebStore.Runtime.Extensibility,False,2016-09-06T02:22:42.93-07:00,False,False,,"magelia,e-commerce",4023,False,3.1.354.27
+magelia,2015-05-18T09:14:24.513Z,Glimpse is a web debugging and diagnostics tool used to gain a better understanding of whats happening inside of your web application. Provides Glimpse tabs for Magelia WebStore Client.,Glimpse.Magelia.WebStore.Client,False,2016-05-02T00:33:25.273-07:00,True,False,,"glimpse,magelia,e-commerce",2859,False,3.1.354.27
+Michael Janulaitis,2015-05-18T14:27:17.997Z,"A portable assembly that contains classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived client and mobile applications.",UpperSetting.OpenServer.Protocols.WinAuth.Client,False,2016-03-17T01:12:01.567-07:00,True,False,,"TCP,Socket,Server",5689,False,1.0.0.7
+Dmytro Aleksandrov and co.,2015-05-18T09:49:29.297Z,Core classes for Eventsourcing library.,EventSourcing.Cqrs,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Dimension15,2015-05-18T11:56:24.69Z,"Does object mapping between two objects.
+For further usage information goto: http://www.dimension15.co.za/Pages/ObjectMapper",Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,False,False,,"mapper,map,object,clone,copy",1601,False,1.1.2
+Abel Cheng,2015-05-18T14:30:07.797Z,"Less Code, Less Configuration, Less Time. DataBooster is a high-performance extension to ADO.NET Data Provider, includes a light encapsulation to minimize your DAL code and a booster to maximize throughput for writing mass data to database. Visit http://databooster.codeplex.com",DataBooster.Oracle.DataDirect,False,2018-04-01T03:15:31.243+00:00,True,False,,"DbParallel,DataAccess,ADO.NET,Booster,Launcher,Throughput,Oracle,Progress,DataDirect,Bulk",12149,True,1.7.8.2
+Dimension15,2015-05-18T13:19:56.637Z,Does property and field mapping between two objects. Can also ignore specified members or map between members with different names.,Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,True,False,,"mapper,map,object,clone,copy,duplicate,mapping",1601,False,1.1.6
+Tatham Oddie,2015-05-18T13:01:27.29Z,"Just like System.Web.Abstractions, but for System.IO. Yay for testable IO access! Be sure to check out the System.IO.Abstractions.TestingHelpers package too.",System.IO.Abstractions,False,2018-01-11T23:41:38.67+00:00,True,False,,testing,531425,False,2.0.0.114
+"Nikolai Mynkow,Simeon Dimov",2015-05-18T12:06:23.113Z,Elders.Cronus.Serialization.Protoreg,Cronus.Serialization.Protoreg,False,2015-05-18T05:34:33.727-07:00,True,False,Elders.Cronus.Serialization.Protoreg,,688,False,1.0.1
+Dominik Frefel,2015-05-18T11:58:02.987Z,This is a test. Do not download.,Fhnw.Ecnf.RoutePlanner.RoutePlannerLib,False,2015-05-27T01:57:14.443-07:00,True,False,,,812,False,1.0.0
+Equilibrium,2015-05-18T07:32:45Z,Equ Umbraco Bootstrap,Equ.Umbraco.Bootstrap,False,2015-05-18T00:32:45-07:00,True,False,,"umbraco,mvc",3153,False,0.9.0
+Dmytro Aleksandrov and co.,2015-05-18T08:35:18.493Z,Core interfaces Neventstore integration for EventSourcing library.,EventSourcing.Interfaces,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+OElite Limited,2015-05-18T15:00:37.26Z,Common Library for OElite Platform based application development,OElite.Common,False,1899-12-31T16:00:00-08:00,False,False,,oelite,-1,False,3.8.7
+Terradue,2015-05-18T08:24:01.143Z,Terradue.OpenSearch.DataAnalyzer is a library targeting .NET 4.0 and above providing Opensearch result of analyzed data,Terradue.OpenSearch.DataAnalyzer,False,2018-02-27T08:45:14.05+00:00,True,False,Terradue OpenSearch DataAnalyzer library for .Net,,4887,False,1.0.16
+scott,2015-05-18T12:59:17.827Z,ScottIsAFool.Mdl2,ScottIsAFool.Mdl2,False,2015-05-18T05:59:17.827-07:00,True,False,ScottIsAFool.Mdl2,ScottIsAFool.Mdl2,664,False,1.0.1
+"Jeff Doolittle,Mike Hadlow",2015-05-18T10:26:49.3Z,An adaptor to allow EasyNetQ to use Ninject as its internal IoC container,EasyNetQ.DI.Ninject,False,1900-01-01T00:00:00+00:00,False,False,,"RabbitMQ,Messaging,AMQP,REST,API,Ninject",57930,False,0.49.2.389
+GeertvanHorrik,2015-05-18T14:45:47.54Z,Catel.Extensions.Prism5 library which contains helper classes for prism.,Catel.Extensions.Prism5,True,2016-11-29T05:36:24.067-08:00,True,False,,"prism,catel,mvvm",31104,True,4.2.0-unstable0119
+Administrator,2015-05-18T09:33:10.967Z,Description,LJ.Common.Autofac,False,2015-05-18T02:33:10.967-07:00,True,False,,,361,False,0.6.0
+"Oleh Formaniuk,Andrew Gubskiy",2015-05-18T12:02:04.867Z,Base classes for implementing for PUSH notifications.,campus.core.pulse,False,1899-12-31T16:00:00-08:00,False,False,campus:core API library for PUSH notifications,"campus,dois,kpi,kbis,api,json,кпи,КБ,ИС,ntuu",-1,False,1.2.4.760
+Oystein Bjorke,2015-05-18T13:00:48.987Z,"OxyPlot is a plotting library for .NET. This package includes a portable library for Xamarin.Forms apps and platform-specific libraries for iOS, Android and Windows Phone.",OxyPlot.Xamarin.Forms,True,1899-12-31T16:00:00-08:00,False,False,,"plotting,plot,charting,chart,xamarin,forms,android,windows,phone,ios",36961,False,2015.1.889-alpha
+Administrator,2015-05-18T09:27:23.31Z,Description,LJ.Data.MySql,False,2015-06-15T21:00:24.38-07:00,True,False,,,667,False,0.6.1
+KWPDev,2015-05-18T05:44:27.603Z,"Add namespace to xaml.
+
+   xmlns:ws=""using:WebMemLeakSuppressor""
+
+set    ws:Suppressor.IsMemorySupressed=""True""
+
+inside webview control",WebViewLeakSupressor,False,2015-05-18T05:54:09.957-07:00,True,False,,"Web,view,memory.",782,False,1.0.0
+Mackey Kinard,2015-05-18T15:06:50.723Z,Ajax Gateway Web Application Toolkit - Host Services - 0.1.1.16-beta,AjaxGateway.Host,True,1899-12-31T16:00:00-08:00,False,False,"The Ajax Gateway is a GWT like development toolkit for building complex enterprise AJAX host applications in the C# language. Its goal is to enable productive development of cross platform, self contained server or service host applications for C# developers.","Owin,Ajax,Gateway,DuoCode,Remoting,REST,JSON,RPC,XML",29898,False,0.1.1.16-beta
+Alorel,2015-05-18T09:10:53.04Z,"AloFramework is an incredibly lightweight and flexible MVC framework for PHP 5.4+. It has a lot of built-in functionality including but not limited to:
+
+* Memcached wrapper
+* Database connection class
+* MySQL or Memcached-based session manager
+* HTML form validator
+* Code testing suite
+* Email sender
+* Crontab editor
+* Object-oriented cURL wrapper
+* Object-oriented file manager
+* Remote SFTP file manager
+* Code profiler",AloFramework,False,1899-12-31T16:00:00-08:00,False,False,AloFramework is an incredibly lightweight and flexible MVC framework for PHP 5.4+,"php,mvc,framework,lightweight,5.4",-1,False,1.0.0
+Konamiman,2015-05-18T12:36:50.99Z,"Z80.NET is a Z80 processor simulator complete with all instructions (documented and undocumented) and support for interrupts. Memory and port access can be controlled via events or by plugging custom memory space implementations, while interrupts are handled by plugging one or more custom interrupt sources. Use Z80.NET to exercise pieces of Z80 code or to create your dream 8 bit computer emulator!",Z80dotNet,False,2015-05-18T05:36:50.99-07:00,True,False,A Z80 processor simulator written in C#.,,1447,False,1.0.5
+Wade Womersley,2015-03-17T16:30:21.517Z,Generic parallelisation,com.xcitestudios.Parallelisation,False,2015-09-16T04:14:26.977-07:00,False,False,,"xcitestudios,parallelisation,events",3119,False,1.0.11
+Dmytro Aleksandrov and co.,2015-05-18T08:39:38.117Z,Log4net implementation of EventSourcing.Cqrs.Services.ILogger interface.,EventSourcing.Logging,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+Andrew Gubskiy,2014-12-04T22:08:56.877Z,SDK for KPI campus application .net developers,campus.sdk,False,1899-12-31T16:00:00-08:00,False,False,,"campus,kpi,core,ecampus,kbis,dois,ntuu",-1,False,1.0.0.200
+Michael Janulaitis,2015-05-18T14:25:36.817Z,"A Windows assembly that contains server classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived server applications.",UpperSetting.OpenServer.Protocols.Hello.Server,False,2016-03-17T01:11:41.743-07:00,True,False,,"TCP,Socket,Server",5676,False,1.0.0.7
+"Srinivasan Kidambi,srinivas@semantics3.com",2015-05-18T13:28:16.617Z,C# Client Library for querying Semantics3 APIs,Semantics3,False,2015-05-18T06:52:41.41-07:00,False,False,,"Semantics3,API,C#,OAuth,Products,Data",18728,False,1.0.0.25
+a.molcanovas@gmail.com,2015-05-15T18:49:11.757Z,"A self-updating WAMP stack with the latest binaries, always",AloWAMP,False,2015-05-18T15:31:15.003-07:00,True,False,"A self-updating WAMP stack with the latest binaries, always","wamp,windows,apache,mysql,php,memcache,memcached,redis,autoupdate,recent",1351,False,1.0.1
+"Guideline Technologies,LLC",2015-05-18T14:53:31.073Z,"Cocoon ORM is a simple to use .Net open source alternative to the Entity Framework and NHibernate created for SQL Server 2008/2010/20012/+ and SQL Azure (but workable in other T-SQL database environments).  It is an ORM toolset that performs: automapping, auto CRUD (including joins), auto SQL, auto stored procedure parameter mapping, and more. It creates easy to inspect parametrized SQL that is execution plan and cache friendly.  The SQL that Coocoon ORM generates is the same SQL you yourself might write had you the time.  The goal of Cocoon ORM is 1 - leverage simplicity and elegance, 2-save time, 3-reduce bugs, 4-massivly reduce the amount of code required for database access.  Cocoon ORM requires no special training.  Examples are plentiful and directly applicable to your code today.  Cocoon includes regression and benchmarking tools for the truly performance paranoid.  Directly compare performance between Cocoon dynamic parametrized SQL and that of traditional stored procedure.  Cocoon ORM leverages data annotation similar to that of the Entity Framework.  Cocoon ORM is for developers who are unwilling to trust the Entity Framework or nHibernate to create and manage their database and database code.  Cocoon ORM can be used in a simplified code first or a code second environment.  Cocoon ORM developers should be comfortable with SQL Server as well.  Table generation tools are provided primarily as a time saver and not to remove the need for the developer to understand the underlying database structure.",cocoon-orm,False,2017-12-11T16:19:54.077+00:00,True,False,Cocoon ORM is a simple to use .Net open source alternative to the Entity Framework and NHibernate created for SQL Server 2008/2010/20012/+ and SQL Azure (but workable in other T-SQL database environme,,2417,False,1.0.0
+MoonStorm,2015-05-18T05:40:48.467Z,"Fast Dapper CRUD extensions added to the IDbConnection for convenience and a less error prone experience. This library is 2x faster than Dapper.SimpleCRUD.
+For Dapper constructs in general, it is recommended to use Visual Studio 2015 for features such as nameof and string interpolation but that's not a requirement.
+
+The package contains .NET 4.5 and 4.6 DLLs, one of which will be installed based on the target framework in your project. 
+For .NET 4.5, the code contains the polyfills for the missing FormattableString class, which is required when targetting that framework version and using string interpolation with the C# 6 compiler in VS 2015.
+
+Features:
+----------
+- Support for LocalDb and Ms Sql Server (more coming soon)
+- Entities having composite primary keys are supported
+- All the CRUD methods accept a transaction and a command timeout
+- Fast pre-computed entity queries
+- A generic T4 template is also provided for convenience. Entity domain partitioning and generation can be achieved via separate template configurations.
+Existing POCO entities are also supported which can be decorated with attributes such as Table, Key and DatabaseGenerated.
+Column name overrides are not supported and not recommended. As you'll end up writing more complex SQL queries, outside of the domain of this library, you'll want to use the nameof operator as much as possible.
+
+Examples of usage:
+-------------------
+- dbConnection.Insert(newEntity);
+- dbConnection.Get()
+- dbConnection.Get(new Entity() {Id = 10});
+- dbConnection.Update(updatedEntity);
+- dbConnection.Delete(entity)
+- dbConnection.GetTableName<Entity>()
+- dbConnection.Find<Entity>(
+        whereClause:$""{nameof(Entity.FirstName)}=@FirstNameParam"",
+        orderClause:$""{nameof(Entity.LastName)} DESC"",
+        skipRowsCount:10, limitRowsCount:20,
+        queryParameters: new {FirstNameParam: ""John""});
+
+This is where the power of the C# 6 compiler comes into play, and leaves no chance to mistypings or to problems arising from db entity refactorings.
+More details and benchmarks are available on the project site.",Dapper.FastCrud,False,2016-10-27T02:14:24.093+00:00,True,False,Fast CRUD extensions added to the IDbConnection for convenience and a less error prone experience with Dapper.,"Dapper,CRUD",57654,False,1.0.2
+Ove Andersen,2015-05-18T09:39:01.187Z,"The core assemblies for the Sentinel OAuth Provider. 
+	
+Use this if you want to develop an extension.",Sentinel.OAuth.Core,False,2016-11-11T07:03:22.743-08:00,True,False,The core assemblies for the Sentinel OAuth Provider.,"oauth,webapi,security,authentication,authorization,eyecatch",9569,False,1.2.33
+Alorel,2015-05-15T18:49:11.757Z,"A self-updating WAMP stack with the latest binaries, always",AloWAMP,False,2015-05-18T15:31:15.003-07:00,True,False,"A self-updating WAMP stack with the latest binaries, always","wamp,windows,apache,mysql,php,memcache,memcached,redis,autoupdate,recent",1351,False,1.0.1
+GeertvanHorrik,2015-05-18T14:45:23.947Z,"Catel.Extensions.DynamicObjects library which provides dynamic objects. This adds the IDynamicMetaObjectProvider and ICustomTypeProvider
+	  to the ModelBase class.",Catel.Extensions.DynamicObjects,True,2016-11-29T05:36:02.283-08:00,True,False,,"catel,data,model,modelbase,dynamic,object,IDynamicMetaObjectProvider,ICustomTypeProvider",76212,True,4.2.0-unstable0119
+Dmytro Aleksandrov and co.,2015-05-18T08:34:43.117Z,Message classes for Eventsourcing library.,EventSourcing.Cqrs.Messages,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+magelia,2015-05-18T09:14:24.513Z,Glimpse is a web debugging and diagnostics tool used to gain a better understanding of whats happening inside of your web application. Provides Glimpse tabs for Magelia WebStore Client.,Glimpse.Magelia.WebStore.Client,False,2016-05-02T00:33:25.273-07:00,True,False,,"glimpse,magelia,e-commerce",2859,False,3.1.354.27
+"Benjamin Mayrargue,Jérémie Laval",2015-05-18T14:45:45.71Z,"Use one SVG vector image instead of multiple bitmaps to display most icons in your Xamarin app. Supports Xamarin Android (axml tag and code), iOS (classic and unified, code only), Forms (XAML tag and code), Windows Phone 8 (XAML tag and code), and Mvvmcross binding. Purchase it instantly online with its full source code on the Xamarin Component Store. This free nuget package supports only Xamarin.Android projects.",Softlion.XamSvg.Free,False,2018-04-13T06:30:27.677+00:00,True,False,"SVG vector image support for Xamarin Android, iOS, Forms, Windows Phone 8 and MvvmCross","svg,xamarin,ios,android,monotouch,monodroid,xamarin.ios,xamarin.android,wp8,xamarin.forms",16161,False,1.2.0.7
+Luo,2015-05-18T08:12:02.02Z,My package description.,Lion.Core,False,2015-10-27T02:29:18.893-07:00,False,False,,,4347,False,4.1.5
+GeertvanHorrik,2015-05-18T14:45:47.54Z,Catel.Extensions.Prism5 library which contains helper classes for prism.,Catel.Extensions.Prism5,True,2016-11-29T05:36:24.067-08:00,True,False,,"prism,catel,mvvm",31104,True,4.2.0-unstable0119
+Tatham Oddie,2015-05-18T13:02:09.213Z,Testing helpers for the System.IO.Abstractions package to save having to manually mock everything.,System.IO.Abstractions.TestingHelpers,False,2018-01-11T23:41:49.64+00:00,True,False,,testing,225646,False,2.0.0.114
+Dmytro Aleksandrov and co.,2015-05-18T08:37:05.64Z,Autofac utilities for Eventsourcing library.,EventSourcing.Cqrs.Autofac,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+TARGIT Core Development,2015-05-12T17:11:55.273Z,"A chart is a visual representation of data. It could be a bar chart, cross tab or a gauge. It could also just be a plain white number on a colored background.
+
+      Traditionally, TARGIT Decision Suite has provided several standard charts, such as the ones mentioned above. After selecting measures and dimensions for a data object, switching between such standard charts has always been quick and easy.
+
+      Should you wish to view your data as, say, a pie chart that looks like an actual real-world pie or as a bunch of green pulsating dots on an animated radar screen, you would not have been unable to do. Until now.
+
+      Creating and using custom chart is made available for C# developers through our TARGIT Chart API NuGet package, free of charge.
+
+      Through our chart API, a C#/Wpf developer can create custom data object types that literally look like anything you could think of, and effortlessly make them available to end users of TARGIT Decision Suite.",TargitChartApi,False,2016-10-28T06:15:52.653-07:00,False,False,An API for building custom charts for use in Targit Decision Suite,TARGIT,20226,False,0.130.0
+Mackey Kinard,2015-05-18T14:27:21.67Z,Ajax Gateway Web Application Toolkit - Core Runtime - 0.1.1.15-beta,AjaxGateway.Core,True,1900-01-01T00:00:00+00:00,False,False,The Ajax Gateway Core Runtime module allows for the development of back-end high performance AJAX-RPC 1.0 remote procedure call services.,"Owin,Ajax,Gateway,DuoCode,Remoting,REST,JSON,RPC,XML",31523,False,0.1.1.15-beta
+Tatham Oddie,2015-05-18T13:02:09.213Z,Testing helpers for the System.IO.Abstractions package to save having to manually mock everything.,System.IO.Abstractions.TestingHelpers,False,2018-01-11T23:41:49.64+00:00,True,False,,testing,225646,False,2.0.0.114
+IntelliFactory,2015-05-18T14:43:44.727Z,Provides utilities missing from F# standard library,IntelliFactory.Core,True,2018-02-09T20:27:37.773+00:00,True,False,,,7658,False,0.2.63.78-alpha
+,,,SanPackage,,,,True,,,,,1.0.1
+"Guideline Technologies,LLC",2015-05-18T14:53:31.073Z,"Cocoon ORM is a simple to use .Net open source alternative to the Entity Framework and NHibernate created for SQL Server 2008/2010/20012/+ and SQL Azure (but workable in other T-SQL database environments).  It is an ORM toolset that performs: automapping, auto CRUD (including joins), auto SQL, auto stored procedure parameter mapping, and more. It creates easy to inspect parametrized SQL that is execution plan and cache friendly.  The SQL that Coocoon ORM generates is the same SQL you yourself might write had you the time.  The goal of Cocoon ORM is 1 - leverage simplicity and elegance, 2-save time, 3-reduce bugs, 4-massivly reduce the amount of code required for database access.  Cocoon ORM requires no special training.  Examples are plentiful and directly applicable to your code today.  Cocoon includes regression and benchmarking tools for the truly performance paranoid.  Directly compare performance between Cocoon dynamic parametrized SQL and that of traditional stored procedure.  Cocoon ORM leverages data annotation similar to that of the Entity Framework.  Cocoon ORM is for developers who are unwilling to trust the Entity Framework or nHibernate to create and manage their database and database code.  Cocoon ORM can be used in a simplified code first or a code second environment.  Cocoon ORM developers should be comfortable with SQL Server as well.  Table generation tools are provided primarily as a time saver and not to remove the need for the developer to understand the underlying database structure.",cocoon-orm,False,2017-12-11T16:19:54.077+00:00,True,False,Cocoon ORM is a simple to use .Net open source alternative to the Entity Framework and NHibernate created for SQL Server 2008/2010/20012/+ and SQL Azure (but workable in other T-SQL database environme,,2417,False,1.0.0
+The CefSharp Authors,2015-04-23T08:14:32.427Z,"The CefSharp Chromium-based browser component (WPF control). This is unofficial package. But it is very similar to official one. The only difference is that the 'Platform Toolset' changed to Visual Studio 2012 - Windows XP (v110_xp), so it works on XP and 2003 server.",CefSharp.Wpf.XP,False,2015-04-23T01:14:32.427-07:00,True,False,,"wpf,chrome,browser",5805,False,39.0.0
+Simon Hoade,2015-05-18T09:19:10.73Z,"Core service logic. Includes code for dealing with MSMQ, task scheduling and WCF communication. Intended to be used in a Windows service application.",Niknak.Services.ServiceCore,False,2015-06-15T07:53:24.433-07:00,True,False,,,1187,False,1.4.1
+Dimension15,2015-05-18T12:53:28.68Z,Does selective property and field between two objects.,Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,False,False,,"mapper,map,object,clone,copy",1601,False,1.1.4
+cdmdotnet Limited,2015-05-18T10:04:21.703Z,A lightweight framework to help write CQRS and Eventsourcing applications in C#,Cqrs,False,2018-03-29T02:21:52.333+00:00,True,False,,,55188,False,1.500.541.431
+aswanikumarc,2015-05-18T09:26:56.747Z,Upn Components dependencies,UpnComponentsDependencies,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Tomasz Cielecki,2015-05-18T15:15:58.513Z,SimpleWebToken Plugin for MvvmCross.,Cheesebaron.MvxPlugins.SimpleWebToken,False,2017-11-09T19:22:33.59+00:00,True,False,,"mvvm,mvvmcross,xamarin,monodroid,monotouch,wpf,wp,wpdev,windowsphone,settings,wpa81,win81,mvx",3382,False,1.0.1
+Oleg Volovikov,2015-03-25T11:08:08.82Z,"Sql commands wrapper, a mini ORM.",Wxen.DbHug,False,2015-03-25T04:08:08.82-07:00,True,False,"Primarily DbHug is select-based mini ORM, but it has basic functionality of update, delete, insert.","sql,data,common,orm,micro-orm",10588,False,0.10.0
+Agile Harbor,2015-05-18T14:31:33.61Z,ShipStation webservices API wrapper.,ShipStationAccess,False,2018-01-24T18:11:27.01+00:00,True,False,ShipStation webservices API wrapper.,ShipStation,15032,False,1.3.27
+Dmytro Aleksandrov and co.,2015-05-18T08:37:40.37Z,In-process event dispatcher for EventSourcing library.,EventSourcing.EventDispatcher,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+IntelliFactory,2015-05-18T14:43:04.137Z,"Provides utilities for build automation, in particular building WebSharper and F# projects, without the need for MSBuild.",IntelliFactory.Build,True,2018-02-09T20:27:22.99+00:00,True,False,,,11682,False,0.2.65.78-alpha
+Flllexa,2015-05-18T05:41:16.513Z,ug-api is a implementation of IUGU payment modules (http://iugu.com),ug-api,False,2015-12-13T14:25:58.393-08:00,False,False,,,4819,False,0.8.5616.4826
+"Jeff Doolittle,Mike Hadlow",2015-05-18T10:27:22.4Z,An adaptor to allow EasyNetQ to use StructureMap as its internal IoC container,EasyNetQ.DI.StructureMap,False,1900-01-01T00:00:00+00:00,False,False,,"RabbitMQ,Messaging,AMQP,REST,API,StructureMap",48067,False,0.49.2.389
+Rob Ladbrook (The App Business),2015-05-18T10:28:07.533Z,A common library containing all the Slack models and parsers useful when interacting with Slack,Tab.Slack.Common,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.1.0-alpha
+Dmytro Aleksandrov and co.,2015-05-18T09:51:55.717Z,Projections rebuild and remote polling client wrapper utilities.,EventSourcing.Rebuild,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Dmytro Aleksandrov and co.,2015-05-18T08:38:20.323Z,Neventstore integration for EventSourcing library.,EventSourcing.EventStore,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+cdmdotnet Limited,2015-05-18T10:14:38.53Z,Components for implementing I.O.C. via Ninject for an in process event store.,Cqrs.Ninject.InProcess.EventStore,False,2018-03-29T02:28:07.47+00:00,True,False,,,35266,False,1.500.541.431
+edpollitt,2015-05-18T09:55:28.553Z,A really simple C# guard clause/validation library,Nerdle.Ensure,False,2016-01-18T02:36:30.817-08:00,True,False,A really simple C# guard clause/validation library,"ensure,validation,guard,clause,assert,checking,argument,parameter,C#",3486,False,1.0.0
+Dimension15,2015-05-18T13:07:37.86Z,Does property and field mapping between two objects. Can also ignore specified members or map between members with different names.,Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,True,False,,"mapper,map,object,clone,copy",1601,False,1.1.5
+Dmytro Aleksandrov and co.,2015-05-18T09:51:15.927Z,Neventstore integration for EventSourcing library.,EventSourcing.EventStore,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+GeertvanHorrik,2015-05-18T14:45:33.147Z,Catel.Extensions.FluentValidation library which contains fluent validation extensions.,Catel.Extensions.FluentValidation,True,2016-11-29T05:36:11.987-08:00,True,False,,"validation,fluent,fluentvalidation,catel",125946,True,4.2.0-unstable0119
+Gerard Braad,2015-05-18T09:04:57.42Z,Simple distributed cache (shared),DistributedCache.Shared,False,2015-05-18T02:04:57.42-07:00,True,False,,distributedcache,1783,False,1.0.0
+Samora Dake,2015-05-18T10:07:20.81Z,Easily build dynamic USSD applications on the SMSGH platform.,Smsgh.UssdFramework,False,2015-06-30T08:14:23.043-07:00,True,False,,,2493,False,1.2.0
+Administrator,2015-05-18T09:20:12.3Z,Description,LJ.Data.MySql,False,2015-06-15T21:00:24.38-07:00,True,False,,,667,False,0.6.0
+Penshurst Inc.,2015-05-18T13:43:58.737Z,Markout Display WPF Controls,Markout.Output.Inlines.Controls,False,2016-10-31T10:56:12-07:00,True,False,,"markup,WPF,TextBox,Inlines",1110,False,1.2.0
+Patrick Evers,2015-05-18T12:22:40.697Z,A DNX5.0 Core Smtp Client,Panther.Mail,False,1899-12-31T16:00:00-08:00,False,False,,Smtp,-1,False,1.0.0
+Synercoding,2015-05-18T13:20:08.677Z,A library that helps you implement a UnitOfWork pattern,Synercoding.UnitOfWork,True,2015-12-10T09:24:26.333-08:00,True,False,,"EF,UnitOfWork,Database,Data,vNext",2780,False,3.0.0-alpha2
+gbenga adetayo,2015-05-18T07:12:41.317Z,Entity framework with asp.net membership provider,Rotex.EfMembership,False,2015-05-18T00:12:41.317-07:00,True,False,,"Ef,asp.net,rotex,membership,provider",433,False,1.0.0
+GeertvanHorrik,2015-05-18T14:45:11.187Z,"Catel.MVVM library which contains the MVVM framework available in Catel. This MVVM framework solves actual
+	  real-life development problems when using MVVM for professional applications written in any XAML language
+	  such as WPF, Silverlight, Windows Phone and WinRT.",Catel.MVVM,True,2018-04-16T10:11:51.057+00:00,True,False,,"mvvm,data,object,wpf,windows,winrt,phone,wp8,wp,sl,silverlight,view,model,viewmodel",190827,True,4.2.0-unstable0119
+,,,Microsoft.Upn.SanApp,,,,True,,,,,5.0.0
+Tomasz Cielecki,2015-05-18T15:15:58.513Z,SimpleWebToken Plugin for MvvmCross.,Cheesebaron.MvxPlugins.SimpleWebToken,False,2017-11-09T19:22:33.59+00:00,True,False,,"mvvm,mvvmcross,xamarin,monodroid,monotouch,wpf,wp,wpdev,windowsphone,settings,wpa81,win81,mvx",3382,False,1.0.1
+Synercoding,2015-05-18T13:20:08.677Z,A library that helps you implement a UnitOfWork pattern,Synercoding.UnitOfWork,True,2015-12-10T09:24:26.333-08:00,True,False,,"EF,UnitOfWork,Database,Data,vNext",2780,False,3.0.0-alpha2
+Dmytro Aleksandrov and co.,2015-05-18T08:40:12.8Z,Mongo utils.,EventSourcing.Misc.Mongo,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+cdmdotnet Limited,2015-05-18T10:12:50.077Z,Components for implementing the I.O.C. via Ninject for the Greg Youngs EventStore Cqrs package,Cqrs.Ninject.EventStore,False,2018-03-29T02:27:26.593+00:00,True,False,,,50274,False,1.500.541.431
+Dmytro Aleksandrov and co.,2015-05-18T08:37:05.64Z,Autofac utilities for Eventsourcing library.,EventSourcing.Cqrs.Autofac,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+objo,2015-05-18T11:58:26.693Z,Provides custom controls and extensions for WPF 3D.,HelixToolkit.Wpf,False,1900-01-01T00:00:00+00:00,False,False,,"wpf,wpf3d,3D",100724,False,2015.1.517
+Shuhari,2015-05-18T09:04:08.743Z,Description,Shuhari.Library.Common,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.1.0
+"tmentzel,mkoertgen",2015-05-18T09:51:48.567Z,"NEdifis, a tool for supporting testing and enforcing naming and testing conventions",NEdifis,False,1900-01-01T00:00:00+00:00,False,False,"NEdifis, a tool for supporting testing and enforcing naming and testing conventions",,4950,False,0.4.1
+a.molcanovas@gmail.com,2015-05-18T09:10:53.04Z,"AloFramework is an incredibly lightweight and flexible MVC framework for PHP 5.4+. It has a lot of built-in functionality including but not limited to:
+
+* Memcached wrapper
+* Database connection class
+* MySQL or Memcached-based session manager
+* HTML form validator
+* Code testing suite
+* Email sender
+* Crontab editor
+* Object-oriented cURL wrapper
+* Object-oriented file manager
+* Remote SFTP file manager
+* Code profiler",AloFramework,False,1899-12-31T16:00:00-08:00,False,False,AloFramework is an incredibly lightweight and flexible MVC framework for PHP 5.4+,"php,mvc,framework,lightweight,5.4",-1,False,1.0.0
+GeertvanHorrik,2015-05-18T14:45:21.057Z,Catel.Extensions.Data library which provides data classes such as repositories.,Catel.Extensions.Data,True,2016-11-29T05:35:59.533-08:00,True,False,,"catel,data,repository,repositories",103312,True,4.2.0-unstable0119
+Patrick Evers,2015-05-18T12:48:10.53Z,A MVC 6 content management system.,Panther.CMS,False,1900-01-01T00:00:00+00:00,False,False,,"CMS,MVC6",2018,False,1.0.0
+Luo,2015-05-18T08:12:02.02Z,My package description.,Lion.Core,False,2015-10-27T02:29:18.893-07:00,True,False,,,4347,False,4.1.5
+NicolajHelmer,2015-05-18T11:15:12.307Z,Derived from a great project called Fairly Certain. Developed to be wide avaiable and easy to use through Nuget. Supports Multiple Goals for better usability/conversion testing.,Softwarehuset.Web.SplitTest,False,2015-06-01T02:54:59.73-07:00,True,False,Derived from a great project called Fairly Certain. Developed to be wide avaiable and easy to use through Nuget. Supports Multiple Goals for better usability/conversion testing.,,2178,False,1.0.5
+Flllexa,2015-05-18T05:37:49.127Z,UgApi is a implementation of IUGU payment modules (http://iugu.com),ugApi,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.5616.4648
+cdmdotnet Limited,2015-05-18T10:04:57.767Z,Components for using the Azure ConfigurationManager for the Cqrs package,Cqrs.Azure.ConfigurationManager,False,2018-03-29T02:22:37.65+00:00,True,False,,,29927,False,1.500.541.431
+Dimension15,2015-05-18T12:53:28.68Z,Does selective property and field between two objects.,Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,False,False,,"mapper,map,object,clone,copy",1601,False,1.1.4
+IntelliFactory,2015-05-18T14:43:04.137Z,"Provides utilities for build automation, in particular building WebSharper and F# projects, without the need for MSBuild.",IntelliFactory.Build,True,2018-02-09T20:27:22.99+00:00,True,False,,,11682,False,0.2.65.78-alpha
+cdmdotnet Limited,2015-05-18T10:07:37.833Z,Uml templates and a Visual Studio VISX profile package for the lightweight CQRS framework. Using this package you can generate much of the boiler plate code involved in implementing a CQRS project.,Cqrs.Modelling,False,2018-03-29T02:24:22.753+00:00,True,False,,,46070,False,1.500.541.431
+Jon Iles,2015-05-18T06:19:46.193Z,"MPXJ is an open source file handling library for Java and .Net to read and write Microsoft Project MPX and MSPDI XML files, Planner files, Primavera XER files and databases, and MPP, MPT, and MPD files for Project 98, 2000, 2002, 2003, 2007 and 2010.",net.sf.mpxj,False,2018-04-16T08:57:19.27+00:00,True,False,,,9983,False,5.1.0
+aswanikumarc,2015-05-18T07:28:38.973Z,My package description.,Upn_Components_Dependencies,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+cdmdotnet Limited,2015-05-18T10:10:32.653Z,Components for implementing the I.O.C. via Ninject for the Cqrs package,Cqrs.Ninject,False,2018-03-29T02:25:08.757+00:00,True,False,,,51783,False,1.500.541.431
+Abel Cheng,2015-05-18T14:27:53.247Z,"Less Code, Less Configuration, Less Time. DataBooster is a high-performance extension to ADO.NET Data Provider, includes a light encapsulation to minimize your DAL code and a booster to maximize throughput for writing mass data to database. Visit http://databooster.codeplex.com",DataBooster.SqlServer,False,2018-04-01T03:15:48.04+00:00,True,False,,"DbParallel,DataAccess,ADO.NET,Booster,Launcher,Throughput,Database,Bulk",13309,True,1.7.8.2
+IntelliFactory,2015-05-18T14:41:42.86Z,WebSharper module for ASP.NET MVC,WebSharper.AspNetMvc,False,2018-03-21T14:44:37.87+00:00,True,False,,,4190,False,3.1.4.5
+Dmytro Aleksandrov and co.,2015-05-18T08:36:33.147Z,Core classes for Eventsourcing library.,EventSourcing.Cqrs,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+objo,2015-05-18T11:37:23.687Z,Provides custom controls for WPF and a scene graph based on SharpDX.,HelixToolkit.Wpf.SharpDX,False,1900-01-01T00:00:00+00:00,False,False,,"wpf,SharpDX,3D",37254,False,2015.1.516
+GeertvanHorrik,2015-05-18T14:45:48.187Z,Catel.Extensions.Wcf.Server library which provides WCF server capabilities.,Catel.Extensions.Wcf.Server,True,2016-11-29T13:36:30.393+00:00,True,False,,"catel,wcf,server,windows,communication,foundation",67427,True,4.2.0-unstable0119
+Jörgen Bergström,2015-05-18T05:59:06.757Z,Promotes a specified value to a specified property.,BizTalkComponents.PipelineComponents.PromoteDbQueryResult.XPathValueExists,False,2015-05-17T22:59:06.757-07:00,True,False,,BizTalk,412,False,1.0.0
+cdmdotnet Limited,2015-05-18T10:13:24.86Z,Components for implementing I.O.C. requirements via Ninject for in-process the command bus.,Cqrs.Ninject.InProcess.CommandBus,False,2018-03-29T02:27:40.94+00:00,True,False,,,37055,False,1.500.541.431
+objo,2015-05-18T11:57:53.13Z,Portable core assembly that is referenced by the other Helix Toolkit packages.,HelixToolkit,False,1900-01-01T00:00:00+00:00,False,False,,"3D,wpf",140029,False,2015.1.517
+GeertvanHorrik,2015-05-18T14:45:35.96Z,Catel.Extensions.Interception library which provides interception capabilities.,Catel.Extensions.Interception,True,2016-11-29T13:36:15.02+00:00,True,False,,"catel,interception",80561,True,4.2.0-unstable0119
+Michael Janulaitis,2015-05-18T14:24:30.893Z,"A portable assembly that contains shared classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived server, client and mobile applications.",UpperSetting.OpenServer.Protocols.Hello.Shared,False,2016-03-17T01:11:28.29-07:00,True,False,,"TCP,Socket,Server",5748,False,1.0.0.7
+Qsys Sverige AB,2015-05-18T05:48:52.86Z,QuickPick One server component for Apollo 13,QuickPick.One,False,2018-04-09T14:56:23.34+00:00,True,False,,"Apollo,Apollo13,Quickpick,Qsys",130730,False,1.0.15040.45
+Jason Jarrett,2015-05-18T06:07:12.177Z,TypeScript Definitions (d.ts) for mongoose. Generated based off the DefinitelyTyped repository [git commit: e42bef3a8f9024a50468b12202df69519315b023]. http://github.com/DefinitelyTyped,mongoose.TypeScript.DefinitelyTyped,False,2016-12-07T20:01:09.213-08:00,True,False,,"TypeScript,JavaScript",27889,False,0.0.7
+Umair Chagani,2015-05-15T10:41:00.737Z,factory-girl allows you to easily create test data for your .NET objects.  Supports creating default and named factories.,factory-girl,False,1899-12-31T16:00:00-08:00,False,False,,"factory-girl,factorygirl,factory_girl,factorygirl.NET,objectmother,plant,blueprint",1463,False,1.0.7
+objo,2015-05-18T11:14:01.543Z,Portable core assembly that is referenced by the other Helix Toolkit packages.,HelixToolkit,False,1900-01-01T00:00:00+00:00,False,False,,"3D,wpf",140029,False,2015.1.515
+Administrator,2015-05-18T09:33:10.967Z,Description,LJ.Common.Autofac,False,2015-05-18T02:33:10.967-07:00,True,False,,,361,False,0.6.0
+Dmytro Aleksandrov and co.,2015-05-18T08:39:00.853Z,Projections rebuild and remote polling client wrapper utilities.,EventSourcing.Rebuild,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+MoonStorm,2015-05-18T05:40:48.467Z,"Fast Dapper CRUD extensions added to the IDbConnection for convenience and a less error prone experience. This library is 2x faster than Dapper.SimpleCRUD.
+For Dapper constructs in general, it is recommended to use Visual Studio 2015 for features such as nameof and string interpolation but that's not a requirement.
+
+The package contains .NET 4.5 and 4.6 DLLs, one of which will be installed based on the target framework in your project. 
+For .NET 4.5, the code contains the polyfills for the missing FormattableString class, which is required when targetting that framework version and using string interpolation with the C# 6 compiler in VS 2015.
+
+Features:
+----------
+- Support for LocalDb and Ms Sql Server (more coming soon)
+- Entities having composite primary keys are supported
+- All the CRUD methods accept a transaction and a command timeout
+- Fast pre-computed entity queries
+- A generic T4 template is also provided for convenience. Entity domain partitioning and generation can be achieved via separate template configurations.
+Existing POCO entities are also supported which can be decorated with attributes such as Table, Key and DatabaseGenerated.
+Column name overrides are not supported and not recommended. As you'll end up writing more complex SQL queries, outside of the domain of this library, you'll want to use the nameof operator as much as possible.
+
+Examples of usage:
+-------------------
+- dbConnection.Insert(newEntity);
+- dbConnection.Get()
+- dbConnection.Get(new Entity() {Id = 10});
+- dbConnection.Update(updatedEntity);
+- dbConnection.Delete(entity)
+- dbConnection.GetTableName<Entity>()
+- dbConnection.Find<Entity>(
+        whereClause:$""{nameof(Entity.FirstName)}=@FirstNameParam"",
+        orderClause:$""{nameof(Entity.LastName)} DESC"",
+        queryParameters: new {FirstNameParam: ""John""});
+
+This is where the power of the C# 6 compiler comes into play, and leaves no chance to mistypings or to problems arising from db entity refactorings.
+More examples are available on the project site.",Dapper.FastCrud,False,2016-10-27T02:14:24.093+00:00,True,False,Fast CRUD extensions added to the IDbConnection for convenience and a less error prone experience with Dapper.,"Dapper,CRUD",57654,False,1.0.2
+Maciej Raczkowski,2015-05-15T11:38:01.263Z,Active Campaign C# wrapper,Eventer.ActiveCampaign.dll,True,1899-12-31T16:00:00-08:00,False,False,,"Eventer,Active,Campaign,wrapper,c#",-1,False,1.0.1-beta1
+cdmdotnet Limited,2015-05-18T10:11:06.38Z,Components for implementing the I.O.C. via Ninject for Azure DocumentDb Cqrs package,Cqrs.Ninject.Azure.DocumentDb,False,2018-03-29T02:25:50.197+00:00,True,False,,,42270,False,1.500.541.431
+GeertvanHorrik,2015-05-18T14:45:11.187Z,"Catel.MVVM library which contains the MVVM framework available in Catel. This MVVM framework solves actual
+	  real-life development problems when using MVVM for professional applications written in any XAML language
+	  such as WPF, Silverlight, Windows Phone and WinRT.",Catel.MVVM,True,2018-04-16T10:11:51.057+00:00,True,False,,"mvvm,data,object,wpf,windows,winrt,phone,wp8,wp,sl,silverlight,view,model,viewmodel",190827,True,4.2.0-unstable0119
+Michael Janulaitis,2015-05-18T14:25:02.583Z,"A portable assembly that contains classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived client and mobile applications.",UpperSetting.OpenServer.Protocols.Hello.Client,False,2016-03-17T01:11:34.813-07:00,True,False,,"TCP,Socket,Server",5649,False,1.0.0.7
+Campaign Monitor,2015-05-18T06:02:38.393Z,A .NET library for the Campaign Monitor API,campaignmonitor-api,True,2015-10-08T07:34:41.517-07:00,True,False,,"api,campaign,monitor,create,send,.net,transactional",81750,False,4.1.32-beta
+objo,2015-05-18T11:14:01.543Z,Portable core assembly that is referenced by the other Helix Toolkit packages.,HelixToolkit,False,1900-01-01T00:00:00+00:00,False,False,,"3D,wpf",140029,False,2015.1.515
+"Wiebe Tijsma,Mike Hadlow",2015-05-18T10:26:19.393Z,An adaptor to allow EasyNetQ to use Autofac as its internal IoC container,EasyNetQ.DI.Autofac,False,1900-01-01T00:00:00+00:00,False,False,,"RabbitMQ,Messaging,AMQP,REST,API,Ninject",65011,False,0.49.2.389
+Thocun,2015-05-18T08:52:13.023Z,"Store and retrieve data object to any type of storage (memory, database, file)",MagicalStorage,False,2015-09-11T00:48:08.503-07:00,True,False,,,6153,False,1.0.1
+Luo,2015-05-18T08:12:02.02Z,My package description.,Lion.Core,False,2015-10-27T02:29:18.893-07:00,False,False,,,4347,False,4.1.5
+MoonStorm,2015-05-18T05:40:48.467Z,"Fast Dapper CRUD extensions added to the IDbConnection for convenience and a less error prone experience. This library is 2x faster than Dapper.SimpleCRUD.
+For Dapper constructs in general, it is recommended to use Visual Studio 2015 for features such as nameof and string interpolation but that's not a requirement.
+
+The package contains .NET 4.5 and 4.6 DLLs, one of which will be installed based on the target framework in your project. 
+For .NET 4.5, the code contains the polyfills for the missing FormattableString class, which is required when targetting that framework version and using string interpolation with the C# 6 compiler in VS 2015.
+
+Features:
+----------
+- Support for LocalDb and Ms Sql Server (more coming soon)
+- Entities having composite primary keys are supported
+- All the CRUD methods accept a transaction and a command timeout
+- Fast pre-computed entity queries
+- A generic T4 template is also provided for convenience. Entity domain partitioning and generation can be achieved via separate template configurations.
+Existing POCO entities are also supported which can be decorated with attributes such as Table, Key and DatabaseGenerated.
+Column name overrides are not supported and not recommended. As you'll end up writing more complex SQL queries, outside of the domain of this library, you'll want to use the nameof operator as much as possible.
+
+Examples of usage:
+-------------------
+- dbConnection.Insert(newEntity);
+- dbConnection.Get()
+- dbConnection.Get(new Entity() {Id = 10});
+- dbConnection.Update(updatedEntity);
+- dbConnection.Delete(entity)
+- dbConnection.GetTableName<Entity>()
+- dbConnection.Find<Entity>(
+        whereClause:$""{nameof(Entity.FirstName)}=@FirstNameParam"",
+        orderClause:$""{nameof(Entity.LastName)} DESC"",
+        queryParameters: new {FirstNameParam: ""John""});
+
+This is where the power of the C# 6 compiler comes into play, and leaves no chance to mistypings or to problems arising from db entity refactorings.
+More examples are available on the project site.",Dapper.FastCrud,False,2016-10-27T02:14:24.093+00:00,True,False,Fast CRUD extensions added to the IDbConnection for convenience and a less error prone experience with Dapper.,"Dapper,CRUD",57654,False,1.0.2
+Dominik Frefel,2015-05-18T12:10:18.327Z,This is a test. Do not download.,Nuget.Fhnw.Ecnf.RoutePlanner.RoutePlannerLib,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Tatham Oddie,2015-05-18T13:01:27.29Z,"Just like System.Web.Abstractions, but for System.IO. Yay for testable IO access! Be sure to check out the System.IO.Abstractions.TestingHelpers package too.",System.IO.Abstractions,False,2018-01-11T23:41:38.67+00:00,True,False,,testing,531425,False,2.0.0.114
+"Guideline Technologies,LLC",2015-05-18T15:04:43.753Z,"Cocoon ORM is a simple to use .Net open source alternative to the Entity Framework and NHibernate created for SQL Server 2008/2010/20012/+ and SQL Azure (but workable in other T-SQL database environments).  It is an ORM toolset that performs: automapping, auto CRUD (including joins), auto SQL, auto stored procedure parameter mapping, and more. It creates easy to inspect parametrized SQL that is execution plan and cache friendly.  The SQL that Coocoon ORM generates is the same SQL you yourself might write had you the time.  The goal of Cocoon ORM is 1 - leverage simplicity and elegance, 2-save time, 3-reduce bugs, 4-massivly reduce the amount of code required for database access.  Cocoon ORM requires no special training.  Examples are plentiful and directly applicable to your code today.  Cocoon includes regression and benchmarking tools for the truly performance paranoid.  Directly compare performance between Cocoon dynamic parametrized SQL and that of traditional stored procedure.  Cocoon ORM leverages data annotation similar to that of the Entity Framework.  Cocoon ORM is for developers who are unwilling to trust the Entity Framework or nHibernate to create and manage their database and database code.  Cocoon ORM can be used in a simplified code first or a code second environment.  Cocoon ORM developers should be comfortable with SQL Server as well.  Table generation tools are provided primarily as a time saver and not to remove the need for the developer to understand the underlying database structure.",cocoon-orm,False,2017-12-11T16:19:54.077+00:00,True,False,Cocoon ORM is a simple to use .Net open source alternative to the Entity Framework and NHibernate created for SQL Server 2008/2010/20012/+ and SQL Azure.,"ORM,Entity,Framework,NHibernate,SQLServer,Database",2417,False,1.0.1
+cdmdotnet Limited,2015-05-18T10:13:24.86Z,Components for implementing I.O.C. requirements via Ninject for in-process the command bus.,Cqrs.Ninject.InProcess.CommandBus,False,2018-03-29T02:27:40.94+00:00,True,False,,,37055,False,1.500.541.431
+Dimension15,2015-05-18T13:07:37.86Z,Does property and field mapping between two objects. Can also ignore specified members or map between members with different names.,Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,False,False,,"mapper,map,object,clone,copy",1601,False,1.1.5
+Dave Senn,2015-05-18T08:48:26.023Z,PortableExtensions is a set of .Net extension methods build as portable class library. PortableExtensions enhance the .Net framework by adding a bunch of methods to increase developer’s productivity.,PortableExtensions,False,1900-01-01T00:00:00+00:00,False,False,,"C#,Extensions,Portable,Extension,Methods,.Net,Library,PCL",16906,False,1.1.4.102
+cdmdotnet Limited,2015-05-18T10:05:34.667Z,Components for implementing the event store using Azure DocumentDB for the Cqrs package,Cqrs.Azure.DocumentDb,False,2018-03-29T02:22:52.62+00:00,True,False,,,45390,False,1.500.541.431
+Michael Janulaitis,2015-05-18T14:23:12.97Z,"A Windows assembly that contains classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived Windows client applications.",UpperSetting.OpenServer.Windows.Client,False,2016-03-17T01:11:15.513-07:00,True,False,,"TCP,Socket,Server",5609,False,1.0.0.7
+Oystein Bjorke,2015-05-18T13:00:15.027Z,OxyPlot is a plotting library for .NET. This package targets Android apps based on MonoAndroid.,OxyPlot.Xamarin.Android,True,1899-12-31T16:00:00-08:00,False,False,,"xamarin,android,plotting,plot,charting,chart",53900,False,2015.1.889-alpha
+Patrick Evers,2015-05-18T12:48:10.53Z,A MVC 6 content management system.,Panther.CMS,False,1900-01-01T00:00:00+00:00,False,False,,"CMS,MVC6",2018,False,1.0.0
+Josh Sim,2015-05-18T12:05:38.863Z,"Redis key value store as a simple messaging BUS in .NET, includes Pub/Sub (Broadcast) and Request/Response patterns support.",RedisBus,False,2015-05-18T16:03:54.157-07:00,True,False,RedisBus support in .NET,,757,False,0.1.1
+"Srinivasan Kidambi,srinivas@semantics3.com",2015-05-18T13:31:28.09Z,C# Client Library for querying Semantics3 APIs,Semantics3,False,2015-05-18T06:52:41.41-07:00,True,False,,"Semantics3,API,C#,OAuth,Products,Data",18728,False,1.0.0.26
+Dimension15,2015-05-18T13:19:56.637Z,Does property and field mapping between two objects. Can also ignore specified members or map between members with different names.,Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,True,False,,"mapper,map,object,clone,copy,duplicate,mapping",1601,False,1.1.6
+edpollitt,2015-05-18T09:55:28.553Z,A really simple C# guard clause/validation library,Nerdle.Ensure,False,2016-01-18T02:36:30.817-08:00,True,False,A really simple C# guard clause/validation library,"ensure,validation,guard,clause,assert,checking,argument,parameter,C#",3486,False,1.0.0
+www.homethic.com,2015-05-18T07:42:56.847Z,Connector to an MSAccess Database,Fozzy.MSAccess,False,2015-06-01T07:52:38.787-07:00,True,False,Connector to an MSAccess Database,"Semantic,API",2757,False,1.2.3.9
+Dmytro Aleksandrov and co.,2015-05-18T09:51:55.717Z,Projections rebuild and remote polling client wrapper utilities.,EventSourcing.Rebuild,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Jon Iles,2015-05-18T06:27:12.467Z,"MPXJ is an open source file handling library for Java and .Net to read and write Microsoft Project MPX and MSPDI XML files, Planner files, Primavera XER files and databases, and MPP, MPT, and MPD files for Project 98, 2000, 2002, 2003, 2007 and 2010. This version provides properties, rather than Java style getters, setters.",net.sf.mpxj-for-vb,False,2018-04-16T08:57:49.847+00:00,True,False,,,9261,False,5.1.0
+"Aleksander Sjåfjell,Kristian Enge",2015-05-18T14:07:51.39Z,Klientbibliotek for integrasjon mot Digipost REST-API.,digipost-api-client,True,2017-11-29T10:51:09.823+00:00,True,False,Apache Licence 2.0,,16470,False,1.0.5616.27233-beta
+objo,2015-05-18T11:14:31.077Z,Provides custom controls and extensions for WPF 3D.,HelixToolkit.Wpf,False,1900-01-01T00:00:00+00:00,False,False,,"wpf,wpf3d,3D",100724,False,2015.1.515
+Patrik Svensson,2015-05-18T13:34:27.227Z,The Cake script runner.,Cake,False,2018-03-03T15:41:25.37+00:00,True,False,Cake (C# Make) is a build automation system.,"Cake,Script,Build",1844140,False,0.4.1
+Michael Janulaitis,2015-05-18T14:25:36.817Z,"A Windows assembly that contains server classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived server applications.",UpperSetting.OpenServer.Protocols.Hello.Server,False,2016-03-17T01:11:41.743-07:00,True,False,,"TCP,Socket,Server",5676,False,1.0.0.7
+GeertvanHorrik,2015-05-18T14:45:43.087Z,Catel.Extensions.Prism4 library which contains helper classes for prism.,Catel.Extensions.Prism,True,2016-11-29T13:36:21.16+00:00,True,False,,"prism,catel,mvvm",129402,True,4.2.0-unstable0119
+cdmdotnet Limited,2015-05-18T10:11:40.397Z,Components for implementing I.O.C. requirements via Ninject for using Azure Servuce Bus as the command bus.,Cqrs.Ninject.Azure.ServiceBus.CommandBus,False,2018-03-29T02:26:29.34+00:00,True,False,,,25859,False,1.500.541.431
+Adrian IORGU,2015-05-18T06:39:00.17Z,Cognifide.SiteCore.Extension.VersionFromLanguage.dll,CognifideSiteCoreVersionFromLanguage,False,1899-12-31T16:00:00-08:00,False,False,,"Cognifide,VersionFromLanguage,SSI",-1,False,1.0.0
+LJ,2015-05-18T09:05:45.287Z,刘杰的网站框架,LJ.Base,False,1899-12-31T16:00:00-08:00,False,False,,"Tag1,Tag2",-1,False,0.5.0
+Jörgen Bergström,2015-05-18T05:44:03.417Z,Methods to query a database,BizTalkComponents.DbUtils,False,2015-05-17T22:44:03.417-07:00,True,False,,BizTalk,1261,False,1.0.0.4
+GeertvanHorrik,2015-05-18T14:45:08.75Z,Catel.MVC 4 library which includes the MVC 4 related features.,Catel.Mvc,True,2016-11-29T13:35:47.207+00:00,True,False,,"mvc,catel",90621,True,4.2.0-unstable0119
+Mackey Kinard,2015-05-18T11:28:44.01Z,Ajax Gateway Web Application Toolkit - Core Runtime - 0.1.1.14-beta,AjaxGateway.Core,True,1900-01-01T00:00:00+00:00,False,False,The Ajax Gateway Core Runtime module allows for the development of back-end high performance AJAX-RPC 1.0 remote procedure call services.,"Owin,Ajax,Gateway,DuoCode,Remoting,REST,JSON,RPC,XML",31523,False,0.1.1.14-beta
+Jon Iles,2015-05-18T06:19:46.193Z,"MPXJ is an open source file handling library for Java and .Net to read and write Microsoft Project MPX and MSPDI XML files, Planner files, Primavera XER files and databases, and MPP, MPT, and MPD files for Project 98, 2000, 2002, 2003, 2007 and 2010.",net.sf.mpxj,False,2018-04-16T08:57:19.27+00:00,True,False,,,9983,False,5.1.0
+Ignace Maes,2015-05-18T11:46:29.587Z,Theming WinForms (C# or VB.Net) to Google's Material Design Principles.,MaterialSkin,False,2015-05-18T04:46:29.587-07:00,True,False,Theming WinForms (C# or VB.Net) to Google's Material Design Principles. Please refer to the GitHub page for implementing instructions.,"material,design,theme,winforms,materialskin",56044,False,0.2.1
+Matthew King,2015-05-18T08:36:05.747Z,Provides functionality to customize type and property descriptors at runtime. Exposes an easy-to-use fluent interface. Primarily intended to empower PropertyGrid binding.,DynamicDescriptors,False,2017-07-29T11:21:55.223+00:00,True,False,Runtime-customizable type and property descriptors.,"dynamic,type,property,descriptor",1257,False,1.1.0
+camle,2015-05-18T09:25:00.95Z,Business objects application framework.,Worm,False,1899-12-31T16:00:00-08:00,False,False,,,44724,False,1.0.394
+pecord,2015-05-18T14:20:10.503Z,WebApi Proxy,WebApiProxy-pecord,False,2015-05-18T07:20:10.503-07:00,True,False,,WebApi,573,False,1.2.0
+Thocun,2015-05-18T08:16:38.197Z,"Store and retrieve data object to any type of storage (memory, database, file)",MagicalStorage,False,2015-09-11T00:48:08.503-07:00,False,False,,,6153,False,1.0.0
+Dmytro Aleksandrov and co.,2015-05-18T09:52:59.593Z,Mongo utils.,EventSourcing.Misc.Mongo,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Jonathan Oliver and co.,2015-05-18T08:35:56.54Z,Embedded version of CommonDomain library with some fixes.,EventSourcing.CommonDomain,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+kirk,2015-05-18T13:24:10.22Z,Fody extension to generate RaisePropertyChange notifications for properties and ObservableAsPropertyHelper properties.,ReactiveUI.Fody,False,2017-07-21T15:48:05.057+00:00,True,False,,"reactiveui,fody",42461,True,1.0.51
+Andrew Gubskiy,2015-05-18T11:12:00.927Z,SDK for KPI campus application .net developers,campus.sdk,False,1899-12-31T16:00:00-08:00,False,False,,"campus,kpi,core,ecampus,kbis,dois,ntuu",-1,False,1.5.1.1100
+Patrick Evers,2015-05-18T12:22:40.697Z,A DNX5.0 Core Smtp Client,Panther.Mail,False,1899-12-31T16:00:00-08:00,False,False,,Smtp,-1,False,1.0.0
+Luo,2015-05-15T10:24:29.817Z,My package description.,Lion.Core,False,2015-10-27T02:29:18.893-07:00,False,False,,,4347,False,4.1.4
+"Nikolai Mynkow,Simeon Dimov",2015-05-18T12:06:23.113Z,Elders.Cronus.Serialization.Protoreg,Cronus.Serialization.Protoreg,False,2015-05-18T05:34:33.727-07:00,True,False,Elders.Cronus.Serialization.Protoreg,,688,False,1.0.1
+Streamcoders.com,2015-05-18T07:50:38.847Z,Is a comprehensive library for handling audio/video codecs and streaming technologies.,Streamcoders.MediaSuite.x64,False,2017-04-24T08:51:08.597+00:00,True,False,,"audio,video,streaming,html5,rtsp,rtp,h.264,vp8",100200,False,4.0.619
+Dimension15,2015-05-18T11:22:43.23Z,"Does object mapping between two objects.
+For further usage information goto: http://www.dimension15.co.za/Pages/ObjectMapper",Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,True,False,,"mapper,map,object,clone,copy",1601,False,1.1.0
+"Jeff Doolittle,Mike Hadlow",2015-05-18T10:27:50.717Z,An adaptor to allow EasyNetQ to use Castle.Windsor as its internal IoC container,EasyNetQ.DI.Windsor,False,1900-01-01T00:00:00+00:00,False,False,,"RabbitMQ,Messaging,AMQP,REST,API,Windsor",50397,False,0.49.2.389
+Umair Chagani,2015-05-18T07:38:03.287Z,factory-girl allows you to easily create test data for your .NET objects.  Supports creating default and named factories.,factory-girl,False,1899-12-31T16:00:00-08:00,False,False,,"factory-girl,factorygirl,factory_girl,factorygirl.NET,objectmother,plant,blueprint",1463,False,0.0.21
+GeertvanHorrik,2015-05-18T14:45:08.75Z,Catel.MVC 4 library which includes the MVC 4 related features.,Catel.Mvc,True,2016-11-29T13:35:47.207+00:00,True,False,,"mvc,catel",90621,True,4.2.0-unstable0119
+Wade Womersley,2015-05-06T09:49:08.87Z,Generic parallelisation,com.xcitestudios.Parallelisation,False,2015-09-16T04:14:26.977-07:00,False,False,,"xcitestudios,parallelisation,events",3119,False,1.0.15
+Hesse,2015-05-18T11:34:50.863Z,Hesse is a experiment,Hesse,False,2015-05-18T19:54:47.427-07:00,True,False,,hesse,757,False,1.0.1
+Flllexa,2015-05-18T05:37:49.127Z,UgApi is a implementation of IUGU payment modules (http://iugu.com),ugApi,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.5616.4648
+Synercoding,2015-05-18T13:20:08.677Z,A library that helps you implement a UnitOfWork pattern,Synercoding.UnitOfWork,True,2015-12-10T09:24:26.333-08:00,True,False,,"EF,UnitOfWork,Database,Data,vNext",2780,False,3.0.0-alpha2
+amatkivskiy,2015-05-16T17:04:44.083Z,"Android-Iconics is a library to use (almost) any alternative iconfont in your projects. It allows you to add any Android-Iconics compatible typeface-library-addon to your project and you are able to start using that font. http://mikepenz.github.io/Android-Iconics
+Additionally this package adds necessary fonts to your project's assets directory to use them for drawing icons.",Mikepenz.Android.Iconics.Xamarin.Binding,False,2015-12-15T02:12:00.223-08:00,False,False,Xamarin binding for Android Iconics https://github.com/mikepenz/Android-Iconics,"Android,Xamarin,Icons,Material",10159,False,0.9.1.1
+Thocun,2015-05-18T08:52:13.023Z,"Store and retrieve data object to any type of storage (memory, database, file)",MagicalStorage,False,2015-09-11T00:48:08.503-07:00,True,False,,,6153,False,1.0.1
+GeertvanHorrik,2015-05-18T14:45:21.057Z,Catel.Extensions.Data library which provides data classes such as repositories.,Catel.Extensions.Data,True,2016-11-29T05:35:59.533-08:00,True,False,,"catel,data,repository,repositories",103312,True,4.2.0-unstable0119
+Administrator,2015-05-18T09:35:23.283Z,Description,LJ.Common.Code,False,2015-06-08T20:37:56.563-07:00,True,False,,,505,False,0.6.0
+Rob Ladbrook (The App Business),2015-05-18T10:42:56.963Z,An RTM (WebSocket) Slack bot designed to be easily extended via plugins,Tab.Slack.Bot,True,2015-07-15T06:41:53.167-07:00,True,False,,,1230,False,0.1.1-alpha
+Dmytro Aleksandrov and co.,2015-05-18T09:52:27.317Z,Log4net implementation of EventSourcing.Cqrs.Services.ILogger interface.,EventSourcing.Logging,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Gerard Braad,2015-05-18T09:12:08.757Z,AppFabric cache provider for simple distributed cache,DistributedCache.AppFabric,False,2015-05-18T02:12:08.757-07:00,True,False,,distributedcache,1746,False,1.0.0
+GeertvanHorrik,2015-05-18T14:45:07.84Z,"Catel.Core library which provides the core building blocks required when developing professional applications. This
+	  package contains IoC components, logging, argument checking, message mediators and much more!",Catel.Core,True,2018-04-16T10:11:44.76+00:00,True,False,,"mvvm,model,modelbase,logging,data,object,wpf,silverlight,sl,windows,phone,wp,wp8,winrt,c#,ioc,servicelocator,typefactory,messaging,messenger,message,mediator",243905,True,4.2.0-unstable0119
+Adrian IORGU,2015-05-18T06:39:00.17Z,Cognifide.SiteCore.Extension.VersionFromLanguage.dll,CognifideSiteCoreVersionFromLanguage,False,1899-12-31T16:00:00-08:00,False,False,,"Cognifide,VersionFromLanguage,SSI",-1,False,1.0.0
+Dimension15,2015-05-18T12:03:11.107Z,"Does object mapping between two objects.
+For further usage information goto: http://www.dimension15.co.za/Pages/ObjectMapper",Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,True,False,,"mapper,map,object,clone,copy",1601,False,1.1.3
+Alorel,2015-05-15T18:49:11.757Z,"A self-updating WAMP stack with the latest binaries, always",AloWAMP,False,2015-05-18T15:31:15.003-07:00,True,False,"A self-updating WAMP stack with the latest binaries, always","wamp,windows,apache,mysql,php,memcache,memcached,redis,autoupdate,recent",1351,False,1.0.1
+��Ц,2015-05-10T12:56:58.737Z,��ѧ������Լ,ITOO.BasicTeach.Contracts,False,2016-02-02T18:37:49.333-08:00,False,False,,,9679,False,1.0.1
+WebApiProxy,2015-05-15T22:28:23.97Z,Provides an endpoint for ASP.NET Web Api services to serve a JavaScript proxy and metadata,WebApiProxy.Server,False,1899-12-31T16:00:00-08:00,False,False,,"Tag1,Tag2",-1,False,1.2.0.27269
+Dimension15,2015-05-18T11:22:43.23Z,"Does object mapping between two objects.
+For further usage information goto: http://www.dimension15.co.za/Pages/ObjectMapper",Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,False,False,,"mapper,map,object,clone,copy",1601,False,1.1.0
+Dominik Frefel,2015-05-18T11:58:02.987Z,This is a test. Do not download.,Fhnw.Ecnf.RoutePlanner.RoutePlannerLib,False,2015-05-27T01:57:14.443-07:00,True,False,,,812,False,1.0.0
+Paul Rogero,2015-05-18T15:24:18.463Z,Some helper classes to make it easy to create unique DB's in SQL server for unit testing and to delete them when finished.,UniqueDb.ConnectionProvider,False,2017-12-07T22:22:48.613+00:00,True,False,,,10134,False,1.0.39
+a.molcanovas@gmail.com,2015-05-18T09:10:53.04Z,"AloFramework is an incredibly lightweight and flexible MVC framework for PHP 5.4+. It has a lot of built-in functionality including but not limited to:
+
+* Memcached wrapper
+* Database connection class
+* MySQL or Memcached-based session manager
+* HTML form validator
+* Code testing suite
+* Email sender
+* Crontab editor
+* Object-oriented cURL wrapper
+* Object-oriented file manager
+* Remote SFTP file manager
+* Code profiler",AloFramework,False,1899-12-31T16:00:00-08:00,False,False,AloFramework is an incredibly lightweight and flexible MVC framework for PHP 5.4+,"php,mvc,framework,lightweight,5.4",-1,False,1.0.0
+Oystein Bjorke,2015-05-18T13:01:24.947Z,OxyPlot is a plotting library for .NET. This package targets Xamarin.iOS apps (both classic and unified APIs).,OxyPlot.Xamarin.iOS,True,1899-12-31T16:00:00-08:00,False,False,,"xamarin,iOS,plotting,plot,charting,chart",47604,False,2015.1.889-alpha
+GeertvanHorrik,2015-05-18T14:45:11.453Z,Catel.MVC 5 library which includes the MVC 5 related features.,Catel.MVC5,True,2016-11-29T13:35:50.27+00:00,True,False,,"mvc,catel",52776,True,4.2.0-unstable0119
+Administrator,2015-05-18T09:20:57Z,Description,LJ.Data,False,2015-06-15T20:56:08.49-07:00,True,False,,,528,False,0.6.0
+"Oleh Formaniuk,Andrew Gubskiy",2015-05-18T12:02:04.867Z,Base classes for implementing for PUSH notifications.,campus.core.pulse,False,1899-12-31T16:00:00-08:00,False,False,campus:core API library for PUSH notifications,"campus,dois,kpi,kbis,api,json,кпи,КБ,ИС,ntuu",-1,False,1.2.4.760
+Ignace Maes,2015-05-18T11:46:29.587Z,Theming WinForms (C# or VB.Net) to Google's Material Design Principles.,MaterialSkin,False,2015-05-18T04:46:29.587-07:00,True,False,Theming WinForms (C# or VB.Net) to Google's Material Design Principles. Please refer to the GitHub page for implementing instructions.,"material,design,theme,winforms,materialskin",56044,False,0.2.1
+aswanikumarc,2015-05-18T07:28:38.973Z,My package description.,Upn_Components_Dependencies,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Trackerbird,2015-05-18T13:35:56.067Z,This plugin allows you to easily integrate the Trackerbird Software Analytics SDK in your project.The plugin will safely and automatically add runtime intelligence tracking code into your application and provide you with options to manage Event Tracking via the UI without having to manually add tracking code.,Trackerbird.ReSharperPlugIn,False,1899-12-31T16:00:00-08:00,False,False,,"Trackerbird,Analytics,Code,Develop,runtime,intelligence,analytics,tracking,track,monitor,sdk,call-home,updates,in-app,marketing,messaging,events,ReSharper",-1,False,1.0.0
+Dmytro Aleksandrov and co.,2015-05-18T09:50:06.65Z,Autofac utilities for Eventsourcing library.,EventSourcing.Cqrs.Autofac,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+WrocTrackerTeam,2015-05-18T06:10:43.59Z,Nuget package library exposing positions of Wroclaw's MPK public transport vehicles,WrocTracker,False,2015-05-22T06:42:05.233-07:00,False,False,,"MPK,Wrocław,Wroclaw,pozycja,tramwaj,autobus,bus,tram,position",545,False,1.0.0
+The CefSharp Authors,2015-04-23T08:12:57.83Z,"The CefSharp Chromium-based browser component ('Core' and common 'Element' components, needed by both WPF and WinForms). This is unofficial package. But it is very similar to official one. The only difference is that the 'Platform Toolset' changed to Visual Studio 2012 - Windows XP (v110_xp), so it works on XP and 2003 server.",CefSharp.Common.XP,False,2015-04-23T01:12:57.843-07:00,True,False,,"chrome,browser",10629,False,39.0.0
+Thocun,2015-05-18T08:16:38.197Z,"Store and retrieve data object to any type of storage (memory, database, file)",MagicalStorage,False,2015-09-11T00:48:08.503-07:00,False,False,,,6153,False,1.0.0
+��Ц,2015-05-18T09:14:55.56Z,��ѧ������Լ,ITOO.BasicTeach.Contracts,False,2016-02-02T18:37:49.333-08:00,True,False,,,9679,False,1.0.1.1
+GeertvanHorrik,2015-05-18T14:45:07.84Z,"Catel.Core library which provides the core building blocks required when developing professional applications. This
+	  package contains IoC components, logging, argument checking, message mediators and much more!",Catel.Core,True,2018-04-16T10:11:44.76+00:00,True,False,,"mvvm,model,modelbase,logging,data,object,wpf,silverlight,sl,windows,phone,wp,wp8,winrt,c#,ioc,servicelocator,typefactory,messaging,messenger,message,mediator",243905,True,4.2.0-unstable0119
+Michael Janulaitis,2015-05-18T14:22:05.767Z,"A Windows assembly that contains shared classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived Windows server and client applications.",UpperSetting.OpenServer.Windows.Shared,False,2016-03-17T01:11:00.017-07:00,True,False,,"TCP,Socket,Server",6399,False,1.0.0.7
+GeertvanHorrik,2015-05-18T14:45:48.187Z,Catel.Extensions.Wcf.Server library which provides WCF server capabilities.,Catel.Extensions.Wcf.Server,True,2016-11-29T13:36:30.393+00:00,True,False,,"catel,wcf,server,windows,communication,foundation",67427,True,4.2.0-unstable0119
+objo,2015-05-18T11:36:09.147Z,Portable core assembly that is referenced by the other Helix Toolkit packages.,HelixToolkit,False,1900-01-01T00:00:00+00:00,False,False,,"3D,wpf",140029,False,2015.1.516
+BusinessLine,2015-05-18T11:10:08.71Z,This a common tools library,BLS.Infrastructure,False,2017-02-10T06:57:46.34-08:00,True,False,,"Infrastructure,Common,outils,utilitaires",20905,False,1.0.13.7
+GeertvanHorrik,2015-05-18T14:45:33.147Z,Catel.Extensions.FluentValidation library which contains fluent validation extensions.,Catel.Extensions.FluentValidation,True,2016-11-29T05:36:11.987-08:00,True,False,,"validation,fluent,fluentvalidation,catel",125946,True,4.2.0-unstable0119
+"Nikolai Mynkow,Simeon Dimov",2015-05-18T12:29:03.5Z,Protobuf-net wrapper,Protoreg,False,2015-05-18T05:29:03.5-07:00,True,False,Protobuf-net wrapper,"CQRS,DDD,ES,Event,store,sourcing",2674,False,2.0.0
+Jonathan Oliver and co.,2015-05-18T09:48:51.877Z,Embedded version of CommonDomain library with some fixes.,EventSourcing.CommonDomain,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Maciej Raczkowski,2015-05-18T08:24:59.917Z,Active Campaign C# wrapper,ActiveCampaign,True,1899-12-31T16:00:00-08:00,False,False,,"Active,Campaign,wrapper,c#",-1,False,1.0.1-beta1
+Dmytro Aleksandrov and co.,2015-05-18T08:37:40.37Z,In-process event dispatcher for EventSourcing library.,EventSourcing.EventDispatcher,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+Penshurst Inc.,2015-05-18T13:48:59.973Z,Markout Minimal Sample Application,Markout.Output.Inlines.Sample,False,2016-10-31T10:56:47.867-07:00,True,False,,"markup,WPF,TextBox,Inlines",1517,False,1.2.1
+Mackey Kinard,2015-05-18T15:06:01.217Z,Ajax Gateway Web Application Toolkit - Duo Code Runtime - 0.1.1.16-beta,AjaxGateway.Duo,True,1899-12-31T16:00:00-08:00,False,False,"The Ajax Gateway Duo Code add-on allows developers to compile C#-To-JavaScript, creating complex HTML5 front-ends for web applications in the C# language.","Owin,Ajax,Gateway,DuoCode,Remoting,REST,JSON,RPC,XML",30377,False,0.1.1.16-beta
+Dmytro Aleksandrov and co.,2015-05-18T08:35:18.493Z,Core interfaces Neventstore integration for EventSourcing library.,EventSourcing.Interfaces,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+Dimension15,2015-05-18T11:22:43.23Z,"Does object mapping between two objects.
+For further usage information goto: http://www.dimension15.co.za/Pages/ObjectMapper",Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,False,False,,"mapper,map,object,clone,copy",1601,False,1.1.0
+Mackey Kinard,2015-05-18T11:29:41.44Z,Ajax Gateway Web Application Toolkit - Duo Code Runtime - 0.1.1.14-beta,AjaxGateway.Duo,True,1899-12-31T16:00:00-08:00,False,False,"The Ajax Gateway Duo Code add-on allows developers to compile C#-To-JavaScript, creating complex HTML5 front-ends for web applications in the C# language.","Owin,Ajax,Gateway,DuoCode,Remoting,REST,JSON,RPC,XML",30377,False,0.1.1.14-beta
+Dmytro Aleksandrov and co.,2015-05-18T09:48:17.367Z,Core interfaces Neventstore integration for EventSourcing library.,EventSourcing.Interfaces,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+TARGIT Core Development,2015-05-18T07:20:45.597Z,"A chart is a visual representation of data. It could be a bar chart, cross tab or a gauge. It could also just be a plain white number on a colored background.
+
+      Traditionally, TARGIT Decision Suite has provided several standard charts, such as the ones mentioned above. After selecting measures and dimensions for a data object, switching between such standard charts has always been quick and easy.
+
+      Should you wish to view your data as, say, a pie chart that looks like an actual real-world pie or as a bunch of green pulsating dots on an animated radar screen, you would not have been unable to do. Until now.
+
+      Creating and using custom chart is made available for C# developers through our TARGIT Chart API NuGet package, free of charge.
+
+      Through our chart API, a C#/Wpf developer can create custom data object types that literally look like anything you could think of, and effortlessly make them available to end users of TARGIT Decision Suite.",TargitChartApi,False,2016-10-28T06:15:52.653-07:00,True,False,An API for building custom charts for use in Targit Decision Suite,TARGIT,20226,False,0.131.0
+GeertvanHorrik,2015-05-18T14:45:41.053Z,Catel.Extensions.Memento library which provides the memento pattern implementation as a service.,Catel.Extensions.Memento,True,2016-11-29T13:36:18.13+00:00,True,False,,"catel,memento",85239,True,4.2.0-unstable0119
+BTCTrader,2015-05-18T08:27:08.587Z,"C# client for the broker API of BTCTrader. You can use this client to connect to the APIs of btcturk.com, btcgreece.com, btcexchange.ph and other BTCTrader partners.
+
+The _baseUrl, public and private key variables needs must be set.
+
+To use with BTCTurk, set the _baseUrl to ""https://www.btcturk.com"" for BTCExchange.PH, use ""https://btcexchange.ph"" etc..
+
+The public and private keys can be found under Account->API Access or similar pages in your account on each exchange.",BTCTrader.APIClient,False,2016-09-22T13:03:13.1+00:00,True,False,"C# client for the broker API of BTCTrader. You can use this client to connect to the APIs of btcturk.com, btcgreece.com, btcexchange.ph and other BTCTrader partners.",,5556,False,1.0.1
+Streamcoders.com,2015-05-18T07:47:42.513Z,Is a comprehensive library for handling audio/video codecs and streaming technologies.,Streamcoders.MediaSuite.x86,False,2017-04-24T01:50:45.473-07:00,True,False,,"audio,video,streaming,html5,rtsp,rtp,h.264,vp8",101110,False,4.0.619
+GeertvanHorrik,2015-05-18T14:45:48.187Z,Catel.Extensions.Wcf.Server library which provides WCF server capabilities.,Catel.Extensions.Wcf.Server,True,2016-11-29T13:36:30.393+00:00,True,False,,"catel,wcf,server,windows,communication,foundation",67427,True,4.2.0-unstable0119
+Gerard Braad,2015-05-18T09:04:57.42Z,Simple distributed cache client (shared),DistributedCache.Shared,False,2015-05-18T02:04:57.42-07:00,True,False,,distributedcache,1783,False,1.0.0
+"Benjamin Mayrargue,Jérémie Laval",2015-05-18T14:45:45.71Z,"Use one SVG vector image instead of multiple bitmaps to display most icons in your Xamarin app. Supports Xamarin Android (axml tag and code), iOS (classic and unified, code only), Forms (XAML tag and code), Windows Phone 8 (XAML tag and code), and Mvvmcross binding. Purchase it instantly online with its full source code on the Xamarin Component Store. This free nuget package supports only Xamarin.Android projects.",Softlion.XamSvg.Free,False,2018-04-13T06:30:27.677+00:00,True,False,"SVG vector image support for Xamarin Android, iOS, Forms, Windows Phone 8 and MvvmCross","svg,xamarin,ios,android,monotouch,monodroid,xamarin.ios,xamarin.android,wp8,xamarin.forms",16161,False,1.2.0.7
+Dimension15,2015-05-18T13:07:37.86Z,Does property and field mapping between two objects. Can also ignore specified members or map between members with different names.,Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,True,False,,"mapper,map,object,clone,copy",1601,False,1.1.5
+LJ,2015-05-18T09:05:45.287Z,刘杰的网站框架,LJ.Base,False,1899-12-31T16:00:00-08:00,False,False,,"Tag1,Tag2",-1,False,0.5.0
+Xerox,2015-05-15T10:24:27.677Z,EnterpriseCloud.ServiceBus.Receive using WCF service bus model,EnterpriseCloud.ServiceBus.Receive,False,1899-12-31T16:00:00-08:00,False,False,EnterpriseCloud.ServiceBus.Receive,,-1,False,1.0.3
+Dmytro Aleksandrov and co.,2015-05-18T08:39:38.117Z,Log4net implementation of EventSourcing.Cqrs.Services.ILogger interface.,EventSourcing.Logging,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+aswanikumarc,2015-05-18T08:16:08.393Z,My package description.,UpnComponents_Dependencies,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Administrator,2015-05-18T09:31:10.99Z,Description,LJ.Common,False,2015-07-08T18:26:35.17-07:00,True,False,,,3995,False,0.6.0
+Abel Cheng,2015-05-18T14:31:30.577Z,"Less Code, Less Configuration, Less Time. DataBooster is a high-performance extension to ADO.NET Data Provider, includes a light encapsulation to minimize your DAL code and a booster to maximize throughput for writing mass data to database. Visit http://databooster.codeplex.com",DataBooster.Oracle.ODP,False,2018-04-01T03:16:18.82+00:00,True,False,,"DbParallel,DataAccess,ADO.NET,Booster,Launcher,Throughput,Oracle,ODP.NET,Bulk",12800,True,1.7.8.2
+objo,2015-05-18T11:59:00.027Z,Provides custom controls for WPF and a scene graph based on SharpDX.,HelixToolkit.Wpf.SharpDX,False,1900-01-01T00:00:00+00:00,False,False,,"wpf,SharpDX,3D",37254,False,2015.1.517
+Geeks ltd,2015-05-18T14:27:53.647Z,M# framework Mvc components.,MSharp.Framework.Mvc,False,2018-04-09T08:54:59.61+00:00,True,False,,,84243,False,2.1.0.129
+Flllexa,2015-05-18T05:41:16.513Z,ug-api is a implementation of IUGU payment modules (http://iugu.com),ug-api,False,2015-12-13T14:25:58.393-08:00,True,False,,,4819,False,0.8.5616.4826
+LJ,2015-05-18T09:08:22.1Z,刘杰的网站框架,LJ.Base,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.6.0
+Dmytro Aleksandrov and co.,2015-05-18T08:35:18.493Z,Core interfaces Neventstore integration for EventSourcing library.,EventSourcing.Interfaces,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+GeertvanHorrik,2015-05-18T14:45:18.053Z,Catel.Extensions.CSLA library which provides CSLA.NET view models for Catel.,Catel.Extensions.CSLA,True,2016-11-29T13:35:56.627+00:00,True,False,,"catel,csla,clsa.net",105219,True,4.2.0-unstable0119
+Penshurst Inc.,2015-05-18T13:39:03.067Z,Markout Input Parser,Markout.Input,False,2016-10-31T10:54:23.15-07:00,True,False,,"markup,WPF,TextBox,Inlines",1638,False,1.2.0
+Michael Janulaitis,2015-05-18T14:27:17.997Z,"A portable assembly that contains classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived client and mobile applications.",UpperSetting.OpenServer.Protocols.WinAuth.Client,False,2016-03-17T01:12:01.567-07:00,True,False,,"TCP,Socket,Server",5689,False,1.0.0.7
+camle,2015-05-18T09:25:00.95Z,Business objects application framework.,Worm,False,1899-12-31T16:00:00-08:00,False,False,,,44724,False,1.0.394
+The CefSharp Authors,2015-04-23T08:12:57.83Z,"The CefSharp Chromium-based browser component ('Core' and common 'Element' components, needed by both WPF and WinForms). This is unofficial package. But it is very similar to official one. The only difference is that the 'Platform Toolset' changed to Visual Studio 2012 - Windows XP (v110_xp), so it works on XP and 2003 server.",CefSharp.Common.XP,False,2015-04-23T01:12:57.843-07:00,True,False,,"chrome,browser",10629,False,39.0.0
+LJ,2015-05-18T09:08:22.1Z,刘杰的网站框架,LJ.Base,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.6.0
+Flllexa,2015-05-18T05:37:49.127Z,UgApi is a implementation of IUGU payment modules (http://iugu.com),ugApi,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.5616.4648
+Zoltu,2015-05-18T15:06:15.307Z,Copies TypeScript files and build results from referenced projects in solution.,Zoltu.BuildTools.TypeScript.FromReferencesTask,False,2016-05-28T12:15:57.55-07:00,True,False,,"build,tools,typescript,project,references",2566,False,1.0.11
+objo,2015-05-18T11:58:26.693Z,Provides custom controls and extensions for WPF 3D.,HelixToolkit.Wpf,False,1900-01-01T00:00:00+00:00,False,False,,"wpf,wpf3d,3D",100724,False,2015.1.517
+Michael Janulaitis,2015-05-18T14:22:05.767Z,"A Windows assembly that contains shared classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived Windows server and client applications.",UpperSetting.OpenServer.Windows.Shared,False,2016-03-17T01:11:00.017-07:00,True,False,,"TCP,Socket,Server",6399,False,1.0.0.7
+GeertvanHorrik,2015-05-18T14:45:29.953Z,"Catel.Extensions.EntityFramework6 library which provides data classes such as repositories, unit of work, DbContextManager and more.",Catel.Extensions.EntityFramework6,True,2016-11-29T13:36:08.753+00:00,True,False,,"catel,entity,framework,entityframework,EF,EF6,UnitOfWork,unit,of,work,DbContextManager,repository,repositories,database",74377,True,4.2.0-unstable0119
+kirk,2015-05-18T13:24:10.22Z,Fody extension to generate RaisePropertyChange notifications for properties and ObservableAsPropertyHelper properties.,ReactiveUI.Fody,False,2017-07-21T15:48:05.057+00:00,True,False,,"reactiveui,fody",42461,True,1.0.51
+"Srinivasan Kidambi,srinivas@semantics3.com",2015-05-18T13:28:16.617Z,C# Client Library for querying Semantics3 APIs,Semantics3,False,2015-05-18T06:52:41.41-07:00,True,False,,"Semantics3,API,C#,OAuth,Products,Data",18728,False,1.0.0.25
+Administrator,2015-05-18T09:22:11.27Z,Description,LJ.Data.SqlServer,False,2015-05-18T02:28:42.337-07:00,True,False,,,508,False,0.6.0
+WrocTrackerTeam,2015-05-18T06:10:43.59Z,Nuget package library exposing positions of Wroclaw's MPK public transport vehicles,WrocTracker,False,2015-05-22T06:42:05.233-07:00,True,False,,"MPK,Wrocław,Wroclaw,pozycja,tramwaj,autobus,bus,tram,position",545,False,1.0.0
+"Nikolai Mynkow,Simeon Dimov",2015-05-18T13:22:59.863Z,Elders.Cronus.Persistence.Cassandra,Cronus.Persistence.Cassandra,False,2018-04-01T19:46:45.623+00:00,True,False,Elders.Cronus.Persistence.Cassandra,"cronus,cassandra,event,store,sourcing",6421,False,2.0.0
+jmanghera,2015-05-18T10:45:55.017Z,Provides a basic response builder to help with Nancy responses.,Jama.NancyHelpers,False,2015-05-18T03:45:55.017-07:00,True,False,,,1799,False,1.0.6
+Dmytro Aleksandrov and co.,2015-05-18T09:52:59.593Z,Mongo utils.,EventSourcing.Misc.Mongo,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+"Spinit AB,Mattias Nordqvist,Carl Berg",2015-05-18T06:25:19.893Z,A type-safe .NET-library for consuming web APIs,WebAnchor,False,2018-02-26T12:20:28.273+00:00,True,False,,"REST,HTTP,API,JSON",7414,False,0.4.0
+Equilibrium,2015-05-18T07:32:45Z,Equ Umbraco Bootstrap,Equ.Umbraco.Bootstrap,False,2015-05-18T00:32:45-07:00,True,False,,"umbraco,mvc",3153,False,0.9.0
+cdmdotnet Limited,2015-05-18T10:04:57.767Z,Components for using the Azure ConfigurationManager for the Cqrs package,Cqrs.Azure.ConfigurationManager,False,2018-03-29T02:22:37.65+00:00,True,False,,,29927,False,1.500.541.431
+camle,2015-05-18T09:27:42.31Z,Business objects wrappers.,Hydra,False,1899-12-31T16:00:00-08:00,False,False,,,52896,False,1.0.363
+aswanikumarc,2015-05-18T09:26:56.747Z,Upn Components dependencies,UpnComponentsDependencies,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+DuoCode,2015-05-18T07:31:19.18Z,C#-to-JavaScript compiler powered by Microsoft Roslyn,DuoCode,True,2017-05-01T06:38:23.203-07:00,True,False,C#-to-JavaScript compiler powered by Microsoft Roslyn,"javascript,compiler,roslyn,js,duo,duocode,nodejs,node,webgl",10754,False,0.6.1251-beta
+cdmdotnet Limited,2015-05-18T10:05:34.667Z,Components for implementing the event store using Azure DocumentDB for the Cqrs package,Cqrs.Azure.DocumentDb,False,2018-03-29T02:22:52.62+00:00,True,False,,,45390,False,1.500.541.431
+Maciej Raczkowski,2015-05-18T08:24:59.917Z,Active Campaign C# wrapper,ActiveCampaign,True,1899-12-31T16:00:00-08:00,False,False,,"Active,Campaign,wrapper,c#",-1,False,1.0.1-beta1
+rynn.wang,2015-05-18T15:14:25.06Z,"Common library for .NET projects. Including REST Api handler, exception handler, AOP, Reflection, Extensions, Configurations, etc.
+
+NOTE: version 2.x is not compatible for version 1.x in exception handler methods.",ifunction.Common,False,2015-12-07T22:29:02.52-08:00,True,False,"Common library for .NET projects. Including REST Api handler, exception handler, AOP, Reflection, Extensions, Configurations, etc.",,68169,False,2.14.0
+Wade Womersley,2015-03-20T12:00:05.763Z,Generic parallelisation,com.xcitestudios.Parallelisation,False,2015-09-16T04:14:26.977-07:00,False,False,,"xcitestudios,parallelisation,events",3119,False,1.0.13
+Duncan Roosma(@viper128),2015-05-18T08:31:28.303Z,Core library for static map image services,StaticMap.Core,False,2015-05-20T03:14:39.957-07:00,True,False,,,865,False,1.0.1
+Mauro Servienti,2015-05-18T13:11:10.28Z,"Jason is an infrastructure framework to easly handle the ""Command"" part of CQRS on top of server technologies such as WCF and WebAPI",Jason.Windsor,True,2015-05-18T06:11:10.28-07:00,True,False,,,263,False,1.0.0-Beta
+"Mike Hadlow,Contributors (see GitHub repo)",2015-05-18T10:28:21.377Z,"EasyNetQ is a simple, opinionated .NET API for RabbitMQ",EasyNetQ,False,1900-01-01T00:00:00+00:00,False,False,,"RabbitMQ,Messaging,AMQP",755864,False,0.49.2.389
+a.molcanovas@gmail.com,2015-05-15T18:49:11.757Z,"A self-updating WAMP stack with the latest binaries, always",AloWAMP,False,2015-05-18T15:31:15.003-07:00,True,False,"A self-updating WAMP stack with the latest binaries, always","wamp,windows,apache,mysql,php,memcache,memcached,redis,autoupdate,recent",1351,False,1.0.1
+VRVis Research Center,2015-05-18T10:00:49.31Z,Aardvark.Base is a collection of data structures and algorithms for computer graphics and visualization. It is under active development since 2006 as part of a much larger set of libraries at VRVis Research Center.,Aardvark.Build,False,2015-05-18T03:00:49.31-07:00,True,False,Data structures and algorithms for computer graphics and visualization.,"graphics,visualization,geometry,math,algorithms",2404,False,0.1.1
+cdmdotnet Limited,2015-05-18T10:14:00.66Z,Components for implementing I.O.C. requirements via Ninject for in-process the event bus.,Cqrs.Ninject.InProcess.EventBus,False,2018-03-29T02:27:54.91+00:00,True,False,,,36380,False,1.500.541.431
+"Mike Hadlow,Contributors (see GitHub repo)",2015-05-18T10:28:21.377Z,"EasyNetQ is a simple, opinionated .NET API for RabbitMQ",EasyNetQ,False,1900-01-01T00:00:00+00:00,False,False,,"RabbitMQ,Messaging,AMQP",755864,False,0.49.2.389
+Alex Artyomov,2015-05-18T12:02:14.737Z,FluentDataAnnotations.Mvc.Core - core functionality for FluentDataAnnotations.Mvc,FluentDataAnnotations.Mvc.Core,False,2015-08-11T07:15:28.157-07:00,True,False,"FluentDataAnnotations.Mvc is a library that provides fluent API for adding DataAnnotaions for ASP.NET MVC projects
+FluentDataAnnotations.Mvc.Core contains the core functionality for FluentDataAnnotat","ASP.NET,MVC,DataAnnotations",4172,False,1.1.6
+Patrick Evers,2015-05-18T12:21:35.52Z,A MVC Mail Action Result,Panther.Mail.Mvc,False,1899-12-31T16:00:00-08:00,False,False,,Smtp,-1,False,1.0.0
+TestingApi,2015-05-15T14:07:11.44Z,Testing project for nuget,TestApiClient,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Samora Dake,2015-05-18T10:07:20.81Z,Easily build dynamic USSD applications on the SMSGH platform.,Smsgh.UssdFramework,False,2015-06-30T08:14:23.043-07:00,True,False,,,2493,False,1.2.0
+pecord,2015-05-18T14:20:10.503Z,WebApi Proxy,WebApiProxy-pecord,False,2015-05-18T07:20:10.503-07:00,True,False,,WebApi,573,False,1.2.0
+cdmdotnet Limited,2015-05-18T10:17:03.403Z,Components for implementing the I.O.C. via Ninject for the Mongo Cqrs package,Cqrs.Ninject.Mongo,False,2018-03-29T02:28:21.88+00:00,True,False,,,49411,False,1.500.541.431
+Wade Womersley,2015-05-18T11:56:39.69Z,Generic parallelisation,com.xcitestudios.Parallelisation,False,2015-09-16T04:14:26.977-07:00,True,False,,"xcitestudios,parallelisation,events",3119,False,1.0.17
+Jon Iles,2015-05-18T06:23:28.177Z,"MPXJ is an open source file handling library for Java and .Net to read and write Microsoft Project MPX and MSPDI XML files, Planner files, Primavera XER files and databases, and MPP, MPT, and MPD files for Project 98, 2000, 2002, 2003, 2007 and 2010. This version provides properties and C#-style method names, rather than Java style getters, setters, and method names.",net.sf.mpxj-for-csharp,False,2018-04-16T08:57:34.91+00:00,True,False,,,18946,False,5.1.0
+magelia,2015-05-18T09:16:03.087Z,"Build powerful e-commerce client applications such as websites, smartphone apps, using the Magelia WebStore e-commerce software. With this Nuget package, ease the project set-up, and start developing your e-commerce store in minutes.",Magelia.WebStore.Client,False,2016-06-20T03:34:23.36-07:00,True,False,,"magelia,e-commerce",9584,False,3.1.354.27
+OElite Limited,2015-05-18T15:00:37.26Z,Common Library for OElite Platform based application development,OElite.Common,False,1899-12-31T16:00:00-08:00,False,False,,oelite,-1,False,3.8.7
+Wade Womersley,2015-03-20T12:24:20.237Z,Generic parallelisation,com.xcitestudios.Parallelisation,False,2015-09-16T04:14:26.977-07:00,False,False,,"xcitestudios,parallelisation,events",3119,False,1.0.14
+Dmytro Aleksandrov and co.,2015-05-18T09:50:06.65Z,Autofac utilities for Eventsourcing library.,EventSourcing.Cqrs.Autofac,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Dmytro Aleksandrov and co.,2015-05-18T08:37:05.64Z,Autofac utilities for Eventsourcing library.,EventSourcing.Cqrs.Autofac,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+T-systems Mexico,2015-05-18T15:10:21.9Z,Esquemas generales,ContpaqiNodeFolderPAQEntity,False,2015-09-28T09:28:37.06-07:00,True,False,,,14584,False,1.0.1
+Fanie Reynders,2015-05-15T22:28:23.97Z,Provides an endpoint for ASP.NET Web Api services to serve a JavaScript proxy and metadata,WebApiProxy.Server,False,1899-12-31T16:00:00-08:00,False,False,,"AspNet,WebAPI,Proxy,JavaScript,CSharp",-1,False,1.2.0.27269
+Maciej Raczkowski,2015-05-18T08:24:59.917Z,Active Campaign C# wrapper,ActiveCampaign,True,1899-12-31T16:00:00-08:00,False,False,,"Active,Campaign,wrapper,c#",-1,False,1.0.1-beta1
+"Srinivasan Kidambi,srinivas@semantics3.com",2015-05-18T13:31:28.09Z,C# Client Library for querying Semantics3 APIs,Semantics3,False,2015-05-18T06:52:41.41-07:00,False,False,,"Semantics3,API,C#,OAuth,Products,Data",18728,False,1.0.0.26
+Patrik Svensson,2015-05-18T13:35:10.787Z,The Cake core library.,Cake.Core,False,2018-03-03T15:41:38.543+00:00,True,False,Cake (C# Make) is a build automation system.,"Cake,Script,Build",790443,False,0.4.1
+James Willock,2015-05-18T13:26:35.24Z,ResourceDictionary instances containing Material Design templates and styles for WPF controls.,MaterialDesignThemes,False,2018-03-07T19:27:28.313+00:00,True,False,,"WPF,XAML,WinRT,Material,Design,Theme,Colour,Color,UI,UX",245666,False,0.0.0.66
+"Spinit AB,Mattias Nordqvist,Carl Berg",2015-05-18T06:25:19.893Z,A type-safe .NET-library for consuming web APIs,WebAnchor,False,2018-02-26T12:20:28.273+00:00,True,False,,"REST,HTTP,API,JSON",7414,False,0.4.0
+Flllexa,2015-05-18T05:41:16.513Z,ug-api is a implementation of IUGU payment modules (http://iugu.com),ug-api,False,2015-12-13T14:25:58.393-08:00,True,False,,,4819,False,0.8.5616.4826
+��Ц,2015-05-18T09:14:55.56Z,��ѧ������Լ,ITOO.BasicTeach.Contracts,False,2016-02-02T18:37:49.333-08:00,True,False,,,9679,False,1.0.1.1
+MoonStorm,2015-05-18T05:40:48.467Z,"Fast Dapper CRUD extensions added to the IDbConnection for convenience and a less error prone experience. This library is 2x faster than Dapper.SimpleCRUD.
+For Dapper constructs in general, it is recommended to use Visual Studio 2015 for features such as nameof and string interpolation but that's not a requirement.
+
+The package contains .NET 4.5 and 4.6 DLLs, one of which will be installed based on the target framework in your project. 
+For .NET 4.5, the code contains the polyfills for the missing FormattableString class, which is required when targetting that framework version and using string interpolation with the C# 6 compiler in VS 2015.
+
+Features:
+----------
+- Support for LocalDb and Ms Sql Server (more coming soon)
+- Entities having composite primary keys are supported
+- All the CRUD methods accept a transaction and a command timeout
+- Fast pre-computed entity queries
+- A generic T4 template is also provided for convenience. Entity domain partitioning and generation can be achieved via separate template configurations.
+Existing POCO entities are also supported which can be decorated with attributes such as Table, Key and DatabaseGenerated.
+Column name overrides are not supported and not recommended. As you'll end up writing more complex SQL queries, outside of the domain of this library, you'll want to use the nameof operator as much as possible.
+
+Examples of usage:
+-------------------
+- dbConnection.Insert(newEntity);
+- dbConnection.Get()
+- dbConnection.Get(new Entity() {Id = 10});
+- dbConnection.Update(updatedEntity);
+- dbConnection.Delete(entity)
+- dbConnection.GetTableName<Entity>()
+- dbConnection.Find<Entity>(
+        whereClause:$""{nameof(Entity.FirstName)}=@FirstNameParam"",
+        orderClause:$""{nameof(Entity.LastName)} DESC"",
+        skipRowsCount:10, limitRowsCount:20,
+        queryParameters: new {FirstNameParam: ""John""});
+
+This is where the power of the C# 6 compiler comes into play, and leaves no chance to mistypings or to problems arising from db entity refactorings.
+More details and benchmarks are available on the project site.",Dapper.FastCrud,False,2016-10-27T02:14:24.093+00:00,True,False,Fast CRUD extensions added to the IDbConnection for convenience and a less error prone experience with Dapper.,"Dapper,CRUD",57654,False,1.0.2
+Oystein Bjorke,2015-05-18T12:59:44.303Z,"Please use the platform specific packages, this package is obsolete.",OxyPlot.Mobile,True,1899-12-31T16:00:00-08:00,False,False,,"plotting,plot,charting,chart,wp8,windows,phone,8,windowsphone,winphone,winrt,win8,metro,store,xamarin,android,ios,monotouch",-1,False,2015.1.889-alpha
+aswanikumarc,2015-05-18T08:16:08.393Z,My package description.,UpnComponents_Dependencies,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Dmytro Aleksandrov and co.,2015-05-18T09:52:27.317Z,Log4net implementation of EventSourcing.Cqrs.Services.ILogger interface.,EventSourcing.Logging,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+"Benjamin Mayrargue,Jérémie Laval",2015-05-18T15:00:03.62Z,"Use one SVG vector image instead of multiple bitmaps to display most icons in your Xamarin app. Supports Xamarin Android (axml tag and code), iOS (classic and unified, code only), Forms (XAML tag and code), Windows Phone 8 (XAML tag and code), and Mvvmcross binding. Purchase it instantly online with its full source code on the Xamarin Component Store. This free nuget package supports only Xamarin.Android projects.",Softlion.XamSvg.Free,False,2018-04-13T06:30:27.677+00:00,True,False,"SVG vector image support for Xamarin Android, iOS, Forms, Windows Phone 8 and MvvmCross","svg,xamarin,ios,android,monotouch,monodroid,xamarin.ios,xamarin.android,wp8,xamarin.forms",16161,False,1.2.0.8
+objo,2015-05-18T11:36:43.057Z,Provides custom controls and extensions for WPF 3D.,HelixToolkit.Wpf,False,1900-01-01T00:00:00+00:00,False,False,,"wpf,wpf3d,3D",100724,False,2015.1.516
+IntelliFactory,2015-05-18T14:41:42.86Z,WebSharper module for ASP.NET MVC,WebSharper.AspNetMvc,False,2018-03-21T14:44:37.87+00:00,True,False,,,4190,False,3.1.4.5
+aswanikumarc,2015-05-18T08:16:08.393Z,My package description.,UpnComponents_Dependencies,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+"Srinivasan Kidambi,srinivas@semantics3.com",2015-05-18T13:52:41.41Z,C# Client Library for querying Semantics3 APIs,Semantics3,False,2015-05-18T06:52:41.41-07:00,True,False,,"Semantics3,API,C#,OAuth,Products,Data",18728,False,1.0.0.27
+GeertvanHorrik,2015-05-18T14:45:41.053Z,Catel.Extensions.Memento library which provides the memento pattern implementation as a service.,Catel.Extensions.Memento,True,2016-11-29T13:36:18.13+00:00,True,False,,"catel,memento",85239,True,4.2.0-unstable0119
+magelia,2015-05-18T09:17:30.927Z,"This package is used by the Magelia WebStore extensibility project to get references to Magelia WebStore runtime library.
+      Please don't use directly, install the Magelia WebStore extensibility project and create a new Magelia WebStore extension Visual Studio project.",Magelia.WebStore.Runtime.Extensibility,False,2016-09-06T02:22:42.93-07:00,False,False,,"magelia,e-commerce",4023,False,3.1.354.27
+GeertvanHorrik,2015-05-18T14:45:56.517Z,Json serialization implementation for Catel.,Catel.Serialization.Json,True,2018-04-16T10:11:47.76+00:00,True,False,,"catel,json,serialization",27947,True,4.2.0-unstable0119
+The CefSharp Authors,2015-04-23T08:14:32.427Z,"The CefSharp Chromium-based browser component (WPF control). This is unofficial package. But it is very similar to official one. The only difference is that the 'Platform Toolset' changed to Visual Studio 2012 - Windows XP (v110_xp), so it works on XP and 2003 server.",CefSharp.Wpf.XP,False,2015-04-23T01:14:32.427-07:00,True,False,,"wpf,chrome,browser",5805,False,39.0.0
+Penshurst Inc.,2015-05-18T13:41:59.01Z,Markout Output Renderer,Markout.Output.Inlines,False,2016-10-31T10:55:18.84-07:00,True,False,,"markup,WPF,TextBox,Inlines",1459,False,1.2.0
+Penshurst Inc.,2015-05-18T13:41:59.01Z,Markout Output Renderer,Markout.Output.Inlines,False,2016-10-31T10:55:18.84-07:00,True,False,,"markup,WPF,TextBox,Inlines",1459,False,1.2.0
+"Andrew Gubskiy,Oleh Formaniuk",2015-05-16T09:28:05.197Z,Base classes for implementing API.,campus.core,False,1899-12-31T16:00:00-08:00,False,False,campus:core API library,"campus,dois,kpi,kbis,api,json,кпи,КБ,ИС,ntuu",-1,False,1.5.0.1300
+Gerard Braad,2015-05-18T09:12:08.757Z,AppFabric cache provider for simple distributed cache,DistributedCache.AppFabric,False,2015-05-18T02:12:08.757-07:00,True,False,,distributedcache,1746,False,1.0.0
+GeertvanHorrik,2015-05-18T14:45:18.053Z,Catel.Extensions.CSLA library which provides CSLA.NET view models for Catel.,Catel.Extensions.CSLA,True,2016-11-29T13:35:56.627+00:00,True,False,,"catel,csla,clsa.net",105219,True,4.2.0-unstable0119
+Bastian Eicher,2015-05-18T15:19:55.393Z,"The Zero Install Publishing API provides methods for creating and modifying feed files.
+The Zero Install Publishing Tools (including the Feed Editor) are built upon this API. You can use the API to automate complex feed creation/update tasks.",ZeroInstall.Publish,False,2018-02-16T15:37:25.5+00:00,True,False,Zero Install Publishing API (create and modify feeds),,7264,False,2.8.1
+"Nikolai Mynkow,Simeon Dimov",2015-05-18T13:04:46.417Z,Elders.Cronus.Serialization.Proteus,Cronus.Serialization.Proteus,False,2016-04-13T11:33:22.94-07:00,True,False,Elders.Cronus.Serialization.Proteus,,1135,False,2.0.0
+GeertvanHorrik,2015-05-18T14:45:47.54Z,Catel.Extensions.Prism5 library which contains helper classes for prism.,Catel.Extensions.Prism5,True,2016-11-29T05:36:24.067-08:00,True,False,,"prism,catel,mvvm",31104,True,4.2.0-unstable0119
+Dmytro Aleksandrov and co.,2015-05-18T09:47:40.523Z,Message classes for Eventsourcing library.,EventSourcing.Cqrs.Messages,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+BForms Team,2015-05-18T11:11:28.657Z,BForms UI Framework for ASP.NET MVC,BForms.MVC,False,2016-04-22T06:47:06.203-07:00,True,False,,"ASP.NET,MVC,UI,JavaScript",53440,False,1.0.0.203
+Jon Iles,2015-05-18T06:23:28.177Z,"MPXJ is an open source file handling library for Java and .Net to read and write Microsoft Project MPX and MSPDI XML files, Planner files, Primavera XER files and databases, and MPP, MPT, and MPD files for Project 98, 2000, 2002, 2003, 2007 and 2010. This version provides properties and C#-style method names, rather than Java style getters, setters, and method names.",net.sf.mpxj-for-csharp,False,2018-04-16T08:57:34.91+00:00,True,False,,,18946,False,5.1.0
+Abel Cheng,2015-05-18T14:29:04.71Z,"Less Code, Less Configuration, Less Time. DataBooster is a high-performance extension to ADO.NET Data Provider, includes a light encapsulation to minimize your DAL code and a booster to maximize throughput for writing mass data to database. Visit http://databooster.codeplex.com",DataBooster.Oracle.Managed,False,2018-04-01T03:16:03.76+00:00,True,False,,"DbParallel,DataAccess,ADO.NET,Booster,Launcher,Throughput,Oracle,ODP.NET,Managed,Bulk",11965,True,1.7.8.2
+Michael Janulaitis,2015-05-18T14:27:56.54Z,"A Windows assembly that contains server classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived server applications.",UpperSetting.OpenServer.Protocols.WinAuth.Server,False,2016-03-17T01:12:09.413-07:00,True,False,,"TCP,Socket,Server",5637,False,1.0.0.7
+Mackey Kinard,2015-05-18T14:28:55.633Z,Ajax Gateway Web Application Toolkit - Duo Code Runtime - 0.1.1.15-beta,AjaxGateway.Duo,True,1899-12-31T16:00:00-08:00,False,False,"The Ajax Gateway Duo Code add-on allows developers to compile C#-To-JavaScript, creating complex HTML5 front-ends for web applications in the C# language.","Owin,Ajax,Gateway,DuoCode,Remoting,REST,JSON,RPC,XML",30377,False,0.1.1.15-beta
+Dimension15,2015-05-18T12:53:28.68Z,Does selective property and field between two objects.,Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,True,False,,"mapper,map,object,clone,copy",1601,False,1.1.4
+Alex Artyomov,2015-05-18T12:02:14.737Z,FluentDataAnnotations.Mvc.Core - core functionality for FluentDataAnnotations.Mvc,FluentDataAnnotations.Mvc.Core,False,2015-08-11T07:15:28.157-07:00,True,False,"FluentDataAnnotations.Mvc is a library that provides fluent API for adding DataAnnotaions for ASP.NET MVC projects
+FluentDataAnnotations.Mvc.Core contains the core functionality for FluentDataAnnotat","ASP.NET,MVC,DataAnnotations",4172,False,1.1.6
+Sayed Ibrahim Hashimi,2015-05-18T07:34:03.183Z,This is a NuGet package which contains a module that simplifies downloading NuGet packages.,nuget-powershell,True,2016-04-30T13:51:10.88-07:00,True,False,,"nuget,powershell",4200,False,0.2.1-beta
+KWPDev,2015-05-18T12:54:09.957Z,"To release memory from web view while navigating between xaml pages.
+
+Add namespace to xaml.   xmlns:ws=""using:WebMemLeakSuppressor""
+
+set    ws:Suppressor.IsMemorySupressed=""True""
+
+inside webview control",WebViewLeakSupressor,False,2015-05-18T05:54:09.957-07:00,True,False,,"Web,view,memory.",782,False,1.0.2
+latticework,2015-05-18T08:01:45.843Z,latticework.cs,latticework.cs,False,2013-07-22T14:32:56.307+00:00,True,False,,,309952,False,0.0.938
+Jonathan Oliver and co.,2015-05-18T09:48:51.877Z,Embedded version of CommonDomain library with some fixes.,EventSourcing.CommonDomain,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+GeertvanHorrik,2015-05-18T14:45:33.147Z,Catel.Extensions.FluentValidation library which contains fluent validation extensions.,Catel.Extensions.FluentValidation,True,2016-11-29T05:36:11.987-08:00,True,False,,"validation,fluent,fluentvalidation,catel",125946,True,4.2.0-unstable0119
+"Andrew Gubskiy,Oleh Formaniuk",2015-05-16T09:28:05.197Z,Base classes for implementing API.,campus.core,False,1899-12-31T16:00:00-08:00,False,False,campus:core API library,"campus,dois,kpi,kbis,api,json,кпи,КБ,ИС,ntuu",-1,False,1.5.0.1300
+Samora Dake,2015-05-18T13:48:07.65Z,Easily build dynamic USSD applications on the SMSGH platform.,Smsgh.UssdFramework,False,2015-06-30T08:14:23.043-07:00,True,False,,,2493,False,1.3.0
+Dmytro Aleksandrov and co.,2015-05-18T09:49:29.297Z,Core classes for Eventsourcing library.,EventSourcing.Cqrs,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+LJ,2015-05-18T09:47:16.497Z,刘杰的网站框架,LJ.Base,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.6.0.1
+OElite Limited,2015-05-18T15:01:59.327Z,OElite Web API SDK for OElite Platform based application development,OElite.Web,False,2016-04-16T05:06:28.653-07:00,True,False,,oelite,102426,False,5.0.6
+amatkivskiy,2015-05-13T11:55:18.37Z,"Android-Iconics is a library to use (almost) any alternative iconfont in your projects. It allows you to add any Android-Iconics compatible typeface-library-addon to your project and you are able to start using that font.
+http://mikepenz.github.io/Android-Iconics",Mikepenz.Android.Iconics.Xamarin.Binding,False,2015-12-15T02:12:00.223-08:00,False,False,Xamarin binding for Android Iconics https://github.com/mikepenz/Android-Iconics,"Android,Xamarin,Icons,Material",10159,False,0.9.1
+"Nikolai Mynkow,Simeon Dimov",2015-05-18T12:34:33.727Z,Elders.Cronus.Serialization.Protoreg,Cronus.Serialization.Protoreg,False,2015-05-18T05:34:33.727-07:00,True,False,Elders.Cronus.Serialization.Protoreg,,688,False,2.0.0
+KWPDev,2015-05-18T05:44:27.603Z,"Add namespace to xaml.
+
+   xmlns:ws=""using:WebMemLeakSuppressor""
+
+set    ws:Suppressor.IsMemorySupressed=""True""
+
+inside webview control",WebViewLeakSupressor,False,2015-05-18T05:54:09.957-07:00,False,False,,"Web,view,memory.",782,False,1.0.0
+"Benjamin Mayrargue,Jérémie Laval",2015-05-18T15:00:03.62Z,"Use one SVG vector image instead of multiple bitmaps to display most icons in your Xamarin app. Supports Xamarin Android (axml tag and code), iOS (classic and unified, code only), Forms (XAML tag and code), Windows Phone 8 (XAML tag and code), and Mvvmcross binding. Purchase it instantly online with its full source code on the Xamarin Component Store. This free nuget package supports only Xamarin.Android projects.",Softlion.XamSvg.Free,False,2018-04-13T06:30:27.677+00:00,True,False,"SVG vector image support for Xamarin Android, iOS, Forms, Windows Phone 8 and MvvmCross","svg,xamarin,ios,android,monotouch,monodroid,xamarin.ios,xamarin.android,wp8,xamarin.forms",16161,False,1.2.0.8
+Tomasz Cielecki,2015-05-18T15:00:07.027Z,SimpleWebToken Plugin for MvvmCross.,Cheesebaron.MvxPlugins.SimpleWebToken,False,2017-11-09T19:22:33.59+00:00,True,False,,"mvvm,mvvmcross,xamarin,monodroid,monotouch,wpf,wp,wpdev,windowsphone,settings,wpa81,win81,mvx",3382,False,1.0.0
+Todd Morrison (todd@deepelement.com),2015-05-13T17:10:06.703Z,Use standard NodeJS modules directly from your WinStore/WP8 app,MetroNode,False,2015-06-15T13:48:50.707-07:00,False,False,,"NodeJS,Node,Metro,WP8,Universal-Apps,WinJS,Javascript,Compile,MSBuild",103048,False,0.2.2
+KWPDev,2015-05-18T05:48:08.19Z,"To release memory from web view while navigating between xaml pages.
+
+Add namespace to xaml.   xmlns:ws=""using:WebMemLeakSuppressor""
+
+set    ws:Suppressor.IsMemorySupressed=""True""
+
+inside webview control",WebViewLeakSupressor,False,2015-05-18T05:54:09.957-07:00,False,False,,"Web,view,memory.",782,False,1.0.1
+Patrick Evers,2015-05-18T12:48:10.53Z,A MVC 6 content management system.,Panther.CMS,False,1900-01-01T00:00:00+00:00,False,False,,"CMS,MVC6",2018,False,1.0.0
+Dmytro Aleksandrov and co.,2015-05-18T09:51:15.927Z,Neventstore integration for EventSourcing library.,EventSourcing.EventStore,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Dimension15,2015-05-18T13:19:56.637Z,Does property and field mapping between two objects. Can also ignore specified members or map between members with different names.,Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,True,False,,"mapper,map,object,clone,copy,duplicate,mapping,property,properties,member,variable,field",1601,False,1.1.6
+Dmytro Aleksandrov and co.,2015-05-18T09:47:40.523Z,Message classes for Eventsourcing library.,EventSourcing.Cqrs.Messages,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Dmytro Aleksandrov and co.,2015-05-18T09:52:27.317Z,Log4net implementation of EventSourcing.Cqrs.Services.ILogger interface.,EventSourcing.Logging,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Dmytro Aleksandrov and co.,2015-05-18T09:50:43.587Z,In-process event dispatcher for EventSourcing library.,EventSourcing.EventDispatcher,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+GeertvanHorrik,2015-05-18T14:45:41.053Z,Catel.Extensions.Memento library which provides the memento pattern implementation as a service.,Catel.Extensions.Memento,True,2016-11-29T13:36:18.13+00:00,True,False,,"catel,memento",85239,True,4.2.0-unstable0119
+Todd Morrison (todd@deepelement.com),2015-05-18T14:37:49.433Z,NodeJS Support for Windows 10 Javascript-based Apps,MetroNode,False,2015-06-15T13:48:50.707-07:00,True,False,,"NodeJS,Node,Metro,WP8,Universal-Apps,WUP,Win10,WinJS,Javascript,UWP",103048,False,0.2.3
+Rob Ladbrook (The App Business),2015-05-18T10:28:07.533Z,A common library containing all the Slack models and parsers useful when interacting with Slack,Tab.Slack.Common,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.1.0-alpha
+IntelliFactory,2015-05-18T14:43:44.727Z,Provides utilities missing from F# standard library,IntelliFactory.Core,True,2018-02-09T20:27:37.773+00:00,True,False,,,7658,False,0.2.63.78-alpha
+Administrator,2015-05-18T09:40:41.907Z,Description,LJ.Code.Generation,False,2015-06-25T00:53:44.363-07:00,True,False,,,1574,False,0.6.0
+Rob Ladbrook (The App Business),2015-05-18T10:34:01.37Z,A common library containing all the Slack models and parsers useful when interacting with Slack,Tab.Slack.Common,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.1.1-alpha
+Xamarin,2015-05-18T15:13:59.497Z,UI Automation Framework for Xamarin Test Cloud customers testing Android and iOS apps. Using the framework without a valid Xamarin Test Cloud account is restricted to running only on simulators and has a time limit of 15 minutes for a single test suite.,Xamarin.UITest,True,2018-04-02T11:34:03.027+00:00,True,False,,,1498751,False,0.7.2.1819-dev
+cdmdotnet Limited,2015-05-18T10:07:01.783Z,Components for implementing the event store using Greg Youngs EventStore for the Cqrs package,Cqrs.EventStore,False,2018-03-29T02:24:06.923+00:00,True,False,,,50917,False,1.500.541.431
+GeertvanHorrik,2015-05-18T14:45:15.58Z,"Catel.Extensions.Controls library which contains user controls, such as the StackGrid.",Catel.Extensions.Controls,True,2016-11-29T13:35:55.627+00:00,True,False,,"windows,controls,stackgrid,styles,stylehelper",170050,True,4.2.0-unstable0119
+"Andrew Gubskiy,Oleh Formaniuk",2014-11-29T21:48:44.773Z,Base classes for implementing API.,campus.core,True,1899-12-31T16:00:00-08:00,False,False,campus:core API library,"campus,dois,kpi,kbis,api,json,кпи,КБ,ИС,ntuu",-1,False,2.0.0.1000-beta
+Adrian IORGU,2015-05-18T06:39:00.17Z,Cognifide.SiteCore.Extension.VersionFromLanguage.dll,CognifideSiteCoreVersionFromLanguage,False,1899-12-31T16:00:00-08:00,False,False,,"Cognifide,VersionFromLanguage,SSI",-1,False,1.0.0
+GeertvanHorrik,2015-05-18T14:45:43.087Z,Catel.Extensions.Prism4 library which contains helper classes for prism.,Catel.Extensions.Prism,True,2016-11-29T13:36:21.16+00:00,True,False,,"prism,catel,mvvm",129402,True,4.2.0-unstable0119
+Jon Iles,2015-05-18T06:27:12.467Z,"MPXJ is an open source file handling library for Java and .Net to read and write Microsoft Project MPX and MSPDI XML files, Planner files, Primavera XER files and databases, and MPP, MPT, and MPD files for Project 98, 2000, 2002, 2003, 2007 and 2010. This version provides properties, rather than Java style getters, setters.",net.sf.mpxj-for-vb,False,2018-04-16T08:57:49.847+00:00,True,False,,,9261,False,5.1.0
+Michael Janulaitis,2015-05-18T14:23:59.113Z,"A Windows Mobile assembly that contains classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived Windows Mobile applications.",UpperSetting.OpenServer.WindowsMobile,False,2016-03-17T01:11:21.623-07:00,True,False,,"TCP,Socket,Server",5510,False,1.0.0.7
+Dimension15,2015-05-18T12:03:11.107Z,"Does object mapping between two objects.
+For further usage information goto: http://www.dimension15.co.za/Pages/ObjectMapper",Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,False,False,,"mapper,map,object,clone,copy",1601,False,1.1.3
+Andrew Gubskiy,2014-12-04T22:08:56.877Z,SDK for KPI campus application .net developers,campus.sdk,False,1899-12-31T16:00:00-08:00,False,False,,"campus,kpi,core,ecampus,kbis,dois,ntuu",-1,False,1.0.0.200
+Dmytro Aleksandrov and co.,2015-05-18T08:39:00.853Z,Projections rebuild and remote polling client wrapper utilities.,EventSourcing.Rebuild,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+Alex Artyomov,2015-05-18T12:01:10.737Z,FluentDataAnnotations.Mvc is a library that provides fluent API for adding DataAnnotaions for ASP.NET MVC projects,FluentDataAnnotations.Mvc,False,2016-04-03T02:04:54.757-07:00,True,False,FluentDataAnnotations.Mvc is a library that provides fluent API for adding DataAnnotaions for ASP.NET MVC projects.,"ASP.NET,MVC,DataAnnotations",2965,False,1.1.6
+Dimension15,2015-05-18T11:56:24.69Z,"Does object mapping between two objects.
+For further usage information goto: http://www.dimension15.co.za/Pages/ObjectMapper",Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,True,False,,"mapper,map,object,clone,copy",1601,False,1.1.2
+cdmdotnet Limited,2015-05-18T10:17:52.467Z,Components for implementing repositories using Sql for the Cqrs package,Cqrs.Sql,False,2018-03-29T02:29:20.07+00:00,True,False,,,24229,False,1.500.541.431
+Penshurst Inc.,2015-05-18T13:43:58.737Z,Markout Display WPF Controls,Markout.Output.Inlines.Controls,False,2016-10-31T10:56:12-07:00,True,False,,"markup,WPF,TextBox,Inlines",1110,False,1.2.0
+Administrator,2015-05-18T09:42:31.147Z,Description,LJ.Base.Web,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.6.0
+objo,2015-05-18T11:59:00.027Z,Provides custom controls for WPF and a scene graph based on SharpDX.,HelixToolkit.Wpf.SharpDX,False,1900-01-01T00:00:00+00:00,False,False,,"wpf,SharpDX,3D",37254,False,2015.1.517
+cdmdotnet Limited,2015-05-18T10:09:51.75Z,Components for implementing repositories using Mongo for the Cqrs package,Cqrs.Mongo,False,2018-03-29T02:24:39.427+00:00,True,False,,,50676,False,1.500.541.431
+GeertvanHorrik,2015-05-18T14:45:35.96Z,Catel.Extensions.Interception library which provides interception capabilities.,Catel.Extensions.Interception,True,2016-11-29T13:36:15.02+00:00,True,False,,"catel,interception",80561,True,4.2.0-unstable0119
+GeertvanHorrik,2015-05-18T14:45:23.947Z,"Catel.Extensions.DynamicObjects library which provides dynamic objects. This adds the IDynamicMetaObjectProvider and ICustomTypeProvider
+	  to the ModelBase class.",Catel.Extensions.DynamicObjects,True,2016-11-29T05:36:02.283-08:00,True,False,,"catel,data,model,modelbase,dynamic,object,IDynamicMetaObjectProvider,ICustomTypeProvider",76212,True,4.2.0-unstable0119
+GeertvanHorrik,2015-05-18T14:45:29.953Z,"Catel.Extensions.EntityFramework6 library which provides data classes such as repositories, unit of work, DbContextManager and more.",Catel.Extensions.EntityFramework6,True,2016-11-29T13:36:08.753+00:00,True,False,,"catel,entity,framework,entityframework,EF,EF6,UnitOfWork,unit,of,work,DbContextManager,repository,repositories,database",74377,True,4.2.0-unstable0119
+Dave Senn,2015-05-18T08:48:26.023Z,PortableExtensions is a set of .Net extension methods build as portable class library. PortableExtensions enhance the .Net framework by adding a bunch of methods to increase developer’s productivity.,PortableExtensions,False,1900-01-01T00:00:00+00:00,False,False,,"C#,Extensions,Portable,Extension,Methods,.Net,Library,PCL",16906,False,1.1.4.102
+Dmytro Aleksandrov and co.,2015-05-18T08:38:20.323Z,Neventstore integration for EventSourcing library.,EventSourcing.EventStore,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+DlhSoft,2015-05-18T07:43:50.197Z,"Task hierarchy and resource scheduling components for Silverlight™ 4 / WPF and .NET 4: Gantt Chart, Schedule Chart, Load Chart; PERT Chart, Network Diagram. Main features: Interactive task hierarchy management, resource scheduling, resource load, and project flow charts; Task bars and dependency lines with drag and drop support; Copy and paste operations, undo queue; Working time, scales, and zoom level customization; Project baseline visualization, critical path enumeration; Resource leveling algorithm; Support to display multiple assignment lines in a single row; Data binding with high customizability; Increased performance for large sets of data; Rich user experience, customizable appearance, culture awareness; Customizable printing and image exporting; Two-way Microsoft Project® XML compatibility; Model-View-ViewModel (MVVM) pattern support (Prism).",DlhSoft.GanttChartLightLibrary,False,2018-03-16T15:33:43.65+00:00,True,False,"Task hierarchy and resource scheduling components for Silverlight™ 4 / WPF and .NET 4: Gantt Chart, Schedule Chart, Load Chart; PERT Chart, Network Diagram.","Gantt,schedule,PERT,chart,project,task,management,Silverlight,WPF,LightSwitch",15614,False,4.3.34.3
+DlhSoft,2015-05-18T07:43:50.197Z,"Task hierarchy and resource scheduling components for Silverlight™ 4 / WPF and .NET 4: Gantt Chart, Schedule Chart, Load Chart; PERT Chart, Network Diagram. Main features: Interactive task hierarchy management, resource scheduling, resource load, and project flow charts; Task bars and dependency lines with drag and drop support; Copy and paste operations, undo queue; Working time, scales, and zoom level customization; Project baseline visualization, critical path enumeration; Resource leveling algorithm; Support to display multiple assignment lines in a single row; Data binding with high customizability; Increased performance for large sets of data; Rich user experience, customizable appearance, culture awareness; Customizable printing and image exporting; Two-way Microsoft Project® XML compatibility; Model-View-ViewModel (MVVM) pattern support (Prism).",DlhSoft.GanttChartLightLibrary,False,2018-03-16T15:33:43.65+00:00,True,False,"Task hierarchy and resource scheduling components for Silverlight™ 4 / WPF and .NET 4: Gantt Chart, Schedule Chart, Load Chart; PERT Chart, Network Diagram.","Gantt,schedule,PERT,chart,project,task,management,Silverlight,WPF,LightSwitch",15614,False,4.3.34.3
+cdmdotnet Limited,2015-05-18T10:09:51.75Z,Components for implementing repositories using Mongo for the Cqrs package,Cqrs.Mongo,False,2018-03-29T02:24:39.427+00:00,True,False,,,50676,False,1.500.541.431
+MoonStorm,2015-05-18T05:40:48.467Z,"Fast Dapper CRUD extensions added to the IDbConnection for convenience and a less error prone experience. This library is 2x faster than Dapper.SimpleCRUD.
+For Dapper constructs in general, it is recommended to use Visual Studio 2015 for features such as nameof and string interpolation but that's not a requirement.
+
+The package contains .NET 4.5 and 4.6 DLLs, one of which will be installed based on the target framework in your project. 
+For .NET 4.5, the code contains the polyfills for the missing FormattableString class, which is required when targetting that framework version and using string interpolation with the C# 6 compiler in VS 2015.
+
+Features:
+----------
+- Support for LocalDb and Ms Sql Server (more coming soon)
+- Entities having composite primary keys are supported
+- All the CRUD methods accept a transaction and a command timeout
+- Fast pre-computed entity queries
+- A generic T4 template is also provided for convenience. Entity domain partitioning and generation can be achieved via separate template configurations.
+Existing POCO entities are also supported which can be decorated with attributes such as Table, Key and DatabaseGenerated.
+Column name overrides are not supported and not recommended. As you'll end up writing more complex SQL queries, outside of the domain of this library, you'll want to use the nameof operator as much as possible.
+
+Examples of usage:
+-------------------
+- dbConnection.Insert(newEntity);
+- dbConnection.Get()
+- dbConnection.Get(new Entity() {Id = 10});
+- dbConnection.Update(updatedEntity);
+- dbConnection.Delete(entity)
+- dbConnection.GetTableName<Entity>()
+- dbConnection.Find<Entity>(
+        whereClause:$""{nameof(Entity.FirstName)}=@FirstNameParam"",
+        orderClause:$""{nameof(Entity.LastName)} DESC"",
+        skipRowsCount:10, limitRowsCount:20,
+        queryParameters: new {FirstNameParam: ""John""});
+
+This is where the power of the C# 6 compiler comes into play, and leaves no chance to mistypings or to problems arising from db entity refactorings.
+More details and benchmarks are available on the project site.",Dapper.FastCrud,False,2016-10-27T02:14:24.093+00:00,True,False,Fast CRUD extensions added to the IDbConnection for convenience and a less error prone experience with Dapper.,"Dapper,CRUD",57654,False,1.0.2
+latticework,2015-05-18T08:01:43.483Z,latticework.cs,latticework.cs,False,2013-07-22T14:32:56.307+00:00,True,False,,,309952,False,0.0.939
+kirk,2015-05-18T13:24:10.22Z,Fody extension to generate RaisePropertyChange notifications for properties and ObservableAsPropertyHelper properties.,ReactiveUI.Fody,False,2017-07-21T15:48:05.057+00:00,True,False,,"reactiveui,fody",42461,True,1.0.51
+BForms Team,2015-05-18T11:11:28.657Z,BForms UI Framework for ASP.NET MVC,BForms.MVC,False,2016-04-22T06:47:06.203-07:00,True,False,,"ASP.NET,MVC,UI,JavaScript",53440,False,1.0.0.203
+Harry McIntyre,2015-05-18T10:01:45.967Z,Strongly type html helpers for rendering jquery.datatables tables from IQueryables,Mvc.JQuery.Datatables,False,2018-02-13T13:32:31.3+00:00,True,False,,"jquery,datatables,iqueryable,razor",126112,False,1.2.150
+Andrew Gubskiy,2015-05-18T11:12:00.927Z,SDK for KPI campus application .net developers,campus.sdk,False,1899-12-31T16:00:00-08:00,False,False,,"campus,kpi,core,ecampus,kbis,dois,ntuu",-1,False,1.5.1.1100
+amatkivskiy,2015-05-18T08:31:13.223Z,"C# bindings for Android Iconics library.
+
+Android-Iconics is a library to use (almost) any alternative iconfont in your projects. It allows you to add any Android-Iconics compatible typeface-library-addon to your project and you are able to start using that font.
+http://mikepenz.github.io/Android-Iconics",Mikepenz.Android.Iconics.Xamarin.Binding,False,2015-12-15T02:12:00.223-08:00,True,False,Xamarin binding for Android Iconics https://github.com/mikepenz/Android-Iconics,"Android,Xamarin,Icons,Material",10159,False,0.9.1.2
+Alex Artyomov,2015-05-18T12:01:10.737Z,FluentDataAnnotations.Mvc is a library that provides fluent API for adding DataAnnotaions for ASP.NET MVC projects,FluentDataAnnotations.Mvc,False,2016-04-03T02:04:54.757-07:00,True,False,FluentDataAnnotations.Mvc is a library that provides fluent API for adding DataAnnotaions for ASP.NET MVC projects.,"ASP.NET,MVC,DataAnnotations",2965,False,1.1.6
+Stanislaw Wozniak & Taliesin Sisson,2015-05-18T13:15:09.963Z,"Powershell scripts that automated component deployment. Supports windows services (srvany.exe, NServiceBus, TopShelf) and websites.",Powershell.Deployment,False,2017-05-04T08:17:55.537-07:00,True,False,,"powershell,deployment,mvc,nservicebus,topshelf",7275,False,1.2.0.31
+Xerox,2015-05-18T07:52:32.263Z,EnterpriseCloud.ServiceBus.Receive using WCF service bus model,EnterpriseCloud.ServiceBus.ReceiveClient,False,2015-05-19T00:45:55.113-07:00,True,False,EnterpriseCloud.ServiceBus.Receive,,1202,False,1.0.4
+cdmdotnet Limited,2015-05-18T10:12:15.527Z,Components for implementing I.O.C. requirements via Ninject for using Azure Servuce Bus as the event bus.,Cqrs.Ninject.Azure.ServiceBus.EventBus,False,2018-03-29T02:26:43.153+00:00,True,False,,,26057,False,1.500.541.431
+Tomasz Cielecki,2015-05-18T15:00:07.027Z,SimpleWebToken Plugin for MvvmCross.,Cheesebaron.MvxPlugins.SimpleWebToken,False,2017-11-09T19:22:33.59+00:00,True,False,,"mvvm,mvvmcross,xamarin,monodroid,monotouch,wpf,wp,wpdev,windowsphone,settings,wpa81,win81,mvx",3382,False,1.0.0
+Dmytro Aleksandrov and co.,2015-05-18T09:49:29.297Z,Core classes for Eventsourcing library.,EventSourcing.Cqrs,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Tatham Oddie,2015-05-18T13:55:24.573Z,Testing helpers for the System.IO.Abstractions package to save having to manually mock everything.,System.IO.Abstractions.TestingHelpers,False,2018-01-11T23:41:49.64+00:00,True,False,,testing,225646,False,2.0.0.115
+Weingartner Maschinenbau GmbH,2015-05-18T05:36:21.3Z,Provides a type that can generate a hash out of a types properties and uses this hash to determine whether serialized data should be migrated. If the data should be migrated it calls user-defined migration methods which do the migration. A fody weaver is used to check if a type has changed at build-time.,Weingartner.Json.Migration.Fody,False,1899-12-31T16:00:00-08:00,False,False,Helps migrating serialized data.,,-1,False,0.6.7
+amatkivskiy,2015-05-13T11:55:18.37Z,"Android-Iconics is a library to use (almost) any alternative iconfont in your projects. It allows you to add any Android-Iconics compatible typeface-library-addon to your project and you are able to start using that font.
+http://mikepenz.github.io/Android-Iconics",Mikepenz.Android.Iconics.Xamarin.Binding,False,2015-12-15T02:12:00.223-08:00,False,False,Xamarin binding for Android Iconics https://github.com/mikepenz/Android-Iconics,"Android,Xamarin,Icons,Material",10159,False,0.9.1
+"Lee Walker,Elliott Spencer",2015-05-18T14:05:33.363Z,A Source Server Query Library,SSQLib,False,2015-05-18T07:05:33.363-07:00,True,False,,"Source,Server,Query,Library,Valve,Counterstrike,Global,Offensive",753,False,0.9.2
+Synercoding,2015-05-18T13:20:08.677Z,A library that helps you implement a UnitOfWork pattern,Synercoding.UnitOfWork,True,2015-12-10T09:24:26.333-08:00,True,False,,"EF,UnitOfWork,Database,Data,vNext",2780,False,3.0.0-alpha2
+Maciej Raczkowski,2015-05-18T13:11:34.97Z,Active Campaign C# wrapper,ActiveCampaign,True,1899-12-31T16:00:00-08:00,False,False,,"Active,Campaign,wrapper,c#",-1,False,1.0.1-beta2
+Luo,2015-05-15T10:24:29.817Z,My package description.,Lion.Core,False,2015-10-27T02:29:18.893-07:00,False,False,,,4347,False,4.1.4
+Jonathan Oliver and co.,2015-05-18T08:35:56.54Z,Embedded version of CommonDomain library with some fixes.,EventSourcing.CommonDomain,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+Dmytro Aleksandrov and co.,2015-05-18T08:36:33.147Z,Core classes for Eventsourcing library.,EventSourcing.Cqrs,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+Dominik Frefel,2015-05-18T11:58:02.987Z,This is a test. Do not download.,Fhnw.Ecnf.RoutePlanner.RoutePlannerLib,False,2015-05-27T01:57:14.443-07:00,False,False,,,812,False,1.0.0
+GeertvanHorrik,2015-05-18T14:45:56.517Z,Json serialization implementation for Catel.,Catel.Serialization.Json,True,2018-04-16T10:11:47.76+00:00,True,False,,"catel,json,serialization",27947,True,4.2.0-unstable0119
+ubershmekel,2015-05-18T05:21:49.1Z,Mustache.js compliant templating engine for .NET,Mustache.cs,False,1899-12-31T16:00:00-08:00,False,False,,"mustache,handlebars.js,text,generation,building,template,mustache.js,mustache.cs",1108,False,0.1.9.2
+Synercoding,2015-05-18T11:44:17.507Z,A library that helps you implement a UnitOfWork pattern,Synercoding.UnitOfWork,True,2015-12-10T09:24:26.333-08:00,True,False,,"EF,UnitOfWork,Database,Data,vNext",2780,False,3.0.0-alpha
+Dmytro Aleksandrov and co.,2015-05-18T09:52:59.593Z,Mongo utils.,EventSourcing.Misc.Mongo,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Flllexa,2015-05-18T05:37:49.127Z,UgApi is a implementation of IUGU payment modules (http://iugu.com),ugApi,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.5616.4648
+Todd Morrison (todd@deepelement.com),2015-05-18T14:37:49.433Z,NodeJS Support for Windows 10 Javascript-based Apps,MetroNode,False,2015-06-15T13:48:50.707-07:00,True,False,,"NodeJS,Node,Metro,WP8,Universal-Apps,WUP,Win10,WinJS,Javascript,UWP",103048,False,0.2.3
+Bastian Eicher,2015-05-18T15:21:23.25Z,"The Zero Install Storage API contains data models and management functions for all local file storage used by Zero Install.
+This API provides a common basis for the packages ZeroInstall.Services and ZeroInstall.Publish. You will usually get this package indirectly as a dependency from there.",ZeroInstall.Store,False,2018-02-16T15:38:12.72+00:00,True,False,Zero Install Storage API (data models and management functions),,7835,False,2.8.1
+Hesse,2015-05-18T11:34:50.863Z,Hesse is a experiment,Hesse,False,2015-05-18T19:54:47.427-07:00,False,False,,hesse,757,False,1.0.1
+GeertvanHorrik,2015-05-18T14:45:56.517Z,Json serialization implementation for Catel.,Catel.Serialization.Json,True,2018-04-16T10:11:47.76+00:00,True,False,,"catel,json,serialization",27947,True,4.2.0-unstable0119
+Dmytro Aleksandrov and co.,2015-05-18T09:50:43.587Z,In-process event dispatcher for EventSourcing library.,EventSourcing.EventDispatcher,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.11
+Fanie Reynders,2015-05-15T22:28:23.97Z,Provides an endpoint for ASP.NET Web Api services to serve a JavaScript proxy and metadata,WebApiProxy.Server,False,1899-12-31T16:00:00-08:00,False,False,,"AspNet,WebAPI,Proxy,JavaScript,CSharp",-1,False,1.2.0.27269
+BTCTrader,2015-05-18T08:05:41.35Z,"C# client for the broker API of BTCTrader. You can use this client to connect to the APIs of btcturk.com, btcgreece.com, btcexchange.ph and other BTCTrader partners.
+
+The _baseUrl, public and private key variables needs must be set.
+
+To use with BTCTurk, set the _baseUrl to ""https://www.btcturk.com"" for BTCExchange.PH, use ""https://btcexchange.ph"" etc..
+
+The public and private keys can be found under Account->API Access or similar pages in your account on each exchange.",BTCTrader.APIClient,False,2016-09-22T13:03:13.1+00:00,True,False,"C# client for the broker API of BTCTrader. You can use this client to connect to the APIs of btcturk.com, btcgreece.com, btcexchange.ph and other BTCTrader partners.",,5556,False,1.0.0
+Mackey Kinard,2015-05-18T15:06:50.723Z,Ajax Gateway Web Application Toolkit - Host Services - 0.1.1.16-beta,AjaxGateway.Host,True,1899-12-31T16:00:00-08:00,False,False,"The Ajax Gateway is a GWT like development toolkit for building complex enterprise AJAX host applications in the C# language. Its goal is to enable productive development of cross platform, self contained server or service host applications for C# developers.","Owin,Ajax,Gateway,DuoCode,Remoting,REST,JSON,RPC,XML",29898,False,0.1.1.16-beta
+Michael Janulaitis,2015-05-18T14:26:10.157Z,"A portable assembly that contains shared classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived server, client and mobile applications.",UpperSetting.OpenServer.Protocols.KeepAlive,False,2016-03-17T01:11:48.11-07:00,True,False,,"TCP,Socket,Server",5607,False,1.0.0.7
+Dimension15,2015-05-18T12:03:11.107Z,"Does object mapping between two objects.
+For further usage information goto: http://www.dimension15.co.za/Pages/ObjectMapper",Dimension15.DotNetTools.ObjectMapper,False,2015-05-18T06:19:56.637-07:00,True,False,,"mapper,map,object,clone,copy",1601,False,1.1.3
+Michael Janulaitis,2015-05-18T14:22:41.553Z,"A Windows assembly that contains server classes, interfaces, enumerations and extensions used by DotNetOpenServer SDK derived Windows server applications.",UpperSetting.OpenServer,False,2016-03-17T01:11:07.7-07:00,True,False,,"TCP,Socket,Server",6350,False,1.0.0.7
+cdmdotnet Limited,2015-05-18T10:11:06.38Z,Components for implementing the I.O.C. via Ninject for Azure DocumentDb Cqrs package,Cqrs.Ninject.Azure.DocumentDb,False,2018-03-29T02:25:50.197+00:00,True,False,,,42270,False,1.500.541.431
+cdmdotnet Limited,2015-05-18T10:11:40.397Z,Components for implementing I.O.C. requirements via Ninject for using Azure Servuce Bus as the command bus.,Cqrs.Ninject.Azure.ServiceBus.CommandBus,False,2018-03-29T02:26:29.34+00:00,True,False,,,25859,False,1.500.541.431
+www.homethic.com,2015-05-18T07:42:56.847Z,Connector to an MSAccess Database,Fozzy.MSAccess,False,2015-06-01T07:52:38.787-07:00,True,False,Connector to an MSAccess Database,"Semantic,API",2757,False,1.2.3.9
+Oystein Bjorke,2015-05-18T12:59:44.303Z,"Please use the platform specific packages, this package is obsolete.",OxyPlot.Mobile,True,1899-12-31T16:00:00-08:00,False,False,,"plotting,plot,charting,chart,wp8,windows,phone,8,windowsphone,winphone,winrt,win8,metro,store,xamarin,android,ios,monotouch",-1,False,2015.1.889-alpha
+KWPDev,2015-05-18T05:48:08.19Z,"To release memory from web view while navigating between xaml pages.
+
+Add namespace to xaml.   xmlns:ws=""using:WebMemLeakSuppressor""
+
+set    ws:Suppressor.IsMemorySupressed=""True""
+
+inside webview control",WebViewLeakSupressor,False,2015-05-18T05:54:09.957-07:00,False,False,,"Web,view,memory.",782,False,1.0.1
+Xerox,2015-05-15T10:24:27.677Z,EnterpriseCloud.ServiceBus.Receive using WCF service bus model,EnterpriseCloud.ServiceBus.Receive,False,1899-12-31T16:00:00-08:00,False,False,EnterpriseCloud.ServiceBus.Receive,,-1,False,1.0.3
+"Benjamin Mayrargue,Jérémie Laval",2015-05-18T14:45:45.71Z,"Use one SVG vector image instead of multiple bitmaps to display most icons in your Xamarin app. Supports Xamarin Android (axml tag and code), iOS (classic and unified, code only), Forms (XAML tag and code), Windows Phone 8 (XAML tag and code), and Mvvmcross binding. Purchase it instantly online with its full source code on the Xamarin Component Store. This free nuget package supports only Xamarin.Android projects.",Softlion.XamSvg.Free,False,2018-04-13T06:30:27.677+00:00,True,False,"SVG vector image support for Xamarin Android, iOS, Forms, Windows Phone 8 and MvvmCross","svg,xamarin,ios,android,monotouch,monodroid,xamarin.ios,xamarin.android,wp8,xamarin.forms",16161,False,1.2.0.7
+Dmytro Aleksandrov and co.,2015-05-18T08:34:43.117Z,Message classes for Eventsourcing library.,EventSourcing.Cqrs.Messages,False,1899-12-31T16:00:00-08:00,False,False,,"CQRS,EventSourcing",-1,False,1.0.0.10
+Oystein Bjorke,2015-05-18T13:00:48.987Z,"OxyPlot is a plotting library for .NET. This package includes a portable library for Xamarin.Forms apps and platform-specific libraries for iOS, Android and Windows Phone.",OxyPlot.Xamarin.Forms,True,1899-12-31T16:00:00-08:00,False,False,,"plotting,plot,charting,chart,xamarin,forms,android,windows,phone,ios",36961,False,2015.1.889-alpha
+Flllexa,2015-05-18T05:37:49.127Z,UgApi is a implementation of IUGU payment modules (http://iugu.com),ugApi,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.5616.4648

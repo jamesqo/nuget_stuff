@@ -1,0 +1,895 @@
+authors,created,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+Nicolas Dorier,2014-09-19T13:48:15.59Z,Port of Bitcoin from C++ and Java with full test suite on github (https://github.com/NicolasDorier/NBitcoin),NBitcoin,False,2018-04-17T15:54:48.943+00:00,True,False,"See http://www.codeproject.com/Articles/768412/NBitcoin-The-most-complete-Bitcoin-port-Part-Crypt to get started.
+			Full script evaluation and parsing
+			Key generation
+			Deterministic wallet : BIP 32
+			Payment protocol
+			RPC Client
+			Encrypted wallet : BIP 38 (http://www.codeproject.com/Articles/775226/NBitcoin-Cryptography-Part)
+			Stealth Addresses (http://www.codeproject.com/Articles/775226/NBitcoin-Cryptography-Part)
+			Standard script generation and parsing
+			Object model faithful to the C++ API but with C# goodness
+			Simpler API (here is how to generate a key and get the address : new Key().PubKey.Address.ToString())
+			Bloom filter, partial merkle tree
+			Serialization of Blocks, Transactions, Script
+			Signing/verification with private keys, support compact signature for prooving ownership
+			NodeServer implementation
+
+			And more check at https://github.com/NicolasDorier/NBitcoin/blob/master/README.md",,121456,False,1.0.5.2
+Bobby Cannon,2014-09-18T21:57:05.97Z,Integration testing framework for developers. TestR allows automating testing of web applications. Adds PowerShell features that are not part of the regular deployment.,TestR.PowerShell,False,2018-02-18T21:44:26.703+00:00,True,False,,"PowerShell,TestR,Test,UnitTest,IntegrationTest,Automation,Testing,Web,InternetExplorer,FireFox,Chrome",21824,False,0.2.5374.39462
+Ninject Project Contributors,2014-09-19T14:25:27.627Z,Adds Web hosting support to web common.,Ninject.Web.Common.WebHost,True,2017-10-23T14:34:18.073+00:00,True,False,,"Ninject,ioc,di,ASP.NET",2145126,False,3.2.3-unstable-001
+Jon Arild Torresdal,2014-09-19T11:18:23.053Z,"Note: This package is for extending the ConDep DSL. If you're looking for ConDep to do deployment or infrastructure as code, please use the ConDep package. ConDep is a highly extendable Domain Specific Language for Continuous Deployment, Continuous Delivery and Infrastructure as Code on Windows.",ConDep.Dsl,True,2016-12-06T04:12:57.487-08:00,True,False,,"Continuous,Deployment,Delivery,Infrastructure,WebDeploy,Deploy,msdeploy,IIS,automation,powershell,remote",65757,False,3.0.52-beta
+Mogens Heller Grabe,2014-09-19T14:41:16.927Z,MSSQL stuff for d60 event sourcing + cqrs kit,d60.Cirqus.MsSql,False,2014-10-22T01:23:36.117-07:00,True,False,,,9355,False,0.23.0
+mookid8000,2014-09-19T10:48:06.927Z,Provides a Castle Windsor container adapter for Rebus,Rebus.Castle.Windsor,False,2018-04-05T08:24:59.397+00:00,True,False,,"rebus,castle,windsor,di,dependencyInjection,ioc,inversionOfControl",92964,False,0.71.1
+QuatroDev,2014-09-18T23:39:03.32Z,Simplr WebApi implementation,Simplr.WebApi,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.36
+Ninject Project Contributors,2014-09-19T14:23:32.45Z,Bootstrapper for web projects,Ninject.Web.Common,True,2017-10-23T14:33:41.953+00:00,True,False,,"Ninject,ioc,di,ASP.NET",3330807,False,3.2.3-unstable-001
+Сергей Щипанов,2014-09-18T20:28:03.413Z,"ДотНет апи Вконтакте,",VKSDK,False,2014-09-18T13:28:03.413-07:00,True,False,,"Vk,Vkontakte,Вконтакте",3518,False,1.1.0.6
+Thong Nguyen,2014-09-18T23:55:02.633Z,"Shaolinq is a thoughtfully designed ORM and Linq provider for .NET
+    
+Use this package to add Shaolinq and out-of-the-box MySql support.
+    
+Designed to perform super fast and be easy to use, Shaolinq's features also include:
+    
+- First class schema-first ORM with WYSIWYG data access and minipulation.
+- First class LINQ support (not the basic kind you see in most other OSS projects).
+- Single trip updating of objects.
+- Support for Sqlite, MySql and Postgres.
+- Automatic database creation and schema migration.
+- Delete LINQ extension for batch server side deletes.
+- Full support for server side date functions (Date.DayOfWeek etc).
+- Easily extensible with a simple interface for adding support for other ADO.NET compatible databases.
+- Open Source!",Shaolinq.MySql,False,2018-02-06T23:34:50.14+00:00,True,False,A thoughtful ORM and Linq provider for .NET and MySql,"linq,provider,orm,sqlite,mysql,sql,database",49605,False,0.6.0.160
+Oystein Bjorke,2014-09-18T20:59:00.627Z,"OxyPlot is an open source plotting library for .NET. This package contains the .pdf export extensions for Silverlight, .NET 4.0 and .NET 4.5.",OxyPlot.Pdf,False,1900-01-01T00:00:00+00:00,False,False,,"pdf,plotting,plot,charting,chart",122084,False,2014.1.472
+NServiceBus Ltd,2014-09-19T01:05:18.89Z,Azure support for NServicebus,NServiceBus.Azure,False,2017-02-27T15:06:56.187-08:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",153907,False,5.3.5
+Volkan Ceylan,2014-09-19T19:37:14.79Z,Contains Serenity core and UI script libraries. Use only with Saltarelle projects that produce Javascript code.,Serenity.Script,False,2018-01-30T18:51:12.2+00:00,True,False,,Serenity,50802,False,1.1.6
+Andre Marschalek,2014-09-18T21:58:11.623Z,Gadgeteer Driver for GHI Keypad KP16 Module,Gadgeteer.Module.Keypad.KP16,False,1899-12-31T16:00:00-08:00,False,False,,"'.NET,Micro,Framework',.netmf,Gadgeteer,Module,Driver",-1,False,1.0.0.2
+Tradier,2014-09-19T09:07:03.427Z,Tradier SDK,Tradier.NET,False,2014-12-18T08:05:53.4-08:00,True,False,,,8129,False,1.0.3549.546
+NServiceBus Ltd,2014-09-19T01:08:48.703Z,NServiceBus Transport for the Windows Azure Storage Queues,NServiceBus.Azure.Transports.WindowsAzureStorageQueues,False,2018-02-16T08:29:58.587+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",60231,False,5.3.5
+Morten Fæster,2014-09-19T12:01:18.797Z,Representation and serialization of user deltas as it is exposed on the message queue.,JpPolitikensHus.MedieLogin.Sso.UserDelta,False,2018-04-11T13:37:16.403+00:00,True,False,,"SSO,Medielogin",4380,False,0.6.0.118
+"Steffen Forkmann,Alexander Gross",2014-09-19T16:14:38.53Z,A package dependency manager for .NET with support for NuGet packages and GitHub files.,Paket,False,2018-04-17T08:54:34.933+00:00,True,False,A package dependency manager for .NET with support for NuGet packages and GitHub files.,"nuget,bundler,F#",825043,False,0.2.13
+Media Browser Team,2014-09-18T22:36:51.98Z,ApiClient allows .NET clients to easily access the Media Browser 3 web API,MediaBrowser.ApiClient.Signed,False,2014-09-18T16:29:47.53-07:00,True,False,,,5512,False,3.0.0.345
+OrchestraDevs,2014-09-18T21:41:27.313Z,WPF UI to help users build collection filters.,Orc.FilterBuilder,True,2018-04-13T11:10:55.353+00:00,True,False,,"wpf,silverlight,orcomp,collection,filter,builder",19371,True,1.4.0-unstable0037
+Alwyn Lombaard,2014-09-19T11:54:38.997Z,"This library simplifies the creation and triggering of ExactTarget ""Triggered Send Definitions"" via the ExactTarget API.",ExactTarget.TriggerEmailSender,True,2015-02-11T05:33:56.417-08:00,True,False,"This library simplifies the creation and triggering of ExactTarget ""Triggered Send Definitions"" via the ExactTarget API.","ExactTarget,triggered,email,sender,TriggeredSendDefintion",4492,False,1.1.4-beta2
+Zenasoft,2014-09-19T08:33:33.833Z,HyperStore is a Database Oriented Model integrating many concepts of DDD and CQRS.,Hyperstore,False,2015-03-16T14:17:23.16-07:00,True,False,,"Hyperstore,DSL,CQRS,DDD",18554,False,0.9.124
+libtorrent,2014-09-18T20:47:37.117Z,libtorrent is a feature complete C++ bittorrent implementation focusing on efficiency and scalability. It runs on embedded devices as well as desktops. It boasts a well documented library interface that is easy to use. It comes with a simple bittorrent client demonstrating the use of the library.,libtorrent-src,False,2014-09-18T13:47:37.147-07:00,True,False,libtorrent is a feature complete C++ bittorrent implementation focusing on efficiency and scalability. It runs on embedded devices as well as desktops. It boasts a well documented library interface that is easy to use. It comes with a simple bittorrent client demonstrating the use of the library.,"bittorrent,libtorrent",674,False,1.0.2
+Jin-Wook Chung,2014-09-19T02:47:24.903Z,CIBuild.Scripts is build scripts to create nuget packages and publish it to nuget server.,CIBuild.Scripts,True,2015-09-08T12:11:21.967-07:00,True,False,,"MSBuild,Build,CI",5994,False,0.0.1-pre05
+Volkan Ceylan,2014-09-19T18:45:32.183Z,Generates server and script side code for Serenity platform applications,Serenity.CodeGenerator,False,2018-03-31T16:41:53.587+00:00,True,False,,Serenity,115580,False,1.1.5
+"Chris Sampson,James Goodenough",2014-09-18T21:17:49.497Z,"Mobile UI library for cross platform development on iOS, Android, WinRT and Windows",SystemDotMobile,True,2015-06-30T13:45:46.803-07:00,True,False,"Mobile UI library for cross platform development on iOS, Android, WinRT and Windows","MvvmCross,Mobile,development,Cross,Platform",20754,False,1.4.2-beta
+Andre Marschalek,2014-09-18T22:19:37.527Z,Gadgeteer Driver for GHI Keypad KP16 Module,Gadgeteer.Module.Keypad.KP16,False,1899-12-31T16:00:00-08:00,False,False,,"'.NET,Micro,Framework',.netmf,Gadgeteer,Module,Driver",-1,False,1.0.0.4
+cosen,2014-09-19T02:47:30.047Z,some usual encrypt and decrypt methods,SecurityHelper,False,1899-12-31T16:00:00-08:00,False,False,,,1493,False,1.0.0.2
+Jin-Wook Chung,2014-09-19T07:57:34.363Z,CIBuild.Scripts is build scripts to create nuget packages and publish it to nuget server.,CIBuild.Scripts,True,2015-09-08T12:11:21.967-07:00,True,False,,"MSBuild,Build,CI",5994,False,0.0.3-pre01
+Alwyn Lombaard,2014-09-19T12:16:09.943Z,"This library simplifies the creation and triggering of ExactTarget ""Triggered Send Definitions"" via the ExactTarget API.",ExactTarget.TriggerEmailSender,True,2015-02-11T05:33:56.417-08:00,True,False,"This library simplifies the creation and triggering of ExactTarget ""Triggered Send Definitions"" via the ExactTarget API.","ExactTarget,triggered,email,sender,TriggeredSendDefintion",4492,False,1.1.4-beta3
+Oystein Bjorke,2014-09-18T20:57:13.423Z,OxyPlot is an open source plotting library for .NET. This is the core package that is referenced by the other OxyPlot packages.,OxyPlot.Core,False,1900-01-01T00:00:00+00:00,False,False,,"plotting,plot,charting,chart",388422,False,2014.1.472
+Scott Dorman,2014-09-19T04:03:44.857Z,"This is the main Cadru library, packaged as a Portable Class Library (PCL) targeting .NET Framework 4, Silverlight 5, Windows Phone 8.1, Windows Phone Silverlight 8, and Windows 8.",Cadru.Core,False,2017-11-06T15:06:58.473+00:00,True,False,A utility framework containing new APIs and extensions to the .NET Framework.,"cadru,PCL,universal,utility",3907,False,1.0.5375.58
+Mogens Heller Grabe,2014-09-19T14:42:08.967Z,PostgreSql stuff for d60 event sourcing + cqrs kit,d60.Cirqus.PostgreSql,False,2017-06-14T22:33:10.723-07:00,True,False,,,27482,False,0.23.0
+fritsduus,2014-09-19T10:51:48.02Z,Provides the ability for Rebus to log with Serilog,Rebus.Serilog,False,2017-08-15T22:45:17.7+00:00,True,False,,"rebus,serilog",49463,False,0.71.1
+CslaContrib,2014-09-20T00:50:32.75Z,"Extends CSLA .NET framework with Custom Field Data that checks old/new value to determine if the object is dirty/changed.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CslaContrib-CustomFieldData,False,2018-04-10T17:45:51.783+00:00,True,False,Extends CSLA .NET framework with Custom Field Data that checks old/new value to determine if the object is dirty/changed.,"CSLA,CslaContrib,Custom,Field,Data",2774,False,4.5.600
+CslaContrib,2014-09-20T00:51:56.267Z,"Supports the creation of Silverlight applications.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CslaContrib-Silverlight,False,2016-06-14T12:38:45.64+00:00,True,False,Supports the creation of Silverlight applications.,"CSLA,CslaContrib,Silverlight,UI",2357,False,4.5.600
+JetBrains,2014-09-19T16:30:21.647Z,"ReSharper Annotations help reduce false positive warnings, explicitly declare purity and nullability in your code, deal with implicit usages of members, support special semantics of APIs in ASP.NET and XAML frameworks and otherwise increase accuracy of ReSharper code inspections.
+
+All usages of ReSharper Annotations attributes are erased from metadata by default, which means no actual binary reference to 'JetBrains.Annotations.dll' assembly is produced. If you need to preserve these attributes in metadata, just define 'JETBRAINS_ANNOTATIONS' conditional compilation symbol in your projects.",JetBrains.Annotations,True,2017-10-24T16:50:15.64+00:00,True,False,Annotations to increase accuracy of ReSharper code inspections,"jetbrains,resharper,annotations,canbenull,notnull",2382259,True,8.0.0-beta
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2014-09-19T12:53:57.75Z,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for SQL Server,FAKE.SQL,False,2018-04-15T16:42:22.333+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",195771,False,3.5.0
+Chillisoft,2014-09-19T04:01:48.187Z,Habanero,Habanero,True,2017-04-19T21:01:31.993-07:00,True,False,,,165264,False,3.9.318-prerelease
+cosen,2014-09-19T02:41:55.447Z,my test project,MyTest_Cosen,False,2014-09-18T19:41:55.447-07:00,True,False,,,441,False,1.0.0
+Harry McIntyre,2014-09-19T10:16:53.877Z,Turn a non queryable data source into a (limited) IQueryable. https://github.com/mcintyre321/LinqtoAnything,LinqToAnything,False,2017-04-25T13:35:50.847-07:00,True,False,,,7664,False,1.2.34
+PagSeguro Team,2014-09-19T20:12:58.23Z,PagSeguro SDK for .NET (Biblioteca de integração em .NET),Uol.PagSeguro,False,2016-11-13T19:23:05.083-08:00,True,False,,PagSeguro,3334,False,1.0.0
+Ben Abelshausen,2014-09-19T08:30:22.497Z,Library to read shapefiles and use them for routing.,OsmSharp.Routing.Shape,True,1899-12-31T16:00:00-08:00,False,False,Library to read shapefiles and use them for routing in OsmSharp.,"osm,openstreetmap,routing,nts",-1,False,0.1.0.18-beta
+Volkan Ceylan,2014-09-19T10:49:18.89Z,Contains CouchbaseDistributedCache that implements IDistributedCache interface,Serenity.Caching.Couchbase,False,2018-03-31T16:38:54.863+00:00,True,False,,Serenity,36683,False,1.1.4
+Remo Gloor,2014-09-19T17:07:29.157Z,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 WebHost,Ninject.Web.WebApi.WebHost,True,2017-10-23T15:18:21.257+00:00,True,False,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 WebHost,"Ninject,ioc,di,web,mvc,api,webhost",499454,False,3.2.2-unstable-003
+Logistical Labs,2014-09-19T12:15:47.887Z,Rex client library,RexClient,False,2018-03-21T11:12:37.46+00:00,True,False,,,46507,False,0.9.18.21967
+Mauro Servienti,2014-09-19T13:58:57.09Z,Radical Framework,Radical.Bootstrapper.Windsor.AspNet,False,2015-02-03T01:07:02.54-08:00,True,False,,Radical,2428,False,0.0.1.3
+Mogens Heller Grabe,2014-09-18T20:36:30.477Z,MongoDB stuff for d60 event sourcing + cqrs kit,d60.Cirqus.MongoDb,False,2017-06-14T22:32:40.503-07:00,True,False,,,29197,False,0.22.0
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2014-09-19T16:25:29.073Z,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Experimental Extensions,FAKE.Experimental,False,2018-04-15T16:39:03.353+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",177660,False,3.5.1
+Shota Giorgobiani,2014-09-19T13:42:14.867Z,File Service,Servant.FileService,False,2014-10-01T06:27:31.827-07:00,True,False,,,8650,False,0.3.2
+mookid8000,2014-09-19T10:46:34.867Z,"Rebus is a lean service bus implementation, similar in nature to NServiceBus, MassTransit, Rhino Service Bus etc.",Rebus,False,2018-03-26T21:26:22.87+00:00,True,False,,"servicebus,msmq,rabbitmq,cqrs,publish,subscribe,reliable,asynchronous,messaging,esb",272407,False,0.71.1
+GroupDocs,2014-09-19T13:14:31.727Z,"GroupDocs.Annotation for .NET is a flexible library that allows you to add document & image annotation capability to your web or mobile applications. Based on HTML5 technology, GroupDocs.Annotation library supports more than 45 file formats, allowing end users to annotate documents and images of just about any common business format, including PDF and Microsoft Word documents, Excel spreadsheets, PowerPoint presentations, Visio diagrams, TIFF, JPEG, PNG images and many more. Key benefits include:
+
+1. GroupDocs.Annotation for .NET Library converts documents to HTML5 - a combination of HTML, CSS and SVG. This enables you to render documents as real text files and allows end users to select, mark up, strike out, copy to clipboard and search for text in any uploaded text document without having to install original software that the documents were created with.
+
+2. No client-side installation required. Users can view and annotate any document from any device that has a web-browser with HTML5 support. So, no need for Acrobat Reader, for example, when annotating PDF documents.
+
+3. GroupDocs.Annotation for .NET Library comes with a comprehensive set of commenting tools, which allow end users to highlight, strikethrough, mark up text within a document, draw freehand lines, add sticky notes and comment on images. Annotated documents can be printed, exported to PDF and downloaded right from your web app.
+
+4. Support for more than 45 file formats! With a single DLL, you can provide your app's users with the capability to annotate the following types of documents:
+
+Portable Document Format: PDF
+Microsoft Word: DOC, DOCX, DOCM, DOT, DOTX, DOTM
+Microsoft Excel: XLS, XLSX, XLSM, XLSB, XML
+Microsoft PowerPoint: PPT, PPTX
+Microsoft Visio: VSD, VDX, VSS, VSX, VST, VTX, VSDX, VDW
+Microsoft Project: MPP, MPT
+Microsoft Outlook: MSG, EML
+OpenDocument Formats: ODT, OTT, ODS, ODP
+Rich Text Format: RTF
+Plain Text File: TXT
+Comma-Separated Values: CSV
+HyperText Markup Language: HTM, HTML, MHT, MHTML
+XML Paper Specification: XPS
+AutoCAD Drawing File Format: DXF
+Image files: BMP, GIF, JPG, PNG, TIFF
+Electronic publication: EPUB
+
+For more details on the GroupDocs.Annotation for .NET Library, please visit our website: 
+http://groupdocs.com/dot-net/document-annotation-library
+
+Note: this download contains a fully working version of the product, however without a license set it will run in evaluation mode with some limitations. To test GroupDocs.Annotation for .NET Library without evaluation limitations, request a free 30-day temporary license.",groupdocs-annotation-dotnet,False,2017-08-30T09:14:55.857+00:00,True,False,"GroupDocs.Annotation for .NET is a flexible library that allows you to add document & image annotation capability to your web or mobile applications. Based on HTML5 technology, GroupDocs.Annotation library supports more than 45 file formats, allowing end users to annotate documents and images of just about any common business format, including PDF and Microsoft Word documents, Excel spreadsheets, PowerPoint presentations, Visio diagrams, TIFF, JPEG, PNG images and many more.","Document-Annotation,Image-Annotation,HTML5-Annotation,Annotator,Annotate,Annotation,Markup,Comments,Notes,PDF,Image,HTML5",6538,False,1.6.0
+Lida Weng,2014-09-19T12:52:19.437Z,Common Library for OElite Platform based application development,OElite.Common,False,1899-12-31T16:00:00-08:00,False,False,,oelite,-1,False,2.2.0
+Shota Giorgobiani,2014-09-19T13:30:00.153Z,File Service,Servant.FileService,False,2014-10-01T06:27:31.827-07:00,True,False,,,8650,False,0.3.0
+Remo Gloor,2014-09-19T16:48:17.46Z,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 OWIN host,Ninject.Web.WebApi.OwinHost,False,2017-10-23T15:18:00.85+00:00,True,False,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 OWIN host,"Ninject,ioc,di,web,mvc,api,owin,host",360960,False,3.2.2
+Volkan Ceylan,2014-09-19T18:43:16.3Z,"Contains entity classes, fields and related functions...",Serenity.Data.Entity,False,2018-03-31T16:39:46.287+00:00,True,False,,Serenity,114583,False,1.1.5
+Lida Weng,2014-09-19T17:22:58.253Z,Common Library for OElite Platform based application development,OElite.Common,False,1899-12-31T16:00:00-08:00,False,False,,oelite,-1,False,2.2.2
+Mogens Heller Grabe,2014-09-19T11:43:05.303Z,Event sourcing + cqrs kit,d60.Cirqus,False,2017-06-14T22:31:49.347-07:00,True,False,,,31376,False,0.22.2
+Max Stepanskiy,2014-09-18T23:44:59.923Z,Yarn Repository Cache Decorator,Yarn.Cache,False,2016-09-26T11:39:16.247-07:00,True,False,,"Cache,Repository",13292,False,0.8.12
+Microsoft Corporation,2014-09-19T16:06:01.183Z,The Galileo C++ SDK allows rapid prototyping of Internet of Things devices using the familiar Arduino interface.,Microsoft.IoT.Galileo.Arduino,False,2014-10-16T12:32:01.397-07:00,True,False,Galileo C++ SDK,"galileo,arduino,microsoft,native,nativepackage",8880,False,1.0.4
+crmsdk,2014-09-18T23:50:23.907Z,"This package contains the following official Microsoft assemblies and has been authored by the Microsoft Dynamics CRM SDK team.
+- Microsoft.Xrm.Tooling.PackageDeployment.CrmPackageExtentionBase.dll",Microsoft.CrmSdk.XrmTooling.PackageDeployment,False,2017-11-15T21:20:48.547+00:00,True,False,Assembly required to develop custom packages for the CRM Package Deployer.,"Dynamics,CRM,2013,SDK,XRM",67787,True,6.1.1
+Acklen Avenue,2014-09-18T21:28:52.223Z,Acklen Avenue interface for sending emails,Acklen.Mail,False,2014-09-18T14:28:52.223-07:00,True,False,,,782,False,1.0.0
+Andre Marschalek,2014-09-18T20:36:59.427Z,Gadgeteer Driver for GHI Keypad KP16 Module,Gadgeteer.Module.Keypad.KP16,False,1899-12-31T16:00:00-08:00,False,False,,"'.NET,Micro,Framework',.netmf,Gadgeteer,Module,Driver",-1,False,1.0.0
+Paul Weakley,2014-09-18T19:59:31.167Z,Simplified data access from assorted sources and read/write access,Einstein.DataAccess,False,2015-06-07T20:26:02.387-07:00,True,False,,,7571,False,0.6.0
+simpleSyndicate,2014-09-19T11:30:11.017Z,"Common unit testing functionality for ASP.Net MVC applications - test role store, test user store, test data helpers, better assertions, fluent assertions for controllers, view results and other MVC items.",SimpleSyndicate.Testing.Mvc,False,2017-01-06T03:39:31.737-08:00,True,False,Common unit testing functionality for ASP.Net MVC applications.,"MVC,Unit,Testing,Fluent,Assertions",3695,False,1.0.1
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2014-09-19T12:54:30.783Z,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Experimental Extensions,FAKE.Experimental,False,2018-04-15T16:39:03.353+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",177660,False,3.5.0
+Jon Arild Torresdal,2014-09-19T11:10:53.81Z,"ConDep is a highly extendable Domain Specific Language for Continuous Deployment, Continuous Delivery and Infrastructure as Code on Windows. This package contians all the default operations found in ConDep. For additional operations, look for ConDep.Dsl.Operations.Contrib.",ConDep.Dsl.Operations,True,1899-12-31T16:00:00-08:00,False,False,,"Continuous,Deployment,Delivery,Infrastructure,WebDeploy,Deploy,msdeploy,IIS,automation,powershell,remote",12723,False,3.0.38-beta
+QuatroDev,2014-09-18T23:32:58.237Z,"Simplr Identity Models, Helpers and UserStore implementation",Simplr.Identity,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.25
+Scott Dorman,2014-09-19T04:04:21.22Z,This is a non-portable class library (targeting .NET Framework 4) meant for Windows desktop applications.,Cadru.Core.Windows,False,2016-01-25T19:18:54.3-08:00,True,False,A utility framework containing new APIs and extensions to the .NET Framework.,"cadru,utility",2782,False,1.0.5375.58
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2014-09-19T12:55:06.903Z,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for FAKE Deploy,FAKE.Deploy.Lib,False,2018-04-15T16:38:30.65+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",179902,False,3.5.0
+Remo Gloor,2014-09-19T16:41:37.84Z,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2,Ninject.Web.WebApi,True,2017-10-23T15:17:50.18+00:00,True,False,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2,"Ninject,ioc,di,web,mvc,api",1272732,False,3.2.2-unstable-002
+Eben Roux,2014-09-18T19:40:05.38Z,Contains the file-based queue implementation for Shuttle ESB.,shuttle-esb-filemq,False,1899-12-31T16:00:00-08:00,False,False,,"shuttle-esb,enterprise-service-bus,esb,messaging,filmq,service-bus,soa",-1,False,3.3.4
+Remo Gloor,2014-09-19T17:06:17.08Z,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2,Ninject.Web.WebApi,True,2017-10-23T15:17:50.18+00:00,True,False,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2,"Ninject,ioc,di,web,mvc,api",1272732,False,3.2.2-unstable-003
+Media Browser Team,2014-09-18T21:49:24.55Z,Contains common model objects and interfaces used by all Media Browser solutions.,MediaBrowser.Common,False,2018-04-14T14:59:42.14+00:00,True,False,,,143598,False,3.0.434
+Scott Dorman,2014-09-19T04:28:33.997Z,This is a non-portable class library (targeting .NET Framework 4) meant for Windows desktop applications.,Cadru.Core.Windows,False,2016-01-25T19:18:54.3-08:00,True,False,A utility framework containing new APIs and extensions to the .NET Framework.,"cadru,utility",2782,False,1.0.5375.59
+Microsoft,2014-09-19T07:18:32.12Z,Description,XFramework.Log.MongoDBLog,False,2014-09-19T00:18:32.12-07:00,True,False,,,461,False,1.0.0.27546
+Oystein Bjorke,2014-09-18T21:42:44.563Z,OxyPlot is an open source plotting library for .NET. This package contains the custom control for Windows Forms.,OxyPlot.WindowsForms,False,1900-01-01T00:00:00+00:00,False,False,,"winforms,plotting,plot,charting,chart",161215,False,2014.1.474
+Jin-Wook Chung,2014-09-19T02:50:00.583Z,CIBuild.Scripts is build scripts to create nuget packages and publish it to nuget server.,CIBuild.Scripts,True,2015-09-08T12:11:21.967-07:00,True,False,,"MSBuild,Build,CI",5994,False,0.0.1-pre06
+Mogens Heller Grabe,2014-09-18T20:35:42.62Z,Event sourcing + cqrs kit,d60.Cirqus,False,2017-06-14T22:31:49.347-07:00,True,False,,,31376,False,0.22.0
+"GeertvanHorrik,OrchestraDevs",2014-09-19T09:32:41.823Z,The TaskRunner shell for Orchestra based applications.,Orchestra.Shell.TaskRunner,True,2018-04-16T15:54:09.353+00:00,True,False,,"mvvm,orchestra,shell,prism,framework,wpf,task,runner,taskrunner",38496,True,2.0.0-unstable0208
+Bobby Cannon,2014-09-19T11:23:56.923Z,HostR is a hosting framework for developers. It allows you to quickly host and manage services.,HostR,False,2014-10-05T11:27:17.907-07:00,True,False,,"HostR,hosting,host,service,services",1103,False,0.1.5375.20503
+SocialMoneyDev,2014-09-19T10:59:14Z,Visit http://docs.corepro.io for more information.,CorePro.SDK,False,2017-05-23T11:27:06.42-07:00,True,False,A .NET SDK for consuming the CorePro API.,"CorePro,.NET,API,SDK,'Social,Money'",9999,False,1.4.5375.8969
+kzu,2014-09-18T22:15:39.097Z,"Automatically apply labels to issues with title formatted with one or more '+[label]', '~[label]' or '-[label]'.",OctoHook.AutoLabel,False,2015-02-25T04:37:30.683-08:00,True,False,,"github,webhook",3374,False,0.3.8
+Markus Olsson,2014-09-19T22:08:33.187Z,RxSpy bundled with a graphical interfaces for inspecting reactive applications. The LiveView interface will not be shipped alongside your application.,RxSpy.LiveView,False,2014-09-19T15:19:10.587-07:00,True,False,,,1773,False,0.1.4
+Envoc,2014-09-19T19:19:31.593Z,Envoc.Core.Mobile.Common,Envoc.Core.Mobile.Common,False,1899-12-31T16:00:00-08:00,False,False,,,17350,False,1.0.16
+Outercurve Foundation,2014-09-20T00:22:01.197Z,"Create, edit, or read the package metadata catalog.",NuGet.Services.Metadata.Catalog,True,2015-03-05T13:54:31.373-08:00,True,False,,,35515,True,3.0.111-r-master
+Oystein Bjorke,2014-09-18T21:43:38.66Z,OxyPlot is an open source plotting library for .NET. This package contains the custom control for WPF applications.,OxyPlot.Wpf,False,1900-01-01T00:00:00+00:00,False,False,,"wpf,plotting,plot,charting,chart",294768,False,2014.1.474
+Microsoft Corporation,2014-09-19T16:28:31.313Z,The Galileo C++ SDK allows rapid prototyping of Internet of Things devices using the familiar Arduino interface.,Microsoft.IoT.Galileo.Arduino,False,2014-10-16T12:32:01.397-07:00,True,False,Galileo C++ SDK,"galileo,arduino,microsoft,native,nativepackage",8880,False,1.0.5
+Jon Arild Torresdal,2014-09-19T12:47:08.467Z,"ConDep is a highly extendable Domain Specific Language for Continuous Deployment, Continuous Delivery and Infrastructure as Code on Windows. This package contians all the default operations found in ConDep. For additional operations, look for ConDep.Dsl.Operations.Contrib.",ConDep.Dsl.Operations,True,1899-12-31T16:00:00-08:00,False,False,,"Continuous,Deployment,Delivery,Infrastructure,WebDeploy,Deploy,msdeploy,IIS,automation,powershell,remote",12723,False,3.0.40-beta
+Scott Dorman,2014-09-19T04:27:38.23Z,"This is the main Cadru library, packaged as a Portable Class Library (PCL) targeting .NET Framework 4, Silverlight 5, Windows Phone 8.1, Windows Phone Silverlight 8, and Windows 8.",Cadru.Core,False,2017-11-06T15:06:58.473+00:00,True,False,A utility framework containing new APIs and extensions to the .NET Framework.,"cadru,PCL,universal,utility",3907,False,1.0.5375.59
+Outsite Networks,2014-09-19T08:14:39.047Z,Description,APMP.PaymentGateway,False,2015-11-09T13:30:01.733-08:00,True,False,,,28184,False,0.0.4.137
+Outsite Networks,2014-09-19T08:17:00.937Z,Description,ONI.Core.Utilities,False,2015-10-12T14:26:19.777-07:00,True,False,,,25866,False,0.0.4.137
+recurly,2014-09-19T23:02:02.81Z,An API Client for Recurly - Subscription billing automation.,recurly-api-client,False,2018-04-03T20:16:59.26+00:00,True,False,,"billing,api,client,subscription,recurly",37232,False,1.1.6
+Entelect,2014-09-19T13:34:52.637Z,This is the sdk to assist in calling the remote services on encentivize,Entelect.Encentivize.Sdk,False,2014-12-09T05:05:12.603-08:00,True,False,,"Entelect,Encentivize,Sdk",4746,False,0.0.6
+Lida Weng,2014-09-19T17:24:19.767Z,OElite Web API SDK for OElite Platform based application development,OElite.Web,False,2016-04-16T05:06:28.653-07:00,True,False,,oelite,102426,False,2.6.2
+Scott Dorman,2014-09-19T04:05:02.207Z,This is a non-portable class library (targeting .NET Framework 4) which adds additional assert capabilities for MS Test.,Cadru.UnitTest.Framework,False,2017-11-06T15:10:20.48+00:00,True,False,A utility framework containing new APIs and extensions to the .NET Framework.,"cadru,utility,mstest,testing,unit,tests",2984,False,1.0.5375.58
+dima117,2014-09-19T18:18:12.097Z,Web ui,ThinkingHome.Plugins.WebUI,False,2017-11-07T19:21:38.56+00:00,True,False,web ui,,4763,False,2.0.0.69
+kzu,2014-09-18T22:16:57.113Z,"Automatically creates task lists on referenced issues, back linking to the source issue and automatically updated.",OctoHook.AutoTask,False,2015-02-25T04:38:45.047-08:00,True,False,,"github,webhook",3806,False,0.3.8
+W3 Solutions Inc.,2014-09-19T04:39:35.07Z,W3 Solutions Inc api client. Allows easy interactions with all our API services.,W3Solutions.Api.Client,False,2016-06-24T07:32:49.377-07:00,True,False,,"w3s.io,p3support.com,w3solutions,w3",18762,False,1.0.5374.37183
+"GeertvanHorrik,OrchestraDevs",2014-09-19T09:31:26.263Z,The library for all modules created for the Orchestra shell.,Orchestra.Core,True,2018-04-16T15:53:54.697+00:00,True,False,,"mvvm,orchestra,shell,prism,framework,wpf",51902,True,2.0.0-unstable0208
+Entelect,2014-09-19T14:04:12.633Z,This is the sdk to assist in calling the remote services on encentivize,Entelect.Encentivize.Sdk,False,2014-12-09T05:05:12.603-08:00,True,False,,"Entelect,Encentivize,Sdk",4746,False,0.0.7
+CapableObjects,2014-09-19T05:42:13.45Z,Descr,EcoWindowsForms,False,2018-04-17T02:38:46.44+00:00,True,False,,"ModelDrivenDevelopment,ECO,CapableObjects",140692,False,7.0.0.7487
+Mogens Heller Grabe,2014-09-19T11:46:08.367Z,Test helpers for d60 event sourcing + cqrs kit,d60.Cirqus.TestHelpers,False,2014-10-06T04:37:41.397-07:00,True,False,,,7959,False,0.22.2
+Shota Giorgobiani,2014-09-19T15:53:40.733Z,Servant File Service Client is client library for Servant.FileService WCF Service.,Servant.FileService.Client,False,2014-09-30T02:46:50.627-07:00,True,False,"Servant is mutlipurpose library collection. Developed by UGT software developers, Tbilisi, Georgia, Servant libraries can be used in various ways to accomplish day to day tasks.","File,Service,Servant,WCF",2487,False,0.3.5
+Volkan Ceylan,2014-09-19T18:44:13.63Z,Contains helper classes for unit / integration testing...,Serenity.Testing,False,2018-03-31T16:40:15.99+00:00,True,False,,Serenity,38075,False,1.1.5
+Kevin Jump,2014-09-19T16:33:07.107Z,"uSync, database to and from file syncronisation for umbraco.",uSync,False,2018-04-04T20:53:29.7+00:00,True,False,,umbraco,140282,False,2.4.1
+Kevin Kuszyk,2014-09-18T20:11:55.933Z,Test framework abstracts the boilerplate required to use an auto mocking container in a unit test project.,TestFramework.NUnit.Ninject.Moq,False,2015-10-20T01:06:40.973-07:00,True,False,,"NUnit,Ninject,Moq,TDD,BDD,Fluent,Testing",1356,False,1.0.0
+JetBrains,2014-09-19T14:11:52.643Z,JetBrains ReSharper Code Annotations,ControlFlow.Annotations,False,1899-12-31T16:00:00-08:00,False,False,,"jetbrains,resharper,annotations,canbenull,notnull",-1,False,8.0.0
+Madhouse Inc.,2014-09-19T06:41:34.687Z,SmartMad SDK for Windows Phone,CN.SmartMad.Ads.WindowsPhone,False,1899-12-31T16:00:00-08:00,False,False,,,917,False,3.0.3
+W3 Solutions Inc.,2014-09-19T11:34:31.453Z,W3 Solutions Inc api client. Allows easy interactions with all our API services.,W3Solutions.api.client,False,2016-06-24T07:32:49.377-07:00,True,False,,"w3s.io,p3support.com,w3solutions,w3",18762,False,1.3.5375.6348
+CslaContrib,2014-09-20T00:52:23.947Z,"Additional controls to support the creation of CSLA. NET applications for Visual WebGUI.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CslaContrib-WebGUI,False,2016-06-14T12:39:23.58+00:00,True,False,Additional controls to support the creation of CSLA. NET applications for Visual WebGUI.,"CSLA,CslaContrib,WebGUI,UI",2466,False,4.5.600
+"Steffen Forkmann,Alexander Gross",2014-09-19T10:20:40.747Z,A package dependency manager for .NET with support for NuGet packages and GitHub files.,Paket,False,2018-04-17T08:54:34.933+00:00,True,False,A package dependency manager for .NET with support for NuGet packages and GitHub files.,"nuget,bundler,F#",825043,False,0.2.12
+Sam High,2014-09-19T03:34:45.817Z,BidAmi Entities Model to access BIdAmi SQL Database,AmerMem.Model,False,2015-01-06T11:37:29.247-08:00,True,False,,,5139,False,1.0.5
+Aspose,2014-09-19T12:16:34.433Z,"Aspose.Imaging for .NET is an imaging library that lets developers create, edit, draw or convert images in their .NET applications. Aspose.Imaging provides features that go beyond the native capabilities of the development platform. It works independent of other applications and although Aspose.Imaging allows you to save to Adobe PhotoShop® format (PSD), you do not need PhotoShop on the machine.",Aspose.Imaging,False,2018-03-29T15:38:19.27+00:00,True,False,"Aspose.Imaging for .NET is an imaging library that lets developers create, edit, draw or convert images in their .NET applications. Aspose.Imaging provides features that go beyond the native capabilities of the development platform. It works independent of other applications and although Aspose.Imaging allows you to save to Adobe PhotoShop® format (PSD), you do not need PhotoShop on the machine.","Aspose.Imaging,GIF,JPEG,JPG,PNG,BMP,TIF,PSD,DXF,DWG,Layers,Images,Drawing,Graphics,Interlaced,LZW,CCITT3,CCITT4,RLE,compression,TiffFrame",62570,False,2.6.0
+Mike Ward,2014-09-19T17:44:19.077Z,A Super Simple Asset Bundler for NancyFx,Nancy.Pile,False,2016-03-30T07:44:54.397-07:00,True,False,,"Nancy,NancyFx,Bundle,Concat,CSS,SASS,SCSS,Less",5062,False,0.5.0
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2014-09-19T16:26:59.34Z,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. This package bundles all extensions.,FAKE,False,2018-04-15T16:37:14.193+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",1443054,False,3.5.1
+Remo Gloor,2014-09-19T16:47:02.823Z,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 Selfhost,Ninject.Web.WebApi.Selfhost,False,2017-10-23T15:18:11.257+00:00,True,False,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 Selfhost,"Ninject,ioc,di,web,mvc,api,selfhost",17899,False,3.2.2
+Microsoft,2014-09-19T07:16:57.877Z,Description,XFramework.Log.Log4Net,False,2014-09-19T00:16:57.877-07:00,True,False,,,726,False,1.0.0.27479
+Ninject Project Contributors,2014-09-19T14:24:16.09Z,Adds Xml support for InRequestScope,Ninject.Web.Common.Xml,True,2017-10-23T14:34:28.993+00:00,True,False,,"Ninject,ioc,di,ASP.NET",13849,False,3.2.3-unstable-001
+Xab3r,2014-09-18T21:54:23.437Z,.NET wrapper for x86/x64 WinSparkle(https://github.com/vslavik/winsparkle).  Project sources - https://bitbucket.org/Xab3r/winsparkle.net/overview,WinSparkle.Net,False,2015-05-30T03:20:09.063-07:00,True,False,,,1888,False,0.12.0
+Oystein Bjorke,2014-09-18T22:05:59.463Z,OxyPlot is an open source plotting library for .NET. This package targets iOS apps.,OxyPlot.XamarinIOS,False,1899-12-31T16:00:00-08:00,False,False,,"xamarin,iOS,plotting,plot,charting,chart",-1,False,2014.1.474
+Shota Giorgobiani,2014-09-19T15:27:15.407Z,"Servant File Service is WCF library, that will be automatically hosted in any ASP.NET/MVC application as base_address/FileService.svc and will serve as file upload/download mechanism. Please use Servant.FileService.Client nuget package to access and use service.",Servant.FileService,False,2014-10-01T06:27:31.827-07:00,True,False,"Servant is mutlipurpose library collection. Developed by UGT software developers, Tbilisi, Georgia, Servant libraries can be used in various ways to accomplish day to day tasks.","File,Service,Servant,WCF",8650,False,0.3.3
+Robert Parker,2014-09-19T05:20:46.443Z,A .NET wrapper for the TrueVault RESTful API,TrueVault.Net,False,2014-09-20T22:53:50.147-07:00,True,False,,TrueVault,1173,False,1.0.2
+kzu,2014-09-18T22:15:11.3Z,"Automatically close issues via standard GitHub mechanism (i.e. 'fixes #123'), regardless of the commit branch.",OctoHook.AutoClose,False,2015-02-25T04:36:54.427-08:00,True,False,,"github,webhook",3723,False,0.3.8
+"Steffen Forkmann,Alexander Gross",2014-09-19T07:54:15.753Z,A package dependency manager for .NET with support for NuGet packages and GitHub files.,Paket,False,2018-04-17T08:54:34.933+00:00,True,False,A package dependency manager for .NET with support for NuGet packages and GitHub files.,"nuget,bundler,F#",825043,False,0.2.7
+Andre Soares,2014-09-18T22:14:52.597Z,.NET sockets made easy,EasySocket,False,2014-11-03T11:15:20.493-08:00,True,False,,"socket,easy",2688,False,1.0.1
+JoobMobile,2014-09-19T00:34:07.003Z,Restful WCF based framework for rapidly building high performance and secure web services. \n Requires appropriate JoobMobile client library as found at https://www.jadeworld.com/developer-center/joob-mobile-framework/joob-releases,JoobMobileFramework,False,2014-09-18T17:34:07.003-07:00,True,False,,,1029,False,4.0.0.23
+plexityHide,2014-09-19T01:03:30.85Z,GTP.NET.ASP.NET is a package of components to build interactive Gantt and Schedule charts on ASP.NET Ajax,GTP.NET.ASP.NET,False,2016-11-27T13:01:59.51-08:00,True,False,,"Gantt,Schedule,plexityHide,GTP.NET,GTP.NET.ASP.NET",22944,False,5.9.19.7480
+Arteny,2014-09-19T13:11:43.807Z,Betfair API-NG low level library,BetfairAPI-NG,False,2014-10-07T09:31:26.457-07:00,True,False,,,3100,False,1.5.445
+Mogens Heller Grabe,2014-09-19T11:18:47.63Z,MongoDB stuff for d60 event sourcing + cqrs kit,d60.Cirqus.MongoDb,False,2017-06-14T22:32:40.503-07:00,True,False,,,29197,False,0.22.1
+martin.gravrak,2014-09-19T18:35:13.743Z,Library to calculate norwegian moving holydays.,NorskeHelligdager,False,2014-09-19T11:35:13.743-07:00,True,False,,"Norske,Helligdager",467,False,1.0.0
+Onur Gümüş,2014-09-19T08:39:19.357Z,F# based odata client,FODATACv4,False,2015-08-31T07:29:54.453-07:00,True,False,,ODATA,7701,False,0.9.0
+Thong Nguyen,2014-09-18T23:55:57.547Z,"Shaolinq is a thoughtfully designed ORM and Linq provider for .NET
+    
+Use this package to add Shaolinq and out-of-the-box Postgres support (via the DotConnect ADO.NET Postgres provider).
+    
+Designed to perform super fast and be easy to use, Shaolinq's features also include:
+    
+- First class schema-first ORM with WYSIWYG data access and minipulation.
+- First class LINQ support (not the basic kind you see in most other OSS projects).
+- Single trip updating of objects.
+- Support for Sqlite, MySql and Postgres.
+- Automatic database creation and schema migration.
+- Delete LINQ extension for batch server side deletes.
+- Full support for server side date functions (Date.DayOfWeek etc).
+- Easily extensible with a simple interface for adding support for other ADO.NET compatible databases.
+- Open Source!",Shaolinq.Postgres.DotConnect,False,2018-02-06T23:35:33.063+00:00,True,False,A thoughtful ORM and Linq provider for .NET and Postgres (via the DotConnect Postgres provider),"linq,provider,orm,postgres,sql,database",49833,False,0.6.0.160
+mookid8000,2014-09-19T10:49:21.283Z,"Provides in implementation of a simple round-robin style load balancer for Rebus on MSMQ. Solves the same problem as the various ""distributors"" around, but with way less moving parts.",Rebus.MsmqLoadBalancer,False,2015-05-15T06:45:39.023-07:00,True,False,,"rebus,distributor,load-balancing",10689,False,0.71.1
+Wonka,2014-09-19T21:35:53.637Z,Description,Fluct.Basis.Data,True,2014-11-05T10:56:19.42-08:00,True,False,,,15579,False,1.0.0-CI00073
+Markus Olsson,2014-09-19T21:49:06.467Z,"A graphical interfaces for inspecting reactive applications. Installing this package will only make it possible for the RxSpy package to find the graphical interface during development, it will not be shipped alongside your application.",RxSpy.LiveView,False,2014-09-19T15:19:10.587-07:00,True,False,,,1773,False,0.1.1
+Sam High,2014-09-19T03:32:55.097Z,BidAmi Entities Model to access BIdAmi SQL Database,BidAmi.Model,False,2015-01-07T07:14:14.04-08:00,True,False,,,5480,False,1.0.13
+Jin-Wook Chung,2014-09-19T06:19:50.017Z,CIBuild.Scripts is build scripts to create nuget packages and publish it to nuget server.,CIBuild.Scripts,False,2015-09-08T12:11:21.967-07:00,True,False,,"MSBuild,Build,CI",5994,False,0.0.1
+EntityRepository Contributors,2014-09-19T09:13:57.197Z,OData service library - Uses Web API OData to implement a default OData API for an EF DbContext. Can be customized using normal Web API extension points.,EntityRepository.ODataServer,True,2015-10-01T17:07:14.2-07:00,True,False,,"EntityRepository,Web,API,OData,EF,EntityFramework,DataService,WCF,data,services",6372,False,0.8.1.28-beta
+gregsdennis,2014-09-19T03:44:36.047Z,"A fully object-oriented approach to JSON manipulation, validation, and serialization that focuses on modeling the JSON structure rather than mere string parsing.",Manatee.Json,False,2018-03-02T03:52:45.547+00:00,True,False,,"json,manatee,parser,serializer",38031,False,2.6.2
+Wonka,2014-09-19T21:35:27.763Z,Description,Fluct.Basis,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0-CI00073
+Ryan Niemeyer,2014-09-19T13:13:32.437Z,A Knockout.js binding to connect observableArrays with jQuery UI sortable functionality,Knockout-Sortable,False,2017-02-20T06:52:36.28-08:00,True,False,A Knockout.js binding to connect observableArrays with jQuery UI sortable functionality,"knockoutjs,sortable",56683,False,0.9.0
+Eben Roux,2014-09-18T19:41:02.803Z,"Contains the Sql Server queue implementation, idempotence service, and subscription manager for Shuttle ESB.",shuttle-esb-rabbitmq,False,1899-12-31T16:00:00-08:00,False,False,,"shuttle-esb,enterprise-service-bus,esb,messaging,rabbitmq,service-bus,soa",-1,False,3.3.4
+Markus Olsson,2014-09-19T21:59:02.837Z,RxSpy bundled with a graphical interfaces for inspecting reactive applications. The LiveView interface will not be shipped alongside your application.,RxSpy.LiveView,False,2014-09-19T15:19:10.587-07:00,True,False,,,1773,False,0.1.3
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2014-09-19T12:53:26.627Z,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for IIS,FAKE.IIS,False,2018-04-15T16:41:34.643+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",186382,False,3.5.0
+clausn,2014-09-19T10:47:18.22Z,Provides an Autofac container adapter for Rebus,Rebus.Autofac,False,2018-01-10T13:55:52.793+00:00,True,False,,"rebus,autofac,di,dependencyInjection,ioc,inversionOfControl",93747,False,0.71.1
+RecycleBin,2014-09-19T07:36:12.157Z,Provides interfaces to build up R's graphics engine.,R.NET.Community.Graphics,True,2015-04-24T19:16:44.76-07:00,True,False,Provides interfaces to build up R's graphics engine.,"R,R.NET,graphics",2186,False,0.1.2-alpha
+simpleSyndicate,2014-09-19T16:03:39.453Z,"Common unit testing functionality for ASP.Net MVC applications - test role store, test user store, test data helpers, better assertions, fluent assertions for controllers, view results and other MVC items.",SimpleSyndicate.Testing.Mvc,False,2017-01-06T03:39:31.737-08:00,True,False,Common unit testing functionality for ASP.Net MVC applications.,"MVC,Unit,Testing,Fluent,Assertions",3695,False,1.0.2
+Facebook Inc,2014-09-19T10:23:58.303Z,"React is a JavaScript library for building user interfaces. It's declarative, efficient, and extremely flexible. What's more, it works with the libraries and frameworks that you already know. 
+http://facebook.github.io/react/",react.js,False,2016-02-08T10:16:52.097+00:00,True,False,,"js,react,facebook",63769,False,0.11.2
+Zenasoft,2014-09-19T08:34:00.407Z,HyperStore is a Database Oriented Model integrating many concepts of DDD and CQRS. This implementation uses Reactive Framework for event sourcing.,HyperstoreRX,False,2015-03-16T14:18:03.273-07:00,True,False,,"Hyperstore,DSL,CQRS,DDD,RX",16758,False,0.9.124
+Bit Miracle,2014-09-19T02:10:41.593Z,"This is the Beta version of Docotic.Pdf library.
+		
+		Beta version contains newest features and latest bug fixes. This version is tested for regressions and is safe to be used in production environment.
+		
+		Release version can be found here: https://www.nuget.org/packages/BitMiracle.Docotic.Pdf/.
+		
+		Docotic.Pdf library can create, edit, draw and print PDF files.
+
+The library is a fully managed assembly for .NET 2.0 and later frameworks. The assembly has no external dependencies.
+
+There are different types of licenses: for applications, for servers, cloud and unlimited. All licenses are royalty-free. 
+
+Free time-limited licenses are available upon request.",BitMiracle.Docotic.Pdf.Beta,False,1899-12-31T16:00:00-08:00,False,False,"This is the Beta version of Docotic.Pdf library (https://www.nuget.org/packages/BitMiracle.Docotic.Pdf/).
+		Beta version contains newest features and latest bug fixes. This version is tested for regressions and is safe to be used in production environment.","PDF,Library,Editor,Viewer,PDF/A,Print,pdf-generation,pdf-library,.net20,pdf2text,pdf2image,Forms,BitMiracle,Bit,Miracle",33542,False,4.3.6411
+Kayson Wong,2014-09-19T09:32:48.557Z,"- Standardized format following RFC 4180 specification
+- Unix and Windows compatible
+- Unicode and escaped characters support
+- Serialization / deserialization to any .NET class",ComputerBeacon.Csv,False,2015-05-13T03:47:08.23-07:00,True,False,,"Csv,C#,.NET",1069,False,1.0.47
+Andreas Grimme,2014-09-19T04:07:30.927Z,Collection of general purpose .NET utility classes,sidi-util,False,2017-12-08T04:02:12.64+00:00,True,False,,,37650,False,2.6.0.11
+Alex Chen,2014-09-19T09:14:43.807Z,Aegis SignalR Infrastructures,Aegis.SignalR.Infrastructures,False,2014-10-11T19:12:54.607-07:00,True,False,Aegis SignalR Infrastructures,,5645,False,1.0.0
+Shawn Mclean,2014-09-19T03:11:39.51Z,Grikly is an API wrapper to help developers getting started with the grikly api fast and easy.,Grikly,False,1900-01-01T00:00:00+00:00,False,False,,"Grikly,Cards,Contact",10962,False,1.0.22
+Remo Gloor,2014-09-19T16:47:39.637Z,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 WebHost,Ninject.Web.WebApi.WebHost,False,2017-10-23T15:18:21.257+00:00,True,False,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 WebHost,"Ninject,ioc,di,web,mvc,api,webhost",499454,False,3.2.2
+Envoc,2014-09-18T20:48:54.54Z,Envoc.Core.Queries.Datatables,Envoc.Core.Queries.Datatables,False,2017-11-08T19:56:13.493+00:00,True,False,,,10614,False,4.0.27
+Thong Nguyen,2014-09-18T23:54:44.493Z,"Shaolinq is a thoughtfully designed ORM and Linq provider for .NET
+    
+Use this package to add Shaolinq and out-of-the-box Sqlite support.
+    
+Designed to perform super fast and be easy to use, Shaolinq's features also include:
+    
+- First class schema-first ORM with WYSIWYG data access and minipulation.
+- First class LINQ support (not the basic kind you see in most other OSS projects).
+- Single trip updating of objects.
+- Support for Sqlite, MySql and Postgres.
+- Automatic database creation and schema migration.
+- Delete LINQ extension for batch server side deletes.
+- Full support for server side date functions (Date.DayOfWeek etc).
+- Easily extensible with a simple interface for adding support for other ADO.NET compatible databases.
+- Open Source!",Shaolinq.Sqlite,False,2018-02-06T23:34:35.403+00:00,True,False,A thoughtful ORM and Linq provider for .NET and Sqlite,"linq,provider,orm,sqlite,sql,database",52813,False,0.6.0.160
+Christopher Dresel,2014-09-19T16:44:30.503Z,"StyleCopPlus.MSBuild integrates StyleCopPlus into the build process. 
+
+This is just a simple Nuget that sets StyleCopAdditionalAddinPaths to the StyleCopPlus.dll folder. All regards to the corresponding authors.",StyleCopPlus.MSBuild,False,2014-11-11T04:05:45.197-08:00,True,False,,"Build,MSBuild,StyleCop,StyleCopPlus,StyleCop+",156720,False,4.7.49.4
+Kevin Kuszyk,2014-09-18T20:12:17.17Z,Test framework abstracts the boilerplate required to use an auto mocking container in a unit test project.,TestFramework.NUnit.Ninject.NSubstitute,False,2015-10-20T01:06:46.95-07:00,True,False,,"NUnit,Ninject,NSubstitute,TDD,BDD,Fluent,Testing",1112,False,1.0.0
+Goran Šiška,2014-09-19T07:09:52.007Z,"A simple, light-weight application level event aggregator which facilitates the exchange of messages between objects without direct references.",LightMessageBus,False,2016-05-25T11:31:10.257-07:00,True,False,,"message,bus,event,aggregator",733,False,1.0.0
+Alex Chen,2014-09-19T09:05:17.297Z,SignalR Client extension.,Aegis.SignalR.Client,False,2014-09-24T19:34:05.403-07:00,True,False,SignalR Client extension.,,4935,False,1.0.0
+Acid Media,2014-09-19T10:34:54.807Z,Mobiscroll package for jQuery,Mobiscroll,False,2014-10-22T05:56:49.22-07:00,True,False,A wheel scroller user control optimized for touchscreens to easily enter date and/or time. The control can easily be customized to support any custom values.,"jQuery,JavaScript,datepicker,timepicker,touchscreen,Webkit,android,iPhone,iPad,webapps,GalaxyTab,dropdown,mobile,wheel,senseui",19271,False,2.13.0
+Rico Suter,2014-09-19T06:37:24.347Z,MyToolkit is a collection of useful classes for the .NET Framework.,MyToolkit.Web,False,2016-11-25T07:45:57.953-08:00,True,False,,,16811,False,2.3.12
+CapableObjects,2014-09-19T05:44:00.763Z,Descr,EcoWindowsStore,False,2018-04-17T02:39:44.143+00:00,True,False,,"ModelDrivenDevelopment,ECO,CapableObjects",139167,False,7.0.0.7487
+Rommel.Manalo,2014-09-19T23:53:47.717Z,Common TMM application utility assembly,TMMS.Common,False,2017-01-24T20:11:43.76-08:00,True,False,,,18430,False,1.54.0
+Paul Weakley,2014-09-18T20:02:07.17Z,Entities for use with the Einstein Framework,Einstein.Entity,False,2015-06-07T20:31:11.6-07:00,True,False,,,4062,False,0.6.0
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2014-09-19T16:23:57.017Z,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for Gallio,FAKE.Gallio,False,2018-04-15T16:40:43.187+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",192254,False,3.5.1
+Remo Gloor,2014-09-19T16:46:13.353Z,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2,Ninject.Web.WebApi,False,2017-10-23T15:17:50.18+00:00,True,False,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2,"Ninject,ioc,di,web,mvc,api",1272732,False,3.2.2
+Oystein Bjorke,2014-09-18T21:41:54.39Z,"OxyPlot is an open source plotting library for .NET. This package contains the .pdf export extensions for Silverlight, .NET 4.0 and .NET 4.5.",OxyPlot.Pdf,False,1900-01-01T00:00:00+00:00,False,False,,"pdf,plotting,plot,charting,chart",122084,False,2014.1.474
+Markus Olsson,2014-09-19T21:31:32.167Z,A tool to examine live Observables in your applications,RxSpy,True,2014-09-19T15:22:32.983-07:00,True,False,,,807,False,0.1.0-pre
+crmsdk,2014-09-18T23:49:06.85Z,"This package contains the following official Microsoft assemblies and has been authored by the Microsoft Dynamics CRM SDK team.
+- Microsoft.Crm.UnifiedServiceDesk.BaseControl
+- Microsoft.Crm.UnifiedServiceDesk.CommonUtility
+- Microsoft.Crm.UnifiedServiceDesk.Dynamics",Microsoft.CrmSdk.USD.CoreAssemblies,False,2017-11-15T20:41:36.583+00:00,True,False,Core assemblies required to customize and extend the Unified Service Desk.,"Dynamics,CRM,2013,SDK,XRM,USD",10973,True,6.1.1
+Microsoft,2014-09-19T04:14:05.003Z,dfsafdsdfa,NugetTestx,False,2014-09-18T21:14:05.003-07:00,True,False,,"Tag1,Tag2",554,False,1.0.0
+Zachary Gramana,2014-09-19T00:57:31.747Z,"A lightweight, document-oriented (NoSQL), syncable database engine for .NET",Couchbase.Lite,True,2018-04-12T22:06:23.203+00:00,True,False,,"couchbase,couchbase-mobile,couchbase-lite,sync,database,mobile,xamarin,ios,android,windows,linux,mac,osx",32070,True,0.9.5-pre3
+Envoc,2014-09-18T20:48:10.68Z,Envoc.Core.Data.EF,Envoc.Core.Data.EF,False,2017-11-08T19:55:27.237+00:00,True,False,,,10913,False,4.0.27
+Jon Arild Torresdal,2014-09-19T11:07:09.427Z,"Note: This package is for extending the ConDep DSL. If you're looking for ConDep to do deployment or infrastructure as code, please use the ConDep package. ConDep is a highly extendable Domain Specific Language for Continuous Deployment, Continuous Delivery and Infrastructure as Code on Windows.",ConDep.Dsl,True,2016-12-06T04:12:57.487-08:00,True,False,,"Continuous,Deployment,Delivery,Infrastructure,WebDeploy,Deploy,msdeploy,IIS,automation,powershell,remote",65757,False,3.0.51-beta
+Mogens Heller Grabe,2014-09-19T14:41:46.11Z,NLog integration for Cirqus,d60.Cirqus.NLog,False,2017-06-14T22:32:50.753-07:00,True,False,,,28298,False,0.23.0
+"Steffen Forkmann,Alexander Gross",2014-09-19T09:36:59.307Z,A package dependency manager for .NET with support for NuGet packages and GitHub files.,Paket,False,2018-04-17T08:54:34.933+00:00,True,False,A package dependency manager for .NET with support for NuGet packages and GitHub files.,"nuget,bundler,F#",825043,False,0.2.10
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2014-09-19T16:24:27.307Z,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for IIS,FAKE.IIS,False,2018-04-15T16:41:34.643+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",186382,False,3.5.1
+QuatroDev,2014-09-18T23:41:52.853Z,Simplr WebApi implementation,Simplr.WebApi,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.37
+Sam High,2014-09-19T18:51:13.003Z,BidAmi Entities Model to access BIdAmi SQL Database,AmerMem.Model,False,2015-01-06T11:37:29.247-08:00,True,False,,,5139,False,1.0.6
+Jin-Wook Chung,2014-09-19T02:55:00.58Z,CIBuild.Scripts is build scripts to create nuget packages and publish it to nuget server.,CIBuild.Scripts,True,2015-09-08T12:11:21.967-07:00,True,False,,"MSBuild,Build,CI",5994,False,0.0.1-pre07
+W3 Solutions Inc.,2014-09-19T04:45:08.57Z,W3 Solutions Inc api client. Allows easy interactions with all our API services.,W3Solutions.Api.Client,False,2016-06-24T07:32:49.377-07:00,True,False,,"w3s.io,p3support.com,w3solutions,w3",18762,False,1.3.5374.37352
+Jef King,2014-09-19T04:48:02.157Z,Scalable image uploading and processing for Azure.,King.Azure.Imaging,False,2016-08-30T15:12:39.633-07:00,True,False,Simplified Azure Imaging Framework.,"King.Azure.Imaging,Azure,Image,Jpg,Png,CDN,image,resize,crop,rotate,jpeg,jpg,gif,png,server-safe-imaging,imaging,Cloud,Blob",8785,False,1.2.5
+Envoc,2014-09-18T20:49:44.133Z,Envoc.Core.Validation.Fluent,Envoc.Core.Validation.Fluent,False,2017-11-08T19:56:52.207+00:00,True,False,,,10706,False,4.0.27
+Markus Olsson,2014-09-19T21:32:21.62Z,"A graphical interfaces for inspecting reactive applications. Installing this package will only add the graphical interface, it will not be shipped alongside your application.",RxSpy.LiveView,True,2014-09-19T15:19:10.587-07:00,True,False,,,1773,False,0.1.0-pre
+Volkan Ceylan,2014-09-19T18:44:42.957Z,Contains Serenity core and UI script libraries. Use only with Saltarelle projects that produce Javascript code.,Serenity.Script,False,2018-01-30T18:51:12.2+00:00,True,False,,Serenity,50802,False,1.1.5
+Oystein Bjorke,2014-09-18T21:43:11.667Z,OxyPlot is an open source plotting library for .NET. This package contains the custom control for Windows Phone 8 apps.,OxyPlot.WP8,False,1899-12-31T16:00:00-08:00,False,False,,"wp8,windows,phone,8,windowsphone,winphone,plotting,plot,charting,chart",61366,False,2014.1.474
+Jef King,2014-09-19T02:00:22.903Z,Synchronize files between SQL Server and Azure Table Storage.,King.BTrak,False,2015-02-09T21:07:53.16-08:00,True,False,Synchronize files between SQL Server and Azure Table Storage.,"King.BTrak,Azure,SQL,Server,SQL-Server,Synchronize",3491,False,0.0.2
+Pippon,2014-09-19T06:43:58.553Z,csharp util by Pippon,XFramework,False,2014-09-19T00:56:41.31-07:00,True,False,,,2690,False,1.0.2.26038
+Volkan Ceylan,2014-09-19T19:34:34.927Z,"Contains abstractions and implementations for some basic Serenity features like authorization, caching, localization, dependency resolution, reflection...",Serenity.Core,False,2018-03-31T16:38:28.347+00:00,True,False,,Serenity,122757,False,1.1.6
+Envoc,2014-09-18T20:47:24.147Z,Envoc.Core,Envoc.Core,False,2017-11-08T19:55:00.833+00:00,True,False,,,11132,False,4.0.27
+Chillisoft,2014-09-19T04:02:33.607Z,Habanero.Binding,Habanero.Binding,True,2017-04-20T04:02:51.37+00:00,True,False,,,143162,False,1.2.1495-prerelease
+TJ Bakre,2014-09-19T06:19:48.137Z,Faster than Any Binary?,NetJSON,False,2017-12-05T04:18:06.65+00:00,True,False,,"json,json-serializer,javascript,JSON,serializer,binary",35261,False,1.0.3
+kzu,2014-09-18T22:14:42.013Z,Automatically assign issues with title formatted with ':[username]' or ':me'.,OctoHook.AutoAssign,False,2015-02-25T04:36:13.547-08:00,True,False,,"github,webhook",3564,False,0.3.8
+Mike O'Brien,2014-09-18T20:01:18.897Z,Allows you to use regular expressions to ignore/include portions of the url as well as constraining actions to verbs.,FubuMVC.RegexUrlPolicy,False,2016-06-01T12:25:50.45-07:00,True,False,Allows you to use regular expressions to ignore/include portions of the url as well as constraining actions to verbs.,fubumvc,5856,False,1.0.15
+Acid Media,2014-09-19T10:36:44.67Z,Mobiscroll package for jQuery Mobile,Mobiscroll-jQuery-Mobile,False,2014-10-22T05:59:04.473-07:00,True,False,A wheel scroller user control optimized for touchscreens to easily enter date and/or time. The control can easily be customized to support any custom values.,"jQuery,JavaScript,datepicker,timepicker,touchscreen,Webkit,android,iPhone,iPad,webapps,GalaxyTab,dropdown,mobile,wheel,senseui",9666,False,2.13.0
+JetBrains,2014-09-19T16:09:09.493Z,"ReSharper annotations are useful to increase accuracy and precision of ReSharper code inspections, reduce false positive warnings, explicitly declare purity and nullability in your code, deal with implicit usages of members, support special semantic of APIs in ASP.NET and XAML frameworks and etc.
+
+      By default all attribute usages are erased from metadata, so no actual binary reference to 'JetBrains.Annotations.dll' assembly will be produced. If you need to preserve annotations in metadata, just define 'JETBRAINS_ANNOTATIONS' conditional compilation symbol in your projects.
+
+      This package is backward compa",ControlFlow.Annotations,False,1899-12-31T16:00:00-08:00,False,False,"Annotations are useful to increase accuracy and precision of ReSharper code inspections, reduce false positive warnings, explicitly declare purity and nullability in your code, deal with implicit usages of members, support special semantic of APIs in ASP.NET and XAML frameworks and etc.","jetbrains,resharper,annotations,canbenull,notnull",-1,False,8.0.3
+Christopher Dresel,2014-09-19T16:48:03.743Z,"BuildTools.StyleCopPlus integrates StyleCopPlus into the build process. 
+
+This is just a simple Nuget that sets StyleCopAdditionalAddinPaths to the StyleCopPlus.dll folder. All regards to the corresponding authors.",BuildTools.StyleCopPlus,False,2014-09-19T09:48:03.743-07:00,True,False,,"Build,BuildTools,StyleCop,StyleCopPlus,StyleCop+",4782,False,4.7.49.4
+danielwertheim,2014-09-18T20:00:11.59Z,"MyCouch is the simple asynchronous CouchDB and Cloudant client for .Net - building on top of the asynchronous HTTP client and uses JSON.Net to provide flexible serialization behaviour.
+
+      If you want Cloudant specific features like Lucene Searches, go with the ""MyCouch.Cloudant"" package instead.
+
+      It tries to keep the domain language of CouchDb and lets you work with requests and responses but also provides you with an alternative simplifying async API.
+      MyCouch lets you work with raw JSON and/or entities/POCOS without requiring any implementation of interfaces or base-classes etc. MyCouch provides you with some model conventions like
+      injection of $doctype to the document. It is pluggable. If you don't like some piece, then hook in your implementation instead.
+
+      Supports .Net4.0, .Net4.5 and Windows store 8.0 and 8.1 (WinRT).",MyCouch,False,2018-03-19T17:29:46.93+00:00,True,False,Simple async CouchDB and Cloudant client.,"couchdb,cloudant,nosql",42513,False,2.4.1
+simpleSyndicate,2014-09-19T15:51:47.487Z,"Common functionality for ASP.Net MVC applications - configuration, generic controller, generic repository, generic version history controller, access denied attribute, account management.",SimpleSyndicate.Mvc,False,2017-01-06T03:23:12.92-08:00,True,False,Common functionality for ASP.Net MVC applications.,"Generic,Controller,Repository,Version,History,Access,Denied,Account,Configuration,MVC",2803,False,1.0.6
+Mogens Heller Grabe,2014-09-19T14:40:52.31Z,MongoDB stuff for d60 event sourcing + cqrs kit,d60.Cirqus.MongoDb,False,2017-06-14T22:32:40.503-07:00,True,False,,,29197,False,0.23.0
+Ninject Project Contributors,2014-09-19T14:24:54.943Z,Adds self hosting support to web common.,Ninject.Web.Common.Selfhost,True,2017-10-23T14:34:06.357+00:00,True,False,,"Ninject,ioc,di,ASP.NET",52742,False,3.2.3-unstable-001
+Mogens Heller Grabe,2014-09-18T20:38:20.877Z,Test helpers for d60 event sourcing + cqrs kit,d60.Cirqus.TestHelpers,False,2014-10-06T04:37:41.397-07:00,True,False,,,7959,False,0.22.0
+Tradier,2014-09-19T08:12:24.48Z,Tradier SDK,Tradier.NET,True,2014-12-18T08:05:53.4-08:00,True,False,,,8129,False,1.0.3549.491-master
+iulian.margarintescu,2014-09-19T17:43:52.69Z,The library provides support for integrating NancyFx with the Metrics.NET Library,NancyFx.Metrics,True,2014-09-26T23:48:26.383-07:00,True,False,NancyFx adapter for Metrics.NET,"nancy,nancyfx,metrics,measurements,charts,timer,histogram,duration,graphite,health,checks",6003,False,0.2.1-pre
+jérôme Romagny,2014-09-18T23:16:59.913Z,EasyDb is a Micro Orm that allows you to write less code.,EasyDb,False,2018-01-26T02:23:53.88+00:00,True,False,,"EasyDb,Data,Micro,Orm",2767,False,1.1.0
+Remo Gloor,2014-09-19T16:42:17.16Z,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 Selfhost,Ninject.Web.WebApi.Selfhost,True,2017-10-23T15:18:11.257+00:00,True,False,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 Selfhost,"Ninject,ioc,di,web,mvc,api,selfhost",17899,False,3.2.2-unstable-002
+jesperbjensen,2014-09-19T10:49:49.957Z,Provides a Ninject container adapter for Rebus,Rebus.Ninject,False,2017-08-15T22:43:09.053+00:00,True,False,,"rebus,ninject,di,dependencyInjection,ioc,inversionOfControl",66613,False,0.71.1
+Ninny,2014-09-19T07:05:12.583Z,Common Library for all front-site and services-site using.,MMQ.CommonLibrary,False,2016-06-20T19:20:08.323-07:00,True,False,,,102571,False,0.0.356
+Media Browser Team,2014-09-19T01:50:16.523Z,ApiClient allows .NET clients to easily access the Media Browser 3 web API,MediaBrowser.ApiClient,False,2017-09-20T19:19:53.913+00:00,True,False,,,117583,False,3.0.0.348
+mookid8000,2014-09-19T10:51:01.493Z,Provides a RabbitMQ transport implementation for Rebus,Rebus.RabbitMQ,False,2018-03-13T19:31:44.673+00:00,True,False,,"rebus,rabbitmq,queue,messaging",92839,False,0.71.1
+Chillisoft,2014-09-19T04:02:55.367Z,Habanero.Faces,Habanero.Faces,True,2017-04-19T21:02:45.06-07:00,True,False,,,163761,False,3.9.318-prerelease
+Kayson,2014-09-19T09:36:44.657Z,JSON Toolkit is an easy to use and highly optimized library for handling JSON objects inside .NET. Its superior performance is way better than other similar libraries.,ComputerBeacon.Json,False,2015-08-24T07:03:44.713-07:00,True,False,,"C#,JSON",9457,False,4.3.832
+Mogens Heller Grabe,2014-09-19T11:44:54.287Z,NLog integration for Cirqus,d60.Cirqus.NLog,False,2017-06-14T22:32:50.753-07:00,True,False,,,28298,False,0.22.2
+plexityHide,2014-09-19T01:03:11.57Z,"GTP.NET.WinForms is a package of components to build interactive Gantt and Schedule charts on .net4,.net4.5 WindowsForms",GTP.NET.WinForms,False,2016-11-27T21:01:50.9+00:00,True,False,,"Gantt,Schedule,plexityHide,GTP.NET,GTP.NET.WinForms",24859,False,5.9.19.7480
+Chad Kuehn,2014-09-19T16:46:46.867Z,"When scripting users can convert a MVC Model to a JavaScript object.  But as the user manipulates the view, the object is no longer current.  This plugin allows the user to invoke a method that updates a jQuery object with any changes made to the DOM.
+
+This installs some dependencies.  If you want the plugin script itself visit the Project Information/Project Site link.",jsmodel,False,1899-12-31T16:00:00-08:00,False,False,A plugin that updates a jQuery object representing a MVC Model with the latest changes made to the DOM.,"mvc,javascript,jquery,model,viewmodel,view,dynamic,update,refresh,generated,current",-1,False,1.0.0
+Jayway,2014-09-19T09:28:51.333Z,OAuthAuthorization Provider for OWIN,JayLabs.Owin.OAuthAuthorization,False,2014-09-24T03:28:20.54-07:00,True,False,,"OAuth,Authorization,OWIN",1799,False,0.1.1.18865
+Microsoft Corporation,2014-09-19T18:32:11.707Z,This package contains the binaries of the Active Directory Authentication Library (ADAL). ADAL provides easy to use authentication functionality for your .NET client and Windows Store apps by taking advantage of Windows Server Active Directory and Windows Azure Active Directory.,Microsoft.IdentityModel.Clients.ActiveDirectory,False,2018-04-11T21:26:30.58+00:00,True,False,This package contains the binaries of the Active Directory Authentication Library (ADAL). ADAL provides easy to use authentication functionality for your .NET client and Windows Store apps by taking advantage of Windows Server Active Directory and Windows Azure Active Directory.,"Active,Directory,Authentication,Library,ADAL,Windows,Azure,AD,AAD,Identity,.NET,Store",9103166,True,2.11.10918.1222
+Pascal Wyss,2014-09-18T20:39:09.347Z,.NET Library to use gladdress.com Web API,Gladdress,False,2015-10-17T14:58:14.097-07:00,True,False,"Gladdress.com API Client Library
+
+Usage:
+
+GladdressProfile gladdressProfile = new GladdressProfile(""046632BC-8B3A-485D-8213-9527132C97C9"");
+List<string> fields = gladdressProfile->GetFields();
+var firstName = gladdressProfile.Get(""FirstName"");","Gladdress,GladId",10157,False,1.6.0
+Joerg Battermann,2014-09-19T12:17:36.347Z,Provides JSON (De-)Serialization support for Nancy using Jil.,Nancy.Serialization.Jil,False,2016-12-23T13:13:52.663-08:00,True,False,"This is a Jil based Json (De-)Serializer for Nancy. Nancy is a lightweight web framework for the .Net platform, inspired by Sinatra.","Nancy,Json,Jil,Serialization,Serializer,Deserialization,Deserializer,Performance",10615,False,1.0.11
+Mohammad Younes,2014-09-20T00:39:51.31Z,AlertifyJS is a javascript framework for developing pretty browser dialogs and notifications.,AlertifyJS,False,2018-03-24T17:55:04.027+00:00,True,False,,"alert,notify,alertify,pretty,browser,dialog,notification,js,javascript,css",28200,False,0.5.0
+Andre Marschalek,2014-09-18T21:50:10.037Z,Gadgeteer Driver for GHI Keypad KP16 Module,Gadgeteer.Module.Keypad.KP16,False,1899-12-31T16:00:00-08:00,False,False,,"'.NET,Micro,Framework',.netmf,Gadgeteer,Module,Driver",-1,False,1.0.0.1
+Mogens Heller Grabe,2014-09-19T11:17:47.187Z,Event sourcing + cqrs kit,d60.Cirqus,False,2017-06-14T22:31:49.347-07:00,True,False,,,31376,False,0.22.1
+Volkan Ceylan,2014-09-19T10:50:41.957Z,Contains classes for CRUD service / repository implementations...,Serenity.Services,False,2018-03-31T16:40:02.41+00:00,True,False,,Serenity,114264,False,1.1.4
+Microsoft,2014-09-18T21:22:23.227Z,Description,WinSparkle.Net,False,2015-05-30T03:20:09.063-07:00,True,False,,,1888,False,0.8.0
+Mogens Heller Grabe,2014-09-18T20:36:54.54Z,MSSQL stuff for d60 event sourcing + cqrs kit,d60.Cirqus.MsSql,False,2014-10-22T01:23:36.117-07:00,True,False,,,9355,False,0.22.0
+Mogens Heller Grabe,2014-09-19T11:20:39.087Z,Test helpers for d60 event sourcing + cqrs kit,d60.Cirqus.TestHelpers,False,2014-10-06T04:37:41.397-07:00,True,False,,,7959,False,0.22.1
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2014-09-19T16:23:26.563Z,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,FAKE.Core,False,2018-04-15T16:36:46.647+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",271996,False,3.5.1
+Mogens Heller Grabe,2014-09-19T11:19:12.807Z,MSSQL stuff for d60 event sourcing + cqrs kit,d60.Cirqus.MsSql,False,2014-10-22T01:23:36.117-07:00,True,False,,,9355,False,0.22.1
+Thong Nguyen,2014-09-18T23:55:39.11Z,"Shaolinq is a thoughtfully designed ORM andLinq provider for .NET
+    
+    This library contains types used by Shaolinq.Postgres and Shaolinq.Postgres.DotCOnnect.",Shaolinq.Postgres.Shared,False,2015-10-08T07:11:28.553-07:00,True,False,Shaolinq is a thoughtful ORM and Linq provider for .NET,"linq,provider,orm",19413,False,0.6.0.160
+QuatroDev,2014-09-18T23:58:14.33Z,Simplr WebApi implementation,Simplr.WebApi,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.38
+Ninny,2014-09-19T10:05:43.357Z,Common Library for all front-site and services-site using.,MMQ.CommonLibrary,False,2016-06-20T19:20:08.323-07:00,True,False,,,102571,False,0.0.360
+"Adrian Aisemberg,adrianaisemberg@gmail.com",2014-09-18T21:11:51.953Z,Command-Line Auto Parser,CLAP,False,2014-09-18T14:11:51.983-07:00,True,False,,,93156,False,4.6.0
+Mogens Heller Grabe,2014-09-18T20:36:04.767Z,Azure Service Bus event dispatcher d60 event sourcing + cqrs kit,d60.Cirqus.AzureServiceBus,False,2017-06-14T22:32:00.207-07:00,True,False,,,28898,False,0.22.0
+Microsoft,2014-09-19T07:20:40.06Z,Description,XFramework.Cache.Memcached,False,2014-09-19T00:25:33.967-07:00,True,False,,,676,False,1.0.0.27611
+Dennis Daume,2014-09-19T19:28:20.46Z,Network classes for Espera.,Espera-Network,False,2015-03-12T11:06:24.157-07:00,True,False,,,7488,False,1.0.34
+Lida Weng,2014-09-19T12:53:23.033Z,OElite Web API SDK for OElite Platform based application development,OElite.Web,False,2016-04-16T05:06:28.653-07:00,True,False,,oelite,102426,False,2.6.0
+NuoDB,2014-09-19T15:36:18.13Z,The ASP.NET Membership Provider for NuoDB® enables an ASP.NET application to authenticate web users using a table inside a NuoDB database.,NuoDb.Web.Security,False,2016-10-24T04:05:48.27-07:00,True,False,NuoDB ASP.NET Membership Provider,"nuodb,newsql,nosql,cloud,ASP.NET",2529,False,2.1.0
+Xab3r,2014-09-18T21:29:50.493Z,.NET wrapper for x86/x64 https://github.com/vslavik/winsparkle,WinSparkle.Net,False,2015-05-30T03:20:09.063-07:00,True,False,,,1888,False,0.9.0
+JetBrains,2014-09-19T15:55:00.977Z,"ReSharper annotations are useful to increase accuracy and precision of ReSharper code inspections, reduce false positive warnings, explicitly declare purity and nullability in your code, deal with implicit usages of members, support special semantic of APIs in ASP.NET and XAML frameworks and etc.
+
+      By default all attribute usages are erased from metadata, so no actual binary reference to 'JetBrains.Annotations.dll' assembly will be produced. If you need to preserve annotations in metadata, just define 'JETBRAINS_ANNOTATIONS' conditional compilation symbol in your projects.",ControlFlow.Annotations,False,1899-12-31T16:00:00-08:00,False,False,,"jetbrains,resharper,annotations,canbenull,notnull",-1,False,8.0.2
+mookid8000,2014-09-19T10:48:31.533Z,Provides the ability for Rebus to log with Log4Net,Rebus.Log4Net,False,2017-08-15T22:41:17.95+00:00,True,False,,"rebus,log4net",111955,False,0.71.1
+Oystein Bjorke,2014-09-18T22:04:42.893Z,OxyPlot is an open source plotting library for .NET. This package targets Android apps.,OxyPlot.XamarinAndroid,False,1899-12-31T16:00:00-08:00,False,False,,"xamarin,android,plotting,plot,charting,chart",-1,False,2014.1.474
+Michael Hutchinson,2014-09-19T20:53:40.577Z,MSBuild targets for building Xamarin Studio / MonoDevelop addins using C#.,MonoDevelop.Addins.CSharp,False,1899-12-31T16:00:00-08:00,False,False,Used by Xamarin Studio / MonoDevelop addin projects created by the Addin Maker addin.,,-1,False,0.1.3
+Stu Ellerbusch,2014-09-19T17:43:00.107Z,Yapper Dapper Wrapper,Yapper,True,1899-12-31T16:00:00-08:00,False,False,"Yep Another Wrapper for Dapper. This wrapper provides a simple
+      Unit of Work pattern for isolating transactional business rules, 
+      cache and crud layer.","orm,sql,micro-orm",-1,False,0.1.15-beta
+plexityHide,2014-09-19T03:00:46.347Z,"GTP.NET.SL is a package of components to build interactive Gantt and Schedule charts on Silverlight,WPF,WindowsPhone,WindowsStore",GTP.NET.SL,False,2016-09-05T06:23:35.553-07:00,True,False,,"Gantt,Schedule,plexityHide,GTP.NET,GTP.NET.SL",19808,False,3.9.19.7476
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2014-09-19T16:24:58.263Z,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for SQL Server,FAKE.SQL,False,2018-04-15T16:42:22.333+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",195771,False,3.5.1
+John Kelly,2014-09-19T20:27:13.63Z,NRepository.MongoDb is a generic repository library with a strong focus on CQRS.,NRepository.MongoDb,False,2015-05-04T05:22:19.163-07:00,True,False,,"Repository,EF,entity,framework,cqrs,core,UOW,unit,of,work,MongoDB,NRepository,IRepository,Generic,Unit,Of,Work",1599,False,0.1.2
+NiLProject,2014-09-19T17:50:12.417Z,JavaScript engine for .NET,NiL.JS,False,2018-03-24T10:32:10.193+00:00,True,False,,"NiL,JS,js,JavaScript,javascript,Javascript,engine,ecmascript,ECMAscript,ECMAScript",23201,False,0.9.471
+Mogens Heller Grabe,2014-09-19T11:45:21.097Z,PostgreSql stuff for d60 event sourcing + cqrs kit,d60.Cirqus.PostgreSql,False,2017-06-14T22:33:10.723-07:00,True,False,,,27482,False,0.22.2
+JetBrains,2014-09-19T16:21:01.623Z,"ReSharper Annotations help reduce false positive warnings, explicitly declare purity and nullability in your code, deal with implicit usages of members, support special semantics of APIs in ASP.NET and XAML frameworks and otherwise increase accuracy of ReSharper code inspections.
+All usages of ReSharper Annotations attributes are erased from metadata by default, which means no actual binary reference to 'JetBrains.Annotations.dll' assembly is produced. If you need to preserve these attributes in metadata, just define 'JETBRAINS_ANNOTATIONS' conditional compilation symbol in your projects.",ControlFlow.Annotations,False,1899-12-31T16:00:00-08:00,False,False,Annotations to increase accuracy of ReSharper code inspections,"jetbrains,resharper,annotations,canbenull,notnull",-1,False,8.0.5
+Steven Lauwers,2014-09-19T12:28:42.073Z,Assembly runner support for DotNetBuild scripts,DotNetBuild.Runner.Assembly,False,2014-09-19T05:28:42.073-07:00,True,False,,"DotNetBuild.Runner.Assembly,DotNetBuild.Runner,DotNetBuild,DotNet,MSBuild",1598,False,1.1.0
+John Kelly,2014-09-19T20:25:47.773Z,NRepository.Core is a generic repository library with a strong focus on CQRS.,NRepository.Core,False,2015-10-08T09:57:27.703-07:00,True,False,,"Repository,EF,entity,framework,cqrs,core,UOW,unit,of,work,MongoDB,NRepository,IRepository,Generic,Unit,Of,Work",7416,False,2.3.0
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2014-09-19T12:52:53.907Z,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for Gallio,FAKE.Gallio,False,2018-04-15T16:40:43.187+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",192254,False,3.5.0
+Microsoft,2014-09-18T21:18:56.97Z,Description,WinSparkle.Net,False,2015-05-30T03:20:09.063-07:00,True,False,,,1888,False,0.7.0
+Oystein Bjorke,2014-09-18T21:41:10.293Z,OxyPlot is an open source plotting library for .NET. This package contains the custom control for Windows 8 Store apps.,OxyPlot.Metro,False,1899-12-31T16:00:00-08:00,False,False,,"winrt,win8,metro,plotting,plot,charting,chart",-1,False,2014.1.474
+Steven Lauwers,2014-09-19T12:29:40.297Z,Common tasks for DotNetBuild scripts,DotNetBuild.Tasks,False,2014-09-19T05:29:40.297-07:00,True,False,,"DotNetBuild.Tasks,DotNetBuild,DotNet,MSBuild",1331,False,1.1.0
+NuoDB,2014-09-19T15:34:14.493Z,"The ADO.NET Driver for NuoDB® enables you to develop .NET applications that connect to the NuoDB database. It is a fully managed ADO.NET driver, written in C# for .NET 3.5, implements all the required ADO.NET interfaces and integrates with ADO.NET aware tools.",NuoDb.Data.Client,False,2016-10-24T04:04:58.52-07:00,True,False,NuoDB ADO.NET Driver,"nuodb,newsql,nosql,cloud",5346,False,2.1.0
+Rico Suter,2014-09-19T06:35:06.107Z,MyToolkit is a collection of useful classes for the .NET Framework.,MyToolkit,False,2016-11-25T07:45:48.907-08:00,True,False,,,95476,False,2.3.12
+.NET Minion Team,2014-09-19T01:58:46.527Z,Framework to simplify web development.,Minion.Security.Cryptography,False,2014-09-19T19:52:10.613-07:00,True,False,Framework to simplify web development.,".NET,Framework,Library,Cryptography,JsonCookie,DES,Base64,Utilities",2395,False,1.1.1
+Pascal Wyss,2014-09-18T20:49:01.853Z,.NET Library to use gladdress.com Web API,Gladdress,False,2015-10-17T14:58:14.097-07:00,True,False,"Gladdress.com API Client Library
+
+Usage:
+
+GladdressProfile gladdressProfile = new GladdressProfile(""046632BC-8B3A-485D-8213-9527132C97C9"");
+List<string> fields = gladdressProfile->GetFields();
+var firstName = gladdressProfile.Get(""FirstName"");","Gladdress,GladId",10157,False,1.7.0
+CapableObjects,2014-09-19T05:43:35.687Z,Descr,EcoWebMVC,False,2018-04-17T02:39:31.16+00:00,True,False,,"ModelDrivenDevelopment,ECO,CapableObjects",114258,False,7.0.0.7487
+Ben Ernst,2014-09-19T04:29:36.997Z,Ninjility Utilities,Ninjility.Utility,False,2014-09-18T21:29:36.997-07:00,True,False,,,2682,False,1.0.0.1
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2014-09-19T12:52:16.26Z,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,FAKE.Core,False,2018-04-15T16:36:46.647+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",271996,False,3.5.0
+Media Browser Team,2014-09-18T23:03:39.86Z,ApiClient allows .NET clients to easily access the Media Browser 3 web API,MediaBrowser.ApiClient.Signed,False,2014-09-18T16:29:47.53-07:00,True,False,,,5512,False,3.0.0.346
+"Dan Friedman,Dragon Door Publications",2014-09-19T15:23:49.113Z,ELMAH with configuration for getting started quickly on Azure Table Storage as the error log.,Elmah.AzureTableStorage,False,2015-08-25T10:18:29.49-07:00,True,False,,"elmah,azure",62245,False,0.6.2
+NServiceBus Ltd,2014-09-19T01:06:36.147Z,The process used when sharing an azure instance between multiple NServicebus endpoints,NServiceBus.Hosting.Azure.HostProcess,False,2018-02-16T08:29:10.037+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",110403,False,5.3.5
+Envoc,2014-09-18T20:49:19.743Z,Envoc.Core.Testing,Envoc.Core.Testing,False,2017-11-08T19:56:27.15+00:00,True,False,,,11052,False,4.0.27
+Håkan Edling,2014-09-19T06:42:18.237Z,Library for adding Windows Azure features to Piranha CMS.,PiranhaCMS.Azure,True,2017-01-17T00:06:15.813-08:00,True,False,Library for adding Windows Azure features to Piranha CMS.,,1300,False,2.2.3.2-beta
+InpcTracer contributors,2014-09-19T01:00:12.863Z,A fluent interface for unit testing INotifyPropertyChanged events,InpcTracer,True,2014-11-20T16:06:51.843-08:00,True,False,,"INPC,INotifyPropertyChanged,async,Event,fluent,ViewModel,unit,testing,tests,MVVM,TDD",2682,False,0.4.1-beta
+Sergii Bomko,2014-09-19T17:36:26.307Z,Generic part of service for publishing of NuGet packages,nH,False,2014-09-19T10:36:26.307-07:00,True,False,,"nH,NuGet,CI",7389,False,1.0.6
+Ninject Project Contributors,2014-09-19T14:35:03.067Z,Adds owin hosting support to web common.,Ninject.Web.Common.OwinHost,False,2017-10-23T14:33:55.013+00:00,True,False,,"Ninject,ioc,di,ASP.NET",372114,False,3.2.3
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2014-09-19T12:56:08.44Z,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. This package bundles all extensions.,FAKE,False,2018-04-15T16:37:14.193+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",1443054,False,3.5.0
+QuatroDev,2014-09-19T01:04:33.757Z,"Simplr Identity Models, Helpers and UserStore implementation",Simplr.Identity,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.26
+Oystein Bjorke,2014-09-18T21:40:22.28Z,OxyPlot is an open source plotting library for .NET. This is the core package that is referenced by the other OxyPlot packages.,OxyPlot.Core,False,1900-01-01T00:00:00+00:00,False,False,,"plotting,plot,charting,chart",388422,False,2014.1.474
+Max Stepanskiy,2014-09-18T23:46:25.743Z,Yarn NHibernate Provider,Yarn.NHibernate,False,2016-09-26T11:40:11.723-07:00,True,False,,"NHibernate,FluentNHibernate,Repository",12608,False,0.8.12
+Nicolas Dorier,2014-09-19T16:32:43.667Z,Port of Bitcoin from C++ and Java with full test suite on github (https://github.com/NicolasDorier/NBitcoin),NBitcoin,False,2018-04-17T15:54:48.943+00:00,True,False,"See http://www.codeproject.com/Articles/768412/NBitcoin-The-most-complete-Bitcoin-port-Part-Crypt to get started.
+			Full script evaluation and parsing
+			Key generation
+			Deterministic wallet : BIP 32
+			Payment protocol
+			RPC Client
+			Encrypted wallet : BIP 38 (http://www.codeproject.com/Articles/775226/NBitcoin-Cryptography-Part)
+			Stealth Addresses (http://www.codeproject.com/Articles/775226/NBitcoin-Cryptography-Part)
+			Standard script generation and parsing
+			Object model faithful to the C++ API but with C# goodness
+			Simpler API (here is how to generate a key and get the address : new Key().PubKey.Address.ToString())
+			Bloom filter, partial merkle tree
+			Serialization of Blocks, Transactions, Script
+			Signing/verification with private keys, support compact signature for prooving ownership
+			NodeServer implementation
+
+			And more check at https://github.com/NicolasDorier/NBitcoin/blob/master/README.md",,121456,False,1.0.5.3
+Oystein Bjorke,2014-09-18T20:59:24.627Z,OxyPlot is an open source plotting library for .NET. This package contains the custom control for Silverlight.,OxyPlot.Silverlight,False,1899-12-31T16:00:00-08:00,False,False,,"silverlight,plotting,plot,charting,chart",133853,False,2014.1.472
+Shota Giorgobiani,2014-09-19T15:51:39.787Z,Servant File Service Client is client library for Servant.FileService WCF Service.,Servant.FileService.Client,False,2014-09-30T02:46:50.627-07:00,True,False,"Servant is mutlipurpose library collection. Developed by UGT software developers, Tbilisi, Georgia, Servant libraries can be used in various ways to accomplish day to day tasks.","File,Service,Servant,WCF",2487,False,0.3.4
+Andre Marschalek,2014-09-18T22:07:46.687Z,Gadgeteer Driver for GHI Keypad KP16 Module,Gadgeteer.Module.Keypad.KP16,False,1899-12-31T16:00:00-08:00,False,False,,"'.NET,Micro,Framework',.netmf,Gadgeteer,Module,Driver",-1,False,1.0.0.3
+j.weber,2014-09-19T21:12:05.51Z,Utility to generate fault tolerant and retry capable dynamic proxies for WCF services based on the WCF service interface.,WcfClientProxyGenerator,True,2017-11-21T06:29:52.81+00:00,True,False,,"wcf,service,proxy,dynamic",9053,False,2.0.2-beta
+Xamarin Inc.,2014-09-20T00:20:13.253Z,"Build native UIs for iOS, Android, and Windows Phone from a single, shared C# codebase",Xamarin.Forms,True,2018-04-05T23:07:12.977+00:00,True,False,,,4901078,True,1.2.3.6255-pre3
+Chillisoft,2014-09-19T04:02:40.763Z,Habanero.Smooth,Habanero.Smooth,True,2017-04-20T04:03:20.277+00:00,True,False,,,158633,False,3.9.318-prerelease
+Dennis Gronewold,2014-09-19T12:11:20.043Z,"SphinxConnector.NET is a .NET client API for the Sphinx full-text search engine. It provides a fluent query API with object mapping capabilities that allows for an easy integration of Sphinx into your applications. After the installation, SphinxConnector.NET operates in a trial-mode, which has some limitations in functionality. However, at http://www.sphinxconnector.net/Download, you can request a trial key to unlock all features for a period of 30 days.",SphinxConnector,False,2017-09-06T12:11:05.653+00:00,True,False,SphinxConnector.NET is a .NET client API for the Sphinx full-text search engine. It provides a fluent query API with object mapping capabilities that allows for an easy integration of Sphinx into your applications.,"sphinx,full-text,search,client,api",10220,False,3.10.3
+CodeSharp,2014-09-19T12:22:25.743Z,A library bridging between Newtonsoft.Json and msgpack-cli - allows you to deserialize message pack streams with your favorite Newtonsoft.Json options.,Newtonsoft.Msgpack,False,2016-07-24T21:38:20.627+00:00,True,False,,"msgpack,newtonsoft",83916,False,0.1.2
+"Brandon Cuff,alexinspire,Johan Nilsson",2014-09-19T21:34:46.36Z,An async wrapper of the Google Geocode API for .NET,GeocodeSharp,False,2016-12-23T12:14:23.097-08:00,True,False,,"Geocode,Address,Maps,Geo",27211,False,1.0.3
+Shawn Mclean,2014-09-19T06:27:26.547Z,Feature Toggle Library,EFeature,False,2014-09-18T23:27:26.547-07:00,True,False,Feature Toggle Library that fits well into multi-stage deployment pipelines.,"configuration,feature-wall,feature-configuration,continuous-integration,continuous-delivery,mvt,multivariant,enabled-for-percentage,feature,toggle",583,False,0.0.3
+Chillisoft,2014-09-19T04:02:40.907Z,Habanero.Testability,Habanero.Testability,True,2017-04-19T21:02:28.027-07:00,True,False,,,158245,False,3.9.318-prerelease
+Max Stepanskiy,2014-09-18T23:45:33.767Z,Yarn In-memory Provider,Yarn.InMemory,False,2016-09-26T11:39:48.59-07:00,True,False,,"Inmemory,In-memory,Repository",12710,False,0.8.12
+OrchestraDevs,2014-09-18T21:35:30.473Z,WPF UI to help users build collection filters.,Orc.FilterBuilder,True,2018-04-13T11:10:55.353+00:00,True,False,,"wpf,silverlight,orcomp,collection,filter,builder",19371,True,1.4.0-unstable0036
+Arteny,2014-09-19T10:08:11.687Z,Sport Exchanges Hi Level wrapper library,ExchangeAPI,False,2018-04-03T14:00:11.48+00:00,True,False,,"Betfair,API,API-NG,BetDAQ,Arteny",98025,False,1.96.444
+Mogens Heller Grabe,2014-09-19T11:20:17.367Z,Serilog integration for Cirqus,d60.Cirqus.Serilog,False,2017-06-14T22:33:21.007-07:00,True,False,,,27063,False,0.22.1
+NServiceBus Ltd,2014-09-19T01:06:18.38Z,The Azure Cloudservices Host for NServicebus,NServiceBus.Hosting.Azure,False,2018-02-16T08:29:01.053+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",151381,False,5.3.5
+Outsite Networks,2014-09-19T08:15:34.503Z,Description,APMP.Utilities.SocialMedia,False,2015-10-12T13:01:24.54-07:00,True,False,,,18155,False,0.0.4.137
+"GeertvanHorrik,OrchestraDevs",2014-09-19T09:31:53.377Z,The MahApps shell for Orchestra based applications.,Orchestra.Shell.MahApps,True,2018-04-16T15:54:52.573+00:00,True,False,,"mvvm,orchestra,shell,prism,framework,wpf,mahapps",38344,True,2.0.0-unstable0208
+Max Stepanskiy,2014-09-18T23:47:00.167Z,Yarn StructureMap Provider,Yarn.StructureMap,False,2016-09-26T11:40:26.123-07:00,True,False,,"Yarn,StructureMap",11439,False,0.8.12
+CapableObjects,2014-09-19T05:43:05.907Z,Descr,EcoWebProviders,False,2018-04-17T02:39:15.83+00:00,True,False,,"ModelDrivenDevelopment,ECO,CapableObjects",114229,False,7.0.0.7487
+CslaContrib,2014-09-20T00:51:26.623Z,"Extends CSLA .NET framework with ObjectCaching cache provider for Windows Server AppFabric.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CslaContrib-ObjectCaching.AppFabric,False,2018-04-10T17:46:22.38+00:00,True,False,Extends CSLA .NET framework with ObjectCaching cache provider for Windows Server AppFabric.,"CSLA,CslaContrib,ObjectCaching,AppFabric",2681,False,4.5.600
+John Kelly,2014-09-19T20:27:58.807Z,NRepository.TestKit is a collection of helper classes for NRepsoitory.,NRepository.TestKit,False,2015-10-08T10:03:31.95-07:00,True,False,,"Repository,EF,entity,framework,cqrs,core,Test,unit,of,work",5319,False,2.3.0
+Jayway,2014-09-19T06:49:52.477Z,OAuthAuthorization Provider for OWIN,JayLabs.Owin.OAuthAuthorization,False,2014-09-24T03:28:20.54-07:00,True,False,,"OAuth,Authorization,OWIN",1799,False,0.1.0.13123
+Envoc,2014-09-18T20:47:46.523Z,Envoc.Core.Common,Envoc.Core.Common,False,2017-11-08T19:57:18.657+00:00,True,False,,,11273,False,4.0.27
+Lida Weng,2014-09-19T16:03:19.873Z,Common Library for OElite Platform based application development,OElite.Common,False,1899-12-31T16:00:00-08:00,False,False,,oelite,-1,False,2.2.1
+"mookid8000,hagbarddenstore",2014-09-19T10:50:38.46Z,"Provides PostgreSql saga persister, subscription storage, and timeout storage",Rebus.PostgreSql,False,2018-03-16T07:36:51.777+00:00,True,False,,"rebus,postgres,postgresql",23296,False,0.71.1
+Xab3r,2014-09-18T19:43:30.877Z,.NET wrapper for x86/x64 https://github.com/vslavik/winsparkle,WinSparkle.Net,False,2015-05-30T03:20:09.063-07:00,True,False,.NET wrapper for x86/x64 WinSparkle,,1888,False,0.6.0
+Oystein Bjorke,2014-09-18T21:42:18.657Z,OxyPlot is an open source plotting library for .NET. This package contains the custom control for Silverlight.,OxyPlot.Silverlight,False,1899-12-31T16:00:00-08:00,False,False,,"silverlight,plotting,plot,charting,chart",133853,False,2014.1.474
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2014-09-19T16:26:20.27Z,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for FAKE Deploy,FAKE.Deploy.Lib,False,2018-04-15T16:38:30.65+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",179902,False,3.5.1
+Volkan Ceylan,2014-09-19T19:38:05.06Z,Generates server and script side code for Serenity platform applications,Serenity.CodeGenerator,False,2018-03-31T16:41:53.587+00:00,True,False,,Serenity,115580,False,1.1.6
+Ryan Niemeyer,2014-09-19T13:18:42.923Z,"Knockout-AMD-Helpers is a lightweight plugin that makes working with AMD modules in Knockout.js easier by adding a ""module"" binding and pulling external templates using the text plugin.",Knockout-AMD-Helpers,False,2014-11-26T15:30:45.253-08:00,True,False,"Knockout-AMD-Helpers is a lightweight plugin that makes working with AMD modules in Knockout.js easier by adding a ""module"" binding and pulling external templates using the text plugin.","knockout,knockoutjs,knockout.js,AMD,require.js,requirejs,curl.js,curljs",16006,False,0.7.2
+kzu,2014-09-18T22:16:24.287Z,"Automatically link issues to their corresponding user story 
+(issues labeled 'story' or 'Story') based on a shared prefix with square brackets, like '[uex] Provide UI hints'.",OctoHook.AutoLink,False,2015-02-25T04:38:05.387-08:00,True,False,,"github,webhook",3365,False,0.3.8
+Shota Giorgobiani,2014-09-19T15:38:01.403Z,"Servant File Service is WCF library, that will be automatically hosted in any ASP.NET/MVC application as base_address/FileService.svc and will serve as file upload/download mechanism, stroring files in MS SQL database. Please use Servant.FileService.Client nuget package to access and use service.",Servant.FileService,False,2014-10-01T06:27:31.827-07:00,True,False,"Servant is mutlipurpose library collection. Developed by UGT software developers, Tbilisi, Georgia, Servant libraries can be used in various ways to accomplish day to day tasks.","File,Service,Servant,WCF",8650,False,0.3.5
+QuatroDev,2014-09-18T20:13:42.473Z,Simplr Identity models and OAuth implementation,Simplr.Identity.OAuth,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.40
+dima117,2014-09-19T18:17:14.94Z,Transmit HTTP-requests to other plug-ins,ThinkingHome.Plugins.Listener,False,2016-12-27T10:27:18.013-08:00,True,False,Transmit HTTP-requests to other plug-ins,,4328,False,2.0.0.69
+Mogens Heller Grabe,2014-09-19T11:44:26.503Z,MSSQL stuff for d60 event sourcing + cqrs kit,d60.Cirqus.MsSql,False,2014-10-22T01:23:36.117-07:00,True,False,,,9355,False,0.22.2
+Mogens Heller Grabe,2014-09-19T11:19:58.41Z,PostgreSql stuff for d60 event sourcing + cqrs kit,d60.Cirqus.PostgreSql,False,2017-06-14T22:33:10.723-07:00,True,False,,,27482,False,0.22.1
+Bobby Cannon,2014-09-18T21:55:43.483Z,Integration testing framework for developers. TestR allows automating testing of web applications.,TestR,False,2018-02-18T21:44:14.877+00:00,True,False,,"TestR,Test,UnitTest,IntegrationTest,Automation,Testing,Web,InternetExplorer,FireFox,Chrome",22385,False,0.2.5374.39462
+Shota Giorgobiani,2014-09-19T13:34:30.263Z,File Service,Servant.FileService,False,2014-10-01T06:27:31.827-07:00,True,False,,,8650,False,0.3.1
+Ninject Project Contributors,2014-09-19T14:33:36.137Z,Adds Xml support for InRequestScope,Ninject.Web.Common.Xml,False,2017-10-23T14:34:28.993+00:00,True,False,,"Ninject,ioc,di,ASP.NET",13849,False,3.2.3
+JaredPar,2014-09-18T20:56:14.21Z,Command line utility for easily and synchronously intsalling or uninstalling VSIX extensions,VsixUtil,False,2014-12-05T14:38:52.673-08:00,True,False,,vsix,1619,False,1.0.0
+Volkan Ceylan,2014-09-19T19:37:38.883Z,Contains classes for MVC based Web environment...,Serenity.Web,False,2018-03-31T16:40:51.087+00:00,True,False,,Serenity,116518,False,1.1.6
+Steven Lauwers,2014-09-19T12:28:20.427Z,Runner support for DotNetBuild scripts,DotNetBuild.Runner,False,2014-09-19T05:28:20.427-07:00,True,False,,"DotNetBuild.Runner,DotNetBuild,DotNet,MSBuild",1308,False,1.1.0
+Stu Ellerbusch,2014-09-19T14:11:00.703Z,Yapper Dapper Wrapper,Yapper,True,1899-12-31T16:00:00-08:00,False,False,"Yep Another Wrapper for Dapper. This wrapper provides a simple
+      Unit of Work pattern for isolating transactional business rules, 
+      simple cache and crud layer.","orm,sql,micro-orm",-1,False,0.1.13-beta
+Microsoft,2014-09-19T08:16:34.263Z,Description,MoonAPNS,False,2015-09-09T14:08:16.777-07:00,True,False,,,27889,False,0.0.4.137
+GroupDocs,2014-09-19T14:35:59.98Z,"GroupDocs.Comparison for .NET is a lightweight library that allows you to merge and diff two versions of a document. Supported file formats include: PDF, DOC, DOCX, XLS, XLSX, PPT, PPTX, ODT, TXT, HTML.
+
+The library comes with a web UI that allows you to display differences between documents with a redline change tracking view. The UI can easily be customized and integrated into your own app. You can also build your own UI from scratch or use the library without the UI at all.
+
+Key Features Include:
+
+1. GroupDocs.Comparison identifies not only differences in document contents, but styles changes, including bold/italic, underlines, strikethroughs, font type, etc.
+
+2. Once documents are merged, the library generates a diff summary, listing all the changes found.
+
+3. The library allows you to compare up to 3 Word (DOC/DOCX) files. It also shows which changes come from what document.
+
+4. When comparing Word documents, changes can be accepted or rejected and the result exported to a final document.
+
+5. You can upload documents from streams and send the result output to streams as well.
+
+For more details on the library, please visit the GroupDocs website at: 
+http://groupdocs.com/dot-net/document-comparison-library
+
+Note: this download contains a fully working version of the product, however without a license set it will run in evaluation mode with some limitations. To test the GroupDocs.Comparison for .NET library without limitations, please request a free 30-day temporary license.",groupdocs-comparison-dotnet,False,2017-08-30T12:41:50.743+00:00,True,False,"GroupDocs.Comparison for .NET is a lightweight library that allows you to merge and diff two versions of a document. Supported file formats include: PDF, DOC, DOCX, XLS, XLSX, PPT, PPTX, ODT, TXT, HTML.
+The library comes with a web UI that allows you to display differences between documents with a redline change tracking view. The UI can easily be customized and integrated into your own app. You can also build your own UI from scratch or use the library without the UI at all.","Compare,Comparison,Documents,PDF,Word,Excel,PowerPoint,Visio,AutoCad,DOC,DOCX,XLS,XLSX,PPT,PPTX,VSD,DXF,TIFF",7155,False,2.1.0
+Markus Olsson,2014-09-19T22:19:10.573Z,RxSpy bundled with a graphical interfaces for inspecting reactive applications. The LiveView interface will not be shipped alongside your application.,RxSpy.LiveView,False,2014-09-19T15:19:10.587-07:00,True,False,,,1773,False,0.1.5
+Dirk Seefeld,2014-09-19T19:16:30.973Z,Description,idseefeld.de.UmbracoAzure,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+EricWhiteDpe,2014-09-19T13:12:27.457Z,"PowerTools for Open XML (NuGet package) contains binaries and guidance for accomplishing various common tasks using the Open XML SDK, such as:
+High-fidelity conversion of DOCX to HTML/CSS using HtmlConverter.cs 
+Merging and splitting DOCX documents using DocumentBuilder.cs 
+Merging and splitting PPTX presentations using PresentationBuilder.cs 
+Accepting tracked revisions in DOCX documents using RevisionAccepter.cs 
+Searching and replacing text in DOCX documents using TextReplacer.cs",OpenXmlPowerTools,False,2017-08-07T10:33:09.807+00:00,True,False,"NuGet package for the ""PowerTools for Open XML"" by Eric White.
+
+PowerTools for Open XML - v2.7.04
+Open XML SDK - v2.5","OpenXML,PowerPoint,Excel,Word",101511,False,2.7.4.2
+@SecretDeveloper,2014-09-19T16:25:15.853Z,A library and command line tool that can be used to generate data for testing or other uses. You provide it with a pattern containing symbols defining the output you want to produce and it will create random data to match that pattern.,tdg,False,2016-12-15T06:55:11.46-08:00,True,False,,"Test,data,generator,generate,regular,expression",4612,False,3.4.0
+Henrik Drachmann,2014-09-19T10:47:45.293Z,Provides an Azure Service Bus-based transport implementation for Rebus,Rebus.AzureServiceBus,False,2018-02-19T11:44:28.863+00:00,True,False,,"rebus,azure,queue,messaging,service,bus",77201,False,0.71.1
+Envoc,2014-09-18T20:50:04.05Z,Envoc.Core.Validation.Testing,Envoc.Core.Validation.Testing,False,2017-11-08T19:57:05.61+00:00,True,False,,,10246,False,4.0.27
+QuatroDev,2014-09-18T20:16:08.897Z,"Simplr Identity Models, Helpers and UserStore implementation",Simplr.Identity,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.23
+Max Stepanskiy,2014-09-18T23:46:08.877Z,Yarn Nemo Provider,Yarn.Nemo,False,2016-09-26T11:40:04.193-07:00,True,False,,"Nemo,Repository",6136,False,0.8.12
+INdT,2014-09-19T13:53:35.503Z,INdT Framework components.,INdTFramework,False,2015-01-05T05:46:39.417-08:00,True,False,,,1566,False,1.0.1
+cdroulers,2014-09-19T18:55:12.617Z,A package to manage fluent migrations in a Visual Studio solution. Adds PowerShell commands to the Package Manager Console to wrap calls to Migrate.exe of the FluentMigrator library. (Requires the FluentMigrator package to be installed. FluentMigrator.Tools is required if the framework is .NET 3.5 or if the architecture is AMD64),FluentMigrator.PowerShell,False,2016-01-12T06:55:30.06-08:00,True,False,"Wraps the Migrate.exe executable from FluentMigrator into the Package Manager Console. (Requires the FluentMigrator package to be installed. FluentMigrator.Tools is required if the framework is .NET 3.5 or if the architecture is AMD64)
+      Contributors:
+        - ciwchris (https://bitbucket.org/ciwchris)
+        - D. J. Rausch (https://bitbucket.org/djrausch1)","fluentmigrator,powershell",15462,False,0.1.0.11
+Mogens Heller Grabe,2014-09-19T11:43:34.95Z,Azure Service Bus event dispatcher d60 event sourcing + cqrs kit,d60.Cirqus.AzureServiceBus,False,2017-06-14T22:32:00.207-07:00,True,False,,,28898,False,0.22.2
+Max Stepanskiy,2014-09-18T23:45:16.793Z,Yarn Entity Framework Provider,Yarn.EF,False,2016-09-26T11:39:23.11-07:00,True,False,,"Entity,Framework,EntityFramework,EF,Repository",17896,False,0.8.12
+Arteny,2014-09-19T13:14:04.53Z,Sport Exchanges Hi Level wrapper library,ExchangeAPI,False,2018-04-03T14:00:11.48+00:00,True,False,,"Betfair,API,API-NG,BetDAQ,Arteny",98025,False,1.98.445
+Oleg Volovikov,2014-09-19T13:36:10.423Z,"Sql commands wrapper, a mini ORM.",Wxen.DbHug,True,2015-03-25T04:08:08.82-07:00,True,False,"Primarily DbHug is select-based mini ORM, but it has basic functionality of update, delete, insert.","sql,data,common,orm",10588,False,0.8.2.2-beta
+CslaContrib,2014-09-20T00:53:31.793Z,"Extends CSLA .NET framework with ObjectCaching data portal implementation, extended parser for SmartDate and additional generic business and authorization rules.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CslaContrib,False,2018-04-10T17:47:10.507+00:00,True,False,"Extends CSLA .NET framework with ObjectCaching data portal implementation, extended parser for SmartDate and additional generic business and authorization rules.","CSLA,CslaContrib,-,ObjectCaching,and,Generic,Rules",3337,False,4.5.600
+Mogens Heller Grabe,2014-09-18T20:37:15.94Z,NLog integration for Cirqus,d60.Cirqus.NLog,False,2017-06-14T22:32:50.753-07:00,True,False,,,28298,False,0.22.0
+Media Browser Team,2014-09-18T23:29:47.53Z,ApiClient allows .NET clients to easily access the Media Browser 3 web API,MediaBrowser.ApiClient.Signed,False,2014-09-18T16:29:47.53-07:00,True,False,,,5512,False,3.0.0.347
+Oystein Bjorke,2014-09-18T21:40:45.767Z,OxyPlot is an open source plotting library for .NET. This package contains the custom view for GTK# applications.,OxyPlot.GtkSharp,False,1899-12-31T16:00:00-08:00,False,False,,"gtk,gtk#,plotting,plot,charting,chart",80787,False,2014.1.474
+Scott Dorman,2014-09-19T04:28:58.497Z,This is a non-portable class library (targeting .NET Framework 4) which adds additional assert capabilities for MS Test.,Cadru.UnitTest.Framework,False,2017-11-06T15:10:20.48+00:00,True,False,A utility framework containing new APIs and extensions to the .NET Framework.,"cadru,utility,mstest,testing,unit,tests",2984,False,1.0.5375.59
+Rico Suter,2014-09-19T06:35:54.2Z,MyToolkit is a collection of useful classes for the .NET Framework.,MyToolkit.Extended,False,2016-11-25T07:46:18.813-08:00,True,False,,,85665,False,2.3.12
+crmsdk,2014-09-18T23:49:47.3Z,This package contains the official Microsoft.Xrm.Tooling.Connector assembly and has been authored by the Microsoft Dynamics CRM SDK team.,Microsoft.CrmSdk.XrmTooling.CoreAssembly,False,2017-11-15T21:19:42.35+00:00,True,False,Core assembly required to develop managed code applications using the Xrm Tooling Connector.,"Dynamics,CRM,2013,SDK,XRM",257263,True,6.1.1
+iulian.margarintescu,2014-09-19T17:43:33.053Z,"The library provides support for capturing: Gauges, Counters, Meters, Histograms and Timers",Metrics.NET,True,2018-02-19T15:00:50.857+00:00,True,False,".NET Port of the Java Metrics Library, a library for collecting metrics. Library also provides Health Checks.","metrics,measurements,charts,timer,histogram,duration,graphite,health,checks",180754,False,0.2.1-pre
+Brian Cherne,2014-09-19T17:40:12.197Z,"hoverIntent is a plug-in that attempts to determine the user's intent... like a crystal ball, only with mouse movement!",jQuery.hoverIntent,False,2017-11-21T15:55:06.15+00:00,True,False,"hoverIntent is a plug-in that attempts to determine the user's intent... like a crystal ball, only with mouse movement!
+         It works like (and was derived from) jQuery's built-in hover.
+         However, instead of immediately calling the onMouseOver function, it waits until the user's mouse slows down enough before making the call.
+
+         Why? To delay or prevent the accidental firing of animations or ajax calls. Simple timeouts work for small areas, but if your target area is large it may execute regardless of intent.","jQuery.hoverIntent,hoverIntent,hover,Intent",15442,False,8.0.0
+Paul Weakley,2014-09-18T20:05:35.947Z,Exposes Einstein.Entity objects through WebAPI,Einstein.Web,False,2015-06-09T04:43:12.267-07:00,True,False,,,6312,False,0.6.0
+Acid Media,2014-09-19T10:35:48.297Z,Mobiscroll package for jqMobi,Mobiscroll-jqMobi,False,2014-10-22T05:57:48.487-07:00,True,False,A wheel scroller user control optimized for touchscreens to easily enter date and/or time. The control can easily be customized to support any custom values.,"jqMobi,JavaScript,datepicker,timepicker,touchscreen,Webkit,android,iPhone,iPad,webapps,GalaxyTab,dropdown,mobile,wheel,senseui",8626,False,2.13.0
+Acid Media,2014-09-19T10:37:46.903Z,Mobiscroll package for zepto.js,Mobiscroll-Zepto,False,2014-10-22T06:00:28.393-07:00,True,False,A wheel scroller user control optimized for touchscreens to easily enter date and/or time. The control can easily be customized to support any custom values.,"zepto,JavaScript,datepicker,timepicker,touchscreen,Webkit,android,iPhone,iPad,webapps,GalaxyTab,dropdown,mobile,wheel,senseui",8975,False,2.13.0
+Paket team,2014-09-19T22:07:22.523Z,A package dependency manager for .NET with support for NuGet packages and GitHub files.,Paket,False,2018-04-17T08:54:34.933+00:00,True,False,A package dependency manager for .NET with support for NuGet packages and GitHub files.,"nuget,bundler,F#",825043,False,0.2.16
+rasmuskl,2014-09-19T10:52:14.367Z,Provides a Rebus container adapter for StructureMap.,Rebus.StructureMap,False,2017-05-18T14:25:07.16-07:00,True,False,,"rebus,structuremap",70671,False,0.71.1
+danielwertheim,2014-09-18T20:00:43.517Z,"MyCouch is the simple asynchronous CouchDB and Cloudant client for .Net - building on top of the asynchronous HTTP client and uses JSON.Net to provide flexible serialization behaviour.
+
+      This package contains support for Cloudant specific features. If you want pure CouchDB support go with the ""MyCouch"" package instead.
+
+      It tries to keep the domain language of CouchDb and lets you work with requests and responses but also provides you with an alternative simplifying async API.
+      MyCouch lets you work with raw JSON and/or entities/POCOS without requiring any implementation of interfaces or base-classes etc. MyCouch provides you with some model conventions like
+      injection of $doctype to the document. It is pluggable. If you don't like some piece, then hook in your implementation instead.
+
+      Supports .Net4.0, .Net4.5 and Windows store 8.0 and 8.1 (WinRT).",MyCouch.Cloudant,False,2015-11-25T12:45:47.4-08:00,True,False,Simple async CouchDB and Cloudant client.,"couchdb,cloudant,lucene,nosql",11013,False,2.4.1
+Volkan Ceylan,2014-09-19T19:36:22.763Z,Contains classes for CRUD service / repository implementations...,Serenity.Services,False,2018-03-31T16:40:02.41+00:00,True,False,,Serenity,114264,False,1.1.6
+Remo Gloor,2014-09-19T17:08:00.347Z,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 OWIN host,Ninject.Web.WebApi.OwinHost,True,2017-10-23T15:18:00.85+00:00,True,False,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 OWIN host,"Ninject,ioc,di,web,mvc,api,owin,host",360960,False,3.2.2-unstable-003
+Ben Abelshausen,2014-09-19T08:36:07.8Z,Library to read shapefiles and use them for routing.,OsmSharp.Routing.Shape,True,1899-12-31T16:00:00-08:00,False,False,Library to read shapefiles and use them for routing in OsmSharp.,"osm,openstreetmap,routing,nts",-1,False,0.1.0.19-beta
+Madhouse Inc.,2014-09-19T08:04:51.797Z,"As the operation of Shanghai SmartMad Advertising Co., Ltd., SmartMad is the most intelligent mobile phone application advertising platform in China. It is designed to fulfill the precise marketing objectives for the advertiser and create the maximum benefits for the developer relying on advanced wireless marketing solutions and intelligent advertising strategies.
+Key Strengths of SmartMad
+High quality brand advertising resources
+SmartMad has established long-term close cooperation relationships with domestic major 4A agents, having the largest share of brand advertising resources in China.
+Professional service team
+In 2006, SmartMad was founded in Shanghai, engaged in mobile advertising industry for more than 6 years, having the richest experience in the industry and the most professional service team.
+Precise orientation technology
+SmartMad has 6 years of accumulation in ad placement as well as the most complete and largest orientation databank in China, realizing precise orientation in a real sense.
+Leading rich media advertising
+SmartMad radically transforms the traditional display form of moving ads and introduces highly interactive ad user experience.
+Cloud framework advertising platform
+SmartMad has the leading intelligent advertising platform in the industry, and has completed the upgrading to cloud framework and cloud service.
+International platform
+SmartMad is the member of the board of directors of MMA, formulator of moving advertising industry standards, the first mover in opening up to the world and introducing international practice in layout.
+We aims to offering all-dimensional mobile marketing services to the advertisers relying on over 200 employees in Shanghai, Beijing and Guangzhou, who are from world famous 4A advertising agencies, interactive media, mobile business operators, wireless value-added service providers and IT industry. We are the founding member and board member of MMA Asia Pacific, joint founder and founding member of MMA China, and joint president of Global Mobile Advertising Committee.",CN.SmartMad.Ads.WindowsPhone,False,1899-12-31T16:00:00-08:00,False,False,The Leading Mobile Ad Platform.,"SmartMad,AdNetwork,Advertising,Mobile,In-App,Ad,SDK",917,False,3.0.2
+Outsite Networks,2014-09-19T08:16:00.147Z,Description,APMP.Utilities.TaxAPI,False,2015-10-12T13:20:06.24-07:00,True,False,,,18190,False,0.0.4.137
+Alex Sorokoletov,2014-09-18T20:32:27.22Z,"Google Analytics for Windows 8 Metro style apps (WinRT)
+
+HOW TO USE  http://w8ga.codeplex.com/wikipage?title=Howto&referringTitle=Home",w8ga,False,2014-09-18T13:32:27.22-07:00,True,False,"Google Analytics for Windows 8 Metro style apps (WinRT)
+Google Analytics for WinRT supports:
+1. Pageviews tracking + realtime support
+2. Event tracking
+3. Custom variables tracking
+4. D..
+Req...","winrt,windows8,metro,google,analytics,ga.js,win8,msaf,wp81,universal",5722,False,2.6.0
+Mike O'Brien,2014-09-18T20:50:17.927Z,A FubuMVC plugin that allows you to describe and publish documentation for RESTful services.,FubuMVC.Swank,False,2017-05-02T12:32:01.04-07:00,True,False,A FubuMVC plugin that allows you to describe and publish documentation for RESTful services.,fubumvc,16212,False,2.0.26
+"Chris Sampson,James Goodenough",2014-09-19T05:32:36.273Z,"Mobile UI library for cross platform development on iOS, Android, WinRT and Windows",SystemDotMobile,True,2015-06-30T13:45:46.803-07:00,True,False,"Mobile UI library for cross platform development on iOS, Android, WinRT and Windows","MvvmCross,Mobile,development,Cross,Platform",20754,False,1.4.3-beta
+John Kelly,2014-09-19T20:26:33.993Z,NRepository.EntityFramework is a generic repository library with a strong focus on CQRS.,NRepository.EntityFramework,False,2015-10-08T10:00:36.563-07:00,True,False,,"Repository,EF,entity,framework,cqrs,database,generic,unit,of,work,MongoDB,IRepository",6578,False,2.3.0
+Brandon Cuff,2014-09-19T04:16:52.19Z,An async wrapper of the Google Geocode API for .NET,GeocodeSharp,False,2016-12-23T12:14:23.097-08:00,True,False,,"Geocode,Address,Maps,Geo",27211,False,1.0.2
+"Friedrich Boeckh,Tomas Petricek",2014-09-19T12:14:19.537Z,"The package contains a command line version of F# Formatting libraries, which can be used for literate programming with F# (great for building documentation)  and for generating library documentation from inline code comments. The key componments  are Markdown parser, tools for formatting F# code snippets, including tool tip type information and a tool for generating documentation from library metadata.",FSharp.Formatting.CommandTool,False,2016-08-01T07:31:34.24-07:00,True,False,"A command line tool for building great F# documentation, samples and blogs","F#,fsharp,formatting,markdown,code,fssnip,literate,programming",41374,False,2.4.24
+Media Browser Team,2014-09-18T22:36:48.963Z,ApiClient allows .NET clients to easily access the Media Browser 3 web API,MediaBrowser.ApiClient,False,2017-09-20T19:19:53.913+00:00,True,False,,,117583,False,3.0.0.345
+Oleg Volovikov,2014-09-19T12:15:51.13Z,"Sql commands wrapper, a mini ORM.",Wxen.DbHug,True,2015-03-25T04:08:08.82-07:00,True,False,"Primarily DbHug is select-based mini ORM, but it has basic functionality of update, delete, insert.","sql,data,common,orm",10588,False,0.8.2.1-beta
+Ben Abelshausen,2014-09-18T21:06:17.93Z,OsmSharp is an open-source mapping project.,OsmSharp,True,1900-01-01T00:00:00+00:00,False,False,OsmSharp is an open-source mapping project available on Android and iOS using Xamarin and other platforms using Mono/.NET,"osm,openstreetmap,routing,rendering,mapcss",58446,False,4.3.0.861-beta
+Ninny,2014-09-19T07:41:56.11Z,Common Library for all front-site and services-site using.,MMQ.CommonLibrary,False,2016-06-20T19:20:08.323-07:00,True,False,,,102571,False,0.0.357
+CslaContrib,2014-09-20T00:50:57.887Z,"Extends CSLA .NET framework with MEF support for Repository and ObjectFactory data access.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CslaContrib-MEF,False,2018-04-10T17:46:06.957+00:00,True,False,Extends CSLA .NET framework with MEF support for Repository and ObjectFactory data access.,"CSLA,CslaContrib,MEF",2843,False,4.5.600
+Markus Olsson,2014-09-19T21:37:14.203Z,"A graphical interfaces for inspecting reactive applications. Installing this package will only add the graphical interface, it will not be shipped alongside your application.",RxSpy.LiveView,True,2014-09-19T15:19:10.587-07:00,True,False,,,1773,False,0.1.0-pre1
+Ninny,2014-09-19T10:08:51.48Z,Common Library for all front-site and services-site using.,MMQ.CommonLibrary,False,2016-06-20T19:20:08.323-07:00,True,False,,,102571,False,0.0.361
+Oystein Bjorke,2014-09-18T21:41:32.917Z,OxyPlot is an open source plotting library for .NET. This package contains the OpenXML (.docx) export extensions.,OxyPlot.OpenXml,False,1900-01-01T00:00:00+00:00,False,False,,"openxml,plotting,plot,charting,chart",117088,False,2014.1.474
+Volkan Ceylan,2014-09-19T10:51:33.6Z,Contains Serenity core and UI script libraries. Use only with Saltarelle projects that produce Javascript code.,Serenity.Script,False,2018-01-30T18:51:12.2+00:00,True,False,,Serenity,50802,False,1.1.4
+Oystein Bjorke,2014-09-18T21:00:08.343Z,OxyPlot is an open source plotting library for .NET. This package contains the custom control for Windows Phone 8 apps.,OxyPlot.WP8,False,1899-12-31T16:00:00-08:00,False,False,,"wp8,windows,phone,8,windowsphone,winphone,plotting,plot,charting,chart",61366,False,2014.1.472
+Mogens Heller Grabe,2014-09-19T14:40:31.607Z,Azure Service Bus event dispatcher d60 event sourcing + cqrs kit,d60.Cirqus.AzureServiceBus,False,2017-06-14T22:32:00.207-07:00,True,False,,,28898,False,0.23.0
+Mogens Heller Grabe,2014-09-19T14:42:26.297Z,Serilog integration for Cirqus,d60.Cirqus.Serilog,False,2017-06-14T22:33:21.007-07:00,True,False,,,27063,False,0.23.0
+Shota Giorgobiani,2014-09-19T13:21:37.76Z,File Service,Servant.FileService,False,2014-10-01T06:27:31.827-07:00,True,False,,,8650,False,0.2.9
+Mogens Heller Grabe,2014-09-18T20:37:58.91Z,Serilog integration for Cirqus,d60.Cirqus.Serilog,False,2017-06-14T22:33:21.007-07:00,True,False,,,27063,False,0.22.0
+"Steffen Forkmann,Alexander Gross",2014-09-19T08:05:55.193Z,A package dependency manager for .NET with support for NuGet packages and GitHub files.,Paket,False,2018-04-17T08:54:34.933+00:00,True,False,A package dependency manager for .NET with support for NuGet packages and GitHub files.,"nuget,bundler,F#",825043,False,0.2.8
+CapableObjects,2014-09-19T05:42:39.547Z,Descr,EcoWebASP,False,2018-04-17T02:39:00.97+00:00,True,False,,"ModelDrivenDevelopment,ECO,CapableObjects",115831,False,7.0.0.7487
+Volkan Ceylan,2014-09-19T10:49:45.207Z,"Contains helper classes for SQL data connections, fluent SQL builders, criteria, join definitions, data mapping, validation...",Serenity.Data,False,2018-03-31T16:39:26.707+00:00,True,False,,Serenity,115139,False,1.1.4
+Mogens Heller Grabe,2014-09-19T11:18:20.85Z,Azure Service Bus event dispatcher d60 event sourcing + cqrs kit,d60.Cirqus.AzureServiceBus,False,2017-06-14T22:32:00.207-07:00,True,False,,,28898,False,0.22.1
+Thong Nguyen,2014-09-18T23:55:20.373Z,"Shaolinq is a thoughtfully designed ORM and Linq provider for .NET
+    
+Use this package to add Shaolinq and out-of-the-box Postgres support (via Npgsql).
+    
+Designed to perform super fast and be easy to use, Shaolinq's features also include:
+    
+- First class schema-first ORM with WYSIWYG data access and minipulation.
+- First class LINQ support (not the basic kind you see in most other OSS projects).
+- Single trip updating of objects.
+- Support for Sqlite, MySql and Postgres.
+- Automatic database creation and schema migration.
+- Delete LINQ extension for batch server side deletes.
+- Full support for server side date functions (Date.DayOfWeek etc).
+- Easily extensible with a simple interface for adding support for other ADO.NET compatible databases.
+- Open Source!",Shaolinq.Postgres,False,2018-02-06T23:35:18.36+00:00,True,False,A thoughtful ORM and Linq provider for .NET and Postgres,"linq,provider,orm,postgres,sql,database",50870,False,0.6.0.160
+Rico Suter,2014-09-19T06:36:33.02Z,MyToolkit is a collection of useful classes for the .NET Framework.,MyToolkit.Http,False,2016-11-25T07:46:06.703-08:00,True,False,,,19169,False,2.3.12
+Codestellation project,2014-09-19T13:41:03.233Z,Simple extensible event publisher.,Codestellation.Emisstar.Windsor,False,2014-09-19T06:41:03.233-07:00,True,False,,"EventPublisher,EventBroker",507,False,0.0.40
+Chad Kuehn,2014-09-19T19:40:48.017Z,"This is a plugin for jQuery DataTables. It customizes the pagination of your table so that you can enter a number in a textbox. It includes a bootstrap focus highlight with intuitive navigation images.
+
+This installs some dependencies.  If you just want the plugin script itself, or you want to see some visuals visit the Project Information or Project Site link.",DatatablePaginateBootstrap,False,1899-12-31T16:00:00-08:00,False,False,"This is an extension script to jQuery Datatables.  It is an alternative pager, styled with bootstrap, that allows to select a page by entering a number.  It uses Glyphicons for navigation.","Twitter,Bootstrap,jQuery,DataTable,DataTables,pagination,paginate,navigation,input,textbox,Glyphicons,FontAwesome",-1,False,1.0.5
+SocialMoneyDev,2014-09-18T19:46:02.06Z,Visit http://docs.corepro.io for more information.,CorePro.SDK,False,2017-05-23T11:27:06.42-07:00,True,False,A .NET SDK for consuming the CorePro API.,"CorePro,.NET,API,SDK,'Social,Money'",9999,False,1.4.5374.24772
+CapableObjects,2014-09-19T05:41:43.447Z,Descr,EcoSqlServer,False,2018-04-17T02:38:30.423+00:00,True,False,,"ModelDrivenDevelopment,ECO,CapableObjects",142919,False,7.0.0.7487
+Mogens Heller Grabe,2014-09-19T14:42:43.767Z,Test helpers for d60 event sourcing + cqrs kit,d60.Cirqus.TestHelpers,False,2014-10-06T04:37:41.397-07:00,True,False,,,7959,False,0.23.0
+Ben Ibinson,2014-09-19T19:34:29.91Z,Provides reference restrictions for projects. Modify the RefRestrict.Config.xml file in to the Solution Items folder to apply reference restrictions that will be checked everytime the projects are built.,RefRestrict,False,2014-09-19T12:34:29.91-07:00,True,False,,References,732,False,1.0.0
+Sam Collett,2014-09-19T18:24:30.493Z,"Allows only valid characters (i.e. numbers) to be typed into a text box. 
+       Can take negative numbers and a decimal point. 
+       You can supply a callback that runs when focus is lost and the value in the text box is not a valid number.",jQuery.Numeric,False,2015-03-13T07:19:45.123-07:00,True,False,"Allows only valid characters (i.e. numbers) to be typed into a text box.
+        Can take negative numbers and a decimal point.
+        You can supply a callback that runs when focus is lost and the value in the text box is not a valid number.","jquery.Numeric,jquery,numeric",19171,False,1.4.0
+JetBrains,2014-09-19T16:32:20.353Z,"ReSharper Annotations help reduce false positive warnings, explicitly declare purity and nullability in your code, deal with implicit usages of members, support special semantics of APIs in ASP.NET and XAML frameworks and otherwise increase accuracy of ReSharper code inspections.
+
+All usages of ReSharper Annotations attributes are erased from metadata by default, which means no actual binary reference to 'JetBrains.Annotations.dll' assembly is produced. If you need to preserve these attributes in metadata, just define 'JETBRAINS_ANNOTATIONS' conditional compilation symbol in your projects.",ControlFlow.Annotations,True,1899-12-31T16:00:00-08:00,False,False,Annotations to increase accuracy of ReSharper code inspections,"jetbrains,resharper,annotations,canbenull,notnull",-1,False,8.0.0-beta
+NServiceBus Ltd,2014-09-19T01:05:59.02Z,NServiceBus Transport for the Windows Azure Servicebus,NServiceBus.Azure.Transports.WindowsAzureServiceBus,False,2018-02-16T08:30:09.883+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",145457,False,5.3.5
+Logistical Labs,2014-09-19T11:18:58.113Z,Rex client library,RexClient,False,2018-03-21T11:12:37.46+00:00,True,False,,,46507,False,0.9.17.20261
+Envoc,2014-09-19T19:19:52.137Z,Envoc.Core.Mobile.iOS,Envoc.Core.Mobile.iOS,False,2015-11-18T11:14:16.777-08:00,True,False,,,16922,False,1.0.16
+"Steffen Forkmann,Alexander Gross",2014-09-19T19:40:46.437Z,A package dependency manager for .NET with support for NuGet packages and GitHub files.,Paket,False,2018-04-17T08:54:34.933+00:00,True,False,A package dependency manager for .NET with support for NuGet packages and GitHub files.,"nuget,bundler,F#",825043,False,0.2.15
+Mogens Heller Grabe,2014-09-18T20:37:38.447Z,PostgreSql stuff for d60 event sourcing + cqrs kit,d60.Cirqus.PostgreSql,False,2017-06-14T22:33:10.723-07:00,True,False,,,27482,False,0.22.0
+Shota Giorgobiani,2014-09-19T15:33:39.677Z,"Servant File Service is WCF library, that will be automatically hosted in any ASP.NET/MVC application as base_address/FileService.svc and will serve as file upload/download mechanism, stroring files in MS SQL database. Please use Servant.FileService.Client nuget package to access and use service.",Servant.FileService,False,2014-10-01T06:27:31.827-07:00,True,False,"Servant is mutlipurpose library collection. Developed by UGT software developers, Tbilisi, Georgia, Servant libraries can be used in various ways to accomplish day to day tasks.","File,Service,Servant,WCF",8650,False,0.3.4
+Mogens Heller Grabe,2014-09-19T11:44:00.56Z,MongoDB stuff for d60 event sourcing + cqrs kit,d60.Cirqus.MongoDb,False,2017-06-14T22:32:40.503-07:00,True,False,,,29197,False,0.22.2
+Mogens Heller Grabe,2014-09-19T11:45:44.407Z,Serilog integration for Cirqus,d60.Cirqus.Serilog,False,2017-06-14T22:33:21.007-07:00,True,False,,,27063,False,0.22.2
+Andre Soares,2014-09-18T21:59:41.937Z,.NET sockets made easy,EasySocket,False,2014-11-03T11:15:20.493-08:00,True,False,,"easy,socket",2688,False,1.0.0
+Jin-Wook Chung,2014-09-19T06:38:33.563Z,CIBuild.Scripts is build scripts to create nuget packages and publish it to nuget server.,CIBuild.Scripts,False,2015-09-08T12:11:21.967-07:00,True,False,,"MSBuild,Build,CI",5994,False,0.0.2
+Synergex International Corporation,2014-09-19T22:44:59.887Z,SynergyDE runtime package for MONO.,Synergex.SynergyDE.synrnt,True,2018-03-09T16:59:42.25+00:00,True,False,,,4940,False,10.2.5001-beta1
+"Tomas Petricek,Oleg Pestov,Anh-Dung Phan,Xiang Zhang",2014-09-19T12:13:21.753Z,"The package is a collection of libraries that can be used for literate programming with F# (great for building documentation) and for generating library documentation from inline code comments. The key componments are Markdown parser, tools for formatting F# code snippets, including tool tip type information and a tool for generating documentation from library metadata.",FSharp.Formatting,False,2016-08-01T07:31:08.61-07:00,True,False,"A package of libraries for building great F# documentation, samples and blogs","F#,fsharp,formatting,markdown,code,fssnip,literate,programming",274835,False,2.4.24
+Chris Wood,2014-09-19T08:51:48.557Z,WHOIS provides structured WHOIS information for domain registrations and IP addresses,Whois,False,2014-09-21T12:37:53.01-07:00,True,False,,whois,2067,False,0.9.0
+Ninject Project Contributors,2014-09-19T14:34:35.647Z,Adds Web hosting support to web common.,Ninject.Web.Common.WebHost,False,2017-10-23T14:34:18.073+00:00,True,False,,"Ninject,ioc,di,ASP.NET",2145126,False,3.2.3
+Volkan Ceylan,2014-09-19T18:43:40.313Z,Contains classes for CRUD service / repository implementations...,Serenity.Services,False,2018-03-31T16:40:02.41+00:00,True,False,,Serenity,114264,False,1.1.5
+Markus Olsson,2014-09-19T21:44:20.477Z,"A graphical interfaces for inspecting reactive applications. Installing this package will only add the graphical interface, it will not be shipped alongside your application.",RxSpy.LiveView,False,2014-09-19T15:19:10.587-07:00,True,False,,,1773,False,0.1.0
+Turkcell İletişim Hizmetleri A.Ş.,2014-09-19T12:17:22.957Z,Turkcell'in gerçek zamanlı analytics çözümü olan Curio için geliştirilmiş WP SDK'sıdır.,TurkcellCurioSdk,False,2014-09-19T05:17:22.957-07:00,True,False,Turkcell'in gerçek zamanlı analytics çözümü olan Curio için geliştirilmiş WP SDK'sıdır.,"Turkcell,Curio,Analytics,Analitik",730,False,1.0.1
+mookid8000,2014-09-19T10:46:56.51Z,Provides extension methods that allow for registering reply handlers inline,Rebus.Async,False,2017-08-15T22:38:07.727+00:00,True,False,,"rebus,async,lambda",28893,False,0.71.1
+Lida Weng,2014-09-19T16:05:11.593Z,OElite Web API SDK for OElite Platform based application development,OElite.Web,False,2016-04-16T05:06:28.653-07:00,True,False,,oelite,102426,False,2.6.1
+QuatroDev,2014-09-18T23:29:04.99Z,"Simplr Identity Models, Helpers and UserStore implementation",Simplr.Identity,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.24
+QuatroDev,2014-09-19T00:40:58.503Z,Simplr Helpers,Simplr.Helpers,False,2014-10-07T09:21:55.357-07:00,True,False,,,2158,False,0.8.10
+Akash Kava,2014-09-19T12:36:18.62Z,Enterprise Grade JavaScript UI Framework inspired from Flex and Silverlight.,Atoms.js,False,2017-12-04T18:22:55.767+00:00,True,False,Enterprise Grade JavaScript UI Framework inspired from Flex and Silverlight.,"JavaScript,UI,Framework",62641,False,1.2.519
+Ninject Project Contributors,2014-09-19T14:26:02.077Z,Adds owin hosting support to web common.,Ninject.Web.Common.OwinHost,True,2017-10-23T14:33:55.013+00:00,True,False,,"Ninject,ioc,di,ASP.NET",372114,False,3.2.3-unstable-001
+Steven Lauwers,2014-09-19T12:29:09.51Z,ScriptCs runner support for DotNetBuild scripts,DotNetBuild.Runner.ScriptCs,False,2014-09-19T05:29:09.51-07:00,True,False,,"DotNetBuild.Runner.ScriptCs,DotNetBuild.Runner,DotNetBuild,DotNet,MSBuild",1348,False,1.1.0
+Ninny,2014-09-19T09:30:30.85Z,Common Library for all front-site and services-site using.,MMQ.CommonLibrary,False,2016-06-20T19:20:08.323-07:00,True,False,,,102571,False,0.0.359
+Volkan Ceylan,2014-09-19T10:50:13.98Z,"Contains entity classes, fields and related functions...",Serenity.Data.Entity,False,2018-03-31T16:39:46.287+00:00,True,False,,Serenity,114583,False,1.1.4
+Envoc,2014-09-18T20:48:33.18Z,Envoc.Core.Mapping.AutoMapper,Envoc.Core.Mapping.AutoMapper,False,2017-11-08T19:55:50.717+00:00,True,False,,,10717,False,4.0.27
+Сергей Щипанов,2014-09-18T20:25:06.143Z,"ДотНет апи Вконтакте,",VKSDK,False,2014-09-18T13:28:03.413-07:00,True,False,,"Vk,Vkontakte,Вконтакте",3518,False,1.1.0.5
+Markus Olsson,2014-09-19T21:56:38.42Z,RxSpy bundled with a graphical interfaces for inspecting reactive applications. The LiveView interface will not be shipped alongside your application.,RxSpy.LiveView,False,2014-09-19T15:19:10.587-07:00,True,False,,,1773,False,0.1.2
+QuatroDev,2014-09-19T01:06:46.2Z,Simplr core,Simplr.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.0
+andyfmiller.com,2014-09-19T04:25:28.397Z,"A .NET library with IMS LTI support for Tool Consumer and Tool Provider applications. Supports IMS LTI 1.0, 1.1, 1.1.1 and 1.2.",LtiLibrary,False,2014-11-01T19:23:09.813-07:00,True,False,,"IMS,LTI",8947,False,1.4.4
+Volkan Ceylan,2014-09-19T18:41:59.617Z,"Contains abstractions and implementations for some basic Serenity features like authorization, caching, localization, dependency resolution, reflection...",Serenity.Core,False,2018-03-31T16:38:28.347+00:00,True,False,,Serenity,122757,False,1.1.5
+Volkan Ceylan,2014-09-19T18:45:05.213Z,Contains classes for MVC based Web environment...,Serenity.Web,False,2018-03-31T16:40:51.087+00:00,True,False,,Serenity,116518,False,1.1.5
+Shota Giorgobiani,2014-09-19T15:47:34.427Z,Servant File Service Client is client library for Servant.FileService WCF Service.,Servant.FileService.Client,False,2014-09-30T02:46:50.627-07:00,True,False,"Servant is mutlipurpose library collection. Developed by UGT software developers, Tbilisi, Georgia, Servant libraries can be used in various ways to accomplish day to day tasks.","File,Service,Servant,WCF",2487,False,0.3.3
+Markus Olsson,2014-09-19T22:22:32.983Z,"A library that provides logging/analysis of Reactive Extensions observables, events, errors and subscriptions in your application.",RxSpy,False,2014-09-19T15:22:32.983-07:00,True,False,,,807,False,0.1.5
+Stu Ellerbusch,2014-09-19T15:03:56.617Z,Yapper Dapper Wrapper,Yapper,True,1899-12-31T16:00:00-08:00,False,False,"Yep Another Wrapper for Dapper. This wrapper provides a simple
+      Unit of Work pattern for isolating transactional business rules, 
+      cache and crud layer.","orm,sql,micro-orm",-1,False,0.1.14-beta
+"Steffen Forkmann,Alexander Gross",2014-09-19T06:46:45.557Z,A package dependency manager for .NET with support for NuGet packages and GitHub files.,Paket,False,2018-04-17T08:54:34.933+00:00,True,False,A package dependency manager for .NET with support for NuGet packages and GitHub files.,"nuget,bundler,F#",825043,False,0.2.6
+Outsite Networks,2014-09-19T08:15:12.877Z,Description,APMP.Utilities.BarCode,False,2015-10-12T12:27:21.947-07:00,True,False,,,19548,False,0.0.4.137
+Chad Kuehn,2014-09-19T20:09:39.84Z,"This is a plugin for jQuery DataTables. It customizes the pagination of your table so that you can enter a number in a textbox. It includes a bootstrap focus highlight with intuitive navigation images.
+
+This installs some dependencies.  If you just want the plugin script itself, or you want to see some visuals visit the Project Information or Project Site link.",DatatablePaginateBootstrap,False,1899-12-31T16:00:00-08:00,False,False,"This is an extension script to jQuery Datatables.  It is an alternative pager, styled with bootstrap, that allows to select a page by entering a number.  It uses Glyphicons for navigation.","Twitter,Bootstrap,jQuery,DataTable,DataTables,pagination,paginate,pager,navigation,input,textbox,Glyphicons,FontAwesome",-1,False,1.0.6
+Kirill Orlov,2014-09-19T08:49:23.05Z,Google PDFium-based PDF rasterizer,OutCode.NPDFiumRasterizer,False,2014-10-22T01:55:36.53-07:00,True,False,,,14771,False,0.49.0
+Andreas Gullberg Larsen,2014-09-19T22:07:38.07Z,"Units.NET gives you all the common units of measurement and the conversions between them. It is light-weight, unit tested and supports PCL.",UnitsNet,False,2018-04-16T10:58:31.157+00:00,True,False,Simplifies working with units of measurement.,"unit,units,measurement,si,metric,imperial,abbreviation,abbreviations,convert,conversion,parse,c#,.net,immutable",142859,False,3.1.0
+Markus Olsson,2014-09-19T21:43:37.757Z,A tool to examine live Observables in your applications,RxSpy,False,2014-09-19T15:22:32.983-07:00,True,False,,,807,False,0.1.0
+Entelect,2014-09-19T18:40:48.48Z,This is the sdk to assist in calling the remote services on encentivize,Entelect.Encentivize.Sdk,False,2014-12-09T05:05:12.603-08:00,True,False,,,4746,False,0.0.8
+Oystein Bjorke,2014-09-18T20:59:47.78Z,OxyPlot is an open source plotting library for .NET. This package contains the custom control for Windows Forms.,OxyPlot.WindowsForms,False,1900-01-01T00:00:00+00:00,False,False,,"winforms,plotting,plot,charting,chart",161215,False,2014.1.472
+Max Stepanskiy,2014-09-18T23:44:42.46Z,Yet Another Repository for .Net,Yarn,False,2016-09-26T11:39:07.743-07:00,True,False,,"Repository,Repository-Pattern",16858,False,0.8.12
+Akash Kava,2014-09-19T12:26:45.307Z,Enterprise Grade JavaScript UI Framework inspired from Flex and Silverlight.,Atoms.js,False,2017-12-04T18:22:55.767+00:00,True,False,Enterprise Grade JavaScript UI Framework inspired from Flex and Silverlight.,"JavaScript,UI,Framework",62641,False,1.2.518
+Oystein Bjorke,2014-09-18T20:57:46.207Z,OxyPlot is an open source plotting library for .NET. This package contains the custom view for GTK# applications.,OxyPlot.GtkSharp,False,1899-12-31T16:00:00-08:00,False,False,,"gtk,gtk#,plotting,plot,charting,chart",80787,False,2014.1.472
+Outsite Networks,2014-09-19T08:14:15.48Z,Description,APMP.Core.Mvc,False,2015-11-09T13:30:43.83-08:00,True,False,,,35137,False,0.0.4.137
+Jin-Wook Chung,2014-09-19T02:33:05.757Z,CIBuild.Scripts is build scripts to create nuget packages and publish it to nuget server.,CIBuild.Scripts,True,2015-09-08T12:11:21.967-07:00,True,False,,"MSBuild,Build,CI",5994,False,0.0.1-pre04
+Dmitry Morozov,2014-09-19T00:40:04.283Z,Database enumeration types,FSharp.Data.SqlEnumProvider,True,1899-12-31T16:00:00-08:00,False,False,Converts lookup data into enumeration type.,"F#,fsharp,data,typeprovider,sql",-1,False,0.9.0-aplha
+"Steffen Forkmann,Alexander Gross",2014-09-19T09:39:49.39Z,A package dependency manager for .NET with support for NuGet packages and GitHub files.,Paket,False,2018-04-17T08:54:34.933+00:00,True,False,A package dependency manager for .NET with support for NuGet packages and GitHub files.,"nuget,bundler,F#",825043,False,0.2.11
+Ninny,2014-09-19T07:52:41.34Z,Common Library for all front-site and services-site using.,MMQ.CommonLibrary,False,2016-06-20T19:20:08.323-07:00,True,False,,,102571,False,0.0.358
+jesperbjensen,2014-09-19T10:50:13.397Z,Provides the ability for Rebus to log with NLog,Rebus.NLog,False,2018-04-03T20:11:53.35+00:00,True,False,,"rebus,nlog",66557,False,0.71.1
+Eben Roux,2014-09-18T19:40:34.64Z,Contains the Msmq queue implementation for Shuttle ESB.,shuttle-esb-msmq,False,1899-12-31T16:00:00-08:00,False,False,,"shuttle-esb,enterprise-service-bus,esb,messaging,msmq,rabbitmq,service-bus,soa",-1,False,3.3.4
+NuoDB,2014-09-19T15:35:16.407Z,The Entity Framework Provider NuoDB® enables you to develop .NET applications that connect to the NuoDB database using Entity Framework.,EntityFramework.NuoDb,False,2016-10-24T04:05:25.147-07:00,True,False,NuoDB Entity Framework Provider,"nuodb,newsql,nosql,cloud,entityframework",4620,False,2.1.0
+"Steffen Forkmann,Alexander Gross",2014-09-19T18:13:22.317Z,A package dependency manager for .NET with support for NuGet packages and GitHub files.,Paket,False,2018-04-17T08:54:34.933+00:00,True,False,A package dependency manager for .NET with support for NuGet packages and GitHub files.,"nuget,bundler,F#",825043,False,0.2.14
+kzu,2014-09-18T22:14:13.757Z,Core interfaces for OctoHook extensions.,OctoHook,False,2015-02-25T04:38:39.433-08:00,True,False,,"github,webhook",3944,False,0.3.8
+CapableObjects,2014-09-19T05:40:43.627Z,Descr,EcoWpf,False,2018-04-17T02:37:57.953+00:00,True,False,,"ModelDrivenDevelopment,ECO,CapableObjects",142285,False,7.0.0.7487
+Volkan Ceylan,2014-09-19T10:52:15.76Z,Contains classes for MVC based Web environment...,Serenity.Web,False,2018-03-31T16:40:51.087+00:00,True,False,,Serenity,116518,False,1.1.4
+Oystein Bjorke,2014-09-18T21:00:39.613Z,OxyPlot is an open source plotting library for .NET. This package contains the custom control for WPF applications.,OxyPlot.Wpf,False,1900-01-01T00:00:00+00:00,False,False,,"wpf,plotting,plot,charting,chart",294768,False,2014.1.472
+Cantelematics Inc.,2014-09-19T11:26:28.62Z,"Trakopolis API library, which helps to make requests to the Trakopolis API server. See more details at https://api.trakopolis.com",TrakopolisAPIClient,False,2017-05-18T04:54:08.987-07:00,True,False,Trakopolis API library,,4172,False,1.102.0
+Mogens Heller Grabe,2014-09-19T14:40:07.543Z,Event sourcing + cqrs kit,d60.Cirqus,False,2017-06-14T22:31:49.347-07:00,True,False,,,31376,False,0.23.0
+CslaContrib,2014-09-20T00:49:23.72Z,"Supports the creation of CSLA. NET applications for Silverlight that use Caliburn.Micro MVVM UI framework.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.
+
+Caliburn.Micro is small, yet powerful framework designed for Xaml platforms, Caliburn.Micro implements a variety of UI patterns for solving real-world problems. Patterns that are highlighted include MVVM (Presentation Model), MVP and MVC.
+
+Note - Although not dependant on any specific version of Caliburn.Micro, the ViewModel adapter uses code from v.1.5.1.",CslaContrib-Caliburn.Micro.Silverlight,False,2016-06-14T12:33:45.367+00:00,True,False,Supports the creation of CSLA. NET applications for Silverlight that use Caliburn.Micro MVVM UI framework.,"CSLA,CslaContrib,Silverlight,Caliburn.Micro,MVVM,Model-View-ViewModel,Presentation,UI,ViewModel",2363,False,4.5.600
+EntityRepository Contributors,2014-09-18T20:10:21.323Z,OData service library - Uses Web API OData to implement a default OData API for an EF DbContext. Can be customized using normal Web API extension points.,EntityRepository.ODataServer,True,2015-10-01T17:07:14.2-07:00,True,False,,"EntityRepository,Web,API,OData,EF,EntityFramework,DataService,WCF,data,services",6372,False,0.8.1.27-beta
+Sergii Bomko,2014-09-19T21:24:02.5Z,ComboxJS is a widget for gluing together several controls.,ComboxJS,False,2014-09-19T14:24:02.5-07:00,True,False,,"javascript,widget,control",614,False,0.1.0
+mookid8000,2014-09-19T10:48:58.323Z,Provides MongoDB saga persister and subscription storage,Rebus.MongoDb,False,2017-08-15T22:41:41.72+00:00,True,False,,"rebus,mongodb",68030,False,0.71.1
+Media Browser Team,2014-09-18T21:49:20.523Z,Contains core components required to build plugins for Media Browser Server.,MediaBrowser.Server.Core,False,2018-04-14T14:59:39.967+00:00,True,False,,,137580,False,3.0.434
+Volkan Ceylan,2014-09-19T19:35:05.547Z,Contains CouchbaseDistributedCache that implements IDistributedCache interface,Serenity.Caching.Couchbase,False,2018-03-31T16:38:54.863+00:00,True,False,,Serenity,36683,False,1.1.6
+Max Stepanskiy,2014-09-18T23:45:51.703Z,Yarn MongoDB Provider,Yarn.MongoDb,False,2017-03-08T09:01:40.053-08:00,True,False,,"Mongo,MongoDB,Repository",12768,False,0.8.12
+Volkan Ceylan,2014-09-19T19:36:48.433Z,Contains helper classes for unit / integration testing...,Serenity.Testing,False,2018-03-31T16:40:15.99+00:00,True,False,,Serenity,38075,False,1.1.6
+Media Browser Team,2014-09-18T21:49:13.947Z,Contains common model objects and interfaces used by all Media Browser solutions.,MediaBrowser.Model.Signed,False,1899-12-31T16:00:00-08:00,False,False,,,42151,False,3.0.434
+Stu Ellerbusch,2014-09-19T18:10:22.383Z,Yapper Dapper Wrapper,Yapper,True,1899-12-31T16:00:00-08:00,False,False,"Yep Another Wrapper for Dapper. This wrapper provides a simple
+      Unit of Work pattern for isolating transactional business rules, 
+      cache and crud layer.","orm,sql,micro-orm",-1,False,0.1.17-beta
+Stu Ellerbusch,2014-09-19T18:08:00.357Z,Yapper Dapper Wrapper,Yapper,True,1899-12-31T16:00:00-08:00,False,False,"Yep Another Wrapper for Dapper. This wrapper provides a simple
+      Unit of Work pattern for isolating transactional business rules, 
+      cache and crud layer.","orm,sql,micro-orm",-1,False,0.1.16-beta
+mookid8000,2014-09-19T10:51:24.907Z,Provides RavenDb saga persister and subscription storage,Rebus.RavenDb,False,2017-08-15T22:44:57.243+00:00,True,False,,"rebus,ravendb",66861,False,0.71.1
+rkrdovrgs,2014-09-18T20:10:08.53Z,Description,Angular.CSharpHelpers,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.0.0.3
+QuatroDev,2014-09-19T01:21:33.91Z,"Simplr Identity Models, Helpers and UserStore implementation",Simplr.Identity,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.27
+Fortumo,2014-09-19T09:55:38.547Z,Fortumo Windows and Windows Phone Payment SDK,Fortumo,False,2015-05-27T09:06:01.127-07:00,True,False,,,5489,False,2.3.0
+QuatroDev,2014-09-19T00:45:41.78Z,Simplr Helpers,Simplr.Helpers,False,2014-10-07T09:21:55.357-07:00,True,False,,,2158,False,0.8.11
+Volkan Ceylan,2014-09-19T18:42:54.42Z,"Contains helper classes for SQL data connections, fluent SQL builders, criteria, join definitions, data mapping, validation...",Serenity.Data,False,2018-03-31T16:39:26.707+00:00,True,False,,Serenity,115139,False,1.1.5
+Jon Arild Torresdal,2014-09-19T11:33:45.303Z,"ConDep is a highly extendable Domain Specific Language for Continuous Deployment, Continuous Delivery and Infrastructure as Code on Windows. This package contians all the default operations found in ConDep. For additional operations, look for ConDep.Dsl.Operations.Contrib.",ConDep.Dsl.Operations,True,1899-12-31T16:00:00-08:00,False,False,,"Continuous,Deployment,Delivery,Infrastructure,WebDeploy,Deploy,msdeploy,IIS,automation,powershell,remote",12723,False,3.0.39-beta
+Ninject Project Contributors,2014-09-19T14:32:58.56Z,Bootstrapper for web projects,Ninject.Web.Common,False,2017-10-23T14:33:41.953+00:00,True,False,,"Ninject,ioc,di,ASP.NET",3330807,False,3.2.3
+Dan Esparza,2014-09-19T01:10:07.927Z,.NET MailChimp API wrapper,MailChimp.NET,False,2018-01-24T12:58:36.36+00:00,True,False,,"mailchimp,email",253631,False,1.1.50
+JBM Technologies,2014-09-19T12:42:29.087Z,This package is a collection of extension methods and helpers created by JBM Technologies to use in any project needed.,JBMTCore,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.16
+Jef King,2014-09-19T01:58:39.837Z,Synchronize files between SQL Server and Azure Table Storage.,King.BTrak,False,2015-02-09T21:07:53.16-08:00,True,False,Synchronize files between SQL Server and Azure Table Storage.,"King.BTrak,Azure,SQL,Server,SQL-Server,Synchronize",3491,False,0.0.1
+Volkan Ceylan,2014-09-19T18:42:28.377Z,Contains CouchbaseDistributedCache that implements IDistributedCache interface,Serenity.Caching.Couchbase,False,2018-03-31T16:38:54.863+00:00,True,False,,Serenity,36683,False,1.1.5
+Media Browser Team,2014-09-18T23:29:51.567Z,ApiClient allows .NET clients to easily access the Media Browser 3 web API,MediaBrowser.ApiClient,False,2017-09-20T19:19:53.913+00:00,True,False,,,117583,False,3.0.0.347
+latticework,2014-09-19T08:05:23.693Z,latticework.cs,latticework.cs,False,2013-07-22T14:32:56.307+00:00,True,False,,,309952,False,0.0.473
+Eben Roux,2014-09-18T19:41:28.033Z,"Contains the Sql Server queue implementation, idempotence service, and subscription manager for Shuttle ESB.",shuttle-esb-sqlserver,False,1899-12-31T16:00:00-08:00,False,False,,"shuttle-esb,enterprise-service-bus,esb,messaging,sql-server,service-bus,soa",-1,False,3.3.4
+CslaContrib,2014-09-20T00:50:05.37Z,"Supports the creation of CSLA. NET applications for WPF that use Caliburn.Micro MVVM UI framework.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.
+
+Caliburn.Micro is small, yet powerful framework designed for Xaml platforms, Caliburn.Micro implements a variety of UI patterns for solving real-world problems. Patterns that are highlighted include MVVM (Presentation Model), MVP and MVC.
+
+Note - Although not dependant on any specific version of Caliburn.Micro, the ViewModel adapter uses code from v.1.5.1.",CslaContrib-Caliburn.Micro.WPF,False,2018-04-10T17:45:38.097+00:00,True,False,Supports the creation of CSLA. NET applications for WPF that use Caliburn.Micro MVVM UI framework.,"CSLA,CslaContrib,WPF,Caliburn.Micro,MVVM,Model-View-ViewModel,Presentation,UI,ViewModel",3049,False,4.5.600
+Michal Altair Valášek - Altairis,2014-09-19T20:13:57.793Z,Set of various interesting .NET validation attributes for ASP.NET MVC and Web Forms model binding.,Altairis.ValidationToolkit,False,2017-12-19T12:11:02.6+00:00,True,False,,,3879,False,1.1.0
+mookid8000,2014-09-19T10:52:43.383Z,Provides a Unity container adapter for Rebus,Rebus.Unity,False,2017-08-15T22:47:07.983+00:00,True,False,,"rebus,unity,di,dependencyInjection,ioc,inversionOfControl",63411,False,0.71.1
+Volkan Ceylan,2014-09-19T19:35:29.677Z,"Contains helper classes for SQL data connections, fluent SQL builders, criteria, join definitions, data mapping, validation...",Serenity.Data,False,2018-03-31T16:39:26.707+00:00,True,False,,Serenity,115139,False,1.1.6
+Thong Nguyen,2014-09-18T23:54:26.763Z,"Shaolinq is a thoughtfully designed ORM and Linq provider for .NET
+    
+Designed to perform super fast and be easy to use, Shaolinq's features also include:
+    
+- First class schema-first ORM with WYSIWYG data access and minipulation.
+- First class LINQ support (not the basic kind you see in most other OSS projects).
+- Single trip updating of objects.
+- Support for Sqlite, MySql and Postgres.
+- Automatic database creation and schema migration.
+- Delete LINQ extension for batch server side deletes.
+- Full support for server side date functions (Date.DayOfWeek etc).
+- Easily extensible with a simple interface for adding support for other ADO.NET compatible databases.
+- Open Source!",Shaolinq,False,2018-02-06T23:34:15.607+00:00,True,False,A thoughtful ORM and Linq provider for .NET,"linq,provider,orm,sqlite,mysql,postgres,sql,database",55263,False,0.6.0.160
+gregsdennis,2014-09-19T15:55:22.1Z,"A fully object-oriented approach to JSON manipulation, validation, and serialization that focuses on modeling the JSON structure rather than mere string parsing.",Manatee.Json,False,2018-03-02T03:52:45.547+00:00,True,False,,"json,manatee,parser,serializer",38031,False,2.6.2.1
+CapableObjects,2014-09-19T05:41:16.57Z,Descr,EcoOtherDatabasePersistenceMappers,False,2018-04-17T02:38:14.233+00:00,True,False,,"ModelDrivenDevelopment,ECO,CapableObjects",141644,False,7.0.0.7487
+Jon Wagner,2014-09-19T18:56:16.587Z,"A database installer engine that automatically handles most installation and upgrade issues, such as script ordering, and table and procedure updates. Easier than EntityFramework code migrations.",Insight.Database.Schema,False,2015-03-01T13:45:24.317-08:00,True,False,,"Insight,orm,sql,sqlserver,schema,installer,code,migration",16177,False,2.2.8
+Volkan Ceylan,2014-09-19T10:51:05.923Z,Contains helper classes for unit / integration testing...,Serenity.Testing,False,2018-03-31T16:40:15.99+00:00,True,False,,Serenity,38075,False,1.1.4
+Nick Strupat,2014-09-19T06:16:27.307Z,Add drop-in versioned properties to your entity framework model for fine-grained auditing of your model.,EntityFramework.VersionedProperties,False,2015-09-22T19:43:16.84-07:00,True,False,Add drop-in versioned properties to your entity framework model for fine-grained auditing of your model.,"entity-framework,code-first,triggers",4284,False,1.1.0.67
+Volkan Ceylan,2014-09-19T10:52:57.96Z,Generates server and script side code for Serenity platform applications,Serenity.CodeGenerator,False,2018-03-31T16:41:53.587+00:00,True,False,,Serenity,115580,False,1.1.4
+Oystein Bjorke,2014-09-18T20:58:16.267Z,OxyPlot is an open source plotting library for .NET. This package contains the custom control for Windows 8 Store apps.,OxyPlot.Metro,False,1899-12-31T16:00:00-08:00,False,False,,"winrt,win8,metro,plotting,plot,charting,chart",-1,False,2014.1.472
+JetBrains,2014-09-19T15:37:59.413Z,"JetBrains ReSharper Code Annotations.
+
+      ReSharper annotations are useful to increase accuracy and precision of ReSharper code
+      inspections results, reduce false positive warnings? explicitly declare nullability
+      of values in your code, deal with implicit usages of members, support special semantics
+      of ASP.NET and XAML frameworks APIs.
+
+      Annotations are erased from metadata by default, so no actual binary reference
+      to 'JetBrains.Annotations.dll' assembly will be produced. If you need to preserve
+      annotations in metadata, just define 'JETBRAINS_ANNOTATIONS' conditional compilation
+      symbol in your projects.",ControlFlow.Annotations,False,1899-12-31T16:00:00-08:00,False,False,,"jetbrains,resharper,annotations,canbenull,notnull",-1,False,8.0.1
+"Steffen Forkmann,Sergey Tihon,Daniel Mohl,Tomas Petricek,Ryan Riley,Mauricio Scheffer,Phil Trelford,Vasily Kirichenko,Reed Copsey,Jr.",2014-09-19T18:28:06.887Z,The FSharp.Configuration project contains type providers for the configuration of .NET projects.,FSharp.Configuration,False,2018-02-23T05:10:09.253+00:00,True,False,Type providers for the configuration of .NET projects.,"F#,fsharp,typeproviders,Management,PowerShell",151236,False,0.3.0
+Oystein Bjorke,2014-09-18T20:58:37.737Z,OxyPlot is an open source plotting library for .NET. This package contains the OpenXML (.docx) export extensions.,OxyPlot.OpenXml,False,1900-01-01T00:00:00+00:00,False,False,,"openxml,plotting,plot,charting,chart",117088,False,2014.1.472
+Remo Gloor,2014-09-19T16:42:58.07Z,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 WebHost,Ninject.Web.WebApi.WebHost,True,2017-10-23T15:18:21.257+00:00,True,False,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 WebHost,"Ninject,ioc,di,web,mvc,api,webhost",499454,False,3.2.2-unstable-002
+crmsdk,2014-09-18T23:47:47.69Z,"This package contains the following official Microsoft assemblies and has been authored by the Microsoft Dynamics CRM SDK team.
+- Microsoft.Uii.AifServices 
+- Microsoft.Uii.Common
+- Microsoft.Uii.Common.Configuration
+- Microsoft.Uii.Common.Listeners
+- Microsoft.Uii.Common.Logging
+- Microsoft.Uii.Common.Logging.Providers
+- Microsoft.Uii.Common.Providers
+- Microsoft.Uii.Csr.Core
+- Microsoft.Uii.Csr.Win32Api",Microsoft.CrmSdk.UII.CommonAssemblies,False,2017-11-15T20:40:42.05+00:00,True,False,Common assemblies required by managed code application that make use of the UII framework.,"Dynamics,CRM,2013,SDK,XRM",69713,True,6.1.1
+Ninject Project Contributors,2014-09-19T14:34:09.21Z,Adds self hosting support to web common.,Ninject.Web.Common.Selfhost,False,2017-10-23T14:34:06.357+00:00,True,False,,"Ninject,ioc,di,ASP.NET",52742,False,3.2.3
+"Chris Sampson,James Goodenough",2014-09-19T05:29:42.093Z,"Domain model infrastructure based on event sourcing for cross platform development on iOS, Android, WinRT and Windows",SystemDotDomain,True,2015-04-17T12:05:19.833-07:00,True,False,"Domain model infrastructure based on event sourcing for cross platform development on iOS, Android, WinRT and Windows","CQRS,Event,sourcing,DDD,DDDD,Domain,Cross,Platform",16439,False,2.0.2-beta
+"Steffen Forkmann,Alexander Gross",2014-09-19T08:17:54.123Z,A package dependency manager for .NET with support for NuGet packages and GitHub files.,Paket,False,2018-04-17T08:54:34.933+00:00,True,False,A package dependency manager for .NET with support for NuGet packages and GitHub files.,"nuget,bundler,F#",825043,False,0.2.9
+Arteny,2014-09-19T13:29:36.433Z,Sport Exchanges Hi Level wrapper library,ExchangeAPI,False,2018-04-03T14:00:11.48+00:00,True,False,,"Betfair,API,API-NG,BetDAQ,Arteny",98025,False,1.99.445
+Volkan Ceylan,2014-09-19T10:48:55.477Z,"Contains abstractions and implementations for some basic Serenity features like authorization, caching, localization, dependency resolution, reflection...",Serenity.Core,False,2018-03-31T16:38:28.347+00:00,True,False,,Serenity,122757,False,1.1.4
+Mogens Heller Grabe,2014-09-19T11:19:34.46Z,NLog integration for Cirqus,d60.Cirqus.NLog,False,2017-06-14T22:32:50.753-07:00,True,False,,,28298,False,0.22.1
+CapableObjects,2014-09-19T05:40:13.957Z,Descr,EcoCore,False,2018-04-17T02:37:42.297+00:00,True,False,,"ModelDrivenDevelopment,ECO,CapableObjects",145599,False,7.0.0.7487
+Steven Lauwers,2014-09-19T12:27:50.323Z,Use .NET scripts to build your .NET code,DotNetBuild.Core,False,2014-09-19T05:27:50.323-07:00,True,False,,"DotNetBuild.Core,DotNetBuild,DotNet,MSBuild",1337,False,1.1.0
+latticework,2014-09-19T08:05:14.497Z,latticework.cs,latticework.cs,False,2013-07-22T14:32:56.307+00:00,True,False,,,309952,False,0.0.474
+Remo Gloor,2014-09-19T16:43:37.25Z,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 OWIN host,Ninject.Web.WebApi.OwinHost,True,2017-10-23T15:18:00.85+00:00,True,False,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 OWIN host,"Ninject,ioc,di,web,mvc,api,owin,host",360960,False,3.2.2-unstable-002
+QuatroDev,2014-09-19T02:02:25.727Z,"Simplr Identity Models, Helpers and UserStore implementation",Simplr.Identity,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.28
+"Xamarin,Inc.",2014-09-20T00:20:47.79Z,Maps models and renderers for Xamarin.Forms,Xamarin.Forms.Maps,True,2018-04-05T23:07:44.773+00:00,True,False,,,651393,True,1.2.3.6255-pre3
+Max Stepanskiy,2014-09-18T23:46:43.17Z,Yarn RavenDB Provider,Yarn.RavenDb,False,2016-09-26T11:40:19.24-07:00,True,False,,"Raven,RavenDB,Repository",12533,False,0.8.12
+crmsdk,2014-09-18T23:48:36.57Z,"This package contains the following official Microsoft assemblies and has been authored by the Microsoft Dynamics CRM SDK team.
+- Microsoft.Uii.Desktop.Core
+- Microsoft.Uii.Desktop.Cti.Core
+- Microsoft.Uii.Desktop.SessionManager
+- Microsoft.Uii.Desktop.UI.Controls
+- Microsoft.Uii.Desktop.UI.Controls.Wpf
+- Microsoft.Uii.Desktop.UI.Core
+- Microsoft.Uii.Desktop.UI.Wpf
+- Microsoft.Uii.Practices.CompositeUI
+- Microsoft.Uii.Practices.CompositeUI.Windows
+- Microsoft.Uii.Practices.ObjectBuilder
+- Microsoft.Uii.Practices.CompositeUI.WinForms",Microsoft.CrmSdk.UII.DesktopAssemblies,False,2017-11-15T20:41:07.857+00:00,True,False,Assemblies required by managed code applications that customize and extend the UII desktop.,"Dynamics,CRM,2013,SDK,XRM",8424,True,6.1.1
+Pippon,2014-09-19T07:25:33.967Z,XFramework.Cache.Memcached,XFramework.Cache.Memcached,False,2014-09-19T00:25:33.967-07:00,True,False,,,676,False,1.0.0.27750
+afzaal_ahmad_zeeshan,2014-09-19T15:00:27.433Z,"You can use this library to create a login system based entirely on JSON files and C# to let you develop your system, where there is less or no support of Databases. This project enables the same support that using Database you can get.",LoginKeys,False,2014-12-14T12:42:50.697-08:00,True,False,"LoginKeys can be used to create new accounts and/or groups, modify current, delete existing accounts and/or groups.","ASP.NET,C#,.NET,Framework,Login,System",1051,False,1.0.0
+CslaContrib,2014-09-20T00:53:02.027Z,"Additional controls to support the creation of CSLA. NET applications for Windows Forms.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CslaContrib-Windows,False,2018-04-10T17:46:39.693+00:00,True,False,Additional controls to support the creation of CSLA. NET applications for Windows Forms.,"CSLA,CslaContrib,WindowsForms,WinForms,UI",3317,False,4.5.600
+Synergex International Corporation,2014-09-19T22:43:40.527Z,SynergyDE runtime package for MONO.,Synergex.SynergyDE.synrnt,False,2018-03-09T16:59:42.25+00:00,True,False,,,4940,False,10.2.5000
+Remo Gloor,2014-09-19T17:06:55.72Z,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 Selfhost,Ninject.Web.WebApi.Selfhost,True,2017-10-23T15:18:11.257+00:00,True,False,Extension for Ninject providing integration with ASP.NET MVC WebAPI 2 Selfhost,"Ninject,ioc,di,web,mvc,api,selfhost",17899,False,3.2.2-unstable-003
+Jef King,2014-09-19T01:49:33.37Z,Mockable classes for working with Azure Storage.,King.Azure,False,2017-03-04T19:50:20.577+00:00,True,False,"Simplified Windows Azure Library, mockable and tested.","King.Azure,Azure,Storage,Mock,Mockable,Simple,Data,Table,Queue,Queuing,Blob,Query,dependency,injection,Cloud",17100,False,1.0.12
+Luke,2014-09-18T21:49:17.88Z,Contains common components shared by Media Browser Theater and Media Browser Server. Not intended for plugin developer consumption.,MediaBrowser.Common.Internal,False,1900-01-01T00:00:00+00:00,False,False,,,127900,False,3.0.434
+Ward Bell,2014-09-19T06:23:20.287Z,"Replaces Breeze's default ""BreezeConfig"" with a derived version that overrides the Json.Net serialization setting responsible for the $type name property of the JSON sent to the client.
+        
+        Turns the really nasty, long dynamic or anonymous type names into acceptabe shorter names such as ""_IB_DGU56or_prSk3yzZB87I8gCBWABk, Dynamic"" or ""<>f__AnonymousType6`3, Dynamic"".
+        
+        See the Breeze DocCode sample for an example of usage.",Breeze.DynamicTypeRenaming,False,2014-09-18T23:23:20.287-07:00,True,False,Renames nasty type names generated during serialization of projection query results.,"breeze,labs,webapi,json,server",1604,False,1.0.0
+W3 Solutions Inc.,2014-09-19T04:46:29.427Z,W3 Solutions Inc api client. Allows easy interactions with all our API services.,W3Solutions.Api.Client,False,2016-06-24T07:32:49.377-07:00,True,False,,"w3s.io,p3support.com,w3solutions,w3",18762,False,1.3.5374.37379
+Xab3r,2014-09-18T21:40:22.043Z,.NET wrapper for x86/x64 https://github.com/vslavik/winsparkle,WinSparkle.Net,False,2015-05-30T03:20:09.063-07:00,True,False,,,1888,False,0.10.0
+Arteny,2014-09-19T10:49:55.787Z,Sport Exchanges Hi Level wrapper library,ExchangeAPI,False,2018-04-03T14:00:11.48+00:00,True,False,,"Betfair,API,API-NG,BetDAQ,Arteny",98025,False,1.97.444
+kzu,2014-09-18T22:11:41.907Z,GitHub webhook controller implementation for your web application.,OctoHook.Web,False,2015-02-25T05:09:27.78-08:00,True,False,,"github,webhook",3694,False,0.3.8
+Mihai Mogosanu,2014-09-19T19:13:30.517Z,"Evolved toolkit for developing applications faster and with less code. Includes general purpose extension methods, guard clauses, predefined value objects (Email, Percentage etc) and specialized helper classes for specific tasks.",CavemanTools,False,2017-12-04T03:30:25.65+00:00,True,False,Power tools for developing applications faster and with less code and using best practices.,"toolkit,library,tools,utility,lcg,reflection,guard,contracts,helpers",29306,False,3.15.2
+dima117,2014-09-19T18:16:38.41Z,Base classes and interfaces for ThinkingHome plugins,ThinkingHome.Core.Plugins,False,2017-11-08T08:48:26.683+00:00,True,False,Base classes and interfaces for ThinkingHome plugins,,4949,False,2.0.0.69
+Microsoft,2014-09-19T07:21:53.387Z,Description,XFramework.Compress,False,2014-09-19T00:21:53.387-07:00,True,False,,,467,False,1.0.0.27646
+Chris Wood,2014-09-19T16:40:05.433Z,WHOIS provides structured WHOIS information for domain registrations and IP addresses,Whois,False,2014-09-21T12:37:53.01-07:00,True,False,,whois,2067,False,0.9.1
+JetBrains,2014-09-19T16:13:37.4Z,"ReSharper annotations are useful to increase accuracy and precision of ReSharper code inspections, reduce false positive warnings, explicitly declare purity and nullability in your code, deal with implicit usages of members, support special semantic of APIs in ASP.NET and XAML frameworks and etc.
+
+      By default all attribute usages are erased from metadata, so no actual binary reference to 'JetBrains.Annotations.dll' assembly will be produced. If you need to preserve annotations in metadata, just define 'JETBRAINS_ANNOTATIONS' conditional compilation symbol in your projects.
+
+      This package is backward compa",ControlFlow.Annotations,False,1899-12-31T16:00:00-08:00,False,False,Code annotations to increase accuracy and precision of ReSharper code inspections,"jetbrains,resharper,annotations,canbenull,notnull",-1,False,8.0.4
+Media Browser Team,2014-09-18T23:03:36.313Z,ApiClient allows .NET clients to easily access the Media Browser 3 web API,MediaBrowser.ApiClient,False,2017-09-20T19:19:53.913+00:00,True,False,,,117583,False,3.0.0.346
+Ben Ernst,2014-09-19T01:47:18.683Z,Ninjility Utilities,Ninjility.Utility,False,2014-09-18T21:29:36.997-07:00,True,False,,,2682,False,1.0.0
+Jeremy Miller,2014-09-19T19:15:59.807Z,"StructureMap is a Dependency Injection / Inversion of Control tool for .Net that can be used to improve the architectural qualities of an object oriented system by reducing the mechanical costs of good design techniques. StructureMap can enable looser coupling between classes and their dependencies, improve the testability of a class structure, and provide generic flexibility mechanisms. Used judiciously, StructureMap can greatly enhance the opportunities for code reuse by minimizing direct coupling between classes and configuration mechanisms.",structuremap,False,2018-01-17T23:14:19.45+00:00,True,False,StructureMap is a Dependency Injection / Inversion of Control tool for .Net,,3481648,False,3.1.2.138
+"Chris Sampson,James Goodenough",2014-09-19T06:04:30.05Z,"Mobile UI library for cross platform development on iOS, Android, WinRT and Windows",SystemDotMobile,True,2015-06-30T13:45:46.803-07:00,True,False,"Mobile UI library for cross platform development on iOS, Android, WinRT and Windows","MvvmCross,Mobile,development,Cross,Platform",20754,False,1.4.4-beta
+Nathan Baulch,2014-09-19T09:36:29.803Z,Saleslogix SData client library for .NET,DotNetSDataClient,False,2017-03-08T06:39:38.28-08:00,True,False,,"Saleslogix,SData,REST,HTTP,JSON,Atom",4262,False,2.0.1.1546
+Outsite Networks,2014-09-19T08:13:49.367Z,Description,APMP.Core,False,2015-11-09T13:35:41.993-08:00,True,False,,,37998,False,0.0.4.137
+JaredPar,2014-09-19T04:32:35.69Z,Command line utility for easily and synchronously intsalling or uninstalling VSIX extensions,VsixUtil,False,2014-12-05T14:38:52.673-08:00,True,False,,vsix,1619,False,1.1.0
+Pippon,2014-09-19T07:56:41.31Z,csharp util by Pippon,XFramework,False,2014-09-19T00:56:41.31-07:00,True,False,,,2690,False,1.0.2.28694
+"Chris Sampson,James Goodenough",2014-09-18T21:15:34.12Z,"Domain model infrastructure based on event sourcing for cross platform development on iOS, Android, WinRT and Windows",SystemDotDomain,True,2015-04-17T12:05:19.833-07:00,True,False,"Domain model infrastructure based on event sourcing for cross platform development on iOS, Android, WinRT and Windows","CQRS,Event,sourcing,DDD,DDDD,Domain,Cross,Platform",16439,False,2.0.1-beta
+Bit Miracle,2014-09-19T02:35:13.373Z,"This is the Beta version of Docotic.Pdf library.
+		
+		Beta version contains newest features and latest bug fixes. This version is tested for regressions and is safe to be used in production environment.
+		
+		Release version can be found here: https://www.nuget.org/packages/BitMiracle.Docotic.Pdf/.
+		
+		Docotic.Pdf library can create, edit, draw and print PDF files.
+
+The library is a fully managed assembly for .NET 2.0 and later frameworks. The assembly has no external dependencies.
+
+There are different types of licenses: for applications, for servers, cloud and unlimited. All licenses are royalty-free. 
+
+Free time-limited licenses are available upon request.",BitMiracle.Docotic.Pdf.Beta,False,1899-12-31T16:00:00-08:00,False,False,"This is the Beta version of Docotic.Pdf library (https://www.nuget.org/packages/BitMiracle.Docotic.Pdf/).
+		Beta version contains newest features and latest bug fixes. This version is tested for regressions and is safe to be used in production environment.","PDF,Library,Editor,Viewer,PDF/A,Print,pdf-generation,pdf-library,.net20,pdf2text,pdf2image,Forms,BitMiracle,Bit,Miracle",33542,False,4.3.6412.1
+"GeertvanHorrik,OrchestraDevs",2014-09-19T09:32:19.183Z,The Ribbon.Microsoft shell for Orchestra based applications.,Orchestra.Shell.Ribbon.Microsoft,True,2018-04-16T15:54:36.213+00:00,True,False,,"mvvm,orchestra,shell,prism,framework,wpf,microsoft,ribbon",38313,True,2.0.0-unstable0208
+Volkan Ceylan,2014-09-19T19:35:55.447Z,"Contains entity classes, fields and related functions...",Serenity.Data.Entity,False,2018-03-31T16:39:46.287+00:00,True,False,,Serenity,114583,False,1.1.6
+crmsdk,2014-09-18T23:50:53.893Z,"This package contains the following official Microsoft assemblies and has been authored by the Microsoft Dynamics CRM SDK team.
+- Microsoft.Xrm.Tooling.CrmConnectControl 
+- Microsoft.Xrm.Tooling.Ui.Resources
+- Microsoft.Xrm.Tooling.WebResourceUtility",Microsoft.CrmSdk.XrmTooling.WpfControls,False,2017-11-15T21:23:10.12+00:00,True,False,Assemblies required to add Xrm Tooling custom controls to Windows Presentation Foundation managed code applications.,"Dynamics,CRM,2013,SDK,XRM",20826,True,6.1.1
