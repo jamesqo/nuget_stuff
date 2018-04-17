@@ -2,6 +2,8 @@
 
 import asyncio
 import logging
+import math
+import numpy as np
 import os
 import sys
 
@@ -73,6 +75,8 @@ def parse_args():
 
 # Print package ids and their recommendations, sorted by popularity
 def print_recommendations(df, recs):
+    MAX_FLOAT64 = np.finfo(np.float64).max
+
     pairs = list(recs.items())
 
     # This is necessary so we don't run through the dataframe every time sort calls
@@ -83,14 +87,17 @@ def print_recommendations(df, recs):
 
     def sortkey(pair):
         id_ = pair[0]
-        # Take advantage of the fact that python sorts tuples lexicographically
-        # (first by 1st element, then by 2nd element, and so on)
-        return -df['downloads_per_day'][index_map[id_]], id_.lower()
+        # NB: Python sorts tuples lexicographically (by 1st element, then by 2nd element, etc.)
+        by, thenby = -df['downloads_per_day'][index_map[id_]], id_.lower()
+        if math.isnan(by): # nan screws with sorting. Place nan entries last.
+            by = MAX_FLOAT64
+        return by, thenby
 
-    # TODO: This is no longer ordering the recs as expected.
     pairs.sort(key=sortkey)
     lines = ["{}: {}".format(*pair) for pair in pairs]
-    print('\n'.join(lines))
+    output = '\n'.join(lines)
+    # print() can't handle certain characters because it uses the console's encoding.
+    sys.stdout.buffer.write(output.encode('utf-8'))
 
 async def main():
     args = parse_args()

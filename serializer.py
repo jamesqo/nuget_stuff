@@ -23,7 +23,7 @@ class CsvSerializer(object):
         self._writer = None
 
     def __enter__(self):
-        self._file = open(self._fname, mode='w', encoding='utf-8').__enter__()
+        self._file = open(self._fname, 'w', encoding='utf-8').__enter__()
         self._writer = csv.writer(self._file)
         return self
 
