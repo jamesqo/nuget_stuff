@@ -160,14 +160,17 @@ class NugetRecommender(object):
         log_call()
 
         result = {}
-        X = self._X
-        m = X.shape[0]
+        X, m = self._X, self._X.shape[0]
+        csr = self.similarities_.tocsr()
 
+        ids, dpds = list(X['id']), list(X['downloads_per_day'])
         for index in range(m):
-            ids, dpds = X['id'], X['downloads_per_day']
             id_, dpd = ids[index], dpds[index]
 
-            rec_indices = self.similarities_[index].argsort(reverse=True)
+            left, right = csr.indptr[index], csr.indptr[index + 1]
+            indices, similarities = csr.indices[left:right], csr.data[left:right]
+
+            rec_indices = indices[(-similarities).argsort()]
             rec_indices = [i for i in rec_indices if dpds[i] > 1 and dpds[i] > (dpd / self.min_dpd_ratio)]
             rec_indices = islice(rec_indices, self.n_recs)
 

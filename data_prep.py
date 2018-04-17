@@ -66,40 +66,51 @@ def read_packages(packages_root, args):
     DEFAULT_DATETIME = datetime(year=1900, month=1, day=1)
     DATE_FEATURES = ['created', 'last_updated']
 
-    log_call()
-    dfs = []
-    start, end = args.page_start, args.page_start + (args.page_limit or sys.maxsize)
-
-    for pageno in range(start, end):
-        fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
-        df = pd.read_csv(fname, dtype=SCHEMA, na_filter=False, parse_dates=DATE_FEATURES)
-
-        # Remove entries with the same id, keeping the one with the highest version
+    def remove_duplicate_ids(df):
         df['id_lower'] = df['id'].apply(str.lower)
+        # Keep the package with the highest version
         df.drop_duplicates(subset='id_lower', keep='last', inplace=True)
         df.drop('id_lower', axis=1, inplace=True)
+        return df
 
-        # Remove entries with missing_info = True, then set columns which no longer
-        # have missing data to the correct type.
+    def remove_missing_info(df):
         df = df[~df['missing_info']]
+        # These columns no longer have missing data, so we can set them to the correct type
         df['is_prerelease'] = df['is_prerelease'].astype(bool)
         df['listed'] = df['listed'].astype(bool)
         df['total_downloads'] = df['total_downloads'].astype(np.int32)
         df['verified'] = df['verified'].astype(bool)
+        return df
 
-        # Remove unlisted packages
+    def remove_unlisted(df):
         df = df[df['listed']]
         df.drop('listed', axis=1, inplace=True)
+        return df
 
-        # pandas doesn't do as it claims: it represents missing date values with 1900-01-01
-        # rather than NaT as advertised. Correct that.
+    def correct_missing_dates(df):
+        # Missing date values are represented with 1900-01-01 instead of NaT as the docs claim. Correct that.
         for feature in DATE_FEATURES:
             df.loc[df[feature] == DEFAULT_DATETIME, feature] = math.nan
+        return df
 
-        df.reset_index(drop=True, inplace=True)
-        dfs.append(df)
+    log_call()
+    pagedfs = []
+    start, end = args.page_start, args.page_start + (args.page_limit or sys.maxsize)
 
-    return pd.concat(dfs, ignore_index=True)
+    for pageno in range(start, end):
+        fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
+        pagedf = pd.read_csv(fname, dtype=SCHEMA, na_filter=False, parse_dates=DATE_FEATURES)
+        pagedfs.append(pagedf)
+
+    df = pd.concat(pagedfs, ignore_index=True)
+
+    df = remove_duplicate_ids(df)
+    df = remove_missing_info(df)
+    df = remove_unlisted(df)
+    df = correct_missing_dates(df)
+    df.reset_index(drop=True, inplace=True)
+
+    return df
 
 def add_days_alive(df):
     log_call()
