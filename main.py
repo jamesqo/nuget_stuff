@@ -11,7 +11,7 @@ from argparse import ArgumentParser
 from datetime import datetime
 
 from data_prep import load_packages
-from ml import NugetRecommender
+from ml import FeatureTransformer, NugetRecommender
 
 from utils.logging import StyleAdapter
 
@@ -51,7 +51,7 @@ def parse_args():
         action='store',
         dest='page_limit',
         type=int,
-        default=100
+        default=0
     )
     parser.add_argument(
         '-r', '--refresh-packages',
@@ -111,8 +111,12 @@ async def main():
     logging.basicConfig(level=args.log_level)
 
     df, tagger = await load_packages(PACKAGES_ROOT, args)
-    magic = NugetRecommender(tags_vocab=tagger.vocab_, n_recs=5)
-    magic.fit(df)
+
+    trans = FeatureTransformer(tags_vocab=tagger.vocab_)
+    feats = trans.fit_transform(df)
+
+    magic = NugetRecommender(n_recs=5)
+    magic.fit(df, feats)
     recs = magic.predict()
 
     print_recommendations(df, recs)

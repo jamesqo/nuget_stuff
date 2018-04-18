@@ -1,4 +1,5 @@
 import asyncio
+import contextlib
 import logging
 import math
 import numpy as np
@@ -55,16 +56,21 @@ async def write_packages(packages_root, args):
                 continue
 
             LOG.debug("Fetching packages for page #{}", pageno)
-            with CsvSerializer(fname) as writer:
-                writer.write_header()
-                packages = list(page.packages)
-                results = await asyncio.gather(*[package.load() for package in packages],
-                                               return_exceptions=True)
-                for package, result in zip(packages, results):
-                    if isinstance(result, Exception):
-                        if not can_ignore_exception(result):
+            try:
+                with CsvSerializer(fname) as writer:
+                    writer.write_header()
+                    packages = list(page.packages)
+                    results = await asyncio.gather(*[package.load() for package in packages],
+                                                   return_exceptions=True)
+                    for package, result in zip(packages, results):
+                        if isinstance(result, Exception) and not can_ignore_exception(result):
                             raise result
-                    writer.write(package)
+                        writer.write(package)
+            except:
+                LOG.debug("Exception thrown, deleting {}".format(fname))
+                with contextlib.suppress(FileNotFoundError):
+                    os.remove(fname)
+                raise
 
 def read_packages(packages_root, args):
     DEFAULT_DATETIME = datetime(year=1900, month=1, day=1)

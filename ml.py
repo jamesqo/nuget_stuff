@@ -3,9 +3,10 @@ import numpy as np
 from itertools import islice
 from scipy import sparse
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.preprocessing import normalize
 
 from utils.logging import log_call
+from utils.sklearn import linear_kernel
 
 DEFAULT_WEIGHTS = {
     'authors': 1,
@@ -13,26 +14,18 @@ DEFAULT_WEIGHTS = {
     'etags': 8,
 }
 
-DEFAULT_PENALTIES = {
-    'freshness': .75,
-    'icon': .1,
-    'popularity': 1,
-}
-
-def _authors_similarities(X):
+def _authors_matrix(X):
     log_call()
     vectorizer = TfidfVectorizer(ngram_range=(2, 2))
-    matrix = vectorizer.fit_transform(X['authors'])
-    return cosine_similarity(matrix, matrix, dense_output=False)
+    return vectorizer.fit_transform(X['authors'])
 
-def _description_similarities(X):
+def _description_matrix(X):
     log_call()
     vectorizer = TfidfVectorizer(ngram_range=(1, 3),
                                  stop_words='english')
-    matrix = vectorizer.fit_transform(X['description'])
-    return cosine_similarity(matrix, matrix, dense_output=False)
+    return vectorizer.fit_transform(X['description'])
 
-def _etags_similarities(X, tags_vocab):
+def _etags_matrix(X, tags_vocab):
     log_call()
 
     m, t = X.shape[0], len(tags_vocab)
@@ -46,20 +39,46 @@ def _etags_similarities(X, tags_vocab):
                 colidx = index_map[tag]
                 tag_weights[rowidx, colidx] = np.float64(weight)
 
-    return cosine_similarity(tag_weights, tag_weights, dense_output=False)
+    return tag_weights.tocsr()
 
-def _inplace_weighted_average(matrices, weights):
-    assert len(matrices) == len(weights) > 0 # pylint: disable=C1801
+def _hstack_with_weights(matrices, weights):
+    # Suppose we are given matrices A and B with dimens m x d1 and m x d2. WLOG let sum(weights) = 1.
+    # Let cs denote cosine similarity, e.g. cs(v1, v2) = (v1 dot v2) / |v1||v2|.
+    # This function hstacks A and B so that (xi dot xj) = w1(cs(ai, aj)) + w2(cs(bi, bj)).
+    # (ai is the ith row vector of A, bi the ith row vector of B. xi is the ith row vector of hstack([A, B]).)
+    # The formula for xi that satisfies this is xi = (sqrt(w1) * ai / |ai|, sqrt(w2) * bi / |bi|).
 
-    result = None
+    assert len(matrices) == len(weights)
+
+    total = sum(weights)
+    weights = [weight / total for weight in weights]
+
     for matrix, weight in zip(matrices, weights):
-        matrix *= weight
-        if result is None:
-            result = matrix
-        else:
-            result += matrix
+        assert sparse.isspmatrix_csr(matrix) # So normalize() doesn't copy
+        normalize(matrix, axis=1, norm='l2', copy=False)
+        matrix *= np.sqrt(weight)
 
-    return result
+    return sparse.hstack(matrices)
+
+class FeatureTransformer(object):
+    def __init__(self, tags_vocab, weights=None):
+        self.tags_vocab = tags_vocab
+        self.weights = weights or DEFAULT_WEIGHTS
+
+    def fit_transform(self, X):
+        matrices_and_weights = [
+            (_authors_matrix(X), self.weights['authors']),
+            (_description_matrix(X), self.weights['description']),
+            (_etags_matrix(X, self.tags_vocab), self.weights['etags']),
+        ]
+        matrices, weights = zip(*matrices_and_weights)
+        return _hstack_with_weights(matrices, weights)
+
+DEFAULT_PENALTIES = {
+    'freshness': .75,
+    'icon': .1,
+    'popularity': 1,
+}
 
 def _freshness_vector(X):
     log_call()
@@ -96,17 +115,11 @@ def _remove_diagonal(matrix):
 
 class NugetRecommender(object):
     def __init__(self,
-                 tags_vocab,
                  n_recs,
-                 n_neighbors=0,
-                 weights=None,
                  penalties=None,
                  min_dpd=5,
                  min_dpd_ratio=250):
-        self.tags_vocab = tags_vocab
         self.n_recs = n_recs
-        self.n_neighbors = n_neighbors or 1000 * n_recs
-        self.weights = weights or DEFAULT_WEIGHTS
         self.penalties = penalties or DEFAULT_PENALTIES
         self.min_dpd = min_dpd
         self.min_dpd_ratio = min_dpd_ratio
@@ -114,20 +127,14 @@ class NugetRecommender(object):
         self._X = None
         self.similarities_ = None
 
-    def fit(self, X):
+    def fit(self, X, feats):
         log_call()
-        similarities_and_weights = [
-            (_authors_similarities(X), self.weights['authors']),
-            (_description_similarities(X), self.weights['description']),
-            (_etags_similarities(X, self.tags_vocab), self.weights['etags']),
-        ]
-        similarities, weights = zip(*similarities_and_weights)
-        net_similarities = _inplace_weighted_average(similarities, weights)
-        self._scale_similarities(X, net_similarities)
-        _remove_diagonal(net_similarities)
+        similarities = linear_kernel(feats, feats, dense_output=False)
+        self._scale_similarities(X, similarities)
+        _remove_diagonal(similarities)
 
         self._X = X
-        self.similarities_ = net_similarities
+        self.similarities_ = similarities
         return self
 
     def _scale_similarities(self, X, similarities):
