@@ -64,7 +64,7 @@ async def write_packages(packages_root, args):
                                                    return_exceptions=True)
                     for package, result in zip(packages, results):
                         if isinstance(result, Exception) and not can_ignore_exception(result):
-                                raise result
+                            raise result
                         writer.write(package)
             except:
                 LOG.debug("Exception thrown, deleting {}".format(fname))
