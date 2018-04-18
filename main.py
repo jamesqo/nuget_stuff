@@ -12,6 +12,7 @@ from datetime import datetime
 
 from data_prep import load_packages
 from ml import FeatureTransformer, Recommender
+from serializers import RecSerializer
 
 from utils.logging import StyleAdapter
 
@@ -113,22 +114,23 @@ def print_recs(df, recs):
     # print() can't handle certain characters because it uses the console's encoding.
     sys.stdout.buffer.write(output.encode('utf-8'))
 
-def generate_blobs(df, feats):
+def gen_blobs(df, tagger):
+    os.makedirs(BLOBS_ROOT, exist_ok=True)
+
+    trans = FeatureTransformer(tags_vocab=tagger.vocab_)
+    feats = trans.fit_transform(df)
+
     magic = Recommender(n_recs=5)
     magic.fit(df, feats)
 
-    os.makedirs(BLOBS_ROOT, exist_ok=True)
+    ids = list(df['id'])
+    for index, id_ in enumerate(ids):
+        hexid = id_.encode('utf-8').hex().decode('ascii')
+        fname = os.path.join(BLOBS_ROOT, '{}.json'.format(hexid))
 
-    assert all(~df['pageno'].isna())
-    max_pageno = max(df['pageno'])
-
-    for pageno in range(max_pageno):
-        fname = os.path.join(BLOBS_ROOT, 'page{}.json'.format(pageno))
-        subset = df[df['pageno'] == pageno]
-
-        recs = magic.predict(subset)
-        with RecSerializer(fname) as writer:
-            writer.writerecs(recs)
+        recs = magic.predict_one(df.loc[index])
+        writer = RecSerializer(fname)
+        writer.writerecs(id_, recs)
 
 async def main():
     args = parse_args()
@@ -136,12 +138,12 @@ async def main():
 
     df, tagger = await load_packages(PACKAGES_ROOT, args)
 
-    trans = FeatureTransformer(tags_vocab=tagger.vocab_)
-    feats = trans.fit_transform(df)
-
     if args.generate_blobs:
-        generate_blobs(df, feats)
+        gen_blobs(df, tagger)
     else:
+        trans = FeatureTransformer(tags_vocab=tagger.vocab_)
+        feats = trans.fit_transform(df)
+
         magic = Recommender(n_recs=5)
         magic.fit(df, feats)
         recs = magic.predict()

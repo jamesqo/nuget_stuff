@@ -10,7 +10,7 @@ import sys
 from datetime import date, datetime, timedelta
 
 from nuget_api import can_ignore_exception, NugetCatalogClient, NugetContext
-from serializer import CsvSerializer
+from serializers import PackageSerializer
 from tagger import SmartTagger
 
 from utils.iter import aenumerate, aislice

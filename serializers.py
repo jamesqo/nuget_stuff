@@ -1,4 +1,7 @@
 import csv
+import json
+
+from collections import OrderedDict
 
 FEATURES = [
     'authors',
@@ -65,3 +68,16 @@ class PackageSerializer(object):
         row[FEATURES.index('version')] = pkg.version
 
         self._writer.writerow(row)
+
+class RecSerializer(object):
+    def __init__(self, fname):
+        self._fname = fname
+
+    def writerecs(self, id_, recs):
+        tree = OrderedDict([
+            ('id', id_),
+            ('recommendations', recs)
+        ])
+        data = json.dumps(tree)
+        with open(self._fname, 'w', encoding='utf-8') as file:
+            file.write(data)
