@@ -113,7 +113,7 @@ def _remove_diagonal(matrix):
     for i in range(m):
         matrix[i, i] = 0
 
-class NugetRecommender(object):
+class Recommender(object):
     def __init__(self,
                  n_recs,
                  penalties=None,

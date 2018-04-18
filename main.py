@@ -11,7 +11,7 @@ from argparse import ArgumentParser
 from datetime import datetime
 
 from data_prep import load_packages
-from ml import FeatureTransformer, NugetRecommender
+from ml import FeatureTransformer, Recommender
 
 from utils.logging import StyleAdapter
 
@@ -81,7 +81,7 @@ def parse_args():
     return parser.parse_args()
 
 # Print package ids and their recommendations, sorted by popularity
-def print_recommendations(df, recs):
+def print_recs(df, recs):
     MAX_FLOAT64 = np.finfo(np.float64).max
 
     pairs = list(recs.items())
@@ -115,11 +115,11 @@ async def main():
     trans = FeatureTransformer(tags_vocab=tagger.vocab_)
     feats = trans.fit_transform(df)
 
-    magic = NugetRecommender(n_recs=5)
+    magic = Recommender(n_recs=5)
     magic.fit(df, feats)
     recs = magic.predict()
 
-    print_recommendations(df, recs)
+    print_recs(df, recs)
 
 if __name__ == '__main__':
     start = datetime.now()
