@@ -39,7 +39,7 @@ def _etags_matrix(X, tags_vocab):
                 colidx = index_map[tag]
                 tag_weights[rowidx, colidx] = np.float64(weight)
 
-    return tag_weights
+    return tag_weights.tocsr()
 
 def _hstack_with_weights(matrices, weights):
     # Suppose we are given matrices A and B with dimens m x d1 and m x d2. WLOG let sum(weights) = 1.
@@ -54,6 +54,7 @@ def _hstack_with_weights(matrices, weights):
     weights = [weight / total for weight in weights]
 
     for matrix, weight in zip(matrices, weights):
+        assert sparse.isspmatrix_csr(matrix) # So normalize() doesn't copy
         normalize(matrix, axis=1, norm='l2', copy=False)
         matrix *= np.sqrt(weight)
 
