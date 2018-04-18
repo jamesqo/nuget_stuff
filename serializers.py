@@ -16,7 +16,7 @@ FEATURES = [
     'version',
 ]
 
-class CsvSerializer(object):
+class PackageSerializer(object):
     def __init__(self, fname):
         self._fname = fname
         self._file = None

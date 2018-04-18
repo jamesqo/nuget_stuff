@@ -15,6 +15,7 @@ from ml import FeatureTransformer, Recommender
 
 from utils.logging import StyleAdapter
 
+BLOBS_ROOT = os.path.join('.', 'blobs')
 PACKAGES_ROOT = os.path.join('.', 'packages')
 ETAGS_FNAME = 'etags.log'
 
@@ -22,6 +23,12 @@ LOG = StyleAdapter(logging.getLogger(__name__))
 
 def parse_args():
     parser = ArgumentParser()
+    parser.add_argument(
+        '-b', '--generate-blobs',
+        help="generate json blobs",
+        action='store_true',
+        dest='generate_blobs'
+    )
     parser.add_argument(
         '-d', '--debug',
         help="print debug information",
@@ -106,6 +113,23 @@ def print_recs(df, recs):
     # print() can't handle certain characters because it uses the console's encoding.
     sys.stdout.buffer.write(output.encode('utf-8'))
 
+def generate_blobs(df, feats):
+    magic = Recommender(n_recs=5)
+    magic.fit(df, feats)
+
+    os.makedirs(BLOBS_ROOT, exist_ok=True)
+
+    assert all(~df['pageno'].isna())
+    max_pageno = max(df['pageno'])
+
+    for pageno in range(max_pageno):
+        fname = os.path.join(BLOBS_ROOT, 'page{}.json'.format(pageno))
+        subset = df[df['pageno'] == pageno]
+
+        recs = magic.predict(subset)
+        with RecSerializer(fname) as writer:
+            writer.writerecs(recs)
+
 async def main():
     args = parse_args()
     logging.basicConfig(level=args.log_level)
@@ -115,11 +139,14 @@ async def main():
     trans = FeatureTransformer(tags_vocab=tagger.vocab_)
     feats = trans.fit_transform(df)
 
-    magic = Recommender(n_recs=5)
-    magic.fit(df, feats)
-    recs = magic.predict()
+    if args.generate_blobs:
+        generate_blobs(df, feats)
+    else:
+        magic = Recommender(n_recs=5)
+        magic.fit(df, feats)
+        recs = magic.predict()
 
-    print_recs(df, recs)
+        print_recs(df, recs)
 
 if __name__ == '__main__':
     start = datetime.now()
