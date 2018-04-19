@@ -75,9 +75,8 @@ class FeatureTransformer(object):
         return _hstack_with_weights(matrices, weights)
 
 DEFAULT_PENALTIES = {
-    'freshness': .25,
-    'icon': .1,
-    'popularity': .5,
+    'freshness': 0,
+    'popularity': 0,
 }
 
 def _freshness_vector(X):
@@ -146,7 +145,6 @@ class Recommender(object):
 
         metrics_and_penalties = [
             (_freshness_vector(X), self.penalties['freshness']),
-            #(_icon_vector(X), self.penalties['icon']),
             (_popularity_vector(X), self.penalties['popularity']),
         ]
         metrics, penalties = zip(*metrics_and_penalties)
