@@ -14,13 +14,13 @@ from data_prep import load_packages
 from ml import FeatureTransformer, Recommender
 from serializers import RecSerializer
 
-from utils.logging import StyleAdapter
+from utils.logging import log_call, StyleAdapter
+
+LOG = StyleAdapter(logging.getLogger(__name__))
 
 BLOBS_ROOT = os.path.join('.', 'blobs')
 PACKAGES_ROOT = os.path.join('.', 'packages')
 ETAGS_FNAME = 'etags.log'
-
-LOG = StyleAdapter(logging.getLogger(__name__))
 
 def parse_args():
     parser = ArgumentParser()
@@ -115,22 +115,32 @@ def print_recs(df, recs):
     sys.stdout.buffer.write(output.encode('utf-8'))
 
 def gen_blobs(df, tagger):
+    log_call()
     os.makedirs(BLOBS_ROOT, exist_ok=True)
 
     trans = FeatureTransformer(tags_vocab=tagger.vocab_)
     feats = trans.fit_transform(df)
 
     magic = Recommender(n_recs=5)
-    magic.fit(df, feats)
+    magic.fit(feats, df)
 
-    ids = list(df['id'])
-    for index, id_ in enumerate(ids):
-        hexid = id_.encode('utf-8').hex().decode('ascii')
-        fname = os.path.join(BLOBS_ROOT, '{}.json'.format(hexid))
+    assert all(~df['pageno'].isna())
+    for pageno in sorted(set(df['pageno'])):
+        subdf = df[df['pageno'] == pageno]
+        subfeats = feats[subdf.index]
+        recs_dict = magic.predict(subfeats, subdf)
 
-        recs = magic.predict_one(df.loc[index])
-        writer = RecSerializer(fname)
-        writer.writerecs(id_, recs)
+        ids = list(subdf['id'])
+        for id_ in ids:
+            dirname = os.path.join(BLOBS_ROOT, 'page{}'.format(pageno))
+            os.makedirs(dirname, exist_ok=True)
+
+            hexid = id_.encode('utf-8').hex()
+            fname = os.path.join(dirname, '{}.json'.format(hexid))
+
+            recs = recs_dict[id_]
+            writer = RecSerializer(fname)
+            writer.writerecs(id_, recs)
 
 async def main():
     args = parse_args()

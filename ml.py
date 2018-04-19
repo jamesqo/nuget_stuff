@@ -61,7 +61,7 @@ def _hstack_with_weights(matrices, weights):
         normalize(matrix, axis=1, norm='l2', copy=False)
         matrix *= np.sqrt(weight)
 
-    return sparse.hstack(matrices)
+    return sparse.hstack(matrices, format='csr')
 
 class FeatureTransformer(object):
     def __init__(self, tags_vocab, weights=None):
@@ -74,8 +74,8 @@ class FeatureTransformer(object):
             (_description_matrix(X), self.weights['description']),
             (_etags_matrix(X, self.tags_vocab), self.weights['etags']),
         ]
-        matrices, weights = zip(*matrices_and_weights)
-        return _hstack_with_weights(matrices, weights)
+        self.matrices_, self.weights_ = zip(*matrices_and_weights)
+        return _hstack_with_weights(self.matrices_, self.weights_)
 
 DEFAULT_PENALTIES = {
     'freshness': .1,
@@ -172,7 +172,7 @@ class Recommender(object):
             rec_indices = (i for i in rec_indices if self._dpds[i] >= dpd_cutoff)
             rec_indices = islice(rec_indices, self.n_recs)
 
-            recs = [ids[i] for i in rec_indices]
+            recs = [self._ids[i] for i in rec_indices]
             result[id_] = recs
 
         return result
