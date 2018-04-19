@@ -76,7 +76,7 @@ def read_packages(packages_root, args):
         df['id_lower'] = df['id'].apply(str.lower)
         # Keep the package with the highest version
         df.drop_duplicates(subset='id_lower', keep='last', inplace=True)
-        df.drop('id_lower', axis=1, inplace=True)
+        df.drop(columns=['id_lower'], inplace=True)
         return df
 
     def remove_missing_info(df):
@@ -90,7 +90,7 @@ def read_packages(packages_root, args):
 
     def remove_unlisted(df):
         df = df[df['listed']]
-        df.drop('listed', axis=1, inplace=True)
+        df.drop(columns=['listed'], inplace=True)
         return df
 
     def use_nan_for_missing_values(df):
