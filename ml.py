@@ -75,8 +75,8 @@ class FeatureTransformer(object):
         return _hstack_with_weights(matrices, weights)
 
 DEFAULT_PENALTIES = {
-    'freshness': 0,
-    'popularity': 0,
+    'freshness': .1,
+    'popularity': .1,
 }
 
 def _freshness_vector(X):
