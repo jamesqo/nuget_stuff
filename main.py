@@ -145,8 +145,8 @@ async def main():
         feats = trans.fit_transform(df)
 
         magic = Recommender(n_recs=5)
-        magic.fit(df, feats)
-        recs = magic.predict()
+        magic.fit(feats, df)
+        recs = magic.predict(feats, df)
 
         print_recs(df, recs)
 
