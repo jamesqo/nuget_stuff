@@ -75,9 +75,9 @@ class FeatureTransformer(object):
         return _hstack_with_weights(matrices, weights)
 
 DEFAULT_PENALTIES = {
-    'freshness': .75,
+    'freshness': .25,
     'icon': .1,
-    'popularity': 1,
+    'popularity': .5,
 }
 
 def _freshness_vector(X):
@@ -112,6 +112,7 @@ def _remove_diagonal(matrix):
 
     for i in range(m):
         matrix[i, i] = 0
+    return matrix
 
 class Recommender(object):
     def __init__(self,
@@ -130,8 +131,8 @@ class Recommender(object):
     def fit(self, X, feats):
         log_call()
         similarities = linear_kernel(feats, feats, dense_output=False)
-        self._scale_similarities(X, similarities)
-        _remove_diagonal(similarities)
+        similarities = self._scale_similarities(X, similarities)
+        similarities = _remove_diagonal(similarities)
 
         self._X = X
         self.similarities_ = similarities
@@ -152,6 +153,7 @@ class Recommender(object):
         scale_vectors = _apply_penalties(metrics, penalties)
         combined_scales = np.multiply(*scale_vectors)
         similarities *= sparse.diags(combined_scales)
+        return similarities
 
     def predict(self):
         log_call()
