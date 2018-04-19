@@ -165,9 +165,9 @@ class Recommender(object):
             dpd_cutoff = max(self.min_dpd, (dpd / self.min_dpd_ratio))
 
             left, right = csr.indptr[index], csr.indptr[index + 1]
-            indices, similarities = csr.indices[left:right], csr.data[left:right]
+            indices, data = csr.indices[left:right], csr.data[left:right]
 
-            rec_indices = indices[(-similarities).argsort()]
+            rec_indices = indices[(-data).argsort()]
             rec_indices = (i for i in rec_indices if self._ids[i] != id_)
             rec_indices = (i for i in rec_indices if self._dpds[i] >= dpd_cutoff)
             rec_indices = islice(rec_indices, self.n_recs)
