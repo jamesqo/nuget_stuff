@@ -7,10 +7,10 @@ import os
 import pandas as pd
 import sys
 
-from datetime import date, datetime, timedelta
+from datetime import datetime
 
 from nuget_api import can_ignore_exception, NugetCatalogClient, NugetContext
-from serializer import CsvSerializer
+from serializers import PackageSerializer
 from tagger import SmartTagger
 
 from utils.iter import aenumerate, aislice
@@ -18,13 +18,11 @@ from utils.logging import log_call, StyleAdapter
 
 LOG = StyleAdapter(logging.getLogger(__name__))
 
-TOMORROW = datetime.fromordinal(
-    (date.today() + timedelta(days=1)).toordinal()
-)
-
 SCHEMA = {
     'authors': object,
     'created': object,
+    'days_abandoned': np.int32,
+    'days_alive': np.int32,
     'description': object,
     'id': object,
     'is_prerelease': object, # bool (missing values)
@@ -57,7 +55,7 @@ async def write_packages(packages_root, args):
 
             LOG.debug("Fetching packages for page #{}", pageno)
             try:
-                with CsvSerializer(fname) as writer:
+                with PackageSerializer(fname) as writer:
                     writer.write_header()
                     packages = list(page.packages)
                     results = await asyncio.gather(*[package.load() for package in packages],
@@ -80,7 +78,7 @@ def read_packages(packages_root, args):
         df['id_lower'] = df['id'].apply(str.lower)
         # Keep the package with the highest version
         df.drop_duplicates(subset='id_lower', keep='last', inplace=True)
-        df.drop('id_lower', axis=1, inplace=True)
+        df.drop(columns=['id_lower'], inplace=True)
         return df
 
     def remove_missing_info(df):
@@ -94,13 +92,18 @@ def read_packages(packages_root, args):
 
     def remove_unlisted(df):
         df = df[df['listed']]
-        df.drop('listed', axis=1, inplace=True)
+        df.drop(columns=['listed'], inplace=True)
         return df
 
-    def correct_missing_dates(df):
-        # Missing date values are represented with 1900-01-01 instead of NaT as the docs claim. Correct that.
-        for feature in DATE_FEATURES:
-            df.loc[df[feature] == DEFAULT_DATETIME, feature] = math.nan
+    def use_nan_for_missing_values(df):
+        features_and_defaults = [
+            (['days_abandoned', 'days_alive'], -1),
+            (DATE_FEATURES, DEFAULT_DATETIME)
+        ]
+        for features, default in features_and_defaults:
+            for feature in features:
+                assert all(~df[feature].isna())
+                df.loc[df[feature] == default, feature] = math.nan
         return df
 
     log_call()
@@ -110,6 +113,7 @@ def read_packages(packages_root, args):
     for pageno in range(start, end):
         fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
         pagedf = pd.read_csv(fname, dtype=SCHEMA, na_filter=False, parse_dates=DATE_FEATURES)
+        pagedf['pageno'] = pageno
         pagedfs.append(pagedf)
 
     df = pd.concat(pagedfs, ignore_index=True)
@@ -119,31 +123,19 @@ def read_packages(packages_root, args):
         df = remove_duplicate_ids(df)
         df = remove_missing_info(df)
         df = remove_unlisted(df)
-        df = correct_missing_dates(df)
+        df = use_nan_for_missing_values(df)
         df.reset_index(drop=True, inplace=True)
     finally:
         pd.options.mode.chained_assignment = 'warn'
 
     return df
 
-def add_days_alive(df):
-    log_call()
-    pred = ~df['created'].isna()
-    df.loc[~pred, 'days_alive'] = math.nan
-    df.loc[pred, 'days_alive'] = df.loc[pred, 'created'].apply(lambda dt: max((TOMORROW - dt).days, 1))
-    return df
-
-def add_days_abandoned(df):
-    log_call()
-    pred = ~df['last_updated'].isna()
-    df.loc[~pred, 'days_abandoned'] = math.nan
-    df.loc[pred, 'days_abandoned'] = df.loc[pred, 'last_updated'].apply(lambda dt: max((TOMORROW - dt).days, 1))
-    return df
-
 def add_downloads_per_day(df):
     log_call()
     df['downloads_per_day'] = df['total_downloads'] / df['days_alive']
-    df.loc[df['total_downloads'] == -1, 'downloads_per_day'] = math.nan
+    df.loc[
+        (df['total_downloads'] == -1) | (df['days_alive'] == -1),
+        'downloads_per_day'] = math.nan
     return df
 
 def add_etags(df):
@@ -172,8 +164,6 @@ async def load_packages(packages_root, args):
         await write_packages(packages_root, args)
     df = read_packages(packages_root, args)
 
-    df = add_days_alive(df)
-    df = add_days_abandoned(df)
     df = add_downloads_per_day(df)
     df, tagger = add_etags(df)
 

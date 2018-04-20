@@ -1,8 +1,13 @@
 import csv
+import json
+
+from collections import OrderedDict
 
 FEATURES = [
     'authors',
     'created',
+    'days_abandoned',
+    'days_alive',
     'description',
     'id',
     'is_prerelease',
@@ -16,7 +21,7 @@ FEATURES = [
     'version',
 ]
 
-class CsvSerializer(object):
+class PackageSerializer(object):
     def __init__(self, fname):
         self._fname = fname
         self._file = None
@@ -41,6 +46,8 @@ class CsvSerializer(object):
             row = [
                 ','.join(cinfo.authors),
                 cinfo.created,
+                pkg.days_abandoned,
+                pkg.days_alive,
                 cinfo.description,
                 pkg.id,
                 cinfo.is_prerelease,
@@ -60,8 +67,23 @@ class CsvSerializer(object):
         assert not pkg.loaded
 
         row = [None] * len(FEATURES)
+        row[FEATURES.index('days_abandoned')] = -1
+        row[FEATURES.index('days_alive')] = -1
         row[FEATURES.index('id')] = pkg.id
         row[FEATURES.index('missing_info')] = True
         row[FEATURES.index('version')] = pkg.version
 
         self._writer.writerow(row)
+
+class RecSerializer(object):
+    def __init__(self, fname):
+        self._fname = fname
+
+    def writerecs(self, id_, recs):
+        tree = OrderedDict([
+            ('id', id_),
+            ('recommendations', recs)
+        ])
+        data = json.dumps(tree)
+        with open(self._fname, 'w', encoding='utf-8') as file:
+            file.write(data)

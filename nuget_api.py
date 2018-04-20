@@ -1,11 +1,14 @@
 import asyncio
+import dateutil.parser as dateparser
 import logging
 import platform
+import pytz
 import re
 import traceback as tb
 
 from aiohttp.client_exceptions import ClientOSError, ClientResponseError, ServerDisconnectedError
 from asyncio import CancelledError
+from datetime import datetime, timedelta
 from urllib.parse import urlencode
 
 from utils.http import JSONClient, RetryClient
@@ -20,6 +23,10 @@ REGISTRATION_TYPE = 'RegistrationsBaseUrl'
 SEARCH_TYPE = 'SearchQueryService'
 
 WINDOWS = platform.system() == 'Windows'
+
+UTC_TOMORROW = datetime.fromordinal(
+    (datetime.utcnow().date() + timedelta(days=1)).toordinal()
+).replace(tzinfo=pytz.utc)
 
 def ok_filter(exc):
     if isinstance(exc, (CancelledError, asyncio.TimeoutError)):
@@ -47,7 +54,7 @@ class NullPackageSearchInfo(object):
         self.total_downloads = -1
         self.verified = False
 
-NullPackageSearchInfo.INSTANCE = NullPackageSearchInfo()
+NULL_SEARCH_INFO = NullPackageSearchInfo()
 
 class NugetClient(object):
     def __init__(self, type_, ctx):
@@ -130,6 +137,22 @@ class NugetPackage(object):
         self.search = None
         self.loaded = False
 
+    @property
+    def days_alive(self):
+        created = self.catalog.created
+        if not created:
+            return -1
+        dt = dateparser.parse(created)
+        return max((UTC_TOMORROW - dt).days, 1)
+
+    @property
+    def days_abandoned(self):
+        last_updated = self.reg.last_updated
+        if not last_updated:
+            return -1
+        dt = dateparser.parse(last_updated)
+        return max((UTC_TOMORROW - dt).days, 1)
+
     async def load(self, catalog=True, reg=True, search=True):
         try:
             if catalog:
@@ -163,7 +186,7 @@ class NugetPackage(object):
         query = 'id:"{}"'.format(self.id)
         results = await cli.search(q=query)
         self.search = next((d for d in results if d.id.lower() == self.id.lower()),
-                           NullPackageSearchInfo.INSTANCE)
+                           NULL_SEARCH_INFO)
 
 class NugetPage(object):
     def __init__(self, url, ctx):

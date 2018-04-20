@@ -1,3 +1,4 @@
+import logging
 import numpy as np
 
 from itertools import islice
@@ -5,8 +6,10 @@ from scipy import sparse
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import normalize
 
-from utils.logging import log_call
+from utils.logging import log_call, StyleAdapter
 from utils.sklearn import linear_kernel
+
+LOG = StyleAdapter(logging.getLogger(__name__))
 
 DEFAULT_WEIGHTS = {
     'authors': 1,
@@ -58,12 +61,15 @@ def _hstack_with_weights(matrices, weights):
         normalize(matrix, axis=1, norm='l2', copy=False)
         matrix *= np.sqrt(weight)
 
-    return sparse.hstack(matrices)
+    return sparse.hstack(matrices, format='csr')
 
 class FeatureTransformer(object):
     def __init__(self, tags_vocab, weights=None):
         self.tags_vocab = tags_vocab
         self.weights = weights or DEFAULT_WEIGHTS
+
+        self.matrices_ = None
+        self.weights_ = None
 
     def fit_transform(self, X):
         matrices_and_weights = [
@@ -71,8 +77,8 @@ class FeatureTransformer(object):
             (_description_matrix(X), self.weights['description']),
             (_etags_matrix(X, self.tags_vocab), self.weights['etags']),
         ]
-        matrices, weights = zip(*matrices_and_weights)
-        return _hstack_with_weights(matrices, weights)
+        self.matrices_, self.weights_ = zip(*matrices_and_weights)
+        return _hstack_with_weights(self.matrices_, self.weights_)
 
 DEFAULT_PENALTIES = {
     'freshness': .1,
@@ -105,14 +111,6 @@ def _apply_penalties(metrics, penalties):
     min_scales = [(1 - p) for p in penalties]
     return [1 * m + min_scale * (1 - m) for m, min_scale in zip(metrics, min_scales)]
 
-def _remove_diagonal(matrix):
-    m = matrix.shape[0]
-    assert matrix.shape == (m, m)
-
-    for i in range(m):
-        matrix[i, i] = 0
-    return matrix
-
 class Recommender(object):
     def __init__(self,
                  n_recs,
@@ -124,54 +122,60 @@ class Recommender(object):
         self.min_dpd = min_dpd
         self.min_dpd_ratio = min_dpd_ratio
 
+        self.metrics_ = None
+        self.penalties_ = None
+        self.scales_ = None
+
         self._X = None
-        self.similarities_ = None
+        self._df = None
+        self._ids = None
+        self._dpds = None
+        self._scale_mat = None
 
-    def fit(self, X, feats):
+    def fit(self, X, df):
         log_call()
-        similarities = linear_kernel(feats, feats, dense_output=False)
-        similarities = self._scale_similarities(X, similarities)
-        similarities = _remove_diagonal(similarities)
-
-        self._X = X
-        self.similarities_ = similarities
-        return self
-
-    def _scale_similarities(self, X, similarities):
-        log_call()
-        m = X.shape[0]
-        assert sparse.issparse(similarities)
-        assert similarities.shape == (m, m)
+        assert sparse.issparse(X)
 
         metrics_and_penalties = [
-            (_freshness_vector(X), self.penalties['freshness']),
-            (_popularity_vector(X), self.penalties['popularity']),
+            (_freshness_vector(df), self.penalties['freshness']),
+            #(_icon_vector(df), self.penalties['icon']),
+            (_popularity_vector(df), self.penalties['popularity']),
         ]
-        metrics, penalties = zip(*metrics_and_penalties)
-        scale_vectors = _apply_penalties(metrics, penalties)
-        combined_scales = np.multiply(*scale_vectors)
-        similarities *= sparse.diags(combined_scales)
-        return similarities
+        self.metrics_, self.penalties_ = zip(*metrics_and_penalties)
+        scale_vectors = _apply_penalties(self.metrics_, self.penalties_)
+        self.scales_ = np.multiply(*scale_vectors)
 
-    def predict(self):
+        self._X = X
+        self._df = df
+        self._ids = list(df['id'])
+        self._dpds = list(df['downloads_per_day'])
+        self._scale_mat = sparse.diags(self.scales_)
+        return self
+
+    def predict(self, X, df):
         log_call()
 
-        result = {}
-        X, m = self._X, self._X.shape[0]
-        csr = self.similarities_.tocsr()
+        similarities = linear_kernel(X, self._X, dense_output=False)
+        similarities *= self._scale_mat
 
-        ids, dpds = list(X['id']), list(X['downloads_per_day'])
+        result = {}
+        m = X.shape[0]
+        csr = similarities.tocsr()
+
+        ids, dpds = list(df['id']), list(df['downloads_per_day'])
         for index in range(m):
             id_, dpd = ids[index], dpds[index]
+            dpd_cutoff = max(self.min_dpd, (dpd / self.min_dpd_ratio))
 
             left, right = csr.indptr[index], csr.indptr[index + 1]
-            indices, similarities = csr.indices[left:right], csr.data[left:right]
+            indices, data = csr.indices[left:right], csr.data[left:right]
 
-            rec_indices = indices[(-similarities).argsort()]
-            rec_indices = [i for i in rec_indices if dpds[i] >= max(self.min_dpd, (dpd / self.min_dpd_ratio))]
+            rec_indices = indices[(-data).argsort()]
+            rec_indices = (i for i in rec_indices if self._ids[i] != id_)
+            rec_indices = (i for i in rec_indices if self._dpds[i] >= dpd_cutoff)
             rec_indices = islice(rec_indices, self.n_recs)
 
-            recs = [ids[i] for i in rec_indices]
+            recs = [self._ids[i] for i in rec_indices]
             result[id_] = recs
 
         return result
