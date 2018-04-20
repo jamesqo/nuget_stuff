@@ -70,16 +70,16 @@ class FeatureTransformer(object):
                  tags_vocab,
                  weights=None,
                  mode='onego',
-                 fname_fmt=None):
+                 output_fmt=None):
         if mode not in MODES:
             raise ValueError("Unrecognized mode {}".format(repr(mode)))
-        if mode == 'chunked' and (fname_fmt is None):
-            raise ValueError("'fname_fmt' is non-optional for mode {}".format(repr(mode)))
+        if mode == 'chunked' and (output_fmt is None):
+            raise ValueError("'output_fmt' is non-optional for mode {}".format(repr(mode)))
 
         self.tags_vocab = tags_vocab
         self.weights = weights or DEFAULT_WEIGHTS
         self.mode = mode
-        self.fname_fmt = fname_fmt
+        self.output_fmt = output_fmt
 
         self.matrices_ = None
         self.weights_ = None
@@ -89,7 +89,7 @@ class FeatureTransformer(object):
             return self._fit_transform(X)
         elif self.mode == 'chunked':
             chunknos = sorted(set(X['chunkno']))
-            fnames = [self.fname_fmt.format(chunkno=chunkno) for chunkno in chunknos]
+            fnames = [self.output_fmt.format(chunkno=chunkno) for chunkno in chunknos]
             for chunkno, fname in zip(chunknos, fnames):
                 LOG.debug("Saving vectors for chunk #{} to {}".format(chunkno, fname))
                 feats = self._fit_transform(X)
