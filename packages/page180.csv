@@ -1,0 +1,957 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+eXpand,2013-01-30T17:39:41.637Z,11,1906,"Extends XAF by adding great new features for example;
+
+◦the ability to generate runtime members for your objects, 
+◦creating Application/Role/User models in the database, 
+◦storing your web cookies in the database, 
+◦handling of external application models, 
+◦combine end user modifications with application model, 
+◦support for multiple models at design time,
+Blogs:
+http://apobekiaris.blogspot.com/search/label/ModelDifference",eXpandModelDifferenceWeb,False,2018-04-09T16:17:21.897+00:00,True,False,Model managment,"DevExpress,eXpand",70189,False,12.2.5.16
+eXpand,2013-01-30T17:40:10.93Z,1715,1906,SqlDbMapper Module (Web) / eXpand Framework,eXpandSqlDbMapperWeb,False,2013-08-09T07:42:53.813-07:00,True,False,SqlDbMapper Module (Web) / eXpand Framework,"DevExpress,eXpand",31367,False,12.2.5.16
+eXpand,2013-01-30T17:39:16.793Z,11,1906,MasterDetail Module (Win) / eXpand Framework,eXpandMasterDetailWin,False,2018-04-09T16:16:30.427+00:00,True,False,MasterDetail Module (Win) / eXpand Framework,"DevExpress,eXpand",70133,False,12.2.5.16
+Hibernating Rhinos,2013-01-31T12:57:21.57Z,43209,1905,RavenDB Client MvcIntegration let you include a visual profiler in your ASP.NET MVC application which will show you all the opened sessions and the time took to complete each database request. This can help you when developing with RavenDB.,RavenDB.Client.MvcIntegration,True,1900-01-01T00:00:00+00:00,False,False,A visual profiler for RavenDB that you can use in your ASP.NET MVC application.,"nosql,ravendb,raven,document,database,client,mvc",243184,True,2.0.2248-Unstable
+S. van Deursen,2013-01-29T21:18:40.843Z,43209,1907,"Extensions for the Simple Injector Inversion of Control library for .NET. The Extensions project adds advanced capabilities, such as batch registration, registration of open generic types, and registration of generic decorators.",SimpleInjector.Extensions,True,1899-12-31T16:00:00-08:00,False,False,"Extensions for the Simple Injector Inversion of Control library for .NET. The Extensions project adds advanced capabilities, such as batch registration and registration of open generic types.","simpleinjector,architecture,dependency-injection,DI,easy,easy-to-use,Inversion-of-Control,IOC,Servicelocator",-1,False,2.0.0-beta1
+NServiceBus Ltd,2013-01-31T10:20:36.493Z,43209,1905,ActiveMQ support for NServicebus,NServiceBus.ActiveMQ,True,1899-12-31T16:00:00-08:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",49851,False,4.0.0-unstable2645
+王建川,2013-01-30T06:13:05.73Z,1613,1906,"ASP.NET WEB程序的优化功能，可以优化js/css文件。而且可以对原文件名进行加密。当你发布后，访问资源将自动压缩混淆代码。再次访问将从缓存中读取。使用方法：Web.config中：<add namespace=""ExfSoft.Web.Optimization""/>;网页中：
+@Scripts.Render(""~/packages/jquery"")
+@Scripts.Include(""~/Scripts/abc-{version}.js"")
+@Scripts.Include(""~/Scripts/test1.js"", new { attr = ""value"" })
+@Styles.Include(""~/Content/site.css"")
+
+在使用@Scripts.Render时需要
+第一步：protected void Application_Start()
+{
+    BundleConfig.RegisterBundles(BundleTable.Bundles);
+}
+第二步：
+//Class Page:
+    public class BundleConfig
+    {
+        internal static void RegisterBundles(BundleCollection bundles)
+        {
+            bundles.Add(new ScriptBundle(""~/packages/jquery"").Include(
+                ""~/Scripts/jQuery.{version}.js""));
+        }
+    }",ExfSoft.Web.Optimization,False,2013-11-18T21:51:39.44-08:00,True,False,,"ExfSoft,AspNet,optimization,js,css,zip,minify",2768,False,1.0.2.1
+NServiceBus Ltd,2013-01-30T02:59:10.813Z,14,1906,The most popular open-source service bus for .net,NServiceBus,True,2018-04-06T19:48:02.973+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",1169248,False,4.0.0-unstable2638
+eXpand,2013-01-30T17:38:13.57Z,1767,1906,ConditionalDetailViews Module (Web) / eXpand Framework,eXpandConditionalDetailViewsWeb,False,2013-06-18T08:51:20.957-07:00,True,False,ConditionalDetailViews Module (Web) / eXpand Framework,"DevExpress,eXpand",27363,False,12.2.5.16
+GeertvanHorrik,2013-01-31T12:56:25.153Z,507,1905,Catel.Extensions.Data library which provides data classes such as repositories.,Catel.Extensions.Data,True,2016-11-29T05:35:59.533-08:00,True,False,,"catel,csla,clsa.net",103618,True,3.4.1301311344-beta
+Denis K.O.,2013-01-29T23:00:14.07Z,1807,1907,"A .NET wrapper for the MailChimp API 1.3, Export API 1.0 and Mandrill API 1.0.",mcapi.net,False,2013-05-09T11:01:52.897-07:00,True,False,,"MailChimp,Mandrill,Webhooks",40744,False,1.3.1.2
+GeertvanHorrik,2013-01-31T12:56:39.813Z,1645,1905,Compass service for Catel to use the compass as a service in MVVM. Also contains a unit test version to simulate the compass.,Catel.MVVM.Services.Compass,True,2013-10-18T04:22:18.253-07:00,True,False,,"mvvm,catel,compass,services,wp,wp7,windows,phone",25382,True,3.4.1301311344-beta
+Tony Tomov,2013-01-30T11:01:46.573Z,1519,1906,jqGrid is an Ajax-enabled JavaScript control that provides solutions for representing and manipulating tabular data on the web.,Trirand.jqGrid,False,2014-02-20T21:49:52.347-08:00,True,False,,,66882,False,4.4.4
+Demis Bellot,2013-01-30T20:45:08.67Z,1811,1906,Add the ProtoBuf binary format and endpoint to a StackExpress web service host.,StackExpress.Plugins.ProtoBuf,True,2013-05-05T16:45:58.313-07:00,True,False,ProtoBuf Format Serializer ContentType ServiceClients for StackExpress,"ProtoBuf,Fast,Binary,Serializer,Format,ContentType,StackExpress,REST,Web,Services",65721,False,3.9.512-unstable
+Hibernating Rhinos,2013-01-30T15:08:57.527Z,43209,1906,This bundle aims to allow the user to implement unique constraints in the objects (usefull for properties like email or social security number).,RavenDB.Bundles.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",215470,True,2.0.2246-Unstable
+LogikBug,2013-01-30T19:16:21.537Z,1906,1906,Provides an implementation of the Microsoft.Practices.ServiceLocation.IServiceLocator using IInject.,IInject.CommonServiceLocator,False,2013-01-30T11:16:21.537-08:00,True,False,,"commonservicelocator,iinject,di,dependency-injection,ioc,inversion-of-control,iinject-commonservicelocator,practices,iservicelocator",10266,False,1.2.0.1
+GeertvanHorrik,2013-01-30T12:14:50.063Z,1645,1906,Gyroscope service for Catel to use the gyroscope as a service in MVVM. Also contains a unit test version to simulate the gyroscope.,Catel.MVVM.Services.Gyroscope,True,2013-10-18T04:22:20.863-07:00,True,False,,"mvvm,catel,gyroscope,services,wp7,wp,windows,phone",25100,True,3.4.1301301301-beta
+NServiceBus Ltd,2013-01-30T02:59:28.75Z,63,1906,The CastleWindsor Container for the nservicebus,NServiceBus.CastleWindsor,True,2018-02-16T08:25:50.44+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",198695,False,4.0.0-unstable2638
+王建川,2013-01-30T04:02:12.177Z,1613,1906,"ASP.NET WEB程序的优化功能，可以优化js/css文件。而且可以对原文件名进行加密。当你发布后，访问资源将自动压缩混淆代码。再次访问将从缓存中读取。使用方法：Web.config中：<add namespace=""ExfSoft.Web.Optimization""/>;网页中：
+@Scripts.Render(""~/packages/jquery"")
+@Scripts.Include(""~/Scripts/abc-{version}.js"")
+@Scripts.Include(""~/Scripts/test1.js"", new { attr = ""value"" })
+@Styles.Include(""~/Content/site.css"")
+
+在使用@Scripts.Render时需要
+第一步：protected void Application_Start()
+{
+    BundleConfig.RegisterBundles(BundleTable.Bundles);
+}
+第二步：
+//Class Page:
+    public class BundleConfig
+    {
+        internal static void RegisterBundles(BundleCollection bundles)
+        {
+            bundles.Add(new ScriptBundle(""~/packages/jquery"").Include(
+                ""~/Scripts/jQuery.{version}.js""));
+        }
+    }",ExfSoft.Web.Optimization,False,2013-11-18T21:51:39.44-08:00,True,False,,"ExfSoft,AspNet,optimization,js,css,zip,minify",2768,False,1.0.1.1
+NServiceBus Ltd,2013-01-31T12:47:28.09Z,63,1905,The CastleWindsor Container for the nservicebus,NServiceBus.CastleWindsor,True,2018-02-16T08:25:50.44+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",198695,False,4.0.0-unstable2649
+Euroling AB,2013-01-30T13:25:06.22Z,43209,1906,SiteSeeker integration module for Sitecore,SiteSeeker.Sitecore,True,1899-12-31T16:00:00-08:00,False,False,,"siteseeker,sitecore,search,integration,module",38958,False,4.2.64-beta74
+"Eric Hexter,Matt Hinze",2013-01-30T21:49:13.77Z,1653,1906,HtmlHelpers for projects that use twitter.bootstrap.mvc4.,twitter.bootstrap.mvc4.htmlhelpers,False,2013-10-10T05:22:28.057-07:00,True,False,,,56795,False,1.0.90
+eXpand,2013-01-30T17:38:25.357Z,1089,1906,ExceptionHandling Module (Web) / eXpand Framework,eXpandExceptionHandlingWeb,False,2015-04-27T12:07:21.237-07:00,True,False,ExceptionHandling Module (Web) / eXpand Framework,"DevExpress,eXpand",56866,False,12.2.5.16
+NHS Evidence,2013-01-31T12:36:39.087Z,1684,1905,Restful conventions for ASP .NET MVC,Snooze,False,2013-09-09T07:53:45.557-07:00,True,False,,"MVC,REST,ASPNET",47754,False,1.3.2
+"RobVesse,tpluscode,kal_ahmed,ronmichael",2013-01-30T11:54:36.407Z,89,1906,dotNetRDF.Query.FullText provides Full Text SPARQL support as a plugin for the dotNetRDF Leviathan SPARQL Engine using Lucene.Net,dotNetRDF.Query.FullText,False,2018-01-21T12:41:48.113+00:00,True,False,,"RDF,Semantic,Web,SPARQL,Query,Full,Text,Lucene",10410,False,0.6.0
+Paul Betts,2013-01-30T22:04:18.413Z,164,1906,A library to aid in writing unit tests for ReactiveUI projects,reactiveui-testing,False,2017-11-07T23:53:03.6+00:00,True,False,,,64289,False,4.3.2
+DigiData Corp.,2013-01-31T05:50:45.843Z,1444,1905,"This package contains a .NET client library for the DigiData REST Service.  It is made up of a .NET assembly (and its dependent assemblies) that respects the RESTful approach of the DigiData REST Service rather than, say, mapping the REST service RPC function calls.  We have attempted to create it with all of the flexibility of the DDRS so that it should not need to be updated merely to accommodate new functionality in the REST service.",DigiData.Services.Rest.Client,False,2014-05-07T07:55:33.707-07:00,True,False,A .NET client library for the DigiData REST Service.,rest,23849,False,2.0.73
+"Eric Hexter,Matt Hinze",2013-01-30T21:49:23.05Z,1653,1906,This is a sample for the bootstrap layout and supporting files to quickly add Twitter Bootstrap to an MVC 4 application,twitter.bootstrap.mvc4.sample,False,2013-10-10T05:22:11.937-07:00,True,False,,,56301,False,1.0.90
+NServiceBus Ltd,2013-01-30T07:31:43.943Z,1283,1906,The Interfaces for NServiceBus Implementation,NServiceBus.Interfaces,True,2014-10-14T20:53:16.433-07:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",389461,False,4.0.0-unstable2639
+Hibernating Rhinos,2013-01-31T11:13:03.04Z,57,1905,"This package let you include RavenDB embedded in your asp.net application. RavenDB is a document database for the .NET/Windows platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.AspNetHost,True,2018-02-22T21:28:46.793+00:00,True,False,This package let you include RavenDB embedded in your Asp.Net web application.,"nosql,ravendb,raven,document,database,embedded",124680,True,2.0.2247-Unstable
+Dave Kerr,2013-01-30T23:33:23.81Z,1177,1906,SharpGL wraps the popular OpenGL library. This package installs SharpGL and the WPF controls.,SharpGLforWPF,False,2015-01-29T09:37:56.877-08:00,True,False,SharpGL wraps the popular OpenGL library. This package installs SharpGL and the WPF controls.,,5302,False,2.1.0
+NServiceBus Ltd,2013-01-31T00:57:36.253Z,63,1905,The StructureMap Container for the nservicebus,NServiceBus.StructureMap,True,2018-02-16T08:26:21.58+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",211946,False,4.0.0-unstable2644
+Igor Tkachev,2013-01-30T21:51:03.063Z,321,1906,Business Logic Toolkit SQLite Data Provider for .NET,BLToolkit.SQLite,False,2017-06-03T02:00:24.413-07:00,True,False,,"SQLite,bltoolkit,Linq,ORM,DAL,database,DB",9777,False,4.1.17
+Demis Bellot,2013-01-30T01:50:22.98Z,1811,1906,"Common library dependency for other StackExpress projects.
+      Includes JSON, XML, JSV and SOAP Generic Service Clients.
+      Contains:
+      - StackExpress.Interfaces
+      - StackExpress.Common
+      Dependenies:
+      - StackExpress.Text",StackExpress.Common,True,2013-05-05T16:45:38.26-07:00,True,False,Opensource .NET and Mono REST Web Services framework,"StackExpress,Common,Framework",67168,False,3.9.508-unstable
+GeertvanHorrik,2013-01-30T12:14:39.39Z,507,1906,Catel.Extensions.Prism library which contains helper classes for prism.,Catel.Extensions.Prism,True,2016-11-29T13:36:21.16+00:00,True,False,,"prism,catel,mvvm",129719,True,3.4.1301301301-beta
+GeertvanHorrik,2013-01-30T12:14:31.673Z,507,1906,Catel.Extensions.Data library which provides data classes such as repositories.,Catel.Extensions.Data,True,2016-11-29T05:35:59.533-08:00,True,False,,"catel,csla,clsa.net",103618,True,3.4.1301301301-beta
+Autofac Contributors,2013-01-30T12:22:44.097Z,1129,1906,Autofac allows you to register metadata along with dependencies for additional resolution flexibility. This extension enables that metadata to be registered through attributes.,Autofac.Extras.Attributed,False,2015-03-18T04:59:16.58-07:00,True,False,Autofac extension for registering dependency metadata via attributes.,,98585,False,3.0.0
+NA,2013-01-29T21:59:26.287Z,1880,1907,NHaml view engine configured to work inside a Microsoft MVC3 project,System.Web.NHaml,False,2013-02-25T10:28:11.797-08:00,True,False,,,1804,False,4.0.8
+Demis Bellot,2013-01-30T02:30:29.53Z,1811,1906,"Adds OpenId Auth Providers for use in StackExpress Web and REST Services. 
+        Includes built-in support for Google, Yahoo, MyOpenId and Custom OpenId providers.
+        
+        More Info on Auth Providers: 
+        https://github.com/ServiceStack/ServiceStack/wiki/Authentication-and-authorization",StackExpress.Authentication.OpenId,True,2013-05-05T16:45:29.547-07:00,True,False,"OpenId Auth Providers for StackExpress - inc. Google, Yahoo, MyOpenId","OpenId,Google,Yahoo,MyOpenId,Authentication,Auth,Provider,ServiceStack,REST,Web,Services",65797,False,3.9.509-unstable
+Rob Eisenberg,2013-01-29T20:17:46.51Z,1864,1907,"Durandal is a cross-device, cross-platform client framework written in JavaScript and designed to make Single Page Applications (SPAs) easy to create and maintain. We've used it to build apps for PC, Mac, Linux, iOS and Android...and now it's your turn...
+
+This is a router designed to integrate SammyJS with Durandal. It makes building navigation style applications simple and elegant.",Durandal.Router,False,2013-03-13T13:40:14.163-07:00,True,False,This is a router designed to integrate SammyJS with Durandal. It makes building navigation style applications simple and elegant.,"JavaScript,JS,Durandal,HTML,CSS,MVC,MVVM,MVP,Web,SPA,RIA,Knockout,RequireJS,jQuery,SammyJS,Navigation,Router",60196,False,1.0.1
+"RobVesse,tpluscode,kal_ahmed,ronmichael",2013-01-30T11:53:22.393Z,89,1906,dotNetRDF.Data.Virtuoso provides support for using OpenLink Virtuoso as a backend triplestore with dotNetRDF,dotNetRDF.Data.Virtuoso,False,2018-01-21T12:41:37.927+00:00,True,False,,"RDF,Semantic,Web,SPARQL,Virtuoso,OpenLink",10850,False,0.9.0.2110
+NServiceBus Ltd,2013-01-31T00:57:01.457Z,63,1905,"The hosting template for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Host32,True,2018-02-16T08:27:15.097+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",113399,False,4.0.0-unstable2644
+NServiceBus Ltd,2013-01-30T10:11:48.11Z,63,1906,The Azure Host for NServicebus,NServiceBus.Hosting.Azure,True,2018-02-16T08:29:01.053+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",151590,False,4.0.0-unstable2643
+NServiceBus Ltd,2013-01-31T12:48:10.08Z,63,1905,The Spring Container for the nservicebus,NServiceBus.Spring,True,2018-02-16T08:26:14.66+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",125014,False,4.0.0-unstable2649
+NServiceBus Ltd,2013-01-30T10:12:25.307Z,43209,1906,The Azure Host for the timeout manager on NServicebus,NServiceBus.Timeout.Hosting.Azure,True,1899-12-31T16:00:00-08:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",-1,False,4.0.0-unstable2643
+jmettraux,2013-01-31T02:40:16.177Z,1886,1905,a mini (and naive) Scheme interpreter,Intrigue,False,2013-02-18T23:31:41.73-08:00,True,False,,"scheme,lisp,interpreter",2014,False,1.0.3
+"BrightSword Technologies Pte. Ltd.,Singapore",2013-01-31T02:46:54.99Z,700,1905,"A collection of commonly used utility classes, extension methods and functions.",BrightSword.SwissKnife,False,2016-05-20T13:31:59.3-07:00,True,False,,,12514,False,1.0.8
+eXpand,2013-01-30T17:40:05.133Z,11,1906,PivotChart Module (Win) / eXpand Framework,eXpandPivotChartWin,False,2018-04-09T16:19:05.76+00:00,True,False,PivotChart Module (Win) / eXpand Framework,"DevExpress,eXpand",69534,False,12.2.5.16
+Maher Ali,2013-01-30T17:47:39.94Z,1906,1906,Adding nice to have features to EntityCollection to be used in MVVM applications,ObservableEntityCollection,False,2013-01-30T09:47:40.237-08:00,True,False,,,504,False,1.0.0
+eXpand,2013-01-30T17:38:36.267Z,695,1906,FilterDatastore Module (Web) / eXpand Framework,eXpandFilterDatastoreWeb,False,2016-05-25T07:42:26.04-07:00,True,False,FilterDatastore Module (Web) / eXpand Framework,"DevExpress,eXpand",61751,False,12.2.5.16
+Rocky,2013-01-31T07:37:47.313Z,1728,1905,WCF common library.,Timothy.Service,False,2013-07-27T02:45:04.013-07:00,True,False,,.Net4.0,4327,False,1.0.9
+MoreLINQ Developers,2013-01-31T09:28:22.327Z,10,1905,"This project enhances LINQ to Objects with the following methods: Acquire, AssertCount, Batch, Concat, Consume, DistinctBy, EquiZip, ExceptBy, Fold, ForEach, Generate, GenerateByIndex, GroupAdjacent, Index, MaxBy, MinBy, Pad, Pairwise, Pipe, Prepend, PreScan, Scan, SingleOrFallback, SkipUntil, Split, TakeEvery, TakeLast, TakeUntil, ToDataTable, ToDelimitedString, ToHashSet, Trace, Zip, ZipLongest",morelinq,True,2018-04-10T09:37:14.3+00:00,True,False,"This project enhances LINQ to Objects with extra methods, in a manner which keeps to the spirit of LINQ.","linq,extensions",1364894,False,1.0.15631-beta
+Autofac Contributors,2013-01-30T12:23:25.093Z,892,1906,Microsoft Enterprise Library features generally assume Unity as the backing store for IoC operations. This extension allows you to use Autofa as the backing store for Microsoft Enterprise Library application blocks.,Autofac.Extras.EnterpriseLibraryConfigurator,False,2015-11-10T10:56:48.077-08:00,True,False,Autofac extension allowing Autofac to be used with Microsoft Enterprise Library.,,9997,False,3.0.0
+NServiceBus Ltd,2013-01-31T00:57:40.503Z,63,1905,"The testing for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Testing,True,2018-02-16T08:24:31.56+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",326207,False,4.0.0-unstable2644
+Hibernating Rhinos,2013-01-30T15:09:24.297Z,43209,1906,RavenDB 'Authorization' bundle client extend RavenDB and add document level permissions.,RavenDB.Client.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles,authorization",168504,True,2.0.2246-Unstable
+GeertvanHorrik,2013-01-30T08:02:48.467Z,1645,1906,Gyroscope service for Catel to use the gyroscope as a service in MVVM. Also contains a unit test version to simulate the gyroscope.,Catel.MVVM.Services.Gyroscope,True,2013-10-18T04:22:20.863-07:00,True,False,,"mvvm,catel,gyroscope,services,wp7,wp,windows,phone",25100,True,3.4.1301300851-beta
+eXpand,2013-01-30T17:41:02.777Z,1715,1906,WorkFlow Module (Web) / eXpand Framework,eXpandWorkFlowWeb,False,2013-08-09T07:44:02.05-07:00,True,False,WorkFlow Module (Web) / eXpand Framework,"DevExpress,eXpand",32731,False,12.2.5.16
+NServiceBus Ltd,2013-01-30T10:12:00.44Z,63,1906,The Ninject Container for the nservicebus,NServiceBus.Ninject,True,2018-02-16T08:26:03.157+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",171718,False,4.0.0-unstable2643
+NServiceBus Ltd,2013-01-30T07:32:19.24Z,63,1906,"The testing for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Testing,True,2018-02-16T08:24:31.56+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",326207,False,4.0.0-unstable2639
+Demis Bellot,2013-01-30T20:37:30.31Z,1811,1906,"Provides a set of services to be discovered by Swagger (http://swagger.wordnik.com/)
+      Swagger is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.",StackExpress.Api.Swagger,True,2013-05-05T16:45:24.117-07:00,True,False,ServiceStack integration with Swagger,"Swagger,StackExpress,API,REST",48674,False,3.9.511-unstable
+NServiceBus Ltd,2013-01-31T10:21:06.89Z,63,1905,The process used when sharing an azure instance between multiple NServicebus endpoints,NServiceBus.Hosting.Azure.HostProcess,True,2018-02-16T08:29:10.037+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",110525,False,4.0.0-unstable2645
+Halil ibrahim Kalkan,2013-01-30T20:04:28.197Z,1504,1906,"jTable is a jQuery plugin that is used to create AJAX based CRUD tables without coding HTML or Javascript.
+
+It supports paging, sorting, master/child tables, selecting rows, resizing columns, show/hide columns and so on. Also creates create/edit forms and dialogs automatically from your model.",jTable,False,2014-03-08T09:48:17.513-08:00,True,False,jTable is a jQuery plugin that is used to create AJAX based CRUD tables/grids without coding HTML or Javascript.,"jtable,jquery,ajax,table,crud",42122,False,2.1.1
+Igor Tkachev,2013-01-30T21:50:33.693Z,321,1906,Business Logic Toolkit DB2 Data Provider for .NET,BLToolkit.DB2,False,2017-06-03T01:59:10.57-07:00,True,False,,"DB2,bltoolkit,Linq,ORM,DAL,database,DB",8672,False,4.1.17
+Adam Schroder,2013-01-30T03:20:16.17Z,380,1906,"Asp.net MVC 3 helper library that enables the use of Html Conventions, FluentValidation and ActionControllers",SchoStack.Web,False,2017-04-05T15:58:26.023-07:00,True,False,,,12010,False,0.6.7
+Nauck IT KG,2013-01-31T08:43:33.04Z,1841,1905,"Portable.Licensing is a portable solution which allows you to implement a licensing
+      component into your application or library.
+
+      FEATURES
+      - runs on .NET >= 4.0.3, Silverlight >= 4, Windows Phone >= 7.5, Windows Store Apps, Mono, XBox 360
+      - easy creation and validation of your licenses
+      - trial licenses
+      - cryptographic signed licenses, no alteration possible",Portable.Licensing,True,2013-04-05T03:52:52.44-07:00,True,False,,"Portable.Licensing,PCL,Portable,Licensing,License,Key,KeyGenerator,Protection,Signing,Nauck",127496,False,0.0.0-devel
+odinserj,2013-01-30T11:27:53.827Z,1736,1906,������� ������� ��� ModelFramework,ModelFramework.ru-ru,False,2013-07-19T07:09:44.02-07:00,True,False,,,865,False,0.1.0
+NServiceBus Ltd,2013-01-30T02:59:24.72Z,417,1906,Azure support for NServicebus,NServiceBus.Azure,True,2017-02-27T15:06:56.187-08:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",154035,False,4.0.0-unstable2638
+eXpand,2013-01-30T17:41:22.07Z,43209,1906,Dashboard Module (Win) / eXpand Framework,eXpandDashboardWin,False,1899-12-31T16:00:00-08:00,False,False,Dashboard Module (Win) / eXpand Framework,"DevExpress,eXpand",6925,False,12.2.5.16
+O2 Platform,2013-01-31T13:45:29.853Z,1359,1905,"FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. It makes extensive use of .NET ExtensionMethods and it reduces the amount of code required (while making it more read
+
+This is the FluentSharp REPL which provides a C# REPL enviroment (REPL is Read Eval Print Loop) which allows for real-time execution of complex C# code (and GUI manipulation)",FluentSharp.REPL,False,2014-07-31T04:47:41.157-07:00,True,False,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. It makes extensive use of .NET ExtensionMethods and it reduces the amount of code required (while making it more read,"Fluent,OWASP,O2Platform,Security",17942,False,5.0.43
+Paul Jenkins; Jake Ginnivan,2013-01-30T01:57:20.82Z,38,1906,"The goal of MahApps.Metro is to allow devs to quickly and easily cobble togther a ""Metro"" UI for their WPF4+ apps, with minimal effort.",MahApps.Metro,True,2018-03-13T22:31:08.54+00:00,True,False,"The goal of MahApps.Metro is to allow devs to quickly and easily cobble togther a ""Metro"" UI for their WPF4+ apps, with minimal effort.","WPF,UI,Metro",1280769,True,0.10.1.17-ALPHA
+Andreas Grimme,2013-01-30T07:51:41.75Z,133,1906,Collection of general purpose .NET utility classes,sidi-util,False,2017-12-08T04:02:12.64+00:00,True,False,,,38384,False,2.4.0.676
+Euroling AB,2013-01-31T11:00:03.363Z,43209,1905,SiteSeeker integration module for EPiServer,SiteSeeker.EPiServer,True,1899-12-31T16:00:00-08:00,False,False,,"SiteSeeker,EPiServer,Search,module",40038,False,4.2.64-beta75
+Hibernating Rhinos,2013-01-31T12:57:09.433Z,21,1905,"This package includes the client API of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Client,True,2018-03-30T12:13:14.39+00:00,True,False,This package includes the client API of RavenDB.,"nosql,ravendb,raven,document,database,client",1119805,True,2.0.2248-Unstable
+NServiceBus Ltd,2013-01-30T02:59:37.767Z,63,1906,"The hosting template for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Host32,True,2018-02-16T08:27:15.097+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",113399,False,4.0.0-unstable2638
+Autofac Contributors,2013-01-30T12:23:49.407Z,449,1906,Aggregate services are sets of dependencies you can treat as a single dependency. This extension enables support for aggregate dependencies in Autofac.,Autofac.Extras.AggregateService,False,2017-01-26T12:51:03.877-08:00,True,False,Autofac extension for generating aggregate services.,,201641,False,3.0.0
+MikeRiedel,2013-01-30T07:26:21.36Z,1693,1906,"Provides fully customizable configuration error handling so errors can be retried, failed, mapped and more.",FreshMeat.ErrorHandlingBlock,True,2013-08-31T10:13:19.29-07:00,True,False,"Provides fully customizable configuration error handling so errors can be retried, failed, mapped and more.","Error,Handling,Retry,Transient,Portable",1109,False,1.0.0-beta
+eXpand,2013-01-30T17:38:19.76Z,1767,1906,ConditionalDetailViews Module (Win) / eXpand Framework,eXpandConditionalDetailViewsWin,False,2013-06-18T08:51:35.047-07:00,True,False,ConditionalDetailViews Module (Win) / eXpand Framework,"DevExpress,eXpand",27627,False,12.2.5.16
+"Assaf Raman,ServiceStack contributors",2013-01-30T02:13:11.61Z,108,1906,"A MongoDB IUserAuthRepository to persist User registration and auth info in a NoSQL Mongo DB.
+        Implements ServiceStack's built-in AuthProvider Model:
+        https://github.com/ServiceStack/ServiceStack/wiki/Authentication-and-authorization
+        inc. Twitter, Facebook, Basic, Digest, Credentials Auth modes out-of-the-box.",ServiceStack.Authentication.MongoDB,False,2018-01-02T14:41:50.08+00:00,True,False,,"ServiceStack,Authentication,Authorization,MongoDB,NoSQL,POCO,Code-First",23932,False,3.9.35
+NServiceBus Ltd,2013-01-31T10:20:40.21Z,63,1905,The Autofac Container for the nservicebus,NServiceBus.Autofac,True,2018-02-16T08:25:42.907+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",279857,False,4.0.0-unstable2645
+TheOne Technology Inc.,2013-01-30T06:40:27.393Z,39,1906,"NeoDEEX supports various features in easy and fast developing applications. The features include easy configuration, flexible/powerful logging, fast data accessing, and declarative transaction.",NeoDEEX4.Free,False,2018-03-12T12:00:40.963+00:00,True,False,NeoDEEX is an application development framework that helps writing an transactional data access application.,"Application,Framework,Data,Access,Transaction",3238,False,4.0.1
+discens,2013-01-30T09:17:28.653Z,43209,1906,"Small library for hiding and showing the taskbars on Windows machines.
+
+        Supports multi monitor taskbars of Windows 8.",BasicWindowsTaskbarManager,False,1899-12-31T16:00:00-08:00,False,False,,,5275,False,0.0.4778.16642
+Adam Schroder,2013-01-30T03:21:30.98Z,1081,1906,"Asp.net MVC 3 helper library that enables the use of Html Conventions, FluentValidation and ActionControllers",SchoStack.Web.FluentValidation,False,2015-05-05T05:17:14.017-07:00,True,False,,,4126,False,0.6.7
+NServiceBus Ltd,2013-01-30T10:11:43.797Z,63,1906,"The hosting template for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Host32,True,2018-02-16T08:27:15.097+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",113399,False,4.0.0-unstable2643
+Rob Eisenberg,2013-01-29T20:17:21.587Z,574,1907,"Durandal is a cross-device, cross-platform client framework written in JavaScript and designed to make Single Page Applications (SPAs) easy to create and maintain. We've used it to build apps for PC, Mac, Linux, iOS and Android...and now it's your turn...
+
+Features
+-Clean MV* Architecture
+-JS & HTML Modularity
+-Simple App Lifecycle
+-Eventing, Modals, Message Boxes, etc.
+-Navigation & Screen State Management
+-Consistent Async Programming w/ Promises
+-App Bundling and Optimization
+-Use any Backend Technology
+-Built on top of jQuery, Knockout & RequireJS.
+-Integrates with other libraries such as SammyJS & Bootstrap.
+-Make jQuery & Bootstrap widgets templatable and bindable (or build your own widgets).",Durandal,False,2016-09-23T13:25:10.017-07:00,True,False,"Durandal is a cross-device, cross-platform client framework written in JavaScript and designed to make Single Page Applications (SPAs) easy to create and maintain.","JavaScript,JS,Durandal,HTML,CSS,MVC,MVVM,MVP,Web,SPA,RIA,Knockout,RequireJS,jQuery",251603,False,1.0.1
+Adam Schroder,2013-01-30T03:33:00.743Z,1081,1906,"Asp.net MVC 3 helper library that enables the use of Html Conventions, FluentValidation and ActionControllers",SchoStack.Web.FluentValidation,False,2015-05-05T05:17:14.017-07:00,True,False,,,4126,False,0.6.8
+OMR,2013-01-30T20:36:27.727Z,1788,1906,My package description.,OMR.Core.Helpers,False,2013-05-28T14:52:29.17-07:00,True,False,,,4527,False,1.0.12
+Ben Phegan,2013-01-29T23:33:36.48Z,1669,1907,Provides a command line utility to query changes associated with TeamCity builds. Useful to create dynamic build/release notes as part of a TeamCity build.,TeamCityBuildChanges,False,2013-09-23T23:10:36.237-07:00,True,False,,,2865,False,0.1.0.45
+Demis Bellot,2013-01-30T01:50:38.237Z,1811,1906,Add the ProtoBuf binary format and endpoint to a StackExpress web service host.,StackExpress.Plugins.ProtoBuf,True,2013-05-05T16:45:58.313-07:00,True,False,ProtoBuf Format Serializer ContentType ServiceClients for StackExpress,"ProtoBuf,Fast,Binary,Serializer,Format,ContentType,StackExpress,REST,Web,Services",65721,False,3.9.508-unstable
+Haitch,2013-01-31T05:45:02.33Z,1733,1905,"Basic library for WinRT Applications, provide Log Support.",Wicresoft.RTLib,False,2013-07-22T13:35:10.44-07:00,True,False,,"Wicresoft,WinRT",4983,False,1.0.0.6
+Igor Tkachev,2013-01-30T21:50:49.11Z,321,1906,Business Logic Toolkit MySql Data Provider for .NET,BLToolkit.MySql,False,2017-06-03T01:59:35.24-07:00,True,False,,"MySql,bltoolkit,Linq,ORM,DAL,database,DB",14125,False,4.1.17
+"Eric Hexter,Matt Hinze",2013-01-30T21:49:32.22Z,1653,1906,"This has the bootstrap layout and supporting files to quickly add Twitter 
+    Bootstrap to an MVC 4 application. Install the twitter.bootstrap.mvc4.sample to see how
+    to use the auto scaffolding feature.",twitter.bootstrap.mvc4.templates,False,2013-10-10T05:22:01.363-07:00,True,False,,,11027,False,1.0.90
+Demis Bellot,2013-01-30T20:37:39.92Z,1811,1906,"Common library dependency for other StackExpress projects.
+      Includes JSON, XML, JSV and SOAP Generic Service Clients.
+      Contains:
+      - StackExpress.Interfaces
+      - StackExpress.Common
+      Dependenies:
+      - StackExpress.Text",StackExpress.Common,True,2013-05-05T16:45:38.26-07:00,True,False,Opensource .NET and Mono REST Web Services framework,"StackExpress,Common,Framework",67168,False,3.9.511-unstable
+ThoughtWorks,2013-01-31T06:22:57.777Z,1064,1905,Harness RestClient lib,Harness.RestClient,False,2015-05-21T23:27:12.13-07:00,True,False,,,10963,False,1.1.0.4
+eXpand,2013-01-30T17:39:22.983Z,877,1906,MemberLevelSecurity Module (Win) / eXpand Framework,eXpandMemberLevelSecurityWin,False,2015-11-25T10:21:12.1-08:00,True,False,MemberLevelSecurity Module (Win) / eXpand Framework,"DevExpress,eXpand",57688,False,12.2.5.16
+Demis Bellot,2013-01-30T01:28:32.943Z,1811,1906,"Full details in Mvc PowerPack: http://servicestack.net/mvc-powerpack/
+      Adapter classes to provide tight integration and re-usable functionality between ServiceStack and MVC3.
+      Including adapters for: MiniProfiler, FluentValidation, Funq IOC Controller Factory, Funq Validator Factory
+      ControllerBase (configured with access to ServiceStack's ICacheClient, ISession, typed UserSession dependencies).",StackExpress.Mvc,True,2013-05-05T16:45:43.937-07:00,True,False,.NET 4.0 project Integration of StackExpress with MVC3,"MiniProfiler,FluentValidation,MVC,Controller",65837,False,3.9.507-unstable
+Euroling AB,2013-01-30T13:25:10.903Z,43209,1906,SiteSeeker integration module for EPiServer,SiteSeeker.EPiServer,True,1899-12-31T16:00:00-08:00,False,False,,"SiteSeeker,EPiServer,Search,module",40038,False,4.2.64-beta74
+S. Kyle Korndoerfer,2013-01-31T04:15:25.613Z,887,1905,Dependency Injection in ASP.NET WebForms using Unity.,Unity.WebForms,False,2015-11-15T12:34:50.333-08:00,True,False,,"Unity,ASP.NET,WebForms,Dependency,Injection",21602,False,1.1.0
+eXpand,2013-01-30T17:38:47.627Z,11,1906,ImportWizard Module (Win) / eXpand Framework,eXpandImportWizardWin2,False,2018-04-09T16:13:24.823+00:00,True,False,ImportWizard Module (Win) / eXpand Framework,"DevExpress,eXpand",69275,False,12.2.5.16
+NServiceBus Ltd,2013-01-31T00:56:54.267Z,63,1905,"The hosting template for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Host,True,2018-02-16T08:27:09.05+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",446743,False,4.0.0-unstable2644
+eXpand,2013-01-30T17:39:06.687Z,1715,1906,JobSheduler Module (Web) / eXpand Framework,eXpandJobShedulerWeb,False,2013-08-09T07:41:40.283-07:00,True,False,JobSheduler Module (Web) / eXpand Framework,"DevExpress,eXpand",31781,False,12.2.5.16
+GeertvanHorrik,2013-01-31T12:56:29.89Z,507,1905,Catel.Extensions.FluentValidation library which contains fluent validation extensions.,Catel.Extensions.FluentValidation,True,2016-11-29T05:36:11.987-08:00,True,False,,"validation,fluent,fluentvalidation",126277,True,3.4.1301311344-beta
+eXpand,2013-01-30T17:40:17.027Z,1715,1906,SqlDbMapper Module (Win) / eXpand Framework,eXpandSqlDbMapperWin,False,2013-08-09T07:43:04.063-07:00,True,False,SqlDbMapper Module (Win) / eXpand Framework,"DevExpress,eXpand",31458,False,12.2.5.16
+Igor Tkachev,2013-01-30T21:50:41.237Z,321,1906,Business Logic Toolkit Firebird Data Provider for .NET,BLToolkit.Firebird,False,2017-06-03T01:59:18.693-07:00,True,False,,"Firebird,bltoolkit,Linq,ORM,DAL,database,DB",8989,False,4.1.17
+MoreLINQ Developers,2013-01-31T09:32:53.097Z,44,1905,C# source implementation that enhances LINQ to Objects with the method ToDelimitedString. Creates a delimited string from a sequence of values. The delimiter used depends on the current culture of the executing thread.,MoreLinq.Source.MoreEnumerable.ToDelimitedString,False,2018-03-07T18:46:34.49+00:00,True,False,Enhances LINQ to Objects with the method ToDelimitedString  (30 overloads),"linq,extensions",4742,False,1.1.0
+Autofac Contributors,2013-01-30T12:22:35.33Z,952,1906,Managed Extensibility Framework integration for Autofac,Autofac.Mef,False,2015-09-11T09:50:08.327-07:00,True,False,Enables MEF catalogs to be loaded by the Autofac container.,,270539,False,3.0.0
+NServiceBus Ltd,2013-01-31T00:56:31.157Z,14,1905,The most popular open-source service bus for .net,NServiceBus,True,2018-04-06T19:48:02.973+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",1169248,False,4.0.0-unstable2644
+Moshe Hoadley,2013-01-31T12:29:13.483Z,43209,1905,".NET Persistence API (also called NPersistence or NPA) is a ORM framework which also enables entity mapping useing annotations!! The project is based on JAVA's JPA and offers applications to use a standard API for their ORM operations. In this package, NPA is implemented by NHibernate. This package also contains SQLITE embedded DB so you can start working with no need to install a DB.",NPersistence,False,1899-12-31T16:00:00-08:00,False,False,.NET Persistence API - JPA for the .NET platform. A complete ORM framework.,"NPA,npa,NPersistence,npersistence,persistence,.net,API,JPA,jpa,nhibernate,hibernate,entityFramework,EF,entity,framework,database,db,data,base,ORM,object,relational,mapping",6586,False,2.0.0.141
+Eric.Zo,2013-01-31T10:31:50.29Z,1456,1905,"This is a simple integration of Facebook, Google, Windows Live OAuth 2 login function frame , just get the user information, the user is integrated into the application log in.",Oauth2Login,False,2014-04-25T02:57:02.753-07:00,True,False,,"oauth,2,login,facebook,googel,windows,live",3129,False,1.0.0
+NServiceBus Ltd,2013-01-30T02:59:57.45Z,63,1906,The Ninject Container for the nservicebus,NServiceBus.Ninject,True,2018-02-16T08:26:03.157+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",171718,False,4.0.0-unstable2638
+O2 Platform,2013-01-31T12:25:10.96Z,1744,1905,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. This is the Fluent# BCL which provides support for System.Forms and Web,FluentSharp.BCL,False,2013-07-11T10:24:47.177-07:00,True,False,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs.,"Fluent,OWASP,O2Platform,Security",14570,False,5.0.40
+"Eric Hexter,Matt Hinze",2013-01-30T21:49:00.197Z,1653,1906,"This has the bootstrap layout and supporting files to quickly add Twitter 
+    Bootstrap to an MVC 4 application. Install the twitter.bootstrap.mvc4.sample to see how
+    to use the auto scaffolding feature.",twitter.bootstrap.mvc4,False,2013-10-10T05:22:40.567-07:00,True,False,,,126587,False,1.0.90
+S. van Deursen,2013-01-29T21:19:34.747Z,5,1907,Extension for Simple Injector providing integration with ASP.NET MVC3.,SimpleInjector.MVC3,True,2018-04-15T09:25:36.1+00:00,True,False,Extension for Simple Injector providing integration with ASP.NET MVC3.,"simpleinjector,MVC,MVC3,architecture,dependency-injection,DI,easy,easy-to-use,Inversion-of-Control,IOC,DependencyResolver,ControllerFactory",145986,False,2.0.0-beta1
+NHS Evidence,2013-01-31T12:51:28.577Z,1684,1905,Restful conventions for ASP .NET MVC,Snooze,False,2013-09-09T07:53:45.557-07:00,True,False,,"MVC,REST,ASPNET",47754,False,1.3.3
+S. Kyle Korndoerfer,2013-01-31T03:55:16.593Z,887,1905,Dependency Injection in ASP.NET WebForms using Unity.,Unity.WebForms,False,2015-11-15T12:34:50.333-08:00,True,False,,"Unity,ASP.NET,WebForms,Dependency,Injection",21602,False,1.0.0
+Demis Bellot,2013-01-30T01:50:12.29Z,1811,1906,"Provides a set of services to be discovered by Swagger (http://swagger.wordnik.com/)
+      Swagger is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.",StackExpress.Api.Swagger,True,2013-05-05T16:45:24.117-07:00,True,False,ServiceStack integration with Swagger,"Swagger,StackExpress,API,REST",48674,False,3.9.508-unstable
+Demis Bellot,2013-01-30T02:37:03.237Z,1811,1906,"Provides a set of services to be discovered by Swagger (http://swagger.wordnik.com/)
+      Swagger is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.",StackExpress.Api.Swagger,True,2013-05-05T16:45:24.117-07:00,True,False,ServiceStack integration with Swagger,"Swagger,StackExpress,API,REST",48674,False,3.9.510-unstable
+NServiceBus Ltd,2013-01-30T10:12:10.757Z,63,1906,The Spring Container for the nservicebus,NServiceBus.Spring,True,2018-02-16T08:26:14.66+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",125014,False,4.0.0-unstable2643
+Moshe Hoadley,2013-01-31T12:51:06.003Z,43209,1905,".NET Persistence API (also called NPersistence or NPA) is a ORM framework which also enables entity mapping useing annotations!! The project is based on JAVA's JPA and offers applications to use a standard API for their ORM operations. In this package, NPA is implemented by NHibernate. This package also contains SQLITE embedded DB so you can start working with no need to install a DB.",NPersistence,False,1899-12-31T16:00:00-08:00,False,False,.NET Persistence API - JPA for the .NET platform. A complete ORM framework.,"NPA,npa,NPersistence,npersistence,persistence,.net,API,JPA,jpa,nhibernate,hibernate,entityFramework,EF,entity,framework,database,db,data,base,ORM,object,relational,mapping",6586,False,2.0.0.15
+Steve Wilkes,2013-01-31T11:00:05.577Z,5,1905,"AgileMapper is an object-to-object mapper requiring zero-to-minimal configuration and providing up-front views of its execution plans. It's intended for mapping between view models, models and DTOs.",AgileObjects.AgileMapper,True,2018-04-15T19:59:15.853+00:00,True,False,"AgileMapper is an object-to-object mapper requiring zero-to-minimal configuration and providing up-front views of its execution plans. It's intended for mapping between view models, models and DTOs.","Mapping,DTO,ViewModel",14027,False,0.1.368-beta
+Autofac Contributors,2013-01-30T12:21:53.25Z,1743,1906,ASP.NET Web API Integration for Autofac,Autofac.WebApi,False,2013-07-12T05:25:27.587-07:00,True,False,Provides an IControllerFactory implementation and other integration points for the ASP.NET Web API.,,414361,False,3.0.0
+Autofac Contributors,2013-01-30T12:23:08.093Z,829,1906,This extension allows you to use Autofac dependency injection in RIA domain services.,Autofac.Extras.DomainServices,False,2016-01-12T14:54:45.19-08:00,True,False,Autofac extension for RIA services support.,,4746,False,3.0.0
+Alexander Farkas,2013-01-30T14:39:37.377Z,1906,1906,This script is the defacto way to enable use of HTML5 sectioning elements in legacy Internet Explorer,html5shiv,False,2013-01-30T06:39:37.377-08:00,True,False,,,229597,False,0.1.0.8
+MikeRiedel,2013-01-31T06:05:53.867Z,1693,1905,"Provides simple handling of transient errors that can occur with any network communication. Retries, intervals, mapping and detection can all be fully customized. Built-in handlers are provided for WCF, WebClient, HttpRequest.  Supports .NET 4 and later, Silverlight 4 and 5, Windows Store Apps, and Windows Phone 7.5 and later.",FreshMeat.ErrorHandlingBlock,True,2013-08-31T10:13:19.29-07:00,True,False,"Provides customizable handling of transient errors. Built-in handlers for WCF, WebClient, HttpRequest. For .NET, Silverlight, Store App, Windows Phone.","Error,Handling,Retry,Transient,Portable",1109,False,1.0.1-beta
+Paul Betts,2013-01-30T22:04:24.897Z,1599,1906,An MVVM library for WPF and Silverlight that is deeply integrated with the Reactive Extensions,reactiveui-winrt,False,2013-12-03T03:00:58.297-08:00,True,False,,,8183,False,4.3.2
+O2 Platform,2013-01-31T13:45:26.887Z,690,1905,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. It makes extensive use of .NET ExtensionMethods and it reduces the amount of code required (while making it more readable),FluentSharp.CoreLib,False,2016-05-30T09:42:45.903-07:00,True,False,,,24724,False,5.0.43
+Hibernating Rhinos,2013-01-31T11:13:30.83Z,21,1905,"This package includes the client API of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Client,True,2018-03-30T12:13:14.39+00:00,True,False,This package includes the client API of RavenDB.,"nosql,ravendb,raven,document,database,client",1119805,True,2.0.2247-Unstable
+Demis Bellot,2013-01-30T01:28:15.55Z,1811,1906,"Provides a set of services to be discovered by Swagger (http://swagger.wordnik.com/)
+      Swagger is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.",StackExpress.Api.Swagger,True,2013-05-05T16:45:24.117-07:00,True,False,ServiceStack integration with Swagger,"Swagger,StackExpress,API,REST",48674,False,3.9.507-unstable
+NServiceBus Ltd,2013-01-31T12:48:24.453Z,63,1905,The StructureMap Container for the nservicebus,NServiceBus.StructureMap,True,2018-02-16T08:26:21.58+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",211946,False,4.0.0-unstable2649
+GeertvanHorrik,2013-01-30T08:02:26.517Z,507,1906,"Catel.Extensions.Controls library which contains user controls, such as the StackGrid.",Catel.Extensions.Controls,True,2016-11-29T13:35:55.627+00:00,True,False,,"windows,controls,stackgrid,styles,stylehelper",170616,True,3.4.1301300851-beta
+Atif Aziz,2013-01-31T11:05:41.297Z,35,1905,Extension methods for .NET.,Mannex,False,2018-03-16T13:25:06.347+00:00,True,False,,"extension,methods",9990,False,2.1.0
+Hibernating Rhinos,2013-01-31T12:56:45.58Z,57,1905,"This package let you include RavenDB embedded in your asp.net application. RavenDB is a document database for the .NET/Windows platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.AspNetHost,True,2018-02-22T21:28:46.793+00:00,True,False,This package let you include RavenDB embedded in your Asp.Net web application.,"nosql,ravendb,raven,document,database,embedded",124680,True,2.0.2248-Unstable
+O2 Platform,2013-01-31T13:42:04.403Z,690,1905,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. It makes extensive use of .NET ExtensionMethods and it reduces the amount of code required (while making it more readable),FluentSharp.CoreLib,False,2016-05-30T09:42:45.903-07:00,True,False,,,24724,False,5.0.42
+NServiceBus Ltd,2013-01-31T00:56:49.083Z,63,1905,The CastleWindsor Container for the nservicebus,NServiceBus.CastleWindsor,True,2018-02-16T08:25:50.44+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",198695,False,4.0.0-unstable2644
+NServiceBus Ltd,2013-01-31T10:20:48.503Z,63,1905,The CastleWindsor Container for the nservicebus,NServiceBus.CastleWindsor,True,2018-02-16T08:25:50.44+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",198695,False,4.0.0-unstable2645
+Dennis Gronewold,2013-01-30T10:31:26.913Z,2,1906,"SphinxConnector.NET is a .NET client API for the Sphinx full-text search engine. It provides a fluent query API with object mapping capabilities that allows for an easy integration of Sphinx into your applications. After the installation, SphinxConnector.NET operates in a trial-mode, which has some limitations in functionality. However, at www.sphinxconnector.net/Download, you can request a trial key to unlock all features for a period of 30 days.",SphinxConnector,False,2018-04-18T08:51:42.607+00:00,True,False,SphinxConnector.NET is a .NET client API for the Sphinx full-text search engine. It provides a fluent query API with object mapping capabilities that allows for an easy integration of Sphinx into your applications.,"sphinx,full-text,search,client,api",10299,False,3.2.0
+eXpand,2013-01-30T17:39:57.71Z,11,1906,PivotChart Module (Web) / eXpand Framework,eXpandPivotChartWeb,False,2018-04-09T16:18:47.917+00:00,True,False,PivotChart Module (Web) / eXpand Framework,"DevExpress,eXpand",69674,False,12.2.5.16
+Ivony,2013-01-30T13:28:19.5Z,1906,1906,DbUtility is a light utility for SQL Server,DbUtility2,False,2013-01-30T05:28:19.5-08:00,True,False,,,3618,False,2.1.0
+NServiceBus Ltd,2013-01-30T10:12:21.663Z,63,1906,"The testing for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Testing,True,2018-02-16T08:24:31.56+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",326207,False,4.0.0-unstable2643
+devi_ous,2013-01-30T09:06:37.54Z,150,1906,"Framework for Microsoft SharePoint© 2010 and 2013. Allows to map list items to simple hand-writen POCO classes and perform actions by manipulating with entities.
+- strong typed operations with items
+- abstract layer on Sharepoint object model
+- simplifying recurring routine actions
+- ability to unit test",SharepointCommon,False,2017-11-21T07:00:32.663+00:00,True,False,"Framework for Microsoft SharePoint© 2010 and 2013. Allows to map list items to simple hand-writen POCO classes and perform actions by manipulating with entities.
+GOALS:
+- strong typed operations with items
+- abstract layer on Sharepoint object model
+- simplifying recurring routine actions
+- ability to unit test
+FEATURES:
+- create wrappers on a SPSite,SPWeb,SPList
+- get items by typed query, Id, Guid or specified field
+- create, update, delete items by typed entity
+- lazy access to any entity property(Castle Proxy)
+- typed CAML queries(Caml.NET with extentions)
+- many other features upcoming","Sharepoint,Framework,ORM,POCO,UnitTest,Wrapper",7176,False,1.3.3
+Demis Bellot,2013-01-30T01:28:08.707Z,1811,1906,"Binaries for the StackExpress web framework.
+      Visit http://www.ServiceStack.net/ServiceStack.Hello/
+      and https://github.com/ServiceStack/ServiceStack/wiki/Create-your-first-webservice
+      for walk throughs and docs on creating your first web service.",StackExpress,True,2013-05-05T16:45:17.45-07:00,True,False,Opensource .NET and Mono REST Web Services framework,"Fast,JSON,XML,CSV,HTML,SOAP,JSV,REST,Web,Service,Framework,MONO",69228,False,3.9.507-unstable
+Signere.no,2013-01-30T19:00:05.027Z,43209,1906,"Client library to communication with Signere.no REST API.
+		The library contains relevant model classes and a client class with methods to access all resources provided in the Signere.no API. 
+		The client class itself is implemented from an interface to make it easily testable.
+		
+		All explicit communication with the API is handled internally and translated to POCO objects. 
+		The client methods require certain fields from Signere.no user credentials in order to work properly. 
+		To create a user account and obtain these credentials, please visit signere.no .  
+		
+		Also, check out the REST API documentation at Https://api.signere.no for further details about the resources that can be accessed through this library.",Unipluss.Sign.Client,False,1900-01-01T00:00:00+00:00,False,False,,"Signere,Sign,BankID,Digital,signatur,Uni,Pluss,Signere.no",245837,False,1.0.217
+salfab,2013-01-31T13:08:39.317Z,43209,1905,Allows the Post-Build events to be disabled for the project on which the package is installed.,Testeroids.SkipPostBuildEvents,False,1899-12-31T16:00:00-08:00,False,False,"In order to skip the post-build event, set a variable in Visual Studio's build configuration or in Team City's build parameter, named $(SkipPostBuildEvents) to ""true"".","CI,continuous,integration,MSBuild,PostBuildEvents,skip,post,build,events,Team,City,disable.",-1,False,1.0.0
+Adriano Caldeira,2013-01-30T14:41:35.257Z,36,1906,"O Thunder é um framework .Net que auxilia no desenvolvimento com métodos de validação, exibição de mensagens entre outros.",Thunder,False,2018-03-15T13:37:55.513+00:00,True,False,,"message,validator,annotations,cpf,cnpj,date",14018,False,1.2.1
+NServiceBus Ltd,2013-01-31T00:57:08.513Z,63,1905,The process used when sharing an azure instance between multiple NServicebus endpoints,NServiceBus.Hosting.Azure.HostProcess,True,2018-02-16T08:29:10.037+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",110525,False,4.0.0-unstable2644
+NHS Evidence,2013-01-31T13:00:45.307Z,1737,1905,Testing support for Snooze,Snooze.Testing,False,2013-07-18T06:34:53.97-07:00,True,False,,"MVC,ASPNET,REST,TESTING",36966,False,1.3.3
+NServiceBus Ltd,2013-01-31T12:47:49.157Z,1283,1905,The Interfaces for NServiceBus Implementation,NServiceBus.Interfaces,True,2014-10-14T20:53:16.433-07:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",389461,False,4.0.0-unstable2649
+Morten Christensen,2013-01-31T12:47:46.233Z,3,1905,Installs Umbraco Cms in your Visual Studio ASP.NET Webforms project,UmbracoCms,False,2018-04-17T08:45:42.51+00:00,True,False,Installs Umbraco Cms in your Visual Studio ASP.NET Webforms project,umbraco,760990,True,6.0.0
+NServiceBus Ltd,2013-01-30T07:31:31.017Z,63,1906,"The hosting template for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Host32,True,2018-02-16T08:27:15.097+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",113399,False,4.0.0-unstable2639
+Nick Berardi,2013-01-30T22:15:05.007Z,1352,1906,"FluentCassandra is a .NET library for accessing Cassandra, which wraps the Thrift client library and provides a more fluent POCO interface for accessing and querying the objects in Cassandra.",FluentCassandra,False,2014-08-07T14:08:51.377-07:00,True,False,"FluentCassandra is a .NET library for accessing Cassandra, which wraps the Thrift client library and provides a more fluent POCO interface for accessing and querying the objects in Cassandra.","fluent,cassandra,apache,nosql,database,managedfusion,.net40",19214,False,1.2.2
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2013-01-30T09:58:35.657Z,5,1906,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,FAKE,False,2018-04-15T16:37:14.193+00:00,True,False,,build,1448675,False,1.74.105
+Hibernating Rhinos,2013-01-31T12:58:00Z,43209,1905,"This package let you include RavenDB embedded in-process with your application. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Embedded,True,1900-01-01T00:00:00+00:00,False,False,This package let you include RavenDB embedded in-process with your application.,"nosql,ravendb,raven,document,database,embedded",547497,True,2.0.2248-Unstable
+NServiceBus Ltd,2013-01-31T10:20:57.28Z,63,1905,"The hosting template for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Host32,True,2018-02-16T08:27:15.097+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",113399,False,4.0.0-unstable2645
+Euroling AB,2013-01-31T11:00:03.423Z,43209,1905,SiteSeeker integration module for Sitecore,SiteSeeker.Sitecore,True,1899-12-31T16:00:00-08:00,False,False,,"siteseeker,sitecore,search,integration,module",38958,False,4.2.64-beta75
+Hibernating Rhinos,2013-01-31T11:13:15.6Z,57,1905,RavenDB embedded database,RavenDB.Bundles.IndexReplication,True,2018-02-22T21:29:30.903+00:00,True,False,,"nosql,ravendb,raven,document,database,bundles",116112,True,2.0.2247-Unstable
+NServiceBus Ltd,2013-01-31T12:48:06.41Z,63,1905,RabbitMQ support for NServicebus,NServiceBus.RabbitMQ,True,2018-02-16T08:20:32.96+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",199609,False,4.0.0-unstable2649
+Hibernating Rhinos,2013-01-31T11:13:19.473Z,43209,1905,This bundle aims to allow the user to implement unique constraints in the objects (usefull for properties like email or social security number).,RavenDB.Bundles.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",215470,True,2.0.2247-Unstable
+Demis Bellot,2013-01-30T01:28:20.447Z,1811,1906,"Adds OpenId Auth Providers for use in StackExpress Web and REST Services. 
+        Includes built-in support for Google, Yahoo, MyOpenId and Custom OpenId providers.
+        
+        More Info on Auth Providers: 
+        https://github.com/ServiceStack/ServiceStack/wiki/Authentication-and-authorization",StackExpress.Authentication.OpenId,True,2013-05-05T16:45:29.547-07:00,True,False,"OpenId Auth Providers for StackExpress - inc. Google, Yahoo, MyOpenId","OpenId,Google,Yahoo,MyOpenId,Authentication,Auth,Provider,ServiceStack,REST,Web,Services",65797,False,3.9.507-unstable
+GeertvanHorrik,2013-01-30T12:14:47.453Z,1645,1906,Compass service for Catel to use the compass as a service in MVVM. Also contains a unit test version to simulate the compass.,Catel.MVVM.Services.Compass,True,2013-10-18T04:22:18.253-07:00,True,False,,"mvvm,catel,compass,services,wp,wp7,windows,phone",25382,True,3.4.1301301301-beta
+Jake Luer,2013-01-30T20:45:30.243Z,1896,1906,Chai is a BDD / TDD assertion library for the browser that can be delightfully paired with any javascript testing framework.,chai,False,2013-02-09T09:29:00.937-08:00,True,False,,"js,javascript,tdd,bdd,chai,chaijs",33995,False,1.4.2.1
+Hibernating Rhinos,2013-01-31T12:57:13.87Z,43209,1905,RavenDB 'Authorization' bundle client extend RavenDB and add document level permissions.,RavenDB.Client.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles,authorization",168504,True,2.0.2248-Unstable
+Nohros Inc,2013-01-31T12:33:57.143Z,76,1905,"This project contains several of Nohros' core .NET libraries that we use
+      in our many .NET-based projects. The common package contains the common
+      classes that are used by the others packages of the framework.",must.common,False,2018-02-03T19:46:31.53+00:00,True,False,The common package of the nohros must framework.,"csharp,framework,nohros,security",32861,False,1.6.8.11
+Euroling AB,2013-01-30T12:06:27.527Z,43209,1906,SiteSeeker integration module for Sitecore,SiteSeeker.Sitecore,True,1899-12-31T16:00:00-08:00,False,False,,"siteseeker,sitecore,search,integration,module",38958,False,4.2.64-beta73
+chrisdavies,2013-01-30T22:26:05.073Z,1905,1906,Super simple database migrations for .net,dbmg,False,2013-01-31T10:21:34.323-08:00,True,False,,"migrations,db",1848,False,0.0.5.1
+Demis Bellot,2013-01-30T01:28:43.557Z,1811,1906,Add the ProtoBuf binary format and endpoint to a StackExpress web service host.,StackExpress.Plugins.ProtoBuf,True,2013-05-05T16:45:58.313-07:00,True,False,ProtoBuf Format Serializer ContentType ServiceClients for StackExpress,"ProtoBuf,Fast,Binary,Serializer,Format,ContentType,StackExpress,REST,Web,Services",65721,False,3.9.507-unstable
+NServiceBus Ltd,2013-01-30T02:59:20.017Z,63,1906,The Autofac Container for the nservicebus,NServiceBus.Autofac,True,2018-02-16T08:25:42.907+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",279857,False,4.0.0-unstable2638
+Christos Pontikis,2013-01-29T21:25:45.45Z,1907,1907,"jui_datagrid is an Ajax-enabled jQuery plugin, useful to manipulate database data in tabular format. Fully customizable, simple but powerful API, jQuery themes compatible, localization support. It has a modular design, so it is using jui_pagination plugin for paging and jui_filter_rules plugin for searching.",jui_datagrid,False,2013-01-29T13:25:45.45-08:00,True,False,,"jquery,grid,datagrid,table,database,paging,sorting,searching,jqueryui-themable",660,False,0.9.0
+O2 Platform,2013-01-31T13:32:59.793Z,690,1905,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. It makes extensive use of .NET ExtensionMethods and it reduces the amount of code required (while making it more readable),FluentSharp.CoreLib,False,2016-05-30T09:42:45.903-07:00,True,False,,,24724,False,5.0.41
+NServiceBus Ltd,2013-01-31T10:21:17.757Z,63,1905,The Ninject Container for the nservicebus,NServiceBus.Ninject,True,2018-02-16T08:26:03.157+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",171718,False,4.0.0-unstable2645
+Atif Aziz,2013-01-29T20:09:01.837Z,35,1907,Extension methods for .NET.,Mannex,False,2018-03-16T13:25:06.347+00:00,True,False,,"extension,methods",9990,False,2.0.0
+NServiceBus Ltd,2013-01-31T10:21:38.203Z,63,1905,"The testing for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Testing,True,2018-02-16T08:24:31.56+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",326207,False,4.0.0-unstable2645
+Matt Johnson,2013-01-29T23:48:20.68Z,1677,1907,RavenDB 'Temporal Versioning' bundle client.  Allows for tracking of changes to entities at different effective dates.,RavenDB.Client.TemporalVersioning,False,2013-09-16T15:52:33.393-07:00,True,False,,"nosql,ravendb,raven,document,database,client,bundles,temporal,versioning,bitemporal,bi-temporal,effectivity,change,tracking",5880,False,2.0.7.6
+Demis Bellot,2013-01-30T01:28:27.757Z,1811,1906,"Common library dependency for other StackExpress projects.
+      Includes JSON, XML, JSV and SOAP Generic Service Clients.
+      Contains:
+      - StackExpress.Interfaces
+      - StackExpress.Common
+      Dependenies:
+      - StackExpress.Text",StackExpress.Common,True,2013-05-05T16:45:38.26-07:00,True,False,Opensource .NET and Mono REST Web Services framework,"StackExpress,Common,Framework",67168,False,3.9.507-unstable
+Miguel Merayo,2013-01-30T15:56:57.66Z,1906,1906,ermeX is a fast library implementing a Service Bus with a minimal usage complexity.,ermeX_x64,False,2013-01-30T07:56:57.66-08:00,True,False,,"C#,Messaging,Queues,ESB",1365,False,1.0.598.298
+Aleksander Spro,2013-01-31T09:42:38.407Z,1730,1905,Light weigth depency injection framework for the .NET portable class libraries.,Botox,False,2013-07-25T01:18:23.573-07:00,True,False,,"Dependency,Injection,PCL,Phone,WinRt",1497,False,1.0.0
+NServiceBus Ltd,2013-01-30T07:32:04.477Z,63,1906,RabbitMQ support for NServicebus,NServiceBus.RabbitMQ,True,2018-02-16T08:20:32.96+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",199609,False,4.0.0-unstable2639
+NServiceBus Ltd,2013-01-30T07:31:01.717Z,14,1906,The most popular open-source service bus for .net,NServiceBus,True,2018-04-06T19:48:02.973+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",1169248,False,4.0.0-unstable2639
+Euroling AB,2013-01-30T12:06:21.063Z,43209,1906,SiteSeeker integration module for Web applications,SiteSeeker.Core,True,1899-12-31T16:00:00-08:00,False,False,,"SiteSeeker,Core,Search,module",41995,False,4.2.64-beta73
+Candor Shared Libraries,2013-01-30T04:41:37.9Z,769,1906,A SqlClient implementation of the security providers.,Candor.Security.SqlProvider,False,2016-03-12T09:00:21.317-08:00,True,False,,"Candor,Security,SqlClient",4730,False,0.6.0.30129
+LogikBug,2013-01-30T19:14:09.123Z,1906,1906,"IInject is a DI (Dependency Injection) framework that is very light weight, fast, and easy to use.",IInject,False,2013-01-30T11:14:09.123-08:00,True,False,,"di,dependency-injection,ioc,inversion-of-control,iinject,dependency,injection",11043,False,1.2.0.1
+S. van Deursen,2013-01-29T21:18:14.453Z,5,1907,The Simple Injector is an easy-to-use Inversion of Control library for .NET. It solely supports code-based configuration and is an ideal starting point for developers unfamiliar with larger IoC / DI libraries.,SimpleInjector,True,2018-04-15T09:23:47.283+00:00,True,False,The Simple Injector is an easy-to-use Inversion of Control library for .NET.,"simpleinjector,architecture,dependency-injection,DI,easy,easy-to-use,Inversion-of-Control,IOC,Servicelocator",2462711,False,2.0.0-beta1
+NServiceBus Ltd,2013-01-30T03:00:14.083Z,63,1906,The StructureMap Container for the nservicebus,NServiceBus.StructureMap,True,2018-02-16T08:26:21.58+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",211946,False,4.0.0-unstable2638
+Demis Bellot,2013-01-30T02:30:24.7Z,1811,1906,"Provides a set of services to be discovered by Swagger (http://swagger.wordnik.com/)
+      Swagger is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.",StackExpress.Api.Swagger,True,2013-05-05T16:45:24.117-07:00,True,False,ServiceStack integration with Swagger,"Swagger,StackExpress,API,REST",48674,False,3.9.509-unstable
+Demis Bellot,2013-01-30T20:44:39.697Z,1811,1906,"Provides a set of services to be discovered by Swagger (http://swagger.wordnik.com/)
+      Swagger is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.",StackExpress.Api.Swagger,True,2013-05-05T16:45:24.117-07:00,True,False,ServiceStack integration with Swagger,"Swagger,StackExpress,API,REST",48674,False,3.9.512-unstable
+Kevin Miller,2013-01-30T20:45:38.12Z,945,1906,FubuMVC Convention enabling your web application to emit Swagger api documentation specifications.,FubuMVC.Swagger,False,2015-09-18T10:26:42.697-07:00,True,False,,"FubuMVC,Swagger,API,Documentation",3682,False,0.2.2.5
+NServiceBus Ltd,2013-01-31T13:49:41.52Z,14,1905,The most popular open-source service bus for .net,NServiceBus,True,2018-04-06T19:48:02.973+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",1169248,False,4.0.0-unstable2650
+NServiceBus Ltd,2013-01-31T10:21:26.447Z,63,1905,The Spring Container for the nservicebus,NServiceBus.Spring,True,2018-02-16T08:26:14.66+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",125014,False,4.0.0-unstable2645
+Igor Tkachev,2013-01-30T21:50:53.207Z,321,1906,Business Logic Toolkit Oracle Data Provider for .NET,BLToolkit.Oracle,False,2017-06-03T09:00:00.07+00:00,True,False,,"Oracle,Odp,bltoolkit,Linq,ORM,DAL,database,DB",10851,False,4.1.17
+Igor Tkachev,2013-01-30T21:50:53.643Z,321,1906,Business Logic Toolkit PostgreSql Data Provider for .NET,BLToolkit.PostgreSql,False,2017-06-03T02:00:08.257-07:00,True,False,,"PostgreSql,Npgsql,bltoolkit,Linq,ORM,DAL,database,DB",9622,False,4.1.17
+"Software By Ben,Ben Scott,swxben,belfryimages",2013-01-30T14:54:19.21Z,1890,1906,C#/.NET helpers - mostly extension methods,swxben.helpers,False,2013-02-14T16:57:27.617-08:00,True,False,C#/.NET helpers - mostly extension methods,,2098,False,1.3.1
+NServiceBus Ltd,2013-01-31T12:48:01.067Z,63,1905,The Ninject Container for the nservicebus,NServiceBus.Ninject,True,2018-02-16T08:26:03.157+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",171718,False,4.0.0-unstable2649
+ServiceStack contributors,2013-01-30T02:13:57.877Z,108,1906,"A RavenDB IUserAuthRepository to persist User registration and auth info in a NoSQL Raven DB.
+      Implements ServiceStack's built-in AuthProvider Model:
+      https://github.com/ServiceStack/ServiceStack/wiki/Authentication-and-authorization
+      inc. Twitter, Facebook, Basic, Digest, Credentials Auth modes out-of-the-box.",ServiceStack.Authentication.RavenDB,False,2018-01-02T14:42:48.673+00:00,True,False,,"ServiceStack,Authentication,Authorization,RavenDB,Raven,NoSQL,POCO,Code-First",15080,False,3.9.35
+NServiceBus Ltd,2013-01-31T10:21:01.39Z,63,1905,The Azure Host for NServicebus,NServiceBus.Hosting.Azure,True,2018-02-16T08:29:01.053+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",151590,False,4.0.0-unstable2645
+eXpand,2013-01-30T17:38:05.663Z,11,1906,AdditionalViewControlsProvider Module (Win) / eXpand Framework,eXpandAdditionalViewControlsProviderWin,False,2018-04-09T16:09:37.91+00:00,True,False,AdditionalViewControlsProvider Module (Win) / eXpand Framework,"DevExpress,eXpand",73865,False,12.2.5.16
+Hibernating Rhinos,2013-01-30T15:10:20.097Z,43209,1906,"Use this package if you want to run RavenDB as a standalone application. This package is not intented to be used in Visual Studio. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Server,True,1900-01-01T00:00:00+00:00,False,False,This package contains the Raven.Server.exe database binaries.,"nosql,ravendb,raven,document,database",272653,True,2.0.2246-Unstable
+bbraithwaite,2013-01-30T17:51:03.27Z,1906,1906,"Adds validation groups to JQuery Validation when working with ASP.Net WebForms.
+
+NOTE: Requires jQuery and jQuery Validation libraries.
+
+See for more details and source: https://github.com/bbraithwaite/JQueryValidationForWebForms",JQuery.Validation.WebForms,False,2013-01-30T09:51:03.27-08:00,True,False,Adds validation groups to JQuery Validation when working with ASP.Net WebForms.,,6695,False,1.1.0
+Jeroen Haegebaert,2013-01-30T22:11:44.88Z,51,1906,Csv parser,Net.Code.Csv,False,2018-02-28T20:10:26.21+00:00,True,False,,,6032,False,1.0.0
+S. van Deursen,2013-01-29T21:18:30.64Z,43209,1907,An adapter to implement CommonServiceLocator on top of the Simple Injector.,CommonServiceLocator.SimpleInjectorAdapter,True,1899-12-31T16:00:00-08:00,False,False,An adapter to implement CommonServiceLocator on top of the Simple Injector.,"simpleinjector,architecture,CommonServiceLocator,dependency-injection,DI,easy,easy-to-use,Inversion-of-Control,IOC,Servicelocator",-1,False,2.0.0-beta1
+Tom Brothers,2013-01-30T22:42:43.597Z,1158,1906,VFP Client for ADO.Net is simply a wrapper around the System.Data.OleDb classes with the goal of reducing pain points when accessing VFP data from .Net.,VfpClient,False,2015-02-17T15:02:50.807-08:00,True,False,VFP Client for ADO.Net is simply a wrapper around the System.Data.OleDb classes with the goal of reducing pain points when accessing VFP data from .Net.,,7791,False,0.5.7.9922
+Hibernating Rhinos,2013-01-31T11:14:04.257Z,43209,1905,"Use this package if you want extend RavenDB. Don't use this package if you just want to work with existing RavenDB server, in order to so just use the client API which is in the RavenDB.Client package. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Database,True,1900-01-01T00:00:00+00:00,False,False,This package allows you to extend RavenDB database.,"nosql,ravendb,raven,document,database",663109,True,2.0.2247-Unstable
+S. van Deursen,2013-01-29T21:22:14.027Z,43209,1907,An adapter to implement CommonServiceLocator for Silverlight on top of the Simple Injector.,CommonServiceLocator.SimpleInjectorAdapter.Silverlight,True,1899-12-31T16:00:00-08:00,False,False,An adapter to implement CommonServiceLocator for Silverlight on top of the Simple Injector.,"simpleinjector,architecture,CommonServiceLocator,dependency-injection,DI,easy,easy-to-use,Inversion-of-Control,IOC,Servicelocator",-1,False,2.0.0-beta1
+NServiceBus Ltd,2013-01-30T02:59:16.36Z,43209,1906,ActiveMQ support for NServicebus,NServiceBus.ActiveMQ,True,1899-12-31T16:00:00-08:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",49851,False,4.0.0-unstable2638
+NServiceBus Ltd,2013-01-30T07:31:40.083Z,63,1906,The process used when sharing an azure instance between multiple NServicebus endpoints,NServiceBus.Hosting.Azure.HostProcess,True,2018-02-16T08:29:10.037+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",110525,False,4.0.0-unstable2639
+radioman,2013-01-30T21:02:05.44Z,504,1906,"GMap.NET is great and Powerful, Free, cross platform, open source .NET control. Enable use routing, geocoding, directions and maps from Coogle, Yahoo!, Bing, OpenStreetMap, ArcGIS, Pergo, SigPac, Yandex, Mapy.cz, Maps.lt, iKarte.lv, NearMap, OviMap, CloudMade, WikiMapia, MapQuest in Windows Forms & Presentation, supports caching and runs on windows mobile!
+
+beta edition ;}
+
+build: http://greatmaps.codeplex.com/SourceControl/changeset/7891337ca86d",GMap.NET.WindowsForms,False,2016-12-02T14:16:00.21-08:00,True,False,Excellent toolkit for building Mapping Applications,map,52301,False,1.7.0
+"Manuel Nelson,ServiceStack contributors",2013-01-30T02:14:36.7Z,226,1906,"An Azure In-Memory DataCache implementing ServiceStack's ICacheClient:
+        https://github.com/ServiceStack/ServiceStack/wiki/Caching",ServiceStack.Caching.Azure,False,2017-09-06T16:34:08.52+00:00,True,False,,"ServiceStack,Caching,Windows,Azure,Cache,CacheClient,POCO,Code-First",15583,False,3.9.35
+Jairo Andres Velasco Romero,2013-01-29T21:01:23.807Z,1907,1907,"This project has the code to load and evaluate models produced with FastHMM and FastOIL.
+
+FastHMM loader creates an instance of HiddenMarkovModel as exposed in Accord.Statistics FastOIL loader creates an NFA model.
+
+Both types of models are exported under IPatterMatchingModel contract declared in Biosek. You can load models in your application using composite mechanism using MEF.",DestinoSegmentador.Models,False,2013-01-29T14:17:27.347-08:00,True,False,Includes loaders for,,1094,False,1.0.0
+Autofac Contributors,2013-01-30T12:23:32.673Z,200,1906,This extension provides support for automocking and creation of mock objects in Moq using Autofac.,Autofac.Extras.Moq,False,2017-10-02T15:16:06.26+00:00,True,False,Autofac extension supporting generation of Moq objects.,,265751,False,3.0.0
+Autofac Contributors,2013-01-30T12:22:59.89Z,185,1906,The Microsoft Enterprise Library provides a Common Service Locator for abstracting away IoC containers. This package contains an implementation of the Common Service Locator for use with Autofac.,Autofac.Extras.CommonServiceLocator,False,2017-10-17T12:40:39.91+00:00,True,False,Autofac extension for using the Microsoft Enterprise Library Common Service Locator with Autofac.,,288115,False,3.0.0
+Candor Shared Libraries,2013-01-30T04:41:57.117Z,1366,1906,Tasks that can monitor windows services (System.ServiceProcess),Candor.Tasks.ServiceProcess,False,2014-07-24T15:52:48.07-07:00,True,False,,"Candor,ServiceProcess,monitoring",3411,False,0.6.0.30129
+Hibernating Rhinos,2013-01-31T11:13:11.16Z,43209,1905,"The Authorization Bundle extend RavenDB and add document level permissions. The Auth Bundle allows to define permissions for a specific user, a group or using arbitrary tagging. The system is design to be high performance, scalable and flexible.",RavenDB.Bundles.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles,authorization",201812,True,2.0.2247-Unstable
+NServiceBus Ltd,2013-01-31T10:20:30.417Z,14,1905,The most popular open-source service bus for .net,NServiceBus,True,2018-04-06T19:48:02.973+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",1169248,False,4.0.0-unstable2645
+NServiceBus Ltd,2013-01-31T00:57:19.717Z,63,1905,The NHibernate for the NServicebus,NServiceBus.NHibernate,True,2018-02-16T08:32:13.247+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",329597,False,4.0.0-unstable2644
+Matt Johnson,2013-01-29T23:48:20.03Z,1677,1907,RavenDB 'Temporal Versioning' bundle.  Allows for tracking of changes to entities at different effective dates.,RavenDB.Bundles.TemporalVersioning,False,2013-09-16T15:52:31.383-07:00,True,False,,"nosql,ravendb,raven,document,database,client,bundles,temporal,versioning,bitemporal,bi-temporal,effectivity,change,tracking",5732,False,2.0.7.6
+Demis Bellot,2013-01-30T20:44:32.137Z,1811,1906,"Binaries for the StackExpress web framework.
+      Visit http://www.ServiceStack.net/ServiceStack.Hello/
+      and https://github.com/ServiceStack/ServiceStack/wiki/Create-your-first-webservice
+      for walk throughs and docs on creating your first web service.",StackExpress,True,2013-05-05T16:45:17.45-07:00,True,False,Opensource .NET and Mono REST Web Services framework,"Fast,JSON,XML,CSV,HTML,SOAP,JSV,REST,Web,Service,Framework,MONO",69228,False,3.9.512-unstable
+NServiceBus Ltd,2013-01-31T00:57:46.517Z,43209,1905,The Azure Host for the timeout manager on NServicebus,NServiceBus.Timeout.Hosting.Azure,True,1899-12-31T16:00:00-08:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",-1,False,4.0.0-unstable2644
+eXpand,2013-01-30T17:39:12.437Z,1715,1906,JobSheduler Module (Win) / eXpand Framework,eXpandJobShedulerWin,False,2013-08-09T07:41:46.73-07:00,True,False,JobSheduler Module (Win) / eXpand Framework,"DevExpress,eXpand",32036,False,12.2.5.16
+NServiceBus Ltd,2013-01-30T07:32:00.697Z,63,1906,The Ninject Container for the nservicebus,NServiceBus.Ninject,True,2018-02-16T08:26:03.157+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",171718,False,4.0.0-unstable2639
+RavenDB Community,2013-01-30T16:41:44.253Z,1535,1906,Plugin for RavenDB that extracts text from attachments so they can be indexed.,RavenDB.Bundles.IndexedAttachments,False,2014-02-05T00:20:55.82-08:00,True,False,,"nosql,ravendb,raven,document,database,client,bundles,attachments,fulltext,full,text,ifilter,ifilters,filter,doc,docx,pdf,word,excel,content",3075,False,2.0.3
+aslakhellesoy,2013-01-29T23:56:42.62Z,189,1907,A fast lexer and parser for the Gherkin language based on Ragel,gherkin,False,2017-10-13T15:25:32.857+00:00,True,False,,"gherkin,cucumber,specflow,bdd,lexer,parser",22885,False,2.11.6
+NServiceBus Ltd,2013-01-31T12:47:33.607Z,63,1905,"The hosting template for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Host32,True,2018-02-16T08:27:15.097+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",113399,False,4.0.0-unstable2649
+GeertvanHorrik,2013-01-30T08:02:33.443Z,507,1906,"Catel.Extensions.EntityFramework5 library which provides data classes such as repositories, unit of work, DbContextManager and more.",Catel.Extensions.EntityFramework5,True,2016-11-29T13:36:06.393+00:00,True,False,,"catel,entity,framework,entityframework,EF,EF5,UnitOfWork,unit,of,work,DbContextManager,repository,repositories,database",97012,True,3.4.1301300851-beta
+NServiceBus Ltd,2013-01-30T10:11:35.14Z,63,1906,The CastleWindsor Container for the nservicebus,NServiceBus.CastleWindsor,True,2018-02-16T08:25:50.44+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",198695,False,4.0.0-unstable2643
+NServiceBus Ltd,2013-01-31T00:56:40.117Z,63,1905,The Autofac Container for the nservicebus,NServiceBus.Autofac,True,2018-02-16T08:25:42.907+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",279857,False,4.0.0-unstable2644
+Marijn Haverbeke,2013-01-30T18:40:15.333Z,1906,1906,"CodeMirror is a JavaScript component that provides a code editor in the browser. When a mode is available for the language you are coding in, it will color your code, and optionally help with indentation.
+
+A rich programming API and a CSS theming system are available for customizing CodeMirror to fit your application, and extending it with new functionality.",CodeMirror.Base,False,2013-01-30T10:40:15.333-08:00,True,False,In-browser code editing made bearable,"browser,code,editor,syntax-highlight",28822,False,3.2.0
+Demis Bellot,2013-01-30T20:45:14.717Z,1833,1906,"StackExpress Razor Documentation: http://razor.servicestack.net
+
+      - Turns ServiceStack into a Complete Web + REST Services Stack. Replaces need for ASP.NET MVC.
+      - Runs In ASP.NET or Self-host, first-class cross-platform support on .NET / Mono runtimes.
+      - Add HTML views to existing services.
+      - Change Views and Layout templates at runtime.
+      - No Ceremony development options - Pages without controllers, with typed and dynamic View Models.
+      - Include Partial Markdown views in Razor pages.
+      - Cascading Layout templates.
+      - Pretty urls by default (no custom Routes needed).
+      - Keep all views and assets together.
+      - Smart View Pages.",StackExpress.Razor,True,2013-04-13T08:22:10.39-07:00,True,False,Provides ServiceStack's HTML Story including integrated support for MVC Razor's ViewEngine,"ServiceStack,Razor,ViewEngine,View,Templates,Controllers,Mono,ASP.NET,Self-Host",65179,False,3.9.512-unstable
+NServiceBus Ltd,2013-01-31T12:47:45.31Z,63,1905,The process used when sharing an azure instance between multiple NServicebus endpoints,NServiceBus.Hosting.Azure.HostProcess,True,2018-02-16T08:29:10.037+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",110525,False,4.0.0-unstable2649
+NServiceBus Ltd,2013-01-31T12:48:13.673Z,43209,1905,SQL transport support for NServicebus,NServiceBus.SqlServer,True,1900-01-01T00:00:00+00:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",148648,False,4.0.0-unstable2649
+Euroling AB,2013-01-31T11:37:34.287Z,43209,1905,SiteSeeker integration module for Sitecore,SiteSeeker.Sitecore,False,1899-12-31T16:00:00-08:00,False,False,,"siteseeker,sitecore,search,integration,module",38958,False,4.2.64.1
+NServiceBus Ltd,2013-01-31T10:20:53.05Z,63,1905,"The hosting template for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Host,True,2018-02-16T08:27:09.05+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",446743,False,4.0.0-unstable2645
+Henrique Riccio,2013-01-30T18:12:28.037Z,1681,1906,Um framework simples e leve para acelerar a construção de API's,EasyArchitecture,False,2013-09-11T18:21:48.183-07:00,True,False,,"framework,api",9882,False,1.0.4778
+eXpand,2013-01-30T17:40:23.643Z,695,1906,Thumbnail Module (Web) / eXpand Framework,eXpandThumbnailWeb,False,2016-05-25T07:49:22.287-07:00,True,False,Thumbnail Module (Web) / eXpand Framework,"DevExpress,eXpand",59041,False,12.2.5.16
+Igor Tkachev,2013-01-30T21:50:32.813Z,321,1906,Business Logic Toolkit is a set of components to simplify .NET application development.,BLToolkit,False,2017-06-03T08:59:43.023+00:00,True,False,,"bltoolkit,Linq,ORM,DAL,database,DB",59735,False,4.1.17
+Wade Reynolds,2013-01-31T06:15:03.043Z,1905,1905,This package provides the experimental Speedioc assembly that is used to configure and create container instances.,Speedioc,False,2013-01-30T22:15:03.323-08:00,True,False,"Speedioc is a lightweight, high performance IoC container for .NET that uses code generation to dynamically generate and compile container assemblies. Containers can be precompiled and support static and dynamic injection including constructor, field, property and method injection.","speedioc,dependency,injection,container,di,ioc,service,locator,resolver,dependencyresolver",1920,False,0.1.33
+Demis Bellot,2013-01-30T02:37:20.487Z,1811,1906,"Full details in Mvc PowerPack: http://servicestack.net/mvc-powerpack/
+      Adapter classes to provide tight integration and re-usable functionality between ServiceStack and MVC3.
+      Including adapters for: MiniProfiler, FluentValidation, Funq IOC Controller Factory, Funq Validator Factory
+      ControllerBase (configured with access to ServiceStack's ICacheClient, ISession, typed UserSession dependencies).",StackExpress.Mvc,True,2013-05-05T16:45:43.937-07:00,True,False,.NET 4.0 project Integration of StackExpress with MVC3,"MiniProfiler,FluentValidation,MVC,Controller",65837,False,3.9.510-unstable
+S. van Deursen,2013-01-29T21:18:48.41Z,385,1907,"The Lifetime Scoping Extensions package adds an advanced new lifestyle called 'Lifetime Scope', which allows instances to live within an explicitly defined thread-specific scope and get disposed when this scope ends.",SimpleInjector.Extensions.LifetimeScoping,True,2017-03-30T23:15:14.513-07:00,True,False,Lifetime scoping extensions for the Simple Injector Inversion of Control library for .NET 4.0 and up.,"simpleinjector,architecture,dependency-injection,DI,easy,easy-to-use,Inversion-of-Control,IOC,Servicelocator,lifestyle,lifetime,scope,scoping",209226,False,2.0.0-beta1
+Demis Bellot,2013-01-30T02:37:25.72Z,1811,1906,Add the MsgPack binary format and endpoint to a StackExpress web service host.,StackExpress.Plugins.MsgPack,True,2013-05-05T16:45:52.933-07:00,True,False,MsgPack Format Serializer ContentType ServiceClients for StackExpress,"MsgPack,MessagePack,Message,Pack,Fast,Binary,Serializer,Format,ContentType,StackExpress,REST,Web,Services",65662,False,3.9.510-unstable
+NServiceBus Ltd,2013-01-31T12:48:40.26Z,63,1905,The Unity Container for the nservicebus,NServiceBus.Unity,True,2018-02-16T08:26:32.347+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",180078,False,4.0.0-unstable2649
+Hobsons,2013-01-30T03:28:28.137Z,1717,1906,The interfaces of Common Web Infrastructure. See README on github.,CommonWebInfrastructure.Interfaces,False,2013-08-06T23:38:34.513-07:00,True,False,Interfaces for common Web infrastructure.,"read,configuration,service,machine,key,encryption,data,compression",3701,False,1.0.0.4
+discens,2013-01-30T10:04:48.373Z,43209,1906,"Small library for hiding and showing the taskbars on Windows machines.
+
+        Supports multi monitor taskbars of Windows 8.",BasicWindowsTaskbarManager,False,1899-12-31T16:00:00-08:00,False,False,,,5275,False,0.0.4778.18119
+NServiceBus Ltd,2013-01-30T10:12:29.117Z,63,1906,The Unity Container for the nservicebus,NServiceBus.Unity,True,2018-02-16T08:26:32.347+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",180078,False,4.0.0-unstable2643
+radioman,2013-01-30T21:30:04.837Z,504,1906,"GMap.NET is great and Powerful, Free, cross platform, open source .NET control. Enable use routing, geocoding, directions and maps from Coogle, Yahoo!, Bing, OpenStreetMap, ArcGIS, Pergo, SigPac, Yandex, Mapy.cz, Maps.lt, iKarte.lv, NearMap, OviMap, CloudMade, WikiMapia, MapQuest in Windows Forms & Presentation, supports caching and runs on windows mobile!
+
+beta edition ;}
+
+build: http://greatmaps.codeplex.com/SourceControl/changeset/7891337ca86d",GMap.NET.Presentation,False,2016-12-02T14:25:02.16-08:00,True,False,Excellent toolkit for building Mapping Applications,"GMap,Map,Maps,gmaps,tiling,Control,mapkit,Mapping,GIS,Geo,Places,Elevation,Geocode,Directions",40064,False,1.7.0
+xiaoyvr,2013-01-31T09:46:03.757Z,697,1905,NScaffold.NuDeploy,NScaffold.NuDeploy,False,2016-05-23T01:57:43.34-07:00,True,False,NScaffold.NuDeploy,NScaffold.NuDeploy,14422,False,0.0.108
+O2 Platform,2013-01-31T13:33:04.54Z,1359,1905,"FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. It makes extensive use of .NET ExtensionMethods and it reduces the amount of code required (while making it more read
+
+This is the FluentSharp REPL which provides a C# REPL enviroment (REPL is Read Eval Print Loop) which allows for real-time execution of complex C# code (and GUI manipulation)",FluentSharp.REPL,False,2014-07-31T04:47:41.157-07:00,True,False,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. It makes extensive use of .NET ExtensionMethods and it reduces the amount of code required (while making it more read,"Fluent,OWASP,O2Platform,Security",17942,False,5.0.41
+Demis Bellot,2013-01-30T20:44:58.673Z,1811,1906,"Full details in Mvc PowerPack: http://servicestack.net/mvc-powerpack/
+      Adapter classes to provide tight integration and re-usable functionality between ServiceStack and MVC3.
+      Including adapters for: MiniProfiler, FluentValidation, Funq IOC Controller Factory, Funq Validator Factory
+      ControllerBase (configured with access to ServiceStack's ICacheClient, ISession, typed UserSession dependencies).",StackExpress.Mvc,True,2013-05-05T16:45:43.937-07:00,True,False,.NET 4.0 project Integration of StackExpress with MVC3,"MiniProfiler,FluentValidation,MVC,Controller",65837,False,3.9.512-unstable
+Aravind,2013-01-30T10:24:53.663Z,1906,1906,TestNuGet,TestNuGet,False,2013-01-30T03:55:33.05-08:00,True,False,,TestNuGet,2659,False,0.0.1.8
+Autofac Contributors,2013-01-30T12:21:43.78Z,829,1906,ASP.NET WebForms integration for Autofac,Autofac.Web,False,2016-01-12T13:15:09.397-08:00,True,False,Provides dependency management and property injection for ASP.NET WebForms Pages.,,329312,False,3.0.0
+Demis Bellot,2013-01-30T01:50:45.617Z,1833,1906,"StackExpress Razor Documentation: http://razor.servicestack.net
+
+      - Turns ServiceStack into a Complete Web + REST Services Stack. Replaces need for ASP.NET MVC.
+      - Runs In ASP.NET or Self-host, first-class cross-platform support on .NET / Mono runtimes.
+      - Add HTML views to existing services.
+      - Change Views and Layout templates at runtime.
+      - No Ceremony development options - Pages without controllers, with typed and dynamic View Models.
+      - Include Partial Markdown views in Razor pages.
+      - Cascading Layout templates.
+      - Pretty urls by default (no custom Routes needed).
+      - Keep all views and assets together.
+      - Smart View Pages.",StackExpress.Razor,True,2013-04-13T08:22:10.39-07:00,True,False,Provides ServiceStack's HTML Story including integrated support for MVC Razor's ViewEngine,"ServiceStack,Razor,ViewEngine,View,Templates,Controllers,Mono,ASP.NET,Self-Host",65179,False,3.9.508-unstable
+David Duffett,2013-01-31T08:56:04.26Z,1485,1905,"Easy payment processing for .NET (DataCash, PayPal)",Moolah,False,2014-03-26T21:50:33.9-07:00,True,False,,"card,payment,datacash,paypal",13273,False,0.3.8.32
+Dave Kerr,2013-01-30T23:03:03.617Z,1177,1906,SharpGL wraps the popular OpenGL library. This package installs SharpGL and the WinForms controls.,SharpGLforWinForms,False,2015-01-29T09:36:02.197-08:00,True,False,SharpGL wraps the popular OpenGL library. This package installs SharpGL and the WinForms controls.,,5621,False,2.1.0
+MoreLINQ Developers,2013-01-31T09:33:07.147Z,44,1905,C# source implementation that enhances LINQ to Objects with the method Generate. Returns a sequence of values based on indexes.,MoreLinq.Source.MoreEnumerable.Generate,False,2018-03-07T18:42:19.123+00:00,True,False,Enhances LINQ to Objects with the method Generate  (2 overloads),"linq,extensions",3249,False,1.0.1
+Hibernating Rhinos,2013-01-31T12:57:22.337Z,43209,1905,RavenDB 'Unique Constraints' bundle client. Allow the user to implement unique constraints in the objects (useful for properties like email or social security number).,RavenDB.Client.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles",242613,True,2.0.2248-Unstable
+Autofac Contributors,2013-01-30T12:23:40.39Z,1485,1906,Multitenant applications allow individual tenants to override dependencies rather than having a simple root container for everyone. This extension provides support for an application container and tenant-specific overrides using Autofac.,Autofac.Extras.Multitenant,False,2014-03-27T21:46:00.53+00:00,True,False,Autofac extension for multitenant application support.,,61149,False,3.0.0
+Jairo Andres Velasco Romero,2013-01-29T22:17:27.347Z,1907,1907,"This project has the code to load and evaluate models produced with FastHMM and FastOIL.
+
+FastHMM loader creates an instance of HiddenMarkovModel as exposed in Accord.Statistics.
+
+FastOIL loader creates an NFA model.
+
+Both types of models are exported under IPatterMatchingModel contract declared in Biosek. You can load models in your application using composite mechanism using MEF.",DestinoSegmentador.Models,False,2013-01-29T14:17:27.347-08:00,True,False,"Includes loader for NFAs generated with FastOIL.
+Includes loader for HMM generated with FastHMM",,1094,False,1.0.4.1
+"Eric Hexter,Matt Hinze",2013-01-30T21:48:44.183Z,1652,1906,Routes for creating Menus and Navigation.,navigationroutes.mvc4,False,2013-10-10T18:00:41.843-07:00,True,False,,,129266,False,1.0.90
+Vagif Abilov,2013-01-30T21:46:57.433Z,176,1906,.NET4/WinRT OData client library.,Simple.OData.Client,False,2017-10-26T14:29:00.593+00:00,True,False,,"odata,data,.net40,rest",110665,False,0.12.0
+NServiceBus Ltd,2013-01-30T07:31:47.63Z,63,1906,The NHibernate for the NServicebus,NServiceBus.NHibernate,True,2018-02-16T08:32:13.247+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",329597,False,4.0.0-unstable2639
+O2 Platform,2013-01-31T12:17:16.317Z,1744,1905,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. This is the Fluent# BCL which provides support for System.Forms and Web,FluentSharp.BCL,False,2013-07-11T10:24:47.177-07:00,True,False,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs.,"Fluent,OWASP,O2Platform,Security",14570,False,5.0.39
+Euroling AB,2013-01-30T13:25:03.36Z,43209,1906,SiteSeeker integration module for Web applications,SiteSeeker.Core,True,1899-12-31T16:00:00-08:00,False,False,,"SiteSeeker,Core,Search,module",41995,False,4.2.64-beta74
+matthewsteeples,2013-01-31T10:36:37.707Z,156,1905,Client side validation methods for XeroAPI.Net,XeroApi.Validation,False,2017-11-15T12:21:35.357+00:00,True,False,,Xero,17925,False,1.1.27.1
+Demis Bellot,2013-01-30T01:28:49.557Z,1833,1906,"StackExpress Razor Documentation: http://razor.servicestack.net
+
+      - Turns ServiceStack into a Complete Web + REST Services Stack. Replaces need for ASP.NET MVC.
+      - Runs In ASP.NET or Self-host, first-class cross-platform support on .NET / Mono runtimes.
+      - Add HTML views to existing services.
+      - Change Views and Layout templates at runtime.
+      - No Ceremony development options - Pages without controllers, with typed and dynamic View Models.
+      - Include Partial Markdown views in Razor pages.
+      - Cascading Layout templates.
+      - Pretty urls by default (no custom Routes needed).
+      - Keep all views and assets together.
+      - Smart View Pages.",StackExpress.Razor,True,2013-04-13T08:22:10.39-07:00,True,False,Provides ServiceStack's HTML Story including integrated support for MVC Razor's ViewEngine,"ServiceStack,Razor,ViewEngine,View,Templates,Controllers,Mono,ASP.NET,Self-Host",65179,False,3.9.507-unstable
+GeertvanHorrik,2013-01-31T12:56:32.297Z,507,1905,Catel.Extensions.Prism library which contains helper classes for prism.,Catel.Extensions.Prism,True,2016-11-29T13:36:21.16+00:00,True,False,,"prism,catel,mvvm",129719,True,3.4.1301311344-beta
+Jairo Andres Velasco Romero,2013-01-29T22:15:14.82Z,1907,1907,"This project has the code to load and evaluate models produced with FastHMM and FastOIL.
+
+FastHMM loader creates an instance of HiddenMarkovModel as exposed in Accord.Statistics FastOIL loader creates an NFA model.
+
+Both types of models are exported under IPatterMatchingModel contract declared in Biosek. You can load models in your application using composite mechanism using MEF.",DestinoSegmentador.Models,False,2013-01-29T14:17:27.347-08:00,True,False,Includes loaders for,,1094,False,1.0.4
+Demis Bellot,2013-01-30T20:44:53.347Z,1811,1906,"Common library dependency for other StackExpress projects.
+      Includes JSON, XML, JSV and SOAP Generic Service Clients.
+      Contains:
+      - StackExpress.Interfaces
+      - StackExpress.Common
+      Dependenies:
+      - StackExpress.Text",StackExpress.Common,True,2013-05-05T16:45:38.26-07:00,True,False,Opensource .NET and Mono REST Web Services framework,"StackExpress,Common,Framework",67168,False,3.9.512-unstable
+eXpand,2013-01-30T17:37:59.463Z,11,1906,AdditionalViewControlsProvider Module (Web) / eXpand Framework,eXpandAdditionalViewControlsProviderWeb,False,2018-04-09T16:09:20.143+00:00,True,False,AdditionalViewControlsProvider Module (Web) / eXpand Framework,"DevExpress,eXpand",73120,False,12.2.5.16
+NServiceBus Ltd,2013-01-31T10:20:44.74Z,417,1905,Azure support for NServicebus,NServiceBus.Azure,True,2017-02-27T15:06:56.187-08:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",154035,False,4.0.0-unstable2645
+chrisdavies,2013-01-30T22:24:47.41Z,1905,1906,Super simple database migrations for .net,dbmg,False,2013-01-31T10:21:34.323-08:00,True,False,,"migrations,db",1848,False,0.0.4778.41
+Signere.no,2013-01-30T19:53:27.073Z,43209,1906,"Client library to communication with Signere.no REST API.
+		The library contains relevant model classes and a client class with methods to access all resources provided in the Signere.no API. 
+		The client class itself is implemented from an interface to make it easily testable.
+		
+		All explicit communication with the API is handled internally and translated to POCO objects. 
+		The client methods require certain fields from Signere.no user credentials in order to work properly. 
+		To create a user account and obtain these credentials, please visit signere.no .  
+		
+		Also, check out the REST API documentation at Https://api.signere.no for further details about the resources that can be accessed through this library.",Unipluss.Sign.Client,False,1900-01-01T00:00:00+00:00,False,False,,"Signere,Sign,BankID,Digital,signatur,Uni,Pluss,Signere.no",245837,False,1.0.219
+PaulStudio,2013-01-30T17:46:29.493Z,43209,1906,Core library for PaulStudio applications,PaulStudio.Core,True,1899-12-31T16:00:00-08:00,False,False,,PaulStudio,-1,False,1.0.0-alpha
+NServiceBus Ltd,2013-01-31T12:48:00.627Z,63,1905,The NHibernate for the NServicebus,NServiceBus.NHibernate,True,2018-02-16T08:32:13.247+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",329597,False,4.0.0-unstable2649
+Demis Bellot,2013-01-30T02:30:46.113Z,1811,1906,Add the MsgPack binary format and endpoint to a StackExpress web service host.,StackExpress.Plugins.MsgPack,True,2013-05-05T16:45:52.933-07:00,True,False,MsgPack Format Serializer ContentType ServiceClients for StackExpress,"MsgPack,MessagePack,Message,Pack,Fast,Binary,Serializer,Format,ContentType,StackExpress,REST,Web,Services",65662,False,3.9.509-unstable
+Ben Phegan,2013-01-31T11:31:52.543Z,1669,1905,Provides a command line utility to query changes associated with TeamCity builds. Useful to create dynamic build/release notes as part of a TeamCity build.,TeamCityBuildChanges,False,2013-09-23T23:10:36.237-07:00,True,False,,,2865,False,0.1.0.46
+Adriano Caldeira,2013-01-30T16:54:39.227Z,36,1906,"O Thunder é um framework .Net que auxilia no desenvolvimento com métodos de validação, exibição de mensagens entre outros.",Thunder,False,2018-03-15T13:37:55.513+00:00,True,False,,"message,validator,annotations,cpf,cnpj,date",14018,False,1.2.2
+O2 Platform,2013-01-31T12:17:18.8Z,690,1905,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. It makes extensive use of .NET ExtensionMethods and it reduces the amount of code required (while making it more readable),FluentSharp.CoreLib,False,2016-05-30T09:42:45.903-07:00,True,False,,,24724,False,5.0.39
+Dave Kerr,2013-01-30T23:01:08.883Z,1177,1906,SharpGL Core is the core library for SharpGL. It provides wrappers for all OpenGL functions and also includes the Scene Graph classes. Installed as part of SharpGL for WinForms or SharpGL for WPF.,SharpGLCore,False,2015-01-29T09:37:03.917-08:00,True,False,SharpGL Core is the core library for SharpGL. It provides wrappers for all OpenGL functions and also includes the Scene Graph classes. Installed as part of SharpGL for WinForms or SharpGL for WPF.,,7185,False,2.1.0
+NServiceBus Ltd,2013-01-30T07:31:14.217Z,63,1906,The Autofac Container for the nservicebus,NServiceBus.Autofac,True,2018-02-16T08:25:42.907+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",279857,False,4.0.0-unstable2639
+Demis Bellot,2013-01-30T20:37:45.123Z,1811,1906,"Full details in Mvc PowerPack: http://servicestack.net/mvc-powerpack/
+      Adapter classes to provide tight integration and re-usable functionality between ServiceStack and MVC3.
+      Including adapters for: MiniProfiler, FluentValidation, Funq IOC Controller Factory, Funq Validator Factory
+      ControllerBase (configured with access to ServiceStack's ICacheClient, ISession, typed UserSession dependencies).",StackExpress.Mvc,True,2013-05-05T16:45:43.937-07:00,True,False,.NET 4.0 project Integration of StackExpress with MVC3,"MiniProfiler,FluentValidation,MVC,Controller",65837,False,3.9.511-unstable
+GeertvanHorrik,2013-01-30T12:14:44.78Z,4,1906,Catel.MVVM library which includes the MVVM Framework for WPF and user controls.,Catel.MVVM,True,2018-04-16T10:11:51.057+00:00,True,False,,"mvvm,data,object,wpf,windows",191676,True,3.4.1301301301-beta
+Demis Bellot,2013-01-30T02:30:18.59Z,1811,1906,"Binaries for the StackExpress web framework.
+      Visit http://www.ServiceStack.net/ServiceStack.Hello/
+      and https://github.com/ServiceStack/ServiceStack/wiki/Create-your-first-webservice
+      for walk throughs and docs on creating your first web service.",StackExpress,True,2013-05-05T16:45:17.45-07:00,True,False,Opensource .NET and Mono REST Web Services framework,"Fast,JSON,XML,CSV,HTML,SOAP,JSV,REST,Web,Service,Framework,MONO",69228,False,3.9.509-unstable
+Jon Canning,2013-01-29T21:27:02.603Z,1269,1907,"Convert or deserialize JSON or XML to .NET dynamic.
+Convert or serialize .NET dynamic to JSON or XML.",CerealBox,False,2014-10-29T12:10:43.737-07:00,True,False,,"dynamic,serialize,XML,JSON,deserialize,ExpandoObject",11261,False,1.2.6
+"CityIndex Ltd,Andrei Faber",2013-01-30T03:25:41.517Z,1631,1906,AppMetrics - agent service plugin,AppMetrics.AgentService.PluginBase,False,2013-10-31T21:39:58.433-07:00,True,False,,,29994,False,1.0.359
+SunGard Public Sector,2013-01-29T23:01:22.553Z,43209,1907,My package description.,SunGardFusionUtilities,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Candor Shared Libraries,2013-01-30T04:42:19.257Z,1366,1906,"Extensions for MVC such as Enhanced dropdown lists and enhanced checkbox lists.  Enhanced controls support all valid html attributes, whereas basic MVC only supports common html attributes.",Candor.Web.Mvc,False,2014-07-24T15:53:25.953-07:00,True,False,,"Candor,Mvc,Checkbox,DropDown,EnhancedSelectListItem,IsJsonRequest,RenderPartialViewToString",3041,False,0.6.0.30129
+EastBanc Technologies,2013-01-30T19:13:11.283Z,1788,1906,MVVM for Windows 8,w8mvvm,False,2013-05-28T11:25:01.737-07:00,True,False,,"MVVM,Windows,8,store",1939,False,1.0.0.4
+SimpleFX,2013-01-30T21:47:42.517Z,1263,1906,OData provider for the Simple.Data data access library.,Simple.Data.OData,False,2014-11-04T13:11:58.8-08:00,True,False,,"odata,data,.net40,rest",18933,False,0.12.0
+GeertvanHorrik,2013-01-30T12:14:26.53Z,507,1906,"Catel.Extensions.Controls library which contains user controls, such as the StackGrid.",Catel.Extensions.Controls,True,2016-11-29T13:35:55.627+00:00,True,False,,"windows,controls,stackgrid,styles,stylehelper",170616,True,3.4.1301301301-beta
+Demis Bellot,2013-01-30T01:50:17.01Z,1811,1906,"Adds OpenId Auth Providers for use in StackExpress Web and REST Services. 
+        Includes built-in support for Google, Yahoo, MyOpenId and Custom OpenId providers.
+        
+        More Info on Auth Providers: 
+        https://github.com/ServiceStack/ServiceStack/wiki/Authentication-and-authorization",StackExpress.Authentication.OpenId,True,2013-05-05T16:45:29.547-07:00,True,False,"OpenId Auth Providers for StackExpress - inc. Google, Yahoo, MyOpenId","OpenId,Google,Yahoo,MyOpenId,Authentication,Auth,Provider,ServiceStack,REST,Web,Services",65797,False,3.9.508-unstable
+Lars Beckmann,2013-01-31T09:13:51.53Z,514,1905,The Optimization.Framework allows you to use C# as a modelling language for mathematical optimization. It furthermore allows you to use solvers as services.,Optimization.Framework,False,2016-11-22T08:42:09.947+00:00,True,False,The Optimization.Framework allows you to use C# as a modelling language for mathematical optimization. It furthermore allows you to use solvers as services.,,43457,False,0.3.1175
+Aravind,2013-01-30T10:49:15.263Z,1906,1906,TestNuGet,TestNuGet,False,2013-01-30T03:55:33.05-08:00,True,False,,TestNuGet,2659,False,0.0.1.15
+Steve Wilkes,2013-01-31T11:02:37.263Z,5,1905,"AgileMapper is an object-to-object mapper requiring zero-to-minimal configuration and providing up-front views of its execution plans. It's intended for mapping between view models, models and DTOs.",AgileObjects.AgileMapper,True,2018-04-15T19:59:15.853+00:00,True,False,"AgileMapper is an object-to-object mapper requiring zero-to-minimal configuration and providing up-front views of its execution plans. It's intended for mapping between view models, models and DTOs.","Mapping,DTO,ViewModel",14027,False,0.1.369-beta
+"Demis Bellot,Thomas Grassauer and ServiceStack contributors",2013-01-30T02:14:57.427Z,108,1906,"An Memcached cache client implementing ServiceStack's ICacheClient:
+        https://github.com/ServiceStack/ServiceStack/wiki/Caching",ServiceStack.Caching.Memcached,False,2018-01-02T14:43:57.677+00:00,True,False,,"ServiceStack,Caching,Memcached,Cache,CacheClient,POCO,Code-First",29700,False,3.9.35
+Hibernating Rhinos,2013-01-31T11:13:43.497Z,43209,1905,RavenDB 'Unique Constraints' bundle client. Allow the user to implement unique constraints in the objects (useful for properties like email or social security number).,RavenDB.Client.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles",242613,True,2.0.2247-Unstable
+elhampour,2013-01-30T06:37:11.717Z,1906,1906,"My First Package, Magic8Ball",MagicEightBallPackage5,False,2013-01-29T22:37:12.247-08:00,True,False,,,512,False,1.0.0
+Ryan Herbert,2013-01-30T19:47:41.4Z,1410,1906,Attribute to show checkboxes/dropdowns for multiple choice lists for ASP.NET MVC,SelectorAttribute,False,2014-06-10T13:48:33.46-07:00,True,False,,,1548,False,1.0.0.24821
+Paul Betts,2013-01-30T22:04:00.457Z,234,1906,An MVVM library for .NET that is deeply integrated with the Reactive Extensions,reactiveui-core,False,2017-08-29T12:42:39.93+00:00,True,False,,,338518,False,4.3.2
+Hibernating Rhinos,2013-01-31T12:58:30.113Z,43209,1905,"This package includes a utiliti class that helps test features of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Tests.Helpers,True,1900-01-01T00:00:00+00:00,False,False,This package includes a utiliti class that helps test features of RavenDB.,"nosql,ravendb,raven,document,database,test",244252,True,2.0.2248-Unstable
+Igor Tkachev,2013-01-30T21:50:57.457Z,321,1906,Business Logic Toolkit SqlCe Data Provider for .NET,BLToolkit.SqlCe,False,2017-06-03T02:00:16.147-07:00,True,False,,"SqlCe,bltoolkit,Linq,ORM,DAL,database,DB",8725,False,4.1.17
+Aravind,2013-01-30T10:50:51.8Z,1906,1906,TestNuGet,TestNuGet,False,2013-01-30T03:55:33.05-08:00,True,False,,TestNuGet,2659,False,0.0.1.16
+Aravind,2013-01-30T11:55:33.05Z,1906,1906,TestNuGet,TestNuGet,False,2013-01-30T03:55:33.05-08:00,True,False,,TestNuGet,2659,False,0.0.1.17
+Autofac Contributors,2013-01-30T12:22:27.487Z,952,1906,Windows Communication Foundation integration for Autofac,Autofac.Wcf,False,2015-09-11T09:41:52.827-07:00,True,False,Provides dependency injection into WCF services.,,442539,False,3.0.0
+NServiceBus Ltd,2013-01-31T12:47:40.95Z,63,1905,The Azure Host for NServicebus,NServiceBus.Hosting.Azure,True,2018-02-16T08:29:01.053+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",151590,False,4.0.0-unstable2649
+Hibernating Rhinos,2013-01-30T15:09:25.457Z,43209,1906,RavenDB Client MvcIntegration let you include a visual profiler in your ASP.NET MVC application which will show you all the opened sessions and the time took to complete each database request. This can help you when developing with RavenDB.,RavenDB.Client.MvcIntegration,True,1900-01-01T00:00:00+00:00,False,False,A visual profiler for RavenDB that you can use in your ASP.NET MVC application.,"nosql,ravendb,raven,document,database,client,mvc",243184,True,2.0.2246-Unstable
+Hibernating Rhinos,2013-01-31T11:13:38.853Z,43209,1905,RavenDB 'Authorization' bundle client extend RavenDB and add document level permissions.,RavenDB.Client.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles,authorization",168504,True,2.0.2247-Unstable
+NServiceBus Ltd,2013-01-31T10:21:45.487Z,63,1905,The Unity Container for the nservicebus,NServiceBus.Unity,True,2018-02-16T08:26:32.347+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",180078,False,4.0.0-unstable2645
+Candor Shared Libraries,2013-01-30T04:40:53.577Z,933,1906,Common classes used by other Candor libraries.,Candor.Core,False,2015-09-29T22:35:31.69-07:00,True,False,,"Candor,Reflection,Provider,Paging",7642,False,0.6.0.30129
+Demis Bellot,2013-01-30T02:30:40.783Z,1811,1906,"Full details in Mvc PowerPack: http://servicestack.net/mvc-powerpack/
+      Adapter classes to provide tight integration and re-usable functionality between ServiceStack and MVC3.
+      Including adapters for: MiniProfiler, FluentValidation, Funq IOC Controller Factory, Funq Validator Factory
+      ControllerBase (configured with access to ServiceStack's ICacheClient, ISession, typed UserSession dependencies).",StackExpress.Mvc,True,2013-05-05T16:45:43.937-07:00,True,False,.NET 4.0 project Integration of StackExpress with MVC3,"MiniProfiler,FluentValidation,MVC,Controller",65837,False,3.9.509-unstable
+GeertvanHorrik,2013-01-30T12:14:23.313Z,4,1906,Catel.Core library which includes the DataObjectBase class.,Catel.Core,True,2018-04-16T10:11:44.76+00:00,True,False,,"mvvm,model,modelbase,logging,data,object,wpf,c#,ioc,servicelocator",244767,True,3.4.1301301301-beta
+GeertvanHorrik,2013-01-30T08:02:46.48Z,1645,1906,Compass service for Catel to use the compass as a service in MVVM. Also contains a unit test version to simulate the compass.,Catel.MVVM.Services.Compass,True,2013-10-18T04:22:18.253-07:00,True,False,,"mvvm,catel,compass,services,wp,wp7,windows,phone",25382,True,3.4.1301300851-beta
+Demis Bellot,2013-01-30T01:50:33.61Z,1811,1906,Add the MsgPack binary format and endpoint to a StackExpress web service host.,StackExpress.Plugins.MsgPack,True,2013-05-05T16:45:52.933-07:00,True,False,MsgPack Format Serializer ContentType ServiceClients for StackExpress,"MsgPack,MessagePack,Message,Pack,Fast,Binary,Serializer,Format,ContentType,StackExpress,REST,Web,Services",65662,False,3.9.508-unstable
+Jonathan Goldman,2013-01-29T22:15:38.727Z,123,1907,Chinchilla is a little library to help make RabbitMq easier to use.,Chinchilla,False,2017-12-18T17:09:46.547+00:00,True,False,Making RabbitMq Awesome,"rabbitmq,chinchilla",23710,False,0.1.10
+O2 Platform,2013-01-31T12:17:22.05Z,1359,1905,"FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. It makes extensive use of .NET ExtensionMethods and it reduces the amount of code required (while making it more read
+
+This is the FluentSharp REPL which provides a C# REPL enviroment (REPL is Read Eval Print Loop) which allows for real-time execution of complex C# code (and GUI manipulation)",FluentSharp.REPL,False,2014-07-31T04:47:41.157-07:00,True,False,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. It makes extensive use of .NET ExtensionMethods and it reduces the amount of code required (while making it more read,"Fluent,OWASP,O2Platform,Security",17942,False,5.0.39
+Demis Bellot,2013-01-30T02:37:35.89Z,1833,1906,"StackExpress Razor Documentation: http://razor.servicestack.net
+
+      - Turns ServiceStack into a Complete Web + REST Services Stack. Replaces need for ASP.NET MVC.
+      - Runs In ASP.NET or Self-host, first-class cross-platform support on .NET / Mono runtimes.
+      - Add HTML views to existing services.
+      - Change Views and Layout templates at runtime.
+      - No Ceremony development options - Pages without controllers, with typed and dynamic View Models.
+      - Include Partial Markdown views in Razor pages.
+      - Cascading Layout templates.
+      - Pretty urls by default (no custom Routes needed).
+      - Keep all views and assets together.
+      - Smart View Pages.",StackExpress.Razor,True,2013-04-13T08:22:10.39-07:00,True,False,Provides ServiceStack's HTML Story including integrated support for MVC Razor's ViewEngine,"ServiceStack,Razor,ViewEngine,View,Templates,Controllers,Mono,ASP.NET,Self-Host",65179,False,3.9.510-unstable
+Euroling AB,2013-01-30T12:06:30.777Z,43209,1906,SiteSeeker integration module for EPiServer,SiteSeeker.EPiServer,True,1899-12-31T16:00:00-08:00,False,False,,"SiteSeeker,EPiServer,Search,module",40038,False,4.2.64-beta73
+王建川,2013-01-30T05:51:56.607Z,1613,1906,"ASP.NET WEB程序的优化功能，可以优化js/css文件。而且可以对原文件名进行加密。当你发布后，访问资源将自动压缩混淆代码。再次访问将从缓存中读取。使用方法：Web.config中：<add namespace=""ExfSoft.Web.Optimization""/>;网页中：
+@Scripts.Render(""~/packages/jquery"")
+@Scripts.Include(""~/Scripts/abc-{version}.js"")
+@Scripts.Include(""~/Scripts/test1.js"", new { attr = ""value"" })
+@Styles.Include(""~/Content/site.css"")
+
+在使用@Scripts.Render时需要
+第一步：protected void Application_Start()
+{
+    BundleConfig.RegisterBundles(BundleTable.Bundles);
+}
+第二步：
+//Class Page:
+    public class BundleConfig
+    {
+        internal static void RegisterBundles(BundleCollection bundles)
+        {
+            bundles.Add(new ScriptBundle(""~/packages/jquery"").Include(
+                ""~/Scripts/jQuery.{version}.js""));
+        }
+    }",ExfSoft.Web.Optimization,False,2013-11-18T21:51:39.44-08:00,True,False,,"ExfSoft,AspNet,optimization,js,css,zip,minify",2768,False,1.0.2
+NServiceBus Ltd,2013-01-30T02:59:45.857Z,63,1906,The process used when sharing an azure instance between multiple NServicebus endpoints,NServiceBus.Hosting.Azure.HostProcess,True,2018-02-16T08:29:10.037+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",110525,False,4.0.0-unstable2638
+NServiceBus Ltd,2013-01-30T10:11:39.093Z,63,1906,"The hosting template for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Host,True,2018-02-16T08:27:09.05+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",446743,False,4.0.0-unstable2643
+eXpand,2013-01-30T17:39:35.887Z,1715,1906,ModelArtifact Module (Win) / eXpand Framework,eXpandModelArtifactWin,False,2013-08-09T07:42:13.893-07:00,True,False,ModelArtifact Module (Win) / eXpand Framework,"DevExpress,eXpand",31822,False,12.2.5.16
+NServiceBus Ltd,2013-01-31T10:21:13.743Z,63,1905,The NHibernate for the NServicebus,NServiceBus.NHibernate,True,2018-02-16T08:32:13.247+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",329597,False,4.0.0-unstable2645
+NServiceBus Ltd,2013-01-31T12:48:33.23Z,43209,1905,The Azure Host for the timeout manager on NServicebus,NServiceBus.Timeout.Hosting.Azure,True,1899-12-31T16:00:00-08:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",-1,False,4.0.0-unstable2649
+André Carlucci,2013-01-30T13:20:07.087Z,123,1906,Sharp migrations is a framework to help you deal with database changes and versioning over time. The idea comes from the excellent Ruby on Rails migrations and it is the best way to alter your database in a structured and organised manner.,SharpMigrations,False,2017-12-18T20:50:42.713+00:00,True,False,,"migrations,database-migrations,database,c#",22134,False,0.11.0
+王建川,2013-01-30T03:47:08.437Z,1613,1906,"ASP.NET WEB程序的优化功能，可以优化js/css文件。而且可以对原文件名进行加密。当你发布后，访问资源将自动压缩混淆代码。再次访问将从缓存中读取。使用方法：Web.config中：<add namespace=""ExfSoft.Web.Optimization""/>;网页中：
+@ZipBundle.Include(""/Scripts/test1.js"", ""~/Content/Site.css"", ""~/Scripts/test2.js"")
+    @ZipBundle.Include(""~/Scripts/test1.js"", new { webname = ""exfsoft.com"" })",ExfSoft.Web.Optimization,False,2013-11-18T21:51:39.44-08:00,True,False,,"ExfSoft,AspNet,optimization,js,css,zip,minify",2768,False,1.0.1
+GeertvanHorrik,2013-01-31T12:56:20.247Z,507,1905,"Catel.Extensions.Controls library which contains user controls, such as the StackGrid.",Catel.Extensions.Controls,True,2016-11-29T13:35:55.627+00:00,True,False,,"windows,controls,stackgrid,styles,stylehelper",170616,True,3.4.1301311344-beta
+S. van Deursen,2013-01-29T21:21:50.573Z,43209,1907,The Simple Injector is an easy-to-use Inversion of Control library for .NET and Silverlight. It solely supports code-based configuration and is an ideal starting point for developers unfamiliar with larger IoC / DI libraries.,SimpleInjector.Silverlight,True,1899-12-31T16:00:00-08:00,False,False,The Simple Injector is an easy-to-use Inversion of Control library for Silverlight.,"simpleinjector,architecture,CommonServiceLocator,dependency-injection,DI,easy,easy-to-use,Inversion-of-Control,IOC,Servicelocator",-1,False,2.0.0-beta1
+NServiceBus Ltd,2013-01-31T10:21:34.497Z,63,1905,The StructureMap Container for the nservicebus,NServiceBus.StructureMap,True,2018-02-16T08:26:21.58+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",211946,False,4.0.0-unstable2645
+"Rob Eisenberg,John Papa",2013-01-29T20:18:05.587Z,574,1907,"Durandal is a cross-device, cross-platform client framework written in JavaScript and designed to make Single Page Applications (SPAs) easy to create and maintain. We've used it to build apps for PC, Mac, Linux, iOS and Android...and now it's your turn...
+
+This is a collection of transitions designed to work with Durandal's composition system.",Durandal.Transitions,False,2016-09-23T13:25:42.703-07:00,True,False,This is a collection of transitions designed to work with Durandal's composition system.,"JavaScript,JS,Durandal,HTML,CSS,MVC,MVVM,MVP,Web,SPA,RIA,Knockout,RequireJS,jQuery,Transitions",213401,False,1.0.1
+eXpand,2013-01-30T17:40:51.937Z,11,1906,Wizard Module (Win) / eXpand Framework,eXpandWizardWin,False,2018-04-09T16:25:10.697+00:00,True,False,Wizard Module (Win) / eXpand Framework,"DevExpress,eXpand",69382,False,12.2.5.16
+Aravind,2013-01-30T10:38:20.087Z,1906,1906,TestNuGet,TestNuGet,False,2013-01-30T03:55:33.05-08:00,True,False,,TestNuGet,2659,False,0.0.1.13
+DevBridge,2013-01-31T11:31:34.787Z,304,1905,A publishing focused and developer friendly .NET Open source CMS.,BetterCMS,True,2017-06-20T01:06:04.18-07:00,True,False,,,75448,False,0.5.1-pre
+Paul Betts,2013-01-30T22:04:06.77Z,1075,1906,ReactiveUI library for Xamarin.Mobile and other mobile-related helpers,reactiveui-mobile,False,2015-05-10T20:13:01.59-07:00,True,False,,,20738,False,4.3.2
+GeertvanHorrik,2013-01-30T08:02:31.27Z,507,1906,Catel.Extensions.Data library which provides data classes such as repositories.,Catel.Extensions.Data,True,2016-11-29T05:35:59.533-08:00,True,False,,"catel,csla,clsa.net",103618,True,3.4.1301300851-beta
+Hibernating Rhinos,2013-01-30T15:08:50.45Z,57,1906,RavenDB embedded database,RavenDB.Bundles.IndexReplication,True,2018-02-22T21:29:30.903+00:00,True,False,,"nosql,ravendb,raven,document,database,bundles",116112,True,2.0.2246-Unstable
+Dennis Daume,2013-01-30T12:52:21.953Z,1904,1906,A utility library with useful classes and helpers.,Rareform,False,2013-01-31T16:33:16.387-08:00,True,False,,"rareform,utility,library,helpers",5298,False,1.5.1
+NServiceBus Ltd,2013-01-31T12:48:28.107Z,63,1905,"The testing for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Testing,True,2018-02-16T08:24:31.56+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",326207,False,4.0.0-unstable2649
+Hibernating Rhinos,2013-01-30T15:08:42.22Z,43209,1906,"The Authorization Bundle extend RavenDB and add document level permissions. The Auth Bundle allows to define permissions for a specific user, a group or using arbitrary tagging. The system is design to be high performance, scalable and flexible.",RavenDB.Bundles.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles,authorization",201812,True,2.0.2246-Unstable
+Miguel Merayo,2013-01-30T15:54:38.807Z,1906,1906,ermeX is a fast library implementing a Service Bus with a minimal usage complexity.,ermeX_x86,False,2013-01-30T07:54:38.807-08:00,True,False,,"C#,Messaging,Queues,ESB",1336,False,1.0.598.298
+Hibernating Rhinos,2013-01-31T11:14:42.53Z,43209,1905,"Use this package if you want to run RavenDB as a standalone application. This package is not intented to be used in Visual Studio. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Server,True,1900-01-01T00:00:00+00:00,False,False,This package contains the Raven.Server.exe database binaries.,"nosql,ravendb,raven,document,database",272653,True,2.0.2247-Unstable
+Aravind,2013-01-30T10:39:43.373Z,1906,1906,TestNuGet,TestNuGet,False,2013-01-30T03:55:33.05-08:00,True,False,,TestNuGet,2659,False,0.0.1.14
+Hibernating Rhinos,2013-01-30T15:08:49.433Z,43209,1906,The cascade delete bundle allows for a specified set of documents and attachments to be deleted when the document that owns it is deleted. Typical usage scenarios include deleting an attachment that is referenced by a document or removing a set of child documents referenced by a parent document.,RavenDB.Bundles.CascadeDelete,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",199442,True,2.0.2246-Unstable
+NServiceBus Ltd,2013-01-31T00:57:13.34Z,1283,1905,The Interfaces for NServiceBus Implementation,NServiceBus.Interfaces,True,2014-10-14T20:53:16.433-07:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",389461,False,4.0.0-unstable2644
+Hobsons,2013-01-30T03:28:17.89Z,1717,1906,The implementations of Common Web Infrastructure. See README on github.,CommonWebInfrastructure,False,2013-08-06T23:38:21.187-07:00,True,False,A common infrastructure libraries for Web application.,"read,configuration,service,machine,key,encryption,data,compression",3288,False,1.0.0.4
+Hibernating Rhinos,2013-01-30T15:09:55.84Z,43209,1906,"This package let you include RavenDB embedded in-process with your application. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Embedded,True,1900-01-01T00:00:00+00:00,False,False,This package let you include RavenDB embedded in-process with your application.,"nosql,ravendb,raven,document,database,embedded",547497,True,2.0.2246-Unstable
+O2 Platform,2013-01-31T12:25:14.523Z,690,1905,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. It makes extensive use of .NET ExtensionMethods and it reduces the amount of code required (while making it more readable),FluentSharp.CoreLib,False,2016-05-30T09:42:45.903-07:00,True,False,,,24724,False,5.0.40
+NServiceBus Ltd,2013-01-30T10:12:18.023Z,63,1906,The StructureMap Container for the nservicebus,NServiceBus.StructureMap,True,2018-02-16T08:26:21.58+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",211946,False,4.0.0-unstable2643
+GeertvanHorrik,2013-01-30T12:14:36.687Z,507,1906,Catel.Extensions.FluentValidation library which contains fluent validation extensions.,Catel.Extensions.FluentValidation,True,2016-11-29T05:36:11.987-08:00,True,False,,"validation,fluent,fluentvalidation",126277,True,3.4.1301301301-beta
+Demis Bellot,2013-01-30T02:37:15.08Z,1811,1906,"Common library dependency for other StackExpress projects.
+      Includes JSON, XML, JSV and SOAP Generic Service Clients.
+      Contains:
+      - StackExpress.Interfaces
+      - StackExpress.Common
+      Dependenies:
+      - StackExpress.Text",StackExpress.Common,True,2013-05-05T16:45:38.26-07:00,True,False,Opensource .NET and Mono REST Web Services framework,"StackExpress,Common,Framework",67168,False,3.9.510-unstable
+GeertvanHorrik,2013-01-30T08:02:23.203Z,4,1906,Catel.Core library which includes the DataObjectBase class.,Catel.Core,True,2018-04-16T10:11:44.76+00:00,True,False,,"mvvm,model,modelbase,logging,data,object,wpf,c#,ioc,servicelocator",244767,True,3.4.1301300851-beta
+MoreLINQ Developers,2013-01-31T09:33:09.62Z,44,1905,C# source implementation that enhances LINQ to Objects with the method TakeLast. Returns a specified number of contiguous elements from the end of a sequence.,MoreLinq.Source.MoreEnumerable.TakeLast,False,2018-03-07T18:45:56.553+00:00,True,False,Enhances LINQ to Objects with the method TakeLast,"linq,extensions",3415,False,1.0.1
+NServiceBus Ltd,2013-01-30T10:11:19.953Z,43209,1906,ActiveMQ support for NServicebus,NServiceBus.ActiveMQ,True,1899-12-31T16:00:00-08:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",49851,False,4.0.0-unstable2643
+Octopus Deploy,2013-01-31T12:12:00.36Z,172,1905,"Octopus is an automated deployment tool powered by NuGet (octopusdeploy.com). This tool adds a post-build activity to your Visual Studio project, 
+      so that an Octopus-compatible NuGet package is produced in the Bin directory whenever a Release build completes.",OctoPack,False,2017-10-30T00:17:16.443+00:00,True,False,,,3497193,False,2.0.11
+"RobVesse,tpluscode,kal_ahmed,ronmichael",2013-01-30T11:56:09.003Z,89,1906,dotNetRDF.Query.FullText provides Full Text SPARQL support as a plugin for the dotNetRDF Leviathan SPARQL Engine using Lucene.Net,dotNetRDF.Query.FullText,False,2018-01-21T12:41:48.113+00:00,True,False,,"RDF,Semantic,Web,SPARQL,Query,Full,Text,Lucene",10410,False,0.6.0.2110
+GeertvanHorrik,2013-01-31T12:56:37.593Z,4,1905,Catel.MVVM library which includes the MVVM Framework for WPF and user controls.,Catel.MVVM,True,2018-04-16T10:11:51.057+00:00,True,False,,"mvvm,data,object,wpf,windows",191676,True,3.4.1301311344-beta
+Hibernating Rhinos,2013-01-31T12:58:24.893Z,43209,1905,"Use this package if you want to run RavenDB as a standalone application. This package is not intented to be used in Visual Studio. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Server,True,1900-01-01T00:00:00+00:00,False,False,This package contains the Raven.Server.exe database binaries.,"nosql,ravendb,raven,document,database",272653,True,2.0.2248-Unstable
+Demis Bellot,2013-01-30T20:37:33.64Z,1811,1906,"Adds OpenId Auth Providers for use in StackExpress Web and REST Services. 
+        Includes built-in support for Google, Yahoo, MyOpenId and Custom OpenId providers.
+        
+        More Info on Auth Providers: 
+        https://github.com/ServiceStack/ServiceStack/wiki/Authentication-and-authorization",StackExpress.Authentication.OpenId,True,2013-05-05T16:45:29.547-07:00,True,False,"OpenId Auth Providers for StackExpress - inc. Google, Yahoo, MyOpenId","OpenId,Google,Yahoo,MyOpenId,Authentication,Auth,Provider,ServiceStack,REST,Web,Services",65797,False,3.9.511-unstable
+GeertvanHorrik,2013-01-30T12:14:29.03Z,507,1906,Catel.Extensions.CSLA library which provides CSLA.NET view models for Catel.,Catel.Extensions.CSLA,True,2016-11-29T13:35:56.627+00:00,True,False,,"catel,csla,clsa.net",105532,True,3.4.1301301301-beta
+Demis Bellot,2013-01-30T01:50:28.157Z,1811,1906,"Full details in Mvc PowerPack: http://servicestack.net/mvc-powerpack/
+      Adapter classes to provide tight integration and re-usable functionality between ServiceStack and MVC3.
+      Including adapters for: MiniProfiler, FluentValidation, Funq IOC Controller Factory, Funq Validator Factory
+      ControllerBase (configured with access to ServiceStack's ICacheClient, ISession, typed UserSession dependencies).",StackExpress.Mvc,True,2013-05-05T16:45:43.937-07:00,True,False,.NET 4.0 project Integration of StackExpress with MVC3,"MiniProfiler,FluentValidation,MVC,Controller",65837,False,3.9.508-unstable
+eXpand,2013-01-30T17:38:41.94Z,695,1906,FilterDatastore Module (Win) / eXpand Framework,eXpandFilterDatastoreWin,False,2016-05-25T14:42:35.723+00:00,True,False,FilterDatastore Module (Win) / eXpand Framework,"DevExpress,eXpand",61359,False,12.2.5.16
+NServiceBus Ltd,2013-01-30T03:00:02.987Z,63,1906,RabbitMQ support for NServicebus,NServiceBus.RabbitMQ,True,2018-02-16T08:20:32.96+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",199609,False,4.0.0-unstable2638
+NServiceBus Ltd,2013-01-30T02:59:41.843Z,63,1906,The Azure Host for NServicebus,NServiceBus.Hosting.Azure,True,2018-02-16T08:29:01.053+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",151590,False,4.0.0-unstable2638
+Peter Lisovin,2013-01-30T02:39:42.35Z,1595,1906,"Core of the framework for developing scalable JavaScript client side applications. 
+        
+        The framework is targeted towards a .Net developer who has experience with Silverlight or WPF and is looking for ways to apply same principles and patterns (e.g. MVVM, bindings, modularization, templated controls, reactive programming, etc.) to JavaScript client side development. It's inspired by Nicholas Zakas ""Scalable JavaScript Application Architecture"" talk. 
+        
+        The framework leverages best tools and libraries such as Knockout, Linq, RxJS, RequireJS, JSLint, Nuget, Chutzpah, jasmine, etc. and relies on what's considered as ""good parts"" of JavaScript language.",scalejs,False,2013-12-07T09:51:44.447-08:00,True,False,Core library for developing scalable JavaScript application,"JavaScript,scalejs,scalable",9494,False,0.1.14
+Demis Bellot,2013-01-30T02:37:30.47Z,1811,1906,Add the ProtoBuf binary format and endpoint to a StackExpress web service host.,StackExpress.Plugins.ProtoBuf,True,2013-05-05T16:45:58.313-07:00,True,False,ProtoBuf Format Serializer ContentType ServiceClients for StackExpress,"ProtoBuf,Fast,Binary,Serializer,Format,ContentType,StackExpress,REST,Web,Services",65721,False,3.9.510-unstable
+Morten Christensen,2013-01-31T12:48:14.397Z,3,1905,Contains the core assemblies needed to run Umbraco Cms. This package only contains assemblies and can be used for package development. Use the UmbracoCms-package to setup Umbraco in Visual Studio as an ASP.NET project.,UmbracoCms.Core,False,2018-04-17T08:45:48.43+00:00,True,False,Contains the core assemblies needed to run Umbraco Cms,umbraco,865058,True,6.0.0
+eXpand,2013-01-30T17:40:46.077Z,1715,1906,ViewVariants Module (Win) / eXpand Framework,eXpandViewVariantsWin,False,2013-08-09T07:43:42.687-07:00,True,False,ViewVariants Module (Win) / eXpand Framework,"DevExpress,eXpand",30860,False,12.2.5.16
+NServiceBus Ltd,2013-01-30T07:31:22.063Z,63,1906,The CastleWindsor Container for the nservicebus,NServiceBus.CastleWindsor,True,2018-02-16T08:25:50.44+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",198695,False,4.0.0-unstable2639
+Igor Tkachev,2013-01-30T21:50:45.203Z,321,1906,Business Logic Toolkit Informix Data Provider for .NET,BLToolkit.Informix,False,2017-06-03T01:59:27.147-07:00,True,False,,"Informix,bltoolkit,Linq,ORM,DAL,database,DB",8052,False,4.1.17
+NServiceBus Ltd,2013-01-31T10:21:30.247Z,43209,1905,SQL transport support for NServicebus,NServiceBus.SqlServer,True,1900-01-01T00:00:00+00:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",148648,False,4.0.0-unstable2645
+Demis Bellot,2013-01-30T01:50:06.723Z,1811,1906,"Binaries for the StackExpress web framework.
+      Visit http://www.ServiceStack.net/ServiceStack.Hello/
+      and https://github.com/ServiceStack/ServiceStack/wiki/Create-your-first-webservice
+      for walk throughs and docs on creating your first web service.",StackExpress,True,2013-05-05T16:45:17.45-07:00,True,False,Opensource .NET and Mono REST Web Services framework,"Fast,JSON,XML,CSV,HTML,SOAP,JSV,REST,Web,Service,Framework,MONO",69228,False,3.9.508-unstable
+JP Toto,2013-01-31T00:26:05.457Z,60,1905,log4net.ElasticSearch is a log4net adapter for easy logging of exceptions and messages to ElasticSearch indices.,log4net.ElasticSearch,False,2018-02-19T01:48:03.207+00:00,True,False,,"log,logging,exception,elasticsearch,log4net",83055,False,0.2.0
+Dayi Chen,2013-01-30T01:31:34.297Z,43209,1906,A web utilities,EBA.Web,False,1899-12-31T16:00:00-08:00,False,False,A web utilities,,-1,False,0.1.1
+NServiceBus Ltd,2013-01-31T12:47:15.963Z,43209,1905,ActiveMQ support for NServicebus,NServiceBus.ActiveMQ,True,1899-12-31T16:00:00-08:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",49851,False,4.0.0-unstable2649
+NServiceBus Ltd,2013-01-31T12:47:29.387Z,63,1905,"The hosting template for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Host,True,2018-02-16T08:27:09.05+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",446743,False,4.0.0-unstable2649
+https://github.com/g0t4/DotNetMongoMigrations,2013-01-30T23:39:09.83Z,911,1906,Mongo migrations for dot net developers,MongoMigrations,False,2015-10-21T18:59:11.517-07:00,True,False,,"Mongo,Migrations",13347,False,1.7.4778.31267
+André Carlucci,2013-01-31T11:52:58.377Z,123,1905,Sharp migrations is a framework to help you deal with database changes and versioning over time. The idea comes from the excellent Ruby on Rails migrations and it is the best way to alter your database in a structured and organised manner.,SharpMigrations,False,2017-12-18T20:50:42.713+00:00,True,False,,"migrations,database-migrations,database,c#",22134,False,0.12.0
+eXpand,2013-01-30T17:40:34.703Z,11,1906,TreelistView Module (Win) / eXpand Framework,eXpandTreelistViewWin,False,2018-04-09T16:23:47.913+00:00,True,False,TreelistView Module (Win) / eXpand Framework,"DevExpress,eXpand",69561,False,12.2.5.16
+NServiceBus Ltd,2013-01-30T03:00:25.6Z,63,1906,The Unity Container for the nservicebus,NServiceBus.Unity,True,2018-02-16T08:26:32.347+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",180078,False,4.0.0-unstable2638
+Autofac Contributors,2013-01-30T12:22:53.13Z,891,1906,This is the Autofac implementation of the NHibernate factories that allow for dependency injection into entities and NHibernate objects.,Autofac.Extras.NHibernate,False,2015-11-11T07:35:55.003-08:00,True,False,Autofac extension for NHibernate support.,,8077,False,3.0.0
+S. van Deursen,2013-01-29T21:19:42.173Z,5,1907,Adds support for packaging sets of related services to allow registering them together.,SimpleInjector.Packaging,True,2018-04-15T09:25:46.6+00:00,True,False,Adds support for packaging sets of related services to allow registering them together.,"simpleinjector,architecture,dependency-injection,DI,easy,easy-to-use,Inversion-of-Control,IOC,Servicelocator,packaging,packages,modules,installers,registries",179499,False,2.0.0-beta1
+"Software By Ben,Ben Scott,swxben,belfryimages",2013-01-30T14:29:25.013Z,1906,1906,Replacement/placeholder for System.Web,swxben.reporting.System.Web,False,2013-01-30T06:29:25.013-08:00,True,False,Minimal replacement/placeholder for System.Web,"reporting,template,html,excel,pdf,xsl-fo,razor",673,False,1.0.0
+NServiceBus Ltd,2013-01-30T07:31:35.287Z,63,1906,The Azure Host for NServicebus,NServiceBus.Hosting.Azure,True,2018-02-16T08:29:01.053+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",151590,False,4.0.0-unstable2639
+eXpand,2013-01-30T17:40:40.297Z,1715,1906,ViewVariants Module (Web) / eXpand Framework,eXpandViewVariantsWeb,False,2013-08-09T07:43:36.243-07:00,True,False,ViewVariants Module (Web) / eXpand Framework,"DevExpress,eXpand",31295,False,12.2.5.16
+Igor Tkachev,2013-01-30T21:51:06.83Z,321,1906,Business Logic Toolkit Sybase Data Provider for .NET,BLToolkit.Sybase,False,2017-06-03T02:00:32.337-07:00,True,False,,"Sybase,bltoolkit,Linq,ORM,DAL,database,DB",8808,False,4.1.17
+Brenton Reeder,2013-01-31T01:34:49.307Z,43209,1905,Basic utils and libraries developed for ease of use,HCowz.Libraries,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.3
+"Daniel Cazzulino,kzu,Clarius",2013-01-30T21:44:17.37Z,1106,1906,"Implements the tracing interface on top of the System.Diagnostics.TraceSource capabilities, extending it with log4net-style hierarchical logging and runtime dynamic configurability of trace sources.",Tracer.SystemDiagnostics,False,2015-04-10T12:29:28.53-07:00,True,False,Adapter based on the System.Diagnostics classes for the general tracer interface.,"netfx,diagnostics,tracing",11121,False,1.0.0.4
+TechSmith Corporation,2013-01-30T15:15:12.797Z,392,1906,Object to Entity mapper for Windows Azure,TechSmith.Hyde,False,2017-03-24T05:39:53.547-07:00,True,False,,"TechSmith,Azure,Storage,Table",14481,False,2.6.0
+NServiceBus Ltd,2013-01-30T07:31:10.14Z,43209,1906,ActiveMQ support for NServicebus,NServiceBus.ActiveMQ,True,1899-12-31T16:00:00-08:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",49851,False,4.0.0-unstable2639
+Kevin Miller,2013-01-30T20:48:02.867Z,945,1906,FubuMVC Convention enabling your web application to emit Swagger api documentation specifications.,FubuMVC.Swagger,False,2015-09-18T10:26:42.697-07:00,True,False,,"FubuMVC,Swagger,API,Documentation",3682,False,0.3.0.5
+NServiceBus Ltd,2013-01-31T00:57:23.487Z,63,1905,The Ninject Container for the nservicebus,NServiceBus.Ninject,True,2018-02-16T08:26:03.157+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",171718,False,4.0.0-unstable2644
+chrisdavies,2013-01-30T22:27:31.357Z,1905,1906,Super simple database migrations for .net,dbmg,False,2013-01-31T10:21:34.323-08:00,True,False,,"migrations,db",1848,False,0.5.5.1
+NServiceBus Ltd,2013-01-30T02:59:53.623Z,63,1906,The NHibernate for the NServicebus,NServiceBus.NHibernate,True,2018-02-16T08:32:13.247+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",329597,False,4.0.0-unstable2638
+"CityIndex Ltd,Andrei Faber",2013-01-30T03:25:39.547Z,1631,1906,.NET client library for the AppMetrics application runtime intelligence system,AppMetrics.Client,False,2013-10-31T21:39:49.57-07:00,True,False,,,99975,False,1.0.359
+Kazunori Sakamoto,2013-01-30T16:03:56.437Z,487,1906,Code2Xml is a parser library that interconverts source code and xml files supporting multiple programming languages.,Code2Xml,False,2016-12-18T22:09:25.04-08:00,True,False,,"Library,Parser,XML,Programming,Language",24387,False,1.6.3.60
+Hibernating Rhinos,2013-01-31T11:14:47.48Z,43209,1905,"This package includes a utiliti class that helps test features of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Tests.Helpers,True,1900-01-01T00:00:00+00:00,False,False,This package includes a utiliti class that helps test features of RavenDB.,"nosql,ravendb,raven,document,database,test",244252,True,2.0.2247-Unstable
+NServiceBus Ltd,2013-01-31T00:56:38.473Z,43209,1905,ActiveMQ support for NServicebus,NServiceBus.ActiveMQ,True,1899-12-31T16:00:00-08:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",49851,False,4.0.0-unstable2644
+Paolo Possanzini,2013-01-31T09:03:24.323Z,1905,1905,TeamDev Redis Client,TeamDev.Redis.Client,False,2013-01-31T01:03:24.323-08:00,True,False,,,2366,False,1.0.4
+Demis Bellot,2013-01-30T02:30:35.563Z,1811,1906,"Common library dependency for other StackExpress projects.
+      Includes JSON, XML, JSV and SOAP Generic Service Clients.
+      Contains:
+      - StackExpress.Interfaces
+      - StackExpress.Common
+      Dependenies:
+      - StackExpress.Text",StackExpress.Common,True,2013-05-05T16:45:38.26-07:00,True,False,Opensource .NET and Mono REST Web Services framework,"StackExpress,Common,Framework",67168,False,3.9.509-unstable
+Stack Exchange,2013-01-31T01:48:18.203Z,43209,1905,Plugs nHibernate profiling support into Mvc Mini Profiler,StackExchange.Profiling.Nhibernate,False,1899-12-31T16:00:00-08:00,False,False,,"nHibernate,mvcminiprofiler",-1,False,2.0.2
+Demis Bellot,2013-01-30T02:37:08.097Z,1811,1906,"Adds OpenId Auth Providers for use in StackExpress Web and REST Services. 
+        Includes built-in support for Google, Yahoo, MyOpenId and Custom OpenId providers.
+        
+        More Info on Auth Providers: 
+        https://github.com/ServiceStack/ServiceStack/wiki/Authentication-and-authorization",StackExpress.Authentication.OpenId,True,2013-05-05T16:45:29.547-07:00,True,False,"OpenId Auth Providers for StackExpress - inc. Google, Yahoo, MyOpenId","OpenId,Google,Yahoo,MyOpenId,Authentication,Auth,Provider,ServiceStack,REST,Web,Services",65797,False,3.9.510-unstable
+Autofac Contributors,2013-01-30T12:21:05.703Z,1,1906,Base assemblies for the Autofac Inversion of Control Container,Autofac,False,2018-04-19T15:02:08.59+00:00,True,False,Autofac is an IoC container for Microsoft .NET. It manages the dependencies between classes so that applications stay easy to change as they grow in size and complexity.,,10374364,False,3.0.0
+Demis Bellot,2013-01-30T20:45:03.987Z,1811,1906,Add the MsgPack binary format and endpoint to a StackExpress web service host.,StackExpress.Plugins.MsgPack,True,2013-05-05T16:45:52.933-07:00,True,False,MsgPack Format Serializer ContentType ServiceClients for StackExpress,"MsgPack,MessagePack,Message,Pack,Fast,Binary,Serializer,Format,ContentType,StackExpress,REST,Web,Services",65662,False,3.9.512-unstable
+Jake Luer,2013-01-30T20:38:41.997Z,1896,1906,Chai is a BDD / TDD assertion library for the browser that can be delightfully paired with any javascript testing framework.,chai,False,2013-02-09T09:29:00.937-08:00,True,False,,"js,javascript,tdd,bdd,chai,chaijs",33995,False,1.4.2
+NServiceBus Ltd,2013-01-30T03:00:17.817Z,63,1906,"The testing for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Testing,True,2018-02-16T08:24:31.56+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",326207,False,4.0.0-unstable2638
+GeertvanHorrik,2013-01-31T12:56:41.767Z,1645,1905,Gyroscope service for Catel to use the gyroscope as a service in MVVM. Also contains a unit test version to simulate the gyroscope.,Catel.MVVM.Services.Gyroscope,True,2013-10-18T04:22:20.863-07:00,True,False,,"mvvm,catel,gyroscope,services,wp7,wp,windows,phone",25100,True,3.4.1301311344-beta
+eXpand,2013-01-30T17:39:53.503Z,11,1906,NCarousel Module (Web) / eXpand Framework,eXpandNCarouselWeb,False,2018-04-09T16:18:13.867+00:00,True,False,NCarousel Module (Web) / eXpand Framework,"DevExpress,eXpand",69926,False,12.2.5.16
+Demis Bellot,2013-01-30T20:38:03.02Z,1833,1906,"StackExpress Razor Documentation: http://razor.servicestack.net
+
+      - Turns ServiceStack into a Complete Web + REST Services Stack. Replaces need for ASP.NET MVC.
+      - Runs In ASP.NET or Self-host, first-class cross-platform support on .NET / Mono runtimes.
+      - Add HTML views to existing services.
+      - Change Views and Layout templates at runtime.
+      - No Ceremony development options - Pages without controllers, with typed and dynamic View Models.
+      - Include Partial Markdown views in Razor pages.
+      - Cascading Layout templates.
+      - Pretty urls by default (no custom Routes needed).
+      - Keep all views and assets together.
+      - Smart View Pages.",StackExpress.Razor,True,2013-04-13T08:22:10.39-07:00,True,False,Provides ServiceStack's HTML Story including integrated support for MVC Razor's ViewEngine,"ServiceStack,Razor,ViewEngine,View,Templates,Controllers,Mono,ASP.NET,Self-Host",65179,False,3.9.511-unstable
+Adriano Caldeira,2013-01-30T19:06:00.487Z,43209,1906,Thunder,jQueryThunder,False,1899-12-31T16:00:00-08:00,False,False,,"jquery,modal,form,ajax",-1,False,1.1.7
+GeertvanHorrik,2013-01-30T08:02:28.847Z,507,1906,Catel.Extensions.CSLA library which provides CSLA.NET view models for Catel.,Catel.Extensions.CSLA,True,2016-11-29T13:35:56.627+00:00,True,False,,"catel,csla,clsa.net",105532,True,3.4.1301300851-beta
+NServiceBus Ltd,2013-01-30T10:11:12.643Z,14,1906,The most popular open-source service bus for .net,NServiceBus,True,2018-04-06T19:48:02.973+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",1169248,False,4.0.0-unstable2643
+Jonathan Goldman,2013-01-29T22:15:40.477Z,123,1907,Need to use the rabbit management http api? Don't jump through hoops.,Chinchilla.Api,False,2017-12-18T17:09:58.437+00:00,True,False,C# Wrapper for rabbitmq management http api,"rabbitmq,management,api,http,chinchilla",18654,False,0.1.10
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2013-01-30T09:54:38.727Z,5,1906,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,FAKE,False,2018-04-15T16:37:14.193+00:00,True,False,,build,1448675,False,1.74.104
+O2 Platform,2013-01-31T13:45:25.467Z,1744,1905,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. This is the Fluent# BCL which provides support for System.Forms and Web,FluentSharp.BCL,False,2013-07-11T10:24:47.177-07:00,True,False,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs.,"Fluent,OWASP,O2Platform,Security",14570,False,5.0.43
+eXpand,2013-01-30T17:41:08.45Z,11,1906,"Creates dynamic persistent assemblies. The XAF user interface allows us to create an assembly without writing a single line of code. Advanced users can even use c# scripting and create new code generation templates.  
+Blogs:
+http://apobekiaris.blogspot.com/search/label/WorldCreator",eXpandWorldCreatorWeb,False,2018-04-09T16:26:20.077+00:00,True,False,Design runtime assemblies,"DevExpress,eXpand",68681,False,12.2.5.16
+NServiceBus Ltd,2013-01-30T03:00:21.6Z,43209,1906,The Azure Host for the timeout manager on NServicebus,NServiceBus.Timeout.Hosting.Azure,True,1899-12-31T16:00:00-08:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",-1,False,4.0.0-unstable2638
+Mike Goatly,2013-01-30T23:27:05.203Z,1461,1906,"An implementation of the triggers functionality that was available in Silverlight but is missing WinRT XAML. Supports event and property based triggers with storyboard, state and command actions. Actions can have conditions applied to them so they only fire under certain conditions.",WinRTTriggers,False,2014-04-20T14:19:43.847-07:00,True,False,Triggers for WinRT XAML,"Win8,Windows8,WinRT,XAML,Trigger,Triggers,Behavior,Behaviors,Behaviour,Behaviours,Blend,Interactivity",6860,False,1.2.0
+GeertvanHorrik,2013-01-31T12:56:16.59Z,4,1905,Catel.Core library which includes the DataObjectBase class.,Catel.Core,True,2018-04-16T10:11:44.76+00:00,True,False,,"mvvm,model,modelbase,logging,data,object,wpf,c#,ioc,servicelocator",244767,True,3.4.1301311344-beta
+王建川,2013-01-30T06:38:17.317Z,43209,1906,"对mvc进行功能扩展，包括button,js引用等等",ExfSoft.MVC4,False,1899-12-31T16:00:00-08:00,False,False,"对mvc进行功能扩展，包括button,js引用等等","exfsoft,mvc",-1,False,1.0.3
+Rocky,2013-01-31T07:37:08.397Z,884,1905,"JeansMan Team Lib, C#4.0 common library. It's helpful 2 proceed project design and develop and ensure that the code of safety, quality and performance.",Timothy,False,2015-11-17T23:18:49.497-08:00,True,False,,".Net4.0,Library",11150,False,1.0.7
+NServiceBus Ltd,2013-01-31T00:57:30.973Z,63,1905,The Spring Container for the nservicebus,NServiceBus.Spring,True,2018-02-16T08:26:14.66+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",125014,False,4.0.0-unstable2644
+O2 Platform,2013-01-31T13:42:01.82Z,1744,1905,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. This is the Fluent# BCL which provides support for System.Forms and Web,FluentSharp.BCL,False,2013-07-11T10:24:47.177-07:00,True,False,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs.,"Fluent,OWASP,O2Platform,Security",14570,False,5.0.42
+Hibernating Rhinos,2013-01-31T11:13:43.23Z,43209,1905,RavenDB Client MvcIntegration let you include a visual profiler in your ASP.NET MVC application which will show you all the opened sessions and the time took to complete each database request. This can help you when developing with RavenDB.,RavenDB.Client.MvcIntegration,True,1900-01-01T00:00:00+00:00,False,False,A visual profiler for RavenDB that you can use in your ASP.NET MVC application.,"nosql,ravendb,raven,document,database,client,mvc",243184,True,2.0.2247-Unstable
+Hibernating Rhinos,2013-01-31T12:56:46.237Z,43209,1905,"The Authorization Bundle extend RavenDB and add document level permissions. The Auth Bundle allows to define permissions for a specific user, a group or using arbitrary tagging. The system is design to be high performance, scalable and flexible.",RavenDB.Bundles.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles,authorization",201812,True,2.0.2248-Unstable
+Demis Bellot,2013-01-30T02:30:57.133Z,1833,1906,"StackExpress Razor Documentation: http://razor.servicestack.net
+
+      - Turns ServiceStack into a Complete Web + REST Services Stack. Replaces need for ASP.NET MVC.
+      - Runs In ASP.NET or Self-host, first-class cross-platform support on .NET / Mono runtimes.
+      - Add HTML views to existing services.
+      - Change Views and Layout templates at runtime.
+      - No Ceremony development options - Pages without controllers, with typed and dynamic View Models.
+      - Include Partial Markdown views in Razor pages.
+      - Cascading Layout templates.
+      - Pretty urls by default (no custom Routes needed).
+      - Keep all views and assets together.
+      - Smart View Pages.",StackExpress.Razor,True,2013-04-13T08:22:10.39-07:00,True,False,Provides ServiceStack's HTML Story including integrated support for MVC Razor's ViewEngine,"ServiceStack,Razor,ViewEngine,View,Templates,Controllers,Mono,ASP.NET,Self-Host",65179,False,3.9.509-unstable
+Autofac Contributors,2013-01-30T12:23:16.203Z,1018,1906,"The dynamic proxy integration enables method calls on Autofac components to be intercepted by other components. Common use cases are transaction handling, logging, and declarative security.",Autofac.Extras.DynamicProxy2,False,2015-07-06T19:01:48.93-07:00,True,False,Autofac extension for enabling AOP in conjunction with Castle.,,184200,False,3.0.0
+NServiceBus Ltd,2013-01-30T02:59:33.547Z,63,1906,"The hosting template for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Host,True,2018-02-16T08:27:09.05+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",446743,False,4.0.0-unstable2638
+Hibernating Rhinos,2013-01-31T12:56:58.097Z,57,1905,RavenDB embedded database,RavenDB.Bundles.IndexReplication,True,2018-02-22T21:29:30.903+00:00,True,False,,"nosql,ravendb,raven,document,database,bundles",116112,True,2.0.2248-Unstable
+NServiceBus Ltd,2013-01-30T10:12:04.187Z,63,1906,RabbitMQ support for NServicebus,NServiceBus.RabbitMQ,True,2018-02-16T08:20:32.96+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",199609,False,4.0.0-unstable2643
+Josh Handel,2013-01-30T20:06:05.387Z,43209,1906,"Open Source Single Page Application framework for the development of applications leveraging RESTFul services, WebAPI, JQuery and KnockoutJS -- The framework uses Typescript and includes the TS source files and is platform agnostic.",Atlatl,True,1899-12-31T16:00:00-08:00,False,False,,"Javascript,Single,Page,Application,Jquery,Knockout,Typescript",-1,False,0.2.0-alpha
+NA,2013-01-29T22:02:20.907Z,1907,1907,NHaml view engine configured to work inside a Microsoft MVC3 project,System.Web.NHaml.Mvc3,False,2013-01-29T14:02:20.907-08:00,True,False,,,1022,False,4.0.8
+eXpand,2013-01-30T17:41:15.943Z,11,1906,"Creates dynamic persistent assemblies. The XAF user interface allows us to create an assembly without writing a single line of code. Advanced users can even use c# scripting and create new code generation templates.  
+Blogs:
+http://apobekiaris.blogspot.com/search/label/WorldCreator",eXpandWorldCreatorWin,False,2018-04-09T16:26:37.873+00:00,True,False,Design runtime assemblies,"DevExpress,eXpand",68863,False,12.2.5.16
+NServiceBus Ltd,2013-01-31T12:47:24.323Z,417,1905,Azure support for NServicebus,NServiceBus.Azure,True,2017-02-27T15:06:56.187-08:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",154035,False,4.0.0-unstable2649
+GeertvanHorrik,2013-01-30T08:02:38.04Z,507,1906,Catel.Extensions.Prism library which contains helper classes for prism.,Catel.Extensions.Prism,True,2016-11-29T13:36:21.16+00:00,True,False,,"prism,catel,mvvm",129719,True,3.4.1301300851-beta
+NServiceBus Ltd,2013-01-31T00:57:50.313Z,63,1905,The Unity Container for the nservicebus,NServiceBus.Unity,True,2018-02-16T08:26:32.347+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",180078,False,4.0.0-unstable2644
+NServiceBus Ltd,2013-01-31T12:47:19.68Z,63,1905,The Autofac Container for the nservicebus,NServiceBus.Autofac,True,2018-02-16T08:25:42.907+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",279857,False,4.0.0-unstable2649
+GeertvanHorrik,2013-01-30T08:02:35.693Z,507,1906,Catel.Extensions.FluentValidation library which contains fluent validation extensions.,Catel.Extensions.FluentValidation,True,2016-11-29T05:36:11.987-08:00,True,False,,"validation,fluent,fluentvalidation",126277,True,3.4.1301300851-beta
+GeertvanHorrik,2013-01-30T12:14:34.157Z,507,1906,"Catel.Extensions.EntityFramework5 library which provides data classes such as repositories, unit of work, DbContextManager and more.",Catel.Extensions.EntityFramework5,True,2016-11-29T13:36:06.393+00:00,True,False,,"catel,entity,framework,entityframework,EF,EF5,UnitOfWork,unit,of,work,DbContextManager,repository,repositories,database",97012,True,3.4.1301301301-beta
+eXpand,2013-01-30T17:39:47.703Z,11,1906,"Extends XAF by adding great new features for example;
+
+◦the ability to generate runtime members for your objects, 
+◦creating Application/Role/User models in the database, 
+◦storing your web cookies in the database, 
+◦handling of external application models, 
+◦combine end user modifications with application model, 
+◦support for multiple models at design time,
+Blogs:
+http://apobekiaris.blogspot.com/search/label/ModelDifference",eXpandModelDifferenceWin,False,2018-04-09T16:17:41.383+00:00,True,False,Model managment,"DevExpress,eXpand",70277,False,12.2.5.16
+Euroling AB,2013-01-31T11:37:37.177Z,43209,1905,SiteSeeker integration module for EPiServer,SiteSeeker.EPiServer,False,1899-12-31T16:00:00-08:00,False,False,,"SiteSeeker,EPiServer,Search,module",40038,False,4.2.64.1
+Aravind,2013-01-30T10:21:27.887Z,1906,1906,TestNuGet,TestNuGet,False,2013-01-30T03:55:33.05-08:00,True,False,,TestNuGet,2659,False,0.0.1.7
+Hibernating Rhinos,2013-01-31T11:13:11.727Z,43209,1905,The cascade delete bundle allows for a specified set of documents and attachments to be deleted when the document that owns it is deleted. Typical usage scenarios include deleting an attachment that is referenced by a document or removing a set of child documents referenced by a parent document.,RavenDB.Bundles.CascadeDelete,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",199442,True,2.0.2247-Unstable
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull",2013-01-30T09:11:53.97Z,5,1906,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,FAKE,False,2018-04-15T16:37:14.193+00:00,True,False,,build,1448675,False,1.74.103
+NServiceBus Ltd,2013-01-31T00:57:34.773Z,43209,1905,SQL transport support for NServicebus,NServiceBus.SqlServer,True,1900-01-01T00:00:00+00:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",148648,False,4.0.0-unstable2644
+NServiceBus Ltd,2013-01-31T10:21:22.82Z,63,1905,RabbitMQ support for NServicebus,NServiceBus.RabbitMQ,True,2018-02-16T08:20:32.96+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",199609,False,4.0.0-unstable2645
+"John Hoerr,Carson Gross",2013-01-30T23:13:38.8Z,1743,1906,A client implementation of the Box v2 REST API.  API documentation can be found at http://developers.box.com.,Box.v2.SDK,False,2013-07-12T12:02:17.83-07:00,True,False,,"Box,Box.com",12554,False,1.3.0
+NServiceBus Ltd,2013-01-30T07:32:26.63Z,63,1906,The Unity Container for the nservicebus,NServiceBus.Unity,True,2018-02-16T08:26:32.347+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",180078,False,4.0.0-unstable2639
+Hibernating Rhinos,2013-01-30T15:09:50.747Z,43209,1906,"Use this package if you want extend RavenDB. Don't use this package if you just want to work with existing RavenDB server, in order to so just use the client API which is in the RavenDB.Client package. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Database,True,1900-01-01T00:00:00+00:00,False,False,This package allows you to extend RavenDB database.,"nosql,ravendb,raven,document,database",663109,True,2.0.2246-Unstable
+Hibernating Rhinos,2013-01-31T12:56:58.497Z,43209,1905,This bundle aims to allow the user to implement unique constraints in the objects (usefull for properties like email or social security number).,RavenDB.Bundles.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",215470,True,2.0.2248-Unstable
+eXpand,2013-01-30T17:38:53.313Z,11,1906,IO Module (Web) / eXpand Framework,eXpandIOWeb,False,2018-04-09T16:13:57.577+00:00,True,False,IO Module (Web) / eXpand Framework,"DevExpress,eXpand",69946,False,12.2.5.16
+eXpand,2013-01-30T17:39:00.59Z,11,1906,IO Module (Win) / eXpand Framework,eXpandIOWin,False,2018-04-09T16:14:14.513+00:00,True,False,IO Module (Win) / eXpand Framework,"DevExpress,eXpand",70000,False,12.2.5.16
+Ivony,2013-01-30T03:25:09.387Z,43209,1906,Jumony,Jumony,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,2.5.0.1-alpha
+NServiceBus Ltd,2013-01-30T07:31:18.187Z,417,1906,Azure support for NServicebus,NServiceBus.Azure,True,2017-02-27T15:06:56.187-08:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",154035,False,4.0.0-unstable2639
+Autofac Contributors,2013-01-30T12:22:18.03Z,1129,1906,ASP.NET SignalR Integration for Autofac,Autofac.SignalR,False,2015-03-18T05:21:22.137-07:00,True,False,Provides a dependency resolver implementation for ASP.NET SignalR.,,244211,False,3.0.0
+O2 Platform,2013-01-31T12:25:20.27Z,1359,1905,"FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. It makes extensive use of .NET ExtensionMethods and it reduces the amount of code required (while making it more read
+
+This is the FluentSharp REPL which provides a C# REPL enviroment (REPL is Read Eval Print Loop) which allows for real-time execution of complex C# code (and GUI manipulation)",FluentSharp.REPL,False,2014-07-31T04:47:41.157-07:00,True,False,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. It makes extensive use of .NET ExtensionMethods and it reduces the amount of code required (while making it more read,"Fluent,OWASP,O2Platform,Security",17942,False,5.0.40
+chrisdavies,2013-01-30T22:17:20.423Z,1905,1906,Super simple database migrations for .net,dbmg,False,2013-01-31T10:21:34.323-08:00,True,False,,"migrations,db",1848,False,0.0.4778.31063
+Aravind,2013-01-30T10:28:29.5Z,1906,1906,TestNuGet,TestNuGet,False,2013-01-30T03:55:33.05-08:00,True,False,,TestNuGet,2659,False,0.0.1.10
+Demis Bellot,2013-01-30T01:29:55.61Z,108,1906,"ServiceStack Razor Documentation: http://razor.servicestack.net
+
+      - Turns ServiceStack into a Complete Web + REST Services Stack. Replaces need for ASP.NET MVC.
+      - Runs In ASP.NET or Self-host, first-class cross-platform support on .NET / Mono runtimes.
+      - Add HTML views to existing services.
+      - Change Views and Layout templates at runtime.
+      - No Ceremony development options - Pages without controllers, with typed and dynamic View Models.
+      - Include Partial Markdown views in Razor pages.
+      - Cascading Layout templates.
+      - Pretty urls by default (no custom Routes needed).
+      - Keep all views and assets together.
+      - Smart View Pages.",ServiceStack.Razor,False,2018-01-02T14:54:48.057+00:00,True,False,Provides ServiceStack's HTML Story including integrated support for MVC Razor's ViewEngine,"Razor,ViewEngine,View,Templates,Controllers,Mono,ASP.NET,Self-Host,ServiceStack",132523,False,3.9.36
+"Joshua Lewis,ServiceStack contributors",2013-01-30T02:13:34.477Z,108,1906,"An NHibernate IUserAuthRepository to persist User registration and authentication info in any RDBMS NHibernate supports.
+        Implements ServiceStack's built-in AuthProvider Model:
+        https://github.com/ServiceStack/ServiceStack/wiki/Authentication-and-authorization
+        inc. Twitter, Facebook, Basic, Digest, Credentials Auth modes out-of-the-box.",ServiceStack.Authentication.NHibernate,False,2018-01-02T14:42:02.517+00:00,True,False,,"ServiceStack,Authentication,Authorization,NHibernate,SQLServer,Sqlite,Oracle,MySql,PostgreSQL,POCO,Code-First",14691,False,3.9.35
+O2 Platform,2013-01-31T13:32:59.263Z,1744,1905,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. This is the Fluent# BCL which provides support for System.Forms and Web,FluentSharp.BCL,False,2013-07-11T10:24:47.177-07:00,True,False,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs.,"Fluent,OWASP,O2Platform,Security",14570,False,5.0.41
+Demis Bellot,2013-01-30T02:36:57.817Z,1811,1906,"Binaries for the StackExpress web framework.
+      Visit http://www.ServiceStack.net/ServiceStack.Hello/
+      and https://github.com/ServiceStack/ServiceStack/wiki/Create-your-first-webservice
+      for walk throughs and docs on creating your first web service.",StackExpress,True,2013-05-05T16:45:17.45-07:00,True,False,Opensource .NET and Mono REST Web Services framework,"Fast,JSON,XML,CSV,HTML,SOAP,JSV,REST,Web,Service,Framework,MONO",69228,False,3.9.510-unstable
+Hibernating Rhinos,2013-01-31T12:57:43.143Z,43209,1905,"Use this package if you want extend RavenDB. Don't use this package if you just want to work with existing RavenDB server, in order to so just use the client API which is in the RavenDB.Client package. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Database,True,1900-01-01T00:00:00+00:00,False,False,This package allows you to extend RavenDB database.,"nosql,ravendb,raven,document,database",663109,True,2.0.2248-Unstable
+Octopus Deploy,2013-01-31T11:56:35.147Z,172,1905,"Octopus is an automated deployment tool powered by NuGet (octopusdeploy.com). This tool adds a post-build activity to your Visual Studio project, 
+      so that an Octopus-compatible NuGet package is produced in the Bin directory whenever a Release build completes.",OctoPack,False,2017-10-30T00:17:16.443+00:00,True,False,,,3497193,False,2.0.10
+NServiceBus Ltd,2013-01-30T10:11:56.78Z,63,1906,The NHibernate for the NServicebus,NServiceBus.NHibernate,True,2018-02-16T08:32:13.247+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",329597,False,4.0.0-unstable2643
+Autofac Contributors,2013-01-30T12:22:08.67Z,1743,1906,ASP.NET MVC4 Integration for Autofac,Autofac.Mvc4,False,2013-07-12T05:25:00.357-07:00,True,False,Provides an IControllerFactory implementation and other integration points for System.Web.Mvc.,,312444,False,3.0.0
+NServiceBus Ltd,2013-01-30T07:32:17.417Z,63,1906,The StructureMap Container for the nservicebus,NServiceBus.StructureMap,True,2018-02-16T08:26:21.58+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",211946,False,4.0.0-unstable2639
+Tom Brothers,2013-01-30T22:43:48.1Z,1158,1906,Entity Framework Provider for VFP data.,VFPEntityFrameworkProvider,False,2015-02-17T15:03:58.027-08:00,True,False,Entity Framework Provider for VFP data.,,5275,False,0.7.9.9923
+Demis Bellot,2013-01-30T20:37:57.237Z,1811,1906,Add the ProtoBuf binary format and endpoint to a StackExpress web service host.,StackExpress.Plugins.ProtoBuf,True,2013-05-05T16:45:58.313-07:00,True,False,ProtoBuf Format Serializer ContentType ServiceClients for StackExpress,"ProtoBuf,Fast,Binary,Serializer,Format,ContentType,StackExpress,REST,Web,Services",65721,False,3.9.511-unstable
+"Software By Ben,Ben Scott,swxben,belfryimages",2013-01-30T14:46:02.527Z,1890,1906,C#/.NET helpers - mostly extension methods,swxben.helpers,False,2013-02-14T16:57:27.617-08:00,True,False,C#/.NET helpers - mostly extension methods,,2098,False,1.3.0
+Aravind,2013-01-30T10:30:09.933Z,1906,1906,TestNuGet,TestNuGet,False,2013-01-30T03:55:33.05-08:00,True,False,,TestNuGet,2659,False,0.0.1.11
+GeertvanHorrik,2013-01-31T12:56:27.357Z,507,1905,"Catel.Extensions.EntityFramework5 library which provides data classes such as repositories, unit of work, DbContextManager and more.",Catel.Extensions.EntityFramework5,True,2016-11-29T13:36:06.393+00:00,True,False,,"catel,entity,framework,entityframework,EF,EF5,UnitOfWork,unit,of,work,DbContextManager,repository,repositories,database",97012,True,3.4.1301311344-beta
+saveenr,2013-01-31T04:23:07.597Z,1568,1905,MetaWeblogSharp is a simple MetaWeblog client. It has no dependencies on other libraries.,MetaWeblogSharp,False,2014-01-02T20:01:33.577-08:00,True,False,,MetaWeblog,3920,False,1.0.23
+Euroling AB,2013-01-31T11:37:31.177Z,43209,1905,SiteSeeker integration module for Web applications,SiteSeeker.Core,False,1899-12-31T16:00:00-08:00,False,False,,"SiteSeeker,Core,Search,module",41995,False,4.2.64.1
+Paul Betts,2013-01-30T22:04:08.967Z,1472,1906,An adapter to initialize NLog as the logger for ReactiveUI.,reactiveui-nlog,False,2014-04-09T13:24:11.427-07:00,True,False,,,19733,False,4.3.2
+S. van Deursen,2013-01-29T21:19:21.687Z,5,1907,"The Simple Injector ASP.NET Integration package adds a lifestyle to the Simple Injector called 'Per Web Request', which allows instances to live within a single HTTP request and get disposed when the request ends.",SimpleInjector.Integration.Web,True,2018-04-15T09:24:50.96+00:00,True,False,Integration package for ASP.NET 4.0 web applications.,"simpleinjector,architecture,dependency-injection,DI,easy,easy-to-use,Inversion-of-Control,IOC,Servicelocator,per-web-request,web,integration",808106,False,2.0.0-beta1
+NServiceBus Ltd,2013-01-30T10:11:23.5Z,63,1906,The Autofac Container for the nservicebus,NServiceBus.Autofac,True,2018-02-16T08:25:42.907+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",279857,False,4.0.0-unstable2643
+eXpand,2013-01-30T17:39:30.197Z,1715,1906,ModelArtifact Module (Web) / eXpand Framework,eXpandModelArtifactWeb,False,2013-08-09T07:42:06.993-07:00,True,False,ModelArtifact Module (Web) / eXpand Framework,"DevExpress,eXpand",31974,False,12.2.5.16
+eXpand,2013-01-30T17:40:57.327Z,1715,1906,WorkFlow Module (Win) / eXpand Framework,eXpandWorkFlowrWin,False,2013-08-09T07:43:55.84-07:00,True,False,WorkFlow Module (Win) / eXpand Framework,"DevExpress,eXpand",31116,False,12.2.5.16
+Ryan Herbert,2013-01-30T19:56:29.577Z,1410,1906,Attribute to show checkboxes/dropdowns for multiple choice lists for ASP.NET MVC,SelectorAttribute,False,2014-06-10T13:48:33.46-07:00,True,False,,,1548,False,1.0.0
+chrisdavies,2013-01-30T22:24:00.617Z,1905,1906,Super simple database migrations for .net,dbmg,False,2013-01-31T10:21:34.323-08:00,True,False,,"migrations,db",1848,False,0.0.4778.4
+Brenton Reeder,2013-01-31T01:37:20.883Z,43209,1905,My package description.,HCowz.Services,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+GILF,2013-01-31T08:43:45.827Z,1905,1905,"story.js enables web developers to use client-side storages in a simple and consistent way. It includes abstraction layer on top of Web Storage API, IndexedDB API, Cookies API and In-Memory storage.",story.js,False,2013-01-31T00:43:45.827-08:00,True,False,"story.js enables web developers to use client-side storages in a simple and consistent way. It includes abstraction layer on top of Web Storage API, IndexedDB API, Cookies API and In-Memory storage.","JavaScript,HTML5",3090,False,1.1.0
+RavenDB Community,2013-01-30T01:22:28.533Z,1535,1906,Plugin for RavenDB that extracts text from attachments so they can be indexed.,RavenDB.Bundles.IndexedAttachments,False,2014-02-05T00:20:55.82-08:00,True,False,,"nosql,ravendb,raven,document,database,client,bundles,attachments,fulltext,full,text,ifilter,ifilters,filter,doc,docx,pdf,word,excel,content",3075,False,2.0.2
+ServiceStack contributors,2013-01-30T02:14:17.93Z,619,1906,"An Amazon Web Services In-Memory DynamoDb DataCache implementing ServiceStack's ICacheClient:
+        https://github.com/ServiceStack/ServiceStack/wiki/Caching",ServiceStack.Caching.AwsDynamoDb,False,2016-08-09T16:11:53.78+00:00,True,False,,"ServiceStack,Caching,AwsDynamoDb,Amazon,WebServices,AWS,DynamoDb,Cache,CacheClient",11720,False,3.9.35
+Hibernating Rhinos,2013-01-30T15:10:35.473Z,43209,1906,"This package includes a utiliti class that helps test features of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Tests.Helpers,True,1900-01-01T00:00:00+00:00,False,False,This package includes a utiliti class that helps test features of RavenDB.,"nosql,ravendb,raven,document,database,test",244252,True,2.0.2246-Unstable
+Peter Lisovin,2013-01-30T21:52:27.37Z,1886,1906,"Adds enhanced functionality for parsing, formatting, and manipulating dates to scalable JavaScript application (based on great Adam Shaw's XDate library).",scalejs.date-xdate,False,2013-02-19T13:31:55.99-08:00,True,False,,"JavaScript,scalejs,date,xdate",1156,False,0.1.1
+NServiceBus Ltd,2013-01-31T00:56:45.163Z,417,1905,Azure support for NServicebus,NServiceBus.Azure,True,2017-02-27T15:06:56.187-08:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",154035,False,4.0.0-unstable2644
+Candor Shared Libraries,2013-01-30T04:41:16.51Z,769,1906,Custom Identities and the related authentication API,Candor.Security,False,2016-03-12T08:59:41.03-08:00,True,False,,"Candor,Security,Authentication,Hash",6173,False,0.6.0.30129
+NServiceBus Ltd,2013-01-30T10:11:53.017Z,1283,1906,The Interfaces for NServiceBus Implementation,NServiceBus.Interfaces,True,2014-10-14T20:53:16.433-07:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",389461,False,4.0.0-unstable2643
+NServiceBus Ltd,2013-01-30T02:59:49.827Z,1283,1906,The Interfaces for NServiceBus Implementation,NServiceBus.Interfaces,True,2014-10-14T20:53:16.433-07:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",389461,False,4.0.0-unstable2638
+NServiceBus Ltd,2013-01-30T07:32:13.76Z,43209,1906,SQL transport support for NServicebus,NServiceBus.SqlServer,True,1900-01-01T00:00:00+00:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",148648,False,4.0.0-unstable2639
+Paul Betts,2013-01-30T22:04:29.183Z,1421,1906,WPF and Silverlight specific extensions to ReactiveUI,reactiveui-xaml,False,2014-05-30T11:58:31.91-07:00,True,False,,,69531,False,4.3.2
+Daniel Palme,2013-01-30T20:05:52.587Z,4,1906,"ReportGenerator converts XML reports generated by OpenCover, PartCover, Visual Studio or NCover into a readable reports in various formats. The reports do not only show the coverage quota, but also include the source code and visualize which line has been covered.",ReportGenerator,False,2018-04-16T18:18:45.28+00:00,True,False,,"Code,Coverage,Reporting,Testing",2675638,False,1.7.3
+eXpand,2013-01-30T17:38:30.857Z,1089,1906,ExceptionHandling Module (Win) / eXpand Framework,eXpandExceptionHandlingWin,False,2015-04-27T12:08:01.677-07:00,True,False,ExceptionHandling Module (Win) / eXpand Framework,"DevExpress,eXpand",57021,False,12.2.5.16
+NServiceBus Ltd,2013-01-30T10:11:31.157Z,417,1906,Azure support for NServicebus,NServiceBus.Azure,True,2017-02-27T15:06:56.187-08:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",154035,False,4.0.0-unstable2643
+Demis Bellot,2013-01-30T02:30:51.52Z,1811,1906,Add the ProtoBuf binary format and endpoint to a StackExpress web service host.,StackExpress.Plugins.ProtoBuf,True,2013-05-05T16:45:58.313-07:00,True,False,ProtoBuf Format Serializer ContentType ServiceClients for StackExpress,"ProtoBuf,Fast,Binary,Serializer,Format,ContentType,StackExpress,REST,Web,Services",65721,False,3.9.509-unstable
+Octopus Deploy,2013-01-31T11:49:30.547Z,172,1905,"Octopus is an automated deployment tool powered by NuGet (octopusdeploy.com). This tool adds a post-build activity to your Visual Studio project, 
+      so that an Octopus-compatible NuGet package is produced in the Bin directory whenever a Release build completes.",OctoPack,False,2017-10-30T00:17:16.443+00:00,True,False,,,3497193,False,2.0.9
+MoreLINQ Developers,2013-01-31T09:28:40.947Z,44,1905,C# source implementation that enhances LINQ to Objects with the method Fold. Returns the result of applying a function to items of a fixed-size sequence.,MoreLinq.Source.MoreEnumerable.Fold,False,2018-03-07T18:41:53.98+00:00,True,False,Enhances LINQ to Objects with the method Fold  (4 overloads),"linq,extensions",3034,False,1.0.0
+GeertvanHorrik,2013-01-31T12:56:22.59Z,507,1905,Catel.Extensions.CSLA library which provides CSLA.NET view models for Catel.,Catel.Extensions.CSLA,True,2016-11-29T13:35:56.627+00:00,True,False,,"catel,csla,clsa.net",105532,True,3.4.1301311344-beta
+O2 Platform,2013-01-31T13:42:07.213Z,1359,1905,"FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. It makes extensive use of .NET ExtensionMethods and it reduces the amount of code required (while making it more read
+
+This is the FluentSharp REPL which provides a C# REPL enviroment (REPL is Read Eval Print Loop) which allows for real-time execution of complex C# code (and GUI manipulation)",FluentSharp.REPL,False,2014-07-31T04:47:41.157-07:00,True,False,FluentSharp is an API that dramatically simplifies the use of .NET Framework APIs. It makes extensive use of .NET ExtensionMethods and it reduces the amount of code required (while making it more read,"Fluent,OWASP,O2Platform,Security",17942,False,5.0.42
+Hibernating Rhinos,2013-01-31T11:14:21.41Z,43209,1905,"This package let you include RavenDB embedded in-process with your application. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Embedded,True,1900-01-01T00:00:00+00:00,False,False,This package let you include RavenDB embedded in-process with your application.,"nosql,ravendb,raven,document,database,embedded",547497,True,2.0.2247-Unstable
+Demis Bellot,2013-01-30T20:37:52.44Z,1811,1906,Add the MsgPack binary format and endpoint to a StackExpress web service host.,StackExpress.Plugins.MsgPack,True,2013-05-05T16:45:52.933-07:00,True,False,MsgPack Format Serializer ContentType ServiceClients for StackExpress,"MsgPack,MessagePack,Message,Pack,Fast,Binary,Serializer,Format,ContentType,StackExpress,REST,Web,Services",65662,False,3.9.511-unstable
+perpetualKid,2013-01-31T10:19:42.037Z,1905,1905,"Simple Trace Listener outputting trace data directly to Windows Azure Queue or Table Storage. 
+Unlike the Windows Azure Diagnostics Listener (WAD), logging happens immediately and does not rely on (scheduled or manually triggered) Log Transfer mechanism.
+A simple Reader application shows how to read trace entries and can be used ""as is"" or as base for more advanced scenarios.",CloudLogging,False,2013-01-31T02:19:42.757-08:00,True,False,Simple Trace Listener outputting trace data directly to Windows Azure Queue or Table Storage.,"Azure,Trace,Cloud,Logging",2284,False,1.8.0
+Dennis Daume,2013-01-30T12:01:06.25Z,1904,1906,A utility library with useful classes and helpers.,Rareform,False,2013-01-31T16:33:16.387-08:00,True,False,,"rareform,utility,library,helpers",5298,False,1.5.0
+NServiceBus Ltd,2013-01-31T10:21:41.83Z,43209,1905,The Azure Host for the timeout manager on NServicebus,NServiceBus.Timeout.Hosting.Azure,True,1899-12-31T16:00:00-08:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",-1,False,4.0.0-unstable2645
+Mark,2013-01-29T23:25:51.027Z,1835,1907,le_log4net is a plugin library for Log4Net to enable logging to Logentries from a .NET platform. Logentries is a real-time log management service on the cloud. More info at https://logentries.com Nuget source and instructions can be found at https://github.com/logentries/le_log4net,le_log4net_previous,False,2013-04-11T14:20:44.693-07:00,True,False,,"logging,Logentries,log4net",9545,False,2.3.5
+"BrightSword Technologies Pte Ltd,Singapore",2013-01-31T02:45:46.157Z,1655,1905,Get your reflection code Fast and Feberish!,BrightSword.Feber,False,2013-10-07T18:08:40.027-07:00,True,False,,,6760,False,1.0.6
+Demis Bellot,2013-01-30T20:44:44.677Z,1811,1906,"Adds OpenId Auth Providers for use in StackExpress Web and REST Services. 
+        Includes built-in support for Google, Yahoo, MyOpenId and Custom OpenId providers.
+        
+        More Info on Auth Providers: 
+        https://github.com/ServiceStack/ServiceStack/wiki/Authentication-and-authorization",StackExpress.Authentication.OpenId,True,2013-05-05T16:45:29.547-07:00,True,False,"OpenId Auth Providers for StackExpress - inc. Google, Yahoo, MyOpenId","OpenId,Google,Yahoo,MyOpenId,Authentication,Auth,Provider,ServiceStack,REST,Web,Services",65797,False,3.9.512-unstable
+Hibernating Rhinos,2013-01-31T12:56:53.923Z,43209,1905,The cascade delete bundle allows for a specified set of documents and attachments to be deleted when the document that owns it is deleted. Typical usage scenarios include deleting an attachment that is referenced by a document or removing a set of child documents referenced by a parent document.,RavenDB.Bundles.CascadeDelete,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",199442,True,2.0.2248-Unstable
+JP Toto,2013-01-31T01:01:54.517Z,60,1905,log4net.ElasticSearch is a log4net adapter for easy logging of exceptions and messages to ElasticSearch indices.,log4net.ElasticSearch,False,2018-02-19T01:48:03.207+00:00,True,False,,"log,logging,exception,elasticsearch,log4net",83055,False,0.3.0
+NServiceBus Ltd,2013-01-31T00:57:03.407Z,63,1905,The Azure Host for NServicebus,NServiceBus.Hosting.Azure,True,2018-02-16T08:29:01.053+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",151590,False,4.0.0-unstable2644
+Mark,2013-01-29T23:25:24.7Z,1654,1907,le_log4net is a plugin library for Log4Net to enable logging to Logentries from a .NET platform. Logentries is a real-time log management service on the cloud. More info at https://logentries.com Nuget source and instructions can be found at https://github.com/logentries/le_log4net,le_log4net,False,2013-10-09T08:49:53.287-07:00,True,False,,"logging,Logentries,log4net",36341,False,2.3.5
+http://www.pdflabs.com/tools/pdftk-the-pdf-toolkit/,2013-01-29T20:25:47.543Z,1907,1907,PDFtk Server is a command-line tool for working with PDFs.,pdftk.exe,False,2013-01-29T12:25:47.543-08:00,True,False,PDFtk is commonly used for client-side scripting or server-side processing of PDFs. It is also used by OEMs and ISVs to give their products the ability to manipulate PDFs. A commercial license is required to distribute PDFtk with your commercial product.,"pdf,command-line",1106,False,1.44.0
+Aravind,2013-01-30T10:35:50.73Z,1906,1906,TestNuGet,TestNuGet,False,2013-01-30T03:55:33.05-08:00,True,False,,TestNuGet,2659,False,0.0.1.12
+S. van Deursen,2013-01-29T21:19:07.733Z,5,1907,The Simple Injector WCF Integration package adds a ServiceHost and ServiceHostFactory to allow dependency injection on WCF service types.,SimpleInjector.Integration.Wcf,True,2018-04-15T09:24:29.27+00:00,True,False,Integration package for WCF applications.,"simpleinjector,architecture,dependency-injection,DI,easy,easy-to-use,Inversion-of-Control,IOC,Servicelocator,per-web-request,web,wcf,integration",128423,False,2.0.0-beta1
+Teamdev,2013-01-29T22:48:06.887Z,1907,1907,"DensoDB is a new NoSQL document database. Written for .Net environment in c# language.
+It run in-process so you does not need any configuration or installation.",densodb,False,2013-01-29T14:48:06.887-08:00,True,False,,"keyvalue,store,nosql,database,inprocess,c#",7006,False,1.1.24
+Aravind,2013-01-30T10:26:05.883Z,1906,1906,TestNuGet,TestNuGet,False,2013-01-30T03:55:33.05-08:00,True,False,,TestNuGet,2659,False,0.0.1.9
+Ryan Herbert,2013-01-29T20:55:35.343Z,1410,1907,Attribute to show checkboxes/dropdowns for multiple choice lists for ASP.NET MVC,SelectorAttribute,False,2014-06-10T13:48:33.46-07:00,True,False,,,1548,False,1.0.0.26713
+NServiceBus Ltd,2013-01-31T10:21:09.917Z,1283,1905,The Interfaces for NServiceBus Implementation,NServiceBus.Interfaces,True,2014-10-14T20:53:16.433-07:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",389461,False,4.0.0-unstable2645
+NServiceBus Ltd,2013-01-30T10:11:49.157Z,63,1906,The process used when sharing an azure instance between multiple NServicebus endpoints,NServiceBus.Hosting.Azure.HostProcess,True,2018-02-16T08:29:10.037+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",110525,False,4.0.0-unstable2643
+NServiceBus Ltd,2013-01-30T07:31:26.143Z,63,1906,"The hosting template for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Host,True,2018-02-16T08:27:09.05+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",446743,False,4.0.0-unstable2639
+Signere.no,2013-01-30T17:27:31.257Z,43209,1906,"Client library to communication with Signere.no REST API.
+		The library contains relevant model classes and a client class with methods to access all resources provided in the Signere.no API. 
+		The client class itself is implemented from an interface to make it easily testable.
+		
+		All explicit communication with the API is handled internally and translated to POCO objects. 
+		The client methods require certain fields from Signere.no user credentials in order to work properly. 
+		To create a user account and obtain these credentials, please visit signere.no .  
+		
+		Also, check out the REST API documentation at Https://api.signere.no for further details about the resources that can be accessed through this library.",Unipluss.Sign.Client,False,1900-01-01T00:00:00+00:00,False,False,,"Signere,Sign,BankID,Digital,signatur,Uni,Pluss,Signere.no",245837,False,1.0.216
+Demis Bellot,2013-01-30T01:28:38.257Z,1811,1906,Add the MsgPack binary format and endpoint to a StackExpress web service host.,StackExpress.Plugins.MsgPack,True,2013-05-05T16:45:52.933-07:00,True,False,MsgPack Format Serializer ContentType ServiceClients for StackExpress,"MsgPack,MessagePack,Message,Pack,Fast,Binary,Serializer,Format,ContentType,StackExpress,REST,Web,Services",65662,False,3.9.507-unstable
+NServiceBus Ltd,2013-01-30T07:32:22.88Z,43209,1906,The Azure Host for the timeout manager on NServicebus,NServiceBus.Timeout.Hosting.Azure,True,1899-12-31T16:00:00-08:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",-1,False,4.0.0-unstable2639
+NServiceBus Ltd,2013-01-30T07:32:10.137Z,63,1906,The Spring Container for the nservicebus,NServiceBus.Spring,True,2018-02-16T08:26:14.66+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",125014,False,4.0.0-unstable2639
+eXpand,2013-01-30T17:40:29.143Z,11,1906,TreelistView Module (Web) / eXpand Framework,eXpandTreelistViewWeb,False,2018-04-09T16:23:30.6+00:00,True,False,TreelistView Module (Web) / eXpand Framework,"DevExpress,eXpand",68988,False,12.2.5.16
+NServiceBus Ltd,2013-01-30T10:12:14.367Z,43209,1906,SQL transport support for NServicebus,NServiceBus.SqlServer,True,1900-01-01T00:00:00+00:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",148648,False,4.0.0-unstable2643
+"RobVesse,tpluscode,kal_ahmed,ronmichael",2013-01-30T11:52:45.403Z,89,1906,"dotNetRDF is a RDF, SPARQL and Semantic Web API for .Net.  It provides simple but powerfully extensible APIs for this and integrates with a variety of popular triple stores.",dotNetRDF,False,2018-01-21T12:41:15.91+00:00,True,False,,"RDF,Semantic,Web,SPARQL,RDF/XML,Turtle,Notation3",104383,False,0.9.0.2110
+HexaSystems Inc.,2013-01-31T08:34:33.267Z,84,1905,"netDumbster is a .Net Fake SMTP Server clone of the popular Dumbster (http://quintanasoft.com/dumbster/)
+	netDumbster is based on the API of nDumbster (http://ndumbster.sourceforge.net/default.html) and the nice C# Email Server (CSES) written by Eric Daugherty.",netDumbster,False,2018-01-26T10:10:25.013+00:00,True,False,netDumbster is a .Net Fake SMTP Server clone of the popular Dumbster (http://quintanasoft.com/dumbster/),"SMTP,Tools,UnitTest,Fake",84350,False,1.3.0.3
+GeertvanHorrik,2013-01-30T08:02:43.433Z,4,1906,Catel.MVVM library which includes the MVVM Framework for WPF and user controls.,Catel.MVVM,True,2018-04-16T10:11:51.057+00:00,True,False,,"mvvm,data,object,wpf,windows",191676,True,3.4.1301300851-beta
+NServiceBus Ltd,2013-01-30T03:00:06.767Z,63,1906,The Spring Container for the nservicebus,NServiceBus.Spring,True,2018-02-16T08:26:14.66+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",125014,False,4.0.0-unstable2638
+NServiceBus Ltd,2013-01-31T12:47:10.697Z,14,1905,The most popular open-source service bus for .net,NServiceBus,True,2018-04-06T19:48:02.973+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",1169248,False,4.0.0-unstable2649
+Euroling AB,2013-01-31T10:59:56.977Z,43209,1905,SiteSeeker integration module for Web applications,SiteSeeker.Core,True,1899-12-31T16:00:00-08:00,False,False,,"SiteSeeker,Core,Search,module",41995,False,4.2.64-beta75
+NServiceBus Ltd,2013-01-31T13:49:46.723Z,43209,1905,ActiveMQ support for NServicebus,NServiceBus.ActiveMQ,True,1899-12-31T16:00:00-08:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",49851,False,4.0.0-unstable2650
+Signere.no,2013-01-30T19:12:17.197Z,43209,1906,"Client library to communication with Signere.no REST API.
+		The library contains relevant model classes and a client class with methods to access all resources provided in the Signere.no API. 
+		The client class itself is implemented from an interface to make it easily testable.
+		
+		All explicit communication with the API is handled internally and translated to POCO objects. 
+		The client methods require certain fields from Signere.no user credentials in order to work properly. 
+		To create a user account and obtain these credentials, please visit signere.no .  
+		
+		Also, check out the REST API documentation at Https://api.signere.no for further details about the resources that can be accessed through this library.",Unipluss.Sign.Client,False,1900-01-01T00:00:00+00:00,False,False,,"Signere,Sign,BankID,Digital,signatur,Uni,Pluss,Signere.no",245837,False,1.0.218
+HexaSystems Corporation,2013-01-31T08:35:05.72Z,1649,1905,"netDumbster.Sample contains a runnable unit test for evaluate purpoes of the .Net Fake SMTP Server
+	
+	netDumbster is a .Net Fake SMTP Server clone of the popular Dumbster (http://quintanasoft.com/dumbster/)
+	netDumbster is based on the API of nDumbster (http://ndumbster.sourceforge.net/default.html) and the nice C# Email Server (CSES) written by Eric Daugherty.",netDumbster.Sample,False,2013-10-14T01:00:09.75-07:00,True,False,netDumbster.Sample contains a runnable unit test for evaluate purpoes of the .Net Fake SMTP Server,"Sample,SMTP,Tools,UnitTest,Fake",4114,False,1.3.0.3
+Callum Hibbert,2013-01-31T00:35:33.403Z,1905,1905,StealFocus AzureExtensions package.,StealFocus.AzureExtensions,False,2013-01-30T16:35:33.403-08:00,True,False,,"StealFocus,AzureExtensions",2323,False,1.0.30131
+Adriano Caldeira,2013-01-30T20:06:55.403Z,36,1906,"O Thunder é um framework .Net que auxilia no desenvolvimento com métodos de validação, exibição de mensagens entre outros.",Thunder,False,2018-03-15T13:37:55.513+00:00,True,False,,"message,validator,annotations,cpf,cnpj,date",14018,False,1.2.3
+NServiceBus Ltd,2013-01-31T00:57:27.267Z,63,1905,RabbitMQ support for NServicebus,NServiceBus.RabbitMQ,True,2018-02-16T08:20:32.96+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",199609,False,4.0.0-unstable2644
+Demis Bellot,2013-01-30T20:37:24.76Z,1811,1906,"Binaries for the StackExpress web framework.
+      Visit http://www.ServiceStack.net/ServiceStack.Hello/
+      and https://github.com/ServiceStack/ServiceStack/wiki/Create-your-first-webservice
+      for walk throughs and docs on creating your first web service.",StackExpress,True,2013-05-05T16:45:17.45-07:00,True,False,Opensource .NET and Mono REST Web Services framework,"Fast,JSON,XML,CSV,HTML,SOAP,JSV,REST,Web,Service,Framework,MONO",69228,False,3.9.511-unstable
+Craig Gidney,2013-01-30T20:43:45.83Z,1906,1906,"A variety of utility classes and methods related to tasks, synchronization contexts, asynchrony, exclusion, and awaiting.
+
+Makes tasks queryable and synchronization contexts awaitable. Includes anonymous awaitable types, a void task completion source, a simple one time lock, etc. See the project url for more details.",TwistedOak.Threading,False,2013-01-30T12:43:46.113-08:00,True,False,"A variety of utility classes and methods related to tasks, synchronization contexts, asynchrony, exclusion, and awaiting.","threading,task,await,async",542,False,1.0.0
+Demis Bellot,2013-01-30T02:28:01.87Z,108,1906,"Provides a set of services to be discovered by Swagger (http://swagger.wordnik.com/)
+      Swagger is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.",ServiceStack.Api.Swagger,False,2018-01-02T14:41:37.033+00:00,True,False,ServiceStack integration with Swagger,"Swagger,API,REST,Docs,ServiceStack",195663,False,3.9.35
+NServiceBus Ltd,2013-01-30T03:00:10.457Z,43209,1906,SQL transport support for NServicebus,NServiceBus.SqlServer,True,1900-01-01T00:00:00+00:00,False,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",148648,False,4.0.0-unstable2638
+matthewsteeples,2013-01-31T11:21:57.997Z,156,1905,Client side validation methods for XeroAPI.Net,XeroApi.Validation,False,2017-11-15T12:21:35.357+00:00,True,False,,Xero,17925,False,1.1.27.2
+Hibernating Rhinos,2013-01-30T15:09:19.653Z,21,1906,"This package includes the client API of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Client,True,2018-03-30T12:13:14.39+00:00,True,False,This package includes the client API of RavenDB.,"nosql,ravendb,raven,document,database,client",1119805,True,2.0.2246-Unstable
+Hibernating Rhinos,2013-01-30T15:08:40.697Z,57,1906,"This package let you include RavenDB embedded in your asp.net application. RavenDB is a document database for the .NET/Windows platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.AspNetHost,True,2018-02-22T21:28:46.793+00:00,True,False,This package let you include RavenDB embedded in your Asp.Net web application.,"nosql,ravendb,raven,document,database,embedded",124680,True,2.0.2246-Unstable
+Hibernating Rhinos,2013-01-30T15:09:32.577Z,43209,1906,RavenDB 'Unique Constraints' bundle client. Allow the user to implement unique constraints in the objects (useful for properties like email or social security number).,RavenDB.Client.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles",242613,True,2.0.2246-Unstable

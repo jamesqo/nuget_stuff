@@ -1,0 +1,1623 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+"Wiebe Tijsma,Mike Hadlow",2015-04-01T12:27:19.607Z,43209,1115,An adaptor to allow EasyNetQ to use Autofac as its internal IoC container,EasyNetQ.DI.Autofac,False,1900-01-01T00:00:00+00:00,False,False,,"RabbitMQ,Messaging,AMQP,REST,API,Ninject",65613,False,0.47.10.379
+Christof Senn,2015-03-31T22:30:32.357Z,811,1116,EF4 provider for N-Tier Entity Framework.,NTierEntityFramework.Server.EntityFramework4_0,True,2016-01-30T15:48:49.287-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",5309,False,1.6.0-beta001
+RBrookshire,2015-03-31T22:51:04.43Z,1116,1116,My package description.,Skyz.MyPackage,False,2015-03-31T15:52:13.99-07:00,True,False,,,445,False,1.0.0
+Gordon Watts,2015-04-01T12:26:22.137Z,480,1115,Parse XML from sites using the Indico agenda server software written by CERN (see http://indico.cern.ch as well as other sites),IndicoInterface.NET,False,2016-12-25T20:59:39.357-08:00,True,False,,"Agenda,Meeting,CERN,Indico",3573,False,1.3.9
+Microsoft Corporation,2015-03-30T18:23:59.583Z,224,1117,"Classes to serialize, deserialize and validate OData payloads. Enables construction of OData producers and consumers. Targets .NET 4.0, Silverlight 4.0 or .NET Portable Lib with support for .NET 4.0, SL 5.0, Win Phone 8, Win Phone 8.1, and Win 8. Localized for CHS, CHT, DEU, ESN, FRA, ITA, JPN, KOR and RUS.",Microsoft.Data.OData,False,2017-09-08T00:54:23.46+00:00,True,False,"Classes to serialize, deserialize and validate OData JSON payloads.","wcf,data,services,odata,odatalib,edmlib,spatial,ado.net,ef,entity,framework,open,protocol,wcfds,wcfdataservices,dataservices",26524519,True,5.6.4
+Hibernating Rhinos,2015-04-01T08:44:43.327Z,43209,1115,"Note: this package is deprecated. You should use RavenDB.Database package instead.
+
+		This package let you include RavenDB embedded in-process with your application. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Embedded,True,1900-01-01T00:00:00+00:00,False,False,This package let you include RavenDB embedded in-process with your application.,"nosql,ravendb,raven,document,database,embedded",547497,True,3.0.3647-Unstable
+scpnet,2015-03-31T23:29:06.167Z,1032,1116,This package only for test,Microsoft.SCP.Net.Test.SDK,False,2015-06-23T01:04:44.043-07:00,True,False,,Test,5426,False,0.9.4.219
+Serilog Contributors,2015-04-01T11:23:44.27Z,44,1115,Serilog event sink that writes to Splunk.,Serilog.Sinks.Splunk,False,2018-03-07T05:37:22.103+00:00,True,False,,"serilog,logging,splunk",124616,True,1.5.19
+"GeertvanHorrik,OrchestraDevs",2015-04-01T12:43:55.267Z,4,1115,The Ribbon.Microsoft shell for Orchestra based applications.,Orchestra.Shell.Ribbon.Microsoft,True,2018-04-16T15:54:36.213+00:00,True,False,,"mvvm,orchestra,shell,prism,framework,wpf,microsoft,ribbon",38668,True,2.2.0-unstable0016
+Devbridge,2015-04-01T11:06:51.08Z,304,1115,Pages module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.Pages,True,2017-06-20T01:05:31.46-07:00,True,False,,,62282,False,1.11.0-alpha6
+"GeertvanHorrik,OrchestraDevs",2015-04-01T12:42:16.437Z,4,1115,The TaskRunner shell for Orchestra based applications.,Orchestra.Shell.TaskRunner,True,2018-04-16T15:54:09.353+00:00,True,False,,"mvvm,orchestra,shell,prism,framework,wpf,task,runner,taskrunner",38869,True,2.2.0-unstable0016
+Damian Hickey,2015-04-01T10:25:03.847Z,556,1115,"A source code package designed primarily for library and framework authors who want dependency free logging support in their component. Also useful in end applications. Works with .NET 4 and higher.
+
+If you are a library or framework author and you wish to provide logging support in your component there are a  number of options: 1) Depend on a specific logging framework 2) Depend on Common.Logging 3) Implement your own ILog interface and make your consumers wire it up.
+
+Option 1 is not desirable because it forces your users to use a particular framework. Option 2 is not desirable because it will add yet more nuget package dependencies and project references with associated versioning concerns in addition to wiring up. Option 3 is desirable because it is dependency free but requires that your users to remember to write an adapter and wire things up.
+
+This package is a variation of option 3 but will automatically wire things up too.
+- It will add an ILog, ILogProvider etc to YourRootNamespace.Logging
+- ILog is 2 methods to implement in comparison to Common.Logging ILog's ~65 members
+- Using optimized reflection, it transparently supports NLog, Log4Net, EntLib Logging, Serilog and Loupe without any wiring up required by an end user, if the end user simply has a reference to any of these logging frameworks.",LibLog,False,2016-10-11T13:22:13.387-07:00,True,False,A source code package designed primarily for library and framework authors who want dependency free logging support in their component. Also useful in end applications. Works with .NET 4 and portable-net45+win+wpa81+MonoAndroid10+MonoTouch10 and higher.,"logging,framework,component,nlog,log4net,entlib,serilog,loupe,pcl",296492,False,4.0.1
+Icyflash,2015-04-01T07:18:02.493Z,1101,1115,"UCloud C# SDK是调用UCloud API的类库。适用于.Net4.5及以上。
+UCloud API: http://docs.ucloud.cn/api/index.html",UCloudSDK,False,2015-04-14T19:56:18.163-07:00,True,False,,ulcoud,2028,False,1.0.2
+cdmdotnet Limited,2015-04-01T07:32:10.307Z,22,1115,Components for using the Azure ConfigurationManager for the Cqrs package,Cqrs.Azure.ConfigurationManager,False,2018-03-29T02:22:37.65+00:00,True,False,,,30898,False,1.500.476.363
+cdmdotnet Limited,2015-04-01T08:46:37.423Z,22,1115,Components for implementing the I.O.C. via Ninject for the Greg Youngs EventStore Cqrs package,Cqrs.Ninject.EventStore,False,2018-03-29T02:27:26.593+00:00,True,False,,,51461,False,1.500.478.365
+"Chris Patterson,Dru Sellers,Travis Smith",2015-03-31T20:51:43.993Z,1,1116,This library contains extension methods for using Reactive Extensions with MassTransit.,MassTransit.Reactive,True,2018-04-19T17:06:53.56+00:00,True,False,,,20635,False,3.0.3-alpha
+latticework,2015-04-01T08:00:53.277Z,1733,1115,latticework.cs,latticework.cs,False,2013-07-22T14:32:56.307+00:00,True,False,,,312286,False,0.0.844
+cdmdotnet Limited,2015-04-01T08:41:55.987Z,22,1115,Components for implementing the event store using Greg Youngs EventStore for the Cqrs package,Cqrs.EventStore,False,2018-03-29T02:24:06.923+00:00,True,False,,,52128,False,1.500.478.365
+Devbridge,2015-04-01T11:20:00.787Z,546,1115,Google Analytics module for Better CMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.OpenGraphIntegration,True,2016-10-21T07:03:15.95-07:00,True,False,,,18358,False,1.11.0-alpha6
+"CTL Global,Inc.",2015-04-01T00:13:25.487Z,322,1115,"Readers and writers for CSV and fixed-length file formats. Supports both synchronous and asynchronous operation, data annotations, and wicked fast object serialization.",Ctl.Data,False,2017-06-02T14:39:24.137-07:00,True,False,,"ctl,csv,fixed,width,data",7232,False,1.0.5568.32789
+Google Inc.,2015-04-01T12:08:47.997Z,4,1115,"Google APIs Client Library for working with Calendar v3.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/calendar/v3
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/calendar/v3/csharp",Google.Apis.Calendar.v3,False,2018-04-16T08:51:54.567+00:00,True,False,,Google,281026,True,1.9.0.1210
+cdmdotnet Limited,2015-04-01T07:37:20.763Z,22,1115,Components for implementing the I.O.C. via Ninject for the Cqrs package,Cqrs.Ninject,False,2018-03-29T02:25:08.757+00:00,True,False,,,52985,False,1.500.476.363
+"Rob Kayman,Akshay Shah",2015-03-31T20:09:13.737Z,1116,1116,"This project makes it easy to get a hash code that would not collide with other hashcode. It provides for multiplications by prime numbers to get to a non colliding hash code.
+Inspired by 
+http://stackoverflow.com/questions/5450696/c-sharp-generic-hashcode-implementation-for-classes",HashCodeGenerator,False,2015-03-31T13:09:13.737-07:00,True,False,This project provides a series of extensions to be used to Equals comparision.,,588,False,1.0.1
+DD4T Community,2015-03-31T22:26:18.727Z,43209,1116,DD4T MVC3 Support,DD4T.MVC3,True,1899-12-31T16:00:00-08:00,False,False,,"SDLTridion,Tridion,DD4T,MVC3",-1,False,2.0.0-alpha5
+Andrew Chaa,2015-04-01T08:06:02.34Z,1067,1115,"PopOpen is a tiny library that opens a document, find the associated application's process, and push the window handle to top most window, so that users can see the document is opened.",PopOpen,False,2015-05-19T03:52:56.607-07:00,True,False,,"Windows,Open,Win,api",4351,False,0.8.3.2
+cdmdotnet Limited,2015-04-01T08:42:31.453Z,22,1115,Uml templates and a Visual Studio VISX profile package for the lightweight CQRS framework. Using this package you can generate much of the boiler plate code involved in implementing a CQRS project.,Cqrs.Modelling,False,2018-03-29T02:24:22.753+00:00,True,False,,,46400,False,1.500.478.365
+latticework,2015-04-01T08:00:49.727Z,1733,1115,latticework.cs,latticework.cs,False,2013-07-22T14:32:56.307+00:00,True,False,,,312286,False,0.0.845
+Mark Lacomber,2015-04-01T10:13:36.323Z,892,1115,"logentries.core is a library for Logentries to be used by other libraries that extend logging software, such as log4net and NLog. Logentries is a real-time log management service on the cloud. More info at https://logentries.com",logentries.core,False,2015-11-10T04:02:36.693-08:00,True,False,,"logging,Logentries,log",463956,False,2.6.8
+Hibernating Rhinos,2015-04-01T13:01:33.23Z,43209,1115,RavenDB Client MvcIntegration let you include a visual profiler in your ASP.NET MVC application which will show you all the opened sessions and the time took to complete each database request. This can help you when developing with RavenDB.,RavenDB.Client.MvcIntegration,True,1900-01-01T00:00:00+00:00,False,False,A visual profiler for RavenDB that you can use in your ASP.NET MVC application.,"nosql,ravendb,raven,document,database,client,mvc",243184,True,3.0.3649-Unstable
+DD4T Community,2015-03-31T22:28:28.203Z,43209,1116,DD4T Provider for SDL Tridion 2011,DD4T.Providers.SDLTridion2011,True,1899-12-31T16:00:00-08:00,False,False,,"SDLTridion,Tridion,DD4T",-1,False,2.0.0-alpha5
+Envoc,2015-03-31T21:16:18.21Z,360,1116,Spotter.Contracts,Spotter.Contracts,False,2017-04-25T14:35:09.453-07:00,True,False,,,2387,False,1.0.0.13
+DD4T Community,2015-03-31T22:25:15.137Z,43209,1116,DD4T EntLib Logwrapper,DD4T.LogWrappers.EntLib,True,1899-12-31T16:00:00-08:00,False,False,,"SDLTridion,Tridion,DD4T",-1,False,2.0.0-alpha5
+"Sandrino Di Mattia,Toon De Coninck",2015-04-01T07:08:30.087Z,1115,1115,A client SDK for Microsoft Azure Search.,RedDog.Search,True,2015-04-01T00:08:30.133-07:00,True,False,A client SDK for Microsoft Azure Search.,"Microsoft,Azure,Search,Full-Text",48221,False,0.5.3-pre
+James Roland,2015-03-31T21:52:54.297Z,829,1116,"Provides high and low level classes for communicating with an Apache Kafka cluster.  The code is similar to the kafka-python library, but written entirely in C#.",kafka-net,False,2016-01-12T12:43:42.45-08:00,True,False,Native C# client for Apache Kafka.,"C#,Apache,Kafka",52815,False,0.9.0.1
+Microsoft Corporation,2015-03-30T16:42:45.187Z,16,1117,"LINQ-enabled client API for issuing OData queries and consuming OData JSON payloads. Supports OData v4 only. Targets .NET 4.0, and .NET Portable Lib with support for .NET 4.5, Win Phone 8, Win Phone 8.1, and Win 8. Localized for CHS, CHT, DEU, ESN, FRA, ITA, JPN, KOR and RUS.
+OData .NET library is open source at http://odata.codeplex.com",Microsoft.OData.Client,False,2018-04-04T22:13:42.857+00:00,True,False,LINQ-enabled client API for issuing OData queries and consuming OData JSON payloads. Supports OData v4 only.,"wcf,data,services,odata,odatalib,edmlib,spatial,ado.net,ef,entity,framework,open,protocol,wcfds,wcfdataservices,dataservices",739963,True,6.11.0
+Google Inc.,2015-04-01T12:10:15.137Z,4,1115,"Google APIs Client Library for working with Compute v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/compute/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/compute/v1/csharp",Google.Apis.Compute.v1,False,2018-04-16T08:54:58.153+00:00,True,False,,Google,80257,True,1.9.0.560
+Judson White,2015-04-01T06:58:38.14Z,928,1115,"Client library for NSQ, a realtime distributed messaging platform. http://nsq.io",NsqSharp,False,2015-10-05T05:59:44.26+00:00,True,False,"Client library for NSQ, a realtime distributed messaging platform. http://nsq.io","nsq,queue,esb,service,bus,distributed,messaging",7375,False,0.3.3
+"Chris Patterson,Dru Sellers,Travis Smith",2015-03-31T20:45:06.427Z,1,1116,"Automatonymous Support for MassTransit (a distributed application framework for .NET, including support for MSMQ and RabbitMQ).",MassTransit.Automatonymous,True,2018-04-19T17:05:30.743+00:00,True,False,,,55774,False,3.0.3-alpha
+Microsoft Corporation,2015-03-30T18:31:37.073Z,224,1117,"Fully-featured server API for responding to OData queries and consuming/producing OData payloads. Supports OData v3. Targets .NET 4.0 or Silverlight 4.0. Localized for CHS, CHT, DEU, ESN, FRA, ITA, JPN, KOR and RUS.",Microsoft.Data.Services,False,2017-09-08T01:06:39.33+00:00,True,False,,"wcf,data,services,odata,odatalib,edmlib,spatial,ado.net,ef,entity,framework,open,protocol,wcfds,wcfdataservices,dataservices",574210,True,5.6.4
+Team XSockets.NET,2015-04-01T11:29:59.447Z,687,1115,Serilog event sink that dispatches logs to clients based on LogEventLevel.,Serilog.Sinks.XSockets,False,2016-06-02T00:52:21.5-07:00,True,False,,"serilog,logging,xsockets,realtime",5666,True,1.5.4
+DD4T Community,2015-03-31T22:55:36.85Z,388,1116,DD4T Provider for SDL Tridion 2013,DD4T.Providers.SDLTridion2013,True,2017-03-28T13:17:22.573-07:00,True,False,,"SDLTridion,Tridion,DD4T",4170,False,2.0.0-alpha6
+Christian Falch,2015-04-01T08:37:37.26Z,433,1115,NControl is a Xamarin.Forms wrapper control built around the NGraphics library enabling developers to create custom controls without the need for custom renderers.,NControl,False,2017-02-11T11:16:59.263+00:00,True,False,,"xamarin,pcl,xam.pcl,android,xamarin.forms,ios",83465,False,0.3.1
+"Steffen Forkmann,Daniel Mohl,Tomas Petricek,Ryan Riley,Mauricio Scheffer,Phil Trelford",2013-09-23T18:07:16.453Z,43209,1670,"FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.
+
+It currently implements:
+
+* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution
+* Iteratee
+* Purely functional data structures: Queues, double-ended Queues, BottomUpMergeSort, RandomAccessList, Vector, RoseTree, BKTree
+* Validation applicative functor
+* General functions like flip
+* Additional functions around collections
+* Functions to make C# - F# interop easier.",FSharpx.Core,False,1899-12-31T16:00:00-08:00,False,False,"FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.
+
+It currently implements:
+
+* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution
+* Iteratee
+* Purely functional data structures: Queues, double-ended Queues, BottomUpMergeSort, RandomAccessList, Vector, RoseTree, BKTree
+* Validation applicative functor
+* General functions like flip
+* Additional functions around collections
+* Functions to make C# - F# interop easier.","fsharp,csharp,interop,monad,iteratee,validation,bytestring,testing",94458,False,1.8.40
+Google Inc.,2015-04-01T11:49:10.26Z,31,1115,"Google APIs Client Library for working with Admin directory_v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/admin/directory_v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/admin/directory_v1/csharp",Google.Apis.Admin.Directory.directory_v1,False,2018-03-20T08:51:40.167+00:00,True,False,,Google,117954,True,1.9.0.520
+Jean-Michel Perraud,2015-04-01T07:07:14.003Z,1112,1115,A software pattern to organise and manipulate model simulations more consistently across projects,CSIRO.Modelling.Core,False,2015-04-03T17:39:14.587-07:00,True,False,,"Simulation,Modelling,Framework",1199,False,0.7.8
+http://www.albahari.com/nutshell/linqkit.aspx,2015-03-31T21:51:58.197Z,58,1116,LINQKit is a free set of extensions for LINQ to SQL and Entity Framework power users.,LINQKit,False,2018-02-21T17:23:35.983+00:00,True,False,,"LINQ,EF,Entity,Framework",1373084,False,1.1.2
+Geeks ltd,2015-04-01T10:09:50.573Z,5,1115,"M# components, data access tools and extension methods.",MSharp.Framework,False,2018-04-15T10:39:20.087+00:00,True,False,,,124350,False,2.1.0.55
+Microsoft Corporation,2015-04-01T05:07:17.607Z,1053,1115,This project provides Reactive Extensions for JavaScript (RxJS) bindings for HTML DOM objects to abstract over the event binding and Ajax requests.,RxJS-Bridges-HTML,False,2015-06-02T15:15:24.2-07:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable,HTML5,HTML,Ajax,WebSockets,WebWorkers",11921,False,5.0.2
+PlayFab Inc.,2015-03-31T21:30:15.427Z,11,1116,"PlayFab is a backend-as-a-service for games. This package is the full .Net SDK for making web service calls to the PlayFab client, server and admin APIs.",PlayFabAllSDK,False,2018-04-09T20:29:34.83+00:00,True,False,,"video,game,backend,api,playfab,library,sdk,receipt,validation,matchmaking,virtual,good,currency,leaderboard,storage,steam,psn,xbox,unity",48314,False,1.0.31
+DD4T Community,2015-03-31T22:50:50.587Z,43209,1116,DD4T EntLib Logwrapper,DD4T.LogWrappers.EntLib,True,1899-12-31T16:00:00-08:00,False,False,,"SDLTridion,Tridion,DD4T",-1,False,2.0.0-alpha6
+Axel Heer,2015-04-01T10:38:19.347Z,106,1115,"NeinMath is playing around with arbitrary precision integers, written in pure managed code, not using any unsafe stuff, and a bit faster than the build-in .NET type for integers with a few thousand bits.",NeinMath,False,2018-01-04T18:21:19.677+00:00,True,False,,"Math,BigInteger",1897,False,0.1.1
+Serilog Contributors,2015-04-01T10:31:32.73Z,585,1115,Serilog event sink that writes to Log4Net. Merge your new Serilog event stream into your existing log4net infrastructure.,Serilog.Sinks.Log4Net,False,2016-09-11T22:27:52.53-07:00,True,False,,"serilog,logging,log4net",37463,True,1.5.3
+Infitek,2015-04-01T08:11:59.297Z,43209,1115,GenericUoWRepo.Pattern for EF6,GenericUoWRepo.Pattern,False,1899-12-31T16:00:00-08:00,False,False,GenericUoWRepo.Pattern for EF6,,-1,False,1.0.2
+Ben Gale,2015-04-01T09:29:27.68Z,70,1115,Serilog event sink that writes to Azure Event Hubs.,Serilog.Sinks.AzureEventHub,False,2018-02-09T00:49:56.49+00:00,True,False,,"serilog,logging,azure",7511,True,1.5.4
+Microsoft,2015-03-31T21:48:00.32Z,43209,1116,Application Insights StatusMonitor is an implementation package that supports application monitoring management for Application Insights. This package is not intended to be use directly. See STATUSMONITORLINK for more information.,Microsoft.ApplicationInsights.StatusMonitor,True,1899-12-31T16:00:00-08:00,False,False,,"Microsoft,ApplicationInsights,StatusMonitor",-1,False,0.14.0-build20894
+AdDuplex,2015-04-01T10:55:19.377Z,667,1115,AdDuplex (cross-promotion network for Windows Phone and Windows 8 apps) SDK for XAML based Windows Phone apps.,AdDuplexWP8,False,2016-06-22T00:57:32.01-07:00,True,False,,"adduplex,ads,advertising,wp,windows,phone,wp7,wp8",24655,False,9.0.0.4
+Toke Noer,2015-03-31T21:10:39.69Z,1114,1116,"Snarl is a notification engine for Windows, which allows other programs to send notifications to the user in an easy and managed way. For more information about Snarl visit:
+http://www.getsnarl.info/
+
+This .NET interface uses the Win32 API of Snarl and thus only works with Snarl on a local computer. It focuses on being easy to use and efficiency.",SnarlInterface,False,2015-04-02T00:07:24.073-07:00,True,False,A Snarl .NET interface wrapper for easy integration with Snarl from .NET.,,672,False,1.44.0
+cdmdotnet Limited,2015-04-01T08:37:29.483Z,22,1115,A lightweight framework to help write CQRS and Eventsourcing applications in C#,Cqrs,False,2018-03-29T02:21:52.333+00:00,True,False,,,56533,False,1.500.478.365
+Paket team,2015-04-01T08:53:00.877Z,2,1115,A package dependency manager for .NET with support for NuGet packages and GitHub repositories.,Paket.Core,False,2018-04-18T10:23:20.457+00:00,True,False,A package dependency manager for .NET with support for NuGet packages and GitHub repositories.,"nuget,bundler,F#",298246,False,0.38.3
+Geeks ltd,2015-04-01T10:11:00.73Z,914,1115,"Provides Owin security and access to ""Log-in by social networks"" like Google, Facebook and Twitter",MSharp.Owin.Authentication,False,2015-10-19T04:38:22.61-07:00,True,False,,,13878,False,2.1.0.55
+Google Inc.,2015-04-01T11:48:27.32Z,71,1115,"Google APIs Client Library for working with Adexchangeseller v2.0.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/adexchangeseller/v2.0
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/adexchangeseller/v2.0/csharp",Google.Apis.AdExchangeSeller.v2_0,False,2018-02-08T11:08:43.117+00:00,True,False,,Google,13023,True,1.9.0.480
+Oliver Weichhold,2015-04-01T10:17:12.03Z,787,1115,"WebRx integrates concepts of KnockoutJS and AngularJS with ReactiveX for Javascript (rxjs) into a MVC framework that enables developers to create responsive, structured and testable Web-Applications that run in any modern browser.",WebRx,False,2016-02-23T09:08:47.783-08:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable,Data-Binding,Web,UI,SPA",8887,False,0.9.42
+Streamcoders.com,2015-04-01T07:45:29.46Z,361,1115,Is a comprehensive library for handling audio/video codecs and streaming technologies.,Streamcoders.MediaSuite.x86,False,2017-04-24T01:50:45.473-07:00,True,False,,"audio,video,streaming,html5,rtsp,rtp,h.264,vp8",102824,False,4.0.570
+cdmdotnet Limited,2015-04-01T07:44:10.07Z,22,1115,Components for implementing I.O.C. via Ninject for an in process event store.,Cqrs.Ninject.InProcess.EventStore,False,2018-03-29T02:28:07.47+00:00,True,False,,,36239,False,1.500.476.363
+Google Inc.,2015-04-01T12:33:59.58Z,71,1115,"Google APIs Client Library for working with Urlshortener v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/urlshortener/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/urlshortener/v1/csharp",Google.Apis.Urlshortener.v1,False,2018-02-08T11:44:34.34+00:00,True,False,,Google,344410,True,1.9.0.400
+Alex Forbes-Reed,2015-04-01T08:40:18.15Z,43209,1115,Shared stuff for vnext projects. hi xox,0xdeafcafe.Bropack,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.2.0
+TTRider,2015-03-31T23:13:45.263Z,254,1116,Fluid-style SQL statement generator,TTRider.FluidSql.SQLite,True,2017-08-09T02:24:05.343+00:00,True,False,,"SQL,sqlite,fluid",8132,False,1.0.1-alpha
+Google Inc.,2015-04-01T12:08:09.777Z,3,1115,"Google APIs Client Library for working with Books v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/books/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/books/v1/csharp",Google.Apis.Books.v1,False,2018-04-17T08:55:47.42+00:00,True,False,,Google,25052,True,1.9.0.690
+"Rick Strahl,West Wind Technologies",2015-04-01T09:27:53.723Z,165,1115,"A base business layer for Entity Framework Code First (V6 or later). Business classes encapsulates and standarizes CRUD operations, provides hooks for common entity operations and business rule validations management.  
+
+Also provides for various ways to manage the EF Data Context lifetime and provides low level data helpers into ADO.NET for non-supported data operations. 
+        
+It's a great way to isolate your business logic into classes repository like classes to consolidate business logic in relation to your logical data model.",Westwind.Data,False,2017-11-06T09:57:03.577+00:00,True,False,A lightweight business object framework for Entity Framework,,5279,False,2.62.0
+Hibernating Rhinos,2015-04-01T08:41:59.457Z,43209,1115,RavenDB 'Unique Constraints' bundle client. Allow the user to implement unique constraints in the objects (useful for properties like email or social security number).,RavenDB.Client.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles",242613,True,3.0.3647-Unstable
+Studio Nine,2015-04-01T04:10:30.453Z,397,1115,A portable image library,Nine.Imaging,True,2017-03-18T23:38:51.657-07:00,True,False,,"PCL,Portable,Image,processing",2272,False,1.0.39-alpha
+Socres,2015-04-01T08:57:50.403Z,1064,1115,"This package contains attributes for automatically creating all types of fake object, mocks, stubs, etc.
+These attributes combine FakeItEasy, xUnit and AutoFixture.",Socres.FakingEasy,False,2015-05-22T07:30:33.967-07:00,True,False,,,5031,False,1.0.47
+Michael Ganss,2015-04-01T10:19:47.01Z,228,1115,Implements the Aho-Corasick string search algorithm.,AhoCorasick,False,2017-09-04T10:51:42.24+00:00,True,False,,"aho-corasick,aho,corasick,string,search,match,substring",2465,False,1.1.5569.20298
+DD4T Community,2015-03-31T22:52:06.783Z,43209,1116,DD4T MVC3 Support,DD4T.MVC3,True,1899-12-31T16:00:00-08:00,False,False,,"SDLTridion,Tridion,DD4T,MVC3",-1,False,2.0.0-alpha6
+Kenan Hancer,2015-04-01T10:24:12.513Z,1115,1115,A simple job schedule for .NET Methods,Uni.Schedule,False,2015-04-01T03:24:12.513-07:00,True,False,,"WindowsService,WindowsApplication,ConsoleApplication",379,False,1.0.0
+Saravanan,2015-04-01T06:22:41.15Z,43209,1115,Libraries for the CelloSaaS WebApp,CelloSaaS_Libraries,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,4.5.0.1
+OrchestraDevs,2015-03-31T21:04:09.43Z,4,1116,This library provides a xaml implementation around Orc.NuGetExplorer.,Orc.NuGetExplorer.Xaml,True,2018-04-16T14:57:03.947+00:00,True,False,,"orc,nuget,explorer,catel",6409,True,1.0.0-unstable0232
+Devbridge,2015-04-01T09:43:30.607Z,715,1115,The Core Web module for BetterModules. BetterModules is modular architecture supporting web based and business logic modules.,BetterModules.Core.Web,True,2016-05-05T01:04:23.717-07:00,True,False,,,12165,False,1.0.0-rc4
+Devbridge,2015-04-01T11:13:29.843Z,304,1115,API Web module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.Api.Web,True,2017-06-20T01:07:16.307-07:00,True,False,,,55831,False,1.11.0-alpha6
+Matthew Fitzmaurice,2015-04-01T04:20:30.02Z,43209,1115,"GorillaDocs is a collection of assemblies that makes working with Microsoft VSTO easier.
+
+This package contains the code that applies to all Microsoft Office applications.
+
+Specifically:
+- Extension methods
+- WPF helpers
+- Logging classes",GorillaDocs,False,1899-12-31T16:00:00-08:00,False,False,,"VSTO,Microsoft,Office",25680,False,1.0.50
+TTRider,2015-04-01T00:27:18.99Z,254,1115,Fluid-style SQL statement generator,TTRider.FluidSql.SQLite,True,2017-08-09T02:24:05.343+00:00,True,False,,"SQL,sqlite,fluid",8132,False,1.0.3-alpha
+"Chris Patterson,Dru Sellers,Travis Smith",2015-03-31T20:53:23.533Z,1,1116,This library contains testing helpers for use with MassTransit.,MassTransit.TestFramework,True,2018-04-19T17:07:12.497+00:00,True,False,,,38977,False,3.0.3-alpha
+Christof Senn,2015-03-31T23:41:45.053Z,811,1116,T4 code generation templates for N-Tier Entity Framework with EF5. Install this package for MyProject.Server.Domain.Edmx projekt if you target EF5.,NTierEntityFramework.T4.EntityFramework5_0,True,2016-01-30T15:49:32.813-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",4944,False,1.6.0-beta002
+Google Inc.,2015-04-01T12:05:09.223Z,3,1115,"Google APIs Client Library for working with Androidpublisher v1.1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/androidpublisher/v1.1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/androidpublisher/v1.1/csharp",Google.Apis.AndroidPublisher.v1_1,False,2018-04-17T08:54:51.577+00:00,True,False,,Google,20703,True,1.9.0.400
+Microsoft Corporation,2015-04-01T04:49:46.343Z,889,1115,"Reactive Extensions for JavaScript test library, used to write unit tests for complex event processing queries.",RxJS-Testing,False,2015-11-13T13:56:23.66-08:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable",41022,False,2.4.8
+Microsoft Corporation,2015-04-01T04:50:17.183Z,889,1115,Reactive Extensions for JavaScript library with time-based event processing query operations.,RxJS-Time,False,2015-11-13T13:56:28.403-08:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable",45643,False,2.4.8
+Microsoft Corporation,2015-04-01T04:50:53.227Z,889,1115,Reactive Extensions for JavaScript library with virtual time based schedulers.,RxJS-VirtualTime,False,2015-11-13T13:56:30.647-08:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable",35018,False,2.4.8
+OrchestraDevs,2015-03-31T21:06:20.997Z,4,1116,This library makes managing workspaces very easy.,Orc.WorkspaceManagement,True,2018-04-16T15:15:56.163+00:00,True,False,,"orc,workspace,management",14781,True,1.0.0-unstable0090
+Paket team,2015-04-01T08:52:20.05Z,2,1115,A package dependency manager for .NET with support for NuGet packages and GitHub repositories.,Paket,False,2018-04-18T10:23:50.3+00:00,True,False,A package dependency manager for .NET with support for NuGet packages and GitHub repositories.,"nuget,bundler,F#",834968,False,0.38.3
+Google Inc.,2015-04-01T11:47:03.72Z,71,1115,"Google APIs Client Library for working with Adexchangeseller v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/adexchangeseller/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/adexchangeseller/v1/csharp",Google.Apis.AdExchangeSeller.v1,False,2018-02-08T11:08:16.943+00:00,True,False,,Google,18773,True,1.9.0.1550
+Jeremy Clarke,2015-04-01T10:18:35.32Z,87,1115,Serilog event sink that writes to the Windows event log.,Serilog.Sinks.EventLog,False,2018-01-23T10:36:25.52+00:00,True,False,,"serilog,logging,eventlog,event,log,viewer",157806,True,1.5.3
+Microsoft Corporation,2015-04-01T04:47:29.94Z,889,1115,Reactive Extensions for JavaScript library with join patterns event processing query operations.,RxJS-JoinPatterns,False,2015-11-13T13:56:08.587-08:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable",39771,False,2.4.8
+TTRider,2015-04-01T00:26:35.77Z,254,1115,Fluid-style SQL statement generator,TTRider.FluidSql.dll,True,2017-08-09T02:23:12.623+00:00,True,False,,SQL,22917,False,1.0.3-alpha
+Hibernating Rhinos,2015-04-01T12:02:02.043Z,57,1115,"This package let you include RavenDB embedded in your asp.net application. RavenDB is a document database for the .NET/Windows platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.AspNetHost,True,2018-02-22T21:28:46.793+00:00,True,False,This package let you include RavenDB embedded in your Asp.Net web application.,"nosql,ravendb,raven,document,database,embedded",124680,True,2.5.2958-Unstable
+"Steffen Forkmann,Daniel Mohl,Tomas Petricek,Ryan Riley,Mauricio Scheffer,Phil Trelford",2013-09-03T06:41:15.25Z,43209,1690,"FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.
+
+It currently implements:
+
+* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution
+* Iteratee
+* Purely functional data structures: Queues, double-ended Queues, BottomUpMergeSort, RandomAccessList, Vector, RoseTree, BKTree
+* Validation applicative functor
+* General functions like flip
+* Additional functions around collections
+* Functions to make C# - F# interop easier.",FSharpx.Core,False,1899-12-31T16:00:00-08:00,False,False,"FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.
+
+It currently implements:
+
+* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution
+* Iteratee
+* Purely functional data structures: Queues, double-ended Queues, BottomUpMergeSort, RandomAccessList, Vector, RoseTree, BKTree
+* Validation applicative functor
+* General functions like flip
+* Additional functions around collections
+* Functions to make C# - F# interop easier.","fsharp,csharp,interop,monad,iteratee,validation,bytestring,testing",94458,False,1.8.38
+Niclas Olofsson,2015-04-01T09:06:06.887Z,77,1115,MiNET - a Minecraft PocketEdition Server,MiNET,False,2018-02-02T22:13:57.123+00:00,True,False,,"MiNET,Plugin,API,MCPE,Minecraft,PocketEdition",143965,False,1.0.292
+Ryan Roberts,2015-03-31T21:11:51.09Z,878,1116,FSharp interface to dotnetrdf,FSharp.RDF,False,2015-11-24T07:53:53.78-08:00,True,False,,,28441,False,1.0.33
+NServiceBus Ltd,2015-03-31T23:18:08.41Z,14,1116,Acceptance tests for nservicebus core functionality,NServiceBus.AcceptanceTests.Sources,False,2018-04-06T19:48:16.957+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",23141,False,5.0.4
+Devbridge,2015-04-01T11:08:40.01Z,304,1115,Blog module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.Installation,True,2017-06-20T01:05:53.13-07:00,True,False,,,59479,False,1.11.0-alpha6
+Microsoft Corporation,2015-04-01T04:49:08.143Z,889,1115,Reactive Extensions for JavaScript main library used to express complex event processing queries over observable sequences.,RxJS-Main,False,2015-11-13T13:56:18.467-08:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable",64012,False,2.4.8
+Google Inc.,2015-04-01T12:11:36.457Z,8,1115,"Google APIs Client Library for working with Content v2.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/content/v2
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/content/v2/csharp",Google.Apis.ShoppingContent.v2,False,2018-04-12T08:54:13.57+00:00,True,False,,Google,32797,True,1.9.0.410
+Devbridge,2015-04-01T11:12:49.567Z,304,1115,API Abstractions module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.Api.Abstractions,True,2017-06-20T01:07:04.57-07:00,True,False,,,68701,False,1.11.0-alpha6
+"Jan Karger (punker76),Steven Kirk,mitchell.jon",2015-04-01T09:31:27.817Z,158,1115,A Drag'n'Drop Framework for WPF,gong-wpf-dragdrop,True,2017-11-13T22:30:45.043+00:00,True,False,,"WPF,UI,Framework,Lib,Toolkit,.NET,XAML",109675,False,1.0.0-ALPHA001
+TTRider,2015-04-01T00:34:37.987Z,254,1115,Fluid-style SQL statement generator,TTRider.FluidSql.SQLite,True,2017-08-09T02:24:05.343+00:00,True,False,,"SQL,sqlite,fluid",8132,False,1.0.4-alpha
+xBIM team,2015-04-01T07:28:56.897Z,526,1115,"xBIM Exchange is the COBie, COBieLite and other Exchange based Xbim libraries. These suppport interoperation with other BIM Standards.
+xBIM is an Open Source Toolkit for developing IFC based applications (BuildingSmart Data model). 
+It provides full support for reading and writing geometry, topology and data in accordance with the Ifc2x3 schema.
+xBIM reads and writes Ifc, IfcXMl and IfcZip formats.
+The xBIM project provides packages to convert IFC models to COBie spreadsheets in both UK and US cultures as well as a range of 3D viewing controls for use with Windows forms, WPF, WEBGL and OpenGL platforms.
+IOS and Android versions are under development.",Xbim.Exchange,True,2016-11-09T21:09:05.703-08:00,True,False,The .Net toolkit for developing BIM applications based on the IFC standard. Essential support for the Ifc data model,"BIM,IFC,IfcXml,IfcZip,COBie,COBieLite,.Net,C#,BuildingSmart",10707,False,3.0.42-Prerelease
+Twilio,2015-03-31T21:20:26.917Z,43209,1116,Twilio Lookups REST API helper library,Twilio.Lookups,False,1899-12-31T16:00:00-08:00,False,False,,"REST,SMS,voice,telephony,phone,twilio,twiml",-1,False,1.0.1
+Hibernating Rhinos,2015-04-01T08:36:47.51Z,43209,1115,The cascade delete bundle allows for a specified set of documents and attachments to be deleted when the document that owns it is deleted. Typical usage scenarios include deleting an attachment that is referenced by a document or removing a set of child documents referenced by a parent document.,RavenDB.Bundles.CascadeDelete,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",199442,True,3.0.3647-Unstable
+"Michiel van Oudheusden,elmah.io",2015-04-01T11:37:28.87Z,190,1115,Serilog event sink that writes to the elmah.io service.,Serilog.Sinks.ElmahIO,False,2017-10-12T08:40:13.147+00:00,True,False,,"serilog,logging,elmah,elmah.io,error",24601,True,1.5.5
+PlayFab Inc.,2015-03-31T21:12:17.38Z,11,1116,"PlayFab is a backend-as-a-service for games. This package is the full .Net SDK for making web service calls to the PlayFab client, server and admin APIs.",PlayFabAllSDK,False,2018-04-09T20:29:34.83+00:00,True,False,,"video,game,backend,api,playfab,library,sdk,receipt,validation,matchmaking,virtual,good,currency,leaderboard,storage,steam,psn,xbox,unity",48314,False,1.0.30
+TTRider,2015-04-01T00:33:48.93Z,254,1115,Fluid-style SQL statement generator,TTRider.FluidSql.dll,True,2017-08-09T02:23:12.623+00:00,True,False,,SQL,22917,False,1.0.4-alpha
+Ryan Roberts,2015-04-01T09:20:32.603Z,878,1115,FSharp interface to dotnetrdf,FSharp.RDF,False,2015-11-24T07:53:53.78-08:00,True,False,,,28441,False,1.0.34
+saguiitay,2015-04-01T06:35:51.413Z,851,1115,DropboxRestAPI is a C# client for Dropbox service through its RESTful API.,DropboxRestAPI,False,2015-12-21T08:34:07.893+00:00,True,False,,"Dropbox,HttpClient,REST",16275,False,1.0.8
+"GeertvanHorrik,OrchestraDevs",2015-04-01T12:43:06.317Z,4,1115,The Ribbon.Fluent shell for Orchestra based applications.,Orchestra.Shell.Ribbon.Fluent,True,2018-04-16T15:54:22.93+00:00,True,False,,"mvvm,orchestra,shell,prism,framework,wpf,fluent,ribbon",36233,True,2.2.0-unstable0016
+"Jeff Doolittle,Mike Hadlow",2015-04-01T12:28:39.833Z,43209,1115,An adaptor to allow EasyNetQ to use StructureMap as its internal IoC container,EasyNetQ.DI.StructureMap,False,1900-01-01T00:00:00+00:00,False,False,,"RabbitMQ,Messaging,AMQP,REST,API,StructureMap",48530,False,0.47.10.379
+Microsoft Corporation,2015-03-30T18:29:34.057Z,224,1117,"LINQ-enabled client API for issuing OData queries and consuming OData payloads. Supports OData v3. Targets .NET 4.0, Silverlight 4.0 or .NET Portable Lib with support for .NET 4.5, Win Phone 8, Win Phone 8.1, and Win 8. Localized for CHS, CHT, DEU, ESN, FRA, ITA, JPN, KOR and RUS.",Microsoft.Data.Services.Client,False,2017-09-08T01:04:02.557+00:00,True,False,,"wcf,data,services,odata,odatalib,edmlib,spatial,ado.net,ef,entity,framework,open,protocol,wcfds,wcfdataservices,dataservices",17089551,True,5.6.4
+Christof Senn,2015-03-31T22:32:06.893Z,811,1116,N-Tier Entity Framework Silverlight client base library and T4 code generation templates.,NTierEntityFramework.Silverlight,True,2016-01-30T15:49:07.827-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",5197,False,1.6.0-beta001
+Serilog Contributors,2015-04-01T09:48:17.14Z,1100,1115,Serilog event sink that writes to a CouchDB database over HTTP.,Serilog.Sinks.CouchDB,False,2015-04-16T00:30:53.607-07:00,True,False,,"serilog,logging,couchdb",23696,True,1.5.6
+Kazunori Sakamoto,2015-04-01T09:49:16.427Z,487,1115,Code2Xml is a parser collection that inter-converts source code and XML-based concrete syntax trees (CSTs) supporting multiple programming languages.,Code2Xml,False,2016-12-18T22:09:25.04-08:00,True,False,,"Library,Parser,XML,Programming,Language",24387,False,3.2.3.95
+Pavel Svarc,2015-03-31T21:10:15.503Z,665,1116,Abstraction for  cpodesign nlogger implementation,CpoDesign.Logger.Interface,False,2016-06-24T14:53:59.833-07:00,True,False,,"cpodesign,nlog,interface",1196,False,0.0.1
+Devbridge,2015-04-01T11:15:16.33Z,304,1115,Users API module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.Users.Api,True,2017-06-20T01:07:51.62-07:00,True,False,,,41150,False,1.11.0-alpha6
+Mackey Kinard,2015-04-01T08:27:17.393Z,43209,1115,Ajax Gateway Native Client Library - 2.4.0.1,Ajax.Gateway.Client,False,1899-12-31T16:00:00-08:00,False,False,The gateway client supports native binary AJAX-RPC 1.0 content types,"Owin,Ajax,Gateway,Google,Web,Toolkit,GWT,JSON,RPC",4589,False,2.4.0.1
+T-Alex Software,2015-03-31T20:48:03.51Z,20,1116,TAlex.SEOStats Library,TAlex.SEOStats,False,2018-03-31T05:23:36.18+00:00,True,False,,"SEO,Stats,Alexa,Rank,Google,PR",829,False,1.0.1
+Saravanan,2015-04-01T06:17:49.15Z,43209,1115,AuthServer Client libraries for the CelloSaaS Web Application,CelloSaaS_AuthServer_Clients,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.1.0
+Jason Jarrett,2015-03-31T21:00:50.29Z,557,1116,TypeScript Definitions (d.ts) for qunit. Generated based off the DefinitelyTyped repository [git commit: 016a970de58cc46310c75bd8f0c10642c4f44609]. http://github.com/DefinitelyTyped,qunit.TypeScript.DefinitelyTyped,False,2016-10-10T05:02:33.837-07:00,True,False,,"TypeScript,JavaScript",136535,False,0.1.7
+Google Inc.,2015-04-01T12:10:57.407Z,4,1115,"Google APIs Client Library for working with Container v1beta1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/container/v1beta1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/container/v1beta1/csharp",Google.Apis.Container.v1beta1,False,2018-04-16T08:55:23.637+00:00,True,False,,Google,5918,True,1.9.0.140
+"Chris Patterson,Dru Sellers,Travis Smith",2015-03-31T20:48:18.283Z,1,1116,"An integration library for NHibernate support in MassTransit, a distributed application framework for .NET, including support for MSMQ and RabbitMQ.",MassTransit.NHibernate,True,2018-04-19T17:06:31.09+00:00,True,False,,,40536,False,3.0.3-alpha
+Devbridge,2015-04-01T11:09:20.223Z,304,1115,A publishing focused and developer friendly .NET Open source CMS.,BetterCMS,True,2017-06-20T01:06:04.18-07:00,True,False,,,75448,False,1.11.0-alpha6
+OrchestraDevs,2015-03-31T21:00:17.28Z,43209,1116,This library automatically sends crash reports so they can be analyzed later to improve the software.,Orc.CrashReporting,True,1899-12-31T16:00:00-08:00,False,False,,"orc,support,package",-1,False,1.0.0-unstable0038
+OrchestraDevs,2015-03-31T21:08:03.497Z,4,1116,Automation library of Squirrel to update with different channels.,Orc.Squirrel.Xaml,True,2018-04-16T15:06:04.843+00:00,True,False,,"squirrel,orcomp,update,xaml,wpf",4318,True,1.0.0-unstable0035
+"Chris Patterson,Dru Sellers,Travis Smith",2015-03-31T20:51:01.92Z,1,1116,"This integration library adds support for RabbitMQ to MassTransit, a distributed application framework for .NET, including support for MSMQ and RabbitMQ.",MassTransit.RabbitMQ,True,2018-04-19T17:06:48.2+00:00,True,False,,,507752,False,3.0.3-alpha
+Google Inc.,2015-04-01T12:14:17.39Z,3,1115,"Google APIs Client Library for working with Doubleclicksearch v2.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/doubleclicksearch/v2
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/doubleclicksearch/v2/csharp",Google.Apis.Doubleclicksearch.v2,False,2018-04-17T09:00:03.963+00:00,True,False,,Google,26192,True,1.9.0.430
+NServiceBus Ltd,2015-03-31T23:18:42.663Z,14,1116,Container tests for nservicebus core functionality,NServiceBus.ContainerTests.Sources,False,2018-04-06T19:48:31.507+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",14565,False,5.0.4
+Kevin Mees,2015-04-01T12:39:32.867Z,949,1115,Run a bower command as a MSBuild task,MSBuild.Bower,False,2015-09-14T10:31:09.687-07:00,True,False,,"Bower,MSBuild",26002,False,0.4.4
+Pavel Svarc,2015-03-31T21:05:01.513Z,669,1116,ApplicationInformation exposes access to dll to get version of dll currently running,CpoDesign.Components.ApplicationInformation,False,2016-06-20T10:09:57.197-07:00,True,False,,cpodesign,833,False,0.1.0
+"Chris Patterson,Dru Sellers,Travis Smith",2015-03-31T20:46:46.983Z,1,1116,"This integration library adds support for Castle Windsor to MassTransit, a distributed application framework for .NET, including support for MSMQ and RabbitMQ.",MassTransit.CastleWindsor,True,2018-04-19T17:05:52.68+00:00,True,False,,,77613,False,3.0.3-alpha
+Microsoft Corporation,2015-04-01T04:45:41.997Z,889,1115,Reactive Extensions for JavaScript library with binding operationrs.,RxJS-Binding,False,2015-11-13T13:55:54.037-08:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable",53948,False,2.4.8
+Jean-Sébastien Goupil,2015-04-01T02:10:04.907Z,59,1115,Communicates with QuickBooks Web Connector.,QbSync.WebConnector,False,2018-02-20T17:18:57.097+00:00,True,False,Web service to talk with Web Connector from QuickBooks to sync with QuickBooks Desktop.,"quickbooks,qbxml,webconnector,webservice,service",3474,False,0.0.2.2
+Borter,2014-01-11T21:36:25.48Z,303,1560,A framework for dependency injection using a container.,Inject,False,2017-06-21T06:10:23.847-07:00,True,False,,"dependency,injection,DI,container",2226,False,1.8.0
+Google Inc.,2015-04-01T12:15:01.973Z,689,1115,"Google APIs Client Library for working with Drive v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/drive/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/drive/v1/csharp",Google.Apis.Drive.v1,False,2016-05-31T03:53:23.667-07:00,True,False,,Google,16554,True,1.9.0.1210
+Hibernating Rhinos,2015-04-01T08:37:20.42Z,43209,1115,This bundle aims to allow the user to implement unique constraints in the objects (usefull for properties like email or social security number).,RavenDB.Bundles.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",215470,True,3.0.3647-Unstable
+Hibernating Rhinos,2015-04-01T12:58:32.07Z,21,1115,"This package includes the client API of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Client,True,2018-03-30T12:13:14.39+00:00,True,False,This package includes the client API of RavenDB.,"nosql,ravendb,raven,document,database,client",1119805,True,3.0.3649-Unstable
+"ejsmith,bniemyjski",2015-03-31T21:42:56.17Z,141,1116,Pluggable foundation blocks for building distributed apps.,Foundatio.AzureStorage,False,2017-11-30T15:15:57.557+00:00,True,False,,"Queue,Messaging,Message,Bus,Locking,Lock,Distributed,File,Storage,Blob,Jobs,Metrics,Stats,Azure,Redis,StatsD",62616,True,1.0.170
+Gordon Watts,2015-03-31T22:39:53.857Z,480,1116,Light weight and very simple iCal parser. Parses only VEVENT objects.,iCal.PCL,False,2016-12-25T19:59:07.803-08:00,True,False,,"iCal,Portable,PCL",1875,False,1.0.4
+"Steffen Forkmann,Daniel Mohl,Tomas Petricek,Ryan Riley,Mauricio Scheffer,Phil Trelford",2013-09-16T11:22:55.007Z,43209,1677,"FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.
+
+It currently implements:
+
+* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution
+* Iteratee
+* Purely functional data structures: Queues, double-ended Queues, BottomUpMergeSort, RandomAccessList, Vector, RoseTree, BKTree
+* Validation applicative functor
+* General functions like flip
+* Additional functions around collections
+* Functions to make C# - F# interop easier.",FSharpx.Core,False,1899-12-31T16:00:00-08:00,False,False,"FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.
+
+It currently implements:
+
+* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution
+* Iteratee
+* Purely functional data structures: Queues, double-ended Queues, BottomUpMergeSort, RandomAccessList, Vector, RoseTree, BKTree
+* Validation applicative functor
+* General functions like flip
+* Additional functions around collections
+* Functions to make C# - F# interop easier.","fsharp,csharp,interop,monad,iteratee,validation,bytestring,testing",94458,False,1.8.39
+Hibernating Rhinos,2015-04-01T08:39:08.357Z,43209,1115,RavenDB 'Authorization' bundle client extend RavenDB and add document level permissions.,RavenDB.Client.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles,authorization",168504,True,3.0.3647-Unstable
+Xero,2015-04-01T01:07:25.127Z,8,1115,"This is a .NET SDK library, written in C#, used to communicate with the Xero API. See https://github.com/XeroAPI/Xero-Net for more information.",Xero.API.SDK,False,2018-04-12T23:20:32.62+00:00,True,False,,"xero,api,sdk",43740,False,2.0.2
+Socres,2015-04-01T08:58:23.37Z,1064,1115,"This package contains several helper for Asp.Net.
+These include:
+  - CultureBasedActionAttribute
+
+For a full list of helpers, look at the project site.",Socres.Web.Mvc,False,2015-05-22T07:31:02.177-07:00,True,False,,,1786,False,1.0.47
+Google Inc.,2015-04-01T12:31:07.55Z,31,1115,"Google APIs Client Library for working with Sqladmin v1beta4.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/sqladmin/v1beta4
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/sqladmin/v1beta4/csharp",Google.Apis.SQLAdmin.v1beta4,False,2018-03-20T09:09:52.087+00:00,True,False,,Google,22050,True,1.9.0.20
+cdmdotnet Limited,2015-04-01T08:51:06.807Z,22,1115,Components for implementing the I.O.C. via Ninject for the Mongo Cqrs package,Cqrs.Ninject.Mongo,False,2018-03-29T02:28:21.88+00:00,True,False,,,50672,False,1.500.478.365
+Microsoft Corporation,2015-04-01T04:43:35.573Z,889,1115,Reactive Extensions for JavaScript libraries.,RxJS-All,False,2015-11-13T13:55:38.653-08:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable",39889,False,2.4.8
+Serilog Contributors,2015-04-01T10:49:18.733Z,43209,1115,Serilog event sink that writes to NLog. Merge your new Serilog event stream into your existing NLog infrastructure.,Serilog.Sinks.NLog,False,1899-12-31T16:00:00-08:00,False,False,,"serilog,logging,NLog",59384,True,1.5.3
+Saravanan,2015-04-01T06:20:26.617Z,43209,1115,AuthServer ThirdParty Dlls,AuthServer_ThirdParty_Dlls,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,4.5.0.1
+Ryan Roberts,2015-04-01T12:39:47.93Z,886,1115,Convert git history and uncomitted working area to w3c provenence,NICE.git2prov,False,2015-11-16T01:55:27.21-08:00,True,False,,,8979,False,1.0.6
+cdmdotnet Limited,2015-04-01T07:39:31.797Z,22,1115,Components for implementing the I.O.C. via Ninject for Azure DocumentDb Cqrs package,Cqrs.Ninject.Azure.DocumentDb,True,2018-03-29T02:25:50.197+00:00,True,False,,,43101,False,1.500.476.363-preview
+Jean-Michel Perraud,2015-04-01T07:07:14.003Z,1112,1115,A software pattern to organise and manipulate model simulations more consistently across projects,CSIRO.Modelling.Core,False,2015-04-03T17:39:14.587-07:00,True,False,,"Simulation,Modelling,Framework",1199,False,0.7.8
+Hibernating Rhinos,2015-04-01T12:08:37.673Z,43209,1115,RavenDB 'Authorization' bundle client extend RavenDB and add document level permissions.,RavenDB.Client.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles,authorization",168504,True,2.5.2958-Unstable
+DD4T Community,2015-03-31T22:54:53.75Z,388,1116,DD4T Provider for SDL Tridion 2011 SP1,DD4T.Providers.SDLTridion2011sp1,True,2017-03-28T13:13:58.093-07:00,True,False,,"SDLTridion,Tridion,DD4T",4274,False,2.0.0-alpha6
+Google Inc.,2015-04-01T12:18:45.597Z,71,1115,"Google APIs Client Library for working with Fusiontables v2.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/fusiontables/v2
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/fusiontables/v2/csharp",Google.Apis.Fusiontables.v2,False,2018-02-08T11:28:57.407+00:00,True,False,,Google,6908,True,1.9.0.20
+"Jeff Doolittle,Mike Hadlow",2015-04-01T12:28:05.013Z,43209,1115,An adaptor to allow EasyNetQ to use Ninject as its internal IoC container,EasyNetQ.DI.Ninject,False,1900-01-01T00:00:00+00:00,False,False,,"RabbitMQ,Messaging,AMQP,REST,API,Ninject",58459,False,0.47.10.379
+Martino Bordin,2015-04-01T11:46:35.24Z,1101,1115,A .NET wrapper to generate charts using the popular Chart.Js library (http://www.chartjs.org).,Chart.Mvc,False,2015-04-15T06:08:54.293+00:00,True,False,,"chart,chartjs,mvc",29887,False,1.0.0.1
+yojimbo87,2015-04-01T09:42:53.13Z,535,1115,ArangoDB-NET is C# based driver for .NET/mono framework which implements ArangoDB REST API.,ArangoDB-NET,False,2016-11-01T02:22:51.553-07:00,True,False,,"arango,arangodb,database,document,graph,C#,.net,mono",6681,False,0.9.2
+Jason Jarrett,2015-03-31T21:01:25.547Z,505,1116,TypeScript Definitions (d.ts) for underscore. Generated based off the DefinitelyTyped repository [git commit: 016a970de58cc46310c75bd8f0c10642c4f44609]. http://github.com/DefinitelyTyped,underscore.TypeScript.DefinitelyTyped,False,2016-11-30T16:02:01.663-08:00,True,False,,"TypeScript,JavaScript",243785,False,0.5.4
+"Steffen Forkmann,Daniel Mohl,Tomas Petricek,Ryan Riley,Mauricio Scheffer,Phil Trelford",2013-09-24T09:11:54.363Z,43209,1669,"FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.
+
+It currently implements:
+
+* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution
+* Iteratee
+* Purely functional data structures: Queues, double-ended Queues, BottomUpMergeSort, RandomAccessList, Vector, RoseTree, BKTree
+* Validation applicative functor
+* General functions like flip
+* Additional functions around collections
+* Functions to make C# - F# interop easier.",FSharpx.Core,False,1899-12-31T16:00:00-08:00,False,False,"FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.
+
+It currently implements:
+
+* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution
+* Iteratee
+* Purely functional data structures: Queues, double-ended Queues, BottomUpMergeSort, RandomAccessList, Vector, RoseTree, BKTree
+* Validation applicative functor
+* General functions like flip
+* Additional functions around collections
+* Functions to make C# - F# interop easier.","fsharp,csharp,interop,monad,iteratee,validation,bytestring,testing",94458,False,1.8.41
+"ejsmith,bniemyjski",2015-03-31T21:18:34.467Z,141,1116,Pluggable foundation blocks for building distributed apps.,Foundatio.AzureServiceBus,False,2017-11-30T15:05:26.42+00:00,True,False,,"Queue,Messaging,Message,Bus,Locking,Lock,Distributed,File,Storage,Blob,Jobs,Metrics,Stats,Azure,Redis,StatsD",55292,True,1.0.168
+NServiceBus Ltd,2015-03-31T23:16:43.147Z,14,1116,The most popular open-source service bus for .net,NServiceBus,False,2018-04-06T19:48:02.973+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",1169248,False,5.0.4
+Limilabs,2015-01-17T11:55:38.003Z,38,1189,"Mail.dll is a .NET IMAP component, POP3 component and SMTP component library. Includes an email and MIME parser. Allows sending, receiving and processing email messages in .NET applications. Includes SSL and TLS support along with OAuth and DKIM capabilities. Includes secure MIME (S/MIME) parser for processing encrypted and signed emails. Contains iCal, vCard and Outlook's msg files parsers. Decodes winmail.dat attachments.",Mail.dll,False,2018-03-13T12:29:10.04+00:00,True,False,".NET IMAP, POP3 and SMTP client library and email parser.","imap,pop3,email,mail,smtp,mime,smime,dkim,msg",60817,False,3.0.15017.1203
+NServiceBus Ltd,2015-03-31T23:12:07.627Z,63,1116,The Spring Container for the nservicebus,NServiceBus.Spring,False,2018-02-16T08:26:14.66+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",125014,False,4.0.10
+Chillisoft,2015-04-01T08:09:27.707Z,365,1115,Habanero.Faces,Habanero.Faces,True,2017-04-19T21:02:45.06-07:00,True,False,,,165609,False,3.9.394-prerelease
+Oliver Weichhold,2015-04-01T12:15:09.163Z,787,1115,"WebRx integrates concepts of KnockoutJS and AngularJS with ReactiveX for Javascript (rxjs) into a MVC framework that enables developers to create responsive, structured and testable Web-Applications that run in any modern browser.",WebRx,False,2016-02-23T09:08:47.783-08:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable,Data-Binding,Web,UI,SPA",8887,False,0.9.45
+P. van der Velde,2015-04-01T08:16:34.533Z,520,1115,Provides build scripts and build tasks that can be used to execute the build of a .NET project.,nBuildKit.MsBuild,False,2016-11-16T01:17:24.537-08:00,True,False,,,14262,False,0.4.6
+NServiceBus Ltd,2015-03-31T23:13:20.647Z,63,1116,"The testing for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Testing,False,2018-02-16T08:24:31.56+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",326207,False,4.0.10
+Keith Hall,2015-04-01T05:38:35.9Z,1100,1115,"Small, simple C# animation library built using the reactive extensions framework, utilizing Robert Penner's easing functions.  Does not make use of reflection, instead allowing the caller to use a function/monad to update their desired object.  Contains methods for animating Windows Forms Controls.
+
+Includes full source code and a LINQPad sample.",ReactiveAnimation,False,2015-04-16T01:20:34.017-07:00,True,False,C# animation library built using the reactive extensions framework,"animation,tween,linqpad-samples,Reactive,Rx,LINQ,Observable,Events",3763,False,1.0.10
+"Chris Patterson,Dru Sellers,Travis Smith",2015-03-31T20:54:14.53Z,1,1116,"This integration library adds support for Unity to MassTransit, a distributed application framework for .NET, including support for MSMQ and RabbitMQ.",MassTransit.Unity,True,2018-04-19T17:07:16.997+00:00,True,False,,,46272,False,3.0.3-alpha
+Mackey Kinard,2015-04-01T08:29:09.907Z,43209,1115,Ajax Gateway Remote Service Library - 2.4.0.1,Ajax.Gateway,False,1899-12-31T16:00:00-08:00,False,False,The gateway supports standard JSON-RPC 2.0 and the extended AJAX-RPC 1.0 content types,"Owin,Ajax,Gateway,Google,Web,Toolkit,GWT,JSON,RPC",8726,False,2.4.0.1
+Storstadens IT Konsult AB,2015-04-01T08:45:32.42Z,24,1115,Solis Search indexer library for EPiServer 8 and higher,SolisSearch.EPiServer8,False,2018-03-27T13:18:37.967+00:00,True,False,,"lucene,search,apache,solr,episerver",2112,False,2.0.101.437
+Hibernating Rhinos,2015-04-01T12:19:00.45Z,43209,1115,"This package includes a utility class that helps test features of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Tests.Helpers,True,1900-01-01T00:00:00+00:00,False,False,This package includes a utility class that helps test features of RavenDB.,"nosql,ravendb,raven,document,database,test",244252,True,2.5.2958-Unstable
+Google Inc.,2015-04-01T12:21:39.08Z,25,1115,"Google APIs Client Library for working with Gmail v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/gmail/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/gmail/v1/csharp",Google.Apis.Gmail.v1,False,2018-03-26T08:53:21.547+00:00,True,False,,Google,244559,True,1.9.0.270
+Google Inc.,2015-04-01T12:30:22.617Z,31,1115,"Google APIs Client Library for working with Sqladmin v1beta3.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/sqladmin/v1beta3
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/sqladmin/v1beta3/csharp",Google.Apis.SQLAdmin.v1beta3,False,2018-03-20T09:09:36.24+00:00,True,False,,Google,13606,True,1.9.0.310
+Andrew Cherry,2015-04-01T00:56:54.99Z,382,1115,Functional Graphs for F#,Hekate,False,2017-04-03T04:57:30.89-07:00,True,False,,"functional,graphs,inductive,fgl,f#",23330,False,0.4.0
+Devbridge,2015-04-01T11:19:17.36Z,546,1115,Google Analytics module for Better CMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.GoogleAnalytics,True,2016-10-21T07:03:07.373-07:00,True,False,,,21395,False,1.11.0-alpha6
+Christof Senn,2015-03-31T22:34:40.95Z,811,1116,N-Tier Entity Framework WCF RIA Services base library and T4 code generation templates.,NTierEntityFramework.WcfRia,True,2016-01-30T15:49:44.513-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",4763,False,1.6.0-beta001
+Christof Senn,2015-03-31T23:42:23.673Z,811,1116,T4 code generation templates for N-Tier Entity Framework with EF6. Install this package for MyProject.Server.Domain.Edmx projekt if you target EF6.,NTierEntityFramework.T4.EntityFramework6_0,True,2016-01-30T15:49:38.947-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",5968,False,1.6.0-beta002
+"Mike Hadlow,Contributors (see GitHub repo)",2015-04-01T12:30:54.853Z,43209,1115,"EasyNetQ is a simple, opinionated .NET API for RabbitMQ",EasyNetQ,False,1900-01-01T00:00:00+00:00,False,False,,"RabbitMQ,Messaging,AMQP",762356,False,0.47.10.379
+Qsys Sverige AB,2015-04-01T08:34:05.877Z,11,1115,WCF client module,QuickPick.WcfClientModule,False,2018-04-09T15:00:14.74+00:00,True,False,,"Apollo,Apollo13,QuickPick,QP,Qsys",31274,False,1.0.15040.18
+Windward Studios,2015-03-31T19:14:44.977Z,43209,1116,Windward Studios' DotNetEngine,DotNetEngine,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,13.1.28.2
+"Chris Patterson,Dru Sellers,Travis Smith",2015-03-31T20:45:55.123Z,1,1116,"Azure Service Bus support for MassTransit (a distributed application framework for .NET, including support for MSMQ and RabbitMQ).",MassTransit.AzureServiceBus,True,2018-04-19T17:05:48.51+00:00,True,False,,,116548,False,3.0.3-alpha
+Google Inc.,2015-04-01T12:28:08.993Z,71,1115,"Google APIs Client Library for working with Resourceviews v1beta1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/resourceviews/v1beta1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/resourceviews/v1beta1/csharp",Google.Apis.Resourceviews.v1beta1,False,2018-02-08T11:37:16.327+00:00,True,False,,Google,7454,True,1.9.0.150
+Andrew Chaa,2015-04-01T08:06:02.34Z,1067,1115,"PopOpen is a tiny library that opens a document, find the associated application's process, and push the window handle to top most window, so that users can see the document is opened.",PopOpen,False,2015-05-19T03:52:56.607-07:00,True,False,,"Windows,Open,Win,api",4351,False,0.8.3.2
+NServiceBus Ltd,2015-03-31T23:08:38.777Z,63,1116,"The hosting template for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Host,False,2018-02-16T08:27:09.05+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",446743,False,4.0.10
+"ejsmith,bniemyjski",2015-03-31T21:17:15.893Z,141,1116,Pluggable foundation blocks for building distributed apps.,Foundatio,False,2017-11-30T14:31:02.107+00:00,True,False,,"Queue,Messaging,Message,Bus,Locking,Lock,Distributed,File,Storage,Blob,Jobs,Metrics,Stats,Azure,Redis,StatsD",99666,True,1.0.168
+Michiel van Oudheusden,2015-04-01T10:37:37.643Z,176,1115,Serilog event sink that writes to the Logentries.com service.,Serilog.Sinks.Logentries,False,2017-10-26T21:45:35.733+00:00,True,False,,"serilog,logging,Logentries,error",112791,True,1.5.6
+NServiceBus Ltd,2015-03-31T23:14:10.95Z,63,1116,The Unity Container for the nservicebus,NServiceBus.Unity,False,2018-02-16T08:26:32.347+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",180078,False,4.0.10
+Microsoft Corporation,2015-03-30T16:42:45.187Z,16,1117,"LINQ-enabled client API for issuing OData queries and consuming OData JSON payloads. Supports OData v4 only. Targets .NET 4.0, and .NET Portable Lib with support for .NET 4.5, Win Phone 8, Win Phone 8.1, and Win 8. Localized for CHS, CHT, DEU, ESN, FRA, ITA, JPN, KOR and RUS.
+OData .NET library is open source at http://odata.codeplex.com",Microsoft.OData.Client,False,2018-04-04T22:13:42.857+00:00,True,False,LINQ-enabled client API for issuing OData queries and consuming OData JSON payloads. Supports OData v4 only.,"wcf,data,services,odata,odatalib,edmlib,spatial,ado.net,ef,entity,framework,open,protocol,wcfds,wcfdataservices,dataservices",739963,True,6.11.0
+Christof Senn,2015-03-31T23:41:05.953Z,811,1116,T4 code generation templates for N-Tier Entity Framework with EF4. Install this package for MyProject.Server.Domain.Edmx projekt if you target EF4.,NTierEntityFramework.T4.EntityFramework4_0,True,2016-01-30T15:49:26.77-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",4967,False,1.6.0-beta002
+DD4T Community,2015-03-31T22:52:43.607Z,119,1116,DD4T MVC4 Support,DD4T.MVC4,True,2017-12-22T13:47:01.093+00:00,True,False,,"SDLTridion,Tridion,DD4T,MVC4",6562,False,2.0.0-alpha6
+Borter,2015-03-08T14:03:03.043Z,303,1139,A framework for dependency injection using a container.,Inject,False,2017-06-21T06:10:23.847-07:00,True,False,,,2226,False,1.9.0
+cdmdotnet Limited,2015-04-01T08:45:59.26Z,22,1115,Components for implementing I.O.C. requirements via Ninject for using Azure Servuce Bus as the event bus.,Cqrs.Ninject.Azure.ServiceBus.EventBus,False,2018-03-29T02:26:43.153+00:00,True,False,,,26900,False,1.500.478.365
+Robert Moore,2015-04-01T09:36:30.293Z,31,1115,Serilog event sink that writes to Azure Table Storage over HTTP.,Serilog.Sinks.AzureTableStorage,False,2018-03-20T06:28:21.777+00:00,True,False,,"serilog,logging,azure",215315,True,1.5.3
+Eskat0n,2015-04-01T05:42:13.137Z,1115,1115,"Tiny configuration object binder. NArms.Config allows to read appSettings section values from .config files as regular object properties. Various validations and parsing rules can be applied on them. This library is not intended to replace Custom Sections, its only purpose is to boost development of applications with many configuration parameters and to preserve .config file consistensy when editing it manually at runtime.",NArms.Config,False,2015-03-31T22:42:13.137-07:00,True,False,,"Configuration,EnvironmentManagement,Utility,NArms",1014,False,1.2.0
+Nick Van Eeckhout,2015-04-01T11:03:08.147Z,444,1115,Serilog event sink that writes to a RavenDB database.,Serilog.Sinks.RavenDB,False,2017-01-31T15:06:38.923-08:00,True,False,,"serilog,logging,ravendb",21302,True,1.5.3
+Borter,2015-03-31T22:13:43.677Z,299,1116,A framework for building modular applications.,Conductor,False,2017-06-25T00:50:25.697+00:00,True,False,,,1836,False,2.7.0
+"Jakub Pachansky,Tim Watson",2015-04-01T09:51:19.57Z,947,1115,RabbitMQ Consumer for R.MessageBus.,R.MessageBus.Client.RabbitMQ,False,2015-09-16T02:05:41.18-07:00,True,False,,"R.MessageBus,RMessageBus,R,MessageBus,Client,Client.RabbitMQ,RabbitMQ,Messaging,Message,Bus,Service",10117,False,2.0.0
+"Steffen Forkmann,Daniel Mohl,Tomas Petricek,Ryan Riley,Mauricio Scheffer,Phil Trelford",2015-03-31T23:51:28.277Z,43209,1116,"FSharpx.Extras implements general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.It currently implements:* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution* Validation applicative functor* General functions like flip* Additional functions around collections* Functions to make C# - F# interop easier.",FSharpx.Extras.Extras,False,1899-12-31T16:00:00-08:00,False,False,"FSharpx.Extras implements general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.It currently implements:* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution* Validation applicative functor* General functions like flip* Additional functions around collections* Functions to make C# - F# interop easier.","fsharp,csharp,interop,monad,iteratee,validation,bytestring,testing",-1,False,1.10.0
+"CTL Global,Inc.",2015-04-01T01:52:54.147Z,322,1115,"Readers and writers for CSV and fixed-length file formats. Supports both synchronous and asynchronous operation, data annotations, and wicked fast object serialization.",Ctl.Data,False,2017-06-02T14:39:24.137-07:00,True,False,,"ctl,csv,fixed,width,data",7232,False,1.0.5568.35775
+Robin Krom,2015-04-01T10:55:14.853Z,14,1115,"Dapplo.Windows has native code for accessing Windows, e.g getting the size/title/location of a window or monitoring the title changes of windows.",Dapplo.Windows,False,2018-04-06T10:28:28.65+00:00,True,False,A library with code to natively access windows information.,"windows,native,desktop",16001,True,0.1.5
+Toke Noer,2015-03-31T21:10:39.69Z,1114,1116,"Snarl is a notification engine for Windows, which allows other programs to send notifications to the user in an easy and managed way. For more information about Snarl visit:
+http://www.getsnarl.info/
+
+This .NET interface uses the Win32 API of Snarl and thus only works with Snarl on a local computer. It focuses on being easy to use and efficiency.",SnarlInterface,False,2015-04-02T00:07:24.073-07:00,True,False,A Snarl .NET interface wrapper for easy integration with Snarl from .NET.,,672,False,1.44.0
+Vitti Luciano,2015-03-31T21:15:41.683Z,1085,1116,NHibernate Session Manager,NHibernate.SessionManager,False,2015-05-01T15:32:41.237-07:00,True,False,,,661,False,1.0.0
+TTRider,2015-03-31T23:13:45.263Z,254,1116,Fluid-style SQL statement generator,TTRider.FluidSql.SQLite,True,2017-08-09T02:24:05.343+00:00,True,False,,"SQL,sqlite,fluid",8132,False,1.0.1-alpha
+"5MStock,Inc.",2015-04-01T06:53:47.68Z,1114,1115,5mstock azure utils lib,LatemLib.Azure,False,2015-04-02T07:36:41.273-07:00,True,False,,"Latem,AzureStorage",500,False,1.0.0
+NServiceBus Ltd,2015-03-31T23:08:00.963Z,63,1116,The CastleWindsor Container for the nservicebus,NServiceBus.CastleWindsor,False,2018-02-16T08:25:50.44+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",198695,False,4.0.10
+"Thomas Petricek,David Thomas,Ryan Riley,Steffen Forkmann",2015-03-31T22:44:13.857Z,422,1116,Async extensions for F#,FSharpx.Async,False,2017-02-22T02:14:47.917-08:00,True,False,Async extensions for F#,"F#,async,fsharpx",48782,False,1.12.0
+Anshoo Arora,2015-03-31T21:48:07.467Z,1096,1116,"NUnitOrange creates masonry style HTML reports for NUnit. Its a simple Console application that creates easy to use, attractive dashboard. It shows the XML output from NUnit in a presentable manner with charts, graphs and tables.",NUnitOrange,False,2015-04-20T10:55:45.5-07:00,True,False,,"NUnit,Report,HTML,Orange,NUnitOrange",5773,False,2.0.1
+Google Inc.,2015-04-01T12:19:33.343Z,2,1115,"Google APIs Client Library for working with GamesConfiguration v1configuration.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/gamesConfiguration/v1configuration
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/gamesConfiguration/v1configuration/csharp",Google.Apis.GamesConfiguration.v1configuration,False,2018-04-18T09:02:21.007+00:00,True,False,,Google,17632,True,1.9.0.140
+Michiel van Oudheusden,2015-04-01T11:10:29.417Z,135,1115,Serilog event sink that writes to the Raygun.io service.,Serilog.Sinks.Raygun,False,2017-12-06T20:43:46+00:00,True,False,,"serilog,logging,Raygun.io,error",46702,True,1.5.3
+Mark Lacomber,2015-04-01T10:13:36.323Z,892,1115,"logentries.core is a library for Logentries to be used by other libraries that extend logging software, such as log4net and NLog. Logentries is a real-time log management service on the cloud. More info at https://logentries.com",logentries.core,False,2015-11-10T04:02:36.693-08:00,True,False,,"logging,Logentries,log",463956,False,2.6.8
+NServiceBus Ltd,2015-03-31T23:17:23.723Z,14,1116,Acceptance tests for nservicebus core functionality,NServiceBus.AcceptanceTesting,False,2018-04-06T19:48:08.207+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",28263,False,5.0.4
+"Serilog Contributors,Continuous IT Pty Ltd",2015-04-01T07:53:01.61Z,7,1115,Serilog sink that writes to the Seq event server over HTTP/S.,Serilog.Sinks.Seq,False,2018-04-13T00:19:03.207+00:00,True,False,,"serilog,seq,structured,logging",898538,True,1.5.6
+Google Inc.,2015-04-01T11:59:19.87Z,583,1115,"Google APIs Client Library for working with Adsense v1.2.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/adsense/v1.2
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/adsense/v1.2/csharp",Google.Apis.AdSense.v1_2,False,2016-09-14T01:22:05.323-07:00,True,False,,Google,20146,True,1.9.0.1550
+Christof Senn,2015-03-31T22:33:06.71Z,811,1116,T4 code generation templates for N-Tier Entity Framework with EF4. Install this package for MyProject.Server.Domain.Edmx projekt if you target EF4.,NTierEntityFramework.T4.EntityFramework4_0,True,2016-01-30T15:49:26.77-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",4967,False,1.6.0-beta001
+cdmdotnet Limited,2015-04-01T07:33:10.323Z,22,1115,Components for implementing the event store using Azure DocumentDB for the Cqrs package,Cqrs.Azure.DocumentDb,True,2018-03-29T02:22:52.62+00:00,True,False,,,46224,False,1.500.476.363-preview
+saguiitay,2015-04-01T06:35:51.413Z,851,1115,DropboxRestAPI is a C# client for Dropbox service through its RESTful API.,DropboxRestAPI,False,2015-12-21T08:34:07.893+00:00,True,False,DropboxRestAPI is a C# client for Dropbox service through its RESTful API.,"Dropbox,HttpClient,REST",16275,False,1.0.8
+Vitti Luciano,2015-03-31T21:15:41.683Z,1085,1116,NHibernate Session Manager,NHibernate.SessionManager,False,2015-05-01T15:32:41.237-07:00,True,False,,,661,False,1.0.0
+Chillisoft,2015-04-01T08:07:49.467Z,365,1115,Habanero,Habanero,True,2017-04-19T21:01:31.993-07:00,True,False,,,167113,False,3.9.394-prerelease
+DD4T Community,2015-03-31T22:51:24.523Z,43209,1116,DD4T Log4NET Logwrapper,DD4T.LogWrappers.Log4NET,True,1899-12-31T16:00:00-08:00,False,False,,"SDLTridion,Tridion,DD4T",-1,False,2.0.0-alpha6
+Victor Baybekov,2015-04-01T08:45:09.887Z,436,1115,Ractor.Persistence is a collection of APIs for POCOs and blobs persistence and a strongly typed Redisclient based on excellent Stackexchange.Redis library.The typed Redis client has strong opinion about keys schema inside Redis and uses a concept of root/owner objects to store dependent objects/collections. POCO/database persistor is implemented on top of Entity Framework 6 (with automatic migrations enabled for non-destructive schema changes). Blob persistor saves large data objects to files or S3.,Ractor.Persistence,False,2017-02-07T20:39:32.56-08:00,True,False,Ractor.Persistence is a collection of APIs for POCOs and blobs persistence and a strongly typed Redisclient based on excellent Stackexchange.Redis library.,"F#,.NET,fsharp,redis,akka,distributed,JVM,interop,persistence,DB,database,shards",5055,False,0.3.5
+Dmitri Rechetilov,2015-04-01T09:40:35.637Z,290,1115,"Conversion between data types. Envisaged as a possible alternative to the Universal Type Converter http://www.codeproject.com/Articles/248440/Universal-Type-Converter, with the provision for default values, and some extra features.",Transformations,False,2017-07-04T13:14:49.947+00:00,True,False,"Conversion between data types. Envisaged as an alternative to the Universal Type Converter, with additional provision for setting the default values, DataTable to object list conversion, etc.","typeconverter,typeconversion,typeconverting,conversion,converting,converter,convert,convertible,type,types,universal",22241,False,0.0.20
+cdmdotnet Limited,2015-04-01T08:43:13.457Z,22,1115,Components for implementing repositories using Mongo for the Cqrs package,Cqrs.Mongo,False,2018-03-29T02:24:39.427+00:00,True,False,,,51888,False,1.500.478.365
+anhdn,2015-04-01T02:54:26.23Z,990,1115,"App360SDK provides easiest way to integrate user management and payment methods (including sms, phone card and e-banking) into your application.",App360SDK,False,2015-08-03T20:41:46.177-07:00,True,False,,,5505,False,1.1.7
+NServiceBus Ltd,2015-03-31T23:20:29.67Z,393,1116,Support code to implement profiles in a NServiceBus host,NServiceBus.Hosting.Profiles.Sources,False,2017-03-23T11:20:59.803-07:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",2409,False,5.0.4
+TamNT17,2015-04-01T06:26:49.987Z,1115,1115,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,com.test.math,False,2015-03-31T23:26:49.987-07:00,True,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.",,528,False,1.0.1
+cdmdotnet Limited,2015-04-01T07:33:51.347Z,22,1115,Components for using the Azure ServiceBus as a message or command bus for the Cqrs package,Cqrs.Azure.ServiceBus,False,2018-03-29T02:23:07.543+00:00,True,False,,,31068,False,1.500.476.363
+Google Inc.,2015-04-01T12:12:24.78Z,43209,1115,"Google APIs Client Library for working with Dataflow v1beta3.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/dataflow/v1beta3
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/dataflow/v1beta3/csharp",Google.Apis.Dataflow.v1beta3,False,1900-01-01T00:00:00+00:00,False,False,,Google,-1,False,1.9.0.90
+OrchestraDevs,2015-03-31T21:02:49.573Z,7,1116,WPF UI to help users build collection filters.,Orc.FilterBuilder,True,2018-04-13T11:10:55.353+00:00,True,False,,"wpf,silverlight,orcomp,collection,filter,builder",19537,True,1.4.0-unstable0080
+Google Inc.,2015-04-01T12:25:37.13Z,31,1115,"Google APIs Client Library for working with Pagespeedonline v2.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/pagespeedonline/v2
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/pagespeedonline/v2/csharp",Google.Apis.Pagespeedonline.v2,False,2018-03-20T09:05:15.34+00:00,True,False,,Google,9398,True,1.9.0.20
+Pavel Svarc,2015-04-01T12:45:57.11Z,1115,1115,Package description,CpoDesign.ApplicationInformation,False,2015-04-01T05:45:57.11-07:00,True,False,,"CpoDesign,ApplicationInformation",654,False,1.0.1
+RBrookshire,2015-03-31T22:52:13.99Z,1116,1116,My package description.,Skyz.MyPackage,False,2015-03-31T15:52:13.99-07:00,True,False,,,445,False,1.0.1
+Hibernating Rhinos,2015-04-01T13:00:46.997Z,43209,1115,RavenDB 'Authorization' bundle client extend RavenDB and add document level permissions.,RavenDB.Client.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles,authorization",168504,True,3.0.3649-Unstable
+Christof Senn,2015-03-31T23:37:29.407Z,811,1116,EF4 provider for N-Tier Entity Framework.,NTierEntityFramework.Server.EntityFramework4_0,True,2016-01-30T15:48:49.287-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",5309,False,1.6.0-beta002
+Christof Senn,2015-03-31T22:31:33.453Z,811,1116,EF6 provider for N-Tier Entity Framework.,NTierEntityFramework.Server.EntityFramework6_0,True,2016-01-30T15:49:01.233-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",6316,False,1.6.0-beta001
+Christof Senn,2015-03-31T23:39:39.317Z,811,1116,N-Tier Entity Framework Silverlight client base library and T4 code generation templates.,NTierEntityFramework.Silverlight,True,2016-01-30T15:49:07.827-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",5197,False,1.6.0-beta002
+Judson White,2015-04-01T06:58:38.14Z,928,1115,"Client library for NSQ, a realtime distributed messaging platform. http://nsq.io",NsqSharp,False,2015-10-05T05:59:44.26+00:00,True,False,"Client library for NSQ, a realtime distributed messaging platform. http://nsq.io","nsq,queue,esb,service,bus,distributed,messaging",7375,False,0.3.3
+Christof Senn,2015-03-31T23:40:28.843Z,811,1116,T4 code generation templates for N-Tier Entity Framework.,NTierEntityFramework.T4,True,2016-01-30T15:49:20.733-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",6400,False,1.6.0-beta002
+Microsoft Corporation,2015-04-01T04:46:52.553Z,889,1115,Reactive Extensions for JavaScript library with experimental operators.,RxJS-Experimental,False,2015-11-13T13:56:04.087-08:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable",38693,False,2.4.8
+Hibernating Rhinos,2015-04-01T08:48:21.65Z,43209,1115,"This package includes a utility class that helps test features of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Tests.Helpers,True,1900-01-01T00:00:00+00:00,False,False,This package includes a utility class that helps test features of RavenDB.,"nosql,ravendb,raven,document,database,test",244252,True,3.0.3647-Unstable
+Saar,2015-04-01T05:56:46.447Z,681,1115,Object Model for LiveSDK for WinRT.,LiveSDK.ObjectModel,False,2016-06-07T23:11:52.55-07:00,True,False,,"Live,SDK,Windows,Runtime",951,False,0.1.0
+Qsys Sverige AB,2015-04-01T08:32:37.017Z,11,1115,QuickPick One server component for Apollo 13,QuickPick.One,False,2018-04-09T14:56:23.34+00:00,True,False,,"Apollo,Apollo13,Quickpick,Qsys",131366,False,1.0.15040.33
+"Jakub Pachansky,Tim Watson",2015-04-01T09:49:41.36Z,947,1115,"A simple, easy to use asynchronous messaging framework for .NET.",R.MessageBus,False,2015-09-16T02:05:04.533-07:00,True,False,,"MessageBus,R,R.MessageBus,RabbitMQ,RMessageBus,Messaging,Message,Bus,Service",10985,False,2.0.0
+Chillisoft,2015-04-01T08:10:36.95Z,365,1115,Habanero.Testability,Habanero.Testability,True,2017-04-19T21:02:28.027-07:00,True,False,,,160014,False,3.9.394-prerelease
+cdmdotnet Limited,2015-04-01T07:46:40.41Z,22,1115,Components for implementing the I.O.C. via Ninject for the Mongo Cqrs package,Cqrs.Ninject.Mongo,False,2018-03-29T02:28:21.88+00:00,True,False,,,50672,False,1.500.476.363
+Google Inc.,2015-04-01T12:06:35.31Z,2,1115,"Google APIs Client Library for working with Appstate v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/appstate/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/appstate/v1/csharp",Google.Apis.AppState.v1,False,2018-04-18T08:57:41.323+00:00,True,False,,Google,27153,True,1.9.0.780
+Google Inc.,2015-04-01T12:34:44.813Z,2,1115,"Google APIs Client Library for working with YoutubeAnalytics v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/youtubeAnalytics/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/youtubeAnalytics/v1/csharp",Google.Apis.YouTubeAnalytics.v1,False,2018-04-18T09:06:54.503+00:00,True,False,,Google,30534,True,1.9.0.510
+Vitti Luciano,2015-03-31T21:15:41.683Z,1085,1116,NHibernate Session Manager,NHibernate.SessionManager,False,2015-05-01T15:32:41.237-07:00,True,False,,,661,False,1.0.0
+TEXNOLOGIK-YANGILIKLAR,2015-04-01T06:06:29.76Z,578,1115,mBrothers Common Library,mBrothers.Common,False,2016-09-19T04:40:30.96-07:00,True,False,,,2639,False,1.0.6
+Matthew Fitzmaurice,2015-04-01T04:24:03.23Z,43209,1115,"GorillaDocs is a collection of assemblies that makes working with Microsoft VSTO easier.
+
+This package contains the code that applies to all Microsoft Office applications.
+
+Specifically:
+- Extension methods",GorillaDocs.OutlookSecurity,False,1899-12-31T16:00:00-08:00,False,False,,"VSTO,Microsoft,Office,Outlook",3861,False,1.0.9
+NServiceBus Ltd,2015-03-31T23:09:59.667Z,1283,1116,The Interfaces for NServiceBus Implementation,NServiceBus.Interfaces,False,2014-10-14T20:53:16.433-07:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",389461,False,4.0.10
+Stas Sultanov,2015-04-01T12:49:41.327Z,877,1115,Contains types that extends .NET Framework.,SXN.Core,False,2015-11-25T08:02:14.5-08:00,True,False,,Extensions,12721,False,4.2.401.1
+MorseCode Software,2015-03-31T21:50:54.873Z,1094,1116,Provides .NET framework extensions.,MorseCode.FrameworkExtensions,False,2015-04-22T01:00:01.887-07:00,True,False,,,3589,False,1.0.27
+Devbridge,2015-04-01T11:13:57.95Z,304,1115,API module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.Api,True,2017-06-20T01:07:27.4-07:00,True,False,,,55639,False,1.11.0-alpha6
+Keith Hall,2015-04-01T05:54:35.317Z,1100,1115,"Small, simple C# animation library built using the reactive extensions framework, utilizing Robert Penner's easing functions.  Does not make use of reflection, instead allowing the caller to use a function/monad to update their desired object.  Contains methods for animating Windows Forms Controls.
+
+Includes full source code and a LINQPad sample.",ReactiveAnimation,False,2015-04-16T01:20:34.017-07:00,True,False,C# animation library built using the reactive extensions framework,"animation,tween,linqpad-samples,Reactive,Rx,LINQ,Observable,Events",3763,False,1.0.11
+Mark Lacomber,2015-04-01T10:15:08.73Z,892,1115,logentries.log4net is a plugin library for Log4Net to enable logging to Logentries from a .NET platform. Logentries is a real-time log management service on the cloud. More info at https://logentries.com Nuget source and instructions can be found at https://github.com/logentries/le_log4net,logentries.log4net,False,2015-11-10T04:03:05.79-08:00,True,False,,"logging,Logentries,log4net",253044,False,2.6.4
+Hibernating Rhinos,2015-04-01T12:57:25.067Z,43209,1115,This bundle aims to allow the user to implement unique constraints in the objects (usefull for properties like email or social security number).,RavenDB.Bundles.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",215470,True,3.0.3649-Unstable
+Chillisoft,2015-04-01T08:10:17.383Z,365,1115,Habanero.Smooth,Habanero.Smooth,True,2017-04-20T04:03:20.277+00:00,True,False,,,160445,False,3.9.394-prerelease
+TTRider,2015-03-31T23:06:18.737Z,254,1116,Fluid-style SQL statement generator,TTRider.FluidSql.dll,True,2017-08-09T02:23:12.623+00:00,True,False,,SQL,22917,False,1.0.0-alpha
+Storstadens IT Konsult AB,2015-04-01T08:46:48.14Z,24,1115,The admin gui plugin for Solis Search for Umbraco,SolisSearch.Umbraco.Web,False,2018-03-27T13:19:19.093+00:00,True,False,,"lucene,search,apache,solr,umbraco",2019,False,2.0.101.437
+Microsoft Corporation,2015-04-01T04:45:03.287Z,889,1115,Reactive Extensions for JavaScript library with async-based event processing query operations.,RxJS-BackPressure,False,2015-11-13T13:55:49.69-08:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable",9421,False,2.4.8
+Christof Senn,2015-03-31T23:36:00.573Z,811,1116,Common base library N-Tier Entity Framework.,NTierEntityFramework.Common,True,2016-01-30T15:48:37.78-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",6886,False,1.6.0-beta002
+Michael Ganss,2015-04-01T10:24:26.383Z,228,1115,Implements the Aho-Corasick string search algorithm.,AhoCorasick,False,2017-09-04T10:51:42.24+00:00,True,False,,"aho-corasick,aho,corasick,string,search,match,substring",2465,False,1.1.5569.20484
+Google Inc.,2015-04-01T12:22:23.167Z,71,1115,"Google APIs Client Library for working with Groupsmigration v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/groupsmigration/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/groupsmigration/v1/csharp",Google.Apis.GroupsMigration.v1,False,2018-02-08T11:30:24.97+00:00,True,False,,Google,11316,True,1.9.0.400
+Google Inc.,2015-04-01T12:02:59.243Z,10,1115,"Google APIs Client Library for working with Analytics v3.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/analytics/v3
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/analytics/v3/csharp",Google.Apis.Analytics.v3,False,2018-04-10T08:50:51.09+00:00,True,False,,Google,263404,True,1.9.0.1140
+Microsoft Corporation,2015-04-01T04:44:22.823Z,889,1115,Reactive Extensions for JavaScript library with async-based event processing query operations.,RxJS-Async,False,2015-11-13T13:55:45.363-08:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable",17298,False,2.4.8
+cdmdotnet Limited,2015-04-01T08:50:16.077Z,22,1115,Components for implementing I.O.C. via Ninject for an in process event store.,Cqrs.Ninject.InProcess.EventStore,False,2018-03-29T02:28:07.47+00:00,True,False,,,36239,False,1.500.478.365
+Microsoft Corporation,2015-03-30T16:46:38.71Z,16,1117,"Classes to serialize, deserialize and validate OData JSON payloads. Supports OData v4 only. Enables construction of OData producers and consumers. Targets .NET Portable Lib with support for .NET 4.0, SL 5.0, Win Phone 8, Win Phone 8.1, and Win 8. Localized for CHS, CHT, DEU, ESN, FRA, ITA, JPN, KOR and RUS.
+OData .NET library is open source at http://odata.codeplex.com",Microsoft.OData.Core,False,2018-04-04T22:13:16.403+00:00,True,False,"Classes to serialize, deserialize and validate OData JSON payloads. Supports OData v4 only.","wcf,data,services,odata,odatalib,edmlib,spatial,ado.net,ef,entity,framework,open,protocol,wcfds,wcfdataservices,dataservices",2356351,True,6.11.0
+"Marco Bachmann,Paul Tingle",2015-04-01T11:01:35.897Z,1115,1115,In dev.,Triarc.Web.Client,False,2015-04-01T04:50:52.463-07:00,True,False,In dev.,typescript,5822,False,1.2.15
+Google Inc.,2015-04-01T12:07:21.873Z,4,1115,"Google APIs Client Library for working with Bigquery v2.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/bigquery/v2
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/bigquery/v2/csharp",Google.Apis.Bigquery.v2,False,2018-04-16T08:51:35.753+00:00,True,False,,Google,129304,True,1.9.0.2010
+cdmdotnet Limited,2015-04-01T07:40:49.84Z,22,1115,Components for implementing I.O.C. requirements via Ninject for using Azure Servuce Bus as the event bus.,Cqrs.Ninject.Azure.ServiceBus.EventBus,False,2018-03-29T02:26:43.153+00:00,True,False,,,26900,False,1.500.476.363
+"Chris Patterson,Dru Sellers,Travis Smith",2015-03-31T20:47:36.543Z,1,1116,"This integration library adds support for Log4Net to MassTransit, a distributed application framework for .NET, including support for MSMQ and RabbitMQ.",MassTransit.Log4Net,True,2018-04-19T17:06:20.637+00:00,True,False,,,151226,False,3.0.3-alpha
+"Jérémie Bertrand,Glenn Block",2015-04-01T06:02:12.897Z,441,1115,ScriptCs.ComponentModel.Composition provide a ScriptCsCatalog to extend an application with the power of MEF and ScriptCs.,ScriptCs.ComponentModel.Composition,False,2017-02-03T10:55:27.163-08:00,True,False,,"scriptcs,script,csx,mef,scriptcscatalog",2081,False,0.1.2
+Borter,2014-01-11T21:36:25.48Z,303,1560,A framework for dependency injection using a container.,Inject,False,2017-06-21T06:10:23.847-07:00,True,False,,"dependency,injection,DI,container",2226,False,1.8.0
+Mark Lacomber,2015-04-01T10:16:30.057Z,892,1115,logentries.nlog is a plugin library for NLog to enable logging to Logentries from a .NET platform. Logentries is a real-time log management service on the cloud. More info at https://logentries.com Nuget source and instructions can be found at https://github.com/logentries/le_nlog,logentries.nlog,False,2015-11-10T04:03:26.797-08:00,True,False,,"nlog,le,logentries,le_nlog",180288,False,2.4.7
+TTRider,2015-04-01T00:34:37.987Z,254,1115,Fluid-style SQL statement generator,TTRider.FluidSql.SQLite,True,2017-08-09T02:24:05.343+00:00,True,False,,"SQL,sqlite,fluid",8132,False,1.0.4-alpha
+Saravanan,2015-04-01T06:24:36.647Z,43209,1115,ThirdParty Dlls,CelloSaaS_WebApp_ThirdPartyDlls,False,1899-12-31T16:00:00-08:00,False,False,,"CelloSaaS,TechCello",-1,False,4.5.0.1
+DD4T Community,2015-03-31T22:25:45.55Z,43209,1116,DD4T Log4NET Logwrapper,DD4T.LogWrappers.Log4NET,True,1899-12-31T16:00:00-08:00,False,False,,"SDLTridion,Tridion,DD4T",-1,False,2.0.0-alpha5
+Microsoft Corporation,2015-04-01T04:42:52.28Z,889,1115,Reactive Extensions for JavaScript library with aggregation event processing query operations.,RxJS-Aggregates,False,2015-11-13T13:55:35.187-08:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable",40381,False,2.4.8
+TTRider,2015-03-31T23:06:18.737Z,254,1116,Fluid-style SQL statement generator,TTRider.FluidSql.dll,True,2017-08-09T02:23:12.623+00:00,True,False,,SQL,22917,False,1.0.0-alpha
+jsakamoto,2015-04-01T11:54:38.44Z,2,1115,"Install Chrome Driver(Win32) for Selenium WebDriver into your Unit Test Project.
+      ""chromedriver.exe"" added as a linked project item, and copied to bin folder at the build.
+      NuGet package restoring ready, and no need to commit ""chromedriver.exe"" binary into source code control repository.
+      / Selenium WebDriver用 Chrome Driver(Win32) を単体テストプロジェクトに追加します。
+      ""chromedriver.exe"" はリンクされたアイテムとしてプロジェクトに追加され、ビルド時に bin フォルダにコピーされます。
+      NuGet パッケージの復元に対応済み、""chromedriver.exe"" をソース管理リポジトリに登録する必要はありません。
+      / The installing/uninstalling script codes that contained this package are free and unencumbered software released into the public domain.
+      / ""chromedriver.exe"" is licensed under the New BSD License.",Selenium.WebDriver.ChromeDriver,False,2018-04-18T13:42:31.583+00:00,True,False,Selenium Google Chrome Driver (Win32) (does not make your source repository to fat.),"Selenium,WebDriver,chromedriver",1943465,False,2.15.0
+Streamcoders.com,2015-04-01T07:48:30.267Z,361,1115,Is a comprehensive library for handling audio/video codecs and streaming technologies.,Streamcoders.MediaSuite.x64,False,2017-04-24T08:51:08.597+00:00,True,False,,"audio,video,streaming,html5,rtsp,rtp,h.264,vp8",101928,False,4.0.570
+Richard Morris,2015-04-01T01:34:23.01Z,286,1115,Seamlessly adds a Swagger to WebApi projects!,Swashbuckle.Core,True,2017-07-08T01:34:12.027-07:00,True,False,"Combines ApiExplorer and Swagger/swagger-ui to provide a rich discovery, documentation and playground experience to your API consumers","Swagger,SwaggerUi,Documentation,Discovery,Help,WebApi,AspNet,AspNetWebApi,Docs,SelfHost,OWIN",5855200,False,5.1.0-rc1
+Christof Senn,2015-03-31T23:36:50.127Z,811,1116,N-Tier Entity Framework server base library.,NTierEntityFramework.Server,True,2016-01-30T15:48:43.51-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",7281,False,1.6.0-beta002
+Qsys Sverige AB,2015-04-01T08:31:23.057Z,60,1115,QuickPick One Database assembly server component,QuickPickOneCLR,False,2018-02-19T10:36:42.787+00:00,True,False,,"Apollo,Apollo13,Quickpick,Qsys",88457,False,1.0.15040.21
+Kevin Mees,2015-04-01T12:41:07.19Z,949,1115,Run a gulp task as a MSBuild task,MSBuild.Gulp,False,2015-09-14T10:33:01.123-07:00,True,False,,"Gulp,MSBuild",33612,False,0.4.4
+Phat Ly,2015-04-01T10:21:47.68Z,1115,1115,The GoogleRecaptchaWebForms is a .NET library used to create the server control of Google Recaptcha for asp.net web forms.,GoogleRecaptchaWebForms,False,2015-04-01T03:21:47.68-07:00,True,False,The GoogleRecaptchaWebForms is a .NET library used to create the server control of Google Recaptcha for asp.net web forms.,"CongDongDotNet,.NET,google,captcha,recaptcha,aspnet,asp.net,Anti-Spam,c#,webforms,system.web",4014,False,1.0.0
+TTRider,2015-03-31T23:11:19.72Z,254,1116,Fluid-style SQL statement generator,TTRider.FluidSql.dll,True,2017-08-09T02:23:12.623+00:00,True,False,,SQL,22917,False,1.0.1-alpha
+Kenan Hancer,2015-04-01T08:49:41.83Z,43209,1115,Uni Web-based Content Management System,Uni.Cms,False,1899-12-31T16:00:00-08:00,False,False,,"CRM,CMS,UNI,ORM,WEB,MVC,ASP.NET",-1,False,1.0.0
+Xuanye Wang,2015-04-01T07:55:46.027Z,43209,1115,Vulcan 基于Dapper.NET的数据库链接托管类库，支持数据库链接管理透明化，支持事务包装，内置支持Mysql和MSSQL数据库，可扩展支持其他数据库，只要Dapper支持即可,Vulcan,False,1899-12-31T16:00:00-08:00,False,False,Vulcan 基于Dapper.NET的数据库链接托管类库,,1213,False,1.0.3
+hahoyer,2015-03-31T22:21:46.567Z,83,1116,Provides support for building compilers.,hw.CompilerTools,False,2018-01-27T10:11:24.8+00:00,True,False,Compiler building,,16268,False,15.7.1
+Google Inc.,2015-04-01T12:05:54.347Z,3,1115,"Google APIs Client Library for working with Androidpublisher v2.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/androidpublisher/v2
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/androidpublisher/v2/csharp",Google.Apis.AndroidPublisher.v2,False,2018-04-17T08:55:05.483+00:00,True,False,,Google,115383,True,1.9.0.170
+cdmdotnet Limited,2015-04-01T08:49:36.503Z,22,1115,Components for implementing I.O.C. requirements via Ninject for in-process the event bus.,Cqrs.Ninject.InProcess.EventBus,False,2018-03-29T02:27:54.91+00:00,True,False,,,37353,False,1.500.478.365
+cdmdotnet Limited,2015-04-01T07:42:21.027Z,22,1115,Components for implementing I.O.C. requirements via Ninject for in-process the command bus.,Cqrs.Ninject.InProcess.CommandBus,False,2018-03-29T02:27:40.94+00:00,True,False,,,38031,False,1.500.476.363
+Devbridge,2015-04-01T11:05:06.793Z,304,1115,Root module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.Root,True,2017-06-20T01:05:07.007-07:00,True,False,,,61795,False,1.11.0-alpha6
+TTRider,2015-04-01T00:33:48.93Z,254,1115,Fluid-style SQL statement generator,TTRider.FluidSql.dll,True,2017-08-09T02:23:12.623+00:00,True,False,,SQL,22917,False,1.0.4-alpha
+Microsoft Corporation,2015-03-30T16:48:31.89Z,16,1117,"Classes to represent, construct, parse, serialize and validate entity data models. Supports OData v4 only. Targets .NET Portable Lib with support for .NET 4.0, SL 5.0, Win Phone 8, Win Phone 8.1, and Win 8. Localized for CHS, CHT, DEU, ESN, FRA, ITA, JPN, KOR and RUS.
+OData .NET library is open source at http://odata.codeplex.com",Microsoft.OData.Edm,False,2018-04-04T22:12:55.357+00:00,True,False,"Classes to represent, construct, parse, serialize and validate entity data models. Supports OData v4 only.","wcf,data,services,odata,odatalib,edmlib,spatial,ado.net,ef,entity,framework,open,protocol,wcfds,wcfdataservices,dataservices",2388171,True,6.11.0
+Google Inc.,2015-04-01T12:21:04.153Z,43209,1115,"Google APIs Client Library for working with Genomics v1beta2.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/genomics/v1beta2
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/genomics/v1beta2/csharp",Google.Apis.Genomics.v1beta2,False,1900-01-01T00:00:00+00:00,False,False,,Google,-1,False,1.9.0.330
+Steve Rasch,2015-04-01T11:17:02.03Z,436,1115,Serilog event sink that writes to a SignalR-Hub.,Serilog.Sinks.SignalR,False,2017-02-08T13:47:09.497-08:00,True,False,,"serilog,logging,signalr",26433,True,1.5.3
+Hakan Lindestaf,2015-03-31T23:31:35.693Z,653,1116,Fully asynchronous Messaging Framework used to abstract away the low-level workings of Azure ServiceBus topics.,Qlue,False,2016-07-06T13:48:32.953-07:00,True,False,Asynchronous Messaging Framework for Azure ServiceBus,"azure,servicebus,topic,messaging,qlue",3305,False,1.1.10
+Chillisoft,2015-04-01T08:08:53.677Z,365,1115,Habanero.Binding,Habanero.Binding,True,2017-04-20T04:02:51.37+00:00,True,False,,,144869,False,1.2.1882-prerelease
+Alek Davis,2015-03-04T00:22:13.577Z,863,1143,Creates email messages from localized files or text strings using Razor templating engine.,Mailr,False,2015-12-09T22:03:12.187+00:00,True,False,,"html,email,template,razor,engine,i18n,library,API,transformations",1241,False,1.1.0
+James Roland,2015-03-31T21:30:42.853Z,829,1116,"Provides high and low level classes for communicating with an Apache Kafka cluster.  The code is similar to the kafka-python library, but written entirely in C#.",kafka-net,True,2016-01-12T12:43:42.45-08:00,True,False,Native C# client for Apache Kafka.,"C#,Apache,Kafka",52815,False,0.8.0.126-pre
+Yury Pliner,2015-04-01T05:15:58.963Z,95,1115,GELF log4net appenders,EasyGelf.Log4Net,False,2018-01-15T15:45:58.68+00:00,True,False,,"GELF,log4net",10412,False,0.4.4.53
+NServiceBus Ltd,2015-03-31T23:06:42.523Z,14,1116,The most popular open-source service bus for .net,NServiceBus,False,2018-04-06T19:48:02.973+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",1169248,False,4.0.10
+seek.com.au,2015-04-01T09:31:43.8Z,24,1115,"A .NET version of Pact, which enables consumer driven contract testing.",PactNet,True,2018-03-27T01:35:11.55+00:00,True,False,,,83971,False,0.1.8-beta
+Hibernating Rhinos,2015-04-01T13:02:40.787Z,43209,1115,RavenDB 'Unique Constraints' bundle client. Allow the user to implement unique constraints in the objects (useful for properties like email or social security number).,RavenDB.Client.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles",242613,True,3.0.3649-Unstable
+ZZZ Projects,2015-03-31T20:46:13.187Z,237,1116,Extension Methods Library enhance the .NET Framework by adding hundreds of new methods. It increases developers productivity and code readability.,Z.ExtensionMethods.WithObjectNamespace,False,2017-08-26T18:06:23.753+00:00,True,False,Extension Methods Library enhance the .NET Framework by adding hundreds of new methods. It increases developers productivity and code readability.,"Extension,Methods,C#,.NET,Library",8102,False,2.0.4
+Devbridge,2015-04-01T11:04:07.823Z,304,1115,Core functionality of the publishing focused and developer friendly .NET Open source CMS.,BetterCms.Core,True,2017-06-20T01:04:54.363-07:00,True,False,,,61544,False,1.11.0-alpha6
+Devbridge,2015-04-01T11:15:54.46Z,546,1115,Newsletter module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.ImagesGallery,True,2016-10-21T07:02:24.717-07:00,True,False,,,40788,False,1.11.0-alpha6
+Storstadens IT Konsult AB,2015-04-01T08:44:59.45Z,24,1115,Solis Search indexer library for EPiServer 7.5 and higher,SolisSearch.EPiServer75,False,2018-03-27T13:18:25.373+00:00,True,False,,"lucene,search,apache,solr,episerver",2181,False,2.0.101.437
+Google Inc.,2015-04-01T12:15:45.51Z,4,1115,"Google APIs Client Library for working with Drive v2.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/drive/v2
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/drive/v2/csharp",Google.Apis.Drive.v2,False,2018-04-16T08:56:32.78+00:00,True,False,,Google,292624,True,1.9.0.1640
+cdmdotnet Limited,2015-04-01T08:39:32.81Z,22,1115,Components for using the Azure ServiceBus as a message or command bus for the Cqrs package,Cqrs.Azure.ServiceBus,False,2018-03-29T02:23:07.543+00:00,True,False,,,31068,False,1.500.478.365
+Mike Hadlow,2015-04-01T12:30:10.257Z,65,1115,EasyNetQ.Management.Client is a .NET client for the RabbitMQ RESTful management API,EasyNetQ.Management.Client,False,2018-02-14T11:21:47.527+00:00,True,False,,"RabbitMQ,Messaging,AMQP,REST,API",142810,False,0.47.10.379
+Christof Senn,2015-03-31T23:38:54.057Z,811,1116,EF6 provider for N-Tier Entity Framework.,NTierEntityFramework.Server.EntityFramework6_0,True,2016-01-30T15:49:01.233-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",6316,False,1.6.0-beta002
+Limilabs,2015-04-01T09:02:55.957Z,38,1115,"Mail.dll is a .NET IMAP component, POP3 component and SMTP component library. Includes an email and MIME parser. Allows sending, receiving and processing email messages in .NET applications. Includes SSL and TLS support along with OAuth and DKIM capabilities. Includes secure MIME (S/MIME) parser for processing encrypted and signed emails. Contains iCal, vCard and Outlook's msg files parsers. Decodes winmail.dat attachments.",Mail.dll,False,2018-03-13T12:29:10.04+00:00,True,False,".NET IMAP, POP3 and SMTP client library and email parser.","imap,pop3,email,mail,smtp,mime,smime,dkim,msg",60817,False,3.0.15091.1036
+Remco Software Ltd,2015-04-01T03:34:59.807Z,45,1115,NCrunch.Framework is a run-time library for NCrunch users.  This library contains attributes and tools that enable some very powerful features within NCrunch.,NCrunch.Framework,False,2018-03-06T05:38:03.873+00:00,True,False,,"NCrunch,TDD,UnitTest,NUnit,MSpec,Xunit,MSTest,Continuous,testing,unit",153204,False,2.14.0.8
+MorseCode Software,2015-03-31T22:28:45.203Z,1116,1116,A more robust reflection API.,MorseCode.BetterReflection,False,2015-03-31T15:28:45.203-07:00,True,False,,,1030,False,1.0.11
+"CTL Global,Inc.",2015-03-31T22:50:14.507Z,322,1116,Readers and writers for Excel file formats. Supports data annotations and wicked fast object serialization.,Ctl.Data.Excel,False,2017-06-02T14:38:58.763-07:00,True,False,,"excel,data",3311,False,1.0.5568.30276
+AdeasyGo,2015-04-01T10:22:03.457Z,43209,1115,Adeasygo.SocialCommunity.Sdk For WP8.0SL,Adeasygo.SocialCommunity.Sdk,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+DD4T Community,2015-03-31T22:53:51.39Z,43209,1116,DD4T Provider for SDL Tridion 2009,DD4T.Providers.SDLTridion2009,True,1899-12-31T16:00:00-08:00,False,False,,"SDLTridion,Tridion,DD4T",-1,False,2.0.0-alpha6
+Wing,2015-04-01T11:44:17.137Z,596,1115,微信公共平台SDK,Wing.WeiXin.MP.SDK,False,2016-08-31T19:22:51.703-07:00,True,False,微信公共平台SDK,"Wing,Weixin,MP,SDK",30514,False,2.3.0.1
+cdmdotnet Limited,2015-04-01T07:41:35.96Z,22,1115,Components for implementing the I.O.C. via Ninject for the Greg Youngs EventStore Cqrs package,Cqrs.Ninject.EventStore,False,2018-03-29T02:27:26.593+00:00,True,False,,,51461,False,1.500.476.363
+"Steffen Forkmann,Daniel Mohl,Tomas Petricek,Ryan Riley,Mauricio Scheffer,Phil Trelford",2015-03-31T23:56:08.19Z,446,1116,"FSharpx.Extras implements general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.It currently implements:* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution* Validation applicative functor* General functions like flip* Additional functions around collections* Functions to make C# - F# interop easier.",FSharpx.Extras,False,2017-01-29T01:38:38.317-08:00,True,False,"FSharpx.Extras implements general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.It currently implements:* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution* Validation applicative functor* General functions like flip* Additional functions around collections* Functions to make C# - F# interop easier.","fsharp,csharp,interop,monad,iteratee,validation,bytestring,testing",41557,False,1.10.0
+Hibernating Rhinos,2015-04-01T08:43:54.637Z,43209,1115,"Use this package if you want extend RavenDB. Don't use this package if you just want to work with existing RavenDB server, in order to so just use the client API which is in the RavenDB.Client package. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.
+
+Note: If you encounter issue to install this package, please consult the following link: https://groups.google.com/forum/#!topic/ravendb/4TeMq7_7Esc",RavenDB.Database,True,1900-01-01T00:00:00+00:00,False,False,This package allows you to extend RavenDB database.,"nosql,ravendb,raven,document,database",663109,True,3.0.3647-Unstable
+DD4T Community,2015-03-31T22:27:20.99Z,43209,1116,DD4T.NET,DD4T.NET,True,1899-12-31T16:00:00-08:00,False,False,,"SDLTridion,Tridion,DD4T",-1,False,2.0.0-alpha5
+John Cachat,2015-04-01T01:10:39.15Z,161,1115,Provides global & scoped filters for Entity Framework with dynamic filter parameters that are evaluated at query execution.  Supports use cases such as Multi-Tenancy and Soft Deletes.,EntityFramework.DynamicFilters,False,2017-11-10T20:12:14.037+00:00,True,False,,"Entity,Framework,Global,Dynamic,Filters",419618,False,1.3.13
+Microsoft Corporation,2015-03-31T22:28:19.493Z,43209,1116,Http recorder utility for a Azure test suite,Microsoft.Azure.Test.HttpRecorder,True,1899-12-31T16:00:00-08:00,False,False,,,73607,True,1.0.5568.26003-prerelease
+Serilog Contributors,2015-04-01T10:12:20.887Z,266,1115,Serilog event sink that sends email via SMTP.,Serilog.Sinks.Email,False,2017-07-28T22:25:45.133+00:00,True,False,,"serilog,logging,email,smtp",105886,True,1.5.10
+Microsoft Corporation,2015-03-30T18:28:22.367Z,224,1117,"Contains classes and methods that facilitate geography and geometry spatial operations. Targets .NET 4.0, Silverlight 4.0 or .NET Portable Lib with support for .NET 4.0, SL 5.0, Win Phone 8, Win Phone 8.1, and Win 8. Localized for CHS, CHT, DEU, ESN, FRA, ITA, JPN, KOR and RUS.",System.Spatial,False,2017-09-08T00:52:40.567+00:00,True,False,,"wcf,data,services,odata,odatalib,edmlib,spatial,ado.net,ef,entity,framework,open,protocol,wcfds,wcfdataservices,dataservices",26335611,True,5.6.4
+"ejsmith,bniemyjski",2015-03-30T18:04:22.96Z,43209,1117,Pluggable foundation blocks for building distributed apps.,Foundatio.StatsD,False,1900-01-01T00:00:00+00:00,False,False,,"Queue,Messaging,Message,Bus,Locking,Lock,Distributed,File,Storage,Blob,Jobs,Metrics,Stats,Azure,Redis,StatsD",10311,True,1.0.164
+Christof Senn,2015-03-31T23:35:13.26Z,811,1116,N-Tier Entity Framework client base library.,NTierEntityFramework.Client,True,2016-01-30T15:48:31.92-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",5662,False,1.6.0-beta002
+Alex Forbes-Reed,2015-04-01T08:29:43.453Z,43209,1115,Shared stuff for vnext projects. hi xox,0xdeafcafe.Bropack,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.1.9
+Yury Pliner,2015-04-01T05:16:39.123Z,95,1115,GELF NLog targets,EasyGelf.NLog,False,2018-01-15T15:46:14.26+00:00,True,False,,"GELF,NLog",27151,False,0.4.4.53
+Google Inc.,2015-04-01T12:02:14.5Z,10,1115,"Google APIs Client Library for working with Analytics v2.4.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/analytics/v2.4
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/analytics/v2.4/csharp",Google.Apis.Analytics.v2_4,False,2018-04-10T08:50:38.013+00:00,True,False,,Google,16527,True,1.9.0.910
+Vitti Luciano,2015-03-31T21:15:41.683Z,1085,1116,NHibernate Session Manager,NHibernate.SessionManager,False,2015-05-01T15:32:41.237-07:00,True,False,,,661,False,1.0.0
+"Marco Bachmann,Paul Tingle",2015-04-01T11:41:19.443Z,1115,1115,In dev.,Triarc.Web.Client,False,2015-04-01T04:50:52.463-07:00,True,False,In dev.,typescript,5822,False,1.2.17
+Kevin Mees,2015-04-01T12:43:25.773Z,949,1115,Run a npm command as a MSBuild task,MSBuild.Npm,False,2015-09-14T10:34:53.87-07:00,True,False,,"Npm,MSBuild",40205,False,0.4.4
+Hibernating Rhinos,2015-04-01T08:36:05.377Z,43209,1115,"The Authorization Bundle extend RavenDB and add document level permissions. The Auth Bundle allows to define permissions for a specific user, a group or using arbitrary tagging. The system is design to be high performance, scalable and flexible.",RavenDB.Bundles.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles,authorization",201812,True,3.0.3647-Unstable
+Google Inc.,2015-04-01T11:44:57.627Z,53,1115,"Google APIs Client Library for working with Adexchangebuyer v1.2.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/adexchangebuyer/v1.2
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/adexchangebuyer/v1.2/csharp",Google.Apis.AdExchangeBuyer.v1_2,False,2018-02-26T08:45:31.067+00:00,True,False,,Google,15997,True,1.9.0.580
+Devbridge,2015-04-01T11:18:37.683Z,546,1115,Search API module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.Search.Api,True,2016-10-21T07:02:58.217-07:00,True,False,,,29392,False,1.11.0-alpha6
+Microsoft Corporation,2015-03-31T22:27:45.487Z,43209,1116,Test utilities for xunit test suites for Hyak generated clients,Microsoft.Azure.Test.Framework,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.5568.26003-prerelease
+Devbridge,2015-04-01T11:17:14.77Z,546,1115,Apache Lucene search module for Better CMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.LuceneSearch,True,2016-10-21T07:02:41.06-07:00,True,False,,,30338,False,1.11.0-alpha6
+"ejsmith,bniemyjski",2015-03-31T22:16:01.303Z,141,1116,Pluggable foundation blocks for building distributed apps.,Foundatio.Redis,False,2017-11-30T14:52:07.817+00:00,True,False,,"Queue,Messaging,Message,Bus,Locking,Lock,Distributed,File,Storage,Blob,Jobs,Metrics,Stats,Azure,Redis,StatsD",77724,True,1.0.171
+Stephen Cleary,2015-04-01T02:22:40.05Z,223,1115,Nito.AsyncEx.Context,Nito.AsyncEx.Context,True,2017-09-09T15:39:51.67+00:00,True,False,,,183623,True,1.0.0-alpha-1
+Qoollo,2015-04-01T10:42:53.587Z,647,1115,Make a console app work as an self-installable interactive WindowsService with debug mode and commands,Concierge,False,2016-07-12T04:12:11.98-07:00,True,False,,"Service,WindowsService,WinService,SOA,CommandLine,cmd,microservices",4422,False,1.0.4.24584
+Twilio,2015-03-31T21:11:28.43Z,43209,1116,Twilio Lookups REST API helper library,Twilio.Lookups,False,1899-12-31T16:00:00-08:00,False,False,,"REST,SMS,voice,telephony,phone,twilio,twiml",-1,False,1.0.0
+Alex Forbes-Reed,2015-04-01T08:40:18.15Z,43209,1115,Shared stuff for vnext projects. hi xox,0xdeafcafe.Bropack,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.2.0
+Hibernating Rhinos,2015-04-01T08:47:22.717Z,43209,1115,"Use this package if you want to run RavenDB as a standalone application. This package is not intented to be used in Visual Studio. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Server,True,1900-01-01T00:00:00+00:00,False,False,This package contains the Raven.Server.exe database binaries.,"nosql,ravendb,raven,document,database",272653,True,3.0.3647-Unstable
+Google Inc.,2015-04-01T12:17:15.41Z,606,1115,"Google APIs Client Library for working with Freebase v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/freebase/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/freebase/v1/csharp",Google.Apis.Freebase.v1,False,2016-08-22T06:40:02.03-07:00,True,False,,Google,8129,True,1.9.0.650
+Witte Lee,2015-04-01T03:40:42.487Z,1115,1115,Orleans.Storage.Couchbase,Orleans.Storage.Couchbase,False,2015-03-31T20:40:42.487-07:00,True,False,,"Orleans,Storage,Couchbase",2228,False,1.2.4.1
+Christian Falch,2015-04-01T08:37:37.26Z,433,1115,NControl is a Xamarin.Forms wrapper control built around the NGraphics library enabling developers to create custom controls without the need for custom renderers.,NControl,False,2017-02-11T11:16:59.263+00:00,True,False,,"xamarin,pcl,xam.pcl,android,xamarin.forms,ios",83465,False,0.3.1
+Google Inc.,2015-04-01T12:33:09.357Z,8,1115,"Google APIs Client Library for working with Storage v1beta2.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/storage/v1beta2
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/storage/v1beta2/csharp",Google.Apis.Storage.v1beta2,False,2018-04-12T08:55:25.493+00:00,True,False,,Google,22825,True,1.9.0.710
+Socres,2015-04-01T08:38:07.917Z,1064,1115,"This package contains attributes for automatically creating all types of fake object, mocks, stubs, etc.
+These attributes combine FakeItEasy, xUnit and AutoFixture.",Socres.FakingEasy,False,2015-05-22T07:30:33.967-07:00,True,False,,,5031,False,1.0.43
+cdmdotnet Limited,2015-04-01T07:43:07.287Z,22,1115,Components for implementing I.O.C. requirements via Ninject for in-process the event bus.,Cqrs.Ninject.InProcess.EventBus,False,2018-03-29T02:27:54.91+00:00,True,False,,,37353,False,1.500.476.363
+DD4T Community,2015-03-31T22:26:53.123Z,119,1116,DD4T MVC4 Support,DD4T.MVC4,True,2017-12-22T13:47:01.093+00:00,True,False,,"SDLTridion,Tridion,DD4T,MVC4",6562,False,2.0.0-alpha5
+"Jakub Pachansky,Tim Watson",2015-04-01T09:52:12.25Z,954,1115,MongoDb implementation of IProcessManagerFinder.,R.MessageBus.Persistance.MongoDb,False,2015-09-09T02:42:53.527-07:00,True,False,,"R.MessageBus,RMessageBus,R,MessageBus,Persistance,Persistance.MongoDb,MongoDb,Messaging,Message,Bus,Service",3612,False,2.0.0
+Christof Senn,2015-03-31T22:32:40.58Z,811,1116,T4 code generation templates for N-Tier Entity Framework.,NTierEntityFramework.T4,True,2016-01-30T15:49:20.733-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",6400,False,1.6.0-beta001
+Brad Buhrkuhl,2015-03-31T22:55:27.747Z,141,1116,"Basic utility-level functions, mostly in support of a MVVM pattern for Desktop, Windows Store, and Windows Phone applications.",Utilis,False,2017-11-30T21:43:25.897+00:00,True,False,,,10106,False,0.8.1.23
+"Jakub Pachansky,Tim Watson",2015-04-01T09:50:21.627Z,954,1115,R MessageBus Interfaces,R.MessageBus.Interfaces,False,2015-09-09T02:41:00.367-07:00,True,False,,"MessageBus,Interfaces,MessageBus.Interfaces,R.MessageBus,R",8317,False,2.0.0
+P. van der Velde,2015-04-01T08:17:05.647Z,624,1115,Provides default properties and build tasks used to unify the settings of a set of C# projects in a Visual Studio solution.,nBuildKit.MsBuild.Projects.CSharp,False,2016-08-03T23:16:34.47-07:00,True,False,,,4588,False,0.4.6
+"Sandrino Di Mattia,Toon De Coninck",2015-04-01T07:08:30.087Z,1115,1115,A client SDK for Microsoft Azure Search.,RedDog.Search,True,2015-04-01T00:08:30.133-07:00,True,False,A client SDK for Microsoft Azure Search.,"Microsoft,Azure,Search,Full-Text",48221,False,0.5.3-pre
+"ejsmith,bniemyjski",2015-03-31T22:16:38.307Z,141,1116,Pluggable foundation blocks for building distributed apps.,Foundatio.AzureServiceBus,False,2017-11-30T15:05:26.42+00:00,True,False,,"Queue,Messaging,Message,Bus,Locking,Lock,Distributed,File,Storage,Blob,Jobs,Metrics,Stats,Azure,Redis,StatsD",55292,True,1.0.171
+Storstadens IT Konsult AB,2015-04-01T07:29:12.087Z,24,1115,Solis Search core library for easy integration with your favorite CMS and Apache Solr search server. Indexer currently available for Umbraco and EPiServer.,SolisSearch,False,2018-03-27T13:17:18.543+00:00,True,False,,"lucene,search,apache,solr,umbraco,episerver",2498,False,2.0.101.437
+Microsoft Corporation,2015-03-30T16:50:05.73Z,16,1117,"Contains classes and methods that facilitate geography and geometry spatial operations. Support OData v4 only. Targets .NET Portable Lib with support for .NET 4.0, SL 5.0, Win Phone 8, Win Phone 8.1, and Win 8. Localized for CHS, CHT, DEU, ESN, FRA, ITA, JPN, KOR and RUS.
+OData .NET library is open source at http://odata.codeplex.com",Microsoft.Spatial,False,2018-04-04T22:12:29.137+00:00,True,False,Contains classes and methods that facilitate geography and geometry spatial operations. Supports OData v4 only.,"wcf,data,services,odata,odatalib,edmlib,spatial,ado.net,ef,entity,framework,open,protocol,wcfds,wcfdataservices,dataservices",3334299,True,6.11.0
+Michiel van Oudheusden,2015-04-01T10:55:12.81Z,39,1115,Serilog event sink that writes to a Microsoft SQL Server database.,Serilog.Sinks.MSSqlServer,False,2018-03-12T23:48:11.117+00:00,True,False,,"serilog,logging,MS,SQL,Server,DB",285273,True,1.5.3
+Stephen Cleary,2015-04-01T01:05:56.53Z,223,1115,Nito.AsyncEx.Coordination,Nito.AsyncEx.Coordination,True,2017-09-09T15:40:03.28+00:00,True,False,,,202934,True,1.0.0-alpha-2
+Google Inc.,2015-04-01T12:25:02.373Z,31,1115,"Google APIs Client Library for working with Pagespeedonline v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/pagespeedonline/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/pagespeedonline/v1/csharp",Google.Apis.Pagespeedonline.v1,False,2018-03-20T09:05:02.26+00:00,True,False,,Google,20770,True,1.9.0.560
+"ejsmith,bniemyjski",2015-03-31T21:19:10.357Z,141,1116,Pluggable foundation blocks for building distributed apps.,Foundatio.AzureStorage,False,2017-11-30T15:15:57.557+00:00,True,False,,"Queue,Messaging,Message,Bus,Locking,Lock,Distributed,File,Storage,Blob,Jobs,Metrics,Stats,Azure,Redis,StatsD",62616,True,1.0.168
+Microsoft,2015-03-31T21:48:00.32Z,43209,1116,Application Insights StatusMonitor is an implementation package that supports application monitoring management for Application Insights. This package is not intended to be use directly. See STATUSMONITORLINK for more information.,Microsoft.ApplicationInsights.StatusMonitor,True,1899-12-31T16:00:00-08:00,False,False,,"Microsoft,ApplicationInsights,StatusMonitor",-1,False,0.14.0-build20894
+mgibas,2015-04-01T07:21:05.597Z,342,1115,NUnit comparing assertions,NUnit.Asserts.Compare,False,2017-05-13T05:52:00.627-07:00,True,False,,"NUnit,Assert,Compare",7900,False,1.0.2
+"F# Software Foundation,Microsoft",2015-04-01T09:22:04.48Z,753,1115,A limited CodeDom implementation for F#,FSharp.Compiler.CodeDom,False,2016-03-28T21:29:15.99+00:00,True,False,A limited CodeDom implementation for F#,"CodeDom,FSharp",36045,False,0.9.2
+Google Inc.,2015-04-01T12:31:47.417Z,8,1115,"Google APIs Client Library for working with Storage v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/storage/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/storage/v1/csharp",Google.Apis.Storage.v1,False,2018-04-12T08:55:00.07+00:00,True,False,,Google,232407,True,1.9.0.290
+Google Inc.,2015-04-01T12:00:43.88Z,2,1115,"Google APIs Client Library for working with Adsense v1.4.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/adsense/v1.4
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/adsense/v1.4/csharp",Google.Apis.AdSense.v1_4,False,2018-04-18T08:56:26.54+00:00,True,False,,Google,40099,True,1.9.0.810
+NServiceBus Ltd,2015-03-31T23:09:15.43Z,63,1116,"The hosting template for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Host32,False,2018-02-16T08:27:15.097+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",113399,False,4.0.10
+Hibernating Rhinos,2015-04-01T08:38:16.637Z,21,1115,"This package includes the client API of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Client,True,2018-03-30T12:13:14.39+00:00,True,False,This package includes the client API of RavenDB.,"nosql,ravendb,raven,document,database,client",1119805,True,3.0.3647-Unstable
+Google Inc.,2015-04-01T12:18:00.717Z,71,1115,"Google APIs Client Library for working with Fusiontables v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/fusiontables/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/fusiontables/v1/csharp",Google.Apis.Fusiontables.v1,False,2018-02-08T11:28:43.953+00:00,True,False,,Google,12496,True,1.9.0.610
+Nito.ArraySegments.Streams,2015-04-01T01:58:48.907Z,646,1115,Nito.ArraySegments.Streams,Nito.ArraySegments.Streams,True,2016-07-12T19:18:02.87-07:00,True,False,,,1302,True,2.0.0-alpha-1
+Breno,2015-04-01T06:44:59.247Z,43209,1115,"Naylah is a Universal App Toolkit, Lib, Module, etc.",NaylahToolkitUniversalApps,False,1899-12-31T16:00:00-08:00,False,False,,"Universal,Apps,C#,Xaml",-1,False,1.0.0
+Pavel Svarc,2015-03-31T21:05:01.513Z,669,1116,ApplicationInformation exposes access to dll to get version of dll currently running,CpoDesign.Components.ApplicationInformation,False,2016-06-20T10:09:57.197-07:00,True,False,,cpodesign,833,False,0.1.0
+POF,2015-03-31T23:04:39.273Z,1059,1116,"Data collection for Fastlife public schema, no license required",FastLifePublicData,False,2015-05-27T13:47:24.29-07:00,True,False,,"fastlife,fastimpressions",6058,False,1.0.4.1
+"Anders Gustafsson,Cureos AB",2015-03-31T13:09:40.017Z,651,1116,"Shim.Drawing is a portability package providing a minimal subset of System.Drawing, that enables using the imaging processing functionality of AForge.NET and Accord.NET Frameworks in mobile applications.    
+This package contains evaluation DLL:s for Xamarin.iOS (Unified and Classic API:s), Xamarin Android and Windows Universal (Windows 8.1 and Windows Phone 8.1). Full versions can be purchased from Cureos, licenses@cureos.com .",shim.drawing,False,2016-07-08T03:09:21.443-07:00,True,False,Shim.Drawing provides a minimal subset of System.Drawing for AForge.NET and Accord.NET.,"PCL,Shim,System.Drawing,.NET,WPF,Windows8.1,WPA81,Xamarin,iOS,Android",5937,False,2.2.5.50331
+"Steffen Forkmann,Daniel Mohl,Tomas Petricek,Ryan Riley,Mauricio Scheffer,Phil Trelford",2013-08-19T06:43:22.21Z,43209,1705,"FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.
+
+It currently implements:
+
+* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution
+* Iteratee
+* Purely functional data structures: Queues, double-ended Queues, BottomUpMergeSort, RandomAccessList, Vector, RoseTree, BKTree
+* Validation applicative functor
+* General functions like flip
+* Additional functions around collections
+* Functions to make C# - F# interop easier.",FSharpx.Core,False,1899-12-31T16:00:00-08:00,False,False,"FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.
+
+It currently implements:
+
+* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution
+* Iteratee
+* Purely functional data structures: Queues, double-ended Queues, BottomUpMergeSort, RandomAccessList, Vector, RoseTree, BKTree
+* Validation applicative functor
+* General functions like flip
+* Additional functions around collections
+* Functions to make C# - F# interop easier.","fsharp,csharp,interop,monad,iteratee,validation,bytestring,testing",94458,False,1.8.37
+Henrik Feldt,2015-03-31T20:49:38.797Z,1,1116,"This integration library adds support for NLog to MassTransit, a distributed application framework for .NET, including support for MSMQ and RabbitMQ.",MassTransit.NLog,True,2018-04-19T17:06:38.73+00:00,True,False,,,99017,False,3.0.3-alpha
+$������$,2015-04-01T08:50:11.083Z,43209,1115,$ExamEvalExaminee.CommonModel$,ITOO.ExamEvalExaminee.CommonModel,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Xuanye Wang,2015-04-01T07:42:40.447Z,43209,1115,Vulcan 基于Dapper.NET的数据库链接托管类库，支持数据库链接管理透明化，支持事务包装，内置支持Mysql和MSSQL数据库，可扩展支持其他数据库，只要Dapper支持即可,Vulcan,False,1899-12-31T16:00:00-08:00,False,False,Vulcan 基于Dapper.NET的数据库链接托管类库,,1213,False,1.0.2
+Scott Smith,2015-03-31T21:57:02.547Z,1116,1116,C# .NET wrapper for the oDesk RESTful API,CSharp.oDesk,False,2015-03-31T14:57:02.547-07:00,True,False,,oDesk,859,False,0.1.5568.25086
+"5MStock,Inc.",2015-04-01T06:47:02.04Z,1111,1115,5mstock utils lib,LatemLib,False,2015-04-05T10:16:01.49-07:00,True,False,,"5mstock,latemlib",965,False,1.0.0.3
+"GeertvanHorrik,OrchestraDevs",2015-04-01T12:44:37.027Z,4,1115,The MahApps shell for Orchestra based applications.,Orchestra.Shell.MahApps,True,2018-04-16T15:54:52.573+00:00,True,False,,"mvvm,orchestra,shell,prism,framework,wpf,mahapps",38721,True,2.2.0-unstable0016
+James Roland,2015-03-31T21:30:42.853Z,829,1116,"Provides high and low level classes for communicating with an Apache Kafka cluster.  The code is similar to the kafka-python library, but written entirely in C#.",kafka-net,True,2016-01-12T12:43:42.45-08:00,True,False,Native C# client for Apache Kafka.,"C#,Apache,Kafka",52815,False,0.8.0.126-pre
+Qsys Sverige AB,2015-04-01T08:35:33.703Z,11,1115,WCF portal module,QuickPick.WcfPortalModule,False,2018-04-09T15:00:09.71+00:00,True,False,,"Apollo,Apollo13,QuickPick,QP,Qsys",18106,False,1.0.15033.5
+Devbridge,2015-04-01T11:16:39.053Z,546,1115,Search abstractions module for BetterCMS. Should be instaled with Lucene or Google search module. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.Search,True,2016-10-21T07:02:32.81-07:00,True,False,,,30133,False,1.11.0-alpha6
+Google Inc.,2015-04-01T12:20:16.157Z,2,1115,"Google APIs Client Library for working with GamesManagement v1management.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/gamesManagement/v1management
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/gamesManagement/v1management/csharp",Google.Apis.GamesManagement.v1management,False,2018-04-18T09:02:36.71+00:00,True,False,,Google,27615,True,1.9.0.840
+Alexandr Nikitin,2015-03-31T20:46:20.2Z,1116,1116,Implementation of Aho-Corasick algorithm on .NET,AhoCorasick.Net,True,2015-03-31T13:46:20.2-07:00,True,False,Implementation of Aho-Corasick algorithm on .NET,aho-corasick,2614,False,0.6.1-beta
+"Steffen Forkmann,Daniel Mohl,Tomas Petricek,Ryan Riley,Mauricio Scheffer,Phil Trelford",2015-03-31T23:51:28.277Z,43209,1116,"FSharpx.Extras implements general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.It currently implements:* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution* Validation applicative functor* General functions like flip* Additional functions around collections* Functions to make C# - F# interop easier.",FSharpx.Extras.Extras,False,1899-12-31T16:00:00-08:00,False,False,"FSharpx.Extras implements general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.It currently implements:* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution* Validation applicative functor* General functions like flip* Additional functions around collections* Functions to make C# - F# interop easier.","fsharp,csharp,interop,monad,iteratee,validation,bytestring,testing",-1,False,1.10.0
+DD4T Community,2015-03-31T22:29:41.66Z,388,1116,DD4T Provider for SDL Tridion 2013,DD4T.Providers.SDLTridion2013,True,2017-03-28T13:17:22.573-07:00,True,False,,"SDLTridion,Tridion,DD4T",4170,False,2.0.0-alpha5
+Mark Lacomber,2015-04-01T10:16:30.057Z,892,1115,logentries.nlog is a plugin library for NLog to enable logging to Logentries from a .NET platform. Logentries is a real-time log management service on the cloud. More info at https://logentries.com Nuget source and instructions can be found at https://github.com/logentries/le_nlog,logentries.nlog,False,2015-11-10T04:03:26.797-08:00,True,False,,"nlog,le,logentries,le_nlog",180288,False,2.4.7
+Mark Lacomber,2015-04-01T10:15:08.73Z,892,1115,logentries.log4net is a plugin library for Log4Net to enable logging to Logentries from a .NET platform. Logentries is a real-time log management service on the cloud. More info at https://logentries.com Nuget source and instructions can be found at https://github.com/logentries/le_log4net,logentries.log4net,False,2015-11-10T04:03:05.79-08:00,True,False,,"logging,Logentries,log4net",253044,False,2.6.4
+Christof Senn,2015-03-31T22:29:54.86Z,811,1116,N-Tier Entity Framework server base library.,NTierEntityFramework.Server,True,2016-01-30T15:48:43.51-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",7281,False,1.6.0-beta001
+Robert Moore,2015-04-01T09:23:15.313Z,10,1115,Serilog event sink that writes to Azure DocumentDB over HTTP.,Serilog.Sinks.AzureDocumentDB,False,2018-04-10T15:30:27.46+00:00,True,False,,"serilog,logging,azure",34630,True,1.5.4
+"Sandrino Di Mattia,Toon De Coninck",2014-11-26T17:49:58.167Z,1115,1241,A client SDK for Microsoft Azure Search.,RedDog.Search,False,2015-04-01T00:08:30.133-07:00,True,False,A client SDK for Microsoft Azure Search.,"Microsoft,Azure,Search,Full-Text",48221,False,0.5.2
+Alex Forbes-Reed,2015-04-01T08:29:43.453Z,43209,1115,Shared stuff for vnext projects. hi xox,0xdeafcafe.Bropack,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.1.9
+DD4T Community,2015-03-31T22:53:21.807Z,43209,1116,DD4T.NET,DD4T.NET,True,1899-12-31T16:00:00-08:00,False,False,,"SDLTridion,Tridion,DD4T",-1,False,2.0.0-alpha6
+Kenan Hancer,2015-04-01T08:49:41.83Z,43209,1115,Uni Web-based Content Management System,Uni.Cms,False,1899-12-31T16:00:00-08:00,False,False,,"CRM,CMS,UNI,ORM,WEB,MVC,ASP.NET",-1,False,1.0.0
+"Chris Patterson,Dru Sellers,Travis Smith",2015-03-31T20:49:00.96Z,1,1116,"This integration library adds support for Ninject to MassTransit, a distributed application framework for .NET, including support for MSMQ and RabbitMQ.",MassTransit.Ninject,True,2018-04-19T17:06:34.417+00:00,True,False,,,62430,False,3.0.3-alpha
+Google Inc.,2015-04-01T11:46:25.987Z,53,1115,"Google APIs Client Library for working with Adexchangebuyer v1.3.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/adexchangebuyer/v1.3
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/adexchangebuyer/v1.3/csharp",Google.Apis.AdExchangeBuyer.v1_3,False,2018-02-26T08:45:44.257+00:00,True,False,,Google,16524,True,1.9.0.500
+Hibernating Rhinos,2015-04-01T12:09:27.117Z,43209,1115,RavenDB Client MvcIntegration let you include a visual profiler in your ASP.NET MVC application which will show you all the opened sessions and the time took to complete each database request. This can help you when developing with RavenDB.,RavenDB.Client.MvcIntegration,True,1900-01-01T00:00:00+00:00,False,False,A visual profiler for RavenDB that you can use in your ASP.NET MVC application.,"nosql,ravendb,raven,document,database,client,mvc",243184,True,2.5.2958-Unstable
+"Rob Kayman,Akshay Shah",2015-03-31T20:09:13.737Z,1116,1116,"This project makes it easy to get a hash code that would not collide with other hashcode. It provides for multiplications by prime numbers to get to a non colliding hash code.
+Inspired by 
+http://stackoverflow.com/questions/5450696/c-sharp-generic-hashcode-implementation-for-classes",HashCodeGenerator,False,2015-03-31T13:09:13.737-07:00,True,False,This project provides a series of extensions to be used to Equals comparision.,,588,False,1.0.1
+Microsoft Corporation,2015-04-01T04:46:13.383Z,889,1115,Reactive Extensions for JavaScript library with reactive coincidence join event processing query operations.,RxJS-Coincidence,False,2015-11-13T13:55:59.223-08:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable",39975,False,2.4.8
+TTRider,2015-04-01T00:27:18.99Z,254,1115,Fluid-style SQL statement generator,TTRider.FluidSql.SQLite,True,2017-08-09T02:24:05.343+00:00,True,False,,"SQL,sqlite,fluid",8132,False,1.0.3-alpha
+Hector Romano,2015-04-01T00:35:53.587Z,1115,1115,"Utilizacion de grilla bootstrap con knockout, utilizando jquery y fontawesome
+- Fix error BaseViewModel",Ko-GridTable,False,2015-03-31T17:35:53.587-07:00,True,False,"- CRUD Support.
+- Web componet
+- Trslate a TypeScript
+- Soporte multigrid in same page-
+- Custom Style Class for Table
+
+https://github.com/TulioHector/ko-gridtable","bootstrap,table,knockout,grid,HTML5,fontawesome,TypeScript",3299,False,0.0.16
+Stephen Cleary,2015-04-01T02:40:39.753Z,223,1115,Nito.AsyncEx.Context,Nito.AsyncEx.Context,True,2017-09-09T15:39:51.67+00:00,True,False,,,183623,True,1.0.0-alpha-2
+Google Inc.,2015-04-01T12:04:24.783Z,3,1115,"Google APIs Client Library for working with Androidpublisher v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/androidpublisher/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/androidpublisher/v1/csharp",Google.Apis.AndroidPublisher.v1,False,2018-04-17T08:54:38.107+00:00,True,False,,Google,14903,True,1.9.0.540
+Victor Baybekov,2015-04-01T08:45:48.987Z,436,1115,Ractor.Persistence is a collection of APIs for POCOs and blobs persistence and a strongly typed Redisclient based on excellent Stackexchange.Redis library.Ractor.Persistence.AWS has some interface implementations for AWS platform.,Ractor.Persistence.AWS,False,2017-02-07T20:39:47.03-08:00,True,False,Ractor.Persistence is a collection of APIs for POCOs and blobs persistence and a strongly typed Redisclient based on excellent Stackexchange.Redis library.,"F#,.NET,fsharp,redis,akka,distributed,JVM,interop,AWS,S3,persistence,queue,cloud",4683,False,0.3.5
+Google Inc.,2015-04-01T12:29:38.98Z,43209,1115,"Google APIs Client Library for working with Sqladmin v1beta1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/sqladmin/v1beta1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/sqladmin/v1beta1/csharp",Google.Apis.SQLAdmin.v1beta1,False,1900-01-01T00:00:00+00:00,False,False,,Google,-1,False,1.9.0.400
+Google Inc.,2015-04-01T12:28:55.263Z,71,1115,"Google APIs Client Library for working with Resourceviews v1beta2.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/resourceviews/v1beta2
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/resourceviews/v1beta2/csharp",Google.Apis.Resourceviews.v1beta2,False,2018-02-08T11:37:28.313+00:00,True,False,,Google,6229,True,1.9.0.50
+Hibernating Rhinos,2015-04-01T12:56:32.137Z,43209,1115,The cascade delete bundle allows for a specified set of documents and attachments to be deleted when the document that owns it is deleted. Typical usage scenarios include deleting an attachment that is referenced by a document or removing a set of child documents referenced by a parent document.,RavenDB.Bundles.CascadeDelete,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",199442,True,3.0.3649-Unstable
+"Steffen Forkmann,Daniel Mohl,Tomas Petricek,Ryan Riley,Mauricio Scheffer,Phil Trelford",2015-03-31T23:57:13.197Z,446,1116,FSharpx.Extras implements general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.This library provides data structures and functoins for pretty printers.,FSharpx.Text.StructuredFormat,False,2017-01-29T01:38:37.38-08:00,True,False,FSharpx.Extras implements general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.This library provides data structures and functoins for pretty printers.,"fsharp,csharp,interop,monad,iteratee,validation,bytestring,testing",6318,False,1.10.0
+Google Inc.,2015-04-01T11:59:59.787Z,263,1115,"Google APIs Client Library for working with Adsense v1.3.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/adsense/v1.3
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/adsense/v1.3/csharp",Google.Apis.AdSense.v1_3,False,2017-07-31T08:38:17.25+00:00,True,False,,Google,33031,True,1.9.0.1170
+Hibernating Rhinos,2015-04-01T12:14:33.71Z,43209,1115,"Use this package if you want extend RavenDB. Don't use this package if you just want to work with existing RavenDB server, in order to so just use the client API which is in the RavenDB.Client package. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.
+
+Note: If you encounter issue to install this package, please consult the following link: https://groups.google.com/forum/#!topic/ravendb/4TeMq7_7Esc",RavenDB.Database,True,1900-01-01T00:00:00+00:00,False,False,This package allows you to extend RavenDB database.,"nosql,ravendb,raven,document,database",663109,True,2.5.2958-Unstable
+"Robert Wagner,Serilog Contributors",2015-04-01T10:24:49.573Z,926,1115,Serilog event sink that writes to a Glimpse tab.,Serilog.Sinks.Glimpse,False,2015-10-07T13:12:35.113-07:00,True,False,,"serilog,logging,glimpse",38645,True,1.5.6
+Devbridge,2015-04-01T11:17:47.89Z,546,1115,Google search module for Better CMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.GoogleSiteSearch,True,2016-10-21T07:02:49.06-07:00,True,False,,,29400,False,1.11.0-alpha6
+Oliver Weichhold,2015-04-01T10:25:06.66Z,787,1115,"WebRx integrates concepts of KnockoutJS and AngularJS with ReactiveX for Javascript (rxjs) into a MVC framework that enables developers to create responsive, structured and testable Web-Applications that run in any modern browser.",WebRx,False,2016-02-23T09:08:47.783-08:00,True,False,,"Rx,RxJS,Reactive,Extensions,Observable,Data-Binding,Web,UI,SPA",8887,False,0.9.44
+Hibernating Rhinos,2015-04-01T12:15:29.85Z,43209,1115,"This package let you include RavenDB embedded in-process with your application. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Embedded,True,1900-01-01T00:00:00+00:00,False,False,This package let you include RavenDB embedded in-process with your application.,"nosql,ravendb,raven,document,database,embedded",547497,True,2.5.2958-Unstable
+Google Inc.,2015-04-01T12:27:01.187Z,15,1115,"Google APIs Client Library for working with PlusDomains v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/plusDomains/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/plusDomains/v1/csharp",Google.Apis.PlusDomains.v1,False,2018-04-05T09:05:45.11+00:00,True,False,,Google,36036,True,1.9.0.1190
+cdmdotnet Limited,2015-04-01T08:48:57.78Z,22,1115,Components for implementing I.O.C. requirements via Ninject for in-process the command bus.,Cqrs.Ninject.InProcess.CommandBus,False,2018-03-29T02:27:40.94+00:00,True,False,,,38031,False,1.500.478.365
+Devbridge,2015-04-01T11:11:25.703Z,304,1115,Newsletter module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.Newsletter,True,2017-06-20T01:06:39.21-07:00,True,False,,,50943,False,1.11.0-alpha6
+cdmdotnet Limited,2015-04-01T07:40:13.117Z,22,1115,Components for implementing I.O.C. requirements via Ninject for using Azure Servuce Bus as the command bus.,Cqrs.Ninject.Azure.ServiceBus.CommandBus,False,2018-03-29T02:26:29.34+00:00,True,False,,,26690,False,1.500.476.363
+"ejsmith,bniemyjski",2015-03-31T21:41:24.177Z,141,1116,Pluggable foundation blocks for building distributed apps.,Foundatio.Redis,False,2017-11-30T14:52:07.817+00:00,True,False,,"Queue,Messaging,Message,Bus,Locking,Lock,Distributed,File,Storage,Blob,Jobs,Metrics,Stats,Azure,Redis,StatsD",77724,True,1.0.170
+Christof Senn,2015-03-31T22:33:39.45Z,811,1116,T4 code generation templates for N-Tier Entity Framework with EF5. Install this package for MyProject.Server.Domain.Edmx projekt if you target EF5.,NTierEntityFramework.T4.EntityFramework5_0,True,2016-01-30T15:49:32.813-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",4944,False,1.6.0-beta001
+Google Inc.,2015-04-01T12:32:24.47Z,8,1115,"Google APIs Client Library for working with Storage v1beta1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/storage/v1beta1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/storage/v1beta1/csharp",Google.Apis.Storage.v1beta1,False,2018-04-12T08:55:12.54+00:00,True,False,,Google,20624,True,1.9.0.970
+Hibernating Rhinos,2015-04-01T08:41:03.7Z,43209,1115,RavenDB Client MvcIntegration let you include a visual profiler in your ASP.NET MVC application which will show you all the opened sessions and the time took to complete each database request. This can help you when developing with RavenDB.,RavenDB.Client.MvcIntegration,True,1900-01-01T00:00:00+00:00,False,False,A visual profiler for RavenDB that you can use in your ASP.NET MVC application.,"nosql,ravendb,raven,document,database,client,mvc",243184,True,3.0.3647-Unstable
+XOMNI Inc,2015-04-01T09:23:50.277Z,43209,1115,XOMNI HTTP API Typescript SDK library,xomni-sdk-ts,True,1899-12-31T16:00:00-08:00,False,False,,,1386,False,3.1.0-alpha
+Microsoft Corporation,2015-03-31T22:27:45.487Z,43209,1116,Test utilities for xunit test suites for Hyak generated clients,Microsoft.Azure.Test.Framework,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.5568.26003-prerelease
+Microsoft Corporation,2015-03-30T18:11:39.937Z,224,1117,"Classes to represent, construct, parse, serialize and validate entity data models. Targets .NET 4.0, Silverlight 4.0, or .NET Portable Lib with support for .NET 4.0, SL 5.0, Win Phone 8, Win Phone 8.1, and Win 8. Localized for CHS, CHT, DEU, ESN, FRA, ITA, JPN, KOR and RUS.",Microsoft.Data.Edm,False,2017-09-08T00:53:37.1+00:00,True,False,,"wcf,data,services,odata,odatalib,edmlib,spatial,ado.net,ef,entity,framework,open,protocol,wcfds,wcfdataservices,dataservices",26449563,True,5.6.4
+NServiceBus Ltd,2015-03-31T23:19:19.34Z,63,1116,"The hosting template for the nservicebus, The most popular open-source service bus for .net",NServiceBus.Host,False,2018-02-16T08:27:09.05+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",446743,False,5.0.4
+NServiceBus Ltd,2015-03-31T23:12:45.023Z,63,1116,The StructureMap Container for the nservicebus,NServiceBus.StructureMap,False,2018-02-16T08:26:21.58+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",211946,False,4.0.10
+"Marco Bachmann,Paul Tingle",2015-04-01T11:50:52.463Z,1115,1115,In dev.,Triarc.Web.Client,False,2015-04-01T04:50:52.463-07:00,True,False,In dev.,typescript,5822,False,1.2.18
+DD4T Community,2015-03-31T22:56:14.43Z,119,1116,DD4T Provider for SDL Tridion 2013 SP1,DD4T.Providers.SDLTridion2013sp1,True,2017-12-22T13:52:46.917+00:00,True,False,,"SDLTridion,Tridion,DD4T",8495,False,2.0.0-alpha6
+Devbridge,2015-04-01T11:10:38.953Z,304,1115,Windows Azure storage module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.WindowsAzureStorage,True,2017-06-20T01:06:25.273-07:00,True,False,,,53961,False,1.11.0-alpha6
+"Rob Kayman,Akshay Shah",2015-03-31T20:09:13.737Z,1116,1116,"This project makes it easy to get a hash code that would not collide with other hashcode. It provides for multiplications by prime numbers to get to a non colliding hash code.
+Inspired by 
+http://stackoverflow.com/questions/5450696/c-sharp-generic-hashcode-implementation-for-classes",HashCodeGenerator,False,2015-03-31T13:09:13.737-07:00,True,False,This project provides a series of extensions to be used to Equals comparision.,,588,False,1.0.1
+Pavel Svarc,2015-03-31T21:05:01.513Z,669,1116,ApplicationInformation exposes access to dll to get version of dll currently running,CpoDesign.Components.ApplicationInformation,False,2016-06-20T10:09:57.197-07:00,True,False,,cpodesign,833,False,0.1.0
+OrchestraDevs,2015-03-31T21:03:37.197Z,4,1116,This library provides a custom NuGet explorer manager.,Orc.NuGetExplorer,True,2018-04-16T14:56:48.99+00:00,True,False,,"orc,nuget,explorer,catel",11791,True,1.0.0-unstable0232
+Rex Morgan,2015-03-31T23:45:28.227Z,339,1116,Blistering-fast Handlebars.js templates in your .NET application.,Handlebars.Net,False,2017-05-16T16:41:22.18-07:00,True,False,Blistering-fast Handlebars.js templates in your .NET application.,"handlebars,mustache,templating,engine,compiler",397288,False,1.3.0
+"Chris Patterson,Albert Hives",2015-03-31T20:50:20.513Z,43209,1116,Adds support for Quartz as a message scheduler to MassTransit (used by the MassTransit.QuartzService project),MassTransit.QuartzIntegration,True,1899-12-31T16:00:00-08:00,False,False,Quartz integration for MassTransit,,-1,False,3.0.3-alpha
+"ejsmith,bniemyjski",2015-03-31T21:17:57.507Z,141,1116,Pluggable foundation blocks for building distributed apps.,Foundatio.Redis,False,2017-11-30T14:52:07.817+00:00,True,False,,"Queue,Messaging,Message,Bus,Locking,Lock,Distributed,File,Storage,Blob,Jobs,Metrics,Stats,Azure,Redis,StatsD",77724,True,1.0.168
+TTRider,2015-03-31T23:11:19.72Z,254,1116,Fluid-style SQL statement generator,TTRider.FluidSql.dll,True,2017-08-09T02:23:12.623+00:00,True,False,,SQL,22917,False,1.0.1-alpha
+J.Sakamoto,2015-04-01T12:15:59.9Z,29,1115,"This library allows you to parse range of IP address string such as ""192.168.0.0/24"" and ""192.168.0.0/255.255.255.0"" and ""192.168.0.0-192.168.0.255"", and can conatins check. This library supports both IPv4 and IPv6.",IPAddressRange,False,2018-03-22T23:08:21.413+00:00,True,False,,IPAddress,125279,False,1.3.0
+Hibernating Rhinos,2015-04-01T12:05:19.757Z,43209,1115,The cascade delete bundle allows for a specified set of documents and attachments to be deleted when the document that owns it is deleted. Typical usage scenarios include deleting an attachment that is referenced by a document or removing a set of child documents referenced by a parent document.,RavenDB.Bundles.CascadeDelete,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",199442,True,2.5.2958-Unstable
+cdmdotnet Limited,2015-04-01T07:36:43.617Z,22,1115,Components for implementing repositories using Mongo for the Cqrs package,Cqrs.Mongo,False,2018-03-29T02:24:39.427+00:00,True,False,,,51888,False,1.500.476.363
+Robin Krom,2015-04-01T11:33:07.18Z,14,1115,"Dapplo.Windows has native code for accessing Windows, e.g getting the size/title/location of a window or monitoring the title changes of windows.",Dapplo.Windows,False,2018-04-06T10:28:28.65+00:00,True,False,A library with code to natively access windows information.,"windows,native,desktop",16001,True,0.1.6
+cdmdotnet Limited,2015-04-01T08:38:06.913Z,22,1115,Components for using the Azure ConfigurationManager for the Cqrs package,Cqrs.Azure.ConfigurationManager,False,2018-03-29T02:22:37.65+00:00,True,False,,,30898,False,1.500.478.365
+win7x64,2015-04-01T06:48:00.057Z,1115,1115,"EPPlus is a powerful library for reading and writing Excel 2007/2010 files, while it is not support converting .xlsx to other type of formats PDF, Image, CSV, XML, inserting OLE object and etc. This project is aimed to provide examples to achieve above mentioned features by using free Excel Class Library - Free Spire.XLS. There is no need to install Microsoft Excel or Office and it is easy to use both of the API together.
+
+The main features offered by Epplus_Excel:
+
+xlsx->csv 
+xlsx->image 
+Export .xlss to PDF 
+Save .xlsx to .xls 
+Export .xlsx to XML 
+Insert control 
+Insert oleobject 
+Insert sparklines 
+Save chart to image",EpplusExcel,False,2015-03-31T23:48:00.057-07:00,True,False,,"epplus,excel,.xlsx,PDF,XML",11137,False,1.0.0
+Devbridge,2015-04-01T11:09:55.063Z,304,1115,Amazon S3 file storage module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.AmazonS3Storage,True,2017-06-20T01:06:15.35-07:00,True,False,,,50575,False,1.11.0-alpha6
+cdmdotnet Limited,2015-04-01T08:38:49.593Z,22,1115,Components for implementing the event store using Azure DocumentDB for the Cqrs package,Cqrs.Azure.DocumentDb,True,2018-03-29T02:22:52.62+00:00,True,False,,,46224,False,1.500.478.365-preview
+Google Inc.,2015-04-01T12:23:08.72Z,43209,1115,"Google APIs Client Library for working with Dataflow v1b4.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/dataflow/v1b4
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/dataflow/v1b4/csharp",Google.Apis.Dataflow.v1b4,False,1900-01-01T00:00:00+00:00,False,False,,Google,-1,False,1.9.0.50
+Hibernating Rhinos,2015-04-01T12:11:56.953Z,43209,1115,RavenDB 'Unique Constraints' bundle client. Allow the user to implement unique constraints in the objects (useful for properties like email or social security number).,RavenDB.Client.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles",242613,True,2.5.2958-Unstable
+hahoyer,2015-03-31T21:35:23.213Z,206,1116,Provide some basic extensions for everyday programming.,hw.UnitTest,False,2017-09-26T19:51:19.573+00:00,True,False,Unit test support.,,3648,False,15.0.0
+Socres,2015-04-01T08:38:39.507Z,1064,1115,"This package contains several helper for Asp.Net.
+These include:
+  - CultureBasedActionAttribute
+
+For a full list of helpers, look at the project site.",Socres.Web.Mvc,False,2015-05-22T07:31:02.177-07:00,True,False,,,1786,False,1.0.43
+Alexandr Nikitin,2015-03-31T20:46:59.877Z,1116,1116,Implementation of Aho-Corasick algorithm on .NET,AhoCorasick.Net.Source,True,2015-03-31T13:46:59.877-07:00,True,False,Implementation of Aho-Corasick algorithm on .NET,aho-corasick,1112,False,0.6.1-beta
+Mike,2015-03-31T04:03:40.803Z,86,1116,Common Shareable Library,CMShareable,False,2018-01-24T22:40:36.053+00:00,True,False,,"Shareable,Library,Helper,AbstractDao",13514,False,0.2.23
+NServiceBus Ltd,2015-03-31T23:07:28.62Z,63,1116,The Autofac Container for the nservicebus,NServiceBus.Autofac,False,2018-02-16T08:25:42.907+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",279857,False,4.0.10
+cdmdotnet Limited,2015-04-01T07:29:25.537Z,22,1115,A lightweight framework to help write CQRS and Eventsourcing applications in C#,Cqrs,False,2018-03-29T02:21:52.333+00:00,True,False,,,56533,False,1.500.476.363
+Tim Abell,2015-04-01T12:28:20.937Z,976,1115,"Entity Framework 6.1 Enum Lookup-Table Generator
+
+			Creates lookup tables and foreign key constraints based on the enums used in your model.
+
+			This makes up for a feature that's missing in Entity Framework 6.1.
+
+			See the project site on github at http://github.com/timabell/ef-enum-to-lookup for usage and more information.
+
+			Please report any issues you encounter here: https://github.com/timabell/ef-enum-to-lookup/issues",ef-enum-to-lookup,False,2015-08-18T01:00:24.663-07:00,True,False,"Entity Framework 6.1 Enum Lookup-Table Generator
+
+			Creates lookup tables and foreign key constraints based on the enums used in your model.",,36627,False,1.7.0
+Anshoo Arora,2015-03-31T21:48:07.467Z,1096,1116,"NUnitOrange creates masonry style HTML reports for NUnit. Its a simple Console application that creates easy to use, attractive dashboard. It shows the XML output from NUnit in a presentable manner with charts, graphs and tables.",NUnitOrange,False,2015-04-20T10:55:45.5-07:00,True,False,,"NUnit,Report,HTML,Orange,NUnitOrange",5773,False,2.0.1
+Kevin Mees,2015-04-01T12:40:18.677Z,949,1115,Run a grunt task as a MSBuild task,MSBuild.Grunt,False,2015-09-14T10:32:26.967-07:00,True,False,,"Grunt,MSBuild",26718,False,0.4.4
+Windward Studios,2015-03-31T19:33:35.99Z,196,1116,Windward Studios' DotNetEngine,WindwardEngine,False,2017-10-06T21:48:39.073+00:00,True,False,,,11517,False,13.1.28.2
+Christof Senn,2015-03-31T23:38:13.133Z,811,1116,EF5 provider for N-Tier Entity Framework.,NTierEntityFramework.Server.EntityFramework5_0,True,2016-01-30T15:48:55.03-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",5460,False,1.6.0-beta002
+Kenan Hancer,2015-04-01T10:24:12.513Z,1115,1115,A simple job schedule for .NET Methods,Uni.Schedule,False,2015-04-01T03:24:12.513-07:00,True,False,,"WindowsService,WindowsApplication,ConsoleApplication",379,False,1.0.0
+NServiceBus Ltd,2015-03-31T23:10:42.3Z,63,1116,The NHibernate for the NServicebus,NServiceBus.NHibernate,False,2018-02-16T08:32:13.247+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",329597,False,4.0.10
+"ejsmith,bniemyjski",2015-03-31T21:40:41.267Z,141,1116,Pluggable foundation blocks for building distributed apps.,Foundatio,False,2017-11-30T14:31:02.107+00:00,True,False,,"Queue,Messaging,Message,Bus,Locking,Lock,Distributed,File,Storage,Blob,Jobs,Metrics,Stats,Azure,Redis,StatsD",99666,True,1.0.170
+Google Inc.,2015-04-01T11:47:44.13Z,71,1115,"Google APIs Client Library for working with Adexchangeseller v1.1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/adexchangeseller/v1.1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/adexchangeseller/v1.1/csharp",Google.Apis.AdExchangeSeller.v1_1,False,2018-02-08T11:08:29.443+00:00,True,False,,Google,21452,True,1.9.0.840
+NanaLich,2015-04-01T08:35:30.367Z,1053,1115,A collection of utility classes tend to help in projects of any purpose while staying tiny & simple.,OmniKits.Core,False,2015-06-02T07:27:03.853-07:00,True,False,,,9704,False,0.8.1
+anhdn,2015-04-01T10:49:58.713Z,990,1115,Description,App360SDK,False,2015-08-03T20:41:46.177-07:00,True,False,,,5505,False,1.1.8
+"Chris Patterson,Dru Sellers,Travis Smith",2015-03-31T20:44:21.917Z,1,1116,"This integration library adds support for Autofac to MassTransit, a distributed application framework for .NET, including support for MSMQ and RabbitMQ.",MassTransit.Autofac,True,2018-04-19T17:05:26.18+00:00,True,False,,,155927,False,3.0.3-alpha
+Google Inc.,2015-04-01T12:01:28.133Z,2,1115,"Google APIs Client Library for working with Adsensehost v4.1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/adsensehost/v4.1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/adsensehost/v4.1/csharp",Google.Apis.AdSenseHost.v4_1,False,2018-04-18T08:56:41.54+00:00,True,False,,Google,44090,True,1.9.0.1540
+cdmdotnet Limited,2015-04-01T07:35:35.683Z,22,1115,Uml templates and a Visual Studio VISX profile package for the lightweight CQRS framework. Using this package you can generate much of the boiler plate code involved in implementing a CQRS project.,Cqrs.Modelling,False,2018-03-29T02:24:22.753+00:00,True,False,,,46400,False,1.500.476.363
+DD4T Community,2015-03-31T22:54:18.96Z,43209,1116,DD4T Provider for SDL Tridion 2011,DD4T.Providers.SDLTridion2011,True,1899-12-31T16:00:00-08:00,False,False,,"SDLTridion,Tridion,DD4T",-1,False,2.0.0-alpha6
+Devbridge,2015-04-01T11:12:02.95Z,304,1115,AppFabric Cache module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.AppFabricCache,True,2017-06-20T01:06:53.713-07:00,True,False,,,48913,False,1.11.0-alpha6
+Devbridge,2015-04-01T11:07:41.267Z,304,1115,Blog module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.Blog,True,2017-06-20T01:05:43.147-07:00,True,False,,,60441,False,1.11.0-alpha6
+"Steffen Forkmann,Daniel Mohl,Tomas Petricek,Ryan Riley,Mauricio Scheffer,Phil Trelford",2013-09-24T09:11:54.363Z,43209,1669,"FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.
+
+It currently implements:
+
+* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution
+* Iteratee
+* Purely functional data structures: Queues, double-ended Queues, BottomUpMergeSort, RandomAccessList, Vector, RoseTree, BKTree
+* Validation applicative functor
+* General functions like flip
+* Additional functions around collections
+* Functions to make C# - F# interop easier.",FSharpx.Core,False,1899-12-31T16:00:00-08:00,False,False,"FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.
+
+It currently implements:
+
+* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution
+* Iteratee
+* Purely functional data structures: Queues, double-ended Queues, BottomUpMergeSort, RandomAccessList, Vector, RoseTree, BKTree
+* Validation applicative functor
+* General functions like flip
+* Additional functions around collections
+* Functions to make C# - F# interop easier.","fsharp,csharp,interop,monad,iteratee,validation,bytestring,testing",94458,False,1.8.41
+Devbridge,2015-04-01T11:14:35.327Z,304,1115,Users module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.Users,True,2017-06-20T01:07:39.09-07:00,True,False,,,46483,False,1.11.0-alpha6
+"Jeff Doolittle,Mike Hadlow",2015-04-01T12:29:29.77Z,43209,1115,An adaptor to allow EasyNetQ to use Castle.Windsor as its internal IoC container,EasyNetQ.DI.Windsor,False,1900-01-01T00:00:00+00:00,False,False,,"RabbitMQ,Messaging,AMQP,REST,API,Windsor",50895,False,0.47.10.379
+Google Inc.,2015-04-01T12:03:42.31Z,3,1115,"Google APIs Client Library for working with Androidenterprise v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/androidenterprise/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/androidenterprise/v1/csharp",Google.Apis.AndroidEnterprise.v1,False,2018-04-17T08:54:08.683+00:00,True,False,,Google,17118,True,1.9.0.40
+Hibernating Rhinos,2015-04-01T12:02:54.07Z,43209,1115,"The Authorization Bundle extend RavenDB and add document level permissions. The Auth Bundle allows to define permissions for a specific user, a group or using arbitrary tagging. The system is design to be high performance, scalable and flexible.",RavenDB.Bundles.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles,authorization",201812,True,2.5.2958-Unstable
+Devbridge,2015-04-01T11:05:53.317Z,304,1115,Media module for BetterCMS. Better CMS is publishing focused and developer friendly .NET Open source CMS.,BetterCms.Module.MediaManager,True,2017-06-20T01:05:18.663-07:00,True,False,,,61621,False,1.11.0-alpha6
+Victor Baybekov,2015-04-01T08:44:23.03Z,436,1115,"Ractor (Redis Actor) is a distributed actor system with CLR/JVM interop (WIP) and dead simple API for POCOs cache/persistence. Its API is inspired by F#'s MailboxProcessor, Fsharp.Actor and Akka(.NET) libraries. The main difference is that in Ractor actors exist is Redis per se as lists of messages, while a number of ephemeral workers (actors' ""incarnations"") take messages from Redis, process them and post results back.",Ractor,False,2017-02-07T20:39:17.97-08:00,True,False,Redis based distributed actors + Dead simple API for distributed POCOs persistence,"F#,.NET,fsharp,redis,akka,distributed,JVM,interop",4652,False,0.3.5
+"Marco Bachmann,Paul Tingle",2015-04-01T10:47:37.11Z,1115,1115,In dev.,Triarc.Web.Client,False,2015-04-01T04:50:52.463-07:00,True,False,In dev.,typescript,5822,False,1.2.14
+Nito.ArraySegments,2015-04-01T01:57:58.873Z,223,1115,Nito.ArraySegments,Nito.ArraySegments,True,2017-09-09T15:48:50.63+00:00,True,False,,,4158,True,2.0.0-alpha-1
+Codaxy,2015-04-01T08:00:31.337Z,262,1115,Codaxy.Common Library provides set of commonly used tools and utilities,Codaxy.Common,False,2017-08-01T10:33:32.66+00:00,True,False,,,10677,False,0.5.16.10
+"ejsmith,bniemyjski",2015-03-31T22:15:24.047Z,141,1116,Pluggable foundation blocks for building distributed apps.,Foundatio,False,2017-11-30T14:31:02.107+00:00,True,False,,"Queue,Messaging,Message,Bus,Locking,Lock,Distributed,File,Storage,Blob,Jobs,Metrics,Stats,Azure,Redis,StatsD",99666,True,1.0.171
+Geeks ltd,2015-04-01T10:10:27.277Z,105,1115,M# base classes and helpers for Unit Testing,MSharp.Framework.Testing,False,2018-01-05T19:13:57.3+00:00,True,False,,,15074,False,2.1.0.55
+Ryan Roberts,2015-04-01T12:24:40.077Z,886,1115,Convert git history and uncomitted working area to w3c provenence,NICE.git2prov,False,2015-11-16T01:55:27.21-08:00,True,False,,,8979,False,1.0.5
+Kenan Hancer,2015-04-01T08:53:20.64Z,1115,1115,A simple xml helper to convert from xml to dynamic expandoObject,Uni.Xml,False,2015-04-01T01:53:20.64-07:00,True,False,,"XML,ORM,MVC,MVC2,MVC3,MVC4,ASP.NET,WebForms,SQLServer,SqlServerCE,MySQL,Oracle,SQLite,PostgreSQL,Database",321,False,1.0.0
+Hibernating Rhinos,2015-04-01T12:05:58.763Z,57,1115,RavenDB embedded database,RavenDB.Bundles.IndexReplication,True,2018-02-22T21:29:30.903+00:00,True,False,,"nosql,ravendb,raven,document,database,bundles",116112,True,2.5.2958-Unstable
+Saravanan,2015-04-01T06:24:36.647Z,43209,1115,ThirdParty Dlls,CelloSaaS_WebApp_ThirdPartyDlls,False,1899-12-31T16:00:00-08:00,False,False,,"CelloSaaS,TechCello",-1,False,4.5.0.1
+"GeertvanHorrik,OrchestraDevs",2015-04-01T12:41:45.197Z,4,1115,The library for all modules created for the Orchestra shell.,Orchestra.Core,True,2018-04-16T15:53:54.697+00:00,True,False,,"mvvm,orchestra,shell,prism,framework,wpf",52529,True,2.2.0-unstable0016
+hahoyer,2015-03-31T21:39:49.27Z,83,1116,Provides support for building compilers.,hw.CompilerTools,False,2018-01-27T10:11:24.8+00:00,True,False,Compiler building,,16268,False,15.7.0
+OrchestraDevs,2015-03-31T21:07:25.91Z,4,1116,Automation library of Squirrel to update with different channels.,Orc.Squirrel,True,2018-04-16T15:05:51.903+00:00,True,False,,"squirrel,orcomp,update",7920,True,1.0.0-unstable0035
+"Sandrino Di Mattia,Toon De Coninck",2015-04-01T07:08:30.087Z,1115,1115,A client SDK for Microsoft Azure Search.,RedDog.Search,True,2015-04-01T00:08:30.133-07:00,True,False,A client SDK for Microsoft Azure Search.,"Microsoft,Azure,Search,Full-Text",48221,False,0.5.3-pre
+TTRider,2015-04-01T00:26:35.77Z,254,1115,Fluid-style SQL statement generator,TTRider.FluidSql.dll,True,2017-08-09T02:23:12.623+00:00,True,False,,SQL,22917,False,1.0.3-alpha
+Kevin Mees,2015-04-01T12:42:01.373Z,949,1115,Core dependency for other MSBuild.NodeTools targets,MSBuild.Node,False,2015-09-14T10:33:39.78-07:00,True,False,,"Node,MSBuild",62263,False,0.4.4
+Kazunori Sakamoto,2015-04-01T09:40:00.55Z,488,1115,TreeDotNet is a simple implementation of multi-branch tree written in C#.,TreeDotNet,False,2016-12-18T01:50:34.753-08:00,True,False,,".NET,Library,Tree",6099,False,1.3.1.20
+"ejsmith,bniemyjski",2015-03-31T22:17:13.457Z,141,1116,Pluggable foundation blocks for building distributed apps.,Foundatio.AzureStorage,False,2017-11-30T15:15:57.557+00:00,True,False,,"Queue,Messaging,Message,Bus,Locking,Lock,Distributed,File,Storage,Blob,Jobs,Metrics,Stats,Azure,Redis,StatsD",62616,True,1.0.171
+Jean-Sébastien Goupil,2015-02-25T04:38:34.997Z,59,1150,Communicates with QuickBooks Web Connector.,QbSync.WebConnector,False,2018-02-20T17:18:57.097+00:00,True,False,Web service to talk with Web Connector from QuickBooks to sync with QuickBooks Desktop.,"quickbooks,qbxml,webconnector,webservice,service",3474,False,0.0.2.1
+Google Inc.,2015-04-01T12:24:19.48Z,58,1115,"Google APIs Client Library for working with Oauth2 v2.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/oauth2/v2
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/oauth2/v2/csharp",Google.Apis.Oauth2.v2,False,2018-02-21T08:57:27.28+00:00,True,False,,Google,195807,True,1.9.0.890
+Michiel van Oudheusden,2015-04-01T09:54:56.1Z,190,1115,Serilog event sink that writes to the Elmah.io service.,Serilog.Sinks.ElmahIO,False,2017-10-12T08:40:13.147+00:00,True,False,,"serilog,logging,elmah,elmah.io,error",24601,True,1.5.4
+Microsoft Corporation,2015-03-31T22:28:19.493Z,43209,1116,Http recorder utility for a Azure test suite,Microsoft.Azure.Test.HttpRecorder,True,1899-12-31T16:00:00-08:00,False,False,,,73607,True,1.0.5568.26003-prerelease
+Gordon Watts,2015-03-31T22:38:38.787Z,480,1116,Light weight and very simple iCal parser. Parses only VEVENT objects.,iCal.PCL,False,2016-12-25T19:59:07.803-08:00,True,False,,"iCal,Portable,PCL",1875,False,1.0.3
+cdmdotnet Limited,2015-04-01T08:44:33.78Z,22,1115,Components for implementing the I.O.C. via Ninject for Azure DocumentDb Cqrs package,Cqrs.Ninject.Azure.DocumentDb,True,2018-03-29T02:25:50.197+00:00,True,False,,,43101,False,1.500.478.365-preview
+Keith Hall,2015-04-01T05:38:35.9Z,1100,1115,"Small, simple C# animation library built using the reactive extensions framework, utilizing Robert Penner's easing functions.  Does not make use of reflection, instead allowing the caller to use a function/monad to update their desired object.  Contains methods for animating Windows Forms Controls.
+
+Includes full source code and a LINQPad sample.",ReactiveAnimation,False,2015-04-16T01:20:34.017-07:00,True,False,C# animation library built using the reactive extensions framework,"animation,tween,linqpad-samples,reactive",3763,False,1.0.10
+NServiceBus Ltd,2015-03-31T23:11:28.257Z,63,1116,The Ninject Container for the nservicebus,NServiceBus.Ninject,False,2018-02-16T08:26:03.157+00:00,True,False,,"nservicebus,servicebus,msmq,cqrs,publish,subscribe",171718,False,4.0.10
+Kevin Mees,2015-04-01T12:42:49.04Z,949,1115,Run a multitude of node tools as a MSBuild task,MSBuild.NodeTools,False,2015-09-14T10:34:15.643-07:00,True,False,,"Bower,Grunt,Gulp,Npm,MSBuild",21441,False,0.4.4
+Hibernating Rhinos,2015-04-01T12:17:18.97Z,43209,1115,"Use this package if you want to run RavenDB as a standalone application. This package is not intented to be used in Visual Studio. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Server,True,1900-01-01T00:00:00+00:00,False,False,This package contains the Raven.Server.exe database binaries.,"nosql,ravendb,raven,document,database",272653,True,2.5.2958-Unstable
+mgibas,2015-04-01T07:20:13.773Z,342,1115,NUnit assertions for Microsoft.Owin.Security,NUnit.Asserts.Microsoft.Owin.Security,False,2017-05-13T05:51:53.313-07:00,True,False,,"NUnit,Assert,Owin,Security",4622,False,1.0.2
+Christof Senn,2015-03-31T23:43:00.637Z,811,1116,N-Tier Entity Framework WCF RIA Services base library and T4 code generation templates.,NTierEntityFramework.WcfRia,True,2016-01-30T15:49:44.513-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",4763,False,1.6.0-beta002
+Andy Davis,2015-04-01T00:17:57.813Z,1023,1115,An acceptance test driven development framework where C# is a first class citizen. It generates Gherkin and a report rather than that being the starting point.,Cspec,False,2015-07-02T08:26:19.703-07:00,True,False,,tenkai,3803,False,1.0.0.4
+Developers Dominicanos,2015-04-01T02:19:07.063Z,1115,1115,Provides common validation attributes for Dominican Republic (DO).,DevelopersDo.DataAnnotations,False,2015-03-31T19:19:07.063-07:00,True,False,This project provides common and useful validation attributes for Dominican Republic (DO). The set contains validation attributes for elements such as 'Cédula' and 'MSISDN'.,"validation,attribute,dominican,republic,do,SDQ,cedula,MSISDN,bbpin,BlackBerry",624,False,1.0.1
+Google Inc.,2015-04-01T12:26:22.377Z,15,1115,"Google APIs Client Library for working with Plus v1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/plus/v1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/plus/v1/csharp",Google.Apis.Plus.v1,False,2018-04-05T09:05:30.157+00:00,True,False,,Google,167781,True,1.9.0.2170
+NanaLich,2015-04-01T08:36:29.467Z,1053,1115,-,OmniKits.Async,False,2015-06-02T07:27:11.113-07:00,True,False,,,5017,False,0.8.1
+Google Inc.,2015-04-01T12:09:28.19Z,176,1115,"Google APIs Client Library for working with Cloudmonitoring v2beta2.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/cloudmonitoring/v2beta2
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/cloudmonitoring/v2beta2/csharp",Google.Apis.CloudMonitoring.v2beta2,False,2017-10-26T13:01:23.157+00:00,True,False,,Google,9881,True,1.9.0.60
+Saar,2015-04-01T05:56:46.447Z,681,1115,Object Model for LiveSDK for WinRT.,LiveSDK.ObjectModel,False,2016-06-07T23:11:52.55-07:00,True,False,,"Live,SDK,Windows,Runtime",951,False,0.1.0
+J.Sakamoto,2015-04-01T12:18:38.643Z,29,1115,"This library allows you to parse range of IP address string such as ""192.168.0.0/24"" and ""192.168.0.0/255.255.255.0"" and ""192.168.0.0-192.168.0.255"", and can conatins check. This library supports both IPv4 and IPv6.",IPAddressRange,False,2018-03-22T23:08:21.413+00:00,True,False,,IPAddress,125279,False,1.3.0.1
+Devbridge,2015-04-01T09:42:50.04Z,715,1115,The Core module for BetterModules. BetterModules is modular architecture supporting web based and business logic modules.,BetterModules.Core,True,2016-05-05T01:04:16.473-07:00,True,False,,,12622,False,1.0.0-rc4
+DD4T Community,2015-03-31T22:29:01.093Z,388,1116,DD4T Provider for SDL Tridion 2011 SP1,DD4T.Providers.SDLTridion2011sp1,True,2017-03-28T13:13:58.093-07:00,True,False,,"SDLTridion,Tridion,DD4T",4274,False,2.0.0-alpha5
+OrchestraDevs,2015-03-31T21:07:14.167Z,4,1116,This library makes managing workspaces very easy.,Orc.WorkspaceManagement.Xaml,True,2018-04-16T15:16:11.083+00:00,True,False,,"orc,workspace,management,xaml,wpf",12203,True,1.0.0-unstable0090
+Google Inc.,2015-04-01T12:13:12.89Z,43209,1115,"Google APIs Client Library for working with Deploymentmanager v2beta1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/deploymentmanager/v2beta1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/deploymentmanager/v2beta1/csharp",Google.Apis.Deploymentmanager.v2beta1,False,1900-01-01T00:00:00+00:00,False,False,,Google,-1,False,1.9.0.70
+P. van der Velde,2015-04-01T08:17:36.263Z,624,1115,Provides default properties and build tasks used to unify the settings of a set of C# projects in a Visual Studio solution.,nBuildKit.MsBuild.Projects.WiX,False,2016-08-03T23:16:52.567-07:00,True,False,,,4583,False,0.4.6
+Storstadens IT Konsult AB,2015-04-01T08:44:20.96Z,24,1115,The admin gui plugin for Solis Search for EPiServer,SolisSearch.EPiServer.Web,False,2018-03-27T13:17:45.107+00:00,True,False,,"lucene,search,apache,solr,episerver",2203,False,2.0.101.437
+Richard Morris,2015-04-01T01:35:41.88Z,43209,1115,Seamlessly adds a Swagger to WebApi projects!,Swashbuckle,True,1899-12-31T16:00:00-08:00,False,False,"Combines ApiExplorer and Swagger/swagger-ui to provide a rich discovery, documentation and playground experience to your API consumers","Swagger,SwaggerUi,Documentation,Discovery,Help,WebApi,AspNet,AspNetWebApi,Docs,WebHost,IIS",5087814,False,5.1.0-rc1
+Google Inc.,2015-04-01T12:35:28.957Z,2,1115,"Google APIs Client Library for working with YoutubeAnalytics v1beta1.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/youtubeAnalytics/v1beta1
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/youtubeAnalytics/v1beta1/csharp",Google.Apis.YouTubeAnalytics.v1beta1,False,2018-04-18T09:07:09.893+00:00,True,False,,Google,25790,True,1.9.0.550
+cdmdotnet Limited,2015-04-01T08:43:53.447Z,22,1115,Components for implementing the I.O.C. via Ninject for the Cqrs package,Cqrs.Ninject,False,2018-03-29T02:25:08.757+00:00,True,False,,,52985,False,1.500.478.365
+"Steffen Forkmann,Daniel Mohl,Tomas Petricek,Ryan Riley,Mauricio Scheffer,Phil Trelford",2013-09-24T09:11:54.363Z,43209,1669,"FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.
+
+It currently implements:
+
+* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution
+* Iteratee
+* Purely functional data structures: Queues, double-ended Queues, BottomUpMergeSort, RandomAccessList, Vector, RoseTree, BKTree
+* Validation applicative functor
+* General functions like flip
+* Additional functions around collections
+* Functions to make C# - F# interop easier.",FSharpx.Core,False,1899-12-31T16:00:00-08:00,False,False,"FSharpx is a library for the .NET platform implementing general functional constructs on top of the F# core library. Its main target is F# but it aims to be compatible with all .NET languages wherever possible.
+
+It currently implements:
+
+* Several standard monads: State, Reader, Writer, Either, Continuation, Distribution
+* Iteratee
+* Purely functional data structures: Queues, double-ended Queues, BottomUpMergeSort, RandomAccessList, Vector, RoseTree, BKTree
+* Validation applicative functor
+* General functions like flip
+* Additional functions around collections
+* Functions to make C# - F# interop easier.","fsharp,csharp,interop,monad,iteratee,validation,bytestring,testing",94458,False,1.8.41
+Saravanan,2015-04-01T06:15:49.527Z,43209,1115,CelloSaaS.AuthServer.Core for version 4.5.0.1,CelloSaaS.AuthServer.Core,False,1899-12-31T16:00:00-08:00,False,False,CelloSaaS.AuthServer.Core for version 4.5.0.1,,-1,False,4.5.0.1
+"ejsmith,bniemyjski",2015-03-31T21:42:15.757Z,141,1116,Pluggable foundation blocks for building distributed apps.,Foundatio.AzureServiceBus,False,2017-11-30T15:05:26.42+00:00,True,False,,"Queue,Messaging,Message,Bus,Locking,Lock,Distributed,File,Storage,Blob,Jobs,Metrics,Stats,Azure,Redis,StatsD",55292,True,1.0.170
+Infitek,2015-04-01T08:11:59.297Z,43209,1115,GenericUoWRepo.Pattern for EF6,GenericUoWRepo.Pattern,False,1899-12-31T16:00:00-08:00,False,False,GenericUoWRepo.Pattern for EF6,,-1,False,1.0.2
+dwkj,2015-04-01T08:07:09.307Z,1115,1115,帮助类,Pcx.Common,False,2015-04-01T01:07:09.307-07:00,True,False,,,338,False,1.0.0
+Christof Senn,2015-03-31T22:34:08.72Z,811,1116,T4 code generation templates for N-Tier Entity Framework with EF6. Install this package for MyProject.Server.Domain.Edmx projekt if you target EF6.,NTierEntityFramework.T4.EntityFramework6_0,True,2016-01-30T15:49:38.947-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",5968,False,1.6.0-beta001
+Christof Senn,2015-03-31T22:29:24.537Z,811,1116,Common base library N-Tier Entity Framework.,NTierEntityFramework.Common,True,2016-01-30T15:48:37.78-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",6886,False,1.6.0-beta001
+Storstadens IT Konsult AB,2015-04-01T08:43:47.54Z,24,1115,Solis Search library for EPiServer 7 and indexer for version lower than 7.5,SolisSearch.EPiServer,False,2018-03-27T13:17:31.213+00:00,True,False,,"lucene,search,apache,solr,episerver",2207,False,2.0.101.437
+Storstadens IT Konsult AB,2015-04-01T08:46:07.433Z,24,1115,Solis Search indexer for Umbraco CMS,SolisSearch.Umbraco,False,2018-03-27T13:19:06.36+00:00,True,False,,"lucene,search,apache,solr,umbraco",2146,False,2.0.101.437
+Kenan Hancer,2015-04-01T08:49:41.83Z,43209,1115,Uni Web-based Content Management System,Uni.Cms,False,1899-12-31T16:00:00-08:00,False,False,,"CRM,CMS,UNI,ORM,WEB,SENCHA,JAVASCRIPT",-1,False,1.0.0
+Christof Senn,2015-03-31T22:31:05.327Z,811,1116,EF5 provider for N-Tier Entity Framework.,NTierEntityFramework.Server.EntityFramework5_0,True,2016-01-30T15:48:55.03-08:00,True,False,,"n-tier,entity,framework,EF,ntieref,C#,T4,code,generator,generation,data,access,layer,DAL,DDD,domain,driven,design,software,architecture",5460,False,1.6.0-beta001
+Google Inc.,2015-04-01T12:16:30.42Z,1002,1115,"Google APIs Client Library for working with Freebase v1-sandbox.
+          Supported Platforms:
+
+          - .NET Framework 4 and 4.5
+
+          - Windows Store apps
+
+          - Windows Phone 8 and 8.1
+
+          - Portable Class Libraries
+
+          More documentation on the API is available at:
+          https://developers.google.com/api-client-library/dotnet/apis/freebase/v1-sandbox
+
+          The package source code is available at:
+          https://developers.google.com/resources/api-libraries/download/freebase/v1-sandbox/csharp",Google.Apis.Freebase.v1sandbox,False,2015-07-22T21:21:02.273-07:00,True,False,,Google,8855,True,1.9.0.230
+cdmdotnet Limited,2015-04-01T07:35:00.577Z,22,1115,Components for implementing the event store using Greg Youngs EventStore for the Cqrs package,Cqrs.EventStore,False,2018-03-29T02:24:06.923+00:00,True,False,,,52128,False,1.500.476.363
+DD4T Community,2015-03-31T22:30:12.893Z,119,1116,DD4T Provider for SDL Tridion 2013 SP1,DD4T.Providers.SDLTridion2013sp1,True,2017-12-22T13:52:46.917+00:00,True,False,,"SDLTridion,Tridion,DD4T",8495,False,2.0.0-alpha5
