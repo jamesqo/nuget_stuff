@@ -156,6 +156,8 @@ class Recommender(object):
         self.min_dpd = min_dpd
         self.min_dpd_ratio = min_dpd_ratio
         self.mode = mode
+        self.n_total = n_total
+        self.n_pred = n_pred
 
         self.penalties_ = None
         if mode == 'onego':
@@ -214,6 +216,10 @@ class Recommender(object):
 
     def predict(self, X, df):
         log_call()
+
+        if self.mode == 'chunked':
+            assert self._n_filled == self.n_total
+            assert X.shape[0] == self.n_pred
 
         result = {}
         m = X.shape[0]

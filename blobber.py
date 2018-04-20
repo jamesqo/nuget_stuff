@@ -24,7 +24,11 @@ def get_pagenos(df):
     return sorted(set(df['pageno']))
 
 def gen_blob(DF, chunkno, df, feats, blobs_root, getvecs):
-    magic = Recommender(n_recs=5)
+    M, m = DF.shape[0], df.shape[0] # Good
+    magic = Recommender(n_recs=5,
+                        mode='chunked',
+                        n_total=M,
+                        n_pred=m)
 
     for chunkno2 in get_chunknos(DF):
         if chunkno2 == chunkno:
