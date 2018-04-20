@@ -142,23 +142,60 @@ class Recommender(object):
                  n_recs,
                  penalties=None,
                  min_dpd=5,
-                 min_dpd_ratio=250):
+                 min_dpd_ratio=250,
+                 mode='onego',
+                 n_total=None,
+                 n_pred=None):
+        if mode not in MODES:
+            raise ValueError("Unrecognized mode {}".format(repr(mode)))
+        if mode == 'chunked' and (n_total is None or n_pred is None):
+            raise ValueError("'n_total' and 'n_pred' are non-optional for mode {}".format(repr(mode)))
+
         self.n_recs = n_recs
         self.penalties = penalties or DEFAULT_PENALTIES
         self.min_dpd = min_dpd
         self.min_dpd_ratio = min_dpd_ratio
+        self.mode = mode
 
-        self.metrics_ = None
         self.penalties_ = None
-        self.scales_ = None
+        if mode == 'onego':
+            self.metrics_ = None
+            self.scales_ = None
+            self.similarities_ = None
+        elif mode == 'chunked':
+            self.metrics_ = np.zeros(n_total)
+            self.scales_ = np.zeros(n_total)
+            self.similarities_ = sparse.csr_matrix((n_pred, 0))
 
-        self._X = None
-        self._df = None
-        self._ids = None
-        self._dpds = None
-        self._scale_mat = None
+        self._ids = []
+        self._dpds = []
+        self._n_filled = 0
 
-    def fit(self, X, df):
+    def fit(self, X, df, X_pred, df_pred):
+        assert self.mode == 'onego'
+        self.metrics_, self.penalties_, self.scales_, self.similarities_ = self._fit(X, df, X_pred, df_pred)
+
+        self._ids = list(df['id'])
+        self._dpds = list(df['downloads_per_day'])
+        return self
+
+    def partial_fit(self, X, df, X_pred, df_pred):
+        assert self.mode == 'chunked'
+        metrics, self.penalties_, scales, similarities = self._fit(X, df, X_pred, df_pred)
+
+        n_filled, m_part = self._n_filled, X.shape[0]
+        indices = slice(n_filled, n_filled + m_part)
+
+        self.metrics_[indices] = metrics
+        self.scales_[indices] = scales
+        self.similarities_ = sparse.hstack(self.similarities_, similarities)
+
+        self._n_filled += m_part
+
+        self._ids.extend(df['id'])
+        self._dpds.extend(df['downloads_per_day'])
+
+    def _fit(self, X, df, X_pred, df_pred): # pylint: disable=W0613
         log_call()
         assert sparse.isspmatrix_csr(X)
 
@@ -166,26 +203,21 @@ class Recommender(object):
             (_freshness_vector(df), self.penalties['freshness']),
             (_popularity_vector(df), self.penalties['popularity']),
         ]
-        self.metrics_, self.penalties_ = zip(*metrics_and_penalties)
-        scale_vectors = _apply_penalties(self.metrics_, self.penalties_)
-        self.scales_ = np.multiply(*scale_vectors)
+        metrics, penalties = zip(*metrics_and_penalties)
+        scale_vectors = _apply_penalties(metrics, penalties)
+        scales = np.multiply(*scale_vectors)
 
-        self._X = X
-        self._df = df
-        self._ids = list(df['id'])
-        self._dpds = list(df['downloads_per_day'])
-        self._scale_mat = sparse.diags(self.scales_)
-        return self
+        similarities = linear_kernel(X_pred, X, dense_output=False)
+        similarities *= sparse.diags(scales)
+
+        return metrics, penalties, scales, similarities
 
     def predict(self, X, df):
         log_call()
 
-        similarities = linear_kernel(X, self._X, dense_output=False)
-        similarities *= self._scale_mat
-
         result = {}
         m = X.shape[0]
-        csr = similarities.tocsr()
+        csr = self.similarities_.tocsr()
 
         ids, dpds = list(df['id']), list(df['downloads_per_day'])
         for index in range(m):

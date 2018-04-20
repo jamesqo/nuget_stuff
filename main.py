@@ -9,6 +9,7 @@ import sys
 
 from argparse import ArgumentParser
 from datetime import datetime
+from scipy import sparse
 
 from data_prep import load_packages
 from ml import FeatureTransformer, Recommender
@@ -122,40 +123,56 @@ def add_chunkno(df):
     return df
 
 def gen_blobs(df, tagger):
+    FNAME_FMT = os.path.join(VECTORS_ROOT, 'chunk{chunkno}.npz')
+
     log_call()
 
     os.makedirs(BLOBS_ROOT, exist_ok=True)
     os.makedirs(VECTORS_ROOT, exist_ok=True)
 
     df = add_chunkno(df)
-    fname_fmt = os.path.join(VECTORS_ROOT, 'chunk{}.npz')
     trans = FeatureTransformer(tags_vocab=tagger.vocab_,
                                mode='chunked',
-                               fname_fmt=fname_fmt)
+                               fname_fmt=FNAME_FMT)
     fnames = trans.fit_transform(df)
 
-    magic = Recommender(n_recs=5)
-    magic.fit(feats, df)
+    assert all(~df['chunkno'].isna())
+    chunknos = sorted(set(df['chunkno']))
+    assert len(chunknos) == len(fnames)
 
-    assert all(~df['pageno'].isna())
-    for pageno in sorted(set(df['pageno'])):
-        LOG.debug("Generating blobs for page #{}".format(pageno))
+    for chunkno_pred in chunknos:
+        magic = Recommender(n_recs=5)
 
-        subdf = df[df['pageno'] == pageno]
-        subfeats = feats[subdf.index]
-        recs_dict = magic.predict(subfeats, subdf)
+        subdf_pred = df[df['chunkno'] == chunkno_pred]
+        fname_pred = FNAME_FMT.format(chunkno=chunkno_pred)
+        subfeats_pred = sparse.load_npz(fname_pred)
 
-        ids = list(subdf['id'])
-        for id_ in ids:
+        for chunkno in chunknos:
+            if chunkno == chunkno_pred:
+                subdf, fname, subfeats = subdf_pred, fname_pred, subfeats_pred
+            else:
+                subdf = df[df['chunkno'] == chunkno]
+                fname = FNAME_FMT.format(chunkno=chunkno)
+                subfeats_pred = sparse.load_npz(fname)
+
+            magic.partial_fit(subfeats, subdf, subfeats_pred, subdf_pred)
+
+        recs_dict = magic.predict(subfeats_pred, subdf_pred)
+
+        pagenos = sorted(set(subdf_pred['pageno']))
+        for pageno in pagenos:
+            subsubdf = subdf_pred[subdf_pred['pageno'] == pageno]
             dirname = os.path.join(BLOBS_ROOT, 'page{}'.format(pageno))
             os.makedirs(dirname, exist_ok=True)
 
-            hexid = id_.encode('utf-8').hex()
-            fname = os.path.join(dirname, '{}.json'.format(hexid))
+            ids = list(subsubdf['id'])
+            for id_ in ids:
+                hexid = id_.encode('utf-8').hex()
+                blob_fname = os.path.join(dirname, '{}.json'.format(hexid))
 
-            recs = recs_dict[id_]
-            writer = RecSerializer(fname)
-            writer.writerecs(id_, recs)
+                recs = recs_dict[id_]
+                writer = RecSerializer(blob_fname)
+                writer.writerecs(id_, recs)
 
 async def main():
     args = parse_args()
@@ -170,7 +187,7 @@ async def main():
         feats = trans.fit_transform(df)
 
         magic = Recommender(n_recs=5)
-        magic.fit(feats, df)
+        magic.fit(feats, df, feats, df)
         recs = magic.predict(feats, df)
 
         print_recs(df, recs)
