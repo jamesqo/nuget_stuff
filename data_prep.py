@@ -101,7 +101,7 @@ def read_packages(packages_root, args):
         ]
         for features, default in features_and_defaults:
             for feature in features:
-                assert all(~df[feature].isna())
+                #assert all(~df[feature].isna())
                 df.loc[df[feature] == default, feature] = math.nan
         return df
 
@@ -110,12 +110,14 @@ def read_packages(packages_root, args):
     start, end = args.page_start, args.page_start + (args.page_limit or sys.maxsize)
 
     for pageno in range(start, end):
+        LOG.debug("Loading packages for page #{}".format(pageno))
         fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
         try:
             pagedf = pd.read_csv(fname, dtype=SCHEMA, na_filter=False, parse_dates=DATE_FEATURES)
             pagedf['pageno'] = pageno
             pagedfs.append(pagedf)
         except FileNotFoundError:
+            LOG.debug("{} not found, stopping".format(fname))
             break
 
     df = pd.concat(pagedfs, ignore_index=True)
