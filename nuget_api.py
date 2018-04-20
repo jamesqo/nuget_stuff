@@ -215,11 +215,12 @@ class NugetSearchResults(object):
 
 class PackageCatalogInfo(object):
     def __init__(self, json):
-        self.authors = [name.strip() for name in json['authors'].split(',')]
-        self.created = json['created']
-        self.description = json['description']
+        self.authors = [name.strip() for name in json['authors'].split(',')] \
+                       if 'authors' in json else []
+        self.created = json.get('created', '')
+        self.description = json.get('description', '')
         self.id = json['id']
-        self.is_prerelease = json['isPrerelease']
+        self.is_prerelease = json.get('isPrerelease', False)
         self.listed = json.get('listed', True)
         self.summary = json.get('summary')
         self.tags = json.get('tags', [])
