@@ -132,7 +132,7 @@ def read_packages(packages_root, args):
 def add_chunkno(df, args):
     log_call()
     assert args.pages_per_chunk > 0
-    df['chunkno'] = np.floor(df['pageno'] / args.pages_per_chunk)
+    df['chunkno'] = np.floor(df['pageno'] / args.pages_per_chunk).astype(np.int32)
     return df
 
 def add_downloads_per_day(df):

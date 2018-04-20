@@ -165,9 +165,9 @@ class Recommender(object):
             self.scales_ = None
             self.similarities_ = None
         elif mode == 'chunked':
-            self.metrics_ = np.zeros(n_total)
+            self.metrics_ = [np.zeros(n_total), np.zeros(n_total)]
             self.scales_ = np.zeros(n_total)
-            self.similarities_ = sparse.csr_matrix((n_pred, 0))
+            self.similarities_ = None
 
         self._ids = []
         self._dpds = []
@@ -188,9 +188,11 @@ class Recommender(object):
         n_filled, m_part = self._n_filled, X.shape[0]
         indices = slice(n_filled, n_filled + m_part)
 
-        self.metrics_[indices] = metrics
+        for vec, newvec in zip(self.metrics_, metrics):
+            vec[indices] = newvec
         self.scales_[indices] = scales
-        self.similarities_ = sparse.hstack(self.similarities_, similarities)
+        self.similarities_ = similarities if self.similarities_ is None \
+                             else sparse.hstack(self.similarities_, similarities)
 
         self._n_filled += m_part
 
