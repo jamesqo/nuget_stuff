@@ -112,9 +112,12 @@ def read_packages(packages_root, args):
 
     for pageno in range(start, end):
         fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
-        pagedf = pd.read_csv(fname, dtype=SCHEMA, na_filter=False, parse_dates=DATE_FEATURES)
-        pagedf['pageno'] = pageno
-        pagedfs.append(pagedf)
+        try:
+            pagedf = pd.read_csv(fname, dtype=SCHEMA, na_filter=False, parse_dates=DATE_FEATURES)
+            pagedf['pageno'] = pageno
+            pagedfs.append(pagedf)
+        except FileNotFoundError:
+            break
 
     df = pd.concat(pagedfs, ignore_index=True)
 
