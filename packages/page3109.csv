@@ -1,0 +1,898 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+Arx One,2017-12-17T14:35:51.33Z,66,124,"MrAdvice allows to weave aspects at build-time (just like PostSharp, but free as in free beer). Write your own aspects in the form of attributes and apply them to target methods or properties. This version does not require any dependency (on the opposite of MrAdvice.Fody which requires Fody).",MrAdvice,True,2018-02-13T14:45:55.833+00:00,True,False,.NET build step aspect weaver,"weaver,aspect,advice,pointcut,aop,.net,attributes,injection,netstandard,windows,silverlight,sl5,postsharp",28602,False,2.5.18-exp4
+"Maziar Rezaei,Matthew Gramolini",2014-08-05T17:04:17.157Z,43209,1354,"Constellation.Html contains two useful features: 
+		
+		1. Extension methods for HtmlTextWriter. - Internally these methods use an IDisposable pattern to encapsulate the rather cumbersome code for adding attributes, rendering the begin tag, and rendering the end tag.
+		The extension methods should generally be called as part of a ""using"" statement. ex: using (writer.RenderDiv()) { }
+		2. A dynamic wrapper for HtmlTextWriter that allows for very expressive and flexible HTML output writing within C#
+		
+		The result is C# code for rendering HTML that is very easy to read, fully supports the ASP.NET browser capabilities feature, and is flexible enough to handle new tags invented in the future.",Constellation.Html,False,1900-01-01T00:00:00+00:00,False,False,A .NET library to increase the utility and efficiency of HtmlTextWriter,Sitecore,2471,False,1.7.5330.21682
+"Richard J. Cabral,Ed Lane,Matt Schroer",2016-10-10T18:35:00.407Z,43209,557,"Constellation contains a number of very useful Sitecore utilities:
+
+		* A Datasource Resolver that automatically escapes XPath statements for use by ""query"" and ""fast""
+		* Extensions to Item that provide access to the Item's inheritance hierarchy.
+		* Extensions to Language that make it easier to transition between ISO-codes, Language Items and Globalization.Language objects.
+
+		Configured for use with Sitecore 8.2.
+		Requires Sitecore 8.2 NuGet packages, available here: https://sitecore.myget.org/F/sc-packages/api/v3/index.json",Constellation.Foundation,False,1900-01-01T00:00:00+00:00,False,False,"Sitecore Helix library with tooling for common Item, Language, and SiteInfo problems.","Sitecore,Helix,Habitat,SXA,Foundation",-1,False,8.2.0.26104
+Zaid,2017-12-17T14:31:02.207Z,29,124,Nancy plugin for application-wide logging using Serilog,Nancy.Serilog,False,2018-03-22T11:58:38.037+00:00,True,False,Nancy plugin for application-wide logging using Serilog,"nancy,logging,serilog",1150,False,0.5.1
+Richard J. Cabral,2015-07-24T20:01:57.09Z,43209,1001,"This library introduces ease of use for handmade ViewModels that represent IPublishedContent items. The ViewModels should inherit from Models.ContetnViewModel in order to take advantage of the
+		automatic property mapping provided by this library.
+
+		To Use:
+			1. Create ViewModels that represent content. ViewModel properties should match types and names of the published content Properties[] collection.
+			2. Each ViewModel should have a ContentType attribute on the class that specifies the Alias for the content that it represents.
+			3. To convert a PublishedContent to a ViewModel, use the extension methods provided in this library. You may automatically cast to the ""best fit"" type, or you may cast to a specific ViewModel type.
+
+		This library was ported from concepts in Constellation.Sitecore.Items - it is not a 1:1 match, expect evolution.",Constellation.Umbraco,False,1900-01-01T00:00:00+00:00,False,False,A library for Controller-based Umbraco installations.,Umbraco,1043,False,1.0.5683.27032
+Richard J. Cabral,2015-02-10T17:11:35.287Z,43209,1165,"HttpResponse - Two controls that can be mounted on CMS-hosted pages to correctly respond with 404 headers.
+		
+		CompressedViewStatePage - Uses SharpZipLib to significantly reduce ViewState size on the delivered document.
+		
+		PaginationControl - Simple control to manage the pagination of a multi-page result set.",Constellation.WebForms,False,1900-01-01T00:00:00+00:00,False,False,A collection of useful ASP.NET WebForms shims,Sitecore,1137,False,3.0.5519.21934
+"Ed Lane,Matt Schroer",2016-01-26T15:29:56.097Z,43209,815,"This library supports a number of regularly-requested SEO features, implemented in Sitecore. Some of these have been implemented elsewhere, this approach
+		is stronger for multi-site, multi-language installations.
+		
+		Features Included: 
+		Browser-based language detection and setting of the context language with the ability to generalize from a specific dialect to a fallback master
+		for a given language (ex: fr-CA will fall back to fr)
+		Multi-site 404 page subsystem that returns an actual 404 response code.
+		Automatic Robots.txt support - configurable for each Sitecore server in your installation.
+		Automatic Sitemap.xml support - fully multi-site capable; can be configured to support a wide array of information architectures.
+		Rule-based approach to ensuring that Sitecore Items get the most url-friendly name possible.
+		Site definition extension allowing for dynamic, site-based hostname resolution for static assets such as javsacript and CSS files.",Constellation.Sitecore.Seo,False,1900-01-01T00:00:00+00:00,False,False,A number of SEO-specific modules for Sitecore.,Sitecore,7515,False,3.0.5869.18858
+Haiping Chen,2017-12-17T14:35:02Z,23,124,EntityFrameworkCore Boot Kit (EFBK) is a quick start lib for using EntityFrameworkCore.,EntityFrameworkCore.BootKit,False,2018-03-28T01:35:51.223+00:00,True,False,,"EntityFramework,EntityFrameworkCore,Database",1002,False,1.0.1
+Richard J. Cabral,2015-02-10T17:04:01.4Z,43209,1165,"This library contains the following useful classes:
+		
+		Querystring Helper: Allows for easy appending, concatenating, and manipulating Querystrings.
+		
+		UrlHelper: Manages Querystring parameters through the URL objects.
+		
+		Pagination: Headless logic for producing web pages that support paginated result sets.",Constellation.Web,False,1900-01-01T00:00:00+00:00,False,False,Some basic ASP.NET utilities. This is a core library for other Constellation namespaces.,Spark,1094,False,3.0.5519.21704
+Aris Nikolaou,2017-12-17T14:35:43.08Z,124,124,Sloader Config,FS.Example.UK,False,2017-12-17T14:35:43.08+00:00,False,False,,Sloader,79,False,1.3.2.1
+Haiping Chen,2017-12-17T14:35:02Z,23,124,EntityFrameworkCore Boot Kit (EFBK) is a quick start lib for using EntityFrameworkCore.,EntityFrameworkCore.BootKit,False,2018-03-28T01:35:51.223+00:00,True,False,,"EntityFramework,EntityFrameworkCore,Database",1002,False,1.0.1
+Zaid,2017-12-17T14:31:02.207Z,29,124,Nancy plugin for application-wide logging using Serilog,Nancy.Serilog,False,2018-03-22T11:58:38.037+00:00,True,False,Nancy plugin for application-wide logging using Serilog,"nancy,logging,serilog",1150,False,0.5.1
+Aris Nikolaou,2017-12-17T14:35:43.08Z,124,124,Sloader Config,FS.Example.UK,False,2017-12-17T14:35:43.08+00:00,False,False,,Sloader,79,False,1.3.2.1
+"Ed Lane,Matt Schroer",2017-05-25T12:55:33.48Z,43209,330,"This library supports a number of regularly-requested SEO features, implemented in Sitecore. Some of these have been implemented elsewhere, this approach
+		is stronger for multi-site, multi-language installations.
+		
+		Features Included: 
+		Browser-based language detection and setting of the context language with the ability to generalize from a specific dialect to a fallback master
+		for a given language (ex: fr-CA will fall back to fr)
+		Multi-site 404 page subsystem that returns an actual 404 response code.
+		Automatic Robots.txt support - configurable for each Sitecore server in your installation.
+		Automatic Sitemap.xml support - fully multi-site capable; can be configured to support a wide array of information architectures.
+		Rule-based approach to ensuring that Sitecore Items get the most url-friendly name possible.
+		Site definition extension allowing for dynamic, site-based hostname resolution for static assets such as javsacript and CSS files.",Constellation.Sitecore.Seo,False,1900-01-01T00:00:00+00:00,False,False,A number of SEO-specific modules for Sitecore.,Sitecore,7515,False,3.0.6354.16022
+"Richard J. Cabral,Maziar Rezaei,Matthew Gramolini",2015-02-10T17:08:40.557Z,43209,1165,"Constellation.Html contains two useful features: 
+		
+		1. Extension methods for HtmlTextWriter. - Internally these methods use an IDisposable pattern to encapsulate the rather cumbersome code for adding attributes, rendering the begin tag, and rendering the end tag.
+		The extension methods should generally be called as part of a ""using"" statement. ex: using (writer.RenderDiv()) { }
+		2. A dynamic wrapper for HtmlTextWriter that allows for very expressive and flexible HTML output writing within C#
+		
+		The result is C# code for rendering HTML that is very easy to read, fully supports the ASP.NET browser capabilities feature, and is flexible enough to handle new tags invented in the future.",Constellation.Html,False,1900-01-01T00:00:00+00:00,False,False,A .NET library to increase the utility and efficiency of HtmlTextWriter,Sitecore,2471,False,3.0.5519.21831
+"Ed Lane,Jimbo Baltikauskas",2015-02-10T17:37:48.077Z,43209,1165,"Using a configuration file, it is possible to create ""blueprints"" representing different kinds of
+		sites used in your environment. A small web utility allows you to select a blueprint, specify some
+		languages and other restrictions, then creates a new site based on your specifications.
+		
+		The system is meant to be used in development, and includes the generation of site configuration nodes.",Constellation.Sitecore.SiteManagement,False,1900-01-01T00:00:00+00:00,False,False,"A tool to requisition entire sites, including security, in Sitecore.",Sitecore,899,False,3.0.5519.22673
+Richard J. Cabral,2017-04-17T20:25:50.973Z,43209,368,"Uses StructureMap and AutoMapper. Provides the following:
+		- Automatic discovery and execution of application event-level tasks.
+		- Support for Alerts in ActionResults
+		- Controller extensions with better Json support
+		- AutoMapper directives through Interfaces
+		- ""Smart"" Default Model Metadata values",Constellation.Mvc,False,1900-01-01T00:00:00+00:00,False,False,An MVC 5 framework to reduce uninteresting concerns,"MVC,5,StructureMap,Automapper",1960,False,1.2.6316.29532
+Petr Šrámek,2017-12-17T14:29:00.823Z,21,124,Lightweight .NET Standard 2.0 library implementing Google Polyline Algorithm.,Cloudikka.PolylineAlgorithm,True,2018-03-30T22:41:50.033+00:00,True,False,Lightweight .NET Standard 2.0 library implementing Google Polyline Algorithm.,"csharp,google,polyline,algorithm",2730,False,1.0.0.18-beta
+Petr Šrámek,2017-12-17T14:29:00.823Z,21,124,Lightweight .NET Standard 2.0 library implementing Google Polyline Algorithm.,Cloudikka.PolylineAlgorithm,True,2018-03-30T22:41:50.033+00:00,True,False,Lightweight .NET Standard 2.0 library implementing Google Polyline Algorithm.,"csharp,google,polyline,algorithm",2730,False,1.0.0.18-beta
+tsebring,2017-12-17T14:24:12.87Z,124,124,Library for reading ARK Survival Evolved savegame files including easy to use .NET domain model.,ArkSavegameToolkitNet,False,2017-12-17T14:24:12.87+00:00,True,False,,"arksurvivalevolved,ark,survival,evolved,game-ark,game,extract-data,save,savegame,toolkit,net,domain,model,wrapper,linq,querying",722,False,1.9.0
+tsebring,2017-12-17T14:24:12.87Z,124,124,Library for reading ARK Survival Evolved savegame files including easy to use .NET domain model.,ArkSavegameToolkitNet,False,2017-12-17T14:24:12.87+00:00,True,False,,"arksurvivalevolved,ark,survival,evolved,game-ark,game,extract-data,save,savegame,toolkit,net,domain,model,wrapper,linq,querying",722,False,1.9.0
+TruePluto,2017-10-21T05:33:07.967Z,124,181,Private using,TruePluto.Wpf.IconLab,False,2017-12-17T14:06:49.55+00:00,False,False,,"WPF,ICON",708,False,1.2.0
+TruePluto,2017-10-18T05:29:00.703Z,124,184,Private using,TruePluto.Wpf.IconLab,False,2017-12-17T14:06:49.55+00:00,False,False,,"WPF,ICON",708,False,1.1.0
+Ennea,2017-12-17T14:10:53.44Z,38,124,EnneaCode,EnneaCode.Exif,False,2018-03-13T02:10:22.143+00:00,True,False,,,185,False,1.0.6560.39870
+Ennea,2017-12-17T14:10:37.423Z,123,124,EnneaCode,EnneaCode.EasySQLite,False,2017-12-18T11:59:14.77+00:00,True,False,,,657,False,1.0.6531.35222
+Ennea,2017-12-17T14:10:22.08Z,38,124,EnneaCode,EnneaCode.Console,False,2018-03-13T02:09:52.033+00:00,True,False,,,632,False,1.0.6560.39869
+Ennea,2017-12-17T14:11:41.19Z,38,124,EnneaCode,EnneaCode.ImageHelper,False,2018-03-13T02:11:26.587+00:00,True,False,,,731,False,1.0.6560.39868
+Ennea,2017-12-17T14:12:17.96Z,38,124,EnneaCode,EnneaCode.UI,False,2018-03-13T02:12:03.243+00:00,True,False,,,479,False,1.0.6560.39870
+Ennea,2017-12-17T14:12:02.24Z,38,124,EnneaCode,EnneaCode.Translucent,False,2018-03-13T02:11:46.76+00:00,True,False,,,647,False,1.0.6560.39868
+TIKSN,2017-12-17T14:13:22.463Z,14,124,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source, Azure Storage Repository, MongoDB Repository, NoDB Repository, Lingual and Regional Localization, Serialization, Rest Requester, Rest Repository, Dependency Injection, Composition Root Setup base classes.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,True,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration,Azure,Storage,MongoDB,NoDB,Rest,Localization,Dependency,Injection",41055,False,3.0.0-alpha.46
+Ennea,2017-12-17T14:11:26.66Z,38,124,EnneaCode,EnneaCode.Helper,False,2018-03-13T02:11:09.88+00:00,True,False,,,113,False,1.0.6560.39869
+Ennea,2017-12-17T14:12:02.24Z,38,124,EnneaCode,EnneaCode.Translucent,False,2018-03-13T02:11:46.76+00:00,True,False,,,647,False,1.0.6560.39868
+Ennea,2017-12-17T14:11:41.19Z,38,124,EnneaCode,EnneaCode.ImageHelper,False,2018-03-13T02:11:26.587+00:00,True,False,,,731,False,1.0.6560.39868
+Ennea,2017-12-17T14:11:26.66Z,38,124,EnneaCode,EnneaCode.Helper,False,2018-03-13T02:11:09.88+00:00,True,False,,,113,False,1.0.6560.39869
+TIKSN,2017-12-17T14:13:22.463Z,14,124,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source, Azure Storage Repository, MongoDB Repository, NoDB Repository, Lingual and Regional Localization, Serialization, Rest Requester, Rest Repository, Dependency Injection, Composition Root Setup base classes.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,True,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration,Azure,Storage,MongoDB,NoDB,Rest,Localization,Dependency,Injection",41055,False,3.0.0-alpha.46
+Ennea,2017-12-17T14:12:17.96Z,38,124,EnneaCode,EnneaCode.UI,False,2018-03-13T02:12:03.243+00:00,True,False,,,479,False,1.0.6560.39870
+Ennea,2017-12-17T14:09:50.673Z,38,124,EnneaCode,EnneaCode.Collection,False,2018-03-13T02:09:30.843+00:00,True,False,,,174,False,1.0.6560.39870
+江南,2017-12-17T14:06:39.833Z,75,124,"QinySoft框架库,数据库操作
+EXCEL操作,错误处理,上传下载等
+20140909:修改多笔数据执行异常问题
+20141218:新增SP执行,微信接口.权限管加入工号
+20141226:修正mail外网发送问题
+20150105:修改多笔SQL执行交易无法提交
+20150115:新增HttpUtils
+20160705:新增DataTable转Model
+20160726:修改excel导出功能
+20161220:新增DB2支持
+20170214:修改自动计时器为NULL时报错",com.qiny.framework,False,2018-02-04T09:36:00.42+00:00,True,False,"QinySoft框架库,数据库操作
+EXCEL操作,错误处理,上传下载等",1.0.0.6,1001,False,1.0.0.6
+trendyol ocinbat,2017-12-17T14:07:06.943Z,76,124,A simple application wrapper.,Trendyol.App.EntityFramework,False,2018-02-03T21:01:00.17+00:00,True,False,A simple application wrapper.,"trendyol,boilerplate",3733,False,3.1.2
+Ennea,2017-12-17T14:09:33.657Z,38,124,EnneaCode,EnneaCode.CAPTCHA,False,2018-03-13T02:09:15.67+00:00,True,False,,,170,False,1.0.6560.39869
+Zaid,2017-12-17T14:06:33.897Z,29,124,Nancy plugin for application-wide logging using Serilog,Nancy.Serilog,False,2018-03-22T11:58:38.037+00:00,True,False,Nancy plugin for application-wide logging using Serilog,"nancy,logging,serilog",1150,False,0.5.0
+openstore.craponne.fr,2017-12-17T14:10:05.047Z,124,124,"Classes for post-build tasks, to modify assemblies after generation (using dnlib). Allows to run from command-line or build task.",StitcherBoy,False,2017-12-17T14:10:05.047+00:00,True,False,Post build task helper,tasks,9243,False,1.0.7
+Ennea,2017-12-17T14:05:03.08Z,38,124,EnneaCode,EnneaCode.Collection,False,2018-03-13T02:09:30.843+00:00,True,False,,,174,False,1.0.6490.32250
+Ennea,2017-12-17T14:11:09.41Z,38,124,EnneaCode,EnneaCode.FontHelper,False,2018-03-13T02:10:54.083+00:00,True,False,,,118,False,1.0.6560.39869
+Ennea,2017-12-17T14:10:06.157Z,124,124,EnneaCode,EnneaCode.ConfigProvider,False,2017-12-17T14:10:06.157+00:00,True,False,,,116,False,1.0.6531.34942
+TruePluto,2017-12-17T14:06:49.55Z,124,124,Private using,TruePluto.Wpf.IconLab,False,2017-12-17T14:06:49.55+00:00,True,False,,"WPF,ICON",708,False,1.2.1
+江南,2017-12-17T14:06:39.833Z,75,124,"QinySoft框架库,数据库操作
+EXCEL操作,错误处理,上传下载等
+20140909:修改多笔数据执行异常问题
+20141218:新增SP执行,微信接口.权限管加入工号
+20141226:修正mail外网发送问题
+20150105:修改多笔SQL执行交易无法提交
+20150115:新增HttpUtils
+20160705:新增DataTable转Model
+20160726:修改excel导出功能
+20161220:新增DB2支持
+20170214:修改自动计时器为NULL时报错",com.qiny.framework,False,2018-02-04T09:36:00.42+00:00,True,False,"QinySoft框架库,数据库操作
+EXCEL操作,错误处理,上传下载等",1.0.0.6,1001,False,1.0.0.6
+Ennea,2017-12-17T14:10:06.157Z,124,124,EnneaCode,EnneaCode.ConfigProvider,False,2017-12-17T14:10:06.157+00:00,True,False,,,116,False,1.0.6531.34942
+Zaid,2017-12-17T14:06:33.897Z,29,124,Nancy plugin for application-wide logging using Serilog,Nancy.Serilog,False,2018-03-22T11:58:38.037+00:00,True,False,Nancy plugin for application-wide logging using Serilog,"nancy,logging,serilog",1150,False,0.5.0
+trendyol ocinbat,2017-12-17T14:07:06.943Z,76,124,A simple application wrapper.,Trendyol.App.EntityFramework,False,2018-02-03T21:01:00.17+00:00,True,False,A simple application wrapper.,"trendyol,boilerplate",3733,False,3.1.2
+Ennea,2017-12-17T14:11:09.41Z,38,124,EnneaCode,EnneaCode.FontHelper,False,2018-03-13T02:10:54.083+00:00,True,False,,,118,False,1.0.6560.39869
+TruePluto,2017-12-17T14:06:49.55Z,124,124,Private using,TruePluto.Wpf.IconLab,False,2017-12-17T14:06:49.55+00:00,True,False,,"WPF,ICON",708,False,1.2.1
+Ennea,2017-12-17T14:09:50.673Z,38,124,EnneaCode,EnneaCode.Collection,False,2018-03-13T02:09:30.843+00:00,True,False,,,174,False,1.0.6560.39870
+Ennea,2017-12-17T14:05:03.08Z,38,124,EnneaCode,EnneaCode.Collection,False,2018-03-13T02:09:30.843+00:00,True,False,,,174,False,1.0.6490.32250
+Ennea,2017-12-17T14:09:33.657Z,38,124,EnneaCode,EnneaCode.CAPTCHA,False,2018-03-13T02:09:15.67+00:00,True,False,,,170,False,1.0.6560.39869
+openstore.craponne.fr,2017-12-17T14:10:05.047Z,124,124,"Classes for post-build tasks, to modify assemblies after generation (using dnlib). Allows to run from command-line or build task.",StitcherBoy,False,2017-12-17T14:10:05.047+00:00,True,False,Post build task helper,tasks,9243,False,1.0.7
+Evgeniy Kosjakov,2017-12-17T14:04:36.97Z,30,124,Easy-to-use test run reporter for MSTest,Ghpr.MSTest,False,2018-03-21T17:28:51.307+00:00,True,False,,".NET,package,HTML,report,reporting,tool,MSTest",1954,True,0.8.0
+Evgeniy Kosjakov,2017-12-17T14:04:36.97Z,30,124,Easy-to-use test run reporter for MSTest,Ghpr.MSTest,False,2018-03-21T17:28:51.307+00:00,True,False,,".NET,package,HTML,report,reporting,tool,MSTest",1954,True,0.8.0
+Rasmus Jørgensen,2017-12-17T13:55:30.247Z,124,124,"Simple, asynchronous Flock log4net appender.",Log4Flock,False,2017-12-17T14:49:04.17+00:00,True,False,,"flock,log4net,appender",320,False,1.0.1
+Haiping Chen,2017-12-17T13:56:12.24Z,43209,124,Custom Entity Foundation (CEF) is a high level customized entity library wirtten in C# .Net Core. CEF is with high flexible & business oriented abstract layer. It could be used in any .net project to serve as an entity service.,CustomEntityFoundation,False,1900-01-01T00:00:00+00:00,False,False,,"EntityFramework,EntityFrameworkCore,Custom,Entity,Content,Management",-1,False,1.3.1
+Rasmus Jørgensen,2017-12-17T13:55:30.247Z,124,124,"Simple, asynchronous Flock log4net appender.",Log4Flock,False,2017-12-17T14:49:04.17+00:00,True,False,,"flock,log4net,appender",320,False,1.0.1
+Haiping Chen,2017-12-17T13:56:12.24Z,43209,124,Custom Entity Foundation (CEF) is a high level customized entity library wirtten in C# .Net Core. CEF is with high flexible & business oriented abstract layer. It could be used in any .net project to serve as an entity service.,CustomEntityFoundation,False,1900-01-01T00:00:00+00:00,False,False,,"EntityFramework,EntityFrameworkCore,Custom,Entity,Content,Management",-1,False,1.3.1
+fanly,2017-12-16T11:45:30.157Z,37,125,"surging is a distributed micro service framework that provides high-performance RPC remote service calls, using Zookeeper, Consul as the registration center for surging services, integrating hash, random, polling as a load balancing algorithm, RPC integration using the netty framework, Using asynchronous transmission. Use json.net, protobuf, messagepack for serialization Codec",Surging.Core.Zookeeper,False,2018-03-14T15:22:21.77+00:00,True,False,"surging is a distributed micro service framework that provides high-performance RPC remote service calls, using Zookeeper, Consul as the registration center for surging services, integrating hash, random, polling as a load balancing algorithm, RPC integration using the netty framework, Using asynchronous transmission. Use json.net, protobuf, messagepack for serialization Codec","MicroService,surging",405,False,0.4.9
+Tolitech,2017-12-17T13:50:29.057Z,15,124,Esta é uma biblioteca padrão contendo interfaces e classes base utilizadas nos projetos gerados pela ferramenta Code Generator.,Tolitech.Modules.Shared,True,2018-04-05T17:09:30.757+00:00,True,False,,,5208,False,1.0.0-rc9-18
+FTLab,2017-12-17T13:49:58.503Z,79,124,FTCab,FTCab,False,2018-01-31T09:43:56.017+00:00,True,False,,,238,False,1.0.0
+Tolitech,2017-12-17T13:50:29.057Z,15,124,Esta é uma biblioteca padrão contendo interfaces e classes base utilizadas nos projetos gerados pela ferramenta Code Generator.,Tolitech.Modules.Shared,True,2018-04-05T17:09:30.757+00:00,True,False,,,5208,False,1.0.0-rc9-18
+FTLab,2017-12-17T13:49:58.503Z,79,124,FTCab,FTCab,False,2018-01-31T09:43:56.017+00:00,True,False,,,238,False,1.0.0
+fanly,2017-12-17T13:48:48.43Z,124,124,"surging is a distributed micro service framework that provides high-performance RPC remote service calls, using Zookeeper, Consul as the registration center for surging services, integrating hash, random, polling as a load balancing algorithm, RPC integration using the netty framework, Using asynchronous transmission. Use json.net, protobuf, messagepack for serialization Codec",Surging.Core.Log4net,False,2017-12-17T13:48:48.43+00:00,True,False,"surging is a distributed micro service framework that provides high-performance RPC remote service calls, using Zookeeper, Consul as the registration center for surging services, integrating hash, random, polling as a load balancing algorithm, RPC integration using the netty framework, Using asynchronous transmission. Use json.net, protobuf, messagepack for serialization Codec","MicroService,surging",354,False,0.4.8
+fanly,2017-12-17T13:48:48.43Z,124,124,"surging is a distributed micro service framework that provides high-performance RPC remote service calls, using Zookeeper, Consul as the registration center for surging services, integrating hash, random, polling as a load balancing algorithm, RPC integration using the netty framework, Using asynchronous transmission. Use json.net, protobuf, messagepack for serialization Codec",Surging.Core.Log4net,False,2017-12-17T13:48:48.43+00:00,True,False,"surging is a distributed micro service framework that provides high-performance RPC remote service calls, using Zookeeper, Consul as the registration center for surging services, integrating hash, random, polling as a load balancing algorithm, RPC integration using the netty framework, Using asynchronous transmission. Use json.net, protobuf, messagepack for serialization Codec","MicroService,surging",354,False,0.4.8
+Davide Icardi,2017-12-17T13:41:21.983Z,124,124,C# expression interpreter/evaluator,DynamicExpresso.Core,False,2017-12-17T13:41:21.983+00:00,True,False,,"dynamic,expresso,expression,linq,eval",87184,False,2.0.0
+Michał Niegrzybowski,2017-12-17T13:44:27.373Z,124,124,NancyFx .net core F# Template,NancyFx.Core.Template,False,2017-12-17T13:44:27.373+00:00,True,False,,".net,core,NancyFx,template,f#",761,False,0.1.0
+Michał Niegrzybowski,2017-12-17T13:40:05.897Z,124,124,F# .net core Web API Template,WebAPI.FSharp.Template,False,2017-12-17T13:40:05.897+00:00,True,False,,".net,core,Web,API,F#,template",1533,False,2.0.0.1
+Michał Niegrzybowski,2017-12-17T13:44:27.373Z,124,124,NancyFx .net core F# Template,NancyFx.Core.Template,False,2017-12-17T13:44:27.373+00:00,True,False,,".net,core,NancyFx,template,f#",761,False,0.1.0
+Davide Icardi,2017-12-17T13:41:21.983Z,124,124,C# expression interpreter/evaluator,DynamicExpresso.Core,False,2017-12-17T13:41:21.983+00:00,True,False,,"dynamic,expresso,expression,linq,eval",87184,False,2.0.0
+Michał Niegrzybowski,2017-12-17T13:40:05.897Z,124,124,F# .net core Web API Template,WebAPI.FSharp.Template,False,2017-12-17T13:40:05.897+00:00,True,False,,".net,core,Web,API,F#,template",1533,False,2.0.0.1
+TIKSN,2017-12-17T00:44:52.16Z,14,124,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source, Azure Storage Repository, MongoDB Repository, NoDB Repository, Lingual and Regional Localization, Serialization, Rest Requester, Rest Repository, Dependency Injection, Composition Root Setup base classes.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,False,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration,Azure,Storage,MongoDB,NoDB,Rest,Localization,Dependency,Injection",41055,False,3.0.0-alpha.44
+Springboard 365 Ltd,2017-12-17T11:45:49.62Z,124,124,The core framework for Dynamics Crm Plugins.,Springboard365.Xrm.Plugins.Core,True,2017-12-17T12:58:31.29+00:00,False,False,,"Microsoft,Dynamics,CRM,2011,2013,2015,2016,SDK,XRM,365",520,False,1.0.0-beta5
+Joerg Battermann,2017-12-17T13:26:47.817Z,124,124,Provides custom Reactive Extensions Related types and helpers.,JB.Common.Reactive,True,2017-12-17T13:26:47.817+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"Reactive,Extensions,RX,rxnet,Async,AsyncReaderWriterLock",8010,False,0.8.108-pre
+Joerg Battermann,2017-12-17T13:28:02.33Z,124,124,"Provides custom types, helpers and extension methods for the Microsoft Visual Studio Team Services client(s).",JB.Common.VisualStudio.Services.Client,True,2017-12-17T13:28:02.33+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"VisualStudio,VisualStudioTeamServices,VisualStudioOnline,VSO,VSTS,TeamServices,Common,Helpers,HelperMethods,ExtensionMethods",1037,False,0.8.108-pre
+Joerg Battermann,2017-12-17T13:27:49.453Z,124,124,"Provides custom types, helpers and extension methods for Visual Studio extensibility.",JB.Common.VisualStudio,True,2017-12-17T13:27:49.453+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"VisualStudio,Common,Helpers,HelperMethods,ExtensionMethods,Extensibility,VSIX",7612,False,0.8.108-pre
+Joerg Battermann,2017-12-17T13:28:15.453Z,124,124,"Provides custom types, helpers and extension methods for Visual Studio extensibility, particularly its Team Foundation part.",JB.Common.VisualStudio.TeamFoundation,True,2017-12-17T13:28:15.453+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"VisualStudio,TeamFoundation,TeamFoundationServer,TFS,TeamExplorer,WorkItemTracking,WorkItem,Common,Helpers,HelperMethods,ExtensionMethods,Extensibility,VSIX",7582,False,0.8.108-pre
+TIKSN,2017-12-17T00:11:22.87Z,14,124,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source, Azure Storage Repository, MongoDB Repository, NoDB Repository, Lingual and Regional Localization, Serialization, Rest Requester, Rest Repository, Dependency Injection, Composition Root Setup base classes.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,False,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration,Azure,Storage,MongoDB,NoDB,Rest,Localization,Dependency,Injection",41055,False,3.0.0-alpha.43
+Joerg Battermann,2017-12-17T13:27:38.37Z,124,124,"Provides RX.Net specific client(s), custom types, helpers and extension methods for the Microsoft Visual Studio Team Services & Team Foundation Server 2015 client(s).",JB.Common.TeamFoundationServer.Reactive.Client,True,2017-12-17T13:27:38.37+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"Reactive,Extensions,RX,rxnet,TFS,TeamFoundationServer,VisualStudio,VisualStudioOnline,VSO,VisualStudioTeamServices,VSTS,TeamServices,Common,Helpers,HelperMethods,ExtensionMethods",167,False,0.8.108-pre
+Joerg Battermann,2017-12-17T13:27:49.453Z,124,124,"Provides custom types, helpers and extension methods for Visual Studio extensibility.",JB.Common.VisualStudio,True,2017-12-17T13:27:49.453+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"VisualStudio,Common,Helpers,HelperMethods,ExtensionMethods,Extensibility,VSIX",7612,False,0.8.108-pre
+Joerg Battermann,2017-12-17T13:28:02.33Z,124,124,"Provides custom types, helpers and extension methods for the Microsoft Visual Studio Team Services client(s).",JB.Common.VisualStudio.Services.Client,True,2017-12-17T13:28:02.33+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"VisualStudio,VisualStudioTeamServices,VisualStudioOnline,VSO,VSTS,TeamServices,Common,Helpers,HelperMethods,ExtensionMethods",1037,False,0.8.108-pre
+Joerg Battermann,2017-12-17T13:28:15.453Z,124,124,"Provides custom types, helpers and extension methods for Visual Studio extensibility, particularly its Team Foundation part.",JB.Common.VisualStudio.TeamFoundation,True,2017-12-17T13:28:15.453+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"VisualStudio,TeamFoundation,TeamFoundationServer,TFS,TeamExplorer,WorkItemTracking,WorkItem,Common,Helpers,HelperMethods,ExtensionMethods,Extensibility,VSIX",7582,False,0.8.108-pre
+Joerg Battermann,2017-12-17T13:27:26.48Z,124,124,"Provides custom types, helpers and extension methods for the Microsoft Visual Studio Team Services & Team Foundation Server 2015 client(s).",JB.Common.TeamFoundationServer.Client,True,2017-12-17T13:27:26.48+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"TFS,TFS2015,TeamFoundationServer,VisualStudio,VisualStudioOnline,VSO,VisualStudioTeamServices,VSTS,TeamServices,Common,Helpers,HelperMethods,ExtensionMethods",1048,False,0.8.108-pre
+"savorboard,dotnetcore",2017-12-17T13:25:59.073Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.SqlServer,True,2018-04-18T09:59:55.71+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,SQL,Server",5880,False,2.1.2-preview-30288174
+Joerg Battermann,2017-12-17T13:27:12.823Z,124,124,"Provides Reactive Extensions based, observable cache functionality.",JB.Common.Reactive.Cache,True,2017-12-17T13:27:12.823+00:00,True,False,"This package contains observable cache functionality, currently an InMemory one only but sometimes down the road more elaborate ones might be added.","Reactive,Extensions,RX,rxnet,Streaming,Cache,Caching",4091,False,0.8.108-pre
+"savorboard,dotnetcore",2017-12-17T13:24:58.86Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP,True,2018-04-18T09:59:38.007+00:00,True,False,,"CAP,EventBus,Distributed,Transaction",7340,False,2.1.2-preview-30288174
+"savorboard,dotnetcore",2017-12-17T13:25:48.26Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.RabbitMQ,True,2018-04-18T09:59:51.93+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,RabbitMQ",6852,False,2.1.2-preview-30288174
+"savorboard,dotnetcore",2017-12-17T13:25:24.913Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.MySql,True,2018-04-18T09:59:46.023+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,MySQL",4174,False,2.1.2-preview-30288174
+TIKSN,2017-12-17T13:25:59.51Z,14,124,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source, Azure Storage Repository, MongoDB Repository, NoDB Repository, Lingual and Regional Localization, Serialization, Rest Requester, Rest Repository, Dependency Injection, Composition Root Setup base classes.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,True,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration,Azure,Storage,MongoDB,NoDB,Rest,Localization,Dependency,Injection",41055,False,3.0.0-alpha.45
+"savorboard,dotnetcore",2017-12-17T13:25:13.457Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.Kafka,True,2018-04-18T09:59:42.71+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,Kafka",5032,False,2.1.2-preview-30288174
+"savorboard,dotnetcore",2017-12-17T13:25:36.9Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.PostgreSql,True,2018-04-18T09:59:48.943+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,PostgreSQL",2675,False,2.1.2-preview-30288174
+Michał Niegrzybowski,2017-12-17T13:25:25.053Z,124,124,F# .net core Web API Template,WebAPI.FSharp.Template,False,2017-12-17T13:40:05.897+00:00,True,False,,".net,core,Web,API,F#,template",1533,False,2.0.0
+Joerg Battermann,2017-12-17T13:26:22.343Z,124,124,Provides custom collection and list types.,JB.Common.Collections,True,2017-12-17T13:26:22.343+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"Collections,Collection,List,BindingList,Enumerable",9596,False,0.8.108-pre
+Joerg Battermann,2017-12-17T13:26:36.27Z,124,124,"Custom collection, list types and helpers for JB.Common.Collections based on RX.Net / ReactiveUI .",JB.Common.Collections.Reactive,True,2017-12-17T13:26:36.27+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"ObservableList,ObservableCollection,ObservableBindingList,ObservableDictionary,Collection,List,BindingList,Dictionary,ReactiveList,ReactiveBindingList,ReactiveDictionary,Reactive,RX.Net",8733,False,0.8.108-pre
+v.la@live.cn,2017-12-17T13:27:15.01Z,2,124,Easy Serilog usage,Es.Serilog.Lite,False,2018-04-18T03:41:39.057+00:00,True,False,,"logging,log,logger",1017,False,0.0.10
+Joerg Battermann,2017-12-17T13:26:08.73Z,124,124,"Provides custom types, helpers and extension methods.",JB.Common,True,2017-12-17T13:26:08.73+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"Common,Helpers,HelperMethods,ExtensionMethods",9124,False,0.8.108-pre
+Joerg Battermann,2017-12-17T13:27:00.273Z,124,124,Provides custom Reactive Extensions Related types and helpers.,JB.Common.Reactive.Analytics,True,2017-12-17T13:27:00.273+00:00,True,False,This package contains observable stream analytics / analysis functionality.,"Reactive,Extensions,RX,rxnet,Streaming,Analytics,Analysis,Insight",5019,False,0.8.108-pre
+Sergey Zwezdin,2017-12-17T13:26:03.963Z,122,124,"Easy to use tool to config transformations for JSON, XML and YAML.",MagicChunks,False,2017-12-19T03:24:27.067+00:00,True,False,,"Configuration,Transform,JSON,XML,YAML,YML,web.config,app.config,appsetings.json",27854,False,1.3.3.104
+"savorboard,dotnetcore",2017-12-17T13:24:58.86Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP,True,2018-04-18T09:59:38.007+00:00,True,False,,"CAP,EventBus,Distributed,Transaction",7340,False,2.1.2-preview-30288174
+"savorboard,dotnetcore",2017-12-17T13:25:24.913Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.MySql,True,2018-04-18T09:59:46.023+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,MySQL",4174,False,2.1.2-preview-30288174
+Joerg Battermann,2017-12-17T13:26:08.73Z,124,124,"Provides custom types, helpers and extension methods.",JB.Common,True,2017-12-17T13:26:08.73+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"Common,Helpers,HelperMethods,ExtensionMethods",9124,False,0.8.108-pre
+"savorboard,dotnetcore",2017-12-17T13:25:59.073Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.SqlServer,True,2018-04-18T09:59:55.71+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,SQL,Server",5880,False,2.1.2-preview-30288174
+Joerg Battermann,2017-12-17T13:26:22.343Z,124,124,Provides custom collection and list types.,JB.Common.Collections,True,2017-12-17T13:26:22.343+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"Collections,Collection,List,BindingList,Enumerable",9596,False,0.8.108-pre
+Joerg Battermann,2017-12-17T13:27:12.823Z,124,124,"Provides Reactive Extensions based, observable cache functionality.",JB.Common.Reactive.Cache,True,2017-12-17T13:27:12.823+00:00,True,False,"This package contains observable cache functionality, currently an InMemory one only but sometimes down the road more elaborate ones might be added.","Reactive,Extensions,RX,rxnet,Streaming,Cache,Caching",4091,False,0.8.108-pre
+"savorboard,dotnetcore",2017-12-17T13:25:48.26Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.RabbitMQ,True,2018-04-18T09:59:51.93+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,RabbitMQ",6852,False,2.1.2-preview-30288174
+Joerg Battermann,2017-12-17T13:27:26.48Z,124,124,"Provides custom types, helpers and extension methods for the Microsoft Visual Studio Team Services & Team Foundation Server 2015 client(s).",JB.Common.TeamFoundationServer.Client,True,2017-12-17T13:27:26.48+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"TFS,TFS2015,TeamFoundationServer,VisualStudio,VisualStudioOnline,VSO,VisualStudioTeamServices,VSTS,TeamServices,Common,Helpers,HelperMethods,ExtensionMethods",1048,False,0.8.108-pre
+Joerg Battermann,2017-12-17T13:27:00.273Z,124,124,Provides custom Reactive Extensions Related types and helpers.,JB.Common.Reactive.Analytics,True,2017-12-17T13:27:00.273+00:00,True,False,This package contains observable stream analytics / analysis functionality.,"Reactive,Extensions,RX,rxnet,Streaming,Analytics,Analysis,Insight",5019,False,0.8.108-pre
+Joerg Battermann,2017-12-17T13:26:36.27Z,124,124,"Custom collection, list types and helpers for JB.Common.Collections based on RX.Net / ReactiveUI .",JB.Common.Collections.Reactive,True,2017-12-17T13:26:36.27+00:00,True,False,This package contains custom type(s) I needed myself or deemed useful for current or future projects.,"ObservableList,ObservableCollection,ObservableBindingList,ObservableDictionary,Collection,List,BindingList,Dictionary,ReactiveList,ReactiveBindingList,ReactiveDictionary,Reactive,RX.Net",8733,False,0.8.108-pre
+v.la@live.cn,2017-12-17T13:27:15.01Z,2,124,Easy Serilog usage,Es.Serilog.Lite,False,2018-04-18T03:41:39.057+00:00,True,False,,"logging,log,logger",1017,False,0.0.10
+Michał Niegrzybowski,2017-12-17T13:25:25.053Z,124,124,F# .net core Web API Template,WebAPI.FSharp.Template,False,2017-12-17T13:40:05.897+00:00,True,False,,".net,core,Web,API,F#,template",1533,False,2.0.0
+Sergey Zwezdin,2017-12-17T13:26:03.963Z,122,124,"Easy to use tool to config transformations for JSON, XML and YAML.",MagicChunks,False,2017-12-19T03:24:27.067+00:00,True,False,,"Configuration,Transform,JSON,XML,YAML,YML,web.config,app.config,appsetings.json",27854,False,1.3.3.104
+"savorboard,dotnetcore",2017-12-17T13:25:36.9Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.PostgreSql,True,2018-04-18T09:59:48.943+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,PostgreSQL",2675,False,2.1.2-preview-30288174
+TIKSN,2017-12-17T13:25:59.51Z,14,124,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source, Azure Storage Repository, MongoDB Repository, NoDB Repository, Lingual and Regional Localization, Serialization, Rest Requester, Rest Repository, Dependency Injection, Composition Root Setup base classes.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,True,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration,Azure,Storage,MongoDB,NoDB,Rest,Localization,Dependency,Injection",41055,False,3.0.0-alpha.45
+"savorboard,dotnetcore",2017-12-17T13:25:13.457Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.Kafka,True,2018-04-18T09:59:42.71+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,Kafka",5032,False,2.1.2-preview-30288174
+v.la@live.cn,2017-12-17T13:23:15.563Z,2,124,Easy Serilog usage,Es.Serilog.Lite,False,2018-04-18T03:41:39.057+00:00,True,False,,"logging,log,logger",1017,False,0.0.9
+v.la@live.cn,2017-12-17T13:23:15.563Z,2,124,Easy Serilog usage,Es.Serilog.Lite,False,2018-04-18T03:41:39.057+00:00,True,False,,"logging,log,logger",1017,False,0.0.9
+v.la@live.cn,2017-12-17T13:16:42.35Z,94,124,Simple and easy to use the log class library package,Es.Logging,False,2018-01-16T06:57:18.743+00:00,True,False,,"logging,log,logger",7100,False,1.1.5
+江南,2017-12-17T13:17:26.02Z,75,124,"QinySoft框架库,数据库操作
+EXCEL操作,错误处理,上传下载等
+20140909:修改多笔数据执行异常问题
+20141218:新增SP执行,微信接口.权限管加入工号
+20141226:修正mail外网发送问题
+20150105:修改多笔SQL执行交易无法提交
+20150115:新增HttpUtils
+20160705:新增DataTable转Model
+20160726:修改excel导出功能
+20161220:新增DB2支持
+20170214:修改自动计时器为NULL时报错",com.qiny.framework,False,2018-02-04T09:36:00.42+00:00,True,False,"QinySoft框架库,数据库操作
+EXCEL操作,错误处理,上传下载等",1.0.0.5,1001,False,1.0.0.5
+Anuitex,2017-12-17T13:18:10.337Z,1,124,Add FTE to Project entity,AnuitexPortal.Base,False,2018-04-19T12:10:21.03+00:00,True,False,,AnuitexPortal.Base,18381,False,1.2.71
+v.la@live.cn,2017-12-17T13:17:30.333Z,94,124,Support for Serilog,Es.Logging.Serilog,False,2018-01-16T06:58:18.497+00:00,True,False,,"logging,log,logger",624,False,1.1.5
+v.la@live.cn,2017-12-17T13:17:18.393Z,94,124,Simple and easy to use the log class library package,Es.Logging.Log4,False,2018-01-16T06:58:05.467+00:00,True,False,,"logging,log,logger",6766,False,1.1.5
+v.la@live.cn,2017-12-17T13:16:54.59Z,94,124,Simple and easy to use the log class library package,Es.Logging.Console,False,2018-01-16T06:57:35.76+00:00,True,False,,"logging,log,logger",2533,False,1.1.5
+v.la@live.cn,2017-12-17T13:17:06.19Z,94,124,Simple and easy to use the log class library package,Es.Logging.NLog,False,2018-01-16T06:57:50.433+00:00,True,False,,"logging,log,logger",2430,False,1.1.5
+v.la@live.cn,2017-12-17T13:17:42.02Z,94,124,Support for Microsoft.Extensions.Logging,Es.Microsoft.Logging,False,2018-01-16T06:58:32.373+00:00,True,False,,"logging,log,logger",1170,False,1.1.5
+江南,2017-12-17T13:17:26.02Z,75,124,"QinySoft框架库,数据库操作
+EXCEL操作,错误处理,上传下载等
+20140909:修改多笔数据执行异常问题
+20141218:新增SP执行,微信接口.权限管加入工号
+20141226:修正mail外网发送问题
+20150105:修改多笔SQL执行交易无法提交
+20150115:新增HttpUtils
+20160705:新增DataTable转Model
+20160726:修改excel导出功能
+20161220:新增DB2支持
+20170214:修改自动计时器为NULL时报错",com.qiny.framework,False,2018-02-04T09:36:00.42+00:00,True,False,"QinySoft框架库,数据库操作
+EXCEL操作,错误处理,上传下载等",1.0.0.5,1001,False,1.0.0.5
+v.la@live.cn,2017-12-17T13:17:42.02Z,94,124,Support for Microsoft.Extensions.Logging,Es.Microsoft.Logging,False,2018-01-16T06:58:32.373+00:00,True,False,,"logging,log,logger",1170,False,1.1.5
+v.la@live.cn,2017-12-17T13:16:54.59Z,94,124,Simple and easy to use the log class library package,Es.Logging.Console,False,2018-01-16T06:57:35.76+00:00,True,False,,"logging,log,logger",2533,False,1.1.5
+v.la@live.cn,2017-12-17T13:17:06.19Z,94,124,Simple and easy to use the log class library package,Es.Logging.NLog,False,2018-01-16T06:57:50.433+00:00,True,False,,"logging,log,logger",2430,False,1.1.5
+v.la@live.cn,2017-12-17T13:16:42.35Z,94,124,Simple and easy to use the log class library package,Es.Logging,False,2018-01-16T06:57:18.743+00:00,True,False,,"logging,log,logger",7100,False,1.1.5
+Anuitex,2017-12-17T13:18:10.337Z,1,124,Add FTE to Project entity,AnuitexPortal.Base,False,2018-04-19T12:10:21.03+00:00,True,False,,AnuitexPortal.Base,18381,False,1.2.71
+v.la@live.cn,2017-12-17T13:17:30.333Z,94,124,Support for Serilog,Es.Logging.Serilog,False,2018-01-16T06:58:18.497+00:00,True,False,,"logging,log,logger",624,False,1.1.5
+v.la@live.cn,2017-12-17T13:17:18.393Z,94,124,Simple and easy to use the log class library package,Es.Logging.Log4,False,2018-01-16T06:58:05.467+00:00,True,False,,"logging,log,logger",6766,False,1.1.5
+Sergey Zwezdin,2017-12-17T13:08:38.49Z,122,124,"Easy to use tool to config transformations for JSON, XML and YAML.",MagicChunks,False,2017-12-19T03:24:27.067+00:00,True,False,,"Configuration,Transform,JSON,XML,YAML,YML,web.config,app.config,appsetings.json",27854,False,1.3.2.102
+Tomasz Wiśniewski,2017-12-17T13:08:41.397Z,123,124,This package contains picker control for Xamarin.iOS for MvvmCross.,MvxPlugins.Picker.iOS,False,2017-12-18T16:26:57.45+00:00,True,False,,"mvvm,mvvmcross,xamarin,monotouch,xamarin.ios,picker,dropdown,combobox,mvx",299,False,1.1.0
+Sergey Zwezdin,2017-12-17T13:08:38.49Z,122,124,"Easy to use tool to config transformations for JSON, XML and YAML.",MagicChunks,False,2017-12-19T03:24:27.067+00:00,True,False,,"Configuration,Transform,JSON,XML,YAML,YML,web.config,app.config,appsetings.json",27854,False,1.3.2.102
+Tomasz Wiśniewski,2017-12-17T13:08:41.397Z,123,124,This package contains picker control for Xamarin.iOS for MvvmCross.,MvxPlugins.Picker.iOS,False,2017-12-18T16:26:57.45+00:00,True,False,,"mvvm,mvvmcross,xamarin,monotouch,xamarin.ios,picker,dropdown,combobox,mvx",299,False,1.1.0
+Springboard 365 Ltd,2017-12-17T12:58:31.29Z,124,124,The core framework for Dynamics Crm Plugins.,Springboard365.Xrm.Plugins.Core,True,2017-12-17T12:58:31.29+00:00,True,False,,"Microsoft,Dynamics,CRM,2011,2013,2015,2016,SDK,XRM,365",520,False,1.0.0-beta6
+Lykke,2017-12-17T13:01:55.97Z,124,124,Client for Lykke.Service.SwiftCredentials API,Lykke.Service.SwiftCredentials.Client,False,2017-12-17T13:01:55.97+00:00,True,False,,Lykke,217,False,1.0.0.2
+Springboard 365 Ltd,2017-12-17T12:58:31.29Z,124,124,The core framework for Dynamics Crm Plugins.,Springboard365.Xrm.Plugins.Core,True,2017-12-17T12:58:31.29+00:00,True,False,,"Microsoft,Dynamics,CRM,2011,2013,2015,2016,SDK,XRM,365",520,False,1.0.0-beta6
+Lykke,2017-12-17T13:01:55.97Z,124,124,Client for Lykke.Service.SwiftCredentials API,Lykke.Service.SwiftCredentials.Client,False,2017-12-17T13:01:55.97+00:00,True,False,,Lykke,217,False,1.0.0.2
+Gigya Inc.,2017-12-17T12:53:23Z,3,124,"Using this component you can find other Microdot services (and any other
+remote system), perform client-side load balancing between multiple
+servers, detect and	skip unresponsive servers and resume using them
+when they return to full operation. Discovery is typically perfomed with
+Consul by HashiCorp	(http://consul.io) but it also supports manual server
+lists specified in Microdot configuration (see NuGet package
+Gigya.Microdot.Configuration) and can be expanded to support additional
+service discovery systems.",Gigya.Microdot.ServiceDiscovery,False,2018-04-17T09:20:50.34+00:00,True,False,,"gigya,microdot,microservice,microservices,discovery,service-discovery,consul",6344,False,1.7.6
+"savorboard,dotnetcore",2017-12-17T12:53:48.17Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.SqlServer,True,2018-04-18T09:59:55.71+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,SQL,Server",5880,False,2.1.2-preview-30286136
+Gigya Inc.,2017-12-17T12:53:45.297Z,3,124,"ServiceProxy is used to call remote Microdot services. It is a
+runtime-generated transparent proxy which implements the remote	service's
+public interface, translating all calls performed on it to HTTP calls.
+Part of the Microdot framework.",Gigya.Microdot.ServiceProxy,False,2018-04-17T09:20:55.09+00:00,True,False,,"gigya,microdot,microservice,microservices,serviceproxy,http,rpc",6309,False,1.7.6
+Gigya Inc.,2017-12-17T12:54:59.517Z,3,124,Tools to help write tests for Microdot services.,Gigya.Microdot.Testing.Shared,False,2018-04-17T09:21:09.933+00:00,True,False,,"gigya,microdot,microservice,microservices,fakes,mocks,mocking,unit-testing",2119,False,1.7.6
+"savorboard,dotnetcore",2017-12-17T12:53:15.653Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.MySql,True,2018-04-18T09:59:46.023+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,MySQL",4174,False,2.1.2-preview-30286136
+Gigya Inc.,2017-12-17T12:54:08.25Z,3,124,Various components and utilities shared between different parts of the Microdot framework.,Gigya.Microdot.SharedLogic,False,2018-04-17T09:20:59.81+00:00,True,False,,"gigya,microdot,microservice,microservices",6921,False,1.7.6
+"savorboard,dotnetcore",2017-12-17T12:53:37.437Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.RabbitMQ,True,2018-04-18T09:59:51.93+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,RabbitMQ",6852,False,2.1.2-preview-30286136
+Gigya Inc.,2017-12-17T12:54:34.14Z,3,124,Tools to help write tests for Microdot services.,Gigya.Microdot.Testing,False,2018-04-17T09:21:04.963+00:00,True,False,,"gigya,microdot,microservice,microservices,fakes,mocks,mocking,unit-testing",5577,False,1.7.6
+"savorboard,dotnetcore",2017-12-17T12:53:25.513Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.PostgreSql,True,2018-04-18T09:59:48.943+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,PostgreSQL",2675,False,2.1.2-preview-30286136
+Gigya Inc.,2017-12-17T12:54:59.517Z,3,124,Tools to help write tests for Microdot services.,Gigya.Microdot.Testing.Shared,False,2018-04-17T09:21:09.933+00:00,True,False,,"gigya,microdot,microservice,microservices,fakes,mocks,mocking,unit-testing",2119,False,1.7.6
+"savorboard,dotnetcore",2017-12-17T12:53:25.513Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.PostgreSql,True,2018-04-18T09:59:48.943+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,PostgreSQL",2675,False,2.1.2-preview-30286136
+Gigya Inc.,2017-12-17T12:54:08.25Z,3,124,Various components and utilities shared between different parts of the Microdot framework.,Gigya.Microdot.SharedLogic,False,2018-04-17T09:20:59.81+00:00,True,False,,"gigya,microdot,microservice,microservices",6921,False,1.7.6
+"savorboard,dotnetcore",2017-12-17T12:53:15.653Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.MySql,True,2018-04-18T09:59:46.023+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,MySQL",4174,False,2.1.2-preview-30286136
+"savorboard,dotnetcore",2017-12-17T12:53:37.437Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.RabbitMQ,True,2018-04-18T09:59:51.93+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,RabbitMQ",6852,False,2.1.2-preview-30286136
+Gigya Inc.,2017-12-17T12:53:23Z,3,124,"Using this component you can find other Microdot services (and any other
+remote system), perform client-side load balancing between multiple
+servers, detect and	skip unresponsive servers and resume using them
+when they return to full operation. Discovery is typically perfomed with
+Consul by HashiCorp	(http://consul.io) but it also supports manual server
+lists specified in Microdot configuration (see NuGet package
+Gigya.Microdot.Configuration) and can be expanded to support additional
+service discovery systems.",Gigya.Microdot.ServiceDiscovery,False,2018-04-17T09:20:50.34+00:00,True,False,,"gigya,microdot,microservice,microservices,discovery,service-discovery,consul",6344,False,1.7.6
+Gigya Inc.,2017-12-17T12:54:34.14Z,3,124,Tools to help write tests for Microdot services.,Gigya.Microdot.Testing,False,2018-04-17T09:21:04.963+00:00,True,False,,"gigya,microdot,microservice,microservices,fakes,mocks,mocking,unit-testing",5577,False,1.7.6
+"savorboard,dotnetcore",2017-12-17T12:53:48.17Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.SqlServer,True,2018-04-18T09:59:55.71+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,SQL,Server",5880,False,2.1.2-preview-30286136
+Gigya Inc.,2017-12-17T12:53:45.297Z,3,124,"ServiceProxy is used to call remote Microdot services. It is a
+runtime-generated transparent proxy which implements the remote	service's
+public interface, translating all calls performed on it to HTTP calls.
+Part of the Microdot framework.",Gigya.Microdot.ServiceProxy,False,2018-04-17T09:20:55.09+00:00,True,False,,"gigya,microdot,microservice,microservices,serviceproxy,http,rpc",6309,False,1.7.6
+Gigya Inc.,2017-12-17T12:49:41.727Z,3,124,"A configuration system based on a hierarchy of XML files, the values of
+which are accessed using strongly-typed configuration objects. Supports
+modification of the files on live service, environment variable substitution,
+encryption and collections. Part of the Microdot framework.",Gigya.Microdot.Configuration,False,2018-04-17T09:20:12.01+00:00,True,False,,"gigya,microdot,microservice,microservices,configuration",6851,False,1.7.6
+Gigya Inc.,2017-12-17T12:50:30.57Z,3,124,"Infrastructure used for hosting Microdot services, part of the Microdot
+framework.",Gigya.Microdot.Hosting,False,2018-04-17T09:20:20.9+00:00,True,False,,"gigya,microdot,microservice,microservices",6633,False,1.7.6
+Gigya Inc.,2017-12-17T12:51:46.51Z,3,124,"Ninject modules, providers and binding resolvers for various Microdot
+components, part of the Microdot framework.",Gigya.Microdot.Ninject,False,2018-04-17T09:20:33.713+00:00,True,False,,"gigya,microdot,microservice,microservices,ninject,ioc,di",6650,False,1.7.6
+Gigya Inc.,2017-12-17T12:51:21.917Z,3,124,An implementation of Microdot's logging and tracing using NLog.,Gigya.Microdot.Logging.NLog,False,2018-04-17T09:20:28.963+00:00,True,False,,"gigya,microdot,microservice,microservices,NLog,logging,tracing",4246,False,1.7.6
+Gigya Inc.,2017-12-17T12:52:09.683Z,3,124,"A container used to host non-Orleans Microdot service which uses Ninject
+for	dependency injection. Incoming HTTP calls (via Gigya.Microdot.ServiceProxy)
+are dispatched to a specified class instance. Part of the Microdot framework.",Gigya.Microdot.Ninject.Host,False,2018-04-17T09:20:38.603+00:00,True,False,,"gigya,microdot,microservice,microservices,ninject,ioc,di",5813,False,1.7.6
+"savorboard,dotnetcore",2017-12-17T12:53:05.42Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.Kafka,True,2018-04-18T09:59:42.71+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,Kafka",5032,False,2.1.2-preview-30286136
+"savorboard,dotnetcore",2017-12-17T12:52:55.2Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP,True,2018-04-18T09:59:38.007+00:00,True,False,,"CAP,EventBus,Distributed,Transaction",7340,False,2.1.2-preview-30286136
+Gigya Inc.,2017-12-17T12:52:59.467Z,3,124,"A container used to host an Orleans Microdot service which uses Ninject for
+dependency injection. Incoming HTTP calls (via Gigya.Microdot.ServiceProxy)
+are handled and processed inside Orleans and are then dispatched to
+specific Grains. Part of the Microdot framework.",Gigya.Microdot.Orleans.Ninject.Host,False,2018-04-17T09:20:46.26+00:00,True,False,,"gigya,microdot,microservice,microservices",5900,False,1.7.6
+Gigya Inc.,2017-12-17T12:50:04.337Z,3,124,"A Collection of fakes for various Microdot components, used for testing.
+Part of the Microdot framework. See also Gigya.Microdot.Testing.",Gigya.Microdot.Fakes,False,2018-04-17T09:20:16.087+00:00,True,False,,"gigya,microdot,microservice,microservices,fakes,mocks,mocking,unit-testing",6342,False,1.7.6
+Gigya Inc.,2017-12-17T12:52:35.67Z,3,124,"Infrastructure used for hosting Orleans Microdot services, part of the
+Microdot framework.",Gigya.Microdot.Orleans.Hosting,False,2018-04-17T09:20:42.417+00:00,True,False,,"gigya,microdot,microservice,microservices",5940,False,1.7.6
+Gigya Inc.,2017-12-17T12:50:56.48Z,3,124,"Interface abstractions used by various Microdot components, seperated from
+their implementations to allow easy unit testing with mocks	(see
+Gigya.Microdot.Fakes). Part of the Microdot Framework.",Gigya.Microdot.Interfaces,False,2018-04-17T09:20:24.993+00:00,True,False,,"gigya,microdot,microservice,microservices",7280,False,1.7.6
+Karthick,2017-12-17T12:48:47.96Z,124,124,.Net Standard 2.0 version of corcav.behaviors,Xam.Behaviors,False,2017-12-17T12:48:47.96+00:00,True,False,Corcav.Behaviors for Xamarin Forms targeting .Net Standard 2.0,"Corcav,Behavior,Xamarin",342,False,1.0.1
+"savorboard,dotnetcore",2017-12-17T12:53:05.42Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.Kafka,True,2018-04-18T09:59:42.71+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,Kafka",5032,False,2.1.2-preview-30286136
+Gigya Inc.,2017-12-17T12:52:35.67Z,3,124,"Infrastructure used for hosting Orleans Microdot services, part of the
+Microdot framework.",Gigya.Microdot.Orleans.Hosting,False,2018-04-17T09:20:42.417+00:00,True,False,,"gigya,microdot,microservice,microservices",5940,False,1.7.6
+Gigya Inc.,2017-12-17T12:51:21.917Z,3,124,An implementation of Microdot's logging and tracing using NLog.,Gigya.Microdot.Logging.NLog,False,2018-04-17T09:20:28.963+00:00,True,False,,"gigya,microdot,microservice,microservices,NLog,logging,tracing",4246,False,1.7.6
+Gigya Inc.,2017-12-17T12:52:09.683Z,3,124,"A container used to host non-Orleans Microdot service which uses Ninject
+for	dependency injection. Incoming HTTP calls (via Gigya.Microdot.ServiceProxy)
+are dispatched to a specified class instance. Part of the Microdot framework.",Gigya.Microdot.Ninject.Host,False,2018-04-17T09:20:38.603+00:00,True,False,,"gigya,microdot,microservice,microservices,ninject,ioc,di",5813,False,1.7.6
+Gigya Inc.,2017-12-17T12:50:56.48Z,3,124,"Interface abstractions used by various Microdot components, seperated from
+their implementations to allow easy unit testing with mocks	(see
+Gigya.Microdot.Fakes). Part of the Microdot Framework.",Gigya.Microdot.Interfaces,False,2018-04-17T09:20:24.993+00:00,True,False,,"gigya,microdot,microservice,microservices",7280,False,1.7.6
+Karthick,2017-12-17T12:48:47.96Z,124,124,.Net Standard 2.0 version of corcav.behaviors,Xam.Behaviors,False,2017-12-17T12:48:47.96+00:00,True,False,Corcav.Behaviors for Xamarin Forms targeting .Net Standard 2.0,"Corcav,Behavior,Xamarin",342,False,1.0.1
+Gigya Inc.,2017-12-17T12:49:41.727Z,3,124,"A configuration system based on a hierarchy of XML files, the values of
+which are accessed using strongly-typed configuration objects. Supports
+modification of the files on live service, environment variable substitution,
+encryption and collections. Part of the Microdot framework.",Gigya.Microdot.Configuration,False,2018-04-17T09:20:12.01+00:00,True,False,,"gigya,microdot,microservice,microservices,configuration",6851,False,1.7.6
+Gigya Inc.,2017-12-17T12:50:04.337Z,3,124,"A Collection of fakes for various Microdot components, used for testing.
+Part of the Microdot framework. See also Gigya.Microdot.Testing.",Gigya.Microdot.Fakes,False,2018-04-17T09:20:16.087+00:00,True,False,,"gigya,microdot,microservice,microservices,fakes,mocks,mocking,unit-testing",6342,False,1.7.6
+Gigya Inc.,2017-12-17T12:50:30.57Z,3,124,"Infrastructure used for hosting Microdot services, part of the Microdot
+framework.",Gigya.Microdot.Hosting,False,2018-04-17T09:20:20.9+00:00,True,False,,"gigya,microdot,microservice,microservices",6633,False,1.7.6
+Gigya Inc.,2017-12-17T12:51:46.51Z,3,124,"Ninject modules, providers and binding resolvers for various Microdot
+components, part of the Microdot framework.",Gigya.Microdot.Ninject,False,2018-04-17T09:20:33.713+00:00,True,False,,"gigya,microdot,microservice,microservices,ninject,ioc,di",6650,False,1.7.6
+"savorboard,dotnetcore",2017-12-17T12:52:55.2Z,2,124,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP,True,2018-04-18T09:59:38.007+00:00,True,False,,"CAP,EventBus,Distributed,Transaction",7340,False,2.1.2-preview-30286136
+Gigya Inc.,2017-12-17T12:52:59.467Z,3,124,"A container used to host an Orleans Microdot service which uses Ninject for
+dependency injection. Incoming HTTP calls (via Gigya.Microdot.ServiceProxy)
+are handled and processed inside Orleans and are then dispatched to
+specific Grains. Part of the Microdot framework.",Gigya.Microdot.Orleans.Ninject.Host,False,2018-04-17T09:20:46.26+00:00,True,False,,"gigya,microdot,microservice,microservices",5900,False,1.7.6
+Maurício David,2017-12-17T12:43:55.48Z,40,124,LiteDB - A lightweight embedded .NET NoSQL document store in a single datafile,LiteDB,False,2018-03-11T23:48:50.93+00:00,True,False,,"database,nosql,embedded",233380,False,4.1.0
+Maurício David,2017-12-17T12:43:55.48Z,40,124,LiteDB - A lightweight embedded .NET NoSQL document store in a single datafile,LiteDB,False,2018-03-11T23:48:50.93+00:00,True,False,,"database,nosql,embedded",233380,False,4.1.0
+Simon Cropp,2017-12-17T12:26:32.033Z,12,124,Helpers for Fody.,FodyHelpers,False,2018-04-08T11:29:44.177+00:00,True,False,,"ILWeaving,Fody,Cecil,AOP",4067,False,2.3.1
+Simon Cropp,2017-12-17T12:26:41.813Z,12,124,NuGet packaging Fody repositories,FodyPackaging,False,2018-04-08T11:29:55.693+00:00,True,False,,"ILWeaving,Fody,Cecil,AOP",3344,False,2.3.1
+Simon Cropp,2017-12-17T12:26:10.027Z,12,124,Extensible tool for weaving .net assemblies.,Fody,False,2018-04-08T11:29:32.863+00:00,True,False,,"ILWeaving,Fody,Cecil,AOP",1756113,False,2.3.1
+cucmberium,2017-12-17T12:25:18.367Z,41,124,"TootNet is Mastodon library for .NET Standard.
+See also: https://github.com/cucmberium/TootNet
+
+This software is licensed under the MIT License.
+This library uses part of the codes of the following libraries.
+- Mastonet
+- CoreTweet",TootNet,False,2018-03-10T07:15:39.603+00:00,True,False,,Mastodon,789,False,1.0.9
+Simon Cropp,2017-12-17T12:26:21.09Z,43209,124,Custom Cecil version used by Fody.,FodyCecil,False,1900-01-01T00:00:00+00:00,False,False,,"ILWeaving,Fody,Cecil,AOP",33527,False,2.3.1
+Simon Cropp,2017-12-17T12:26:41.813Z,12,124,NuGet packaging Fody repositories,FodyPackaging,False,2018-04-08T11:29:55.693+00:00,True,False,,"ILWeaving,Fody,Cecil,AOP",3344,False,2.3.1
+Simon Cropp,2017-12-17T12:26:32.033Z,12,124,Helpers for Fody.,FodyHelpers,False,2018-04-08T11:29:44.177+00:00,True,False,,"ILWeaving,Fody,Cecil,AOP",4067,False,2.3.1
+Simon Cropp,2017-12-17T12:26:10.027Z,12,124,Extensible tool for weaving .net assemblies.,Fody,False,2018-04-08T11:29:32.863+00:00,True,False,,"ILWeaving,Fody,Cecil,AOP",1756113,False,2.3.1
+cucmberium,2017-12-17T12:25:18.367Z,41,124,"TootNet is Mastodon library for .NET Standard.
+See also: https://github.com/cucmberium/TootNet
+
+This software is licensed under the MIT License.
+This library uses part of the codes of the following libraries.
+- Mastonet
+- CoreTweet",TootNet,False,2018-03-10T07:15:39.603+00:00,True,False,,Mastodon,789,False,1.0.9
+Simon Cropp,2017-12-17T12:26:21.09Z,43209,124,Custom Cecil version used by Fody.,FodyCecil,False,1900-01-01T00:00:00+00:00,False,False,,"ILWeaving,Fody,Cecil,AOP",33527,False,2.3.1
+Kirill Lyubimov,2017-12-17T12:05:56.09Z,2,124,"Plugin for Xamarin forms. Allows you to open any page as a popup.
+
+          Support Android, iOS, WinPhone, UWP
+
+          Attention. This version is not compatible with 0.0.17 and 1.0.0",Rg.Plugins.Popup,True,2018-04-18T14:55:20.463+00:00,True,False,,"xamarin,forms,popup,page,modal",185922,False,1.1.0-pre7
+Microsoft,2017-12-17T11:57:50.117Z,43209,124,WinObjC.Frameworks.UWP,WinObjC.Frameworks.UWP,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks.UWP,WinObjC.Frameworks.UWP,6802,False,1711.1.1-dev-20171217000002
+James Grant,2017-12-17T12:11:04.24Z,122,124,A .NET Standard 2.0 conforming library of cross platform user interface control code,Jagerts.Arie.Standard.Controls,False,2017-12-19T23:32:58.353+00:00,True,False,,"application,app,Mvvm,Model-view-viewmodel,standard,ui,controls,Jagerts,Arie,Jagerts.Arie.Standard.Controls",488,False,0.0.5
+James Grant,2017-12-17T12:11:19.367Z,122,124,A user interface controls library for WPF,Jagerts.Arie.Windows.Classic.Controls,False,2017-12-19T23:33:43.523+00:00,True,False,,"application,app,ui,interface,controls,wpf,Jagerts,Arie,Jagerts.Arie.Windows.Classic.Controls",1339,False,0.0.13
+James Grant,2017-12-17T12:11:19.367Z,122,124,A user interface controls library for WPF,Jagerts.Arie.Windows.Classic.Controls,False,2017-12-19T23:33:43.523+00:00,True,False,,"application,app,ui,interface,controls,wpf,Jagerts,Arie,Jagerts.Arie.Windows.Classic.Controls",1339,False,0.0.13
+James Grant,2017-12-17T12:11:04.24Z,122,124,A .NET Standard 2.0 conforming library of cross platform user interface control code,Jagerts.Arie.Standard.Controls,False,2017-12-19T23:32:58.353+00:00,True,False,,"application,app,Mvvm,Model-view-viewmodel,standard,ui,controls,Jagerts,Arie,Jagerts.Arie.Standard.Controls",488,False,0.0.5
+Kirill Lyubimov,2017-12-17T12:05:56.09Z,2,124,"Plugin for Xamarin forms. Allows you to open any page as a popup.
+
+          Support Android, iOS, WinPhone, UWP
+
+          Attention. This version is not compatible with 0.0.17 and 1.0.0",Rg.Plugins.Popup,True,2018-04-18T14:55:20.463+00:00,True,False,,"xamarin,forms,popup,page,modal",185922,False,1.1.0-pre7
+Peter Waher,2017-12-17T12:07:34.437Z,14,124,"The Waher.Events.Persistence project creates an even sink that stores incoming (logged) events in the local object database, as defined by Waher.Persistence. Event life time in the database is defined in the constructor. Searches can be made for historical events.",Waher.Events.Persistence,False,2018-04-06T15:21:35.197+00:00,True,False,,"logger,logging,logs,events,eventlogging,eventlogs,local,persistence,object,database",718,False,1.0.7
+Davide Icardi,2017-12-17T12:06:42.637Z,124,124,C# expression interpreter/evaluator,DynamicExpresso.Core,True,2017-12-17T13:41:21.983+00:00,True,False,,"dynamic,expresso,expression,linq,eval",87184,False,2.0.0-beta2
+Peter Waher,2017-12-17T12:07:34.437Z,14,124,"The Waher.Events.Persistence project creates an even sink that stores incoming (logged) events in the local object database, as defined by Waher.Persistence. Event life time in the database is defined in the constructor. Searches can be made for historical events.",Waher.Events.Persistence,False,2018-04-06T15:21:35.197+00:00,True,False,,"logger,logging,logs,events,eventlogging,eventlogs,local,persistence,object,database",718,False,1.0.7
+Davide Icardi,2017-12-17T12:06:42.637Z,124,124,C# expression interpreter/evaluator,DynamicExpresso.Core,True,2017-12-17T13:41:21.983+00:00,True,False,,"dynamic,expresso,expression,linq,eval",87184,False,2.0.0-beta2
+Kirill Lyubimov,2017-12-17T12:05:56.09Z,2,124,"Plugin for Xamarin forms. Allows you to open any page as a popup.
+
+          Support Android, iOS, WinPhone, UWP
+
+          Attention. This version is not compatible with 0.0.17 and 1.0.0",Rg.Plugins.Popup,True,2018-04-18T14:55:20.463+00:00,True,False,,"xamarin,forms,popup,page,modal",185922,False,1.1.0-pre7
+Microsoft,2017-12-17T11:56:54.427Z,43209,124,WinObjC.Frameworks,WinObjC.Frameworks,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks,WinObjC.Frameworks,7966,False,1711.1.1-dev-20171217000002
+Microsoft,2017-12-17T11:58:35.337Z,43209,124,WinObjC.Language,WinObjC.Language,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Language,WinObjC.Language,9454,False,1711.1.1-dev-20171217000002
+Microsoft,2017-12-17T11:58:48.01Z,43209,124,WinObjC.Logging,WinObjC.Logging,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Logging,WinObjC.Logging,8353,False,1711.1.1-dev-20171217000002
+Microsoft,2017-12-17T11:57:29.617Z,43209,124,WinObjC.Frameworks.ThirdParty,WinObjC.Frameworks.ThirdParty,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks.ThirdParty,WinObjC.Frameworks.ThirdParty,7348,False,1711.1.1-dev-20171217000002
+Microsoft,2017-12-17T11:58:59.807Z,43209,124,Include this package in any WinObjC project that you wish to be added to a final NuGet package,WinObjC.Packaging,True,1900-01-01T00:00:00+00:00,False,False,An extension of NuGet.Build.Packaging with WinObjC additions.,WinObjC.Packaging,7535,False,1711.1.1-dev-20171217000002
+Microsoft,2017-12-17T11:57:08.663Z,43209,124,WinObjC.Frameworks.Core,WinObjC.Frameworks.Core,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks.Core,WinObjC.Frameworks.Core,7395,False,1711.1.1-dev-20171217000002
+Microsoft,2017-12-17T11:58:02.663Z,43209,124,WinObjC.Frameworks.UWP.Core,WinObjC.Frameworks.UWP.Core,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks.UWP.Core,WinObjC.Frameworks.UWP.Core,7732,False,1711.1.1-dev-20171217000002
+Microsoft,2017-12-17T11:58:59.807Z,43209,124,Include this package in any WinObjC project that you wish to be added to a final NuGet package,WinObjC.Packaging,True,1900-01-01T00:00:00+00:00,False,False,An extension of NuGet.Build.Packaging with WinObjC additions.,WinObjC.Packaging,7535,False,1711.1.1-dev-20171217000002
+Microsoft,2017-12-17T11:57:29.617Z,43209,124,WinObjC.Frameworks.ThirdParty,WinObjC.Frameworks.ThirdParty,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks.ThirdParty,WinObjC.Frameworks.ThirdParty,7348,False,1711.1.1-dev-20171217000002
+Microsoft,2017-12-17T11:57:08.663Z,43209,124,WinObjC.Frameworks.Core,WinObjC.Frameworks.Core,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks.Core,WinObjC.Frameworks.Core,7395,False,1711.1.1-dev-20171217000002
+Microsoft,2017-12-17T11:58:02.663Z,43209,124,WinObjC.Frameworks.UWP.Core,WinObjC.Frameworks.UWP.Core,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks.UWP.Core,WinObjC.Frameworks.UWP.Core,7732,False,1711.1.1-dev-20171217000002
+Microsoft,2017-12-17T11:58:48.01Z,43209,124,WinObjC.Logging,WinObjC.Logging,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Logging,WinObjC.Logging,8353,False,1711.1.1-dev-20171217000002
+Springboard 365 Ltd,2017-12-16T16:29:12.353Z,124,125,The core framework for Dynamics Crm Plugins.,Springboard365.Xrm.Plugins.Core,True,2017-12-17T12:58:31.29+00:00,False,False,,"Microsoft,Dynamics,CRM,2011,2013,2015,2016,SDK,XRM,365",520,False,1.0.0-beta4
+Mathias Petersen,2017-12-17T11:53:42.78Z,124,124,lite framework for cqrs and eventsourcing,Eventure,True,2017-12-17T11:53:42.78+00:00,True,False,,"cqrs,event,command,eventsourcing",554,False,1.4.2-alpha
+Mathias Petersen,2017-12-17T11:53:42.78Z,124,124,lite framework for cqrs and eventsourcing,Eventure,True,2017-12-17T11:53:42.78+00:00,True,False,,"cqrs,event,command,eventsourcing",554,False,1.4.2-alpha
+Davide Icardi,2017-12-17T11:48:36.86Z,124,124,C# expression interpreter/evaluator,DynamicExpresso.Core,True,2017-12-17T13:41:21.983+00:00,True,False,,"dynamic,expresso,expression,linq,eval",87184,False,2.0.0-beta
+Davide Icardi,2017-12-17T11:48:36.86Z,124,124,C# expression interpreter/evaluator,DynamicExpresso.Core,True,2017-12-17T13:41:21.983+00:00,True,False,,"dynamic,expresso,expression,linq,eval",87184,False,2.0.0-beta
+Pavel Yosifovich,2017-12-17T11:42:25.44Z,99,124,PE Parsing Library for .NET,Zodiacon.PEParsing,False,2018-01-11T09:17:57.723+00:00,True,False,PE Parsing Library for .NET,,465,False,0.1.3
+LDMING,2017-12-17T11:45:02.43Z,124,124,适用于ASP.NET Core2.0 的 OAuth2 认证中间件，使Web应用程序支持用QQ快捷登录。,AspNetCore.Authentication.QQ,False,2017-12-17T11:45:02.43+00:00,True,False,,"QQConnect,QQLogin,security,aspnet,core,authentication",87,False,2.0.0
+Springboard 365 Ltd,2017-12-17T11:45:49.62Z,124,124,The core framework for Dynamics Crm Plugins.,Springboard365.Xrm.Plugins.Core,True,2017-12-17T12:58:31.29+00:00,True,False,,"Microsoft,Dynamics,CRM,2011,2013,2015,2016,SDK,XRM,365",520,False,1.0.0-beta5
+LDMING,2017-12-17T11:45:02.43Z,124,124,适用于ASP.NET Core2.0 的 OAuth2 认证中间件，使Web应用程序支持用QQ快捷登录。,AspNetCore.Authentication.QQ,False,2017-12-17T11:45:02.43+00:00,True,False,,"QQConnect,QQLogin,security,aspnet,core,authentication",87,False,2.0.0
+Springboard 365 Ltd,2017-12-17T11:45:49.62Z,124,124,The core framework for Dynamics Crm Plugins.,Springboard365.Xrm.Plugins.Core,True,2017-12-17T12:58:31.29+00:00,True,False,,"Microsoft,Dynamics,CRM,2011,2013,2015,2016,SDK,XRM,365",520,False,1.0.0-beta5
+LDMING,2017-12-17T11:39:26.607Z,124,124,适用于ASP.NET Core2.0 的 OAuth2 认证中间件，使Web应用程序支持用微信快捷登录。,AspNetCore.Authentication.Weixin,False,2017-12-17T11:39:26.607+00:00,True,False,,"WeChat,weixin,security,aspnet,core,authentication",92,False,2.0.0
+LDMING,2017-12-17T11:41:55.813Z,124,124,适用于ASP.NET Core2.0 的 OAuth2 认证中间件，使Web应用程序支持用微信快捷登录。,AspNetCore.Authentication.WeChat,False,2017-12-17T11:41:55.813+00:00,True,False,,"WeChat,weixin,security,aspnet,core,authentication",113,False,2.0.0
+LDMING,2017-12-17T11:41:55.813Z,124,124,适用于ASP.NET Core2.0 的 OAuth2 认证中间件，使Web应用程序支持用微信快捷登录。,AspNetCore.Authentication.WeChat,False,2017-12-17T11:41:55.813+00:00,True,False,,"WeChat,weixin,security,aspnet,core,authentication",113,False,2.0.0
+LDMING,2017-12-17T11:39:26.607Z,124,124,适用于ASP.NET Core2.0 的 OAuth2 认证中间件，使Web应用程序支持用微信快捷登录。,AspNetCore.Authentication.Weixin,False,2017-12-17T11:39:26.607+00:00,True,False,,"WeChat,weixin,security,aspnet,core,authentication",92,False,2.0.0
+"FUJIWARA,Yusuke",2017-12-17T11:32:20.9Z,124,124,"MessagePack is fast, compact, and interoperable binary serialization format.
+This package provides MessagePack serialization/deserialization APIs. This pacakge also supports Mono, Xamarin, .NET Core and Unity.",MsgPack.Cli,True,2017-12-17T11:32:20.9+00:00,True,False,,"MsgPack,MessagePack,Serialization,Formatter,Serializer",722686,False,1.0.0-rc
+"FUJIWARA,Yusuke",2017-12-17T11:32:20.9Z,124,124,"MessagePack is fast, compact, and interoperable binary serialization format.
+This package provides MessagePack serialization/deserialization APIs. This pacakge also supports Mono, Xamarin, .NET Core and Unity.",MsgPack.Cli,True,2017-12-17T11:32:20.9+00:00,True,False,,"MsgPack,MessagePack,Serialization,Formatter,Serializer",722686,False,1.0.0-rc
+nick.randell@sceneskope.com,2017-12-17T11:26:36.62Z,11,124,Package Description,SceneSkope.PowerBI,False,2018-04-09T08:07:37.23+00:00,True,False,,,1292,False,1.1.0
+nick.randell@sceneskope.com,2017-12-17T11:26:36.62Z,11,124,Package Description,SceneSkope.PowerBI,False,2018-04-09T08:07:37.23+00:00,True,False,,,1292,False,1.1.0
+Pavel Yosifovich,2017-12-17T11:20:47.023Z,99,124,PE Parsing Library for .NET,Zodiacon.PEParsing,False,2018-01-11T09:17:57.723+00:00,True,False,PE Parsing Library for .NET,,465,False,0.1.2
+Pavel Yosifovich,2017-12-17T11:20:47.023Z,99,124,PE Parsing Library for .NET,Zodiacon.PEParsing,False,2018-01-11T09:17:57.723+00:00,True,False,PE Parsing Library for .NET,,465,False,0.1.2
+"Dmitry Bublik,Gennady Verdel",2017-12-17T11:13:25.99Z,124,124,"LogoFX Client Mvvm View Extensions containing controls and mediators for virtualization, paging and filtering",LogoFX.Client.Mvvm.View.Extensions,True,2017-12-17T11:13:25.99+00:00,True,False,"LogoFX Client Mvvm View Extensions containing controls and mediators for virtualization, paging and filtering",,735,False,1.1.1-rc1
+"Dmitry Bublik,Gennady Verdel",2017-12-17T11:13:25.99Z,124,124,"LogoFX Client Mvvm View Extensions containing controls and mediators for virtualization, paging and filtering",LogoFX.Client.Mvvm.View.Extensions,True,2017-12-17T11:13:25.99+00:00,True,False,"LogoFX Client Mvvm View Extensions containing controls and mediators for virtualization, paging and filtering",,735,False,1.1.1-rc1
+Ahmed Abu El-Nour,2017-12-17T11:07:09.86Z,43209,124,"Provide some useful extensions (Encryption , Hashing , etc)",OpenStringExtensions,False,1900-01-01T00:00:00+00:00,False,False,,"ASP.NET,UWP,WPF,WindowsForms,.NETCore",-1,False,1.0.0
+Ahmed Abu El-Nour,2017-12-17T11:07:09.86Z,43209,124,"Provide some useful extensions (Encryption , Hashing , etc)",OpenStringExtensions,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+SmartLife-Solutions Corporation,2017-12-17T11:07:34.393Z,1,124,"Official Library for Solutions The Library contains the main operations, data, utilities and Base forms for the Solutions. 
+It's build using Visual Studio 2017, C# 7.0 and .Net framework 4.6.1 .
+Please use it SmartLife Solutions team :)",SmartLifeLtdWeb,False,2018-04-19T12:54:12.137+00:00,True,False,,"Smart,Library,Technology,Utility,Solutions",1983,False,1.0.1.12
+SmartLife-Solutions Corporation,2017-12-17T11:07:34.393Z,1,124,"Official Library for Solutions The Library contains the main operations, data, utilities and Base forms for the Solutions. 
+It's build using Visual Studio 2017, C# 7.0 and .Net framework 4.6.1 .
+Please use it SmartLife Solutions team :)",SmartLifeLtdWeb,False,2018-04-19T12:54:12.137+00:00,True,False,,"Smart,Library,Technology,Utility,Solutions",1983,False,1.0.1.12
+Ahmed Abu El-Nour,2017-12-17T11:07:09.86Z,43209,124,"Provide some useful extensions (Encryption , Hashing , etc)",OpenStringExtensions,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Ahmed Abu El-Nour,2017-12-17T11:03:15.353Z,43209,124,"Provide some useful extensions (Encryption , Hashing , IO Async)",OpenFileExtensions,False,1900-01-01T00:00:00+00:00,False,False,"Provide some useful extensions (Encryption , Hashing , IO Async)","WPF,WindowsForms",-1,False,1.0.0
+Ahme Abu El-Nour,2017-09-10T12:58:54.673Z,43209,222,Provide some useful extensions to make things much simplier and more readable.,OpenUtilityExtensions,False,1900-01-01T00:00:00+00:00,False,False,Provide some useful extensions to make things much simplier and more readable.,"Extensions,ASP.NET,Windows,Classic,Applications,Xamarin",-1,False,1.1.0
+Pavel Yosifovich,2017-12-17T11:05:56.967Z,99,124,PE Parsing Library for .NET,Zodiacon.PEParsing,False,2018-01-11T09:17:57.723+00:00,True,False,PE Parsing Library for .NET,,465,False,0.1.1
+Ahmed Abu El-Nour,2017-12-17T11:03:15.353Z,43209,124,"Provide some useful extensions (Encryption , Hashing , IO Async)",OpenFileExtensions,False,1900-01-01T00:00:00+00:00,False,False,,"WPF,WindowsForms",-1,False,1.0.0
+"David Kossoglyad,Dmitry Bublik,Vlad Spivak",2017-12-17T11:02:39.723Z,39,124,"LogoFX Client Mvvm View containing 
+view layer objects facilitating development by MVVM pattern",LogoFX.Client.Mvvm.View,True,2018-03-12T07:42:16.87+00:00,True,False,"LogoFX Client Mvvm View containing 
+view layer objects facilitating development by MVVM pattern",,2909,False,1.1.1-rc1
+SmartLife-Solutions Corporation,2017-12-17T11:06:56.377Z,2,124,"Official Library for Solutions The Library contains the main operations, data, utilities and Base forms for the Solutions. 
+	It's build using Visual Studio 2017, C# 7.0 and .Net framework 4.6.1 .",SmartLifeLtd,False,2018-04-18T09:40:15.393+00:00,True,False,"SmartLife Solutions (SLS) specialized in innovative, interactive and smart solutions that provides clients with a fully integrated and professional range of individual services, like smart electronic devices, Software, innovative mobile apps, etc
+
+We provide products and services in SmartLife Solutions for your shop, home, factory, company and even university.","Smart,Library,Technology,Utility,Solutions",9564,False,1.0.2.11
+Pavel Yosifovich,2017-12-17T11:05:56.967Z,99,124,PE Parsing Library for .NET,Zodiacon.PEParsing,False,2018-01-11T09:17:57.723+00:00,True,False,PE Parsing Library for .NET,,465,False,0.1.1
+SmartLife-Solutions Corporation,2017-12-17T11:06:56.377Z,2,124,"Official Library for Solutions The Library contains the main operations, data, utilities and Base forms for the Solutions. 
+	It's build using Visual Studio 2017, C# 7.0 and .Net framework 4.6.1 .",SmartLifeLtd,False,2018-04-18T09:40:15.393+00:00,True,False,"SmartLife Solutions (SLS) specialized in innovative, interactive and smart solutions that provides clients with a fully integrated and professional range of individual services, like smart electronic devices, Software, innovative mobile apps, etc
+
+We provide products and services in SmartLife Solutions for your shop, home, factory, company and even university.","Smart,Library,Technology,Utility,Solutions",9564,False,1.0.2.11
+"David Kossoglyad,Dmitry Bublik,Vlad Spivak",2017-12-17T11:02:39.723Z,39,124,"LogoFX Client Mvvm View containing 
+view layer objects facilitating development by MVVM pattern",LogoFX.Client.Mvvm.View,True,2018-03-12T07:42:16.87+00:00,True,False,"LogoFX Client Mvvm View containing 
+view layer objects facilitating development by MVVM pattern",,2909,False,1.1.1-rc1
+Ahmed Abu El-Nour,2017-12-17T11:03:15.353Z,43209,124,"Provide some useful extensions (Encryption , Hashing , IO Async)",OpenFileExtensions,False,1900-01-01T00:00:00+00:00,False,False,,"WPF,WindowsForms",-1,False,1.0.0
+Bit Miracle,2017-12-17T10:57:20.08Z,3,124,"This is the prerelease version of Docotic.Pdf library.
+        
+        Prerelease version contains newest features and latest bug fixes. This version is tested for regressions and is safe to be used in production environment.
+        
+        Docotic.Pdf library can create, edit, draw and print PDF files.
+
+The library is a fully managed assembly for .NET Standard 1.3, .NET 4.0 and later frameworks. The assembly has no external dependencies.
+
+There are different types of licenses: for applications, for servers, cloud and unlimited. All licenses are royalty-free. 
+
+Free time-limited licenses are available upon request.",BitMiracle.Docotic.Pdf,True,2018-04-17T04:43:51.433+00:00,True,False,"This is the prerelease version of Docotic.Pdf library.
+        Prerelease version contains newest features and latest bug fixes. This version is tested for regressions and is safe to be used in production environment.","pdf,C#,csharp,.net,.netstandard,pdf-library,pdf-to-text,pdf-to-image,print-pdf,compress-pdf,pdf-viewer,pdf/a,pdf-forms,bitmiracle,bit-miracle",53077,False,5.4.8720-dev
+"David Kossoglyad,Dmitry Bublik,Vlad Spivak",2017-12-17T10:58:48.947Z,124,124,"LogoFX Client Mvvm View Core containing core
+view layer objects facilitating development by MVVM pattern",LogoFX.Client.Mvvm.View.Core,True,2017-12-17T10:58:48.947+00:00,True,False,"LogoFX Client Mvvm View Core containing core
+view layer objects facilitating development by MVVM pattern",,2131,False,1.1.1-rc1
+"David Kossoglyad,Dmitry Bublik,Vlad Spivak",2017-12-17T10:58:48.947Z,124,124,"LogoFX Client Mvvm View Core containing core
+view layer objects facilitating development by MVVM pattern",LogoFX.Client.Mvvm.View.Core,True,2017-12-17T10:58:48.947+00:00,True,False,"LogoFX Client Mvvm View Core containing core
+view layer objects facilitating development by MVVM pattern",,2131,False,1.1.1-rc1
+Bit Miracle,2017-12-17T10:57:20.08Z,3,124,"This is the prerelease version of Docotic.Pdf library.
+        
+        Prerelease version contains newest features and latest bug fixes. This version is tested for regressions and is safe to be used in production environment.
+        
+        Docotic.Pdf library can create, edit, draw and print PDF files.
+
+The library is a fully managed assembly for .NET Standard 1.3, .NET 4.0 and later frameworks. The assembly has no external dependencies.
+
+There are different types of licenses: for applications, for servers, cloud and unlimited. All licenses are royalty-free. 
+
+Free time-limited licenses are available upon request.",BitMiracle.Docotic.Pdf,True,2018-04-17T04:43:51.433+00:00,True,False,"This is the prerelease version of Docotic.Pdf library.
+        Prerelease version contains newest features and latest bug fixes. This version is tested for regressions and is safe to be used in production environment.","pdf,C#,csharp,.net,.netstandard,pdf-library,pdf-to-text,pdf-to-image,print-pdf,compress-pdf,pdf-viewer,pdf/a,pdf-forms,bitmiracle,bit-miracle",53077,False,5.4.8720-dev
+nick.randell@sceneskope.com,2017-12-17T10:52:12.293Z,77,124,Package Description,SceneSkope.Utilities.Text,False,2018-02-02T19:02:15.99+00:00,True,False,,,3128,False,2.2.0
+Max-Planck-Institute of Biochemistry,2017-12-17T10:55:16.367Z,1,124,PerseusApi implementation,PerseusLibS,False,2018-04-20T09:10:17.28+00:00,True,False,,,69455,False,1.6.0.1466
+nick.randell@sceneskope.com,2017-12-17T10:51:52.463Z,77,124,Package Description,SceneSkope.Utilities.IO,False,2018-02-02T19:01:53.927+00:00,True,False,,,1944,False,2.2.0
+nick.randell@sceneskope.com,2017-12-17T10:51:42.807Z,77,124,Package Description,SceneSkope.Utilities.EventLogs,False,2018-02-02T19:01:43.91+00:00,True,False,,,2212,False,2.2.0
+nick.randell@sceneskope.com,2017-12-17T10:52:22.28Z,77,124,Package Description,SceneSkope.Utilities.TextFiles,False,2018-02-02T19:02:26.49+00:00,True,False,,,3041,False,2.2.0
+Max-Planck-Institute of Biochemistry,2017-12-17T10:55:16.367Z,1,124,PerseusApi implementation,PerseusLibS,False,2018-04-20T09:10:17.28+00:00,True,False,,,69455,False,1.6.0.1466
+nick.randell@sceneskope.com,2017-12-17T10:52:22.28Z,77,124,Package Description,SceneSkope.Utilities.TextFiles,False,2018-02-02T19:02:26.49+00:00,True,False,,,3041,False,2.2.0
+nick.randell@sceneskope.com,2017-12-17T10:52:12.293Z,77,124,Package Description,SceneSkope.Utilities.Text,False,2018-02-02T19:02:15.99+00:00,True,False,,,3128,False,2.2.0
+Rasmus Jørgensen,2017-12-17T10:51:01.853Z,124,124,"Simple, asynchronous Flock log4net appender.",Log4Flock,False,2017-12-17T14:49:04.17+00:00,True,False,,"flock,log4net,appender",320,False,1.0.0
+Ahme Abu El-Nour,2017-12-17T10:50:45.4Z,43209,124,Provide some useful extensions for serialization,OpenSerializationExtensions,False,1900-01-01T00:00:00+00:00,False,False,"Provide some useful extensions for serialization (Json , MessagePack, Deep Copy) ","ASP.NET,WindowsForms,UWP,WPF,Xamarin,.NETCore",-1,False,2.0.0
+Ahmed Abu El-Nour,2017-08-15T11:36:29.06Z,43209,248,Provide some useful extensions to make things much simpler and more readable.,OpenUtilityExtensions,False,1900-01-01T00:00:00+00:00,False,False,Provide some useful extensions to make things much simpler and more readable.,"ASP.NET,WindowsClassicApplications,Xamarin",-1,False,1.0.0
+BruceBayne,2017-12-17T10:50:53.853Z,3,124,Another .NET framework,Friday.Base,False,2018-04-17T15:41:56.833+00:00,True,False,,,2251,False,1.0.21
+Ahme Abu El-Nour,2017-09-10T12:58:54.673Z,43209,222,Provide some useful extensions to make things much simplier and more readable.,OpenUtilityExtensions,False,1900-01-01T00:00:00+00:00,False,False,Provide some useful extensions to make things much simplier and more readable.,"Extensions,ASP.NET,Windows,Classic,Applications,Xamarin",-1,False,1.1.0
+nick.randell@sceneskope.com,2017-12-17T10:51:13.633Z,77,124,Package Description,SceneSkope.Utilities,False,2018-02-02T19:01:04.423+00:00,True,False,,,3146,False,2.2.0
+Ahme Abu El-Nour,2017-12-17T10:50:45.4Z,43209,124,Provide some useful extensions for serialization,OpenSerializationExtensions,False,1900-01-01T00:00:00+00:00,False,False,,"ASP.NET,WindowsForms,UWP,WPF,Xamarin,.NETCore",-1,False,2.0.0
+nick.randell@sceneskope.com,2017-12-17T10:52:02.497Z,77,124,Package Description,SceneSkope.Utilities.TableStorage,False,2018-02-02T19:02:04.427+00:00,True,False,,,2953,False,2.2.0
+Rasmus Jørgensen,2017-12-17T10:51:01.853Z,124,124,"Simple, asynchronous Flock log4net appender.",Log4Flock,False,2017-12-17T14:49:04.17+00:00,True,False,,"flock,log4net,appender",320,False,1.0.0
+nick.randell@sceneskope.com,2017-12-17T10:51:32.807Z,77,124,Package Description,SceneSkope.Utilities.CommandLineApplications,False,2018-02-02T19:01:32.503+00:00,True,False,,,3322,False,2.2.0
+nick.randell@sceneskope.com,2017-12-17T10:51:22.853Z,77,124,Package Description,SceneSkope.Utilities.BlobStorage,False,2018-02-02T19:01:20.36+00:00,True,False,,,2501,False,2.2.0
+nick.randell@sceneskope.com,2017-12-17T10:51:22.853Z,77,124,Package Description,SceneSkope.Utilities.BlobStorage,False,2018-02-02T19:01:20.36+00:00,True,False,,,2501,False,2.2.0
+nick.randell@sceneskope.com,2017-12-17T10:51:13.633Z,77,124,Package Description,SceneSkope.Utilities,False,2018-02-02T19:01:04.423+00:00,True,False,,,3146,False,2.2.0
+BruceBayne,2017-12-17T10:50:53.853Z,3,124,Another .NET framework,Friday.Base,False,2018-04-17T15:41:56.833+00:00,True,False,,,2251,False,1.0.21
+Rasmus Jørgensen,2017-12-17T10:51:01.853Z,124,124,"Simple, asynchronous Flock log4net appender.",Log4Flock,False,2017-12-17T14:49:04.17+00:00,True,False,,"flock,log4net,appender",320,False,1.0.0
+nick.randell@sceneskope.com,2017-12-17T10:51:32.807Z,77,124,Package Description,SceneSkope.Utilities.CommandLineApplications,False,2018-02-02T19:01:32.503+00:00,True,False,,,3322,False,2.2.0
+nick.randell@sceneskope.com,2017-12-17T10:52:02.497Z,77,124,Package Description,SceneSkope.Utilities.TableStorage,False,2018-02-02T19:02:04.427+00:00,True,False,,,2953,False,2.2.0
+Robert.Shu,2017-12-17T10:43:15.49Z,114,124,DataVeryLite is a lightweight *Persistence Framework*.,DataVeryLite,False,2017-12-27T05:56:52.667+00:00,True,False,"Support :
+sqlserver,mysql,sqlite,oracle
+access,db2,postpresql
+http://dataverylite.codeplex.com/","ado.net,database,persistence",2290,False,2.1.0
+nick.randell@sceneskope.com,2017-12-17T10:43:56.057Z,77,124,Package Description,SceneSkope.Utilities.IO,True,2018-02-02T19:01:53.927+00:00,True,False,,,1944,False,2.2.0-dev-00059
+nick.randell@sceneskope.com,2017-12-17T10:43:22.82Z,77,124,Package Description,SceneSkope.Utilities.BlobStorage,True,2018-02-02T19:01:20.36+00:00,True,False,,,2501,False,2.2.0-dev-00059
+nick.randell@sceneskope.com,2017-12-17T10:44:05.993Z,77,124,Package Description,SceneSkope.Utilities.TableStorage,True,2018-02-02T19:02:04.427+00:00,True,False,,,2953,False,2.2.0-dev-00059
+nick.randell@sceneskope.com,2017-12-17T10:44:17.667Z,77,124,Package Description,SceneSkope.Utilities.Text,True,2018-02-02T19:02:15.99+00:00,True,False,,,3128,False,2.2.0-dev-00059
+Robert.Shu,2017-12-17T10:43:15.49Z,114,124,DataVeryLite is a lightweight *Persistence Framework*.,DataVeryLite,False,2017-12-27T05:56:52.667+00:00,True,False,"Support :
+sqlserver,mysql,sqlite,oracle
+access,db2,postpresql
+http://dataverylite.codeplex.com/","ado.net,database,persistence",2290,False,2.1.0
+nick.randell@sceneskope.com,2017-12-17T10:44:28.59Z,77,124,Package Description,SceneSkope.Utilities.TextFiles,True,2018-02-02T19:02:26.49+00:00,True,False,,,3041,False,2.2.0-dev-00059
+nick.randell@sceneskope.com,2017-12-17T10:43:33.697Z,77,124,Package Description,SceneSkope.Utilities.CommandLineApplications,True,2018-02-02T19:01:32.503+00:00,True,False,,,3322,False,2.2.0-dev-00059
+nick.randell@sceneskope.com,2017-12-17T10:43:13.1Z,77,124,Package Description,SceneSkope.Utilities,True,2018-02-02T19:01:04.423+00:00,True,False,,,3146,False,2.2.0-dev-00059
+nick.randell@sceneskope.com,2017-12-17T10:43:45.15Z,77,124,Package Description,SceneSkope.Utilities.EventLogs,True,2018-02-02T19:01:43.91+00:00,True,False,,,2212,False,2.2.0-dev-00059
+nick.randell@sceneskope.com,2017-12-17T10:44:28.59Z,77,124,Package Description,SceneSkope.Utilities.TextFiles,True,2018-02-02T19:02:26.49+00:00,True,False,,,3041,False,2.2.0-dev-00059
+nick.randell@sceneskope.com,2017-12-17T10:44:17.667Z,77,124,Package Description,SceneSkope.Utilities.Text,True,2018-02-02T19:02:15.99+00:00,True,False,,,3128,False,2.2.0-dev-00059
+nick.randell@sceneskope.com,2017-12-17T10:43:13.1Z,77,124,Package Description,SceneSkope.Utilities,True,2018-02-02T19:01:04.423+00:00,True,False,,,3146,False,2.2.0-dev-00059
+nick.randell@sceneskope.com,2017-12-17T10:44:05.993Z,77,124,Package Description,SceneSkope.Utilities.TableStorage,True,2018-02-02T19:02:04.427+00:00,True,False,,,2953,False,2.2.0-dev-00059
+nick.randell@sceneskope.com,2017-12-17T10:43:45.15Z,77,124,Package Description,SceneSkope.Utilities.EventLogs,True,2018-02-02T19:01:43.91+00:00,True,False,,,2212,False,2.2.0-dev-00059
+nick.randell@sceneskope.com,2017-12-17T10:43:22.82Z,77,124,Package Description,SceneSkope.Utilities.BlobStorage,True,2018-02-02T19:01:20.36+00:00,True,False,,,2501,False,2.2.0-dev-00059
+Objectis SA,2017-12-17T10:36:19.09Z,124,124,Package Description,Woopsa,True,2017-12-17T10:36:19.09+00:00,True,False,,"Network,Open,Protocol,C#,Mono,Json,Client,Server,IoT,Industry4.0",1885,False,1.2.3-dev00002
+Objectis SA,2017-12-17T10:36:19.09Z,124,124,Package Description,Woopsa,True,2017-12-17T10:36:19.09+00:00,True,False,,"Network,Open,Protocol,C#,Mono,Json,Client,Server,IoT,Industry4.0",1885,False,1.2.3-dev00002
+Max-Planck-Institute of Biochemistry,2017-12-17T10:34:46.583Z,1,124,"Utility classes for MaxQuant and Perseus, independent of graphics",BaseLibS,False,2018-04-19T14:36:16.56+00:00,True,False,,,19395,False,1.6.0.346
+Max-Planck-Institute of Biochemistry,2017-12-17T10:33:07.95Z,1,124,Collection of Perseus plugins,PerseusPluginLib,False,2018-04-19T14:40:20.68+00:00,True,False,,,22367,False,1.6.0.279
+Max-Planck-Institute of Biochemistry,2017-12-17T10:33:19.28Z,1,124,Absolute protein quantification PMID 25225357,PluginProteomicRuler,False,2018-04-19T14:40:23.337+00:00,True,False,,,22434,False,1.6.0.279
+Max-Planck-Institute of Biochemistry,2017-12-17T10:32:53.717Z,1,124,API for Perseus plugin development,PerseusApi,False,2018-04-19T14:40:17.773+00:00,True,False,,,22955,False,1.6.0.279
+Max-Planck-Institute of Biochemistry,2017-12-17T10:34:59.583Z,1,124,Numerical classes for MaxQuant and Perseus,NumPluginBase,False,2018-04-19T14:36:19.247+00:00,True,False,,,19090,False,1.6.0.346
+Glayson Sergio,2017-12-17T10:35:21.73Z,45,124,RepositorioGenerico é um Framework ORM OpenSource escrito em C# para utilização em projetos com qualquer quantidade de tabelas.,RepositorioGenerico.SqlClient.Autofac,False,2018-03-06T19:59:06.157+00:00,True,False,,"IRepository,ORM,generic,repository,repositorio,generico,more,1000,tables",667,False,1.0.7
+Max-Planck-Institute of Biochemistry,2017-12-17T10:34:15.58Z,1,124,Utility classes for MaxQuant and Perseus,BaseLib,False,2018-04-19T14:35:53.323+00:00,True,False,,,19251,False,1.6.0.346
+Glayson Sergio,2017-12-17T10:34:16.737Z,45,124,RepositorioGenerico é um Framework ORM OpenSource escrito em C# para utilização em projetos com qualquer quantidade de tabelas.,RepositorioGenerico.Fake,False,2018-03-06T19:57:05.577+00:00,True,False,,"IRepository,ORM,generic,repository,repositorio,generico,more,1000,tables",697,False,1.0.7
+Glayson Sergio,2017-12-17T10:33:53.487Z,45,124,RepositorioGenerico é um Framework ORM OpenSource escrito em C# para utilização em projetos com qualquer quantidade de tabelas.,RepositorioGenerico,False,2018-03-06T19:56:33.373+00:00,True,False,,"IRepository,ORM,generic,repository,repositorio,generico,more,1000,tables",688,False,1.0.7
+Max-Planck-Institute of Biochemistry,2017-12-17T10:35:10.68Z,1,124,Svm implementation for Perseus,NumPluginSvm,False,2018-04-19T14:36:21.683+00:00,True,False,,,19083,False,1.6.0.346
+Glayson Sergio,2017-12-17T10:34:56.02Z,45,124,RepositorioGenerico é um Framework ORM OpenSource escrito em C# para utilização em projetos com qualquer quantidade de tabelas.,RepositorioGenerico.SqlClient,False,2018-03-06T19:57:31.437+00:00,True,False,,"IRepository,ORM,generic,repository,repositorio,generico,more,1000,tables",700,False,1.0.7
+Richard Szalay,2017-12-17T10:33:30.453Z,124,124,MSBuild extensions for building Sitecore icon zip archives and including them in the published website,RichardSzalay.Sitecore.Icons.MSBuild,False,2017-12-17T10:33:30.453+00:00,True,False,,"sitecore,icons,build,publish",69,False,1.0.0
+Glayson Sergio,2017-12-17T10:33:20.013Z,45,124,RepositorioGenerico é um Framework ORM OpenSource escrito em C# para utilização em projetos com qualquer quantidade de tabelas.,RepositorioGenerico.Pattern,False,2018-03-06T19:56:09.34+00:00,True,False,,"IRepository,ORM,generic,repository,repositorio,generico,more,1000,tables",656,False,1.0.7
+Glayson Sergio,2017-12-17T10:35:21.73Z,45,124,RepositorioGenerico é um Framework ORM OpenSource escrito em C# para utilização em projetos com qualquer quantidade de tabelas.,RepositorioGenerico.SqlClient.Autofac,False,2018-03-06T19:59:06.157+00:00,True,False,,"IRepository,ORM,generic,repository,repositorio,generico,more,1000,tables",667,False,1.0.7
+Max-Planck-Institute of Biochemistry,2017-12-17T10:35:10.68Z,1,124,Svm implementation for Perseus,NumPluginSvm,False,2018-04-19T14:36:21.683+00:00,True,False,,,19083,False,1.6.0.346
+Max-Planck-Institute of Biochemistry,2017-12-17T10:33:19.28Z,1,124,Absolute protein quantification PMID 25225357,PluginProteomicRuler,False,2018-04-19T14:40:23.337+00:00,True,False,,,22434,False,1.6.0.279
+Max-Planck-Institute of Biochemistry,2017-12-17T10:34:46.583Z,1,124,"Utility classes for MaxQuant and Perseus, independent of graphics",BaseLibS,False,2018-04-19T14:36:16.56+00:00,True,False,,,19395,False,1.6.0.346
+Glayson Sergio,2017-12-17T10:34:56.02Z,45,124,RepositorioGenerico é um Framework ORM OpenSource escrito em C# para utilização em projetos com qualquer quantidade de tabelas.,RepositorioGenerico.SqlClient,False,2018-03-06T19:57:31.437+00:00,True,False,,"IRepository,ORM,generic,repository,repositorio,generico,more,1000,tables",700,False,1.0.7
+Max-Planck-Institute of Biochemistry,2017-12-17T10:32:53.717Z,1,124,API for Perseus plugin development,PerseusApi,False,2018-04-19T14:40:17.773+00:00,True,False,,,22955,False,1.6.0.279
+Glayson Sergio,2017-12-17T10:34:16.737Z,45,124,RepositorioGenerico é um Framework ORM OpenSource escrito em C# para utilização em projetos com qualquer quantidade de tabelas.,RepositorioGenerico.Fake,False,2018-03-06T19:57:05.577+00:00,True,False,,"IRepository,ORM,generic,repository,repositorio,generico,more,1000,tables",697,False,1.0.7
+Max-Planck-Institute of Biochemistry,2017-12-17T10:34:59.583Z,1,124,Numerical classes for MaxQuant and Perseus,NumPluginBase,False,2018-04-19T14:36:19.247+00:00,True,False,,,19090,False,1.6.0.346
+Glayson Sergio,2017-12-17T10:33:20.013Z,45,124,RepositorioGenerico é um Framework ORM OpenSource escrito em C# para utilização em projetos com qualquer quantidade de tabelas.,RepositorioGenerico.Pattern,False,2018-03-06T19:56:09.34+00:00,True,False,,"IRepository,ORM,generic,repository,repositorio,generico,more,1000,tables",656,False,1.0.7
+Richard Szalay,2017-12-17T10:33:30.453Z,124,124,MSBuild extensions for building Sitecore icon zip archives and including them in the published website,RichardSzalay.Sitecore.Icons.MSBuild,False,2017-12-17T10:33:30.453+00:00,True,False,,"sitecore,icons,build,publish",69,False,1.0.0
+yuridotnetlib,2017-12-17T10:26:32.227Z,124,124,Package Description,yuridotnetlib,False,2017-12-17T10:26:32.227+00:00,True,False,,,67,False,1.0.0
+yuridotnetlib,2017-12-17T10:26:32.227Z,124,124,Package Description,yuridotnetlib,False,2017-12-17T10:26:32.227+00:00,True,False,,,67,False,1.0.0
+andreev_l,2017-12-17T10:24:38.923Z,124,124,remove points on same line,UtilityPolygon,False,2017-12-17T10:24:38.923+00:00,True,False,,,198,False,1.0.2
+andreev_l,2017-12-17T10:24:38.923Z,124,124,remove points on same line,UtilityPolygon,False,2017-12-17T10:24:38.923+00:00,True,False,,,198,False,1.0.2
+Marc Chouteau,2017-12-17T10:11:04.973Z,78,124,"TasksOnTime can be used in service , console, website or wpf/winforms applications Use only standard ThreadPool",TasksOnTime,False,2018-02-01T06:56:20.457+00:00,True,False,Simply enqueue (with delay) or schedule any c# task as you want and monitor it,"Schedule,Enqueue,Tasks,Asynchrone",2952,False,4.3.15
+74177,2017-12-17T09:43:39.09Z,43209,124,My package description.,SgMyPackage,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Marc Chouteau,2017-12-17T10:11:04.973Z,78,124,"TasksOnTime can be used in service , console, website or wpf/winforms applications Use only standard ThreadPool",TasksOnTime,False,2018-02-01T06:56:20.457+00:00,True,False,Simply enqueue (with delay) or schedule any c# task as you want and monitor it,"Schedule,Enqueue,Tasks,Asynchrone",2952,False,4.3.15
+bhdryrdm,2017-12-17T10:06:32.79Z,103,124,W-ORM is simple and usefull an ORM,W-ORM.MSSQL,False,2018-01-07T22:19:18.18+00:00,True,False,,"Micro,ORM",806,False,1.2.4
+Pavel Yosifovich,2017-12-17T10:10:20.21Z,99,124,PE Parsing Library for .NET,Zodiacon.PEParsing,False,2018-01-11T09:17:57.723+00:00,True,False,PE Parsing Library for .NET,,465,False,0.1.0
+bhdryrdm,2017-12-17T10:06:32.79Z,103,124,W-ORM is simple and usefull an ORM,W-ORM.MSSQL,False,2018-01-07T22:19:18.18+00:00,True,False,,"Micro,ORM",806,False,1.2.4
+Pavel Yosifovich,2017-12-17T10:10:20.21Z,99,124,PE Parsing Library for .NET,Zodiacon.PEParsing,False,2018-01-11T09:17:57.723+00:00,True,False,PE Parsing Library for .NET,,465,False,0.1.0
+74177,2017-12-17T09:43:39.09Z,43209,124,My package description.,SgMyPackage,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+bhdryrdm,2017-12-17T10:04:40.317Z,103,124,W-ORM is sipmle and usefull a ORM,W-ORM,False,2018-01-07T22:17:54.53+00:00,True,False,,,815,False,1.2.4
+bhdryrdm,2017-12-17T10:04:40.317Z,103,124,W-ORM is sipmle and usefull a ORM,W-ORM,False,2018-01-07T22:17:54.53+00:00,True,False,,,815,False,1.2.4
+DXSdata,2017-12-17T10:00:10.963Z,124,124,Library for simple checks if an email or host address is listed in https://github.com/ivolo/disposable-email-domains,DisposableEmailDomainsCheck,False,2017-12-17T10:00:10.963+00:00,True,False,,,164,False,1.0.1
+DXSdata,2017-12-17T10:00:10.963Z,124,124,Library for simple checks if an email or host address is listed in https://github.com/ivolo/disposable-email-domains,DisposableEmailDomainsCheck,False,2017-12-17T10:00:10.963+00:00,True,False,,,164,False,1.0.1
+74177,2017-12-17T09:43:39.09Z,43209,124,My package description.,SgMyPackage,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+74177,2017-12-17T09:43:39.09Z,43209,124,My package description.,SgMyPackage,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Petr Šrámek,2017-12-17T09:38:48.94Z,21,124,.NET Standard 2.0 library implementing Google Polyline Algorithm,Cloudikka.PolylineAlgorithm,True,2018-03-30T22:41:50.033+00:00,True,False,,"csharp,google,polyline,algorithm",2730,False,1.0.0.11-beta
+Petr Šrámek,2017-12-17T09:38:48.94Z,21,124,.NET Standard 2.0 library implementing Google Polyline Algorithm,Cloudikka.PolylineAlgorithm,True,2018-03-30T22:41:50.033+00:00,True,False,,"csharp,google,polyline,algorithm",2730,False,1.0.0.11-beta
+"Dmitry Bublik,Gennady Verdel,David Kossoglyad",2017-12-17T08:58:01.09Z,95,124,"LogoFX Client Mvvm ViewModel Extensions containing various use cases
+for the most common view models (including editing, paging and virtualization)",LogoFX.Client.Mvvm.ViewModel.Extensions,True,2018-01-15T17:11:15.797+00:00,True,False,"LogoFX Client Mvvm ViewModel Extensions containing various use cases
+for the most common view models (including editing, paging and virtualization)",,4265,False,1.2.1-rc2
+P. van der Velde,2017-12-17T08:56:17.653Z,62,124,A NuGet package of the Packer machine image creation tool.,Packer.Windows.x86,False,2018-02-17T05:25:06.65+00:00,True,False,,,627,False,1.1.3
+P. van der Velde,2017-12-17T08:55:46.183Z,62,124,A NuGet package of the Packer machine image creation tool.,Packer.Windows.x64,False,2018-02-17T05:24:33.663+00:00,True,False,,,837,False,1.1.3
+P. van der Velde,2017-12-17T08:56:17.653Z,62,124,A NuGet package of the Packer machine image creation tool.,Packer.Windows.x86,False,2018-02-17T05:25:06.65+00:00,True,False,,,627,False,1.1.3
+P. van der Velde,2017-12-17T08:55:46.183Z,62,124,A NuGet package of the Packer machine image creation tool.,Packer.Windows.x64,False,2018-02-17T05:24:33.663+00:00,True,False,,,837,False,1.1.3
+"Dmitry Bublik,Gennady Verdel,David Kossoglyad",2017-12-17T08:58:01.09Z,95,124,"LogoFX Client Mvvm ViewModel Extensions containing various use cases
+for the most common view models (including editing, paging and virtualization)",LogoFX.Client.Mvvm.ViewModel.Extensions,True,2018-01-15T17:11:15.797+00:00,True,False,"LogoFX Client Mvvm ViewModel Extensions containing various use cases
+for the most common view models (including editing, paging and virtualization)",,4265,False,1.2.1-rc2
+"Dmitry Bublik,Gennady Verdel,David Kossoglyad",2017-12-17T08:51:21.86Z,95,124,"LogoFX Client Mvvm ViewModel Extensions Core containing various core use cases
+for the most common view models (including editing, paging and virtualization)",LogoFX.Client.Mvvm.ViewModel.Extensions.Core,True,2018-01-15T16:43:15.45+00:00,True,False,"LogoFX Client Mvvm ViewModel Extensions Core containing various core use cases
+for the most common view models (including editing, paging and virtualization)",,1547,False,1.2.1-rc2
+Christian James,2017-12-17T08:54:12.983Z,5,124,Propeller Mvc is a small framework which handles alot of the mapping between Sitecore items and project models. Another goal for this project is to make the develepment experience more like ordinary asp.net mvc.,propeller.mvc.model,False,2018-04-15T21:16:10.3+00:00,True,False,,"sitecore,mvc",1845,False,1.1.0.3
+amay077,2017-12-17T08:53:49.513Z,57,124,Yet another Maps library for Xamarin.Forms that optimized for Google maps.,Xamarin.Forms.GoogleMaps,True,2018-02-22T10:35:29.703+00:00,True,False,Yet another Maps library for Xamarin.Forms that optimized for Google maps,"xamarin,forms,maps,xamarinforms,xamarinformsmaps,xamarin.forms.maps,xamarinformsgooglemaps,xamarin.forms.googlemaps,google,googlemap",69025,False,2.3.0-beta5
+amay077,2017-12-17T08:53:49.513Z,57,124,Yet another Maps library for Xamarin.Forms that optimized for Google maps.,Xamarin.Forms.GoogleMaps,True,2018-02-22T10:35:29.703+00:00,True,False,Yet another Maps library for Xamarin.Forms that optimized for Google maps,"xamarin,forms,maps,xamarinforms,xamarinformsmaps,xamarin.forms.maps,xamarinformsgooglemaps,xamarin.forms.googlemaps,google,googlemap",69025,False,2.3.0-beta5
+Christian James,2017-12-17T08:54:12.983Z,5,124,Propeller Mvc is a small framework which handles alot of the mapping between Sitecore items and project models. Another goal for this project is to make the develepment experience more like ordinary asp.net mvc.,propeller.mvc.model,False,2018-04-15T21:16:10.3+00:00,True,False,,"sitecore,mvc",1845,False,1.1.0.3
+"Dmitry Bublik,Gennady Verdel,David Kossoglyad",2017-12-17T08:51:21.86Z,95,124,"LogoFX Client Mvvm ViewModel Extensions Core containing various core use cases
+for the most common view models (including editing, paging and virtualization)",LogoFX.Client.Mvvm.ViewModel.Extensions.Core,True,2018-01-15T16:43:15.45+00:00,True,False,"LogoFX Client Mvvm ViewModel Extensions Core containing various core use cases
+for the most common view models (including editing, paging and virtualization)",,1547,False,1.2.1-rc2
+"Gennady Verdel,Dmitry Bublik",2017-12-17T08:46:33.77Z,70,124,LogoFX Client Mvvm ViewModel Services Core containing commonly used cross-platform UI services.,LogoFX.Client.Mvvm.ViewModel.Services.Core,True,2018-02-09T07:20:40.957+00:00,True,False,LogoFX Client Mvvm ViewModel Services Core containing commonly used cross-platform UI services.,,4288,False,1.2.1-rc2
+"Gennady Verdel,Dmitry Bublik",2017-12-17T08:48:22.8Z,95,124,LogoFX Client Mvvm ViewModel Services containing commonly used UI services.,LogoFX.Client.Mvvm.ViewModel.Services,True,2018-01-15T16:33:54.663+00:00,True,False,LogoFX Client Mvvm ViewModel Services containing commonly used UI services.,,1433,False,1.2.1-rc2
+"Gennady Verdel,Dmitry Bublik",2017-12-17T08:48:22.8Z,95,124,LogoFX Client Mvvm ViewModel Services containing commonly used UI services.,LogoFX.Client.Mvvm.ViewModel.Services,True,2018-01-15T16:33:54.663+00:00,True,False,LogoFX Client Mvvm ViewModel Services containing commonly used UI services.,,1433,False,1.2.1-rc2
+"Gennady Verdel,Dmitry Bublik",2017-12-17T08:46:33.77Z,70,124,LogoFX Client Mvvm ViewModel Services Core containing commonly used cross-platform UI services.,LogoFX.Client.Mvvm.ViewModel.Services.Core,True,2018-02-09T07:20:40.957+00:00,True,False,LogoFX Client Mvvm ViewModel Services Core containing commonly used cross-platform UI services.,,4288,False,1.2.1-rc2
+"Dmitry Bublik,Gennady Verdel",2017-12-17T08:44:08.973Z,124,124,LogoFX Client Mvvm ViewModel Shared containing shared components.,LogoFX.Client.Mvvm.ViewModel.Shared,True,2017-12-17T08:44:08.973+00:00,True,False,LogoFX Client Mvvm ViewModel Shared containing shared components.,,2066,False,1.2.1-rc2
+Unni Ravindranathan,2017-12-17T08:41:39.693Z,43209,124,This is a test package.,ABCDHDLJSLKDJSL,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,2.0.0
+Atsushi Eno,2017-12-17T08:40:55.66Z,124,124,C# bindings for Clang 4.0 API for Mono and .NET Framework,name.atsushieno.nclang,False,2017-12-17T08:40:55.66+00:00,True,False,C# bindings for Clang 4.0 API for Mono and .NET Framework,"clang,interop,mono",71,False,1.0.0
+"Dmitry Bublik,Gennady Verdel",2017-12-17T08:44:08.973Z,124,124,LogoFX Client Mvvm ViewModel Shared containing shared components.,LogoFX.Client.Mvvm.ViewModel.Shared,True,2017-12-17T08:44:08.973+00:00,True,False,LogoFX Client Mvvm ViewModel Shared containing shared components.,,2066,False,1.2.1-rc2
+Atsushi Eno,2017-12-17T08:40:55.66Z,124,124,C# bindings for Clang 4.0 API for Mono and .NET Framework,name.atsushieno.nclang,False,2017-12-17T08:40:55.66+00:00,True,False,C# bindings for Clang 4.0 API for Mono and .NET Framework,"clang,interop,mono",71,False,1.0.0
+Unni Ravindranathan,2017-12-17T08:41:39.693Z,43209,124,This is a test package.,ABCDHDLJSLKDJSL,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,2.0.0
+Federico Colombo,2017-12-17T08:35:19.1Z,9,124,Generate Audit Logs by intercepting operation calls on any class without changing its code.,Audit.DynamicProxy,False,2018-04-11T20:47:19.447+00:00,True,False,,"Audit,Trail,Log,Proxy,Castle,DynamicProxy",6610,False,9.3.0
+christoforosl,2017-12-17T08:38:17.553Z,123,124,"See GitHub wiki for more information: 
+https://github.com/christoforosl/codegen-lib/wiki",CodeGen.Model.Library,False,2017-12-18T16:16:53.147+00:00,True,False,Simple ORM that supports saving Object Hieratchies in a single transaction.  Includes a code generator to generate ORM classes from database.,orm,6284,False,4.1.12.6
+Federico Colombo,2017-12-17T08:36:16.74Z,9,124,Generate Audit Logs for ASP.NET SignalR invokations,Audit.SignalR,False,2018-04-11T20:48:21.293+00:00,True,False,,"Audit,SignalR,Trail,Log",977,False,9.3.0
+Federico Colombo,2017-12-17T08:35:53.803Z,9,124,Store Audit.NET Trail Logs into a PostgreSQL database,Audit.NET.PostgreSql,False,2018-04-11T20:47:56.54+00:00,True,False,,"Audit,Trail,Log,Postgres,PostgreSQL",1593,False,9.3.0
+Federico Colombo,2017-12-17T08:34:54.597Z,9,124,Generate detailed Audit Logs for WCF service calls.,Audit.WCF,False,2018-04-11T20:46:52.227+00:00,True,False,,"Audit,Trail,Log,WCF",7359,False,9.3.0
+Federico Colombo,2017-12-17T08:36:06.257Z,9,124,Generate Audit Logs from file system events using a FileSystemWatcher,Audit.FileSystem,False,2018-04-11T20:48:09.073+00:00,True,False,,"Audit,File,System,Log,FileSystemWatcher",1117,False,9.3.0
+Federico Colombo,2017-12-17T08:35:07.19Z,9,124,Store Audit.NET Logs into an Azure Blob Storage,Audit.NET.AzureStorage,False,2018-04-11T20:47:06.697+00:00,True,False,,"Audit,Trail,Log,Azure,Blob,BlobStorage",8473,False,9.3.0
+Federico Colombo,2017-12-17T08:35:31.723Z,9,124,Send Audit.NET Trail Logs as connectionless UDP datagrams to a remote host or a multicast group,Audit.NET.Udp,False,2018-04-11T20:47:31.18+00:00,True,False,,"Audit,Trail,Log,UDP",2362,False,9.3.0
+Maris Krivtezs,2017-12-17T08:37:17.99Z,2,124,View Engine which enables feature folder support for MVC (prior .NET Core).,FeaturesViewEngine,False,2018-04-18T07:53:35.347+00:00,True,False,View Engine which enables feature folder support for MVC (prior .NET Core).,"ASP.NET,MVC",452,False,1.0.0
+Federico Colombo,2017-12-17T08:35:43.007Z,9,124,"Store Audit.NET Trail Logs in a Redis database as a strings, lists, hashes, sortedsets or pubsub",Audit.NET.Redis,False,2018-04-11T20:47:44.073+00:00,True,False,,"Audit,Trail,Log,Redis",2404,False,9.3.0
+Federico Colombo,2017-12-17T08:35:53.803Z,9,124,Store Audit.NET Trail Logs into a PostgreSQL database,Audit.NET.PostgreSql,False,2018-04-11T20:47:56.54+00:00,True,False,,"Audit,Trail,Log,Postgres,PostgreSQL",1593,False,9.3.0
+Federico Colombo,2017-12-17T08:35:19.1Z,9,124,Generate Audit Logs by intercepting operation calls on any class without changing its code.,Audit.DynamicProxy,False,2018-04-11T20:47:19.447+00:00,True,False,,"Audit,Trail,Log,Proxy,Castle,DynamicProxy",6610,False,9.3.0
+Federico Colombo,2017-12-17T08:35:31.723Z,9,124,Send Audit.NET Trail Logs as connectionless UDP datagrams to a remote host or a multicast group,Audit.NET.Udp,False,2018-04-11T20:47:31.18+00:00,True,False,,"Audit,Trail,Log,UDP",2362,False,9.3.0
+Maris Krivtezs,2017-12-17T08:37:17.99Z,2,124,View Engine which enables feature folder support for MVC (prior .NET Core).,FeaturesViewEngine,False,2018-04-18T07:53:35.347+00:00,True,False,View Engine which enables feature folder support for MVC (prior .NET Core).,"ASP.NET,MVC",452,False,1.0.0
+Federico Colombo,2017-12-17T08:35:07.19Z,9,124,Store Audit.NET Logs into an Azure Blob Storage,Audit.NET.AzureStorage,False,2018-04-11T20:47:06.697+00:00,True,False,,"Audit,Trail,Log,Azure,Blob,BlobStorage",8473,False,9.3.0
+Federico Colombo,2017-12-17T08:36:06.257Z,9,124,Generate Audit Logs from file system events using a FileSystemWatcher,Audit.FileSystem,False,2018-04-11T20:48:09.073+00:00,True,False,,"Audit,File,System,Log,FileSystemWatcher",1117,False,9.3.0
+Federico Colombo,2017-12-17T08:34:54.597Z,9,124,Generate detailed Audit Logs for WCF service calls.,Audit.WCF,False,2018-04-11T20:46:52.227+00:00,True,False,,"Audit,Trail,Log,WCF",7359,False,9.3.0
+Federico Colombo,2017-12-17T08:35:43.007Z,9,124,"Store Audit.NET Trail Logs in a Redis database as a strings, lists, hashes, sortedsets or pubsub",Audit.NET.Redis,False,2018-04-11T20:47:44.073+00:00,True,False,,"Audit,Trail,Log,Redis",2404,False,9.3.0
+Federico Colombo,2017-12-17T08:36:16.74Z,9,124,Generate Audit Logs for ASP.NET SignalR invokations,Audit.SignalR,False,2018-04-11T20:48:21.293+00:00,True,False,,"Audit,SignalR,Trail,Log",977,False,9.3.0
+christoforosl,2017-12-17T08:38:17.553Z,123,124,"See GitHub wiki for more information: 
+https://github.com/christoforosl/codegen-lib/wiki",CodeGen.Model.Library,False,2017-12-18T16:16:53.147+00:00,True,False,Simple ORM that supports saving Object Hieratchies in a single transaction.  Includes a code generator to generate ORM classes from database.,orm,6284,False,4.1.12.6
+Federico Colombo,2017-12-17T08:34:31.677Z,9,124,Generate Audit Logs from EntityFramework context changes,Audit.EntityFramework,False,2018-04-11T20:46:26.803+00:00,True,False,,"Audit,Trail,Log,EntityFramework",13861,False,9.3.0
+Federico Colombo,2017-12-17T08:33:30.38Z,9,124,Generate detailed Audit Logs for Web API Controller calls.,Audit.WebApi,False,2018-04-11T20:45:10.597+00:00,True,False,,"Audit,Trail,Log,WebApi",21635,False,9.3.0
+Federico Colombo,2017-12-17T08:33:54.677Z,9,124,Store Audit.NET Trail Logs into a MongoDB database,Audit.NET.MongoDB,False,2018-04-11T20:45:47.38+00:00,True,False,,"Audit,Trail,Log,MongoDB",14635,False,9.3.0
+Federico Colombo,2017-12-17T08:33:17.66Z,9,124,Generate detailed Audit Logs for MVC Controller actions.,Audit.Mvc,False,2018-04-11T20:44:45.903+00:00,True,False,,"Audit,Trail,Log,MVC,ActionFilter",11949,False,9.3.0
+Federico Colombo,2017-12-17T08:34:06.893Z,9,124,Store Audit.NET Trail Logs into a SQL Server database,Audit.NET.SqlServer,False,2018-04-11T20:46:00.24+00:00,True,False,,"Audit,Trail,Log,SQL,SqlServer",24665,False,9.3.0
+Federico Colombo,2017-12-17T08:33:42.503Z,9,124,Store Audit.NET Trail Logs into an Azure Document DB database,Audit.NET.AzureDocumentDB,False,2018-04-11T20:45:34.99+00:00,True,False,,"Audit,Trail,Log,Azure,DocumentDB",10154,False,9.3.0
+Federico Colombo,2017-12-17T08:34:18.583Z,9,124,Store Audit.NET Trail Logs into a MySQL database,Audit.NET.MySql,False,2018-04-11T20:46:12.96+00:00,True,False,,"Audit,Trail,Log,MySQL",3327,False,9.3.0
+Federico Colombo,2017-12-17T08:34:43.537Z,9,124,Generate Audit Logs from EntityFramework context changes,Audit.EntityFramework.Core,False,2018-04-11T20:46:40.413+00:00,True,False,,"Audit,Trail,Log,EntityFramework,Core",5679,False,9.3.0
+Federico Colombo,2017-12-17T08:33:06.287Z,9,124,An extensible framework to audit executing operations in .NET and .NET Core.,Audit.NET,False,2018-04-11T20:44:33.107+00:00,True,False,,"Audit,Trail,Log",47705,False,9.3.0
+Federico Colombo,2017-12-17T08:33:06.287Z,9,124,An extensible framework to audit executing operations in .NET and .NET Core.,Audit.NET,False,2018-04-11T20:44:33.107+00:00,True,False,,"Audit,Trail,Log",47705,False,9.3.0
+Federico Colombo,2017-12-17T08:34:31.677Z,9,124,Generate Audit Logs from EntityFramework context changes,Audit.EntityFramework,False,2018-04-11T20:46:26.803+00:00,True,False,,"Audit,Trail,Log,EntityFramework",13861,False,9.3.0
+Federico Colombo,2017-12-17T08:33:42.503Z,9,124,Store Audit.NET Trail Logs into an Azure Document DB database,Audit.NET.AzureDocumentDB,False,2018-04-11T20:45:34.99+00:00,True,False,,"Audit,Trail,Log,Azure,DocumentDB",10154,False,9.3.0
+Federico Colombo,2017-12-17T08:34:06.893Z,9,124,Store Audit.NET Trail Logs into a SQL Server database,Audit.NET.SqlServer,False,2018-04-11T20:46:00.24+00:00,True,False,,"Audit,Trail,Log,SQL,SqlServer",24665,False,9.3.0
+Federico Colombo,2017-12-17T08:33:30.38Z,9,124,Generate detailed Audit Logs for Web API Controller calls.,Audit.WebApi,False,2018-04-11T20:45:10.597+00:00,True,False,,"Audit,Trail,Log,WebApi",21635,False,9.3.0
+Federico Colombo,2017-12-17T08:34:43.537Z,9,124,Generate Audit Logs from EntityFramework context changes,Audit.EntityFramework.Core,False,2018-04-11T20:46:40.413+00:00,True,False,,"Audit,Trail,Log,EntityFramework,Core",5679,False,9.3.0
+Federico Colombo,2017-12-17T08:33:17.66Z,9,124,Generate detailed Audit Logs for MVC Controller actions.,Audit.Mvc,False,2018-04-11T20:44:45.903+00:00,True,False,,"Audit,Trail,Log,MVC,ActionFilter",11949,False,9.3.0
+Federico Colombo,2017-12-17T08:34:18.583Z,9,124,Store Audit.NET Trail Logs into a MySQL database,Audit.NET.MySql,False,2018-04-11T20:46:12.96+00:00,True,False,,"Audit,Trail,Log,MySQL",3327,False,9.3.0
+Federico Colombo,2017-12-17T08:33:54.677Z,9,124,Store Audit.NET Trail Logs into a MongoDB database,Audit.NET.MongoDB,False,2018-04-11T20:45:47.38+00:00,True,False,,"Audit,Trail,Log,MongoDB",14635,False,9.3.0
+LazyWorks.Utilities,2017-12-17T08:20:55.507Z,105,124,Package Description,LazyWorks.Utilities,False,2018-01-05T06:12:39.377+00:00,True,False,,,473,False,1.0.2
+Artur Shamsutdinov,2017-12-17T08:20:15.973Z,17,124,Range Slider for Xamarin,Xamarin.Forms.RangeSlider,False,2018-04-03T08:39:07.327+00:00,True,False,,"xamarin,range,slider,xamarin.forms",22516,False,0.7.16
+Artur Shamsutdinov,2017-12-17T08:19:54.66Z,17,124,Range Slider for Xamarin,Xamarin.RangeSlider,False,2018-04-03T08:38:06.09+00:00,True,False,,"xamarin,range,slider",27217,False,0.7.16
+Artur Shamsutdinov,2017-12-17T08:20:15.973Z,17,124,Range Slider for Xamarin,Xamarin.Forms.RangeSlider,False,2018-04-03T08:39:07.327+00:00,True,False,,"xamarin,range,slider,xamarin.forms",22516,False,0.7.16
+Artur Shamsutdinov,2017-12-17T08:19:54.66Z,17,124,Range Slider for Xamarin,Xamarin.RangeSlider,False,2018-04-03T08:38:06.09+00:00,True,False,,"xamarin,range,slider",27217,False,0.7.16
+LazyWorks.Utilities,2017-12-17T08:20:55.507Z,105,124,Package Description,LazyWorks.Utilities,False,2018-01-05T06:12:39.377+00:00,True,False,,,473,False,1.0.2
+Paul den Dulk,2017-12-17T08:17:28.423Z,57,124,Mapsui - Library for mapping,Mapsui,False,2018-02-22T08:00:44.697+00:00,False,False,,"map,maps,mapping,geo,gis,osm",22308,False,1.2.6
+Paul den Dulk,2017-12-17T08:17:28.423Z,57,124,Mapsui - Library for mapping,Mapsui,False,2018-02-22T08:00:44.697+00:00,True,False,,"map,maps,mapping,geo,gis,osm",22308,False,1.2.6
+Paul den Dulk,2017-12-17T08:17:28.423Z,57,124,Mapsui - Library for mapping,Mapsui,False,2018-02-22T08:00:44.697+00:00,True,False,,"map,maps,mapping,geo,gis,osm",22308,False,1.2.6
+Norbert Maziarz,2017-12-17T08:13:39.76Z,81,124,Data for metro,MaybeSolutions.Metro.Data,False,2018-01-29T14:25:22.657+00:00,True,False,,Metro,1343,False,1.0.0.16
+Norbert Maziarz,2017-12-17T08:13:39.76Z,81,124,Data for metro,MaybeSolutions.Metro.Data,False,2018-01-29T14:25:22.657+00:00,True,False,,Metro,1343,False,1.0.0.16
+LazyWorks.Utilities,2017-12-17T07:58:01.157Z,105,124,Package Description,LazyWorks.Utilities,False,2018-01-05T06:12:39.377+00:00,True,False,,,473,False,1.0.1
+LazyWorks.Utilities,2017-12-17T07:58:01.157Z,105,124,Package Description,LazyWorks.Utilities,False,2018-01-05T06:12:39.377+00:00,True,False,,,473,False,1.0.1
+Sergey Zavoloka,2017-12-17T07:38:37.487Z,124,124,Extensions to simplify parallel processing.,Zavolokas.ParallelExtensions,False,2017-12-17T07:38:37.487+00:00,True,False,,"Parallel,Processing",108,False,1.0.0
+Sergey Zavoloka,2017-12-17T07:38:37.487Z,124,124,Extensions to simplify parallel processing.,Zavolokas.ParallelExtensions,False,2017-12-17T07:38:37.487+00:00,True,False,,"Parallel,Processing",108,False,1.0.0
+Leonard Harris,2017-12-17T07:06:15.6Z,124,124,"File Picker plugin for Xamarin.Forms to work with local or cloud based files
+
+      Methods available:
+
+      *PickFileAsync
+      *OpenFile
+      *SaveFileAsync",LeoJHarris.Plugin.FilePicker,False,2017-12-17T07:06:15.6+00:00,True,False,Easy to use file picker plugin for Xamarin.forms,,1723,False,1.0.4
+Leonard Harris,2017-12-17T07:06:15.6Z,124,124,"File Picker plugin for Xamarin.Forms to work with local or cloud based files
+
+      Methods available:
+
+      *PickFileAsync
+      *OpenFile
+      *SaveFileAsync",LeoJHarris.Plugin.FilePicker,False,2017-12-17T07:06:15.6+00:00,True,False,Easy to use file picker plugin for Xamarin.forms,,1723,False,1.0.4
+Sergey Zavoloka,2017-12-17T07:00:59.663Z,26,124,"Handy structures for image processing such as mappings, near neighbour field, vector, interval etc.",Zavolokas.Structures,False,2018-03-25T12:26:38.067+00:00,True,False,,"Area2D,ZsImage,Nnf,Point,Rectangle,Vector2D,Interval",337,False,1.0.1
+Sergey Zavoloka,2017-12-17T07:01:53.713Z,124,124,Allows to convert Area2D to an Image or visa versa.,Zavolokas.Structures.Gdi,False,2017-12-17T07:01:53.713+00:00,True,False,,,231,False,1.0.0
+Sergey Zavoloka,2017-12-17T07:01:53.713Z,124,124,Allows to convert Area2D to an Image or visa versa.,Zavolokas.Structures.Gdi,False,2017-12-17T07:01:53.713+00:00,True,False,,,231,False,1.0.0
+Sergey Zavoloka,2017-12-17T07:00:59.663Z,26,124,"Handy structures for image processing such as mappings, near neighbour field, vector, interval etc.",Zavolokas.Structures,False,2018-03-25T12:26:38.067+00:00,True,False,,"Area2D,ZsImage,Nnf,Point,Rectangle,Vector2D,Interval",337,False,1.0.1
+Sergey Zavoloka,2017-12-17T07:01:53.713Z,124,124,Allows to convert Area2D to an Image or visa versa.,Zavolokas.Structures.Gdi,False,2017-12-17T07:01:53.713+00:00,True,False,,,231,False,1.0.0
+Alberto Fustinoni,2017-12-17T06:58:33.937Z,28,124,File System API abstraction,Xam.Plugin.FileSystem,False,2018-03-23T16:19:25.05+00:00,True,False,File System API abstraction,"xamarin,plugin,for,android,xamarin.forms,ios,file,system,storage,UWP",936,False,0.2.6
+tomitomi3,2017-12-17T06:57:26.387Z,12,124,"LibOptimization is numerical optimization algorithm library. This library will probably simplify the optimization using C# and VB.Net and other .NET Framework language. Implementing optimization algorithm are Steepest Descent Method, Newton Method, Nelder Mead Method (Original ver, Wikipedia ver) ,Hooke and Jeeves of Pattern Search (Direct Search), Real-coded Genetic Algorithm(BLX-alpha and JGG, UNDX and JGG Simplex and JGG, REX and JGG, PCX and G3), Particle Swarm Optimization(Basic PSO, LDIW-PSO, CDIW-PSO, CRIW-PSO, AIW-PSO), Differential Evolution(DE/rand/1/bin, DE/best/1/bin, DE/rand/2/bin, DE/best/2/bin, JADE), Cuckoo Search(Standard), FireFry, Simulated Annealing, Evolution Strategy((1+1)-ES).",LibOptimization,False,2018-04-08T16:36:33.187+00:00,True,False,LibOptimization is numerical optimization algorithm library.,"optimization,heuristic,nonlinear,numerical,math,genetic,algorithm,GA,PatternSearch,NelderMead,ParticleSwarmOptimization,DifferentialEvolution,CuckooSearch,FireFly,SimulatedAnnealing",6657,False,1.10.0
+Alberto Fustinoni,2017-12-17T06:58:33.937Z,28,124,File System API abstraction,Xam.Plugin.FileSystem,False,2018-03-23T16:19:25.05+00:00,True,False,File System API abstraction,"xamarin,plugin,for,android,xamarin.forms,ios,file,system,storage,UWP",936,False,0.2.6
+tomitomi3,2017-12-17T06:57:26.387Z,12,124,"LibOptimization is numerical optimization algorithm library. This library will probably simplify the optimization using C# and VB.Net and other .NET Framework language. Implementing optimization algorithm are Steepest Descent Method, Newton Method, Nelder Mead Method (Original ver, Wikipedia ver) ,Hooke and Jeeves of Pattern Search (Direct Search), Real-coded Genetic Algorithm(BLX-alpha and JGG, UNDX and JGG Simplex and JGG, REX and JGG, PCX and G3), Particle Swarm Optimization(Basic PSO, LDIW-PSO, CDIW-PSO, CRIW-PSO, AIW-PSO), Differential Evolution(DE/rand/1/bin, DE/best/1/bin, DE/rand/2/bin, DE/best/2/bin, JADE), Cuckoo Search(Standard), FireFry, Simulated Annealing, Evolution Strategy((1+1)-ES).",LibOptimization,False,2018-04-08T16:36:33.187+00:00,True,False,LibOptimization is numerical optimization algorithm library.,"optimization,heuristic,nonlinear,numerical,math,genetic,algorithm,GA,PatternSearch,NelderMead,ParticleSwarmOptimization,DifferentialEvolution,CuckooSearch,FireFly,SimulatedAnnealing",6657,False,1.10.0
+shuqizhao,2017-12-17T06:38:10.05Z,123,124,c# microservice,Apollo,False,2017-12-18T02:17:20.693+00:00,True,False,c# microservice,,368,False,1.0.2
+shuqizhao,2017-12-17T06:38:10.05Z,123,124,c# microservice,Apollo,False,2017-12-18T02:17:20.693+00:00,True,False,c# microservice,,368,False,1.0.2
+Gennady Verdel,2017-12-17T06:31:21.247Z,124,124,LogoFX Client Mvvm ViewModelFactory Unity containing implementation of view model factory interface for Unity.,LogoFX.Client.Mvvm.ViewModelFactory.Unity,True,2017-12-17T06:31:21.247+00:00,True,False,LogoFX Client Mvvm ViewModelFactory Unity containing implementation of view model factory interface for Unity.,,1551,False,1.2.1-rc2
+Gennady Verdel,2017-12-17T06:31:21.247Z,124,124,LogoFX Client Mvvm ViewModelFactory Unity containing implementation of view model factory interface for Unity.,LogoFX.Client.Mvvm.ViewModelFactory.Unity,True,2017-12-17T06:31:21.247+00:00,True,False,LogoFX Client Mvvm ViewModelFactory Unity containing implementation of view model factory interface for Unity.,,1551,False,1.2.1-rc2
+Gennady Verdel,2017-12-17T06:20:56.43Z,124,124,LogoFX Client Mvvm ViewModelFactory Simple Container containing implementation of view model factory interface for LogoFX Simple Container.,LogoFX.Client.Mvvm.ViewModelFactory.SimpleContainer,True,2017-12-17T06:20:56.43+00:00,True,False,LogoFX Client Mvvm ViewModelFactory Simple Container containing implementation of view model factory interface for LogoFX Simple Container.,,3776,False,1.2.1-rc2
+Aybe,2017-12-17T06:23:21.277Z,124,124,libsndfile for .NET,libsndfile.NET,False,2017-12-17T06:23:21.277+00:00,True,False,,"libsndfile,.NET,wav,flac,ogg",155,False,1.0.1
+Aybe,2017-12-17T06:23:21.277Z,124,124,libsndfile for .NET,libsndfile.NET,False,2017-12-17T06:23:21.277+00:00,True,False,,"libsndfile,.NET,wav,flac,ogg",155,False,1.0.1
+Gennady Verdel,2017-12-17T06:20:56.43Z,124,124,LogoFX Client Mvvm ViewModelFactory Simple Container containing implementation of view model factory interface for LogoFX Simple Container.,LogoFX.Client.Mvvm.ViewModelFactory.SimpleContainer,True,2017-12-17T06:20:56.43+00:00,True,False,LogoFX Client Mvvm ViewModelFactory Simple Container containing implementation of view model factory interface for LogoFX Simple Container.,,3776,False,1.2.1-rc2
+Haiping Chen,2017-12-17T06:15:29.51Z,43209,124,Custom Entity Foundation (CEF) is a high level customized entity library wirtten in C# .Net Core. CEF is with high flexible & business oriented abstract layer. It could be used in any .net project to serve as an entity service.,CustomEntityFoundation,False,1900-01-01T00:00:00+00:00,False,False,,"EntityFramework,EntityFrameworkCore,Custom,Entity,Content,Management",-1,False,1.3.0
+Haiping Chen,2017-12-17T06:15:29.51Z,43209,124,Custom Entity Foundation (CEF) is a high level customized entity library wirtten in C# .Net Core. CEF is with high flexible & business oriented abstract layer. It could be used in any .net project to serve as an entity service.,CustomEntityFoundation,False,1900-01-01T00:00:00+00:00,False,False,,"EntityFramework,EntityFrameworkCore,Custom,Entity,Content,Management",-1,False,1.3.0
+Ovan Crone,2016-04-12T18:22:45.92Z,43209,738,Core shared classes for REstate.,REstateClient,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,1.0.4
+Michael Oborne,2017-12-17T06:04:29.137Z,124,124,MAVLink for Ardupilot,MAVLink,False,2017-12-17T06:04:29.137+00:00,True,False,,,103,False,1.0.0
+Ovan Crone,2016-06-08T16:03:30.673Z,43209,681,Core shared classes for REstate.,REstate.Domain.Core,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,7.2.1
+Ovan Crone,2016-05-24T20:59:15.603Z,43209,696,Core shared classes for REstate.,REstate.Domain.Core,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,7.1.1
+Ovan Crone,2016-05-24T20:41:55.083Z,43209,696,Core shared classes for REstate.,REstate.Domain.Core,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,7.1.0
+Ovan Crone,2016-04-11T22:57:48.08Z,43209,739,Core shared classes for REstate.,REstate.Domain.Core,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,1.0.1
+Ovan Crone,2016-04-13T23:21:24.4Z,43209,737,Core shared classes for REstate.,REstateClient,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,1.1.2
+Ovan Crone,2016-05-24T16:44:05.6Z,43209,696,Core shared classes for REstate.,REstate.Domain.Core,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,7.0.0
+Ovan Crone,2016-05-18T18:24:57.813Z,43209,702,Action connector for RabbitMQ,REstate.Connectors.RabbitMq,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,1.0.5
+Ovan Crone,2016-04-20T21:16:00.057Z,43209,730,Core shared classes for REstate.,REstate.Domain.Core,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,2.0.0
+Ovan Crone,2016-06-08T16:31:36.93Z,43209,681,Core shared classes for REstate.,REstate.Domain.Core,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,7.3.0
+Ovan Crone,2016-04-14T21:55:22.633Z,43209,736,Core shared classes for REstate.,REstateClient,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,1.1.3
+Ovan Crone,2016-05-18T22:46:50.117Z,43209,702,Action connector for Roslyn C# code,REstate.Connectors.RoslynScripting,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,1.0.3
+Ovan Crone,2016-05-18T21:00:58.077Z,43209,702,Action connector for RabbitMQ,REstate.Connectors.RabbitMq,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,1.0.8
+Ovan Crone,2016-05-18T15:54:48.1Z,43209,702,Core shared classes for REstate.,REstate.Platform,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,1.0.1
+Ovan Crone,2016-04-29T20:20:17.523Z,43209,721,Core shared classes for REstate.,REstate.Domain.Core,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,4.0.1
+Ovan Crone,2016-04-30T23:26:59.807Z,43209,720,Core shared classes for REstate.,REstate.Domain.Core,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,5.0.1
+Ovan Crone,2016-05-20T17:18:02.87Z,43209,700,Core shared classes for REstate.,REstate.Domain.Core,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,6.0.0
+Ovan Crone,2016-04-29T19:27:28.44Z,43209,721,Core shared classes for REstate.,REstate.Domain.Core,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,3.0.1
+Ovan Crone,2016-04-25T16:34:25.927Z,43209,725,Core shared classes for REstate.,REstate.Domain.Core,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,2.1.0
+Ovan Crone,2016-05-19T17:50:07.867Z,43209,701,Core shared classes for REstate.,REstate.Platform,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,1.0.2
+Ovan Crone,2016-04-13T19:02:02.247Z,43209,737,Core shared classes for REstate.,REstateClient,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,1.1.0
+Michael Oborne,2017-12-17T06:04:29.137Z,124,124,MAVLink for Ardupilot,MAVLink,False,2017-12-17T06:04:29.137+00:00,True,False,,,103,False,1.0.0
+Ovan Crone,2016-04-20T20:35:07.71Z,43209,730,Core shared classes for REstate.,REstate.Domain.Core,False,1900-01-01T00:00:00+00:00,False,False,,REstate,-1,False,1.0.2
+Gennady Verdel,2017-12-17T06:05:04.073Z,124,124,LogoFX Client Mvvm ViewModel Factory containing definition for view model factory pattern.,LogoFX.Client.Mvvm.ViewModelFactory,True,2017-12-17T06:05:04.073+00:00,True,False,LogoFX Client Mvvm ViewModel Factory containing definition for view model factory pattern.,,1868,False,1.2.1-rc2
+Gennady Verdel,2017-12-17T06:05:04.073Z,124,124,LogoFX Client Mvvm ViewModel Factory containing definition for view model factory pattern.,LogoFX.Client.Mvvm.ViewModelFactory,True,2017-12-17T06:05:04.073+00:00,True,False,LogoFX Client Mvvm ViewModel Factory containing definition for view model factory pattern.,,1868,False,1.2.1-rc2
+Michael Oborne,2017-12-17T06:04:29.137Z,124,124,MAVLink for Ardupilot,MAVLink,False,2017-12-17T06:04:29.137+00:00,True,False,,,103,False,1.0.0
+Ovan Crone,2016-03-29T23:19:12.88Z,43209,752,Common components for building a web based platform.,Psibr.Platform.Nancy,False,1900-01-01T00:00:00+00:00,False,False,,"web,logging,auth,authentication,configuration,json,nancy",-1,False,1.2.1
+Ovan Crone,2016-03-29T21:05:39.557Z,43209,752,Common components for building a web based platform.,Psibr.Platform.Nancy,False,1900-01-01T00:00:00+00:00,False,False,,"web,logging,auth,authentication,configuration,json,nancy",-1,False,1.0.0
+Ovan Crone,2016-03-31T16:50:54.67Z,43209,750,Common components for building a web based platform.,Psibr.Platform.Nancy,False,1900-01-01T00:00:00+00:00,False,False,,"web,logging,auth,authentication,configuration,json,nancy",-1,False,2.0.0
+Ovan Crone,2016-04-11T03:28:22.597Z,43209,739,Common components for building a web based platform.,Psibr.Platform.Nancy,False,1900-01-01T00:00:00+00:00,False,False,,"web,logging,auth,authentication,configuration,json,nancy",-1,False,2.0.2
+Ovan Crone,2016-05-16T22:27:25.71Z,43209,704,Common components for building a web based platform.,Psibr.Platform.Nancy,False,1900-01-01T00:00:00+00:00,False,False,,"web,logging,auth,authentication,configuration,json,nancy",-1,False,4.0.2
+Ovan Crone,2016-05-13T01:57:03.133Z,43209,707,Common components for building a web based platform.,Psibr.Platform.Nancy,False,1900-01-01T00:00:00+00:00,False,False,,"web,logging,auth,authentication,configuration,json,nancy",-1,False,4.0.0
+Ovan Crone,2016-05-16T16:57:27.967Z,43209,704,Common components for building a web based platform.,Psibr.Platform.Nancy,False,1900-01-01T00:00:00+00:00,False,False,,"web,logging,auth,authentication,configuration,json,nancy",-1,False,4.0.1
+Ovan Crone,2016-05-17T16:37:46.743Z,43209,703,Common components for building a web based platform.,Psibr.Platform.Nancy,True,1900-01-01T00:00:00+00:00,False,False,,"web,logging,auth,authentication,configuration,json,nancy",-1,False,5.0.2-alpha
+Ovan Crone,2016-05-17T18:56:43.753Z,43209,703,Common components for building a web based platform.,Psibr.Platform.Nancy,True,1900-01-01T00:00:00+00:00,False,False,,"web,logging,auth,authentication,configuration,json,nancy",-1,False,5.0.3-alpha
+Ovan Crone,2016-06-07T20:45:27.087Z,43209,682,Common components for building a web based platform.,Psibr.Platform.Nancy,True,1900-01-01T00:00:00+00:00,False,False,,"web,logging,auth,authentication,configuration,json,nancy",-1,False,4.0.0-pre8
+Ovan Crone,2016-05-11T19:38:03.997Z,43209,709,Common components for building a web based platform.,Psibr.Platform.Nancy,False,1900-01-01T00:00:00+00:00,False,False,,"web,logging,auth,authentication,configuration,json,nancy",-1,False,3.0.2
+Ovan Crone,2016-05-11T16:55:02.523Z,43209,709,Common components for building a web based platform.,Psibr.Platform.Nancy,False,1900-01-01T00:00:00+00:00,False,False,,"web,logging,auth,authentication,configuration,json,nancy",-1,False,3.0.1
+Ovan Crone,2016-04-14T18:54:53.62Z,43209,736,Common components for building a web based platform.,Psibr.Platform.Nancy,False,1900-01-01T00:00:00+00:00,False,False,,"web,logging,auth,authentication,configuration,json,nancy",-1,False,3.0.0
+Ovan Crone,2017-06-24T06:29:32.983Z,4,300,"Create state-machines for complicated flows, in a serializable and pluggable system.",REstate,False,2018-04-16T23:06:49.597+00:00,False,False,,,1360,False,1.0.0
+Ovan Crone,2017-06-25T05:57:40.913Z,4,299,"Create state-machines for complicated flows, in a serializable and pluggable system.",REstate,False,2018-04-16T23:06:49.597+00:00,False,False,,,1360,False,1.0.1
+Ovan Crone,2017-06-25T10:33:04.85Z,4,299,"Create state-machines for complicated flows, in a serializable and pluggable system.",REstate,False,2018-04-16T23:06:49.597+00:00,False,False,,,1360,False,1.0.2
+Ovan Crone,2017-11-18T01:22:30.53Z,4,153,"Create state-machines for complicated flows, in a serializable and pluggable system.",REstate,False,2018-04-16T23:06:49.597+00:00,False,False,,,1360,False,1.1.1
+Ovan Crone,2017-12-17T05:58:35.747Z,4,124,"Create state-machines for complicated flows, in a serializable and pluggable system.",REstate,False,2018-04-16T23:06:49.597+00:00,True,False,,REstate,1360,False,3.0.0
+Ovan Crone,2017-12-17T05:59:02.2Z,4,124,Redis storage provider for REstate's engine.,REstate.Engine.Repositories.Redis,False,2018-04-16T23:06:51.44+00:00,True,False,,REstate,826,False,2.1.0
+Ovan Crone,2017-12-04T04:00:35.36Z,4,137,"Create state-machines for complicated flows, in a serializable and pluggable system.",REstate,False,2018-04-16T23:06:49.597+00:00,False,False,,REstate,1360,False,2.0.0
+REstate.Engine.Connectors.AzureServiceBus,2017-12-17T05:58:47.56Z,124,124,Package Description,REstate.Engine.Connectors.AzureServiceBus,False,2017-12-17T05:58:47.56+00:00,True,False,,,68,False,1.0.0
+Ovan Crone,2017-12-17T05:59:13.247Z,4,124,Provides gRPC/HTTP2 interconnect support for REstate's engine in either client or server configuration.,REstate.Remote,False,2018-04-16T23:06:50.597+00:00,True,False,,REstate,769,False,3.0.0
+REstate.Engine.Connectors.AzureServiceBus,2017-12-17T05:58:47.56Z,124,124,Package Description,REstate.Engine.Connectors.AzureServiceBus,False,2017-12-17T05:58:47.56+00:00,True,False,,,68,False,1.0.0
+Ovan Crone,2017-12-17T05:59:02.2Z,4,124,Redis storage provider for REstate's engine.,REstate.Engine.Repositories.Redis,False,2018-04-16T23:06:51.44+00:00,True,False,,REstate,826,False,2.1.0
+Ovan Crone,2017-12-17T05:59:13.247Z,4,124,Provides gRPC/HTTP2 interconnect support for REstate's engine in either client or server configuration.,REstate.Remote,False,2018-04-16T23:06:50.597+00:00,True,False,,REstate,769,False,3.0.0
+Paraleap Technologies,2017-12-17T05:56:24.95Z,2,124,CloudMonix is a sophisticated Microsoft Azure monitoring and automation product.  This is the official public API client to manage CloudMonix objects and data.  http://cloudmonix.com,CloudMonix.API,False,2018-04-18T21:10:45.18+00:00,True,False,,"CloudMonix,Azure,Storage,Redis,DocumentDb,WorkerRole,WebRole,WebApp,SqlAzure,ServiceBus,Compute,Monitoring,Management,Diagnostics,Insights",6497,False,1.0.6560.10680
+"Gennady Verdel,David Kossoglyad,Vlad Spivak",2017-12-17T05:57:28.933Z,124,124,LogoFX Client Mvvm ViewModel containing view model platform-specific services facilitating development by MVVM pattern,LogoFX.Client.Mvvm.ViewModel,True,2017-12-17T05:57:28.933+00:00,True,False,LogoFX Client Mvvm ViewModel containing view model platform-specific services facilitating development by MVVM pattern,,2406,False,1.1.1-rc2
+Paraleap Technologies,2017-12-17T05:56:24.95Z,2,124,CloudMonix is a sophisticated Microsoft Azure monitoring and automation product.  This is the official public API client to manage CloudMonix objects and data.  http://cloudmonix.com,CloudMonix.API,False,2018-04-18T21:10:45.18+00:00,True,False,,"CloudMonix,Azure,Storage,Redis,DocumentDb,WorkerRole,WebRole,WebApp,SqlAzure,ServiceBus,Compute,Monitoring,Management,Diagnostics,Insights",6497,False,1.0.6560.10680
+"Gennady Verdel,David Kossoglyad,Vlad Spivak",2017-12-17T05:57:28.933Z,124,124,LogoFX Client Mvvm ViewModel containing view model platform-specific services facilitating development by MVVM pattern,LogoFX.Client.Mvvm.ViewModel,True,2017-12-17T05:57:28.933+00:00,True,False,LogoFX Client Mvvm ViewModel containing view model platform-specific services facilitating development by MVVM pattern,,2406,False,1.1.1-rc2
+"Gennady Verdel,David Kossoglyad,Vlad Spivak",2017-12-17T05:55:33.98Z,124,124,LogoFX Client Mvvm ViewModel Core containing core view model layer objects facilitating development by MVVM pattern,LogoFX.Client.Mvvm.ViewModel.Core,True,2017-12-17T05:55:33.98+00:00,True,False,LogoFX Client Mvvm ViewModel Core containing core view model layer objects facilitating development by MVVM pattern,,2416,False,1.1.1-rc2
+Mahdi Hosseini,2017-12-17T05:53:49.853Z,124,124,"Beautiful Modern UI Control like WEB UserInterface for wpf
+
+",Mahdi72.Arthas.WPFUI,False,2017-12-17T05:53:49.853+00:00,True,False,"Beautiful Modern UI Control like WEB UserInterface for wpf
+
+","wpf,library,metro,ui,ux,controls,custom,theme,themes",271,False,1.12.3
+"Gennady Verdel,David Kossoglyad,Vlad Spivak",2017-12-17T05:55:33.98Z,124,124,LogoFX Client Mvvm ViewModel Core containing core view model layer objects facilitating development by MVVM pattern,LogoFX.Client.Mvvm.ViewModel.Core,True,2017-12-17T05:55:33.98+00:00,True,False,LogoFX Client Mvvm ViewModel Core containing core view model layer objects facilitating development by MVVM pattern,,2416,False,1.1.1-rc2
+Mahdi Hosseini,2017-12-17T05:53:49.853Z,124,124,کتابخانه ای برای افزودن قابلیت بروزرسانی برای برنامه ها بصورت انلاین,Mahdi72.Arthas.WPFUI,False,2017-12-17T05:53:49.853+00:00,True,False,,"wpf,library,update,winform,c#",271,False,1.12.3
+Milton Zurita,2017-12-17T04:45:54.34Z,61,124,Common.Xamarin.ViewModel - Common Base Class for ViewModels that implements the INotifyPropertyChanged interface and provides some convenience methods to notify when a property has changed and includes a simple IsBusy Property which can be inherited since it is a common viewmodel property.,Common.Xamarin.ViewModel,False,2018-02-18T03:28:26.1+00:00,True,False,"This is a simple package to add a base class with convenience utilities for ViewModels for Xamarin (and potentially other projects).  This is a Net Standard 2.0 Project, if other projects are needed, I accept requests.","Xamarin,Base,ViewModel",221,False,1.0.0
+Milton Zurita,2017-12-17T04:45:54.34Z,61,124,Common.Xamarin.ViewModel - Common Base Class for ViewModels that implements the INotifyPropertyChanged interface and provides some convenience methods to notify when a property has changed and includes a simple IsBusy Property which can be inherited since it is a common viewmodel property.,Common.Xamarin.ViewModel,False,2018-02-18T03:28:26.1+00:00,True,False,,"Xamarin,Base,ViewModel",221,False,1.0.0
+Nobuyuki Iwanaga,2017-12-17T05:46:13.933Z,123,124,Analyzer for Non-copyable struct,NonCopyableAnalyzer,False,2017-12-18T05:33:43.87+00:00,True,False,,"NonCopyable,analyzers",194,False,0.2.0
+Nobuyuki Iwanaga,2017-12-17T05:46:13.933Z,123,124,Analyzer for Non-copyable struct,NonCopyableAnalyzer,False,2017-12-18T05:33:43.87+00:00,True,False,,"NonCopyable,analyzers",194,False,0.2.0
+Joel Verhagen,2017-12-17T05:41:55.66Z,111,124,Read the file listing of a .zip archive without downloading the whole thing.,Knapcode.MiniZip,False,2017-12-30T22:58:05.517+00:00,True,False,,,321,False,0.2.1
+Joel Verhagen,2017-12-17T05:41:55.66Z,111,124,Read the file listing of a .zip archive without downloading the whole thing.,Knapcode.MiniZip,False,2017-12-30T22:58:05.517+00:00,True,False,,,321,False,0.2.1
+S. Francis,2017-12-17T05:13:45.94Z,124,124,StackExchange.Redis implementation of the RevStackCore repository pattern,RevStackCore.Redis,False,2017-12-17T05:13:45.94+00:00,True,False,,"RevStackCore,Repository,Redis",676,False,1.2.0
+S. Francis,2017-12-17T05:13:45.94Z,124,124,StackExchange.Redis implementation of the RevStackCore repository pattern,RevStackCore.Redis,False,2017-12-17T05:13:45.94+00:00,True,False,,"RevStackCore,Repository,Redis",676,False,1.2.0
+Rostislav Rotaru,2017-12-17T05:10:20.51Z,121,124,Base package for Notifications. Use this only for creating your own notifications systems based on this package.,Spherus.Notifications,True,2017-12-20T18:28:16.737+00:00,True,False,Base package for Notifications. Use this only for creating your own notifications systems based on this package.,"spherus,notifications,mail,sms,net,standard",703,False,0.2.0-alpha
+VIEApps.net,2017-12-17T05:10:46.107Z,20,124,The tiny ORM-ish library to help .NET Standard 2.0 POCO objects work with both NoSQL and SQL databases in the same time,VIEApps.Components.Repository,True,2018-03-31T13:32:12.073+00:00,True,False,The tiny ORM-ish library to help .NET Standard 2.0 POCO objects work with both NoSQL and SQL databases in the same time,"repository,orm,activerecord,database,sql,nosql,vieapps,vieapps.components",1780,False,10.1.5.1801-rc9
+VIEApps.net,2017-12-17T05:10:46.107Z,20,124,The tiny ORM-ish library to help .NET Standard 2.0 POCO objects work with both NoSQL and SQL databases in the same time,VIEApps.Components.Repository,True,2018-03-31T13:32:12.073+00:00,True,False,The tiny ORM-ish library to help .NET Standard 2.0 POCO objects work with both NoSQL and SQL databases in the same time,"repository,orm,activerecord,database,sql,nosql,vieapps,vieapps.components",1780,False,10.1.5.1801-rc9
+Rostislav Rotaru,2017-12-17T05:10:20.51Z,121,124,Base package for Notifications. Use this only for creating your own notifications systems based on this package.,Spherus.Notifications,True,2017-12-20T18:28:16.737+00:00,True,False,Base package for Notifications. Use this only for creating your own notifications systems based on this package.,"spherus,notifications,mail,sms,net,standard",703,False,0.2.0-alpha
+Aybe,2017-12-08T21:57:05.24Z,43209,133,Tools related to native libraries usage from within a managed language.,NativeTools,False,1900-01-01T00:00:00+00:00,False,False,,"Win32,native,library,managed",-1,False,1.0.0
+S. Francis,2017-12-17T04:48:44.58Z,124,124,StackExchange.Redis typed POCO client,RevStackCore.Redis.Client,False,2017-12-17T04:48:44.58+00:00,True,False,,"RevStackCore,Redis,POCO,client",619,False,1.2.0
+S. Francis,2017-12-17T04:48:44.58Z,124,124,StackExchange.Redis typed POCO client,RevStackCore.Redis.Client,False,2017-12-17T04:48:44.58+00:00,True,False,,"RevStackCore,Redis,POCO,client",619,False,1.2.0
+Aybe,2014-05-02T13:58:27.78Z,43209,1449,Contains abstraction of audio objects and units converters,AudioObjects,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+https://github.com/aybe,2014-04-08T18:02:55.537Z,43209,1473,.NET library for the SonicApi service.,SonicApi,False,1900-01-01T00:00:00+00:00,False,False,,"audio,tempo,loudness,key,chord,melody,pitch,reverb,elastique,elastiqueTune,SonicApi,zplane",-1,False,1.0.0.6
+Aybe,2015-09-06T18:18:06.74Z,43209,957,"WAV format reader that supports 16, 24, 32 and 32f bit formats.",Wav,False,1900-01-01T00:00:00+00:00,False,False,,"WAV,WAVE,PCM,RIFF,audio,reader",-1,False,1.0.0
+Aybe,2014-05-08T15:29:37.32Z,43209,1443,"An accurate and fast waveform renderer.
+
+      This library contains a UserControl ready to use in your projects.
+
+      See GitHub repositories for latest news.",Waveform.Wpf,False,1900-01-01T00:00:00+00:00,False,False,,"wpf,audio,wave,form,waveform,graphics,rendering,renderer,cache,viewer,theme,wav,pcm,mp3",-1,False,1.0.0.29665
+Aybe,2014-05-08T15:42:56.097Z,43209,1443,Contains abstraction of audio objects and units converters,AudioObjects,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.5241.29924
+Aybe,2014-05-07T18:26:50.887Z,43209,1444,"An accurate waveform renderer with blazing fast performance !
+
+      Features pixel perfect rendering, zoom to sample-level, indicators, themes, caching.
+
+      A concrete implementation of it with a control ready to use is Waveform.WPF.
+
+      See the README at GitHub repository.",Waveform,False,1900-01-01T00:00:00+00:00,False,False,,"audio,wave,form,waveform,graphics,rendering,renderer,cache,viewer,theme,wav,pcm,mp3",-1,False,1.0.0.34997
+Aybe,2014-05-07T18:25:40.113Z,43209,1444,"An accurate waveform renderer with blazing fast performance !
+
+      Features pixel perfect rendering, zoom to sample-level, indicators, themes, caching.
+
+      A concrete implementation of it with a control ready to use is Waveform.WPF
+
+      See the README at GitHub repository.",Waveform,False,1900-01-01T00:00:00+00:00,False,False,,"audio,wave,form,waveform,graphics,rendering,renderer,cache,viewer,theme,wav,pcm,mp3",-1,False,1.0.0.34957
+Aybe,2014-05-07T15:50:33.357Z,43209,1444,Contains abstraction of audio objects and units converters,AudioObjects,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.38823
+Aybe,2014-05-08T15:43:45.677Z,43209,1443,"An accurate and fast waveform renderer.
+      
+      Features pixel perfect rendering, zooming, indicators, themes and caching.
+
+      A concrete implementation of it with a control ready to use is Waveform.WPF.
+
+      See the README at GitHub repository.",Waveform,False,1900-01-01T00:00:00+00:00,False,False,,"audio,wave,form,waveform,graphics,rendering,renderer,cache,viewer,theme,wav,pcm,mp3",-1,False,1.0.5241.29984
+Aybe,2014-05-07T18:23:06.36Z,43209,1444,"An accurate waveform renderer with blazing fast performance :D
+
+      Features:
+      - pixel perfect rendering
+      - zoom to sample-level
+      - indicators : 6dB, DC level
+      - completely customisable : themes
+      - caching gives incredible performance
+
+      A concrete implementation of this library with a control ready to use is Waveform.WPF
+
+      See the README at GitHub repository.",Waveform,False,1900-01-01T00:00:00+00:00,False,False,,"audio,wave,form,waveform,graphics,rendering,renderer,cache,viewer,theme,wav,pcm,mp3",-1,False,1.0.0.34768
+https://github.com/aybe/SonicApi,2014-05-01T18:40:54.907Z,43209,1450,".NET library for the SonicApi service
+
+      With this service you can analyze audio files to detect tempo, beats, melody, key chords but also process them to add reverberation and perform pitch and/or tempo correction.
+
+      There is a sample project for the using the library at https://github.com/aybe/SonicApi.Sample
+
+      Make sure to visit the GitHub repository to get the latest news or get support.",SonicApi,False,1900-01-01T00:00:00+00:00,False,False,,"audio,tempo,loudness,key,chord,melody,pitch,reverb,elastique,elastiqueTune,correction,process,master-tempo,SonicApi,zplane",-1,False,1.0.0.8
+Aybe,2014-01-26T01:52:51.773Z,43209,1545,"Generate fingerprints of audio files for use with the EchoNest identification service.
+
+Documentation and source code : https://github.com/aybe/ENMFPdotNet.",ENMFPdotNet,False,1900-01-01T00:00:00+00:00,False,False,"The MIT License (MIT)
+
+Copyright (c) 2014 Aybe
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the ""Software""),","EchoNest,ENMFP,audio,fingerprint,identification",-1,False,1.1.0
+Aybe,2014-01-26T01:35:34.13Z,43209,1545,"Generate fingerprints of audio files for use with the EchoNest identification service.
+
+Documentation and source code : https://github.com/aybe/ENMFPdotNet.",ENMFPdotNet,False,1900-01-01T00:00:00+00:00,False,False,"The MIT License (MIT)
+
+Copyright (c) 2014 Aybe
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the ""Software""),","EchoNest,ENMFP,audio,fingerprint,identification",-1,False,1.0.0
+https://github.com/aybe/SonicApi,2014-05-02T13:35:55.29Z,43209,1449,".NET library for the SonicApi service.
+
+      With this service you can analyze audio files to detect tempo, beats, melody, key chords but also add reverb and do pitch/tempo correction.
+
+      To get the latest news, visit https://github.com/aybe/SonicApi.
+
+      A sample project is available at https://github.com/aybe/SonicApi.Sample.",SonicApi,False,1900-01-01T00:00:00+00:00,False,False,,"audio,tempo,loudness,key,chord,melody,pitch,reverb,elastique,elastiqueTune,correction,process,master-tempo,SonicApi,zplane",-1,False,1.0.0.10
+Ibrahim Sha'ath,2014-07-24T23:16:42.477Z,43209,1366,"Detect the musical key chord of your audio songs with this fantastic library ! High accuracy on par with the top commercial libraries in the industry.
+
+      Author: Ibrahim Sha'ath (https://github.com/ibsh)
+
+      Packager: Aybe (https://github.com/aybe)",LibKeyFinderDotNet,False,1900-01-01T00:00:00+00:00,False,False,Musical key detection for digital audio,"music,audio,key,chord,detection",-1,False,1.0.5319.471
+Aybe,2014-05-07T15:04:34.88Z,43209,1444,"Library that abstracts the rendering of graphics
+
+      See the README at the GitHub repository.",Graphics,False,1900-01-01T00:00:00+00:00,False,False,,"graphics,abstract,rendering,bitmap",-1,False,1.0.0.28881
+Aybe,2014-05-08T20:02:22.2Z,43209,1443,Contains audio objects representing BASS.NET types.,BASS.NET.Objects,False,1900-01-01T00:00:00+00:00,False,False,,"Un4seen,BASS.NET,audio,stream,mixer,pcm",-1,False,1.0.5241.37847
+Aybe,2014-05-07T14:40:39.817Z,43209,1444,"Contains gestures, behaviors and value converters.
+    
+    See the README at the GitHub repository.",Extensions.Wpf,False,1900-01-01T00:00:00+00:00,False,False,,"wpf,extensions,gestures,behaviors,mouse,wheel,input,command,listbox,scrollviewer,scrolling,expander,animated,font,size,auto",-1,False,1.0.0.28131
+Aybe,2014-05-08T15:44:34.37Z,43209,1443,"Library that abstracts the rendering of graphics
+
+      See the README at the GitHub repository.",Graphics,False,1900-01-01T00:00:00+00:00,False,False,,"graphics,abstract,rendering,bitmap",-1,False,1.0.5241.29945
+Aybe,2014-04-17T22:04:14.52Z,43209,1464,Some shaders for WPF from Shazzam and a few others.,Shazzam.Shaders,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Aybe,2014-10-20T12:09:19.847Z,43209,1278,"This project aims to provide a way to implement the Model View ViewModel (MVVM) architectural pattern using Plain Old CLR Objects (POCOs) while taking full advantage of .NET 4.0 DynamicObject Class.
+
+Features a 'JObject' to 'dynamic' converter.",DynamicView,False,1900-01-01T00:00:00+00:00,False,False,,"MVVM,POCO,DynamicObject,Json",-1,False,1.0.5406.23659
+Ian Randall,2014-10-19T13:18:52.657Z,43209,1279,This project aims to provide a way to implement the Model View ViewModel (MVVM) architectural pattern using Plain Old CLR Objects (POCOs) while taking full advantage of .NET 4.0 DynamicObject Class.,DynamicView,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.5405.25595
+Aybe,2014-07-24T23:38:00.287Z,43209,1366,"Detect the musical key chord of your audio songs, this package provides a simple function that takes a file name and returns the detected key chord.",LibKeyFinderDotNet.BASS,False,1900-01-01T00:00:00+00:00,False,False,Musical key chord detection for digital audio (BASS version),"music,audio,key,chord,detection",-1,False,1.0.5319.1129
+Aybe,2014-05-09T16:24:16.067Z,43209,1442,"Representation of BASS.NET types using objects.
+      
+      See README at GitHub repository.",BASS.NET.Objects,False,1900-01-01T00:00:00+00:00,False,False,,"Un4seen,BASS.NET,audio,stream,mixer,pcm",-1,False,1.0.5242.31312
+Aybe,2014-07-24T23:17:10.733Z,43209,1366,This package provides a simple function that takes a file name and returns the detected key chord.,LibKeyFinderDotNet.BASS,False,1900-01-01T00:00:00+00:00,False,False,Musical key chord detection for digital audio (BASS version),"music,audio,key,chord,detection",-1,False,1.0.5319.307
+https://github.com/aybe/SonicApi,2014-05-02T13:33:31.037Z,43209,1449,".NET library for the SonicApi service.
+
+      With this service you can analyze audio files to detect tempo, beats, melody, key chords but also add reverbe and pitch/tempo correction.
+
+      Sample project available at https://github.com/aybe/SonicApi.Sample
+
+      To get the latest news, visit https://github.com/aybe/SonicApi",SonicApi,False,1900-01-01T00:00:00+00:00,False,False,,"audio,tempo,loudness,key,chord,melody,pitch,reverb,elastique,elastiqueTune,correction,process,master-tempo,SonicApi,zplane",-1,False,1.0.0.9
+Aybe,2014-05-08T15:44:07.52Z,43209,1443,"Library that abstracts the rendering of graphics (WPF version)
+
+      See the README at the GitHub repository.",Graphics.Wpf,False,1900-01-01T00:00:00+00:00,False,False,,"graphics,abstract,rendering,bitmap,wpf",-1,False,1.0.5241.30019
+Aybe,2014-05-08T15:45:05.337Z,43209,1443,"An accurate and fast waveform renderer.
+
+      This library contains a UserControl ready to use in your projects.
+
+      See GitHub repositories for latest news.",Waveform.Wpf,False,1900-01-01T00:00:00+00:00,False,False,,"wpf,audio,wave,form,waveform,graphics,rendering,renderer,cache,viewer,theme,wav,pcm,mp3",-1,False,1.0.5241.30142
+Aybe,2014-05-07T15:09:58.4Z,43209,1444,"Library that abstracts the rendering of graphics (WPF version)
+
+      See the README at the GitHub repository.",Graphics.Wpf,False,1900-01-01T00:00:00+00:00,False,False,,"graphics,abstract,rendering,bitmap,wpf",-1,False,1.0.0.29073
+https://github.com/aybe/SonicApi,2014-05-01T17:56:36.147Z,43209,1450,".NET library for the SonicApi service.
+    
+    With this service you can analyze audio files to detect tempo, beats, melody, key chords but also process them to add reverberation and perform pitch and/or tempo correction.
+    
+    An example on how to use it can be found in the README at the GitHub repository.",SonicApi,False,1900-01-01T00:00:00+00:00,False,False,,"audio,tempo,loudness,key,chord,melody,pitch,reverb,elastique,elastiqueTune,correction,process,master-tempo,SonicApi,zplane",-1,False,1.0.0.7

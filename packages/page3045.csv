@@ -1,0 +1,828 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+Davyd McColl,2017-12-07T06:22:32.453Z,2,134,"Contains classes to help with testing when entity and a SQL Server would be involved in production:
+    * TestFixtureWithTempDb provides bootstrapping for tests which would use a temporary database (TempDBLocalDb)
+    * EntityPersistenceTestFixtureBase provides helpers for the common test of persisting and recalling entities
+      to test that mappings (automatic or manual) work as expected
+    * DbContextExtensions adds SaveChangesWithErrorReporting(), an extension method for DbContext derivatives
+      to provide more information within tests as to why a test is failing (such information is usually buried within
+      the exception maze that Entity provides)",PeanutButter.TestUtils.Entity,False,2018-04-18T10:04:08.58+00:00,True,False,"Some utilities to make testing of Entity persistence and repositories which rely on having an actual context
+    a little less tedious",,29894,False,1.2.208
+Davyd McColl,2017-12-07T06:22:26.157Z,2,134,The Sqlite TempDb<> implementation,PeanutButter.TempDb.Sqlite,False,2018-04-18T10:04:08.813+00:00,True,False,"Use this if you need an automagic temporary Sqlite database, for example in testing.",,31552,False,1.2.208
+"Dan Jagnow,Travis Boatman",2017-12-07T06:23:00.7Z,25,134,The Argent Pony .NET client for the Blizzard World of Warcraft Community Web APIs,ArgentPonyWarcraftClient,False,2018-03-26T04:07:49.57+00:00,True,False,,"Warcraft,World-of-Warcraft,WoW,Blizzard",453,False,0.9.1
+Davyd McColl,2017-12-07T06:22:30.08Z,2,134,"The miscellaneous utilities slice of the PeanutButter mini-suite (XML-specific, so you'll need to reference System.Xml.Linq)",PeanutButter.XmlUtils,False,2018-04-18T10:04:08.563+00:00,True,False,,,45228,False,1.2.208
+Davyd McColl,2017-12-07T06:22:29.64Z,2,134,The Database Helpers component of the Peanut Butter mini-suite,PeanutButter.DatabaseHelpers,False,2018-04-18T10:04:09.127+00:00,True,False,"Provides statement builders for Select, Insert, Update and Delete, compliant with MSSQL, SqlCE, Access, and, more
+      recently, Firebird. Also contains executors (for datareader and scalar exectution) compliant with Oledb connections
+      since the primary focus was support for apps with legacy ties into Access, but the idea is to be able to extend
+      as necessary to support other engines",,51243,False,1.2.208
+"Phoenix Game Studios,LLC",2017-12-07T06:12:36.33Z,69,134,Provides reuseable Resharper and Visual Studio Code Analysis rules.,PhoenixRules,False,2018-02-10T10:06:40.54+00:00,False,False,,"phoenix,build,resharper,rules,codeanalysis",1052,False,0.0.1
+Davyd McColl,2017-12-07T06:22:13.36Z,2,134,"A package to facilitate duck-typing through an object extension DuckAs<>.
+      There is also a FuzzyDuckAs<> facility for more case-insensitive ducking.
+      At no point is there use of DynamicObjects, which hurt performance.
+      Property read/write as well as methods are ducked, with the current caveat
+      that ref and out parameters may not behave as expected.",PeanutButter.DuckTyping,False,2018-04-18T10:04:08.94+00:00,True,False,"A package to facilitate duck-typing through object extensions without using
+      dynamic objects at all.",,13809,False,1.2.208
+Davyd McColl,2017-12-07T06:22:19.283Z,2,134,"A (very simple) TCP server which you can use from within a testing environment or, if you're really ambitious, 
+      for some other reason.",PeanutButter.SimpleTcpServer,False,2018-04-18T10:04:08.923+00:00,True,False,"Sometimes you just need a short-lived TCP-based service. The PeanutButter.SimpleHTTPServer package depends on this
+      library for the lower-level TCP communications. This package is available for extension via other protocols
+      and to make installation of PeanutButter.SimpleHTTPServer easier: no need to manually reference PeanutButter.SimpleTCPServer.dll
+      any more -- at least, that's the plan (:
+      NB: unlike the rest of PeanutButter, this module is released under the Code Project Open License (CPOL) which differs from my 
+      regular license of choice (BSD) only in that it explicitly protects you from patent infringement. This license is carried through as
+      the library is a derivative work of:
+      http://www.codeproject.com/Articles/25050/Embedded-NET-HTTP-Server 
+      Thanks to user BobJanova for saving me some time (:",,21495,False,1.2.208
+Davyd McColl,2017-12-07T06:22:11.533Z,2,134,"A few useful extensions for making testing against the PeanutButter.SimpleHTTPServer.HttpServer cleaner and easier to read,
+      providing extensions to:
+        - test for requests
+        - test for headers",PeanutButter.SimpleHTTPServer.Testability,False,2018-04-18T10:04:08.767+00:00,True,False,Some extensions to ease testability when using PeanutButter.SimpleHTTPServer.HttpServer in your tests.,,17066,False,1.2.208
+Davyd McColl,2017-12-07T06:22:12.267Z,2,134,"Test helpers to use in conjunction with PeanutButter.Async, allowing your tests to
+    treat tasks as if they were run synchronously.",PeanutButter.TestUtils.Async,False,2018-04-18T10:04:08.72+00:00,True,False,"This package, in conjunction with PeanutButter.Async, makes testing easier for
+    code using tasks where the task itself (or artifacts) is never exposed. Inject
+    an ITaskRunner, using the default (or your own) implementation at run-time, and use
+    the ImmediateTaskRunnerBuilder to build a synchronous variant which you can inject
+    at test-time",,15062,False,1.2.208
+Ahmed Samy Hashwa,2017-12-07T06:22:17.61Z,134,134,MVCGrid.Net with enhancements,sOlOnXPL.MVCGrid.Net,False,2017-12-07T09:57:35.31+00:00,True,False,,,547,False,1.0.0.3
+Davyd McColl,2017-12-07T06:22:18.627Z,2,134,This is the random value generators slice of the PeanutButter mini-suite,PeanutButter.RandomGenerators,False,2018-04-18T10:04:09.05+00:00,True,False,"RandomGenerators helps you with testing by providing random values not only for simple types
+      such as strings and numerics, but also with more complex types using GenericBuilder",,50999,False,1.2.208
+Davyd McColl,2017-12-07T06:22:12.44Z,2,134,The SysTray component of the PeanutButter library.,PeanutButter.TrayIcon,False,2018-04-18T10:04:08.86+00:00,True,False,"A Library to facilitate easy tray icon usage, including managing tray icon animation, given frames to ""play"".",,42216,False,1.2.208
+Davyd McColl,2017-12-07T06:22:26.063Z,2,134,"Use this project to pull in the three required Fluent Migrations to make your database able to store emails
+      that the PeanutButter.EmailSpooler.Win32Service service can spool for you. You will need to inherit from the following
+      migrations and add those inherited versions to your migration strategy:
+      * Migration_1_CreateEmail
+      * Migration_2_CreateEmailRecipient
+      * Migration_3_CreateEmailAttachment",EmailSpooler.Win32Service.DB,False,2018-04-18T10:04:08.953+00:00,True,False,"Contains the Fluent Migrations to provide the tables necessary to run EmailSpooler.Win32Service. Do not install this unless
+      you expect your project to provide a data source for the PeanutButter.EmailSpooler.Win32Service service.",,29892,False,1.2.208
+Ahmed Samy Hashwa,2017-12-07T06:19:15.72Z,134,134,MVCGrid.Net with enhancements,sOlOnXPL.MVCGrid.Net,False,2017-12-07T09:57:35.31+00:00,True,False,,,547,False,1.0.0.2
+Davyd McColl,2017-12-07T06:22:15.847Z,2,134,A base package for PeanutButter.TempDb.* packages. This provides the generic TempDb base class,PeanutButter.TempDb,False,2018-04-18T10:04:08.517+00:00,True,False,"Provides only the base generic TempDb class. Please install the specific flavour of TempDb you want instead (which
+	should pull in this package):
+	* PeanutButter.TempDb.SqlCe
+	* PeanutButter.TempDb.Sqlite
+	* PeanutButter.TempDb.LocalDb",,34641,False,1.2.208
+Davyd McColl,2017-12-07T06:22:12.847Z,2,134,"A (very simple) HTTP server which you can use from within a testing environment or, if you're really ambitious, for some other reason.",PeanutButter.SimpleHTTPServer,False,2018-04-18T10:04:08.44+00:00,True,False,"Sometimes you just need a short-lived HTTP server, say for testing out something which relies on a WebRequest. This library provides
+      a very bare-bones HTTP server with which you can register handlers to serve up documents or files or to do basically whatever you want.
+      NB: unlike the rest of PeanutButter, this module is released under the Code Project Open License (CPOL) which differs from my 
+      regular license of choice (BSD) only in that it explicitly protects you from patent infringement. This license is carried through as
+      the library is a derivative work of:
+      http://www.codeproject.com/Articles/25050/Embedded-NET-HTTP-Server 
+      Thanks to user BobJanova for saving me some time (:",,41748,False,1.2.208
+Davyd McColl,2017-12-07T06:22:19.017Z,2,134,"Helper utility to convert Newtonsoft JObjects recursively to dictionaries,
+    most especially useful when coupled with PeanutButter.DuckTyping, which can
+    duck onto dictionaries, without having to make PeanutButter.DuckTyping depend
+    unecessarily on Newtonsoft.Json",PeanutButter.JObjectExtensions,False,2018-04-18T10:04:08.08+00:00,True,False,"Provides the ToDictionary() extension method for JObjects which converts a JObject
+    recursively to a Dictionary of Dictionaries. Keys are strings, values are boxed as
+    object but have ""proper"" underlying types. Works on collections within the JSON blob
+    too.",,5270,False,1.2.208
+Davyd McColl,2017-12-07T06:22:14.86Z,2,134,A generic Migrations Runner for FluentMigrator so you can run in migrations within your application.,PeanutButter.FluentMigrator,False,2018-04-18T10:04:08.377+00:00,True,False,"A generic Migrations Runner for FluentMigrator so you can run in migrations within your application.
+      The generic parameter is a ProcessorFactory type as exposed by FluentMigrator.Runner",,36929,False,1.2.208
+Davyd McColl,2017-12-07T06:22:14.737Z,2,134,The miscellaneous utilities slice of the PeanutButter mini-suite (sans XML Utils),PeanutButter.Utils,False,2018-04-18T10:04:09.377+00:00,True,False,,,51066,False,1.2.208
+Davyd McColl,2017-12-07T06:22:11.47Z,2,134,Helpers for testing when using PeanutButter.DatabaseHelpers,PeanutButter.DatabaseHelpers.Testability,False,2018-04-18T10:04:08.783+00:00,True,False,"If you're using NSubstitute to test your project and you're using PeanutButter DatabaseHelpers' sql statement
+      builders, you may wish to test against the interfaces for these builders. However, doing so is more work than
+      it would seem at the outset as each call into the builder returns the builder so when you're trying to do
+      Received() asserts against the Nth call, NSubstitute doesn't know that the call was done against the original
+      substituted object. The BuilderFaker helper produces fake builders which you can use to test the behaviour of
+      your applications instead of having to test sql strings",,50265,False,1.2.208
+Davyd McColl,2017-12-07T06:22:15.61Z,2,134,The Service Shell slice of the PeanutButter mini-suite,PeanutButter.ServiceShell,False,2018-04-18T10:04:09.11+00:00,True,False,"Provides a simple, easy-to-use shell base class for polling services which can install and uninstall itself. Please
+      reade the included README.txt for the (few) steps you need to do to use this project.",,50206,False,1.2.208
+Davyd McColl,2017-12-07T06:22:12.267Z,2,134,"Test helpers to use in conjunction with PeanutButter.Async, allowing your tests to
+    treat tasks as if they were run synchronously.",PeanutButter.TestUtils.Async,False,2018-04-18T10:04:08.72+00:00,True,False,"This package, in conjunction with PeanutButter.Async, makes testing easier for
+    code using tasks where the task itself (or artifacts) is never exposed. Inject
+    an ITaskRunner, using the default (or your own) implementation at run-time, and use
+    the ImmediateTaskRunnerBuilder to build a synchronous variant which you can inject
+    at test-time",,15062,False,1.2.208
+Davyd McColl,2017-12-07T06:22:12.44Z,2,134,The SysTray component of the PeanutButter library.,PeanutButter.TrayIcon,False,2018-04-18T10:04:08.86+00:00,True,False,"A Library to facilitate easy tray icon usage, including managing tray icon animation, given frames to ""play"".",,42216,False,1.2.208
+Davyd McColl,2017-12-07T06:22:13.36Z,2,134,"A package to facilitate duck-typing through an object extension DuckAs<>.
+      There is also a FuzzyDuckAs<> facility for more case-insensitive ducking.
+      At no point is there use of DynamicObjects, which hurt performance.
+      Property read/write as well as methods are ducked, with the current caveat
+      that ref and out parameters may not behave as expected.",PeanutButter.DuckTyping,False,2018-04-18T10:04:08.94+00:00,True,False,"A package to facilitate duck-typing through object extensions without using
+      dynamic objects at all.",,13809,False,1.2.208
+Davyd McColl,2017-12-07T06:22:26.063Z,2,134,"Use this project to pull in the three required Fluent Migrations to make your database able to store emails
+      that the PeanutButter.EmailSpooler.Win32Service service can spool for you. You will need to inherit from the following
+      migrations and add those inherited versions to your migration strategy:
+      * Migration_1_CreateEmail
+      * Migration_2_CreateEmailRecipient
+      * Migration_3_CreateEmailAttachment",EmailSpooler.Win32Service.DB,False,2018-04-18T10:04:08.953+00:00,True,False,"Contains the Fluent Migrations to provide the tables necessary to run EmailSpooler.Win32Service. Do not install this unless
+      you expect your project to provide a data source for the PeanutButter.EmailSpooler.Win32Service service.",,29892,False,1.2.208
+Davyd McColl,2017-12-07T06:22:12.847Z,2,134,"A (very simple) HTTP server which you can use from within a testing environment or, if you're really ambitious, for some other reason.",PeanutButter.SimpleHTTPServer,False,2018-04-18T10:04:08.44+00:00,True,False,"Sometimes you just need a short-lived HTTP server, say for testing out something which relies on a WebRequest. This library provides
+      a very bare-bones HTTP server with which you can register handlers to serve up documents or files or to do basically whatever you want.
+      NB: unlike the rest of PeanutButter, this module is released under the Code Project Open License (CPOL) which differs from my 
+      regular license of choice (BSD) only in that it explicitly protects you from patent infringement. This license is carried through as
+      the library is a derivative work of:
+      http://www.codeproject.com/Articles/25050/Embedded-NET-HTTP-Server 
+      Thanks to user BobJanova for saving me some time (:",,41748,False,1.2.208
+Davyd McColl,2017-12-07T06:22:15.847Z,2,134,A base package for PeanutButter.TempDb.* packages. This provides the generic TempDb base class,PeanutButter.TempDb,False,2018-04-18T10:04:08.517+00:00,True,False,"Provides only the base generic TempDb class. Please install the specific flavour of TempDb you want instead (which
+	should pull in this package):
+	* PeanutButter.TempDb.SqlCe
+	* PeanutButter.TempDb.Sqlite
+	* PeanutButter.TempDb.LocalDb",,34641,False,1.2.208
+Davyd McColl,2017-12-07T06:22:11.533Z,2,134,"A few useful extensions for making testing against the PeanutButter.SimpleHTTPServer.HttpServer cleaner and easier to read,
+      providing extensions to:
+        - test for requests
+        - test for headers",PeanutButter.SimpleHTTPServer.Testability,False,2018-04-18T10:04:08.767+00:00,True,False,Some extensions to ease testability when using PeanutButter.SimpleHTTPServer.HttpServer in your tests.,,17066,False,1.2.208
+Davyd McColl,2017-12-07T06:22:19.017Z,2,134,"Helper utility to convert Newtonsoft JObjects recursively to dictionaries,
+    most especially useful when coupled with PeanutButter.DuckTyping, which can
+    duck onto dictionaries, without having to make PeanutButter.DuckTyping depend
+    unecessarily on Newtonsoft.Json",PeanutButter.JObjectExtensions,False,2018-04-18T10:04:08.08+00:00,True,False,"Provides the ToDictionary() extension method for JObjects which converts a JObject
+    recursively to a Dictionary of Dictionaries. Keys are strings, values are boxed as
+    object but have ""proper"" underlying types. Works on collections within the JSON blob
+    too.",,5270,False,1.2.208
+Davyd McColl,2017-12-07T06:22:14.737Z,2,134,The miscellaneous utilities slice of the PeanutButter mini-suite (sans XML Utils),PeanutButter.Utils,False,2018-04-18T10:04:09.377+00:00,True,False,,,51066,False,1.2.208
+Davyd McColl,2017-12-07T06:22:11.47Z,2,134,Helpers for testing when using PeanutButter.DatabaseHelpers,PeanutButter.DatabaseHelpers.Testability,False,2018-04-18T10:04:08.783+00:00,True,False,"If you're using NSubstitute to test your project and you're using PeanutButter DatabaseHelpers' sql statement
+      builders, you may wish to test against the interfaces for these builders. However, doing so is more work than
+      it would seem at the outset as each call into the builder returns the builder so when you're trying to do
+      Received() asserts against the Nth call, NSubstitute doesn't know that the call was done against the original
+      substituted object. The BuilderFaker helper produces fake builders which you can use to test the behaviour of
+      your applications instead of having to test sql strings",,50265,False,1.2.208
+Ahmed Samy Hashwa,2017-12-07T06:19:15.72Z,134,134,MVCGrid.Net with enhancements,sOlOnXPL.MVCGrid.Net,False,2017-12-07T09:57:35.31+00:00,True,False,,,547,False,1.0.0.2
+Ahmed Samy Hashwa,2017-12-07T06:22:17.61Z,134,134,MVCGrid.Net with enhancements,sOlOnXPL.MVCGrid.Net,False,2017-12-07T09:57:35.31+00:00,True,False,,,547,False,1.0.0.3
+Davyd McColl,2017-12-07T06:22:18.627Z,2,134,This is the random value generators slice of the PeanutButter mini-suite,PeanutButter.RandomGenerators,False,2018-04-18T10:04:09.05+00:00,True,False,"RandomGenerators helps you with testing by providing random values not only for simple types
+      such as strings and numerics, but also with more complex types using GenericBuilder",,50999,False,1.2.208
+Davyd McColl,2017-12-07T06:22:14.86Z,2,134,A generic Migrations Runner for FluentMigrator so you can run in migrations within your application.,PeanutButter.FluentMigrator,False,2018-04-18T10:04:08.377+00:00,True,False,"A generic Migrations Runner for FluentMigrator so you can run in migrations within your application.
+      The generic parameter is a ProcessorFactory type as exposed by FluentMigrator.Runner",,36929,False,1.2.208
+Davyd McColl,2017-12-07T06:22:19.283Z,2,134,"A (very simple) TCP server which you can use from within a testing environment or, if you're really ambitious, 
+      for some other reason.",PeanutButter.SimpleTcpServer,False,2018-04-18T10:04:08.923+00:00,True,False,"Sometimes you just need a short-lived TCP-based service. The PeanutButter.SimpleHTTPServer package depends on this
+      library for the lower-level TCP communications. This package is available for extension via other protocols
+      and to make installation of PeanutButter.SimpleHTTPServer easier: no need to manually reference PeanutButter.SimpleTCPServer.dll
+      any more -- at least, that's the plan (:
+      NB: unlike the rest of PeanutButter, this module is released under the Code Project Open License (CPOL) which differs from my 
+      regular license of choice (BSD) only in that it explicitly protects you from patent infringement. This license is carried through as
+      the library is a derivative work of:
+      http://www.codeproject.com/Articles/25050/Embedded-NET-HTTP-Server 
+      Thanks to user BobJanova for saving me some time (:",,21495,False,1.2.208
+Thomas Bandt,2017-12-07T06:16:24Z,134,134,The small and smart MVVM framework made with ❤ for Xamarin.Forms.,MvvmNano.Forms,False,2017-12-07T06:16:24+00:00,True,False,,"MVVM,MvvmNano,Xamarin.Forms",3069,False,3.2.0
+Konrad Müller,2017-12-07T06:13:51.62Z,134,134,Dependency injection adapter made for MvvmNano based on TinyIoC.,MvvmNano.TinyIoC,False,2017-12-07T06:13:51.62+00:00,True,False,,"MVVM,MvvmNano,Xamarin.Forms",165,False,3.2.0
+RECP.Service.Framwork.Client,2017-12-07T06:11:34.007Z,134,134,RECP.Service.Framwork.Client,RECP.Service.Framwork.Client,False,2017-12-07T06:11:34.007+00:00,True,False,RECP.Service.Framwork.Client,,96,False,1.0.0
+Thomas Bandt,2017-12-07T06:15:06.757Z,134,134,The small and smart MVVM framework made with ❤ for Xamarin.Forms.,MvvmNano.Core,False,2017-12-07T06:15:06.757+00:00,True,False,,"MVVM,MvvmNano,Xamarin.Forms",2524,False,3.2.0
+Thomas Bandt,2017-12-07T06:16:24Z,134,134,The small and smart MVVM framework made with ❤ for Xamarin.Forms.,MvvmNano.Forms,False,2017-12-07T06:16:24+00:00,True,False,,"MVVM,MvvmNano,Xamarin.Forms",3069,False,3.2.0
+Thomas Bandt,2017-12-07T06:15:06.757Z,134,134,The small and smart MVVM framework made with ❤ for Xamarin.Forms.,MvvmNano.Core,False,2017-12-07T06:15:06.757+00:00,True,False,,"MVVM,MvvmNano,Xamarin.Forms",2524,False,3.2.0
+Konrad Müller,2017-12-07T06:13:51.62Z,134,134,Dependency injection adapter made for MvvmNano based on TinyIoC.,MvvmNano.TinyIoC,False,2017-12-07T06:13:51.62+00:00,True,False,,"MVVM,MvvmNano,Xamarin.Forms",165,False,3.2.0
+Azteca Software,2017-12-07T06:10:41.217Z,46,134,Lógica de negocio del módulo de inventario,AztecaSoftware.Pixkua.Inventario,False,2018-03-05T05:34:24.677+00:00,True,False,,"AztecaSoftware,Pixkua,Inventario",1068,False,3.0.9
+Azteca Software,2017-12-07T06:09:37.817Z,46,134,Módulo de crédito y cobranza,AztecaSoftware.Pixkua.Credito,False,2018-03-05T05:33:04.643+00:00,True,False,,"AztecaSoftware,Pixkua,Credito",1180,False,3.0.9
+Gennady Verdel,2017-12-07T06:12:03.66Z,124,134,LogoFX Client Mvvm ViewModelFactory Simple Container containing implementation of view model factory interface for LogoFX Simple Container.,LogoFX.Client.Mvvm.ViewModelFactory.SimpleContainer,True,2017-12-17T06:20:56.43+00:00,True,False,LogoFX Client Mvvm ViewModelFactory Simple Container containing implementation of view model factory interface for LogoFX Simple Container.,,3776,False,1.2.1-rc1
+Utf8Utils,2017-12-07T06:08:59.583Z,134,134,"UTF8 Utility. Decode, encode, search, compare, and getting hashcode are directly on ArraySegment<byte>. There is no string allocation.",Utf8Utils,False,2017-12-07T06:08:59.583+00:00,True,False,,UTF8,855,False,1.3.2
+RECP.Service.Framwork.Client,2017-12-07T06:11:34.007Z,134,134,RECP.Service.Framwork.Client,RECP.Service.Framwork.Client,False,2017-12-07T06:11:34.007+00:00,True,False,,,96,False,1.0.0
+Azteca Software,2017-12-07T06:08:50.303Z,14,134,Módulo de contabilidad,AztecaSoftware.Pixkua.Contabilidad,False,2018-04-06T07:44:06.48+00:00,True,False,,"AztecaSoftware,Pixkua,Contabilidad",2046,False,3.0.19
+"Phoenix Game Studios,LLC",2017-12-07T06:12:36.33Z,69,134,Provides reuseable Resharper and Visual Studio Code Analysis rules.,PhoenixRules,False,2018-02-10T10:06:40.54+00:00,True,False,,"phoenix,build,resharper,rules,codeanalysis",1052,False,0.0.1
+Azteca Software,2017-12-07T06:11:15.603Z,46,134,Módulo de administración nómina y recursos humanos,AztecaSoftware.Pixkua.RH,False,2018-03-05T05:35:34.41+00:00,True,False,,"AztecaSoftware,Pixkua,RH",1120,False,3.0.10
+Azteca Software,2017-12-07T06:11:52.287Z,46,134,Módulo de administración de ventas,AztecaSoftware.Pixkua.Ventas,False,2018-03-05T05:36:58.193+00:00,True,False,,"AztecaSoftware,Pixkua,Ventas",977,False,3.0.7
+"Phoenix Game Studios,LLC",2017-12-07T06:12:36.33Z,69,134,Provides reuseable Resharper and Visual Studio Code Analysis rules.,PhoenixRules,False,2018-02-10T10:06:40.54+00:00,True,False,,"phoenix,build,resharper,rules,codeanalysis",1052,False,0.0.1
+Azteca Software,2017-12-07T06:11:52.287Z,46,134,Módulo de administración de ventas,AztecaSoftware.Pixkua.Ventas,False,2018-03-05T05:36:58.193+00:00,True,False,,"AztecaSoftware,Pixkua,Ventas",977,False,3.0.7
+Azteca Software,2017-12-07T06:09:37.817Z,46,134,Módulo de crédito y cobranza,AztecaSoftware.Pixkua.Credito,False,2018-03-05T05:33:04.643+00:00,True,False,,"AztecaSoftware,Pixkua,Credito",1180,False,3.0.9
+Azteca Software,2017-12-07T06:10:41.217Z,46,134,Lógica de negocio del módulo de inventario,AztecaSoftware.Pixkua.Inventario,False,2018-03-05T05:34:24.677+00:00,True,False,,"AztecaSoftware,Pixkua,Inventario",1068,False,3.0.9
+RECP.Service.Framwork.Client,2017-12-07T06:11:34.007Z,134,134,RECP.Service.Framwork.Client,RECP.Service.Framwork.Client,False,2017-12-07T06:11:34.007+00:00,True,False,,,96,False,1.0.0
+Utf8Utils,2017-12-07T06:08:59.583Z,134,134,"UTF8 Utility. Decode, encode, search, compare, and getting hashcode are directly on ArraySegment<byte>. There is no string allocation.",Utf8Utils,False,2017-12-07T06:08:59.583+00:00,True,False,,UTF8,855,False,1.3.2
+Azteca Software,2017-12-07T06:08:50.303Z,14,134,Módulo de contabilidad,AztecaSoftware.Pixkua.Contabilidad,False,2018-04-06T07:44:06.48+00:00,True,False,,"AztecaSoftware,Pixkua,Contabilidad",2046,False,3.0.19
+Azteca Software,2017-12-07T06:11:15.603Z,46,134,Módulo de administración nómina y recursos humanos,AztecaSoftware.Pixkua.RH,False,2018-03-05T05:35:34.41+00:00,True,False,,"AztecaSoftware,Pixkua,RH",1121,False,3.0.10
+Gennady Verdel,2017-12-07T06:12:03.66Z,124,134,LogoFX Client Mvvm ViewModelFactory Simple Container containing implementation of view model factory interface for LogoFX Simple Container.,LogoFX.Client.Mvvm.ViewModelFactory.SimpleContainer,True,2017-12-17T06:20:56.43+00:00,True,False,LogoFX Client Mvvm ViewModelFactory Simple Container containing implementation of view model factory interface for LogoFX Simple Container.,,3776,False,1.2.1-rc1
+PageUp.Functional.Core,2017-12-07T06:04:52.107Z,22,134,Package Description,PageUp.Functional.Core,False,2018-03-29T02:33:51.42+00:00,True,False,,,2468,False,1.0.5
+Azteca Software,2017-12-07T06:08:00.12Z,14,134,Capa de negocios del módulo de compras,AztecaSoftware.Pixkua.Compras,False,2018-04-06T07:43:38.087+00:00,True,False,,"AztecaSoftware,Pixkua,Compras",1287,False,3.0.10
+PageUp.Functional.Core,2017-12-07T06:04:52.107Z,22,134,Package Description,PageUp.Functional.Core,False,2018-03-29T02:33:51.42+00:00,True,False,,,2468,False,1.0.5
+Azteca Software,2017-12-07T06:08:00.12Z,14,134,Capa de negocios del módulo de compras,AztecaSoftware.Pixkua.Compras,False,2018-04-06T07:43:38.087+00:00,True,False,,"AztecaSoftware,Pixkua,Compras",1287,False,3.0.10
+Ahmed Samy Hashwa,2017-12-07T05:56:41.06Z,134,134,MVCGrid.Net with enhancements,sOlOnXPL.MVCGrid.Net,False,2017-12-07T09:57:35.31+00:00,True,False,,,547,False,1.0.0.1
+HuseyinDursun,2017-12-07T05:58:15.097Z,134,134,Serializer First Release,Istanbul.JsonSerializerModule,False,2017-12-07T05:58:15.097+00:00,True,False,,"Json,Serializer",72,False,1.0.0
+HuseyinDursun,2017-12-07T05:58:15.097Z,134,134,Serializer First Release,Istanbul.JsonSerializerModule,False,2017-12-07T05:58:15.097+00:00,True,False,,"Json,Serializer",72,False,1.0.0
+Ahmed Samy Hashwa,2017-12-07T05:51:16.92Z,43209,134,MVCGrid.Net with enhancements,9J7cB8ZjV,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Ahmed Samy Hashwa,2017-12-07T05:56:41.06Z,134,134,MVCGrid.Net with enhancements,sOlOnXPL.MVCGrid.Net,False,2017-12-07T09:57:35.31+00:00,True,False,,,547,False,1.0.0.1
+elmah.io,2017-12-07T05:57:06.76Z,5,134,elmah.io target for NLog,Elmah.Io.NLog,True,2018-04-15T12:19:46.977+00:00,True,False,,"Error,Exception,Reporting,Management,Logging,ELMAH,Diagnostics,Tracing,NLog",4293,False,3.1.37-pre
+Ahmed Samy Hashwa,2017-12-07T05:56:41.06Z,134,134,MVCGrid.Net with enhancements,sOlOnXPL.MVCGrid.Net,False,2017-12-07T09:57:35.31+00:00,True,False,,,547,False,1.0.0.1
+elmah.io,2017-12-07T05:57:06.76Z,5,134,elmah.io target for NLog,Elmah.Io.NLog,True,2018-04-15T12:19:46.977+00:00,True,False,,"Error,Exception,Reporting,Management,Logging,ELMAH,Diagnostics,Tracing,NLog",4293,False,3.1.37-pre
+Ahmed Samy Hashwa,2017-12-07T05:51:16.92Z,43209,134,MVCGrid.Net with enhancements,9J7cB8ZjV,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Ahmed Samy Hashwa,2017-12-07T05:51:16.92Z,43209,134,MVCGrid.Net with enhancements,9J7cB8ZjV,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Gennady Verdel,2017-12-07T05:47:30.29Z,124,134,LogoFX Client Mvvm ViewModel Factory containing definition for view model factory pattern.,LogoFX.Client.Mvvm.ViewModelFactory,True,2017-12-17T06:05:04.073+00:00,True,False,LogoFX Client Mvvm ViewModel Factory containing definition for view model factory pattern.,,1868,False,1.2.1-rc1
+Gennady Verdel,2017-12-07T05:47:30.29Z,124,134,LogoFX Client Mvvm ViewModel Factory containing definition for view model factory pattern.,LogoFX.Client.Mvvm.ViewModelFactory,True,2017-12-17T06:05:04.073+00:00,True,False,LogoFX Client Mvvm ViewModel Factory containing definition for view model factory pattern.,,1868,False,1.2.1-rc1
+dmanning23,2017-12-07T05:40:09.197Z,31,134,A simple filename helper class for content files,FilenameBuddy,False,2018-03-20T20:56:49.617+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",1289,False,1.0.9
+Jack.T,2017-12-07T05:40:01.353Z,44,134,提供内存高速缓存数据，并支持程序重启后，缓存数据依然存在,SuperStorage,False,2018-03-07T03:29:41.76+00:00,True,False,,,761,False,1.0.0.6
+dmanning23,2017-12-07T05:40:09.197Z,31,134,A simple filename helper class for content files,FilenameBuddy,False,2018-03-20T20:56:49.617+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",1289,False,1.0.9
+Jack.T,2017-12-07T05:40:01.353Z,44,134,提供内存高速缓存数据，并支持程序重启后，缓存数据依然存在,SuperStorage,False,2018-03-07T03:29:41.76+00:00,True,False,,,761,False,1.0.0.6
+"Datalust,Contributors",2017-12-07T05:33:34.01Z,3,134,Client library for the Seq HTTP API.,Seq.Api,True,2018-04-17T02:53:45.193+00:00,True,False,,seq,25946,False,4.2.0-dev-00057
+"Datalust,Contributors",2017-12-07T05:33:34.01Z,3,134,Client library for the Seq HTTP API.,Seq.Api,True,2018-04-17T02:53:45.193+00:00,True,False,,seq,25901,False,4.2.0-dev-00057
+dmanning23,2017-12-07T05:29:37.43Z,31,134,A simple filename helper class for content files,FilenameBuddy,False,2018-03-20T20:56:49.617+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",1289,False,1.0.8
+dmanning23,2017-12-07T05:29:37.43Z,31,134,A simple filename helper class for content files,FilenameBuddy,False,2018-03-20T20:56:49.617+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",1289,False,1.0.8
+"Datalust,Contributors",2017-12-07T03:35:11.133Z,3,134,Client library for the Seq HTTP API.,Seq.Api,True,2018-04-17T02:53:45.193+00:00,False,False,,seq,25946,False,4.2.1000-dev-00056
+AipSdk,2017-12-07T03:23:15.303Z,43209,134,Package Description,AipSdk-Standard,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+garoca,2017-12-07T05:23:56.38Z,134,134,Componente con funcionalidades de ayuda.,ICCorp.Infraestructura.Helpers,False,2017-12-07T21:24:11.447+00:00,True,False,,Helper,676,False,1.0.0.6
+NMNT,2017-12-07T05:27:37.93Z,134,134,Close all running programs,NMNT.ShutDownSystem.ShutSystem,False,2017-12-07T05:27:37.93+00:00,True,False,,"Close,all,running,programs",72,False,1.0.0
+ccontreras,2017-12-07T05:24:50.467Z,43209,134,Componente Dto,ICCorp.DT.BackEnd.Aplicacion.Dto,False,1900-01-01T00:00:00+00:00,False,False,,Dto,-1,False,1.0.0.3
+"Arnold Wang,Ingeniux Corporation",2017-12-07T05:26:42.217Z,1,134,Nuget Package for Ingeniux Dynamic Site Server Runtime API,Ingeniux_DSS_RTAPI,False,2018-04-19T19:56:06.677+00:00,True,False,,"ingeniux,dss,cms,runtime,api,dynamic,site,server",6259,False,10.0.313
+ccontreras,2017-12-06T04:01:58.267Z,43209,135,Componente Dto,ICCorp.DT.BackEnd.Aplicacion.Dto,False,1900-01-01T00:00:00+00:00,False,False,,Dto,-1,False,1.0.0.2
+NMNT,2017-12-07T05:27:37.93Z,134,134,Close all running programs,NMNT.ShutDownSystem.ShutSystem,False,2017-12-07T05:27:37.93+00:00,True,False,,"Close,all,running,programs",72,False,1.0.0
+garoca,2017-12-07T05:23:56.38Z,134,134,Componente con funcionalidades de ayuda.,ICCorp.Infraestructura.Helpers,False,2017-12-07T21:24:11.447+00:00,True,False,,Helper,676,False,1.0.0.6
+"Arnold Wang,Ingeniux Corporation",2017-12-07T05:26:42.217Z,1,134,Nuget Package for Ingeniux Dynamic Site Server Runtime API,Ingeniux_DSS_RTAPI,False,2018-04-19T19:56:06.677+00:00,True,False,,"ingeniux,dss,cms,runtime,api,dynamic,site,server",6259,False,10.0.313
+"Gennady Verdel,David Kossoglyad,Vlad Spivak",2017-12-07T05:19:33.82Z,124,134,LogoFX Client Mvvm ViewModel Core containing core view model layer objects facilitating development by MVVM pattern,LogoFX.Client.Mvvm.ViewModel.Core,True,2017-12-17T05:55:33.98+00:00,True,False,LogoFX Client Mvvm ViewModel Core containing core view model layer objects facilitating development by MVVM pattern,,2416,False,1.1.1-rc1
+"Gennady Verdel,David Kossoglyad,Vlad Spivak",2017-12-07T05:21:22.62Z,124,134,LogoFX Client Mvvm ViewModel containing view model platform-specific services facilitating development by MVVM pattern,LogoFX.Client.Mvvm.ViewModel,True,2017-12-17T05:57:28.933+00:00,True,False,LogoFX Client Mvvm ViewModel containing view model platform-specific services facilitating development by MVVM pattern,,2406,False,1.1.1-rc1
+"Gennady Verdel,David Kossoglyad,Vlad Spivak",2017-12-07T05:21:22.62Z,124,134,LogoFX Client Mvvm ViewModel containing view model platform-specific services facilitating development by MVVM pattern,LogoFX.Client.Mvvm.ViewModel,True,2017-12-17T05:57:28.933+00:00,True,False,LogoFX Client Mvvm ViewModel containing view model platform-specific services facilitating development by MVVM pattern,,2406,False,1.1.1-rc1
+"Gennady Verdel,David Kossoglyad,Vlad Spivak",2017-12-07T05:19:33.82Z,124,134,LogoFX Client Mvvm ViewModel Core containing core view model layer objects facilitating development by MVVM pattern,LogoFX.Client.Mvvm.ViewModel.Core,True,2017-12-17T05:55:33.98+00:00,True,False,LogoFX Client Mvvm ViewModel Core containing core view model layer objects facilitating development by MVVM pattern,,2416,False,1.1.1-rc1
+Lee,2017-12-07T05:02:35.89Z,43,134,MES系统接口,Realgoal.MES.IAppService.YinQiao,False,2018-03-08T02:05:49.377+00:00,True,False,,,5521,False,1.4.5
+Lee,2017-12-07T05:02:35.89Z,43,134,MES系统接口,Realgoal.MES.IAppService.YinQiao,False,2018-03-08T02:05:49.377+00:00,True,False,,,5521,False,1.4.5
+Yu Kimura,2017-12-07T05:00:09.337Z,131,134,仮想通貨取引所ZaifのAPIに接続するためのライブラリです。,ZaifAPI,False,2017-12-10T00:42:31.5+00:00,True,False,仮想通貨取引所ZaifのAPIに接続するためのライブラリです。,,758,False,1.4.0
+MarginTrading.MarketMaker.Contracts,2017-12-07T04:58:37.273Z,134,134,Package Description,MarginTrading.MarketMaker.Contracts,True,2017-12-07T04:58:37.273+00:00,True,False,,,254,False,1.0.5-beta
+MarginTrading.MarketMaker.Contracts,2017-12-07T04:58:37.273Z,134,134,Package Description,MarginTrading.MarketMaker.Contracts,True,2017-12-07T04:58:37.273+00:00,True,False,,,254,False,1.0.5-beta
+Yu Kimura,2017-12-07T05:00:09.337Z,131,134,仮想通貨取引所ZaifのAPIに接続するためのライブラリです。,ZaifAPI,False,2017-12-10T00:42:31.5+00:00,True,False,仮想通貨取引所ZaifのAPIに接続するためのライブラリです。,,758,False,1.4.0
+Yu Kimura,2017-12-07T01:58:35.72Z,131,134,仮想通貨取引所ZaifのAPIに接続するためのライブラリです。,ZaifAPI,False,2017-12-10T00:42:31.5+00:00,False,False,仮想通貨取引所ZaifのAPIに接続するためのライブラリです。,,758,False,1.3.0
+Yu Kimura,2017-12-06T14:12:58.137Z,131,135,仮想通貨取引所ZaifのAPIに接続するためのライブラリです。,ZaifAPI,False,2017-12-10T00:42:31.5+00:00,False,False,仮想通貨取引所ZaifのAPIに接続するためのライブラリです。,,758,False,1.2.0
+Charles Solar,2017-12-07T04:54:04.96Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.SimpleInjector,False,2018-04-12T23:32:33.633+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",4300,False,0.11.73.84
+Charles Solar,2017-12-07T04:53:06.39Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET,False,2018-04-12T23:31:46.977+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",111255,False,0.11.73.84
+PageUp.Platform.Core,2017-12-07T04:56:36.027Z,43209,134,Package Description,PageUp.Platform.Core,False,1900-01-01T00:00:00+00:00,False,False,,,2627,False,1.0.5
+Charles Solar,2017-12-07T04:49:18.85Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET,False,2018-04-12T23:31:46.977+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",111255,False,0.11.73.83
+Charles Solar,2017-12-07T04:53:17.933Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.EventStore,False,2018-04-12T23:31:58.29+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",4990,False,0.11.73.84
+Charles Solar,2017-12-07T04:53:30.747Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.NewtonsoftJson,False,2018-04-12T23:32:10.727+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",4999,False,0.11.73.84
+Charles Solar,2017-12-07T04:53:53.523Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.StructureMap,False,2018-04-12T23:32:43.87+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",4929,False,0.11.73.84
+Andreas Grimme,2017-12-07T04:53:03.703Z,133,134,Collection of general purpose .NET utility classes,sidi-util,False,2017-12-08T04:02:12.64+00:00,True,False,,,38384,False,14.2.2
+Charles Solar,2017-12-07T04:53:42.167Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.NServiceBus,False,2018-04-12T23:32:20.663+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",5036,False,0.11.73.84
+Charles Solar,2017-12-07T04:50:03.75Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.StructureMap,False,2018-04-12T23:32:43.87+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",4929,False,0.11.73.83
+Charles Solar,2017-12-07T04:53:17.933Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.EventStore,False,2018-04-12T23:31:58.29+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",4990,False,0.11.73.84
+Charles Solar,2017-12-07T04:53:06.39Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET,False,2018-04-12T23:31:46.977+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",111255,False,0.11.73.84
+Andreas Grimme,2017-12-07T04:53:03.703Z,133,134,Collection of general purpose .NET utility classes,sidi-util,False,2017-12-08T04:02:12.64+00:00,True,False,,,38384,False,14.2.2
+PageUp.Platform.Core,2017-12-07T04:56:36.027Z,43209,134,Package Description,PageUp.Platform.Core,False,1900-01-01T00:00:00+00:00,False,False,,,2629,False,1.0.5
+Charles Solar,2017-12-07T04:53:30.747Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.NewtonsoftJson,False,2018-04-12T23:32:10.727+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",4999,False,0.11.73.84
+Charles Solar,2017-12-07T04:54:04.96Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.SimpleInjector,False,2018-04-12T23:32:33.633+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",4300,False,0.11.73.84
+Charles Solar,2017-12-07T04:53:53.523Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.StructureMap,False,2018-04-12T23:32:43.87+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",4929,False,0.11.73.84
+Charles Solar,2017-12-07T04:53:42.167Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.NServiceBus,False,2018-04-12T23:32:20.663+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",5036,False,0.11.73.84
+NMNt,2017-12-07T04:28:31.57Z,43209,134,Help to close the running programs,NMNT.ShutDown.TurnOff,False,1900-01-01T00:00:00+00:00,False,False,,"application,to,stop,running,programs",-1,False,1.0.0.1
+Charles Solar,2017-12-07T04:50:14.42Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.SimpleInjector,False,2018-04-12T23:32:33.633+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",4300,False,0.11.73.83
+Charles Solar,2017-12-07T04:50:14.42Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.SimpleInjector,False,2018-04-12T23:32:33.633+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",4300,False,0.11.73.83
+Charles Solar,2017-12-07T04:49:53.907Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.NServiceBus,False,2018-04-12T23:32:20.663+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",5036,False,0.11.73.83
+Charles Solar,2017-12-07T04:49:30.677Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.EventStore,False,2018-04-12T23:31:58.29+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",4990,False,0.11.73.83
+Charles Solar,2017-12-07T04:49:42.737Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.NewtonsoftJson,False,2018-04-12T23:32:10.727+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",4999,False,0.11.73.83
+Charles Solar,2017-12-07T04:49:53.907Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.NServiceBus,False,2018-04-12T23:32:20.663+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",5036,False,0.11.73.83
+Charles Solar,2017-12-07T04:49:42.737Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.NewtonsoftJson,False,2018-04-12T23:32:10.727+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",4999,False,0.11.73.83
+Charles Solar,2017-12-07T04:49:30.677Z,8,134,A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.,Aggregates.NET.EventStore,False,2018-04-12T23:31:58.29+00:00,True,False,,"CQRS,NServiceBus,GetEventStore,eventstore,event-store,aggregate,ddd,repository,unit-of-work,uow",4990,False,0.11.73.83
+NMNT,2017-12-06T11:51:19.403Z,43209,135,Shut doen the running programs,Nmnt.ShutDownSystem.SystemShut,False,1900-01-01T00:00:00+00:00,False,False,,"applucation,shut-down,running,programs",-1,False,1.0.0
+ZettaVision,2017-12-07T04:44:37.403Z,58,134,ZettaVision.CloudCore.Infrastructure.DocumentDb,ZettaVision.CloudCore.Infrastructure.DocumentDb,False,2018-02-21T16:31:41.68+00:00,True,False,,"ZettaVision,CloudCore,Infrastructure,DocumentDb",2934,False,1.0.29
+ZettaVision,2017-12-07T04:44:37.403Z,58,134,ZettaVision.CloudCore.Infrastructure.DocumentDb,ZettaVision.CloudCore.Infrastructure.DocumentDb,False,2018-02-21T16:31:41.68+00:00,True,False,,"ZettaVision,CloudCore,Infrastructure,DocumentDb",2934,False,1.0.29
+Zap Lin,2017-12-07T04:36:56.29Z,17,134,This is a very helpful for develop web api library,ZapLib,False,2018-04-03T07:19:30.927+00:00,True,False,,"Zap,Lib,API",858,False,1.3.0
+PageUp.EventBus.Core,2017-12-07T04:40:30.073Z,43209,134,Package Description,PageUp.EventBus.Core,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.2.29
+PageUp.EventBus.Core,2017-12-07T04:40:30.073Z,43209,134,Package Description,PageUp.EventBus.Core,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.2.29
+PageUp.EventBus.Core,2017-12-07T04:39:40.663Z,43209,134,Package Description,PageUp.EventBus.Core,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.2.28
+PageUp.EventBus.Core,2017-12-07T04:39:40.663Z,43209,134,Package Description,PageUp.EventBus.Core,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.2.28
+Michael Vivet,2017-12-04T17:22:46.883Z,19,137,"Google Places, Maps, Roads, Search and Translate integrations. 
+Requests and Responses are complete with Google Api documentation.",GoogleApi,False,2018-04-01T09:52:37.17+00:00,False,False,"Google Places, Maps, Roads, Search and Translate API support (100%)","google,api,map,maps,place,places,elevation,snaptoroad,snaptoroads,snap,road,roads,speed,speedlimit,coordinate,geo,geocode,geocoder,geocoding,geolocation,search,text,nearby,radar,translate,translation,detect,detection,language,languages,nearest,geography,point,geocoordinate,address,location,latitude,longitude,distance,duration,matrix,distancematrix,direction,directions,travel,path,journey,trip,photo,photos,timezone,time,zone,autocomplete,auto-complete,traffic,spatial",42113,False,3.2.11
+Scar,2017-12-07T04:03:08.35Z,134,134,Various most common tools,Scar.Common,False,2017-12-07T04:03:08.35+00:00,True,False,,,405,False,1.0.34
+MyCONVENO,2017-12-07T04:30:24.107Z,134,134,"Interfaces, Models and DataBase access for MyCONVENO Sales4Pro.",Sales4Pro.Toolkit.Database,False,2017-12-07T04:30:24.107+00:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",10036,False,4.1.126
+NMNt,2017-12-07T04:28:31.57Z,43209,134,Help to close the running programs,NMNT.ShutDown.TurnOff,False,1900-01-01T00:00:00+00:00,False,False,,"application,to,stop,running,programs",-1,False,1.0.0.1
+DeltaGridZone,2017-12-07T04:27:50.843Z,64,134,Paquete con libreria y ejemplos del componente Delta Grid MVC,DeltaUniverse.DeltaGridMVC,False,2018-02-15T15:16:03.207+00:00,True,False,Paquete que contiene librerias y ejemplo para usar el componente Delta Grid MVC en proyectos MVC,"DeltaGridMVC,MVC,AngularJS,DeltaUniverse,DataGrid",1048,False,1.0.9
+JIC,2017-12-07T04:29:15.467Z,134,134,Description,incheolNuget,False,2017-12-07T04:29:15.467+00:00,True,False,,,71,False,1.0.0
+JIC,2017-12-07T04:29:15.467Z,134,134,Description,incheolNuget,False,2017-12-07T04:29:15.467+00:00,True,False,,,71,False,1.0.0
+NMNt,2017-12-07T04:28:31.57Z,43209,134,Help to close the running programs,NMNT.ShutDown.TurnOff,False,1900-01-01T00:00:00+00:00,False,False,,"application,to,stop,running,programs",-1,False,1.0.0.1
+MyCONVENO,2017-12-07T04:30:24.107Z,134,134,"Interfaces, Models and DataBase access for MyCONVENO Sales4Pro.",Sales4Pro.Toolkit.Database,False,2017-12-07T04:30:24.107+00:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",10036,False,4.1.126
+Scar,2017-12-07T04:03:08.35Z,134,134,Various most common tools,Scar.Common,False,2017-12-07T04:03:08.35+00:00,True,False,,,405,False,1.0.34
+Puma Security LLC,2017-12-07T04:26:12.803Z,100,134,"Diagnostic extension for the .NET Compiler Platform that performs static code analysis for vulnerabilities identified in the OWASP Top 10, SANS/CWE Top 25, and other common insecure coding patterns. The professional edition is a licensed version of the open source extension with more advanced analysis, configurable rules, and customer support.",Puma.Security.Rules.Pro,False,2018-01-10T02:44:37.963+00:00,True,False,,"Puma.Security.Rules.Pro,Professional,.NET,Security,Analyzer,Code,Analyzers,OWASP",641,False,0.5.2
+Rpac,2017-12-07T04:05:08.55Z,128,134,Rpac.Core.Mail,Rpac.Core.Mail,False,2017-12-13T09:24:47.08+00:00,True,False,,Rpac,1239,False,1.1.3
+Puma Security LLC,2017-12-07T04:26:12.803Z,100,134,"Diagnostic extension for the .NET Compiler Platform that performs static code analysis for vulnerabilities identified in the OWASP Top 10, SANS/CWE Top 25, and other common insecure coding patterns. The professional edition is a licensed version of the open source extension with more advanced analysis, configurable rules, and customer support.",Puma.Security.Rules.Pro,False,2018-01-10T02:44:37.963+00:00,True,False,,"Puma.Security.Rules.Pro,Professional,.NET,Security,Analyzer,Code,Analyzers,OWASP",641,False,0.5.2
+Simon Cropp,2017-12-07T04:18:40.953Z,20,134,Converts public fields to properties.,Fielder.Fody,False,2018-03-31T13:28:57.047+00:00,True,False,,"Properties,Fields,ILWeaving,Fody,Cecil",17159,False,1.1.4
+MarginTrading.MarketMaker.Contracts,2017-12-07T04:18:21.913Z,134,134,Package Description,MarginTrading.MarketMaker.Contracts,True,2017-12-07T04:58:37.273+00:00,True,False,,,254,False,1.0.4-beta
+"Microsoft,Julian Verdurmen,Seabiscuit",2017-12-07T04:21:21.463Z,43209,134,"NLog provider for Microsoft.Extensions.Logging for usage in .NET Standard libraries and console applicaties.
+
+For ASP.NET Core, use NLog.Web.AspNetCore: https://www.nuget.org/packages/NLog.Web.AspNetCore",NLog.Extensions.Logging.Unofficial,True,1900-01-01T00:00:00+00:00,False,False,,"NLog,Microsoft.Extensions.Logging,log,logfiles,netcore,nlog",-1,False,2.0.0-rtm-171102
+"Microsoft,Julian Verdurmen,Seabiscuit",2017-12-07T04:21:21.463Z,43209,134,"NLog provider for Microsoft.Extensions.Logging for usage in .NET Standard libraries and console applicaties.
+
+For ASP.NET Core, use NLog.Web.AspNetCore: https://www.nuget.org/packages/NLog.Web.AspNetCore",NLog.Extensions.Logging.Unofficial,True,1900-01-01T00:00:00+00:00,False,False,,"NLog,Microsoft.Extensions.Logging,log,logfiles,netcore,nlog",-1,False,2.0.0-rtm-171102
+MarginTrading.MarketMaker.Contracts,2017-12-07T04:18:21.913Z,134,134,Package Description,MarginTrading.MarketMaker.Contracts,True,2017-12-07T04:58:37.273+00:00,True,False,,,254,False,1.0.4-beta
+Simon Cropp,2017-12-07T04:18:40.953Z,20,134,Converts public fields to properties.,Fielder.Fody,False,2018-03-31T13:28:57.047+00:00,True,False,,"Properties,Fields,ILWeaving,Fody,Cecil",17159,False,1.1.4
+MarginTrading.MarketMaker.Contracts,2017-12-07T04:15:00.743Z,134,134,Package Description,MarginTrading.MarketMaker.Contracts,True,2017-12-07T04:58:37.273+00:00,True,False,,,254,False,1.0.3-beta
+Alberto Fustinoni,2017-12-07T04:12:17.643Z,28,134,File System API abstraction,Xam.Plugin.FileSystem,False,2018-03-23T16:19:25.05+00:00,True,False,File System API abstraction,"xamarin,plugin,for,android,xamarin.forms,ios,file,system,storage,UWP",936,False,0.2.4
+Alberto Fustinoni,2017-12-07T04:12:17.643Z,28,134,File System API abstraction,Xam.Plugin.FileSystem,False,2018-03-23T16:19:25.05+00:00,True,False,File System API abstraction,"xamarin,plugin,for,android,xamarin.forms,ios,file,system,storage,UWP",935,False,0.2.4
+MarginTrading.MarketMaker.Contracts,2017-12-07T04:15:00.743Z,134,134,Package Description,MarginTrading.MarketMaker.Contracts,True,2017-12-07T04:58:37.273+00:00,True,False,,,254,False,1.0.3-beta
+ChenXin,2017-12-07T03:31:37.497Z,134,134,BokUtils,BokUtils,False,2017-12-07T03:31:37.497+00:00,True,False,内含ORM AOP IOC框架,"ORM,AOP,IOC",98,False,1.0.0
+Neville Nazerane,2017-12-07T04:01:16.38Z,66,134,"Written over MySql.Data, a simpiler way to use MySql in .NET Standard. Allows easy database connection and reading queried results while maintaining the disposable objects and providing access to all default MySql.Data objects.",MySql.Simple,False,2018-02-13T05:42:51.037+00:00,True,False,,"MySql,Database,Simple,Easy,Quick",3908,False,5.1.7
+Neville Nazerane,2017-12-07T04:01:16.38Z,66,134,"Written over MySql.Data, a simpiler way to use MySql in .NET Standard. Allows easy database connection and reading queried results while maintaining the disposable objects and providing access to all default MySql.Data objects.",MySql.Simple,False,2018-02-13T05:42:51.037+00:00,True,False,,"MySql,Database,Simple,Easy,Quick",3908,False,5.1.7
+Rpac,2017-12-07T03:51:52.627Z,128,134,Rpac.Core.Mail,Rpac.Core.Mail,False,2017-12-13T09:24:47.08+00:00,True,False,,Rpac,1239,False,1.1.2
+Rpac,2017-12-07T03:51:52.627Z,128,134,Rpac.Core.Mail,Rpac.Core.Mail,False,2017-12-13T09:24:47.08+00:00,True,False,,Rpac,1239,False,1.1.2
+Nate McMaster,2017-12-07T03:40:39.13Z,9,134,"Command-line parsing API. A community-maintained fork of Microsoft.Extensions.CommandLineUtils, plus extras.
+Commonly used types:
+
+McMaster.Extensions.CommandLineUtils.CommandLineApplication
+McMaster.Extensions.CommandLineUtils.CommandOption
+McMaster.Extensions.CommandLineUtils.IConsole
+McMaster.Extensions.CommandLineUtils.ArgumentEscaper",McMaster.Extensions.CommandLineUtils,True,2018-04-11T15:06:19.683+00:00,True,False,,"commandline,parsing",20079,False,2.1.0-rc
+Microsoft.DocAsCode.Dfm,2017-12-07T03:39:55.38Z,17,134,Package Description,Microsoft.DocAsCode.Dfm,False,2018-04-03T04:29:15.713+00:00,True,False,,,15579,False,2.28.2
+Highsoft,2017-12-07T03:42:46.443Z,2,134,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,True,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6549.40879
+Microsoft.DocAsCode.Build.RestApi,2017-12-07T03:39:19.27Z,17,134,Package Description,Microsoft.DocAsCode.Build.RestApi,False,2018-04-03T04:27:30.833+00:00,True,False,,,10118,False,2.28.2
+Microsoft.DocAsCode.DataContracts.RestApi,2017-12-07T03:40:45.067Z,17,134,Package Description,Microsoft.DocAsCode.DataContracts.RestApi,False,2018-04-03T04:29:04.65+00:00,True,False,,,8211,False,2.28.2
+Microsoft.DocAsCode.Glob,2017-12-07T03:39:44.503Z,17,134,Implements glob utility,Microsoft.DocAsCode.Glob,False,2018-04-03T04:29:03.9+00:00,True,False,,,11943,False,2.28.2
+Microsoft.DocAsCode.DataContracts.ManagedReference,2017-12-07T03:39:41.88Z,17,134,Package Description,Microsoft.DocAsCode.DataContracts.ManagedReference,False,2018-04-03T04:28:51.477+00:00,True,False,,,11273,False,2.28.2
+Highsoft,2017-12-07T03:43:04.287Z,2,134,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,True,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6549.42043
+Microsoft.DocAsCode.Build.TagLevelRestApi,2017-12-07T03:39:43.27Z,17,134,Package Description,Microsoft.DocAsCode.Build.TagLevelRestApi,False,2018-04-03T04:27:58.507+00:00,True,False,,,1344,False,2.28.2
+Microsoft.DocAsCode.HtmlToPdf,2017-12-07T03:40:07.503Z,17,134,Package Description,Microsoft.DocAsCode.HtmlToPdf,False,2018-04-03T04:26:39.113+00:00,True,False,,,2444,False,2.28.2
+Microsoft.DocAsCode.Build.TableOfContents,2017-12-07T03:39:17.113Z,17,134,Package Description,Microsoft.DocAsCode.Build.TableOfContents,False,2018-04-03T04:28:24.6+00:00,True,False,,,10317,False,2.28.2
+Microsoft.DocAsCode.DataContracts.Common,2017-12-07T03:40:30.893Z,17,134,Package Description,Microsoft.DocAsCode.DataContracts.Common,False,2018-04-03T04:28:22.697+00:00,True,False,,,11645,False,2.28.2
+Nate McMaster,2017-12-07T03:40:39.13Z,9,134,"Command-line parsing API. A community-maintained fork of Microsoft.Extensions.CommandLineUtils, plus extras.
+Commonly used types:
+
+McMaster.Extensions.CommandLineUtils.CommandLineApplication
+McMaster.Extensions.CommandLineUtils.CommandOption
+McMaster.Extensions.CommandLineUtils.IConsole
+McMaster.Extensions.CommandLineUtils.ArgumentEscaper",McMaster.Extensions.CommandLineUtils,True,2018-04-11T15:06:19.683+00:00,True,False,,"commandline,parsing",19930,False,2.1.0-rc
+Nate McMaster,2017-12-07T03:40:39.13Z,9,134,"Command-line parsing API. A community-maintained fork of Microsoft.Extensions.CommandLineUtils, plus extras.
+Commonly used types:
+
+McMaster.Extensions.CommandLineUtils.CommandLineApplication
+McMaster.Extensions.CommandLineUtils.CommandOption
+McMaster.Extensions.CommandLineUtils.IConsole
+McMaster.Extensions.CommandLineUtils.ArgumentEscaper",McMaster.Extensions.CommandLineUtils,True,2018-04-11T15:06:19.683+00:00,True,False,,"commandline,parsing",19930,False,2.1.0-rc
+Highsoft,2017-12-07T03:42:46.443Z,2,134,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,True,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6549.40879
+Highsoft,2017-12-07T03:43:04.287Z,2,134,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,True,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37512,False,6.0.6549.42043
+Microsoft.DocAsCode.DataContracts.RestApi,2017-12-07T03:40:45.067Z,17,134,Package Description,Microsoft.DocAsCode.DataContracts.RestApi,False,2018-04-03T04:29:04.65+00:00,True,False,,,8211,False,2.28.2
+Microsoft.DocAsCode.DataContracts.Common,2017-12-07T03:40:30.893Z,17,134,Package Description,Microsoft.DocAsCode.DataContracts.Common,False,2018-04-03T04:28:22.697+00:00,True,False,,,11645,False,2.28.2
+wangx,2017-12-06T08:55:34.353Z,16,135,My package description.,WXLSuperDLL,False,2018-04-04T02:49:57.06+00:00,False,False,,,892,False,2.0.0
+Microsoft.DocAsCode.Build.MemberLevelManagedReference,2017-12-07T03:38:41.253Z,17,134,Package Description,Microsoft.DocAsCode.Build.MemberLevelManagedReference,False,2018-04-03T04:27:04.77+00:00,True,False,,,3805,False,2.28.2
+Microsoft.DocAsCode.Common,2017-12-07T03:39:30.957Z,17,134,Package Description,Microsoft.DocAsCode.Common,False,2018-04-03T04:28:52.447+00:00,True,False,,,15538,False,2.28.2
+Microsoft,2017-12-07T03:38:52.63Z,17,134,"This is a template for DocFX to split ManagedReference classes into member level pages. Members with the same overload name are grouped into one page, members with no overload are splited to one page per member.",memberpage,False,2018-04-03T04:27:45.257+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx,plugin",4106,False,2.28.2
+Microsoft,2017-12-07T03:39:05.38Z,17,134,"This is a plugin for DocFX to split REST API into tag level pages. Operations with the same tag are grouped into one page. If operation is in multiple tags, it would be included in first tag level page. This package contains the plugin for RestApi document processor only.",rest.tagpage,False,2018-04-03T04:28:00.647+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx,rest,plugin",1479,False,2.28.2
+Microsoft.DocAsCode.Build.ResourceFiles,2017-12-07T03:39:04.957Z,17,134,Package Description,Microsoft.DocAsCode.Build.ResourceFiles,False,2018-04-03T04:28:11.71+00:00,True,False,,,9946,False,2.28.2
+Microsoft.DocAsCode.Build.Engine,2017-12-07T03:38:41.003Z,17,134,Package Description,Microsoft.DocAsCode.Build.Engine,False,2018-04-03T04:27:25.473+00:00,True,False,,,10482,False,2.28.2
+Microsoft.DocAsCode.Build.ManagedReference,2017-12-07T03:38:54.973Z,17,134,Package Description,Microsoft.DocAsCode.Build.ManagedReference,False,2018-04-03T04:27:43.57+00:00,True,False,,,10759,False,2.28.2
+Microsoft.DocAsCode.Build.OperationLevelRestApi,2017-12-07T03:38:53.677Z,17,134,Package Description,Microsoft.DocAsCode.Build.OperationLevelRestApi,False,2018-04-03T04:27:17.397+00:00,True,False,,,1357,False,2.28.2
+Microsoft,2017-12-07T03:38:45.957Z,17,134,This is a plugin for DocFX to split REST API into operation level pages.,rest.operationpage,False,2018-04-03T04:28:05.663+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx,rest,plugin",1463,False,2.28.2
+Microsoft.DocAsCode.Build.MergeOverwrite,2017-12-07T03:39:06.613Z,17,134,Package Description,Microsoft.DocAsCode.Build.MergeOverwrite,False,2018-04-03T04:27:58.647+00:00,True,False,,,3810,False,2.28.2
+Microsoft,2017-12-07T03:38:57.74Z,43209,134,This is a plugin for DocFX to generate API documentation for projects in various languages. This package contains both plugin DLLs and templates.,uref,False,1900-01-01T00:00:00+00:00,False,False,,"Documentation,API,Metadata,docascode,docfx,JavaScript,plugin",-1,False,2.28.2
+Microsoft.DocAsCode.Build.UniversalReference,2017-12-07T03:40:19.707Z,17,134,Package Description,Microsoft.DocAsCode.Build.UniversalReference,False,2018-04-03T04:28:10.367+00:00,True,False,,,2566,False,2.28.2
+Microsoft.DocAsCode.Build.SchemaDriven,2017-12-07T03:39:33.3Z,17,134,Package Description,Microsoft.DocAsCode.Build.SchemaDriven,False,2018-04-03T04:27:43.723+00:00,True,False,,,1602,False,2.28.2
+docfx,2017-12-07T03:38:37.397Z,17,134,Generates documentation directly from source code and MarkDown files,docfx,False,2018-04-03T04:27:30.303+00:00,True,False,,,16147,False,2.28.2
+Microsoft,2017-12-07T03:38:34.147Z,17,134,"This is a plugin for DocFX to split ManagedReference classes into member level pages. Members with the same overload name are grouped into one page, members with no overload are splited to one page per member. This package contains the plugin for ManagedReference document processor only.",memberpage.plugins,False,2018-04-03T04:27:53.1+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx,plugin",3657,False,2.28.2
+Microsoft,2017-12-07T03:38:34.147Z,17,134,"This is a plugin for DocFX to split ManagedReference classes into member level pages. Members with the same overload name are grouped into one page, members with no overload are splited to one page per member. This package contains the plugin for ManagedReference document processor only.",memberpage.plugins,False,2018-04-03T04:27:53.1+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx,plugin",3657,False,2.28.2
+Microsoft,2017-12-07T03:38:57.74Z,43209,134,This is a plugin for DocFX to generate API documentation for projects in various languages. This package contains both plugin DLLs and templates.,uref,False,1900-01-01T00:00:00+00:00,False,False,,"Documentation,API,Metadata,docascode,docfx,JavaScript,plugin",-1,False,2.28.2
+Microsoft.DocAsCode.Build.ResourceFiles,2017-12-07T03:39:04.957Z,17,134,Package Description,Microsoft.DocAsCode.Build.ResourceFiles,False,2018-04-03T04:28:11.71+00:00,True,False,,,9946,False,2.28.2
+Microsoft.DocAsCode.Build.ManagedReference,2017-12-07T03:38:54.973Z,17,134,Package Description,Microsoft.DocAsCode.Build.ManagedReference,False,2018-04-03T04:27:43.57+00:00,True,False,,,10760,False,2.28.2
+Microsoft.DocAsCode.Build.UniversalReference,2017-12-07T03:40:19.707Z,17,134,Package Description,Microsoft.DocAsCode.Build.UniversalReference,False,2018-04-03T04:28:10.367+00:00,True,False,,,2566,False,2.28.2
+Microsoft.DocAsCode.Build.SchemaDriven,2017-12-07T03:39:33.3Z,17,134,Package Description,Microsoft.DocAsCode.Build.SchemaDriven,False,2018-04-03T04:27:43.723+00:00,True,False,,,1602,False,2.28.2
+Microsoft.DocAsCode.Build.OperationLevelRestApi,2017-12-07T03:38:53.677Z,17,134,Package Description,Microsoft.DocAsCode.Build.OperationLevelRestApi,False,2018-04-03T04:27:17.397+00:00,True,False,,,1357,False,2.28.2
+Microsoft.DocAsCode.Common,2017-12-07T03:39:30.957Z,17,134,Package Description,Microsoft.DocAsCode.Common,False,2018-04-03T04:28:52.447+00:00,True,False,,,15539,False,2.28.2
+Microsoft.DocAsCode.Build.MemberLevelManagedReference,2017-12-07T03:38:41.253Z,17,134,Package Description,Microsoft.DocAsCode.Build.MemberLevelManagedReference,False,2018-04-03T04:27:04.77+00:00,True,False,,,3805,False,2.28.2
+Microsoft,2017-12-07T03:38:52.63Z,17,134,"This is a template for DocFX to split ManagedReference classes into member level pages. Members with the same overload name are grouped into one page, members with no overload are splited to one page per member.",memberpage,False,2018-04-03T04:27:45.257+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx,plugin",4106,False,2.28.2
+Microsoft.DocAsCode.Build.Engine,2017-12-07T03:38:41.003Z,17,134,Package Description,Microsoft.DocAsCode.Build.Engine,False,2018-04-03T04:27:25.473+00:00,True,False,,,10482,False,2.28.2
+Microsoft,2017-12-07T03:39:05.38Z,17,134,"This is a plugin for DocFX to split REST API into tag level pages. Operations with the same tag are grouped into one page. If operation is in multiple tags, it would be included in first tag level page. This package contains the plugin for RestApi document processor only.",rest.tagpage,False,2018-04-03T04:28:00.647+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx,rest,plugin",1479,False,2.28.2
+Microsoft,2017-12-07T03:38:45.957Z,17,134,This is a plugin for DocFX to split REST API into operation level pages.,rest.operationpage,False,2018-04-03T04:28:05.663+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx,rest,plugin",1463,False,2.28.2
+docfx,2017-12-07T03:38:37.397Z,17,134,Generates documentation directly from source code and MarkDown files,docfx,False,2018-04-03T04:27:30.303+00:00,True,False,,,16145,False,2.28.2
+Microsoft.DocAsCode.Build.MergeOverwrite,2017-12-07T03:39:06.613Z,17,134,Package Description,Microsoft.DocAsCode.Build.MergeOverwrite,False,2018-04-03T04:27:58.647+00:00,True,False,,,3810,False,2.28.2
+Microsoft.DocAsCode.AzureMarkdownRewriters,2017-12-07T03:38:27.443Z,17,134,Package Description,Microsoft.DocAsCode.AzureMarkdownRewriters,False,2018-04-03T04:26:38.707+00:00,True,False,,,9571,False,2.28.2
+Microsoft,2017-12-07T03:38:17.723Z,17,134,This is a DocFX tool to convert toc.,TocConverter,False,2018-04-03T04:26:55.097+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx",1197,False,2.28.2
+Microsoft,2017-12-07T03:38:13.473Z,17,134,This is a DocFX tool to migrate markdown.,MarkdownMigrateTool,False,2018-04-03T04:26:40.317+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx",681,False,2.28.2
+Microsoft.DocAsCode.Build.Common,2017-12-07T03:38:17.46Z,17,134,Package Description,Microsoft.DocAsCode.Build.Common,False,2018-04-03T04:27:10.41+00:00,True,False,,,11442,False,2.28.2
+Microsoft,2017-12-07T03:38:24.46Z,17,134,This is a tool to generate API documentation for .NET projects.,docfx.console,False,2018-04-03T04:27:14.147+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx",88425,False,2.28.2
+Microsoft.DocAsCode.Build.ConceptualDocuments,2017-12-07T03:38:29.427Z,17,134,Package Description,Microsoft.DocAsCode.Build.ConceptualDocuments,False,2018-04-03T04:26:52.27+00:00,True,False,,,10057,False,2.28.2
+Microsoft,2017-12-07T03:38:13.473Z,17,134,This is a DocFX tool to migrate markdown.,MarkdownMigrateTool,False,2018-04-03T04:26:40.317+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx",681,False,2.28.2
+Microsoft,2017-12-07T03:38:00.88Z,17,134,HTTP Server Wrapper for DocFX Favorable Markdown.,DfmHttpService,False,2018-04-03T04:26:27.207+00:00,True,False,,"DFM,markdown,docascode,docfx",3836,False,2.28.2
+Microsoft,2017-12-07T03:38:17.723Z,17,134,This is a DocFX tool to convert toc.,TocConverter,False,2018-04-03T04:26:55.097+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx",1197,False,2.28.2
+"Datalust,Contributors",2017-12-07T03:35:11.133Z,3,134,Client library for the Seq HTTP API.,Seq.Api,True,2018-04-17T02:53:45.193+00:00,True,False,,seq,25946,False,4.2.1000-dev-00056
+Microsoft.DocAsCode.Build.ConceptualDocuments,2017-12-07T03:38:29.427Z,17,134,Package Description,Microsoft.DocAsCode.Build.ConceptualDocuments,False,2018-04-03T04:26:52.27+00:00,True,False,,,10058,False,2.28.2
+Microsoft.DocAsCode.AzureMarkdownRewriters,2017-12-07T03:38:27.443Z,17,134,Package Description,Microsoft.DocAsCode.AzureMarkdownRewriters,False,2018-04-03T04:26:38.707+00:00,True,False,,,9571,False,2.28.2
+MarginTrading.MarketMaker.Contracts,2017-12-07T03:38:01.303Z,134,134,Package Description,MarginTrading.MarketMaker.Contracts,False,2017-12-07T04:58:37.273+00:00,True,False,,,254,False,1.0.0
+Microsoft,2017-12-07T03:38:24.46Z,17,134,This is a tool to generate API documentation for .NET projects.,docfx.console,False,2018-04-03T04:27:14.147+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx",88425,False,2.28.2
+Microsoft,2017-12-07T03:37:46.63Z,17,134,This is a tool to generate API documentation for .NET projects.,AzureMarkdownRewriterTool,False,2018-04-03T04:26:27.097+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx",6039,False,2.28.2
+Microsoft.DocAsCode.Plugins,2017-12-07T03:38:04.897Z,17,134,Package Description,Microsoft.DocAsCode.Plugins,False,2018-04-03T04:27:07.24+00:00,True,False,,,19442,False,2.28.2
+Microsoft,2017-12-07T03:38:01.443Z,17,134,This is a DocFX tool to merge source information.,MergeSourceInfo,False,2018-04-03T04:26:26.923+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx",5827,False,2.28.2
+Microsoft.DocAsCode.Build.Common,2017-12-07T03:38:17.46Z,17,134,Package Description,Microsoft.DocAsCode.Build.Common,False,2018-04-03T04:27:10.41+00:00,True,False,,,11443,False,2.28.2
+Microsoft.DocAsCode.MarkdownLite,2017-12-07T03:37:51.113Z,17,134,Package Description,Microsoft.DocAsCode.MarkdownLite,False,2018-04-03T04:26:53.253+00:00,True,False,,,17323,False,2.28.2
+Microsoft.DocAsCode.Metadata.ManagedReference,2017-12-07T03:37:51.1Z,17,134,Package Description,Microsoft.DocAsCode.Metadata.ManagedReference,False,2018-04-03T04:26:41.783+00:00,True,False,,,10197,False,2.28.2
+Microsoft.DocAsCode.YamlSerialization,2017-12-07T03:38:06.397Z,17,134,Package Description,Microsoft.DocAsCode.YamlSerialization,False,2018-04-03T04:27:20.427+00:00,True,False,,,17007,False,2.28.2
+Microsoft,2017-12-07T03:37:50.537Z,17,134,This is a DocFX tool to merge developer comments.,MergeDeveloperComments,False,2018-04-03T04:26:57.677+00:00,True,False,,"Documentation,API,Metadata,docascode,docfx",5957,False,2.28.2
+Microsoft.DocAsCode.YamlSerialization,2017-12-07T03:38:06.397Z,17,134,Package Description,Microsoft.DocAsCode.YamlSerialization,False,2018-04-03T04:27:20.427+00:00,True,False,,,17008,False,2.28.2
+Neville Nazerane,2017-12-07T03:15:43.61Z,66,134,"Written over MySql.Data, a simpiler way to use MySql in .NET Standard. Allows easy database connection and reading queried results while maintaining the disposable objects and providing access to all default MySql.Data objects.",MySql.Simple,False,2018-02-13T05:42:51.037+00:00,False,False,,"MySql,Database,Simple,Easy,Quick",3908,False,5.1.6
+ChenXin,2017-12-07T03:31:37.497Z,134,134,BokUtils,BokUtils,False,2017-12-07T03:31:37.497+00:00,True,False,,"Tag1,Tag2",98,False,1.0.0
+Rpac,2017-12-07T03:34:35.667Z,128,134,Rpac.Core.Mail,Rpac.Core.Mail,False,2017-12-13T09:24:47.08+00:00,True,False,,Rpac,1239,False,1.1.1
+Rpac,2017-12-07T03:34:35.667Z,128,134,Rpac.Core.Mail,Rpac.Core.Mail,False,2017-12-13T09:24:47.08+00:00,True,False,,Rpac,1239,False,1.1.1
+ChenXin,2017-12-07T03:31:37.497Z,134,134,BokUtils,BokUtils,False,2017-12-07T03:31:37.497+00:00,True,False,,"Tag1,Tag2",98,False,1.0.0
+AipSdk,2017-12-07T03:23:15.303Z,43209,134,Package Description,AipSdk-Standard,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Tengiz Tutisani,2017-12-07T03:20:42.213Z,134,134,"CouchDBClient is a framework for working with CouchDB from .NET code. It abstracts and simplifies the usage of CouchDB, so that you can easily use it from your application code. All the complexity of working with plain json and http request/responses is burried under the framework. You will be able to create, retrieve, save, and delete documents as plain objects, by using this framework.",CouchDBClient,False,2017-12-07T03:20:42.213+00:00,True,False,.NET based Framework for working with CouchDB.,"CouchDB,Database,NoSQL,.NET,Client,Framework",108,False,1.0.0
+FSharp.Data.Npgsql,2017-12-07T03:22:07.57Z,4,134,NpgsqlCommand is F# type provider to support statically typed access to input parameters and result set of sql statement in idiomatic F# way.,FSharp.Data.Npgsql,True,2018-04-16T17:38:20.65+00:00,True,False,,"F#,fsharp,typeprovider,npgsql,postgresql,postgres,ado,ado.net,database,sql",2218,False,0.1.8-alpha
+Tengiz Tutisani,2017-12-07T03:20:42.213Z,134,134,"CouchDBClient is a framework for working with CouchDB from .NET code. It abstracts and simplifies the usage of CouchDB, so that you can easily use it from your application code. All the complexity of working with plain json and http request/responses is burried under the framework. You will be able create, retrieve, save, and delete documents as plain objects, by using this framework.",CouchDBClient,False,2017-12-07T03:20:42.213+00:00,True,False,.NET based Framework for working with CouchDB.,"CouchDB,Database,NoSQL,.NET,Client,Framework",108,False,1.0.0
+AipSdk,2017-12-07T03:23:15.303Z,43209,134,Package Description,AipSdk-Standard,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+AipSdk,2017-12-07T03:23:15.303Z,43209,134,Package Description,AipSdk-Standard,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+FSharp.Data.Npgsql,2017-12-07T03:22:07.57Z,4,134,NpgsqlCommand is F# type provider to support statically typed access to input parameters and result set of sql statement in idiomatic F# way.,FSharp.Data.Npgsql,True,2018-04-16T17:38:20.65+00:00,True,False,,"F#,fsharp,typeprovider,npgsql,postgresql,postgres,ado,ado.net,database,sql",2218,False,0.1.8-alpha
+Tengiz Tutisani,2017-12-07T03:20:42.213Z,134,134,"CouchDBClient is a framework for working with CouchDB from .NET code. It abstracts and simplifies the usage of CouchDB, so that you can easily use it from your application code. All the complexity of working with plain json and http request/responses is burried under the framework. You will be able create, retrieve, save, and delete documents as plain objects, by using this framework.",CouchDBClient,False,2017-12-07T03:20:42.213+00:00,True,False,.NET based Framework for working with CouchDB.,"CouchDB,Database,NoSQL,.NET,Client,Framework",108,False,1.0.0
+Neville Nazerane,2017-12-07T03:15:43.61Z,66,134,"Written over MySql.Data, a simpiler way to use MySql in .NET Standard. Allows easy database connection and reading queried results while maintaining the disposable objects and providing access to all default MySql.Data objects.",MySql.Simple,False,2018-02-13T05:42:51.037+00:00,True,False,,"MySql,Database,Simple,Easy,Quick",3908,False,5.1.6
+Kailin O'Donnell,2017-12-07T03:15:55.64Z,31,134,A fully featured .NET2.0 compatible C# library for performing transactions on and interacting with the NEM blockchain.,CSharp2nem,False,2018-03-20T11:36:26.81+00:00,True,False,,"Nem,Blockchain,Nis,Bitcoin",7856,False,2.0.10
+Neville Nazerane,2017-12-07T03:15:43.61Z,66,134,"Written over MySql.Data, a simpiler way to use MySql in .NET Standard. Allows easy database connection and reading queried results while maintaining the disposable objects and providing access to all default MySql.Data objects.",MySql.Simple,False,2018-02-13T05:42:51.037+00:00,True,False,,"MySql,Database,Simple,Easy,Quick",3908,False,5.1.6
+Kailin O'Donnell,2017-12-07T03:15:55.64Z,31,134,A fully featured .NET2.0 compatible C# library for performing transactions on and interacting with the NEM blockchain.,CSharp2nem,False,2018-03-20T11:36:26.81+00:00,True,False,,"Nem,Blockchain,Nis,Bitcoin",7856,False,2.0.10
+drek,2017-12-07T03:12:34.83Z,134,134,"增加SP的封装
+修正orderby排序错误",Lmat.EF,False,2017-12-07T03:12:34.83+00:00,True,False,,,259,False,1.0.12
+Rpac,2017-12-07T03:10:59.02Z,128,134,Rpac.Core.Mail,Rpac.Core.Mail,False,2017-12-13T09:24:47.08+00:00,True,False,,Rpac,1239,False,1.1.0
+Titans.Pro.Service,2017-12-07T03:13:32.86Z,43209,134,Package Description,Titans.Pro.Service,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Rpac,2017-12-07T03:10:59.02Z,128,134,Rpac.Core.Mail,Rpac.Core.Mail,False,2017-12-13T09:24:47.08+00:00,True,False,,Rpac,1239,False,1.1.0
+Titans.Pro.Service,2017-12-07T03:13:32.86Z,43209,134,Package Description,Titans.Pro.Service,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Tidy International Group Ltd,2017-12-07T03:05:05.027Z,84,134,"API Client for TidyWork, TidyStock and TidyBuild",TidyWorkAPIClient,True,2018-01-26T00:22:38.99+00:00,True,False,,,6295,False,1.17.12.3-beta
+Tidy International Group Ltd,2017-12-07T03:05:05.027Z,84,134,"API Client for TidyWork, TidyStock and TidyBuild",TidyWorkAPIClient,True,2018-01-26T00:22:38.99+00:00,True,False,,,6295,False,1.17.12.3-beta
+Tidy International Group Ltd,2017-12-06T22:08:04.32Z,84,135,"API Client for TidyWork, TidyStock and TidyBuild",TidyWorkAPIClient,True,2018-01-26T00:22:38.99+00:00,False,False,,,6295,False,1.17.12.2-beta
+tianzh,2017-12-07T03:00:42.483Z,18,134,OPS internal lib to load and analysis ECMAXML documents,Microsoft.DocAsCode.ECMAHelper,True,2018-04-02T03:35:03.713+00:00,True,False,,ECMAXML,6897,False,1.0.309-alpha
+tianzh,2017-12-07T03:00:30.53Z,18,134,OPS internal tool to convert ECMAXML documents to Yaml format.,Microsoft.DocAsCode.ECMA2Yaml,True,2018-04-02T03:34:52.493+00:00,True,False,,ECMAXML,8388,False,1.0.309-alpha
+Eric Swann,2017-12-07T02:59:44.437Z,130,134,Cars and Event Store and CQRS implementation for .Net Core,Cars,False,2017-12-11T23:11:08.74+00:00,True,False,,"CQRS,EventSource,EventSourcing",810,False,2.0.0
+Mendz,2017-12-07T02:56:14.847Z,134,134,Provides a library of classes and types to represent Graph Theory graphs as list and/or matrix.,Mendz.Graph.Representation,False,2017-12-07T02:56:14.847+00:00,True,False,Provides a library of classes and types to represent Graph Theory graphs as list and/or matrix.,"graph-theory,graph,adjacency-list,adjacency-matrix,laplacian-matrix,degree-matrix,incidence-matrix",265,False,1.2.0
+Mendz,2017-12-07T02:54:32.77Z,134,134,"Provides a library of APIs for working with dense, (DOK) sparse and compressed (CRS, CCS, CVS) matrices.",Mendz.Matrix,False,2017-12-07T02:54:32.77+00:00,True,False,"Provides a library of APIs for working with dense, (DOK) sparse and compressed (CRS, CCS, CVS) matrices.","matrix,sparse-matrix,compressed-matrix,crs,ccs,cvs",280,False,1.2.0
+Eric Swann,2017-12-07T02:59:55.687Z,130,134,Cars Event Store implementation with MongoDB,Cars.EventStore.MongoDB,False,2017-12-11T23:11:20.113+00:00,True,False,,"CQRS,EventSource,EventSourcing,Mongo,MongoDB",813,False,2.0.0
+Titans.NonPro.Service,2017-12-07T03:03:35.7Z,43209,134,Package Description,Titans.NonPro.Service,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+tianzh,2017-12-07T03:00:30.53Z,18,134,OPS internal tool to convert ECMAXML documents to Yaml format.,Microsoft.DocAsCode.ECMA2Yaml,True,2018-04-02T03:34:52.493+00:00,True,False,,ECMAXML,8388,False,1.0.309-alpha
+tianzh,2017-12-07T03:00:42.483Z,18,134,OPS internal lib to load and analysis ECMAXML documents,Microsoft.DocAsCode.ECMAHelper,True,2018-04-02T03:35:03.713+00:00,True,False,,ECMAXML,6897,False,1.0.309-alpha
+Titans.NonPro.Service,2017-12-07T03:03:35.7Z,43209,134,Package Description,Titans.NonPro.Service,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Eric Swann,2017-12-07T02:59:44.437Z,130,134,Cars and Event Store and CQRS implementation for .Net Core,Cars,False,2017-12-11T23:11:08.74+00:00,True,False,,"CQRS,EventSource,EventSourcing",810,False,2.0.0
+Eric Swann,2017-12-07T02:59:55.687Z,130,134,Cars Event Store implementation with MongoDB,Cars.EventStore.MongoDB,False,2017-12-11T23:11:20.113+00:00,True,False,,"CQRS,EventSource,EventSourcing,Mongo,MongoDB",813,False,2.0.0
+Mendz,2017-12-07T02:54:32.77Z,134,134,"Provides a library of APIs for working with dense, (DOK) sparse and compressed (CRS, CCS, CVS) matrices.",Mendz.Matrix,False,2017-12-07T02:54:32.77+00:00,True,False,,"matrix,sparse-matrix,compressed-matrix,crs,ccs,cvs",280,False,1.2.0
+Mendz,2017-12-07T02:56:14.847Z,134,134,Provides a library of classes and types to represent Graph Theory graphs as list and/or matrix.,Mendz.Graph.Representation,False,2017-12-07T02:56:14.847+00:00,True,False,,"graph-theory,graph,adjacency-list,adjacency-matrix,laplacian-matrix,degree-matrix,incidence-matrix",265,False,1.2.0
+Mendz,2017-12-07T02:56:14.847Z,134,134,Provides a library of classes and types to represent Graph Theory graphs as list and/or matrix.,Mendz.Graph.Representation,False,2017-12-07T02:56:14.847+00:00,True,False,,"graph-theory,graph,adjacency-list,adjacency-matrix,laplacian-matrix,degree-matrix,incidence-matrix",265,False,1.2.0
+Mendz,2017-12-07T02:54:32.77Z,134,134,"Provides a library of APIs for working with dense, (DOK) sparse and compressed (CRS, CCS, CVS) matrices.",Mendz.Matrix,False,2017-12-07T02:54:32.77+00:00,True,False,,"matrix,sparse-matrix,compressed-matrix,crs,ccs,cvs",280,False,1.2.0
+Rpac,2017-12-07T02:52:57.287Z,128,134,Rpac.Core.Mail,Rpac.Core.Mail,False,2017-12-13T09:24:47.08+00:00,True,False,,Rpac,1239,False,1.0.9
+yonm@microsoft.com,2017-07-07T12:26:20.19Z,43209,287,Library to serve the model trained by Tlc.,Rinna.Tlc,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Lee,2017-12-07T02:49:54.163Z,43,134,MES系统接口,Realgoal.MES.IAppService.YinQiao,False,2018-03-08T02:05:49.377+00:00,True,False,,,5521,False,1.4.4
+Titans.Scouting.Business,2017-12-07T02:51:45.787Z,43209,134,Package Description,Titans.Scouting.Business,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.1
+Titans.Scouting.Business,2017-12-07T02:51:45.787Z,43209,134,Package Description,Titans.Scouting.Business,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.1
+Rpac,2017-12-07T02:52:57.287Z,128,134,Rpac.Core.Mail,Rpac.Core.Mail,False,2017-12-13T09:24:47.08+00:00,True,False,,Rpac,1239,False,1.0.9
+Lee,2017-12-07T02:49:54.163Z,43,134,MES系统接口,Realgoal.MES.IAppService.YinQiao,False,2018-03-08T02:05:49.377+00:00,True,False,,,5521,False,1.4.4
+Eric Swann,2017-12-07T02:43:42.34Z,130,134,Cars Event Store implementation with MongoDB,Cars.EventStore.MongoDB,False,2017-12-11T23:11:20.113+00:00,True,False,,"CQRS,EventSource,EventSourcing,Mongo,MongoDB",813,False,1.2.1
+Kailin O'Donnell,2017-12-07T02:41:39.057Z,31,134,A fully featured .NET2.0 compatible C# library for performing transactions on and interacting with the NEM blockchain.,CSharp2nem,False,2018-03-20T11:36:26.81+00:00,True,False,,"Nem,Blockchain,Nis,Bitcoin",7856,False,2.0.9
+Eric Swann,2017-12-07T02:43:32.48Z,130,134,Cars and Event Store and CQRS implementation for .Net Core,Cars,False,2017-12-11T23:11:08.74+00:00,True,False,,"CQRS,EventSource,EventSourcing",810,False,1.2.1
+Kailin O'Donnell,2017-12-07T02:41:39.057Z,31,134,A fully featured .NET2.0 compatible C# library for performing transactions on and interacting with the NEM blockchain.,CSharp2nem,False,2018-03-20T11:36:26.81+00:00,True,False,,"Nem,Blockchain,Nis,Bitcoin",7856,False,2.0.9
+Eric Swann,2017-12-07T02:43:32.48Z,130,134,Cars and Event Store and CQRS implementation for .Net Core,Cars,False,2017-12-11T23:11:08.74+00:00,True,False,,"CQRS,EventSource,EventSourcing",810,False,1.2.1
+Eric Swann,2017-12-07T02:43:42.34Z,130,134,Cars Event Store implementation with MongoDB,Cars.EventStore.MongoDB,False,2017-12-11T23:11:20.113+00:00,True,False,,"CQRS,EventSource,EventSourcing,Mongo,MongoDB",813,False,1.2.1
+Titans.NFS.Service,2017-12-07T02:35:12.217Z,43209,134,Package Description,Titans.NFS.Service,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Titans.NFS.Service,2017-12-07T02:35:12.217Z,43209,134,Package Description,Titans.NFS.Service,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+incheol,2017-12-07T02:29:19.22Z,134,134,Package description,DotNetToo,False,2017-12-07T02:29:19.22+00:00,True,False,,"Tag1,Tag2",71,False,1.0.0
+Lee,2017-12-07T02:31:34.327Z,43,134,MES系统接口,Realgoal.MES.IAppService.YinQiao,False,2018-03-08T02:05:49.377+00:00,True,False,,,5521,False,1.4.3
+incheol,2017-12-07T02:29:19.22Z,134,134,Package description,DotNetToo,False,2017-12-07T02:29:19.22+00:00,True,False,,"Tag1,Tag2",71,False,1.0.0
+Lee,2017-12-07T02:31:34.327Z,43,134,MES系统接口,Realgoal.MES.IAppService.YinQiao,False,2018-03-08T02:05:49.377+00:00,True,False,,,5521,False,1.4.3
+Derek Tremblay,2017-12-07T02:23:02.143Z,103,134,"A fast, fully customisable Wpf user control for editing file or stream as hexadecimal.
+
+You can edit and save file. Work with dependency property.
+
+Can be used in WPF or WinForm application
+
+Localized in English, French, Russian and Chinese",WPFHexaEditor,False,2018-01-07T18:19:00.163+00:00,True,False,"A fast, fully customisable Wpf user control for editing file or stream as hexadecimal.
+
+Can be used in WPF or WinForm application
+
+Localized in English, French, Russian and Chinese","WPF,hex,hexa,editor,byte,binary,hexeditor,hexaeditor,edit,control,winform,winform-ui",5451,False,1.3.6.1
+Derek Tremblay,2017-12-07T02:23:02.143Z,103,134,"A fast, fully customisable Wpf user control for editing file or stream as hexadecimal.
+
+You can edit and save file. Work with dependency property.
+
+Can be used in WPF or WinForm application
+
+Localized in English, French, Russian and Chinese",WPFHexaEditor,False,2018-01-07T18:19:00.163+00:00,True,False,"A fast, fully customisable Wpf user control for editing file or stream as hexadecimal.
+
+Can be used in WPF or WinForm application
+
+Localized in English, French, Russian and Chinese","WPF,hex,hexa,editor,byte,binary,hexeditor,hexaeditor,edit,control,winform,winform-ui",5450,False,1.3.6.1
+Simon Cropp and Contributors,2017-12-07T02:18:33.1Z,3,134,Add property notification to all classes that implement INotifyPropertyChanged,PropertyChanged.Fody,False,2018-04-17T06:11:40.603+00:00,True,False,,"Xaml,MVVM,INotifyPropertyChanged,DataBinding,ILWeaving,Cecil",655126,False,2.2.3
+Simon Cropp and Contributors,2017-12-07T02:18:33.1Z,3,134,Add property notification to all classes that implement INotifyPropertyChanged,PropertyChanged.Fody,False,2018-04-17T06:11:40.603+00:00,True,False,,"Xaml,MVVM,INotifyPropertyChanged,DataBinding,ILWeaving,Cecil",655126,False,2.2.3
+Derek Tremblay,2017-12-07T02:23:02.143Z,103,134,"A fast, fully customisable Wpf user control for editing file or stream as hexadecimal.
+
+You can edit and save file. Work with dependency property.
+
+Can be used in WPF or WinForm application
+
+Localized in English, French, Russian and Chinese",WPFHexaEditor,False,2018-01-07T18:19:00.163+00:00,True,False,"A fast, fully customisable Wpf user control for editing file or stream as hexadecimal.
+
+Can be used in WPF or WinForm application
+
+Localized in English, French, Russian and Chinese","WPF,hex,hexa,editor,byte,binary,hexeditor,hexaeditor,edit,control,winform,winform-ui",5451,False,1.3.6.1
+Scar,2017-12-07T02:09:49.96Z,93,134,Animated window base type,Scar.Common.WPF.View.AnimatedWindow,False,2018-01-17T05:23:16.25+00:00,True,False,,,279,False,1.0.27
+Scar,2017-12-07T02:09:49.96Z,93,134,Animated window base type,Scar.Common.WPF.View.AnimatedWindow,False,2018-01-17T05:23:16.25+00:00,True,False,,,279,False,1.0.27
+Derek Tremblay,2017-12-07T02:02:36.09Z,103,134,"A fast, fully customisable Wpf user control for editing file or stream as hexadecimal.
+
+You can edit and save file. Work with dependency property.
+
+Can be used in WPF or WinForm application
+
+Localized in English, French, Russian and Chinese",WPFHexaEditor,False,2018-01-07T18:19:00.163+00:00,False,False,"A fast, fully customisable Wpf user control for editing file or stream as hexadecimal.
+
+Can be used in WPF or WinForm application
+
+Localized in English, French, Russian and Chinese","WPF,hex,hexa,editor,byte,binary,hexeditor,hexaeditor,edit,control,winform,winform-ui",5451,False,1.3.6
+Titans.Club.Service,2017-12-07T02:05:55.5Z,43209,134,Package Description,Titans.Club.Service,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Yu Kimura,2017-12-07T01:58:35.72Z,131,134,仮想通貨取引所ZaifのAPIに接続するためのライブラリです。,ZaifAPI,False,2017-12-10T00:42:31.5+00:00,True,False,仮想通貨取引所ZaifのAPIに接続するためのライブラリです。,,758,False,1.3.0
+"RoundRobin,Poulad",2017-12-07T02:07:34.207Z,55,134,The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram.,Telegram.Bot,False,2018-02-24T23:57:55.18+00:00,True,False,,"Telegram,Bot,Api,Payment,Inline,Games",173512,False,13.4.0
+Derek Tremblay,2017-12-07T02:02:36.09Z,103,134,"A fast, fully customisable Wpf user control for editing file or stream as hexadecimal.
+
+You can edit and save file. Work with dependency property.
+
+Can be used in WPF or WinForm application
+
+Localized in English, French, Russian and Chinese",WPFHexaEditor,False,2018-01-07T18:19:00.163+00:00,True,False,"A fast, fully customisable Wpf user control for editing file or stream as hexadecimal.
+
+Can be used in WPF or WinForm application
+
+Localized in English, French, Russian and Chinese","WPF,hex,hexa,editor,byte,binary,hexeditor,hexaeditor,edit,control,winform,winform-ui",5451,False,1.3.6
+"RoundRobin,Poulad",2017-12-07T02:07:34.207Z,55,134,The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram.,Telegram.Bot,False,2018-02-24T23:57:55.18+00:00,True,False,,"Telegram,Bot,Api,Payment,Inline,Games",173512,False,13.4.0
+Derek Tremblay,2017-12-07T02:02:36.09Z,103,134,"A fast, fully customisable Wpf user control for editing file or stream as hexadecimal.
+
+You can edit and save file. Work with dependency property.
+
+Can be used in WPF or WinForm application
+
+Localized in English, French, Russian and Chinese",WPFHexaEditor,False,2018-01-07T18:19:00.163+00:00,True,False,"A fast, fully customisable Wpf user control for editing file or stream as hexadecimal.
+
+Can be used in WPF or WinForm application
+
+Localized in English, French, Russian and Chinese","WPF,hex,hexa,editor,byte,binary,hexeditor,hexaeditor,edit,control,winform,winform-ui",5451,False,1.3.6
+Yu Kimura,2017-12-07T01:58:35.72Z,131,134,仮想通貨取引所ZaifのAPIに接続するためのライブラリです。,ZaifAPI,False,2017-12-10T00:42:31.5+00:00,True,False,,,758,False,1.3.0
+UnlimitedInf,2017-12-07T01:58:10.03Z,134,134,"Client-side libraries to work with the apis made available on https://unlimitedinf-apis.azurewebsites.net/
+
+There is one DLL available defining the contracts used to communicate with the server as well as an EXE in the tools folder that wraps it for commandline interactions.
+The EXE can also be used as a reference because it is well separated into client-side libraries and runnable infrastructure.",Unlimitedinf.Apis,False,2017-12-07T01:58:10.03+00:00,True,False,,"apis,unlimitedinf,version",1600,True,2.0.0
+Yu Kimura,2017-12-07T01:58:35.72Z,131,134,仮想通貨取引所ZaifのAPIに接続するためのライブラリです。,ZaifAPI,False,2017-12-10T00:42:31.5+00:00,True,False,,,758,False,1.3.0
+UnlimitedInf,2017-12-07T01:58:10.03Z,134,134,"Client-side libraries to work with the apis made available on https://unlimitedinf-apis.azurewebsites.net/
+
+There is one DLL available defining the contracts used to communicate with the server as well as an EXE in the tools folder that wraps it for commandline interactions.
+The EXE can also be used as a reference because it is well separated into client-side libraries and runnable infrastructure.",Unlimitedinf.Apis,False,2017-12-07T01:58:10.03+00:00,True,False,,"apis,unlimitedinf,version",1600,True,2.0.0
+Derek Tremblay,2017-12-07T02:02:36.09Z,103,134,"A fast, fully customisable Wpf user control for editing file or stream as hexadecimal.
+
+You can edit and save file. Work with dependency property.
+
+Can be used in WPF or WinForm application
+
+Localized in English, French, Russian and Chinese",WPFHexaEditor,False,2018-01-07T18:19:00.163+00:00,True,False,"A fast, fully customisable Wpf user control for editing file or stream as hexadecimal.
+
+Can be used in WPF or WinForm application
+
+Localized in English, French, Russian and Chinese","WPF,hex,hexa,editor,byte,binary,hexeditor,hexaeditor,edit,control,winform,winform-ui",5451,False,1.3.6
+Scar,2017-12-07T01:52:59.22Z,69,134,Common tools to simplify WPF application startup,Scar.Common.WPF.Startup,False,2018-02-10T02:05:45.02+00:00,True,False,,,396,False,1.0.9
+Scar,2017-12-07T01:52:59.22Z,69,134,Common tools to simplify WPF application startup,Scar.Common.WPF.Startup,False,2018-02-10T02:05:45.02+00:00,True,False,,,396,False,1.0.9
+Jack.T,2017-12-07T01:45:52.66Z,44,134,Package Description,SuperStorage,False,2018-03-07T03:29:41.76+00:00,True,False,,,761,False,1.0.0.5
+"Deadpikle,Dirk Eisenberg",2017-12-07T01:43:19.99Z,134,134,"Tools for NetSparkle (DSA helper, etc.).  NetSparkle is a C# .NET update checker that allows you to easily download installer files and update your C# WinForms/WPF software. You provide, somewhere on the internet, an XML appcast with software version information along with release notes in Markdown or HTML format. The NetSparkle library then checks for an update in the background, displays the release notes to the user, and lets users download or skip the software update. The library can also perform silent downloads so that you can present all of the UI yourself or set up your own silent software update system, as allowed by your software architecture. It was inspired by the Sparkle (https://sparkle-project.org/) project for Cocoa developers and the WinSparkle (https://winsparkle.org/) project (a Win32 port).",NetSparkle.New.Tools,False,2017-12-07T01:43:19.99+00:00,True,False,Tools for NetSparkle,"Update,Sparkle,Autoupdate,.NET",677,False,0.13.0
+"Deadpikle,Dirk Eisenberg",2017-12-07T01:43:08.35Z,134,134,"(This NuGet package is the latest fork of NetSparkle) NetSparkle is a C# .NET update checker that allows you to easily download installer files and update your C# WinForms/WPF software. You provide, somewhere on the internet, an XML appcast with software version information along with release notes in Markdown or HTML format. The NetSparkle library then checks for an update in the background, displays the release notes to the user, and lets users download or skip the software update. The library can also perform silent downloads so that you can present all of the UI yourself or set up your own silent software update system, as allowed by your software architecture. It was inspired by the Sparkle (https://sparkle-project.org/) project for Cocoa developers and the WinSparkle (https://winsparkle.org/) project (a Win32 port).",NetSparkle.New,False,2017-12-07T01:43:08.35+00:00,True,False,Latest fork of the Windows Sparkle software updater written in C# for .NET projects,"Update,Sparkle,Autoupdate,.NET",748,False,0.13.0
+"Deadpikle,Dirk Eisenberg",2017-12-07T01:43:19.99Z,134,134,"Tools for NetSparkle (DSA helper, etc.).  NetSparkle is a C# .NET update checker that allows you to easily download installer files and update your C# WinForms/WPF software. You provide, somewhere on the internet, an XML appcast with software version information along with release notes in Markdown or HTML format. The NetSparkle library then checks for an update in the background, displays the release notes to the user, and lets users download or skip the software update. The library can also perform silent downloads so that you can present all of the UI yourself or set up your own silent software update system, as allowed by your software architecture. It was inspired by the Sparkle (https://sparkle-project.org/) project for Cocoa developers and the WinSparkle (https://winsparkle.org/) project (a Win32 port).",NetSparkle.New.Tools,False,2017-12-07T01:43:19.99+00:00,True,False,Tools for NetSparkle,"Update,Sparkle,Autoupdate,.NET",677,False,0.13.0
+"Deadpikle,Dirk Eisenberg",2017-12-07T01:43:08.35Z,134,134,"(This NuGet package is the latest fork of NetSparkle) NetSparkle is a C# .NET update checker that allows you to easily download installer files and update your C# WinForms/WPF software. You provide, somewhere on the internet, an XML appcast with software version information along with release notes in Markdown or HTML format. The NetSparkle library then checks for an update in the background, displays the release notes to the user, and lets users download or skip the software update. The library can also perform silent downloads so that you can present all of the UI yourself or set up your own silent software update system, as allowed by your software architecture. It was inspired by the Sparkle (https://sparkle-project.org/) project for Cocoa developers and the WinSparkle (https://winsparkle.org/) project (a Win32 port).",NetSparkle.New,False,2017-12-07T01:43:08.35+00:00,True,False,Latest fork of the Windows Sparkle software updater written in C# for .NET projects,"Update,Sparkle,Autoupdate,.NET",748,False,0.13.0
+Jack.T,2017-12-07T01:45:52.66Z,44,134,Package Description,SuperStorage,False,2018-03-07T03:29:41.76+00:00,True,False,,,761,False,1.0.0.5
+"Deadpikle,Dirk Eisenberg",2017-08-03T00:18:00.777Z,134,260,"Tools for NetSparkle (DSA helper, etc.). NetSparkle is a C# .NET update checker that allows you to easily download installer files and update your WinForms or C# WPF software. You provide, somewhere on the internet, an XML appcast with version information, along with release notes in Markdown or HTML format. This library then checks for an update in the background, shows the user the release notes, and offers to download the new installer. It was inspired by the Sparkle (https://sparkle-project.org/) project for Cocoa developers and the WinSparkle (https://winsparkle.org/) project (a Win32 port).",NetSparkle.New.Tools,False,2017-12-07T01:43:19.99+00:00,True,False,Tools for NetSparkle,"Update,Sparkle,Autoupdate,.NET",677,False,0.12.0
+Scar,2017-12-07T01:38:39.303Z,134,134,Various most common tools,Scar.Common,False,2017-12-07T04:03:08.35+00:00,True,False,,,405,False,1.0.33
+"Deadpikle,Dirk Eisenberg",2017-08-03T00:17:51.73Z,134,260,"(This NuGet package is the latest fork of NetSparkle) NetSparkle is a C# .NET update checker that allows you to easily download installer files and update your WinForms or C# WPF software. You provide, somewhere on the internet, an XML appcast with version information, along with release notes in Markdown or HTML format. This library then checks for an update in the background, shows the user the release notes, and offers to download the new installer. It was inspired by the Sparkle (https://sparkle-project.org/) project for Cocoa developers and the WinSparkle (https://winsparkle.org/) project (a Win32 port).",NetSparkle.New,False,2017-12-07T01:43:08.35+00:00,True,False,Latest fork of the Windows Sparkle software updater written in C# for .NET projects,"Update,Sparkle,Autoupdate,.NET",748,False,0.12.0
+Lee,2017-12-07T01:41:45.35Z,43,134,MES系统接口,Realgoal.MES.IAppService.YinQiao,False,2018-03-08T02:05:49.377+00:00,True,False,,,5521,False,1.4.2
+Scar,2017-12-07T01:38:39.303Z,134,134,Various most common tools,Scar.Common,False,2017-12-07T04:03:08.35+00:00,True,False,,,405,False,1.0.33
+Scar,2017-12-07T01:33:10.553Z,134,134,Various most common tools,Scar.Common,False,2017-12-07T04:03:08.35+00:00,True,False,,,405,False,1.0.32
+Lee,2017-12-07T01:41:45.35Z,43,134,MES系统接口,Realgoal.MES.IAppService.YinQiao,False,2018-03-08T02:05:49.377+00:00,True,False,,,5521,False,1.4.2
+Scar,2017-12-07T01:38:39.303Z,134,134,Various most common tools,Scar.Common,False,2017-12-07T04:03:08.35+00:00,True,False,,,405,False,1.0.33
+Scar,2017-12-07T01:33:10.553Z,134,134,Various most common tools,Scar.Common,False,2017-12-07T04:03:08.35+00:00,True,False,,,405,False,1.0.32
+Scar,2017-12-07T01:33:10.553Z,134,134,Various most common tools,Scar.Common,False,2017-12-07T04:03:08.35+00:00,True,False,,,405,False,1.0.32
+UnlimitedInf,2017-12-07T01:30:45.43Z,134,134,"Client-side libraries to work with the apis made available on https://unlimitedinf-apis.azurewebsites.net/
+
+There is one DLL available defining the contracts used to communicate with the server as well as an EXE in the tools folder that wraps it for commandline interactions.
+The EXE can also be used as a reference because it is well separated into client-side libraries and runnable infrastructure.",Unlimitedinf.Apis,False,2017-12-07T01:58:10.03+00:00,True,False,,"apis,unlimitedinf,version",1600,True,1.4.2
+UnlimitedInf,2017-12-07T01:30:45.43Z,134,134,"Client-side libraries to work with the apis made available on https://unlimitedinf-apis.azurewebsites.net/
+
+There is one DLL available defining the contracts used to communicate with the server as well as an EXE in the tools folder that wraps it for commandline interactions.
+The EXE can also be used as a reference because it is well separated into client-side libraries and runnable infrastructure.",Unlimitedinf.Apis,False,2017-12-07T01:58:10.03+00:00,True,False,,"apis,unlimitedinf,version",1600,True,1.4.2
+Thomas Schibler,2017-12-07T01:23:56.22Z,134,134,C# wrapper for UVAtlas,UVAtlas.NET,False,2017-12-07T23:35:54.59+00:00,True,False,,"uv,atlas,wrapper",240,False,1.1.0
+Scar,2017-12-07T01:23:50.237Z,134,134,Various most common tools,Scar.Common,False,2017-12-07T04:03:08.35+00:00,True,False,,,405,False,1.0.31
+Scar,2017-12-07T01:23:50.237Z,134,134,Various most common tools,Scar.Common,False,2017-12-07T04:03:08.35+00:00,True,False,,,405,False,1.0.31
+Thomas Schibler,2017-12-07T01:23:56.22Z,134,134,C# wrapper for UVAtlas,UVAtlas.NET,False,2017-12-07T23:35:54.59+00:00,True,False,,"uv,atlas,wrapper",240,False,1.1.0
+Ekin Caglar,2017-12-07T01:22:20.147Z,22,134,.Net wrapper for Clarizen,Ekin.Clarizen,False,2018-03-29T15:40:31.603+00:00,True,False,,"clarizen,api,ekin,caglar",3031,False,1.6.2.2438
+Ekin Caglar,2017-12-07T01:22:20.147Z,22,134,.Net wrapper for Clarizen,Ekin.Clarizen,False,2018-03-29T15:40:31.603+00:00,True,False,,"clarizen,api,ekin,caglar",3031,False,1.6.2.2438
+Canyon City Solutions,2017-12-07T01:19:55.5Z,80,134,SqlMigrationLib,SqlMigrationLib,False,2018-01-30T21:44:01.853+00:00,True,False,,,353,False,0.8.0
+"LiuLiang,WuWenHao",2017-11-30T07:23:54.717Z,141,141,WalkingTec.Mvvm.Abstraction,WalkingTec.Mvvm.Abstraction,False,2017-11-30T07:23:54.717+00:00,True,False,,"asp.net,core",2479,False,1.3.2
+Canyon City Solutions,2017-12-07T01:19:55.5Z,80,134,SqlMigrationLib,SqlMigrationLib,False,2018-01-30T21:44:01.853+00:00,True,False,,,353,False,0.8.0
+Scar,2017-12-07T01:16:21.813Z,69,134,Common tools to simplify WPF application startup,Scar.Common.WPF.Startup,False,2018-02-10T02:05:45.02+00:00,True,False,,,396,False,1.0.8
+Scar,2017-12-07T01:16:21.813Z,69,134,Common tools to simplify WPF application startup,Scar.Common.WPF.Startup,False,2018-02-10T02:05:45.02+00:00,True,False,,,396,False,1.0.8
+Shane Logsdon,2017-12-07T01:07:58.27Z,127,134,JavaScript library built with Fable + FSharp,Fable.Template.JavaScriptLibrary,False,2017-12-14T03:55:17.767+00:00,True,False,,"fable,template,fsharp",374,False,0.1.0
+Shane Logsdon,2017-12-07T01:07:58.27Z,127,134,JavaScript library built with Fable + FSharp,Fable.Template.JavaScriptLibrary,False,2017-12-14T03:55:17.767+00:00,True,False,,"fable,template,fsharp",373,False,0.1.0
+Momentum,2017-12-07T01:02:36.813Z,4,134,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.12.481-beta
+Momentum,2017-12-07T01:02:18.69Z,4,134,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.12.481-beta
+Jared Barneck (Rhyous),2017-12-07T01:04:25.937Z,18,134,A library to aid in meeting the odata specification for $filter.,Rhyous.Odata.Filter,False,2018-04-02T14:29:28.747+00:00,True,False,A library to aid in meeting the odata specification for $filter.,,696,False,1.0.4
+Momentum,2017-12-07T01:02:36.813Z,4,134,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.12.481-beta
+Jared Barneck (Rhyous),2017-12-07T01:04:25.937Z,18,134,A library to aid in meeting the odata specification for $filter.,Rhyous.Odata.Filter,False,2018-04-02T14:29:28.747+00:00,True,False,A library to aid in meeting the odata specification for $filter.,,696,False,1.0.4
+Momentum,2017-12-07T01:02:18.69Z,4,134,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.12.481-beta
+"City of Santa Monica,CA",2017-12-07T00:57:51.71Z,134,134,Socrata Open Data API client library target .NET 4.5 and above.,CSM.SodaDotNet,False,2017-12-07T00:57:51.71+00:00,True,False,,"API,OpenData,Socrata,SODA",6184,False,0.8.0
+"City of Santa Monica,CA",2017-12-07T00:59:50.55Z,134,134,Library of helper classes and extension methods for working with Socrata Open Data portals.,CSM.SodaDotNet.Utilities,False,2017-12-07T00:59:50.55+00:00,True,False,,"EWS,Excel,SODA",3341,False,0.8.0
+Xero,2017-12-07T00:54:10.577Z,8,134,"This is a .NETStandard SDK library, used to communicate with the Xero API. See https://github.com/XeroAPI/Xero-NetStandard for more information",Xero.Api.SDK.Core,False,2018-04-12T23:25:33.287+00:00,True,False,,"xero,api,sdk",1438,False,1.0.0
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:53:45.95Z,14,134,Creating Windows Services is now a cake walk. This implementation can also handle localized service name and description.,Capgemini.Cauldron.Win32.WindowsService,False,2018-04-06T11:12:40.217+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Windows,Service",1502,False,2.0.18
+Scar,2017-12-07T00:57:23.32Z,69,134,Common tools to simplify WPF application startup,Scar.Common.WPF.Startup,False,2018-02-10T02:05:45.02+00:00,True,False,,,396,False,1.0.7
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:54:02.59Z,14,134,A simple MVVM framework that heavily uses IL-weaving based on Fody.,Capgemini.Cauldron.Win32.WPF,False,2018-04-06T11:12:58.967+00:00,True,False,,"Toolkit,Capgemini,Cauldron,XAML,WPF,MVVM,Framework,ViewModels",1705,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:53:29.59Z,14,134,"Consolidates methods for getting user information (profile picture, email address, home directory ect.) to a single class.",Capgemini.Cauldron.Win32.UserInformation,False,2018-04-06T11:12:22.15+00:00,True,False,"Consolidates methods for getting user information (profile picture, email address, home directory ect.) to a single class.","Toolkit,Capgemini,Cauldron,User,information,UserInformation",1866,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:55:05.073Z,3,134,"Fody add-in that provides method, property and field interception. Supports NetStandard2.0 and UWP.",Cauldron.Interception.Fody,False,2018-04-17T01:20:47.36+00:00,True,False,"Fody add-in that provides method, property and field interception.","Toolkit,Capgemini,Cauldron,Interception,interceptor,interception,AOP,Fody,Cecil,CIL,ILWeaving",5290,False,2.0.18
+"City of Santa Monica,CA",2017-12-07T00:57:51.71Z,134,134,Socrata Open Data API client library target .NET 4.5 and above.,CSM.SodaDotNet,False,2017-12-07T00:57:51.71+00:00,True,False,,"API,OpenData,Socrata,SODA",6184,False,0.8.0
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:54:49.137Z,14,134,Validation Framework for Cauldron.Win32.WPF,Capgemini.Cauldron.Win32.WPF.Validation,False,2018-04-06T11:14:30.907+00:00,True,False,,"Toolkit,Capgemini,Cauldron,XAML,WPF,Validation,MVVM",1587,False,2.0.18
+Scar,2017-12-07T00:22:18.263Z,93,134,WPF contracts for view,Scar.Common.WPF.View.Contracts,False,2018-01-17T03:17:51.647+00:00,True,False,,,232,False,1.0.7
+"City of Santa Monica,CA",2017-12-07T00:59:50.55Z,134,134,Library of helper classes and extension methods for working with Socrata Open Data portals.,CSM.SodaDotNet.Utilities,False,2017-12-07T00:59:50.55+00:00,True,False,,"EWS,Excel,SODA",3341,False,0.8.0
+Scar,2017-12-07T00:57:23.32Z,69,134,Common tools to simplify WPF application startup,Scar.Common.WPF.Startup,False,2018-02-10T02:05:45.02+00:00,False,False,,,396,False,1.0.7
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:54:35.107Z,14,134,Handles passing of parameters to running instance(s) of an application.,Capgemini.Cauldron.Win32.WPF.ParameterPassing,False,2018-04-06T11:13:33.95+00:00,True,False,Handles passing of parameters to running instance(s) of an application.,"Toolkit,Capgemini,Cauldron,Dispatcher",1894,False,2.0.18
+meganuckhead,2017-12-07T01:01:46.033Z,44,134,Heroes of the Storm Replay Parsing Tool compatible with Base Build 60228. Latest version supports all previous builds.,HeroProtocol,False,2018-03-07T23:12:11.963+00:00,True,False,,"hots,heroprotocol,heroesofthestorm,blizzard",1404,False,1.2.60228
+Moduware PTY LTD,2017-12-07T00:52:18.813Z,134,134,Shared logic for Moduware native tiles.,Moduware.Platform.Tile,False,2017-12-07T00:52:18.813+00:00,True,False,,"Bluetooth,Moduware,Modules",96,False,1.0.0
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:55:05.073Z,3,134,"Fody add-in that provides method, property and field interception. Supports NetStandard2.0 and UWP.",Cauldron.Interception.Fody,False,2018-04-17T01:20:47.36+00:00,True,False,"Fody add-in that provides method, property and field interception.","Toolkit,Capgemini,Cauldron,Interception,interceptor,interception,AOP,Fody,Cecil,CIL,ILWeaving",5290,False,2.0.18
+meganuckhead,2017-12-07T01:01:46.033Z,44,134,Heroes of the Storm Replay Parsing Tool compatible with Base Build 60228. Latest version supports all previous builds.,HeroProtocol,False,2018-03-07T23:12:11.963+00:00,True,False,,"hots,heroprotocol,heroesofthestorm,blizzard",1404,False,1.2.60228
+"City of Santa Monica,CA",2017-12-07T00:59:50.55Z,134,134,Library of helper classes and extension methods for working with Socrata Open Data portals.,CSM.SodaDotNet.Utilities,False,2017-12-07T00:59:50.55+00:00,True,False,,"EWS,Excel,SODA",3341,False,0.8.0
+Scar,2017-12-07T00:57:23.32Z,69,134,Common tools to simplify WPF application startup,Scar.Common.WPF.Startup,False,2018-02-10T02:05:45.02+00:00,True,False,,,396,False,1.0.7
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:52:58.297Z,14,134,Provides usefull implementations regarding network.,Capgemini.Cauldron.Win32.Net,False,2018-04-06T11:11:48.54+00:00,True,False,Provides usefull implementations regarding network.,"Toolkit,Capgemini,Cauldron,Network,Net",1872,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:52:42Z,14,134,Provides properties and methods for getting information about the monitor,Capgemini.Cauldron.Win32.MonitorInfo,False,2018-04-06T11:11:31.79+00:00,True,False,Provides properties and methods for getting information about the monitor,"Toolkit,Capgemini,Cauldron,Monitor,Information,Info",1892,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:53:14.403Z,14,134,A wrapper for the System.Windows.Threading.Dispatcher unify the usage for UWP and Win32.,Capgemini.Cauldron.Win32.Threading,False,2018-04-06T11:12:05.12+00:00,True,False,A wrapper for the System.Windows.Threading.Dispatcher unify the usage for UWP and Win32.,"Toolkit,Capgemini,Cauldron,Dispatcher",1873,False,2.0.18
+Moduware PTY LTD,2017-12-07T00:52:18.813Z,134,134,Shared logic for Moduware native tiles.,Moduware.Platform.Tile,False,2017-12-07T00:52:18.813+00:00,True,False,,"Bluetooth,Moduware,Modules",96,False,1.0.0
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:54:18.53Z,14,134,Behaviours and Action for Cauldron.XAML,Capgemini.Cauldron.Win32.WPF.Interactivity,False,2018-04-06T11:13:16.733+00:00,True,False,,"Toolkit,Capgemini,Cauldron,XAML,WPF,Behaviours,Actions,MVVM",1586,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:52:26.373Z,14,134,A collection of interceptor implementations.,Capgemini.Cauldron.Win32.Interceptors,False,2018-04-06T11:11:13.277+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Interceptors,Fody,Interception",1871,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:52:58.297Z,14,134,Provides usefull implementations regarding network.,Capgemini.Cauldron.Win32.Net,False,2018-04-06T11:11:48.54+00:00,True,False,Provides usefull implementations regarding network.,"Toolkit,Capgemini,Cauldron,Network,Net",1872,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:52:42Z,14,134,Provides properties and methods for getting information about the monitor,Capgemini.Cauldron.Win32.MonitorInfo,False,2018-04-06T11:11:31.79+00:00,True,False,Provides properties and methods for getting information about the monitor,"Toolkit,Capgemini,Cauldron,Monitor,Information,Info",1892,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:50:37.393Z,14,134,"This package adds:
+      - Usefull extension methods to the existing System.Reflection.
+      - A expression base activator which is a lot faster than System.Activator.
+      - Enum DisplayName attribute
+      - addtional meta-data to an enum
+      - Assemblies static class
+      - A ""wrapper"" for Assembly but applied on all loaded Assemblies",Capgemini.Cauldron.Core.Reflection,False,2018-04-06T11:09:05.957+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Reflection",1989,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:52:26.373Z,14,134,A collection of interceptor implementations.,Capgemini.Cauldron.Win32.Interceptors,False,2018-04-06T11:11:13.277+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Interceptors,Fody,Interception",1871,False,2.0.18
+Moduware PTY LTD,2017-12-07T00:52:18.813Z,134,134,Shared logic for Moduware native tiles.,Moduware.Platform.Tile,False,2017-12-07T00:52:18.813+00:00,True,False,,"Bluetooth,Moduware,Modules",96,False,1.0.0
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:52:10.86Z,14,134,Provides extension methods with Windows specific functionalities like GetShortPath and IsNetworkPath,Capgemini.Cauldron.Win32.Extension.IO,False,2018-04-06T11:10:55.1+00:00,True,False,,"Toolkit,Capgemini,Cauldron,IO",1540,False,2.0.18
+Microsoft,2017-12-07T00:52:09.923Z,1,134,A C++ library for decoding and encoding glTF files.,Microsoft.glTF.CPP,False,2018-04-19T18:18:35.867+00:00,False,False,A C++ library for decoding and encoding glTF files.,"nativepackage,gltf,gltf2.0,C++",2453,True,1.3.26
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:53:14.403Z,14,134,A wrapper for the System.Windows.Threading.Dispatcher unify the usage for UWP and Win32.,Capgemini.Cauldron.Win32.Threading,False,2018-04-06T11:12:05.12+00:00,True,False,A wrapper for the System.Windows.Threading.Dispatcher unify the usage for UWP and Win32.,"Toolkit,Capgemini,Cauldron,Dispatcher",1873,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:54:18.53Z,14,134,Behaviours and Action for Cauldron.XAML,Capgemini.Cauldron.Win32.WPF.Interactivity,False,2018-04-06T11:13:16.733+00:00,True,False,,"Toolkit,Capgemini,Cauldron,XAML,WPF,Behaviours,Actions,MVVM",1586,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:51:24.923Z,14,134,"Contains typical implementations for AES, RSA and RSA-AES encryptions. It also contains extensions that helps working with SecureString.",Capgemini.Cauldron.Cryptography,False,2018-04-06T11:10:01.99+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Cryptography,AES,RSA,SecureString",4899,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:51:53.907Z,14,134,Provides an extension for PrincipalContext to impersonate a user.,Capgemini.Cauldron.Win32.Extension.Impersonation,False,2018-04-06T11:10:38.023+00:00,True,False,Provides an extension for PrincipalContext to impersonate a user.,"Toolkit,Capgemini,Cauldron,PrincipalContext,Impersonate,Impersonation,Extension,User",1887,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:50:50.957Z,14,134,Provides useful helpers regarding threading,Capgemini.Cauldron.Core.Threading,False,2018-04-06T11:09:25.66+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Async,Await,Helper,Threading,Dspatcher",1896,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:51:39.843Z,14,134,A simple localization implementation that can work with different sources.,Capgemini.Cauldron.Localization,False,2018-04-06T11:10:20.523+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Multisource,Localization,Language",4912,False,2.0.18
+Microsoft,2017-12-07T00:52:09.923Z,1,134,A C++ library for decoding and encoding glTF files.,Microsoft.glTF.CPP,False,2018-04-19T18:18:35.867+00:00,False,False,A C++ library for decoding and encoding glTF files.,nativepackage,2453,True,1.3.26
+Microsoft,2017-12-07T00:52:12.72Z,37,134,"Provides developers with libraries for the updated compute platform under Azure Resource manager to deploy virtual machine, virtual machine extensions and availability set management capabilities. Launch, restart, scale, capture and manage VMs, VM Extensions and more. Note: This client library is for Virtual Machines under Azure Resource Manager.",Microsoft.Azure.Management.Compute,False,2018-03-14T23:33:24.61+00:00,True,False,,"Microsoft,Azure,resource,management,virtual,machine,compute",168248,True,17.0.1
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:51:08.86Z,14,134,A YAML deserializer,Capgemini.Cauldron.Core.Yaml,False,2018-04-06T11:09:45.363+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Yaml",1892,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:50:21.707Z,14,134,Provides a randomizer that is cryptographically secure,Capgemini.Cauldron.Core.Randomizer,False,2018-04-06T11:08:45.52+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Random,Cryptographic",1802,False,2.0.18
+Microsoft,2017-12-07T00:52:12.72Z,37,134,"Provides developers with libraries for the updated compute platform under Azure Resource manager to deploy virtual machine, virtual machine extensions and availability set management capabilities. Launch, restart, scale, capture and manage VMs, VM Extensions and more. Note: This client library is for Virtual Machines under Azure Resource Manager.",Microsoft.Azure.Management.Compute,False,2018-03-14T23:33:24.61+00:00,True,False,,"Microsoft,Azure,resource,management,virtual,machine,compute",168248,True,17.0.1
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:51:53.907Z,14,134,Provides an extension for PrincipalContext to impersonate a user.,Capgemini.Cauldron.Win32.Extension.Impersonation,False,2018-04-06T11:10:38.023+00:00,True,False,Provides an extension for PrincipalContext to impersonate a user.,"Toolkit,Capgemini,Cauldron,PrincipalContext,Impersonate,Impersonation,Extension,User",1887,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:51:39.843Z,14,134,A simple localization implementation that can work with different sources.,Capgemini.Cauldron.Localization,False,2018-04-06T11:10:20.523+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Multisource,Localization,Language",4912,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:50:50.957Z,14,134,Provides useful helpers regarding threading,Capgemini.Cauldron.Core.Threading,False,2018-04-06T11:09:25.66+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Async,Await,Helper,Threading,Dspatcher",1896,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:50:21.707Z,14,134,Provides a randomizer that is cryptographically secure,Capgemini.Cauldron.Core.Randomizer,False,2018-04-06T11:08:45.52+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Random,Cryptographic",1802,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:49:19.707Z,14,134,"Contains the following formatter implementations:
+      - ByteSizeFormatter
+      - MetricUnitFormatter",Capgemini.Cauldron.Core.Formatters,False,2018-04-06T11:07:05.483+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Formatters",1763,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:47:10.54Z,14,134,Contains usefull collections and collection extensions.,Capgemini.Cauldron.Core.Collections,False,2018-04-06T11:04:37.32+00:00,True,False,,"Toolkit,Capgemini,Collections,ConcurrentList,List",1808,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:48:00.663Z,14,134,Implementation of IDisposable,Capgemini.Cauldron.Core.Disposable,False,2018-04-06T11:05:38.323+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Disposable",1878,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:49:35.223Z,14,134,A collection of interceptor implementations.,Capgemini.Cauldron.Core.Interceptors,False,2018-04-06T11:07:26.093+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Interceptors,Fody,Interception",1840,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:46:21.633Z,14,134,The activator is a simple and very fast dependency injection framework. It is based on attributes and does not require any configuration files for configuration. It also supports using static methods as component constructor.,Capgemini.Cauldron.Activator,False,2018-04-06T11:03:27.833+00:00,True,False,,"Toolkit,Capgemini,Activator,Dependency,Injection,Factory,Cauldron",5019,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:48:17.82Z,14,134,Provides usefull extension methods,Capgemini.Cauldron.Core.Extensions,False,2018-04-06T11:05:54.73+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Extensions,MaxBy,MinBy,Encode",1850,False,2.0.18
+William E. Kempf,2017-12-06T22:41:48.51Z,43209,135,"Testify is a unit test assertions, test data creation and contract verification framework. It's not dependent on any specific unit testing framework. Testify.Moq adds mocking support via Moq.",Testify.Moq,False,1900-01-01T00:00:00+00:00,False,False,,"test,unit,testing,TDD,AAA,assert,assertion,factory,verifier,moq,mock",939,False,7.1.1
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:48:50.803Z,14,134,Provides extension methods regarding common convertions.,Capgemini.Cauldron.Core.Extensions.Convertions,False,2018-04-06T11:06:28.48+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Convertion",1881,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:49:04.96Z,14,134,"Provides extensions methods for FileInfo, DirectoryInfo and other IO operations",Capgemini.Cauldron.Core.Extensions.IO,False,2018-04-06T11:06:46.56+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Extension,IO,FileInfo,DirectoryInfo",1779,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:49:52.94Z,14,134,Provides additional functions that are missing from System.Math,Capgemini.Cauldron.Core.MathExtensions,False,2018-04-06T11:08:06.547+00:00,True,False,,"Toolkit,Capgemini,Math",1660,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:46:55.18Z,14,134,Cauldron Core is the core toolkit assembly that the Cauldron Toolkit builds upon,Capgemini.Cauldron.Core,False,2018-04-06T11:04:10.63+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Core",5013,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:47:43.647Z,14,134,Provides a set of methods that help debug code or output errors in compiled dlls.,Capgemini.Cauldron.Core.Diagnostics,False,2018-04-06T11:05:20.807+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Diagnostics,DEBUG",1947,False,2.0.18
+Ekin Caglar,2017-12-07T00:49:33.613Z,22,134,.Net wrapper for Clarizen,Ekin.Clarizen,False,2018-03-29T15:40:31.603+00:00,True,False,,"clarizen,api,ekin,caglar",3031,False,1.6.1.1328
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:48:32.757Z,14,134,"Provides System.IO.Compression.GZipStream extension methods for System.IO.Stream, System.IO.FileInfo, byte array and System.String",Capgemini.Cauldron.Core.Extensions.Compression,False,2018-04-06T11:06:11.98+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Extensions,Compression,GZipStream,GZip",1893,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:46:39.57Z,14,134,Cauldron.Consoles is a Cauldron.Core based parameter parser which supports grouping of parameters in execution groups. It is also supports localization and has a nice parameter table :),Capgemini.Cauldron.Consoles,False,2018-04-06T11:03:48.147+00:00,True,False,,"Toolkit,Capgemini,Console,Parameter,Parsing,Argument,Arguments,Parameters,Cauldron,Command,CommandLine,Args",4821,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:47:25.977Z,14,134,Provides usefull extensions and methods regarding comparing,Capgemini.Cauldron.Core.Comparing,False,2018-04-06T11:05:03.713+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Comparing,DynamicEqualityComparer",2020,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:50:07.317Z,14,134,A collection of usefull methods regarding networks,Capgemini.Cauldron.Core.Net,False,2018-04-06T11:08:25.157+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Net,Ping,Network",1818,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:50:07.317Z,14,134,A collection of usefull methods regarding networks,Capgemini.Cauldron.Core.Net,False,2018-04-06T11:08:25.157+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Net,Ping,Network",1818,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:49:52.94Z,14,134,Provides additional functions that are missing from System.Math,Capgemini.Cauldron.Core.MathExtensions,False,2018-04-06T11:08:06.547+00:00,True,False,,"Toolkit,Capgemini,Math",1660,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:49:35.223Z,14,134,A collection of interceptor implementations.,Capgemini.Cauldron.Core.Interceptors,False,2018-04-06T11:07:26.093+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Interceptors,Fody,Interception",1840,False,2.0.18
+Ekin Caglar,2017-12-07T00:49:33.613Z,22,134,.Net wrapper for Clarizen,Ekin.Clarizen,False,2018-03-29T15:40:31.603+00:00,True,False,,"clarizen,api,ekin,caglar",3031,False,1.6.1.1328
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:48:17.82Z,14,134,Provides usefull extension methods,Capgemini.Cauldron.Core.Extensions,False,2018-04-06T11:05:54.73+00:00,True,False,,"Toolkit,Capgemini,Cauldron,Extensions,MaxBy,MinBy,Encode",1850,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:47:10.54Z,14,134,Contains usefull collections and collection extensions.,Capgemini.Cauldron.Core.Collections,False,2018-04-06T11:04:37.32+00:00,True,False,,"Toolkit,Capgemini,Collections,ConcurrentList,List",1808,False,2.0.18
+"Alexander Schunk,Capgemini Deutschland GmbH",2017-12-07T00:46:21.633Z,14,134,The activator is a simple and very fast dependency injection framework. It is based on attributes and does not require any configuration files for configuration. It also supports using static methods as component constructor.,Capgemini.Cauldron.Activator,False,2018-04-06T11:03:27.833+00:00,True,False,,"Toolkit,Capgemini,Activator,Dependency,Injection,Factory,Cauldron",5019,False,2.0.18
+Adam O'Neil Software,2017-12-04T20:14:19.53Z,21,137,Lightweight code-first ORM made with Dapper,Postulate.Orm.Core,False,2018-03-30T23:18:34.46+00:00,False,False,,"orm,dapper,codefirst",3138,False,1.0.21
+"GeorgeWalker,CraigShutko",2017-12-07T00:37:21.887Z,43209,134,API for gov.news.bc.ca,Gov.News.Api.Client,False,1900-01-01T00:00:00+00:00,False,False,,,4734,False,1.0.23
+"GeorgeWalker,CraigShutko",2017-12-07T00:37:21.887Z,43209,134,API for gov.news.bc.ca,Gov.News.Api.Client,False,1900-01-01T00:00:00+00:00,False,False,,,4734,False,1.0.23
+William E. Kempf,2017-12-07T00:32:07.897Z,43209,134,"Testify is a unit test assertions, test data creation and contract verification framework. It's not dependent on any specific unit testing framework. Testify.Moq adds mocking support via Moq.",Testify.Moq,False,1900-01-01T00:00:00+00:00,False,False,,"test,unit,testing,TDD,AAA,assert,assertion,factory,verifier,moq,mock",939,False,1.7.2
+Scar,2017-12-07T00:33:21.267Z,91,134,Common base types for WPF views,Scar.Common.WPF.View,False,2018-01-19T02:33:02.96+00:00,True,False,,,410,False,1.0.30
+William E. Kempf,2017-12-07T00:31:54.27Z,43209,134,"Testify is a unit test assertions, test data creation and contract verification framework. It's not dependent on any specific unit testing framework.",Testify,False,1900-01-01T00:00:00+00:00,False,False,,"test,unit,testing,TDD,AAA,assert,assertion,factory,verifier",2149,False,1.7.2
+Scar,2017-12-07T00:33:21.267Z,91,134,Common base types for WPF views,Scar.Common.WPF.View,False,2018-01-19T02:33:02.96+00:00,True,False,,,410,False,1.0.30
+William E. Kempf,2017-12-07T00:31:54.27Z,43209,134,"Testify is a unit test assertions, test data creation and contract verification framework. It's not dependent on any specific unit testing framework.",Testify,False,1900-01-01T00:00:00+00:00,False,False,,"test,unit,testing,TDD,AAA,assert,assertion,factory,verifier",2147,False,1.7.2
+William E. Kempf,2017-12-07T00:32:07.897Z,43209,134,"Testify is a unit test assertions, test data creation and contract verification framework. It's not dependent on any specific unit testing framework. Testify.Moq adds mocking support via Moq.",Testify.Moq,False,1900-01-01T00:00:00+00:00,False,False,,"test,unit,testing,TDD,AAA,assert,assertion,factory,verifier,moq,mock",937,False,1.7.2
+Scar,2017-12-07T00:22:18.263Z,93,134,WPF contracts for view,Scar.Common.WPF.View.Contracts,False,2018-01-17T03:17:51.647+00:00,True,False,,,232,False,1.0.7
+Scar,2017-12-07T00:22:18.263Z,93,134,WPF contracts for view,Scar.Common.WPF.View.Contracts,False,2018-01-17T03:17:51.647+00:00,True,False,,,232,False,1.0.7
+Titans.Scouting.Business,2017-12-07T00:20:34.063Z,43209,134,Package Description,Titans.Scouting.Business,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Yuriy Esin,2017-12-07T00:15:53.343Z,134,134,Managed high-level library for working with printing and native Spooler service.,Printing.NET,False,2017-12-07T00:15:53.343+00:00,True,False,Managed high-level library for working with printing and native Spooler service.,"spooler,printing,api,net,core,standard",640,False,1.0.0
+"Peachpie,Petr Houska",2017-12-07T00:17:46.12Z,96,134,Templates of PHP projects for .NET platform using Peachpie Compiler.,Peachpie.Templates,False,2018-01-14T23:09:36.877+00:00,True,False,,,2556,False,0.8.0
+Microsoft,2017-06-27T23:19:29.86Z,10,297,"Provides types for efficient low-allocation access to memory.
+
+Commonly Used Types:
+System.Span
+ 
+029cf57733b7ec6c1dd8a13857e800b9a8d97192 
+When using NuGet 3.x this package requires at least version 3.4.",System.Memory,True,2018-04-10T01:21:51.4+00:00,False,False,,,645878,True,4.4.0-preview2-25405-01
+"GeorgeWalker,CraigShutko",2017-12-05T23:12:42.437Z,43209,136,API for gov.news.bc.ca,Gov.News.Api.Client,False,1900-01-01T00:00:00+00:00,False,False,,,4734,False,17.0.0
+"Peachpie,Petr Houska",2017-12-07T00:17:46.12Z,96,134,Templates of PHP projects for .NET platform using Peachpie Compiler.,Peachpie.Templates,False,2018-01-14T23:09:36.877+00:00,True,False,,,2556,False,0.8.0
+Yuriy Esin,2017-12-07T00:15:53.343Z,134,134,Managed high-level library for working with printing and native Spooler service.,Printing.NET,False,2017-12-07T00:15:53.343+00:00,True,False,Managed high-level library for working with printing and native Spooler service.,"spooler,printing,api,net,core,standard",640,False,1.0.0
+Titans.Scouting.Business,2017-12-07T00:20:34.063Z,43209,134,Package Description,Titans.Scouting.Business,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Josh van Eikeren,2017-12-07T00:15:05.61Z,32,134,.NET Standard 2.0 Asp.Net Core Extensions/Utilities,Orbital7.Extensions.AspNetCore,False,2018-03-19T01:16:19.673+00:00,True,False,,,516,False,2.0.5
+Microsoft,2017-12-07T00:12:21.307Z,134,134,Provides management capabilities for Azure Batch service accounts.,Microsoft.Azure.Management.Batch,False,2017-12-07T00:12:21.307+00:00,True,False,,"Microsoft,Azure,batch,management,windowsazureofficial",31294,True,6.0.0
+PageUp.Platform.Core,2017-12-07T00:11:59.603Z,43209,134,Package Description,PageUp.Platform.Core,False,1900-01-01T00:00:00+00:00,False,False,,,2629,False,1.0.4
+Josh van Eikeren,2017-12-07T00:15:05.61Z,32,134,.NET Standard 2.0 Asp.Net Core Extensions/Utilities,Orbital7.Extensions.AspNetCore,False,2018-03-19T01:16:19.673+00:00,True,False,,,516,False,2.0.5
+PageUp.Platform.Core,2017-12-07T00:11:59.603Z,43209,134,Package Description,PageUp.Platform.Core,False,1900-01-01T00:00:00+00:00,False,False,,,2629,False,1.0.4
+Microsoft,2017-12-07T00:12:21.307Z,134,134,Provides management capabilities for Azure Batch service accounts.,Microsoft.Azure.Management.Batch,False,2017-12-07T00:12:21.307+00:00,True,False,,"Microsoft,Azure,batch,management,windowsazureofficial",31294,True,6.0.0
+Microsoft,2017-12-07T00:07:57.85Z,43209,134,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.WinRT.UWP.Netcore.Debug,False,1900-01-01T00:00:00+00:00,False,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,WinRT,UWP,Windows,Apps",-1,False,2017.11.20171204.1
+Microsoft,2017-12-07T00:09:09.393Z,43209,134,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.WinRT.UWP.Netcore.Release,False,1900-01-01T00:00:00+00:00,False,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,WinRT,UWP,Windows,Apps",-1,False,2017.11.20171204.1
+Niclas Olofsson,2017-12-07T00:08:17.067Z,77,134,MiNET - a Minecraft PocketEdition Server,MiNET,False,2018-02-02T22:13:57.123+00:00,True,False,,"MiNET,Plugin,API,MCPE,Minecraft,PocketEdition",143965,False,1.0.1695
+Microsoft,2017-12-07T00:10:30.56Z,134,134,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.WinRT.XboxOneXDK,False,2017-12-07T00:10:30.56+00:00,True,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,WinRT,XboxOneXDK,XboxOne,One,XDK",2922,True,2017.11.20171204.1
+Microsoft,2017-12-07T00:05:43.95Z,43209,134,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.WinRT.UWP.Native.Release,False,1900-01-01T00:00:00+00:00,False,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,WinRT,UWP,Windows,Apps",-1,False,2017.11.20171204.1
+Ismail Hassani,2017-12-07T00:08:41.347Z,106,134,I-Synergy Library for .NetStandard 2.0,I-Synergy.Library,False,2018-01-04T01:04:52.223+00:00,True,False,,,1210,False,2017.1341.1
+Xero,2017-12-07T00:06:07.09Z,8,134,"This is a .NET SDK library, written in C#, used to communicate with the Xero API. See https://github.com/XeroAPI/Xero-Net for more information. Includes a sample token store.",Xero.API.SDK,False,2018-04-12T23:20:32.62+00:00,True,False,,"xero,api,sdk",43778,False,2.2.1.10
+Xero,2017-12-07T00:06:18.043Z,8,134,"This is a .NET SDK library, written in C#, used to communicate with the Xero API. See https://github.com/XeroAPI/Xero-Net for more information. This only has no external dependencies.",Xero.API.SDK.Minimal,False,2018-04-12T23:20:48.853+00:00,True,False,,"xero,api,sdk",135995,False,2.2.1.10
+Adam O'Neil Software,2017-12-07T00:06:10.497Z,21,134,"Lightweight code-first ORM made with Dapper, targeting MySql",Postulate.Orm.MySql,False,2018-03-30T15:24:43.733+00:00,True,False,,"orm,dapper,codefirst,mysql",1274,False,1.0.21
+Niclas Olofsson,2017-12-07T00:08:17.067Z,77,134,MiNET - a Minecraft PocketEdition Server,MiNET,False,2018-02-02T22:13:57.123+00:00,True,False,,"MiNET,Plugin,API,MCPE,Minecraft,PocketEdition",143965,False,1.0.1695
+Adam O'Neil Software,2017-12-07T00:06:10.497Z,21,134,"Lightweight code-first ORM made with Dapper, targeting MySql",Postulate.Orm.MySql,False,2018-03-30T15:24:43.733+00:00,True,False,,"orm,dapper,codefirst,mysql",1274,False,1.0.21
+Xero,2017-12-07T00:06:18.043Z,8,134,"This is a .NET SDK library, written in C#, used to communicate with the Xero API. See https://github.com/XeroAPI/Xero-Net for more information. This only has no external dependencies.",Xero.API.SDK.Minimal,False,2018-04-12T23:20:48.853+00:00,True,False,,"xero,api,sdk",135878,False,2.2.1.10
+Xero,2017-12-07T00:06:07.09Z,8,134,"This is a .NET SDK library, written in C#, used to communicate with the Xero API. See https://github.com/XeroAPI/Xero-Net for more information. Includes a sample token store.",Xero.API.SDK,False,2018-04-12T23:20:32.62+00:00,True,False,,"xero,api,sdk",43778,False,2.2.1.10
+Ismail Hassani,2017-12-07T00:08:41.347Z,106,134,I-Synergy Library for .NetStandard 2.0,I-Synergy.Library,False,2018-01-04T01:04:52.223+00:00,True,False,,,1210,False,2017.1341.1
+Microsoft,2017-12-07T00:10:30.56Z,134,134,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.WinRT.XboxOneXDK,False,2017-12-07T00:10:30.56+00:00,True,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,WinRT,XboxOneXDK,XboxOne,One,XDK",2922,True,2017.11.20171204.1
+Microsoft,2017-12-07T00:04:33.423Z,43209,134,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.WinRT.UWP.Native.Debug,False,1900-01-01T00:00:00+00:00,False,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,WinRT,UWP,Windows,Apps",-1,False,2017.11.20171204.1
+Adam O'Neil Software,2017-12-02T14:42:24.59Z,21,139,"Lightweight code-first ORM made with Dapper, targeting MySql",Postulate.Orm.MySql,True,2018-03-30T15:24:43.733+00:00,False,False,,"orm,dapper,codefirst,mysql",1274,False,1.0.18-alpha
+Adam O'Neil Software,2017-12-07T00:05:18.92Z,21,134,Lightweight code-first ORM made with Dapper,Postulate.Orm.Core,False,2018-03-30T23:18:34.46+00:00,True,False,,"orm,dapper,codefirst",3138,False,1.0.24
+Microsoft,2017-12-07T00:02:15.587Z,134,134,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.Cpp.XboxOneXDK,False,2017-12-07T00:02:15.587+00:00,True,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,Cpp,XboxOneXDK,XboxOne,One,C++,XDK",2262,True,2017.11.20171204.1
+Adam O'Neil Software,2017-12-04T20:15:15.23Z,21,137,"Lightweight code-first ORM made with Dapper, targeting MySql",Postulate.Orm.MySql,False,2018-03-30T15:24:43.733+00:00,False,False,,"orm,dapper,codefirst,mysql",1274,False,1.0.20
+Microsoft,2017-12-07T00:02:34.04Z,134,134,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.WinRT.UWP,False,2017-12-07T00:02:34.04+00:00,True,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,WinRT,UWP,Windows,Apps",9827,True,2017.11.20171204.1
+Adam O'Neil Software,2017-12-07T00:05:18.92Z,21,134,Lightweight code-first ORM made with Dapper,Postulate.Orm.Core,False,2018-03-30T23:18:34.46+00:00,True,False,,"orm,dapper,codefirst",3138,False,1.0.24
+Microsoft,2017-12-07T00:02:34.04Z,134,134,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.WinRT.UWP,False,2017-12-07T00:02:34.04+00:00,True,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,WinRT,UWP,Windows,Apps",9827,True,2017.11.20171204.1
+Microsoft,2017-12-07T00:00:05.39Z,43209,134,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.Cpp.UWP.v141.x86,False,1900-01-01T00:00:00+00:00,False,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,C++,UWP,Windows,Apps,Cpp",-1,False,2017.11.20171204.1
+Lucas Loegel,2017-12-06T23:56:56.027Z,129,135,Contains the attributes for the nuget package CSharpDiscriminatedUnion,CSharpDiscriminatedUnion.Attributes,True,2017-12-12T13:38:40.893+00:00,True,False,,"Discriminated,union,tagged,sum,type,algebraic,data,functional,F#",245,False,0.1.5-alpha
+Microsoft,2017-12-06T23:56:41.73Z,43209,135,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.Cpp.UWP.v140.x64,False,1900-01-01T00:00:00+00:00,False,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,C++,UWP,Windows,Apps,Cpp",-1,False,2017.11.20171204.1
+Adam O'Neil Software,2017-12-06T19:50:09.137Z,21,135,Lightweight code-first ORM made with Dapper,Postulate.Orm.Core,False,2018-03-30T23:18:34.46+00:00,False,False,,"orm,dapper,codefirst",3138,False,1.0.23
+Microsoft,2017-12-06T23:58:23.82Z,43209,135,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.Cpp.UWP.v141.ARM,False,1900-01-01T00:00:00+00:00,False,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,C++,UWP,Windows,Apps,Cpp",-1,False,2017.11.20171204.1
+Microsoft,2017-12-06T23:59:19.003Z,43209,135,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.Cpp.UWP.v141.x64,False,1900-01-01T00:00:00+00:00,False,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,C++,UWP,Windows,Apps,Cpp",-1,False,2017.11.20171204.1
+Lucas Loegel,2017-12-06T23:56:45.03Z,129,135,Creates discriminated unions in C#. Define a template for a discriminated union and the appropriate code will be generated.,CSharpDiscriminatedUnion,True,2017-12-12T13:38:23.97+00:00,True,False,,"Discriminated,union,tagged,sum,type,algebraic,data,functional,F#",706,False,0.1.5-alpha
+Microsoft,2017-12-06T23:57:37.807Z,43209,135,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.Cpp.UWP.v140.x86,False,1900-01-01T00:00:00+00:00,False,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,C++,UWP,Windows,Apps,Cpp",-1,False,2017.11.20171204.1
+Microsoft,2017-12-06T23:55:32.44Z,43209,135,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.Cpp.UWP.v140.ARM,False,1900-01-01T00:00:00+00:00,False,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,C++,UWP,Windows,Apps,Cpp",-1,False,2017.11.20171204.1
+Microsoft,2017-12-06T23:55:32.44Z,43209,135,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.Cpp.UWP.v140.ARM,False,1900-01-01T00:00:00+00:00,False,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,C++,UWP,Windows,Apps,Cpp",-1,False,2017.11.20171204.1
+Lucas Loegel,2017-12-06T23:56:56.027Z,129,135,Contains the attributes for the nuget package CSharpDiscriminatedUnion,CSharpDiscriminatedUnion.Attributes,True,2017-12-12T13:38:40.893+00:00,True,False,,"Discriminated,union,tagged,sum,type,algebraic,data,functional,F#",245,False,0.1.5-alpha
+Microsoft,2017-12-07T00:00:05.39Z,43209,134,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.Cpp.UWP.v141.x86,False,1900-01-01T00:00:00+00:00,False,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,C++,UWP,Windows,Apps,Cpp",-1,False,2017.11.20171204.1
+Microsoft,2017-12-06T23:58:23.82Z,43209,135,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.Cpp.UWP.v141.ARM,False,1900-01-01T00:00:00+00:00,False,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,C++,UWP,Windows,Apps,Cpp",-1,False,2017.11.20171204.1
+Microsoft,2017-12-06T23:57:37.807Z,43209,135,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.Cpp.UWP.v140.x86,False,1900-01-01T00:00:00+00:00,False,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,C++,UWP,Windows,Apps,Cpp",-1,False,2017.11.20171204.1
+Microsoft,2017-12-06T23:56:41.73Z,43209,135,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.Cpp.UWP.v140.x64,False,1900-01-01T00:00:00+00:00,False,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,C++,UWP,Windows,Apps,Cpp",-1,False,2017.11.20171204.1
+Lucas Loegel,2017-12-06T23:56:45.03Z,129,135,Creates discriminated unions in C#. Define a template for a discriminated union and the appropriate code will be generated.,CSharpDiscriminatedUnion,True,2017-12-12T13:38:23.97+00:00,True,False,,"Discriminated,union,tagged,sum,type,algebraic,data,functional,F#",705,False,0.1.5-alpha
+Microsoft,2017-12-06T23:54:20.613Z,135,135,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.Cpp.UWP,False,2017-12-06T23:54:20.613+00:00,True,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,C++,UWP,Windows,Apps,Cpp",3441,True,2017.11.20171204.1
+Mike O'Brien,2017-12-06T23:52:36.23Z,129,135,RESTful API Documentation for ASP.NET Web API 2.,Swank,False,2017-12-12T21:53:21.493+00:00,True,False,RESTful API Documentation for ASP.NET Web API 2.,"web,api,rest,documentation,swagger",14160,False,1.0.179
+Microsoft,2017-12-06T23:54:20.613Z,135,135,"The Microsoft Xbox Live Service API (XSAPI) enables game developers to access Xbox Live. To get access to the Xbox Live service, you can join the Xbox Live Creators Program at https://aka.ms/xblcp, or apply to the ID@Xbox program at http://www.xbox.com/en-us/Developers/id",Microsoft.Xbox.Live.SDK.Cpp.UWP,False,2017-12-06T23:54:20.613+00:00,True,False,Xbox Live enables games on all platforms to access Xbox Live and deliver great experiences to gamers.,"Microsoft,Xbox,Live,Service,XSAPI,C++,UWP,Windows,Apps,Cpp",3441,True,2017.11.20171204.1
+Mike O'Brien,2017-12-06T23:52:36.23Z,129,135,RESTful API Documentation for ASP.NET Web API 2.,Swank,False,2017-12-12T21:53:21.493+00:00,True,False,RESTful API Documentation for ASP.NET Web API 2.,"web,api,rest,documentation,swagger",14160,False,1.0.179
+WhatIsHeDoing,2017-12-06T23:47:04.313Z,131,135,A library of domain models for .NET.,WhatIsHeDoing.DomainModels,False,2017-12-10T21:31:47.42+00:00,True,False,,"core,domain,models",1027,False,2.1.0
+WhatIsHeDoing,2017-12-06T23:47:04.313Z,131,135,A library of domain models for .NET.,WhatIsHeDoing.DomainModels,False,2017-12-10T21:31:47.42+00:00,True,False,,"core,domain,models",1027,False,2.1.0
+Titans.Scouting.Common,2017-12-06T23:42:32.77Z,43209,135,Package Description,Titans.Scouting.Common,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.1
+Titans.Scouting.Common,2017-12-06T23:42:32.77Z,43209,135,Package Description,Titans.Scouting.Common,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.1
+Logrand,2017-12-06T23:39:05.613Z,49,135,Servicio para CFDI LOS,Logrand.CFDI.PDF.Service,False,2018-03-02T16:42:41.91+00:00,True,False,,"Tag1,Tag2",895,False,1.0.4
+Logrand,2017-12-06T23:39:05.613Z,49,135,Servicio para CFDI LOS,Logrand.CFDI.PDF.Service,False,2018-03-02T16:42:41.91+00:00,True,False,,"Tag1,Tag2",895,False,1.0.4
+Logrand,2017-12-06T23:39:05.613Z,49,135,Servicio para CFDI LOS,Logrand.CFDI.PDF.Service,False,2018-03-02T16:42:41.91+00:00,True,False,,"Tag1,Tag2",895,False,1.0.4
+"Joel Kronk,Stephen Joubert",2017-11-28T00:58:36.07Z,43209,143,Package Description,Titans.Scouting.Common,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Lukiya,2017-12-06T23:28:34.057Z,1,135,An e-commerce framework for SyncSoft.,SyncSoft.ECP.AspNetCore,False,2018-04-19T23:53:25.09+00:00,True,False,,,18129,False,2.1.5.1
+Lukiya,2017-12-06T23:28:56.443Z,1,135,An e-commerce framework for SyncSoft.,SyncSoft.ECP.Quartz,True,2018-04-19T23:53:28.827+00:00,True,False,,,10368,False,2.0.0-beta52
+Lukiya,2017-12-06T23:28:38.743Z,1,135,An e-commerce framework for SyncSoft.,SyncSoft.ECP,False,2018-04-19T23:53:22.263+00:00,True,False,,,18118,False,2.1.5.1
+Saleem Mirza,2017-12-06T23:29:37.88Z,10,135,Serilog event sink that writes to Azure Analytics,Serilog.Sinks.AzureAnalytics,True,2018-04-10T15:17:13.94+00:00,True,False,,"serilog,logging,Azure,Analytics",23535,False,2.1.0-dev-00069
+Lukiya,2017-12-06T23:28:56.443Z,1,135,An e-commerce framework for SyncSoft.,SyncSoft.ECP.Quartz,True,2018-04-19T23:53:28.827+00:00,True,False,,,10319,False,2.0.0-beta52
+Lukiya,2017-12-06T23:28:38.743Z,1,135,An e-commerce framework for SyncSoft.,SyncSoft.ECP,False,2018-04-19T23:53:22.263+00:00,True,False,,,18118,False,2.1.5.1
+Saleem Mirza,2017-12-06T23:29:37.88Z,10,135,Serilog event sink that writes to Azure Analytics,Serilog.Sinks.AzureAnalytics,True,2018-04-10T15:17:13.94+00:00,True,False,,"serilog,logging,Azure,Analytics",23535,False,2.1.0-dev-00069
+Lukiya,2017-12-06T23:28:34.057Z,1,135,An e-commerce framework for SyncSoft.,SyncSoft.ECP.AspNetCore,False,2018-04-19T23:53:25.09+00:00,True,False,,,18080,False,2.1.5.1
+Nima Ara,2017-12-06T23:28:06.963Z,135,135,Additional features and functionalities to extend Easy.Logger,Easy.Logger.Extensions,False,2017-12-06T23:28:06.963+00:00,True,False,,"log4net,Logging,Easy,Logger,Log,Extensions",405,False,1.3.0
+Nima Ara,2017-12-06T23:28:06.963Z,135,135,Additional features and functionalities to extend Easy.Logger,Easy.Logger.Extensions,False,2017-12-06T23:28:06.963+00:00,True,False,,"log4net,Logging,Easy,Logger,Log,Extensions",405,False,1.3.0
+Miljenko Cvjetko moljac Xamarin / HolisticWare,2017-12-06T23:17:48.273Z,134,135,Creates folder structure/layout for Xamarin cross-platform libraries and bindings,HolisticWare.DotNetNew.XamarinProjectsStructureTemplate.CSharp,False,2017-12-07T15:03:32.027+00:00,True,False,,,765,True,2017.12.6
+Miljenko Cvjetko moljac Xamarin / HolisticWare,2017-12-06T23:17:48.273Z,134,135,Creates folder structure/layout for Xamarin cross-platform libraries and bindings,HolisticWare.DotNetNew.XamarinProjectsStructureTemplate.CSharp,False,2017-12-07T15:03:32.027+00:00,True,False,,,766,True,2017.12.6
+Folke.Core,2017-12-06T23:16:58.997Z,135,135,Package Description,Folke.Core,False,2017-12-06T23:16:58.997+00:00,True,False,,,1202,False,3.1.0
+Folke.Core,2017-12-06T23:16:58.997Z,135,135,Package Description,Folke.Core,False,2017-12-06T23:16:58.997+00:00,True,False,,,1202,False,3.1.0
+William E. Kempf,2017-12-06T23:12:41.773Z,43209,135,"Testify is a unit test assertions, test data creation and contract verification framework. It's not dependent on any specific unit testing framework. Testify.Moq adds mocking support via Moq.",Testify.Moq,False,1900-01-01T00:00:00+00:00,False,False,,"test,unit,testing,TDD,AAA,assert,assertion,factory,verifier,moq,mock",939,False,1.7.1
+"Dmitry Turin,Rich Quackenbush",2017-12-06T23:11:12.343Z,25,135,"NModbus is a C# implementation of the Modbus protocol. Provides connectivity to Modbus slave compatible devices and applications. Supports TCP, and UDP protocols.",NModbus,False,2018-03-26T13:26:25.757+00:00,True,False,,"modbus,nmodbus,tcp,udp,master,slave,coreclr",9869,False,3.0.46
+Rich Quackenbush,2017-12-06T23:11:26.843Z,133,135,NModbus Serial Class Library,NModbus.Serial,False,2017-12-08T19:22:07.037+00:00,True,False,,"modbus,nmodbus,serial,master,slave",2898,False,3.0.46
+"LGinC@github.com,Rich Quackenbush",2017-12-06T23:11:38.827Z,25,135,A serial port adapter implementation for the SerialPortStream library. Please note that an additional native dll is necessary to make this work. More details can be found at: https://github.com/jcurl/SerialPortStream,NModbus.SerialPortStream,False,2018-03-26T13:26:39.18+00:00,True,False,,"Modbus,SerialPortStream,Serial",915,False,3.0.46
+Jay Traband,2017-12-06T23:13:09.77Z,135,135,The files and references that are essential for a Breeze Sharp client,Breeze.Sharp,False,2017-12-06T23:13:09.77+00:00,True,False,Breeze Sharp. This package is the .NET client for any Breeze server.,"Breeze,DotNet,Portable,OData,CSharp,WebApi,SPA,WPF,Xamarin",19302,False,0.6.1
+Solutia Consulting,2017-12-06T23:09:23.2Z,65,135,"Generates the following assets:
+			* SQL Server 2016 Stored Procedures for CRUD activiity (all Stored procs return JSON data via SQL Server 2016's FOR JSON capability)
+			* Repository code for converting raw JSON to concrete implementations of C# Interface (using Json.Net)
+			* Business Library allowing for business rules to be applied to data
+			* Sample WebApi endpoints
+			* Angular 4+ models for translating raw JSON data into JavaScript models (future development effort)
+
+			This code generator allows you to spend time in the following areas crafting your application:
+			* crafting stored procedures to surface database data matching the data needs imposed by a C# Interface
+			* crafting WebApi endpoints (you can use code generated samples as a starting point)
+			* crafting your front-end experience
+			
+			Utilizing this code generator increases your productivity and produces consistent, reliable results",SolutiaConsulting.CodeGenerator,False,2018-02-14T21:06:35.54+00:00,True,False,Generates code assets from database tier through presentation tier based solely upon a C# Interface.,"code,generation",2742,False,3.0.7.1
+William E. Kempf,2017-12-06T23:12:29.6Z,43209,135,"Testify is a unit test assertions, test data creation and contract verification framework. It's not dependent on any specific unit testing framework.",Testify,False,1900-01-01T00:00:00+00:00,False,False,,"test,unit,testing,TDD,AAA,assert,assertion,factory,verifier",2147,False,1.7.1
+Rich Quackenbush,2017-12-06T23:11:26.843Z,133,135,NModbus Serial Class Library,NModbus.Serial,False,2017-12-08T19:22:07.037+00:00,True,False,,"modbus,nmodbus,serial,master,slave",2898,False,3.0.46
+"Dmitry Turin,Rich Quackenbush",2017-12-06T23:11:12.343Z,25,135,"NModbus is a C# implementation of the Modbus protocol. Provides connectivity to Modbus slave compatible devices and applications. Supports TCP, and UDP protocols.",NModbus,False,2018-03-26T13:26:25.757+00:00,True,False,,"modbus,nmodbus,tcp,udp,master,slave,coreclr",9848,False,3.0.46
+"LGinC@github.com,Rich Quackenbush",2017-12-06T23:11:38.827Z,25,135,A serial port adapter implementation for the SerialPortStream library. Please note that an additional native dll is necessary to make this work. More details can be found at: https://github.com/jcurl/SerialPortStream,NModbus.SerialPortStream,False,2018-03-26T13:26:39.18+00:00,True,False,,"Modbus,SerialPortStream,Serial",915,False,3.0.46
+Jay Traband,2017-12-06T23:13:09.77Z,135,135,The files and references that are essential for a Breeze Sharp client,Breeze.Sharp,False,2017-12-06T23:13:09.77+00:00,True,False,Breeze Sharp. This package is the .NET client for any Breeze server.,"Breeze,DotNet,Portable,OData,CSharp,WebApi,SPA,WPF,Xamarin",19302,False,0.6.1
+"LGinC@github.com,Rich Quackenbush",2017-12-06T23:08:08.613Z,25,135,A serial port adapter implementation for the SerialPortStream library. Please note that an additional native dll is necessary to make this work. More details can be found at: https://github.com/jcurl/SerialPortStream,NModbus.SerialPortStream,False,2018-03-26T13:26:39.18+00:00,True,False,,"Modbus,SerialPortStream,Serial",915,False,3.0.45
+"Dmitry Turin,Rich Quackenbush",2017-12-06T23:07:53.133Z,25,135,"NModbus is a C# implementation of the Modbus protocol. Provides connectivity to Modbus slave compatible devices and applications. Supports TCP, and UDP protocols.",NModbus,False,2018-03-26T13:26:25.757+00:00,True,False,,"modbus,nmodbus,tcp,udp,master,slave,coreclr",9848,False,3.0.45
+Jay Traband,2017-12-06T23:02:31.763Z,135,135,The files and references that are essential for a Breeze Sharp client,Breeze.Sharp,False,2017-12-06T23:13:09.77+00:00,True,False,Breeze Sharp. This package is the .NET client for any Breeze server.,"Breeze,DotNet,Portable,OData,CSharp,WebApi,SPA,WPF,Xamarin",19302,False,0.6.0.10
+Solutia Consulting,2017-11-23T15:00:46.447Z,65,148,"Generates the following assets:
+			* SQL Server 2016 Stored Procedures for CRUD activiity (all Stored procs return JSON data via SQL Server 2016's FOR JSON capability)
+			* Repository code for converting raw JSON to concrete implementations of C# Interface (using Json.Net)
+			* Business Library allowing for business rules to be applied to data
+			* Sample WebApi endpoints
+			* Angular 4+ models for translating raw JSON data into JavaScript models (future development effort)
+
+			This code generator allows you to spend time in the following areas crafting your application:
+			* crafting stored procedures to surface database data matching the data needs imposed by a C# Interface
+			* crafting WebApi endpoints (you can use code generated samples as a starting point)
+			* crafting your front-end experience
+			
+			Utilizing this code generator increases your productivity and produces consistent, reliable results",SolutiaConsulting.CodeGenerator,False,2018-02-14T21:06:35.54+00:00,False,False,Generates code assets from database tier through presentation tier based solely upon a C# Interface.,"code,generation",2742,False,3.0.6.8

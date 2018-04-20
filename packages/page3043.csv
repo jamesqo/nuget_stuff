@@ -1,0 +1,1075 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+Richard J. Cabral,2017-12-06T19:20:11.77Z,67,135,"Constellation is a collection of utilities for .NET CMS implementers.
+The Feature.Navigation library solves the frequently occurring problem that the primary navigation or footer navigation of a website does not necessarily
+share organization with the contents of the content tree. The reason may be differing SEO goals on URL construction, the need to name something differently
+in navigation as opposed to the Page's heading values, or the need to construct a cross-cutting menu that draws Items from a wide variety of locations. This
+library also gracefully handles the need to have external or document links within a static navigation system (such as a ""fat footer"").
+		
+Components:
+- Navigation Menu - This is a marker item that specifies the root of a static navigation definition for a given website. There can be many of these on any particular
+website. It is recommended that these Items become the Datasource of your Navigation renderings.
+
+- Navigation Link - This is the conceptual member of a navigation and represent a hyperlink, visible to the user, that actually navigates somewhere else (as opposed to
+click-to-open style links or buttons) Includes the link as a General Link with all its available options, as well as a flag to indicate the link text should come
+from the Navigation Link Item's Display Name, which is the recommended approach to ensure the Navigation definition in Sitecore looks like what you see on page. Can be nested.
+- Image Navigation Link - Because there's always some navigation that is represented via icons rather than text. Inherits from above.
+
+- Link Group - Allows for the grouping of Navigation links into named groups. Very useful for pull-down navigation menu options, or Fat Footers with named columns.
+Can be nested.
+
+- NavigationRepository - Static class that accepts a Navigation Menu item and assembles a full tree-like ViewModel for immediate processing in your View.
+
+When using NavigationLink objects, there are usually several opportunities to supply the text of a given link. NavigationLink.GetBestLinkText() evaluates all of them and attempts to
+supply the best fit. The strategy is based on overriding the concept of ""name"". Here are the rules:
+- If Use This Display Name is checked on the NavigationLink item, it wins.
+- If the Link.Text is supplied by the user, it wins.
+- If the Link.TargetItem exists and inherits from Page Navigation Title, and the field value is not null, it wins.
+- If the Link.TargetItem exists its DisplayName is used.
+- Assuming all other things are not true, use the NavigationLink's DisplayName. Note that in this condition if you intended to point to a Sitecore Item, you have a bad link.
+
+You must install the included package to get the Templates required to use this library.
+
+Configured for use with Sitecore 9.0.
+Requires Sitecore 9.0 NuGet packages, available here: https://sitecore.myget.org/F/sc-packages/api/v3/index.json
+Requires the installation of the included Package.",Constellation.Feature.Navigation,False,2018-02-12T16:35:52.56+00:00,True,False,Sitecore Helix library for building out static navigation that doesn't necessarily reflect the shape or names of Items in the content tree.,"Sitecore,Helix,Habitat,SXA,Foundation",1448,False,9.0.3.24970
+hello@drewfrisk.com,2017-12-06T19:17:46.51Z,135,135,"A utility to manage manipulating version & package information in AndroidManifest.xml & Info.plist files. Use it in your build process to easily manipulate bundle information. 
+        
+        Note: this package does not require Xamarin to be installed. You do however need mono installed on OSx or Linux.
+        
+        Android:
+        - appName maps to application android:label attribute
+        - packageName maps to the package attribute
+        - build maps to the android:versionCode attribute
+        - versionName maps to the android:versionName attribute
+        
+        iOS:
+        - appName maps to CFBundleName
+        - packageName maps to CFBundleIdentifier
+        - build maps to CFBundleShortVersionString
+        - versionName maps to CFBundleVersion",Xamarin.PackageBuddy,False,2017-12-06T20:55:41.813+00:00,True,False,Easily manipulate version & package information for Android & Apps.,"xamarin,android,ios,manifest,plist",1671,False,2.0.0
+Appveyor Systems Inc.,2017-12-06T19:13:16.46Z,203,135,Sample NuGet library,MyNuGetLib-3,False,2017-09-29T21:24:15.967+00:00,True,False,,"Tag1,Tag2",913,False,3.1.4
+"GeorgeWalker,CraigShutko",2017-12-06T19:11:31.463Z,43209,135,API for gov.news.bc.ca,Gov.News.Api.Client,False,1900-01-01T00:00:00+00:00,False,False,,,4734,False,1.0.21
+maca88,2017-12-06T19:11:51.57Z,31,135,Tool for generating async C# code,CSharpAsyncGenerator.CommandLine,False,2018-03-20T20:00:47.753+00:00,True,False,,"Async,Generator,Roslyn",3234,False,0.7.0
+Roman Kuzmin,2017-12-06T19:12:05.507Z,9,135,"Invoke-Build is a build and test automation tool which invokes tasks defined in
+PowerShell v2.0+ scripts. It is similar to psake but arguably easier to use and
+more powerful. It is complete, bug free, well covered by tests.",Invoke-Build,False,2018-04-11T18:20:54.31+00:00,True,False,"Invoke-Build is a build and test automation tool which invokes tasks defined in
+PowerShell v2.0+ scripts. It is similar to psake but arguably easier to use and
+more powerful. It is complete, bug free, well covered by tests.","PowerShell,Build,Test,Automation",72051,False,4.1.2
+IBA,2017-12-06T19:12:14.82Z,46,135,Common interfaces for all ECL solutions,IBA.ECL.Domain.Shared.Abstract,False,2018-03-05T13:41:33.36+00:00,True,False,,"IBA,ECL",1114,False,1.1.8
+maca88,2017-12-06T19:12:20.227Z,31,135,Contains various plugins and public api for creating custom plugins,CSharpAsyncGenerator.Core,False,2018-03-20T21:22:07.48+00:00,True,False,,"Async,Generator,Roslyn",2430,False,0.7.0
+maca88,2017-12-06T19:12:05.9Z,31,135,Configuration via yaml file,CSharpAsyncGenerator.Configuration.Yaml,False,2018-03-20T21:21:51.23+00:00,True,False,,"Async,Generator,Roslyn",2432,False,0.7.0
+Appveyor Systems Inc.,2017-12-06T19:13:16.46Z,203,135,Sample NuGet library,MyNuGetLib-3,False,2017-09-29T21:24:15.967+00:00,True,False,,"Tag1,Tag2",913,False,3.1.4
+maca88,2017-12-06T19:12:05.9Z,31,135,Configuration via yaml file,CSharpAsyncGenerator.Configuration.Yaml,False,2018-03-20T21:21:51.23+00:00,True,False,,"Async,Generator,Roslyn",2432,False,0.7.0
+maca88,2017-12-06T19:12:20.227Z,31,135,Contains various plugins and public api for creating custom plugins,CSharpAsyncGenerator.Core,False,2018-03-20T21:22:07.48+00:00,True,False,,"Async,Generator,Roslyn",2430,False,0.7.0
+Roman Kuzmin,2017-12-06T19:12:05.507Z,9,135,"Invoke-Build is a build and test automation tool which invokes tasks defined in
+PowerShell v2.0+ scripts. It is similar to psake but arguably easier to use and
+more powerful. It is complete, bug free, well covered by tests.",Invoke-Build,False,2018-04-11T18:20:54.31+00:00,True,False,"Invoke-Build is a build and test automation tool which invokes tasks defined in
+PowerShell v2.0+ scripts. It is similar to psake but arguably easier to use and
+more powerful. It is complete, bug free, well covered by tests.","PowerShell,Build,Test,Automation",72039,False,4.1.2
+IBA,2017-12-06T19:12:14.82Z,46,135,Common interfaces for all ECL solutions,IBA.ECL.Domain.Shared.Abstract,False,2018-03-05T13:41:33.36+00:00,True,False,,"IBA,ECL",1114,False,1.1.8
+IstanbulCeliktepe,2017-12-06T19:10:32.213Z,135,135,Package Description,IstanbulCeliktepe,False,2017-12-06T19:10:32.213+00:00,True,False,,,69,False,1.0.0
+IstanbulCeliktepe,2017-12-06T19:10:32.213Z,135,135,Package Description,IstanbulCeliktepe,False,2017-12-06T19:10:32.213+00:00,True,False,,,69,False,1.0.0
+Appveyor Systems Inc.,2017-12-06T19:10:22.12Z,203,135,Sample NuGet library,MyNuGetLib-3,False,2017-09-29T21:24:15.967+00:00,True,False,,"Tag1,Tag2",913,False,1.0.0
+maca88,2017-12-06T19:10:06.997Z,31,135,Library for generating async C# code,CSharpAsyncGenerator,False,2018-03-20T19:59:08.123+00:00,True,False,,"Async,Generator,Roslyn",2573,False,0.7.0
+Appveyor Systems Inc.,2017-12-06T19:09:14.013Z,203,135,Sample NuGet library,MyNuGetLib-3,False,2017-09-29T21:24:15.967+00:00,True,False,,"Tag1,Tag2",913,False,3.1.1
+Appveyor Systems Inc.,2017-12-06T19:10:22.12Z,203,135,Sample NuGet library,MyNuGetLib-3,False,2017-09-29T21:24:15.967+00:00,True,False,,"Tag1,Tag2",913,False,1.0.0
+Appveyor Systems Inc.,2017-12-06T19:09:14.013Z,203,135,Sample NuGet library,MyNuGetLib-3,False,2017-09-29T21:24:15.967+00:00,True,False,,"Tag1,Tag2",913,False,3.1.1
+maca88,2017-12-06T19:10:06.997Z,31,135,Library for generating async C# code,CSharpAsyncGenerator,False,2018-03-20T19:59:08.123+00:00,True,False,,"Async,Generator,Roslyn",2573,False,0.7.0
+Richard J. Cabral,2017-12-06T18:52:15.47Z,59,135,"Constellation is a collection of utilities for .NET CMS implementers.
+		
+The Foundation.ModelMapping library is inspired by AutoMapper and is designed to provide a quick, non-ORM method of
+mapping Sitecore Items to ViewModels. String properties on your ViewModel will be mapped to FieldRendered values from fields with the 
+same names. Integer and DateTime property types can also be handled automatically, although you will not get page editor support
+for these types. There are a number of Attributes that you can assign to your ViewModel's properties to change the behavior of the Mapper.
+
+Usage: TModel viewModel = ModelMapper.MapItemToNew<TModel>(sourceItem);
+
+Constraints:
+- Your ViewModel must have a public, parameterless constructor.
+- Only Writable, Public Instance properties will be mapped.
+- Within Sitecore, your field names can be human-legible. ModelMapper will attempt to convert the field name to a valid Property name. Simpler names work best. 
+You can use the Field's Display Name for better human legibility and keep the Field's actual name closer to a legit C# entity name.
+
+The following Model properties are mapped to Item properties rather than Item fields:
+- ID - Maps to the Item.ID - Make sure you use Sitecore.Data.ID as the property type.
+- Name - Maps to the Item.Name 
+- DisplayName - Maps to Item.DisplayName
+- Url - Should be a string, not a Uri. Causes the current context LinkManager to generate a Url for the Item.
+
+Support for XML Field Attributes
+- ImageField.Alt - use Model.FieldNameAlt
+- ImageField.Height - use Model.FieldNameHeight
+- GeneralLink.Target - use Model.FieldNameTarget
+- etc.
+
+Support for LinkField.TargetItem - use Model.FieldNameTargetItem and supply a class with public properties and a parameterless constructor.
+Support for MultilistField.GetItems - use Model.FieldName and supply a generic ICollection<T> where ""T"" is new() and has properties you can map.
+
+Extensible! See the Constellation.Foundation.ModelMapping.config file to change the way Fields are processed.
+
+Configured for use with Sitecore 9.0.
+Requires Sitecore 9.0 NuGet packages, available here: https://sitecore.myget.org/F/sc-packages/api/v3/index.json",Constellation.Foundation.ModelMapping,False,2018-02-20T14:40:31.15+00:00,True,False,Sitecore Helix library to enhance MVC development in Sitecore.,"Sitecore,Helix,Habitat,SXA,Foundation,Mvc",1601,False,9.0.9.24928
+Anthony Lloyd and contributors,2017-12-06T16:39:47.88Z,13,135,Advanced testing library for F#,Expecto,False,2018-04-07T12:59:44.013+00:00,True,False,,"test,testing,fsharp,assert,expect,stress,performance,unit,random,property",79874,True,5.1.1
+Mike O'Brien,2017-12-06T19:00:30.867Z,129,135,RESTful API Documentation for ASP.NET Web API 2.,Swank,False,2017-12-12T21:53:21.493+00:00,True,False,RESTful API Documentation for ASP.NET Web API 2.,"web,api,rest,documentation,swagger",14160,False,1.0.177
+Martin Hey,2017-12-06T18:53:12.62Z,58,135,A C# client to access WebUntis.,TaurusSoftware.WebUntisNet,True,2018-02-21T16:30:40.783+00:00,True,False,,untis,197,False,0.3.0-beta
+nanoFramework project contributors,2017-12-06T18:51:56.69Z,43209,135,This package includes the base class library (mscorlib) for nanoFramework C# projects,nanoFramework.CoreLibrary,True,1900-01-01T00:00:00+00:00,False,False,nanoFramework.CoreLibrary is the base class library (mscorlib) for nanoFramework C# projects.,"nanoFramework,C#,csharp,netmf,netnf,mscorlib",3786,False,1.0.0-preview038
+Mike O'Brien,2017-12-06T19:00:30.867Z,129,135,RESTful API Documentation for ASP.NET Web API 2.,Swank,False,2017-12-12T21:53:21.493+00:00,True,False,RESTful API Documentation for ASP.NET Web API 2.,"web,api,rest,documentation,swagger",14160,False,1.0.177
+Richard J. Cabral,2017-12-06T18:52:15.47Z,59,135,"Constellation is a collection of utilities for .NET CMS implementers.
+		
+The Foundation.ModelMapping library is inspired by AutoMapper and is designed to provide a quick, non-ORM method of
+mapping Sitecore Items to ViewModels. String properties on your ViewModel will be mapped to FieldRendered values from fields with the 
+same names. Integer and DateTime property types can also be handled automatically, although you will not get page editor support
+for these types. There are a number of Attributes that you can assign to your ViewModel's properties to change the behavior of the Mapper.
+
+Usage: TModel viewModel = ModelMapper.MapItemToNew<TModel>(sourceItem);
+
+Constraints:
+- Your ViewModel must have a public, parameterless constructor.
+- Only Writable, Public Instance properties will be mapped.
+- Within Sitecore, your field names can be human-legible. ModelMapper will attempt to convert the field name to a valid Property name. Simpler names work best. 
+You can use the Field's Display Name for better human legibility and keep the Field's actual name closer to a legit C# entity name.
+
+The following Model properties are mapped to Item properties rather than Item fields:
+- ID - Maps to the Item.ID - Make sure you use Sitecore.Data.ID as the property type.
+- Name - Maps to the Item.Name 
+- DisplayName - Maps to Item.DisplayName
+- Url - Should be a string, not a Uri. Causes the current context LinkManager to generate a Url for the Item.
+
+Support for XML Field Attributes
+- ImageField.Alt - use Model.FieldNameAlt
+- ImageField.Height - use Model.FieldNameHeight
+- GeneralLink.Target - use Model.FieldNameTarget
+- etc.
+
+Support for LinkField.TargetItem - use Model.FieldNameTargetItem and supply a class with public properties and a parameterless constructor.
+Support for MultilistField.GetItems - use Model.FieldName and supply a generic ICollection<T> where ""T"" is new() and has properties you can map.
+
+Extensible! See the Constellation.Foundation.ModelMapping.config file to change the way Fields are processed.
+
+Configured for use with Sitecore 9.0.
+Requires Sitecore 9.0 NuGet packages, available here: https://sitecore.myget.org/F/sc-packages/api/v3/index.json",Constellation.Foundation.ModelMapping,False,2018-02-20T14:40:31.15+00:00,True,False,Sitecore Helix library to enhance MVC development in Sitecore.,"Sitecore,Helix,Habitat,SXA,Foundation,Mvc",1601,False,9.0.9.24928
+nanoFramework project contributors,2017-12-06T18:51:56.69Z,43209,135,This package includes the base class library (mscorlib) for nanoFramework C# projects,nanoFramework.CoreLibrary,True,1900-01-01T00:00:00+00:00,False,False,nanoFramework.CoreLibrary is the base class library (mscorlib) for nanoFramework C# projects.,"nanoFramework,C#,csharp,netmf,netnf,mscorlib",3786,False,1.0.0-preview038
+Martin Hey,2017-12-06T18:53:12.62Z,58,135,A C# client to access WebUntis.,TaurusSoftware.WebUntisNet,True,2018-02-21T16:30:40.783+00:00,True,False,,,197,False,0.3.0-beta
+Lukiya,2017-12-01T00:23:32.383Z,1,140,An e-commerce framework for SyncSoft.,SyncSoft.ECP.Quartz,True,2018-04-19T23:53:28.827+00:00,False,False,,,10368,False,2.0.0-beta49
+Lukiya,2017-12-05T00:55:03.26Z,1,136,An e-commerce framework for SyncSoft.,SyncSoft.ECP.Quartz,True,2018-04-19T23:53:28.827+00:00,False,False,,,10368,False,2.0.0-beta50
+Anthony Lloyd and contributors,2017-12-06T16:39:46.63Z,13,135,"Expecto is an advanced testing library for F# covering unit testing, property based testing, performance testing and stress testing.",Expecto.BenchmarkDotNet,False,2018-04-07T12:59:46.84+00:00,True,False,Advanced testing library for F#,"test,testing,fsharp,assert,expect,stress,performance,unit,random,property",17746,True,5.1.1
+SourceCode,2017-12-06T18:40:50.043Z,100,135,CAS - Content Addressable Storage (Protobuf Serializer).,SourceCode.Chasm.IO.Proto,True,2018-01-10T20:24:22.563+00:00,True,False,,"cas,content,storage,sha1,git,proto",5525,False,1.0.0-preview1-00240
+SourceCode,2017-12-06T18:39:23.347Z,100,135,CAS - Content Addressable Storage I/O.,SourceCode.Chasm.IO,True,2018-01-10T20:23:03.953+00:00,True,False,,"cas,content,storage,sha1,git,model,io",274,False,1.0.0-preview1-00240
+"Rex Cardan,Ph.D.",2017-12-06T18:48:09.78Z,40,135,ESAPI Extensions and helpers for quickly building robust clinical and research apps.,ESAPIX_Bootstrapper_13.6,False,2018-03-11T19:10:26.857+00:00,True,False,ESAPI Extensions and helpers for quickly building robust clinical and research apps.,"Varian,ESAPI,C#",2777,False,1.2.1.23
+Eonasdan,2017-12-06T18:48:31.2Z,43209,135,"Allows you to create a backup of a sql database based on the current Git Branch.
+
+E.g. Backup-GitBranchDb  -BackupPath ""[PATH_TO_FOLDER]\"" -DbName ""DBNAME""
+
+Currently does not support named instances.
+
+See Github site for more",GitBranch-DbBackup,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Lukiya,2017-10-30T19:06:14.87Z,1,172,An e-commerce framework for SyncSoft.,SyncSoft.ECP.Quartz,True,2018-04-19T23:53:28.827+00:00,False,False,,,10319,False,2.0.0-beta47
+Lukiya,2017-10-30T19:06:07.95Z,1,172,An e-commerce framework for SyncSoft.,SyncSoft.ECP.Azure,False,2018-04-19T19:46:20.76+00:00,False,False,,,1300,False,2.0.0
+Lukiya,2017-10-30T19:05:57.107Z,1,172,An e-commerce framework for SyncSoft.,SyncSoft.ECP,False,2018-04-19T23:53:22.263+00:00,False,False,,,18118,False,2.0.0
+Lukiya,2017-10-30T19:06:10.527Z,1,172,An e-commerce framework for SyncSoft.,SyncSoft.ECP.MongoDB,False,2018-04-19T19:46:28.527+00:00,False,False,,,2920,False,2.0.0
+Anthony Lloyd and contributors,2017-12-06T16:39:47.63Z,13,135,Advanced testing library for F#,Expecto.FsCheck,False,2018-04-07T12:59:46.67+00:00,True,False,,"test,testing,fsharp,assert,expect,stress,performance,unit,random,property",36060,True,5.1.1
+SourceCode,2017-12-06T18:40:02.05Z,100,135,CAS - Content Addressable Storage (Local Disk Storage Repository).,SourceCode.Chasm.Repository.Disk,True,2018-01-10T20:23:38.47+00:00,True,False,,"cas,content,storage,sha1,git,disk,file",3828,False,1.0.0-preview1-00240
+Lukiya,2017-11-16T23:19:43.853Z,1,155,An e-commerce framework for SyncSoft.,SyncSoft.ECP.Quartz,True,2018-04-19T23:53:28.827+00:00,False,False,,,10368,False,2.0.0-beta48
+Brainboxes Limited,2017-12-06T18:48:50.7Z,85,135,"Official .NET API code package for communication with Brainboxes Ethernet-attached data acquisition and control devices, and is provided by Brainboxes Limited.
+Design for Brainboxes Digital and Analog Remote IO and Ethernet to Serial devices including: ED-588, ED-516, ED-527, ES-246, ES-257 and the rest of the Brainboxes ED and ES range.
+Targets .NET 4.0+ and Universal Windows Platform (UWP)
+This means this package can run on Windows XP,7,8,10 and Server 2008, 2012, 2016 using .NET framework
+Can also run on Windows IoT Core and XBOX using Universal Windows Platform
+Can run on linux, raspbian or OSX using Mono framework or .NET Core",Brainboxes.IO,False,2018-01-25T16:12:39.497+00:00,True,False,"Official .NET API code package for communication with Brainboxes Ethernet-attached data acquisition and control devices, and is provided by Brainboxes Limited.","Brainboxes,RemoteIO,IO,Remote,Ethernet,Serial,Digital,Analog,Process,Control,Automation,ED-588,ED588,ED-204,ED204,ED-516,ED-527,ED-549,ES-246,ES-257,ES-446,ES-457,ED-560,ED560",3984,False,1.5.0.2
+SourceCode,2017-12-06T18:39:49.457Z,100,135,CAS - Content Addressable Storage (Azure Table Storage Repository).,SourceCode.Chasm.Repository.AzureTable,True,2018-01-10T20:23:27.61+00:00,True,False,,"cas,content,storage,sha1,git,azure,table",4180,False,1.0.0-preview1-00240
+Appveyor Systems Inc.,2017-12-06T18:48:41.2Z,203,135,Sample NuGet library,MyNuGetLib,False,2017-09-29T03:40:06.187+00:00,True,False,,"Tag1,Tag2",11634,False,2.0.23
+Lukiya,2017-10-30T19:05:52.65Z,1,172,An e-commerce framework for SyncSoft.,SyncSoft.ECP.SqlServer,False,2018-04-19T19:46:09.523+00:00,False,False,,,7114,False,2.0.0
+Mike O'Brien,2017-12-06T18:46:39.677Z,129,135,RESTful API Documentation for ASP.NET Web API 2.,Swank,False,2017-12-12T21:53:21.493+00:00,True,False,RESTful API Documentation for ASP.NET Web API 2.,"web,api,rest,documentation,swagger",14160,False,1.0.176
+SourceCode,2017-12-06T18:40:26.233Z,100,135,CAS - Content Addressable Storage Serializers.,SourceCode.Chasm.Serializer,True,2018-01-10T20:24:00.313+00:00,True,False,,"cas,content,storage,sha1,git,model,serializer",225,False,1.0.0-preview1-00240
+Lukiya,2017-10-30T19:06:04.747Z,1,172,An e-commerce framework for SyncSoft.,SyncSoft.ECP.Redis,False,2018-04-19T19:46:35.68+00:00,False,False,,,11810,False,2.0.0
+ZZZ Projects Inc.,2017-12-06T18:41:16.997Z,21,135,"C# Expression Evaluator | Evaluate, Compile and Execute C# code and expression at runtime.
+
+* FREE trial & PRO version",Z.Expressions.Eval,False,2018-03-30T15:33:00.517+00:00,True,False,"C# Eval Function | Expression Evaluator | Evaluate, Compile and Execute C# code and expression at runtime.
+
+* FREE trial & PRO version","C#,Eval,Expression,Evaluator,Compile,Compiler,Execute,Roslyn",18715,False,2.4.8
+Lukiya,2017-12-05T00:55:04.307Z,1,136,An e-commerce framework for SyncSoft.,SyncSoft.ECP.Redis,False,2018-04-19T19:46:35.68+00:00,False,False,,,11810,False,2.1.2
+Lukiya,2017-12-01T00:23:40.633Z,1,140,An e-commerce framework for SyncSoft.,SyncSoft.ECP.Redis,False,2018-04-19T19:46:35.68+00:00,False,False,,,11810,False,2.1.0
+Lukiya,2017-10-30T16:56:20.517Z,1,172,An app framework for SyncSoft.,SyncSoft.App.RabbitMQ,False,2018-04-19T22:42:28.713+00:00,False,False,,,3537,False,2.0.0
+Lukiya,2017-10-30T16:56:13.657Z,1,172,An app framework for SyncSoft.,SyncSoft.App.JsonNet,False,2018-04-19T19:19:55.353+00:00,False,False,,,3575,False,2.0.0
+Lukiya,2017-10-30T16:56:26.207Z,105,172,An app framework for SyncSoft.,SyncSoft.App.RazorLight,False,2018-01-05T23:53:59.597+00:00,False,False,,,1404,False,2.0.0
+Lukiya,2017-10-30T16:56:39.05Z,1,172,An app framework for SyncSoft.,SyncSoft.App.SimpleInjector,False,2018-04-19T19:19:30.65+00:00,False,False,,,4529,False,2.0.0
+Lukiya,2017-11-16T23:19:51.99Z,1,155,An e-commerce framework for SyncSoft.,SyncSoft.ECP.Redis,False,2018-04-19T19:46:35.68+00:00,False,False,,,11810,False,2.0.4
+SourceCode,2017-12-06T18:40:13.47Z,100,135,CAS - Content Addressable Storage (Hybrid Storage Repository).,SourceCode.Chasm.Repository.Hybrid,True,2018-01-10T20:23:49.283+00:00,True,False,,"cas,content,storage,sha1,git,hybrid",2478,False,1.0.0-preview1-00240
+Lukiya,2017-12-05T00:54:44.4Z,1,136,An e-commerce framework for SyncSoft.,SyncSoft.ECP.SqlServer,False,2018-04-19T19:46:09.523+00:00,False,False,,,7090,False,2.1.2
+KL&A,2017-12-06T18:40:16.343Z,36,135,"Package provides functionality to build GridView based on your model items collection. Grid.Mvc support sorting, filtering and paging your data. Based off of Grid.Mvc.Redux at http://gridmvcredux.codeplex.com/.",Grid.Mvc.Redux.KLA,False,2018-03-15T17:05:56.647+00:00,False,False,,"ASP.NET,MVC,Control,GridView,Grid,Generic",1839,False,1.0.2
+Lukiya,2017-10-30T16:56:29.017Z,1,172,An app framework for SyncSoft.,SyncSoft.App.MongoDB,False,2018-04-19T19:19:59.073+00:00,False,False,,,1858,False,2.0.0
+Lukiya,2017-10-30T16:56:40.283Z,1,172,An app framework for SyncSoft.,SyncSoft.App.Serilog,False,2018-04-19T19:19:17.9+00:00,False,False,,,2182,False,2.0.0
+Lukiya,2017-11-16T23:19:47.773Z,1,155,An e-commerce framework for SyncSoft.,SyncSoft.ECP.SqlServer,False,2018-04-19T19:46:09.523+00:00,False,False,,,7114,False,2.0.4
+SourceCode,2017-12-06T18:41:01.31Z,100,135,CAS - Content Addressable Storage (Text Serializer).,SourceCode.Chasm.IO.Text,True,2018-01-10T20:24:33.033+00:00,True,False,,"cas,content,storage,sha1,git,text",3021,False,1.0.0-preview1-00240
+Lukiya,2017-10-30T16:56:44.957Z,1,172,An app framework for SyncSoft.,SyncSoft.App.SqlServer,False,2018-04-19T19:19:42.323+00:00,False,False,,,3200,False,2.0.0
+Lukiya,2017-10-30T16:56:33.643Z,1,172,An app framework for SyncSoft.,SyncSoft.App.Redis,False,2018-04-19T19:19:22.463+00:00,False,False,,,3546,False,2.0.0
+Lukiya,2017-12-01T00:24:37.87Z,1,140,An e-commerce framework for SyncSoft.,SyncSoft.ECP.SqlServer,False,2018-04-19T19:46:09.523+00:00,False,False,,,7114,False,2.1.0
+test,2017-12-06T18:46:46.8Z,43209,135,none,ParentPublic1234321,False,1900-01-01T00:00:00+00:00,False,False,none,none,158,False,1.0.1
+SourceCode,2017-12-06T18:40:38.903Z,100,135,CAS - Content Addressable Storage (Json Serializer).,SourceCode.Chasm.IO.Json,True,2018-01-10T20:24:11.58+00:00,True,False,,"cas,content,storage,sha1,git,json",5910,False,1.0.0-preview1-00240
+SourceCode,2017-12-06T18:39:49.457Z,100,135,CAS - Content Addressable Storage (Azure Table Storage Repository).,SourceCode.Chasm.Repository.AzureTable,True,2018-01-10T20:23:27.61+00:00,True,False,,"cas,content,storage,sha1,git,azure,table",4180,False,1.0.0-preview1-00240
+SourceCode,2017-12-06T18:40:26.233Z,100,135,CAS - Content Addressable Storage Serializers.,SourceCode.Chasm.Serializer,True,2018-01-10T20:24:00.313+00:00,True,False,,"cas,content,storage,sha1,git,model,serializer",225,False,1.0.0-preview1-00240
+Brainboxes Limited,2017-12-06T18:48:50.7Z,85,135,"Official .NET API code package for communication with Brainboxes Ethernet-attached data acquisition and control devices, and is provided by Brainboxes Limited.
+Design for Brainboxes Digital and Analog Remote IO and Ethernet to Serial devices including: ED-588, ED-516, ED-527, ES-246, ES-257 and the rest of the Brainboxes ED and ES range.
+Targets .NET 4.0+ and Universal Windows Platform (UWP)
+This means this package can run on Windows XP,7,8,10 and Server 2008, 2012, 2016 using .NET framework
+Can also run on Windows IoT Core and XBOX using Universal Windows Platform
+Can run on linux, raspbian or OSX using Mono framework or .NET Core",Brainboxes.IO,False,2018-01-25T16:12:39.497+00:00,True,False,,"Brainboxes,RemoteIO,IO,Remote,Ethernet,Serial,Digital,Analog,Process,Control,Automation,ED-588,ED588,ED-204,ED204,ED-516,ED-527,ED-549,ES-246,ES-257,ES-446,ES-457,ED-560,ED560",3985,False,1.5.0.2
+KL&A,2017-12-06T18:40:16.343Z,36,135,"Package provides functionality to build GridView based on your model items collection. Grid.Mvc support sorting, filtering and paging your data. Based off of Grid.Mvc.Redux at http://gridmvcredux.codeplex.com/.",Grid.Mvc.Redux.KLA,False,2018-03-15T17:05:56.647+00:00,False,False,,"ASP.NET,MVC,Control,GridView,Grid,Generic",1839,False,1.0.2
+SourceCode,2017-12-06T18:40:50.043Z,100,135,CAS - Content Addressable Storage (Protobuf Serializer).,SourceCode.Chasm.IO.Proto,True,2018-01-10T20:24:22.563+00:00,True,False,,"cas,content,storage,sha1,git,proto",5525,False,1.0.0-preview1-00240
+test,2017-12-06T18:46:46.8Z,43209,135,none,ParentPublic1234321,False,1900-01-01T00:00:00+00:00,False,False,none,none,158,False,1.0.1
+"Rex Cardan,Ph.D.",2017-12-06T18:48:09.78Z,40,135,ESAPI Extensions and helpers for quickly building robust clinical and research apps.,ESAPIX_Bootstrapper_13.6,False,2018-03-11T19:10:26.857+00:00,True,False,ESAPI Extensions and helpers for quickly building robust clinical and research apps.,"Varian,ESAPI,C#",2777,False,1.2.1.23
+SourceCode,2017-12-06T18:40:38.903Z,100,135,CAS - Content Addressable Storage (Json Serializer).,SourceCode.Chasm.IO.Json,True,2018-01-10T20:24:11.58+00:00,True,False,,"cas,content,storage,sha1,git,json",5910,False,1.0.0-preview1-00240
+Eonasdan,2017-12-06T18:48:31.2Z,43209,135,"Allows you to create a backup of a sql database based on the current Git Branch.
+
+E.g. Backup-GitBranchDb  -BackupPath ""[PATH_TO_FOLDER]\"" -DbName ""DBNAME""
+
+Currently does not support named instances.
+
+See Github site for more",GitBranch-DbBackup,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+SourceCode,2017-12-06T18:41:01.31Z,100,135,CAS - Content Addressable Storage (Text Serializer).,SourceCode.Chasm.IO.Text,True,2018-01-10T20:24:33.033+00:00,True,False,,"cas,content,storage,sha1,git,text",3021,False,1.0.0-preview1-00240
+SourceCode,2017-12-06T18:40:13.47Z,100,135,CAS - Content Addressable Storage (Hybrid Storage Repository).,SourceCode.Chasm.Repository.Hybrid,True,2018-01-10T20:23:49.283+00:00,True,False,,"cas,content,storage,sha1,git,hybrid",2478,False,1.0.0-preview1-00240
+Appveyor Systems Inc.,2017-12-06T18:48:41.2Z,203,135,Sample NuGet library,MyNuGetLib,False,2017-09-29T03:40:06.187+00:00,True,False,,"Tag1,Tag2",11634,False,2.0.23
+Mike O'Brien,2017-12-06T18:46:39.677Z,129,135,RESTful API Documentation for ASP.NET Web API 2.,Swank,False,2017-12-12T21:53:21.493+00:00,True,False,RESTful API Documentation for ASP.NET Web API 2.,"web,api,rest,documentation,swagger",14160,False,1.0.176
+ZZZ Projects Inc.,2017-12-06T18:41:16.997Z,21,135,"C# Expression Evaluator | Evaluate, Compile and Execute C# code and expression at runtime.
+
+* FREE trial & PRO version",Z.Expressions.Eval,False,2018-03-30T15:33:00.517+00:00,True,False,"C# Eval Function | Expression Evaluator | Evaluate, Compile and Execute C# code and expression at runtime.
+
+* FREE trial & PRO version","C#,Eval,Expression,Evaluator,Compile,Compiler,Execute,Roslyn",18715,False,2.4.8
+SourceCode,2017-12-06T18:40:02.05Z,100,135,CAS - Content Addressable Storage (Local Disk Storage Repository).,SourceCode.Chasm.Repository.Disk,True,2018-01-10T20:23:38.47+00:00,True,False,,"cas,content,storage,sha1,git,disk,file",3828,False,1.0.0-preview1-00240
+Lukiya,2017-12-05T00:54:57.917Z,1,136,An e-commerce framework for SyncSoft.,SyncSoft.ECP.Azure,False,2018-04-19T19:46:20.76+00:00,False,False,,,1300,False,2.1.2
+Lukiya,2017-11-16T23:20:09.56Z,1,155,An e-commerce framework for SyncSoft.,SyncSoft.ECP.MongoDB,False,2018-04-19T19:46:28.527+00:00,False,False,,,2896,False,2.0.4
+Lukiya,2017-12-01T00:24:33.18Z,1,140,An e-commerce framework for SyncSoft.,SyncSoft.ECP.MongoDB,False,2018-04-19T19:46:28.527+00:00,False,False,,,2920,False,2.1.0
+Lukiya,2017-12-01T00:23:44.917Z,1,140,An e-commerce framework for SyncSoft.,SyncSoft.ECP.Azure,False,2018-04-19T19:46:20.76+00:00,False,False,,,1300,False,2.1.0
+Lukiya,2017-12-05T00:54:55.323Z,1,136,An e-commerce framework for SyncSoft.,SyncSoft.ECP.MongoDB,False,2018-04-19T19:46:28.527+00:00,False,False,,,2920,False,2.1.2
+Lukiya,2017-12-05T00:54:53.277Z,1,136,An e-commerce framework for SyncSoft.,SyncSoft.ECP,False,2018-04-19T23:53:22.263+00:00,False,False,,,18118,False,2.1.2
+Dywham,2017-12-06T18:22:28.127Z,43209,135,Description,Dywham.Middleware.Endpoints.WebApi.Client,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.51
+Lukiya,2017-12-01T23:44:44.973Z,1,140,An e-commerce framework for SyncSoft.,SyncSoft.ECP,False,2018-04-19T23:53:22.263+00:00,False,False,,,18118,False,2.1.1
+Lukiya,2017-12-05T00:54:48.777Z,1,136,An e-commerce framework for SyncSoft.,SyncSoft.ECP.AspNetCore,False,2018-04-19T23:53:25.09+00:00,False,False,,,18080,False,2.1.2
+SourceCode,2017-12-06T18:39:12.1Z,100,135,CAS - Content Addressable Storage.,SourceCode.Chasm,True,2018-01-10T20:22:53.423+00:00,True,False,,"cas,content,storage,sha1,git,model",6209,False,1.0.0-preview1-00240
+Lukiya,2017-10-31T00:21:08.31Z,1,171,An e-commerce framework for SyncSoft.,SyncSoft.ECP,False,2018-04-19T23:53:22.263+00:00,False,False,,,18118,False,2.0.2
+Lukiya,2017-10-30T23:21:39.313Z,1,172,An e-commerce framework for SyncSoft.,SyncSoft.ECP,False,2018-04-19T23:53:22.263+00:00,False,False,,,18118,False,2.0.1
+Lukiya,2017-12-02T00:32:24.85Z,1,139,An e-commerce framework for SyncSoft.,SyncSoft.ECP.AspNetCore,False,2018-04-19T23:53:25.09+00:00,False,False,,,18129,False,2.1.1.1
+Lukiya,2017-12-01T00:24:11.557Z,1,140,An e-commerce framework for SyncSoft.,SyncSoft.ECP,False,2018-04-19T23:53:22.263+00:00,False,False,,,18118,False,2.1.0
+Lukiya,2017-12-01T23:46:57.207Z,1,140,An e-commerce framework for SyncSoft.,SyncSoft.ECP.AspNetCore,False,2018-04-19T23:53:25.09+00:00,False,False,,,18129,False,2.1.1
+Lukiya,2017-12-01T00:24:26.43Z,1,140,An e-commerce framework for SyncSoft.,SyncSoft.ECP.AspNetCore,False,2018-04-19T23:53:25.09+00:00,False,False,,,18129,False,2.1.0
+SourceCode,2017-12-06T18:39:35.69Z,100,135,CAS - Content Addressable Storage (Azure Blob Storage Repository).,SourceCode.Chasm.Repository.AzureBlob,True,2018-01-10T20:23:15.58+00:00,True,False,,"cas,content,storage,sha1,git,azure,blob",4228,False,1.0.0-preview1-00240
+Lukiya,2017-12-02T00:32:23.317Z,1,139,An e-commerce framework for SyncSoft.,SyncSoft.ECP,False,2018-04-19T23:53:22.263+00:00,False,False,,,18069,False,2.1.1.1
+Emby Team,2017-12-06T18:33:12.67Z,80,135,An XmlTv parsing library.,Emby.XmlTv,False,2018-01-30T20:39:05.533+00:00,True,False,,,3318,False,1.0.11
+Lukiya,2017-10-30T20:53:24.52Z,1,172,An e-commerce framework for SyncSoft.,SyncSoft.ECP.AspNetCore,False,2018-04-19T23:53:25.09+00:00,False,False,,,18129,False,2.0.0.1
+Lukiya,2017-11-16T23:19:55.55Z,1,155,An e-commerce framework for SyncSoft.,SyncSoft.ECP,False,2018-04-19T23:53:22.263+00:00,False,False,,,18118,False,2.0.4
+Lukiya,2017-11-16T23:19:59.347Z,1,155,An e-commerce framework for SyncSoft.,SyncSoft.ECP.AspNetCore,False,2018-04-19T23:53:25.09+00:00,False,False,,,18080,False,2.0.4
+Lukiya,2017-11-16T23:20:03.313Z,1,155,An e-commerce framework for SyncSoft.,SyncSoft.ECP.Azure,False,2018-04-19T19:46:20.76+00:00,False,False,,,1300,False,2.0.4
+Xamarin Inc.,2017-12-06T18:34:58.943Z,135,135,C# bindings for Google APIs Maps iOS Library,Xamarin.Google.iOS.Maps,False,2017-12-06T18:34:58.943+00:00,True,False,,,104314,True,2.5.0
+Lukiya,2017-10-31T18:25:21.62Z,1,171,An e-commerce framework for SyncSoft.,SyncSoft.ECP,False,2018-04-19T23:53:22.263+00:00,False,False,,,18118,False,2.0.3
+Phin Solutions Inc.,2017-12-06T18:36:21.093Z,129,135,An SDK exposing the Phin Solutions Product REST API for processing SCRA verification searches. Requires active agreement and client-side API key. For more information please visit us at https://www.phinsolutions.com/,PhinSolutions.SDK,False,2017-12-12T13:13:17.427+00:00,True,False,Phin Solutions Product API SDK,"Phin,Solutions,SCRA",4703,False,1.0.62
+Lukiya,2017-11-30T19:52:49.587Z,1,141,An app framework for SyncSoft.,SyncSoft.App.Serilog,False,2018-04-19T19:19:17.9+00:00,False,False,,,2206,False,2.1.2
+Lukiya,2017-11-29T19:04:38.337Z,1,142,An app framework for SyncSoft.,SyncSoft.App.Redis,False,2018-04-19T19:19:22.463+00:00,False,False,,,3570,False,2.0.9
+Lukiya,2017-11-27T22:53:01.68Z,1,144,An app framework for SyncSoft.,SyncSoft.App.SqlServer,False,2018-04-19T19:19:42.323+00:00,False,False,,,3177,False,2.0.6
+vm,2017-12-06T18:35:47.207Z,28,135,"A set of classes, utilities, etc. addressing various common cross-cutting concerns or extending existing similar libraries like Enterprise Library, Unity, etc.
+            Supports only .NET 4.6.2.",vm.Aspects,True,2018-03-23T04:30:09.757+00:00,True,False,"Services framework leveraging Unity, WCF, Entity Framework.",,21210,False,1.0.109-beta11
+Lukiya,2017-12-06T18:24:06.82Z,1,135,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,True,False,,,17498,False,2.1.5
+Lukiya,2017-11-29T19:04:38.527Z,1,142,An app framework for SyncSoft.,SyncSoft.App.SqlServer,False,2018-04-19T19:19:42.323+00:00,False,False,,,3200,False,2.0.9
+Lukiya,2017-11-28T21:30:14.933Z,1,143,An app framework for SyncSoft.,SyncSoft.App.Serilog,False,2018-04-19T19:19:17.9+00:00,False,False,,,2182,False,2.0.7
+Dywham,2017-12-06T18:22:59.717Z,31,135,Description,Dywham.Middleware.Storage.Repositories.Contracts,False,2018-03-20T22:27:37.557+00:00,True,False,,,1118,False,1.0.51
+Lukiya,2017-11-27T22:52:59.477Z,1,144,An app framework for SyncSoft.,SyncSoft.App.SimpleInjector,False,2018-04-19T19:19:30.65+00:00,False,False,,,4553,False,2.0.6
+Dywham,2017-12-06T18:22:02.037Z,31,135,Description,Dywham.Middleware.Endpoints,False,2018-03-20T22:24:16.987+00:00,True,False,,,3572,False,1.0.51
+Lukiya,2017-11-27T22:52:52.507Z,1,144,An app framework for SyncSoft.,SyncSoft.App.Redis,False,2018-04-19T19:19:22.463+00:00,False,False,,,3570,False,2.0.6
+Mike O'Brien,2017-12-06T18:23:00.763Z,129,135,RESTful API Documentation for ASP.NET Web API 2.,Swank,False,2017-12-12T21:53:21.493+00:00,True,False,RESTful API Documentation for ASP.NET Web API 2.,"web,api,rest,documentation,swagger",14160,False,1.0.175
+Lukiya,2017-11-27T22:52:53.833Z,1,144,An app framework for SyncSoft.,SyncSoft.App.Serilog,False,2018-04-19T19:19:17.9+00:00,False,False,,,2206,False,2.0.6
+onovotny,2017-12-06T18:34:40.897Z,135,135,Client-side tools for Sign Service,SignClient,False,2017-12-06T18:34:40.897+00:00,True,False,,,15162,False,0.9.1
+Xamarin Inc.,2017-12-06T18:35:11.27Z,135,135,C# bindings for Google APIs Places iOS Library,Xamarin.Google.iOS.Places,False,2017-12-06T18:35:11.27+00:00,True,False,,,3041,True,2.5.0
+Lykke,2017-12-06T18:38:10.493Z,35,135,Contract for the Lykke.Job.CandlesProducer job,Lykke.Job.CandlesProducer.Contract,False,2018-03-16T15:58:14.15+00:00,True,False,,"Lykke,Prices",731,False,2.0.2
+Alden Menzalgy,2017-12-06T18:28:21.363Z,125,135,.NET Core 2.0 Wrapper for MemoryCache,CachingManager,False,2017-12-16T08:29:14.363+00:00,True,False,,".NETCORE2.0,MemoryCache,Cache",725,False,1.0.0
+"Mathieu Roy,Thomas McNiven",2017-12-06T18:22:50.75Z,135,135,Forked from Thomas McNiven's .NET wrapper of the DigitalOcean API https://github.com/vevix/DigitalOcean.API,DOcean.API,True,2017-12-06T21:58:22.383+00:00,True,False,,,365,False,1.0.9-CI00009
+Lukiya,2017-11-17T21:32:39.79Z,1,154,An app framework for SyncSoft.,SyncSoft.App.Serilog,False,2018-04-19T19:19:17.9+00:00,False,False,,,2206,False,2.0.5
+Xamarin Inc.,2017-12-06T18:34:58.943Z,135,135,C# bindings for Google APIs Maps iOS Library,Xamarin.Google.iOS.Maps,False,2017-12-06T18:34:58.943+00:00,True,False,,,104314,True,2.5.0
+Lykke,2017-12-06T18:38:10.493Z,35,135,Contract for the Lykke.Job.CandlesProducer job,Lykke.Job.CandlesProducer.Contract,False,2018-03-16T15:58:14.15+00:00,True,False,,"Lykke,Prices",731,False,2.0.2
+Emby Team,2017-12-06T18:33:12.67Z,80,135,An XmlTv parsing library.,Emby.XmlTv,False,2018-01-30T20:39:05.533+00:00,True,False,,,3317,False,1.0.11
+onovotny,2017-12-06T18:34:40.897Z,135,135,Client-side tools for Sign Service,SignClient,False,2017-12-06T18:34:40.897+00:00,True,False,,,15114,False,0.9.1
+Alden Menzalgy,2017-12-06T18:28:21.363Z,125,135,.NET Core 2.0 Wrapper for MemoryCache,CachingManager,False,2017-12-16T08:29:14.363+00:00,True,False,,".NETCORE2.0,MemoryCache,Cache",725,False,1.0.0
+Dywham,2017-12-06T18:22:02.037Z,31,135,Description,Dywham.Middleware.Endpoints,False,2018-03-20T22:24:16.987+00:00,True,False,,,3572,False,1.0.51
+SourceCode,2017-12-06T18:39:12.1Z,100,135,CAS - Content Addressable Storage.,SourceCode.Chasm,True,2018-01-10T20:22:53.423+00:00,True,False,,"cas,content,storage,sha1,git,model",6209,False,1.0.0-preview1-00240
+SourceCode,2017-12-06T18:39:35.69Z,100,135,CAS - Content Addressable Storage (Azure Blob Storage Repository).,SourceCode.Chasm.Repository.AzureBlob,True,2018-01-10T20:23:15.58+00:00,True,False,,"cas,content,storage,sha1,git,azure,blob",4228,False,1.0.0-preview1-00240
+Dywham,2017-12-06T18:22:28.127Z,43209,135,Description,Dywham.Middleware.Endpoints.WebApi.Client,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.51
+vm,2017-12-06T18:35:47.207Z,28,135,"A set of classes, utilities, etc. addressing various common cross-cutting concerns or extending existing similar libraries like Enterprise Library, Unity, etc.
+            Supports only .NET 4.6.2.",vm.Aspects,True,2018-03-23T04:30:09.757+00:00,True,False,"Services framework leveraging Unity, WCF, Entity Framework.",,21210,False,1.0.109-beta11
+Lukiya,2017-12-06T18:24:06.82Z,1,135,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,True,False,,,17559,False,2.1.5
+"Mathieu Roy,Thomas McNiven",2017-12-06T18:22:50.75Z,135,135,Forked from Thomas McNiven's .NET wrapper of the DigitalOcean API https://github.com/vevix/DigitalOcean.API,DOcean.API,True,2017-12-06T21:58:22.383+00:00,True,False,,,365,False,1.0.9-CI00009
+Phin Solutions Inc.,2017-12-06T18:36:21.093Z,129,135,An SDK exposing the Phin Solutions Product REST API for processing SCRA verification searches. Requires active agreement and client-side API key. For more information please visit us at https://www.phinsolutions.com/,PhinSolutions.SDK,False,2017-12-12T13:13:17.427+00:00,True,False,Phin Solutions Product API SDK,"Phin,Solutions,SCRA",4703,False,1.0.62
+Mike O'Brien,2017-12-06T18:23:00.763Z,129,135,RESTful API Documentation for ASP.NET Web API 2.,Swank,False,2017-12-12T21:53:21.493+00:00,True,False,RESTful API Documentation for ASP.NET Web API 2.,"web,api,rest,documentation,swagger",14160,False,1.0.175
+Xamarin Inc.,2017-12-06T18:35:11.27Z,135,135,C# bindings for Google APIs Places iOS Library,Xamarin.Google.iOS.Places,False,2017-12-06T18:35:11.27+00:00,True,False,,,3083,True,2.5.0
+Dywham,2017-12-06T18:22:59.717Z,31,135,Description,Dywham.Middleware.Storage.Repositories.Contracts,False,2018-03-20T22:27:37.557+00:00,True,False,,,1118,False,1.0.51
+Lukiya,2017-11-27T22:52:35.6Z,1,144,An app framework for SyncSoft.,SyncSoft.App.MongoDB,False,2018-04-19T19:19:59.073+00:00,False,False,,,1858,False,2.0.6
+Lukiya,2017-11-29T17:54:22.88Z,1,142,An app framework for SyncSoft.,SyncSoft.App.RabbitMQ,False,2018-04-19T22:42:28.713+00:00,False,False,,,3475,False,2.0.8
+Lukiya,2017-11-27T22:52:47.71Z,105,144,An app framework for SyncSoft.,SyncSoft.App.RazorLight,False,2018-01-05T23:53:59.597+00:00,False,False,,,1404,False,2.0.6
+Lukiya,2017-11-27T22:52:33.333Z,1,144,An app framework for SyncSoft.,SyncSoft.App.JsonNet,False,2018-04-19T19:19:55.353+00:00,False,False,,,3599,False,2.0.6
+Lukiya,2017-11-27T22:52:39.163Z,1,144,An app framework for SyncSoft.,SyncSoft.App.RabbitMQ,False,2018-04-19T22:42:28.713+00:00,False,False,,,3475,False,2.0.6
+Lukiya,2017-11-29T19:04:32.667Z,1,142,An app framework for SyncSoft.,SyncSoft.App.MongoDB,False,2018-04-19T19:19:59.073+00:00,False,False,,,1858,False,2.0.9
+Lukiya,2017-11-29T19:04:25.12Z,1,142,An app framework for SyncSoft.,SyncSoft.App.ElasticSearch,False,2018-04-19T19:19:52.167+00:00,False,False,,,807,False,2.0.9
+Lukiya,2017-12-05T22:26:10.67Z,1,136,An app framework for SyncSoft.,SyncSoft.App.ElasticSearch,False,2018-04-19T19:19:52.167+00:00,True,False,,,807,False,2.1.4
+Lukiya,2017-11-29T19:04:35.993Z,1,142,An app framework for SyncSoft.,SyncSoft.App.RabbitMQ,False,2018-04-19T22:42:28.713+00:00,False,False,,,3475,False,2.0.9
+Lukiya,2017-11-28T21:30:25.37Z,1,143,An app framework for SyncSoft.,SyncSoft.App.ElasticSearch,False,2018-04-19T19:19:52.167+00:00,False,False,,,807,False,2.0.7
+Lukiya,2017-12-05T23:15:47.673Z,1,136,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17559,False,2.1.4.1
+Lukiya,2017-11-08T23:34:59.24Z,1,163,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17498,False,2.0.3.2
+Lukiya,2017-10-30T22:39:14.927Z,1,172,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17559,False,2.0.1
+Lukiya,2017-11-30T19:52:53.07Z,1,141,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17559,False,2.1.2
+Lukiya,2017-12-01T23:31:46.703Z,1,140,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17498,False,2.1.3
+Lukiya,2017-10-31T00:16:41.99Z,1,171,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17559,False,2.0.2.1
+Lukiya,2017-11-27T22:52:43.117Z,1,144,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17559,False,2.0.6
+Lukiya,2017-10-31T00:02:54.993Z,1,171,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17498,False,2.0.2
+Lukiya,2017-10-31T17:43:17.51Z,1,171,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17559,False,2.0.3
+Lukiya,2017-11-28T21:30:17.387Z,1,143,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17559,False,2.0.7
+Lukiya,2017-12-05T22:26:19.807Z,1,136,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17498,False,2.1.4
+Paul Mead,2017-12-06T18:02:17.11Z,37,135,Package Description,MutableIdeas.Web.Linq.Query.Service,False,2018-03-14T14:27:31.85+00:00,True,False,,,2358,False,1.4.4
+Lukiya,2017-11-29T20:16:28.133Z,1,142,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17498,False,2.1.0
+Lukiya,2017-11-29T17:54:29.347Z,1,142,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17559,False,2.0.8
+Lukiya,2017-11-29T22:45:41.91Z,1,142,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17559,False,2.1.1.1
+Lukiya,2017-11-16T22:57:12.997Z,1,155,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17559,False,2.0.4
+Lukiya,2017-11-29T20:50:24.127Z,1,142,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17559,False,2.1.1
+Brandon James,2017-12-06T17:53:59.3Z,35,135,A .NET Standard Library using System.Net.HttpClient and NewtonSoft.Json which provides access to the ShipStation API.,ShipStation4Net,False,2018-03-16T21:16:25.243+00:00,True,False,A .NET Standard Library using System.Net.HttpClient and NewtonSoft.Json which provides access to the ShipStation API.,".NET,Standard,Client,Shipping,ShipStation,REST",1045,False,0.10.29
+Logrand,2017-12-06T18:12:03.847Z,49,135,Servicio para CFDI LOS,Logrand.CFDI.PDF.Service,False,2018-03-02T16:42:41.91+00:00,True,False,,"Tag1,Tag2",895,False,1.0.3
+Lukiya,2017-11-29T19:04:23.073Z,1,142,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17559,False,2.0.9
+Lukiya,2017-11-17T21:32:36.883Z,1,154,An app framework for SyncSoft.,SyncSoft.App,False,2018-04-19T22:41:48.51+00:00,False,False,,,17498,False,2.0.5
+Brandon James,2017-12-06T17:53:59.3Z,35,135,A .NET Standard Library using System.Net.HttpClient and NewtonSoft.Json which provides access to the ShipStation API.,ShipStation4Net,False,2018-03-16T21:16:25.243+00:00,True,False,,".NET,Standard,Client,Shipping,ShipStation,REST",1045,False,0.10.29
+"Arnold Wang,Ingeniux Corporation",2017-12-06T18:13:37.56Z,1,135,Nuget Package for Ingeniux Dynamic Site Server Runtime API,Ingeniux_DSS_RTAPI,False,2018-04-19T19:56:06.677+00:00,True,False,,"ingeniux,dss,cms,runtime,api,dynamic,site,server",6259,False,10.0.312
+Cemalettin Dervis,2017-12-06T17:59:22.08Z,11,135,SharpConfig is an easy-to-use CFG/INI configuration library for .NET.,sharpconfig,False,2018-04-09T18:35:54.99+00:00,True,False,SharpConfig is an easy-to-use CFG/INI configuration library for .NET.,"sharpconfig,config,c#,csharp,cfg,ini,configuration,library",14513,False,3.2.1
+Yunnying,2017-12-06T17:58:55.74Z,133,135,集成饿了么商户的oauth2.0认证，直接登录,junde.owin.security.eleme.merchant,False,2017-12-08T08:09:53.533+00:00,True,False,,eleme,193,False,1.0.0
+Niclas Olofsson,2017-12-06T18:16:47.03Z,77,135,MiNET - a Minecraft PocketEdition Server,MiNET,False,2018-02-02T22:13:57.123+00:00,True,False,,"MiNET,Plugin,API,MCPE,Minecraft,PocketEdition",143965,False,1.0.1694
+nanoFramework project contributors,2017-12-06T16:17:23.887Z,43209,135,This package includes the base class library (mscorlib) for nanoFramework C# projects,nanoFramework.CoreLibrary,True,1900-01-01T00:00:00+00:00,False,False,nanoFramework.CoreLibrary is the base class library (mscorlib) for nanoFramework C# projects.,"nanoFramework,C#,csharp,netmf,netnf,mscorlib",3786,False,1.0.0-preview037
+Lykke,2017-12-06T18:15:38.44Z,51,135,Client for Lykke.Service.ClientAccount API,Lykke.Service.ClientAccount.Client,False,2018-02-28T13:15:02.34+00:00,True,False,,Lykke,7339,False,1.1.6
+Logrand,2017-12-06T18:12:03.847Z,49,135,Servicio para CFDI LOS,Logrand.CFDI.PDF.Service,False,2018-03-02T16:42:41.91+00:00,True,False,,"Tag1,Tag2",895,False,1.0.3
+Paul Mead,2017-12-06T18:02:17.11Z,37,135,Package Description,MutableIdeas.Web.Linq.Query.Service,False,2018-03-14T14:27:31.85+00:00,True,False,,,2358,False,1.4.4
+Josh van Eikeren,2017-12-06T18:09:29.45Z,32,135,.NET Standard 2.0 Asp.Net Core Extensions/Utilities,Orbital7.Extensions.AspNetCore,False,2018-03-19T01:16:19.673+00:00,True,False,,,516,False,2.0.4
+Nuno Araujo,2017-12-06T18:21:56.85Z,135,135,Package Description,Lykke.MarginTrading.MarketMakerClient,False,2017-12-06T20:43:58.627+00:00,True,False,,,955,False,2.0.3
+Logrand,2017-12-06T18:12:03.847Z,49,135,Servicio para CFDI LOS,Logrand.CFDI.PDF.Service,False,2018-03-02T16:42:41.91+00:00,True,False,,"Tag1,Tag2",895,False,1.0.3
+Cemalettin Dervis,2017-12-06T17:59:22.08Z,11,135,SharpConfig is an easy-to-use CFG/INI configuration library for .NET.,sharpconfig,False,2018-04-09T18:35:54.99+00:00,True,False,SharpConfig is an easy-to-use CFG/INI configuration library for .NET.,"sharpconfig,config,c#,csharp,cfg,ini,configuration,library",14513,False,3.2.1
+Brandon James,2017-12-06T17:53:59.3Z,35,135,A .NET Standard Library using System.Net.HttpClient and NewtonSoft.Json which provides access to the ShipStation API.,ShipStation4Net,False,2018-03-16T21:16:25.243+00:00,True,False,,".NET,Standard,Client,Shipping,ShipStation,REST",1045,False,0.10.29
+Nuno Araujo,2017-12-06T18:21:56.85Z,135,135,Package Description,Lykke.MarginTrading.MarketMakerClient,False,2017-12-06T20:43:58.627+00:00,True,False,,,955,False,2.0.3
+Yunnying,2017-12-06T17:58:55.74Z,133,135,集成饿了么商户的oauth2.0认证，直接登录,junde.owin.security.eleme.merchant,False,2017-12-08T08:09:53.533+00:00,True,False,,eleme,193,False,1.0.0
+Niclas Olofsson,2017-12-06T18:16:47.03Z,77,135,MiNET - a Minecraft PocketEdition Server,MiNET,False,2018-02-02T22:13:57.123+00:00,True,False,,"MiNET,Plugin,API,MCPE,Minecraft,PocketEdition",143965,False,1.0.1694
+"Arnold Wang,Ingeniux Corporation",2017-12-06T18:13:37.56Z,1,135,Nuget Package for Ingeniux Dynamic Site Server Runtime API,Ingeniux_DSS_RTAPI,False,2018-04-19T19:56:06.677+00:00,True,False,,"ingeniux,dss,cms,runtime,api,dynamic,site,server",6259,False,10.0.312
+Josh van Eikeren,2017-12-06T18:09:29.45Z,32,135,.NET Standard 2.0 Asp.Net Core Extensions/Utilities,Orbital7.Extensions.AspNetCore,False,2018-03-19T01:16:19.673+00:00,True,False,,,516,False,2.0.4
+Paul Mead,2017-12-06T18:02:17.11Z,37,135,Package Description,MutableIdeas.Web.Linq.Query.Service,False,2018-03-14T14:27:31.85+00:00,True,False,,,2358,False,1.4.4
+Lykke,2017-12-06T18:15:38.44Z,51,135,Client for Lykke.Service.ClientAccount API,Lykke.Service.ClientAccount.Client,False,2018-02-28T13:15:02.34+00:00,True,False,,Lykke,7339,False,1.1.6
+Martin Hey,2017-11-29T20:09:55.033Z,43209,142,A C# client to access WebUntis.,TaurusSoft.WebUntisNet,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.3.0-beta
+nick.randell@sceneskope.com,2017-12-06T17:50:46.883Z,76,135,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers,False,2018-02-03T12:23:05.423+00:00,True,False,,,1096,False,1.1.0
+nick.randell@sceneskope.com,2017-12-06T17:50:57.727Z,76,135,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers.Tools,False,2018-02-03T12:23:15.283+00:00,True,False,,,1098,False,1.1.0
+Lykke,2017-12-06T17:50:21.7Z,35,135,Contract for the Lykke.Job.CandlesProducer job,Lykke.Job.CandlesProducer.Contract,False,2018-03-16T15:58:14.15+00:00,True,False,,"Lykke,Prices",731,False,2.0.1
+Richard J. Cabral,2017-12-06T17:50:18.217Z,67,135,"Constellation is a collection of utilities for .NET CMS implementers.
+The Feature.Navigation library solves the frequently occurring problem that the primary navigation or footer navigation of a website does not necessarily
+share organization with the contents of the content tree. The reason may be differing SEO goals on URL construction, the need to name something differently
+in navigation as opposed to the Page's heading values, or the need to construct a cross-cutting menu that draws Items from a wide variety of locations. This
+library also gracefully handles the need to have external or document links within a static navigation system (such as a ""fat footer"").
+		
+Components:
+- Navigation Menu - This is a marker item that specifies the root of a static navigation definition for a given website. There can be many of these on any particular
+website. It is recommended that these Items become the Datasource of your Navigation renderings.
+
+- Navigation Link - This is the conceptual member of a navigation and represent a hyperlink, visible to the user, that actually navigates somewhere else (as opposed to
+click-to-open style links or buttons) Includes the link as a General Link with all its available options, as well as a flag to indicate the link text should come
+from the Navigation Link Item's Display Name, which is the recommended approach to ensure the Navigation definition in Sitecore looks like what you see on page. Can be nested.
+- Image Navigation Link - Because there's always some navigation that is represented via icons rather than text. Inherits from above.
+
+- Link Group - Allows for the grouping of Navigation links into named groups. Very useful for pull-down navigation menu options, or Fat Footers with named columns.
+Can be nested.
+
+- NavigationRepository - Static class that accepts a Navigation Menu item and assembles a full tree-like ViewModel for immediate processing in your View.
+
+When using NavigationLink objects, there are usually several opportunities to supply the text of a given link. NavigationLink.GetBestLinkText() evaluates all of them and attempts to
+supply the best fit. The strategy is based on overriding the concept of ""name"". Here are the rules:
+- If Use This Display Name is checked on the NavigationLink item, it wins.
+- If the Link.Text is supplied by the user, it wins.
+- If the Link.TargetItem exists and inherits from Page Navigation Title, and the field value is not null, it wins.
+- If the Link.TargetItem exists its DisplayName is used.
+- Assuming all other things are not true, use the NavigationLink's DisplayName. Note that in this condition if you intended to point to a Sitecore Item, you have a bad link.
+
+You must install the included package to get the Templates required to use this library.
+
+Configured for use with Sitecore 9.0.
+Requires Sitecore 9.0 NuGet packages, available here: https://sitecore.myget.org/F/sc-packages/api/v3/index.json
+Requires the installation of the included Package.",Constellation.Feature.Navigation,False,2018-02-12T16:35:52.56+00:00,True,False,Sitecore Helix library for building out static navigation that doesn't necessarily reflect the shape or names of Items in the content tree.,"Sitecore,Helix,Habitat,SXA,Foundation",1449,False,9.0.3.23077
+pmengal (https://github.com/pmengal/MailSystem.NET),2017-12-06T17:51:56.8Z,116,135,"MailSystem is a suite of .NET components that provide users with an extensive set of email tools. MailSystem provides full support for SMTP, POP3, IMAP4, NNTP, MIME, S/MIME, OpenPGP, DNS, vCard, vCalendar, Anti-Spam (Bayesian , RBL, DomainKeys), Queueing, Mail Merge and WhoIs",MailSystem.Net-trunk,False,2017-12-25T23:32:16.75+00:00,True,False,,"Mail,Library,csharp",18123,False,2.1.38
+Yunnying,2017-12-06T17:51:36.143Z,133,135,auth integration of eleme sdk (v2),junde.eleme.sdk.auth,False,2017-12-08T07:55:20.817+00:00,True,False,,,257,False,1.0.1
+Yunnying,2017-12-06T17:52:32.06Z,133,135,auth integration of eleme sdk (v2),junde.eleme.sdk.auth,False,2017-12-08T07:55:20.817+00:00,True,False,,eleme,257,False,1.0.2
+nick.randell@sceneskope.com,2017-12-06T17:50:36.667Z,76,135,Package Description,SceneSkope.ServiceFabric.GrpcRemoting,False,2018-02-03T12:22:54.563+00:00,True,False,,,1133,False,1.1.0
+Yunnying,2017-12-06T17:51:36.143Z,133,135,auth integration of eleme sdk (v2),junde.eleme.sdk.auth,False,2017-12-08T07:55:20.817+00:00,True,False,,,257,False,1.0.1
+nick.randell@sceneskope.com,2017-12-06T17:50:57.727Z,76,135,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers.Tools,False,2018-02-03T12:23:15.283+00:00,True,False,,,1098,False,1.1.0
+Lykke,2017-12-06T17:50:21.7Z,35,135,Contract for the Lykke.Job.CandlesProducer job,Lykke.Job.CandlesProducer.Contract,False,2018-03-16T15:58:14.15+00:00,True,False,,"Lykke,Prices",731,False,2.0.1
+Yunnying,2017-12-06T17:52:32.06Z,133,135,auth integration of eleme sdk (v2),junde.eleme.sdk.auth,False,2017-12-08T07:55:20.817+00:00,True,False,,eleme,257,False,1.0.2
+pmengal (https://github.com/pmengal/MailSystem.NET),2017-12-06T17:51:56.8Z,116,135,"MailSystem is a suite of .NET components that provide users with an extensive set of email tools. MailSystem provides full support for SMTP, POP3, IMAP4, NNTP, MIME, S/MIME, OpenPGP, DNS, vCard, vCalendar, Anti-Spam (Bayesian , RBL, DomainKeys), Queueing, Mail Merge and WhoIs",MailSystem.Net-trunk,False,2017-12-25T23:32:16.75+00:00,True,False,,"Mail,Library,csharp",18074,False,2.1.38
+Richard J. Cabral,2017-12-06T17:50:18.217Z,67,135,"Constellation is a collection of utilities for .NET CMS implementers.
+The Feature.Navigation library solves the frequently occurring problem that the primary navigation or footer navigation of a website does not necessarily
+share organization with the contents of the content tree. The reason may be differing SEO goals on URL construction, the need to name something differently
+in navigation as opposed to the Page's heading values, or the need to construct a cross-cutting menu that draws Items from a wide variety of locations. This
+library also gracefully handles the need to have external or document links within a static navigation system (such as a ""fat footer"").
+		
+Components:
+- Navigation Menu - This is a marker item that specifies the root of a static navigation definition for a given website. There can be many of these on any particular
+website. It is recommended that these Items become the Datasource of your Navigation renderings.
+
+- Navigation Link - This is the conceptual member of a navigation and represent a hyperlink, visible to the user, that actually navigates somewhere else (as opposed to
+click-to-open style links or buttons) Includes the link as a General Link with all its available options, as well as a flag to indicate the link text should come
+from the Navigation Link Item's Display Name, which is the recommended approach to ensure the Navigation definition in Sitecore looks like what you see on page. Can be nested.
+- Image Navigation Link - Because there's always some navigation that is represented via icons rather than text. Inherits from above.
+
+- Link Group - Allows for the grouping of Navigation links into named groups. Very useful for pull-down navigation menu options, or Fat Footers with named columns.
+Can be nested.
+
+- NavigationRepository - Static class that accepts a Navigation Menu item and assembles a full tree-like ViewModel for immediate processing in your View.
+
+When using NavigationLink objects, there are usually several opportunities to supply the text of a given link. NavigationLink.GetBestLinkText() evaluates all of them and attempts to
+supply the best fit. The strategy is based on overriding the concept of ""name"". Here are the rules:
+- If Use This Display Name is checked on the NavigationLink item, it wins.
+- If the Link.Text is supplied by the user, it wins.
+- If the Link.TargetItem exists and inherits from Page Navigation Title, and the field value is not null, it wins.
+- If the Link.TargetItem exists its DisplayName is used.
+- Assuming all other things are not true, use the NavigationLink's DisplayName. Note that in this condition if you intended to point to a Sitecore Item, you have a bad link.
+
+You must install the included package to get the Templates required to use this library.
+
+Configured for use with Sitecore 9.0.
+Requires Sitecore 9.0 NuGet packages, available here: https://sitecore.myget.org/F/sc-packages/api/v3/index.json
+Requires the installation of the included Package.",Constellation.Feature.Navigation,False,2018-02-12T16:35:52.56+00:00,True,False,Sitecore Helix library for building out static navigation that doesn't necessarily reflect the shape or names of Items in the content tree.,"Sitecore,Helix,Habitat,SXA,Foundation",1448,False,9.0.3.23077
+nick.randell@sceneskope.com,2017-12-06T17:50:36.667Z,76,135,Package Description,SceneSkope.ServiceFabric.GrpcRemoting,False,2018-02-03T12:22:54.563+00:00,True,False,,,1133,False,1.1.0
+nick.randell@sceneskope.com,2017-12-06T17:50:46.883Z,76,135,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers,False,2018-02-03T12:23:05.423+00:00,True,False,,,1096,False,1.1.0
+Yunnying,2017-12-06T17:47:07.3Z,133,135,eleme sdk (v2),junde.eleme.sdk,False,2017-12-08T04:30:17.527+00:00,True,False,,eleme,534,False,1.0.4
+takenet,2017-12-06T17:42:57.733Z,1,135,Iris client utility package,Takenet.Iris.Client,False,2018-04-19T20:20:08.97+00:00,True,False,,,17723,False,2.13.85
+nick.randell@sceneskope.com,2017-12-06T17:41:21.103Z,76,135,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers,True,2018-02-03T12:23:05.423+00:00,True,False,,,1096,False,1.1.0-dev-00016
+nick.randell@sceneskope.com,2017-12-06T17:41:32.477Z,76,135,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers.Tools,True,2018-02-03T12:23:15.283+00:00,True,False,,,1098,False,1.1.0-dev-00016
+Google Inc.,2017-12-06T17:42:22.517Z,4,135,"Precompiled protobuf compiler and gRPC protobuf compiler plugin for generating gRPC client/server C# code. Binaries are available for Windows, Linux and MacOS.",Grpc.Tools,False,2018-04-16T09:11:35.897+00:00,True,False,Tools for C# implementation of gRPC - an RPC library and framework,"gRPC,RPC,Protocol,HTTP/2",171307,True,1.7.3
+takenet,2017-12-06T17:43:10.747Z,1,135,Iris common data types package,Takenet.Iris.Common,False,2018-04-19T20:20:12.39+00:00,True,False,,"Iris,Lime",46430,False,2.13.85
+Google Inc.,2017-12-06T17:43:04.403Z,4,135,C# implementation of gRPC - an RPC library and framework. See project site for more info.,Grpc,False,2018-04-16T09:10:01.113+00:00,True,False,C# implementation of gRPC - an RPC library and framework,"gRPC,RPC,Protocol,HTTP/2",192973,True,1.7.3
+Google Inc.,2017-12-06T17:43:04.403Z,4,135,C# implementation of gRPC - an RPC library and framework. See project site for more info.,Grpc,False,2018-04-16T09:10:01.113+00:00,True,False,C# implementation of gRPC - an RPC library and framework,"gRPC,RPC,Protocol,HTTP/2",192973,True,1.7.3
+Google Inc.,2017-12-06T17:42:22.517Z,4,135,"Precompiled protobuf compiler and gRPC protobuf compiler plugin for generating gRPC client/server C# code. Binaries are available for Windows, Linux and MacOS.",Grpc.Tools,False,2018-04-16T09:11:35.897+00:00,True,False,Tools for C# implementation of gRPC - an RPC library and framework,"gRPC,RPC,Protocol,HTTP/2",171307,True,1.7.3
+takenet,2017-12-06T17:42:57.733Z,1,135,Iris client utility package,Takenet.Iris.Client,False,2018-04-19T20:20:08.97+00:00,True,False,,,17723,False,2.13.85
+takenet,2017-12-06T17:43:10.747Z,1,135,Iris common data types package,Takenet.Iris.Common,False,2018-04-19T20:20:12.39+00:00,True,False,,"Iris,Lime",46430,False,2.13.85
+takenet,2017-12-06T17:43:22.7Z,1,135,Iris messaging data types package,Takenet.Iris.Messaging,False,2018-04-19T20:20:15.22+00:00,True,False,,,13423,False,2.13.85
+Yunnying,2017-12-06T17:47:07.3Z,133,135,eleme sdk (v2),junde.eleme.sdk,False,2017-12-08T04:30:17.527+00:00,True,False,,eleme,534,False,1.0.4
+takenet,2017-12-06T17:43:22.7Z,1,135,Iris messaging data types package,Takenet.Iris.Messaging,False,2018-04-19T20:20:15.22+00:00,True,False,,,13423,False,2.13.85
+Google Inc.,2017-12-06T17:40:40.09Z,4,135,Package Description,Grpc.Reflection,False,2018-04-16T09:11:10.647+00:00,True,False,,"gRPC,reflection",4495,True,1.7.3
+Geeks Ltd,2017-12-06T17:36:50.13Z,1,135,Olive Framework,Olive.Mvc,False,2018-04-19T14:51:28.91+00:00,True,False,,,5829,False,1.0.29
+Google Inc.,2017-12-06T17:40:14.063Z,4,135,Package Description,Grpc.HealthCheck,False,2018-04-16T09:10:58.3+00:00,True,False,,"gRPC,health,check",10498,True,1.7.3
+Google Inc.,2017-12-06T17:36:11.2Z,4,135,Package Description,Grpc.Core,False,2018-04-16T09:10:33.707+00:00,True,False,,"gRPC,RPC,Protocol,HTTP/2",548134,True,1.7.3
+nick.randell@sceneskope.com,2017-12-06T17:41:06.277Z,76,135,Package Description,SceneSkope.ServiceFabric.GrpcRemoting,True,2018-02-03T12:22:54.563+00:00,True,False,,,1133,False,1.1.0-dev-00016
+Google Inc.,2017-12-06T17:37:10.427Z,4,135,Package Description,Grpc.Core.Testing,False,2018-04-16T09:10:45.897+00:00,True,False,,"gRPC,test,testing",2656,True,1.7.3
+William Ward,2017-12-06T17:40:38.543Z,22,135,A compatibility shim to extend MPTT functionality to EntityFrameworkCore projects,GivePay.Mptt.EntityFrameworkCore,False,2018-03-29T20:46:18.99+00:00,True,False,,,824,False,0.6.0
+Google Inc.,2017-12-06T17:36:47.523Z,4,135,Package Description,Grpc.Auth,False,2018-04-16T09:10:13.473+00:00,True,False,,"gRPC,RPC,Protocol,HTTP/2,Auth,OAuth2",253412,True,1.7.3
+William Ward,2017-12-06T17:40:27.89Z,22,135,Abstractions for interacting and creating MPTT providers,GivePay.Mptt.Core,False,2018-03-29T20:46:08.147+00:00,True,False,,,799,False,0.6.0
+Geeks Ltd,2017-12-06T17:41:33.803Z,3,135,Olive Framework,Olive.Web,False,2018-04-17T11:59:36.63+00:00,True,False,,,2535,False,1.0.10
+William Ward,2017-12-06T17:40:27.89Z,22,135,Abstractions for interacting and creating MPTT providers,GivePay.Mptt.Core,False,2018-03-29T20:46:08.147+00:00,True,False,,,797,False,0.6.0
+Geeks Ltd,2017-12-06T17:41:33.803Z,3,135,Olive Framework,Olive.Web,False,2018-04-17T11:59:36.63+00:00,True,False,,,2535,False,1.0.10
+Google Inc.,2017-12-06T17:36:47.523Z,4,135,Package Description,Grpc.Auth,False,2018-04-16T09:10:13.473+00:00,True,False,,"gRPC,RPC,Protocol,HTTP/2,Auth,OAuth2",253412,True,1.7.3
+Phin Solutions Inc.,2017-12-06T17:31:45.48Z,129,135,An SDK exposing the Phin Solutions Product REST API for processing SCRA verification searches. Requires active agreement and client-side API key. For more information please visit us at https://www.phinsolutions.com/,PhinSolutions.SDK,False,2017-12-12T13:13:17.427+00:00,True,False,Phin Solutions Product API SDK,"Phin,Solutions,SCRA",4703,False,1.0.61.17340
+test,2017-12-06T17:30:50.343Z,43209,135,none,Child1234321,False,1900-01-01T00:00:00+00:00,False,False,none,none,-1,False,1.0.1
+Phin Solutions Inc.,2017-12-06T17:31:45.48Z,129,135,An SDK exposing the Phin Solutions Product REST API for processing SCRA verification searches. Requires active agreement and client-side API key. For more information please visit us at https://www.phinsolutions.com/,PhinSolutions.SDK,False,2017-12-12T13:13:17.427+00:00,True,False,Phin Solutions Product API SDK,"Phin,Solutions,SCRA",4703,False,1.0.61.17340
+test,2017-12-06T17:30:50.343Z,43209,135,none,Child1234321,False,1900-01-01T00:00:00+00:00,False,False,none,none,-1,False,1.0.1
+SumoSoft,2017-12-06T17:29:22.76Z,1,135,"SumoSoft Cms is an advanced Framework based on MVC5 that will let you build highly customizable websites with extreme ease. 
+      The main features include: blog, e-commerce, dynamic user permissions, advanced internationalization, 
+      IP based geo-localization, media management using both local FTP folders and Windows Azure Storage accounts, email templating, logging system",SumoSoft.Cms.Mvc,False,2018-04-19T11:52:22.957+00:00,True,False,SumoSoft Cms,,26899,False,5.7.2
+SumoSoft,2017-12-06T17:28:10.613Z,1,135,"SumoSoft Cms is an advanced Framework based on MVC5 that will let you build highly customizable websites with extreme ease. 
+      The main features include: blog, e-commerce, dynamic user permissions, advanced internationalization, 
+      IP based geo-localization, media management using both local FTP folders and Windows Azure Storage accounts, email templating, logging system",SumoSoft.Cms.Core,False,2018-04-19T11:51:37.75+00:00,True,False,SumoSoft Cms,,31961,False,5.7.2
+Phin Solutions Inc.,2017-12-06T17:22:53.327Z,129,135,An SDK exposing the Phin Solutions Product REST API for processing SCRA verification searches. Requires active agreement and client-side API key. For more information please visit us at https://www.phinsolutions.com/,PhinSolutions.SDK,False,2017-12-12T13:13:17.427+00:00,True,False,Phin Solutions Product API SDK,"Phin,Solutions,SCRA",4703,False,1.0.60.17340
+Solutions Experta Inc.,2017-12-06T17:28:25.33Z,114,135,Experta Portable core framework,Experta.Framework.Portable,True,2017-12-27T18:43:56.103+00:00,True,False,,,1106,False,1.2.10-beta
+SumoSoft,2017-12-06T17:29:22.76Z,1,135,"SumoSoft Cms is an advanced Framework based on MVC5 that will let you build highly customizable websites with extreme ease. 
+      The main features include: blog, e-commerce, dynamic user permissions, advanced internationalization, 
+      IP based geo-localization, media management using both local FTP folders and Windows Azure Storage accounts, email templating, logging system",SumoSoft.Cms.Mvc,False,2018-04-19T11:52:22.957+00:00,True,False,SumoSoft Cms,,26908,False,5.7.2
+Solutions Experta Inc.,2017-12-06T17:28:25.33Z,114,135,Experta Portable core framework,Experta.Framework.Portable,True,2017-12-27T18:43:56.103+00:00,True,False,,,1106,False,1.2.10-beta
+SumoSoft,2017-12-06T17:28:10.613Z,1,135,"SumoSoft Cms is an advanced Framework based on MVC5 that will let you build highly customizable websites with extreme ease. 
+      The main features include: blog, e-commerce, dynamic user permissions, advanced internationalization, 
+      IP based geo-localization, media management using both local FTP folders and Windows Azure Storage accounts, email templating, logging system",SumoSoft.Cms.Core,False,2018-04-19T11:51:37.75+00:00,True,False,SumoSoft Cms,,31961,False,5.7.2
+nick.randell@sceneskope.com,2017-12-06T17:16:04.4Z,76,135,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers.Tools,False,2018-02-03T12:23:15.283+00:00,True,False,,,1098,False,1.0.4
+nick.randell@sceneskope.com,2017-12-06T17:12:10.073Z,76,135,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers,True,2018-02-03T12:23:05.423+00:00,True,False,,,1096,False,1.0.4-dev-00013
+nick.randell@sceneskope.com,2017-12-06T17:15:54.277Z,76,135,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers,False,2018-02-03T12:23:05.423+00:00,True,False,,,1096,False,1.0.4
+pmengal (https://mailsystem.codeplex.com/team/view),2017-12-06T17:06:31.3Z,116,135,"MailSystem is a suite of .NET components that provide users with an extensive set of email tools. MailSystem provides full support for SMTP, POP3, IMAP4, NNTP, MIME, S/MIME, OpenPGP, DNS, vCard, vCalendar, Anti-Spam (Bayesian , RBL, DomainKeys), Queueing, Mail Merge and WhoIs",MailSystem.Net-trunk,False,2017-12-25T23:32:16.75+00:00,True,False,,"Mail,Library,csharp",18123,False,2.1.37
+nick.randell@sceneskope.com,2017-12-06T17:15:43.76Z,76,135,Package Description,SceneSkope.ServiceFabric.GrpcRemoting,False,2018-02-03T12:22:54.563+00:00,True,False,,,1133,False,1.0.4
+Enner Pérez,2017-12-06T17:13:29.843Z,135,135,Build targets interface of Obfuscar,MSBuild.Obfuscar,False,2017-12-06T17:13:29.843+00:00,True,False,MSBuild targets for Obfuscar,"Obfuscar,MSBuild,Targets",322,False,2.1.10
+nick.randell@sceneskope.com,2017-12-06T17:12:21.133Z,76,135,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers.Tools,True,2018-02-03T12:23:15.283+00:00,True,False,,,1098,False,1.0.4-dev-00013
+iamcarbon,2017-12-06T17:18:20.207Z,91,135,A .NET Standard library for monitoring servers.,Carbon.Platform.Monitoring,False,2018-01-19T18:19:39.257+00:00,True,False,,"platform,monitoring,carbon",2075,False,0.22.1
+nick.randell@sceneskope.com,2017-12-06T17:15:43.76Z,76,135,Package Description,SceneSkope.ServiceFabric.GrpcRemoting,False,2018-02-03T12:22:54.563+00:00,True,False,,,1133,False,1.0.4
+nick.randell@sceneskope.com,2017-12-06T17:12:21.133Z,76,135,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers.Tools,True,2018-02-03T12:23:15.283+00:00,True,False,,,1098,False,1.0.4-dev-00013
+Enner Pérez,2017-12-06T17:13:29.843Z,135,135,Build targets interface of Obfuscar,MSBuild.Obfuscar,False,2017-12-06T17:13:29.843+00:00,True,False,MSBuild targets for Obfuscar,"Obfuscar,MSBuild,Targets",322,False,2.1.10
+iamcarbon,2017-12-06T17:18:20.207Z,91,135,A .NET Standard library for monitoring servers.,Carbon.Platform.Monitoring,False,2018-01-19T18:19:39.257+00:00,True,False,,"platform,monitoring,carbon",2075,False,0.22.1
+T-Systems México,2017-12-06T17:05:40.963Z,3,135,Entidades de los modulos de la Aplicacion de GDS,TSMX.GDS.App.Entity,False,2018-04-17T14:36:57.13+00:00,True,False,,"TSMX,GDS",818,False,1.0.0.7
+Enner Pérez,2017-12-06T17:12:11.81Z,135,135,Build targets interface of ConfuserEx,MSBuild.ConfuserEx,False,2017-12-06T17:12:11.81+00:00,True,False,MSBuild targets for ConfuserEx,"ConfuserEx,MSBuild,Targets",1868,False,1.0.1
+Geeks Ltd,2017-12-06T17:11:12.787Z,1,135,Olive Framework,Olive.Security,False,2018-04-19T09:07:25.77+00:00,True,False,,,2325,False,1.0.3
+Lykke,2017-12-06T17:08:07.283Z,51,135,Client for Lykke.Service.ClientAccount API,Lykke.Service.ClientAccount.Client,False,2018-02-28T13:15:02.34+00:00,True,False,,Lykke,7339,False,1.1.5
+nick.randell@sceneskope.com,2017-12-06T17:11:59.827Z,76,135,Package Description,SceneSkope.ServiceFabric.GrpcRemoting,True,2018-02-03T12:22:54.563+00:00,True,False,,,1133,False,1.0.4-dev-00013
+Lykke,2017-12-06T17:08:07.283Z,51,135,Client for Lykke.Service.ClientAccount API,Lykke.Service.ClientAccount.Client,False,2018-02-28T13:15:02.34+00:00,True,False,,Lykke,7339,False,1.1.5
+nick.randell@sceneskope.com,2017-12-06T17:11:59.827Z,76,135,Package Description,SceneSkope.ServiceFabric.GrpcRemoting,True,2018-02-03T12:22:54.563+00:00,True,False,,,1133,False,1.0.4-dev-00013
+Geeks Ltd,2017-12-06T17:11:12.787Z,1,135,Olive Framework,Olive.Security,False,2018-04-19T09:07:25.77+00:00,True,False,,,2319,False,1.0.3
+Enner Pérez,2017-12-06T17:12:11.81Z,135,135,Build targets interface of ConfuserEx,MSBuild.ConfuserEx,False,2017-12-06T17:12:11.81+00:00,True,False,MSBuild targets for ConfuserEx,"ConfuserEx,MSBuild,Targets",1861,False,1.0.1
+Geeks Ltd,2017-12-06T17:07:31.913Z,43209,135,Olive Framework,Olive.ImpersonationSession,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.9
+Neomode,2017-12-06T17:02:50.85Z,4,135,Package for integration jobs Lojas MM,Neomode.LojasMM.Jobs,False,2018-04-16T11:36:16.217+00:00,True,False,,,1936,False,0.1.0
+Geeks Ltd,2017-12-06T17:07:31.913Z,43209,135,Olive Framework,Olive.ImpersonationSession,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.9
+St.Leo,2017-12-06T16:58:17.053Z,2,135,Kivii Dev Platform 基础开发包。,Kivii.Common,False,2018-04-18T11:57:59.297+00:00,True,False,Kivii Dev Platform 基础开发包。,"kivii,K5",5433,False,5.3.2017.12070
+Wes Jones,2017-12-06T16:57:36.14Z,135,135,"This is a direct fork of the DotNetCorePdf project by Chirs Bardsley, updated to use the .net Core 2.0 framework.",DotNetCorePdf-2.0fork,False,2017-12-06T16:57:36.14+00:00,True,False,,"pdf,dotnetcore,wkhtmltopd",101,False,2.0.0
+Geeks Ltd,2017-12-06T16:59:57.99Z,43209,135,Olive Framework,Olive.ImpersonationSession,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.8
+"GeorgeWalker,CraigShutko",2017-12-06T17:01:02.493Z,43209,135,API for gov.news.bc.ca,Gov.News.Api.Client,False,1900-01-01T00:00:00+00:00,False,False,,,4734,False,1.0.20
+iamcarbon,2017-12-06T17:03:31.42Z,91,135,Library for monitoring Windows servers.,Carbon.Platform.Monitoring,False,2018-01-19T18:19:39.257+00:00,True,False,,"platform,monitoring,carbon",2075,False,0.22.0
+Sumit Sahni,2017-12-06T16:56:26.743Z,25,135,.NET Data Engine client,ChyronHego.DataEngine,False,2018-03-26T22:13:24.97+00:00,True,False,,"dataengine,data,engine",2959,False,0.3.1
+Geeks Ltd,2017-12-06T17:02:14.59Z,2,135,Compiles M# definitions into .NET code.,MSharp,False,2018-04-18T14:14:37.973+00:00,True,False,,,13437,False,4.1.95
+Jonathan Leaver,2017-12-06T16:50:22.487Z,134,135,Nata.IO.Kafunk,Nata.IO.Kafunk,False,2017-12-07T17:59:04.797+00:00,True,False,,,1052,False,1.0.14
+Neomode,2017-12-06T17:01:19.85Z,4,135,Package for integration Lojas MM,Neomode.LojasMM.Integration,False,2018-04-16T19:27:34.15+00:00,True,False,,,2833,False,0.1.0
+rhartley,2017-12-06T17:02:31.18Z,135,135,Description,GameOfLifeControls,False,2017-12-06T17:02:31.18+00:00,True,False,,,679,False,2.0.0
+Flip Team,2017-12-06T17:03:02.287Z,135,135,Framework to help API creation,Flip.Framework,False,2017-12-06T17:03:02.287+00:00,True,False,,,1514,False,2.0.0
+iamcarbon,2017-12-06T17:03:31.42Z,91,135,Library for monitoring Windows servers.,Carbon.Platform.Monitoring,False,2018-01-19T18:19:39.257+00:00,True,False,,"platform,monitoring,carbon",2075,False,0.22.0
+Geeks Ltd,2017-12-06T17:02:14.59Z,2,135,Compiles M# definitions into .NET code.,MSharp,False,2018-04-18T14:14:37.973+00:00,True,False,,,13437,False,4.1.95
+Sumit Sahni,2017-12-06T16:56:26.743Z,25,135,.NET Data Engine client,ChyronHego.DataEngine,False,2018-03-26T22:13:24.97+00:00,True,False,,"dataengine,data,engine",2959,False,0.3.1
+Flip Team,2017-12-06T17:03:02.287Z,135,135,Framework to help API creation,Flip.Framework,False,2017-12-06T17:03:02.287+00:00,True,False,,,1514,False,2.0.0
+Neomode,2017-12-06T17:01:19.85Z,4,135,Package for integration Lojas MM,Neomode.LojasMM.Integration,False,2018-04-16T19:27:34.15+00:00,True,False,,,2833,False,0.1.0
+Jonathan Leaver,2017-12-06T16:49:23.437Z,134,135,Nata.IO.File,Nata.IO.File,False,2017-12-07T17:57:52.89+00:00,True,False,,,1043,False,1.0.14
+Jonathan Leaver,2017-12-06T16:47:32.227Z,134,135,Nata.IO.Consul,Nata.IO.Consul,False,2017-12-07T17:55:59.283+00:00,True,False,,,1045,False,1.0.14
+Jonathan Leaver,2017-12-06T16:53:44.447Z,134,135,Nata.Service,Nata.Service,False,2017-12-07T18:00:43.81+00:00,True,False,,,640,False,1.0.14
+The Human Fertilisation and Embryology Authority,2017-12-06T16:51:52Z,1,135,HFEA Eprs SDK,HFEA.Register.EprsSDK,False,2018-04-19T13:14:27.97+00:00,True,False,"This is the software development kit developed by HFEA for EPRS providers to interface with 
+         HFEA systems.",,15252,False,1.0.0.3193
+Jonathan Leaver,2017-12-06T16:51:09.227Z,134,135,Nata.IO.RabbitMQ,Nata.IO.RabbitMQ,False,2017-12-07T17:59:54.827+00:00,True,False,,,1046,False,1.0.14
+Jonathan Leaver,2017-12-06T16:48:45.29Z,134,135,Nata.IO.EventStore,Nata.IO.EventStore,False,2017-12-07T17:57:27.44+00:00,True,False,,,1115,False,1.0.14
+rhartley,2017-12-06T16:49:44.76Z,135,135,Description,GameOfLifeControls,False,2017-12-06T17:02:31.18+00:00,True,False,,,679,False,1.11.0
+Diego Morais,2017-12-06T16:53:35.51Z,135,135,"A C# framework to generate database objects interchangeably (Supported databases: SQLServer, Oracle and MySQL)",Tetris,False,2017-12-06T16:53:35.51+00:00,True,False,,,72,False,1.0.0
+Jonathan Leaver,2017-12-06T16:51:42.923Z,134,135,Nata.IO.WebSocket,Nata.IO.WebSocket,False,2017-12-07T18:00:18.903+00:00,True,False,,,1071,False,1.0.14
+Jonathan Leaver,2017-12-06T16:49:52.4Z,134,135,Nata.IO.KafkaNet,Nata.IO.KafkaNet,False,2017-12-07T17:58:26.75+00:00,True,False,,,1077,False,1.0.14
+Jonathan Leaver,2017-12-06T16:50:45.45Z,134,135,Nata.IO.Memory,Nata.IO.Memory,False,2017-12-07T17:59:28.763+00:00,True,False,,,1085,False,1.0.14
+DAS,2017-12-06T16:54:34.89Z,51,135,OWIN Middleware providing OpenId Connect authentication for authorisation code flow,SFA.DAS.OidcMiddleware,False,2018-02-28T09:39:21.73+00:00,True,False,OIDC Middleware,,1841,False,2.0.0.48664
+Janno Põldma,2017-12-06T16:54:48.263Z,10,135,Type providers for generating types and service interfaces for XRoad producers.,XRoadProvider,True,2018-04-10T12:46:21.967+00:00,True,False,Type providers for generating types and service interfaces for XRoad producers.,"F#,fsharp,x-road,xroad,typeproviders,x-tee,xtee",1742,False,1.0.0-alpha014
+Janno Põldma,2017-12-06T16:54:48.263Z,10,135,Type providers for generating types and service interfaces for XRoad producers.,XRoadProvider,True,2018-04-10T12:46:21.967+00:00,True,False,Type providers for generating types and service interfaces for XRoad producers.,"F#,fsharp,x-road,xroad,typeproviders,x-tee,xtee",1742,False,1.0.0-alpha014
+DAS,2017-12-06T16:54:34.89Z,51,135,OWIN Middleware providing OpenId Connect authentication for authorisation code flow,SFA.DAS.OidcMiddleware,False,2018-02-28T09:39:21.73+00:00,True,False,OIDC Middleware,,1841,False,2.0.0.48664
+Jonathan Leaver,2017-12-06T16:48:45.29Z,134,135,Nata.IO.EventStore,Nata.IO.EventStore,False,2017-12-07T17:57:27.44+00:00,True,False,,,1115,False,1.0.14
+Jonathan Leaver,2017-12-06T16:51:42.923Z,134,135,Nata.IO.WebSocket,Nata.IO.WebSocket,False,2017-12-07T18:00:18.903+00:00,True,False,,,1071,False,1.0.14
+Diego Morais,2017-12-06T16:53:35.51Z,135,135,"A C# framework to generate database objects interchangeably (Supported databases: SQLServer, Oracle and MySQL)",Tetris,False,2017-12-06T16:53:35.51+00:00,True,False,,,72,False,1.0.0
+rhartley,2017-12-06T16:49:44.76Z,135,135,Description,GameOfLifeControls,False,2017-12-06T17:02:31.18+00:00,True,False,,,679,False,1.11.0
+Jonathan Leaver,2017-12-06T16:49:52.4Z,134,135,Nata.IO.KafkaNet,Nata.IO.KafkaNet,False,2017-12-07T17:58:26.75+00:00,True,False,,,1077,False,1.0.14
+Lukas Kubis,2017-12-06T16:47:43.617Z,66,135,"Apache Cassandra data store adapter for ASP.NET Core Identity, which allows you to build ASP.NET Core web applications, including membership, login, and user data. With this library, you can store your user's membership related data on Apache Cassandra.",AspNetCore.Identity.Cassandra,False,2018-02-13T14:02:28.017+00:00,True,False,Cassandra Storage Provider for ASP.NET Core Identity,"aspnetcore,identity,cassandra,cassandra-database,datastax,datastax-driver",620,False,1.0.0
+Jonathan Leaver,2017-12-06T16:46:17.57Z,134,135,Nata.IO,Nata.IO,False,2017-12-07T17:55:03.72+00:00,True,False,,,1121,False,1.0.14
+Jonathan Leaver,2017-12-06T16:47:58.283Z,134,135,Nata.IO.CosmosDB,Nata.IO.CosmosDB,False,2017-12-07T17:56:30.58+00:00,True,False,,,306,False,1.0.14
+Lukas Kubis,2017-12-06T16:47:43.617Z,66,135,"Apache Cassandra data store adapter for ASP.NET Core Identity, which allows you to build ASP.NET Core web applications, including membership, login, and user data. With this library, you can store your user's membership related data on Apache Cassandra.",AspNetCore.Identity.Cassandra,False,2018-02-13T14:02:28.017+00:00,True,False,Cassandra Storage Provider for ASP.NET Core Identity,"aspnetcore,identity,cassandra,cassandra-database,datastax,datastax-driver",620,False,1.0.0
+Jonathan Leaver,2017-12-06T16:46:39.817Z,134,135,Nata.IO.AzureStorage,Nata.IO.AzureStorage,False,2017-12-07T17:55:31.003+00:00,True,False,,,1068,False,1.0.14
+Jonathan Leaver,2017-12-06T16:48:24.747Z,134,135,Nata.IO.EventHub,Nata.IO.EventHub,False,2017-12-07T17:56:59.423+00:00,True,False,,,1065,False,1.0.14
+Flash3001,2017-12-06T16:46:01.933Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftMetalKit.dylib",Xamarin.Swift4.MetalKIt,False,2018-04-02T19:05:37.267+00:00,True,False,,"Swift4,runtime,xamarin,libswiftMetalKit.dylib",367,False,4.0.3
+Jonathan Leaver,2017-12-06T16:47:58.283Z,134,135,Nata.IO.CosmosDB,Nata.IO.CosmosDB,False,2017-12-07T17:56:30.58+00:00,True,False,,,306,False,1.0.14
+Lukas Kubis,2017-12-06T16:47:43.617Z,66,135,"Apache Cassandra data store adapter for ASP.NET Core Identity, which allows you to build ASP.NET Core web applications, including membership, login, and user data. With this library, you can store your user's membership related data on Apache Cassandra.",AspNetCore.Identity.Cassandra,False,2018-02-13T14:02:28.017+00:00,True,False,,"aspnetcore,identity,cassandra,cassandra-database,datastax,datastax-driver",620,False,1.0.0
+Jonathan Leaver,2017-12-06T16:48:24.747Z,134,135,Nata.IO.EventHub,Nata.IO.EventHub,False,2017-12-07T17:56:59.423+00:00,True,False,,,1065,False,1.0.14
+Jonathan Leaver,2017-12-06T16:46:39.817Z,134,135,Nata.IO.AzureStorage,Nata.IO.AzureStorage,False,2017-12-07T17:55:31.003+00:00,True,False,,,1068,False,1.0.14
+Jonathan Leaver,2017-12-06T16:45:54.31Z,134,135,Nata.Core,Nata.Core,False,2017-12-07T17:54:35.097+00:00,True,False,,,1131,False,1.0.14
+Artyom Silivonchik,2017-12-06T16:45:48.39Z,45,135,"""Wait"" implementation. Configurable, loggable.",Tiver.Fowl.Waiting,True,2018-03-06T06:13:49.37+00:00,True,False,,,1530,False,0.1.4-alpha0001
+Flash3001,2017-12-06T16:45:31.99Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftWatchKit.dylib",Xamarin.Swift4.WatchKit,False,2018-04-02T19:05:02+00:00,True,False,,"Swift4,runtime,xamarin,libswiftWatchKit.dylib",351,False,4.0.3
+Flash3001,2017-12-06T16:46:18.87Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftCoreGraphics.dylib",Xamarin.Swift4.CoreGraphics,False,2018-04-02T19:05:55.643+00:00,True,False,,"Swift4,runtime,xamarin,libswiftCoreGraphics.dylib",7498,False,4.0.3
+Flash3001,2017-12-06T16:46:32.24Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftVision.dylib",Xamarin.Swift4.Vision,False,2018-04-02T19:06:10.253+00:00,True,False,,"Swift4,runtime,xamarin,libswiftVision.dylib",327,False,4.0.3
+Flash3001,2017-12-06T16:44:47.653Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftQuartzCore.dylib",Xamarin.Swift4.QuartzCore,False,2018-04-02T19:04:15.797+00:00,True,False,,"Swift4,runtime,xamarin,libswiftQuartzCore.dylib",7561,False,4.0.3
+James Maxwell,2017-12-05T21:12:05.437Z,43209,136,Not an official package! A dotnet 2.0 standard compatible library for Amazon's MarketplaceWebService Reports API built using the models and client from Amazon's C# sdk.,DXE.MarketplaceWebService.Reports,False,1900-01-01T00:00:00+00:00,False,False,Not an official package! A dotnet 2.0 standard compatible library for Amazon's MarketplaceWebService Reports API built using the models and client from Amazon's C# sdk.,"MWS,MarketplaceWebService,Amazon",-1,False,1.0.2
+Flash3001,2017-12-06T16:46:32.24Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftVision.dylib",Xamarin.Swift4.Vision,False,2018-04-02T19:06:10.253+00:00,True,False,,"Swift4,runtime,xamarin,libswiftVision.dylib",327,False,4.0.3
+Artyom Silivonchik,2017-12-06T16:45:48.39Z,45,135,"""Wait"" implementation. Configurable, loggable.",Tiver.Fowl.Waiting,True,2018-03-06T06:13:49.37+00:00,True,False,,,1530,False,0.1.4-alpha0001
+Lykke,2017-12-06T16:43:19.41Z,80,135,A REST client for the Exchnage Connector service,Lykke.Service.ExchangeConnector.Client,True,2018-01-30T18:22:35.943+00:00,True,False,,,940,False,1.0.2-beta
+Flash3001,2017-12-06T16:45:17.647Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftARKit.dylib",Xamarin.Swift4.ARKit,False,2018-04-02T19:04:45.797+00:00,True,False,,"Swift4,runtime,xamarin,libswiftARKit.dylib",725,False,4.0.3
+Flash3001,2017-12-06T16:45:02.7Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftSpriteKit.dylib",Xamarin.Swift4.SpriteKit,False,2018-04-02T19:04:29.28+00:00,True,False,,"Swift4,runtime,xamarin,libswiftSpriteKit.dylib",552,False,4.0.3
+Flash3001,2017-12-06T16:45:46.5Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftIntents.dylib",Xamarin.Swift4.Intents,False,2018-04-02T19:05:19.8+00:00,True,False,,"Swift4,runtime,xamarin,libswiftIntents.dylib",328,False,4.0.3
+Flash3001,2017-12-06T16:43:34.123Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftCoreFoundation.dylib",Xamarin.Swift4.CoreFoundation,False,2018-04-02T19:02:58.887+00:00,True,False,,"Swift4,runtime,xamarin,libswiftCoreFoundation.dylib",7450,False,4.0.3
+Flash3001,2017-12-06T16:42:10.8Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftObjectiveC.dylib",Xamarin.Swift4.ObjectiveC,False,2018-04-02T19:01:34.743+00:00,True,False,,"Swift4,runtime,xamarin,libswiftObjectiveC.dylib",7553,False,4.0.3
+Flash3001,2017-12-06T16:44:18.52Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftCoreMedia.dylib",Xamarin.Swift4.CoreMedia,False,2018-04-02T19:03:43.797+00:00,True,False,,"Swift4,runtime,xamarin,libswiftCoreMedia.dylib",7155,False,4.0.3
+Flash3001,2017-12-06T16:43:48.7Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftXCTest.dylib",Xamarin.Swift4.XCTest,False,2018-04-02T19:03:14.7+00:00,True,False,,"Swift4,runtime,xamarin,libswiftXCTest.dylib",535,False,4.0.3
+Flash3001,2017-12-06T16:45:46.5Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftIntents.dylib",Xamarin.Swift4.Intents,False,2018-04-02T19:05:19.8+00:00,True,False,,"Swift4,runtime,xamarin,libswiftIntents.dylib",328,False,4.0.3
+Flash3001,2017-12-06T16:45:17.647Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftARKit.dylib",Xamarin.Swift4.ARKit,False,2018-04-02T19:04:45.797+00:00,True,False,,"Swift4,runtime,xamarin,libswiftARKit.dylib",725,False,4.0.3
+Richard J. Cabral,2014-01-29T21:14:56.08Z,43209,1542,"This library supports a number of regularly-requested SEO features, implemented in Sitecore. Some of these have been implemented elsewhere, but I believe my approach
+		is stronger for multi-site, multi-language installations.
+		
+		Features Included: 
+		Multi-site 404 page subsystem that returns an actual 404 response code.
+		Automatic Robots.txt support - configurable for each Sitecore server in your installation.
+		Automatic Sitemap.xml support - fully multi-site capable; can be configured to support a wide array of information architectures.
+		Rule-based approach to ensuring that Sitecore Items get the most url-friendly name possible.",Spark.Sitecore.Seo,False,1900-01-01T00:00:00+00:00,False,False,A number of SEO-specific modules for Sitecore.,Sitecore,-1,False,1.0.5142.29195
+Flash3001,2017-12-06T16:43:04.88Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftAVFoundation.dylib",Xamarin.Swift4.AVFoundation,False,2018-04-02T19:02:24.573+00:00,True,False,,"Swift4,runtime,xamarin,libswiftAVFoundation.dylib",4835,False,4.0.3
+Flash3001,2017-12-06T16:43:20.02Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftMediaPlayer.dylib",Xamarin.Swift4.MediaPlayer,False,2018-04-02T19:02:42.467+00:00,True,False,,"Swift4,runtime,xamarin,libswiftMediaPlayer.dylib",3768,False,4.0.3
+Richard J. Cabral,2014-01-27T20:17:28.093Z,43209,1544,"Diamond is a framework for Sitecore. It contains a few basic Interfaces and Classes that can be used to construct objects that represent Sitecore.Data.Items.Items but include a few features not found in the native Sitecore API.
+
+		Diamond is intended to be paired with a code generation tool such as NVelocity or T4 templates. Code generation should use Sitecore Data Template definitions to create Interfaces and Classes. These can be used to create instances of Items that support multiple inheritance and contracts. Diamond Items typically have declared properties representing a given Item's fields.
+
+		Using Diamond makes Sitecore Items suitable for use with type-driven IoC or Dependency Injection scenarios, such as MVC/MVP and MVVM patterns.",Diamond,False,1900-01-01T00:00:00+00:00,False,False,A strongly-typed Item framework for Sitecore.,Sitecore,3767,False,1.1.5140.27394
+Flash3001,2017-12-06T16:44:34.267Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftCallKit.dylib",Xamarin.Swift4.CallKit,False,2018-04-02T19:04:01.157+00:00,True,False,,"Swift4,runtime,xamarin,libswiftCallKit.dylib",336,False,4.0.3
+Flash3001,2017-12-06T16:42:47.197Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftSwiftOnoneSupport.dylib",Xamarin.Swift4.SwiftOnoneSupport,False,2018-04-02T19:02:07.573+00:00,True,False,,"Swift4,runtime,xamarin,libswiftSwiftOnoneSupport.dylib",4113,False,4.0.3
+Flash3001,2017-12-06T16:44:03.837Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftModelIO.dylib",Xamarin.Swift4.ModelIO,False,2018-04-02T19:03:27.873+00:00,True,False,,"Swift4,runtime,xamarin,libswiftModelIO.dylib",586,False,4.0.3
+Flash3001,2017-12-06T16:42:27.28Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftCoreAudio.dylib",Xamarin.Swift4.CoreAudio,False,2018-04-02T19:01:50.433+00:00,True,False,,"Swift4,runtime,xamarin,libswiftCoreAudio.dylib",7064,False,4.0.3
+Richard J. Cabral,2014-01-29T19:33:33.947Z,43209,1542,"All of these fields have been tested against Sitecore 6.6.x. Most should work with Sitecore 7.x
+		Fields Included:
+		
+		Filtered Tree,
+		Queryable Treelist,
+		Site-Based Droptree,
+		Site-Based Image,
+		Site-Based Multilist,
+		Site-Based Treelist,
+		Tokenized List
+		
+		Thank you to Ed Lane for his help in porting some of these to Sitecore 6.6 and for his work on Tokenized List.",Spark.Sitecore.Client,False,1900-01-01T00:00:00+00:00,False,False,A collection of aftermarket fields for the Sitecore content editor,Sitecore,-1,False,1.0.5142.26082
+Richard J. Cabral,2014-01-28T17:42:11.377Z,43209,1543,"Spark contains a number of very useful Sitecore utilities They include:
+		
+		A Datasource Resolver that automatically escapes XPath statements for use by ""query"" and ""fast""
+		
+		A rule and event framework that allows programmers to explicitly specify required conditions for parameters that are typically not specified in the pipeline, such as database, site, and language.
+		
+		Extensions to Language that make it easier to transition between ISO-codes, Language Items and Globalization.Language objects.
+		
+		A handful of Rules for automatically moving Items to appropriate subfolders to create blog-like URLs.",Spark.Sitecore,False,1900-01-01T00:00:00+00:00,False,False,A Sitecore extension library used by the Spark namespace.,Sitecore,-1,False,1.0.5141.22776
+Richard J. Cabral,2013-11-20T16:10:05.523Z,43209,1612,"Extending Diamond for Sitecore: https://www.nuget.org/packages/Diamond Diamond for Team Development for Sitecore provides example T4 templates
+	for use with your Hedgehog Development TDS plugin. This library also includes a number of string-related methods to help convert Sitecore template paths
+	to C# compatible namespaces and class names.",Diamond.Tds,False,1900-01-01T00:00:00+00:00,False,False,Diamond class generating T4 templates and helpful utilities for Hedgehog TDS projects.,"Sitecore,HHogDev,Hedgehog,TDS,Team,Development,for",-1,False,0.9.4
+Richard J. Cabral,2013-11-20T16:08:00.803Z,43209,1612,"Extending Diamond for Sitecore: https://www.nuget.org/packages/Diamond Diamond for Team Development for Sitecore provides example T4 templates
+	for use with your Hedgehog Development TDS plugin. This library also includes a number of string-related methods to help convert Sitecore template paths
+	to C# compatible namespaces and class names.",Diamond.Tds,False,1900-01-01T00:00:00+00:00,False,False,Diamond class generating T4 templates and helpful utilities for Hedgehog TDS projects.,"Sitecore,HHogDev,Hedgehog,TDS,Team,Development,for",-1,False,0.9.3
+Richard J. Cabral,2014-01-28T16:49:43.647Z,43209,1543,"Spark.Html contains a number of extension methods for HtmlTextWriter. Internally these methods use an IDisposable pattern to encapsulate the rather cumbersome code for adding attributes, rendering the begin tag, and rendering the end tag.
+		
+		The extension methods should generally be called as part of a ""using"" statement. ex: using (writer.RenderDiv()) { }
+		
+		The result is C# code for rendering HTML that is very easy to read, fully supports the ASP.NET browser capabilities feature, and is flexible enough to handle new tags invented in the future.",Spark.Html,False,1900-01-01T00:00:00+00:00,False,False,A .NET library to increase the utility and efficiency of HtmlTextWriter,Sitecore,-1,False,1.0.5141.21250
+Richard J. Cabral,2013-11-20T16:05:10.12Z,43209,1612,"Extending Diamond for Sitecore: https://www.nuget.org/packages/Diamond Diamond for Team Development for Sitecore provides example T4 templates
+	for use with your Hedgehog Development TDS plugin. This library also includes a number of string-related methods to help convert Sitecore template paths
+	to C# compatible namespaces and class names.",Diamond.Tds,False,1900-01-01T00:00:00+00:00,False,False,Diamond class generating T4 templates and helpful utilities for Hedgehog TDS projects.,"Sitecore,HHogDev,Hedgehog,TDS,Team,Development,for",-1,False,0.9.2
+Flash3001,2017-12-06T16:40:32.417Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftMetal.dylib",Xamarin.Swift4.Metal,False,2018-04-02T18:59:44.943+00:00,True,False,,"Swift4,runtime,xamarin,libswiftMetal.dylib",7427,False,4.0.3
+Flash3001,2017-12-06T16:41:57.053Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftSceneKit.dylib",Xamarin.Swift4.SceneKit,False,2018-04-02T19:01:20.03+00:00,True,False,,"Swift4,runtime,xamarin,libswiftSceneKit.dylib",582,False,4.0.3
+Flash3001,2017-12-06T16:43:04.88Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftAVFoundation.dylib",Xamarin.Swift4.AVFoundation,False,2018-04-02T19:02:24.573+00:00,True,False,,"Swift4,runtime,xamarin,libswiftAVFoundation.dylib",4914,False,4.0.3
+Flash3001,2017-12-06T16:43:20.02Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftMediaPlayer.dylib",Xamarin.Swift4.MediaPlayer,False,2018-04-02T19:02:42.467+00:00,True,False,,"Swift4,runtime,xamarin,libswiftMediaPlayer.dylib",3691,False,4.0.3
+Flash3001,2017-12-06T16:41:57.053Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftSceneKit.dylib",Xamarin.Swift4.SceneKit,False,2018-04-02T19:01:20.03+00:00,True,False,,"Swift4,runtime,xamarin,libswiftSceneKit.dylib",582,False,4.0.3
+Flash3001,2017-12-06T16:44:34.267Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftCallKit.dylib",Xamarin.Swift4.CallKit,False,2018-04-02T19:04:01.157+00:00,True,False,,"Swift4,runtime,xamarin,libswiftCallKit.dylib",335,False,4.0.3
+Flash3001,2017-12-06T16:42:47.197Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftSwiftOnoneSupport.dylib",Xamarin.Swift4.SwiftOnoneSupport,False,2018-04-02T19:02:07.573+00:00,True,False,,"Swift4,runtime,xamarin,libswiftSwiftOnoneSupport.dylib",4196,False,4.0.3
+Richard J. Cabral,2014-01-28T20:46:49.48Z,43209,1543,"This library contains the following useful classes:
+		
+		Querystring Helper: Allows for easy appending, concatenating, and manipulating Querystrings.
+		
+		UrlHelper: Manages Querystring parameters through the URL objects.
+		
+		Pagination: Headless logic for producing web pages that support paginated result sets.",Spark.Web,False,1900-01-01T00:00:00+00:00,False,False,Some basic ASP.NET utilities. This is a core library for other Spark namespaces.,Spark,-1,False,1.0.5141.28331
+Richard J. Cabral,2014-01-28T21:29:46.587Z,43209,1543,"Diamond is a framework for Sitecore. It contains a few basic Interfaces and Classes that can be used to construct objects that represent Sitecore.Data.Items.Items but include a few features not found in the native Sitecore API.
+
+		Diamond is intended to be paired with a code generation tool such as NVelocity or T4 templates. Code generation should use Sitecore Data Template definitions to create Interfaces and Classes. These can be used to create instances of Items that support multiple inheritance and contracts. Diamond Items typically have declared properties representing a given Item's fields.
+
+		Using Diamond makes Sitecore Items suitable for use with type-driven IoC or Dependency Injection scenarios, such as MVC/MVP and MVVM patterns.",Spark.WebForms,False,1900-01-01T00:00:00+00:00,False,False,A strongly-typed Item framework for Sitecore.,Sitecore,-1,False,1.0.5141.28929
+Anthony Lloyd and contributors,2017-12-06T16:39:46.63Z,13,135,"Expecto is an advanced testing library for F# covering unit testing, property based testing, performance testing and stress testing.",Expecto.BenchmarkDotNet,False,2018-04-07T12:59:46.84+00:00,True,False,Advanced testing library for F#,"test,testing,fsharp,assert,expect,stress,performance,unit,random,property",17752,True,5.1.1
+Flash3001,2017-12-06T16:41:00.707Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftCoreData.dylib",Xamarin.Swift4.CoreData,False,2018-04-02T19:00:15.303+00:00,True,False,,"Swift4,runtime,xamarin,libswiftCoreData.dylib",6925,False,4.0.3
+Narato - http://www.narato.be,2017-12-06T16:41:34.777Z,113,135,Contains some utils extensions placed on String. A QOL library,Narato.StringExtensions,False,2017-12-28T11:20:48.22+00:00,True,False,,"Narato,Utils,StringExtensions",3715,False,1.0.3
+Flash3001,2017-12-06T16:40:47.117Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftAccelerate.dylib",Xamarin.Swift4.Accelerate,False,2018-04-02T19:00:00.07+00:00,True,False,,"Swift4,runtime,xamarin,libswiftAccelerate.dylib",345,False,4.0.3
+Flash3001,2017-12-06T16:41:42.493Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftos.dylib",Xamarin.Swift4.OS,False,2018-04-02T19:01:01.18+00:00,True,False,,"Swift4,runtime,xamarin,libswiftos.dylib",7496,False,4.0.3
+Flash3001,2017-12-06T16:41:42.493Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftos.dylib",Xamarin.Swift4.OS,False,2018-04-02T19:01:01.18+00:00,True,False,,"Swift4,runtime,xamarin,libswiftos.dylib",7496,False,4.0.3
+Narato - http://www.narato.be,2017-12-06T16:41:34.777Z,113,135,Contains some utils extensions placed on String. A QOL library,Narato.StringExtensions,False,2017-12-28T11:20:48.22+00:00,True,False,,"Narato,Utils,StringExtensions",3715,False,1.0.3
+Flash3001,2017-12-06T16:41:28.903Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftAssetsLibrary.dylib",Xamarin.Swift4.AssetsLibrary,False,2018-04-02T19:00:45.807+00:00,True,False,,"Swift4,runtime,xamarin,libswiftAssetsLibrary.dylib",388,False,4.0.3
+Georg Hinkel,2017-12-06T16:32:22.597Z,10,135,This package allows an incrementalization of arbitrary expressions based on change notifications via INotifyPropertyChanged and INotifyCollectionChanged interfaces.,NMF-Expressions,False,2018-04-10T06:20:45.39+00:00,True,False,This package allows an incrementalization of arbitrary expressions based on change notifications via INotifyPropertyChanged and INotifyCollectionChanged interfaces.,"Incremental,LINQ",7210,False,2.0.107
+Anthony Lloyd and contributors,2017-12-06T16:39:47.63Z,13,135,Advanced testing library for F#,Expecto.FsCheck,False,2018-04-07T12:59:46.67+00:00,True,False,,"test,testing,fsharp,assert,expect,stress,performance,unit,random,property",36022,True,5.1.1
+Flash3001,2017-12-06T16:41:15.58Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftCoreLocation.dylib",Xamarin.Swift4.CoreLocation,False,2018-04-02T19:00:30.587+00:00,True,False,,"Swift4,runtime,xamarin,libswiftCoreLocation.dylib",4430,False,4.0.3
+Flash3001,2017-12-06T16:41:28.903Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftAssetsLibrary.dylib",Xamarin.Swift4.AssetsLibrary,False,2018-04-02T19:00:45.807+00:00,True,False,,"Swift4,runtime,xamarin,libswiftAssetsLibrary.dylib",387,False,4.0.3
+Flash3001,2017-12-06T16:41:15.58Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftCoreLocation.dylib",Xamarin.Swift4.CoreLocation,False,2018-04-02T19:00:30.587+00:00,True,False,,"Swift4,runtime,xamarin,libswiftCoreLocation.dylib",4430,False,4.0.3
+Anthony Lloyd and contributors,2017-12-06T16:39:47.88Z,13,135,Advanced testing library for F#,Expecto,False,2018-04-07T12:59:44.013+00:00,True,False,,"test,testing,fsharp,assert,expect,stress,performance,unit,random,property",79949,True,5.1.1
+Flash3001,2017-12-06T16:39:10.39Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftPhotos.dylib",Xamarin.Swift4.Photos,False,2018-04-02T18:58:20.567+00:00,True,False,,"Swift4,runtime,xamarin,libswiftPhotos.dylib",380,False,4.0.3
+Flash3001,2017-12-06T16:37:37.927Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftGLKit.dylib",Xamarin.Swift4.GLKit,False,2018-04-02T18:56:38.657+00:00,True,False,,"Swift4,runtime,xamarin,libswiftGLKit.dylib",573,False,4.0.3
+Flash3001,2017-12-06T16:38:24.103Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftContacts.dylib",Xamarin.Swift4.Contacts,False,2018-04-02T18:57:27.08+00:00,True,False,,"Swift4,runtime,xamarin,libswiftContacts.dylib",333,False,4.0.3
+Flash3001,2017-12-06T16:38:39.677Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftRemoteMirror.dylib",Xamarin.Swift4.RemoteMirror,False,2018-04-02T18:57:44.567+00:00,True,False,,"Swift4,runtime,xamarin,libswiftRemoteMirror.dylib",333,False,4.0.3
+Flash3001,2017-12-06T16:37:54.157Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftDarwin.dylib",Xamarin.Swift4.Darwin,False,2018-04-02T18:56:53.923+00:00,True,False,,"Swift4,runtime,xamarin,libswiftDarwin.dylib",7545,False,4.0.3
+Flash3001,2017-12-06T16:40:18.483Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftCore.dylib",Xamarin.Swift4.Core,False,2018-04-02T18:59:29.163+00:00,True,False,,"Swift4,runtime,xamarin,libswiftCore.dylib",7755,False,4.0.3
+Flash3001,2017-12-06T16:37:24.15Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftGameplayKit.dylib",Xamarin.Swift4.GameplayKit,False,2018-04-02T18:56:22.58+00:00,True,False,,"Swift4,runtime,xamarin,libswiftGameplayKit.dylib",351,False,4.0.3
+Flash3001,2017-12-06T16:38:55.847Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftDispatch.dylib",Xamarin.Swift4.Dispatch,False,2018-04-02T18:58:05.16+00:00,True,False,,"Swift4,runtime,xamarin,libswiftDispatch.dylib",7515,False,4.0.3
+Flash3001,2017-12-06T16:38:09.577Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftCoreImage.dylib",Xamarin.Swift4.CoreImage,False,2018-04-02T18:57:09.767+00:00,True,False,,"Swift4,runtime,xamarin,libswiftCoreImage.dylib",7556,False,4.0.3
+Flash3001,2017-12-06T16:38:39.677Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftRemoteMirror.dylib",Xamarin.Swift4.RemoteMirror,False,2018-04-02T18:57:44.567+00:00,True,False,,"Swift4,runtime,xamarin,libswiftRemoteMirror.dylib",333,False,4.0.3
+Flash3001,2017-12-06T16:37:37.927Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftGLKit.dylib",Xamarin.Swift4.GLKit,False,2018-04-02T18:56:38.657+00:00,True,False,,"Swift4,runtime,xamarin,libswiftGLKit.dylib",572,False,4.0.3
+Flash3001,2017-12-06T16:38:24.103Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftContacts.dylib",Xamarin.Swift4.Contacts,False,2018-04-02T18:57:27.08+00:00,True,False,,"Swift4,runtime,xamarin,libswiftContacts.dylib",334,False,4.0.3
+Flash3001,2017-12-06T16:38:09.577Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftCoreImage.dylib",Xamarin.Swift4.CoreImage,False,2018-04-02T18:57:09.767+00:00,True,False,,"Swift4,runtime,xamarin,libswiftCoreImage.dylib",7463,False,4.0.3
+Flash3001,2017-12-06T16:40:18.483Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftCore.dylib",Xamarin.Swift4.Core,False,2018-04-02T18:59:29.163+00:00,True,False,,"Swift4,runtime,xamarin,libswiftCore.dylib",7755,False,4.0.3
+Flash3001,2017-12-06T16:37:24.15Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftGameplayKit.dylib",Xamarin.Swift4.GameplayKit,False,2018-04-02T18:56:22.58+00:00,True,False,,"Swift4,runtime,xamarin,libswiftGameplayKit.dylib",351,False,4.0.3
+Flash3001,2017-12-06T16:39:10.39Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftPhotos.dylib",Xamarin.Swift4.Photos,False,2018-04-02T18:58:20.567+00:00,True,False,,"Swift4,runtime,xamarin,libswiftPhotos.dylib",381,False,4.0.3
+Flash3001,2017-12-06T16:38:55.847Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftDispatch.dylib",Xamarin.Swift4.Dispatch,False,2018-04-02T18:58:05.16+00:00,True,False,,"Swift4,runtime,xamarin,libswiftDispatch.dylib",7607,False,4.0.3
+Georg Hinkel,2017-12-06T16:33:29.613Z,10,135,"This package contains NMF Transformations, a framework and internal DSL to specify model transformations in C#. It consists of a generic framework for model transformations, an execution engine based on this framework and an internal DSL on top of it.",NMF-Transformations,False,2018-04-10T06:24:45.637+00:00,True,False,The model transformation language and engine used in NMF,"Model-driven,MDE,MDSD",6302,False,2.0.107
+nanoFramework project contributors,2017-12-06T16:17:23.887Z,43209,135,This package includes the base class library (mscorlib) for nanoFramework C# projects,nanoFramework.CoreLibrary,True,1900-01-01T00:00:00+00:00,False,False,nanoFramework.CoreLibrary is the base class library (mscorlib) for nanoFramework C# projects.,"nanoFramework,C#,csharp,netmf,netnf,mscorlib",3786,False,1.0.0-preview037
+Georg Hinkel,2017-12-06T16:32:12.32Z,10,135,This package contains some utility classes for NMF Expressions,NMF-Expressions-Utilities,False,2018-04-10T06:21:07.157+00:00,True,False,This package contains some utility classes for NMF Expressions,"Incremental,LINQ",5782,False,2.0.107
+Flash3001,2017-12-06T16:32:29.253Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftCloudKit.dylib",Xamarin.Swift4.CloudKit,False,2018-04-02T18:55:51.92+00:00,True,False,,"Swift4,runtime,xamarin,libswiftCloudKit.dylib",330,False,4.0.3
+Max-Planck-Institute of Biochemistry,2017-12-06T16:32:11.54Z,1,135,PerseusApi implementation,PerseusLibS,False,2018-04-20T09:10:17.28+00:00,True,False,,,69380,False,1.6.0.1430
+Georg Hinkel,2017-12-06T16:33:08.367Z,10,135,This package contains a set of classes to create NMF model repositories.,NMF-Repository,False,2018-04-10T06:26:11.717+00:00,True,False,This package contains a set of classes to create NMF model repositories.,"Model-driven,MDE,MDSD",7106,False,2.0.107
+Flash3001,2017-12-06T16:32:12.693Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftUIKit.dylib",Xamarin.Swift4.UIKit,False,2018-04-02T18:55:35.107+00:00,True,False,,"Swift4,runtime,xamarin,libswiftUIKit.dylib",7758,False,4.0.3
+Georg Hinkel,2017-12-06T16:33:18.443Z,10,135,The NMF Synchronizations language to support bidirectional and/or incremental model synchronizations.,NMF-Synchronizations,False,2018-04-10T06:25:14.497+00:00,True,False,The NMF Synchronizations language to support bidirectional and/or incremental model synchronizations.,"Model-driven,MDE,MDSD",5980,False,2.0.107
+Flash3001,2017-12-06T16:32:46.263Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftHomeKit.dylib",Xamarin.Swift4.HomeKit,False,2018-04-02T18:56:07.67+00:00,True,False,,"Swift4,runtime,xamarin,libswiftHomeKit.dylib",340,False,4.0.3
+Georg Hinkel,2017-12-06T16:32:00.18Z,10,135,This package contains the necessary classes to load and store Ecore metamodels and to transform them to NMeta.,NMF-EcoreInterop,False,2018-04-10T06:20:10.64+00:00,True,False,This package contains the necessary classes to load and store Ecore metamodels and to transform them to NMeta.,"Model-driven,MDE,MDSD",1782,False,2.0.107
+Flash3001,2017-12-06T16:31:56.62Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftFoundation.dylib",Xamarin.Swift4.Foundation,False,2018-04-02T18:55:18.907+00:00,True,False,,"Swift4,runtime,xamarin,libswiftFoundation.dylib",7657,False,4.0.3
+nanoFramework project contributors,2017-12-06T16:17:23.887Z,43209,135,This package includes the base class library (mscorlib) for nanoFramework C# projects,nanoFramework.CoreLibrary,True,1900-01-01T00:00:00+00:00,False,False,nanoFramework.CoreLibrary is the base class library (mscorlib) for nanoFramework C# projects.,"nanoFramework,C#,csharp,netmf,netnf,mscorlib",3786,False,1.0.0-preview037
+Bitprim,2017-12-06T16:30:44.043Z,3,135,C# binding for Bitprim Bitcoin platform,bitprim,False,2018-04-17T20:12:32.993+00:00,True,False,,"Bitcoin,C#,Litecoin,Cash",14565,False,0.2.57
+Georg Hinkel,2017-12-06T16:33:43.64Z,10,135,This package contains a set of helper functions used across NMF.,NMF-Utilities,False,2018-04-10T06:25:37.09+00:00,True,False,This package contains a set of helper functions used across NMF.,"Model-driven,MDE,MDSD",6265,False,2.0.107
+Georg Hinkel,2017-12-06T16:32:56.747Z,10,135,This package contains a transformation from NMeta to code.,NMF-MetaTransformation,False,2018-04-10T06:24:16.777+00:00,True,False,This package contains a transformation from NMeta to code.,"Model-driven,MDE,MDSD",2233,False,2.0.107
+Georg Hinkel,2017-12-06T16:32:44.577Z,10,135,A simple implementation of Tarjans algorithm that creates a topological order for a given graph,NMF-Layering,False,2018-04-10T06:23:32.087+00:00,True,False,A simple implementation of Tarjans algorithm that creates a topological order for a given graph,"Model-driven,MDE,MDSD",6036,False,2.0.107
+Georg Hinkel,2017-12-06T16:31:36.437Z,10,135,This package contains the basic libraries for a model-driven project using the .NET Modelling Framework (NMF).,NMF-Basics,False,2018-04-10T06:19:21.623+00:00,True,False,This package contains the basic libraries for a model-driven project using the .NET Modelling Framework (NMF).,"Model-driven,MDE,EMF,XMI,MDSD,Ecore",8322,False,2.0.107
+Georg Hinkel,2017-12-06T16:33:43.64Z,10,135,This package contains a set of helper functions used across NMF.,NMF-Utilities,False,2018-04-10T06:25:37.09+00:00,True,False,This package contains a set of helper functions used across NMF.,"Model-driven,MDE,MDSD",6265,False,2.0.107
+Georg Hinkel,2017-12-06T16:33:18.443Z,10,135,The NMF Synchronizations language to support bidirectional and/or incremental model synchronizations.,NMF-Synchronizations,False,2018-04-10T06:25:14.497+00:00,True,False,The NMF Synchronizations language to support bidirectional and/or incremental model synchronizations.,"Model-driven,MDE,MDSD",5980,False,2.0.107
+Georg Hinkel,2017-12-06T16:32:56.747Z,10,135,This package contains a transformation from NMeta to code.,NMF-MetaTransformation,False,2018-04-10T06:24:16.777+00:00,True,False,This package contains a transformation from NMeta to code.,"Model-driven,MDE,MDSD",2233,False,2.0.107
+Georg Hinkel,2017-12-06T16:32:44.577Z,10,135,A simple implementation of Tarjans algorithm that creates a topological order for a given graph,NMF-Layering,False,2018-04-10T06:23:32.087+00:00,True,False,A simple implementation of Tarjans algorithm that creates a topological order for a given graph,"Model-driven,MDE,MDSD",6036,False,2.0.107
+Flash3001,2017-12-06T16:32:46.263Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftHomeKit.dylib",Xamarin.Swift4.HomeKit,False,2018-04-02T18:56:07.67+00:00,True,False,,"Swift4,runtime,xamarin,libswiftHomeKit.dylib",340,False,4.0.3
+Georg Hinkel,2017-12-06T16:32:33.737Z,10,135,This package contains the Incerator tool to optimize incremental analyses.,NMF-Incerator,False,2018-04-10T06:22:16.13+00:00,True,False,This package contains the Incerator tool to optimize incremental analyses.,"Model-driven,MDE,EMF,XMI,MDSD,Ecore",1908,False,2.0.107
+Georg Hinkel,2017-12-06T16:31:49.37Z,10,135,A library for code generators.,NMF-CodeGen,False,2018-04-10T06:19:45.5+00:00,True,False,This package contains a set of transformation rule templates that can be useful for code generators.,"Model-driven,MDE,MDSD",6016,False,2.0.107
+Georg Hinkel,2017-12-06T16:31:49.37Z,10,135,A library for code generators.,NMF-CodeGen,False,2018-04-10T06:19:45.5+00:00,True,False,This package contains a set of transformation rule templates that can be useful for code generators.,"Model-driven,MDE,MDSD",6016,False,2.0.107
+Georg Hinkel,2017-12-06T16:32:33.737Z,10,135,This package contains the Incerator tool to optimize incremental analyses.,NMF-Incerator,False,2018-04-10T06:22:16.13+00:00,True,False,This package contains the Incerator tool to optimize incremental analyses.,"Model-driven,MDE,EMF,XMI,MDSD,Ecore",1908,False,2.0.107
+Flash3001,2017-12-06T16:30:55.59Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftMapKit.dylib",Xamarin.Swift4.MapKit,False,2018-04-02T18:54:16.2+00:00,True,False,,"Swift4,runtime,xamarin,libswiftMapKit.dylib",785,False,4.0.3
+stefan,2017-12-06T16:27:16.143Z,135,135,-,Asd.Infra.Data,False,2017-12-06T16:27:16.143+00:00,True,False,,,200,False,1.0.2
+Flash3001,2017-12-06T16:31:14.41Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftsimd.dylib",Xamarin.Swift4.SIMD,False,2018-04-02T18:54:39.37+00:00,True,False,,"Swift4,runtime,xamarin,libswiftsimd.dylib",4898,False,4.0.3
+Flash3001,2017-12-06T16:31:14.41Z,18,135,"This package gives Xamarin support for Swift4.
+    
+    Includes libswiftsimd.dylib",Xamarin.Swift4.SIMD,False,2018-04-02T18:54:39.37+00:00,True,False,,"Swift4,runtime,xamarin,libswiftsimd.dylib",4819,False,4.0.3
+Lykke,2017-12-06T16:29:02.773Z,80,135,A REST client for the Exchnage Connector service,Lykke.Service.ExchangeConnector.Client,True,2018-01-30T18:22:35.943+00:00,True,False,,,940,False,1.0.1-beta
+Daniel Palme,2017-12-06T16:26:24.19Z,4,135,"ReportGenerator converts XML reports generated by OpenCover, PartCover, dotCover, Visual Studio, NCover, or Cobertura or into human readable reports in various formats. The reports do not only show the coverage quota, but also include the source code and visualize which line has been covered.",ReportGenerator,False,2018-04-16T18:18:45.28+00:00,True,False,,"Code,Coverage,Reporting,Testing,TDD,Utility",2675638,False,3.1.0
+edsnider,2017-12-06T16:27:26.407Z,71,135,Easily detect if you are running the latest version of your Xamarin iOS and Android apps.,Xam.Plugin.LatestVersion,True,2018-02-08T02:37:32.527+00:00,True,False,,"ios,android,xamarin.ios,xamarin.android,latestversion,apps,version,appstore,playstore,iphone,ipad,xamarin,xam.plugin,plugin",1077,False,1.0.0-beta35
+Lykke,2017-12-06T16:29:02.773Z,80,135,A REST client for the Exchnage Connector service,Lykke.Service.ExchangeConnector.Client,True,2018-01-30T18:22:35.943+00:00,True,False,,,940,False,1.0.1-beta
+edsnider,2017-12-06T16:27:26.407Z,71,135,Easily detect if you are running the latest version of your Xamarin iOS and Android apps.,Xam.Plugin.LatestVersion,True,2018-02-08T02:37:32.527+00:00,True,False,,"ios,android,xamarin.ios,xamarin.android,latestversion,apps,version,appstore,playstore,iphone,ipad,xamarin,xam.plugin,plugin",1081,False,1.0.0-beta35
+Daniel Palme,2017-12-06T16:26:24.19Z,4,135,"ReportGenerator converts XML reports generated by OpenCover, PartCover, dotCover, Visual Studio, NCover, or Cobertura or into human readable reports in various formats. The reports do not only show the coverage quota, but also include the source code and visualize which line has been covered.",ReportGenerator,False,2018-04-16T18:18:45.28+00:00,True,False,,"Code,Coverage,Reporting,Testing,TDD,Utility",2678436,False,3.1.0
+Clement O.,2017-12-06T16:23:07.18Z,78,135,This tool will allow you to reassign or copy personal views from one user to another. This is really useful when someone left a company and forgot to migrate his own views to somebody else.,Carfup.XTBPlugins.PersonalViewsMigration,False,2018-02-01T12:13:36.073+00:00,True,False,Really sweet plugin that does awesome things,"XrmToolBox,Plugin,PersonalViewsMigration",44579,False,1.2017.12.1
+yilmaz,2017-12-06T16:17:17.17Z,134,135,Description,bowerTest1,False,2017-12-07T11:32:28.067+00:00,True,False,,test,285,False,1.0.0
+Geeks Ltd,2017-12-06T16:15:20.613Z,33,135,Olive Framework,Olive.IpFilter,False,2018-03-18T16:08:36.953+00:00,True,False,,,815,False,1.0.6
+SumoSoft,2017-12-06T16:20:47.767Z,1,135,"SumoSoft Cms is an advanced Framework based on MVC5 that will let you build highly customizable websites with extreme ease. 
+      The main features include: blog, e-commerce, dynamic user permissions, advanced internationalization, 
+      IP based geo-localization, media management using both local FTP folders and Windows Azure Storage accounts, email templating, logging system",SumoSoft.Cms.Mvc,False,2018-04-19T11:52:22.957+00:00,True,False,SumoSoft Cms,,26899,False,5.7.0
+nanoFramework project contributors,2017-12-06T16:17:23.887Z,43209,135,This package includes the base class library (mscorlib) for nanoFramework C# projects,nanoFramework.CoreLibrary,True,1900-01-01T00:00:00+00:00,False,False,nanoFramework.CoreLibrary is the base class library (mscorlib) for nanoFramework C# projects.,"nanoFramework,C#,csharp,netmf,netnf,mscorlib",3786,False,1.0.0-preview037
+compent.dk,2017-12-06T16:23:33.703Z,46,135,This package contains all the NuGet packages for uIntra. All the different packages can be accessed here and possibly changed by a developer.,uIntra,False,2018-03-05T16:03:01.38+00:00,True,False,,"Compent,uIntra",740,False,0.2.5.16
+Momentum,2017-12-06T16:18:12.263Z,4,135,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.12.479-beta
+test,2017-12-06T16:23:58.87Z,43209,135,none,ParentPublic1234321,False,1900-01-01T00:00:00+00:00,False,False,none,none,158,False,1.0.0
+Progress Onderwijs,2017-12-06T16:21:25.1Z,11,135,Various utility methods+classes used by Progress Onderwijs.,ProgressOnderwijsUtils,False,2018-04-09T08:59:29.997+00:00,True,False,,ProgressOnderwijs,10222,False,13.1.0
+Momentum,2017-12-06T16:18:28.23Z,4,135,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.12.479-beta
+yilmaz,2017-12-06T16:17:17.17Z,134,135,Description,bowerTest1,False,2017-12-07T11:32:28.067+00:00,True,False,,,285,False,1.0.0
+Geeks Ltd,2017-12-06T16:14:53.34Z,43209,135,Olive Framework,Olive.ImpersonationSession,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.7
+Clement O.,2017-12-06T16:23:07.18Z,78,135,This tool will allow you to reassign or copy personal views from one user to another. This is really useful when someone left a company and forgot to migrate his own views to somebody else.,Carfup.XTBPlugins.PersonalViewsMigration,False,2018-02-01T12:13:36.073+00:00,True,False,Really sweet plugin that does awesome things,"XrmToolBox,Plugin,PersonalViewsMigration",44621,False,1.2017.12.1
+test,2017-12-06T16:23:58.87Z,43209,135,none,ParentPublic1234321,False,1900-01-01T00:00:00+00:00,False,False,none,none,158,False,1.0.0
+Progress Onderwijs,2017-12-06T16:21:25.1Z,11,135,Various utility methods+classes used by Progress Onderwijs.,ProgressOnderwijsUtils,False,2018-04-09T08:59:29.997+00:00,True,False,,ProgressOnderwijs,10222,False,13.1.0
+Momentum,2017-12-06T16:18:28.23Z,4,135,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.12.479-beta
+Clement O.,2017-12-06T16:23:07.18Z,78,135,This tool will allow you to reassign or copy personal views from one user to another. This is really useful when someone left a company and forgot to migrate his own views to somebody else.,Carfup.XTBPlugins.PersonalViewsMigration,False,2018-02-01T12:13:36.073+00:00,True,False,Really sweet plugin that does awesome things,"XrmToolBox,Plugin,PersonalViewsMigration",44621,False,1.2017.12.1
+Geeks Ltd,2017-12-06T16:15:33.653Z,39,135,Olive Framework,Olive.PDF,False,2018-03-12T17:19:44.67+00:00,True,False,,,1034,False,1.0.6
+SumoSoft,2017-12-06T16:17:46.46Z,1,135,"SumoSoft Cms is an advanced Framework based on MVC5 that will let you build highly customizable websites with extreme ease. 
+      The main features include: blog, e-commerce, dynamic user permissions, advanced internationalization, 
+      IP based geo-localization, media management using both local FTP folders and Windows Azure Storage accounts, email templating, logging system",SumoSoft.Cms.Core,False,2018-04-19T11:51:37.75+00:00,True,False,SumoSoft Cms,,31971,False,5.7.0
+Geeks Ltd,2017-12-06T16:15:33.653Z,39,135,Olive Framework,Olive.PDF,False,2018-03-12T17:19:44.67+00:00,True,False,,,1034,False,1.0.6
+SumoSoft,2017-12-06T16:17:46.46Z,1,135,"SumoSoft Cms is an advanced Framework based on MVC5 that will let you build highly customizable websites with extreme ease. 
+      The main features include: blog, e-commerce, dynamic user permissions, advanced internationalization, 
+      IP based geo-localization, media management using both local FTP folders and Windows Azure Storage accounts, email templating, logging system",SumoSoft.Cms.Core,False,2018-04-19T11:51:37.75+00:00,True,False,SumoSoft Cms,,31971,False,5.7.0
+compent.dk,2017-12-06T16:08:46.313Z,43209,135,"Notifications works as know from other social media, however it is also possible to receive notifications as email. The user can set up which notifications they would like to receive in emails.",uIntra.Notification,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Notification,Controls,NotificationControls",-1,False,1.3.3.16
+Geeks Ltd,2017-12-06T16:14:12.913Z,43209,135,Olive Framework,Olive.Excel,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.6
+compent.dk,2017-12-06T16:10:56.71Z,43209,135,"There are 3 types of user roles in uIntra, UI User, UI Publisher and webmaster. The UI User can read/like/comment and create bulletins but that is all, the UI Publisher can do everything the UI User can and create News and Events in addition, the webmaster has access to all functionality including Umbraco.",uIntra.Users,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Users,implementation",-1,False,1.6.0.2
+Danny Varod,2017-12-06T16:13:52.7Z,11,135,Caching abstraction and Cache Manager,PubComp.Caching.Core,False,2018-04-09T12:06:23.183+00:00,True,False,Caching abstraction and Cache Manager,"Cache,Caching,CacheManager,PubComp",6853,False,2.2.0
+Geeks Ltd,2017-12-06T16:13:15.68Z,39,135,Olive Framework,Olive.Compression,False,2018-03-12T17:18:03.243+00:00,True,False,,,810,False,1.0.6
+Geeks Ltd,2017-12-06T16:13:59.323Z,3,135,Olive Framework,Olive.Email,False,2018-04-17T11:58:08.47+00:00,True,False,,,1794,False,1.0.10
+Geeks Ltd,2017-12-06T16:13:01.827Z,9,135,A plugin for Olive Framework,Olive.BlobAws,False,2018-04-11T09:47:23.583+00:00,True,False,,,809,False,1.0.4
+Geeks Ltd,2017-12-06T16:14:26.393Z,39,135,Olive Framework,Olive.GeoLocation,False,2018-03-12T17:19:09.04+00:00,True,False,,,818,False,1.0.6
+Max-Planck-Institute of Biochemistry,2017-12-06T16:10:30.42Z,1,135,PerseusApi implementation,PerseusLibS,False,2018-04-20T09:10:17.28+00:00,True,False,,,69455,False,1.6.0.1429
+Geeks Ltd,2017-12-06T16:15:07.007Z,43209,135,Olive Framework,Olive.Integration,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.6
+"buckstephenh,eswwaa",2017-12-06T16:13:16.197Z,43209,135,"Welcome to lifeIMAGE Agent!  This utility connects your enterprise data sources with lifeIMAGE 
+to create powerful workflows using an extensible connection framework.  Built-in bi-directional
+connectors include PACS, HL7, lifeIMAGE, and file.  Build your own additional connectors or
+contact lifeIMAGE for support.
+
+Supported Platforms: Linux, Mac, Windows",lifeimage-agent,False,1900-01-01T00:00:00+00:00,False,False,,"lifeIMAGE,life,image,DICOM,PACS,HL7,IHE",-1,False,1.0.53
+Geeks Ltd,2017-12-06T16:14:39.97Z,3,135,Olive Framework,Olive.Globalization,False,2018-04-17T11:58:59.957+00:00,True,False,,,966,False,1.0.8
+Geeks Ltd,2017-12-06T16:13:30.817Z,35,135,Olive Framework,Olive.CSV,False,2018-03-16T15:28:22.28+00:00,True,False,,,1061,False,1.0.6
+Geeks Ltd,2017-12-06T16:15:07.007Z,43209,135,Olive Framework,Olive.Integration,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.6
+Geeks Ltd,2017-12-06T16:13:59.323Z,3,135,Olive Framework,Olive.Email,False,2018-04-17T11:58:08.47+00:00,True,False,,,1792,False,1.0.10
+Geeks Ltd,2017-12-06T16:14:26.393Z,39,135,Olive Framework,Olive.GeoLocation,False,2018-03-12T17:19:09.04+00:00,True,False,,,818,False,1.0.6
+Danny Varod,2017-12-06T16:13:52.7Z,11,135,Caching abstraction and Cache Manager,PubComp.Caching.Core,False,2018-04-09T12:06:23.183+00:00,True,False,Caching abstraction and Cache Manager,"Cache,Caching,CacheManager,PubComp",6860,False,2.2.0
+Geeks Ltd,2017-12-06T16:14:39.97Z,3,135,Olive Framework,Olive.Globalization,False,2018-04-17T11:58:59.957+00:00,True,False,,,966,False,1.0.8
+Geeks Ltd,2017-12-06T16:14:12.913Z,43209,135,Olive Framework,Olive.Excel,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.6
+compent.dk,2017-12-06T16:10:31.36Z,43209,135,Tagging activity package,uIntra.Tagging,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Tagging,Controls,TaggingControls",-1,False,1.1.7.1
+Geeks Ltd,2017-12-06T16:13:45.22Z,9,135,Olive Framework,Olive.Drawing,False,2018-04-11T14:21:02.247+00:00,True,False,,,1241,False,1.0.7
+Geeks Ltd,2017-12-06T16:13:45.22Z,9,135,Olive Framework,Olive.Drawing,False,2018-04-11T14:21:02.247+00:00,True,False,,,1241,False,1.0.7
+compent.dk,2017-12-06T16:10:31.36Z,43209,135,Tagging activity package,uIntra.Tagging,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Tagging,Controls,TaggingControls",-1,False,1.1.7.1
+compent.dk,2017-12-06T16:10:04.803Z,43209,135,Subscription can be done by all users on events they can see. Subscribing to an event allows the event creator to send emails to the subscribers in case of changes or additional information.,uIntra.Subscribe,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Subscribe,Controls,SubscribeControls",-1,False,1.1.7.1
+compent.dk,2017-12-06T16:09:12.603Z,43209,135,Panels can be added to all pages. They hold information of different types. They can be placed according to a grid layout by the webmaster in Umbraco.,uIntra.Panels,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Panels,ContentPanel,GlobalPanel",-1,False,2.1.10.21
+compent.dk,2017-12-06T16:09:39.047Z,43209,135,The search bar is visible from all pages of uIntra. It is based on elastic search. The search bar will attempt to help the user by auto-suggest search key words.,uIntra.Search,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Search,Controls,SearchControls",-1,False,0.1.9.5
+Pavel Kochubey,2017-12-06T16:09:20.68Z,135,135,Gemini API,GeminiApi,False,2017-12-06T19:34:24.057+00:00,True,False,,"Gemini,API,Bitcoin",254,False,1.0.2
+compent.dk,2017-12-06T16:10:04.803Z,43209,135,Subscription can be done by all users on events they can see. Subscribing to an event allows the event creator to send emails to the subscribers in case of changes or additional information.,uIntra.Subscribe,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Subscribe,Controls,SubscribeControls",-1,False,1.1.7.1
+Artomatix Ltd,2017-12-06T16:09:51.153Z,43209,135,OpenCL Preprocessor,Artomatix.OpenCLPrepass,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.8
+compent.dk,2017-12-06T16:08:20.793Z,43209,135,News are a type of post that can be created by UI publishers and webmasters. This type of post is intended for company related news. If a specific news post is important it can be stickied for as long as it is relevant.,uIntra.News,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,News,Controls,NewsControls",-1,False,1.3.0.5
+Kailin O'Donnell,2017-12-06T16:09:20.367Z,31,135,A fully featured .NET2.0 compatible C# library for performing transactions on and interacting with the NEM blockchain.,CSharp2nem,False,2018-03-20T11:36:26.81+00:00,True,False,,"Nem,Blockchain,Nis,Bitcoin",7856,False,2.0.8
+compent.dk,2017-12-06T16:05:22.447Z,43209,135,Comments as known from other social media platforms can be added to all types of posts and other comments as well. Commenting on a comment will result in a nested comment. All user roles can comment.,uIntra.Comments,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Comments,Controls,CommentsControls",-1,False,1.1.9.8
+Artomatix Ltd,2017-12-06T16:09:51.153Z,43209,135,OpenCL Preprocessor,Artomatix.OpenCLPrepass,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.8
+compent.dk,2017-12-06T16:08:20.793Z,43209,135,News are a type of post that can be created by UI publishers and webmasters. This type of post is intended for company related news. If a specific news post is important it can be stickied for as long as it is relevant.,uIntra.News,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,News,Controls,NewsControls",-1,False,1.3.0.5
+Kailin O'Donnell,2017-12-06T16:09:20.367Z,31,135,A fully featured .NET2.0 compatible C# library for performing transactions on and interacting with the NEM blockchain.,CSharp2nem,False,2018-03-20T11:36:26.81+00:00,True,False,,"Nem,Blockchain,Nis,Bitcoin",7856,False,2.0.8
+compent.dk,2017-12-06T16:06:00.293Z,43209,135,Core activity package.,uIntra.Core,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Core",-1,False,1.4.3.4
+compent.dk,2017-12-06T16:06:26.737Z,43209,135,Events are a type of post that can be created by UI publishers and webmasters. It is intended for creating events that users can subscribe to and attend.,uIntra.Events,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Events,Controls,EventsControls",-1,False,1.5.0.5
+compent.dk,2017-12-06T16:07:54.067Z,43209,135,The navigation is positioned in the left side of uIntra and serves as a overview of the pages and their sub-pages. It is also possible to add links to the navigation for quick access.,uIntra.Navigation,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Navigation,Controls,NavigationControls",-1,False,1.2.7.2
+compent.dk,2017-12-06T16:07:27.153Z,43209,135,Likes as known from other social media platforms can be added to all types of posts and comments. They show up visually when something is liked and there is a counter on the number of likes a post or comment has.,uIntra.Likes,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Likes",-1,False,1.1.7.6
+compent.dk,2017-12-06T16:06:56.837Z,43209,135,Some kind of group description.,uIntra.Groups,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Groups",-1,False,0.2.0.4
+compent.dk,2017-12-06T16:06:00.293Z,43209,135,Core activity package.,uIntra.Core,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Core",-1,False,1.4.3.4
+compent.dk,2017-12-06T16:06:26.737Z,43209,135,Events are a type of post that can be created by UI publishers and webmasters. It is intended for creating events that users can subscribe to and attend.,uIntra.Events,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Events,Controls,EventsControls",-1,False,1.5.0.5
+compent.dk,2017-12-06T16:07:54.067Z,43209,135,The navigation is positioned in the left side of uIntra and serves as a overview of the pages and their sub-pages. It is also possible to add links to the navigation for quick access.,uIntra.Navigation,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Navigation,Controls,NavigationControls",-1,False,1.2.7.2
+compent.dk,2017-12-06T16:06:56.837Z,43209,135,Some kind of group description.,uIntra.Groups,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Groups",-1,False,0.2.0.4
+compent.dk,2017-12-06T16:04:47.223Z,43209,135,"The central feed exists on the home page, in the central feed it is possible to see all types of posts (Events, News and Bulletins) and these can be filtered as the user sees fit. It is possible to create News and Events from the central feed if you have user role of UI publisher or webmaster.",uIntra.CentralFeed,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Likes",-1,False,1.3.0.2
+compent.dk,2017-12-06T16:04:47.223Z,43209,135,"The central feed exists on the home page, in the central feed it is possible to see all types of posts (Events, News and Bulletins) and these can be filtered as the user sees fit. It is possible to create News and Events from the central feed if you have user role of UI publisher or webmaster.",uIntra.CentralFeed,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Likes",-1,False,1.3.0.2
+Tools For Smart Minds,2017-12-06T16:01:01.897Z,43209,135,SCCT .NET client library,T4SM.SCCTNet.Client,False,1900-01-01T00:00:00+00:00,False,False,,"t4sm,industry4.0,iot,idaq",-1,False,1.0.0
+Momentum,2017-12-06T16:01:25.71Z,4,135,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.12.477-beta
+compent.dk,2017-12-06T16:04:19.703Z,43209,135,Bulletins are a simple type of post that are used for more casual purposes than Event and News posts. All types of user roles has access to writing Bulletins.,uIntra.Bulletins,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Bulletins,Controls,BulletinsControls",-1,False,0.3.0.5
+Compent.dk,2017-12-06T16:02:21.787Z,43209,135,EnumLists for Umbraco 7,Compent.EnumLists,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uCommerce,Umbraco",-1,False,1.1.2
+test,2017-12-06T16:04:34.48Z,43209,135,none,Parent1234321,False,1900-01-01T00:00:00+00:00,False,False,none,none,-1,False,1.0.0
+test,2017-12-06T16:04:34.48Z,43209,135,none,Parent1234321,False,1900-01-01T00:00:00+00:00,False,False,none,none,-1,False,1.0.0
+compent.dk,2017-12-06T16:03:47.79Z,43209,135,Base activity package.,uIntra.BaseControls,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Base,Controls,BaseControls",-1,False,2.4.2.8
+rhartley,2017-12-06T16:03:01.35Z,135,135,Description,GameOfLifeControls,False,2017-12-06T17:02:31.18+00:00,True,False,,,679,False,1.10.0
+compent.dk,2017-12-06T16:03:47.79Z,43209,135,Base activity package.,uIntra.BaseControls,False,1900-01-01T00:00:00+00:00,False,False,,"Compent,uIntra,Base,Controls,BaseControls",-1,False,2.4.2.8
+Cloud24,2017-12-06T15:44:26.86Z,43209,135,Fixed,TubeVideo,False,1900-01-01T00:00:00+00:00,False,False,Fixed,"Tag1,Tag2",-1,False,1.0.2
+Michael Ganss,2017-12-06T15:58:45.697Z,7,135,Generate XmlSerializer compatible C# classes from XML Schema files.,XmlSchemaClassGenerator-beta,True,2018-04-13T18:26:34.767+00:00,True,False,,xsd,7884,False,2.0.83-beta
+GuyWaguespack,2017-12-06T15:58:19.103Z,135,135,A set of utility functions used by Synapse and its various handlers to interact with Amazon Web Services (AWS).,Synapse.Aws.Core,True,2017-12-06T15:58:19.103+00:00,True,False,"Synapse is a lightweight execution engine designed to take data from disparate, federated sources and connect it to a process. Synapse is built to run as a local or remote process.",,48,False,0.1.17340-alpha
+Kailin O'Donnell,2017-12-06T15:56:42.403Z,31,135,A fully featured .NET2.0 compatible C# library for performing transactions on and interacting with the NEM blockchain.,CSharp2nem,False,2018-03-20T11:36:26.81+00:00,True,False,,"Nem,Blockchain,Nis,Bitcoin",7856,False,2.0.7
+Momentum,2017-12-06T16:01:08.833Z,4,135,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.12.477-beta
+Momentum,2017-12-06T16:01:08.833Z,4,135,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.12.477-beta
+Cloud24,2017-12-06T15:44:26.86Z,43209,135,Package description,TubeVideo,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.2
+Artyom Silivonchik,2017-12-06T15:53:50.443Z,45,135,"""Wait"" implementation. Configurable, loggable.",Tiver.Fowl.Waiting,True,2018-03-06T06:13:49.37+00:00,True,False,,,1530,False,0.1.3-alpha0014
+Redmind Technology,2017-12-06T15:42:26.16Z,92,135,TBD,redmind.robin.model,False,2018-01-18T10:25:21.99+00:00,True,False,,Redmind,1817,False,1.0.17
+Lucas Fernandes,2017-12-06T15:35:19.697Z,67,135,Framework to Cognitive Computing,VI.Neural,False,2018-02-12T11:18:00.46+00:00,True,False,,,450,False,1.0.1
+Microsoft,2017-12-06T15:44:47.75Z,50,135,"Async synchronization primitives, async collections, TPL and dataflow extensions. The JoinableTaskFactory allows synchronously blocking the UI thread for async work. This package is applicable to any .NET application (not just Visual Studio).",Microsoft.VisualStudio.Threading,True,2018-03-01T07:35:56.717+00:00,True,False,,"Threading,Async,Lock,Synchronization,Threadsafe",1288416,True,15.6.11-beta
+Artyom Silivonchik,2017-12-06T15:53:50.443Z,45,135,"""Wait"" implementation. Configurable, loggable.",Tiver.Fowl.Waiting,True,2018-03-06T06:13:49.37+00:00,True,False,,,1530,False,0.1.3-alpha0014
+Redmind Technology,2017-12-06T15:42:13.693Z,92,135,TBD,redmind.robin.context,False,2018-01-18T10:25:09.957+00:00,True,False,,Redmind,2189,False,1.0.17
+Microsoft,2017-12-06T15:45:01.247Z,50,135,Static code analyzer to detect common mistakes or potential issues on the C# code that uses Visual Studio SDK APIs.,Microsoft.VisualStudio.Threading.Analyzers,True,2018-03-01T07:36:10.25+00:00,True,False,,"analyzers,visualstudio,vssdk,sdk,threading",42917,True,15.6.11-beta
+takenet,2017-12-06T15:37:48.313Z,1,135,Iris common data types package,Takenet.Iris.Common,False,2018-04-19T20:20:12.39+00:00,True,False,,"Iris,Lime",46430,False,2.13.84
+Bitprim,2017-12-06T15:40:47.837Z,3,135,C# binding for Bitprim Bitcoin platform,bitprim,False,2018-04-17T20:12:32.993+00:00,True,False,,"Bitcoin,C#,Litecoin,Cash",14562,False,0.2.56
+Bsynchro.Rates.Core,2017-12-06T15:39:52.793Z,86,135,Package Description,Bsynchro.Rates.Core,False,2018-01-24T11:14:08.54+00:00,True,False,,,1174,False,4.10.2
+Child1234321,2017-12-06T15:46:22.883Z,43209,135,Package Description,Child1234321,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Bitprim,2017-12-06T15:40:47.837Z,3,135,C# binding for Bitprim Bitcoin platform,bitprim,False,2018-04-17T20:12:32.993+00:00,True,False,,"Bitcoin,C#,Litecoin,Cash",14565,False,0.2.56
+Child1234321,2017-12-06T15:46:22.883Z,43209,135,Package Description,Child1234321,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Microsoft,2017-12-06T15:45:01.247Z,50,135,Static code analyzer to detect common mistakes or potential issues on the C# code that uses Visual Studio SDK APIs.,Microsoft.VisualStudio.Threading.Analyzers,True,2018-03-01T07:36:10.25+00:00,True,False,,"analyzers,visualstudio,vssdk,sdk,threading",43132,True,15.6.11-beta
+Bsynchro.Rates.Core,2017-12-06T15:39:52.793Z,86,135,Package Description,Bsynchro.Rates.Core,False,2018-01-24T11:14:08.54+00:00,True,False,,,1174,False,4.10.2
+Redmind Technology,2017-12-06T15:42:13.693Z,92,135,TBD,redmind.robin.context,False,2018-01-18T10:25:09.957+00:00,True,False,,Redmind,2188,False,1.0.17
+takenet,2017-12-06T15:37:34.783Z,1,135,Iris client utility package,Takenet.Iris.Client,False,2018-04-19T20:20:08.97+00:00,True,False,,,17723,False,2.13.84
+Google Inc.,2017-12-06T15:35:09.01Z,2,135,"Google APIs Client Library for working with Youtubereporting v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/youtubereporting/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.YouTubeReporting.v1,False,2018-04-18T09:07:25.473+00:00,True,False,,Google,15471,True,1.31.0.1068
+Google Inc.,2017-12-06T15:34:55.963Z,2,135,"Google APIs Client Library for working with YoutubeAnalytics v1beta1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/youtubeAnalytics/v1beta1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.YouTubeAnalytics.v1beta1,False,2018-04-18T09:07:09.893+00:00,True,False,,Google,25790,True,1.31.0.1066
+Michael Vivet,2017-12-06T15:34:26.963Z,2,135,"Seamlessly builod and launch services, derived from complex business models and operations.",NanoCore,True,2018-04-18T08:53:31.923+00:00,True,False,,"nano,service,web,api,rest",4808,False,0.1.66-pre
+Smartline LLC,2017-12-06T15:32:57.937Z,43209,135,LifePay Atol printing driver,LifePay.Printing.Atol.Win32,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.10.12
+takenet,2017-12-06T15:38:02.173Z,1,135,Iris messaging data types package,Takenet.Iris.Messaging,False,2018-04-19T20:20:15.22+00:00,True,False,,,13423,False,2.13.84
+Savvas Kleanthous,2017-12-06T15:36:59.033Z,135,135,Read and save to .xlsx made easy. For the developer that has better things to do that work with spreadsheets but just has to provide something to the business. The purpose of this package is to minimize the learning curve required to start saving to excel files or reading spreadsheet files uploaded from users.,SuperSimple.Spreadsheets,False,2017-12-06T15:36:59.033+00:00,True,False,,"Excel,Spreadsheet,OpenXml",669,False,0.1.3
+Richard J. Cabral,2017-12-06T15:38:25.123Z,59,135,"Constellation is a collection of utilities for .NET CMS implementers.
+		
+The Foundation.ModelMapping library is inspired by AutoMapper and is designed to provide a quick, non-ORM method of
+mapping Sitecore Items to ViewModels. String properties on your ViewModel will be mapped to FieldRendered values from fields with the 
+same names. Integer, DateTime, and Uri property types can also be handled automatically, although you will not get page editor support
+for these types. There are a number of Attributes that you can assign to your ViewModel's properties to change the behavior of the Mapper.
+
+Usage: TModel viewModel = ModelMapper.MapItemToNew<TModel>(sourceItem);
+
+Constraints:
+- Your ViewModel must have a public, parameterless constructor.
+- Only Writable, Public Instance properties will be mapped.
+- Within Sitecore, your field names can be human-legible. ModelMapper will attempt to convert the field name to a valid Property name. Simpler names work best. 
+You can use the Field's Display Name for better human legibility and keep the Field's actual name closer to a legit C# entity name.
+
+The following Model properties are mapped to Item properties rather than Item fields:
+- ID - Maps to the Item.ID - Make sure you use Sitecore.Data.ID as the property type.
+- Name - Maps to the Item.Name 
+- DisplayName - Maps to Item.DisplayName
+- Url - can be a string or a Uri type. Causes the current context LinkManager to generate a Url for the Item.
+
+Support for XML Field Attributes
+- ImageField.Alt - use Model.FieldNameAlt
+- ImageField.Height - use Model.FieldNameHeight
+- GeneralLink.Target - use Model.FieldNameTarget
+- etc.
+
+Support for LinkField.TargetItem - use Model.FieldNameTargetItem and supply a class with public properties and a parameterless constructor.
+Support for MultilistField.GetItems - use Model.FieldName and supply a generic ICollection of type ""T"" where ""T"" is new() and has properties you can map.
+
+Extensible! See the Constellation.Foundation.ModelMapping.config file to change the way Fields are processed.
+
+Configured for use with Sitecore 9.0.
+Requires Sitecore 9.0 NuGet packages, available here: https://sitecore.myget.org/F/sc-packages/api/v3/index.json",Constellation.Foundation.ModelMapping,False,2018-02-20T14:40:31.15+00:00,True,False,Sitecore Helix library to enhance MVC development in Sitecore.,"Sitecore,Helix,Habitat,SXA,Foundation,Mvc",1601,False,9.0.9.19108
+Google Inc.,2017-12-06T15:33:20.013Z,4,135,"Google APIs Client Library for working with Vault v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/vault/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.Vault.v1,False,2018-04-16T09:01:27.67+00:00,True,False,,Google,1183,True,1.31.0.1029
+Google Inc.,2017-12-06T15:34:25.62Z,4,135,"Google APIs Client Library for working with Youtube v3.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/youtube/v3
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.YouTube.v3,False,2018-04-16T09:01:45.623+00:00,True,False,,Google,908175,True,1.31.0.1063
+"Gennady Verdel,Vlad Spivak",2017-12-06T15:37:43.86Z,95,135,LogoFX Client Mvvm Commanding containing implementation of ICommand with Fluent API.,LogoFX.Client.Mvvm.Commanding,True,2018-01-15T16:09:32.86+00:00,True,False,LogoFX Client Mvvm Commanding containing implementation of ICommand with Fluent API.,,3060,False,1.1.1-rc1
+Pyramid Technologies Inc,2017-12-06T15:35:41.65Z,135,135,PTI Thermal Printer API,ThermalTalk,False,2017-12-06T15:35:41.65+00:00,True,False,"An SDK for developing thermal printer application based on Reliance and Phoenix printers.
+      This supports realtime status reports, font effects, and imaging.","Serial,USB,RS-232,Thermal,Printer",551,False,1.3.1
+Bsynchro.Rates.SDK,2017-12-06T15:39:16.48Z,86,135,Package Description,Bsynchro.Rates.SDK,False,2018-01-24T11:14:30.807+00:00,True,False,,,819,False,4.10.2
+Bsynchro.Rates.SDK,2017-12-06T15:39:16.48Z,86,135,Package Description,Bsynchro.Rates.SDK,False,2018-01-24T11:14:30.807+00:00,True,False,,,819,False,4.10.2

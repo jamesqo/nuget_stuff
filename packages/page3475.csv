@@ -1,0 +1,868 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:31:34.357Z,45,47,Attach screenshots to JIRA issues.,BugShooting.Output.Jira,False,2018-03-06T19:15:41.927+00:00,True,False,,bugshooting.plugin.v3.output,384,True,1.0.3
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:30:44.777Z,45,47,Open screenshots in Gimp for direct editing.,BugShooting.Output.Gimp,False,2018-03-06T19:14:20.86+00:00,True,False,,bugshooting.plugin.v3.output,390,True,1.0.3
+Jan-Joost van Zon,2018-03-04T16:30:30.09Z,3,47,"Contains a lot of basic file functions, functions for working with streams and working with CSV's.",JJ.Framework.IO,False,2018-04-17T16:43:14.84+00:00,True,False,"Contains various file functions, functions for working with streams and working with CSV's.
+
+* `CsvReader`: A class for reading out CSV files.
+* `StreamHelper`: Converts between string, Stream and byte[]. Surprisingly different code is required for converting between those three, and this helper class makes it a bit more consistent.
+* `BinaryWriterExtensions`: Contains some methods for reading and writing structs to a stream.
+* `GetNumberedFilePath`: A method for inserting numbers in file paths in case the file name already exists.
+* `ClearFolder` / `ClearFolderRecursive`: Recursively clearing a directory, whereas Directory.Delete(path, bool recursive) would delete the directory itself.
+* `ApplicationFolderPath`: Gets that path without command line parameters, or executable file name, etc.
+* `GetFolderSize` / `GetFolderSizeRecursive`: Methods for counting the total number of bytes in a folder, including a recursive variation.
+* `CountFilesRecursive`
+* `IsFolder` / `IsFile`: Checks if a path is regarded to be a folder or a file, which is not always obvious.
+* `FolderIsEmpty` method.
+* Easily working with file attributes.
+* Converting between relative path and absolute path.
+* A method for comparing two paths, regardess of them being absolute or relative.
+* `PathParser`: Neatly splits up a file path into its smaller parts.
+* `SafeFileOverwriter`: First writes to a temporary file and only when all went well, the original file is overwritten. The security settings and file attributes and file properties are retained as the temp file replaces the original.","file,functions,attributes,stream,csv,binarywriter,numbered,path,folder,recursive,relative,absolute,compare,safe,overwrite,temp",271,False,1.1.0.31224
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:58:10.65Z,45,103,Send screenshots to your Skype contacts.,BugShooting.Output.Skype,False,2018-03-06T19:17:51.493+00:00,False,False,,bugshooting.plugin.v3.output,315,True,1.0.1
+Jan-Joost van Zon,2018-03-04T16:29:51.45Z,3,47,"Helper for unit tests. Mimics the Assert class, but will display the tested expression in error messages, instead of being vague about it or laborious to program.",JJ.Framework.Testing,False,2018-04-17T16:42:32.683+00:00,True,False,"Helper for unit tests. Mimics the Assert class, but will display the tested expression in error messages, instead of being vague about it or laborious to program.
+
+It also offers methods to evaluate if the right exception goes off in the right spot with the right exception type and / or the right message.","unit,tests,testing,assert,expression,clear,error,exception",200,False,1.1.0.31225
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:59:57.073Z,45,103,Attach screenshots to Unfuddle STACK messages or tickets.,BugShooting.Output.UnfuddleStack,False,2018-03-06T19:20:28.717+00:00,False,False,,bugshooting.plugin.v3.output,293,True,1.0.1
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:56:35.237Z,45,103,Open screenshots in Paint for direct editing.,BugShooting.Output.Paint,False,2018-03-06T19:16:53.177+00:00,False,False,,bugshooting.plugin.v3.output,309,True,1.0.1
+Fedor Andriyaninkov,2018-03-04T16:30:31.323Z,47,47,Package Description,NLog.Notification,True,2018-03-04T16:51:42.81+00:00,True,False,,,178,False,0.5.2-beta
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:29:58.95Z,45,47,Upload screenshots to a FTP server.,BugShooting.Output.Ftp,False,2018-03-06T19:13:02.663+00:00,True,False,,bugshooting.plugin.v3.output,368,True,1.0.3
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:59:32.913Z,45,103,Attach screenshots to your Thunderbird emails.,BugShooting.Output.Thunderbird,False,2018-03-06T19:19:15.027+00:00,False,False,,bugshooting.plugin.v3.output,302,True,1.0.1
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:29:09.337Z,45,47,Attach screenshots to DoneDone issues.,BugShooting.Output.DoneDone,False,2018-03-06T19:11:36.613+00:00,True,False,,bugshooting.plugin.v3.output,362,True,1.0.3
+Jan-Joost van Zon,2018-03-04T16:29:07.54Z,3,47,Makes it easier to convert simple types.,JJ.Framework.Conversion,False,2018-04-17T16:41:58.277+00:00,True,False,"Makes it easier to convert simple types.
+
+* `SimpleTypeConverter.ParseValue`: One method to parse numeric types, their signed and unsigned variations, DateTime, TimeSpan, Guid and Enum types, IntPtr, UIntPtr and their nullable variations. Those often require different types of conversions. This method just takes care of it.
+* `SimpleTypeConverter.ConvertValue`: Makes it easier to convert nullables along with non-nullables.
+* `DecimalParser`, `DoubleParser`, `Int16Parser`, `Int32Parser`, `Int64Parser`, `SingleParser`: If you want to be more specific in what it is you parse: these classes make it easier to parse nullables.
+* `EnumParser`: Make it a little easier to use enum parsing.","convert,conversion,parse,parsing,tryparse,decimal,double,short,int,long,single,float,int16,int32,int64,enum",441,False,1.1.0.31224
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:29:58.95Z,45,47,Upload screenshots to a FTP server.,BugShooting.Output.Ftp,False,2018-03-06T19:13:02.663+00:00,True,False,,bugshooting.plugin.v3.output,368,True,1.0.3
+Fedor Andriyaninkov,2018-03-04T16:30:31.323Z,47,47,Package Description,NLog.Notification,True,2018-03-04T16:51:42.81+00:00,True,False,,,178,False,0.5.2-beta
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:29:09.337Z,45,47,Attach screenshots to DoneDone issues.,BugShooting.Output.DoneDone,False,2018-03-06T19:11:36.613+00:00,True,False,,bugshooting.plugin.v3.output,362,True,1.0.3
+Jan-Joost van Zon,2018-03-04T16:30:30.09Z,3,47,"Contains a lot of basic file functions, functions for working with streams and working with CSV's.",JJ.Framework.IO,False,2018-04-17T16:43:14.84+00:00,True,False,"Contains various file functions, functions for working with streams and working with CSV's.
+
+* `CsvReader`: A class for reading out CSV files.
+* `StreamHelper`: Converts between string, Stream and byte[]. Surprisingly different code is required for converting between those three, and this helper class makes it a bit more consistent.
+* `BinaryWriterExtensions`: Contains some methods for reading and writing structs to a stream.
+* `GetNumberedFilePath`: A method for inserting numbers in file paths in case the file name already exists.
+* `ClearFolder` / `ClearFolderRecursive`: Recursively clearing a directory, whereas Directory.Delete(path, bool recursive) would delete the directory itself.
+* `ApplicationFolderPath`: Gets that path without command line parameters, or executable file name, etc.
+* `GetFolderSize` / `GetFolderSizeRecursive`: Methods for counting the total number of bytes in a folder, including a recursive variation.
+* `CountFilesRecursive`
+* `IsFolder` / `IsFile`: Checks if a path is regarded to be a folder or a file, which is not always obvious.
+* `FolderIsEmpty` method.
+* Easily working with file attributes.
+* Converting between relative path and absolute path.
+* A method for comparing two paths, regardess of them being absolute or relative.
+* `PathParser`: Neatly splits up a file path into its smaller parts.
+* `SafeFileOverwriter`: First writes to a temporary file and only when all went well, the original file is overwritten. The security settings and file attributes and file properties are retained as the temp file replaces the original.","file,functions,attributes,stream,csv,binarywriter,numbered,path,folder,recursive,relative,absolute,compare,safe,overwrite,temp",271,False,1.1.0.31224
+Jan-Joost van Zon,2018-03-04T16:29:51.45Z,3,47,"Helper for unit tests. Mimics the Assert class, but will display the tested expression in error messages, instead of being vague about it or laborious to program.",JJ.Framework.Testing,False,2018-04-17T16:42:32.683+00:00,True,False,"Helper for unit tests. Mimics the Assert class, but will display the tested expression in error messages, instead of being vague about it or laborious to program.
+
+It also offers methods to evaluate if the right exception goes off in the right spot with the right exception type and / or the right message.","unit,tests,testing,assert,expression,clear,error,exception",200,False,1.1.0.31225
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:55:02.573Z,45,103,Attach screenshots to JIRA issues.,BugShooting.Output.Jira,False,2018-03-06T19:15:41.927+00:00,False,False,,bugshooting.plugin.v3.output,384,True,1.0.2
+Jan-Joost van Zon,2018-03-04T16:29:07.54Z,3,47,Makes it easier to convert simple types.,JJ.Framework.Conversion,False,2018-04-17T16:41:58.277+00:00,True,False,"Makes it easier to convert simple types.
+
+* `SimpleTypeConverter.ParseValue`: One method to parse numeric types, their signed and unsigned variations, DateTime, TimeSpan, Guid and Enum types, IntPtr, UIntPtr and their nullable variations. Those often require different types of conversions. This method just takes care of it.
+* `SimpleTypeConverter.ConvertValue`: Makes it easier to convert nullables along with non-nullables.
+* `DecimalParser`, `DoubleParser`, `Int16Parser`, `Int32Parser`, `Int64Parser`, `SingleParser`: If you want to be more specific in what it is you parse: these classes make it easier to parse nullables.
+* `EnumParser`: Make it a little easier to use enum parsing.","convert,conversion,parse,parsing,tryparse,decimal,double,short,int,long,single,float,int16,int32,int64,enum",441,False,1.1.0.31224
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:53:25.88Z,45,103,Upload screenshots to a FTP server.,BugShooting.Output.Ftp,False,2018-03-06T19:13:02.663+00:00,False,False,,bugshooting.plugin.v3.output,368,True,1.0.2
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:51:23.383Z,45,103,Attach screenshots to DoneDone issues.,BugShooting.Output.DoneDone,False,2018-03-06T19:11:36.613+00:00,False,False,,bugshooting.plugin.v3.output,362,True,1.0.2
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:54:15.227Z,45,103,Open screenshots in Gimp for direct editing.,BugShooting.Output.Gimp,False,2018-03-06T19:14:20.86+00:00,False,False,,bugshooting.plugin.v3.output,390,True,1.0.2
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:26:39.41Z,45,47,Attach screenshots to Bugzilla bugs.,BugShooting.Output.Bugzilla,False,2018-03-06T19:08:46.09+00:00,True,False,,bugshooting.plugin.v3.output,378,True,1.0.3
+Jan-Joost van Zon,2018-03-04T16:27:19.757Z,3,47,Basic helpers with very few dependencies.,JJ.Framework.Common,False,2018-04-17T16:36:16.78+00:00,True,False,"Some basic helpers, for instance:
+
+* `ConfigurationHelper`: For using configuration settings when you cannot be dependent on System.Configuration.
+* `CultureHelper`: For instance to set thread culture with a single code line.
+* `EmbeddedResourceHelper`: Make it a little easier to get embedded resource Streams, bytes and strings.
+* `EnumHelper`: Make it a little easier to check the validitiy of enum values.
+* `EventArgs`<`T`>: A generic version of event args. If you use a C# 7 tuple for T you can basically use it for everything.
+
+NOTE: Some of the parsing methods were moved to `JJ.Framework.Conversion`.","common,culture,embedded,resources,eventargs",295,False,1.1.0.31223
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:27:29.913Z,45,47,Copy screenshots to clipboard.,BugShooting.Output.Clipboard,False,2018-03-06T18:56:43.427+00:00,True,False,,bugshooting.plugin.v3.output,445,True,1.0.3
+Jan-Joost van Zon,2018-03-04T16:28:35.273Z,3,47,Contains many exception classes for common basic errors.,JJ.Framework.Exceptions,False,2018-04-17T16:40:47.913+00:00,True,False,"Contains many exception classes for common basic errors, for instance:
+
+* Null errors, null or white space errors, collection contains nulls, etc.
+* Parsing errors, type casting errors
+* Not found, not unique errors
+* Greater than or equal errors and the like
+* Files not found, folder already exists, etc.
+
+There are several advantages over using these exception types.
+
+* Error messages are clear.
+* Concise syntax, without sacrificing performance.
+* You can pass an expression, whose text becomes part of the message.
+* Lose no time typing and trying to come up with a good message.
+
+For example:
+
+	throw new NullException(() => myParent.MyChildren[0].MyProperty);
+
+Will produce an exception message:
+
+	""myParent.MyChildren[0].MyProperty is null.""
+
+This is where it surpasses the possibilities of the C#6 nameof operator, which can only mention a name, not a whole expression.
+
+Another example:
+
+	throw new NotFoundException<Customer>(new { customerNumber });
+
+will produce an exception message:
+
+	""Customer with key { customerNumber = 1234 } not found.""
+
+As such it is fit for use with any composite key you might have.
+			
+Some more examples:
+			
+	throw new NotUniqueException<Product>(productNumber);
+	throw new ValueNotSupportedException(myCountryEnumValue);
+	throw new FileAlreadyExistsException(""text.txt"");
+	throw new NullOrWhiteSpaceException(() => myParam.MyProp);
+
+Those produce the exception messages:
+			
+	height is less than 0.
+	Product with key A123 not unique.
+	Country value 'Undefined' is not supported.
+	File 'test.txt' already exists.
+	myParam.MyProp is null or white space.
+
+Here is an example with the value check in it:
+
+	if (height < 0) throw new LessThanException(nameof(height), 0);
+
+This produces the exception message:
+				
+	height is less than 0.","exceptions,errors,expressions,strongly-typed,null,white,space,parse,type,casting,not,found,unique,comparison,file,folder",248,False,1.1.0.31224
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:25:01.033Z,45,47,Share screenshots to every application by using the command line.,BugShooting.Output.CommandLine,False,2018-03-06T18:59:35.207+00:00,True,False,,bugshooting.plugin.v3.output,396,True,1.0.3
+KellermanSoftware,2018-03-04T16:26:14.55Z,47,47,What you have been waiting for. Perform a deep compare of any two .NET objects using reflection. Shows the differences between the two objects.,CompareNETObjects,False,2018-03-04T16:26:14.55+00:00,True,False,What you have been waiting for. Perform a deep compare of any two .NET objects using reflection. Shows the differences between the two objects.,"compare,comparison,equality,equal,deep,objects,difference,compareobjects",886686,False,4.52.0
+Andrew Duff & Matthew Malkin,2018-03-04T16:26:22.24Z,46,47,.NET Event Sourcing library with support for event versioning and other cool things.,EventEngine,False,2018-03-05T21:09:33.49+00:00,True,False,,"event,sourcing,engine",1629,False,1.1.58
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:28:15.18Z,45,47,Attach screenshots to your emails.,BugShooting.Output.Email,False,2018-03-06T19:10:20.923+00:00,True,False,,bugshooting.plugin.v3.output,370,True,1.0.3
+Jan-Joost van Zon,2018-03-04T16:26:31.177Z,3,47,"Contains alternatives for any class or method that proved to have compatibility problems when trying to deploy code to iOS, Android and Windows Phone 8.",JJ.Framework.PlatformCompatibility,False,2018-04-17T16:35:43.37+00:00,True,False,"Contains alternatives for any class or method that proved to have compatibility problems when trying to deploy code to iOS, Android and Windows Phone 8. May have been surpassed by .NET Standard, but this code was from before that.","platform,compatibility,multi-platorm",349,False,1.1.0.31223
+Jan-Joost van Zon,2018-03-04T16:27:54.523Z,3,47,Extensions to the System.Reflection and System.Linq.Expressions namespaces.,JJ.Framework.Reflection,False,2018-04-17T16:36:59.31+00:00,True,False,"Extensions to the System.Reflection and System.Linq.Expressions namespaces.
+
+Highlights:
+
+* `ExpressionHelper`: Converts many types of lambda expressions into text or retrieves its resulting value. It can also give you method info, parameter names and parameter value info from lambda expressions.
+* `Accessor`: Allows easy access to the internal, private or protected elements of an assembly or class.
+* `ReflectionCache`: Makes using reflection much faster in certain cases. For instance the GetProperties method can be expensive, which is much faster through the ReflectionCache class.
+* `ReflectionExtensions`: Various helper methods, but one of the most useful features is the GetImplementation method and variations thereof, which allow you to retrieve implementations of a specified base class or interface from an assembly, which is useful for plug-in development.
+
+For instance:
+
+	ExpressionHelper.GetText(() => myParam.MyProperty.MyList[i].MySomething)
+
+Will return :
+
+	""myParam.MyProperty.MyList[i].MySomething""","reflection,extensions,expressions,lambda,text,accessor,implementations",251,False,1.1.0.31224
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:24:16.22Z,45,47,Attach screenshots to your Outlook emails.,BugShooting.Output.Outlook,False,2018-03-06T19:01:54.89+00:00,True,False,,bugshooting.plugin.v3.output,418,True,1.0.3
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:25:01.033Z,45,47,Share screenshots to every application by using the command line.,BugShooting.Output.CommandLine,False,2018-03-06T18:59:35.207+00:00,True,False,,bugshooting.plugin.v3.output,396,True,1.0.3
+Jan-Joost van Zon,2018-03-04T16:25:50.13Z,1,47,Basic helpers for working with text information.,JJ.Framework.Text,False,2018-04-19T17:42:08.977+00:00,True,False,"Basic helpers for working with text information. For instance:
+* String extensions for trimming and cutting.
+* Case formatting
+* `String.Split` overloads
+* `SplitWithQuotation`: Allows you to parse CSV-like lines including quotation for the ability to include the separator character in the values themselves.
+* `StringBuilderWithIndentation`","text,utility,string,extensions,split,casing,stringbuilder,indentation,indent,tab",576,False,1.1.0.31223
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:25:53.38Z,45,47,Attach screenshots to BUGtrack entries.,BugShooting.Output.BugTrack,False,2018-03-06T19:07:39.667+00:00,True,False,,bugshooting.plugin.v3.output,389,True,1.0.3
+Andrew Duff & Matthew Malkin,2018-03-04T16:26:22.24Z,46,47,.NET Event Sourcing library with support for event versioning and other cool things.,EventEngine,False,2018-03-05T21:09:33.49+00:00,True,False,,"event,sourcing,engine",1629,False,1.1.58
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:27:29.913Z,45,47,Copy screenshots to clipboard.,BugShooting.Output.Clipboard,False,2018-03-06T18:56:43.427+00:00,True,False,,bugshooting.plugin.v3.output,445,True,1.0.3
+Jan-Joost van Zon,2018-03-04T16:28:35.273Z,3,47,Contains many exception classes for common basic errors.,JJ.Framework.Exceptions,False,2018-04-17T16:40:47.913+00:00,True,False,"Contains many exception classes for common basic errors, for instance:
+
+* Null errors, null or white space errors, collection contains nulls, etc.
+* Parsing errors, type casting errors
+* Not found, not unique errors
+* Greater than or equal errors and the like
+* Files not found, folder already exists, etc.
+
+There are several advantages over using these exception types.
+
+* Error messages are clear.
+* Concise syntax, without sacrificing performance.
+* You can pass an expression, whose text becomes part of the message.
+* Lose no time typing and trying to come up with a good message.
+
+For example:
+
+	throw new NullException(() => myParent.MyChildren[0].MyProperty);
+
+Will produce an exception message:
+
+	""myParent.MyChildren[0].MyProperty is null.""
+
+This is where it surpasses the possibilities of the C#6 nameof operator, which can only mention a name, not a whole expression.
+
+Another example:
+
+	throw new NotFoundException<Customer>(new { customerNumber });
+
+will produce an exception message:
+
+	""Customer with key { customerNumber = 1234 } not found.""
+
+As such it is fit for use with any composite key you might have.
+			
+Some more examples:
+			
+	throw new NotUniqueException<Product>(productNumber);
+	throw new ValueNotSupportedException(myCountryEnumValue);
+	throw new FileAlreadyExistsException(""text.txt"");
+	throw new NullOrWhiteSpaceException(() => myParam.MyProp);
+
+Those produce the exception messages:
+			
+	height is less than 0.
+	Product with key A123 not unique.
+	Country value 'Undefined' is not supported.
+	File 'test.txt' already exists.
+	myParam.MyProp is null or white space.
+
+Here is an example with the value check in it:
+
+	if (height < 0) throw new LessThanException(nameof(height), 0);
+
+This produces the exception message:
+				
+	height is less than 0.","exceptions,errors,expressions,strongly-typed,null,white,space,parse,type,casting,not,found,unique,comparison,file,folder",248,False,1.1.0.31224
+Jan-Joost van Zon,2018-03-04T16:26:31.177Z,3,47,"Contains alternatives for any class or method that proved to have compatibility problems when trying to deploy code to iOS, Android and Windows Phone 8.",JJ.Framework.PlatformCompatibility,False,2018-04-17T16:35:43.37+00:00,True,False,"Contains alternatives for any class or method that proved to have compatibility problems when trying to deploy code to iOS, Android and Windows Phone 8. May have been surpassed by .NET Standard, but this code was from before that.","platform,compatibility,multi-platorm",349,False,1.1.0.31223
+Jan-Joost van Zon,2018-03-04T16:27:19.757Z,3,47,Basic helpers with very few dependencies.,JJ.Framework.Common,False,2018-04-17T16:36:16.78+00:00,True,False,"Some basic helpers, for instance:
+
+* `ConfigurationHelper`: For using configuration settings when you cannot be dependent on System.Configuration.
+* `CultureHelper`: For instance to set thread culture with a single code line.
+* `EmbeddedResourceHelper`: Make it a little easier to get embedded resource Streams, bytes and strings.
+* `EnumHelper`: Make it a little easier to check the validitiy of enum values.
+* `EventArgs`<`T`>: A generic version of event args. If you use a C# 7 tuple for T you can basically use it for everything.
+
+NOTE: Some of the parsing methods were moved to `JJ.Framework.Conversion`.","common,culture,embedded,resources,eventargs",295,False,1.1.0.31223
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:26:39.41Z,45,47,Attach screenshots to Bugzilla bugs.,BugShooting.Output.Bugzilla,False,2018-03-06T19:08:46.09+00:00,True,False,,bugshooting.plugin.v3.output,378,True,1.0.3
+KellermanSoftware,2018-03-04T16:26:14.55Z,47,47,What you have been waiting for. Perform a deep compare of any two .NET objects using reflection. Shows the differences between the two objects.,CompareNETObjects,False,2018-03-04T16:26:14.55+00:00,True,False,What you have been waiting for. Perform a deep compare of any two .NET objects using reflection. Shows the differences between the two objects.,"compare,comparison,equality,equal,deep,objects,difference,compareobjects",886686,False,4.52.0
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:24:16.22Z,45,47,Attach screenshots to your Outlook emails.,BugShooting.Output.Outlook,False,2018-03-06T19:01:54.89+00:00,True,False,,bugshooting.plugin.v3.output,418,True,1.0.3
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:52:10.167Z,45,103,Attach screenshots to your emails.,BugShooting.Output.Email,False,2018-03-06T19:10:20.923+00:00,False,False,,bugshooting.plugin.v3.output,370,True,1.0.2
+Jan-Joost van Zon,2018-03-04T16:25:50.13Z,1,47,Basic helpers for working with text information.,JJ.Framework.Text,False,2018-04-19T17:42:08.977+00:00,True,False,"Basic helpers for working with text information. For instance:
+* String extensions for trimming and cutting.
+* Case formatting
+* `String.Split` overloads
+* `SplitWithQuotation`: Allows you to parse CSV-like lines including quotation for the ability to include the separator character in the values themselves.
+* `StringBuilderWithIndentation`","text,utility,string,extensions,split,casing,stringbuilder,indentation,indent,tab",576,False,1.1.0.31223
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:25:53.38Z,45,47,Attach screenshots to BUGtrack entries.,BugShooting.Output.BugTrack,False,2018-03-06T19:07:39.667+00:00,True,False,,bugshooting.plugin.v3.output,389,True,1.0.3
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:50:24.333Z,45,103,Copy screenshots to clipboard.,BugShooting.Output.Clipboard,False,2018-03-06T18:56:43.427+00:00,False,False,,bugshooting.plugin.v3.output,445,True,1.0.2
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:23:23.953Z,45,47,Insert screenshots into Word documents.,BugShooting.Output.Word,False,2018-03-06T19:03:25.253+00:00,True,False,,bugshooting.plugin.v3.output,386,True,1.0.3
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:50:59.837Z,45,103,Share screenshots to every application by using the command line.,BugShooting.Output.CommandLine,False,2018-03-06T18:59:35.207+00:00,False,False,,bugshooting.plugin.v3.output,396,True,1.0.2
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:49:49.31Z,45,103,Attach screenshots to Bugzilla bugs.,BugShooting.Output.Bugzilla,False,2018-03-06T19:08:46.09+00:00,False,False,,bugshooting.plugin.v3.output,378,True,1.0.2
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:22:21.56Z,45,47,Save screenshots to local files.,BugShooting.Output.File,False,2018-03-06T19:04:26.663+00:00,True,False,,bugshooting.plugin.v3.output,414,True,1.0.3
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:49:23.35Z,45,103,Attach screenshots to BUGtrack entries.,BugShooting.Output.BugTrack,False,2018-03-06T19:07:39.667+00:00,False,False,,bugshooting.plugin.v3.output,389,True,1.0.2
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:23:23.953Z,45,47,Insert screenshots into Word documents.,BugShooting.Output.Word,False,2018-03-06T19:03:25.253+00:00,True,False,,bugshooting.plugin.v3.output,386,True,1.0.3
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:22:21.56Z,45,47,Save screenshots to local files.,BugShooting.Output.File,False,2018-03-06T19:04:26.663+00:00,True,False,,bugshooting.plugin.v3.output,414,True,1.0.3
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:52:35.403Z,45,103,Save screenshots to local files.,BugShooting.Output.File,False,2018-03-06T19:04:26.663+00:00,False,False,,bugshooting.plugin.v3.output,414,True,1.0.2
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:56:12.14Z,45,103,Attach screenshots to your Outlook emails.,BugShooting.Output.Outlook,False,2018-03-06T19:01:54.89+00:00,False,False,,bugshooting.plugin.v3.output,418,True,1.0.2
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:21:17.59Z,45,47,Attach screenshots to Mantis BT issues.,BugShooting.Output.MantisBT,False,2018-03-06T19:06:24.22+00:00,True,False,,bugshooting.plugin.v3.output,424,True,1.0.3
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:19:21.213Z,45,47,Attach screenshots to FogBugz cases.,BugShooting.Output.FogBugz,False,2018-03-06T18:54:18.213+00:00,True,False,,bugshooting.plugin.v3.output,496,True,1.0.4
+"Bug Shooting,Alexej Hirsch",2018-01-07T20:00:23.527Z,45,103,Insert screenshots into Word documents.,BugShooting.Output.Word,False,2018-03-06T19:03:25.253+00:00,False,False,,bugshooting.plugin.v3.output,386,True,1.0.2
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:21:17.59Z,45,47,Attach screenshots to Mantis BT issues.,BugShooting.Output.MantisBT,False,2018-03-06T19:06:24.22+00:00,True,False,,bugshooting.plugin.v3.output,424,True,1.0.3
+"Bug Shooting,Alexej Hirsch",2018-03-04T16:19:21.213Z,45,47,Attach screenshots to FogBugz cases.,BugShooting.Output.FogBugz,False,2018-03-06T18:54:18.213+00:00,True,False,,bugshooting.plugin.v3.output,496,True,1.0.4
+CP-EXPERT,2018-03-04T16:18:30.697Z,16,47,CP-EXPERT Core library for Computer Programming Expert IT projects,CPExpert.Core,False,2018-04-04T18:27:27.163+00:00,True,False,,,3381,False,1.0.0.67
+vakkaladevi,2018-03-04T16:20:36.653Z,47,47,MethodCommentsAnalyzer,MethodCommentsAnalyzer,False,2018-03-04T16:51:58.373+00:00,True,False,,"MethodCommentsAnalyzer,analyzers",123,False,1.0.6637.39159
+vakkaladevi,2018-03-04T16:20:36.653Z,47,47,MethodCommentsAnalyzer,MethodCommentsAnalyzer,False,2018-03-04T16:51:58.373+00:00,True,False,,"MethodCommentsAnalyzer,analyzers",123,False,1.0.6637.39159
+CP-EXPERT,2018-03-04T16:18:30.697Z,16,47,CP-EXPERT Core library for Computer Programming Expert IT projects,CPExpert.Core,False,2018-04-04T18:27:27.163+00:00,True,False,,,3381,False,1.0.0.67
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:55:27.327Z,45,103,Attach screenshots to Mantis BT issues.,BugShooting.Output.MantisBT,False,2018-03-06T19:06:24.22+00:00,False,False,,bugshooting.plugin.v3.output,424,True,1.0.2
+"Bug Shooting,Alexej Hirsch",2018-01-07T19:53:01.5Z,45,103,Attach screenshots to FogBugz cases.,BugShooting.Output.FogBugz,False,2018-03-06T18:54:18.213+00:00,False,False,,bugshooting.plugin.v3.output,496,True,1.0.3
+"Rex Cardan,Ph.D.",2018-03-04T16:11:58.86Z,7,47,The wickedest C# DICOM libary in the world.,EvilDICOM,False,2018-04-13T17:35:49.35+00:00,True,False,The wickedest C# DICOM libary in the world.,"DICOM,Medical,Physics",18946,False,2.0.1.14
+"Rex Cardan,Ph.D.",2018-03-04T16:11:58.86Z,7,47,The wickedest C# DICOM libary in the world.,EvilDICOM,False,2018-04-13T17:35:49.35+00:00,True,False,The wickedest C# DICOM libary in the world.,"DICOM,Medical,Physics",18946,False,2.0.1.14
+"Jarmo Muukka,Mutex Oy",2018-03-04T16:03:12.237Z,44,47,"An abstract package for accessing database using System.Data. The interfaces are database independent and they contain many methods which simplifies writing code. They help writing loosely coupled and unit testable code.
+
+The assembly is signed and CLS compliant.",Mutex.Data.Core,False,2018-03-07T20:15:54.683+00:00,False,False,,"ADO.NET,abstract,interfaces,System.Data,database,Micro-ORM",614,False,0.12.0
+Andrew Duff & Matthew Malkin,2018-03-04T16:02:05.157Z,15,47,.NET library for abstractions and other things to aid with .net development.,Coresian,False,2018-04-05T11:05:51.783+00:00,True,False,,"corsian,coresian,coreextensions,core,extensions,abstractions",979,False,1.0.15
+Pavel Agarkov,2018-03-04T16:01:16.217Z,36,47,Testing utilities for .Net code of Midnight-Lizard.online website,MidnightLizard.Testing.Utilities,False,2018-03-15T13:31:06.527+00:00,True,False,,,384,False,1.1.0
+Andrew Duff & Matthew Malkin,2018-03-04T16:02:05.157Z,15,47,.NET library for abstractions and other things to aid with .net development.,Coresian,False,2018-04-05T11:05:51.783+00:00,True,False,,"corsian,coresian,coreextensions,core,extensions,abstractions",979,False,1.0.15
+"Jarmo Muukka,Mutex Oy",2018-03-04T16:03:12.237Z,44,47,"An abstract package for accessing database using System.Data. The interfaces are database independent and they contain many methods which simplifies writing code. They help writing loosely coupled and unit testable code.
+
+The assembly is signed and CLS compliant.",Mutex.Data.Core,False,2018-03-07T20:15:54.683+00:00,False,False,,"ADO.NET,abstract,interfaces,System.Data,database,Micro-ORM",614,False,0.12.0
+Ocph23,2018-03-04T16:00:39.933Z,36,47,Data Access Layer,OcphDAL,False,2018-03-15T01:46:34.97+00:00,True,False,,,1343,False,3.0.3
+Pavel Agarkov,2018-03-04T16:01:16.217Z,36,47,Testing utilities for .Net code of Midnight-Lizard.online website,MidnightLizard.Testing.Utilities,False,2018-03-15T13:31:06.527+00:00,True,False,,,384,False,1.1.0
+Ocph23,2018-03-04T16:00:39.933Z,36,47,Data Access Layer,OcphDAL,False,2018-03-15T01:46:34.97+00:00,True,False,,,1343,False,3.0.3
+txle,2018-03-04T15:59:01.87Z,43209,47,Bitcare.Security.MemberCentent,Bitcare.Security.MemberCentent,False,1900-01-01T00:00:00+00:00,False,False,Bitcare.Security.MemberCentent,Bitcare.Security.MemberCentent,116,False,0.2.0.3
+txle,2018-03-04T15:59:01.87Z,43209,47,Bitcare.Security.MemberCentent,Bitcare.Security.MemberCentent,False,1900-01-01T00:00:00+00:00,False,False,Bitcare.Security.MemberCentent,Bitcare.Security.MemberCentent,116,False,0.2.0.3
+刘洪璋,2018-03-04T15:58:34.79Z,43209,47,Bitcare 鉴权相关基础库,Bitcare.Security,False,1900-01-01T00:00:00+00:00,False,False,Bitcare 鉴权相关基础库,"Bitcare,Security",117,False,0.2.0.3
+刘洪璋,2018-03-04T15:58:34.79Z,43209,47,Bitcare 鉴权相关基础库,Bitcare.Security,False,1900-01-01T00:00:00+00:00,False,False,Bitcare 鉴权相关基础库,"Bitcare,Security",117,False,0.2.0.3
+"buckstephenh,eswwaa",2018-03-04T15:57:08.85Z,43209,47,"Welcome to lifeIMAGE Transfer Exchange!  This utility connects your enterprise data sources with lifeIMAGE 
+to create powerful workflows using an extensible connection framework.  Built-in bi-directional
+connectors include DICOM, HL7, lifeIMAGE, and file.  Build your own additional connectors or
+contact lifeIMAGE for support.
+
+Supported Platforms: Linux, Mac, Windows",lifeimage-agent,True,1900-01-01T00:00:00+00:00,False,False,,"lifeIMAGE,life,image,PACS,VNA,EMR,CAD,DICOM,HL7,IHE",-1,False,1.0.145-rc1
+"buckstephenh,eswwaa",2018-03-04T15:57:08.85Z,43209,47,"Welcome to lifeIMAGE Transfer Exchange!  This utility connects your enterprise data sources with lifeIMAGE 
+to create powerful workflows using an extensible connection framework.  Built-in bi-directional
+connectors include DICOM, HL7, lifeIMAGE, and file.  Build your own additional connectors or
+contact lifeIMAGE for support.
+
+Supported Platforms: Linux, Mac, Windows",lifeimage-agent,True,1900-01-01T00:00:00+00:00,False,False,,"lifeIMAGE,life,image,PACS,VNA,EMR,CAD,DICOM,HL7,IHE",-1,False,1.0.145-rc1
+Bitcare,2018-03-04T15:52:36.907Z,43209,47,Bitcare.Data 在EntityFramework6 下的实现,Bitcare.Data.EntityFramework,False,1900-01-01T00:00:00+00:00,False,False,Bitcare.Data 在EntityFramework6 下的实现,Bitcare,-1,False,0.2.3.2
+刘洪璋,2018-03-04T15:53:07.297Z,47,47,定义了和数据存储相关的基本接口和抽象,Bitcare.Data,False,2018-03-04T15:53:07.297+00:00,True,False,Bitcare 数据的基础类库,Bitcare,61,False,0.2.3
+https://github.com/alastairtree,2018-03-04T15:53:14.69Z,47,47,ServiceCollection regististrations fopr LazyCache to initialise the depndency injection,LazyCache.AspNetCore,True,2018-03-04T15:53:14.69+00:00,True,False,,"LazyCache,DependecyInjection,ServiceCollection,SingleTon,Transient",165,False,2.0.0-beta02
+https://github.com/alastairtree,2018-03-04T15:53:03.953Z,47,47,"Lazy cache is a simple, thread safe in-memory caching service",LazyCache,True,2018-03-04T15:53:03.953+00:00,True,False,,"Caching,Performance,Speed,In-memory,ObjectCache,Generics,ServiceCacheing,Lazy,Cache,Lazy-Load,MemoryCache,CachingService,AppCache,ApplicationCache,Memcached",73088,False,2.0.0-beta02
+Bitcare,2018-03-04T15:52:36.907Z,43209,47,Bitcare.Data 在EntityFramework6 下的实现,Bitcare.Data.EntityFramework,False,1900-01-01T00:00:00+00:00,False,False,Bitcare.Data 在EntityFramework6 下的实现,Bitcare,-1,False,0.2.3.2
+刘洪璋,2018-03-04T15:53:07.297Z,47,47,定义了和数据存储相关的基本接口和抽象,Bitcare.Data,False,2018-03-04T15:53:07.297+00:00,True,False,Bitcare 数据的基础类库,Bitcare,61,False,0.2.3
+https://github.com/alastairtree,2018-03-04T15:53:03.953Z,47,47,"Lazy cache is a simple, thread safe in-memory caching service",LazyCache,True,2018-03-04T15:53:03.953+00:00,True,False,,"Caching,Performance,Speed,In-memory,ObjectCache,Generics,ServiceCacheing,Lazy,Cache,Lazy-Load,MemoryCache,CachingService,AppCache,ApplicationCache,Memcached",73088,False,2.0.0-beta02
+https://github.com/alastairtree,2018-03-04T15:53:14.69Z,47,47,ServiceCollection regististrations fopr LazyCache to initialise the depndency injection,LazyCache.AspNetCore,True,2018-03-04T15:53:14.69+00:00,True,False,,"LazyCache,DependecyInjection,ServiceCollection,SingleTon,Transient",165,False,2.0.0-beta02
+PooqMemberCommonLibrary,2018-03-04T15:47:15.18Z,43209,47,Package Description,PooqMemberCommonLibrary,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.1.21
+刘洪璋,2018-03-04T15:50:04.73Z,47,47,Bitcare ActionFramwork 再WebApi下的实现和宿主,Bitcare.ActionFramwork.WebApi,False,2018-03-04T15:50:04.73+00:00,True,False,Bitcare ActionFramwork 再WebApi下的实现和宿主,"Bitcare,Action,WebApi",62,False,0.2.4.2
+刘洪璋,2018-03-04T15:49:33.557Z,43209,47,Bitcare Action的框架基础,Bitcare.ActionFramwork,False,1900-01-01T00:00:00+00:00,False,False,Bitcare Action的框架基础,"Bitcare,Action",-1,False,0.2.4.5
+txle,2018-03-04T15:48:33.057Z,47,47,Bitcare.ActionFramwork.Client,Bitcare.ActionFramwork.Client,False,2018-03-04T15:48:33.057+00:00,True,False,Bitcare.ActionFramwork.Client,Bitcare.ActionFramwork.Client,60,False,1.0.0.1
+刘洪璋,2018-03-04T15:49:33.557Z,43209,47,Bitcare Action的框架基础,Bitcare.ActionFramwork,False,1900-01-01T00:00:00+00:00,False,False,Bitcare Action的框架基础,"Bitcare,Action",-1,False,0.2.4.5
+刘洪璋,2018-03-04T15:50:04.73Z,47,47,Bitcare ActionFramwork 再WebApi下的实现和宿主,Bitcare.ActionFramwork.WebApi,False,2018-03-04T15:50:04.73+00:00,True,False,Bitcare ActionFramwork 再WebApi下的实现和宿主,"Bitcare,Action,WebApi",62,False,0.2.4.2
+txle,2018-03-04T15:48:33.057Z,47,47,Bitcare.ActionFramwork.Client,Bitcare.ActionFramwork.Client,False,2018-03-04T15:48:33.057+00:00,True,False,Bitcare.ActionFramwork.Client,Bitcare.ActionFramwork.Client,60,False,1.0.0.1
+刘洪璋,2018-03-04T15:48:07.837Z,43209,47,为Bitcare的相关组件提供通用的简单的功能和接口,Bitcare.Common,False,1900-01-01T00:00:00+00:00,False,False,Bitcare 的基本功能库,Bitcare,-1,False,0.2.6.3
+DfE Digital,2018-03-04T15:46:42.773Z,9,47,Domain objects for SearchAndCompare project,DFE.SearchAndCompare.Domain,True,2018-04-11T11:28:13.097+00:00,True,False,,,1335,False,0.1.9-beta
+PooqMemberCommonLibrary,2018-03-04T15:47:15.18Z,43209,47,Package Description,PooqMemberCommonLibrary,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.1.21
+刘洪璋,2018-03-04T15:48:07.837Z,43209,47,为Bitcare的相关组件提供通用的简单的功能和接口,Bitcare.Common,False,1900-01-01T00:00:00+00:00,False,False,Bitcare 的基本功能库,Bitcare,-1,False,0.2.6.3
+PooqMemberCommonLibrary,2018-03-04T15:47:15.18Z,43209,47,Package Description,PooqMemberCommonLibrary,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.1.21
+DfE Digital,2018-03-04T15:46:42.773Z,9,47,Domain objects for SearchAndCompare project,DFE.SearchAndCompare.Domain,True,2018-04-11T11:28:13.097+00:00,True,False,,,1335,False,0.1.9-beta
+PooqMemberCommonLibrary,2018-02-26T00:53:57.57Z,43209,53,Package Description,PooqMemberCommonLibrary,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.1.20
+Johan Eliasson,2018-03-04T15:36:49.477Z,43209,47,Package Description,NebolCommand,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.6
+Johan Eliasson,2018-03-04T15:36:49.477Z,43209,47,Package Description,NebolCommand,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.6
+idubnori,2018-03-04T15:34:01.597Z,42,47,None Endpoint extension for Obvs. This provides .WithNoneEndpoints() for using IServiceBus as In-Memory ServiceBus.,Obvs.NoneEndpoint,False,2018-03-09T17:48:49.38+00:00,True,False,,"obvs,messaging,microservice,bus,messagebus,rx,reactive,servicebus,none,endpoint,WithNoneEndpoints",109,False,0.9.0
+idubnori,2018-03-04T15:34:01.597Z,42,47,None Endpoint extension for Obvs. This provides .WithNoneEndpoints() for using IServiceBus as In-Memory ServiceBus.,Obvs.NoneEndpoint,False,2018-03-09T17:48:49.38+00:00,True,False,,"obvs,messaging,microservice,bus,messagebus,rx,reactive,servicebus,none,endpoint,WithNoneEndpoints",109,False,0.9.0
+H. Herzl,2018-02-11T22:00:01.053Z,23,68,CatFactory package for Dapper scaffolding,CatFactory.Dapper,True,2018-03-28T01:43:58.833+00:00,False,False,CatFactory package for Dapper scaffolding,Dapper,1410,False,3.0.0-alpha-build16
+CP-EXPERT,2018-03-04T15:21:28.14Z,16,47,CP-EXPERT Core library for Computer Programming Expert IT projects,CPExpert.Core,False,2018-04-04T18:27:27.163+00:00,True,False,,,3381,False,1.0.0.66
+CP-EXPERT,2018-03-04T15:21:28.14Z,16,47,CP-EXPERT Core library for Computer Programming Expert IT projects,CPExpert.Core,False,2018-04-04T18:27:27.163+00:00,True,False,,,3381,False,1.0.0.66
+Lykke,2018-03-04T15:15:30.367Z,1,47,Client for Lykke.Service.AlphaEngine API,Lykke.Service.AlphaEngine.Client,True,2018-04-19T08:35:30.913+00:00,True,False,,Lykke,2773,False,2.0.6-beta
+Lykke,2018-03-04T15:15:30.367Z,1,47,Client for Lykke.Service.AlphaEngine API,Lykke.Service.AlphaEngine.Client,True,2018-04-19T08:35:30.913+00:00,True,False,,Lykke,2773,False,2.0.6-beta
+Cinegy,2018-03-04T15:11:21.56Z,13,47,Cinecoder SDK binary toolkit package,Cinecoder,False,2018-04-07T05:09:51.053+00:00,True,False,,,397,False,3.30.33.14214
+Cinegy,2018-03-04T15:11:21.56Z,13,47,Cinecoder SDK binary toolkit package,Cinecoder,False,2018-04-07T05:09:51.053+00:00,True,False,,,397,False,3.30.33.14214
+H. Herzl,2018-03-04T15:09:52.077Z,23,47,CatFactory package for Dapper scaffolding,CatFactory.Dapper,True,2018-03-28T01:43:58.833+00:00,True,False,CatFactory package for Dapper scaffolding,Dapper,1410,False,3.0.0-alpha-build17
+thunderjordi,2018-03-04T15:09:16.59Z,45,47,A set of finance libraries in C#,Thundax.FinanceLibrary,False,2018-03-06T19:40:34.9+00:00,True,False,"A set of finance libraries in C#
+MIT license",,105,False,1.0.1
+Panoramic Data Limited,2018-03-04T15:10:33.06Z,1,47,A .NET API for LogicMonitor,LogicMonitor.Api,False,2018-04-19T11:32:27.577+00:00,True,False,,"LogicMonitor,API,REST",47047,False,1.10.1
+Panoramic Data Limited,2018-03-04T15:10:33.06Z,1,47,A .NET API for LogicMonitor,LogicMonitor.Api,False,2018-04-19T11:32:27.577+00:00,True,False,,"LogicMonitor,API,REST",47047,False,1.10.1
+H. Herzl,2018-03-04T15:09:52.077Z,23,47,CatFactory package for Dapper scaffolding,CatFactory.Dapper,True,2018-03-28T01:43:58.833+00:00,True,False,CatFactory package for Dapper scaffolding,Dapper,1410,False,3.0.0-alpha-build17
+thunderjordi,2018-03-04T15:09:16.59Z,45,47,A set of finance libraries in C#,Thundax.FinanceLibrary,False,2018-03-06T19:40:34.9+00:00,True,False,"A set of finance libraries in C#
+MIT license",,105,False,1.0.1
+Richard Schneider,2018-03-04T15:04:45.253Z,44,47,A simple Multicast Domain Name Service based on RFC 6762.  Can be used as both a client (sending queries) or a server (responding to queries).,Makaretu.Dns.Multicast,False,2018-03-07T10:06:22.707+00:00,True,False,,"multicast,mdns,dns,zeroconf",409,False,0.2.0
+Richard Schneider,2018-03-04T15:04:45.253Z,44,47,A simple Multicast Domain Name Service based on RFC 6762.  Can be used as both a client (sending queries) or a server (responding to queries).,Makaretu.Dns.Multicast,False,2018-03-07T10:06:22.707+00:00,True,False,,"multicast,mdns,dns,zeroconf",409,False,0.2.0
+Vincent Kok,2018-03-04T15:01:42.233Z,47,47,This is a wrapper for the Mollie REST webservice. All payment methods and webservice calls are supported.,Mollie.Api,False,2018-03-04T15:01:42.233+00:00,True,False,,Mollie,29683,False,1.5.1
+Vincent Kok,2018-03-04T15:01:42.233Z,47,47,This is a wrapper for the Mollie REST webservice. All payment methods and webservice calls are supported.,Mollie.Api,False,2018-03-04T15:01:42.233+00:00,True,False,,Mollie,29683,False,1.5.1
+Lykke,2018-03-04T14:58:30.23Z,1,47,Client for Lykke.Service.AlphaEngine API,Lykke.Service.AlphaEngine.Client,True,2018-04-19T08:35:30.913+00:00,True,False,,Lykke,2773,False,2.0.5-beta
+Gurux Ltd,2018-03-04T14:57:18.273Z,9,47,"With Gurux DLMS/COSEM protocol component you can easily build your own AMR (Automatic Meter Reading) system for electricity consumption meters, through either TCP/IP, or Serial connection. If you are no expert in DLMS/COSEM, use our UI application, GXDLMSDirector, for the component to get started. Both the component, and its UI are OpenSource, and therefor available to anyone interested",Gurux.DLMS,False,2018-04-11T09:01:32.207+00:00,True,False,With Gurux DLMS/COSEM protocol component you can easily read your smart meters.,"DLMS,COSEM,AMI,ARM",26975,False,8.5.1803.401
+Lykke,2018-03-04T14:58:30.23Z,1,47,Client for Lykke.Service.AlphaEngine API,Lykke.Service.AlphaEngine.Client,True,2018-04-19T08:35:30.913+00:00,True,False,,Lykke,2773,False,2.0.5-beta
+Gurux Ltd,2018-03-04T14:57:18.273Z,9,47,"With Gurux DLMS/COSEM protocol component you can easily build your own AMR (Automatic Meter Reading) system for electricity consumption meters, through either TCP/IP, or Serial connection. If you are no expert in DLMS/COSEM, use our UI application, GXDLMSDirector, for the component to get started. Both the component, and its UI are OpenSource, and therefor available to anyone interested",Gurux.DLMS,False,2018-04-11T09:01:32.207+00:00,True,False,With Gurux DLMS/COSEM protocol component you can easily read your smart meters.,"DLMS,COSEM,AMI,ARM",26975,False,8.5.1803.401
+holmes2136,2018-03-04T14:53:28.47Z,2,47,LINE Messaging API for .NET,LineBotKit.Client,False,2018-04-18T14:37:02.217+00:00,True,False,,LineBot,1359,False,1.0.0
+holmes2136,2018-03-04T14:53:28.47Z,2,47,LINE Messaging API for .NET,LineBotKit.Client,False,2018-04-18T14:37:02.217+00:00,True,False,,LineBot,1359,False,1.0.0
+Binance.Models,2018-03-04T14:50:09.217Z,47,47,Package Description,Binance.Models,False,2018-03-04T14:50:09.217+00:00,True,False,,,73,False,1.0.0
+Binance.Models,2018-03-04T14:50:09.217Z,47,47,Package Description,Binance.Models,False,2018-03-04T14:50:09.217+00:00,True,False,,,73,False,1.0.0
+Przemek Parzych,2018-03-04T14:46:59.353Z,46,47,This is a library that connect to a binance web api.,Binance.Client,True,2018-03-05T08:52:21.947+00:00,True,False,,,126,False,1.0.0-beta
+Przemek Parzych,2018-03-04T14:46:59.353Z,46,47,This is a library that connect to a binance web api.,Binance.Client,True,2018-03-05T08:52:21.947+00:00,True,False,,,126,False,1.0.0-beta
+Chino Chang,2018-03-04T14:44:17.083Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,True,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.69-build69
+K. Scott Allen,2018-03-04T14:44:47.177Z,47,47,Use feature folders to organize controllers and views in ASP.NET Core,OdeToCode.AddFeatureFolders,False,2018-03-04T14:44:47.177+00:00,True,False,,"feature,folders,asp.net,core",33150,False,2.0.1
+Chino Chang,2018-03-04T14:44:28.863Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,True,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.69-build69
+Chino Chang,2018-03-04T14:44:04.74Z,43209,47,"ZMOP Authorization SDK for .NET
+芝麻授权 SDK",ZmopSharp.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用,芝麻授权",1216,False,0.1.69-build69
+Chino Chang,2018-03-04T14:44:17.083Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,True,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.69-build69
+K. Scott Allen,2018-03-04T14:44:47.177Z,47,47,Use feature folders to organize controllers and views in ASP.NET Core,OdeToCode.AddFeatureFolders,False,2018-03-04T14:44:47.177+00:00,True,False,,"feature,folders,asp.net,core",33150,False,2.0.1
+Chino Chang,2018-03-04T14:44:28.863Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,True,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.69-build69
+Chino Chang,2018-03-04T14:44:04.74Z,43209,47,"ZMOP Authorization SDK for .NET
+芝麻授权 SDK",ZmopSharp.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用,芝麻授权",1216,False,0.1.69-build69
+slioplark,2018-03-04T14:41:52.877Z,46,47,Package Description,SP.Library,False,2018-03-05T19:34:04.463+00:00,True,False,,,235,False,1.1.0
+Chino Chang,2018-03-04T14:43:51.13Z,43209,47,"ZMOP SDK for .NET
+芝麻信用开放平台 SDK",ZmopSharp.Core,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用",1379,False,0.1.69-build69
+Chino Chang,2018-03-04T14:40:49.11Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,True,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.68-build68
+Chino Chang,2018-03-04T14:43:51.13Z,43209,47,"ZMOP SDK for .NET
+芝麻信用开放平台 SDK",ZmopSharp.Core,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用",1379,False,0.1.69-build69
+slioplark,2018-03-04T14:41:52.877Z,46,47,Package Description,SP.Library,False,2018-03-05T19:34:04.463+00:00,True,False,,,235,False,1.1.0
+Chino Chang,2018-03-04T14:40:49.11Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,True,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.68-build68
+Chino Chang,2018-03-04T14:40:23.903Z,43209,47,"ZMOP Authorization SDK for .NET
+芝麻授权 SDK",ZmopSharp.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用,芝麻授权",1216,False,0.1.68-build68
+Chino Chang,2018-03-04T14:40:10.25Z,43209,47,"ZMOP SDK for .NET
+芝麻信用开放平台 SDK",ZmopSharp.Core,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用",1379,False,0.1.68-build68
+slioplark,2018-03-03T02:02:55.957Z,46,48,Package Description,SP.Library,False,2018-03-05T19:34:04.463+00:00,True,False,,,235,False,1.0.0
+Pavel Agarkov,2018-03-04T14:38:10.497Z,36,47,Testing utilities for .Net code of Midnight-Lizard.online website,MidnightLizard.Testing.Utilities,False,2018-03-15T13:31:06.527+00:00,True,False,,,384,False,1.0.3
+Chino Chang,2018-03-04T14:40:35.967Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,True,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.68-build68
+Chino Chang,2018-03-04T14:40:35.967Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,True,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.68-build68
+Pavel Agarkov,2018-03-04T14:38:10.497Z,36,47,Testing utilities for .Net code of Midnight-Lizard.online website,MidnightLizard.Testing.Utilities,False,2018-03-15T13:31:06.527+00:00,True,False,,,384,False,1.0.3
+Microsoft,2018-03-04T14:25:51.023Z,3,47,Microsoft CNTK CPU-only Model Evaluation Libraries (no GPU required),Microsoft.Research.CNTK.CpuEval-mkl,True,2018-04-17T18:55:44.21+00:00,True,False,This NuGet package can be used to develop applications and libraries evaluating CNTK generated models,"Microsoft,CNTK,native,C++,CLR,package",49842,True,2.5.0-rc0.dev20180304
+Microsoft,2018-03-04T14:25:24.1Z,3,47,"Microsoft Cognitive Toolkit Libraries, GPU Build",CNTK.GPU,True,2018-04-17T18:55:35.367+00:00,True,False,This NuGet package provides CNTK native and managed library running on CPU-Only devices. It requires Visual Studio 2017. The API documentation is available at https://docs.microsoft.com/cognitive-toolkit/CNTK-Library-Evaluation-on-Windows,"Microsoft,Cognitive,Toolkit,CNTK,deep,learning,CLR,managed,C#,native,C++",53811,False,2.5.0-rc0.dev20180304
+SQLite Development Team,2018-03-04T14:24:46.07Z,18,47,"This is nuget package version of SQLite for Universal Windows Platform, with this package you don't need to install SQLite for Universal Windows Platform any more, and it was very useful when your app need to build on VSTS.",SQLite.uwp,False,2018-04-02T15:59:39.727+00:00,True,False,,"SQLite,Sqlite.uwp,Sqlite3",745,False,3.22.0
+Microsoft,2018-03-04T14:24:56.24Z,3,47,"Microsoft Cognitive Toolkit Libraries, cuDNN dependencies",CNTK.Deps.cuDNN,True,2018-04-17T18:55:14.943+00:00,True,False,This NuGet package provides cuDNN dependencies for CNTK GPU build.,,3505,False,2.5.0-rc0.dev20180304
+Microsoft,2018-03-04T14:25:37.943Z,3,47,"Microsoft Cognitive Toolkit Libraries, UWP CPU-Only Build",CNTK.UWP.CPUOnly,True,2018-04-17T18:55:39.74+00:00,True,False,This NuGet package provides CNTK UWP library running on CPU-Only devices. It requires Visual Studio 2017. The API documentation is available at https://docs.microsoft.com/cognitive-toolkit/CNTK-Library-Evaluation-on-Windows,"Microsoft,Cognitive,Toolkit,CNTK,deep,learning,UWP,C++",3002,False,2.5.0-rc0.dev20180304
+Microsoft,2018-03-04T14:25:37.943Z,3,47,"Microsoft Cognitive Toolkit Libraries, UWP CPU-Only Build",CNTK.UWP.CPUOnly,True,2018-04-17T18:55:39.74+00:00,True,False,This NuGet package provides CNTK UWP library running on CPU-Only devices. It requires Visual Studio 2017. The API documentation is available at https://docs.microsoft.com/cognitive-toolkit/CNTK-Library-Evaluation-on-Windows,"Microsoft,Cognitive,Toolkit,CNTK,deep,learning,UWP,C++",3002,False,2.5.0-rc0.dev20180304
+Microsoft,2018-03-04T14:25:24.1Z,3,47,"Microsoft Cognitive Toolkit Libraries, GPU Build",CNTK.GPU,True,2018-04-17T18:55:35.367+00:00,True,False,This NuGet package provides CNTK native and managed library running on CPU-Only devices. It requires Visual Studio 2017. The API documentation is available at https://docs.microsoft.com/cognitive-toolkit/CNTK-Library-Evaluation-on-Windows,"Microsoft,Cognitive,Toolkit,CNTK,deep,learning,CLR,managed,C#,native,C++",53811,False,2.5.0-rc0.dev20180304
+Microsoft,2018-03-04T14:25:51.023Z,3,47,Microsoft CNTK CPU-only Model Evaluation Libraries (no GPU required),Microsoft.Research.CNTK.CpuEval-mkl,True,2018-04-17T18:55:44.21+00:00,True,False,This NuGet package can be used to develop applications and libraries evaluating CNTK generated models,"Microsoft,CNTK,native,C++,CLR,package",49842,True,2.5.0-rc0.dev20180304
+SQLite Development Team,2018-03-04T14:24:46.07Z,18,47,"This is nuget package version of SQLite for Universal Windows Platform, with this package you don't need to install SQLite for Universal Windows Platform any more, and it was very useful when your app need to build on VSTS.",SQLite.uwp,False,2018-04-02T15:59:39.727+00:00,True,False,,"SQLite,Sqlite.uwp,Sqlite3",745,False,3.22.0
+Microsoft,2018-03-04T14:24:56.24Z,3,47,"Microsoft Cognitive Toolkit Libraries, cuDNN dependencies",CNTK.Deps.cuDNN,True,2018-04-17T18:55:14.943+00:00,True,False,This NuGet package provides cuDNN dependencies for CNTK GPU build.,,3505,False,2.5.0-rc0.dev20180304
+Microsoft,2018-03-04T14:23:18.003Z,3,47,"Microsoft Cognitive Toolkit Libraries, CPU-Only Build",CNTK.CPUOnly,True,2018-04-17T18:53:57.97+00:00,True,False,This NuGet package provides CNTK native and managed library running on CPU-Only devices. It requires Visual Studio 2017. The API documentation is available at https://docs.microsoft.com/cognitive-toolkit/CNTK-Library-Evaluation-on-Windows,"Microsoft,Cognitive,Toolkit,CNTK,deep,learning,CLR,managed,C#,native,C++",37329,False,2.5.0-rc0.dev20180304
+Microsoft,2018-03-04T14:24:18.02Z,3,47,"Microsoft Cognitive Toolkit Libraries, OpenCV and Zip dependencies",CNTK.Deps.OpenCV.Zip,True,2018-04-17T18:54:37.083+00:00,True,False,This NuGet package provides OpenCV and Zip dependencies for CNTK builds,,5856,False,2.5.0-rc0.dev20180304
+Microsoft,2018-03-04T14:24:03.817Z,3,47,"Microsoft Cognitive Toolkit Libraries, MKL dependencies",CNTK.Deps.MKL,True,2018-04-17T18:54:30.94+00:00,True,False,This NuGet package provides MKL dependencies for CNTK builds.,,5782,False,2.5.0-rc0.dev20180304
+Richard Schneider,2018-03-04T14:24:01.88Z,47,47,DNS data model with serializer/deserializer for the wire format.,Makaretu.Dns,False,2018-03-04T14:24:01.88+00:00,True,False,,dns,335,False,0.2.0
+Microsoft,2018-03-04T14:23:45.643Z,3,47,"Microsoft Cognitive Toolkit Libraries, Cuda dependencies",CNTK.Deps.Cuda,True,2018-04-17T18:54:21.567+00:00,True,False,This NuGet package provides Cuda dependencies for CNTK GPU build.,,3720,False,2.5.0-rc0.dev20180304
+Microsoft,2018-03-04T14:24:18.02Z,3,47,"Microsoft Cognitive Toolkit Libraries, OpenCV and Zip dependencies",CNTK.Deps.OpenCV.Zip,True,2018-04-17T18:54:37.083+00:00,True,False,This NuGet package provides OpenCV and Zip dependencies for CNTK builds,,5856,False,2.5.0-rc0.dev20180304
+Microsoft,2018-03-04T14:23:18.003Z,3,47,"Microsoft Cognitive Toolkit Libraries, CPU-Only Build",CNTK.CPUOnly,True,2018-04-17T18:53:57.97+00:00,True,False,This NuGet package provides CNTK native and managed library running on CPU-Only devices. It requires Visual Studio 2017. The API documentation is available at https://docs.microsoft.com/cognitive-toolkit/CNTK-Library-Evaluation-on-Windows,"Microsoft,Cognitive,Toolkit,CNTK,deep,learning,CLR,managed,C#,native,C++",37329,False,2.5.0-rc0.dev20180304
+Microsoft,2018-03-04T14:24:03.817Z,3,47,"Microsoft Cognitive Toolkit Libraries, MKL dependencies",CNTK.Deps.MKL,True,2018-04-17T18:54:30.94+00:00,True,False,This NuGet package provides MKL dependencies for CNTK builds.,,5782,False,2.5.0-rc0.dev20180304
+Microsoft,2018-03-04T14:23:45.643Z,3,47,"Microsoft Cognitive Toolkit Libraries, Cuda dependencies",CNTK.Deps.Cuda,True,2018-04-17T18:54:21.567+00:00,True,False,This NuGet package provides Cuda dependencies for CNTK GPU build.,,3720,False,2.5.0-rc0.dev20180304
+marjanp,2018-03-04T14:18:04.247Z,22,47,The necessary assemblies needed for creating new Easybots app.,Easybots.Apps,False,2018-03-29T13:25:58.633+00:00,True,False,,easybots,1285,False,0.7.1.2
+,,-1,-1,,Metroit.IO.Converter.ExcelToPdf,,,,True,,,,,1.0.0
+marjanp,2018-03-04T14:18:04.247Z,22,47,The necessary assemblies needed for creating new Easybots app.,Easybots.Apps,False,2018-03-29T13:25:58.633+00:00,True,False,,easybots,1285,False,0.7.1.2
+Sergey Kuznetsov,2018-03-04T14:13:54.63Z,47,47,.NET client for prometheus.io,Prometheus.Client,False,2018-03-04T14:13:54.63+00:00,True,False,,"prometheus,metrics",25963,False,1.4.1
+Suny.Autofac.Extras.Nlog,2018-03-04T14:13:11.863Z,47,47,Package Description,Suny.Autofac.Extras.Nlog,False,2018-03-04T14:13:11.863+00:00,True,False,,,62,False,1.0.0
+Suny.Autofac.Extras.Nlog,2018-03-04T14:13:11.863Z,47,47,Package Description,Suny.Autofac.Extras.Nlog,False,2018-03-04T14:13:11.863+00:00,True,False,,,62,False,1.0.0
+Sergey Kuznetsov,2018-03-04T14:13:54.63Z,47,47,.NET client for prometheus.io,Prometheus.Client,False,2018-03-04T14:13:54.63+00:00,True,False,,"prometheus,metrics",25963,False,1.4.1
+Sergey Savchuk,2018-03-04T14:10:51.907Z,47,47,Package Description,SwfLib,False,2018-03-04T14:10:51.907+00:00,True,False,,,216,False,1.0.2
+Frank Løvendahl Nielsen,2018-03-04T14:10:18.343Z,47,47,"Set ConnectionString manually, Enable internal Debugging, Show configuration messages",MicroKnights.Log4NetHelper,False,2018-03-04T14:10:18.343+00:00,True,False,,,175,False,1.0.0
+"Richard Conway (@azurecoder),Ivan Gavryliuk (@aloneguid) and Andy Cross (@andycross)",2018-03-04T14:11:27.267Z,47,47,A suite of libraries to provide stats functionality in dotnet for parquet and other formats,DataFrame.Math,True,2018-03-04T14:11:27.267+00:00,True,False,,,1539,False,1.0.2-alpha-35
+"Richard Conway (@azurecoder),Ivan Gavryliuk (@aloneguid) and Andy Cross (@andycross)",2018-03-04T14:10:36.047Z,47,47,Package Description,DataFrame.Formats,True,2018-03-04T14:10:36.047+00:00,True,False,,,879,False,1.0.2-alpha-35
+Sergey Savchuk,2018-03-04T14:10:51.907Z,47,47,Package Description,SwfLib,False,2018-03-04T14:10:51.907+00:00,True,False,,,216,False,1.0.2
+Frank Løvendahl Nielsen,2018-03-04T14:10:18.343Z,47,47,"Set ConnectionString manually, Enable internal Debugging, Show configuration messages",MicroKnights.Log4NetHelper,False,2018-03-04T14:10:18.343+00:00,True,False,,,175,False,1.0.0
+"Richard Conway (@azurecoder),Ivan Gavryliuk (@aloneguid) and Andy Cross (@andycross)",2018-03-04T14:11:27.267Z,47,47,A suite of libraries to provide stats functionality in dotnet for parquet and other formats,DataFrame.Math,True,2018-03-04T14:11:27.267+00:00,True,False,,,1539,False,1.0.2-alpha-35
+"Richard Conway (@azurecoder),Ivan Gavryliuk (@aloneguid) and Andy Cross (@andycross)",2018-03-04T14:10:36.047Z,47,47,Package Description,DataFrame.Formats,True,2018-03-04T14:10:36.047+00:00,True,False,,,879,False,1.0.2-alpha-35
+,,-1,-1,,Metroit.IO.Converter.ExcelToPdf,,,,True,,,,,1.0.0
+,,-1,-1,,Metroit.IO.Converter.ExcelToPdf,,,,True,,,,,1.0.0
+Nebol Software,2018-03-04T14:05:29.553Z,43209,47,Adds Entity Framework support for NebolIntegration,NebolIntegration.EntityFramework,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.8
+Nebol Software,2018-03-04T14:05:29.553Z,43209,47,Adds Entity Framework support for NebolIntegration,NebolIntegration.EntityFramework,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.8
+Nebol Software,2018-03-04T13:54:12.24Z,43209,47,Library for simple integration management,NebolIntegration,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.1.26
+Nebol Software,2018-03-04T13:54:12.24Z,43209,47,Library for simple integration management,NebolIntegration,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.1.26
+Patrick Westerhoff,2018-03-04T12:55:19.963Z,47,47,"This package contains MSBuild targets to support packaging other assemblies from the project output directory into the SharePoint solution package. It enables the use of special tokens in the source path for custom assemblies within the solution’s `Package.package` file. The supported tokens are `$OutputPath$` and `$Configuration$`, which will be replaced respectively by the build output path or the current build configuration.",SharePointPackageProjectOutputAssemblies,False,2018-03-04T13:20:07.743+00:00,False,False,MSBuild targets to support packaging other assemblies from the project output directory into the SharePoint solution by specifying the source path of custom assemblies using special replacement tokens.,"SharePoint,MSBuild",130,False,1.0.0
+Leung Wing-chung,2018-03-04T13:39:14.253Z,20,47,"QBasic style graphics and keyboard routines for .NET framework.
+
+VBGraphics provides simple graphics and keyboard handling routines that wraps around WinForms and GDI+. With these routines, beginning programmers can create simple games in the QBasic way.
+
+For more details how to use VBGraphics, check the project site.",VBGraphics,False,2018-03-31T04:51:19.197+00:00,True,False,QBasic style graphics and keyboard routines for .NET framework,graphics,325,False,0.0.4
+Leung Wing-chung,2018-03-04T13:39:14.253Z,20,47,"QBasic style graphics and keyboard routines for .NET framework.
+
+VBGraphics provides simple graphics and keyboard handling routines that wraps around WinForms and GDI+. With these routines, beginning programmers can create simple games in the QBasic way.
+
+For more details how to use VBGraphics, check the project site.",VBGraphics,False,2018-03-31T04:51:19.197+00:00,True,False,QBasic style graphics and keyboard routines for .NET framework,graphics,325,False,0.0.4
+Dywham,2018-03-04T13:29:48.87Z,31,47,Description,Dywham.Middleware.Providers.WebClient,False,2018-03-20T22:27:09.853+00:00,True,False,,,422,False,1.6.3
+Dywham,2018-03-04T13:29:48.87Z,31,47,Description,Dywham.Middleware.Providers.WebClient,False,2018-03-20T22:27:09.853+00:00,True,False,,,422,False,1.6.3
+Chino Chang,2018-03-04T13:27:30.443Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,False,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.67
+Chino Chang,2018-03-04T13:27:18.583Z,43209,47,"ZMOP Authorization SDK for .NET
+芝麻授权 SDK",ZmopSharp.Authorization,False,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用,芝麻授权",1216,False,0.1.67
+Chino Chang,2018-03-04T13:27:43.473Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,False,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.67
+Chino Chang,2018-03-04T13:27:06.177Z,43209,47,"ZMOP SDK for .NET
+芝麻信用开放平台 SDK",ZmopSharp.Core,False,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用",1379,False,0.1.67
+Chino Chang,2018-03-04T13:27:18.583Z,43209,47,"ZMOP Authorization SDK for .NET
+芝麻授权 SDK",ZmopSharp.Authorization,False,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用,芝麻授权",1216,False,0.1.67
+Chino Chang,2018-03-04T13:27:30.443Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,False,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.67
+Chino Chang,2018-03-04T13:27:06.177Z,43209,47,"ZMOP SDK for .NET
+芝麻信用开放平台 SDK",ZmopSharp.Core,False,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用",1379,False,0.1.67
+Chino Chang,2018-03-04T13:27:43.473Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,False,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.67
+Chino Chang,2018-03-04T13:22:30.577Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,True,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.66-build66
+Chino Chang,2018-03-04T13:22:17.373Z,43209,47,"ZMOP Authorization SDK for .NET
+芝麻授权 SDK",ZmopSharp.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用,芝麻授权",1216,False,0.1.66-build66
+Chino Chang,2018-03-04T13:22:01.95Z,43209,47,"ZMOP SDK for .NET
+芝麻信用开放平台 SDK",ZmopSharp.Core,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用",1379,False,0.1.66-build66
+Chino Chang,2018-03-04T13:22:42.67Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,True,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.66-build66
+Chino Chang,2018-03-04T13:22:01.95Z,43209,47,"ZMOP SDK for .NET
+芝麻信用开放平台 SDK",ZmopSharp.Core,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用",1379,False,0.1.66-build66
+Chino Chang,2018-03-04T13:22:42.67Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,True,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.66-build66
+Chino Chang,2018-03-04T13:22:30.577Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,True,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.66-build66
+Chino Chang,2018-03-04T13:22:17.373Z,43209,47,"ZMOP Authorization SDK for .NET
+芝麻授权 SDK",ZmopSharp.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用,芝麻授权",1216,False,0.1.66-build66
+Frank Løvendahl Nielsen,2018-03-04T13:20:30.59Z,47,47,"Set ConnectionString manually, Enable internal Debugging, Show configuration messages",MicroKnights.Log4NetHelper,True,2018-03-04T14:10:18.343+00:00,True,False,,,175,False,1.0.0-alpha2
+Patrick Westerhoff,2018-03-04T13:20:07.743Z,47,47,"This package contains MSBuild targets to support packaging other assemblies from the project output directory into the SharePoint solution package. It enables the use of special tokens in the source path for custom assemblies within the solution’s `Package.package` file. The supported tokens are `$OutputPath$` and `$Configuration$`, which will be replaced respectively by the build output path or the current build configuration.",SharePointPackageProjectOutputAssemblies,False,2018-03-04T13:20:07.743+00:00,True,False,MSBuild targets to support packaging other assemblies from the project output directory into the SharePoint solution by specifying the source path of custom assemblies using special replacement tokens.,"SharePoint,MSBuild",130,False,1.0.1
+Frank Løvendahl Nielsen,2018-03-04T13:20:30.59Z,47,47,"Set ConnectionString manually, Enable internal Debugging, Show configuration messages",MicroKnights.Log4NetHelper,True,2018-03-04T14:10:18.343+00:00,True,False,,,175,False,1.0.0-alpha2
+Patrick Westerhoff,2018-03-04T13:20:07.743Z,47,47,"This package contains MSBuild targets to support packaging other assemblies from the project output directory into the SharePoint solution package. It enables the use of special tokens in the source path for custom assemblies within the solution’s `Package.package` file. The supported tokens are `$OutputPath$` and `$Configuration$`, which will be replaced respectively by the build output path or the current build configuration.",SharePointPackageProjectOutputAssemblies,False,2018-03-04T13:20:07.743+00:00,True,False,MSBuild targets to support packaging other assemblies from the project output directory into the SharePoint solution by specifying the source path of custom assemblies using special replacement tokens.,"SharePoint,MSBuild",130,False,1.0.1
+Teknowlogi,2018-03-04T13:16:55.1Z,39,47,The company for DriverAssistant.,DriverAssistant.Contracts.CompanyApi,False,2018-03-12T06:34:51.89+00:00,True,False,,driverassistant,308,False,2.1.0
+Teknowlogi,2018-03-04T13:17:32.053Z,39,47,The driver contracts for DriverAssistant.,DriverAssistant.Contracts.DriverApi,False,2018-03-12T06:34:16.407+00:00,True,False,,driverassistant,326,False,2.1.0
+Teknowlogi,2018-03-04T13:17:32.053Z,39,47,The driver contracts for DriverAssistant.,DriverAssistant.Contracts.DriverApi,False,2018-03-12T06:34:16.407+00:00,True,False,,driverassistant,326,False,2.1.0
+Teknowlogi,2018-03-04T13:16:55.1Z,39,47,The company for DriverAssistant.,DriverAssistant.Contracts.CompanyApi,False,2018-03-12T06:34:51.89+00:00,True,False,,driverassistant,308,False,2.1.0
+Chino Chang,2018-03-04T13:13:30.187Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,True,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.65-build65
+Chino Chang,2018-03-04T13:12:51.933Z,43209,47,"ZMOP SDK for .NET
+芝麻信用开放平台 SDK",ZmopSharp.Core,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用",1379,False,0.1.65-build65
+Md. Obaidul Kabir Chowdhury,2018-03-04T13:13:58.513Z,24,47,Dimension Parser Library,DimensionParser,False,2018-03-27T18:59:01.903+00:00,True,False,,"Dimenstion,Parser,Extractor",427,False,1.0.3
+Chino Chang,2018-03-04T13:13:05.107Z,43209,47,"ZMOP Authorization SDK for .NET
+芝麻授权 SDK",ZmopSharp.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用,芝麻授权",1216,False,0.1.65-build65
+Chino Chang,2018-03-04T13:13:18.153Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,True,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.65-build65
+Teknowlogi,2018-03-04T13:15:44.05Z,39,47,The shared contracts for DriverAssistant.,DriverAssistant.Contracts.Shared,False,2018-03-12T06:33:47.483+00:00,True,False,,driverassistant,251,False,2.1.0
+Chino Chang,2018-03-04T13:12:51.933Z,43209,47,"ZMOP SDK for .NET
+芝麻信用开放平台 SDK",ZmopSharp.Core,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用",1379,False,0.1.65-build65
+Chino Chang,2018-03-04T13:13:30.187Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,True,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.65-build65
+Chino Chang,2018-03-04T13:13:18.153Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,True,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.65-build65
+Md. Obaidul Kabir Chowdhury,2018-03-04T13:13:58.513Z,24,47,Dimension Parser Library,DimensionParser,False,2018-03-27T18:59:01.903+00:00,True,False,,"Dimenstion,Parser,Extractor",427,False,1.0.3
+Teknowlogi,2018-03-04T13:15:44.05Z,39,47,The shared contracts for DriverAssistant.,DriverAssistant.Contracts.Shared,False,2018-03-12T06:33:47.483+00:00,True,False,,driverassistant,251,False,2.1.0
+Chino Chang,2018-03-04T13:13:05.107Z,43209,47,"ZMOP Authorization SDK for .NET
+芝麻授权 SDK",ZmopSharp.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用,芝麻授权",1216,False,0.1.65-build65
+Chino Chang,2018-03-04T13:07:06.497Z,43209,47,"ZMOP Authorization SDK for .NET
+芝麻授权 SDK",ZmopSharp.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用,芝麻授权",1216,False,0.1.64-build64
+Chino Chang,2018-03-04T13:06:53.37Z,43209,47,"ZMOP SDK for .NET
+芝麻信用开放平台 SDK",ZmopSharp.Core,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用",1379,False,0.1.64-build64
+Chino Chang,2018-03-04T13:07:18.95Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,True,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.64-build64
+Chino Chang,2018-03-04T13:07:30.67Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,True,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.64-build64
+Chino Chang,2018-03-04T13:07:30.67Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,True,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.64-build64
+Chino Chang,2018-03-04T13:07:18.95Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,True,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.64-build64
+Chino Chang,2018-03-04T13:06:53.37Z,43209,47,"ZMOP SDK for .NET
+芝麻信用开放平台 SDK",ZmopSharp.Core,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用",1379,False,0.1.64-build64
+Prospectbd,2018-03-04T13:00:17.243Z,47,47,Arithmatic Fraction Conversion and calculation Service,FractionService,False,2018-03-04T13:00:17.243+00:00,True,False,,"Fraction,Math,Calculation,Conversion",131,False,1.0.2
+Prospectbd,2018-03-04T13:00:17.243Z,47,47,Arithmatic Fraction Conversion and calculation Service,FractionService,False,2018-03-04T13:00:17.243+00:00,True,False,,"Fraction,Math,Calculation,Conversion",131,False,1.0.2
+Patrick Westerhoff,2018-03-04T12:55:19.963Z,47,47,"This package contains MSBuild targets to support packaging other assemblies from the project output directory into the SharePoint solution package. It enables the use of special tokens in the source path for custom assemblies within the solution’s `Package.package` file. The supported tokens are `$OutputPath$` and `$Configuration$`, which will be replaced respectively by the build output path or the current build configuration.",SharePointPackageProjectOutputAssemblies,False,2018-03-04T13:20:07.743+00:00,True,False,MSBuild targets to support packaging other assemblies from the project output directory into the SharePoint solution by specifying the source path of custom assemblies using special replacement tokens.,"SharePoint,MSBuild",130,False,1.0.0
+Patrick Westerhoff,2018-03-04T12:55:19.963Z,47,47,"This package contains MSBuild targets to support packaging other assemblies from the project output directory into the SharePoint solution package. It enables the use of special tokens in the source path for custom assemblies within the solution’s `Package.package` file. The supported tokens are `$OutputPath$` and `$Configuration$`, which will be replaced respectively by the build output path or the current build configuration.",SharePointPackageProjectOutputAssemblies,False,2018-03-04T13:20:07.743+00:00,True,False,MSBuild targets to support packaging other assemblies from the project output directory into the SharePoint solution by specifying the source path of custom assemblies using special replacement tokens.,"SharePoint,MSBuild",130,False,1.0.0
+Chino Chang,2018-03-04T12:50:35.31Z,43209,47,"ZMOP SDK for .NET
+芝麻信用开放平台 SDK",ZmopSharp.Core,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用",1379,False,0.1.63-build63
+Chino Chang,2018-03-04T12:51:13.86Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,True,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.63-build63
+Chino Chang,2018-03-04T12:50:48.92Z,43209,47,"ZMOP Authorization SDK for .NET
+芝麻授权 SDK",ZmopSharp.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用,芝麻授权",1216,False,0.1.63-build63
+Chino Chang,2018-03-04T12:51:00.827Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,True,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.63-build63
+Chino Chang,2018-03-04T12:50:48.92Z,43209,47,"ZMOP Authorization SDK for .NET
+芝麻授权 SDK",ZmopSharp.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用,芝麻授权",1216,False,0.1.63-build63
+Chino Chang,2018-03-04T12:51:00.827Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,True,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.63-build63
+Chino Chang,2018-03-04T12:51:13.86Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,True,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.63-build63
+KsWare,2018-03-04T12:43:08.723Z,11,47,Excecutes commands on build.,KsWare.MSBuildTargets,False,2018-04-09T18:02:21.32+00:00,True,False,,"msbuild,NuGet,package,visual-studio,KsWare",4004,False,0.2.3
+Frank Løvendahl Nielsen,2018-03-04T12:43:29.96Z,47,47,Package Description,MicroKnights.Log4NetHelper,True,2018-03-04T14:10:18.343+00:00,True,False,,,175,False,1.0.0-alpha1
+Frank Løvendahl Nielsen,2018-03-04T12:43:29.96Z,47,47,Package Description,MicroKnights.Log4NetHelper,True,2018-03-04T14:10:18.343+00:00,True,False,,,175,False,1.0.0-alpha1
+KsWare,2018-03-04T12:43:08.723Z,11,47,Excecutes commands on build.,KsWare.MSBuildTargets,False,2018-04-09T18:02:21.32+00:00,True,False,,"msbuild,NuGet,package,visual-studio,KsWare",4004,False,0.2.3
+Oleg Shevchenko,2018-03-04T12:38:27.38Z,41,47,A Sentry sink for Serilog,Serilog.Sinks.Sentry.AspNetCore,False,2018-03-10T20:21:13.64+00:00,True,False,,"serilog,sink,sentry,logging,core",1129,False,2.1.2
+LevNikolaevich,2018-03-03T22:55:03.297Z,43209,48,Package Description,RosGrant.Mvc.DataAccess,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Just Eat,2018-03-04T12:37:25.5Z,47,47,A light-weight message bus on top of AWS SNS and SQS,JustSaying.Models,False,2018-03-04T12:37:25.5+00:00,True,False,,"aws,sns,sqs",90394,False,5.0.0
+Oleg Shevchenko,2018-03-04T12:38:15.49Z,41,47,A Sentry sink for Serilog,Serilog.Sinks.Sentry,False,2018-03-10T20:21:01.687+00:00,True,False,,"serilog,sink,sentry,logging",6022,False,2.1.2
+Oleg Shevchenko,2018-03-04T12:38:27.38Z,41,47,A Sentry sink for Serilog,Serilog.Sinks.Sentry.AspNetCore,False,2018-03-10T20:21:13.64+00:00,True,False,,"serilog,sink,sentry,logging,core",1129,False,2.1.2
+Oleg Shevchenko,2018-03-04T12:38:15.49Z,41,47,A Sentry sink for Serilog,Serilog.Sinks.Sentry,False,2018-03-10T20:21:01.687+00:00,True,False,,"serilog,sink,sentry,logging",6022,False,2.1.2
+Just Eat,2018-03-04T12:37:25.5Z,47,47,A light-weight message bus on top of AWS SNS and SQS,JustSaying.Models,False,2018-03-04T12:37:25.5+00:00,True,False,,"aws,sns,sqs",90394,False,5.0.0
+Just Eat,2018-03-04T12:37:12.953Z,9,47,A light-weight message bus on top of AWS SNS and SQS,JustSaying,False,2018-04-11T10:42:08.737+00:00,True,False,,"aws,sns,sqs",113508,False,5.0.0
+Takumi Yamada,2018-03-04T12:36:14.403Z,25,47,.NET DLL file for DX library for Windows.,DxLib.NETDLL,False,2018-03-26T18:12:20.03+00:00,True,False,,DxLib,119,False,3.1.9.1
+Takumi Yamada,2018-03-04T12:36:14.403Z,25,47,.NET DLL file for DX library for Windows.,DxLib.NETDLL,False,2018-03-26T18:12:20.03+00:00,True,False,,DxLib,119,False,3.1.9.1
+Just Eat,2018-03-04T12:37:12.953Z,9,47,A light-weight message bus on top of AWS SNS and SQS,JustSaying,False,2018-04-11T10:42:08.737+00:00,True,False,,"aws,sns,sqs",113508,False,5.0.0
+VilCoyote,2018-03-04T12:26:16.917Z,25,47,First full working .Net Parrot Jumping Sumo library.,LibSumo.Net,False,2018-03-26T13:09:22.16+00:00,True,False,,"Parrot,Sumo,Jumping,Jumpingsumo,minidrone,libsumo",380,False,1.0.4
+VilCoyote,2018-03-04T12:26:16.917Z,25,47,First full working .Net Parrot Jumping Sumo library.,LibSumo.Net,False,2018-03-26T13:09:22.16+00:00,True,False,,"Parrot,Sumo,Jumping,Jumpingsumo,minidrone,libsumo",380,False,1.0.4
+Opportunity,2018-03-04T12:21:10.26Z,2,47,An Mvvm lib for UWP apps.,Opportunity.MvvmUniverse,False,2018-04-18T08:18:23.42+00:00,True,False,,"UWP,mvvm,observable",6906,False,2.4.2
+Opportunity,2018-03-04T12:21:10.26Z,2,47,An Mvvm lib for UWP apps.,Opportunity.MvvmUniverse,False,2018-04-18T08:18:23.42+00:00,True,False,,"UWP,mvvm,observable",6906,False,2.4.2
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:17:44.89Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for SQL Server,FAKE.SQL.x64,True,2018-04-15T16:42:47.723+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",58786,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:18:26.533Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. This package bundles all extensions.,FAKE.x64,True,2018-04-15T16:43:32.79+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",61993,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:18:26.533Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. This package bundles all extensions.,FAKE.x64,True,2018-04-15T16:43:32.79+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",61993,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:17:44.89Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for SQL Server,FAKE.SQL.x64,True,2018-04-15T16:42:47.723+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",58786,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:15:25.507Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for FluentMigrator,FAKE.FluentMigrator,True,2018-04-15T16:40:20.39+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",33060,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:16:57.48Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for IIS,FAKE.IIS.x64,True,2018-04-15T16:41:56.067+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",59461,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:16:35.84Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for IIS,FAKE.IIS,True,2018-04-15T16:41:34.643+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",187366,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:16:14.09Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for FluentMigrator,FAKE.FluentMigrator.x64,True,2018-04-15T16:41:10.673+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",32659,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:17:22.107Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for SQL Server,FAKE.SQL,True,2018-04-15T16:42:22.333+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",196745,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:16:55.183Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. FAKE helper functions as library,FAKE.Lib,True,2018-04-15T16:41:56.22+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",69152,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:17:18.123Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. FAKE helper functions as library,FAKE.Lib.x64,True,2018-04-15T16:42:22.427+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",53366,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:16:36.747Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for Gallio,FAKE.Gallio.x64,True,2018-04-15T16:41:31.16+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",58791,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:15:45.15Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for Gallio,FAKE.Gallio,True,2018-04-15T16:40:43.187+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",193265,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:14:37.74Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for FAKE Deploy,FAKE.Deploy.Lib.x64,True,2018-04-15T16:39:29.933+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",58958,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:17:22.107Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for SQL Server,FAKE.SQL,True,2018-04-15T16:42:22.333+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",196745,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:17:18.123Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. FAKE helper functions as library,FAKE.Lib.x64,True,2018-04-15T16:42:22.427+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",53366,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:16:55.183Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. FAKE helper functions as library,FAKE.Lib,True,2018-04-15T16:41:56.22+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",69152,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:16:57.48Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for IIS,FAKE.IIS.x64,True,2018-04-15T16:41:56.067+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",59461,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:15:45.15Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for Gallio,FAKE.Gallio,True,2018-04-15T16:40:43.187+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",193265,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:14:05.05Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Experimental Extensions,FAKE.Experimental,True,2018-04-15T16:39:03.353+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",178625,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:13:40.22Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,FAKE.Core.x64,True,2018-04-15T16:38:41.15+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",59846,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:16:36.747Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for Gallio,FAKE.Gallio.x64,True,2018-04-15T16:41:31.16+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",58791,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:14:37.74Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for FAKE Deploy,FAKE.Deploy.Lib.x64,True,2018-04-15T16:39:29.933+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",58958,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:15:02.083Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Experimental Extensions,FAKE.Experimental.x64,True,2018-04-15T16:39:49.73+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",58805,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:15:25.507Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for FluentMigrator,FAKE.FluentMigrator,True,2018-04-15T16:40:20.39+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",33060,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:16:35.84Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for IIS,FAKE.IIS,True,2018-04-15T16:41:34.643+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",187366,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:14:05.05Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Experimental Extensions,FAKE.Experimental,True,2018-04-15T16:39:03.353+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",178625,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:15:02.083Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Experimental Extensions,FAKE.Experimental.x64,True,2018-04-15T16:39:49.73+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",58805,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:12:19.34Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,FAKE.Core,True,2018-04-15T16:36:46.647+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",273368,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:12:16.483Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. This package bundles all extensions.,FAKE,True,2018-04-15T16:37:14.193+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",1449417,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:13:40.22Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,FAKE.Core.x64,True,2018-04-15T16:38:41.15+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",59846,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:13:08.64Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for FAKE Deploy,FAKE.Deploy.Lib,True,2018-04-15T16:38:30.65+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",180923,False,5.0.0-beta022
+Igor.Gateway.Dtos,2018-03-04T12:12:05.013Z,1,47,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,4.0.3-prerelease1179
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:12:16.483Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. This package bundles all extensions.,FAKE,True,2018-04-15T16:37:14.193+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",1449417,False,5.0.0-beta022
+Igor.Gateway.Dtos,2018-03-04T12:12:05.013Z,1,47,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,4.0.3-prerelease1179
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:12:19.34Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,FAKE.Core,True,2018-04-15T16:36:46.647+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",273368,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:10:32.46Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Testing.SonarQube,True,2018-04-15T16:34:57.767+00:00,True,False,,"build,fake,f#",2267,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:10:46.023Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Runtime,True,2018-04-15T16:34:31.843+00:00,True,False,,"build,fake,f#",4834,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:13:08.64Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#. Extensions for FAKE Deploy,FAKE.Deploy.Lib,True,2018-04-15T16:38:30.65+00:00,True,False,FAKE - F# Make - Get rid of the noise in your build scripts.,"build,fake,f#",180923,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:10:46.023Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Runtime,True,2018-04-15T16:34:31.843+00:00,True,False,,"build,fake,f#",4834,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:10:32.46Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Testing.SonarQube,True,2018-04-15T16:34:57.767+00:00,True,False,,"build,fake,f#",2267,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:10:08.1Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Net.Http,True,2018-04-15T16:34:17.92+00:00,True,False,,"build,fake,f#",1999,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:08:28.987Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Testing.NUnit,True,2018-04-15T16:32:37.223+00:00,True,False,,"build,fake,f#",5906,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:06:36.823Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Api.Slack,True,2018-04-15T16:26:55.207+00:00,True,False,,"build,fake,f#",1567,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:07:26.857Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.MsBuild,True,2018-04-15T16:31:40.517+00:00,True,False,,"build,fake,f#",6593,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:07:52.563Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Paket,True,2018-04-15T16:32:02.91+00:00,True,False,,"build,fake,f#",5666,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:09:06.8Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Xamarin,True,2018-04-15T16:33:13.617+00:00,True,False,,"build,fake,f#",1341,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:09:56.49Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Tools.Git,True,2018-04-15T16:35:10.267+00:00,True,False,,"build,fake,f#",6113,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:10:20.193Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Testing.Common,True,2018-04-15T16:34:43.343+00:00,True,False,,"build,fake,f#",6059,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:08:17.05Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Testing.MSTest,True,2018-04-15T16:32:25.393+00:00,True,False,,"build,fake,f#",1965,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:08:55.613Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Testing.XUnit2,True,2018-04-15T16:33:00.477+00:00,True,False,,"build,fake,f#",5589,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:09:30.35Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.IO.FileSystem,True,2018-04-15T16:33:27.777+00:00,True,False,,"build,fake,f#",7549,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:08:04.423Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Testing.MSpec,True,2018-04-15T16:32:14.143+00:00,True,False,,"build,fake,f#",5530,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:08:41.77Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Testing.OpenCover,True,2018-04-15T16:32:49.41+00:00,True,False,,"build,fake,f#",2402,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:09:18.427Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Windows.Chocolatey,True,2018-04-15T16:35:23.11+00:00,True,False,,"build,fake,f#",5755,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:09:43.647Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.IO.Zip,True,2018-04-15T16:33:39.217+00:00,True,False,,"build,fake,f#",5834,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:07:14.95Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.FSFormatting,True,2018-04-15T16:31:29.033+00:00,True,False,,"build,fake,f#",5604,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:09:30.35Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.IO.FileSystem,True,2018-04-15T16:33:27.777+00:00,True,False,,"build,fake,f#",7549,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:10:20.193Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Testing.Common,True,2018-04-15T16:34:43.343+00:00,True,False,,"build,fake,f#",6059,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:09:43.647Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.IO.Zip,True,2018-04-15T16:33:39.217+00:00,True,False,,"build,fake,f#",5834,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:08:55.613Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Testing.XUnit2,True,2018-04-15T16:33:00.477+00:00,True,False,,"build,fake,f#",5589,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:08:04.423Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Testing.MSpec,True,2018-04-15T16:32:14.143+00:00,True,False,,"build,fake,f#",5530,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:08:41.77Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Testing.OpenCover,True,2018-04-15T16:32:49.41+00:00,True,False,,"build,fake,f#",2402,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:09:06.8Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Xamarin,True,2018-04-15T16:33:13.617+00:00,True,False,,"build,fake,f#",1341,False,5.0.0-beta022
+Richard Schneider,2018-03-04T12:06:22.247Z,12,47,Provides .Net client access to the InterPlanetary File System.,Ipfs.Api,False,2018-04-08T02:55:06.687+00:00,True,False,,"ipfs,peer-to-peer,distributed,file-system",2124,False,0.17.0
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:08:28.987Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Testing.NUnit,True,2018-04-15T16:32:37.223+00:00,True,False,,"build,fake,f#",5906,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:07:26.857Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.MsBuild,True,2018-04-15T16:31:40.517+00:00,True,False,,"build,fake,f#",6593,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:07:40.78Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.NuGet,True,2018-04-15T16:31:51+00:00,True,False,,"build,fake,f#",6548,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:09:18.427Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Windows.Chocolatey,True,2018-04-15T16:35:23.11+00:00,True,False,,"build,fake,f#",5755,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:05:39.197Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.Tasks,True,2018-04-15T16:30:23.123+00:00,True,False,,"build,fake,f#",6413,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:06:01.98Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.Xml,True,2018-04-15T16:30:48.703+00:00,True,False,,"build,fake,f#",6625,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:07:52.563Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Paket,True,2018-04-15T16:32:02.91+00:00,True,False,,"build,fake,f#",5666,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:07:14.95Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.FSFormatting,True,2018-04-15T16:31:29.033+00:00,True,False,,"build,fake,f#",5604,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:06:49.717Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.AssemblyInfoFile,True,2018-04-15T16:31:01.61+00:00,True,False,,"build,fake,f#",6202,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:06:25.15Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Api.GitHub,True,2018-04-15T16:26:30.83+00:00,True,False,,"build,fake,f#",4045,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:06:14.027Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,dotnet-fake,True,2018-04-15T16:26:18.207+00:00,True,False,,"build,fake,f#",3024,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:06:36.823Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Api.Slack,True,2018-04-15T16:26:55.207+00:00,True,False,,"build,fake,f#",1567,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:07:02.09Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Cli,True,2018-04-15T16:31:15.483+00:00,True,False,,"build,fake,f#",7086,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:08:17.05Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Testing.MSTest,True,2018-04-15T16:32:25.393+00:00,True,False,,"build,fake,f#",1965,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:05:51.62Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.Trace,True,2018-04-15T16:30:36.06+00:00,True,False,,"build,fake,f#",3894,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:07:02.09Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.Cli,True,2018-04-15T16:31:15.483+00:00,True,False,,"build,fake,f#",7086,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:06:49.717Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.AssemblyInfoFile,True,2018-04-15T16:31:01.61+00:00,True,False,,"build,fake,f#",6202,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:05:39.197Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.Tasks,True,2018-04-15T16:30:23.123+00:00,True,False,,"build,fake,f#",6413,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:07:40.78Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.DotNet.NuGet,True,2018-04-15T16:31:51+00:00,True,False,,"build,fake,f#",6548,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:06:25.15Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Api.GitHub,True,2018-04-15T16:26:30.83+00:00,True,False,,"build,fake,f#",4045,False,5.0.0-beta022
+Richard Schneider,2018-03-04T12:06:22.247Z,12,47,Provides .Net client access to the InterPlanetary File System.,Ipfs.Api,False,2018-04-08T02:55:06.687+00:00,True,False,,"ipfs,peer-to-peer,distributed,file-system",2124,False,0.17.0
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:06:14.027Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,dotnet-fake,True,2018-04-15T16:26:18.207+00:00,True,False,,"build,fake,f#",3024,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:05:51.62Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.Trace,True,2018-04-15T16:30:36.06+00:00,True,False,,"build,fake,f#",3894,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:06:01.98Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.Xml,True,2018-04-15T16:30:48.703+00:00,True,False,,"build,fake,f#",6625,False,5.0.0-beta022
+Markus Rudolph,2018-03-04T12:05:24.9Z,41,47,Configurable query language,CQL,False,2018-03-10T19:16:24.51+00:00,True,False,,"dsl,query,language,search,filter",169,False,0.1.1
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:04:38.27Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.Process,True,2018-04-15T16:29:18.23+00:00,True,False,,"build,fake,f#",7623,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:04:24.943Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.Environment,True,2018-04-15T16:29:04.29+00:00,True,False,,"build,fake,f#",8354,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:04:51.303Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.ReleaseNotes,True,2018-04-15T16:29:30.917+00:00,True,False,,"build,fake,f#",6188,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:05:04.24Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.SemVer,True,2018-04-15T16:29:44.637+00:00,True,False,,"build,fake,f#",6981,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:05:15.943Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.String,True,2018-04-15T16:29:56.84+00:00,True,False,,"build,fake,f#",8326,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:04:12.55Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.Context,True,2018-04-15T16:28:51.963+00:00,True,False,,"build,fake,f#",8896,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:05:27.65Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.Target,True,2018-04-15T16:30:10.843+00:00,True,False,,"build,fake,f#",5916,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:05:27.65Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.Target,True,2018-04-15T16:30:10.843+00:00,True,False,,"build,fake,f#",5916,False,5.0.0-beta022
+Markus Rudolph,2018-03-04T12:05:24.9Z,41,47,Configurable query language,CQL,False,2018-03-10T19:16:24.51+00:00,True,False,,"dsl,query,language,search,filter",169,False,0.1.1
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:05:15.943Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.String,True,2018-04-15T16:29:56.84+00:00,True,False,,"build,fake,f#",8326,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:05:04.24Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.SemVer,True,2018-04-15T16:29:44.637+00:00,True,False,,"build,fake,f#",6981,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:04:24.943Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.Environment,True,2018-04-15T16:29:04.29+00:00,True,False,,"build,fake,f#",8354,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:04:51.303Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.ReleaseNotes,True,2018-04-15T16:29:30.917+00:00,True,False,,"build,fake,f#",6188,False,5.0.0-beta022
+"Steffen Forkmann,Mauricio Scheffer,Colin Bull,Matthias Dittrich",2018-03-04T12:04:12.55Z,5,47,FAKE - F# Make - is a build automation tool for .NET. Tasks and dependencies are specified in a DSL which is integrated in F#.,Fake.Core.Context,True,2018-04-15T16:28:51.963+00:00,True,False,,"build,fake,f#",8896,False,5.0.0-beta022
+J W Solutions Limited,2018-03-04T12:00:31.24Z,46,47,JWS.Core.Web for .Net 4.5,JWS.Core.Web,False,2018-03-05T17:51:36.773+00:00,True,False,,,594,False,1.0.18063.1
+J W Solutions Limited,2018-03-04T12:00:05.38Z,46,47,JWS.Core for .Net 4.5,JWS.Core,False,2018-03-05T17:51:07.88+00:00,True,False,,,597,False,1.0.18063.1
+J W Solutions Limited,2018-03-04T12:00:18.32Z,46,47,JWS.ActiveRecord.Web for .Net 4.5,JWS.Core.ActiveRecord,False,2018-03-05T17:51:23.037+00:00,True,False,,,598,False,1.0.18063.1
+J W Solutions Limited,2018-03-04T12:00:05.38Z,46,47,JWS.Core for .Net 4.5,JWS.Core,False,2018-03-05T17:51:07.88+00:00,True,False,,,597,False,1.0.18063.1
+J W Solutions Limited,2018-03-04T12:00:31.24Z,46,47,JWS.Core.Web for .Net 4.5,JWS.Core.Web,False,2018-03-05T17:51:36.773+00:00,True,False,,,594,False,1.0.18063.1
+J W Solutions Limited,2018-03-04T12:00:18.32Z,46,47,JWS.ActiveRecord.Web for .Net 4.5,JWS.Core.ActiveRecord,False,2018-03-05T17:51:23.037+00:00,True,False,,,598,False,1.0.18063.1
+BI eXcellence Software GmbH,2018-03-04T11:58:31.767Z,14,47,OpenBi Api User,BiExcellence.OpenBi.Api.User,True,2018-04-06T09:03:05.69+00:00,True,False,,"openbi,biexcellence",2364,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:57:17.06Z,14,47,OpenBi Api LicenseInformation,BiExcellence.OpenBi.Api.LicenseInformation,True,2018-04-06T09:01:19.53+00:00,True,False,,"openbi,biexcellence",2450,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:56:53.213Z,14,47,OpenBi Api DataProvider,BiExcellence.OpenBi.Api.DataProvider,True,2018-04-06T09:00:51.263+00:00,True,False,,"openbi,biexcellence",2437,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:57:05.73Z,14,47,OpenBi Api Entity,BiExcellence.OpenBi.Api.Entity,True,2018-04-06T09:01:06.577+00:00,True,False,,"openbi,biexcellence",2457,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:58:17.343Z,14,47,OpenBi Api Table Attribute,BiExcellence.OpenBi.Api.TableAttribute,True,2018-04-06T09:02:53.127+00:00,True,False,,"openbi,biexcellence",2481,False,0.0.9-ci-3831
+Simon Paramore,2018-03-04T11:58:28.877Z,47,47,Interface and class for generating dynamic queries,Furysoft.IQuery,False,2018-03-04T11:58:28.877+00:00,True,False,,IQuery,181,False,1.0.2
+BI eXcellence Software GmbH,2018-03-04T11:58:44.033Z,14,47,OpenBi Api Usergroup,BiExcellence.OpenBi.Api.Usergroup,True,2018-04-06T09:03:17.72+00:00,True,False,,"openbi,biexcellence",2373,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:58:05.31Z,14,47,OpenBi Api ServerSettings,BiExcellence.OpenBi.Api.ServerSettings,True,2018-04-06T09:02:38.14+00:00,True,False,,"openbi,biexcellence",1314,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:56:41.65Z,14,47,OpenBi Api to communicate to OpenBI Respository Servers,BiExcellence.OpenBi.Api,True,2018-04-06T09:00:33.247+00:00,True,False,,"openbi,biexcellence",2629,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:57:29.37Z,14,47,OpenBi Api MasterData,BiExcellence.OpenBi.Api.MasterData,True,2018-04-06T09:01:45.827+00:00,True,False,,"openbi,biexcellence",2414,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:57:52.937Z,14,47,OpenBi Api Role,BiExcellence.OpenBi.Api.Role,True,2018-04-06T09:02:12.39+00:00,True,False,,"openbi,biexcellence",2404,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:57:40.967Z,14,47,OpenBi Api Organisation,BiExcellence.OpenBi.Api.Organisation,True,2018-04-06T09:01:58.547+00:00,True,False,,"openbi,biexcellence",2419,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:58:17.343Z,14,47,OpenBi Api Table Attribute,BiExcellence.OpenBi.Api.TableAttribute,True,2018-04-06T09:02:53.127+00:00,True,False,,"openbi,biexcellence",2481,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:57:40.967Z,14,47,OpenBi Api Organisation,BiExcellence.OpenBi.Api.Organisation,True,2018-04-06T09:01:58.547+00:00,True,False,,"openbi,biexcellence",2419,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:56:41.65Z,14,47,OpenBi Api to communicate to OpenBI Respository Servers,BiExcellence.OpenBi.Api,True,2018-04-06T09:00:33.247+00:00,True,False,,"openbi,biexcellence",2629,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:57:17.06Z,14,47,OpenBi Api LicenseInformation,BiExcellence.OpenBi.Api.LicenseInformation,True,2018-04-06T09:01:19.53+00:00,True,False,,"openbi,biexcellence",2450,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:57:05.73Z,14,47,OpenBi Api Entity,BiExcellence.OpenBi.Api.Entity,True,2018-04-06T09:01:06.577+00:00,True,False,,"openbi,biexcellence",2457,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:57:29.37Z,14,47,OpenBi Api MasterData,BiExcellence.OpenBi.Api.MasterData,True,2018-04-06T09:01:45.827+00:00,True,False,,"openbi,biexcellence",2414,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:58:44.033Z,14,47,OpenBi Api Usergroup,BiExcellence.OpenBi.Api.Usergroup,True,2018-04-06T09:03:17.72+00:00,True,False,,"openbi,biexcellence",2373,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:58:05.31Z,14,47,OpenBi Api ServerSettings,BiExcellence.OpenBi.Api.ServerSettings,True,2018-04-06T09:02:38.14+00:00,True,False,,"openbi,biexcellence",1314,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:56:53.213Z,14,47,OpenBi Api DataProvider,BiExcellence.OpenBi.Api.DataProvider,True,2018-04-06T09:00:51.263+00:00,True,False,,"openbi,biexcellence",2437,False,0.0.9-ci-3831
+BI eXcellence Software GmbH,2018-03-04T11:57:52.937Z,14,47,OpenBi Api Role,BiExcellence.OpenBi.Api.Role,True,2018-04-06T09:02:12.39+00:00,True,False,,"openbi,biexcellence",2404,False,0.0.9-ci-3831
+vakkaladevi,2018-03-04T11:49:08.143Z,47,47,BasicAnalyzer,BasicAnalyzer,False,2018-03-04T11:49:08.143+00:00,True,False,,"BasicAnalyzer,analyzers",116,False,1.0.6637.31033
+Lucas Lorentz,2018-03-04T11:49:57.427Z,22,47,Minimalist Code Coverage Tool for .NET Core,MiniCover,True,2018-03-29T05:43:43.337+00:00,True,False,,"coverage,cover,minicover",19565,False,2.0.0-ci-20180304114938
+vakkaladevi,2018-03-04T11:49:08.143Z,47,47,BasicAnalyzer,BasicAnalyzer,False,2018-03-04T11:49:08.143+00:00,True,False,,"BasicAnalyzer,analyzers",116,False,1.0.6637.31033
+Lucas Lorentz,2018-03-04T11:49:57.427Z,22,47,Minimalist Code Coverage Tool for .NET Core,MiniCover,True,2018-03-29T05:43:43.337+00:00,True,False,,"coverage,cover,minicover",19565,False,2.0.0-ci-20180304114938
+Richard Schneider,2018-03-04T11:47:50.813Z,35,47,"Core objects and interfaces for IPFS.
+
+The InterPlanetary File System is the permanent web. It is a new hypermedia distribution protocol, addressed by content and identities. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open.",Ipfs.Core,False,2018-03-16T06:15:59.81+00:00,True,False,,"ipfs,peer-to-peer,distributed,file-system",4819,False,0.19.2
+BI eXcellence Software GmbH,2018-03-04T11:46:48.31Z,14,47,OpenBi Api User,BiExcellence.OpenBi.Api.User,True,2018-04-06T09:03:05.69+00:00,True,False,,"openbi,biexcellence",2364,False,0.0.9-ci-3829
+BI eXcellence Software GmbH,2018-03-04T11:45:49.107Z,14,47,OpenBi Api MasterData,BiExcellence.OpenBi.Api.MasterData,True,2018-04-06T09:01:45.827+00:00,True,False,,"openbi,biexcellence",2414,False,0.0.9-ci-3829
+BI eXcellence Software GmbH,2018-03-04T11:45:11.167Z,14,47,OpenBi Api DataProvider,BiExcellence.OpenBi.Api.DataProvider,True,2018-04-06T09:00:51.263+00:00,True,False,,"openbi,biexcellence",2437,False,0.0.9-ci-3829
+BI eXcellence Software GmbH,2018-03-04T11:47:00Z,14,47,OpenBi Api Usergroup,BiExcellence.OpenBi.Api.Usergroup,True,2018-04-06T09:03:17.72+00:00,True,False,,"openbi,biexcellence",2373,False,0.0.9-ci-3829
+BI eXcellence Software GmbH,2018-03-04T11:45:35.17Z,14,47,OpenBi Api LicenseInformation,BiExcellence.OpenBi.Api.LicenseInformation,True,2018-04-06T09:01:19.53+00:00,True,False,,"openbi,biexcellence",2450,False,0.0.9-ci-3829
+Peter Waher,2018-03-04T11:45:55.67Z,47,47,"Provides a simple HTML document parser that can be used to extract information from web pages. Social Meta-data can be easily extracted from page. Information is taken from Open Graph meta data or Twitter Card meta data, as well as standard HTML meta data.",Waher.Content.Html,False,2018-03-04T11:45:55.67+00:00,True,False,,"Parser,HTML,Open,Graph,OG,Twitter,Card,MetaData,Meta",217,False,1.0.3
+BI eXcellence Software GmbH,2018-03-04T11:46:36.89Z,14,47,OpenBi Api Table Attribute,BiExcellence.OpenBi.Api.TableAttribute,True,2018-04-06T09:02:53.127+00:00,True,False,,"openbi,biexcellence",2481,False,0.0.9-ci-3829
+BI eXcellence Software GmbH,2018-03-04T11:46:12.043Z,14,47,OpenBi Api Role,BiExcellence.OpenBi.Api.Role,True,2018-04-06T09:02:12.39+00:00,True,False,,"openbi,biexcellence",2404,False,0.0.9-ci-3829
+BI eXcellence Software GmbH,2018-03-04T11:46:24.357Z,14,47,OpenBi Api ServerSettings,BiExcellence.OpenBi.Api.ServerSettings,True,2018-04-06T09:02:38.14+00:00,True,False,,"openbi,biexcellence",1314,False,0.0.9-ci-3829
+BI eXcellence Software GmbH,2018-03-04T11:46:24.357Z,14,47,OpenBi Api ServerSettings,BiExcellence.OpenBi.Api.ServerSettings,True,2018-04-06T09:02:38.14+00:00,True,False,,"openbi,biexcellence",1314,False,0.0.9-ci-3829
+BI eXcellence Software GmbH,2018-03-04T11:46:48.31Z,14,47,OpenBi Api User,BiExcellence.OpenBi.Api.User,True,2018-04-06T09:03:05.69+00:00,True,False,,"openbi,biexcellence",2364,False,0.0.9-ci-3829
+Richard Schneider,2018-03-04T11:47:50.813Z,35,47,"Core objects and interfaces for IPFS.
+
+The InterPlanetary File System is the permanent web. It is a new hypermedia distribution protocol, addressed by content and identities. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open.",Ipfs.Core,False,2018-03-16T06:15:59.81+00:00,True,False,,"ipfs,peer-to-peer,distributed,file-system",4819,False,0.19.2
+BI eXcellence Software GmbH,2018-03-04T11:46:12.043Z,14,47,OpenBi Api Role,BiExcellence.OpenBi.Api.Role,True,2018-04-06T09:02:12.39+00:00,True,False,,"openbi,biexcellence",2404,False,0.0.9-ci-3829
+BI eXcellence Software GmbH,2018-03-04T11:47:00Z,14,47,OpenBi Api Usergroup,BiExcellence.OpenBi.Api.Usergroup,True,2018-04-06T09:03:17.72+00:00,True,False,,"openbi,biexcellence",2373,False,0.0.9-ci-3829
+BI eXcellence Software GmbH,2018-03-04T11:46:36.89Z,14,47,OpenBi Api Table Attribute,BiExcellence.OpenBi.Api.TableAttribute,True,2018-04-06T09:02:53.127+00:00,True,False,,"openbi,biexcellence",2481,False,0.0.9-ci-3829
+BI eXcellence Software GmbH,2018-03-04T11:44:57.26Z,14,47,OpenBi Api to communicate to OpenBI Respository Servers,BiExcellence.OpenBi.Api,True,2018-04-06T09:00:33.247+00:00,True,False,,"openbi,biexcellence",2629,False,0.0.9-ci-3829
+BI eXcellence Software GmbH,2018-03-04T11:46:00.09Z,14,47,OpenBi Api Organisation,BiExcellence.OpenBi.Api.Organisation,True,2018-04-06T09:01:58.547+00:00,True,False,,"openbi,biexcellence",2419,False,0.0.9-ci-3829
+BI eXcellence Software GmbH,2018-03-04T11:45:22.98Z,14,47,OpenBi Api Entity,BiExcellence.OpenBi.Api.Entity,True,2018-04-06T09:01:06.577+00:00,True,False,,"openbi,biexcellence",2457,False,0.0.9-ci-3829
+BI eXcellence Software GmbH,2018-03-04T11:46:00.09Z,14,47,OpenBi Api Organisation,BiExcellence.OpenBi.Api.Organisation,True,2018-04-06T09:01:58.547+00:00,True,False,,"openbi,biexcellence",2419,False,0.0.9-ci-3829
+BI eXcellence Software GmbH,2018-03-04T11:44:57.26Z,14,47,OpenBi Api to communicate to OpenBI Respository Servers,BiExcellence.OpenBi.Api,True,2018-04-06T09:00:33.247+00:00,True,False,,"openbi,biexcellence",2629,False,0.0.9-ci-3829
+Heroius,2018-03-04T11:38:33.847Z,47,47,"7.5.7 - IOtLogger 日志支持
+7.5.6 - 算符工厂更新
+7.5.5 - 同步模式
+7.5.4 - Ot算符, 虚拟表达式改进
+7.5.1 - OtProvider/OtItem 描述属性
+7.4.1 - Filter类
+7.4 - 动态编辑
+7.2.8 - 增加虚拟设备，数据项动态接口
+7.2.7 - 增加变量类型定义，以支持PLC设备中的数据处理",EnvSafe.Comm,False,2018-03-04T11:38:33.847+00:00,True,False,采用应用、传输分层设计，并支持从调用方注册自定义的客户端统一接口通信框架核心模块。,,59,False,7.5.7.2
+Heroius,2018-03-04T11:38:33.847Z,47,47,"7.5.7 - IOtLogger 日志支持
+7.5.6 - 算符工厂更新
+7.5.5 - 同步模式
+7.5.4 - Ot算符, 虚拟表达式改进
+7.5.1 - OtProvider/OtItem 描述属性
+7.4.1 - Filter类
+7.4 - 动态编辑
+7.2.8 - 增加虚拟设备，数据项动态接口
+7.2.7 - 增加变量类型定义，以支持PLC设备中的数据处理",EnvSafe.Comm,False,2018-03-04T11:38:33.847+00:00,True,False,采用应用、传输分层设计，并支持从调用方注册自定义的客户端统一接口通信框架核心模块。,,59,False,7.5.7.2
+glebedev,2018-03-04T11:30:56.083Z,1,47,Toe.ContentPipeline adapted for LINQPad.,Toe.ContentPipeline.LINQPad,False,2018-04-20T07:23:36.66+00:00,True,False,,linqpad-samples,3291,False,0.3.0.10
+glebedev,2018-03-04T11:30:56.083Z,1,47,Toe.ContentPipeline adapted for LINQPad.,Toe.ContentPipeline.LINQPad,False,2018-04-20T07:23:36.66+00:00,True,False,,linqpad-samples,3291,False,0.3.0.10
+glebedev,2018-03-04T11:22:13.95Z,1,47,Toe.ContentPipeline adapted for LINQPad.,Toe.ContentPipeline.LINQPad,False,2018-04-20T07:23:36.66+00:00,True,False,,linqpad-samples,3291,False,0.3.0.9
+Chino Chang,2018-03-04T11:23:23.717Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,True,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.62-build62
+Chino Chang,2018-03-04T11:23:23.717Z,44,47,"ZMOP Credit Scoring SDK for .NET
+芝麻信用评分 SDK",ZmopSharp.Score,True,2018-03-07T03:53:29.863+00:00,True,False,,"zmop,芝麻信用",512,False,0.1.62-build62
+glebedev,2018-03-04T11:22:13.95Z,1,47,Toe.ContentPipeline adapted for LINQPad.,Toe.ContentPipeline.LINQPad,False,2018-04-20T07:23:36.66+00:00,True,False,,linqpad-samples,3291,False,0.3.0.9
+Chino Chang,2018-03-04T11:21:12.633Z,43209,47,"ZMOP SDK for .NET
+芝麻信用开放平台 SDK",ZmopSharp.Core,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用",1379,False,0.1.62-build62
+Chino Chang,2018-03-04T11:21:37.713Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,True,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.62-build62
+Chino Chang,2018-03-04T11:21:25.947Z,43209,47,"ZMOP Authorization SDK for .NET
+芝麻授权 SDK",ZmopSharp.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用,芝麻授权",1216,False,0.1.62-build62
+Chino Chang,2018-03-04T11:21:37.713Z,44,47,"ZMOP Certification SDK for .NET
+芝麻认证 SDK",ZmopSharp.Certification,True,2018-03-07T03:53:18.033+00:00,True,False,,"zmop,芝麻信用,芝麻认证",1214,False,0.1.62-build62
+Chino Chang,2018-03-04T11:21:25.947Z,43209,47,"ZMOP Authorization SDK for .NET
+芝麻授权 SDK",ZmopSharp.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用,芝麻授权",1216,False,0.1.62-build62
+Chino Chang,2018-03-04T11:21:12.633Z,43209,47,"ZMOP SDK for .NET
+芝麻信用开放平台 SDK",ZmopSharp.Core,True,1900-01-01T00:00:00+00:00,False,False,,"zmop,芝麻信用",1379,False,0.1.62-build62
+Andrey Taritsyn,2018-03-04T11:17:26.943Z,4,47,"BundleTransformer.Autoprefixer contains one postprocessor-adapter for postprocessing of CSS code - `AutoprefixCssPostProcessor`. `AutoprefixCssPostProcessor` is based on the Andrey Sitnik's Autoprefixer (https://github.com/postcss/autoprefixer) version 8.1.
+
+As a JS engine is used the JavaScript Engine Switcher library (https://github.com/Taritsyn/JavaScriptEngineSwitcher). For correct working of this module, you need to install one of the following NuGet packages: JavaScriptEngineSwitcher.Msie (only in the Chakra JsRT modes), JavaScriptEngineSwitcher.V8 or JavaScriptEngineSwitcher.ChakraCore.",BundleTransformer.Autoprefixer,False,2018-04-16T17:59:15.11+00:00,True,False,BundleTransformer.Autoprefixer contains one postprocessor-adapter for postprocessing of CSS code - `AutoprefixCssPostProcessor`. `AutoprefixCssPostProcessor` is based on the Andrey Sitnik's Autoprefixer version 8.1.,"BundleTransformer,System.Web.Optimization,IBundleTransform,ASP.NET,CSS,Bundling,Postprocessing,Postprocessor,Autoprefixer",56655,False,1.9.194
+Vertica A/S,2018-03-01T06:14:25.653Z,63,50,Extends the WebApi integration with SignalR support.,Vertica.Integration.WebApi.SignalR,False,2018-02-16T13:57:10.153+00:00,False,False,,"Vertica,Integration,Service,WebApi,Owin,SignalR",615,False,1.15.0
+Andrey Taritsyn,2018-03-04T11:17:26.943Z,4,47,"BundleTransformer.Autoprefixer contains one postprocessor-adapter for postprocessing of CSS code - `AutoprefixCssPostProcessor`. `AutoprefixCssPostProcessor` is based on the Andrey Sitnik's Autoprefixer (https://github.com/postcss/autoprefixer) version 8.1.
+
+As a JS engine is used the JavaScript Engine Switcher library (https://github.com/Taritsyn/JavaScriptEngineSwitcher). For correct working of this module, you need to install one of the following NuGet packages: JavaScriptEngineSwitcher.Msie (only in the Chakra JsRT modes), JavaScriptEngineSwitcher.V8 or JavaScriptEngineSwitcher.ChakraCore.",BundleTransformer.Autoprefixer,False,2018-04-16T17:59:15.11+00:00,True,False,BundleTransformer.Autoprefixer contains one postprocessor-adapter for postprocessing of CSS code - `AutoprefixCssPostProcessor`. `AutoprefixCssPostProcessor` is based on the Andrey Sitnik's Autoprefixer version 8.1.,"BundleTransformer,System.Web.Optimization,IBundleTransform,ASP.NET,CSS,Bundling,Postprocessing,Postprocessor,Autoprefixer",56655,False,1.9.194
+Vertica A/S,2018-03-01T06:13:20.06Z,63,50,Provides integration to Slack,Vertica.Integration.Slack,False,2018-02-16T13:56:03.557+00:00,False,False,,"Vertica,Integration,Service,IntegrationService,Slack",802,False,1.21.0
+Vertica A/S,2018-03-01T06:13:33.687Z,63,50,Extends the Database configuration to allow SQLite specific connections.,Vertica.Integration.SQLite,False,2018-02-16T13:56:16.603+00:00,False,False,,"Vertica,Integration,Service,IntegrationService,SQLite",506,False,1.15.0
+Vertica A/S,2018-03-01T06:13:46.687Z,63,50,Package that contains integration features specific to uCommerce,Vertica.Integration.UCommerce,False,2018-02-16T13:56:30.12+00:00,False,False,,"Vertica,Integration,Service,IntegrationService,uCommerce",816,False,1.18.0
+Vertica A/S,2018-03-01T06:14:12.09Z,63,50,Extends the WebApi integration with Swagger support.,Vertica.Integration.WebApi.NSwag,False,2018-02-16T13:56:56.997+00:00,False,False,,"Vertica,Integration,Service,WebApi,Owin,Swagger,NSwag",699,False,1.5.0
+Vertica A/S,2018-03-01T06:12:42.297Z,63,50,Integration to Rebus platform.,Vertica.Integration.Rebus,False,2018-02-16T13:55:23.43+00:00,False,False,,"Vertica,Integration,Service,IntegrationService,Rebus,Bus",384,False,1.16.0
+Eric Mellino,2018-03-04T11:11:47.31Z,5,47,Helper classes for creating and managing application windows and user input.,Veldrid.StartupUtilities,False,2018-04-15T22:38:05.733+00:00,True,False,,"Core,Standard,Game,SDL2,Window,Input",915,False,4.1.1
+Vertica A/S,2018-03-01T06:12:54.67Z,63,50,Provides integration to Redis,Vertica.Integration.Redis,False,2018-02-16T13:55:37.277+00:00,False,False,,"Vertica,Integration,Service,IntegrationService,Redis",748,False,1.20.0
+Eric Mellino,2018-03-04T11:12:03.983Z,5,47,Miscellaneous utility functions useful for Veldrid.,Veldrid.Utilities,False,2018-04-15T22:38:25.937+00:00,True,False,,"Core,Standard,Game,Graphics",730,False,4.1.1
+Eric Mellino,2018-03-04T11:11:47.31Z,5,47,Helper classes for creating and managing application windows and user input.,Veldrid.StartupUtilities,False,2018-04-15T22:38:05.733+00:00,True,False,,"Core,Standard,Game,SDL2,Window,Input",915,False,4.1.1
+Eric Mellino,2018-03-04T11:12:03.983Z,5,47,Miscellaneous utility functions useful for Veldrid.,Veldrid.Utilities,False,2018-04-15T22:38:25.937+00:00,True,False,,"Core,Standard,Game,Graphics",730,False,4.1.1
+Eric Mellino,2018-03-04T11:10:55.42Z,5,47,Package Description,Veldrid.MetalBindings,False,2018-04-15T22:36:40.73+00:00,True,False,,,1099,False,4.1.1
+MacBoy,2018-03-04T11:11:21.81Z,47,47,Fast and Easy Animative Button Creator for WPF.,Macboy.AnimativeButton,False,2018-03-04T11:11:21.81+00:00,True,False,Fast and Easy Animative Button Creator for WPF.,"WPF,UI,Modern,XAML,Toolkit,Library,.NET,Theme",138,False,1.0.5
+MacBoy,2018-03-03T23:44:58.297Z,47,48,Fast and Easy Animative Button Creator for WPF.,Macboy.AnimativeButton,False,2018-03-04T11:11:21.81+00:00,False,False,Fast and Easy Animative Button Creator for WPF.,"WPF,UI,Modern,XAML,Toolkit,Library,.NET,Theme",138,False,1.0.1
+Eric Mellino,2018-03-04T11:11:11.717Z,5,47,Raw OpenGL bindings for .NET. Used by Veldrid for OpenGL interop.,Veldrid.OpenGLBindings,False,2018-04-15T22:37:32.107+00:00,True,False,,"3D,Graphics,OpenGL,Core,Standard,Game",1316,False,4.1.1
+Eric Mellino,2018-03-04T11:10:14.107Z,5,47,ImageSharp integration for Veldrid. Provides functionality for loading GPU Textures with ImageSharp.,Veldrid.ImageSharp,False,2018-04-15T22:35:27.493+00:00,True,False,,"3D,Graphics,Direct3D,DirectX,Vulkan,OpenGL,Metal,Core,Standard,Game,ImageSharp",1238,False,4.1.1
+Eric Mellino,2018-03-04T11:09:55.62Z,5,47,"A low-level, hardware-accelerated graphics and compute library for .NET, with backends for Direct3D 11, Vulkan, and OpenGL. Veldrid can be used to create high-performance 2D and 3D games, simulations, tools, and other graphical applications.",Veldrid,False,2018-04-15T22:35:06.493+00:00,True,False,,"3D,Graphics,Direct3D,DirectX,Vulkan,OpenGL,Metal,Core,Standard,Game",2153,False,4.1.1
+Eric Mellino,2018-03-04T11:11:30.06Z,5,47,Raw SDL2 bindings for .NET. Used by Veldrid for window and input management.,Veldrid.SDL2,False,2018-04-15T22:37:49.547+00:00,True,False,,"Core,Standard,Game,SDL2,Window,Input",1285,False,4.1.1
+Eric Mellino,2018-03-04T11:10:35.763Z,5,47,ImGui integration for Veldrid. Provides a simple interface for rendering and interacting with ImGui.NET.,Veldrid.ImGui,False,2018-04-15T22:36:22.45+00:00,True,False,,"3D,Graphics,Direct3D,DirectX,Vulkan,OpenGL,Metal,Core,Standard,Game,ImGui",1256,False,4.1.1
+Eric Mellino,2018-03-04T11:11:30.06Z,5,47,Raw SDL2 bindings for .NET. Used by Veldrid for window and input management.,Veldrid.SDL2,False,2018-04-15T22:37:49.547+00:00,True,False,,"Core,Standard,Game,SDL2,Window,Input",1285,False,4.1.1
+Eric Mellino,2018-03-04T11:10:35.763Z,5,47,ImGui integration for Veldrid. Provides a simple interface for rendering and interacting with ImGui.NET.,Veldrid.ImGui,False,2018-04-15T22:36:22.45+00:00,True,False,,"3D,Graphics,Direct3D,DirectX,Vulkan,OpenGL,Metal,Core,Standard,Game,ImGui",1256,False,4.1.1
+Eric Mellino,2018-03-04T11:10:55.42Z,5,47,Package Description,Veldrid.MetalBindings,False,2018-04-15T22:36:40.73+00:00,True,False,,,1099,False,4.1.1
+Eric Mellino,2018-03-04T11:11:11.717Z,5,47,Raw OpenGL bindings for .NET. Used by Veldrid for OpenGL interop.,Veldrid.OpenGLBindings,False,2018-04-15T22:37:32.107+00:00,True,False,,"3D,Graphics,OpenGL,Core,Standard,Game",1316,False,4.1.1
+MacBoy,2018-03-04T11:11:21.81Z,47,47,Fast and Easy Animative Button Creator for WPF.,Macboy.AnimativeButton,False,2018-03-04T11:11:21.81+00:00,True,False,Fast and Easy Animative Button Creator for WPF.,"WPF,UI,Modern,XAML,Toolkit,Library,.NET,Theme",138,False,1.0.5
+Eric Mellino,2018-03-04T11:10:14.107Z,5,47,ImageSharp integration for Veldrid. Provides functionality for loading GPU Textures with ImageSharp.,Veldrid.ImageSharp,False,2018-04-15T22:35:27.493+00:00,True,False,,"3D,Graphics,Direct3D,DirectX,Vulkan,OpenGL,Metal,Core,Standard,Game,ImageSharp",1238,False,4.1.1
+Eric Mellino,2018-03-04T11:09:55.62Z,5,47,"A low-level, hardware-accelerated graphics and compute library for .NET, with backends for Direct3D 11, Vulkan, and OpenGL. Veldrid can be used to create high-performance 2D and 3D games, simulations, tools, and other graphical applications.",Veldrid,False,2018-04-15T22:35:06.493+00:00,True,False,,"3D,Graphics,Direct3D,DirectX,Vulkan,OpenGL,Metal,Core,Standard,Game",2153,False,4.1.1
+Vertica A/S,2018-03-01T06:12:29.623Z,63,50,Provides integrations and extensions towards RavenDB.,Vertica.Integration.RavenDB,False,2018-02-16T13:55:09.917+00:00,False,False,,"Vertica,Integration,Service,IntegrationService,RavenDB",542,False,1.17.0
+Megadotnet,2018-03-04T10:59:20.247Z,47,47,Unit testing common Utils library,IronFramework.TestCommon,False,2018-03-04T10:59:20.247+00:00,True,False,,Utility,56,False,1.0.0
+bouyei,2018-03-04T10:58:58.213Z,11,47,"support sql server,db2,mysql,oracle,access,sqlite and sql server entity framework etc common library.",Bouyei.DbFactory,False,2018-04-09T05:21:31.55+00:00,True,False,"support sql server,db2,mysql,oracle,access,sqlite and sql server entity framework etc common library.","sql,server,oracle,mysql,entity,framework",437,False,1.1.6637.34095
+Megadotnet,2018-03-04T10:59:20.247Z,47,47,Unit testing common Utils library,IronFramework.TestCommon,False,2018-03-04T10:59:20.247+00:00,True,False,,Utility,56,False,1.0.0
+bouyei,2018-03-04T10:58:58.213Z,11,47,"support sql server,db2,mysql,oracle,access,sqlite and sql server entity framework etc common library.",Bouyei.DbFactory,False,2018-04-09T05:21:31.55+00:00,True,False,"support sql server,db2,mysql,oracle,access,sqlite and sql server entity framework etc common library.","sql,server,oracle,mysql,entity,framework",437,False,1.1.6637.34095
+Flagscript,2018-03-04T10:52:12.627Z,47,47,Foundational Library for the Flagscript Framework,Flagscript,False,2018-03-04T10:52:12.627+00:00,True,False,,"flagscript,repository,unitofwork,entity-framework,patterns",115,False,1.1.0
+Flagscript,2018-03-04T10:52:12.627Z,47,47,Foundational Library for the Flagscript Framework,Flagscript,False,2018-03-04T10:52:12.627+00:00,True,False,,"flagscript,repository,unitofwork,entity-framework,patterns",115,False,1.1.0
+Alexander Bogarsukov,2018-03-04T10:47:23.497Z,43209,47,Task-like asynchronous operations for Unity3d.,UnityFx.Async,True,1900-01-01T00:00:00+00:00,False,False,,"UnityFx,Async,AsyncOperation,Coroutine,Task,Unity3d",1533,False,0.8.0-beta0034
+Alexander Bogarsukov,2018-03-04T10:47:23.497Z,43209,47,Task-like asynchronous operations for Unity3d.,UnityFx.Async,True,1900-01-01T00:00:00+00:00,False,False,,"UnityFx,Async,AsyncOperation,Coroutine,Task,Unity3d",1533,False,0.8.0-beta0034
+FSOFT,2018-03-04T10:43:51.947Z,47,47,Authorize web api with Identity Server,FSOFT.IdentityServer.WebApiAuthority,False,2018-03-04T10:43:51.947+00:00,True,False,,"AuthorizeWebApi,IdentityServer",253,False,1.0.3
+FSOFT,2018-03-04T10:43:51.947Z,47,47,Authorize web api with Identity Server,FSOFT.IdentityServer.WebApiAuthority,False,2018-03-04T10:43:51.947+00:00,True,False,,"AuthorizeWebApi,IdentityServer",253,False,1.0.3
+Vertica A/S,2018-03-01T06:11:25.437Z,63,50,Integration to Internet Information Services.,Vertica.Integration.IIS,False,2018-02-16T13:54:04.243+00:00,False,False,,"Vertica,Integration,Service,IntegrationService,IIS,Internet,Information,Services",384,False,1.13.0
+Vertica A/S,2018-03-01T06:12:02.89Z,63,50,Provides integration to Perfion PIM.,Vertica.Integration.Perfion,False,2018-02-16T13:54:43.87+00:00,False,False,,"Vertica,Integration,Service,IntegrationService,Perfion",726,False,1.18.0
+Vertica A/S,2018-03-01T06:11:50.78Z,63,50,Integration to MongoDB,Vertica.Integration.MongoDB,False,2018-02-16T13:54:30.713+00:00,False,False,,"Vertica,Integration,Service,IntegrationService,MongoDB",673,False,1.20.0
+Vertica A/S,2018-03-01T06:11:38.09Z,63,50,Extension to Vertica Integration Service that supports Elmah framework.,Vertica.Integration.Logging.Elmah,False,2018-02-16T13:54:18.023+00:00,False,False,,"Vertica,Integration,Service,IntegrationService,Elmah",1594,False,1.18.0
+Vertica A/S,2018-03-01T06:11:11.857Z,63,50,Package that contains the necessary artifacts to host a hangfire background server.,Vertica.Integration.Hangfire,False,2018-02-16T13:53:35.117+00:00,False,False,,"Vertica,Integration,Service,IntegrationService,Hangfire",3940,False,1.23.0
+Vertica A/S,2018-03-01T06:12:17.233Z,63,50,Portal web-site for Integration Service.,Vertica.Integration.Portal,False,2018-02-16T13:54:57.43+00:00,False,False,,"Vertica,Integration,Service,IntegrationService,Portal",2138,False,1.20.0
+Vertica A/S,2018-03-01T06:14:38.467Z,63,50,Library that allows you to host Vertica Integration Service in a Website.,Vertica.Integration.WebHost,False,2018-02-16T13:57:22.903+00:00,False,False,,"Vertica,Integration,Service,IntegrationService,WebHost",1293,False,1.14.0
+BimAngle,2018-03-04T10:33:19.7Z,33,47,"ForgeEngine provides you with a way to generate Autodesk Forge Svf Model completely offline, without Autodesk Forge Model Derivative service, this package is available for Autodesk Revit 2016.",Bimangle.ForgeEngine.Revit2016,False,2018-03-18T01:44:17.503+00:00,True,False,,"Autodesk-Forge,Autodesk-Revit,Autodesk,Revit,Forge,Svf,BIM,WebGL,Three.js",1842,False,3.4.5
+BimAngle,2018-03-04T10:33:51.323Z,33,47,"ForgeEngine provides you with a way to generate Autodesk Forge Svf Model completely offline, without Autodesk Forge Model Derivative service, this package is available for Autodesk Revit 2018.",Bimangle.ForgeEngine.Revit2018,False,2018-03-18T01:44:47.847+00:00,True,False,,"Autodesk-Forge,Autodesk-Revit,Autodesk,Revit,Forge,Svf,BIM,WebGL,Three.js",1872,False,3.4.5
+Stef Heyenrath,2018-03-04T10:32:27.603Z,5,47,Lightweight StandAlone Http Mocking Server for .Net.,WireMock.Net.StandAlone,False,2018-04-15T16:01:20.237+00:00,True,False,,"tdd,mock,http,wiremock,test,server,unittest",5921,False,1.0.3.4
+BimAngle,2018-03-04T10:33:37.153Z,33,47,"ForgeEngine provides you with a way to generate Autodesk Forge Svf Model completely offline, without Autodesk Forge Model Derivative service, this package is available for Autodesk Revit 2017.",Bimangle.ForgeEngine.Revit2017,False,2018-03-18T01:44:33.253+00:00,True,False,,"Autodesk-Forge,Autodesk-Revit,Autodesk,Revit,Forge,Svf,BIM,WebGL,Three.js",1827,False,3.4.5
+BimAngle,2018-03-04T10:32:45.307Z,33,47,"ForgeEngine provides you with a way to generate Autodesk Forge Svf Model completely offline, without Autodesk Forge Model Derivative service, this package is available for Autodesk Revit 2014.",Bimangle.ForgeEngine.Revit2014,False,2018-03-18T01:43:46.33+00:00,True,False,,"Autodesk-Forge,Autodesk-Revit,Autodesk,Revit,Forge,Svf,BIM,WebGL,Three.js",1781,False,3.4.5
+BimAngle,2018-03-04T10:33:04.7Z,33,47,"ForgeEngine provides you with a way to generate Autodesk Forge Svf Model completely offline, without Autodesk Forge Model Derivative service, this package is available for Autodesk Revit 2015.",Bimangle.ForgeEngine.Revit2015,False,2018-03-18T01:44:01.503+00:00,True,False,,"Autodesk-Forge,Autodesk-Revit,Autodesk,Revit,Forge,Svf,BIM,WebGL,Three.js",1786,False,3.4.5
+Lykke,2018-03-04T10:34:05.967Z,47,47,An asynchronous adapter for RabbitMq,Lykke.RabbitMqBroker,False,2018-03-04T10:34:05.967+00:00,True,False,,Lykke,9708,False,7.0.0
+"Alexandre Victoor,Stef Heyenrath",2018-03-04T10:31:59.87Z,5,47,"Lightweight Http Mocking Server for .Net, inspired by WireMock from the Java landscape.",WireMock.Net,False,2018-04-15T16:02:05.927+00:00,True,False,,"tdd,mock,http,wiremock,test,server,unittest",21476,False,1.0.3.4
+BimAngle,2018-03-04T10:33:04.7Z,33,47,"ForgeEngine provides you with a way to generate Autodesk Forge Svf Model completely offline, without Autodesk Forge Model Derivative service, this package is available for Autodesk Revit 2015.",Bimangle.ForgeEngine.Revit2015,False,2018-03-18T01:44:01.503+00:00,True,False,,"Autodesk-Forge,Autodesk-Revit,Autodesk,Revit,Forge,Svf,BIM,WebGL,Three.js",1786,False,3.4.5
+Lykke,2018-03-04T10:34:05.967Z,47,47,An asynchronous adapter for RabbitMq,Lykke.RabbitMqBroker,False,2018-03-04T10:34:05.967+00:00,True,False,,Lykke,9708,False,7.0.0
+BimAngle,2018-03-04T10:32:45.307Z,33,47,"ForgeEngine provides you with a way to generate Autodesk Forge Svf Model completely offline, without Autodesk Forge Model Derivative service, this package is available for Autodesk Revit 2014.",Bimangle.ForgeEngine.Revit2014,False,2018-03-18T01:43:46.33+00:00,True,False,,"Autodesk-Forge,Autodesk-Revit,Autodesk,Revit,Forge,Svf,BIM,WebGL,Three.js",1781,False,3.4.5
+"Alexandre Victoor,Stef Heyenrath",2018-03-04T10:31:59.87Z,5,47,"Lightweight Http Mocking Server for .Net, inspired by WireMock from the Java landscape.",WireMock.Net,False,2018-04-15T16:02:05.927+00:00,True,False,,"tdd,mock,http,wiremock,test,server,unittest",21476,False,1.0.3.4
+Paul Burgess,2018-03-04T10:29:30.227Z,47,47,Validation rules to create validation classes to validate objects.,DDDToolkit.Validation,False,2018-03-04T10:29:30.227+00:00,True,False,,"DDD,Domain,Driven,Design,Validation",449,False,1.3.6
+Paul Burgess,2018-03-04T10:28:39.71Z,47,47,Repository and Unit of Work classes to work with DDDToolkit and SQL database using Entity Framework Core,DDDToolkit.Repository.Sql,False,2018-03-04T10:28:39.71+00:00,True,False,,"DDD,Domain,Driven,Design,Entity,Framework,Core,SQL",848,False,1.3.6
+vakkaladevi,2018-03-04T10:28:13.943Z,47,47,BasicAnalyzer,BasicAnalyzer,False,2018-03-04T11:49:08.143+00:00,True,False,,"BasicAnalyzer,analyzers",116,False,1.0.6637.27584
+Paul Burgess,2018-03-04T10:28:15.833Z,47,47,Extensions to add in functionality to build queries on classes.,DDDToolkit.Querying,False,2018-03-04T10:28:15.833+00:00,True,False,,"DDD,Domain,Driven,Design,Querying,Queries,Query",594,False,1.3.6
+Paul Burgess,2018-03-04T10:29:07.257Z,47,47,Utility classes as part of DDDToolkit to support Domain Driven Design development,DDDToolkit.Utilities,False,2018-03-04T10:29:07.257+00:00,True,False,,"DDD,Domain,Driven,Design,Utilities",768,False,1.3.6
+Tom Pallister,2018-03-04T10:27:53.52Z,2,47,This project is aimed at people using .NET running a micro services / service orientated architecture that need a unified point of entry into their system. In particular I want easy integration with IdentityServer reference and bearer tokens. We have been unable to find this in my current workplace without having to write our own Javascript middlewares to handle the IdentityServer reference tokens. We would rather use the IdentityServer code that already exists to do this. Ocelot is a bunch of middlewares in a specific order. Ocelot manipulates the HttpRequest object into a state specified by its configuration until it reaches a request builder middleware where it creates a HttpRequestMessage object which is used to make a request to a downstream service. The middleware that makes the request is the last thing in the Ocelot pipeline. It does not call the next middleware. The response from the downstream service is stored in a per request scoped repository and retrived as the requests goes back up the Ocelot pipeline. There is a piece of middleware that maps the HttpResponseMessage onto the HttpResponse object and that is returned to the client. That is basically it with a bunch of other features.,Ocelot,True,2018-04-18T19:42:30.527+00:00,True,False,,"API,Gateway,.NET,core",26760,False,3.2.0-unstable0038
+Paul Burgess,2018-03-04T10:27:51.037Z,47,47,Extensions to support working with DDDToolkit with Entity Framework Core.,DDDToolkit.EntityFramework.Extensions,False,2018-03-04T10:27:51.037+00:00,True,False,,"DDD,Domain,Driven,Design,Entity,Framework,Core",824,False,1.3.6
+The Human Fertilisation and Embryology Authority,2018-03-04T10:28:12.897Z,1,47,HFEA Eprs SDK,HFEA.Register.EprsSDK,False,2018-04-19T13:14:27.97+00:00,True,False,"This is the software development kit developed by HFEA for EPRS providers to interface with 
+         HFEA systems.",,15255,False,1.0.0.3384
+Paul Burgess,2018-03-04T10:27:23.52Z,47,47,Core set of classes to support development using DDD.,DDDToolkit.Core,False,2018-03-04T10:27:23.52+00:00,True,False,,"DDD,Domain,Driven,Design",828,False,1.3.6
+Paul Burgess,2018-03-04T10:29:30.227Z,47,47,Validation rules to create validation classes to validate objects.,DDDToolkit.Validation,False,2018-03-04T10:29:30.227+00:00,True,False,,"DDD,Domain,Driven,Design,Validation",449,False,1.3.6
+vakkaladevi,2018-03-04T10:28:13.943Z,47,47,BasicAnalyzer,BasicAnalyzer,False,2018-03-04T11:49:08.143+00:00,True,False,,"BasicAnalyzer,analyzers",116,False,1.0.6637.27584
+Tom Pallister,2018-03-04T10:27:53.52Z,2,47,This project is aimed at people using .NET running a micro services / service orientated architecture that need a unified point of entry into their system. In particular I want easy integration with IdentityServer reference and bearer tokens. We have been unable to find this in my current workplace without having to write our own Javascript middlewares to handle the IdentityServer reference tokens. We would rather use the IdentityServer code that already exists to do this. Ocelot is a bunch of middlewares in a specific order. Ocelot manipulates the HttpRequest object into a state specified by its configuration until it reaches a request builder middleware where it creates a HttpRequestMessage object which is used to make a request to a downstream service. The middleware that makes the request is the last thing in the Ocelot pipeline. It does not call the next middleware. The response from the downstream service is stored in a per request scoped repository and retrived as the requests goes back up the Ocelot pipeline. There is a piece of middleware that maps the HttpResponseMessage onto the HttpResponse object and that is returned to the client. That is basically it with a bunch of other features.,Ocelot,True,2018-04-18T19:42:30.527+00:00,True,False,,"API,Gateway,.NET,core",26760,False,3.2.0-unstable0038
+Paul Burgess,2018-03-04T10:28:39.71Z,47,47,Repository and Unit of Work classes to work with DDDToolkit and SQL database using Entity Framework Core,DDDToolkit.Repository.Sql,False,2018-03-04T10:28:39.71+00:00,True,False,,"DDD,Domain,Driven,Design,Entity,Framework,Core,SQL",848,False,1.3.6
+Paul Burgess,2018-03-04T10:29:07.257Z,47,47,Utility classes as part of DDDToolkit to support Domain Driven Design development,DDDToolkit.Utilities,False,2018-03-04T10:29:07.257+00:00,True,False,,"DDD,Domain,Driven,Design,Utilities",768,False,1.3.6
+Paul Burgess,2018-03-04T10:27:23.52Z,47,47,Core set of classes to support development using DDD.,DDDToolkit.Core,False,2018-03-04T10:27:23.52+00:00,True,False,,"DDD,Domain,Driven,Design",828,False,1.3.6
+Paul Burgess,2018-03-04T10:27:51.037Z,47,47,Extensions to support working with DDDToolkit with Entity Framework Core.,DDDToolkit.EntityFramework.Extensions,False,2018-03-04T10:27:51.037+00:00,True,False,,"DDD,Domain,Driven,Design,Entity,Framework,Core",824,False,1.3.6
+Paul Burgess,2018-03-04T10:28:15.833Z,47,47,Extensions to add in functionality to build queries on classes.,DDDToolkit.Querying,False,2018-03-04T10:28:15.833+00:00,True,False,,"DDD,Domain,Driven,Design,Querying,Queries,Query",594,False,1.3.6
+The Human Fertilisation and Embryology Authority,2018-03-04T10:28:12.897Z,1,47,HFEA Eprs SDK,HFEA.Register.EprsSDK,False,2018-04-19T13:14:27.97+00:00,True,False,"This is the software development kit developed by HFEA for EPRS providers to interface with 
+         HFEA systems.",,15255,False,1.0.0.3384
+ITfoxtec,2018-03-04T10:26:23.097Z,15,47,OAuth 2.0 and OpenID Connect components.,ITfoxtec.Identity,True,2018-04-05T06:28:03.253+00:00,True,False,,"OAuth,2.0,OpenID,Connect,OIDC",160,False,1.0.0-beta1
+Tom Pallister,2018-03-04T10:24:04.407Z,2,47,This project is aimed at people using .NET running a micro services / service orientated architecture that need a unified point of entry into their system. In particular I want easy integration with IdentityServer reference and bearer tokens. We have been unable to find this in my current workplace without having to write our own Javascript middlewares to handle the IdentityServer reference tokens. We would rather use the IdentityServer code that already exists to do this. Ocelot is a bunch of middlewares in a specific order. Ocelot manipulates the HttpRequest object into a state specified by its configuration until it reaches a request builder middleware where it creates a HttpRequestMessage object which is used to make a request to a downstream service. The middleware that makes the request is the last thing in the Ocelot pipeline. It does not call the next middleware. The response from the downstream service is stored in a per request scoped repository and retrived as the requests goes back up the Ocelot pipeline. There is a piece of middleware that maps the HttpResponseMessage onto the HttpResponse object and that is returned to the client. That is basically it with a bunch of other features.,Ocelot,False,2018-04-18T19:42:30.527+00:00,True,False,,"API,Gateway,.NET,core",26760,False,3.1.9
+Paul Burgess,2018-03-04T10:26:36.88Z,47,47,API controller to work with DDD toolkit. Provides REST routes for CRUD operations on Aggregates.,DDDToolkit.API,False,2018-03-04T10:26:36.88+00:00,True,False,,"DDD,Domain,Driven,Design,API,REST",799,False,1.3.6
+Paul Burgess,2018-03-04T10:27:01.13Z,47,47,Generic application services for CRUD operations with DDDToolkit.,DDDToolkit.ApplicationLayer,False,2018-03-04T10:27:01.13+00:00,True,False,,"DDD,Domain,Driven,Design,Application,Layer",799,False,1.3.6
+Paul Burgess,2018-03-04T10:27:01.13Z,47,47,Generic application services for CRUD operations with DDDToolkit.,DDDToolkit.ApplicationLayer,False,2018-03-04T10:27:01.13+00:00,True,False,,"DDD,Domain,Driven,Design,Application,Layer",799,False,1.3.6
+Paul Burgess,2018-03-04T10:26:36.88Z,47,47,API controller to work with DDD toolkit. Provides REST routes for CRUD operations on Aggregates.,DDDToolkit.API,False,2018-03-04T10:26:36.88+00:00,True,False,,"DDD,Domain,Driven,Design,API,REST",799,False,1.3.6
+Tom Pallister,2018-03-04T10:24:04.407Z,2,47,This project is aimed at people using .NET running a micro services / service orientated architecture that need a unified point of entry into their system. In particular I want easy integration with IdentityServer reference and bearer tokens. We have been unable to find this in my current workplace without having to write our own Javascript middlewares to handle the IdentityServer reference tokens. We would rather use the IdentityServer code that already exists to do this. Ocelot is a bunch of middlewares in a specific order. Ocelot manipulates the HttpRequest object into a state specified by its configuration until it reaches a request builder middleware where it creates a HttpRequestMessage object which is used to make a request to a downstream service. The middleware that makes the request is the last thing in the Ocelot pipeline. It does not call the next middleware. The response from the downstream service is stored in a per request scoped repository and retrived as the requests goes back up the Ocelot pipeline. There is a piece of middleware that maps the HttpResponseMessage onto the HttpResponse object and that is returned to the client. That is basically it with a bunch of other features.,Ocelot,False,2018-04-18T19:42:30.527+00:00,True,False,,"API,Gateway,.NET,core",26760,False,3.1.9
+sherlock1982,2018-03-04T10:19:40.09Z,47,47,Package Description,EwsApi.Loop,False,2018-03-04T10:19:40.09+00:00,True,False,,"ews,exchange,office365,Microsoft,Web,API,Email,Client,Library,C#",306,False,1.1.1.3
+sherlock1982,2018-03-04T10:19:40.09Z,47,47,Package Description,EwsApi.Loop,False,2018-03-04T10:19:40.09+00:00,True,False,,"ews,exchange,office365,Microsoft,Web,API,Email,Client,Library,C#",306,False,1.1.1.3
+Hibernating Rhinos LTD,2018-03-04T10:12:52.13Z,4,47,"EntityFramework Profiler is a real-time visual debugger allowing a development team to gain valuable insight and perspective into their usage of EntityFramework. The product is architected with input coming from many top industry leaders within the OR/M community. Alerts are presented in a concise code-review manner indicating patterns of misuse by your application. To streamline your efforts to correct the misuse, we provide links to the problematic code section that triggered the alert.
+
+We provide a 30 day trial to download and see for yourself, the value you will receive with your purchase of EntityFramework Profiler.",EntityFrameworkProfiler,True,2018-04-16T10:47:29.347+00:00,True,False,This package let you profile your EntityFramework application easily!,"EntityFramework,Profiler,Prof,EFProf",233547,True,5.0.5011-alpha
+Hibernating Rhinos LTD,2018-03-04T10:13:13.8Z,4,47,"EntityFramework Profiler is a real-time visual debugger allowing a development team to gain valuable insight and perspective into their usage of EntityFramework. The product is architected with input coming from many top industry leaders within the OR/M community. Alerts are presented in a concise code-review manner indicating patterns of misuse by your application. To streamline your efforts to correct the misuse, we provide links to the problematic code section that triggered the alert.
+
+This package contains the EntityFrameworkProfiler's appender.dll only.",EntityFrameworkProfiler.Appender,True,2018-04-16T10:47:54.91+00:00,True,False,This package let you profile your EntityFramework application easily!,"EntityFramework,Profiler,Prof,EFProf",108163,True,5.0.5011-alpha
+Hibernating Rhinos LTD,2018-03-04T10:12:52.13Z,4,47,"EntityFramework Profiler is a real-time visual debugger allowing a development team to gain valuable insight and perspective into their usage of EntityFramework. The product is architected with input coming from many top industry leaders within the OR/M community. Alerts are presented in a concise code-review manner indicating patterns of misuse by your application. To streamline your efforts to correct the misuse, we provide links to the problematic code section that triggered the alert.
+
+We provide a 30 day trial to download and see for yourself, the value you will receive with your purchase of EntityFramework Profiler.",EntityFrameworkProfiler,True,2018-04-16T10:47:29.347+00:00,True,False,This package let you profile your EntityFramework application easily!,"EntityFramework,Profiler,Prof,EFProf",233547,True,5.0.5011-alpha
+Hibernating Rhinos LTD,2018-03-04T10:13:13.8Z,4,47,"EntityFramework Profiler is a real-time visual debugger allowing a development team to gain valuable insight and perspective into their usage of EntityFramework. The product is architected with input coming from many top industry leaders within the OR/M community. Alerts are presented in a concise code-review manner indicating patterns of misuse by your application. To streamline your efforts to correct the misuse, we provide links to the problematic code section that triggered the alert.
+
+This package contains the EntityFrameworkProfiler's appender.dll only.",EntityFrameworkProfiler.Appender,True,2018-04-16T10:47:54.91+00:00,True,False,This package let you profile your EntityFramework application easily!,"EntityFramework,Profiler,Prof,EFProf",108163,True,5.0.5011-alpha
+Hibernating Rhinos LTD,2018-03-04T10:09:42.813Z,4,47,"NHibernate Profiler is a real-time visual debugger allowing a development team to gain valuable insight and perspective into their usage of NHibernate. The product is architected with input coming from many top industry leaders within the NHibernate community. Alerts are presented in a concise code-review manner indicating patterns of misuse by your application. To streamline your efforts to correct the misuse, we provide links to the problematic code section that triggered the alert.
+
+We provide a 30 day trial to download and see for yourself, the value you will receive with your purchase of NHibernate Profiler.",NHibernateProfiler,True,2018-04-16T10:44:06.637+00:00,True,False,This package let you profile your NHibernate application easily!,"NHibernate,Profiler,Prof,NHProf",332645,True,5.0.5011-alpha
+Vertica A/S,2018-03-01T06:13:59.09Z,63,50,Extends Integration Service with the ability to simple host WebApi controllers.,Vertica.Integration.WebApi,False,2018-02-16T13:56:43.853+00:00,False,False,,"Vertica,Integration,Service,WebApi,Owin",2353,False,1.20.0
+Hibernating Rhinos LTD,2018-03-04T10:09:42.813Z,4,47,"NHibernate Profiler is a real-time visual debugger allowing a development team to gain valuable insight and perspective into their usage of NHibernate. The product is architected with input coming from many top industry leaders within the NHibernate community. Alerts are presented in a concise code-review manner indicating patterns of misuse by your application. To streamline your efforts to correct the misuse, we provide links to the problematic code section that triggered the alert.
+
+We provide a 30 day trial to download and see for yourself, the value you will receive with your purchase of NHibernate Profiler.",NHibernateProfiler,True,2018-04-16T10:44:06.637+00:00,True,False,This package let you profile your NHibernate application easily!,"NHibernate,Profiler,Prof,NHProf",332645,True,5.0.5011-alpha
+Hibernating Rhinos LTD,2018-03-04T10:10:06.093Z,4,47,"NHibernate Profiler is a real-time visual debugger allowing a development team to gain valuable insight and perspective into their usage of NHibernate. The product is architected with input coming from many top industry leaders within the NHibernate community. Alerts are presented in a concise code-review manner indicating patterns of misuse by your application. To streamline your efforts to correct the misuse, we provide links to the problematic code section that triggered the alert.
+
+This package contains the NHibernateProfiler's appender.dll only.",NHibernateProfiler.Appender,True,2018-04-16T10:44:28.857+00:00,True,False,This package let you profile your NHibernate application easily!,"NHibernate,Profiler,Prof,NHProf",209480,True,5.0.5011-alpha
+Hibernating Rhinos LTD,2018-03-04T10:10:06.093Z,4,47,"NHibernate Profiler is a real-time visual debugger allowing a development team to gain valuable insight and perspective into their usage of NHibernate. The product is architected with input coming from many top industry leaders within the NHibernate community. Alerts are presented in a concise code-review manner indicating patterns of misuse by your application. To streamline your efforts to correct the misuse, we provide links to the problematic code section that triggered the alert.
+
+This package contains the NHibernateProfiler's appender.dll only.",NHibernateProfiler.Appender,True,2018-04-16T10:44:28.857+00:00,True,False,This package let you profile your NHibernate application easily!,"NHibernate,Profiler,Prof,NHProf",209480,True,5.0.5011-alpha
+Vertica A/S,2018-03-01T06:10:58.84Z,63,50,Package that provides integration to Globase EMS,Vertica.Integration.Globase,False,2018-02-16T13:53:22.32+00:00,False,False,,"Vertica,Integration,Service,IntegrationService,Globase",541,False,1.18.0

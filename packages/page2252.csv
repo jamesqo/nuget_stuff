@@ -1,0 +1,1167 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+freeMartin,2017-03-02T17:56:52.617Z,193,414,Some useful extensions for System.Security.SecureString.,fm.Extensions.SecureString,False,2017-10-09T11:09:48.527+00:00,True,False,Some useful extensions for System.Security.SecureString.,"Extensions,SecureString",538,False,1.0.0
+Eli Ekstein,2017-03-02T17:56:37.367Z,255,414,My sweet collection of extensions for day to day developement,SweetHelpers,False,2017-08-08T21:50:43.76+00:00,True,False,,,680,False,0.0.1
+freeMartin,2017-03-02T17:56:03.547Z,193,414,"Some useful extensions for System.Security.NetworkCredential.
+
+Commonly Used Types:
+NetworkCredentialExtensions
+NetworkCredentialHelper",fm.Extensions.NetworkCredential,False,2017-10-09T11:38:31.787+00:00,True,False,Some useful extensions for System.Security.NetworkCredential.,,501,False,1.0.0
+freeMartin,2017-03-02T17:55:41.247Z,43209,414,"Provides support for xUnit.net test logging through Microsoft.Extensions.Logging.Testing (fm.Extensions.Logging.Testing).
+
+Commonly Used Types:
+TestOutputSink",fm.Extensions.Logging.Testing.xUnit,False,1900-01-01T00:00:00+00:00,False,False,Provides support for xUnit.net test logging through Microsoft.Extensions.Logging.Testing (fm.Extensions.Logging.Testing).,,-1,False,1.0.0
+freeMartin,2017-03-02T17:56:25.847Z,193,414,"A WPF version of Microsoft.Extensions.PlatformAbstractions describing the environment.
+
+Commonly Used Types:
+ApplicationEnvironment",fm.Extensions.PlatformAbstractions.Wpf,False,2017-10-09T11:09:23.35+00:00,True,False,A WPF version of Microsoft.Extensions.PlatformAbstractions describing the environment.,"WPF,Extensions",428,False,1.0.0
+iamcarbon,2017-03-02T17:56:46.023Z,3,414,Payment & accounting primitives.,Carbon.Commerce,False,2018-04-17T02:45:43.44+00:00,True,False,,"carbon,currency",4552,False,0.10.0
+Josh Chandler,2017-03-02T17:53:42.847Z,414,414,"    This is a .NET Core Middleware that replicates how the HapiJS server plugin good-console produces per-request logs (https://github.com/hapijs/good-console). This is not very comprehensive right now. It is meant to help curtail the extremely verbose logging that ILoggerFactory's default implementations produce.
+
+    I am not in any way affiliated with WalmartLabs - I just really like good's console request logging a lot, and I despite .NET Core's, so I took an hour to patch this together.
+
+    Using this package is easy. Import the GoodConsole namespace into Startup.cs, and use the handy extension method in your Configure() method, preferably near or at the top of the method to make sure the timing aspects of this plugin are as accurate as possible.
+
+    ///
+    /// A little example...
+    ///
+    using GoodConsole;
+
+    public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+    {
+        app.UseGoodConsole();
+        ...
+    }
+    ///
+
+    That's all!
+
+    I recommend you turn down much of the .NET Core logging to make this plugin most effective - that is, only allow error logs through from the System and Microsoft namespaces, and make Default ""information"". This will keep log pollution at a minimum while still allowing your use of ILogger methods through.",GoodConsoleCsharp,False,2017-03-02T09:53:42.847-08:00,True,False,HapiJS good-console per-request logging for .NET Core web servers.,"hapijs,good,good-console,logging,logger,log",629,False,1.0.4
+Jesse H,2016-12-19T19:57:59.58Z,43209,487,Builds linq expressions from query string filters,UrlFilter,False,1900-01-01T00:00:00+00:00,False,False,,"linq,expression,url,filter",3933,False,1.0.6197.35931
+freeMartin,2017-03-02T17:53:54.473Z,39,414,"Increases developer productivity with System.Net.Http (especially HttpClient).
+
+Commonly Used Types:
+HttpClientExtensions
+HttpResponseHandler
+HttpErrorResponseHandler
+HttpLoggingHandler
+HttpStatusCodeException",fm.Extensions.HttpClient,False,2018-03-12T12:20:08.927+00:00,True,False,Increases developer productivity with System.Net.Http (especially HttpClient).,"Http,HttpClient,Logging,ExceptionHandling",3652,False,1.2.0
+freeMartin,2017-03-02T17:54:31.33Z,68,414,"A WPF MessageBox logger implementation for Microsoft.Extensions.Logging. This can be used to debug design time issues.
+
+Commonly used Methods:
+MessageBoxLoggerFactoryExtensions.AddMessageBox
+
+Commonly used Types:
+MessageBoxLogger",fm.Extensions.Logging.MessageBox,False,2018-02-11T19:54:13.293+00:00,True,False,A WPF MessageBox logger implementation for Microsoft.Extensions.Logging. This can be used to debug design time issues.,"WPF,Extensions,Logging",598,False,1.0.0
+Maxim Rubchinsky,2017-03-02T17:54:57.147Z,43209,414,Autofac IOC packge for the Exrin Xamarin MVVM framework with support for Microsoft Extensions services,Exrin.IOC.AutofacServiceProvider,False,1900-01-01T00:00:00+00:00,False,False,,"Xamarin,Forms,Exrin,IOC,Autofac,Microsoft.Extensions.DependencyInjection",-1,False,1.0.2
+Microsoft,2017-03-02T17:54:54.66Z,415,414,This package contains the CrmSvcUtil.exe for Microsoft Dynamics CRM 2015. License available inside SDK download,CrmSvcUtil.2015,False,2017-03-01T06:18:46.75-08:00,True,False,,"Microsoft,CRM,SDK,2015",1156,False,7.0.1
+Microsoft,2017-03-02T17:54:54.66Z,415,414,This package contains the CrmSvcUtil.exe for Microsoft Dynamics CRM 2015. License available inside SDK download,CrmSvcUtil.2015,False,2017-03-01T06:18:46.75-08:00,True,False,,"Microsoft,CRM,SDK,2015",1156,False,7.0.1
+Maxim Rubchinsky,2017-03-02T17:54:57.147Z,43209,414,Autofac IOC packge for the Exrin Xamarin MVVM framework with support for Microsoft Extensions services,Exrin.IOC.AutofacServiceProvider,False,1900-01-01T00:00:00+00:00,False,False,,"Xamarin,Forms,Exrin,IOC,Autofac,Microsoft.Extensions.DependencyInjection",-1,False,1.0.2
+jchristn,2017-03-02T17:55:08.163Z,54,414,A simple C# async TCP server and client with integrated framing for reliable transmission and receipt of data,WatsonTcp,False,2018-02-25T23:28:25.77+00:00,True,False,A simple C# async TCP server and client with integrated framing for reliable transmission and receipt of data,,2076,False,1.0.7
+freeMartin,2017-03-02T17:54:31.33Z,68,414,"A WPF MessageBox logger implementation for Microsoft.Extensions.Logging. This can be used to debug design time issues.
+
+Commonly used Methods:
+MessageBoxLoggerFactoryExtensions.AddMessageBox
+
+Commonly used Types:
+MessageBoxLogger",fm.Extensions.Logging.MessageBox,False,2018-02-11T19:54:13.293+00:00,True,False,A WPF MessageBox logger implementation for Microsoft.Extensions.Logging. This can be used to debug design time issues.,"WPF,Extensions,Logging",598,False,1.0.0
+freeMartin,2017-03-02T17:53:54.473Z,39,414,"Increases developer productivity with System.Net.Http (especially HttpClient).
+
+Commonly Used Types:
+HttpClientExtensions
+HttpResponseHandler
+HttpErrorResponseHandler
+HttpLoggingHandler
+HttpStatusCodeException",fm.Extensions.HttpClient,False,2018-03-12T12:20:08.927+00:00,True,False,Increases developer productivity with System.Net.Http (especially HttpClient).,"Http,HttpClient,Logging,ExceptionHandling",3652,False,1.2.0
+Josh Chandler,2017-03-02T17:46:27.49Z,414,414,"    This is a .NET Core Middleware that replicates how the HapiJS server plugin good-console produces per-request logs (https://github.com/hapijs/good-console). This is not very comprehensive right now. It is meant to help curtail the extremely verbose logging that ILoggerFactory's default implementations produce.
+
+    I am not in any way affiliated with WalmartLabs - I just really like good's console request logging a lot, and I despite .NET Core's, so I took an hour to patch this together.
+
+    Using this package is easy. Import the GoodConsole namespace into Startup.cs, and use the handy extension method in your Configure() method, preferably near or at the top of the method to make sure the timing aspects of this plugin are as accurate as possible.
+
+    ///
+    /// A little example...
+    ///
+    using GoodConsole;
+
+    public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+    {
+        app.UseGoodConsole();
+        ...
+    }
+    ///
+
+    That's all!
+
+    I recommend you turn down much of the .NET Core logging to make this plugin most effective - that is, only allow error logs through from the System and Microsoft namespaces, and make Default ""information"". This will keep log pollution at a minimum while still allowing your use of ILogger methods through.",GoodConsoleCsharp,False,2017-03-02T09:53:42.847-08:00,True,False,HapiJS-style per-request logging for .NET Core webservers.,"hapijs,good,good-console,logging,logger,log",629,False,1.0.3
+Jesse H,2017-03-02T17:52:55.37Z,43209,414,Builds linq expressions from query string filters,UrlFilter,False,1900-01-01T00:00:00+00:00,False,False,,"linq,expression,url,filter",3933,False,1.0.39
+GoodConsoleCsharp,2017-03-02T17:53:42.847Z,414,414,GoodConsoleCsharp,GoodConsoleCsharp,False,2017-03-02T09:53:42.847-08:00,True,False,,,629,False,1.0.4
+Dmitry Andriyanov <dima117a@gmail.com>,2017-03-02T17:49:38.6Z,164,414,ThinkingHome.Plugins.WebUi,ThinkingHome.Plugins.WebUi,True,2017-11-07T19:21:38.56+00:00,True,False,,,4801,False,4.0.0-alpha1
+Dmitry Andriyanov <dima117a@gmail.com>,2017-03-02T17:47:12.293Z,164,414,ThinkingHome.Plugins.Scripts.WebApi,ThinkingHome.Plugins.Scripts.WebApi,True,2017-11-07T19:19:31.89+00:00,True,False,,,372,False,4.0.0-alpha1
+Dmitry Andriyanov <dima117a@gmail.com>,2017-03-02T17:45:22.68Z,164,414,ThinkingHome.Plugins.WebServer,ThinkingHome.Plugins.WebServer,True,2017-11-07T19:22:42.113+00:00,True,False,,,349,False,4.0.0-alpha1
+Dmitry Andriyanov <dima117a@gmail.com>,2017-03-02T17:48:38.153Z,164,414,ThinkingHome.Plugins.Timer,ThinkingHome.Plugins.Timer,True,2017-11-07T19:24:55.533+00:00,True,False,,,1364,False,4.0.0-alpha1
+Josh Chandler,2017-03-02T17:46:27.49Z,414,414,"    This is a .NET Core Middleware that replicates how the HapiJS server plugin good-console produces per-request logs (https://github.com/hapijs/good-console). This is not very comprehensive right now. It is meant to help curtail the extremely verbose logging that ILoggerFactory's default implementations produce.
+
+    I am not in any way affiliated with WalmartLabs - I just really like good's console request logging a lot, and I despite .NET Core's, so I took an hour to patch this together.
+
+    Using this package is easy. Import the GoodConsole namespace into Startup.cs, and use the handy extension method in your Configure() method, preferably near or at the top of the method to make sure the timing aspects of this plugin are as accurate as possible.
+
+    ///
+    /// A little example...
+    ///
+    using GoodConsole;
+
+    public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+    {
+        app.UseGoodConsole();
+        ...
+    }
+    ///
+
+    That's all!
+
+    I recommend you turn down much of the .NET Core logging to make this plugin most effective - that is, only allow error logs through from the System and Microsoft namespaces, and make Default ""information"". This will keep log pollution at a minimum while still allowing your use of ILogger methods through.",GoodConsoleCsharp,False,2017-03-02T09:53:42.847-08:00,True,False,HapiJS-style per-request logging for .NET Core webservers.,"hapijs,good,good-console,logging,logger,log",629,False,1.0.3
+Dmitry Andriyanov <dima117a@gmail.com>,2017-03-02T17:49:38.6Z,164,414,ThinkingHome.Plugins.WebUi,ThinkingHome.Plugins.WebUi,True,2017-11-07T19:21:38.56+00:00,True,False,,,4801,False,4.0.0-alpha1
+Jesse H,2017-03-02T17:48:26.48Z,43209,414,Builds linq expressions from query string filters,UrlFilter,False,1900-01-01T00:00:00+00:00,False,False,,"linq,expression,url,filter",3933,False,1.0.37
+ThinkingHome.Plugins.Timer,2017-03-02T17:48:38.153Z,164,414,ThinkingHome.Plugins.Timer,ThinkingHome.Plugins.Timer,True,2017-11-07T19:24:55.533+00:00,True,False,,,1364,False,4.0.0-alpha1
+GoodConsoleCsharp,2017-03-02T17:46:27.49Z,414,414,GoodConsoleCsharp,GoodConsoleCsharp,False,2017-03-02T09:53:42.847-08:00,True,False,,,629,False,1.0.3
+ThinkingHome.Plugins.Scripts.WebApi,2017-03-02T17:47:12.293Z,164,414,ThinkingHome.Plugins.Scripts.WebApi,ThinkingHome.Plugins.Scripts.WebApi,True,2017-11-07T19:19:31.89+00:00,True,False,,,372,False,4.0.0-alpha1
+Microsoft,2017-03-02T17:44:53.66Z,414,414,This package contains the Microsoft.Xrm.Portal dll for Microsoft Dynamics CRM 2015. License available inside SDK download,Microsoft.Xrm.Portal.2015,False,2017-03-02T09:44:53.66-08:00,True,False,,"Microsoft,CRM,SDK,2015",151,False,7.0.1
+Microsoft,2017-03-02T17:44:53.66Z,414,414,This package contains the Microsoft.Xrm.Portal dll for Microsoft Dynamics CRM 2015. License available inside SDK download,Microsoft.Xrm.Portal.2015,False,2017-03-02T09:44:53.66-08:00,True,False,,"Microsoft,CRM,SDK,2015",151,False,7.0.1
+ThinkingHome.Plugins.WebServer,2017-03-02T17:45:22.68Z,164,414,ThinkingHome.Plugins.WebServer,ThinkingHome.Plugins.WebServer,True,2017-11-07T19:22:42.113+00:00,True,False,,,349,False,4.0.0-alpha1
+Dmitry Andriyanov <dima117a@gmail.com>,2017-03-02T17:42:29.82Z,164,414,ThinkingHome.Plugins.Database,ThinkingHome.Plugins.Database,True,2017-11-07T19:23:09.92+00:00,True,False,,,358,False,4.0.0-alpha1
+Dmitry Andriyanov <dima117a@gmail.com>,2017-03-02T17:43:58.713Z,164,414,ThinkingHome.Plugins.Scripts,ThinkingHome.Plugins.Scripts,True,2017-11-07T19:22:08.057+00:00,True,False,,,1237,False,4.0.0-alpha1
+Dmitry Andriyanov <dima117a@gmail.com>,2017-03-02T17:40:30.16Z,164,414,ThinkingHome.Core.Infrastructure,ThinkingHome.Core.Infrastructure,True,2017-11-07T19:24:20.473+00:00,True,False,,,356,False,4.0.0-alpha1
+CodeMagicians,2017-03-02T17:43:12.69Z,165,414,Description,DapperMagician,False,2017-11-06T22:00:00.967+00:00,True,False,,"DapperMagician,CodeMagicians,Dapper",706,False,1.0.3
+Dmitry Andriyanov <dima117a@gmail.com>,2017-03-02T17:43:58.713Z,164,414,ThinkingHome.Plugins.Scripts,ThinkingHome.Plugins.Scripts,True,2017-11-07T19:22:08.057+00:00,True,False,,,1237,False,4.0.0-alpha1
+ThinkingHome.Plugins.Database,2017-03-02T17:42:29.82Z,164,414,ThinkingHome.Plugins.Database,ThinkingHome.Plugins.Database,True,2017-11-07T19:23:09.92+00:00,True,False,,,358,False,4.0.0-alpha1
+CodeMagicians,2017-03-02T17:43:12.69Z,165,414,Description,DapperMagician,False,2017-11-06T22:00:00.967+00:00,True,False,,,706,False,1.0.3
+Dmitry Andriyanov <dima117a@gmail.com>,2017-03-02T17:38:46.25Z,163,414,ThinkingHome.Core.Plugins,ThinkingHome.Core.Plugins,True,2017-11-08T08:48:26.683+00:00,True,False,,,4995,False,4.0.0-alpha1
+ThinkingHome.Core.Infrastructure,2017-03-02T17:40:30.16Z,164,414,ThinkingHome.Core.Infrastructure,ThinkingHome.Core.Infrastructure,True,2017-11-07T19:24:20.473+00:00,True,False,,,356,False,4.0.0-alpha1
+Jasper H. Bojsen,2017-03-02T17:19:17.997Z,12,414,"A simple and light Websocket client. 
+Xamarin cross-platform.
+Can be set to ignore SSL/TLS server certificate issues. 
+Observe incoming message using Reactive Extensions (Rx)",WebsocketClientLite.PCL,False,2018-04-08T18:27:35.203+00:00,False,False,,"netstandard,pcl,netcore,ios,android,xamarin,uwp,websocket,rx,ssl,tls",8334,False,3.6.7
+Dmitry Andriyanov <dima117a@gmail.com>,2017-03-02T17:38:46.25Z,163,414,ThinkingHome.Core.Plugins,ThinkingHome.Core.Plugins,True,2017-11-08T08:48:26.683+00:00,True,False,,,4995,False,4.0.0-alpha1
+Dmitry Andriyanov <dima117a@gmail.com>,2017-03-02T17:38:46.25Z,163,414,ThinkingHome.Core.Plugins,ThinkingHome.Core.Plugins,True,2017-11-08T08:48:26.683+00:00,True,False,,,4995,False,4.0.0-alpha1
+Jasper H. Bojsen,2017-03-02T17:37:11.043Z,12,414,"A simple and light Websocket client. 
+Xamarin cross-platform.
+Can be set to ignore SSL/TLS server certificate issues. 
+Observe incoming message using Reactive Extensions (Rx)",WebsocketClientLite.PCL,False,2018-04-08T18:27:35.203+00:00,True,False,,"netstandard,pcl,netcore,ios,android,xamarin,uwp,websocket,rx,ssl,tls",8334,False,3.6.8
+"nuu:bit,Inc.",2017-03-02T17:34:15.307Z,344,414,"The nuu:bit Xamarin Mobile SDK is a simple way to connect a Xamarin mobile application to the nuu:bit's global content acceleration and analytics platform.
+
+The nuu:bit Mobile SDK (Software Development Kit) is a set of libraries that provide the means necessary to report and accelerate the delivery of content to applications running on mobile devices. The nuu:bit SDK utilizes a specially designed set of networking protocols to provide acceleration to a given mobile application.  Network traffic that is normally directed to and from the mobile App is sent through the nuu:bit SDK, which utilizes the nuu:bit global network to accelerate the App’s traffic.
+
+The SDK can function utilizing  either one of two nuu:bit-optimized protocols – an UDP-based protocol NMP (nuu:bit Mobile Protocol) or TCP-based protocol DOTS (Dynamically Optimized Transport System) to transfer the content over the wireless network. The SDK determines, which protocol provides better performance for that particular App, device, and wireless network at that moment in time. Once the appropriate protocol is selected, the protocol then identifies network, device and App conditions, and adapts its own behavior in real time to provide the fastest possible transfer of data overall.
+
+The nuu:bit SDK communicates with the nuu:bit server in the nuu:bit network, maintaining the flow of content, and monitoring and reporting on the operation of the SDK while sending performance data reflecting data transfer rates, bandwidth, latencies, etc. The raw data  is then forwarded to nuu:bit log servers, and processed for reporting purposes. Processed data is then forwarded to the nuu:bit analytics backend  service, where the performance information is made available to nuu:bit customers via the API or portal.  
+
+Please see the following page for a Quick Start Guide for the SDK (including an example of use):
+
+https://support.nuubit.net/hc/en-us/articles/115000584783-Xamarin-SDK-Quick-Start-Guide",nuubit.SDK,False,2017-05-11T05:39:31.257-07:00,True,False,nuu:bit accelerates your Xamarin mobile apps. We offer a global network with a customizable performance platform that provides deeper insight into both network and App performance data.,,1064,False,2.0.1
+Microsoft,2017-03-02T17:27:23.71Z,414,414,This package contains the Microsoft.Xrm.Client dll for Microsoft Dynamics CRM 2015. License available inside SDK download,Microsoft.Xrm.Client.2015,False,2017-03-02T09:27:23.71-08:00,True,False,,"Microsoft,CRM,SDK,2015",2345,False,7.0.1
+Josh Chandler,2017-03-02T17:27:54.98Z,414,414,"    This is a .NET Core Middleware that replicates how the HapiJS server plugin good-console produces per-request logs (https://github.com/hapijs/good-console). This is not very comprehensive right now. It is meant to help curtail the extremely verbose logging that ILoggerFactory's default implementations produce.
+
+    I am not in any way affiliated with WalmartLabs - I just really like good's console request logging a lot, and I despite .NET Core's, so I took an hour to patch this together.
+
+    Using this package is easy. Import the GoodConsole namespace into Startup.cs, and use the handy extension method in your Configure() method, preferably near or at the top of the method to make sure the timing aspects of this plugin are as accurate as possible.
+
+    ///
+    /// A little example...
+    ///
+    using GoodConsole;
+
+    public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+    {
+        app.UseGoodConsole();
+        ...
+    }
+    ///
+
+    That's all!
+
+    I recommend you turn down much of the .NET Core logging to make this plugin most effective - that is, only allow error logs through from the System and Microsoft namespaces, and make Default ""information"". This will keep log pollution at a minimum while still allowing your use of ILogger methods through.",GoodConsoleCsharp,False,2017-03-02T09:53:42.847-08:00,True,False,Per-request console logging ala HapiJS,,629,False,1.0.2
+Sergio Escalera,2017-03-02T17:29:59.163Z,43209,414,CRM Dynamics Web Resources,Dynamics.Crm.Web,False,1899-12-31T16:00:00-08:00,False,False,,"CRM,Dynamics,Forms,JavaScript",-1,False,1.2.1
+GoodConsoleCsharp,2017-03-02T17:27:54.98Z,414,414,GoodConsoleCsharp,GoodConsoleCsharp,False,2017-03-02T09:53:42.847-08:00,True,False,,,629,False,1.0.2
+Microsoft,2017-03-02T17:27:23.71Z,414,414,This package contains the Microsoft.Xrm.Client dll for Microsoft Dynamics CRM 2015. License available inside SDK download,Microsoft.Xrm.Client.2015,False,2017-03-02T09:27:23.71-08:00,True,False,,"Microsoft,CRM,SDK,2015",2345,False,7.0.1
+CodeMagicians,2017-03-02T17:23:53.133Z,165,414,Description,DapperMagician,False,2017-11-06T22:00:00.967+00:00,True,False,,,706,False,1.0.2
+Andreas Hübner,2017-03-02T17:24:35.61Z,303,414,German Project. Entitäten für den ADT_GEKID Basisdatensatz Version 1.0.5,AdtGekid,False,2017-06-21T16:58:50.563+00:00,True,False,,"Classes,for,Meldungen,to,Lkr",1569,False,1.0.5.13
+CodeMagicians,2017-03-02T17:23:53.133Z,165,414,Description,DapperMagician,False,2017-11-06T22:00:00.967+00:00,True,False,,,706,False,1.0.2
+iamcarbon,2017-03-02T17:21:48.48Z,5,414,SQL primitives & helpers.,Carbon.Data.Sql,False,2018-04-15T20:08:29.377+00:00,True,False,,"data,sql,carbon",10364,False,0.9.8
+Mobile App Technologies Ltd,2017-03-02T17:22:54.67Z,45,414,Zebble framework for cross platform Xamarin-based solutions.,Zebble,False,2018-03-06T16:34:25.347+00:00,True,False,,,37715,False,4.0.67
+4 Roads Ltd,2017-03-02T17:20:34.497Z,66,414,Library of common code for use across any 4 Roads development project,FourRoads.Common,False,2018-02-13T11:30:48.103+00:00,False,False,,utility,1902,False,5.0.0.106
+4 Roads Ltd,2017-03-02T17:20:34.497Z,66,414,Library of common code for use across any 4 Roads development project,FourRoads.Common,False,2018-02-13T11:30:48.103+00:00,False,False,,utility,1902,False,5.0.0.106
+Trevor Pilley and MicroLite Project Contributors,2017-03-02T17:20:42.513Z,46,414,An extension for the MicroLite ORM Framework to integrate with ASP.NET WebApi.,MicroLite.Extensions.WebApi,True,2018-03-05T17:59:15.77+00:00,True,False,,"ASP.NET,WebApi,MicroORM,ORM,POCO,Database",9258,False,6.6.0-alpha
+Trevor Pilley and MicroLite Project Contributors,2017-03-02T17:21:06.333Z,43209,414,An extension for the MicroLite ORM Framework to add OData 4.0 query support to MicroLite.Extensions.WebApi.,MicroLite.Extensions.WebApi.OData4,True,1899-12-31T16:00:00-08:00,False,False,,"ASP.NET,WebApi,OData,MicroORM,ORM,POCO,Database",-1,False,6.6.0-alpha
+Trevor Pilley and MicroLite Project Contributors,2017-03-02T17:20:54.55Z,43209,414,An extension for the MicroLite ORM Framework to add OData 3.0 query support to MicroLite.Extensions.WebApi.,MicroLite.Extensions.WebApi.OData3,True,1899-12-31T16:00:00-08:00,False,False,,"ASP.NET,WebApi,OData,MicroORM,ORM,POCO,Database",-1,False,6.6.0-alpha
+Microsoft,2017-03-02T17:17:13.39Z,415,414,This package contains the Microsoft.Xrm.Sdk.Workflow dll for Microsoft Dynamics CRM 2015. License available inside SDK download,Microsoft.Xrm.Sdk.Workflow.2015,False,2017-02-28T16:34:21.903-08:00,True,False,,"Microsoft,CRM,SDK,2015",445,False,7.0.1
+Jasper H. Bojsen,2017-03-02T17:19:17.997Z,12,414,"A simple and light Websocket client. 
+Xamarin cross-platform.
+Can be set to ignore SSL/TLS server certificate issues. 
+Observe incoming message using Reactive Extensions (Rx)",WebsocketClientLite.PCL,False,2018-04-08T18:27:35.203+00:00,True,False,,"netstandard,pcl,netcore,ios,android,xamarin,uwp,websocket,rx,ssl,tls",8334,False,3.6.7
+Microsoft,2017-03-02T17:17:13.39Z,415,414,This package contains the Microsoft.Xrm.Sdk.Workflow dll for Microsoft Dynamics CRM 2015. License available inside SDK download,Microsoft.Xrm.Sdk.Workflow.2015,False,2017-02-28T16:34:21.903-08:00,True,False,,"Microsoft,CRM,SDK,2015",445,False,7.0.1
+Trevor Pilley and Project Contributors,2017-03-02T16:46:46.587Z,46,414,A library which makes it easy to consume an OData Query with ASP.NET WebApi.,Net.Http.WebApi.OData,True,2018-03-05T19:41:51.883+00:00,False,False,,"OData,Parser,WebApi,ASP.NET",17828,False,4.0.0-alpha8
+Trevor Pilley and Project Contributors,2017-03-02T17:12:16.587Z,46,414,A library which makes it easy to consume an OData Query with ASP.NET WebApi.,Net.Http.WebApi.OData,True,2018-03-05T19:41:51.883+00:00,True,False,,"OData,Parser,WebApi,ASP.NET",17828,False,4.0.0-alpha9
+Integration.Team,2017-03-02T17:12:09.743Z,414,414,A BizTalk Pipeline Component designed to decode base64 streams,IT.BTS.PC.Base64Decoder,False,2017-03-02T09:12:09.743-08:00,True,False,,"BizTalk,PipelineComponent,Decoder",136,False,1.0.0
+fm.Extensions.Common,2016-06-01T14:55:53.597Z,193,688,fm.Extensions.Common,fm.Extensions.Common,True,2017-10-09T11:06:19.75+00:00,False,False,,,4247,False,1.1.0-rc2-2
+fm.Extensions.Common,2016-06-15T13:23:50.4Z,193,674,fm.Extensions.Common,fm.Extensions.Common,True,2017-10-09T11:06:19.75+00:00,False,False,,,4247,False,1.1.1-rc2-1
+freeMartin,2016-02-27T19:55:08.27Z,193,783,"A collection of useful extension methods
+
+Commonly Used Types:
+ArrayExtensions
+CollectionExtensions
+ConvertibleExtensions
+DictionaryExtensions
+DoubleExtensions
+EnumExtensions
+EnumerableExtensions
+ExceptionExtensions
+Int32Extensions
+ListExtensions
+ObjectExtensions
+PathHelper
+SecureStringExtensions
+StringBuilderExtensions
+StringExtension
+TaskExtensions
+TaskHelper
+UriExtensions",fm.Extensions.Common,True,2017-10-09T11:06:19.75+00:00,False,False,,,4247,False,1.0.12-rc1
+freeMartin,2016-02-05T16:10:12.667Z,193,805,"A collection of useful extension methods
+
+Commonly Used Types:
+ArrayExtensions
+CollectionExtensions
+ConvertibleExtensions
+DictionaryExtensions
+DoubleExtensions
+EnumExtensions
+ExceptionExtensions
+Int32Extensions
+ListExtensions
+ObjectExtensions
+PathHelper
+SecureStringExtensions
+StringBuilderExtensions
+StringExtension
+TaskExtensions
+TaskHelper
+UriExtensions",fm.Extensions.Common,True,2017-10-09T11:06:19.75+00:00,False,False,,,4247,False,1.0.9-rc1
+freeMartin,2016-04-05T09:46:46.87Z,193,745,"A collection of useful extension methods
+
+Commonly Used Types:
+ArrayExtensions
+CollectionExtensions
+ConvertibleExtensions
+DictionaryExtensions
+DoubleExtensions
+EnumExtensions
+EnumerableExtensions
+ExceptionExtensions
+Int32Extensions
+ListExtensions
+NetworkCredentialExtensions
+ObjectExtensions
+NetworkCredentialHelper
+PathHelper
+SecureStringExtensions
+StringBuilderExtensions
+StringExtension
+TaskExtensions
+TaskHelper
+UriExtensions",fm.Extensions.Common,True,2017-10-09T11:06:19.75+00:00,False,False,,,4247,False,1.0.13-rc1
+freeMartin,2016-01-27T22:48:03.997Z,193,814,"A collection of useful extension methods
+
+Commonly Used Types:
+ArrayExtensions
+CollectionExtensions
+ConvertibleExtensions
+DoubleExtensions
+EnumExtensions
+ExceptionExtensions
+Int32Extensions
+ListExtensions
+ObjectExtensions
+SecureStringExtensions
+StringBuilderExtensions
+StringExtension
+TaskExtensions
+UriExtensions",fm.Extensions.Common,True,2017-10-09T11:06:19.75+00:00,False,False,,,4247,False,1.0.8-rc2
+freeMartin,2016-01-27T09:24:01.82Z,193,814,"A collection of generally useful extension methods
+
+Commonly used types:
+* ArrayExtensions
+* CollectionExtensions
+* ConvertibleExtensions
+* DoubleExtensions
+* EnumExtensions
+* ExceptionExtensions
+* Int32Extensions
+* ListExtensions
+* ObjectExtensions
+*SecureStringExtensions
+* StringBuilderExtensions
+* StringExtension
+* TaskExtensions
+* UriExtensions",fm.Extensions.Common,True,2017-10-09T11:06:19.75+00:00,False,False,,,4247,False,1.0.6-rc1
+fm.Extensions.Common,2016-06-16T12:10:42.483Z,193,673,fm.Extensions.Common,fm.Extensions.Common,True,2017-10-09T11:06:19.75+00:00,False,False,,,4247,False,1.2.0-rc2-2
+freeMartin,2016-04-15T11:31:20.823Z,193,735,"A collection of useful extension methods
+
+Commonly Used Types:
+ArrayExtensions
+CollectionExtensions
+ConvertibleExtensions
+DictionaryExtensions
+DoubleExtensions
+EnumExtensions
+EnumerableExtensions
+ExceptionExtensions
+Int32Extensions
+ListExtensions
+NetworkCredentialExtensions
+ObjectExtensions
+NetworkCredentialHelper
+SecureStringExtensions
+StringBuilderExtensions
+StringExtension
+TaskExtensions
+TaskHelper
+UriExtensions",fm.Extensions.Common,True,2017-10-09T11:06:19.75+00:00,False,False,,,4247,False,1.0.14-beta1
+fm.Extensions.Common,2016-06-12T18:41:47.777Z,193,677,fm.Extensions.Common,fm.Extensions.Common,True,2017-10-09T11:06:19.75+00:00,False,False,,,4247,False,1.1.0-rc2-3
+freeMartin,2016-02-22T17:13:21.703Z,193,788,"A collection of useful extension methods
+
+Commonly Used Types:
+ArrayExtensions
+CollectionExtensions
+ConvertibleExtensions
+DictionaryExtensions
+DoubleExtensions
+EnumExtensions
+EnumerableExtensions
+ExceptionExtensions
+Int32Extensions
+ListExtensions
+ObjectExtensions
+PathHelper
+SecureStringExtensions
+StringBuilderExtensions
+StringExtension
+TaskExtensions
+TaskHelper
+UriExtensions",fm.Extensions.Common,True,2017-10-09T11:06:19.75+00:00,False,False,,,4247,False,1.0.10-rc1
+freeMartin,2016-02-25T11:26:44.477Z,193,785,"A collection of useful extension methods
+
+Commonly Used Types:
+ArrayExtensions
+CollectionExtensions
+ConvertibleExtensions
+DictionaryExtensions
+DoubleExtensions
+EnumExtensions
+EnumerableExtensions
+ExceptionExtensions
+Int32Extensions
+ListExtensions
+ObjectExtensions
+PathHelper
+SecureStringExtensions
+StringBuilderExtensions
+StringExtension
+TaskExtensions
+TaskHelper
+UriExtensions",fm.Extensions.Common,True,2017-10-09T11:06:19.75+00:00,False,False,,,4247,False,1.0.11-rc1
+freeMartin,2017-03-02T17:06:22.283Z,193,414,"A collection of useful extension methods.
+
+Commonly Used Types:
+ArrayExtensions
+CollectionExtensions
+ConvertibleExtensions
+DictionaryExtensions
+DoubleExtensions
+EnumExtensions
+EnumerableExtensions
+ExceptionExtensions
+Int32Extensions
+ListExtensions
+ObjectExtensions
+StringBuilderExtensions
+StringExtension
+UriExtensions",fm.Extensions.Common,False,2017-10-09T11:06:19.75+00:00,True,False,A collection of useful extension methods.,,4247,False,2.0.0
+Microsoft,2017-03-02T17:03:07.78Z,416,414,This package contains the Microsoft.Xrm.Sdk.Deployment dll for Microsoft Dynamics CRM 2015. License available inside SDK download,Microsoft.Xrm.Sdk.Deployment.2015,False,2017-02-28T13:04:26.143-08:00,True,False,,"Microsoft,CRM,SDK,2015",2775,False,7.0.1
+Microsoft,2017-03-02T17:03:07.78Z,416,414,This package contains the Microsoft.Xrm.Sdk.Deployment dll for Microsoft Dynamics CRM 2015. License available inside SDK download,Microsoft.Xrm.Sdk.Deployment.2015,False,2017-02-28T13:04:26.143-08:00,True,False,,"Microsoft,CRM,SDK,2015",2775,False,7.0.1
+Daniel Gerlag,2017-03-02T16:59:36.773Z,43,414,WorkflowCore.WebAPI,WorkflowCore.WebAPI,True,2018-03-08T20:16:50.537+00:00,True,False,REST API Workflow Core,"workflow,.NET,Core,state,machine,WorkflowCore,REST,API",1407,False,1.0.5-beta-7
+Daniel Gerlag,2017-03-02T16:59:28.07Z,43,414,WorkflowCore.Users,WorkflowCore.Users,True,2018-03-08T20:16:38.007+00:00,True,False,Workflow Core extensions for human workflow,"workflow,.NET,Core,state,machine,WorkflowCore,human,user",2653,False,1.0.5-beta-7
+Daniel Gerlag,2017-03-02T16:59:19.223Z,272,414,WorkflowCore.QueueProviders.ZeroMQ,WorkflowCore.QueueProviders.ZeroMQ,True,2017-07-22T18:02:23.59+00:00,True,False,A queue provider for WorkflowCore using ZeroMQ,"workflow,.NET,Core,state,machine,WorkflowCore,ZeroMQ,0MQ",1381,False,1.0.5-beta-7
+Daniel Gerlag,2017-03-02T16:58:50.513Z,40,414,WorkflowCore.Persistence.Sqlite,WorkflowCore.Persistence.Sqlite,True,2018-03-11T19:34:00.2+00:00,True,False,A persistence provider for WorkflowCore using Sqlite,"workflow,.NET,Core,state,machine,WorkflowCore,Sqlite",3081,False,1.0.5-beta-7
+Daniel Gerlag,2017-03-02T16:58:14.597Z,272,414,WorkflowCore.LockProviders.ZeroMQ,WorkflowCore.LockProviders.ZeroMQ,True,2017-07-22T18:01:05.603+00:00,True,False,A distributed lock manager for WorkflowCore using 0MQ,"workflow,.NET,Core,state,machine,WorkflowCore,0MQ",1265,False,1.0.5-beta-7
+Daniel Gerlag,2017-03-02T16:58:32.163Z,117,414,WorkflowCore.Persistence.MongoDB,WorkflowCore.Persistence.MongoDB,True,2017-12-24T01:23:25.15+00:00,True,False,A persistence provider for WorkflowCore using MongoDB,"workflow,.NET,Core,state,machine,WorkflowCore,MongoDB,Mongo",3483,False,1.0.5-beta-7
+Daniel Gerlag,2017-03-02T16:59:10.487Z,272,414,WorkflowCore.QueueProviders.RabbitMQ,WorkflowCore.QueueProviders.RabbitMQ,True,2017-07-22T18:02:13.92+00:00,True,False,A queue provider for WorkflowCore using RabbitMQ,"workflow,.NET,Core,state,machine,WorkflowCore,RabbitMQ",2385,False,1.0.5-beta-7
+Daniel Gerlag,2017-03-02T16:59:00.47Z,40,414,WorkflowCore.Persistence.SqlServer,WorkflowCore.Persistence.SqlServer,True,2018-03-11T19:34:11.747+00:00,True,False,A persistence provider for WorkflowCore using SQL Server,"workflow,.NET,Core,state,machine,WorkflowCore",5595,False,1.0.5-beta-7
+Daniel Gerlag,2017-03-02T16:58:05.423Z,272,414,WorkflowCore.LockProviders.Redlock,WorkflowCore.LockProviders.Redlock,True,2017-07-22T18:00:42.37+00:00,True,False,A distributed lock manager for WorkflowCore using Redlock,"workflow,.NET,Core,state,machine,WorkflowCore,Redlock",2270,False,1.0.5-beta-7
+Daniel Gerlag,2017-03-02T16:58:23.067Z,40,414,WorkflowCore.Persistence.EntityFramework,WorkflowCore.Persistence.EntityFramework,True,2018-03-11T19:33:33.92+00:00,True,False,A persistence provider for WorkflowCore using EntityFramework Core,"workflow,.NET,Core,state,machine,WorkflowCore,EntityFramework,EntityFrameworkCore",5766,False,1.0.5-beta-7
+Daniel Gerlag,2017-03-02T16:57:56.75Z,117,414,WorkflowCore,WorkflowCore,True,2017-12-24T01:23:03.65+00:00,True,False,Workflow Core is a light weight workflow engine targeting .NET Standard 1.3.  It supports pluggable persistence and concurrency providers to allow for multi-node clusters.,"workflow,.NET,Core,state,machine",8226,False,1.0.5-beta-7
+Daniel Gerlag,2017-03-02T16:58:41.133Z,40,414,WorkflowCore.Persistence.PostgreSQL,WorkflowCore.Persistence.PostgreSQL,True,2018-03-11T19:33:47.527+00:00,True,False,A persistence provider for WorkflowCore using PostgreSQL,"workflow,.NET,Core,state,machine,WorkflowCore,PostgreSQL",3050,False,1.0.5-beta-7
+Adam O'Neil,2017-01-02T17:21:13.53Z,349,473,"Replacement for built-in Settings object, offering XML persistence for user settings and form sizes/positions in WinForm apps. Also supports encrypted string properties.",AoOptions,False,2017-05-06T07:01:22.457-07:00,False,False,XML persistence for user settings in WinForm apps.,settings,1163,False,1.5.3
+Microsoft,2017-03-02T16:54:24.327Z,416,414,This package contains the Microsoft.Crm.Sdk.Proxy dll for Microsoft Dynamics CRM 2015. License available inside SDK download,Microsoft.Crm.Sdk.Proxy.2015,False,2017-02-28T13:35:36.77-08:00,True,False,,"Microsoft,CRM,SDK,2015",1308,False,7.0.1
+Adam O'Neil,2017-01-02T17:14:29.59Z,349,473,"Replacement for built-in Settings object, offering XML persistence for user settings and form sizes/positions in WinForm apps. Also supports encrypted string properties.",AoOptions,False,2017-05-06T07:01:22.457-07:00,False,False,XML persistence for user settings in WinForm apps.,settings,1163,False,1.5.2
+Microsoft,2017-03-02T16:54:24.327Z,416,414,This package contains the Microsoft.Crm.Sdk.Proxy dll for Microsoft Dynamics CRM 2015. License available inside SDK download,Microsoft.Crm.Sdk.Proxy.2015,False,2017-02-28T13:35:36.77-08:00,True,False,,"Microsoft,CRM,SDK,2015",1308,False,7.0.1
+Itinero.Transit.Geo,2017-03-02T16:54:03.133Z,72,414,Itinero.Transit is a module for Itinero to add transit routing capabilities.,Itinero.Transit.Geo,True,2018-02-07T12:29:54.2+00:00,True,False,Itinero.Transit is a module for Itinero to add transit routing capabilities.,,846,False,0.3.0-alpha
+Itinero.Transit,2017-03-02T16:53:52.71Z,72,414,Itinero.Transit is a module for Itinero to add transit routing capabilities.,Itinero.Transit,True,2018-02-07T12:29:41.09+00:00,True,False,Itinero.Transit is a module for Itinero to add transit routing capabilities.,,1463,False,0.3.0-alpha
+Microsoft,2017-03-02T16:54:24.327Z,416,414,This package contains the Microsoft.Crm.Sdk.Proxy dll for Microsoft Dynamics CRM 2015. License available inside SDK download,Microsoft.Crm.Sdk.Proxy.2015,False,2017-02-28T13:35:36.77-08:00,True,False,,"Microsoft,CRM,SDK,2015",1308,False,7.0.1
+Patrick McCurley,2017-03-02T16:47:45.777Z,4,414,My package description.,xDelivered.Essentials.DocDb,False,2018-04-16T12:37:28.94+00:00,True,False,,,2646,False,1.0.5
+Adam O'Neil,2017-03-02T16:48:59.267Z,349,414,"Replacement for built-in Settings object, offering XML persistence for user settings and form sizes/positions in WinForm apps. Also supports encrypted string properties.",AoOptions,False,2017-05-06T07:01:22.457-07:00,True,False,XML persistence for user settings in WinForm apps.,settings,1163,False,1.5.4
+ForNeVeR,2017-02-16T15:46:06.107Z,221,428,Tools for rendering mathematical expressions on-the-fly using the Windows Presentation Foundation.,WpfMath,False,2017-09-11T15:31:51.103+00:00,True,False,,"wpf,latex,formula",2072,False,0.2.0
+"Alex Regueiro,wpf-math contributors",2017-02-11T07:23:38.487Z,221,433,Tools for rendering mathematical expressions on-the-fly using the Windows Presentation Foundation.,WpfMath,False,2017-09-11T15:31:51.103+00:00,True,False,,"wpf,latex,formula",2072,False,0.1.0
+ForNeVeR,2017-02-24T14:34:04.653Z,221,420,Tools for rendering mathematical expressions on-the-fly using the Windows Presentation Foundation.,WpfMath,False,2017-09-11T15:31:51.103+00:00,True,False,,"wpf,latex,formula",2072,False,0.3.0
+Trevor Pilley and Project Contributors,2017-03-02T16:46:46.587Z,46,414,A library which makes it easy to consume an OData Query with ASP.NET WebApi.,Net.Http.WebApi.OData,True,2018-03-05T19:41:51.883+00:00,True,False,,"OData,Parser,WebApi,ASP.NET",17828,False,4.0.0-alpha8
+Trevor Pilley and Project Contributors,2017-03-01T22:41:54.203Z,46,415,A library which makes it easy to consume an OData Query with ASP.NET WebApi.,Net.Http.WebApi.OData,True,2018-03-05T19:41:51.883+00:00,False,False,,"OData,Parser,WebApi,ASP.NET",17828,False,4.0.0-alpha7
+Trevor Pilley and Project Contributors,2017-03-01T22:40:47.917Z,46,415,A library which makes it easy to consume an OData Query with ASP.NET WebApi.,Net.Http.WebApi.OData,True,2018-03-05T19:41:51.883+00:00,False,False,,"OData,Parser,WebApi,ASP.NET",17828,False,3.5.0-alpha3
+Trevor Pilley and Project Contributors,2017-03-02T16:45:49.57Z,46,414,A library which makes it easy to consume an OData Query with ASP.NET WebApi.,Net.Http.WebApi.OData,True,2018-03-05T19:41:51.883+00:00,True,False,,"OData,Parser,WebApi,ASP.NET",17828,False,3.5.0-alpha4
+"Joel Potter,Data Research Group",2017-03-02T16:43:00.443Z,267,414,A wrapper for the Harvest time tracking API.,Harvest.Net,False,2017-07-27T12:21:10.497+00:00,True,False,,"harvest,harvestapp,harvestapi,api,harvesthq,timetracking",11682,False,0.17.3
+Peter Csajtai,2017-03-02T16:40:39.1Z,31,414,ASP.NET Web API integration for Stashbox,Stashbox.Web.WebApi,False,2018-03-20T11:05:05.37+00:00,True,False,,,3391,False,2.1.8
+Peter Csajtai,2017-03-02T16:41:01.013Z,31,414,ASP.NET MVC integration for Stashbox,Stashbox.Web.Mvc,False,2018-03-20T11:00:58.843+00:00,True,False,,,3324,False,2.1.14
+vain0,2017-03-02T16:41:44.45Z,249,414,Provides Option/Result types.,DotNetKit.ErrorHandling,False,2017-08-14T17:32:52.023+00:00,True,False,,,2085,False,1.7.1
+AventStack,2017-03-02T16:39:21.18Z,18,414,A logger style reporting library.,ExtentReports,False,2018-04-02T20:25:40.457+00:00,True,False,,"reporting,api",68596,False,3.0.1
+Peter Csajtai,2017-03-02T16:39:34.217Z,31,414,ASP.NET core application builder extension for enabling Stashbox to be configured as the default service provider.,Stashbox.AspNetCore.Hosting,False,2018-03-20T10:27:27.2+00:00,True,False,,"Stashbox,AspNetCore,stashbox,hosting,Dependency,Injection,DI",2893,False,2.2.0
+Peter Csajtai,2017-03-02T16:40:17.22Z,402,414,Decorator extension for Stashbox container.,Stashbox.DecoratorExtension,False,2017-03-13T21:36:34.417-07:00,True,False,,,1469,False,2.1.6
+Peter Csajtai,2017-03-02T16:39:46.703Z,31,414,"A custom Microsoft.Extensions.DependencyInjection service provider implementation, which enables the Stashbox DI container to be used in ASP.NET core applications.",Stashbox.Extensions.Dependencyinjection,False,2018-03-20T10:27:41.67+00:00,True,False,,"Stashbox,Core,stashbox-core,Dependency,Injection,DI",3349,False,2.2.0
+Josh Chandler,2017-03-02T16:35:22.183Z,414,414,"This is a .NET Core Middleware that replicates how the HapiJS server plugin good-console produces per-request logs (https://github.com/hapijs/good-console). This is not very comprehensive right now. It is meant to help curtail the extremely verbose logging that ILoggerFactory's default implementations produce.
+
+    I am not in any way affiliated with WalmartLabs - I just really like good's console request logging a lot, and I despite .NET Core's, so I took an hour to patch this together.
+
+    Using this package is easy. Import the GoodConsole namespace into Startup.cs, and use the handy extension method in your Configure() method, preferably near or at the top of the method to make sure the timing aspects of this plugin are as accurate as possible.
+
+    ///
+    /// A little example...
+    ///
+    using GoodConsole;
+
+    public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+    {
+        app.UseGoodConsole();
+        ...
+    }
+    ///
+
+    That's all!
+
+    I recommend you turn down much of the .NET Core logging to make this plugin most effective - that is, only allow error logs through from the System and Microsoft namespaces, and make Default ""information"". This will keep log pollution at a minimum while still allowing your use of ILogger methods through.",GoodConsoleCsharp,False,2017-03-02T09:53:42.847-08:00,True,False,Logging emulator,"hapi,good,good-console,logging,log",629,False,1.0.1
+Microsoft,2017-03-02T16:25:37.187Z,416,414,This package contains the Microsoft.Xrm.Sdk dll for Microsoft Dynamics CRM 2015. License available inside SDK download,Microsoft.Xrm.Sdk.2015,False,2017-02-28T12:38:21.597-08:00,True,False,,"Microsoft,CRM,SDK,2015",21466,False,7.0.1
+uonun,2017-03-02T16:31:43.237Z,378,414,"Analyzers for .NET Compiler Platform (""Roslyn"")
+  - Validations of Composite Format String at compile-time.
+  - Quick-fixes for Composite Format Strings.
+
+Requirement:
+ - Vistual Studio 2015+
+ - .Net Framework 4.5+",UDNZ.Roslyn.Analyzer,True,2017-04-07T11:35:08.49-07:00,True,False,"Analyzers/Validations/Quick-fixes for .NET Compiler Platform (""Roslyn"").","UDNZ,Roslyn,Analyzer,CodeAnalysis,CodeFix,C#",415,False,0.1.0.915-alpha
+Maxim Rubchinsky,2017-03-02T16:33:30.897Z,43209,414,Autofac IOC packge for the Exrin Xamarin MVVM framework with support for Microsoft Extensions services,Exrin.IOC.AutofacServiceProvider,False,1900-01-01T00:00:00+00:00,False,False,,"Xamarin,Forms,Exrin,IOC,Autofac,Microsoft.Extensions.DependencyInjection",-1,False,1.0.1
+Sergey Odinokov,2017-03-02T16:34:28.51Z,49,414,MSMQ queues support for SQL Server job storage implementation for Hangfire (background job system for ASP.NET applications).,Hangfire.SqlServer.MSMQ,False,2018-03-02T16:22:56.87+00:00,True,False,,"Hangfire,SqlServer,MSMQ",53862,False,1.6.9
+Sergey Odinokov,2017-03-02T16:34:16.91Z,49,414,"SQL Server 2008+ (including Express), SQL Server LocalDB and SQL Azure storage support for Hangfire (background job system for ASP.NET applications).",Hangfire.SqlServer,False,2018-03-02T16:22:43.013+00:00,True,False,,"Hangfire,SqlServer,SqlAzure,LocalDB",2032725,False,1.6.9
+Sergey Odinokov,2017-03-02T16:34:04.75Z,49,414,Core components for Hangfire (background job system for ASP.NET applications).,Hangfire.Core,False,2018-03-02T16:22:29.027+00:00,True,False,,"Hangfire,OWIN,Long-Running,Background,Fire-And-Forget,Delayed,Recurring,Tasks,Jobs,Scheduler,Threading,Queues",2784358,False,1.6.9
+Frozen Mountain Software,2017-03-02T16:33:57.373Z,48,414,A server-side library for .NET that extends WebSync to provide notifications when clients subscribe to or unsubscribe from a channel. (Community Edition),FM.WebSync.Subscribers.Server,False,2018-03-03T21:29:05.27+00:00,True,False,,"WebSync,Server,Subscribers,Extension,HTTP,Push,Comet,Reverse,Ajax,.NET",14667,False,4.9.23
+Sergey Odinokov,2017-03-02T16:33:50.747Z,49,414,ASP.NET Core support for Hangfire (background job system for ASP.NET applications).,Hangfire.AspNetCore,False,2018-03-02T16:22:15.357+00:00,True,False,,"hangfire,aspnetcore",509456,False,1.6.9
+Frozen Mountain Software,2017-03-02T16:33:47.073Z,48,414,A client-side library for .NET that extends WebSync to provide notifications when clients subscribe to or unsubscribe from a channel. (On-Demand Edition),FM.WebSync.Subscribers.OnDemand,False,2018-03-03T21:28:53.77+00:00,True,False,,"WebSync,Client,Subscribers,Extension,HTTP,Push,Comet,Reverse,Ajax,.NET",11005,False,4.9.23
+Sergey Odinokov,2017-03-02T16:33:40.48Z,49,414,"An easy and reliable way to perform fire-and-forget, delayed and recurring long-running, short-running, CPU or I/O intensive tasks inside ASP.NET application. No Windows Service / Task Scheduler required. Even ASP.NET is not required.
+      Backed by Redis, SQL Server, SQL Azure or MSMQ. This is a .NET alternative to Sidekiq, Resque and Celery.
+      http://hangfire.io/",Hangfire,False,2018-03-02T16:22:00.59+00:00,True,False,"An easy way to perform fire-and-forget, delayed and recurring tasks inside ASP.NET applications. No Windows Service required.","Hangfire,AspNet,MVC,OWIN,SqlServer,Long-Running,Background,Fire-And-Forget,Delayed,Recurring,Tasks,Jobs,Scheduler,Threading,Queues",1621787,False,1.6.9
+Frozen Mountain Software,2017-03-02T16:33:37.243Z,84,414,A client-side library for JavaScript that extends WebSync to provide notifications when clients subscribe to or unsubscribe from a channel.,FM.WebSync.Subscribers.JS,False,2018-01-26T02:28:14.633+00:00,True,False,,"WebSync,Client,Subscribers,Extension,HTTP,Streaming,Comet,Reverse,Ajax,JavaScript",17009,False,4.9.23
+Frozen Mountain Software,2017-03-02T16:33:28.147Z,48,414,A client-side library for .NET that extends WebSync to provide notifications when clients subscribe to or unsubscribe from a channel. (Community Edition),FM.WebSync.Subscribers,False,2018-03-03T21:28:40.393+00:00,True,False,,"WebSync,Client,Subscribers,Extension,HTTP,Push,Comet,Reverse,Ajax,.NET",15333,False,4.9.23
+Maxim Rubchinsky,2017-03-02T16:33:30.897Z,43209,414,Autofac IOC packge for the Exrin Xamarin MVVM framework with support for Microsoft Extensions services,Exrin.IOC.AutofacServiceProvider,False,1900-01-01T00:00:00+00:00,False,False,,"Xamarin,Forms,Exrin,IOC,Autofac,Microsoft.Extensions.DependencyInjection",-1,False,1.0.1
+Frozen Mountain Software,2017-03-02T16:33:18.707Z,48,414,A server-side library for .NET that extends WebSync to use SQL Server as a backend message hub for horizontal scaling. (Community Edition),FM.WebSync.SqlServer,False,2018-03-03T21:28:30.127+00:00,True,False,,"WebSync,Server,SQL,Extensions,HTTP,Push,Comet,Reverse,Ajax,.NET",14729,False,4.9.23
+Frozen Mountain Software,2017-03-02T16:33:08.39Z,48,414,A server-side library for .NET that provides real-time HTTP push (comet/reverse Ajax). (Community Edition),FM.WebSync.Server,False,2018-03-03T21:28:20.16+00:00,True,False,,"WebSync,Server,HTTP,Push,Comet,Reverse,Ajax,.NET",17419,False,4.9.23
+Frozen Mountain Software,2017-03-02T16:32:58.73Z,48,414,A server-side library for .NET that extends WebSync to provide optimizations for high network traffic scenarios. (Community Edition),FM.WebSync.ReturnData.Server,False,2018-03-03T21:28:09.377+00:00,True,False,,"WebSync,Server,ReturnData,Extension,HTTP,Push,Comet,Reverse,Ajax,Return,Data,.NET",14763,False,4.9.23
+Frozen Mountain Software,2017-03-02T16:32:49.15Z,48,414,A client-side library for .NET that extends WebSync to provide optimizations for high network traffic scenarios. (On-Demand Edition),FM.WebSync.ReturnData.OnDemand,False,2018-03-03T21:27:58.44+00:00,True,False,,"WebSync,Client,ReturnData,Extension,HTTP,Push,Comet,Reverse,Ajax,Return,Data,.NET",11001,False,4.9.23
+Frozen Mountain Software,2017-03-02T16:32:29.61Z,48,414,A client-side library for .NET that extends WebSync to provide optimizations for high network traffic scenarios. (Community Edition),FM.WebSync.ReturnData,False,2018-03-03T21:27:44.987+00:00,True,False,,"WebSync,Client,ReturnData,Extension,HTTP,Push,Comet,Reverse,Ajax,Return,Data,.NET",15064,False,4.9.23
+Frozen Mountain Software,2017-03-02T16:32:38.927Z,84,414,A client-side library for JavaScript that extends WebSync to provide optimizations for high network traffic scenarios.,FM.WebSync.ReturnData.JS,False,2018-01-26T02:27:57.18+00:00,True,False,,"WebSync,Client,ReturnData,Extension,HTTP,Streaming,Comet,Reverse,Ajax,JavaScript",16242,False,4.9.23
+Frozen Mountain Software,2017-03-02T16:32:20.093Z,48,414,A client-side library for .NET that provides real-time HTTP push (comet/reverse Ajax). (On-Demand Edition),FM.WebSync.OnDemand,False,2018-03-03T21:27:34.457+00:00,True,False,,"WebSync,Client,HTTP,Push,Comet,Reverse,Ajax,.NET",10790,False,4.9.23
+Frozen Mountain Software,2017-03-02T16:32:09.73Z,84,414,A client-side library for JavaScript that provides real-time HTTP push (comet/reverse Ajax).,FM.WebSync.JS,False,2018-01-26T02:27:41.227+00:00,True,False,,"WebSync,Client,HTTP,Streaming,Comet,Reverse,Ajax,JavaScript",17427,False,4.9.23
+Frozen Mountain Software,2017-03-02T16:32:01.1Z,48,414,A server-side library for .NET that extends WebSync to provide location/user-based chat services. (Community Edition),FM.WebSync.Chat.Server,False,2018-03-03T21:27:22.16+00:00,True,False,,"WebSync,Server,Chat,Extension,HTTP,Push,Comet,Reverse,Ajax,.NET",14350,False,4.9.23
+One Frame Link,2017-03-02T16:32:00.04Z,330,414,Ofl.Twitch.Contract implementation registrations in Autofac.,Ofl.Twitch.DependencyInjection.Autofac,False,2017-05-25T11:33:48.983-07:00,True,False,Ofl.Twitch.Contract implementation registrations in Autofac.,,558,True,1.0.2
+Frozen Mountain Software,2017-03-02T16:31:48.817Z,48,414,A client-side library for .NET that extends WebSync to provide location/user-based chat services. (On-Demand Edition),FM.WebSync.Chat.OnDemand,False,2018-03-03T21:27:10.283+00:00,True,False,,"WebSync,Client,Chat,Extension,HTTP,Push,Comet,Reverse,Ajax,.NET",10956,False,4.9.23
+uonun,2017-03-02T16:31:43.237Z,378,414,"Analyzers for .NET Compiler Platform (""Roslyn"")
+  - Validations of Composite Format String at compile-time.
+  - Quick-fixes for Composite Format Strings.
+
+Requirement:
+ - Vistual Studio 2015+
+ - .Net Framework 4.5+",UDNZ.Roslyn.Analyzer,True,2017-04-07T11:35:08.49-07:00,True,False,"Analyzers/Validations/Quick-fixes for .NET Compiler Platform (""Roslyn"").","UDNZ,Roslyn,Analyzer,CodeAnalysis,CodeFix,C#",415,False,0.1.0.915-alpha
+Frozen Mountain Software,2017-03-02T16:31:39.64Z,84,414,A client-side library for JavaScript that extends WebSync to provide location/user-based chat services.,FM.WebSync.Chat.JS,False,2018-01-26T02:27:25.57+00:00,True,False,,"WebSync,Client,Chat,Extension,HTTP,Streaming,Comet,Reverse,Ajax,JavaScript",16926,False,4.9.23
+Frozen Mountain Software,2017-03-02T16:31:29.467Z,48,414,A client-side library for .NET that extends WebSync to provide location/user-based chat services. (Community Edition),FM.WebSync.Chat,False,2018-03-03T21:26:57.627+00:00,True,False,,"WebSync,Client,Chat,Extension,HTTP,Push,Comet,Reverse,Ajax,.NET",14887,False,4.9.23
+Frozen Mountain Software,2017-03-02T16:31:18.79Z,48,414,A server-side library for .NET that extends WebSync to use a high-performance in-memory cache as a backend message hub for horizontal scaling. (Community Edition),FM.WebSync.Cache,False,2018-03-03T21:26:46.377+00:00,True,False,,"WebSync,Server,High-Performance,Cache,HTTP,Push,Comet,Reverse,Ajax,Azure,.NET",14757,False,4.9.23
+Redpoint Games,2017-03-02T16:31:08.35Z,308,414,The basic template for a command line application.,Protobuild.Template.Console,True,2017-06-16T08:25:18.93+00:00,True,False,,"platforms=Template,type=template,commit=52daa2e271947ed4d27b98bbf744cb52ce88e756,git=https://github.com/Protobuild/Protobuild.Template.Console",13602,False,0.0.0-SHA7f256d244514574bdaa869ba15ce04575aa125a6
+Frozen Mountain Software,2017-03-02T16:31:07.257Z,48,414,A server-side library for .NET that extends WebSync to use Azure Caching as a backend message hub for horizontal scaling. (Community Edition),FM.WebSync.AzureCaching,False,2018-03-03T21:26:34.69+00:00,True,False,,"WebSync,Server,Azure,Caching,Extensions,HTTP,Push,Comet,Reverse,Ajax,.NET",14091,False,4.9.23
+Frozen Mountain Software,2017-03-02T16:30:57.703Z,48,414,A client-side library for .NET that provides real-time HTTP push (comet/reverse Ajax). (Community Edition),FM.WebSync,False,2018-03-03T21:26:24.69+00:00,True,False,,"WebSync,Client,HTTP,Push,Comet,Reverse,Ajax,.NET",19845,False,4.9.23
+Frozen Mountain Software,2017-03-02T16:30:47.89Z,48,414,A server-side library for .NET that provides an aspect-oriented framework for developing RESTful APIs. (Community Edition),FM.TheRest.Server,False,2018-03-03T21:26:13.52+00:00,True,False,,"TheRest,Server,REST,RESTful,.NET",14822,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:30:38.26Z,84,414,A client-side library for JavaScript that provides an aspect-oriented framework for developing RESTful APIs.,FM.TheRest.JS,False,2018-01-26T02:27:09.117+00:00,True,False,,"TheRest,Client,REST,RESTful,JavaScript",15448,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:30:18.207Z,48,414,A server-side library for .NET that provides core utilities for other FM server-side libraries. (Community Edition),FM.Server,False,2018-03-03T21:25:47.003+00:00,True,False,,"FM,Server,Core,Frozen,Mountain,.NET",18230,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:30:27.477Z,48,414,A client-side library for .NET that provides an aspect-oriented framework for developing RESTful APIs. (Community Edition),FM.TheRest,False,2018-03-03T21:26:00.877+00:00,True,False,,"TheRest,Client,REST,RESTful,.NET",14955,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:30:07.86Z,48,414,A client-side library for .NET that provides core utilities for other FM client-side libraries. (On-Demand Edition),FM.OnDemand,False,2018-03-03T21:25:35.44+00:00,True,False,,"FM,Core,Frozen,Mountain,.NET",11251,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:29:57.92Z,48,414,A library for .NET that provides logging via the log4net library. (Community Edition),FM.Log4Net,False,2018-03-03T21:25:25.003+00:00,True,False,,"FM,Log4Net,Logging,Frozen,Mountain,log4net,.NET",16591,False,2.9.23
+Josh Chandler,2017-03-02T16:29:53.353Z,414,414,"This is a .NET Core Middleware that replicates how the HapiJS server plugin good-console
+    produces per-request logs (https://github.com/hapijs/good-console). This is not very
+    comprehensive right now. It is meant to help curtail the extremely verbose logging that
+    ILoggerFactory's default implementations produce.
+
+    I am not in any way affiliated with WalmartLabs - I just really like good's console request
+    logging a lot, and I despite .NET Core's, so I took an hour to patch this together.
+
+    Using this package is easy. Import the GoodConsole namespace into Startup.cs, and use the handy
+    extension method in your Configure() method, preferably near or at the top of the method to make
+    sure the timing aspects of this plugin are as accurate as possible.
+
+    using GoodConsole;
+
+    public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+    {
+        app.UseGoodConsole();
+        ...
+    }
+
+    That's all!
+
+    I recommend you turn down much of the .NET Core logging to make this plugin most effective - that is,
+    only allow error logs through from the System and Microsoft namespaces, and make Default ""information"".
+    This will keep log pollution at a minimum while still allowing your use of ILogger methods through.",GoodConsoleCsharp,False,2017-03-02T09:53:42.847-08:00,True,False,Logging emulator,"hapi,good,good-console,logging,log",629,False,1.0.0
+Frozen Mountain Software,2017-03-02T16:29:48.07Z,48,414,A library for .NET that provides JSON serialization via the Json.NET library. (Community Edition),FM.JsonNet,False,2018-03-03T21:25:13.597+00:00,True,False,,"FM,Json.NET,Serialization,Frozen,Mountain,JSON,.NET",10143,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:29:38.333Z,84,414,A client-side library for JavaScript that provides core utilities for other FM client-side libraries.,FM.JS,False,2018-01-26T02:26:51.37+00:00,True,False,,"FM,Core,Frozen,Mountain,JavaScript",18109,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:29:28.41Z,84,414,A library for JavaScript that extends WebSync to support easy management of IceLink peer-to-peer conferences.,FM.IceLink.WebSync.JS,False,2018-01-26T02:26:39.227+00:00,True,False,,"IceLink,WebSync,Extension,ICE,STUN,TURN,P2P,UDP,NAT,Firewall,Traversal,JavaScript",14278,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:29:19.203Z,48,414,A library for .NET that extends WebSync to support easy management of IceLink peer-to-peer conferences. (Community Edition),FM.IceLink.WebSync,False,2018-03-03T21:25:00.813+00:00,True,False,,"IceLink,WebSync,Extension,ICE,STUN,TURN,P2P,UDP,NAT,Firewall,Traversal,HTTP,Push,Comet,Reverse,Ajax,.NET",14140,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:29:09.7Z,48,414,A library for .NET that includes NAudio-based audio providers for IceLink's WebRTC extension. (Community Edition),FM.IceLink.WebRTC.NAudio,False,2018-03-03T21:24:49.813+00:00,True,False,,"IceLink,WebRTC,NAudio,Extension,ICE,STUN,TURN,P2P,UDP,NAT,Firewall,Traversal,RTCWEB,Audio,Video,.NET",9944,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:29:00.04Z,84,414,A library for JavaScript that extends IceLink to create WebRTC-compatible peer-to-peer audio/video data streams using IceLink.,FM.IceLink.WebRTC.JS,False,2018-01-26T02:26:25.553+00:00,True,False,,"IceLink,WebRTC,Extension,ICE,STUN,TURN,P2P,UDP,NAT,Firewall,Traversal,JavaScript",14680,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:28:12.383Z,48,414,A library for .NET that provides resilient peer-to-peer data streams through firewalls for live media. (Community Edition),FM.IceLink,False,2018-03-03T21:24:02.423+00:00,True,False,,"IceLink,ICE,STUN,TURN,P2P,UDP,NAT,Firewall,Traversal,.NET",17227,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:28:50.46Z,48,414,A library for .NET that includes AForge.NET-based video providers for IceLink's WebRTC extension. (Community Edition),FM.IceLink.WebRTC.AForge,False,2018-03-03T21:24:38.08+00:00,True,False,,"IceLink,WebRTC,AForge.NET,Extension,ICE,STUN,TURN,P2P,UDP,NAT,Firewall,Traversal,RTCWEB,Audio,Video,.NET",10047,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:28:02.52Z,48,414,A client-side library for .NET that provides core utilities for other FM client-side libraries. (Community Edition),FM,False,2018-03-03T21:23:51.173+00:00,True,False,,"FM,Core,Frozen,Mountain,.NET",24864,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:28:30.827Z,48,414,A library for .NET that extends IceLink to create peer-to-peer data streams from Simple clients. (Community Edition),FM.IceLink.Simple,False,2018-03-03T21:24:14.457+00:00,True,False,,"IceLink,Simple,Extension,ICE,STUN,TURN,P2P,UDP,NAT,Firewall,Traversal,.NET",13854,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:28:21.137Z,84,414,A library for JavaScript that provides resilient peer-to-peer data streams through firewalls for live media.,FM.IceLink.JS,False,2018-01-26T02:26:11.287+00:00,True,False,,"IceLink,ICE,STUN,TURN,P2P,UDP,NAT,Firewall,Traversal,JavaScript",14948,False,2.9.23
+Frozen Mountain Software,2017-03-02T16:28:40.283Z,48,414,A library for .NET that extends IceLink to create WebRTC-compatible peer-to-peer audio/video data streams using IceLink. (Community Edition),FM.IceLink.WebRTC,False,2018-03-03T21:24:25.753+00:00,True,False,,"IceLink,WebRTC,Extension,ICE,STUN,TURN,P2P,UDP,NAT,Firewall,Traversal,RTCWEB,Audio,Video,.NET",15954,False,2.9.23
+One Frame Link,2017-03-02T16:25:24.963Z,330,414,Utilities for interacting with Twitch APIs.,Ofl.Twitch,False,2017-05-25T11:24:21.11-07:00,True,False,Utilities for interacting with Twitch APIs.,,885,True,1.0.5
+Microsoft,2017-03-02T16:25:37.187Z,416,414,This package contains the Microsoft.Xrm.Sdk dll for Microsoft Dynamics CRM 2015. License available inside SDK download,Microsoft.Xrm.Sdk.2015,False,2017-02-28T12:38:21.597-08:00,True,False,,"Microsoft,CRM,SDK,2015",21466,False,7.0.1
+One Frame Link,2017-03-02T16:23:26.407Z,330,414,Utilities for interacting with Twitch APIs.,Ofl.Twitch,False,2017-05-25T11:24:21.11-07:00,False,False,Utilities for interacting with Twitch APIs.,,885,True,1.0.4
+One Frame Link,2017-03-02T15:57:16.647Z,330,414,Utilities for interacting with Twitch APIs.,Ofl.Twitch,False,2017-05-25T11:24:21.11-07:00,False,False,Abstractions used by the Ofl.Twitch project.,,885,True,1.0.2
+"Markus Thurner,Amanda Lobel",2017-03-02T16:23:18.48Z,221,414,.Net Client Libraries for Auth0,Cimpress.Auth0.Client,False,2017-09-11T10:56:34.943+00:00,True,False,,"Auth0,OAuth,identity,OpenAuth",2449,False,1.0.40
+One Frame Link,2017-03-02T16:23:26.407Z,330,414,Utilities for interacting with Twitch APIs.,Ofl.Twitch,False,2017-05-25T11:24:21.11-07:00,True,False,Utilities for interacting with Twitch APIs.,,885,True,1.0.4
+"Markus Thurner,Amanda Lobel",2017-03-02T16:23:29.203Z,221,414,.Net Server Libraries for Auth0,Cimpress.Auth0.Server,False,2017-09-11T10:56:47.57+00:00,True,False,,"Auth0,OAuth,identity,OpenAuth",2317,False,1.0.40
+GoncalBN,2017-03-02T16:20:22.637Z,43209,414,Selenium-Tests Framework,Selenium-Tests,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.4
+GoncalBN,2017-03-02T16:20:22.637Z,43209,414,Selenium-Tests Framework,Selenium-Tests,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.4
+Adrian Mos,2017-03-02T16:20:17.4Z,2,414,A library for transforming text expressions containing mathematical operations into executable delegates.,IX.Math,True,2018-04-18T12:48:47.377+00:00,True,False,,,4634,False,0.4.0-alpha1
+Peter Csajtai,2017-03-02T16:20:09.007Z,31,414,Stashbox dependency injection library.,Stashbox,False,2018-03-20T10:09:25.287+00:00,True,False,,"Stashbox,di,dependencyinjection,ioc",18794,False,2.2.0
+"Evidencias Certificadas,S.L.",2017-03-02T16:15:05.187Z,17,414,HermaFx MediatR extensions.,HermaFx.MediatR,False,2018-04-03T01:04:59.32+00:00,True,False,,,2021,False,1.3.190
+"Evidencias Certificadas,S.L.",2017-03-02T16:14:54.633Z,17,414,HermaFx SettingsAdapter extensions.,HermaFx.SettingsAdapter,False,2018-04-03T01:04:43.977+00:00,True,False,,,5491,False,1.3.190
+"Evidencias Certificadas,S.L.",2017-03-02T16:14:34.55Z,17,414,HermaFx Castle extensions.,HermaFx.Castle,False,2018-04-03T01:04:13.537+00:00,True,False,,,14241,False,1.3.190
+"Evidencias Certificadas,S.L.",2017-03-02T16:14:03.083Z,17,414,Herma Foundation (infrastructure & fx extensions) code.,HermaFx.Foundation,False,2018-04-03T01:03:30.05+00:00,True,False,,,15206,False,1.3.190
+"Evidencias Certificadas,S.L.",2017-03-02T16:14:23.48Z,17,414,HermaFx Rebus extensions.,HermaFx.Rebus,False,2018-04-03T01:04:00.02+00:00,True,False,,,14195,False,1.3.190
+"Evidencias Certificadas,S.L.",2017-03-02T16:14:13.917Z,17,414,Herma DataAnnotations extensions.,HermaFx.DataAnnotations,False,2018-04-03T01:03:46.317+00:00,True,False,,,14908,False,1.3.190
+"Evidencias Certificadas,S.L.",2017-03-02T16:14:43.863Z,17,414,HermaFx Mvc extensions.,HermaFx.Mvc,False,2018-04-03T01:04:27.93+00:00,True,False,,,5955,False,1.3.190
+uonun,2017-02-21T08:20:09.44Z,43209,423,"Analyzers for .NET Compiler Platform (""Roslyn"")
+  - Validations of Composite Format String at compile-time.
+  - Quick-fixes for Composite Format Strings.
+  
+NOTE: Vistual Studio 2015+ Required.",UDNZ.VSExtensions.Roslyn.Analyzer.CSharp,True,1899-12-31T16:00:00-08:00,False,False,"Analyzers/Validations/Quick-fixes for .NET Compiler Platform (""Roslyn"").","UDNZ,Roslyn,Analyzer,CodeAnalysis,CodeFix,C#",-1,False,0.1.0.29365-alpha
+"Evidencias Certificadas,S.L.",2017-03-02T16:11:42.35Z,17,414,HermaFx Castle extensions.,HermaFx.Castle,False,2018-04-03T01:04:13.537+00:00,True,False,,,14241,False,1.3.189
+"Evidencias Certificadas,S.L.",2017-03-02T16:12:29.9Z,17,414,HermaFx MediatR extensions.,HermaFx.MediatR,False,2018-04-03T01:04:59.32+00:00,True,False,,,2021,False,1.3.189
+"Evidencias Certificadas,S.L.",2017-03-02T16:11:54.34Z,17,414,HermaFx Mvc extensions.,HermaFx.Mvc,False,2018-04-03T01:04:27.93+00:00,True,False,,,5955,False,1.3.189
+"Evidencias Certificadas,S.L.",2017-03-02T16:12:09.02Z,17,414,HermaFx SettingsAdapter extensions.,HermaFx.SettingsAdapter,False,2018-04-03T01:04:43.977+00:00,True,False,,,5491,False,1.3.189
+One Frame Link,2017-03-02T14:30:34.187Z,414,414,Abstractions used by the Ofl.Core project,Ofl.Twitch.Contracts,False,2017-03-02T08:10:07.56-08:00,False,False,Abstractions used by the Ofl.Twitch project.,,424,True,1.0.3
+"Evidencias Certificadas,S.L.",2017-03-02T16:11:30.47Z,17,414,HermaFx Rebus extensions.,HermaFx.Rebus,False,2018-04-03T01:04:00.02+00:00,True,False,,,14195,False,1.3.189
+"Evidencias Certificadas,S.L.",2017-03-02T16:11:19.5Z,17,414,Herma DataAnnotations extensions.,HermaFx.DataAnnotations,False,2018-04-03T01:03:46.317+00:00,True,False,,,14908,False,1.3.189
+"Evidencias Certificadas,S.L.",2017-03-02T16:11:08.463Z,17,414,Herma Foundation (infrastructure & fx extensions) code.,HermaFx.Foundation,False,2018-04-03T01:03:30.05+00:00,True,False,,,15206,False,1.3.189
+Alex Solovyov / Ivars Sudmalis,2017-03-02T16:09:52.96Z,59,414,"DBreeze features:
+
+- Fully managed code, platform independent and without reference to other libraries. 
+- ACID compliant. 
+- Multi-threaded, with a solution for deadlocks resolving/elimination, parallel reads and synchronized writes/reads. 
+- No fixed scheme for table names (construction and access on the fly).
+- Tables can reside in mixed locations: different folders, hard drives, memory.
+- Liana-Trie indexing technology. Database indexes (keys) never need to be defragmented. Speed of insert/update/remove operations doesn't grow up during the time.
+- Ability to access Key/Value pair of a table by physical link, what can economize time for joining necessary data structures.
+- No limits for database size (except ""long"" size for each table and physical resources constraints).
+- Low memory and physical space consumption, also while random inserts and updates. Updates reside the same physical space, if possible.
+- High performance of CRUD operations. When you need, unleash DBreeze power and get 500000 key/value pairs insert or 260K updates per second per core into sorted table on the hard drive of standard PC.
+- High speed of random keys batch insert and updates (batch must be sorted in memory ascending and non-overwrite flag must be set).
+- Range selects / Traversing (Forward, Backward, From/To, Skip, StartsWith etc). Remove keys, change keys.
+- Keys and values, on the low level, are always byte arrays. 
+- Max. key size is 65KB, max. value size is 2GB. Value can be represented as a set of columns, where can be stored data types of fixed or dynamic length. Every dynamic datablock can be of size 2GB. 
+- Rich set of conversion functions from/to between byte[] and other data types.
+- Nested / Fractal tables which can reside inside of master tables values.
+- Incremental backup/restore option.
+- Text-search, multi-parameter search.
+- DBreeze is a foundation for complex data storage solutions (graph/neuro, object, document, text search etc. data layers). 
+
+hhblaze@gmail.com",DBreeze,False,2018-02-20T12:07:18.963+00:00,True,False,"Professional, open-source, NoSql (embedded Key/Value storage), transactional, ACID-compliant, multi-threaded, object database management system for
+.NET 3.0> MONO NETCore UWP NETPortable","DBreeze,NoSQL,.NET,C#,embedded,key,value,ACID,Liana,trie",33852,False,1.83.0
+One Frame Link,2017-03-02T16:10:07.56Z,414,414,Abstractions used by the Ofl.Twitch project.,Ofl.Twitch.Contracts,False,2017-03-02T08:10:07.56-08:00,True,False,Abstractions used by the Ofl.Twitch project.,,424,True,1.0.4
+"Delegate A/S,Martin Kasban Tange,Magnus Gether Sørensen",2017-03-02T16:08:40.507Z,56,414,A tool for mocking a MS CRM instance when unit testing,XrmMockup2016,True,2018-02-23T12:05:47.767+00:00,True,False,,"microsoft,crm,xrm,dynamics,mockup,fake,c#,csharp,test,testing,unittest,xrmmockup,2016",5329,False,0.2.3-alpha
+"Delegate A/S,Martin Kasban Tange,Magnus Gether Sørensen",2017-03-02T16:08:39.9Z,56,414,A tool for mocking a MS CRM instance when unit testing,XrmMockup2011,True,2018-02-23T12:05:48.237+00:00,True,False,,"microsoft,crm,xrm,dynamics,mockup,fake,c#,csharp,test,testing,unittest,xrmmockup,2011",5230,False,0.2.3-alpha
+"Delegate A/S,Martin Kasban Tange,Magnus Gether Sørensen",2017-03-02T16:08:40.79Z,56,414,A tool for mocking a MS CRM instance when unit testing,XrmMockup2015,True,2018-02-23T12:05:49.643+00:00,True,False,,"microsoft,crm,xrm,dynamics,mockup,fake,c#,csharp,test,testing,unittest,xrmmockup,2015",5269,False,0.2.3-alpha
+"Delegate A/S,Martin Kasban Tange,Magnus Gether Sørensen",2017-03-02T16:08:40.117Z,56,414,A tool for mocking a MS CRM instance when unit testing,XrmMockup2013,True,2018-02-23T12:05:46.597+00:00,True,False,,"microsoft,crm,xrm,dynamics,mockup,fake,c#,csharp,test,testing,unittest,xrmmockup,2013",5218,False,0.2.3-alpha
+takenet,2017-03-02T16:03:19.637Z,1,414,Iris common data types package,Takenet.Iris.Common,False,2018-04-19T20:20:12.39+00:00,True,False,,"Iris,Lime",46396,False,1.8.369
+Yuriy Esin (Exomode),2017-03-02T16:03:34.94Z,134,414,Managed high-level library for working with printing and native Spooler service (.NET 3.5).,Printing.NET,False,2017-12-07T00:15:53.343+00:00,True,False,Managed high-level library for working with printing and native Spooler service (.NET 3.5).,"c#,.net,api,winapi,extern,intptr,pointer,invoke,pinvoke,printing,printer,print,driver,monitor,port,native,marshalling,marshal,memory,allocate,allocation,alloc,malloc,error,code,programming,developing,develop,escorp,technology,technologies,exomode,апи,печать,монитор,драйвер,порт,натив,память,выделение,маршалинг,маршалирование,ошибка,код,указатель,нужно,больше,тегов.",640,False,0.5.1
+freeMartin,2017-03-02T16:02:30.943Z,193,414,"A collection of useful extension methods.
+
+Commonly Used Types:
+ArrayExtensions
+CollectionExtensions
+ConvertibleExtensions
+DictionaryExtensions
+DoubleExtensions
+EnumExtensions
+EnumerableExtensions
+ExceptionExtensions
+Int32Extensions
+ListExtensions
+ObjectExtensions
+StringBuilderExtensions
+StringExtension
+UriExtensions",fm.Extensions.Common,True,2017-10-09T11:06:19.75+00:00,True,False,A collection of useful extension methods.,,4247,False,2.0.0-beta3
+sfanuget scottcowan,2017-03-02T15:59:55.067Z,4,414,a client to call the the DAS Providers service,SFA.DAS.Providers.Api.Client,True,2018-04-16T13:34:54.377+00:00,True,False,SFA Training Providers API Client,,12895,False,0.10.40-prerelease
+Deep.Net developers,2017-03-02T15:59:56.833Z,231,414,"Deep learning library for F#. Provides symbolic model differentiation, automatic differentiation and compilation to CUDA GPUs. Includes optimizers and model blocks used in deep learning.
+
+Make sure to set the platform of your project to x64.",DeepNet,True,2017-09-01T20:57:14.543+00:00,True,False,,"Machine,Learning,Deep,DeepNet,Symbolic,Differentiation,Neural,Net,Network",13078,False,0.2.0.519-master
+Deep.Net developers,2017-03-02T16:00:16.257Z,231,414,"Tensor library for F#. Provides n-dimensional arrays on host and CUDA GPU devices with reshape and slicing functionality.
+
+Make sure to set the platform of your project to x64.",Tensor,True,2017-09-01T20:57:37.467+00:00,True,False,,"Machine,Learning,Deep,Tensor,Array,NDimensional,ND,NDArray,ArrayND,DeepNet",12784,False,0.2.0.519-master
+sfanuget scottcowan,2017-03-02T15:59:35.033Z,43209,414,a client to call the the DAS Apprenticeship Programmes and Providers service,SFA.DAS.Apprenticeships.Api.Client,True,1900-01-01T00:00:00+00:00,False,False,SFA Apprenticeship Programmes and Providers API Client,,18874,False,0.10.40-prerelease
+Deep.Net developers,2017-03-02T16:00:05.473Z,231,414,Tools for plotting using R from F#.,RPlotTools,True,2017-09-01T20:57:25.513+00:00,True,False,,"R,Plot,F#",12441,False,0.2.0.519-master
+sfanuget scottcowan,2017-03-02T16:00:05.613Z,4,414,Provides types for the SFA.DAS.ApprenticeshipInfoService client service,SFA.DAS.Apprenticeships.Api.Types,False,2018-04-16T13:34:27.767+00:00,True,False,Types used for SFA.DAS.ApprenticeshipInfoService client service,,15134,False,0.10.40
+sfanuget scottcowan,2017-03-02T15:59:44.863Z,4,414,a client to call the the DAS Assessment Organisation service,SFA.DAS.AssessmentOrgs.Api.Client,True,2018-04-16T13:34:41.36+00:00,True,False,SFA Endpoint Assement Organisations API Client,,13224,False,0.10.40-prerelease
+One Frame Link,2017-03-02T15:57:16.647Z,330,414,Utilities for interacting with Twitch APIs.,Ofl.Twitch,False,2017-05-25T11:24:21.11-07:00,True,False,Abstractions used by the Ofl.Twitch project.,,885,True,1.0.2
+Jonathan Braga,2017-03-02T15:53:30.177Z,414,414,"this package will help you to improve your project, providing message interface and navigation interface. 
+      Remember, Initialize the interfaces in APP.cs",Forms.JB.MVVM,False,2017-03-02T07:53:30.177-08:00,True,False,,"xamarin,xamarin.forms,mvvm,pcl",162,False,1.0.0
+Luca Sgroi,2017-03-02T15:54:58.137Z,325,414,Pask provides a set of predefined PowerShell build automation tasks for .NET and the ability to create custom ones. It relies on Invoke-Build DSL.,Pask,False,2017-05-30T04:08:39.167-07:00,True,False,Modular task-oriented PowerShell build automation for .NET,"Invoke-Build,PowerShell,BuildAutomation",7586,False,0.10.2
+Jonathan Braga,2017-03-02T15:53:30.177Z,414,414,"this package will help you to improve your project, providing message interface and navigation interface. 
+      Remember, Initialize the interfaces in APP.cs",Forms.JB.MVVM,False,2017-03-02T07:53:30.177-08:00,True,False,,"xamarin,xamarin.forms,mvvm,pcl",162,False,1.0.0
+Michael Coelsch (MyCONVENO),2017-03-02T15:51:39.527Z,375,414,Widgets for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.Widgets,False,2017-04-10T10:02:09.297-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",6874,False,4.1.42
+Profilum.Services.Payments,2017-03-02T15:48:03.49Z,43209,414,Package Description,Profilum.Services.Payments,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Michael Coelsch (MyCONVENO),2017-03-02T15:49:22.153Z,133,414,Custom Controls for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.Controls,False,2017-12-08T12:22:34.593+00:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",7210,False,4.1.23
+Profilum.Services.Payments,2017-03-02T15:48:03.49Z,43209,414,Package Description,Profilum.Services.Payments,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Tyrrrz,2017-03-02T15:45:52.49Z,20,414,Youtube parser,YoutubeExplode,False,2018-03-31T19:05:43.1+00:00,True,False,,"youtube,parse,download,video",10061,False,2.0.1
+yinbo.xie,2017-03-02T15:45:14.203Z,414,414,LeaRuan.Utils,LeaRun.Util,False,2017-03-02T07:45:14.203-08:00,True,False,,,854,False,1.0.7
+giovannibelluomo,2017-02-24T16:33:08.453Z,420,420,"* Download this package at:
+
+https://github.com/GiovanniBelluomo/LMU/releases/tag/v1.1.4
+
+LMU (Low Machine Usage) is a library that, via FTP server and a remote computer, allows you to lighten your application by running pieces of code on the remote computer. 
+
+Documentation at: 
+
+https://github.com/GiovanniBelluomo/LMU/wiki 
+
+Need help? Contact me at: 
+
+giovanni.belluomo@outlook.com",LMU,False,2017-02-24T08:33:08.453-08:00,True,False,,LMU,1318,False,1.1.3
+Max Toro Q.,2017-03-02T15:41:36.28Z,27,414,XCST compiler API. Use this package to translate your XCST programs into C# code.,Xcst.Compiler,False,2018-03-24T19:35:55.187+00:00,True,False,,,4033,False,0.19.3
+yuzd,2017-03-02T15:38:14.273Z,103,414,AntData.ORM For Mysql Provider,AntData.ORM.Mysql,False,2018-01-07T07:31:20.763+00:00,True,False,,"linq,Orm,mysql",2400,False,1.1.8
+yuzd,2017-03-02T15:39:07.92Z,103,414,AntData.ORM For Oracle Provider,AntData.ORM.Oracle,False,2018-01-07T07:31:44.703+00:00,True,False,,"linq,Orm,oracle",1437,False,1.1.3
+yuzd,2017-03-02T15:37:04.423Z,103,414,linq Orm 框架,AntData.ORM,False,2018-01-07T07:30:55.607+00:00,True,False,,"linq,Orm",2363,False,1.1.7
+ahd GmbH & Co. KG,2017-03-02T15:35:32.977Z,79,414,client implementation for sending and retrieving values from and to any graphite server.,ahd.Graphite,True,2018-01-31T12:56:07.003+00:00,True,False,,"graphite,pickle,metric,tsdb",1958,False,1.0.5-ci-20170302-153349
+Deep.Net developers,2017-03-02T15:34:53.33Z,231,414,"Tensor library for F#. Provides n-dimensional arrays on host and CUDA GPU devices with reshape and slicing functionality.
+
+Make sure to set the platform of your project to x64.",Tensor,True,2017-09-01T20:57:37.467+00:00,True,False,,"Machine,Learning,Deep,Tensor,Array,NDimensional,ND,NDArray,ArrayND,DeepNet",12784,False,0.2.0.516-master
+Deep.Net developers,2017-03-02T15:34:42.893Z,231,414,Tools for plotting using R from F#.,RPlotTools,True,2017-09-01T20:57:25.513+00:00,True,False,,"R,Plot,F#",12441,False,0.2.0.516-master
+Deep.Net developers,2017-03-02T15:34:33.657Z,231,414,"Deep learning library for F#. Provides symbolic model differentiation, automatic differentiation and compilation to CUDA GPUs. Includes optimizers and model blocks used in deep learning.
+
+Make sure to set the platform of your project to x64.",DeepNet,True,2017-09-01T20:57:14.543+00:00,True,False,,"Machine,Learning,Deep,DeepNet,Symbolic,Differentiation,Neural,Net,Network",13078,False,0.2.0.516-master
+Momentum,2017-03-02T15:34:00.687Z,4,414,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.10.4267-beta
+Momentum,2017-03-02T15:33:47.013Z,4,414,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.10.4267-beta
+giovannibelluomo,2017-02-24T16:33:08.453Z,420,420,"* Download this package at:
+
+https://github.com/GiovanniBelluomo/LMU/releases/tag/v1.1.4
+
+LMU (Low Machine Usage) is a library that, via FTP server and a remote computer, allows you to lighten your application by running pieces of code on the remote computer. 
+
+Documentation at: 
+
+https://github.com/GiovanniBelluomo/LMU/wiki 
+
+Need help? Contact me at: 
+
+giovanni.belluomo@outlook.com",LMU,False,2017-02-24T08:33:08.453-08:00,True,False,,LMU,1318,False,1.1.3
+David E. Keller,2017-03-02T15:31:27.48Z,253,414,Library containing models to interact with SonicOS by SonicWALL for external authentication,Dkbe.CaptivePortal.Models.SonicOS,True,2017-08-10T15:44:27.753+00:00,True,False,,"CaptivePortal,External,Authentication,SonicWALL,SonicOS",759,False,1.0.0-build00013
+Tyrrrz,2017-03-02T15:28:41.81Z,20,414,Youtube parser,YoutubeExplode,False,2018-03-31T19:05:43.1+00:00,True,False,,"youtube,parse,download,video",10061,False,2.0.0
+vain0,2017-03-02T15:26:53.563Z,249,414,Provides Option/Result types.,DotNetKit.ErrorHandling,False,2017-08-14T17:32:52.023+00:00,True,False,,,2085,False,1.7.0
+,,-1,-1,,TestPackage.Issue3456.C,,,,True,,,,,1.0.0
+,,-1,-1,,TestPackage.Issue3456.C,,,,True,,,,,1.0.0
+Michael Coelsch (MyCONVENO),2017-03-02T15:26:34.343Z,370,414,BaseViewModels for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.BaseViewModels,False,2017-04-15T07:10:52.937-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",9233,False,4.1.40
+,,-1,-1,,TestPackage.Issue3456.B,,,,True,,,,,1.0.0
+Daniel Frederico Lins Leite,2017-03-02T15:22:38.85Z,319,414,Implementations of .NET Collections to SQL Server,MachinaAurum.Collections.SqlServer,False,2017-06-05T03:09:59.727-07:00,True,False,,"collections,sql,server",2605,False,0.1.21
+,,-1,-1,,TestPackage.Issue3456.B,,,,True,,,,,1.0.0
+,,-1,-1,,TestPackage.Issue3456.A,,,,True,,,,,1.0.0
+Domantas Jovaisas - Isidos,2017-03-02T15:17:18.55Z,128,414,CodeMash tools for .NET developers. Access codemash.io tools from .NET Core,CodeMash.Core,False,2017-12-13T07:55:10.39+00:00,True,False,"CodeMash is a vital toolset for each developer which wants to achive daily development tasks in a rapid way : Database as a Service, Notifications of any Kind, Centric File Storage, Multilingual Apps, Application Insights, Centric Payments Approach, One Identity Provider, Application Builder,... More about that http://codemash.io","web,utility,http,json,mongodb,rest",3022,False,1.6.0.6
+Digipost AS,2017-03-02T15:15:15.57Z,112,414,"Klientbibliotek for å administrere elektronisk signering av dokumenter av borgere for en virksomhet. Sentrale funksjoner er opprettelse av signeringsoppdrag, sjekke status på signeringsoppdrag og laste ned dokumenter som er signerte.",digipost-signature-api-client,False,2017-12-29T11:09:04.717+00:00,True,False,,"Posten,Digipost,digital,elektronisk,kvalifisert,signering,signatur,PKI,offentlig,dokumenter",12358,False,3.0.0
+ahd GmbH & Co. KG,2017-03-02T15:17:46.46Z,79,414,client implementation for sending and retrieving values from and to any graphite server.,ahd.Graphite,True,2018-01-31T12:56:07.003+00:00,True,False,,"graphite,pickle,metric,tsdb",1958,False,1.0.5-ci-20170302-145616
+苏震巍,2017-03-02T15:10:14.333Z,51,414,"微信公众账号 SDK（支持.NET Core）：Senparc.Weixin.dll
+（作为Senparc.Weixin.MP.dll及Senparc.Weixin.QY.dll等模块的基类）
+开源项目：
+https://github.com/JeffreySu/WeiXinMPSDK",Senparc.Weixin,False,2018-02-28T10:25:28.963+00:00,True,False,,"微信,Senparc,Weixin,SDK,基础库,小程序,WebSocket,分布式",108950,False,4.11.1
+MyCONVENO,2017-02-26T15:48:55.947Z,134,418,"Interfaces, Models and DataBase access for MyCONVENO Sales4Pro.",Sales4Pro.Toolkit.Database,False,2017-12-07T04:30:24.107+00:00,False,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",10036,False,4.1.11
+Elegance Ukraine,2017-03-02T15:04:03.103Z,43209,414,Elegance FastReport,Package.Elegance.FastReport,False,1899-12-31T16:00:00-08:00,False,False,Elegance FastReport,"Elegance,FastReport",-1,False,1.0.0
+Michael Coelsch (MyCONVENO),2017-03-02T15:04:35.437Z,370,414,BaseViewModels for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.BaseViewModels,False,2017-04-15T07:10:52.937-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",9233,False,4.1.39
+Elegance Ukraine,2017-03-02T15:04:03.103Z,43209,414,Elegance FastReport,Package.Elegance.FastReport,False,1899-12-31T16:00:00-08:00,False,False,Elegance FastReport,"Elegance,FastReport",-1,False,1.0.0
+Empressia,2017-03-02T14:59:35.777Z,375,414,EmpressiaLibarayのUWP版サブセット,EmpressiaLibrary.UWP,False,2017-04-10T00:58:06.733-07:00,True,False,"主に自分用です。
+Converterとか。",int向けの拡張メソッド追加しただけ。,675,False,1.1.0
+Hari,2017-02-28T04:20:55.437Z,166,416,"Object Extensions can be used to:
+(1). Deep compare two objects 
+(2). Get list of members names
+(3). Get member value
+(4). Set member value including Private members. Supports setting values on Class Hierarchies. 
+(5). Get list of member names that are null
+(6). Save or view object graph
+
+Please checkout the Github Project Site for usage.",PrintClassInstance,False,2017-11-05T02:11:37.763+00:00,True,False,,"PrintClassInstance,ClassInstance,Debug,Class,Instance,Inspect,Print,Reflection,MemberInfo,MemberValue,FieldInfo,TypeInfo,PropertyInfo,.NET,Core,.NETStandard1.6,Compare,Objects,Deep,Comparing,Object,Graph,ObjectGraph,Extensions,ObjectExtensions,SetPropertyValue,SetFieldValue,SetValue",7071,False,3.0.9
+Ben Abelshausen,2017-03-02T15:00:04.577Z,5,414,Itinero.IO.Osm - OpenStreetMap IO.,Itinero.IO.Osm,True,2018-04-15T16:38:16.103+00:00,True,False,Itinero.IO.Osm is a package that enables building Itinero routing databases from OpenStreetMap data.,"osm,openstreetmap,routing,mapping",27346,False,0.40.4-rc1
+Empressia,2017-03-02T14:59:35.777Z,375,414,EmpressiaLibarayのUWP版サブセット,EmpressiaLibrary.UWP,False,2017-04-10T00:58:06.733-07:00,True,False,,,675,False,1.1.0
+Ben Abelshausen,2017-03-02T15:00:16.28Z,155,414,Library to read shapefiles and use them for routing.,Itinero.IO.Shape,True,2017-11-16T17:02:14.697+00:00,True,False,Library to read shapefiles and use them for routing in Itinero.,"osm,openstreetmap,routing,nts",14692,False,0.40.4-rc1
+Ben Abelshausen,2017-03-02T14:59:41.247Z,5,414,Itinero - Routing for .NET.,Itinero,True,2018-04-15T16:38:02.54+00:00,True,False,Itinero is a route planning project for .NET to plan routes in a road network.,"osm,openstreetmap,routing,mapping",29088,False,0.40.4-rc1
+Ben Abelshausen,2017-03-02T14:59:53.217Z,155,414,Itinero.Geo - A bridge between Itinero and Geo.,Itinero.Geo,True,2017-11-16T17:01:42.553+00:00,True,False,Itinero.Geo is a package that provides a bridge between Itinero and Geo using NTS/GeoAPI.,"osm,openstreetmap,routing,mapping",23864,False,0.40.4-rc1
+Avida Finans AB,2015-10-26T12:29:26.447Z,14,907,Library of utility methods for financial calculations.,FinancialUtility,False,2018-04-06T08:49:01.547+00:00,False,False,,"finance,bank,account",3139,False,1.0.201510261
+Justin Skiles,2017-03-02T14:58:09.7Z,224,414,Provides methods to consume the ProPublica Congress API.,ProPublicaCongressAPI,False,2017-09-08T02:34:34.623+00:00,True,False,,"politics,api,propublica,json,congress",1833,False,1.0.0.8
+Chad Kimes,2017-03-02T14:57:46.9Z,392,414,An implementation of GraphQL for .NET and IQueryable,GraphQL.Net,False,2017-03-24T08:08:00.087-07:00,True,False,,"graphql,graph,ql,iqueryable",3175,False,0.3.3
+Justin Skiles,2017-03-02T14:58:22.75Z,224,414,Provides contracts to consume the ProPublica Congress API.,ProPublicaCongressAPI.Contracts,False,2017-09-08T02:34:45.153+00:00,True,False,,"politics,api,propublica,json,congress",1174,False,1.0.0.8
+Avida Finans AB,2017-03-02T14:56:11.467Z,14,414,Library of utility methods for financial calculations.,FinancialUtility,False,2018-04-06T08:49:01.547+00:00,True,False,,"finance,bank,account",3139,False,1.0.2015102611
+Michael Coelsch (MyCONVENO),2017-03-02T14:55:46.417Z,370,414,BaseViewModels for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.BaseViewModels,False,2017-04-15T07:10:52.937-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",9233,False,4.1.38
+Spring IT Solutions B.V.,2017-03-02T14:54:52.443Z,8,414,Spring IT Config reader,SpringIt.ConfigReader,False,2018-04-12T13:33:34.63+00:00,True,False,,ConfigReader,1427,False,1.0.1.25
+Spring IT Solutions B.V.,2017-03-02T14:55:11.337Z,8,414,Spring IT Autofac Service bus implementation,SpringIt.ServiceBus.Autofac,False,2018-04-12T13:33:58.367+00:00,True,False,,"MassTransit,Topshelf,RabbitMQ,ServiceBus,Autofac",971,False,1.0.1.25
+Spring IT Solutions B.V.,2017-03-02T14:55:22.383Z,8,414,Spring IT Service bus implementation,SpringIt.ServiceBus.Common,False,2018-04-12T13:34:09.773+00:00,True,False,,,1432,False,1.0.1.25
+Spring IT Solutions B.V.,2017-03-02T14:55:31.777Z,8,414,Spring IT SimpleInjector Service bus implementation,SpringIt.ServiceBus.SimpleInjector,False,2018-04-12T13:34:23.32+00:00,True,False,,"MassTransit,Topshelf,RabbitMQ,ServiceBus,SimpleInjector",1297,False,1.0.1.25
+Spring IT Solutions B.V.,2017-03-02T14:55:01.897Z,8,414,Spring IT Service bus implementation,SpringIt.ServiceBus,False,2018-04-12T13:33:47.46+00:00,True,False,,"MassTransit,Topshelf,RabbitMQ,ServiceBus",1406,False,1.0.1.25
+Justin Skiles,2017-03-02T14:55:31.073Z,224,414,Provides methods to consume the ProPublica Congress API.,ProPublicaCongressAPI,False,2017-09-08T02:34:34.623+00:00,True,False,,"politics,api,propublica,json,congress",1833,False,1.0.0.7
+Jobbr,2017-03-02T14:51:44.933Z,43209,414,Jobbr is a .NET JobServer,Jobbr.Server.MsSql,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0-unstable17
+,,-1,-1,,TestPackage.Issue3456.A,,,,True,,,,,1.0.0
+Velyo Ivanov,2017-03-02T14:50:01.7Z,414,414,.NET client library for Google Maps API Web Services,Google.Maps.Client,False,2017-03-02T06:50:01.7-08:00,True,False,,".NET,Google,Maps,API,Services,Client,Library",3700,False,2.1.2.159
+JsonApiDotNetCore,2017-03-02T14:48:57.957Z,16,414,JsonApiDotNetCore,JsonApiDotNetCore,False,2018-04-04T21:26:13.363+00:00,True,False,,,13389,False,1.0.0
+FeedHenry,2017-03-02T14:46:34.08Z,380,414,FeedHenry .Net SDK,FH.SDK,True,2017-04-05T03:50:20.053-07:00,True,False,,"FeedHenry,Cloud,.Net,Xamarin",7455,False,1.3.9-rc5
+Michael Coelsch (MyCONVENO),2017-03-02T14:46:42.313Z,375,414,Widgets for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.Widgets,False,2017-04-10T10:02:09.297-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",6874,False,4.1.41
+Philip Dearmore,2017-03-02T14:43:21.71Z,414,414,Command line argument parser library.,Dearmore.Console.clParse,False,2017-03-02T06:43:21.71-08:00,True,False,,"args,argument,command,command-line,commandline,console,line,parser,parsing,shell,syntax",127,False,0.4.1.15610
+"Tugberk Ugurlu,Vasiliy Solovey",2017-03-02T14:42:05.48Z,175,414,DynamoDB data store adaptor for ASP.NET Core Identity,AspNetCore.Identity.DynamoDB,True,2017-10-27T05:57:44.33+00:00,True,False,,"identity,dynamodb,dynamo,aspnetcore,auth",2183,False,1.0.0-rc2-7
+"Dox Sweden AB,Jovan Paskota",2017-03-02T14:39:05.813Z,334,414,Shared library for Dox projects,Dox.Pcl.SharedLibrary,False,2017-05-21T02:20:48.74-07:00,True,False,,Dox,12136,False,1.0.47
+Devart Software,2017-03-02T14:41:37.583Z,21,414,dotConnect Express for SQLite is a free of charge enhanced database connectivity solution built over ADO.NET architecture and a development framework with a number of innovative technologies. dotConnect offers a complete solution for developing database-related applications and web sites. It introduces new approaches for designing applications and boosts productivity of database application development.,dotConnect.Express.for.SQLite,False,2018-03-30T11:10:01.227+00:00,True,False,dotConnect Express for SQLite is a free of charge enhanced database connectivity solution built over ADO.NET architecture and a development framework with a number of innovative technologies.,"SQLite,ADO.NET,provider,Database",28413,False,5.7.852
+Devart Software,2017-03-02T14:40:55.233Z,21,414,dotConnect Express for PostgreSQL is a free of charge enhanced database connectivity solution built over ADO.NET architecture and a development framework with a number of innovative technologies. dotConnect offers a complete solution for developing database-related applications and web sites. It introduces new approaches for designing applications and boosts productivity of database application development.,dotConnect.Express.for.PostgreSQL,False,2018-03-30T11:06:50.83+00:00,True,False,dotConnect Express for PostgreSQL is a free of charge enhanced database connectivity solution built over ADO.NET architecture and a development framework with a number of innovative technologies.,"PostgreSQL,ADO.NET,provider,Database",90087,False,7.7.852
+Devart Software,2017-03-02T14:39:00.86Z,21,414,dotConnect Express for MySQL is a free of charge enhanced database connectivity solution built over ADO.NET architecture and a development framework with a number of innovative technologies. dotConnect offers a complete solution for developing database-related applications and web sites. It introduces new approaches for designing applications and boosts productivity of database application development.,dotConnect.Express.for.MySQL,False,2018-03-30T10:56:48.017+00:00,True,False,dotConnect Express for MySQL is a free of charge enhanced database connectivity solution built over ADO.NET architecture and a development framework with a number of innovative technologies.,"MySQL,ADO.NET,provider,Database",40988,False,8.7.852
+"Dox Sweden AB,Jovan Paskota",2017-03-02T14:39:05.813Z,334,414,Shared library for Dox projects,Dox.Pcl.SharedLibrary,False,2017-05-21T02:20:48.74-07:00,True,False,,,12136,False,1.0.47
+Daniel Frederico Lins Leite,2017-03-02T14:39:14.69Z,319,414,Implementations of .NET Collections to SQL Server,MachinaAurum.Collections.SqlServer,False,2017-06-05T03:09:59.727-07:00,True,False,,"collections,sql,server",2605,False,0.1.20
+Devart Software,2017-03-02T14:39:58.79Z,21,414,dotConnect Express for Oracle is a free of charge enhanced database connectivity solution built over ADO.NET architecture and a development framework with a number of innovative technologies. dotConnect offers a complete solution for developing database-related applications and web sites. It introduces new approaches for designing applications and boosts productivity of database application development.,dotConnect.Express.for.Oracle,False,2018-03-30T11:04:05.81+00:00,True,False,dotConnect Express for Oracle is a free of charge enhanced database connectivity solution built over ADO.NET architecture and a development framework with a number of innovative technologies.,"Oracle,ADO.NET,provider,Database",45770,False,9.2.220
+Redpoint Games,2017-03-02T14:31:05.177Z,308,414,The basic template for a command line application.,Protobuild.Template.Console,True,2017-06-16T08:25:18.93+00:00,True,False,,"platforms=Template,type=template,commit=b57b400e387d6bd33ac4d085814e3f8685fcaa64,git=https://github.com/Protobuild/Protobuild.Template.Console",13602,False,0.0.0-SHA3fb29d87195255efc160a3bcf9878b8a318bd55a
+Rudolf Dobias et al.,2017-03-02T14:32:00.513Z,137,414,Package Description,Firefly.net,False,2017-12-04T14:55:36.3+00:00,True,False,,".net,core,api",4601,False,1.1.0.1340
+Avida Finans AB,2015-10-26T12:29:26.447Z,14,907,Library of utility methods for financial calculations.,FinancialUtility,False,2018-04-06T08:49:01.547+00:00,True,False,,"finance,bank,account",3139,False,1.0.201510261
+One Frame Link,2017-03-02T14:30:34.187Z,414,414,Abstractions used by the Ofl.Core project,Ofl.Twitch.Contracts,False,2017-03-02T08:10:07.56-08:00,True,False,Abstractions used by the Ofl.Twitch project.,,424,True,1.0.3
+One Frame Link,2017-03-02T13:27:30.253Z,414,414,Abstractions used by the Ofl.Core project,Ofl.Twitch.Contracts,False,2017-03-02T08:10:07.56-08:00,False,False,Abstractions used by the Ofl.Twitch project.,,424,True,1.0.1
+"Dox Sweden AB,Jovan Paskota",2017-03-02T14:25:31.153Z,2,414,Database layer for Dox Objects,Dox.Net.MsSqlBuilder,False,2018-04-18T09:15:27.35+00:00,True,False,,Dox,22695,False,1.0.44
+Simon Lu,2017-03-02T14:21:29.19Z,197,414,Transaction awareness AOP for NHibernate.,CompileTimeAOP.TransactionAwareness,False,2017-10-05T05:21:20.367+00:00,True,False,"
+      AOP to allow programmers to develop Transaction Aware classes in Transaction Awareness programming model for NHibernate. TransactionAware AOP is implemented at compile time with CompileTimeWeaver.Fody.
+    ","AOP,Transaction,Awareness,Compile,Time,ILWeaving",1931,False,3.0.0
+"Dox Sweden AB,Jovan Paskota",2017-03-02T14:25:31.153Z,2,414,Database layer for Dox Objects,Dox.Net.MsSqlBuilder,False,2018-04-18T09:15:27.35+00:00,True,False,,Dox,22695,False,1.0.44
+"Dox Sweden AB,Jovan Paskota",2017-03-02T14:20:36.07Z,334,414,Shared library for Dox projects,Dox.Pcl.SharedLibrary,False,2017-05-21T02:20:48.74-07:00,True,False,,Dox,12136,False,1.0.46
+Ben Abelshausen,2017-03-02T14:22:12.557Z,155,414,Library to read shapefiles and use them for routing.,Itinero.IO.Shape,True,2017-11-16T17:02:14.697+00:00,True,False,Library to read shapefiles and use them for routing in Itinero.,"osm,openstreetmap,routing,nts",14692,False,0.40.3-rc1
+Ben Abelshausen,2017-03-02T14:22:02.103Z,5,414,Itinero.IO.Osm - OpenStreetMap IO.,Itinero.IO.Osm,True,2018-04-15T16:38:16.103+00:00,True,False,Itinero.IO.Osm is a package that enables building Itinero routing databases from OpenStreetMap data.,"osm,openstreetmap,routing,mapping",27346,False,0.40.3-rc1
+Ben Abelshausen,2017-03-02T14:21:50.57Z,155,414,Itinero.Geo - A bridge between Itinero and Geo.,Itinero.Geo,True,2017-11-16T17:01:42.553+00:00,True,False,Itinero.Geo is a package that provides a bridge between Itinero and Geo using NTS/GeoAPI.,"osm,openstreetmap,routing,mapping",23864,False,0.40.3-rc1
+Simon Lu,2017-03-02T14:21:29.19Z,197,414,Transaction awareness AOP for NHibernate.,CompileTimeAOP.TransactionAwareness,False,2017-10-05T05:21:20.367+00:00,True,False,"
+      AOP to allow programmers to develop Transaction Aware classes in Transaction Awareness programming model for NHibernate. TransactionAware AOP is implemented at compile time with CompileTimeWeaver.Fody.
+    ","AOP,Transaction,Awareness,Compile,Time,ILWeaving",1931,False,3.0.0
+"Dox Sweden AB,Jovan Paskota",2017-03-02T14:20:36.07Z,334,414,Shared library for Dox projects,Dox.Pcl.SharedLibrary,False,2017-05-21T02:20:48.74-07:00,True,False,,Dox,12136,False,1.0.46
+Ben Abelshausen,2017-03-02T14:21:38.613Z,5,414,Itinero - Routing for .NET.,Itinero,True,2018-04-15T16:38:02.54+00:00,True,False,Itinero is a route planning project for .NET to plan routes in a road network.,"osm,openstreetmap,routing,mapping",29088,False,0.40.3-rc1
+St.Leo,2017-03-02T14:17:32.023Z,2,414,Kivii Dev Platform 基础开发包，必须引用的基础包,Kivii.Common,False,2018-04-18T11:57:59.297+00:00,True,False,,,5433,False,5.0.2017.3031
+Michael Coelsch (MyCONVENO),2017-03-02T14:14:58.513Z,370,414,BaseViewModels for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.BaseViewModels,False,2017-04-15T07:10:52.937-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",9233,False,4.1.37
+Ben Abelshausen,2017-03-02T14:12:40.977Z,155,414,Itinero.Geo - A bridge between Itinero and Geo.,Itinero.Geo,True,2017-11-16T17:01:42.553+00:00,True,False,Itinero.Geo is a package that provides a bridge between Itinero and Geo using NTS/GeoAPI.,"osm,openstreetmap,routing,mapping",23864,False,0.40.2-rc1
+Ben Abelshausen,2017-03-02T14:13:03.62Z,155,414,Library to read shapefiles and use them for routing.,Itinero.IO.Shape,True,2017-11-16T17:02:14.697+00:00,True,False,Library to read shapefiles and use them for routing in Itinero.,"osm,openstreetmap,routing,nts",14692,False,0.40.2-rc1
+Ben Abelshausen,2017-03-02T14:12:29.3Z,5,414,Itinero - Routing for .NET.,Itinero,True,2018-04-15T16:38:02.54+00:00,True,False,Itinero is a route planning project for .NET to plan routes in a road network.,"osm,openstreetmap,routing,mapping",29088,False,0.40.2-rc1
+Ben Abelshausen,2017-03-02T14:12:52.383Z,5,414,Itinero.IO.Osm - OpenStreetMap IO.,Itinero.IO.Osm,True,2018-04-15T16:38:16.103+00:00,True,False,Itinero.IO.Osm is a package that enables building Itinero routing databases from OpenStreetMap data.,"osm,openstreetmap,routing,mapping",27346,False,0.40.2-rc1
+Kirill Dubinkin,2017-03-02T14:07:54.987Z,38,414,Contains TraceSourceAttribute - a PostSharp-based aspect for simple but rich logging with .Net System.Diagnostics framework. It makes completely simple to use activity tracing and locial operations stacks.,Dccelerator.TraceSourceAspects,True,2018-03-13T14:36:30.973+00:00,True,False,Dccelerator.TraceSourceAspects,"TraceSource,Diagnostics,Logging,AOP,Aspects,ActivityTracing,LogicalOperationStack",902,False,0.0.12-rc7
+Xamarin,2017-03-02T14:09:08.03Z,4,414,Non-standard Extensions (utilities) to Xamarin-Auth (refresh-token),Xamarin.Auth.Extensions,False,2018-04-16T07:32:47.077+00:00,True,False,"Xamarin.Auth.Extensions adds some non-standard features to Xamarin.Auth,
+            such as Refresh Token API.
+            
+			Xamarin.Auth helps you authenticate users via standard authentication
+			mechanisms (e.g. OAuth 1.0 and 2.0), and store user credentials.
+			It's also straightforward to add support for non-standard authentication schemes.
+			The library is cross-platform, so once you learn it on iOS, you're all set on
+			Android.","xamarin,
+,pcl,android,monoandroid,monodroid,xamarin.android,ios,monotouch,xamarin.ios
+,windows,phone,winphone,wp8,wp81
+,8,winrt,universal,platform,uwp",9548,True,1.3.2.3
+Kirill Dubinkin,2017-03-02T14:07:54.987Z,38,414,Contains TraceSourceAttribute - a PostSharp-based aspect for simple but rich logging with .Net System.Diagnostics framework. It makes completely simple to use activity tracing and locial operations stacks.,Dccelerator.TraceSourceAspects,True,2018-03-13T14:36:30.973+00:00,True,False,Dccelerator.TraceSourceAspects,"TraceSource,Diagnostics,Logging,AOP,Aspects,ActivityTracing,LogicalOperationStack",902,False,0.0.12-rc7
+Goto10,2017-03-02T14:07:52.453Z,283,414,DocumentDB repository pattern overlord.,Oogi,False,2017-07-11T15:42:18.493+00:00,True,False,,,4767,False,1.3.9
+Xamarin,2017-03-02T14:08:57.42Z,4,414,A cross-platform API for authenticating users and storing their accounts.,Xamarin.Auth,False,2018-04-16T07:32:33.28+00:00,True,False,"Xamarin.Auth helps you authenticate users via standard authentication
+			mechanisms (e.g. OAuth 1.0 and 2.0), and store user credentials.
+			It's also straightforward to add support for non-standard authentication schemes.
+			The library is cross-platform, so once you learn it on iOS, you're all set on
+			Android.","xamarin,
+,pcl,android,monoandroid,monodroid,xamarin.android,ios,monotouch,xamarin.ios
+,windows,phone,winphone,wp,8,silverlight,sl,wp8,sl
+,8.1,wp81,winrt,win81
+,wpa81
+,universal,platform,uwp,10",268590,True,1.3.2.3
+Łukasz Dąbrowski,2017-02-21T19:12:16.87Z,156,423,"Provides management of blog content editor.
+This library depends on js-utilities",blog-utilities,False,2017-11-15T15:20:22.44+00:00,False,False,Blog-like utility functions,,992,False,0.0.2
+Ben Abelshausen,2017-03-02T14:00:56.22Z,5,414,Itinero - Routing for .NET.,Itinero,True,2018-04-15T16:38:02.54+00:00,True,False,Itinero is a route planning project for .NET to plan routes in a road network.,"osm,openstreetmap,routing,mapping",29088,False,0.40.1-rc1
+Ben Abelshausen,2017-03-02T14:01:19.257Z,5,414,Itinero.IO.Osm - OpenStreetMap IO.,Itinero.IO.Osm,True,2018-04-15T16:38:16.103+00:00,True,False,Itinero.IO.Osm is a package that enables building Itinero routing databases from OpenStreetMap data.,"osm,openstreetmap,routing,mapping",27346,False,0.40.1-rc1
+Ben Abelshausen,2017-03-02T14:01:37.163Z,155,414,Library to read shapefiles and use them for routing.,Itinero.IO.Shape,True,2017-11-16T17:02:14.697+00:00,True,False,Library to read shapefiles and use them for routing in Itinero.,"osm,openstreetmap,routing,nts",14692,False,0.40.1-rc1
+Ben Abelshausen,2017-03-02T14:01:08.753Z,155,414,Itinero.Geo - A bridge between Itinero and Geo.,Itinero.Geo,True,2017-11-16T17:01:42.553+00:00,True,False,Itinero.Geo is a package that provides a bridge between Itinero and Geo using NTS/GeoAPI.,"osm,openstreetmap,routing,mapping",23864,False,0.40.1-rc1
+Momentum,2017-03-02T13:59:07.603Z,4,414,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.10.4266-beta
+Łukasz Dąbrowski,2017-03-02T14:00:12.257Z,156,414,"Provides management of blog content editor.
+This library depends on js-utilities",blog-utilities,False,2017-11-15T15:20:22.44+00:00,True,False,Blog-like utility functions,,992,False,0.0.4
+Momentum,2017-03-02T13:59:20.967Z,4,414,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.10.4266-beta
+"Dox Sweden AB,Jovan Paskota",2017-03-02T13:56:15.85Z,323,414,Object for Dox,Dox.Pcl.Object,False,2017-06-01T05:06:45.5-07:00,True,False,,Dox,7805,False,1.0.21
+jsakamoto,2017-03-02T13:58:17.593Z,2,414,"Install Chrome Driver(Win32) for Selenium WebDriver into your Unit Test Project.
+      ""chromedriver.exe"" is copied to bin folder from package folder when the build process.
+      NuGet package restoring ready, and no need to commit ""chromedriver.exe"" binary into source code control repository.
+      / Selenium WebDriver用 Chrome Driver(Win32) を単体テストプロジェクトに追加します。
+      ""chromedriver.exe"" はビルド時にパッケージフォルダから bin フォルダへコピーされます。
+      NuGet パッケージの復元に対応済み、""chromedriver.exe"" をソース管理リポジトリに登録する必要はありません。
+      / The MSBuild script that contained this package is free and unencumbered software released into the public domain.
+      / ""chromedriver.exe"" is licensed under the New BSD License.",Selenium.WebDriver.ChromeDriver,True,2018-04-18T13:42:31.583+00:00,True,False,Selenium Google Chrome Driver (Win32) (does not make your source repository to fat.),"Selenium,WebDriver,chromedriver",1943465,False,2.27.0.6-beta
+"Dox Sweden AB,Jovan Paskota",2017-03-02T13:56:15.85Z,323,414,Object for Dox,Dox.Pcl.Object,False,2017-06-01T05:06:45.5-07:00,True,False,,,7805,False,1.0.21
+Łukasz Dąbrowski,2017-02-21T18:45:04.86Z,156,423,"Javacript utility functions that do not exist in current ecma specification:
+
+sliceOff(arrayOfIndicesToRemoveItemsFromInputArray, applyToObject, optionalArrayOfObjectProps)
+ - from inut array of objects removes those objects with ids specified in the first argument (all in one batch). You can filter input array of objects by supplying the second argument and optional third argument with specified object props and values. It is optimized for ordered list of array indices for objects to be removed;
+
+ -insert(newArray, startIndex) : inserts new array into existing array starting at given index
+
+ -reverse(): reverses input string (equivalent to TSQL REVERSE function)
+
+- countNumberOfChars(charToBeSearched): returns the total number of charToBeSearched chars for the given string
+
+- calculateDateDifference(startDate, endDate) - returns date difference as a literal string, e.g.  3 years 6 months",js-utilities,False,2017-11-15T15:08:26.84+00:00,False,False,Util functions,,1953,False,0.0.6
+"Dox Sweden AB,Jovan Paskota",2017-03-02T13:53:51.553Z,334,414,Shared library for Dox projects,Dox.Pcl.SharedLibrary,False,2017-05-21T02:20:48.74-07:00,True,False,,Dox,12136,False,1.0.45
+"Dox Sweden AB,Jovan Paskota",2017-03-02T13:53:51.553Z,334,414,Shared library for Dox projects,Dox.Pcl.SharedLibrary,False,2017-05-21T02:20:48.74-07:00,True,False,,,12136,False,1.0.45
+Łukasz Dąbrowski,2017-03-02T13:49:49.267Z,156,414,"Javacript utility functions that do not exist in current ecma specification:
+
+sliceOff(arrayOfIndicesToRemoveItemsFromInputArray, applyToObject, optionalArrayOfObjectProps)
+ - from inut array of objects removes those objects with ids specified in the first argument (all in one batch). You can filter input array of objects by supplying the second argument and optional third argument with specified object props and values. It is optimized for ordered list of array indices for objects to be removed;
+
+ -insert(newArray, startIndex) : inserts new array into existing array starting at given index
+
+ -reverse(): reverses input string (equivalent to TSQL REVERSE function)
+
+- countNumberOfChars(charToBeSearched): returns the total number of charToBeSearched chars for the given string
+
+- calculateDateDifference(startDate, endDate) - returns date difference as a literal string, e.g.  3 years 6 months",js-utilities,False,2017-11-15T15:08:26.84+00:00,True,False,Utility functions,,1953,False,0.0.8
+VicBilibily欧阳敏岚,2016-08-09T04:44:38.21Z,43209,619,"使用示例请参考
+http://www.cnblogs.com/VicBilibily/p/5751526.html",OYMLCN.WeChat,False,1900-01-01T00:00:00+00:00,False,False,一个在 ASP.Net Core 中使用的微信SDK （Demo包）,"WeChat,WeiXin,微信,OYMLCN",-1,False,0.0.1
+akash.kava,2017-03-02T13:47:53.273Z,37,414,"UI Atoms for Xamarin Forms, includes, AtomToggleButtonBar, AtomGridView",UIAtoms.Xamarin.Forms,False,2018-03-14T12:05:12.857+00:00,True,False,UI Atoms for Xamarin,"xamarin,gridview,grid,view,togglebuttonbar,toggle,button,bar",51891,False,1.2.252
+VicBilibily,2017-03-02T13:47:14.97Z,43209,414,"微信公众平台SDK（类JQuery链式调用）
+目前仅支持微信消息被动回复（不包括事件）
+注：通过对象管理器查看具体扩展树",OYMLCN.WeChat,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.1.0-alpha1
+Stimulsoft,2016-03-16T13:16:07.073Z,43209,765,"Stimulsoft Reports.Ultimate is a comprehensive solution for the .NET Framework platform, JavaScript, PHP, Java, and Flex to render reports. The product includes a complete set of tools to build reports under WinForms, ASP.NET, Silverlight, WPF, JavaScript etc environments. Different report viewers for displaying reports are available for this product. The product has powerful system of exporting reports, which supports many different types of formats.",Stimulsoft.Reports.Ultimate.Trial,False,1899-12-31T16:00:00-08:00,False,False,Trial package of Stimulsoft Reports.Ultimate,"stimulsoft,reports.ultimate,reports,reporting-tool",-1,False,2016.3.14
+Stimulsoft,2016-03-16T13:18:18.087Z,43209,765,"Stimulsoft Reports.Wpf is a reporting tool that is developed for Windows Presentation Foundation. Rich capabilities of rendering, viewing, printing and exporting reports – it's all about Stimulsoft Reports.Wpf. The product uses the reports engine for creating reports which is based on the many years experience of developing and using reporting tools. Great many components, properties and parameters, thought over the structure of reports.",Stimulsoft.Reports.Wpf.Trial,False,1899-12-31T16:00:00-08:00,False,False,Trial package of Stimulsoft Reports.Wpf,"stimulsoft,reports.wpf,reports,reporting-tool",-1,False,2016.3.14
+Paul Moore,2017-03-02T13:45:41.6Z,414,414,A result types for domain commands and queries,lqd.net.domain.results,False,2017-03-02T05:45:41.6-08:00,True,False,,,220,False,0.2.1
+VicBilibily,2017-03-02T13:46:10.767Z,43209,414,XML的序列化和反序列化扩展操作,OYMLCN.Xml,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.1.0
+Cinegy GmbH,2017-03-02T13:45:32.88Z,52,414,Transport Stream Decoder,Cinegy.TsDecoder,False,2018-02-27T15:53:10.9+00:00,True,False,,"Transport,Stream,MPEGTS",5142,False,1.0.38
+"nuu:bit,Inc.",2017-02-13T14:34:15.97Z,344,431,"The nuu:bit Mobile  SDK is a simple way to connect a mobile application to nuu:bit's global content acceleration and analytics platform.
+
+The nuu:bit Mobile SDK (Software Development Kit) is a set of libraries that provide the means necessary to report and accelerate the delivery of content to applications running on mobile devices. The nuu:bit SDK utilizes a specially designed set of networking protocols to provide acceleration to a given mobile application.  Network traffic that is normally directed to and from the mobile App is sent through the nuu:bit SDK, which utilizes nuu:bit’s global network to accelerate the App’s traffic.
+
+The SDK can function utilizing  either of two nuu:bit-optimized protocols – an UDP-based protocol NMP (nuu:bit Mobile Protocol) or TCP-based protocol DOTS (Dynamically Optimized Transport System) to transfer the content over the wireless network. The SDK determines, which protocol provides better performance for that particular App, device, and wireless network at that moment in time. Once the appropriate protocol is selected, the protocol then senses network, device and App conditions, and adapts its own behavior in real time to provide the fastest possible transfer of data overall.
+
+The nuu:bit SDK communicates with the nuu:bit server in the nuu:bit network, maintaining the flow of content, and monitoring and reporting on the operation of the SDK while sending performance data reflecting data transfer rates, bandwidth, latencies, etc. This raw data  is then forwarded to nuu:bit log servers, and processed for reporting purposes. Processed data is then forwarded to the nuu:bit analytics backend  service, where the performance information is made available to nuu:bit customers via the API or portal.  
+
+Please see our Xamarin SDK Quick Start Guide https://revapm.zendesk.com/hc/en-us/articles/115000584783-Xamarin-SDK-Quick-Start-Guide for more details.",nuubit.SDK,False,2017-05-11T05:39:31.257-07:00,False,False,The SDK is a simple way to connect a mobile application to nuu:bit's global content acceleration and analytics platform.,,1064,False,1.0.1
+akash.kava,2017-03-02T13:45:09.86Z,37,414,"UI Atoms for Xamarin Forms, includes, AtomToggleButtonBar, AtomGridView",UIAtoms.Xamarin.Forms,False,2018-03-14T12:05:12.857+00:00,True,False,UI Atoms for Xamarin,"xamarin,gridview,grid,view,togglebuttonbar,toggle,button,bar",51891,False,1.2.251
+VicBilibily,2017-03-02T13:45:05.36Z,43209,414,"CookieWebClient
+WebClientExtension（PostData、PostJson、GetSrc）
+WebClient静态方法组（HttpGet、HttpPost、DownloadData、Download、PostFileGetString、PostGetString）",OYMLCN.WebClient,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.1.1
+Łukasz Dąbrowski,2017-03-02T13:44:47.4Z,261,414,"Simple and easy-to-use JavaScript library that:
+ - detects current browser
+ - facilitates URL fragment(this thing after # sign) deletion from url address bar (when you move from one bookmark to another on a page, this hash fragment is not shown.
+ - redirects to mobile version according to the common pattern,  http://my-site-url.com -> http://m.my-site-url.com  (m. stands for mobile version)
+ - creates redirection url to desktop version
+ 
+Installation: like any other JS library.
+ 
+Browsers supported by this version - desktop:
+ Google Chrome
+ Mozilla Firefox 
+ Internet Explorer from version 9 to 11 
+ MicrosoftEdge 
+ Opera 
+ Safari
+ 
+ 
+Browsers supported by this version - mobile:
+ Google Chrome
+ Mozilla Firefox
+ Internet Explorer
+ Opera 
+ Safari
+ UCBrowser",browser-utility,False,2017-08-02T10:34:35.647+00:00,True,False,"detect every top desktop browser, as given in the description,  as well as mobile browser in general",,2573,False,1.0.2
+James Croft,2017-03-02T13:44:39.37Z,25,414,This library contains an API layer for developing clients against the Microsoft MVP API.,MVP.Api,False,2018-03-26T19:24:06.803+00:00,True,False,,"Microsoft,MVP,API,.NET,PCL,UWP,Xamarin",630,False,1.3.17061.1
+Michael Coelsch (MyCONVENO),2017-03-02T13:43:49.59Z,375,414,Widgets for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.Widgets,False,2017-04-10T10:02:09.297-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",6874,False,4.1.40
+Stimulsoft,2017-03-02T13:42:39.327Z,11,414,Stimulsoft Reports.Net is a .NET based reporting tool which helps you create flexible and feature rich reports. All reports are created in a report designer with handy and user-friendly interface. Using Stimulsoft Reports.Net you can create reports on the basis of various data sources. Created reports can be used both in Windows Forms and ASP.NET. Rendered reports can be exported to different formats.,Stimulsoft.Reports.Net,False,2018-04-09T10:34:44.257+00:00,True,False,Stimulsoft Reports.Net is a .NET based reporting tool which helps you create flexible and feature rich reports.,"stimulsoft,report,reports,reporting,tool,generator,net,framework,sql,xml,json,data,barcode,qr-code,charts,export,pdf,excel",8609,True,2016.3.10
+VicBilibily,2017-03-02T13:39:57.303Z,43209,414,RequestExtension,OYMLCN.Web,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.1.0
+VicBilibily,2017-03-02T13:39:23.373Z,43209,414,"Newtonsoft.Json的方法扩展
+JsonExtension
+Object.ToJsonString()
+String.JsonStringDeserialize<T>()",OYMLCN.Json,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.1.3
+akash.kava,2017-03-02T13:37:58.01Z,37,414,"UI Atoms for Xamarin Forms, includes, AtomToggleButtonBar, AtomGridView",UIAtoms.Xamarin.Forms,False,2018-03-14T12:05:12.857+00:00,True,False,UI Atoms for Xamarin,"xamarin,gridview,grid,view,togglebuttonbar,toggle,button,bar",51891,False,1.2.249
+VicBilibily,2017-03-02T13:38:43.363Z,46,414,"常用类型方法扩展
+CryptographyExtension、DateTimeExtension、HTMLExtension、PinYinExtension、StringExtension、ZipExtension、StreamExtension",OYMLCN.Extension,False,2018-03-05T13:44:13.753+00:00,True,False,,,10832,True,0.1.3
+Ivan Antipov,2017-03-02T13:37:40.867Z,4,414,Lz4 packing for FileTape data storage,FileTape.Lz4,False,2018-04-16T08:52:05.19+00:00,True,False,,,1562,False,1.0.0.15
+Stimulsoft,2016-03-17T06:20:07.75Z,43209,764,Stimulsoft Reports.Net is a .NET based reporting tool which helps you create flexible and feature rich reports. All reports are created in a report designer with handy and user-friendly interface. Using Stimulsoft Reports.Net you can create reports on the basis of various data sources. Created reports can be used both in Windows Forms and ASP.NET. Rendered reports can be exported to different formats.,Stimulsoft.Reports.Net.Trial,False,1899-12-31T16:00:00-08:00,False,False,Trial package of Stimulsoft Reports.Net,"stimulsoft,reports.net,reports,reporting-tool",-1,False,2016.3.17
+Stimulsoft,2016-03-16T11:24:41.7Z,43209,765,Stimulsoft Reports.Net is a .NET based reporting tool which helps you create flexible and feature rich reports. All reports are created in a report designer with handy and user-friendly interface. Using Stimulsoft Reports.Net you can create reports on the basis of various data sources. Created reports can be used both in Windows Forms and ASP.NET. Rendered reports can be exported to different formats.,Stimulsoft.Reports.Net.Trial,False,1899-12-31T16:00:00-08:00,False,False,Trial package of Stimulsoft Reports.Net,"stimulsoft,reports.net,""reporting,tool"",reports",-1,False,2016.3.14
+akash.kava,2017-03-02T13:36:01.307Z,37,414,"UI Atoms for Xamarin Forms, includes, AtomToggleButtonBar, AtomGridView",UIAtoms.Xamarin.Forms,False,2018-03-14T12:05:12.857+00:00,True,False,UI Atoms for Xamarin,"xamarin,gridview,grid,view,togglebuttonbar,toggle,button,bar",51891,False,1.2.248
+Michael Coelsch (MyCONVENO),2017-03-02T13:35:06.84Z,370,414,BaseViewModels for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.BaseViewModels,False,2017-04-15T07:10:52.937-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",9233,False,4.1.36
+One Frame Link,2017-03-02T13:33:14.597Z,329,414,Data access utilities for ADO.NET and Entity Framework,Ofl.Data,False,2017-05-26T04:59:55.543-07:00,True,False,Data access utilities for ADO.NET and Entity Framework.,,918,True,1.0.4
+David E. Keller,2017-03-02T13:31:23.987Z,253,414,Library containing models to interact with SonicOS by SonicWALL for external authentication,Dkbe.CaptivePortal.Models.SonicOS,True,2017-08-10T15:44:27.753+00:00,True,False,,"CaptivePortal,External,Authentication,SonicWALL,SonicOS",759,False,1.0.0-build00004
+David E. Keller,2017-03-02T13:30:32.253Z,253,414,Library containing models to interact with SonicOS by SonicWALL for external authentication,Dkbe.CaptivePortal.Models.SonicOS,True,2017-08-10T15:44:27.753+00:00,True,False,,"CaptivePortal,External,Authentication,SonicWALL,SonicOS",759,False,1.0.0-build00003
+"Vishal Patel,Vaishakhi Panchmatia",2017-03-02T13:30:01.513Z,43209,414,This is a client to access GAAS Manager,GaasManager.API.Client,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0.45
+One Frame Link,2017-03-02T13:27:30.253Z,414,414,Abstractions used by the Ofl.Core project,Ofl.Twitch.Contracts,False,2017-03-02T08:10:07.56-08:00,True,False,Abstractions used by the Ofl.Twitch project.,,424,True,1.0.1
+David E. Keller,2017-03-02T13:22:55.127Z,253,414,Library containing models to interact with SonicOS by SonicWALL for external authentication,Dkbe.CaptivePortal.Models.SonicOS,False,2017-08-10T15:44:27.753+00:00,True,False,,"CaptivePortal,External,Authentication,SonicWALL,SonicOS",759,False,1.0.0
+Adam Fisher,2017-03-02T13:25:28.047Z,91,414,A Xamarin Forms control to render the native video player on every platform. A valid license is required to use this component. Visit the project site URL for more details.,Octane.Xam.VideoPlayer,False,2018-01-19T04:28:02.127+00:00,True,False,,"xamarin,forms,xamarin.forms,ios,android,windows,phone,mobile,video,portable,ui,AVPlayer,MediaPlayer,AVPlayerViewController,MediaElement,pcl,xam.pcl,wp8,winphone,UWP",28796,False,1.2.3
+David E. Keller,2017-03-02T13:22:55.127Z,253,414,Library containing models to interact with SonicOS by SonicWALL for external authentication,Dkbe.CaptivePortal.Models.SonicOS,False,2017-08-10T15:44:27.753+00:00,True,False,,"CaptivePortal,External,Authentication,SonicWALL,SonicOS",759,False,1.0.0
+Jobbr,2017-03-02T13:23:19.48Z,43209,414,Jobbr is a .NET JobServer,Jobbr.Server.MsSql,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0-unstable16
+yinbo.xie,2017-03-02T13:20:10.443Z,414,414,LeaRuan.Utils,LeaRun.Util,False,2017-03-02T07:45:14.203-08:00,True,False,,,854,False,1.0.6
+"bilal.fazlani,manura",2017-03-02T13:08:55.433Z,414,414,"This package is forked from https://github.com/bilal-fazlani/tracker-enabled-dbcontext project. 
+	Just to avoid installing all the packages and entityframework in our domain project.
+	Added the TrackerEnabledDbContext.Domain class library and move the SkipTrackingAttribute and TrackChangesAttribute and referenced them from other projects.
+	All the credit should go to the original project authors and owners.",DomainSeparatedTrackerEnabledDbContext.Domain,False,2017-03-02T05:08:55.433-08:00,False,False,,"SQL,Entity,Framework,Tacking,Audit,C#,Database,ASP.NET",214,False,1.0.0
+Momentum,2017-03-02T13:16:13.63Z,4,414,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.10.4265-beta
+Momentum,2017-03-02T13:15:57.377Z,4,414,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.10.4265-beta
+SonarSource,2017-03-02T13:14:19.563Z,43209,414,Analyzers which spot bugs and code smells in your code. This package is best used together with SonarLint for Visual Studio (http://vs.sonarlint.org) and/or the SonarQube platform (http://www.sonarqube.org).,SonarAnalyzer.CSharp,False,1900-01-01T00:00:00+00:00,False,False,Analyzers which spot bugs and code smells in your code. This package is best used together with SonarLint for Visual Studio and/or the SonarQube platform.,"Roslyn,Analyzers,Refactoring,CodeAnalysis",608605,False,1.23.0.1857
+sfanuget scottcowan,2017-03-02T13:13:05.09Z,4,414,a client to call the the DAS Assessment Organisation service,SFA.DAS.AssessmentOrgs.Api.Client,False,2018-04-16T13:34:41.36+00:00,True,False,SFA Endpoint Assement Organisations API Client,,13224,False,0.10.39
+sfanuget scottcowan,2017-03-02T13:12:48.443Z,4,414,a client to call the the DAS Providers service,SFA.DAS.Providers.Api.Client,False,2018-04-16T13:34:54.377+00:00,True,False,SFA Training Providers API Client,,12895,False,0.10.39
+sfanuget scottcowan,2017-03-02T13:12:28.593Z,43209,414,a client to call the the DAS Apprenticeship Programmes and Providers service,SFA.DAS.Apprenticeships.Api.Client,False,1900-01-01T00:00:00+00:00,False,False,SFA Apprenticeship Programmes and Providers API Client,,18874,False,0.10.39
+Matteo Fabbri,2016-07-10T19:43:44.977Z,43209,649,"Embeddable SMTP inbound connector, with full support for user authentication and SSL server certificate. Expose different function to be connected inside your application.",Netfluid.Smtp,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Matteo Fabbri,2015-10-31T09:28:53.047Z,43209,902,"It includes :
+    Web framework
+    NoSql database
+    Smtp server
+    Dns server
+    Multi tenancy user sytem
+    WebDAV server",Netfluid,False,1899-12-31T16:00:00-08:00,False,False,"Netfluid framework is is a toolbox to fast develop high complexity business application for IOT and enterprise software for any platform including Mono, OSX and Raspberry",,1829,False,7.0.1
+Matteo Fabbri,2015-10-30T21:20:51.18Z,43209,903,"Netfluid framework is is a toolbox to fast develop high complexity business application for iot and enterprise software for any platform including Mono, OSX and Raspberry.
+
+It includes :
+    Web framework
+    NoSql database
+    Smtp server
+    Dns server
+    Multi tenancy user sytem
+    WebDAV server",Netfluid,False,1899-12-31T16:00:00-08:00,False,False,"Netfluid framework is is a toolbox to fast develop high complexity business application for iot and enterprise software for any platform including Mono, OSX and Raspberry","DNS,NOSQL,SMTP,embeddable,server,Web,Framewok,WebDAV",1829,False,7.0.0
+Matteo Fabbri,2015-11-10T11:58:35.027Z,43209,892,"It includes :
+    Web framework
+    NoSql database
+    Smtp server
+    Dns server
+    Multi tenancy user sytem
+    WebDAV server",NetFluid,False,1899-12-31T16:00:00-08:00,False,False,"Netfluid framework is is a toolbox to fast develop high complexity business application for IOT and enterprise software for any platform including Mono, OSX and Raspberry",,1829,False,7.1.1
+Eskindir Abdela,2017-03-02T13:07:31.597Z,79,414,This package contains autorest imlpementation of the Makeitright API,makeitright.api,False,2018-01-31T09:13:52.96+00:00,True,False,,"Makeitright,API,KB,Customer",642,False,1.0.0
+"bilal.fazlani,manura",2017-03-02T13:08:55.433Z,414,414,"This package is forked from https://github.com/bilal-fazlani/tracker-enabled-dbcontext project. 
+	Just to avoid installing all the packages and entityframework in our domain project.
+	Added the TrackerEnabledDbContext.Domain class library and move the SkipTrackingAttribute and TrackChangesAttribute and referenced them from other projects.
+	All the credit should go to the original project authors and owners.",DomainSeparatedTrackerEnabledDbContext.Domain,False,2017-03-02T05:08:55.433-08:00,True,False,,"SQL,Entity,Framework,Tacking,Audit,C#,Database,ASP.NET",214,False,1.0.0
+Michael Coelsch (MyCONVENO),2017-03-02T13:09:02.967Z,370,414,BaseViewModels for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.BaseViewModels,False,2017-04-15T07:10:52.937-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",9233,False,4.1.35
+Eskindir Abdela,2017-03-02T13:07:31.597Z,79,414,This package contains autorest imlpementation of the Makeitright API,makeitright.api,False,2018-01-31T09:13:52.96+00:00,True,False,,"Makeitright,API,KB,Customer",642,False,1.0.0
+Eskindir Abdela,2017-03-02T13:04:30.21Z,43209,414,This package contains autorest imlpementation of the SProadmap API,sproadmap-nuget,False,1899-12-31T16:00:00-08:00,False,False,,"SProadmap,API,KB,Customer",406,False,1.2.1
+Eskindir Abdela,2017-03-02T13:04:30.21Z,43209,414,This package contains autorest imlpementation of the SProadmap API,sproadmap-nuget,False,1899-12-31T16:00:00-08:00,False,False,,"SProadmap,API,KB,Customer",406,False,1.2.1
+Eskindir Abdela,2017-03-02T13:04:30.21Z,43209,414,This package contains autorest imlpementation of the SProadmap API,sproadmap-nuget,False,1899-12-31T16:00:00-08:00,False,False,,"SProadmap,API,KB,Customer",406,False,1.2.1
+Jobbr,2017-03-02T13:02:29.51Z,196,414,Jobbr is a .NET JobServer,Jobbr.Server,True,2017-10-06T15:21:31.027+00:00,True,False,,,10138,False,1.0.0-unstable452
+MscrmTools,2017-03-02T12:59:47.703Z,10,414,Exports and Imports translations with contextual information,MsCrmTools.Translator,False,2018-04-10T07:46:13.57+00:00,True,False,Exports and Imports translations with contextual information,"XrmToolBox,Plugin,WebResourceManager",113205,False,1.2017.2.2
+Lee Cooper,2017-03-02T12:57:48.037Z,381,414,Basic C# functional classes,Lski.Fn,True,2017-04-04T00:42:57.893-07:00,True,False,,Functional,2338,False,1.0.0-rc05
+"Matt Berther,Lloyd Holman",2017-03-02T12:57:12.15Z,414,414,This is a simple C# class library used to interact with a Chef Server's REST API. You can use this with a open source and Enterprise versions of the Chef Server.,dotnet-chef-api,False,2017-03-02T04:57:12.15-08:00,True,False,Simple C# class library used to interact with a Chef Server's REST API.,,388,False,1.1.6
+MscrmTools,2017-03-02T12:56:43.97Z,28,414,Manage your webresources easily,MsCrmTools.WebResourcesManager,False,2018-03-23T08:05:56.227+00:00,True,False,Manage your webresources easily,"XrmToolBox,Plugin,WebResourceManager",212616,False,1.2017.2.8
+Maddalena Tech,2017-03-02T12:55:36.547Z,25,414,Easy helper for Mongo DB drivers,Mongolino,False,2018-03-26T16:57:03.453+00:00,True,False,Easy helper for Mongo DB drivers,"mongo,nosql,async",409,False,0.8.0
+Michael Coelsch (MyCONVENO),2017-03-02T12:55:17.837Z,375,414,Widgets for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.Widgets,False,2017-04-10T10:02:09.297-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",6874,False,4.1.39
+Nirvana Framework,2017-03-02T12:54:34.903Z,109,414,Glue for .NET and Web applications,Nirvana.MongoProvider,False,2018-01-01T22:54:18.51+00:00,True,False,,,8194,False,1.0.44
+Nirvana Framework,2017-03-02T12:54:25.273Z,210,414,Glue for .NET and Web applications,Nirvana.SqlProvider,False,2017-09-22T12:02:02.193+00:00,True,False,,,7332,False,1.0.44
+Momentum,2017-03-02T12:53:53.777Z,4,414,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.10.4264-beta
+Nirvana Framework,2017-03-02T12:53:28.06Z,109,414,Web Utility Class For Nirvana Framework,Nirvana.Web,False,2018-01-01T22:54:58.417+00:00,True,False,,,8338,False,1.0.44
+Nirvana Framework,2017-03-02T12:53:59.687Z,109,414,Web Utility Class For Nirvana Framework,Nirvana.WebUtils,False,2018-01-01T22:55:07.933+00:00,True,False,,,8154,False,1.0.44
+Momentum,2017-03-02T12:54:08.203Z,4,414,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.10.4264-beta
+Nirvana Framework,2017-03-02T12:53:49.43Z,109,414,Glue for .NET and Web applications,Nirvana.TestFramework,False,2018-01-01T22:54:47.54+00:00,True,False,,,7778,False,1.0.44
+Nirvana Framework,2017-03-02T12:53:16.007Z,109,414,Glue for .NET and Web applications,Nirvana,False,2018-01-01T22:53:47.29+00:00,True,False,,,8903,False,1.0.44
+Nirvana Framework,2017-03-02T12:53:39.423Z,109,414,Glue for .NET and Web applications,Nirvana.AzureQueues,False,2018-01-01T22:53:56.913+00:00,True,False,,,8195,False,1.0.44
+Nirvana Framework,2017-03-02T12:54:11.91Z,210,414,Glue for .NET and Web applications,Nirvana.SignalRNotifications,False,2017-09-22T12:01:48.977+00:00,True,False,,,7313,False,1.0.44
+Lacuna Software,2017-03-02T12:50:10.347Z,80,414,Library for managing digital certificates and signatures,Lacuna.Pki,False,2018-01-30T18:07:32.98+00:00,True,False,,"Lacuna,PKI,SDK,digital,signature,X509,certificate",7417,False,1.16.4
+Stefano Teodorani,2017-03-02T12:43:42.82Z,28,414,Apex-net APPManager helper for iCommerce IOS App,AMHelper,False,2018-03-23T10:11:34.093+00:00,True,False,,"iorder,icommerce,ib,igamma",12610,False,2.0.7
+Peachpie.Runtime,2017-03-02T12:42:10.39Z,20,414,Peachpie.Runtime,Peachpie.Runtime,True,2018-03-31T15:09:30.597+00:00,True,False,Peachpie runtime.,"peachpie,runtime",12425,False,0.5.0-preview5
+Peachpie.NETCore.Web,2017-03-02T12:42:00.76Z,20,414,Peachpie.NETCore.Web,Peachpie.NETCore.Web,True,2018-03-31T15:09:43.537+00:00,True,False,Peachpie ASP.NET Core extension.,"peachpie,web",9680,False,0.5.0-preview5
+Peachpie.Library.MySql,2017-03-02T12:41:51.947Z,20,414,Peachpie.Library.MySql,Peachpie.Library.MySql,True,2018-03-31T15:08:16.907+00:00,True,False,Peachpie library containing MySql function set.,"peachpie,library,mysql",10090,False,0.5.0-preview5
+Peachpie.Library,2017-03-02T12:41:43.317Z,20,414,Peachpie.Library,Peachpie.Library,True,2018-03-31T15:09:30.597+00:00,True,False,Peachpie library containing standard function set.,"peachpie,library",10634,False,0.5.0-preview5
+Peachpie.Compiler.Tools,2017-03-02T12:41:33.61Z,20,414,Command line tool enabling 'php' project compilation.,Peachpie.Compiler.Tools,True,2018-03-31T15:07:39.18+00:00,True,False,,"dotnet,compile-php",10921,False,0.5.0-preview5
+MscrmTools,2017-03-02T12:41:11.193Z,28,414,Manage your webresources easily,MsCrmTools.WebResourcesManager,False,2018-03-23T08:05:56.227+00:00,True,False,Manage your webresources easily,"XrmToolBox,Plugin,WebResourceManager",212616,False,1.2017.2.7
+Peachpie.App,2017-03-02T12:41:14.553Z,20,414,Peachpie platform dependencies.,Peachpie.App,True,2018-03-31T15:07:12.587+00:00,True,False,Peachpie platform dependencies.,,10496,False,0.5.0-preview5
+Peachpie.CodeAnalysis,2017-03-02T12:41:25.03Z,20,414,Peachpie.CodeAnalysis,Peachpie.CodeAnalysis,True,2018-03-31T15:07:26.277+00:00,True,False,Peachpie code analysis and compiler core.,"php,peachpie,dotnet,compiler",12269,False,0.5.0-preview5
+Eskindir Abdela,2017-03-02T12:36:15.18Z,43209,414,This package contains autorest imlpementation of the SProadmap API,sproadmap-nuget,False,1899-12-31T16:00:00-08:00,False,False,,"SProadmap,API,KB,Customer",406,False,1.2.0
+Jobbr,2017-03-02T12:38:10.183Z,196,414,Jobbr is a .NET JobServer,Jobbr.ComponentModel.Execution,True,2017-10-06T12:49:29.83+00:00,True,False,,,2213,False,1.0.0-unstable19
+Eskindir Abdela,2017-03-02T12:36:15.18Z,43209,414,This package contains autorest imlpementation of the SProadmap API,sproadmap-nuget,False,1899-12-31T16:00:00-08:00,False,False,,"SProadmap,API,KB,Customer",406,False,1.2.0
+Chris McKelt United Traders,2017-03-02T12:32:56.733Z,414,414,SpecFlow plugin for xUnit that provides conditional Ignore tests functionality,Xunit.SpecFlow.AssertSkip,False,2017-03-02T04:32:56.733-08:00,True,False,,"xUnit,ConditionalIgnore,OptionallyIgnore,SpecFlow,AssertSkip",163,False,1.0.0
+Chris McKelt United Traders,2017-03-02T12:32:56.733Z,414,414,SpecFlow plugin for xUnit that provides conditional Ignore tests functionality,Xunit.SpecFlow.AssertSkip,False,2017-03-02T04:32:56.733-08:00,True,False,,"xUnit,ConditionalIgnore,OptionallyIgnore,SpecFlow,AssertSkip",163,False,1.0.0
+Michael Coelsch (MyCONVENO),2017-03-02T12:31:47.19Z,375,414,Widgets for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.Widgets,False,2017-04-10T10:02:09.297-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",6874,False,4.1.38
+Michael Coelsch (MyCONVENO),2017-03-02T12:30:57.543Z,370,414,BaseViewModels for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.BaseViewModels,False,2017-04-15T07:10:52.937-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",9233,False,4.1.34
+Andrea Martinelli,2017-03-02T12:27:37.947Z,170,414,"Provides wrappers for executing external processes, capturing their stdout, and automatically checking their exit code.",Shaman.ProcessUtils,False,2017-11-01T23:50:10.87+00:00,True,False,,"process,stdio,stdout",1418,False,1.0.1.7
+Daniel Pelsmaeker,2017-03-02T12:20:52.377Z,24,414,A utility library for .Net. It contains all those little utility classes and functions that are missing from the standard .Net libraries.,Virtlink.Utilib,False,2018-03-27T20:55:38.67+00:00,True,False,A utility library for .Net. It contains all those little utility classes and functions that are missing from the standard .Net libraries.,"virtlink,utility,library",3813,False,1.20.0
+Jobbr,2017-03-02T12:17:03.9Z,196,414,Jobbr is a .NET JobServer,Jobbr.Server,True,2017-10-06T15:21:31.027+00:00,True,False,,,10138,False,1.0.0-unstable451
+Pandu Masabathula,2017-02-08T08:13:58.243Z,11,436,"PubNub allows you to securely connect mobile phones, tablets, laptops, desktops and other clients outside of your cloud. PubNub provides the connectivity from your cloud to push data to end clients (phones, tablets, laptops and servers). This is called Real-time Data Push, or Push Notifications. PubNub removes the need for your client apps to constantly poll your cloud for new updates. So you can push data from a Server to a Client. And also you may push data from one Server to another Server, just like Azure ServiceBus ESB. Another option is available for a Mobile Phone to Push Data to another Mobile Phone or any endpoint. With PubNub this becomes easy using the two basic Publish/Subscribe APIs. Additionally PubNub provides automatic Broadcasting. When multiple clients/servers/phones are subscribed to a single channel, each endpoint receives a published message simultaneously.",PubnubUWP,True,2018-04-09T14:32:24.1+00:00,False,False,PubNub is a Massively Scalable Web Push Service for Web and Mobile Games.  This is a cloud-based service for broadcasting messages to thousands of web and mobile clients simultaneously,"Web,Data,Push,Real-time,Notifications,ESB,Message,Broadcasting,Distributed,Computing",4169,False,4.0.1.3-rc5
+Pandu Masabathula,2017-02-17T10:25:24.493Z,11,427,"PubNub allows you to securely connect mobile phones, tablets, laptops, desktops and other clients outside of your cloud. PubNub provides the connectivity from your cloud to push data to end clients (phones, tablets, laptops and servers). This is called Real-time Data Push, or Push Notifications. PubNub removes the need for your client apps to constantly poll your cloud for new updates. So you can push data from a Server to a Client. And also you may push data from one Server to another Server, just like Azure ServiceBus ESB. Another option is available for a Mobile Phone to Push Data to another Mobile Phone or any endpoint. With PubNub this becomes easy using the two basic Publish/Subscribe APIs. Additionally PubNub provides automatic Broadcasting. When multiple clients/servers/phones are subscribed to a single channel, each endpoint receives a published message simultaneously.",PubnubUWP,True,2018-04-09T14:32:24.1+00:00,False,False,PubNub is a Massively Scalable Web Push Service for Web and Mobile Games.  This is a cloud-based service for broadcasting messages to thousands of web and mobile clients simultaneously,"Web,Data,Push,Real-time,Notifications,ESB,Message,Broadcasting,Distributed,Computing",4169,False,4.0.1.3-rc6
+Pandu Masabathula,2017-02-28T15:07:38.417Z,407,416,"PubNub allows you to securely connect mobile phones, tablets, laptops, desktops and other clients outside of your cloud. PubNub provides the connectivity from your cloud to push data to end clients (phones, tablets, laptops and servers). This is called Real-time Data Push, or Push Notifications. PubNub removes the need for your client apps to constantly poll your cloud for new updates. So you can push data from a Server to a Client. And also you may push data from one Server to another Server, just like Azure ServiceBus ESB. Another option is available for a Mobile Phone to Push Data to another Mobile Phone or any endpoint. With PubNub this becomes easy using the two basic Publish/Subscribe APIs. Additionally PubNub provides automatic Broadcasting. When multiple clients/servers/phones are subscribed to a single channel, each endpoint receives a published message simultaneously.",PubnubNetPlatform,True,2017-03-09T08:53:44.927-08:00,False,False,PubNub is a Massively Scalable Web Push Service for Web and Mobile Games.  This is a cloud-based service for broadcasting messages to thousands of web and mobile clients simultaneously,"Web,Data,Push,Real-time,Notifications,ESB,Message,Broadcasting,Distributed,Computing",6902,False,3.8.6-rc1
+Pandu Masabathula,2017-01-31T18:46:13.673Z,11,444,"PubNub allows you to securely connect mobile phones, tablets, laptops, desktops and other clients outside of your cloud. PubNub provides the connectivity from your cloud to push data to end clients (phones, tablets, laptops and servers). This is called Real-time Data Push, or Push Notifications. PubNub removes the need for your client apps to constantly poll your cloud for new updates. So you can push data from a Server to a Client. And also you may push data from one Server to another Server, just like Azure ServiceBus ESB. Another option is available for a Mobile Phone to Push Data to another Mobile Phone or any endpoint. With PubNub this becomes easy using the two basic Publish/Subscribe APIs. Additionally PubNub provides automatic Broadcasting. When multiple clients/servers/phones are subscribed to a single channel, each endpoint receives a published message simultaneously.",PubnubUWP,True,2018-04-09T14:32:24.1+00:00,False,False,PubNub is a Massively Scalable Web Push Service for Web and Mobile Games.  This is a cloud-based service for broadcasting messages to thousands of web and mobile clients simultaneously,"Web,Data,Push,Real-time,Notifications,ESB,Message,Broadcasting,Distributed,Computing",4169,False,4.0.1.3-rc4
+Pandu Masabathula,2017-01-31T18:45:49.157Z,11,444,"PubNub allows you to securely connect mobile phones, tablets, laptops, desktops and other clients outside of your cloud. PubNub provides the connectivity from your cloud to push data to end clients (phones, tablets, laptops and servers). This is called Real-time Data Push, or Push Notifications. PubNub removes the need for your client apps to constantly poll your cloud for new updates. So you can push data from a Server to a Client. And also you may push data from one Server to another Server, just like Azure ServiceBus ESB. Another option is available for a Mobile Phone to Push Data to another Mobile Phone or any endpoint. With PubNub this becomes easy using the two basic Publish/Subscribe APIs. Additionally PubNub provides automatic Broadcasting. When multiple clients/servers/phones are subscribed to a single channel, each endpoint receives a published message simultaneously.",PubnubPCL,True,2018-04-09T14:33:41.9+00:00,False,False,PubNub is a Massively Scalable Web Push Service for Web and Mobile Games.  This is a cloud-based service for broadcasting messages to thousands of web and mobile clients simultaneously,"Web,Data,Push,Real-time,Notifications,ESB,Message,Broadcasting,Distributed,Computing",46691,False,4.0.1.3-rc4
+Pandu Masabathula,2017-02-08T08:14:25.46Z,11,436,"PubNub allows you to securely connect mobile phones, tablets, laptops, desktops and other clients outside of your cloud. PubNub provides the connectivity from your cloud to push data to end clients (phones, tablets, laptops and servers). This is called Real-time Data Push, or Push Notifications. PubNub removes the need for your client apps to constantly poll your cloud for new updates. So you can push data from a Server to a Client. And also you may push data from one Server to another Server, just like Azure ServiceBus ESB. Another option is available for a Mobile Phone to Push Data to another Mobile Phone or any endpoint. With PubNub this becomes easy using the two basic Publish/Subscribe APIs. Additionally PubNub provides automatic Broadcasting. When multiple clients/servers/phones are subscribed to a single channel, each endpoint receives a published message simultaneously.",PubnubPCL,True,2018-04-09T14:33:41.9+00:00,False,False,PubNub is a Massively Scalable Web Push Service for Web and Mobile Games.  This is a cloud-based service for broadcasting messages to thousands of web and mobile clients simultaneously,"Web,Data,Push,Real-time,Notifications,ESB,Message,Broadcasting,Distributed,Computing",46691,False,4.0.1.3-rc5
+Pandu Masabathula,2017-02-08T08:14:50.023Z,11,436,"PubNub allows you to securely connect mobile phones, tablets, laptops, desktops and other clients outside of your cloud. PubNub provides the connectivity from your cloud to push data to end clients (phones, tablets, laptops and servers). This is called Real-time Data Push, or Push Notifications. PubNub removes the need for your client apps to constantly poll your cloud for new updates. So you can push data from a Server to a Client. And also you may push data from one Server to another Server, just like Azure ServiceBus ESB. Another option is available for a Mobile Phone to Push Data to another Mobile Phone or any endpoint. With PubNub this becomes easy using the two basic Publish/Subscribe APIs. Additionally PubNub provides automatic Broadcasting. When multiple clients/servers/phones are subscribed to a single channel, each endpoint receives a published message simultaneously.",Pubnub,True,2018-04-09T14:34:23.07+00:00,False,False,PubNub is a Massively Scalable Web Push Service for Web and Mobile Games.  This is a cloud-based service for broadcasting messages to thousands of web and mobile clients simultaneously,"Web,Data,Push,Real-time,Notifications,ESB,Message,Broadcasting,Distributed,Computing",61640,False,4.0.1.3-rc5
+Pandu Masabathula,2017-02-17T10:24:41.383Z,11,427,"PubNub allows you to securely connect mobile phones, tablets, laptops, desktops and other clients outside of your cloud. PubNub provides the connectivity from your cloud to push data to end clients (phones, tablets, laptops and servers). This is called Real-time Data Push, or Push Notifications. PubNub removes the need for your client apps to constantly poll your cloud for new updates. So you can push data from a Server to a Client. And also you may push data from one Server to another Server, just like Azure ServiceBus ESB. Another option is available for a Mobile Phone to Push Data to another Mobile Phone or any endpoint. With PubNub this becomes easy using the two basic Publish/Subscribe APIs. Additionally PubNub provides automatic Broadcasting. When multiple clients/servers/phones are subscribed to a single channel, each endpoint receives a published message simultaneously.",Pubnub,True,2018-04-09T14:34:23.07+00:00,False,False,PubNub is a Massively Scalable Web Push Service for Web and Mobile Games.  This is a cloud-based service for broadcasting messages to thousands of web and mobile clients simultaneously,"Web,Data,Push,Real-time,Notifications,ESB,Message,Broadcasting,Distributed,Computing",61640,False,4.0.1.3-rc6
+Pandu Masabathula,2017-02-28T15:08:12.157Z,11,416,"PubNub allows you to securely connect mobile phones, tablets, laptops, desktops and other clients outside of your cloud. PubNub provides the connectivity from your cloud to push data to end clients (phones, tablets, laptops and servers). This is called Real-time Data Push, or Push Notifications.
+
+PubNub removes the need for your client apps to constantly poll your cloud for new updates. So you can push data from a Server to a Client. And also you may push data from one Server to another Server, just like Azure ServiceBus ESB.
+
+Another option is available for a Mobile Phone to Push Data to another Mobile Phone or any endpoint. With PubNub this becomes easy using the two basic Publish/Subscribe APIs.
+
+Additionally PubNub provides automatic Broadcasting. When multiple clients/servers/phones are subscribed to a single channel, each endpoint receives a published message simultaneously.",PubnubPCL,True,2018-04-09T14:33:41.9+00:00,False,False,PubNub is a Massively Scalable Web Push Service for Web and Mobile Games.  This is a cloud-based service for broadcasting messages to thousands of web and mobile clients simultaneously,"Web,Data,Push,Real-time,Notifications,ESB,Message,Broadcasting,Distributed,Computing",46691,False,3.8.6-rc1
+Pandu Masabathula,2017-02-17T10:25:03.337Z,11,427,"PubNub allows you to securely connect mobile phones, tablets, laptops, desktops and other clients outside of your cloud. PubNub provides the connectivity from your cloud to push data to end clients (phones, tablets, laptops and servers). This is called Real-time Data Push, or Push Notifications. PubNub removes the need for your client apps to constantly poll your cloud for new updates. So you can push data from a Server to a Client. And also you may push data from one Server to another Server, just like Azure ServiceBus ESB. Another option is available for a Mobile Phone to Push Data to another Mobile Phone or any endpoint. With PubNub this becomes easy using the two basic Publish/Subscribe APIs. Additionally PubNub provides automatic Broadcasting. When multiple clients/servers/phones are subscribed to a single channel, each endpoint receives a published message simultaneously.",PubnubPCL,True,2018-04-09T14:33:41.9+00:00,False,False,PubNub is a Massively Scalable Web Push Service for Web and Mobile Games.  This is a cloud-based service for broadcasting messages to thousands of web and mobile clients simultaneously,"Web,Data,Push,Real-time,Notifications,ESB,Message,Broadcasting,Distributed,Computing",46691,False,4.0.1.3-rc6
+Pandu Masabathula,2017-02-28T15:14:29.107Z,11,416,"PubNub allows you to securely connect mobile phones, tablets, laptops, desktops and other clients outside of your cloud. PubNub provides the connectivity from your cloud to push data to end clients (phones, tablets, laptops and servers). This is called Real-time Data Push, or Push Notifications.
+
+PubNub removes the need for your client apps to constantly poll your cloud for new updates. So you can push data from a Server to a Client. And also you may push data from one Server to another Server, just like Azure ServiceBus ESB.
+
+Another option is available for a Mobile Phone to Push Data to another Mobile Phone or any endpoint. With PubNub this becomes easy using the two basic Publish/Subscribe APIs.
+
+Additionally PubNub provides automatic Broadcasting. When multiple clients/servers/phones are subscribed to a single channel, each endpoint receives a published message simultaneously.",Pubnub,True,2018-04-09T14:34:23.07+00:00,False,False,PubNub is a Massively Scalable Web Push Service for Web and Mobile Games.  This is a cloud-based service for broadcasting messages to thousands of web and mobile clients simultaneously,"Web,Data,Push,Real-time,Notifications,ESB,Message,Broadcasting,Distributed,Computing",61640,False,3.8.6-rc1
+Pandu Masabathula,2017-01-31T18:45:14.703Z,11,444,"PubNub allows you to securely connect mobile phones, tablets, laptops, desktops and other clients outside of your cloud. PubNub provides the connectivity from your cloud to push data to end clients (phones, tablets, laptops and servers). This is called Real-time Data Push, or Push Notifications. PubNub removes the need for your client apps to constantly poll your cloud for new updates. So you can push data from a Server to a Client. And also you may push data from one Server to another Server, just like Azure ServiceBus ESB. Another option is available for a Mobile Phone to Push Data to another Mobile Phone or any endpoint. With PubNub this becomes easy using the two basic Publish/Subscribe APIs. Additionally PubNub provides automatic Broadcasting. When multiple clients/servers/phones are subscribed to a single channel, each endpoint receives a published message simultaneously.",Pubnub,True,2018-04-09T14:34:23.07+00:00,False,False,PubNub is a Massively Scalable Web Push Service for Web and Mobile Games.  This is a cloud-based service for broadcasting messages to thousands of web and mobile clients simultaneously,"Web,Data,Push,Real-time,Notifications,ESB,Message,Broadcasting,Distributed,Computing",61640,False,4.0.1.3-rc4
+"Dox Sweden AB,Jovan Paskota",2017-03-02T12:04:48.153Z,2,414,Database layer for Dox Objects,Dox.Net.MsSqlBuilder,False,2018-04-18T09:15:27.35+00:00,True,False,,Dox,22695,False,1.0.43
+Pandu Masabathula,2017-03-02T12:09:36.14Z,11,414,"PubNub allows you to securely connect mobile phones, tablets, laptops, desktops and other clients outside of your cloud. PubNub provides the connectivity from your cloud to push data to end clients (phones, tablets, laptops and servers). This is called Real-time Data Push, or Push Notifications. PubNub removes the need for your client apps to constantly poll your cloud for new updates. So you can push data from a Server to a Client. And also you may push data from one Server to another Server, just like Azure ServiceBus ESB. Another option is available for a Mobile Phone to Push Data to another Mobile Phone or any endpoint. With PubNub this becomes easy using the two basic Publish/Subscribe APIs. Additionally PubNub provides automatic Broadcasting. When multiple clients/servers/phones are subscribed to a single channel, each endpoint receives a published message simultaneously.",PubnubUWP,True,2018-04-09T14:32:24.1+00:00,True,False,PubNub is a Massively Scalable Web Push Service for Web and Mobile Games.  This is a cloud-based service for broadcasting messages to thousands of web and mobile clients simultaneously,"Web,Data,Push,Real-time,Notifications,ESB,Message,Broadcasting,Distributed,Computing",4169,False,4.0.1.3-rc8
+Pandu Masabathula,2017-03-02T12:08:52.573Z,11,414,"PubNub allows you to securely connect mobile phones, tablets, laptops, desktops and other clients outside of your cloud. PubNub provides the connectivity from your cloud to push data to end clients (phones, tablets, laptops and servers). This is called Real-time Data Push, or Push Notifications. PubNub removes the need for your client apps to constantly poll your cloud for new updates. So you can push data from a Server to a Client. And also you may push data from one Server to another Server, just like Azure ServiceBus ESB. Another option is available for a Mobile Phone to Push Data to another Mobile Phone or any endpoint. With PubNub this becomes easy using the two basic Publish/Subscribe APIs. Additionally PubNub provides automatic Broadcasting. When multiple clients/servers/phones are subscribed to a single channel, each endpoint receives a published message simultaneously.",PubnubPCL,True,2018-04-09T14:33:41.9+00:00,True,False,PubNub is a Massively Scalable Web Push Service for Web and Mobile Games.  This is a cloud-based service for broadcasting messages to thousands of web and mobile clients simultaneously,"Web,Data,Push,Real-time,Notifications,ESB,Message,Broadcasting,Distributed,Computing",46691,False,4.0.1.3-rc8
+Pandu Masabathula,2017-03-02T12:08:31.4Z,11,414,"PubNub allows you to securely connect mobile phones, tablets, laptops, desktops and other clients outside of your cloud. PubNub provides the connectivity from your cloud to push data to end clients (phones, tablets, laptops and servers). This is called Real-time Data Push, or Push Notifications. PubNub removes the need for your client apps to constantly poll your cloud for new updates. So you can push data from a Server to a Client. And also you may push data from one Server to another Server, just like Azure ServiceBus ESB. Another option is available for a Mobile Phone to Push Data to another Mobile Phone or any endpoint. With PubNub this becomes easy using the two basic Publish/Subscribe APIs. Additionally PubNub provides automatic Broadcasting. When multiple clients/servers/phones are subscribed to a single channel, each endpoint receives a published message simultaneously.",Pubnub,True,2018-04-09T14:34:23.07+00:00,True,False,PubNub is a Massively Scalable Web Push Service for Web and Mobile Games.  This is a cloud-based service for broadcasting messages to thousands of web and mobile clients simultaneously,"Web,Data,Push,Real-time,Notifications,ESB,Message,Broadcasting,Distributed,Computing",61640,False,4.0.1.3-rc8
+Momentum,2017-03-02T12:08:25.337Z,4,414,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.10.4263-beta
+Momentum,2017-03-02T12:08:12.943Z,4,414,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.10.4263-beta
+"Dox Sweden AB,Jovan Paskota",2017-03-02T12:04:48.153Z,2,414,Database layer for Dox Objects,Dox.Net.MsSqlBuilder,False,2018-04-18T09:15:27.35+00:00,True,False,,,22695,False,1.0.43
+Stimulsoft,2017-01-26T09:58:25.837Z,11,449,"Stimulsoft Reports.UWP is a reporting tool that is developed for Windows Universal App. Rich capabilities of rendering, viewing, printing and exporting reports – it's all about Stimulsoft Reports.UWP. The product uses the reports engine for creating reports which is based on the many years experience of developing and using reporting tools. Great many components, properties and parameters, thought over the structure of reports.",Stimulsoft.Reports.UWP,False,2018-04-09T13:25:30.637+00:00,True,False,Stimulsoft Reports.UWP is a reporting tool that is developed for Windows Universal App.,"stimulsoft,report,reports,reporting,tool,generator,net,uwp,universal,windows,platform,sql,xml,json,data,barcode,qr-code,charts,export,pdf,excel",2378,True,2016.3.5
+Stimulsoft,2017-01-26T09:58:25.837Z,11,449,"Stimulsoft Reports.UWP is a reporting tool that is developed for Windows Universal App. Rich capabilities of rendering, viewing, printing and exporting reports – it's all about Stimulsoft Reports.UWP. The product uses the reports engine for creating reports which is based on the many years experience of developing and using reporting tools. Great many components, properties and parameters, thought over the structure of reports.",Stimulsoft.Reports.UWP,False,2018-04-09T13:25:30.637+00:00,True,False,Stimulsoft Reports.UWP is a reporting tool that is developed for Windows Universal App.,"stimulsoft,report,reports,reporting,tool,generator,net,uwp,universal,windows,platform,sql,xml,json,data,barcode,qr-code,charts,export,pdf,excel",2378,True,2016.3.5
+Emaint,2017-03-02T11:59:28.667Z,225,414,An abstraction library to write vendor-independent SQL queries in .NET.,AbstractSqlTree,False,2017-09-07T11:09:27.137+00:00,True,False,,,1527,False,2.0.2
+EscolaDeVoce.Services,2017-03-02T11:58:32.143Z,346,414,EscolaDeVoce.Services,EscolaDeVoce.Services,False,2017-05-09T07:23:12.06-07:00,True,False,,,7881,False,3.3.2
+Michael Coelsch (MyCONVENO),2017-03-02T11:57:01.46Z,375,414,Widgets for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.Widgets,False,2017-04-10T10:02:09.297-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",6874,False,4.1.37
+Northwoods Software,2017-03-02T11:55:35.45Z,25,414,"Use GoJS to create directed and undirected graphs, network diagrams, flowcharts, workflow diagrams, entity relationship diagrams, BPMN and BPEL applications, organization charts, circuit diagrams, tree diagrams (e.g. syntax trees, sitemaps), data flow diagrams, mindmaps, SCADA diagrams, smart grid applications, planogram tools, UML diagrams and much more. Also supports JSON save and restore, popular automatic graph layout algorithms (tree, layered digraph and force directed), a Palette control for drag and drop of visual components and an Overview control for large diagrams.  
+
+This full featured evaluation does not have a time limit, but there is a watermark in the view.  Purchasing a license is required for deployment.",Northwoods.GoJS,False,2018-03-26T16:52:04.24+00:00,True,False,GoJS is a fast and powerful JavaScript library for implementing interactive diagrams in HTML web applications.,"JavaScript,library,html5,canvas,html,diagram,flowchart,orgchart,tree,graph,mindmap,workflow,network,gantt,dataflow,fishbone,UML,BPMN",22279,False,1.7.2
+"Vishal Patel,Vaishakhi Panchmatia",2017-03-02T11:55:05.917Z,43209,414,This is a client to access GAAS Manager,GaasManager.API.Client,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0.44
+Stimulsoft,2017-01-26T09:58:25.837Z,11,449,"Stimulsoft Reports.UWP is a reporting tool that is developed for Windows Universal App. Rich capabilities of rendering, viewing, printing and exporting reports – it's all about Stimulsoft Reports.UWP. The product uses the reports engine for creating reports which is based on the many years experience of developing and using reporting tools. Great many components, properties and parameters, thought over the structure of reports.",Stimulsoft.Reports.UWP,False,2018-04-09T13:25:30.637+00:00,True,False,Package of Stimulsoft Reports.UWP,"stimulsoft,report,reports,reporting,tool,generator,net,uwp,universal,windows,platform,sql,xml,json,data,barcode,qr-code,charts,export,pdf,excel",2378,True,2016.3.5
+Agile Harbor,2017-03-02T11:52:11.88Z,183,414,Magento webservices API wrapper.,MagentoAccess,False,2017-10-19T07:23:43.133+00:00,True,False,Magento webservices API wrapper.,Magento,16944,False,2.5.4
+Stimulsoft,2017-03-02T11:45:23.99Z,43209,414,Reporting tool designed to create reports in the Internet.,Stimulsoft.Reports.NetCore,False,1900-01-01T00:00:00+00:00,False,False,Reporting tool designed to create reports in the Internet.,"stimulsoft,report,reports,reporting,tool,generator,javascript,sql,xml,json,data,barcode,qr-code,charts,export,pdf,excel,net-core",-1,False,2016.3.10
+"Dox Sweden AB,Jovan Paskota",2017-03-02T11:47:09.08Z,334,414,Shared library for Dox projects,Dox.Pcl.SharedLibrary,False,2017-05-21T02:20:48.74-07:00,True,False,,Dox,12136,False,1.0.44
+"Dox Sweden AB,Jovan Paskota",2017-03-02T11:47:09.08Z,334,414,Shared library for Dox projects,Dox.Pcl.SharedLibrary,False,2017-05-21T02:20:48.74-07:00,True,False,,,12136,False,1.0.44
+"Paul D'Ambra,Alexey Ripenko,Andrey Semenov",2017-03-02T11:45:39.257Z,414,414,This is a C# implementation of UK Bank Account Modulus Checking. Modulus Checking is a process used to determine if a given account number could be valid for a given sort code.,Blueberry.ModulusChecker.v4,False,2017-03-02T03:45:39.257-08:00,True,False,,"C#,BankAccount,ModulusChecking,ModulusChecker,Modulus,Direct,Debit,UK",150,False,4.1.0
+Stimulsoft,2017-03-02T11:45:23.99Z,43209,414,Reporting tool designed to create reports in the Internet.,Stimulsoft.Reports.NetCore,False,1900-01-01T00:00:00+00:00,False,False,Reporting tool designed to create reports in the Internet.,"stimulsoft,report,reports,reporting,tool,generator,javascript,sql,xml,json,data,barcode,qr-code,charts,export,pdf,excel,net-core",-1,False,2016.3.10
+Digipost AS,2017-03-02T11:45:41.943Z,112,414,"Klientbibliotek for å administrere elektronisk signering av dokumenter av borgere for en virksomhet. Sentrale funksjoner er opprettelse av signeringsoppdrag, sjekke status på signeringsoppdrag og laste ned dokumenter som er signerte.",digipost-signature-api-client,True,2017-12-29T11:09:04.717+00:00,True,False,,"Posten,Digipost,digital,elektronisk,kvalifisert,signering,signatur,PKI,offentlig,dokumenter",12358,False,3.0.0.95-beta
+SDVentures Team,2017-03-02T11:39:17.46Z,259,414,The package contains abstract interfaces of service bus and specific transport implementation for AMQP/RabbitMQ.,Contour,False,2017-08-04T13:27:59.253+00:00,True,False,A library contains implementation of several EIP patterns to build the service bus.,"rabbitmq,client,servicebus",4342,False,1.3.0
+Ben Abelshausen,2017-03-02T11:36:35.58Z,5,414,Itinero - Routing for .NET.,Itinero,True,2018-04-15T16:38:02.54+00:00,True,False,Itinero is a route planning project for .NET to plan routes in a road network.,"osm,openstreetmap,routing,mapping",29088,False,0.40.0-rc1
+Ben Abelshausen,2017-03-02T11:36:57.08Z,5,414,Itinero.IO.Osm - OpenStreetMap IO.,Itinero.IO.Osm,True,2018-04-15T16:38:16.103+00:00,True,False,Itinero.IO.Osm is a package that enables building Itinero routing databases from OpenStreetMap data.,"osm,openstreetmap,routing,mapping",27346,False,0.40.0-rc1
+Ben Abelshausen,2017-03-02T11:36:46.703Z,155,414,Itinero.Geo - A bridge between Itinero and Geo.,Itinero.Geo,True,2017-11-16T17:01:42.553+00:00,True,False,Itinero.Geo is a package that provides a bridge between Itinero and Geo using NTS/GeoAPI.,"osm,openstreetmap,routing,mapping",23864,False,0.40.0-rc1
+Ben Abelshausen,2017-03-02T11:37:10.02Z,155,414,Library to read shapefiles and use them for routing.,Itinero.IO.Shape,True,2017-11-16T17:02:14.697+00:00,True,False,Library to read shapefiles and use them for routing in Itinero.,"osm,openstreetmap,routing,nts",14692,False,0.40.0-rc1
+Klee Group,2017-03-02T11:30:56.67Z,182,414,Kinetix Workflow Module,Kinetix.Workflow,False,2017-10-20T16:51:10.557+00:00,True,False,,"Kinetix,Workflow",5510,False,0.0.0.55
+redrails,2017-03-02T11:26:48.973Z,126,414,An Un-Official C# wrapper library for the devRant API containing all public API methods.,redrails.devRantDotNet,False,2017-12-15T00:01:50.783+00:00,True,False,,"devrant,unofficial,public,api,wrapper,class,implementation,web,social",511,False,1.0.1
+Stimulsoft,2017-03-02T11:16:37.17Z,11,414,"Stimulsoft Reports.Web is a reporting tool designed to create and render reports in Web. Stimulsoft Reports.Web will provide the complete cycle of report designing, starting with report templates and ending with showing them in a browser. And this can be done without closing a web browser. Stimulsoft Reports.Web is the first reporting tool that allows you to edit reports directly in Web.",Stimulsoft.Reports.Web,False,2018-04-09T10:36:18.98+00:00,True,False,Stimulsoft Reports.Web is a reporting tool designed to create and render reports in Web.,"stimulsoft,report,reports,reporting,tool,generator,net,asp-net,mvc,sql,xml,json,data,barcode,qr-code,charts,export,pdf,excel",10932,True,2016.3.10
+Stimulsoft,2017-03-02T11:16:37.17Z,11,414,"Stimulsoft Reports.Web is a reporting tool designed to create and render reports in Web. Stimulsoft Reports.Web will provide the complete cycle of report designing, starting with report templates and ending with showing them in a browser. And this can be done without closing a web browser. Stimulsoft Reports.Web is the first reporting tool that allows you to edit reports directly in Web.",Stimulsoft.Reports.Web,False,2018-04-09T10:36:18.98+00:00,True,False,Stimulsoft Reports.Web is a reporting tool designed to create and render reports in Web.,"stimulsoft,report,reports,reporting,tool,generator,net,asp-net,mvc,sql,xml,json,data,barcode,qr-code,charts,export,pdf,excel",10932,True,2016.3.10
+Aritter.Infra.Crosscutting,2017-03-02T11:22:49.893Z,43209,414,Aritter.Infra.Crosscutting,Aritter.Infra.Crosscutting,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.1.0
+Slalom Architect Academy,2017-03-02T11:22:39.097Z,322,414,Slalom.Stacks,Slalom.Stacks,True,2017-06-02T12:16:41.723-07:00,True,False,The core library for Stacks.,"slalom,stacks,blocks",36670,False,1.4.60-develop-00215
+Aritter.Web.Seedwork,2017-03-02T11:23:10.477Z,43209,414,Aritter.Web.Seedwork,Aritter.Web.Seedwork,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.1.0
+Slalom Architect Academy,2017-03-02T11:22:47.19Z,43209,414,Slalom.Stacks.Documentation,Slalom.Stacks.Documentation,True,1899-12-31T16:00:00-08:00,False,False,The Documentation library for Stacks.,"slalom,stacks,blocks,documentation",-1,False,1.4.60-develop-00215
+Saket Rajgarhia,2017-03-02T11:23:05.507Z,414,414,Docitt Rabbit Configuration,Docitt.Rabbit,False,2017-03-02T03:23:05.507-08:00,True,False,,,592,False,1.0.6
+Aritter.Infra.Data.Seedwork,2017-03-02T11:23:01.223Z,43209,414,Aritter.Infra.Data.Seedwork,Aritter.Infra.Data.Seedwork,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.1.0
+Slalom Architect Academy,2017-03-02T11:22:55.85Z,43209,414,Slalom.Stacks.TestKit,Slalom.Stacks.TestKit,True,1899-12-31T16:00:00-08:00,False,False,A core test library for Stacks.,"slalom,stacks,test",-1,False,1.4.54-develop-00215
+Aritter.Domain.Seedwork,2017-03-02T11:22:38.567Z,43209,414,Aritter.Domain.Seedwork,Aritter.Domain.Seedwork,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.1.0
+Aritter.Application.Seedwork,2017-03-02T11:22:27.39Z,43209,414,Aritter.Application.Seedwork,Aritter.Application.Seedwork,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.1.0
+Slalom Architect Academy,2017-03-02T11:21:30.213Z,43209,414,Slalom.Stacks.TestKit,Slalom.Stacks.TestKit,True,1899-12-31T16:00:00-08:00,False,False,A core test library for Stacks.,"slalom,stacks,test",-1,False,1.4.54-develop-00214
+Slalom Architect Academy,2017-03-02T11:21:21.79Z,43209,414,Slalom.Stacks.Documentation,Slalom.Stacks.Documentation,True,1899-12-31T16:00:00-08:00,False,False,The Documentation library for Stacks.,"slalom,stacks,blocks,documentation",-1,False,1.4.60-develop-00214
+Slalom Architect Academy,2017-03-02T11:21:12.96Z,322,414,Slalom.Stacks,Slalom.Stacks,True,2017-06-02T12:16:41.723-07:00,True,False,The core library for Stacks.,"slalom,stacks,blocks",36670,False,1.4.60-develop-00214
+GoldenPack!,2017-03-02T11:19:47.683Z,197,414,A simple library that contains some useful extensions for EntityFramework.,Golden.Data.Extensions,False,2017-10-05T06:16:16.07+00:00,True,False,,"golden,goldenlibrary,entityframework,data,database",2647,False,2.5.0
+Michael Coelsch (MyCONVENO),2017-03-02T11:19:52.23Z,375,414,Widgets for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.Widgets,False,2017-04-10T10:02:09.297-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",6874,False,4.1.36
+GoldenPack!,2017-03-02T11:18:01.417Z,70,414,Golden.Core is an open source library that contains some useful components for .net based applications (Win/Web).,Golden.Core,False,2018-02-09T09:06:50.957+00:00,True,False,,"golden,goldenlibrary,persiandatetime,binaryexpression,objectquery",3408,False,2.8.0
+Stimulsoft,2017-03-02T11:16:37.17Z,11,414,"Stimulsoft Reports.Web is a reporting tool designed to create and render reports in Web. Stimulsoft Reports.Web will provide the complete cycle of report designing, starting with report templates and ending with showing them in a browser. And this can be done without closing a web browser. Stimulsoft Reports.Web is the first reporting tool that allows you to edit reports directly in Web.",Stimulsoft.Reports.Web,False,2018-04-09T10:36:18.98+00:00,True,False,Stimulsoft Reports.Web is a reporting tool designed to create and render reports in Web.,"stimulsoft,report,reports,reporting,tool,generator,net,asp-net,mvc,sql,xml,json,data,barcode,qr-code,charts,export,pdf,excel",10932,True,2016.3.10
+Stimulsoft,2016-03-16T13:17:23.93Z,43209,765,"Stimulsoft Reports.Web is a reporting tool designed to create and render reports in Web. Stimulsoft Reports.Web will provide the complete cycle of report designing, starting with report templates and ending with showing them in a browser. And this can be done without closing a web browser. Stimulsoft Reports.Web is the first reporting tool that allows you to edit reports directly in Web.",Stimulsoft.Reports.Web.Trial,False,1899-12-31T16:00:00-08:00,False,False,Trial package of Stimulsoft Reports.Web,"stimulsoft,reports.web,reports,reporting-tool",-1,False,2016.3.14
+Henk Mollema,2017-03-02T11:14:37.437Z,43209,414,Placeholder support for the ASP.NET Core Configuration framework.,Microsoft.Extensions.Configuration.Placeholders,True,1900-01-01T00:00:00+00:00,False,False,,"configuration,placeholders",-1,False,1.0.0-beta1
+卢冠道,2017-03-02T11:12:34.777Z,234,414,轻型ADO.NET操作类,SSystem.Data,False,2017-08-29T03:54:21.19+00:00,True,False,,"ADO.NET,Entity,DBHelper,Database",8980,False,5.6.0.34512
+Zeeshan Bhatti,2017-03-02T11:16:17.84Z,231,414,Common classes used in SDKs generated by APIMATIC as C# .NET Portable Class Library,APIMATIC.SDK.Common,False,2017-09-01T14:11:21.033+00:00,True,False,Common classes used in SDKs generated by APIMATIC as C# .NET Portable Class Library,APIMATIC,9581,False,1.0.1.53
+Stimulsoft,2017-03-02T11:16:37.17Z,11,414,"Stimulsoft Reports.Web is a reporting tool designed to create and render reports in Web. Stimulsoft Reports.Web will provide the complete cycle of report designing, starting with report templates and ending with showing them in a browser. And this can be done without closing a web browser. Stimulsoft Reports.Web is the first reporting tool that allows you to edit reports directly in Web.",Stimulsoft.Reports.Web,False,2018-04-09T10:36:18.98+00:00,True,False,Stimulsoft Reports.Web is a reporting tool designed to create and render reports in Web.,"stimulsoft,report,reports,reporting,tool,generator,net,asp-net,mvc,sql,xml,json,data,barcode,qr-code,charts,export,pdf,excel",10932,True,2016.3.10
+Henk Mollema,2017-03-02T11:14:37.437Z,43209,414,Placeholder support for the ASP.NET Core Configuration framework.,Microsoft.Extensions.Configuration.Placeholders,True,1900-01-01T00:00:00+00:00,False,False,,"configuration,placeholders",-1,False,1.0.0-beta1
+mookid8000,2017-03-02T11:13:40.52Z,30,414,contract tests for Rebus,Rebus.Tests.Contracts,False,2018-03-21T22:12:27.82+00:00,True,False,,"testing,tests,contracts,rebus,queue,messaging,service,bus",8898,False,3.1.1
+mookid8000,2017-03-02T11:13:10.92Z,25,414,lean modern .NET service bus,Rebus,False,2018-03-26T21:26:22.87+00:00,True,False,,"rebus,queue,messaging,service,bus",275153,False,3.1.1
+mookid8000,2017-03-02T11:13:22.283Z,312,414,common forklift stuff to help with new implementations,Rebus.Forklift.Common,False,2017-06-12T14:45:08.197-07:00,True,False,,"rebus,queue,messaging,service,bus",4295,False,3.1.1
+mookid8000,2017-03-02T11:13:31.27Z,312,414,JSON serializer for Rebus that is honest about its dependency on Newtonsoft JSON.NET and thus allows for customizing almost every aspect of how serialization/deserialization is performed,Rebus.NewtonsoftJson,False,2017-06-12T14:45:18.463-07:00,True,False,,"rebus,newtonsoft,json,json.net,serialization",42508,False,3.1.1
+卢冠道,2017-03-02T11:12:34.777Z,234,414,轻型ADO.NET操作类,SSystem.Data,False,2017-08-29T03:54:21.19+00:00,True,False,,"ADO.NET,Entity,DBHelper",8980,False,5.6.0.34512
+Aritter.API.Seedwork,2017-02-21T16:30:31.17Z,43209,423,Aritter.API.Seedwork,Aritter.API.Seedwork,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+IC#Code,2017-03-02T11:09:20.043Z,236,414,"SharpZipLib (#ziplib, formerly NZipLib) is a compression library for Zip, GZip, BZip2, and Tar written entirely in C# for .NET. It is implemented as an assembly (installable in the GAC), and thus can easily be incorporated into other projects (in any .NET language)",ICSharpCode.SharpZipLib-dogfood,False,2017-08-27T11:08:48.243+00:00,True,False,"""Dogfood"" builds for testing purposes. Even *I* wouldn't put this code into production :)","Compression,Library,Zip,GZip,BZip2,LZW,Tar",26751,False,1.0.166
+Hintea Dan Alexandru,2017-03-02T11:01:28.5Z,213,414,One very easy solution for tracking the version of your application. Zero input from developer; the library processes the current version by analyzing the app's GIT repo.,H.Versioning,False,2017-09-19T09:06:27.27+00:00,True,False,One very easy solution for tracking the version of your application.,"version,git,versioning,tracking,track,deploy,automation,hintea,dan,alexandru,hintee,tee",1168,False,1.2.1
+Ekin Caglar,2017-03-01T13:50:45.523Z,22,415,.Net wrapper for Clarizen,Ekin.Clarizen,False,2018-03-29T15:40:31.603+00:00,False,False,,"clarizen,api,ekin,caglar",3031,False,1.2.3.24849
+Saket Rajgarhia,2017-03-02T10:59:59.58Z,414,414,Docitt Rabbit Configuration,Docitt.Rabbit,False,2017-03-02T03:23:05.507-08:00,True,False,,,592,False,1.0.5
+Eskindir,2017-03-02T10:57:54.607Z,414,414,This is the package for detokenizing texts,sproadmap-detokenizer,False,2017-03-02T02:57:54.607-08:00,True,False,,"sproadmap,detokenizer",132,False,1.0.0
+WildGums,2017-03-02T10:57:42.57Z,1,414,This library makes managing projects very easy.,Orc.ProjectManagement,False,2018-04-19T07:54:37.533+00:00,True,False,,"orc,project,management",17417,True,1.2.1
+Ekin Caglar,2017-03-02T10:11:30.413Z,22,414,.Net wrapper for Clarizen,Ekin.Clarizen,False,2018-03-29T15:40:31.603+00:00,False,False,,"clarizen,api,ekin,caglar",3031,False,1.2.5.18275
+Ekin Caglar,2017-03-02T10:52:47.397Z,22,414,.Net wrapper for Clarizen,Ekin.Clarizen,False,2018-03-29T15:40:31.603+00:00,True,False,,"clarizen,api,ekin,caglar",3031,False,1.2.6.19497
+Eskindir Abdela,2017-03-02T10:49:31.72Z,43209,414,This package contains autorest imlpementation of the SProadmap API,sproadmap-nuget,False,1899-12-31T16:00:00-08:00,False,False,,"SProadmap,API,KB,Customer",406,False,1.1.0
+Eskindir Abdela,2017-03-02T10:49:31.72Z,43209,414,This package contains autorest imlpementation of the SProadmap API,sproadmap-nuget,False,1899-12-31T16:00:00-08:00,False,False,,"SProadmap,API,KB,Customer",406,False,1.1.0
+Muhammad Aladdin,2017-03-02T10:43:01.88Z,414,414,MapLess is a minimal Micro-ORM library to map database objects to application interfaces.,MapLess,False,2017-03-02T02:43:01.88-08:00,True,False,,"MapLess,ORM,Micro-ORM,Database,Mapper,SQL,Mapping,DataAccess,DAL",585,False,1.0.2
+Saket Rajgarhia,2017-03-02T10:45:24.58Z,414,414,Docitt Rabbit Configuration,Docitt.Rabbit,False,2017-03-02T03:23:05.507-08:00,True,False,,,592,False,1.0.4
+Momentum,2017-03-02T10:44:18.94Z,4,414,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.10.4262-beta
+DAS,2017-03-02T10:44:18.753Z,2,414,Provides types for the SFA.DAS.Commitments.Api service,SFA.DAS.Commitments.Api.Types,False,2018-04-18T12:41:54.81+00:00,True,False,Types for the SFA.DAS.Commitments.Api service,,12688,False,1.28.0.24319
+Momentum,2017-03-02T10:44:06.313Z,4,414,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.10.4262-beta
+Muhammad Aladdin,2017-03-02T10:43:01.88Z,414,414,MapLess is a minimal ORM library to map database objects to application interfaces.,MapLess,False,2017-03-02T02:43:01.88-08:00,True,False,,"MapLess,ORM,Database,Mapper,SQL",585,False,1.0.2
+DAS,2017-03-02T10:44:09.11Z,2,414,Provides a client layer to call the SFA.DAS.Commitments.Api service,SFA.DAS.Commitments.Api.Client,False,2018-04-18T12:41:52.14+00:00,True,False,Client layer for SFA.DAS.Commitments.Api service,,12357,False,1.28.0.24319
+Muhammad Aladdin,2017-03-02T09:31:41.45Z,414,414,MapLess is a minimal Micro-ORM library to map database objects to application interfaces.,MapLess,False,2017-03-02T02:43:01.88-08:00,False,False,,"MapLess,ORM,Micro-ORM,Database,Mapper,SQL,Mapping,DataAccess,DAL",585,False,1.0.1
+Muhammad Aladdin,2017-02-27T14:09:59.063Z,414,417,MapLess is a minimal ORM library to map database objects to application interfaces.,MapLess,False,2017-03-02T02:43:01.88-08:00,False,False,,"MapLess,ORM,Database,Mapper,SQL",585,False,1.0.0
+QINIU,2017-03-02T10:38:09.207Z,408,414,Qiniu (Cloud) C# SDK,Qiniu.Shared,False,2017-03-08T00:03:15.22-08:00,True,False,,,5737,False,7.2.14
+Momentum,2017-03-02T10:33:59.53Z,4,414,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.10.4261-beta
+Saverio Guardato,2017-03-02T10:34:36.71Z,401,414,Mvvm utilities for any platform,Saguar.MvvmUtils.PCL,False,2017-03-15T10:01:46.95-07:00,True,False,Mvvm utilities for any platform,,521,False,1.0.0
+Momentum,2017-03-02T10:33:47.34Z,4,414,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.10.4261-beta
+WEBGE,2017-03-02T10:33:06.767Z,311,414,"Code libraries for Netduino and FEZ Panda, Cobra boards",WebGE.MicroToolsKit,False,2017-06-13T17:03:10.343+00:00,True,False,"Currently supported : I/O, Displays, Motor drivers, Sensors, IHM
+
+          I/O
+          - PCF8574: remote 8-bit I/O expander for I 2C-bus, 
+          - MCP342x: 18-Bit, Multi-Channel ΔΣ Analog-to-Digital Converter with I2C Interface and On-Board Reference
+          
+          Displays
+          - PCF2119: LCD controllers/drivers (BATRON, MIDAS)
+          - ELCD162: 2x16 lcdmodule,
+
+          Motor drivers 
+          - MD25: Dual 12Volt 2.8Amp H Bridge Motor Drive,
+          - EasyDriver V4.4, 
+
+          Sensors
+          - HMC6352: Digital Compass solution,
+          - SRF08: Ultra sonic range finder, 
+          - TMP102: Low-Power Digital Temperature Sensor With SMBus and Two-Wire Serial Interface
+          - TSL2561: LIGHT-TO-DIGITAL CONVERTER Digital Output with  I2C
+          - MLX90614: Digital Non-Contact Infrared Thermometer
+
+          IHM
+          - SSI","microcontroleur,Netduino,FEZ,Panda,GHI,NETMF,Csharp",1086,False,1.4.3
+Hibernating Rhinos LTD,2017-03-02T10:31:08.803Z,4,414,"EntityFramework Profiler is a real-time visual debugger allowing a development team to gain valuable insight and perspective into their usage of EntityFramework. The product is architected with input coming from many top industry leaders within the OR/M community. Alerts are presented in a concise code-review manner indicating patterns of misuse by your application. To streamline your efforts to correct the misuse, we provide links to the problematic code section that triggered the alert.
+
+We provide a 30 day trial to download and see for yourself, the value you will receive with your purchase of EntityFramework Profiler.",EntityFrameworkProfiler,False,2018-04-16T10:47:29.347+00:00,True,False,This package let you profile your EntityFramework application easily!,"EntityFramework,Profiler,Prof,EFProf",233393,True,4.0.4038
+Hibernating Rhinos LTD,2017-03-02T10:31:23.59Z,4,414,"EntityFramework Profiler is a real-time visual debugger allowing a development team to gain valuable insight and perspective into their usage of EntityFramework. The product is architected with input coming from many top industry leaders within the OR/M community. Alerts are presented in a concise code-review manner indicating patterns of misuse by your application. To streamline your efforts to correct the misuse, we provide links to the problematic code section that triggered the alert.
+
+This package contains the EntityFrameworkProfiler's appender.dll only.",EntityFrameworkProfiler.Appender,False,2018-04-16T10:47:54.91+00:00,True,False,This package let you profile your EntityFramework application easily!,"EntityFramework,Profiler,Prof,EFProf",108128,True,4.0.4038
+Hibernating Rhinos LTD,2017-03-02T10:29:20.157Z,4,414,"NHibernate Profiler is a real-time visual debugger allowing a development team to gain valuable insight and perspective into their usage of NHibernate. The product is architected with input coming from many top industry leaders within the NHibernate community. Alerts are presented in a concise code-review manner indicating patterns of misuse by your application. To streamline your efforts to correct the misuse, we provide links to the problematic code section that triggered the alert.
+
+This package contains the NHibernateProfiler's appender.dll only.",NHibernateProfiler.Appender,False,2018-04-16T10:44:28.857+00:00,True,False,This package let you profile your NHibernate application easily!,"NHibernate,Profiler,Prof,NHProf",209277,True,4.0.4038
+Hibernating Rhinos LTD,2017-03-02T10:29:03.233Z,4,414,"NHibernate Profiler is a real-time visual debugger allowing a development team to gain valuable insight and perspective into their usage of NHibernate. The product is architected with input coming from many top industry leaders within the NHibernate community. Alerts are presented in a concise code-review manner indicating patterns of misuse by your application. To streamline your efforts to correct the misuse, we provide links to the problematic code section that triggered the alert.
+
+We provide a 30 day trial to download and see for yourself, the value you will receive with your purchase of NHibernate Profiler.",NHibernateProfiler,False,2018-04-16T10:44:06.637+00:00,True,False,This package let you profile your NHibernate application easily!,"NHibernate,Profiler,Prof,NHProf",332479,True,4.0.4038
+Grissom,2017-03-02T10:27:38.31Z,414,414,把 json 结构数据解析成标准的 sql， 实现标准化和自动化的增删改查,EasyJsonToSql,False,2017-03-02T02:27:38.31-08:00,True,False,,"JSON,SQL",529,False,1.1.0
+Push Technology Limited,2017-03-02T10:25:33.03Z,22,414,The Unified Client Interface API for use with the Diffusion family of products.,PushTechnology.UnifiedClientInterface,False,2018-03-29T11:03:20.953+00:00,True,False,The .NET Unified Client Interface API for use with the Diffusion family of products.,"UCI,Unified,Client,Interface,Diffusion,Reappt,Push,Technology,Internet,Messaging,Network",7517,False,5.6.10
+Michael Coelsch (MyCONVENO),2017-03-02T10:24:59.693Z,375,414,Widgets for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.Widgets,False,2017-04-10T10:02:09.297-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",6874,False,4.1.35
+Push Technology Limited,2017-03-02T10:25:33.03Z,22,414,The Unified Client Interface API for use with the Diffusion family of products.,PushTechnology.UnifiedClientInterface,False,2018-03-29T11:03:20.953+00:00,True,False,The .NET Unified Client Interface API for use with the Diffusion family of products.,"UCI,Unified,Client,Interface,Diffusion,Reappt,Push,Technology,Internet,Messaging,Network",7517,False,5.6.10
+Judo.Kafka,2017-03-02T10:25:45.72Z,49,414,Judo.Kafka,Judo.Kafka,False,2018-03-02T06:10:43.407+00:00,True,False,,,6140,False,1.0.6
+Michael Coelsch (MyCONVENO),2017-03-02T10:22:33.307Z,370,414,BaseViewModels for MyCONVENO Sales4Pro.,Sales4Pro.Toolkit.UI.BaseViewModels,False,2017-04-15T07:10:52.937-07:00,True,False,,"MyCONVENO,Sales4Pro,Michael,Coelsch",9233,False,4.1.33
+Ekin Caglar,2017-03-02T09:54:17.653Z,22,414,.Net wrapper for Clarizen,Ekin.Clarizen,False,2018-03-29T15:40:31.603+00:00,False,False,,"clarizen,api,ekin,caglar",3031,False,1.2.4.17750
+rsaikh,2017-03-02T10:21:28.73Z,414,414,This is a library which wraps CRUD operations of REST API and saves the response in string format which can be serialized as per required format like XML or JSON,RESTAPIAutomationCore,False,2017-03-02T02:21:28.73-08:00,True,False,,"REST,API,Automation,Library",170,False,1.0.0
+Saverio Guardato,2017-03-02T09:36:11.933Z,43209,414,Mvvm utilities for any platform,Saguar.MvvmUtils,False,1899-12-31T16:00:00-08:00,False,False,,"Mvvm,utility,cross",-1,False,1.0.0
+rsaikh,2017-03-02T10:21:28.73Z,414,414,This is a library which wraps CRUD operations of REST API and saves the response in string format which can be serialized as per required format like XML or JSON,RESTAPIAutomationCore,False,2017-03-02T02:21:28.73-08:00,True,False,,"REST,API,Automation,Library",170,False,1.0.0
+Andrej Cimperšek,2017-03-01T20:22:22.76Z,78,415,PointlessArhitecture DataAccess,PointlessArhitecture.DataAccess,False,2018-02-01T08:43:30.253+00:00,False,False,,PointlessArhitecture,7597,False,1.0.6269.38449
+Andrej Cimperšek,2017-03-02T09:19:00.123Z,78,414,PointlessArhitecture DataAccess,PointlessArhitecture.DataAccess,False,2018-02-01T08:43:30.253+00:00,False,False,,PointlessArhitecture,7597,False,1.0.6270.18546
+Andrej Cimperšek,2017-03-02T10:16:19.407Z,78,414,PointlessArhitecture DataAccess,PointlessArhitecture.DataAccess,False,2018-02-01T08:43:30.253+00:00,True,False,,PointlessArhitecture,7597,False,1.0.6270.20204
+Andrej Cimperšek,2017-02-27T18:14:30.65Z,78,417,PointlessArhitecture DataAccess,PointlessArhitecture.DataAccess,False,2018-02-01T08:43:30.253+00:00,False,False,,PointlessArhitecture,7597,False,1.0.6267.34620
+Andrej Cimperšek,2017-03-02T09:19:23.04Z,189,414,PointlessArhitecture Authentication,PointlessArhitecture.Authentication,False,2017-10-13T12:46:49.733+00:00,False,False,,PointlessArhitecture,1319,False,1.0.6270.18545
+Andrej Cimperšek,2017-01-30T17:38:19.22Z,189,445,PointlessArhitecture Authentication,PointlessArhitecture.Authentication,False,2017-10-13T12:46:49.733+00:00,False,False,,PointlessArhitecture,1319,False,1.0.6239.33517
+Ekin Caglar,2017-03-02T10:11:30.413Z,22,414,.Net wrapper for Clarizen,Ekin.Clarizen,False,2018-03-29T15:40:31.603+00:00,True,False,,"clarizen,api,ekin,caglar",3031,False,1.2.5.18275
+Momentum,2017-03-02T10:09:30.367Z,4,414,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.10.4260-beta
+Momentum,2017-03-02T10:09:17.737Z,4,414,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.10.4260-beta
+Google Inc.,2017-03-02T10:08:17.02Z,80,414,"Recommended Google client library to access the Google Cloud Vision API, which integrates Google Vision features, including image labeling, face, logo, and landmark detection, optical character recognition (OCR), and detection of explicit content, into applications.",Google.Cloud.Vision.V1,True,2018-01-30T09:05:41.483+00:00,True,False,Google Cloud Vision API v1 client library,"Google,Cloud,Vision",26053,True,1.0.0-beta01
+Saket Rajgarhia,2017-03-02T10:07:44.357Z,414,414,Docitt Rabbit Configuration,Docitt.Rabbit,False,2017-03-02T03:23:05.507-08:00,True,False,,,592,False,1.0.2
+Harry,2017-03-02T10:03:47.48Z,410,414,Sqlite configuration provider implementation for Microsoft.Extensions.Configuration,Harry.Extensions.MicrosoftConfiguration.Sqlite,True,2017-03-05T21:42:52.367-08:00,True,False,Sqlite configuration provider implementation for Microsoft.Extensions.Configuration,"configuration,sqlite",267,False,0.1.0-alpha1
+"Delegate A/S,Martin Kasban Tange,Magnus Gether Sørensen",2017-03-02T10:07:06.673Z,56,414,A tool for mocking a MS CRM instance when unit testing,XrmMockup2011,True,2018-02-23T12:05:48.237+00:00,True,False,,"microsoft,crm,xrm,dynamics,mockup,fake,c#,csharp,test,testing,unittest,xrmmockup,2011",5230,False,0.2.2-alpha
+"Delegate A/S,Martin Kasban Tange,Magnus Gether Sørensen",2017-03-02T10:07:05.313Z,56,414,A tool for mocking a MS CRM instance when unit testing,XrmMockup2016,True,2018-02-23T12:05:47.767+00:00,True,False,,"microsoft,crm,xrm,dynamics,mockup,fake,c#,csharp,test,testing,unittest,xrmmockup,2016",5329,False,0.2.2-alpha
+"Delegate A/S,Martin Kasban Tange,Magnus Gether Sørensen",2017-03-02T10:07:06.143Z,56,414,A tool for mocking a MS CRM instance when unit testing,XrmMockup2013,True,2018-02-23T12:05:46.597+00:00,True,False,,"microsoft,crm,xrm,dynamics,mockup,fake,c#,csharp,test,testing,unittest,xrmmockup,2013",5218,False,0.2.2-alpha
+"Delegate A/S,Martin Kasban Tange,Magnus Gether Sørensen",2017-03-02T10:07:05.203Z,56,414,A tool for mocking a MS CRM instance when unit testing,XrmMockup2015,True,2018-02-23T12:05:49.643+00:00,True,False,,"microsoft,crm,xrm,dynamics,mockup,fake,c#,csharp,test,testing,unittest,xrmmockup,2015",5269,False,0.2.2-alpha
+Google Inc.,2017-03-02T10:06:54.717Z,213,414,gRPC services for the Google Long Running Operations API. This library is typically used as a dependency for other API client libraries.,Google.LongRunning,True,2017-09-19T15:38:19.56+00:00,True,False,gRPC services for the Google Long Running Operations API.,"Google,Cloud,LongRunning",35442,True,1.0.0-beta07
+苏州星熙数据科技有限公司,2017-03-02T10:06:56.687Z,295,414,Description,DS.DataProvider,False,2017-06-28T23:25:08.693-07:00,True,False,,,3114,False,2.0.0.1
+Google Inc.,2017-03-02T10:06:43.527Z,256,414,"Recommended Google client library to access the Google Cloud Trace API, which sends and retrieves trace data from Google Cloud Trace. Data is generated and available by default for all App Engine applications. Data from other applications can be written to Cloud Trace for display, reporting, and analysis.",Google.Cloud.Trace.V1,True,2017-08-07T09:37:26.73+00:00,True,False,Recommended Google client library to access the Google Cloud Trace API.,"Google,Cloud,Tracing,Trace",55914,True,1.0.0-beta04
+Google Inc.,2017-03-02T10:06:33.26Z,108,414,"Recommended Google client library to access the Google Cloud Storage API. It wraps the Google.Apis.Storage.v1 client library, making common operations simpler in client code. Google Cloud Storage stores and retrieves potentially large, immutable data objects.",Google.Cloud.Storage.V1,True,2018-01-02T11:28:00.477+00:00,True,False,Recommended Google client library to access the Google Cloud Storage API.,"Google,Cloud,Storage",108811,True,1.0.0-beta08
+Google Inc.,2017-03-02T10:06:23.083Z,43209,414,"Recommended Google client library to access the Google Cloud Speech API, which performs speech recognition.",Google.Cloud.Speech.V1Beta1,True,1900-01-01T00:00:00+00:00,False,False,Recommended Google client library to access the Google Cloud Speech API.,"Google,Cloud,Speech",-1,False,1.0.0-alpha06
+Google Inc.,2017-03-02T10:06:13.16Z,3,414,"Recommended Google client library to access the Google Cloud Pub/Sub API, which provides reliable, many-to-many, asynchronous messaging between applications.",Google.Cloud.PubSub.V1,True,2018-04-17T14:40:09.81+00:00,True,False,Recommended Google client library to access the Google Cloud Pub/Sub API.,"Google,Cloud,PubSub",76374,True,1.0.0-beta08
+Google Inc.,2017-03-02T10:06:02.517Z,42,414,"Recommended Google client library to access the Stackdriver Monitoring API, which manages your Stackdriver Monitoring data and configurations. Most projects must be associated with a Stackdriver account, with a few exceptions as noted on the individual method pages.",Google.Cloud.Monitoring.V3,True,2018-03-09T09:46:00.967+00:00,True,False,Recommended Google client library to access the Google Stackdriver Monitoring API.,"Google,Cloud,Monitoring,Stackdriver",7902,True,1.0.0-beta04
+Google Inc.,2017-03-02T10:05:52.593Z,246,414,Google Compute Engine Metadata v1 client library,Google.Cloud.Metadata.V1,True,2017-08-17T18:56:54.57+00:00,True,False,Google Compute Engine Metadata v1 client library,"Google,Cloud,Metadata",5839,True,1.0.0-alpha03

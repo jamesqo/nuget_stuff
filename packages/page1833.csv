@@ -1,0 +1,1321 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+JACKY,2016-08-29T01:17:27.717Z,56,599,金软科技基础开发框架基础配置运行时文件,Basic.Configuration,False,2018-02-23T06:20:09.913+00:00,True,False,,,15377,False,4.0.2016.1303
+JACKY,2016-08-29T01:17:40.927Z,43209,599,金软科技基础开发框架实体验证模型运行时文件,Basic.Validation,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,4.0.2016.1303
+JACKY,2016-08-29T01:17:57.46Z,56,599,金软科技基础开发框架实体模型运行时文件,Basic.EntityLayer,False,2018-02-23T06:20:25.663+00:00,True,False,,,15154,False,4.0.2016.1303
+JACKY,2016-08-28T02:16:35.317Z,56,600,金软科技基础开发框架Asp.Net Mvc运行时文件,Basic.Windows,False,2018-02-23T06:22:13.653+00:00,False,False,,,14810,False,4.0.2016.1302
+JACKY,2016-08-28T02:16:03.307Z,56,600,金软科技基础开发框架WinForm运行时文件,Basic.WinForms,False,2018-02-23T06:21:58.623+00:00,False,False,,,14824,False,4.0.2016.1302
+JACKY,2016-08-28T02:15:29.69Z,56,600,金软科技基础开发框架Asp.Net Mvc运行时文件,Basic.MvcLibrary,False,2018-02-23T06:21:23.587+00:00,False,False,,,15743,False,4.0.2016.1302
+JACKY,2016-08-28T02:15:46.613Z,56,600,金软科技基础开发框架Asp.Net Mvc EasyUI运行时文件,Basic.EasyLibrary,False,2018-02-23T06:21:38.87+00:00,False,False,,,15744,False,4.0.2016.1302
+JACKY,2016-08-28T02:14:49.677Z,43209,600,金软科技基础开发框架数据持久类运行时文件(MySQL),Basic.MySqlAccess,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,4.0.2016.1302
+JACKY,2016-08-28T02:15:11.63Z,43209,600,金软科技基础开发框架Asp.Net WebForm运行时文件,Basic.WebForms,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,4.0.2016.1302
+JACKY,2016-08-28T02:14:16.01Z,56,600,金软科技基础开发框架实体模型运行时文件,Basic.EntityLayer,False,2018-02-23T06:20:25.663+00:00,False,False,,,15154,False,4.0.2016.1302
+JACKY,2016-08-28T02:14:38.377Z,56,600,金软科技基础开发框架数据持久类运行时文件,Basic.DataAccess,False,2018-02-23T06:21:05.883+00:00,False,False,,,14853,False,4.0.2016.1302
+JACKY,2016-08-28T02:13:11.15Z,56,600,金软科技基础开发框架基础配置运行时文件,Basic.Configuration,False,2018-02-23T06:20:09.913+00:00,False,False,,,15377,False,4.0.2016.1302
+JACKY,2016-08-28T02:13:46.223Z,43209,600,金软科技基础开发框架实体验证模型运行时文件,Basic.Validation,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,4.0.2016.1302
+Hydra,2016-08-28T14:02:47.563Z,100,600,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.7.7
+Hydra,2016-08-29T01:10:48.127Z,100,599,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,True,False,,"orm,database",14493,False,5.7.8
+Smartrak,2016-08-29T01:10:16.14Z,389,599,Extensions on top of root dotnet classes,System.Contrib,False,2017-03-27T14:53:33.667-07:00,True,False,,,3418,False,1.13.0
+Serge Semenov,2016-04-13T02:11:09.38Z,90,737,"Introduces IAsyncEnumerable, IAsyncEnumerator, and ForEachAsync()
+GitHub: https://github.com/tyrotoxin/AsyncEnumerable
+
+PROBLEM SPACE
+
+Helps to (a) create an element provider, where producing an element can take a lot of time
+due to dependency on other asynchronous events (e.g. wait handles, network streams), and
+(b) a consumer that processes those element as soon as they are ready without blocking
+the thread (the processing is scheduled on a worker thread instead).
+
+
+EXAMPLE
+
+using System.Collections.Async;
+
+static IAsyncEnumerable<int> ProduceAsyncNumbers(int start, int end)
+{
+  return new AsyncEnumerable<int>(async yield => {
+
+    // Just to show that ReturnAsync can be used multiple times
+    await yield.ReturnAsync(start);
+
+    for (int number = start + 1; number <= end; number++)
+      await yield.ReturnAsync(number);
+
+    // You can break the enumeration loop with the following call:
+    yield.Break();
+
+    // This won't be executed due to the loop break above
+    await yield.ReturnAsync(12345);
+  });
+}
+
+// Just to compare with synchronous version of enumerator
+static IEnumerable<int> ProduceNumbers(int start, int end)
+{
+  yield return start;
+
+  for (int number = start + 1; number <= end; number++)
+    yield return number;
+
+  yield break;
+
+  yield return 12345;
+}
+
+static async Task ConsumeNumbersAsync()
+{
+  var asyncEnumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  await asyncEnumerableCollection.ForEachAsync(async number => {
+    await Console.Out.WriteLineAsync($""{number}"");
+  });
+}
+
+// Just to compare with synchronous version of enumeration
+static void ConsumeNumbers()
+{
+  // NOTE: IAsyncEnumerable is derived from IEnumerable, so you can use either
+  var enumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  //var enumerableCollection = ProduceNumbers(start: 1, end: 10);
+
+  foreach (var number in enumerableCollection) {
+    Console.Out.WriteLine($""{number}"");
+  }
+}",AsyncEnumerator,False,2018-01-20T20:06:10.01+00:00,False,False,"Introduces IAsyncEnumerable, IAsyncEnumerator, and ForEachAsync()","IAsyncEnumerable,IAsyncEnumerator,ForEachAsync,async,await,foreach",137339,False,1.0.2
+Serge Semenov,2016-04-05T19:32:57.537Z,90,745,"Introduces IAsyncEnumerable, IAsyncEnumerator, and ForEachAsync()
+GitHub: https://github.com/tyrotoxin/AsyncEnumerable
+
+PROBLEM SPACE
+
+Helps to (a) create an element provider, where producing an element can take a lot of time
+due to dependency on other asynchronous events (e.g. wait handles, network streams), and
+(b) a consumer that processes those element as soon as they are ready without blocking
+the thread (the processing is scheduled on a worker thread instead).
+
+
+EXAMPLE
+
+using System.Collections.Async;
+
+static IAsyncEnumerable<int> ProduceAsyncNumbers(int start, int end)
+{
+  return new AsyncEnumerable<int>(async yield => {
+
+    // Just to show that ReturnAsync can be used multiple times
+    await yield.ReturnAsync(start);
+
+    for (int number = start + 1; number <= end; number++)
+      await yield.ReturnAsync(number);
+
+    // You can break the enumeration loop with the following call:
+    yield.Break();
+
+    // This won't be executed due to the loop break above
+    await yield.ReturnAsync(12345);
+  });
+}
+
+// Just to compare with synchronous version of enumerator
+static IEnumerable<int> ProduceNumbers(int start, int end)
+{
+  yield return start;
+
+  for (int number = start + 1; number <= end; number++)
+    yield return number;
+
+  yield break;
+
+  yield return 12345;
+}
+
+static async Task ConsumeNumbersAsync()
+{
+  var asyncEnumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  await asyncEnumerableCollection.ForEachAsync(async number => {
+    await Console.Out.WriteLineAsync($""{number}"");
+  });
+}
+
+// Just to compare with synchronous version of enumeration
+static void ConsumeNumbers()
+{
+  // NOTE: IAsyncEnumerable is derived from IEnumerable, so you can use either
+  var enumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  //var enumerableCollection = ProduceNumbers(start: 1, end: 10);
+
+  foreach (var number in enumerableCollection) {
+    Console.Out.WriteLine($""{number}"");
+  }
+}",AsyncEnumerator,False,2018-01-20T20:06:10.01+00:00,False,False,"Introduces IAsyncEnumerable, IAsyncEnumerator, and ForEachAsync()","IAsyncEnumerable,IAsyncEnumerator,ForEachAsync,async,await,foreach",137339,False,1.0.1
+Serge Semenov,2016-03-16T19:12:11.567Z,90,765,"Introduces IAsyncEnumerable, IAsyncEnumerator, and ForEachAsync()
+GitHub: https://github.com/tyrotoxin/AsyncEnumerable
+
+PROBLEM SPACE
+
+Helps to (a) create an element provider, where producing an element can take a lot of time
+due to dependency on other asynchronous events (e.g. wait handles, network streams), and
+(b) a consumer that processes those element as soon as they are ready without blocking
+the thread (the processing is scheduled on a worker thread instead).
+
+
+EXAMPLE
+
+using System.Collections.Async;
+
+static IAsyncEnumerable<int> ProduceAsyncNumbers(int start, int end)
+{
+  return new AsyncEnumerable<int>(async yield => {
+
+    // Just to show that ReturnAsync can be used multiple times
+    await yield.ReturnAsync(start);
+
+    for (int number = start + 1; number <= end; number++)
+      await yield.ReturnAsync(number);
+
+    // You can break the enumeration loop with the following call:
+    yield.Break();
+
+    // This won't be executed due to the loop break above
+    await yield.ReturnAsync(12345);
+  });
+}
+
+// Just to compare with synchronous version of enumerator
+static IEnumerable<int> ProduceNumbers(int start, int end)
+{
+  yield return start;
+
+  for (int number = start + 1; number <= end; number++)
+    yield return number;
+
+  yield break;
+
+  yield return 12345;
+}
+
+static async Task ConsumeNumbersAsync()
+{
+  var asyncEnumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  await asyncEnumerableCollection.ForEachAsync(async number => {
+    await Console.Out.WriteLineAsync($""{number}"");
+  });
+}
+
+// Just to compare with synchronous version of enumeration
+static void ConsumeNumbers()
+{
+  // NOTE: IAsyncEnumerable is derived from IEnumerable, so you can use either
+  var enumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  //var enumerableCollection = ProduceNumbers(start: 1, end: 10);
+
+  foreach (var number in enumerableCollection) {
+    Console.Out.WriteLine($""{number}"");
+  }
+}",AsyncEnumerator,False,2018-01-20T20:06:10.01+00:00,False,False,"Introduces IAsyncEnumerable, IAsyncEnumerator, and ForEachAsync()","IAsyncEnumerable,IAsyncEnumerator,ForEachAsync,async,await,foreach",137339,False,1.0.0.1
+Serge Semenov,2016-08-28T16:24:55.067Z,90,600,"Introduces IAsyncEnumerable, IAsyncEnumerator, ForEachAsync(), and ParallelForEachAsync()
+GitHub: https://github.com/tyrotoxin/AsyncEnumerable
+
+PROBLEM SPACE
+
+Helps to (a) create an element provider, where producing an element can take a lot of time
+due to dependency on other asynchronous events (e.g. wait handles, network streams), and
+(b) a consumer that processes those element as soon as they are ready without blocking
+the thread (the processing is scheduled on a worker thread instead).
+
+
+EXAMPLE
+
+using System.Collections.Async;
+
+static IAsyncEnumerable<int> ProduceAsyncNumbers(int start, int end)
+{
+  return new AsyncEnumerable<int>(async yield => {
+
+    // Just to show that ReturnAsync can be used multiple times
+    await yield.ReturnAsync(start);
+
+    for (int number = start + 1; number <= end; number++)
+      await yield.ReturnAsync(number);
+
+    // You can break the enumeration loop with the following call:
+    yield.Break();
+
+    // This won't be executed due to the loop break above
+    await yield.ReturnAsync(12345);
+  });
+}
+
+// Just to compare with synchronous version of enumerator
+static IEnumerable<int> ProduceNumbers(int start, int end)
+{
+  yield return start;
+
+  for (int number = start + 1; number <= end; number++)
+    yield return number;
+
+  yield break;
+
+  yield return 12345;
+}
+
+static async Task ConsumeNumbersAsync()
+{
+  var asyncEnumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  await asyncEnumerableCollection.ForEachAsync(async number => {
+    await Console.Out.WriteLineAsync($""{number}"");
+  });
+}
+
+// Just to compare with synchronous version of enumeration
+static void ConsumeNumbers()
+{
+  // NOTE: IAsyncEnumerable is derived from IEnumerable, so you can use either
+  var enumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  //var enumerableCollection = ProduceNumbers(start: 1, end: 10);
+
+  foreach (var number in enumerableCollection) {
+    Console.Out.WriteLine($""{number}"");
+  }
+}",AsyncEnumerator,False,2018-01-20T20:06:10.01+00:00,False,False,"Introduces IAsyncEnumerable, IAsyncEnumerator, and ForEachAsync()","IAsyncEnumerable,IAsyncEnumerator,ForEachAsync,async,await,foreach,parallel",137339,False,1.1.1
+Serge Semenov,2016-02-25T18:44:40.503Z,90,785,"Introduces IAsyncEnumerable, IAsyncEnumerator, ForEachAsync(), and ""await yield.ReturnAsync()""
+GitHub: https://github.com/tyrotoxin/AsyncEnumerable
+
+PROBLEM SPACE
+
+Helps to (a) create an element provider, where producing an element can take a lot of time
+due to dependency on other asynchronous events (e.g. wait handles, network streams), and
+(b) a consumer that processes those element as soon as they are ready without blocking
+the thread (the processing is scheduled on a worker thread instead).
+
+
+EXAMPLE
+
+using System.Collections.Async;
+
+static IAsyncEnumerable<int> ProduceAsyncNumbers(int start, int end)
+{
+  return new AsyncEnumerable<int>(async yield => {
+
+    // Just to show that ReturnAsync can be used multiple times
+    await yield.ReturnAsync(start);
+
+    for (int number = start + 1; number <= end; number++)
+      await yield.ReturnAsync(number);
+
+    // You can break the enumeration loop with the following call:
+    yield.Break();
+
+    // This won't be executed due to the loop break above
+    await yield.ReturnAsync(12345);
+  });
+}
+
+// Just to compare with synchronous version of enumerator
+static IEnumerable<int> ProduceNumbers(int start, int end)
+{
+  yield return start;
+
+  for (int number = start + 1; number <= end; number++)
+    yield return number;
+
+  yield break;
+
+  yield return 12345;
+}
+
+static async Task ConsumeNumbersAsync()
+{
+  var asyncEnumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  await asyncEnumerableCollection.ForEachAsync(async number => {
+    await Console.Out.WriteLineAsync($""{number}"");
+  });
+}
+
+// Just to compare with synchronous version of enumeration
+static void ConsumeNumbers()
+{
+  // NOTE: IAsyncEnumerable is derived from IEnumerable, so you can use either
+  var enumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  //var enumerableCollection = ProduceNumbers(start: 1, end: 10);
+
+  foreach (var number in enumerableCollection) {
+    Console.Out.WriteLine($""{number}"");
+  }
+}",AsyncEnumerator,False,2018-01-20T20:06:10.01+00:00,False,False,"Introduces IAsyncEnumerable, IAsyncEnumerator, and ForEachAsync()","IAsyncEnumerable,IAsyncEnumerator,ForEachAsync,async,yield,await,foreach,AsyncEnumerable,AsyncEnumerator",137339,False,1.0.0
+Serge Semenov,2016-08-29T01:03:03.777Z,90,599,"Introduces IAsyncEnumerable, IAsyncEnumerator, ForEachAsync(), and ParallelForEachAsync()
+GitHub: https://github.com/tyrotoxin/AsyncEnumerable
+
+PROBLEM SPACE
+
+Helps to (a) create an element provider, where producing an element can take a lot of time
+due to dependency on other asynchronous events (e.g. wait handles, network streams), and
+(b) a consumer that processes those element as soon as they are ready without blocking
+the thread (the processing is scheduled on a worker thread instead).
+
+
+EXAMPLE
+
+using System.Collections.Async;
+
+static IAsyncEnumerable<int> ProduceAsyncNumbers(int start, int end)
+{
+  return new AsyncEnumerable<int>(async yield => {
+
+    // Just to show that ReturnAsync can be used multiple times
+    await yield.ReturnAsync(start);
+
+    for (int number = start + 1; number <= end; number++)
+      await yield.ReturnAsync(number);
+
+    // You can break the enumeration loop with the following call:
+    yield.Break();
+
+    // This won't be executed due to the loop break above
+    await yield.ReturnAsync(12345);
+  });
+}
+
+// Just to compare with synchronous version of enumerator
+static IEnumerable<int> ProduceNumbers(int start, int end)
+{
+  yield return start;
+
+  for (int number = start + 1; number <= end; number++)
+    yield return number;
+
+  yield break;
+
+  yield return 12345;
+}
+
+static async Task ConsumeNumbersAsync()
+{
+  var asyncEnumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  await asyncEnumerableCollection.ForEachAsync(async number => {
+    await Console.Out.WriteLineAsync($""{number}"");
+  });
+}
+
+// Just to compare with synchronous version of enumeration
+static void ConsumeNumbers()
+{
+  // NOTE: IAsyncEnumerable is derived from IEnumerable, so you can use either
+  var enumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  //var enumerableCollection = ProduceNumbers(start: 1, end: 10);
+
+  foreach (var number in enumerableCollection) {
+    Console.Out.WriteLine($""{number}"");
+  }
+}",AsyncEnumerator,False,2018-01-20T20:06:10.01+00:00,True,False,"Introduces IAsyncEnumerable, IAsyncEnumerator, and ForEachAsync()","IAsyncEnumerable,IAsyncEnumerator,ForEachAsync,async,await,foreach,parallel",137339,False,1.1.2
+Joseph Woodward,2016-08-29T00:51:43.003Z,599,599,A super-simple fluent API for redirecting legacy routes in ASP.NET Core MVC,RouteUrlRedirector,False,2016-08-28T17:51:43.003-07:00,True,False,A super-simple fluent API for redirecting legacy routes in ASP.NET Core MVC,"seo,redirect,mvc,asp.net,core",218,False,0.1.0
+Joseph Woodward,2016-08-29T00:51:43.003Z,599,599,A super-simple fluent API for redirecting legacy routes in ASP.NET Core MVC,RouteUrlRedirector,False,2016-08-28T17:51:43.003-07:00,True,False,A super-simple fluent API for redirecting legacy routes in ASP.NET Core MVC,"seo,redirect,mvc,asp.net,core",218,False,0.1.0
+sujun,2016-08-29T00:51:36.483Z,598,599,not available,NewBie.Lib.Web,False,2016-08-29T20:47:15.05-07:00,True,False,,NewBie,2239,False,1.0.11
+sujun,2016-08-29T00:49:54.87Z,599,599,Innovation distinguishes between a leader and a follower.,NewBie.Lib,False,2016-08-28T17:49:54.87-07:00,True,False,,NewBie,877,False,1.0.7
+rdelrosario,2016-08-29T00:46:03.37Z,372,599,Handle Push Notifications. Across iOS and Android from a single API.,Xam.Plugin.PushNotification,False,2017-04-13T03:45:27.64+00:00,True,False,Cross Platform Push Notifications Support,"xamarin,pcl,xam.pcl,push,notification,android,ios,wp8.1,windows,uwp",36830,False,1.2.4
+Microsoft,2016-08-29T00:11:17.87Z,22,599,Microsoft Azure Key Vault Cryptography Class Library,Microsoft.Azure.KeyVault.Cryptography,True,2018-03-29T05:40:25.85+00:00,False,False,Class library for Azure Key Vault Cryptography.,"Microsoft,Azure,key,vault,cryptography",161505,True,2.0.0-preview
+Microsoft,2016-08-29T00:11:36.09Z,43209,599,Microsoft Azure Key Vault Test Framework,Microsoft.Azure.KeyVault.TestFramework,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,2.0.0-preview
+Microsoft,2016-08-29T00:11:26.7Z,22,599,Microsoft Azure Key Vault Extensions Class Library,Microsoft.Azure.KeyVault.Extensions,True,2018-03-29T05:46:11.823+00:00,False,False,Class library for Azure Key Vault Extensions,"Microsoft,Azure,key,vault,extensions",383692,True,2.0.0-preview
+Microsoft,2016-08-29T00:11:07.917Z,22,599,Microsoft Azure Key Vault Core Class Library,Microsoft.Azure.KeyVault.Core,True,2018-03-29T01:06:34.973+00:00,False,False,Microsoft Azure Key Vault Core Class Library,"Microsoft,Azure,key,vault,core",9910587,True,2.0.0-preview
+Robert Moore,2016-08-29T00:31:11.793Z,10,599,Serilog event sink that writes to Azure DocumentDB over HTTP.,Serilog.Sinks.AzureDocumentDB,False,2018-04-10T15:30:27.46+00:00,True,False,,"serilog,logging,azure",34630,True,2.1.31
+Microsoft,2016-08-29T00:11:49.63Z,22,599,Microsoft Azure Key Vault WebKey Class Library,Microsoft.Azure.KeyVault.WebKey,True,2018-03-29T05:28:51.63+00:00,True,False,Class library for Azure Key Vault WebKey,"Microsoft,Azure,key,vault,WebKey",2156260,True,2.0.0-preview
+Microsoft,2016-08-29T00:11:36.09Z,43209,599,Microsoft Azure Key Vault Test Framework,Microsoft.Azure.KeyVault.TestFramework,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,2.0.0-preview
+Microsoft,2016-08-29T00:11:26.7Z,22,599,Microsoft Azure Key Vault Extensions Class Library,Microsoft.Azure.KeyVault.Extensions,True,2018-03-29T05:46:11.823+00:00,True,False,Class library for Azure Key Vault Extensions,"Microsoft,Azure,key,vault,extensions",383692,True,2.0.0-preview
+Microsoft,2016-08-29T00:11:17.87Z,22,599,Microsoft Azure Key Vault Cryptography Class Library,Microsoft.Azure.KeyVault.Cryptography,True,2018-03-29T05:40:25.85+00:00,True,False,Class library for Azure Key Vault Cryptography.,"Microsoft,Azure,key,vault,cryptography",161505,True,2.0.0-preview
+Lou Parslow,2016-08-29T00:10:40.377Z,18,599,C# Library,Node.Net,False,2018-04-02T17:22:17.273+00:00,True,False,,JSON,70993,False,1.0.121
+Microsoft,2016-08-29T00:11:07.917Z,22,599,Microsoft Azure Key Vault Core Class Library,Microsoft.Azure.KeyVault.Core,True,2018-03-29T01:06:34.973+00:00,True,False,Microsoft Azure Key Vault Core Class Library,"Microsoft,Azure,key,vault,core",9910587,True,2.0.0-preview
+Microsoft,2016-08-29T00:10:52.767Z,22,599,"Azure Key Vault enables users to store and use cryptographic keys within the Microsoft Azure environment. Azure Key Vault supports multiple key types and algorithms and enables the use of Hardware Security Modules (HSM) for high value customer keys. In addition, Azure Key Vault allows users to securely store secrets in a Key Vault; secrets are limited size octet objects and Azure Key Vault applies no specific semantics to these objects. A Key Vault may contain a mix of keys and secrets at the same time, and access control for the two types of object is independently controlled. Users, subject to appropriate authorization, may: 1) Manage cryptographic keys using Create, Import, Update, Delete and other operations 2) Manage secrets using Get, Set, Delete and other operations 3) Use cryptographic keys with Sign/Verify, WrapKey/UnwrapKey and Encrypt/Decrypt operations. Operations against Key Vaults are authenticated and authorized using Azure Active Directory.",Microsoft.Azure.KeyVault,True,2018-03-29T05:35:04.16+00:00,True,False,Class library for using Azure Key Vault,"Microsoft,Azure,key,vault,Key,Vault,REST,HTTP,client,azureofficial,windowsazureofficial",3066321,True,2.0.0-preview
+Meowtrix,2016-08-29T00:08:53.177Z,598,599,Class library for all .NET platforms.,Meowtrix.UniversalClassLibrary,False,2016-08-30T02:29:24.973-07:00,True,False,,,1818,False,1.3.0
+Smartrak,2016-08-28T23:57:37.93Z,389,600,Extensions on top of root dotnet classes,System.Contrib,False,2017-03-27T14:53:33.667-07:00,True,False,,,3418,False,1.12.1
+Junfeng Li,2016-08-28T23:46:29.41Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,0.1.0.27
+Smartrak,2016-08-28T23:45:27.993Z,389,600,Extensions on top of root dotnet classes,System.Contrib,False,2017-03-27T14:53:33.667-07:00,True,False,,,3418,False,1.12.0
+Code Singularity,2016-08-28T23:37:31.777Z,43209,600,C# Extensions Method Library,LCore,False,1900-01-01T00:00:00+00:00,False,False,,"extensions,C#",42697,False,2016.241.23.35
+Eddie Wassef,2016-08-28T23:33:07.987Z,567,600,"Just a gross over simplification of how to test EF6+. This helper uses the guidance from the EF team and wraps it in a helper class that allows it to return Moq objects for unit testing.
+    Its really just a way to hide the cruft so we can all do better testing.",EntityFramework.Testing.Helpers,False,2016-09-29T18:04:50.86-07:00,True,False,,"EntityFramework,Testing,MOQ,EF",442,False,1.0.8
+Lou Parslow,2016-08-28T23:30:10.63Z,18,600,C# Library,Node.Net,False,2018-04-02T17:22:17.273+00:00,True,False,,JSON,70993,False,1.0.120
+Code Singularity,2016-08-28T23:10:57.847Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.23.9
+Alexey Kinëv,2016-08-28T22:25:55.67Z,581,600,"Various helpers to simplify cross-platform development with Xamarin.Forms.
+
+Available utilities:
+
+- Get device screen size
+- Get current culture info
+- Get image size by path
+- The very basic image resize
+- Box view with rounded corners + shadow support on iOS
+
+Details and samples are available on the project's website:
+https://github.com/TheUniforms/Uniforms-Core",Uniforms.Core,False,2016-09-16T06:12:05.38+00:00,False,False,"Various helpers to simplify cross-platform development with Xamarin.Forms: device screen size, get image size, get current locale etc.","xamarin,utils,pcl,xamarin.forms,ios",1578,False,0.1.3
+Alexey Kinëv,2016-08-28T23:07:10.453Z,581,600,"Various helpers to simplify cross-platform development with Xamarin.Forms.
+
+Available utilities:
+
+- Get device screen size
+- Get current culture info
+- Get image size by path
+- The very basic image resize
+- Box view with rounded corners + shadow support on iOS
+
+Details and samples are available on the project's website:
+https://github.com/TheUniforms/Uniforms-Core",Uniforms.Core,False,2016-09-16T06:12:05.38+00:00,True,False,"Various helpers to simplify cross-platform development with Xamarin.Forms: device screen size, get image size, get current locale etc.","xamarin,utils,pcl,xamarin.forms,ios",1578,False,0.1.4
+sextondjc,2016-08-28T23:00:07.807Z,218,600,A validation helper library. Includes a simple pre-condition checker and a handful of additonal validation attributes derived from the System.ComponentModel.DataAnnotations namespace.,Drapper.Validation,False,2017-09-14T21:20:32.66+00:00,True,False,,,2604,False,1.0.0
+sextondjc,2016-08-28T23:01:13.823Z,390,600,"A simple framework to separate .NET code from SQL code using the Dapper micro ORM.
+      Drapper is a wrapper for Dapper (Dapper + Wrapper = Drapper).",Drapper,False,2017-03-26T08:11:32.86-07:00,True,False,,,2485,False,1.0.0
+sextondjc,2016-08-28T23:01:13.823Z,390,600,"A simple framework to separate .NET code from SQL code using the Dapper micro ORM.
+      Drapper is a wrapper for Dapper (Dapper + Wrapper = Drapper).",Drapper,False,2017-03-26T08:11:32.86-07:00,True,False,,,2485,False,1.0.0
+sextondjc,2016-08-28T23:00:07.807Z,218,600,A validation helper library. Includes a simple pre-condition checker and a handful of additonal validation attributes derived from the System.ComponentModel.DataAnnotations namespace.,Drapper.Validation,False,2017-09-14T21:20:32.66+00:00,True,False,,,2604,False,1.0.0
+Lou Parslow,2016-08-28T22:59:25.08Z,18,600,C# Library,Node.Net,False,2018-04-02T17:22:17.273+00:00,True,False,,JSON,70993,False,1.0.119
+Code Singularity,2016-08-28T22:51:21.473Z,43209,600,C# Extensions Method Library,LCore,False,1900-01-01T00:00:00+00:00,False,False,,"extensions,C#",42697,False,2016.241.22.49
+Chris Powers,2015-12-28T08:18:40.097Z,396,844,TypeScripter is a .NET class library used to generate TypeScript definitions for .NET types.,TypeScripter,False,2017-03-20T05:34:45.98+00:00,False,False,,"TypeScript,Definitions",6000,False,0.4.1
+Chris Powers,2015-11-29T04:50:03.157Z,396,873,TypeScripter is a .NET class library used to generate TypeScript definitions for .NET types.,TypeScripter,False,2017-03-20T05:34:45.98+00:00,False,False,,"TypeScript,Definitions",6000,False,0.4.0
+Chris Powers,2015-06-29T16:03:29.51Z,396,1026,TypeScripter is a .NET class library used to generate TypeScript definitions for .NET types.,TypeScripter,False,2017-03-20T05:34:45.98+00:00,False,False,,"TypeScript,Definitions",6000,False,0.3.1
+Chris Powers,2015-04-07T07:35:01.107Z,396,1109,TypeScripter is a .NET class library used to generate TypeScript definitions for .NET types.,TypeScripter,False,2017-03-20T05:34:45.98+00:00,False,False,,"TypeScript,Definitions",6000,False,0.3.0
+Chris Powers,2016-08-28T22:43:06.237Z,396,600,TypeScripter is a .NET class library used to generate TypeScript definitions for .NET types.,TypeScripter,False,2017-03-20T05:34:45.98+00:00,True,False,,TypeScript,6000,False,0.5.3
+Chris Powers,2016-08-28T22:43:06.237Z,396,600,TypeScripter is a .NET class library used to generate TypeScript definitions for .NET types.,TypeScripter,False,2017-03-20T05:34:45.98+00:00,True,False,,TypeScript,6000,False,0.5.3
+Alexey Kinëv,2016-08-28T22:25:55.67Z,581,600,"Various helpers to simplify cross-platform development with Xamarin.Forms.
+
+Available utilities:
+
+- Get device screen size
+- Get current culture info
+- Get image size by path
+- The very basic image resize
+- Box view with rounded corners + shadow support on iOS
+
+Details and samples are available on the project's website:
+https://github.com/TheUniforms/Uniforms-Core",Uniforms.Core,False,2016-09-16T06:12:05.38+00:00,True,False,"Various helpers to simplify cross-platform development with Xamarin.Forms: device screen size, get image size, get current locale etc.","xamarin,utils,pcl,xamarin.forms,ios",1578,False,0.1.3
+"Ibrahim ben Salah,Xania",2016-08-28T22:26:24.89Z,43209,600,Uni directional html5 templating library with fsharp-like syntax,TemplateJS,True,1899-12-31T16:00:00-08:00,False,False,,,6258,False,0.1.113-alpha
+Alexey Kinëv,2016-08-28T22:18:31.293Z,581,600,"Various helpers to simplify cross-platform development with Xamarin.Forms.
+
+Available utilities:
+
+- Get device screen size
+- Get current culture info
+- Get image size by path
+- The very basic image resize
+- Box view with rounded corners + shadow support on iOS
+
+Details and samples are available on the project's website:
+https://github.com/TheUniforms/Uniforms-Core",Uniforms.Core,False,2016-09-16T06:12:05.38+00:00,False,False,"Various helpers to simplify cross-platform development with Xamarin.Forms: device screen size, get image size, get current locale etc.","xamarin,utils,pcl,xamarin.forms,ios",1578,False,0.1.2
+gregsdennis,2016-08-28T22:25:23.287Z,14,600,"A JSON serializer implementation for Manatee.Trello, backed by Manatee.Json.",Manatee.Trello.ManateeJson,False,2018-04-06T03:22:12.41+00:00,True,False,,"trello,json,manatee",22697,False,1.5.3
+Alexey Kinëv,2016-08-28T22:18:31.293Z,581,600,"Various helpers to simplify cross-platform development with Xamarin.Forms.
+
+Available utilities:
+
+- Get device screen size
+- Get current culture info
+- Get image size by path
+- The very basic image resize
+- Box view with rounded corners + shadow support on iOS
+
+Details and samples are available on the project's website:
+https://github.com/TheUniforms/Uniforms-Core",Uniforms.Core,False,2016-09-16T06:12:05.38+00:00,True,False,"Various helpers to simplify cross-platform development with Xamarin.Forms: device screen size, get image size, get current locale etc.","xamarin,utils,pcl,xamarin.forms,ios",1578,False,0.1.2
+Code Singularity,2016-08-28T22:22:34.56Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.22.21
+Alexey Kinëv,2016-08-28T22:18:31.293Z,581,600,"Various helpers to simplify cross-platform development with Xamarin.Forms.
+
+Available utilities:
+
+- Get device screen size
+- Get current culture info
+- Get image size by path
+- The very basic image resize
+- Box view with rounded corners + shadow support on iOS
+
+Details and samples are available on the project's website:
+https://github.com/TheUniforms/Uniforms-Core",Uniforms.Core,False,2016-09-16T06:12:05.38+00:00,False,False,"Various helpers to simplify cross-platform development with Xamarin.Forms: device screen size, get image size, get current locale etc.","xamarin,utils,pcl,xamarin.forms,ios",1578,False,0.1.2
+Alexey Kinëv,2016-08-28T22:18:31.293Z,581,600,"Various helpers to simplify cross-platform development with Xamarin.Forms.
+
+Available utilities:
+
+- Get device screen size
+- Get current culture info
+- Get image size by path
+- The very basic image resize
+- Box view with rounded corners + shadow support on iOS
+
+Details and samples are available on the project's website:
+https://github.com/TheUniforms/Uniforms-Core",Uniforms.Core,False,2016-09-16T06:12:05.38+00:00,True,False,"Various helpers to simplify cross-platform development with Xamarin.Forms: device screen size, get image size, get current locale etc.","xamarin,utils,pcl,xamarin.forms,ios",1578,False,0.1.2
+Code Singularity,2016-08-28T22:16:47.403Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.22.15
+Serilog Contributors,2016-08-28T22:14:59.203Z,27,600,Simple .NET logging with fully-structured events,Serilog,True,2018-03-24T00:24:46.093+00:00,True,False,,"serilog,logging,semantic,structured",8878646,True,2.2.1-dev-00697
+SerilogMetrics Contributors,2016-08-28T21:56:17.733Z,539,600,"Provides utilities to facilitate metrics (timers, counters, gauges, meters, healthchecks) on top of Serilog.",SerilogMetrics,False,2016-10-28T02:14:15.053-07:00,False,False,,"serilog,metrics,logging,diagnostics,timing,measure",187371,False,2.0.0
+Michael Coelsch,2016-08-28T22:13:51.67Z,43209,600,Internal Toolbox for MyCONVENO Sales4Pro.,S4PToolbox,False,1899-12-31T16:00:00-08:00,False,False,,MyCONVENO,-1,False,4.0.30
+SerilogMetrics Contributors,2016-08-28T22:11:39.727Z,539,600,"Provides utilities to facilitate metrics (timers, counters, gauges, meters, healthchecks) on top of Serilog.",SerilogMetrics,False,2016-10-28T02:14:15.053-07:00,True,False,,"serilog,metrics,logging,diagnostics,timing,measure",187371,False,2.0.1
+Bradley Grainger,2016-08-23T06:05:58.583Z,1,605,A fully async MySQL ADO.NET provider for .NET and .NET Core,MySqlConnector,True,2018-04-19T21:46:48.093+00:00,True,False,,"mysql,async",544847,False,0.1.0-alpha13
+Marco Milani,2016-08-28T22:02:09.09Z,509,600,"MVB Platform WinForms
+UWP platform specific runner for Windows Forms",Mvb.Platform.WinForms,False,2016-11-27T22:07:27.31+00:00,True,False,,"mvb,binder,xamarin,mvb.platform.winforms,winforms,windows,forms",721,False,0.0.8.1
+Mark Vincze,2016-08-28T22:05:01.637Z,199,600,Library for creating Api stubs in .NET.,Stubbery,False,2017-10-03T12:29:12.417+00:00,True,False,,"ASP.NET,Stub,Testing",5363,False,1.2.1
+Tihomir Kit (pootzko),2016-08-28T22:02:28.403Z,192,600,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,True,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.7
+Marco Milani,2016-08-28T22:02:09.09Z,509,600,"MVB Platform WinForms
+UWP platform specific runner for Windows Forms",Mvb.Platform.WinForms,False,2016-11-27T22:07:27.31+00:00,True,False,,"mvb,binder,xamarin,mvb.platform.winforms,winforms,windows,forms",721,False,0.0.8.1
+SerilogMetrics Contributors,2016-08-28T21:56:17.733Z,539,600,"Provides utilities to facilitate metrics (timers, counters, gauges, meters, healthchecks) on top of Serilog.",SerilogMetrics,False,2016-10-28T02:14:15.053-07:00,True,False,,"serilog,metrics,logging,diagnostics,timing,measure",187371,False,2.0.0
+"Ryan James,Adaptable Consulting",2016-08-28T21:53:53.073Z,600,600,Uhhh... It assigns records in bulk.,ACL.XrmToolBox.BulkRecordAssigner,False,2016-08-28T21:53:53.073+00:00,True,False,XrmToolBox plugin to assign records in bulk.,"XrmToolBox,Plugins,BulkRecordAssigner",93683,False,1.2016.9.10
+Beto Rodriguez,2016-08-28T21:53:14.26Z,297,600,"LiveCharts is a modern chartig library: Responsive, animated and MVVM orientated charts",LiveCharts.WinForms,False,2017-06-26T20:44:54.15-07:00,True,False,,"Chart,Charting,Plot,Plotting,WinForms",20741,False,0.7.12
+Beto Rodriguez,2016-08-28T21:50:49.233Z,304,600,"LiveCharts is a modern chartig library: Responsive, animated and MVVM orientated charts, this package is only the core of the library, you must also download the specific version for your platform.",LiveCharts,False,2017-06-19T22:35:36.977-07:00,True,False,,"Chart,Charting,Plot,Plotting",81987,False,0.7.12
+Beto Rodriguez,2016-08-28T21:49:37.887Z,304,600,"LiveCharts is a modern chartig library: Responsive, animated and MVVM orientated charts",LiveCharts.Wpf,False,2017-06-19T22:36:00.87-07:00,True,False,,"Chart,Charting,Plot,Plotting,Wpf,WindowsPresentationFoundation",71471,False,0.7.12
+"Patrik Svensson,Mattias Karlsson,Gary Ewan Park and contributors",2016-08-28T21:41:03.11Z,43209,600,The .NET Core host for Cake.,Cake.Frosting,True,1900-01-01T00:00:00+00:00,False,False,This package makes it possible to write your build scripts as a portable console application.,"Cake,Build,automation",-1,False,0.0.1-placeholder
+Simone Invernizzi,2016-08-28T21:45:36.527Z,56,600,Helpers for Spa_Template,SpaTemplateHelpers,False,2018-02-23T20:17:44.457+00:00,True,False,,,7507,False,1.1.11
+Simone Invernizzi,2016-08-28T21:42:03.75Z,323,600,Grids for KnockoutJs,knockout-grids,False,2017-06-01T02:17:31.937-07:00,True,False,,,3463,False,1.1.5
+"Patrik Svensson,Mattias Karlsson,Gary Ewan Park and contributors",2016-08-28T21:41:03.11Z,43209,600,The .NET Core host for Cake.,Cake.Frosting,True,1900-01-01T00:00:00+00:00,False,False,This package makes it possible to write your build scripts as a portable console application.,"Cake,Build,automation",-1,False,0.0.1-placeholder
+"Patrik Svensson,Mattias Karlsson,Gary Ewan Park and contributors",2016-08-28T21:41:03.11Z,43209,600,The .NET Core host for Cake.,Cake.Frosting,True,1900-01-01T00:00:00+00:00,False,False,This package makes it possible to write your build scripts as a portable console application.,"Cake,Build,automation",-1,False,0.0.1-placeholder
+Michael Coelsch,2016-08-28T21:39:44.207Z,43209,600,Internal Toolbox for MyCONVENO Sales4Pro.,S4PToolbox,False,1899-12-31T16:00:00-08:00,False,False,,MyCONVENO,-1,False,4.0.27
+Simon Elms,2016-08-28T10:11:54.143Z,43209,600,A console-based menu generator.  Menu items are generated by decorating static methods with [MenuMethod] attributes.  Sub-menus are generated by decorating classes with [MenuClass] attributes.,GoldConsoleMenu,False,1900-01-01T00:00:00+00:00,False,False,,"Console,Menu",-1,False,2.0.0
+Tihomir Kit (pootzko),2016-08-28T21:36:02.187Z,43209,600,"For testing of nuget builds, please do not use.",InfluxData.Net.Test,False,1900-01-01T00:00:00+00:00,False,False,"For testing of nuget builds, please do not use.","influx,influxdb,influxdata,kapacitor,TICK-stack",-1,False,0.0.5
+Ademar Gonzalez,2016-08-28T21:36:17.533Z,595,600,This is a .NET client for Monitex's Bitcoin Payments API.,Monitex.Client,False,2016-09-02T12:42:33.7-07:00,True,False,,"bitcoin,payment",1276,False,1.2.2
+Tihomir Kit (pootzko),2016-08-28T21:36:02.187Z,43209,600,"For testing of nuget builds, please do not use.",InfluxData.Net.Test,False,1900-01-01T00:00:00+00:00,False,False,"For testing of nuget builds, please do not use.","influx,influxdb,influxdata,kapacitor,TICK-stack",-1,False,0.0.5
+KLib.Data,2016-08-28T20:39:39.933Z,43209,600,KLib data access/entities module,KLib.Data,False,1900-01-01T00:00:00+00:00,False,False,KLib data access/entities module,"SQL,entities,entity,mapping",-1,False,0.1.0
+Code Singularity,2016-08-28T21:34:53.317Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.21.32
+Code Singularity,2016-08-28T21:33:24.627Z,43209,600,"Unit test stub autogeneration, automatic attribute-based testing, automatic nullability testing, trait-based code coverage",LUnit,False,1900-01-01T00:00:00+00:00,False,False,,,13389,False,2016.241.21.32
+Code Singularity,2016-08-28T21:31:59.513Z,43209,600,"Unit test stub autogeneration, automatic attribute-based testing, automatic nullability testing, trait-based code coverage",LUnit,False,1900-01-01T00:00:00+00:00,False,False,,,13389,False,2016.241.21.28
+Raul Naupari,2016-08-28T21:30:27.12Z,563,600,LightInject implementation of the Jal.Locator library,Jal.Locator.LightInject,False,2016-10-04T16:25:18.763-07:00,True,False,,,508,False,1.0.0
+Code Singularity,2016-08-28T21:29:04.307Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.21.27
+Michael Coelsch,2016-08-28T21:28:18.107Z,43209,600,Internal Toolbox for MyCONVENO Sales4Pro.,S4PToolbox,False,1899-12-31T16:00:00-08:00,False,False,,MyCONVENO,-1,False,4.0.25
+Code Singularity,2016-08-28T21:23:55.65Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.21.22
+KLib.Data,2016-08-28T20:39:39.933Z,43209,600,KLib data access/entities module,KLib.Data,False,1900-01-01T00:00:00+00:00,False,False,KLib data access/entities module,"SQL,entities,entity,mapping",-1,False,0.1.0
+XCommon.CodeGerator,2016-08-28T21:20:42.79Z,43209,600,XCommon.CodeGerator,XCommon.CodeGerator,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.32
+XCommon.Azure,2016-08-28T21:20:36.1Z,189,600,XCommon.Azure,XCommon.Azure,False,2017-10-13T19:30:05.62+00:00,True,False,,,7497,False,1.0.32
+XCommon,2016-08-28T21:20:28.4Z,183,600,XCommon,XCommon,False,2017-10-19T16:42:12.503+00:00,True,False,,,7798,False,1.0.32
+XCommon.EF,2016-08-28T21:20:49.067Z,183,600,XCommon.EF,XCommon.EF,False,2017-10-19T16:42:45.44+00:00,True,False,,,5184,False,1.0.32
+XCommon.Web,2016-08-28T21:20:55.053Z,183,600,XCommon.Web,XCommon.Web,False,2017-10-19T16:42:56.19+00:00,True,False,,,6148,False,1.0.32
+Igor Sidorov,2016-08-28T21:20:09.953Z,428,600,This package provides an easy way to use PromisePay API,PromisePay.API.NET,False,2017-02-16T03:49:15.34-08:00,True,False,,,2762,False,1.1.0
+Michael Coelsch,2016-08-28T21:18:35.513Z,43209,600,Internal Toolbox for MyCONVENO Sales4Pro.,S4PToolbox,False,1899-12-31T16:00:00-08:00,False,False,,MyCONVENO,-1,False,4.0.24
+statenjason,2016-08-28T21:16:05.003Z,10,600,C# WebSocket Implementation,Fleck,False,2018-04-10T03:26:53.8+00:00,True,False,,"websockets,server,html5,events",86503,False,0.14.0.58
+Code Singularity,2016-08-28T21:08:49.293Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.21.7
+Michael Coelsch,2016-08-28T21:02:37.76Z,43209,600,Internal Toolbox for MyCONVENO Sales4Pro.,S4PToolbox,False,1899-12-31T16:00:00-08:00,False,False,,MyCONVENO,-1,False,4.0.22
+Junfeng Li,2016-08-28T21:01:12.973Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,0.1.0.26
+Maxim Okhotskiy,2016-08-28T20:47:21.067Z,43209,600,"These are the pre-built qt5 Libraries v5.6.1-1.
+They are compiled with MSVC for Windows, using Microsoft Visual Studio 2015.",qt5-x86-static-release,False,1899-12-31T16:00:00-08:00,False,False,,"Qt,static,vs2015",-1,False,5.6.1
+Junfeng Li,2016-08-28T20:55:19.557Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,0.1.0.25
+Tihomir Kit (pootzko),2016-08-28T20:57:24.15Z,43209,600,"For testing of nuget builds, please do not use.",InfluxData.Net.Test,False,1900-01-01T00:00:00+00:00,False,False,"For testing of nuget builds, please do not use.","influx,influxdb,influxdata,kapacitor,TICK-stack",-1,False,0.0.4
+Tihomir Kit (pootzko),2016-08-28T20:57:24.15Z,43209,600,"For testing of nuget builds, please do not use.",InfluxData.Net.Test,False,1900-01-01T00:00:00+00:00,False,False,"For testing of nuget builds, please do not use.","influx,influxdb,influxdata,kapacitor,TICK-stack",-1,False,0.0.4
+Junfeng Li,2016-08-28T20:48:07.72Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,0.1.0.24
+Junfeng Li,2016-08-28T20:55:19.557Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,0.1.0.25
+Junfeng Li,2016-08-28T20:55:19.557Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,0.1.0.25
+Junfeng Li,2016-08-28T20:01:29.693Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,0.1.0
+Junfeng Li,2016-08-28T20:45:30.11Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,0.1.0.23
+Junfeng Li,2016-08-28T20:01:29.693Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,0.1.0
+Junfeng Li,2016-08-28T20:36:31.69Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,0.1.0.22
+João Simões,2016-08-28T20:48:16.533Z,600,600,Library that helps developers to handle exceptions outside catch blocks. Typical usages are global exception handlers.,SimpleExceptionHandling,False,2016-08-28T20:48:16.533+00:00,True,False,Library that helps developers to handle exceptions outside catch blocks.,"exception,handler",2943,False,1.1.0
+João Simões,2016-08-28T20:48:16.533Z,600,600,Library that helps developers to handle exceptions outside catch blocks. Typical usages are global exception handlers.,SimpleExceptionHandling,False,2016-08-28T20:48:16.533+00:00,True,False,Library that helps developers to handle exceptions outside catch blocks.,"exception,handler",2943,False,1.1.0
+Junfeng Li,2016-08-28T20:48:07.72Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,0.1.0.24
+Maxim Okhotskiy,2016-08-28T20:47:21.067Z,43209,600,"These are the pre-built qt5 Libraries v5.6.1-1.
+They are compiled with MSVC for Windows, using Microsoft Visual Studio 2015.",qt5-x86-static-release,False,1899-12-31T16:00:00-08:00,False,False,,"Qt,static,vs2015",-1,False,5.6.1
+Tihomir Kit (pootzko),2016-08-28T20:46:09.93Z,43209,600,"For testing of nuget builds, please do not use.",InfluxData.Net.Test,False,1900-01-01T00:00:00+00:00,False,False,"For testing of nuget builds, please do not use.","influx,influxdb,influxdata,kapacitor,TICK-stack",-1,False,0.0.3
+Tihomir Kit (pootzko),2016-08-28T20:46:09.93Z,43209,600,"For testing of nuget builds, please do not use.",InfluxData.Net.Test,False,1900-01-01T00:00:00+00:00,False,False,"For testing of nuget builds, please do not use.","influx,influxdb,influxdata,kapacitor,TICK-stack",-1,False,0.0.3
+KLib.Data,2016-08-28T20:39:39.933Z,43209,600,KLib data access/entities module,KLib.Data,False,1900-01-01T00:00:00+00:00,False,False,KLib data access/entities module,"SQL,entities,entity,mapping",-1,False,0.1.0
+Junfeng Li,2016-08-28T20:45:30.11Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,0.1.0.23
+KLib.Data,2016-08-28T20:39:39.933Z,43209,600,KLib data access/entities module,KLib.Data,False,1900-01-01T00:00:00+00:00,False,False,KLib data access/entities module,"SQL,entities,entity,mapping",-1,False,0.1.0
+KLib.Data,2016-08-28T20:39:39.933Z,43209,600,KLib data access/entities module,KLib.Data,False,1900-01-01T00:00:00+00:00,False,False,KLib data access/entities module,"SQL,entities,entity,mapping",-1,False,0.1.0
+KLib.Data,2016-08-28T20:39:39.933Z,43209,600,KLib data access/entities module,KLib.Data,False,1900-01-01T00:00:00+00:00,False,False,KLib data access/entities module,"SQL,entities,entity,mapping",-1,False,0.1.0
+Junfeng Li,2016-08-28T20:36:31.69Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,0.1.0.22
+Code Singularity,2016-08-28T20:34:55.893Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.20.33
+Tihomir Kit (pootzko),2016-08-28T20:33:12.68Z,43209,600,"For testing of nuget builds, please do not use.",InfluxData.Net.Test,False,1900-01-01T00:00:00+00:00,False,False,"For testing of nuget builds, please do not use.","influx,influxdb,influxdata,kapacitor,TICK-stack",-1,False,0.0.2
+Tihomir Kit (pootzko),2016-08-28T20:33:12.68Z,43209,600,"For testing of nuget builds, please do not use.",InfluxData.Net.Test,False,1900-01-01T00:00:00+00:00,False,False,"For testing of nuget builds, please do not use.","influx,influxdb,influxdata,kapacitor,TICK-stack",-1,False,0.0.2
+Hewlett-Packard,2016-08-28T20:30:42.907Z,557,600,Description,SmartMvcToolkit,False,2016-10-10T11:34:42.21-07:00,True,False,,,3882,False,1.16.0
+Lou Parslow,2016-08-28T20:29:20.04Z,18,600,C# Library,Node.Net,False,2018-04-02T17:22:17.273+00:00,True,False,,JSON,70993,False,1.0.117
+Bernhard Richter,2016-08-28T20:27:54.547Z,600,600,An extension to the LightInject service container that enables dependency injection for SignalR applications. See LightInject.SignalR.Source for the source distribution.,LightInject.SignalR,False,2016-08-28T13:27:54.547-07:00,True,False,,"Ioc,Dependency-Injection,Inversion-of-Control,LightInject,Web,ASP.NET,ASP,AspNet,SignalR,AspNetSignalR",1788,False,1.1.0
+Bernhard Richter,2016-08-28T20:28:01.037Z,600,600,An extension to the LightInject service container that enables dependency injection for SignalR applications. See LightInject.SignalR for the source distribution.,LightInject.SignalR.Source,False,2016-08-28T13:28:01.037-07:00,True,False,,"Ioc,Dependency-Injection,Inversion-of-Control,LightInject,Web,ASP.NET,ASP,AspNet,SignalR,AspNetSignalR",1157,False,1.1.0
+Drew Noakes,2016-08-28T20:20:58.107Z,389,600,A simple dependency injection framework with full support for C# async/await.,Servant,False,2017-03-27T05:13:37.147-07:00,True,False,"Async .NET dependency injection, while you await!","dependency-injection,async-await,async,dependency,injection,container,servant",907,False,0.1.0
+CheetahJS,2016-08-28T20:20:02.73Z,398,600,A Javascript MVVM Framework for fast web development.,CheetahJS,False,2017-03-18T15:33:59.987-07:00,True,False,,,2740,False,1.1.4
+dkackman,2016-01-13T01:26:28.193Z,335,828,"Extension methods that add additional simple statistical calculations to the built in sum, min, max, average etc.
+      Includes Covariance, Median, Mode, Pearson's Chi Squared, Range, Standard Deviation (sample and population), Variance (sample and population), CountEach, Histograms, Root Mean Square, Least Squares and Kurtosis",LinqStatistics,False,2017-05-20T13:22:06.82+00:00,False,False,Extensions that add simple statistical methods,"Linq,Statistics,stats,portable,PCL",29598,False,2.0.0
+Jef King,2016-08-28T20:13:17.36Z,412,600,King.Azure.Data Class Library,King.Azure,False,2017-03-04T19:50:20.577+00:00,True,False,Azure data made simple.,"King.Azure,Azure,Storage,Mock,Mockable,Simple,Data,Table,File,Share,File-Share,Queue,Queuing,Blob,Query,dependency,injection,dependency-injection,Cloud,Table-Storage,Windows-Azure,Windows,dotNet,CSharp,Mocking,Data-Table,Json,WindowsAzure.Storage,.NetCore,DNX",17312,False,2.0.5
+dk-xamarin,2016-08-28T20:10:30.76Z,51,600,"Fork of SQLite.Net-PCL. It supports 64 bit unsigned integers (ulong) stored as blob's, and contains many performance optimizations.",DK.SQLite,False,2018-02-28T22:21:53.7+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",61697,False,1.5.0.8
+dk-xamarin,2016-08-28T20:10:22.17Z,369,600,DK: generic platform (full .net framework!),DK.Generic,False,2017-04-15T23:22:05.273-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",49446,False,1.5.0.8
+dk-xamarin,2016-08-28T20:10:13.143Z,193,600,DK: extended and improved controls for Xamarin.Forms,DK.Controls,False,2017-10-09T23:19:55.443+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",58042,False,1.5.0.8
+dk-xamarin,2016-08-28T20:10:03.56Z,362,600,DK: portable class library (no dependency on Xamarin),DK.Portable,False,2017-04-23T16:25:35.32+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51803,False,1.5.0.8
+"Nicholas Fleck,Andrew Rogers",2016-08-28T20:09:41.52Z,150,600,"Rant is a language for adding rich variations to text. It combines a markup language with functional and imperative programming concepts to deliver a concise but powerful tool for procedurally generating text. The goal of Rant is to augment human creativity with the boundless potential of randomness, enabling content producers to consider their next idea as not just a concept, but a seed for countless possibilities.",Rant,True,2017-11-21T20:04:23.8+00:00,True,False,"Flexible, powerful procedural text generation language","rant,procedural,text,generation,scripting,language,.net,C#",43346,False,2.0.383-dev
+dk-xamarin,2016-08-28T20:09:53.947Z,369,600,DK: android platform specific code,DK.Android,False,2017-04-16T06:22:52.547+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51079,False,1.5.0.8
+CheetahJS,2016-08-28T20:03:34.45Z,398,600,A Javascript MVVM Framework for fast web development.,CheetahJS,False,2017-03-18T15:33:59.987-07:00,True,False,,,2740,False,1.1.3
+Junfeng Li,2016-08-28T20:01:29.693Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,0.1.0
+eherrera,2016-08-28T20:01:06.053Z,43209,600,Description,Quiniecel.Contracts,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Junfeng Li,2016-08-28T19:56:54.1Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,1.0.2
+Joe Audette,2016-08-28T19:57:09.43Z,1,600,"Multi-tenant MVC and WebApi application foundation with management for sites, users, roles, and geographic data.  You should only install this into an empty web application project that does not already have startup code or AspNet Identity installed. This is the main library for cloudscribe. Typically you should not install this directly but instead install the package cloudscribe.Core.Web.Integration which will also install cloudscribe.Web.Core along with the integration code needed to wire it up in your empty web application project. You are allowed to modify the integration code after it is added to your project.",cloudscribe.Core.Web,True,2018-04-19T16:09:14.333+00:00,True,False,"Multi-tenant MVC and WebApi application foundation with management for sites, users, roles, and geographic data","cloudscribe,multi-tenant,mvc6,site,management",18160,False,1.0.0-rc20160829
+Junfeng Li,2016-08-28T19:34:02.9Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,1.0.0
+Junfeng Li,2016-08-28T19:46:22.413Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,1.0.1
+Michael Coelsch,2016-08-28T19:57:47.413Z,43209,600,Internal Toolbox for MyCONVENO Sales4Pro.,S4PToolbox,False,1899-12-31T16:00:00-08:00,False,False,,MyCONVENO,-1,False,4.0.20
+Joe Audette,2016-08-28T19:55:46.537Z,37,600,"model classes for cloudscribe core. you should not normally install this separately, it will be installed if you install cloudscribe.Core.Web",cloudscribe.Core.Models,True,2018-03-14T16:20:53.91+00:00,True,False,,"cloudscribe,models",13614,False,1.0.2-rc20160829
+Joe Audette,2016-08-28T19:56:40.66Z,39,600,NoDb implementation of cloudscribe core commands and queries,cloudscribe.Core.Storage.NoDb,True,2018-03-12T14:06:25.407+00:00,True,False,,"cloudscribe,commands,queries,NoDb",5801,False,1.0.0-rc20160828
+Tihomir Kit (pootzko),2016-08-28T19:56:26.307Z,43209,600,"For testing of nuget builds, please do not use.",InfluxData.Net.Test,False,1900-01-01T00:00:00+00:00,False,False,"For testing of nuget builds, please do not use.","influx,influxdb,influxdata,kapacitor,TICK-stack",-1,False,0.0.1
+Joe Audette,2016-08-28T19:56:16.64Z,583,600,Entity Framework Core implementation of cloudscribe core commands and queries,cloudscribe.Core.Storage.EF,True,2016-09-14T17:17:16.03+00:00,True,False,,"cloudscribe,commands,queries,ef",1037,False,1.0.0-rc20160828
+Joe Audette,2016-08-28T19:57:09.43Z,1,600,"Multi-tenant MVC and WebApi application foundation with management for sites, users, roles, and geographic data.  You should only install this into an empty web application project that does not already have startup code or AspNet Identity installed. This is the main library for cloudscribe. Typically you should not install this directly but instead install the package cloudscribe.Core.Web.Integration which will also install cloudscribe.Web.Core along with the integration code needed to wire it up in your empty web application project. You are allowed to modify the integration code after it is added to your project.",cloudscribe.Core.Web,True,2018-04-19T16:09:14.333+00:00,True,False,"Multi-tenant MVC and WebApi application foundation with management for sites, users, roles, and geographic data","cloudscribe,multi-tenant,mvc6,site,management",18160,False,1.0.0-rc20160829
+NuGet.CatalogReader,2016-08-28T19:57:00.903Z,454,600,A NuGet catalog reader for discovering all packages on a v3 feed.,NuGet.CatalogReader,False,2017-01-21T07:23:39.937+00:00,True,False,,"nuget,catalog,v3",2906,False,1.0.0
+Junfeng Li,2016-08-28T19:56:54.1Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,1.0.2
+Joe Audette,2016-08-28T19:56:16.64Z,583,600,Entity Framework Core implementation of cloudscribe core commands and queries,cloudscribe.Core.Storage.EF,True,2016-09-14T17:17:16.03+00:00,True,False,,"cloudscribe,commands,queries,ef",1037,False,1.0.0-rc20160828
+Tihomir Kit (pootzko),2016-08-28T19:56:26.307Z,43209,600,"For testing of nuget builds, please do not use.",InfluxData.Net.Test,False,1900-01-01T00:00:00+00:00,False,False,"For testing of nuget builds, please do not use.","influx,influxdb,influxdata,kapacitor,TICK-stack",-1,False,0.0.1
+Joe Audette,2016-08-28T19:56:40.66Z,39,600,NoDb implementation of cloudscribe core commands and queries,cloudscribe.Core.Storage.NoDb,True,2018-03-12T14:06:25.407+00:00,True,False,,"cloudscribe,commands,queries,NoDb",5801,False,1.0.0-rc20160828
+Konstantin Pozdniakov,2016-08-28T19:55:56.237Z,485,600,"Interface Interceptor Proxy Type generator that implement an interface, and proxy calls to defined with attribute methods via defined intercepting handlers",InterfaceInterceptionProxy,False,2016-12-21T09:55:48.117+00:00,True,False,,"interfaceinterceptionproxy,interface,interception,proxy",486,False,1.0.5
+Joe Audette,2016-08-28T19:55:46.537Z,37,600,"model classes for cloudscribe core. you should not normally install this separately, it will be installed if you install cloudscribe.Core.Web",cloudscribe.Core.Models,True,2018-03-14T16:20:53.91+00:00,True,False,,"cloudscribe,models",13614,False,1.0.2-rc20160829
+CheetahJS,2016-08-28T19:52:11.33Z,398,600,A Javascript MVVM Framework for fast web development.,CheetahJS,False,2017-03-18T15:33:59.987-07:00,True,False,,,2740,False,1.1.2
+Paranoid_Twitch,2016-08-28T19:28:38.753Z,53,600,An asynchronous wrapper for the Quandl financial data API.,Reckdl,False,2018-02-26T21:39:54.473+00:00,False,False,An asynchronous wrapper for the Quandl financial data API.,"Financial,API,Quandl,Wrapper",763,False,1.0.0
+Code Singularity,2016-08-28T19:47:24.76Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.19.46
+Junfeng Li,2016-08-28T19:46:22.413Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,1.0.1
+Code Singularity,2016-08-28T19:40:28.787Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.19.39
+Simone Invernizzi,2016-08-28T19:38:54.21Z,75,600,"Helpers for Spa_Template (Unsafe, everytime I update I need to check the updated files)",SpaTemplateHelpersUnsafe,False,2018-02-04T16:38:02.32+00:00,True,False,,,4592,False,1.0.1
+Manuel Naujoks,2016-08-28T19:34:56.33Z,524,600,Create only your domain objects and get a prototype shell for free.,JOP.universal,False,2016-11-12T15:47:06.85-08:00,True,False,Prototype shell for POCOs.,"prototype,prototyping,objects,poco,jop,justobjectsprototype",5188,False,1.0.38
+Junfeng Li,2016-08-28T19:34:02.9Z,43209,600,LXD client implemented in C#,LXD,False,1900-01-01T00:00:00+00:00,False,False,,"lxd,lxc",3484,False,1.0.0
+Paranoid_Twitch,2016-08-28T19:28:38.753Z,53,600,An asynchronous wrapper for the Quandl financial data API.,Reckdl,False,2018-02-26T21:39:54.473+00:00,True,False,An asynchronous wrapper for the Quandl financial data API.,"Financial,API,Quandl,Wrapper",763,False,1.0.0
+Paranoid_Twitch,2016-08-28T19:28:38.753Z,53,600,An asynchronous wrapper for the Quandl financial data API.,Reckdl,False,2018-02-26T21:39:54.473+00:00,True,False,An asynchronous wrapper for the Quandl financial data API.,"Financial,API,Quandl,Wrapper",763,False,1.0.0
+Jannick Johnsen,2016-08-28T19:27:34.193Z,43209,600,"Functional Reactive Programming library, push-pull model, a modern approach to event handling and model sampling.",Freckle,False,1899-12-31T16:00:00-08:00,False,False,A Functional Reactive Programming Library for FSharp,"FRP,reactive,event,behavior,functional,freckle",1472,False,1.0.1
+Knapcode.CheckRepublic.Client,2016-08-28T19:26:16.073Z,600,600,Knapcode.CheckRepublic.Client,Knapcode.CheckRepublic.Client,False,2016-08-28T12:26:16.073-07:00,True,False,,,165,False,0.1.0
+RequestCore,2016-08-28T19:20:30.46Z,600,600,RequestCore,RequestCore,False,2016-08-28T12:20:30.46-07:00,False,False,,,330,False,1.0.1
+RequestCore,2016-08-28T19:20:30.46Z,600,600,RequestCore,RequestCore,False,2016-08-28T12:20:30.46-07:00,False,False,,,330,False,1.0.1
+"Rian Stockbower,Douglas Day,M. David Peterson",2016-08-28T19:19:40.65Z,143,600,An iCalendar (RFC 5545) control library for .NET. A fork and continuation of the original dday.ical library including bug fixes and many performance enhancements.,Ical.Net,False,2017-11-28T16:10:40.097+00:00,True,False,,"iCal,Calendar,icalendar,ics,outlook,events,rfc-5545,rfc-2445,dday",194952,False,2.2.10
+Hewlett-Packard,2016-08-28T19:16:54.187Z,557,600,Description,SmartMvcToolkit,False,2016-10-10T11:34:42.21-07:00,True,False,,,3882,False,1.15.0
+CheetahJS,2016-08-28T19:05:53.66Z,398,600,A Javascript MVVM Framework for fast web development.,CheetahJS,False,2017-03-18T15:33:59.987-07:00,True,False,,,2740,False,1.1.1
+CheetahJS,2016-08-28T19:05:53.66Z,398,600,A Javascript MVVM Framework for fast web development.,CheetahJS,False,2017-03-18T15:33:59.987-07:00,True,False,,,2740,False,1.1.1
+dk-xamarin,2016-08-28T18:56:27.977Z,51,600,"Fork of SQLite.Net-PCL. It supports 64 bit unsigned integers (ulong) stored as blob's, and contains many performance optimizations.",DK.SQLite,False,2018-02-28T22:21:53.7+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",61697,False,1.5.0.7
+dk-xamarin,2016-08-28T18:56:01.937Z,362,600,DK: portable class library (no dependency on Xamarin),DK.Portable,False,2017-04-23T16:25:35.32+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51803,False,1.5.0.7
+dk-xamarin,2016-08-28T18:56:10.32Z,193,600,DK: extended and improved controls for Xamarin.Forms,DK.Controls,False,2017-10-09T23:19:55.443+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",58042,False,1.5.0.7
+dk-xamarin,2016-08-28T18:56:18.97Z,369,600,DK: generic platform (full .net framework!),DK.Generic,False,2017-04-15T23:22:05.273-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",49446,False,1.5.0.7
+dk-xamarin,2016-08-28T18:55:52.78Z,369,600,DK: android platform specific code,DK.Android,False,2017-04-16T06:22:52.547+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51079,False,1.5.0.7
+Peter Tiedemann,2016-08-28T18:51:06.81Z,43209,600,DotNetZip compiled for NetStandard1.3 (so .net core compatible),DotNetZip.Minimal.NetStandard.Unofficial,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Peter Tiedemann,2016-08-28T18:51:06.81Z,43209,600,DotNetZip compiled for NetStandard1.3 (so .net core compatible),DotNetZip.Minimal.NetStandard.Unofficial,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Guillaume Lacasa,2016-08-28T18:43:28.377Z,40,600,.net implementation of the TOTP: Time-Based One-Time Password Algorithm and HOTP: HMAC-Based One-Time Password Algorithm,TwoStepsAuthenticator,False,2018-03-11T12:49:56.693+00:00,True,False,,,5090,False,1.2.0
+dk-xamarin,2016-08-28T18:34:15.083Z,600,600,DK: android platform specific code for the FAB,DK.Android.FloatingActionButton,False,2016-08-28T11:34:15.083-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",5668,False,1.5.0.6
+dk-xamarin,2016-08-28T18:34:24.663Z,362,600,DK: portable class library (no dependency on Xamarin),DK.Portable,False,2017-04-23T16:25:35.32+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51803,False,1.5.0.6
+dk-xamarin,2016-08-28T18:34:34.273Z,193,600,DK: extended and improved controls for Xamarin.Forms,DK.Controls,False,2017-10-09T23:19:55.443+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",58042,False,1.5.0.6
+dk-xamarin,2016-08-28T18:34:42.903Z,369,600,DK: generic platform (full .net framework!),DK.Generic,False,2017-04-15T23:22:05.273-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",49446,False,1.5.0.6
+dk-xamarin,2016-08-28T18:34:51.45Z,51,600,"Fork of SQLite.Net-PCL. It supports 64 bit unsigned integers (ulong) stored as blob's, and contains many performance optimizations.",DK.SQLite,False,2018-02-28T22:21:53.7+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",61697,False,1.5.0.6
+dk-xamarin,2016-08-28T18:34:05.9Z,369,600,DK: android platform specific code,DK.Android,False,2017-04-16T06:22:52.547+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51079,False,1.5.0.6
+Omar Bizreh,2016-08-28T18:31:50.34Z,454,600,A .Net dll includes helpful functions when developing .Net Software,DotNetHelpers,False,2017-01-21T12:58:35.103-08:00,True,False,,"Framework,C#",1005,False,1.0.0.2
+ADee,2016-08-28T18:25:36.597Z,600,600,分页扩展,ADee.Framework.Pager,False,2016-08-28T11:25:36.597-07:00,True,False,,"ADee,Pager",513,False,1.0.2
+Omar Bizreh,2016-08-28T18:23:14.42Z,454,600,A .Net dll includes helpful functions when developing .Net Software,DotNetHelpers,False,2017-01-21T12:58:35.103-08:00,True,False,,"Framework,C#",1005,False,1.0.0.1
+Joe Audette,2016-08-28T18:17:09.047Z,37,600,"model classes for cloudscribe core. you should not normally install this separately, it will be installed if you install cloudscribe.Core.Web",cloudscribe.Core.Models,True,2018-03-14T16:20:53.91+00:00,True,False,,"cloudscribe,models",13614,False,1.0.2-rc20160828
+Joe Audette,2016-08-28T18:17:37.617Z,1,600,"Multi-tenant MVC and WebApi application foundation with management for sites, users, roles, and geographic data.  You should only install this into an empty web application project that does not already have startup code or AspNet Identity installed. This is the main library for cloudscribe. Typically you should not install this directly but instead install the package cloudscribe.Core.Web.Integration which will also install cloudscribe.Web.Core along with the integration code needed to wire it up in your empty web application project. You are allowed to modify the integration code after it is added to your project.",cloudscribe.Core.Web,True,2018-04-19T16:09:14.333+00:00,True,False,"Multi-tenant MVC and WebApi application foundation with management for sites, users, roles, and geographic data","cloudscribe,multi-tenant,mvc6,site,management",18160,False,1.0.0-rc20160828
+Joe Audette,2016-08-28T18:17:37.617Z,1,600,"Multi-tenant MVC and WebApi application foundation with management for sites, users, roles, and geographic data.  You should only install this into an empty web application project that does not already have startup code or AspNet Identity installed. This is the main library for cloudscribe. Typically you should not install this directly but instead install the package cloudscribe.Core.Web.Integration which will also install cloudscribe.Web.Core along with the integration code needed to wire it up in your empty web application project. You are allowed to modify the integration code after it is added to your project.",cloudscribe.Core.Web,True,2018-04-19T16:09:14.333+00:00,True,False,"Multi-tenant MVC and WebApi application foundation with management for sites, users, roles, and geographic data","cloudscribe,multi-tenant,mvc6,site,management",18160,False,1.0.0-rc20160828
+Joe Audette,2016-08-28T18:17:09.047Z,37,600,"model classes for cloudscribe core. you should not normally install this separately, it will be installed if you install cloudscribe.Core.Web",cloudscribe.Core.Models,True,2018-03-14T16:20:53.91+00:00,True,False,,"cloudscribe,models",13614,False,1.0.2-rc20160828
+Robert Rouhani,2016-08-28T17:40:38.137Z,600,600,Cross-platform FreeType bindings for C#.,SharpFont,False,2016-08-28T11:09:51.53-07:00,False,False,,"freetype,font,bindings,wrapper,text,rendering",147444,False,4.0.0
+Robert Rouhani,2016-08-28T18:10:29.7Z,600,600,Cross-platform FreeType bindings for C#.,SharpFont.Portable,False,2016-08-28T11:10:29.7-07:00,True,False,,"freetype,font,bindings,wrapper,text,rendering",414,False,4.0.1
+Robert Rouhani,2016-08-28T18:10:16.52Z,600,600,Cross-platform FreeType bindings for C#.,SharpFont.iOS,False,2016-08-28T11:10:16.52-07:00,True,False,,"freetype,font,bindings,wrapper,text,rendering",292,False,4.0.1
+Robert Rouhani,2016-08-28T18:09:51.53Z,600,600,Cross-platform FreeType bindings for C#.,SharpFont,False,2016-08-28T11:09:51.53-07:00,True,False,,"freetype,font,bindings,wrapper,text,rendering",147444,False,4.0.1
+Omar Bizreh,2016-08-28T18:08:33.5Z,454,600,A .Net dll includes helpful functions when developing .Net Software,DotNetHelpers,False,2017-01-21T12:58:35.103-08:00,True,False,,"Framework,C#",1005,False,1.0.0
+Sebastian Klose,2016-08-28T18:02:08.993Z,40,600,This is a port of NCalc for .NET Core applications.,CoreCLR-NCalc,False,2018-03-11T19:33:45.81+00:00,True,False,,"ncalc,coreclr,expression,evaluator",282394,False,2.1.1
+Sebastian Klose,2016-08-28T18:02:08.993Z,40,600,This is a port of NCalc for .NET Core applications.,CoreCLR-NCalc,False,2018-03-11T19:33:45.81+00:00,True,False,,"ncalc,coreclr,expression,evaluator",282394,False,2.1.1
+"Andrey ""Litee"" Lipatkin",2016-08-28T17:58:29.673Z,587,600,Simple Roslyn analyzer and quick fix for Common.Logging usage smells,Common.Logging.Analyzer,True,2016-09-10T06:00:10.833+00:00,True,False,,"common.logging,logging,roslyn,quickfix",812,False,0.1.0-beta1
+"Andrey ""Litee"" Lipatkin",2016-08-28T17:58:29.673Z,587,600,Simple Roslyn analyzer and quick fix for Common.Logging usage smells,Common.Logging.Analyzer,True,2016-09-10T06:00:10.833+00:00,True,False,,"common.logging,logging,roslyn,quickfix",812,False,0.1.0-beta1
+"Andrey ""Litee"" Lipatkin",2016-08-28T17:54:57.943Z,467,600,Quickfixes for NSubstitute mocking library.,NSubstitute.QuickFixes,True,2017-01-08T19:37:15.167+00:00,True,False,,"nsubstitute,mocks,roslyn,quickfix",1068,False,0.1.0-beta1
+"Andrey ""Litee"" Lipatkin",2016-08-28T17:54:57.943Z,467,600,Quickfixes for NSubstitute mocking library.,NSubstitute.QuickFixes,True,2017-01-08T19:37:15.167+00:00,True,False,,"nsubstitute,mocks,roslyn,quickfix",1068,False,0.1.0-beta1
+dk-xamarin,2016-08-28T17:51:56.757Z,51,600,"Fork of SQLite.Net-PCL. It supports 64 bit unsigned integers (ulong) stored as blob's, and contains many performance optimizations.",DK.SQLite,False,2018-02-28T22:21:53.7+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",61697,False,1.5.0.5
+dk-xamarin,2016-08-28T17:51:47.353Z,369,600,DK: generic platform (full .net framework!),DK.Generic,False,2017-04-15T23:22:05.273-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",49446,False,1.5.0.5
+dk-xamarin,2016-08-28T17:51:38.27Z,193,600,DK: extended and improved controls for Xamarin.Forms,DK.Controls,False,2017-10-09T23:19:55.443+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",58042,False,1.5.0.5
+dk-xamarin,2016-08-28T17:51:29.277Z,362,600,DK: portable class library (no dependency on Xamarin),DK.Portable,False,2017-04-23T16:25:35.32+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51803,False,1.5.0.5
+dk-xamarin,2016-08-28T17:51:19.653Z,600,600,DK: android platform specific code for the FAB,DK.Android.FloatingActionButton,False,2016-08-28T11:34:15.083-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",5668,False,1.5.0.5
+dk-xamarin,2016-08-28T17:51:10.447Z,369,600,DK: android platform specific code,DK.Android,False,2017-04-16T06:22:52.547+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51079,False,1.5.0.5
+Emby Team,2016-08-28T17:47:03.12Z,6,600,Contains common model objects and interfaces used by all Emby solutions.,MediaBrowser.Common,False,2018-04-14T14:59:42.14+00:00,True,False,,,144350,False,3.0.656
+Luke,2016-08-28T17:47:07.25Z,43209,600,Contains common components shared by Emby Theater and Emby Server. Not intended for plugin developer consumption.,MediaBrowser.Common.Internal,False,1900-01-01T00:00:00+00:00,False,False,,,128157,False,3.0.656
+Emby Team,2016-08-28T17:47:03.11Z,6,600,Contains core components required to build plugins for Emby Server.,MediaBrowser.Server.Core,False,2018-04-14T14:59:39.967+00:00,True,False,,,138326,False,3.0.656
+Robert Rouhani,2016-08-28T17:42:50.25Z,600,600,Cross-platform FreeType bindings for C#.,SharpFont.Portable,False,2016-08-28T11:10:29.7-07:00,True,False,,"freetype,font,bindings,wrapper,text,rendering",414,False,4.0.0
+Robert Rouhani,2016-08-28T17:42:27.49Z,600,600,Cross-platform FreeType bindings for C#.,SharpFont.iOS,False,2016-08-28T11:10:16.52-07:00,True,False,,"freetype,font,bindings,wrapper,text,rendering",292,False,4.0.0
+James Willock,2016-08-28T17:42:45.913Z,44,600,ResourceDictionary instances containing Material Design templates and styles for WPF controls.,MaterialDesignThemes,True,2018-03-07T19:27:28.313+00:00,True,False,,"WPF,XAML,WinRT,Material,Design,Theme,Colour,Color,UI,UX",248517,False,2.2.0-ci663
+Edge.js.CSharp,2016-08-28T17:41:56.37Z,599,600,Edge.js enables scripting CLR languages from Node.js. This package is a dependency of Edge.js and supports scripting C# from Node.,Edge.js.CSharp,False,2016-08-28T20:51:04.26-07:00,True,False,Script C# from Node.js.,,12555,False,1.1.0
+Robert Rouhani,2016-08-28T17:40:38.137Z,600,600,Cross-platform FreeType bindings for C#.,SharpFont,False,2016-08-28T11:09:51.53-07:00,True,False,,"freetype,font,bindings,wrapper,text,rendering",147444,False,4.0.0
+"Rian Stockbower,Douglas Day,M. David Peterson",2016-08-28T17:33:07.13Z,143,600,An iCalendar (RFC 5545) control library for .NET. A fork and continuation of the original dday.ical library including bug fixes and many performance enhancements.,Ical.Net,False,2017-11-28T16:10:40.097+00:00,True,False,,"iCal,Calendar,icalendar,ics,outlook,events,rfc-5545,rfc-2445,dday",194952,False,2.2.9
+路过秋天,2016-08-28T17:22:40.48Z,1,600,What's cyq.data ?： 1： It is an ORM framework. 2： It is a data access layer components. 3： It is a set of tools library.,cyqdata,False,2018-04-19T07:23:10.923+00:00,True,False,"cyq.data is not only a orm,but also a data access layer,it's very special and diffirent from others,who use who love it","CYQ.Data,ORM,ADO.NET",22149,False,5.6.4.8
+d.gordienko@gmail.com,2016-08-28T17:16:35.65Z,588,600,PLC библиотека классов общая для проектов Hermes и Distributor компании upsmile http://upsmile.ua,Distributor.Api.Core,False,2016-09-09T04:58:25.733-07:00,True,False,,,1691,False,1.0.0.7
+dk-xamarin,2016-08-28T17:10:38.77Z,369,600,DK: generic platform (full .net framework!),DK.Generic,False,2017-04-15T23:22:05.273-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",49446,False,1.5.0.4
+dk-xamarin,2016-08-28T17:10:17.19Z,362,600,DK: portable class library (no dependency on Xamarin),DK.Portable,False,2017-04-23T16:25:35.32+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51803,False,1.5.0.4
+dk-xamarin,2016-08-28T17:10:30.52Z,193,600,DK: extended and improved controls for Xamarin.Forms,DK.Controls,False,2017-10-09T23:19:55.443+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",58042,False,1.5.0.4
+dk-xamarin,2016-08-28T17:10:49.893Z,51,600,"Fork of SQLite.Net-PCL. It supports 64 bit unsigned integers (ulong) stored as blob's, and contains many performance optimizations.",DK.SQLite,False,2018-02-28T22:21:53.7+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",61697,False,1.5.0.4
+dk-xamarin,2016-08-28T17:10:05.773Z,600,600,DK: android platform specific code for the FAB,DK.Android.FloatingActionButton,False,2016-08-28T11:34:15.083-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",5668,False,1.5.0.4
+dk-xamarin,2016-08-28T17:09:53.053Z,369,600,DK: android platform specific code,DK.Android,False,2017-04-16T06:22:52.547+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51079,False,1.5.0.4
+Hewlett-Packard,2016-08-28T17:07:31.353Z,557,600,Description,SmartMvcToolkit,False,2016-10-10T11:34:42.21-07:00,True,False,,,3882,False,1.14.0
+Pattamon,2016-08-28T16:57:23.797Z,141,600,Spheremark Core enables you to create extensibilties of your project by adding services arround.,Spheremark.Core,False,2017-11-30T14:08:19.897+00:00,True,False,,,3530,False,1.0.17
+dk-xamarin,2016-08-28T16:51:29.613Z,369,600,DK: generic platform (full .net framework!),DK.Generic,False,2017-04-15T23:22:05.273-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",49446,False,1.5.0.3
+dk-xamarin,2016-08-28T16:51:37.953Z,51,600,"Fork of SQLite.Net-PCL. It supports 64 bit unsigned integers (ulong) stored as blob's, and contains many performance optimizations.",DK.SQLite,False,2018-02-28T22:21:53.7+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",61697,False,1.5.0.3
+dk-xamarin,2016-08-28T16:51:20.98Z,193,600,DK: extended and improved controls for Xamarin.Forms,DK.Controls,False,2017-10-09T23:19:55.443+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",58042,False,1.5.0.3
+dk-xamarin,2016-08-28T16:51:12.507Z,362,600,DK: portable class library (no dependency on Xamarin),DK.Portable,False,2017-04-23T16:25:35.32+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51803,False,1.5.0.3
+dk-xamarin,2016-08-28T16:51:03.76Z,600,600,DK: android platform specific code for the FAB,DK.Android.FloatingActionButton,False,2016-08-28T11:34:15.083-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",5668,False,1.5.0.3
+dk-xamarin,2016-08-28T16:50:53.563Z,369,600,DK: android platform specific code,DK.Android,False,2017-04-16T06:22:52.547+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51079,False,1.5.0.3
+Hyperbolic Solutions,2016-08-28T16:46:10.69Z,600,600,Hyperbolic Solutions simple IoC framework,HyperIoC.Windows,False,2016-08-28T09:46:10.69-07:00,True,False,,"IoC,.NET,Dependency,injection",298,False,2.0.0
+Hyperbolic Solutions,2016-08-28T16:45:47.533Z,600,600,Hyperbolic Solutions simple IoC framework,HyperIoC.Universal,False,2016-08-28T09:45:47.533-07:00,True,False,,"IoC,.NET,Dependency,injection,Universal",457,False,2.0.0
+rzmoz,2016-08-28T16:43:54.91Z,43209,600,Syntactical sugar for .NET.,DotNet.Basics,False,1900-01-01T00:00:00+00:00,False,False,,,20433,False,3.4.0
+dk-xamarin,2016-08-28T16:41:01.66Z,369,600,DK: generic platform (full .net framework!),DK.Generic,False,2017-04-15T23:22:05.273-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",49446,False,1.5.0.2
+dk-xamarin,2016-08-28T16:40:52.69Z,193,600,DK: extended and improved controls for Xamarin.Forms,DK.Controls,False,2017-10-09T23:19:55.443+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",58042,False,1.5.0.2
+dk-xamarin,2016-08-28T16:41:13.173Z,51,600,"Fork of SQLite.Net-PCL. It supports 64 bit unsigned integers (ulong) stored as blob's, and contains many performance optimizations.",DK.SQLite,False,2018-02-28T22:21:53.7+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",61697,False,1.5.0.2
+dk-xamarin,2016-08-28T16:40:43.41Z,362,600,DK: portable class library (no dependency on Xamarin),DK.Portable,False,2017-04-23T16:25:35.32+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51803,False,1.5.0.2
+dk-xamarin,2016-08-28T16:40:31.797Z,600,600,DK: android platform specific code for the FAB,DK.Android.FloatingActionButton,False,2016-08-28T11:34:15.083-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",5668,False,1.5.0.2
+dk-xamarin,2016-08-28T16:40:19.47Z,369,600,DK: android platform specific code,DK.Android,False,2017-04-16T06:22:52.547+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51079,False,1.5.0.2
+jedi31,2016-08-28T16:39:06.51Z,600,600,"A support library to the application domain, according to the DDD architecture pattern. It provides a set of features for use of pattern DomainServices",Ddd.Services.Pcl,False,2016-08-28T09:39:06.51-07:00,True,False,,"ddd,ddd-domain-services,design-patterns",171,False,1.0.0
+d.gordienko@gmail.com,2016-08-28T16:29:30.143Z,588,600,PLC библиотека классов общая для проектов Hermes и Distributor компании upsmile http://upsmile.ua,Distributor.Api.Core,False,2016-09-09T04:58:25.733-07:00,True,False,,,1691,False,1.0.0.6
+Serge Semenov,2016-08-26T20:55:48.563Z,90,602,"Introduces IAsyncEnumerable, IAsyncEnumerator, ForEachAsync(), and ParallelForEachAsync()
+GitHub: https://github.com/tyrotoxin/AsyncEnumerable
+
+PROBLEM SPACE
+
+Helps to (a) create an element provider, where producing an element can take a lot of time
+due to dependency on other asynchronous events (e.g. wait handles, network streams), and
+(b) a consumer that processes those element as soon as they are ready without blocking
+the thread (the processing is scheduled on a worker thread instead).
+
+
+EXAMPLE
+
+using System.Collections.Async;
+
+static IAsyncEnumerable<int> ProduceAsyncNumbers(int start, int end)
+{
+  return new AsyncEnumerable<int>(async yield => {
+
+    // Just to show that ReturnAsync can be used multiple times
+    await yield.ReturnAsync(start);
+
+    for (int number = start + 1; number <= end; number++)
+      await yield.ReturnAsync(number);
+
+    // You can break the enumeration loop with the following call:
+    yield.Break();
+
+    // This won't be executed due to the loop break above
+    await yield.ReturnAsync(12345);
+  });
+}
+
+// Just to compare with synchronous version of enumerator
+static IEnumerable<int> ProduceNumbers(int start, int end)
+{
+  yield return start;
+
+  for (int number = start + 1; number <= end; number++)
+    yield return number;
+
+  yield break;
+
+  yield return 12345;
+}
+
+static async Task ConsumeNumbersAsync()
+{
+  var asyncEnumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  await asyncEnumerableCollection.ForEachAsync(async number => {
+    await Console.Out.WriteLineAsync($""{number}"");
+  });
+}
+
+// Just to compare with synchronous version of enumeration
+static void ConsumeNumbers()
+{
+  // NOTE: IAsyncEnumerable is derived from IEnumerable, so you can use either
+  var enumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  //var enumerableCollection = ProduceNumbers(start: 1, end: 10);
+
+  foreach (var number in enumerableCollection) {
+    Console.Out.WriteLine($""{number}"");
+  }
+}",AsyncEnumerator,False,2018-01-20T20:06:10.01+00:00,False,False,"Introduces IAsyncEnumerable, IAsyncEnumerator, and ForEachAsync()","IAsyncEnumerable,IAsyncEnumerator,ForEachAsync,async,await,foreach",137339,False,1.1.0
+Serge Semenov,2016-08-28T16:24:55.067Z,90,600,"Introduces IAsyncEnumerable, IAsyncEnumerator, ForEachAsync(), and ParallelForEachAsync()
+GitHub: https://github.com/tyrotoxin/AsyncEnumerable
+
+PROBLEM SPACE
+
+Helps to (a) create an element provider, where producing an element can take a lot of time
+due to dependency on other asynchronous events (e.g. wait handles, network streams), and
+(b) a consumer that processes those element as soon as they are ready without blocking
+the thread (the processing is scheduled on a worker thread instead).
+
+
+EXAMPLE
+
+using System.Collections.Async;
+
+static IAsyncEnumerable<int> ProduceAsyncNumbers(int start, int end)
+{
+  return new AsyncEnumerable<int>(async yield => {
+
+    // Just to show that ReturnAsync can be used multiple times
+    await yield.ReturnAsync(start);
+
+    for (int number = start + 1; number <= end; number++)
+      await yield.ReturnAsync(number);
+
+    // You can break the enumeration loop with the following call:
+    yield.Break();
+
+    // This won't be executed due to the loop break above
+    await yield.ReturnAsync(12345);
+  });
+}
+
+// Just to compare with synchronous version of enumerator
+static IEnumerable<int> ProduceNumbers(int start, int end)
+{
+  yield return start;
+
+  for (int number = start + 1; number <= end; number++)
+    yield return number;
+
+  yield break;
+
+  yield return 12345;
+}
+
+static async Task ConsumeNumbersAsync()
+{
+  var asyncEnumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  await asyncEnumerableCollection.ForEachAsync(async number => {
+    await Console.Out.WriteLineAsync($""{number}"");
+  });
+}
+
+// Just to compare with synchronous version of enumeration
+static void ConsumeNumbers()
+{
+  // NOTE: IAsyncEnumerable is derived from IEnumerable, so you can use either
+  var enumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  //var enumerableCollection = ProduceNumbers(start: 1, end: 10);
+
+  foreach (var number in enumerableCollection) {
+    Console.Out.WriteLine($""{number}"");
+  }
+}",AsyncEnumerator,False,2018-01-20T20:06:10.01+00:00,True,False,"Introduces IAsyncEnumerable, IAsyncEnumerator, and ForEachAsync()","IAsyncEnumerable,IAsyncEnumerator,ForEachAsync,async,await,foreach,parallel",137339,False,1.1.1
+Serge Semenov,2016-08-28T16:24:55.067Z,90,600,"Introduces IAsyncEnumerable, IAsyncEnumerator, ForEachAsync(), and ParallelForEachAsync()
+GitHub: https://github.com/tyrotoxin/AsyncEnumerable
+
+PROBLEM SPACE
+
+Helps to (a) create an element provider, where producing an element can take a lot of time
+due to dependency on other asynchronous events (e.g. wait handles, network streams), and
+(b) a consumer that processes those element as soon as they are ready without blocking
+the thread (the processing is scheduled on a worker thread instead).
+
+
+EXAMPLE
+
+using System.Collections.Async;
+
+static IAsyncEnumerable<int> ProduceAsyncNumbers(int start, int end)
+{
+  return new AsyncEnumerable<int>(async yield => {
+
+    // Just to show that ReturnAsync can be used multiple times
+    await yield.ReturnAsync(start);
+
+    for (int number = start + 1; number <= end; number++)
+      await yield.ReturnAsync(number);
+
+    // You can break the enumeration loop with the following call:
+    yield.Break();
+
+    // This won't be executed due to the loop break above
+    await yield.ReturnAsync(12345);
+  });
+}
+
+// Just to compare with synchronous version of enumerator
+static IEnumerable<int> ProduceNumbers(int start, int end)
+{
+  yield return start;
+
+  for (int number = start + 1; number <= end; number++)
+    yield return number;
+
+  yield break;
+
+  yield return 12345;
+}
+
+static async Task ConsumeNumbersAsync()
+{
+  var asyncEnumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  await asyncEnumerableCollection.ForEachAsync(async number => {
+    await Console.Out.WriteLineAsync($""{number}"");
+  });
+}
+
+// Just to compare with synchronous version of enumeration
+static void ConsumeNumbers()
+{
+  // NOTE: IAsyncEnumerable is derived from IEnumerable, so you can use either
+  var enumerableCollection = ProduceAsyncNumbers(start: 1, end: 10);
+  //var enumerableCollection = ProduceNumbers(start: 1, end: 10);
+
+  foreach (var number in enumerableCollection) {
+    Console.Out.WriteLine($""{number}"");
+  }
+}",AsyncEnumerator,False,2018-01-20T20:06:10.01+00:00,True,False,"Introduces IAsyncEnumerable, IAsyncEnumerator, and ForEachAsync()","IAsyncEnumerable,IAsyncEnumerator,ForEachAsync,async,await,foreach,parallel",137339,False,1.1.1
+Joe Brock,2016-08-28T16:15:56.697Z,462,600,"Material design colors which you can use statically from Xamarin Forms.
+
+See GitHub for usage.",MaterialColorsXF,False,2017-01-13T02:30:36.583-08:00,True,False,,,672,False,1.0.0
+Joe Brock,2016-08-28T16:15:56.697Z,462,600,"Material design colors which you can use statically from Xamarin Forms.
+
+See GitHub for usage.",MaterialColorsXF,False,2017-01-13T02:30:36.583-08:00,False,False,,,672,False,1.0.0
+Joe Brock,2016-08-28T16:15:56.697Z,462,600,"Material design colors which you can use statically from Xamarin Forms.
+
+See GitHub for usage.",MaterialColorsXF,False,2017-01-13T02:30:36.583-08:00,False,False,,,672,False,1.0.0
+"Rian Stockbower,Douglas Day,M. David Peterson",2016-08-28T16:00:08.583Z,143,600,An iCalendar (RFC 5545) control library for .NET. A fork and continuation of the original dday.ical library including bug fixes and many performance enhancements.,Ical.Net,False,2017-11-28T16:10:40.097+00:00,True,False,,"iCal,Calendar,icalendar,ics,outlook,events,rfc-5545,rfc-2445,dday",194952,False,2.2.8
+neuecc,2016-08-28T15:54:44.743Z,600,600,Typed Asynchronous RPC Layer for Photon Server. This package is for .NET client implementation.,PhotonWire.Client,False,2016-08-28T08:54:44.743-07:00,True,False,,"Photon,MultiPlayer,Distributed,websockets,streaming,realtime,unity",582,False,1.0.4
+neuecc,2016-08-28T15:54:28.333Z,600,600,Typed Asynchronous RPC Layer for Photon Server. This package includes Server libs + Analyzer + HubInvoker,PhotonWire,False,2016-08-28T08:54:28.333-07:00,True,False,,"Photon,MultiPlayer,Distributed,websockets,streaming,realtime,unity",804,False,1.0.4
+neuecc,2016-08-28T15:54:36.537Z,600,600,Typed Asynchronous RPC Layer for Photon Server. This package is for realtime server implementation.,PhotonWire.Server,False,2016-08-28T08:54:36.537-07:00,True,False,,"Photon,MultiPlayer,Distributed,websockets,streaming,realtime,unity",861,False,1.0.4
+dk-xamarin,2016-08-28T15:49:14.067Z,51,600,"Fork of SQLite.Net-PCL. It supports 64 bit unsigned integers (ulong) stored as blob's, and contains many performance optimizations.",DK.SQLite,False,2018-02-28T22:21:53.7+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",61697,False,1.5.0.1
+dk-xamarin,2016-08-28T15:48:38.647Z,600,600,DK: android platform specific code for the FAB,DK.Android.FloatingActionButton,False,2016-08-28T11:34:15.083-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",5668,False,1.5.0.1
+dk-xamarin,2016-08-28T15:48:56.947Z,193,600,DK: extended and improved controls for Xamarin.Forms,DK.Controls,False,2017-10-09T23:19:55.443+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",58042,False,1.5.0.1
+dk-xamarin,2016-08-28T15:49:05.533Z,369,600,DK: generic platform (full .net framework!),DK.Generic,False,2017-04-15T23:22:05.273-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",49446,False,1.5.0.1
+dk-xamarin,2016-08-28T15:48:29.553Z,369,600,DK: android platform specific code,DK.Android,False,2017-04-16T06:22:52.547+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51079,False,1.5.0.1
+dk-xamarin,2016-08-28T15:48:47.83Z,362,600,DK: portable class library (no dependency on Xamarin),DK.Portable,False,2017-04-23T16:25:35.32+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51803,False,1.5.0.1
+http://github.com/mr-kelly,2016-08-28T15:45:59.533Z,357,600,"Slua is a Unity3D Lua Library, this slua-standalone is a version without Unity3D for Windows and Linux",slua-standalone,False,2017-04-28T00:36:24.577-07:00,True,False,,"slua,lua",6601,False,1.0.58
+hlaueriksson,2016-08-28T15:44:28.747Z,104,600,Command Query Separation for ASP.NET Core Microservices,CommandQuery,False,2018-01-06T19:18:41.36+00:00,True,False,,"CommandQuery,Command,Query,CQS",642,False,0.1.0
+hlaueriksson,2016-08-28T15:44:28.747Z,104,600,Command Query Separation for ASP.NET Core Microservices,CommandQuery,False,2018-01-06T19:18:41.36+00:00,True,False,,"CommandQuery,Command,Query,CQS",642,False,0.1.0
+Bruce Krakower,2016-08-28T14:42:12.94Z,563,600,"Teaq is a mini-ORM that offers object materialization, relational mapping and query batching services. Teaq offers a simple API to do common database interactions with SQL Server. Performance is most important, as is low startup cost. In addition, queries can be arbitrarily batched to minimize server round trips for any scenario.",Teaq,True,2016-10-04T19:17:19.58+00:00,True,False,"Teaq is a mini-ORM that offers query generation, object materialization, relational mapping and query batching services.","ORM,""SQL,Server"",Entity,SQL,JSON",3037,False,2.0.6082-beta
+Shaman.NBoilerpipe,2016-08-28T14:32:19.653Z,413,600,Shaman.NBoilerpipe,Shaman.NBoilerpipe,False,2017-03-03T10:44:53.977-08:00,True,False,,,633,False,1.0.1.3
+Luminous Software Solutions,2016-08-28T14:31:06.91Z,43209,600,"Visual Studio Extensibility classes, objects and extension methods for YD Framework",YD.Framework.VisualStudio,False,1900-01-01T00:00:00+00:00,False,False,"Visual Studio Extensibility classes, objects and extension methods for YD Framework","nuget,package,visual,studio,extensibility,framework",-1,False,0.5.1
+Luminous Software Solutions,2016-08-28T14:31:00.02Z,43209,600,"Base classes, objects and extension methods for YD Framework",YD.Framework.Core,False,1900-01-01T00:00:00+00:00,False,False,"Base classes, objects and extension methods for YD Framework","nuget,package,extensibility,framework",-1,False,0.5.1
+Josef Pihrt,2016-08-28T14:20:45.1Z,210,600,Roslyn-based library that offers 80+ analyzers for C#.,CSharpAnalyzers,False,2017-09-22T07:09:05.23+00:00,True,False,Roslyn-based library that offers 80+ analyzers for C#.,"Roslyn,Analyzer,Refactoring,Productivity,CodeAnalysis,C#,CSharp",6210,False,0.99.0
+Shaman.NBoilerpipe,2016-08-28T14:15:34.953Z,413,600,Shaman.NBoilerpipe,Shaman.NBoilerpipe,False,2017-03-03T10:44:53.977-08:00,True,False,,,633,False,1.0.1.2
+Hydra,2016-08-28T10:13:56.163Z,100,600,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.7.6
+Hydra,2016-08-28T14:02:47.563Z,100,600,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,True,False,,"orm,database",14493,False,5.7.7
+Igor Sharapov (Mr1Penguin),2016-08-28T14:02:00.987Z,43209,600,Library for using Deviantart API from .NET.,DeviantartApi.NET,False,1900-01-01T00:00:00+00:00,False,False,,Api,-1,False,0.4.0
+Igor Sharapov (Mr1Penguin),2016-08-28T14:01:28.29Z,43209,600,Library for using Deviantart API from .NET.,DeviantartApi.WinRT,False,1900-01-01T00:00:00+00:00,False,False,,Api,-1,False,0.4.0
+unclassified software development,2016-08-28T13:57:15.497Z,395,600,"Makes WPF ViewModel classes smart by default. Implements INotifyPropertyChanged and DelegateCommands for auto properties, recognises dependent properties, connects property changed handlers. Supports virtual properties with Entity Famework.",ViewModelKit.Fody,False,2017-03-21T17:08:04.133+00:00,True,False,,"XAML,WPF,MVVM,INotifyPropertyChanged,DataBinding,ViewModel,ICommand,DelegateCommand,ILWeaving,Cecil",1074,False,1.0.0
+unclassified software development,2016-08-28T13:57:15.497Z,395,600,"Makes WPF ViewModel classes smart by default. Implements INotifyPropertyChanged and DelegateCommands for auto properties, recognises dependent properties, connects property changed handlers. Supports virtual properties with Entity Famework.",ViewModelKit.Fody,False,2017-03-21T17:08:04.133+00:00,True,False,,"XAML,WPF,MVVM,INotifyPropertyChanged,DataBinding,ViewModel,ICommand,DelegateCommand,ILWeaving,Cecil",1074,False,1.0.0
+Geeks ltd,2016-08-26T17:17:17.997Z,43209,602,Geeks Esperanto framework for cross platform Xamarin-based projects.,Geeks.Esperanto,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.20
+Geeks ltd,2016-08-26T14:47:52.767Z,43209,602,Geeks Esperanto framework for cross platform Xamarin-based projects.,Geeks.Esperanto,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.19
+Geeks ltd,2016-08-26T10:28:20.173Z,43209,602,Geeks Esperanto framework for cross platform Xamarin-based projects.,Geeks.Esperanto,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.18
+Geeks ltd,2016-08-26T09:02:37.57Z,43209,602,Geeks Esperanto framework for cross platform Xamarin-based projects.,Geeks.Esperanto,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.17
+Geeks ltd,2016-08-25T14:00:51.53Z,43209,603,Geeks Esperanto framework for cross platform Xamarin-based projects.,Geeks.Esperanto,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.16
+Geeks ltd,2016-08-24T13:57:22.087Z,43209,604,Geeks Esperanto framework for cross platform Xamarin-based projects.,Geeks.Esperanto,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.12
+Geeks ltd,2016-08-25T13:24:27.547Z,43209,603,Geeks Esperanto framework for cross platform Xamarin-based projects.,Geeks.Esperanto,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.15
+Geeks ltd,2016-08-25T11:24:13.097Z,43209,603,Geeks Esperanto framework for cross platform Xamarin-based projects.,Geeks.Esperanto,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.14
+Geeks ltd,2016-08-22T14:48:41.097Z,43209,606,Geeks Esperanto framework for cross platform Xamarin-based projects.,Geeks.Esperanto,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.10
+Geeks ltd,2016-08-22T16:47:29.213Z,43209,606,Geeks Esperanto framework for cross platform Xamarin-based projects.,Geeks.Esperanto,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.11
+Geeks ltd,2016-08-19T16:50:58.307Z,43209,609,Geeks Esperanto framework for cross platform Xamarin-based projects.,Geeks.Esperanto,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.8
+Geeks ltd,2016-08-22T13:39:56.08Z,43209,606,Geeks Esperanto framework for cross platform Xamarin-based projects.,Geeks.Esperanto,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.9
+Geeks ltd,2016-08-28T13:49:59.8Z,43209,600,Geeks Esperanto framework for cross platform Xamarin-based projects.,Geeks.Esperanto,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.21
+Pattamon,2016-08-28T13:39:52.71Z,141,600,Spheremark Core enables you to create extensibilties of your project by adding services arround.,Spheremark.Core,False,2017-11-30T14:08:19.897+00:00,True,False,,,3530,False,1.0.16
+Luminous Software Solutions,2016-08-28T13:34:42.813Z,43209,600,"Visual Studio Extensibility classes, objects and extension methods for YD Framework",YD.Framework.VisualStudio,False,1900-01-01T00:00:00+00:00,False,False,"Visual Studio Extensibility classes, objects and extension methods for YD Framework","nuget,package,visual,studio,extensibility,framework",-1,False,0.4.1
+Luminous Software Solutions,2016-08-28T13:34:36.547Z,43209,600,"Base classes, objects and extension methods for YD Framework",YD.Framework.Core,False,1900-01-01T00:00:00+00:00,False,False,"Base classes, objects and extension methods for YD Framework","nuget,package,extensibility,framework",-1,False,0.4.1
+Tihomir Kit (pootzko),2016-08-28T13:09:49.56Z,192,600,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,False,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.6
+Pattamon,2016-08-28T13:33:04.693Z,141,600,Spheremark Core enables you to create extensibilties of your project by adding services arround.,Spheremark.Core,False,2017-11-30T14:08:19.897+00:00,True,False,,,3530,False,1.0.15
+Damian Hickey,2016-08-28T13:28:36.72Z,200,600,SqlServer provider (2012+) for SQL StreamStore,SqlStreamStore.MsSql,False,2017-10-02T18:28:19.387+00:00,True,False,,"cqrs,event-sourcing,domain-driven-design,event-store",15629,False,0.1.0
+Damian Hickey,2016-08-28T13:28:28.727Z,200,600,"A libray for writing and reading streams (also known as an 'event store') with a focus
+            on SQL based implementations. This contains the core interfaces, abstractions and an#
+            in-memory implementation for tests.",SqlStreamStore,False,2017-10-02T18:27:50.62+00:00,True,False,,"cqrs,event-sourcing,domain-driven-design,event-store,stream-store",18822,False,0.1.0
+RoaringBitmap Contributors,2016-08-28T13:24:32.273Z,468,600,RoaringBitmap for .NET,RoaringBitmap,False,2017-01-07T13:41:04.7-08:00,True,False,,RoaringBitmap,3704,False,0.0.7.3
+Pattamon,2016-08-28T13:24:39.047Z,141,600,Spheremark Core enables you to create extensibilties of your project by adding services arround.,Spheremark.Core,False,2017-11-30T14:08:19.897+00:00,True,False,,,3530,False,1.0.14
+Nima Ara,2016-08-28T13:21:20.31Z,142,600,A modern high performance wrapper around Log4Net.,Easy.Logger,False,2017-11-29T00:04:05.577+00:00,True,False,A modern high performance wrapper around Log4Net.,"log4net,logging",13760,False,1.7.0
+Pattamon,2016-08-28T13:20:44.24Z,141,600,Spheremark Core enables you to create extensibilties of your project by adding services arround.,Spheremark.Core,False,2017-11-30T14:08:19.897+00:00,True,False,,,3530,False,1.0.13
+BMSoftware,2016-08-28T13:19:28.54Z,600,600,A lightweight query builder helper.,SqlBuilder,False,2016-08-28T06:19:28.54-07:00,True,False,,,239,False,1.0.0
+Tihomir Kit (pootzko),2016-08-28T13:09:49.56Z,192,600,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,True,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.6
+Tihomir Kit (pootzko),2016-08-28T13:09:49.56Z,192,600,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,False,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.6
+Tihomir Kit (pootzko),2016-08-28T13:09:49.56Z,192,600,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,False,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.6
+Tihomir Kit (pootzko),2016-08-28T13:07:12.243Z,192,600,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,False,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.5
+MJack,2016-08-28T13:06:57.707Z,555,600,一个基于 EPPLUS 的 Excel 快速导入导出。,Xiami.Excel,False,2016-10-12T07:49:49.8-07:00,True,False,,,454,False,1.0.1
+Tihomir Kit (pootzko),2016-08-28T13:07:12.243Z,192,600,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,False,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.5
+HgLab HQ,2016-08-28T13:04:08.08Z,325,600,Mercurial Command Server Client,hgrpcsharp,False,2017-05-30T14:56:58.257-07:00,True,False,Mercurial Command Server Client,,2468,False,1.0.5
+"VelocityDB,Inc",2016-08-28T12:59:42.267Z,1,600,"Pure, fast and scalable .NET property graph and object hybrid database. No new graph language to learn, all accomplished with a .NET API.",VelocityGraph,False,2018-04-19T00:33:00.433+00:00,True,False,VelocityGraph is a property graph database for .NET. It is the first pure .NET graph database to fully implement the standard Blueprints graph API.,"Hybrid,Object,Property,Graph,Database,.NET,Blueprints,Distributable,Embeddable",23394,False,2.9.6
+杜晓宇,2016-08-28T12:47:55.5Z,600,600,A tool to copy the multi-platform runtime to current project,DevZH.RuntimesInternalCopier,False,2016-08-28T12:47:55.5+00:00,True,False,,"DevZH,netcore,tool",417,False,1.0.1
+"VelocityDB,Inc",2016-08-28T12:49:25.513Z,1,600,"High performance and availability, scalable and very flexible pure .NET database. Using VelocityDB saves time and money for all software requiring reliable, high performance data persistence. The use of VelocityDB can be hidden from your application user's and doesn't require a lot of CPU usage or disk space.",VelocityDB,False,2018-04-19T00:04:57.437+00:00,True,False,"VelocityDB is a NoSQL Object Database, a Graph Data Store and an excellent choice for Embedded/Distributed database.","Object,Database,NoSQL,.NET,C#,F#,VB.NET,C++,CLI,Universal,Windows,Xamarin,Mono,Android,iOS,Mac,Xbox,cross-platform,Phone,web,asp.net,identity,persistence,client,csv,json,server,oodb,key-value,scalable,fast,flexible,distributable,embedded,sync,big,data,events,geo,hash,Azure",46637,False,5.5.1
+chenkaihua,2016-08-28T12:47:54.21Z,333,600,.net平台下基于webrequest的简易Http请求框架,EasyHttp4Net.Core,False,2017-05-22T10:39:55.033+00:00,True,False,,httplibrary,2369,False,1.1.0
+杜晓宇,2016-08-28T12:47:55.5Z,600,600,A tool to copy the multi-platform runtime to current project,DevZH.RuntimesInternalCopier,False,2016-08-28T12:47:55.5+00:00,True,False,,"DevZH,netcore,tool",417,False,1.0.1
+Tihomir Kit (pootzko),2016-08-28T12:46:36.403Z,192,600,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,False,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.4
+Tihomir Kit (pootzko),2016-08-28T12:46:36.403Z,192,600,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,False,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.4
+Shaman.NBoilerpipe,2016-08-28T12:43:45.603Z,413,600,Shaman.NBoilerpipe,Shaman.NBoilerpipe,False,2017-03-03T10:44:53.977-08:00,True,False,,,633,False,1.0.1.1
+Tihomir Kit (pootzko),2016-08-28T12:37:53.78Z,192,600,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,False,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.3
+Pattamon,2016-08-28T12:42:32.59Z,141,600,Spheremark Core enables you to create extensibilties of your project by adding services arround.,Spheremark.Core,False,2017-11-30T14:08:19.897+00:00,True,False,,,3530,False,1.0.12
+Tihomir Kit (pootzko),2016-08-28T12:37:53.78Z,192,600,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,True,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.3
+Tihomir Kit (pootzko),2016-08-28T12:14:34.51Z,192,600,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,False,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.2
+Tihomir Kit (pootzko),2016-08-28T12:14:34.51Z,192,600,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,True,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.2
+Marco Milani,2016-08-28T12:32:11.643Z,509,600,"MVB Platform WinForms
+UWP platform specific runner for Windows Forms",Mvb.Platform.WinForms,False,2016-11-27T22:07:27.31+00:00,True,False,,"mvb,binder,xamarin,mvb.platform.winforms,winforms,windows,forms",721,False,0.0.8
+Marco Milani,2016-08-28T12:32:11.643Z,509,600,"MVB Platform WinForms
+UWP platform specific runner for Windows Forms",Mvb.Platform.WinForms,False,2016-11-27T22:07:27.31+00:00,True,False,,"mvb,binder,xamarin,mvb.platform.winforms,winforms,windows,forms",721,False,0.0.8
+Tihomir Kit (pootzko),2016-08-28T12:14:34.51Z,192,600,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,False,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.2
+Tihomir Kit (pootzko),2016-08-28T12:14:34.51Z,192,600,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,False,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.2
+Marco Milani,2016-08-28T12:08:25.99Z,509,600,"MVB Platform WPF
+UWP platform specific runner for WPF",Mvb.Platform.WPF,False,2016-11-27T14:09:15.873-08:00,True,False,,"mvb,binder,xamarin,mvb.platform.wpf,wpf",493,False,0.0.8
+Marco Milani,2016-08-28T12:08:25.99Z,509,600,"MVB Platform WPF
+UWP platform specific runner for WPF",Mvb.Platform.WPF,False,2016-11-27T14:09:15.873-08:00,True,False,,"mvb,binder,xamarin,mvb.platform.wpf,wpf",493,False,0.0.8
+"Aleksey Gordeev,Igor Eroshkin",2016-08-28T12:06:17.9Z,269,600,Rapid create and edit configurations for microservices,Konfig,False,2017-07-25T12:28:41.91+00:00,True,False,,"config,confuration",1245,False,0.1.0.973
+Andrea Martinelli,2016-08-28T12:05:58.233Z,140,600,"An optimized version of HtmlAgilityPack with many bug fixes and improvements.
+
+Improved features:
+* Minimizes heap allocations and avoids duplicate strings in the heap
+* HtmlAttribute, HtmlAttributeCollection, HtmlNodeCollection are now structs
+* Proper encoding/unencoding of attributes
+* Fixed allocation on each call of HtmlNode.get_TagName()
+* Fixed imprecise parsing of <form> and <table>
+* Fixed imprecise parsing of malformed entities
+* Fixed imprecise parsing of extra closing tags
+* HtmlNode.HasClass(), HtmlNode.ClassList
+* Faster Entitize(), DeEntitize()
+* Faster Descendants()/DescendantsAndSelf()
+* Support for unicode surrogates
+* Removed legacy stuff
+* Support for lazily switching document encoding when finding <meta charset>",Shaman.Dom,False,2017-12-01T13:07:24.717+00:00,True,False,An optimized version of HtmlAgilityPack with bug fixes and performance improvements,"html,low-gc,gc,optimization,allocation,parsing,htmlagilitypack,performance",3971,False,1.0.1.15
+Erlab Technology,2016-08-28T12:02:21.563Z,43209,600,"BoxEncode is a next generation, cloud based video encoding platform. With BoxEncode you can convert massive amount of videos efficiently to different devices and different operating systems using the power of cloud.",BoxEncodeSDK,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.1
+Symber,2016-08-28T12:02:30.607Z,600,600,"APQuery.net is a lightweight ORM, open source framework. With the objectization of the database,
+SQL expression, database access layout, business logic process and data entity.
+
+Source code : https://github.com/leocaan/APQuery.net
+
+Documents : http://leocaan.github.io/APQuery.net/",Symber.Web.APQuery,False,2016-08-28T05:02:30.607-07:00,True,False,,"APQuery.net,ORM",2848,False,4.0.4.3
+Erlab Technology,2016-08-28T12:02:21.563Z,43209,600,"BoxEncode is a next generation, cloud based video encoding platform. With BoxEncode you can convert massive amount of videos efficiently to different devices and different operating systems using the power of cloud.",BoxEncodeSDK,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.1
+Code Singularity,2016-08-28T11:57:54.45Z,43209,600,"Unit test stub autogeneration, automatic attribute-based testing, automatic nullability testing, trait-based code coverage",LUnit,False,1900-01-01T00:00:00+00:00,False,False,,,13389,False,2016.241.11.56
+oneZeroPlus,2016-08-28T11:56:46.047Z,420,600,"Eigen is a C++ template library for linear algebra: 
+			matrices, vectors, numerical solvers, and related algorithms.",Eigen,False,2017-02-23T23:03:10.927-08:00,True,False,Nuget package for the Eigen library.,"native,c++,matrix,math,eigen,onezeroplus,nativepackage",10912,False,3.2.9
+"Aleksey Gordeev,Igor Eroshkin",2016-08-28T11:56:02.283Z,269,600,Rapid create and edit configurations for microservices,Konfig,False,2017-07-25T12:28:41.91+00:00,True,False,,"config,confuration",1245,False,0.0.0.970
+David Bottiau,2016-08-28T11:44:46.12Z,466,600,A .NET library to access the livecoding.tv API,livecoding-api-pcl,False,2017-01-09T14:29:44-08:00,True,False,,"Livecoding,Api",1748,False,1.1.8
+Marco Milani,2016-08-28T11:36:38.24Z,508,600,"MVB Platform UWP
+UWP platform specific runner for MVB",Mvb.Platform.UWP,False,2016-11-28T09:22:13.447+00:00,True,False,,"mvb,binder,xamarin,mvb.platform.uwp,uwp,universal,windows,10",576,False,0.0.8
+Marco Milani,2016-08-28T11:36:38.24Z,508,600,"MVB Platform UWP
+UWP platform specific runner for MVB",Mvb.Platform.UWP,False,2016-11-28T09:22:13.447+00:00,True,False,,"mvb,binder,xamarin,mvb.platform.uwp,uwp,universal,windows,10",576,False,0.0.8
+Code Singularity,2016-08-28T11:30:06.91Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.11.28
+Code Singularity,2016-08-28T11:26:56.273Z,43209,600,"Unit test stub autogeneration, automatic attribute-based testing, automatic nullability testing, trait-based code coverage",LUnit,False,1900-01-01T00:00:00+00:00,False,False,,,13389,False,2016.241.11.25
+Sepanta (http://www.sepanta.com),2016-08-28T11:23:56.54Z,278,600,"Mehr micro packages (libraries)
+    Sepanta Software Development Team (software.feedback [-at-] sepanta [-dot-] com)",Mehr.Web.Mvc,False,2017-07-16T03:20:15.963-07:00,True,False,,,2176,False,2.5.0
+Code Singularity,2016-08-28T11:20:29.343Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.11.19
+Code Singularity,2016-08-28T11:10:32.143Z,43209,600,"Unit test stub autogeneration, automatic attribute-based testing, automatic nullability testing, trait-based code coverage",LUnit,False,1900-01-01T00:00:00+00:00,False,False,,,13389,False,2016.241.11.9
+Shaman.ValueString,2016-08-28T11:04:28.263Z,127,600,Shaman.ValueString,Shaman.ValueString,False,2017-12-14T23:19:29.897+00:00,True,False,Allocation-free string-like type.,"string,gc-free,gc,optimization,allocation,struct,performance",8820,False,1.0.2.19
+"Shay Rojansky,Emil Lenngren,Francisco Figueiredo Jr.,Kenji Uno,Jon Asher,Josh Cooley,Federico Di Gregorio,Jon Hanna,Chris Morgan,Dave Page,Glen Parker,Brar Piening,Hiroshi Saito",2016-08-28T11:04:04.967Z,413,600,"Npgsql is a .NET data provider for PostgreSQL, 100% implemented in C# code. PostgreSQL 9.x and above is officially supported, other versions may work.",Shaman.Npgsql,False,2017-03-03T10:45:14.107-08:00,True,False,,,1914,False,3.0.1.2
+Florin Nitoi,2016-08-28T11:02:25.647Z,171,600,A simple mocking library for TypeScript,typemoq,False,2017-10-31T06:16:25.293+00:00,True,False,,"mock,stub,fake,spy,library,sandbox,typescript,javascript",4563,False,0.3.3
+Code Singularity,2016-08-28T11:02:07.39Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.11
+Shaman.DbLinq,2016-08-28T10:58:41.107Z,413,600,Shaman.DbLinq,Shaman.DbLinq,False,2017-03-03T11:47:55.173-08:00,True,False,,,2238,False,1.0.1.2
+Marco Milani,2016-08-28T10:55:36.143Z,509,600,"MVB Platform iOS
+iOS platform specific runner for MVB",Mvb.Platform.iOS,False,2016-11-27T22:05:16.513+00:00,True,False,,"mvb,binder,xamarin,mvb.platform.ios,ios",517,False,0.0.8
+Marco Milani,2016-08-28T10:55:36.143Z,509,600,"MVB Platform iOS
+iOS platform specific runner for MVB",Mvb.Platform.iOS,False,2016-11-27T22:05:16.513+00:00,True,False,,"mvb,binder,xamarin,mvb.platform.ios,ios",517,False,0.0.8
+"Aleksey Gordeev,Igor Eroshkin",2016-08-28T10:55:08.92Z,269,600,Rapid create and edit configurations for microservices,Konfig,True,2017-07-25T12:28:41.91+00:00,True,False,,"config,confuration",1245,False,0.0.0.968-alpha
+Code Singularity,2016-08-28T10:53:23.633Z,43209,600,C# Extensions Method Library,LCore,False,1900-01-01T00:00:00+00:00,False,False,,"extensions,C#",42697,False,2016.241.10.50
+Code Singularity,2016-08-28T10:51:24.867Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.10.50
+Marco Milani,2016-08-28T10:47:46.517Z,509,600,"MVB Platform Droid
+Android platform specific runner for MVB",Mvb.Platform.Droid,False,2016-11-27T22:03:04.34+00:00,True,False,,"mvb,binder,xamarin,mvb.platform.droid,droid,android",706,False,0.0.8
+Marco Milani,2016-08-28T10:47:46.517Z,509,600,"MVB Platform Droid
+Android platform specific runner for MVB",Mvb.Platform.Droid,False,2016-11-27T22:03:04.34+00:00,True,False,,"mvb,binder,xamarin,mvb.platform.droid,droid,android",706,False,0.0.8
+Michael Coelsch,2016-08-28T10:46:25.043Z,43209,600,Internal Toolbox for MyCONVENO Sales4Pro.,S4PToolbox,False,1899-12-31T16:00:00-08:00,False,False,,MyCONVENO,-1,False,4.0.16
+Eric,2016-08-28T10:32:09.803Z,600,600,Rapid.Core,Rapid.Core,False,2016-08-28T10:32:09.803+00:00,True,False,,,358,False,1.0.0.1
+Ray,2016-08-28T10:35:39.043Z,600,600,Rapid.Web.Core  For Mvc,Rapid.Web.Core,False,2016-08-28T03:35:39.043-07:00,True,False,,,177,False,1.0.0
+Michael Coelsch,2016-08-28T10:33:01.87Z,43209,600,Internal Toolbox for MyCONVENO Sales4Pro.,S4PToolbox,False,1899-12-31T16:00:00-08:00,False,False,,MyCONVENO,-1,False,4.0.15
+Eric,2016-08-28T10:32:09.803Z,600,600,Rapid.Core,Rapid.Core,False,2016-08-28T10:32:09.803+00:00,True,False,,,358,False,1.0.0.1
+GreatBillows,2016-08-28T10:31:37.903Z,142,600,Service for FCP(Fluent Compute Platform),FCP.Service,False,2017-11-29T12:53:57.897+00:00,True,False,,,1097,False,1.0.5
+GreatBillows,2016-08-28T10:31:31.42Z,142,600,Repository for FCP(Fluent Compute Platform),FCP.Repository,False,2017-11-29T12:53:46.52+00:00,True,False,,,959,False,1.0.4
+GreatBillows,2016-08-28T10:31:45.303Z,119,600,Entity Mapper for FCP(Fluent Compute Platform),FCP.Entity,False,2017-12-22T09:46:31.65+00:00,True,False,,,647,False,1.0.2
+Code Singularity,2016-08-28T10:31:43.54Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.10.30
+GreatBillows,2016-08-28T10:31:25.497Z,119,600,Data Access for FCP(Fluent Compute Platform),FCP.Data,False,2017-12-22T11:21:38.133+00:00,True,False,,,1084,False,1.0.4
+Eric,2016-08-28T10:28:47.007Z,600,600,Rapid.Core,Rapid.Core,False,2016-08-28T10:32:09.803+00:00,True,False,,,358,False,1.0.0
+Hydra,2015-01-21T20:45:01.367Z,43209,1185,JUnit Orm Framework,JUnitDataAccess,False,1899-12-31T16:00:00-08:00,False,False,,"orm,database",11490,False,2.0.0
+Hydra,2015-01-21T20:55:17.25Z,43209,1185,JUnit Orm Framework,JUnitDataAccess,False,1899-12-31T16:00:00-08:00,False,False,,"orm,database",11490,False,2.1.0
+Hydra,2015-01-30T03:19:01.207Z,43209,1176,JUnit Orm Framework,JUnitDataAccess,False,1899-12-31T16:00:00-08:00,False,False,,"orm,database",11490,False,2.2.0
+Hydra,2016-08-23T03:50:18.09Z,100,605,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.7.5
+Hydra,2016-08-28T10:13:56.163Z,100,600,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,True,False,,"orm,database",14493,False,5.7.6
+entry.reg@gmail.com,2016-02-04T16:25:42.797Z,525,806,"Official package of libraries to support the CI /Build Servers for plugin vsSolutionBuildEvent.
+
+Event-Catcher with a variety of advanced Actions for maintenance of your projects and libraries, building processes and processes at runtime.
+    
+    [[ Documentation: http://vssbe.r-eg.net -> http://vssbe.r-eg.net/doc/CI/CI.MSBuild/ ]]
+    * VS Gallery Page: https://visualstudiogallery.msdn.microsoft.com/0d1dbfd7-ed8a-40af-ae39-281bfeca2334/
+    * Source code: https://github.com/3F/vsSolutionBuildEvent
+    * Public Issue Tracker still here: https://bitbucket.org/3F/vssolutionbuildevent/issues
+        
+    Package version: a.b.x[.y] -> a & b - CI.MSBuild (v1.6) -> x - main library (1207 is a v0.12.7.3805) -> y - variant of package if exists
+
+~~~~~~~~
+Alternative to get it:
+
+    ==========================================
+     msbuild gnt.core /p:ngpackages=""vsSBE.CI.MSBuild/1.6.1207"" 
+    ==========================================
+* https://github.com/3F/GetNuTool
+
+ 
+    
+    ",vsSBE.CI.MSBuild,False,2016-11-11T21:37:33.65+00:00,True,False,"Official package of libraries to support the CI /Build Servers for plugin vsSolutionBuildEvent.
+
+Event-Catcher with a variety of advanced Actions for maintenance of your projects and libraries, building processes and processes at runtime.
+
+[[ vssbe.r-eg.net ]] https://visualstudiogallery.msdn.microsoft.com/0d1dbfd7-ed8a-40af-ae39-281bfeca2334/
+","Build,automation,Events,Tools,vsSolutionBuildEvent,MSBuild,vsSBE,CI,logging,Scripts,files,Solution,Projects,version,versioning,AppVeyor,TeamCity,Build-automation,custom-versioning,automatic-versions,downloader,GetNuTool,zip,7z,7zip,archiver,http,ftp,CSharp-Compiler,Warnings,Errors",6283,False,1.6.1207
+Simon Elms,2016-08-28T10:11:54.143Z,43209,600,A console-based menu generator.  Menu items are generated by decorating static methods with [MenuMethod] attributes.  Sub-menus are generated by decorating classes with [MenuClass] attributes.,GoldConsoleMenu,False,1900-01-01T00:00:00+00:00,False,False,,"Console,Menu",-1,False,2.0.0
+gregsdennis,2016-08-28T10:10:37.073Z,1,600,"A fully object-oriented approach to JSON manipulation, validation, and serialization that focuses on modeling the JSON structure rather than mere string parsing.",Manatee.Json,False,2018-04-19T04:15:01.69+00:00,True,False,,"json,manatee,parser,serializer,jsonpath,jsonschema,transform,path,schema,linq-to-json",38739,False,5.0.0
+RoaringBitmap Contributors,2016-08-28T10:05:55.747Z,468,600,RoaringBitmap for .NET,RoaringBitmap,False,2017-01-07T13:41:04.7-08:00,True,False,,RoaringBitmap,3704,False,0.0.7.2
+David Bottiau,2016-08-28T09:59:57.537Z,466,600,A .NET library to access the livecoding.tv API,livecoding-api-pcl,False,2017-01-09T14:29:44-08:00,True,False,,"Livecoding,Api",1748,False,1.1.7
+Igor Sharapov (Mr1Penguin),2016-08-28T09:59:32.883Z,43209,600,Library for using Deviantart API from .NET.,DeviantartApi.WinRT,False,1900-01-01T00:00:00+00:00,False,False,,Api,-1,False,0.3.0
+Igor Sharapov (Mr1Penguin),2016-08-28T09:58:49.167Z,43209,600,Library for using Deviantart API from .NET.,DeviantartApi.NET,False,1900-01-01T00:00:00+00:00,False,False,,Api,-1,False,0.3.0
+dk-xamarin,2016-08-28T09:57:25.69Z,193,600,DK: extended and improved controls for Xamarin.Forms,DK.Controls,False,2017-10-09T23:19:55.443+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",58042,False,1.5.0
+dk-xamarin,2016-08-28T09:57:34.59Z,369,600,DK: generic platform (full .net framework!),DK.Generic,False,2017-04-15T23:22:05.273-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",49446,False,1.5.0
+dk-xamarin,2016-08-28T09:57:43.7Z,51,600,"Fork of SQLite.Net-PCL. It supports 64 bit unsigned integers (ulong) stored as blob's, and contains many performance optimizations.",DK.SQLite,False,2018-02-28T22:21:53.7+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",61697,False,1.5.0
+dk-xamarin,2016-08-28T09:57:16.01Z,362,600,DK: portable class library (no dependency on Xamarin),DK.Portable,False,2017-04-23T16:25:35.32+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51803,False,1.5.0
+dk-xamarin,2016-08-28T09:57:06.577Z,600,600,DK: android platform specific code for the FAB,DK.Android.FloatingActionButton,False,2016-08-28T11:34:15.083-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",5668,False,1.5.0
+dk-xamarin,2016-08-28T09:56:57.83Z,369,600,DK: android platform specific code,DK.Android,False,2017-04-16T06:22:52.547+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51079,False,1.5.0
+Code Singularity,2016-08-28T09:52:59.737Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.9.51
+Hydra,2016-02-23T06:14:53.62Z,100,787,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.0.1
+Hydra,2016-02-27T06:07:31.35Z,100,783,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.1.1
+Hydra,2016-02-27T06:35:38.29Z,100,783,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.1.2
+Hydra,2016-04-06T13:31:08.553Z,100,744,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.3.1
+Hydra,2016-03-31T06:12:54.37Z,100,750,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.2.0
+Hydra,2016-04-04T16:01:06.54Z,100,746,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.3.0
+Hydra,2016-04-08T04:05:18.307Z,100,742,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.3.2
+Hydra,2016-04-09T13:40:16.073Z,100,741,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.3.3
+Hydra,2016-04-11T04:40:43.423Z,100,739,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.4.0
+Hydra,2016-04-09T14:04:17.443Z,100,741,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.3.4
+Hydra,2016-04-12T06:10:16.703Z,100,738,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.4.1
+Hydra,2016-04-12T07:01:33.667Z,100,738,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.4.2
+Hydra,2016-04-21T06:01:34.607Z,100,729,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.5.0
+Hydra,2016-04-21T07:56:47.687Z,100,729,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.5.1
+Hydra,2016-04-21T08:02:05.83Z,100,729,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.5.2
+Hydra,2016-04-21T08:22:25.11Z,100,729,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.5.3
+Hydra,2016-04-24T06:28:08.633Z,100,726,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.6.0
+Hydra,2016-04-24T06:36:58.59Z,100,726,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.6.1
+Hydra,2016-05-16T08:18:49.64Z,100,704,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.6.4
+Hydra,2016-04-24T06:51:36.757Z,100,726,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.6.2
+Hydra,2016-05-15T10:56:17.753Z,100,705,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.6.3
+Hydra,2016-06-01T12:57:47.933Z,100,688,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.6.6
+Hydra,2016-05-30T14:37:06.797Z,100,690,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.6.5
+Hydra,2016-08-06T05:06:48.787Z,100,622,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.7.4
+Hydra,2016-07-26T08:30:14.393Z,100,633,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.7.3
+Hydra,2016-06-16T01:22:55.357Z,100,673,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.6.8
+Hydra,2016-06-13T03:41:18.51Z,100,676,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.6.7
+Hydra,2016-06-26T13:15:12.943Z,100,663,Sail Framework,SailDataAccess,False,2018-01-10T03:53:29.243+00:00,False,False,,"orm,database",14493,False,5.7.0
+tangxuehua,2016-08-28T09:42:11.617Z,92,600,A high performance distributed mq written by c#.,EQueue,False,2018-01-18T16:25:33.063+00:00,True,False,,"ENode,EQueue,ECommon,MessageQueue",26457,False,2.2.3
+Hydra,2015-04-02T17:49:22.757Z,45,1114,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,1.0.0
+Hydra,2015-04-20T02:52:29.657Z,45,1096,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,1.1.0
+Hydra,2015-04-23T03:40:51.76Z,45,1093,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,1.2.0
+Hydra,2015-04-26T01:46:40.493Z,45,1090,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,1.3.0
+Hydra,2015-04-29T05:43:53.65Z,45,1087,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,1.4.0
+Hydra,2015-05-07T03:50:30.313Z,45,1079,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,1.5.0
+Hydra,2015-05-07T06:23:20.9Z,45,1079,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,1.6.0
+Hydra,2015-05-25T07:32:48.077Z,45,1061,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,1.7.0
+Hydra,2015-06-12T08:53:36.647Z,45,1043,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,2.0.0
+Hydra,2015-06-29T02:14:03.047Z,45,1026,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,2.1.0
+Hydra,2015-06-29T03:29:36.153Z,45,1026,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,2.1.1
+Hydra,2015-06-29T09:28:50.36Z,45,1026,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,2.1.2
+Hydra,2015-07-01T08:37:38.187Z,45,1024,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,2.1.3
+Hydra,2015-09-08T03:26:59.567Z,45,955,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,2.1.4
+Hydra,2015-10-13T01:57:51.69Z,45,920,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,2.2.0
+Hydra,2015-09-15T06:39:39.277Z,45,948,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,2.1.8
+Hydra,2015-12-01T14:22:07.193Z,45,871,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,3.2.0
+Hydra,2015-10-12T03:22:38.11Z,45,921,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,2.1.9
+Hydra,2015-09-09T08:34:46.327Z,45,954,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,2.1.5
+Hydra,2015-11-26T08:09:12.04Z,45,876,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,3.1.0
+Hydra,2015-12-13T08:36:35.367Z,45,859,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,3.3.0
+Hydra,2015-12-13T08:52:19.59Z,45,859,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,3.4.0
+Hydra,2015-12-25T03:13:10.52Z,45,847,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,3.5.0
+Hydra,2015-12-25T03:38:34.443Z,45,847,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,3.5.1
+Hydra,2016-01-13T06:13:13.703Z,45,828,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,3.6.1
+Hydra,2016-06-16T03:32:08.553Z,45,673,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,3.6.3
+Hydra,2016-01-21T05:27:26.08Z,45,820,Sail Web Helper,SailWeb,False,2018-03-06T04:42:37.107+00:00,False,False,,,6323,False,3.6.2
+Aaron McGee,2016-08-28T09:35:57.687Z,550,600,GlueIoC is a framework-agnostic way of expressing depdendency registrations. This package allows you to easily apply GlueIoC dependency registrations to Castle Windsor.,AMCG.GlueIoC.CastleWindsor,True,2016-10-16T20:28:25.997-07:00,True,False,,,2518,False,1.0.0-pre-20160828
+Tom Pratt,2016-08-28T09:35:09.067Z,600,600,"WeakSubscribe to events. Taken from the MvvmCross codebase and provided on its own. WeakSubscribe hands responsibility to the client code, unlike using a WeakEventManager which requires modified events.
+
+      See project site for instructions.",Sylapse.WeakSubscribe,False,2016-08-28T02:35:09.067-07:00,True,False,WeakSubscribe to events. Taken from the MvvmCross codebase and provided on its own.,"Weak,Event,WeakSubscribe,WeakEvent,WeakEventManager",208,False,1.0.0
+Code Singularity,2016-08-28T09:34:18.813Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.9.32
+"Brock Allen,Dominick Baier",2016-08-28T09:33:36.43Z,4,600,ASP.NET Core middleware to validate JWT and reference tokens from IdentityServer4,IdentityServer4.AccessTokenValidation,True,2018-04-16T06:33:48.72+00:00,True,False,,"OAuth2,OAuth,2.0,OpenID,Connect,Security,Identity,IdentityServer",1062858,True,1.0.1-beta4
+Quentin Stoeckel,2016-08-28T09:29:49.247Z,600,600,MaterialDesignIcons as C# consts,MaterialDesignIcons-CSharp-Consts,False,2016-08-28T02:29:49.247-07:00,True,False,,"Material,MaterialDesignIcons",758,False,1.2.0
+Code Singularity,2016-08-28T09:19:59.977Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.9.18
+chenkaihua,2016-08-28T09:19:17.797Z,333,600,.net平台下基于webrequest的简易Http请求框架,EasyHttp4Net.Core,False,2017-05-22T10:39:55.033+00:00,True,False,,httplibrary,2369,False,1.0.3
+www.libsdl.org,2016-08-28T09:10:11.673Z,43209,600,"Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.This package contains native libraries of Univeral Windows Platform apps.",DevZH.SDL.UWP.Native,True,1900-01-01T00:00:00+00:00,False,False,,"SDL,native,netcore,uwp",383,False,2.0.4-nightly-10228
+www.libsdl.org,2016-08-28T09:11:09.323Z,43209,600,"Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.This package contains native libraries of Windows, macOS, and Linux.",DevZH.SDL.Standard.Native,True,1900-01-01T00:00:00+00:00,False,False,,"SDL,native,netcore",379,False,2.0.4-nightly-10228
+www.libsdl.org,2016-08-28T09:12:05.697Z,43209,600,"Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.",DevZH.SDL.Native,True,1899-12-31T16:00:00-08:00,False,False,,"SDL,native,netcore,uwp",318,False,2.0.4-nightly-10228
+www.libsdl.org,2016-08-26T10:11:46.32Z,43209,602,"Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.",DevZH.SDL.Native,False,1899-12-31T16:00:00-08:00,False,False,,"SDL,native,netcore,uwp",318,False,2.0.4
+www.libsdl.org,2016-08-28T09:12:05.697Z,43209,600,"Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.",DevZH.SDL.Native,True,1899-12-31T16:00:00-08:00,False,False,,"SDL,native,netcore,uwp",318,False,2.0.4-nightly-10228
+www.libsdl.org,2016-08-26T10:11:00.133Z,43209,602,"Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.This package contains native libraries of Windows, macOS, and Linux.",DevZH.SDL.Standard.Native,False,1900-01-01T00:00:00+00:00,False,False,,"SDL,native,netcore",379,False,2.0.4
+www.libsdl.org,2016-08-28T09:11:09.323Z,43209,600,"Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.This package contains native libraries of Windows, macOS, and Linux.",DevZH.SDL.Standard.Native,True,1900-01-01T00:00:00+00:00,False,False,,"SDL,native,netcore",379,False,2.0.4-nightly-10228
+Bit Miracle,2016-08-28T09:11:28.883Z,3,600,"This is the prerelease version of Docotic.Pdf library.
+        
+        Prerelease version contains newest features and latest bug fixes. This version is tested for regressions and is safe to be used in production environment.
+        
+        Docotic.Pdf library can create, edit, draw and print PDF files.
+
+The library is a fully managed assembly for .NET Standard 1.3, .NET 2.0 and later frameworks. The assembly has no external dependencies.
+
+There are different types of licenses: for applications, for servers, cloud and unlimited. All licenses are royalty-free. 
+
+Free time-limited licenses are available upon request.",BitMiracle.Docotic.Pdf,True,2018-04-17T04:43:51.433+00:00,True,False,"This is the prerelease version of Docotic.Pdf library.
+        Prerelease version contains newest features and latest bug fixes. This version is tested for regressions and is safe to be used in production environment.","PDF,Library,Editor,Viewer,PDF/A,Print,pdf-generation,pdf-library,.net20,pdf2text,pdf2image,Forms,BitMiracle,Bit,Miracle",53064,False,4.9.7889-dev
+DevZH.SDL.UWP.Native,2016-08-26T10:04:54.607Z,43209,602,"Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.This package contains native libraries of Univeral Windows Platform apps.",DevZH.SDL.UWP.Native,False,1900-01-01T00:00:00+00:00,False,False,,"SDL,native,netcore,uwp",383,False,2.0.4
+www.libsdl.org,2016-08-28T09:10:11.673Z,43209,600,"Simple DirectMedia Layer is a cross-platform development library designed to provide low level access to audio, keyboard, mouse, joystick, and graphics hardware via OpenGL and Direct3D.This package contains native libraries of Univeral Windows Platform apps.",DevZH.SDL.UWP.Native,True,1900-01-01T00:00:00+00:00,False,False,,"SDL,native,netcore,uwp",383,False,2.0.4-nightly-10228
+chenkaihua,2016-08-28T09:01:34.803Z,333,600,.net平台下基于webrequest的简易Http请求框架,EasyHttp4Net.Core,False,2017-05-22T10:39:55.033+00:00,True,False,,httplibrary,2369,False,1.0.2
+Project Limitless,2016-08-28T08:56:15.017Z,521,600,A minimalist remote procedure call library that works over the standard input/ouput of processes.,Limitless.ioRPC,False,2016-11-15T06:00:25.737-08:00,True,False,A minimalist remote procedure call library that works over the standard input/ouput of processes.,"stdio,rpc",1610,False,1.0.0.35
+Code Singularity,2016-08-28T08:56:15.81Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.8.54
+rzmoz,2016-08-28T08:27:03.423Z,43209,600,Syntactical sugar for .NET.,DotNet.Basics,False,1900-01-01T00:00:00+00:00,False,False,,,20433,False,3.3.2
+rynn.wang,2016-08-28T08:46:50.733Z,1,600,"Common library for .NET projects. Including REST Api handler, exception handler, AOP, Reflection, Extensions, Configurations, etc.",Beyova.Common,False,2018-04-19T15:08:20.933+00:00,True,False,"Common library for .NET projects. Including REST Api handler, exception handler, AOP, Reflection, Extensions, Configurations, etc.",,22438,False,3.7.11
+Sarin Na Wangkanai (@wangkanai),2016-08-03T20:18:13.19Z,43209,625,"ASP.NET Core Responsiveness middleware for routing base upon request client device detection to specific view
+Being to target difference client devices with seperation of concern is crucial, due to you can mininize what is sent to the client directly from the service to only what is needed and nothing more. This increase performance and lower bandwidth usage.",Wangkanai.AspNetCore.Responsiveness,True,1900-01-01T00:00:00+00:00,False,False,,"aspnetcore,responsiveness",-1,False,1.0.0-t002fdc324
+Sarin Na Wangkanai (@wangkanai),2016-08-02T08:43:42.643Z,43209,626,"ASP.NET Core client responsiveness middleware for routing base upon request client device detection to specific view. Being to target difference client devices with seperation of concern is crucial, due to you can mininize what is sent to the client directly from the service to only what is needed and nothing more. This increase performance and lower bandwidth usage.",Wangkanai.AspNetCore.Responsiveness,True,1900-01-01T00:00:00+00:00,False,False,ASP.NET Core client responsiveness middleware for routing base upon request client device detection to specific view,"aspnetcore,responsiveness",-1,False,1.0.0-beta1
+Sarin Na Wangkanai (@wangkanai),2016-08-03T20:18:26.557Z,43209,625,ASP.NET Core Responsiveness abstractions and interfaces for invocation and dispatching,Wangkanai.AspNetCore.Responsiveness.Abstractions,True,1899-12-31T16:00:00-08:00,False,False,,"aspnetcore,responsiveness",-1,False,1.0.0-t002fdc324
+Sarin Na Wangkanai (@wangkanai),2016-08-03T20:18:36.01Z,43209,625,"ASP.NET Core Responsive core components.
+Commonly used types:
+Wangkanai.AspNetCore.Responsiveness.AreaAttribute",Wangkanai.AspNetCore.Responsiveness.Core,True,1899-12-31T16:00:00-08:00,False,False,,"aspnetcore,responsiveness",-1,False,1.0.0-t002fdc324
+Sarin Na Wangkanai (@wangkanai),2016-08-24T05:59:51.62Z,43209,604,"ASP.NET Core Responsive core components.
+Commonly used types:
+Wangkanai.AspNetCore.Responsiveness.AreaAttribute",Wangkanai.AspNetCore.Responsiveness.Core,True,1899-12-31T16:00:00-08:00,False,False,,"aspnetcore,responsiveness",-1,False,1.0.0-t00318a86f
+Sarin Na Wangkanai (@wangkanai),2016-08-24T05:59:44.083Z,43209,604,ASP.NET Core Responsiveness abstractions and interfaces for invocation and dispatching,Wangkanai.AspNetCore.Responsiveness.Abstractions,True,1899-12-31T16:00:00-08:00,False,False,,"aspnetcore,responsiveness",-1,False,1.0.0-t00318a86f
+Sarin Na Wangkanai (@wangkanai),2016-08-24T05:59:30.943Z,43209,604,"ASP.NET Core Responsiveness middleware for routing base upon request client device detection to specific view
+Being to target difference client devices with seperation of concern is crucial, due to you can mininize what is sent to the client directly from the service to only what is needed and nothing more. This increase performance and lower bandwidth usage.",Wangkanai.AspNetCore.Responsiveness,True,1900-01-01T00:00:00+00:00,False,False,,"aspnetcore,responsiveness",-1,False,1.0.0-t00318a86f
+Sarin Na Wangkanai,2016-08-28T08:38:32.673Z,43209,600,"ASP.NET Core Responsiveness core components.
+Commonly used types:
+Wangkanai.AspNetCore.Responsiveness.AreaAttribute",Wangkanai.Responsiveness.Core,True,1899-12-31T16:00:00-08:00,False,False,,"aspnetcore,responsiveness",-1,False,1.0.0-t0031e1191
+Sarin Na Wangkanai,2016-08-28T08:38:17.443Z,43209,600,"ASP.NET Core Responsiveness middleware for routing base upon request client device detection to specific view
+Being to target difference client devices with seperation of concern is crucial, due to you can mininize what is sent to the client directly from the service to only what is needed and nothing more. This increase performance and lower bandwidth usage.",Wangkanai.Responsiveness,True,1899-12-31T16:00:00-08:00,False,False,,"aspnetcore,responsiveness",-1,False,1.0.0-t0031e1191
+Sarin Na Wangkanai,2016-08-28T08:38:24.673Z,43209,600,ASP.NET Core Responsiveness abstractions and interfaces for invocation and dispatching,Wangkanai.Responsiveness.Abstractions,True,1899-12-31T16:00:00-08:00,False,False,,"aspnetcore,responsiveness",-1,False,1.0.0-t0031e1191
+chenkaihua,2016-08-28T08:32:54.587Z,333,600,.net平台下基于webrequest的简易Http请求框架,EasyHttp4Net.Core,False,2017-05-22T10:39:55.033+00:00,True,False,,httplibrary,2369,False,1.0.1
+chenkaihua,2016-08-28T08:32:54.587Z,333,600,.net平台下基于webrequest的简易Http请求框架,EasyHttp4Net.Core,False,2017-05-22T10:39:55.033+00:00,True,False,,httplibrary,2369,False,1.0.1
+amay077,2016-08-28T08:32:40.437Z,57,600,Yet another Maps library for Xamarin.Forms that optimized for Google maps.,Xamarin.Forms.GoogleMaps,True,2018-02-22T10:35:29.703+00:00,True,False,Yet another Maps library for Xamarin.Forms that optimized for Google maps,"xamarin,forms,maps,xamarinforms,xamarinformsmaps,xamarin.forms.maps,google,googlemap",68906,False,1.6.0-beta1
+Alessio Parma <alessio.parma@gmail.com>,2016-08-28T08:31:46.56Z,131,600,"Fully managed library providing convenience methods to perform argument checks.
+Thrower allows to write preconditions in a pretty lean way, which reduces the clutter at the beginning of each method by removing the need to use the cumbersome ""if true then throw ex"" required to validate parameters.
+For example, a validation against null becomes ""Raise.ArgumentNullException.IfIsNull(myParam)"", while a generic validation may be written as ""Raise.ArgumentException.If(condition)"".",Thrower,False,2017-12-10T15:29:52.21+00:00,True,False,Fully managed library providing convenience methods to perform argument checks.,"preconditions,check,integrity,parameters,fluent,arguments,validation,portable,netstandard",80048,False,3.0.2
+rzmoz,2016-08-24T08:22:49.2Z,43209,604,Syntactical sugar for .NET.,DotNet.Basics,False,1900-01-01T00:00:00+00:00,False,False,,,20433,False,3.2.0
+rzmoz,2016-08-26T09:05:25.987Z,43209,602,Syntactical sugar for .NET.,DotNet.Basics,False,1900-01-01T00:00:00+00:00,False,False,,,20433,False,3.3.1
+rzmoz,2016-08-25T05:10:11.413Z,43209,603,Syntactical sugar for .NET.,DotNet.Basics,False,1900-01-01T00:00:00+00:00,False,False,,,20433,False,3.3.0
+rzmoz,2016-08-28T08:27:03.423Z,43209,600,Syntactical sugar for .NET.,DotNet.Basics,False,1900-01-01T00:00:00+00:00,False,False,,,20433,False,3.3.2
+Sarin Na Wangkanai,2016-08-27T11:28:27.463Z,43209,601,"ASP.NET Core Responsiveness middleware for routing base upon request client device detection to specific view
+Being to target difference client devices with seperation of concern is crucial, due to you can mininize what is sent to the client directly from the service to only what is needed and nothing more. This increase performance and lower bandwidth usage.",Wangkanai.AspNetCore.Responsiveness,True,1900-01-01T00:00:00+00:00,False,False,,"aspnetcore,responsiveness",-1,False,1.0.0-t0031ceab9
+Sarin Na Wangkanai,2016-08-27T11:28:44.247Z,43209,601,"ASP.NET Core Responsiveness core components.
+Commonly used types:
+Wangkanai.AspNetCore.Responsiveness.AreaAttribute",Wangkanai.AspNetCore.Responsiveness.Core,True,1899-12-31T16:00:00-08:00,False,False,,"aspnetcore,responsiveness",-1,False,1.0.0-t0031ceab9
+Sarin Na Wangkanai,2016-08-27T11:28:34.28Z,43209,601,ASP.NET Core Responsiveness abstractions and interfaces for invocation and dispatching,Wangkanai.AspNetCore.Responsiveness.Abstractions,True,1899-12-31T16:00:00-08:00,False,False,,"aspnetcore,responsiveness",-1,False,1.0.0-t0031ceab9
+Code Singularity,2016-08-28T08:22:01.817Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.8.20
+Streamcoders.com,2016-08-28T08:20:37.08Z,361,600,Is a comprehensive library for handling audio/video codecs and streaming technologies.,Streamcoders.MediaSuite.x64,False,2017-04-24T08:51:08.597+00:00,True,False,,"audio,video,streaming,html5,rtsp,rtp,h.264,vp8",101928,False,4.0.1204
+BigODM Lab.,2016-08-28T08:21:00.233Z,45,600,The BioC-compatible species recognizer module can identify species names and normalize them to NCBI Taxonomy IDs.,NTTU.BigODM.Bio.NER.Species,False,2018-03-06T06:45:12.63+00:00,True,False,"The NTTMUNSW BioC module for 
+recognizing and normalizing species terms.",nlp,774,False,1.0.0.1
+Streamcoders.com,2016-08-28T08:20:12.197Z,361,600,Is a comprehensive library for handling audio/video codecs and streaming technologies.,Streamcoders.MediaSuite.x86,False,2017-04-24T01:50:45.473-07:00,True,False,,"audio,video,streaming,html5,rtsp,rtp,h.264,vp8",102824,False,4.0.1204
+Code Singularity,2016-08-28T08:19:49.22Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.8.18
+Code Singularity,2016-08-28T08:14:19.8Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.8.13
+Code Singularity,2016-08-28T08:13:01.47Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.8.11
+Code Singularity,2016-08-28T08:11:40.073Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.8.10
+Aaron McGee,2016-08-28T08:10:05.78Z,550,600,GlueIoC is a generalized way of expressing (overridable) Inversion of Control (IoC) definitions in framework-agnostic class libraries. This makes your code packages flexible and easily configurable.,AMCG.GlueIoC,True,2016-10-16T19:50:55.357-07:00,True,False,,,3129,False,1.1.3-pre-20160828
+Code Singularity,2016-08-28T08:06:56.817Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.8.5
+Code Singularity,2016-08-28T08:05:28.5Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.8.4
+Code Singularity,2016-08-28T08:03:10.243Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.8.1
+Aaron McGee,2016-08-28T07:59:12.633Z,550,600,GlueIoC is a generalized way of expressing (overridable) Inversion of Control (IoC) definitions in framework-agnostic class libraries. This makes your code packages flexible and easily configurable.,AMCG.GlueIoC,True,2016-10-16T19:50:55.357-07:00,True,False,,,3129,False,1.1.2-pre-20160828
+takutoy,2016-08-28T07:59:10.17Z,600,600,Sussen is a Nessus v6 REST API Client for .NET4.5,Sussen,False,2016-08-28T00:59:10.17-07:00,True,False,,Nessus,283,False,1.0.0.1
+DManavi,2016-04-03T12:17:27.1Z,747,747,Base classes of the EASE framework,Ease.Database,False,2016-04-03T05:17:27.1-07:00,True,False,,"ORM,ODM,Framework,Database,DB,Repository,UnitOfWork",1017,False,1.0.5
+DManavi,2016-04-09T07:28:34.75Z,531,741,MongoDB implementation of the EASE database framework,Ease.Database.MongoDB,False,2016-11-05T06:12:55.76-07:00,True,False,,"ORM,ODM,Framework,Database,DB,Repository,UnitOfWork",767,False,1.0.2
+IASL BTM Team,2016-08-28T07:54:18.23Z,143,600,IASL gene mention recognition library developed based on BioCreative GM corpus.,IASL.BioTextMining.NamedEntityIdentification.BioCreative,False,2017-11-28T03:55:44.557+00:00,True,False,IASL gene mention recognition library.,,1066,False,2.0.4.3
+Code Singularity,2016-08-28T07:53:20.12Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.7.51
+Aaron McGee,2016-08-28T07:49:27.683Z,550,600,GlueIoC is a generalized way of expressing (overridable) Inversion of Control (IoC) definitions in framework-agnostic class libraries. This makes your code packages flexible and easily configurable.,AMCG.GlueIoC,True,2016-10-16T19:50:55.357-07:00,True,False,,,3129,False,1.1.1-pre-20160828
+Code Singularity,2016-08-28T07:44:25.63Z,43209,600,C# Extensions Method Library,LCore,False,1900-01-01T00:00:00+00:00,False,False,,"extensions,C#",42697,False,2016.241.7.42
+takutoy,2016-08-28T07:34:38.44Z,600,600,Sussen is a Nessus v6 REST API Client for .NET4.5,Sussen,False,2016-08-28T00:59:10.17-07:00,True,False,,Nessus,283,False,1.0.0
+Code Singularity,2016-08-28T07:33:39.133Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.7.32
+mgholam,2016-08-28T07:32:18.25Z,84,600,"NoSql, JSON based, Document store database with compiled .net map functions and automatic hybrid bitmap indexing and LINQ query filters (now with standalone Server mode, Backup and Active Restore, Transactions, Server side queries, MonoDroid support, HQ-Branch Replication, works on Linux)",RaptorDB_doc,False,2018-01-26T13:55:17.78+00:00,True,False,,,6753,False,3.3.12
+Aaron McGee,2016-08-28T07:30:00.687Z,550,600,GlueIoC is a generalized way of expressing (overridable) Inversion of Control (IoC) definitions in framework-agnostic class libraries. This makes your code packages flexible and easily configurable.,AMCG.GlueIoC,True,2016-10-16T19:50:55.357-07:00,True,False,,,3129,False,1.1.0-pre-20160828
+Eben Roux,2016-08-28T07:29:26.62Z,180,600,"Cross-cutting infrastructure components such as logging, guard, and reflection.",Shuttle.Core.Infrastructure,False,2017-10-22T08:02:34.09+00:00,True,False,,"shuttle,shuttle-core,shuttle-core-infrastructure",3881,True,4.2.3
+Andres J Soria R,2016-08-28T07:24:35.067Z,555,600,"Angular Avatar is a simple and lightweight AngularJS directive that generates a letter's avatar like Google does in several web apps. First letter of each word in a string or a group of initials will be used to generate the avatar. The image of the avatar will be rendered in an html img tag as a real png or jpeg. This image data can be retrieved using js to store an initial profile picture in your web or mobile apps when the user does not upload one. Several angular atributes are available to configure the output: shape, resolution, colors. More info at: https://github.com/ajsoriar/angular-avatar",angular-avatar,False,2016-10-12T08:44:45.8+00:00,True,False,Simple and lightweight AngularJS directive that generates a letter's avatar like Google does in several apps. First letters in a string or a group of initials will be used to generate an avatar image.,"avatar,angular-avatar,ng-avatar,directive,js-avatar,avatar-generator,string-avatar,profile,picture,initials",1559,False,1.1.0
+Code Singularity,2016-08-28T07:18:01.83Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.7.16
+GreatBillows,2016-08-28T07:13:16.493Z,119,600,Entity Mapper for FCP(Fluent Compute Platform),FCP.Entity,False,2017-12-22T09:46:31.65+00:00,True,False,,,647,False,1.0.1
+GreatBillows,2016-08-28T07:13:03.33Z,142,600,Repository for FCP(Fluent Compute Platform),FCP.Repository,False,2017-11-29T12:53:46.52+00:00,True,False,,,959,False,1.0.3
+GreatBillows,2016-08-28T07:13:10.033Z,142,600,Service for FCP(Fluent Compute Platform),FCP.Service,False,2017-11-29T12:53:57.897+00:00,True,False,,,1097,False,1.0.4
+GreatBillows,2016-08-28T07:12:56.153Z,119,600,Data Access for FCP(Fluent Compute Platform),FCP.Data,False,2017-12-22T11:21:38.133+00:00,True,False,,,1084,False,1.0.3
+Danial Manavi,2016-08-28T07:10:16.513Z,600,600,Client IP address retrival service of the Barzin platform,BarzinPlatform.Web.Utilities.ClientIP,False,2016-08-28T00:10:16.513-07:00,True,False,,,309,False,1.0.1
+Danial Manavi,2016-08-28T07:07:46.66Z,600,600,Client IP address retrival service of the Barzin platform,BarzinPlatform.Web.Utilities.ClientIP,False,2016-08-28T00:10:16.513-07:00,True,False,,,309,False,1.0.0
+Code Singularity,2016-08-28T07:03:54.267Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.7.2
+Sarin Na Wangkanai,2016-08-27T16:25:24.527Z,43209,601,Wangkanai extension client web browser detection components,Wangkanai.Extensions.BrowserDetection,True,1899-12-31T16:00:00-08:00,False,False,,"aspnetcore,responsiveness",-1,False,1.0.0-t0031d2ffd
+Sarin Na Wangkanai,2016-08-27T11:18:36.2Z,43209,601,Wangkanai extension client web browser detection components,Wangkanai.Extensions.BrowserDetection,True,1899-12-31T16:00:00-08:00,False,False,,"aspnetcore,responsiveness",-1,False,1.0.0-t0031ce8d9
+Sarin Na Wangkanai,2016-08-28T07:00:52.403Z,43209,600,Wangkanai extension client web browser detection components,Wangkanai.Browser,True,1899-12-31T16:00:00-08:00,False,False,,"aspnetcore,browser",562,False,1.0.0-t0031dfd9c
+Armin Sander,2016-08-28T06:57:05.967Z,43209,600,This package defines the Live API for the LivePipes project.,LivePipes,False,1899-12-31T16:00:00-08:00,False,False,,,1011,False,0.5.0
+Code Singularity,2016-08-28T06:53:40.407Z,43209,600,Automatic MD documentation generation,LDoc,False,1900-01-01T00:00:00+00:00,False,False,,,18860,False,2016.241.6.52
+Val Melamed,2016-08-28T06:16:47.283Z,28,600,"A set of classes, utilities, etc. addressing various common cross-cutting concerns or extending existing similar libraries like Enterprise Library, Unity, etc.",vm.Aspects,True,2018-03-23T04:30:09.757+00:00,True,False,"Services framework leveraging Unity, WCF, Entity Framework.",,21210,False,1.0.67-beta
+Luca Piccioni,2016-08-28T06:03:33.86Z,126,600,"Modern OpenGL bindings for C#.
+
+			It supports the following APIs:
+			- OpenGL 4.5 and relative extensions
+			- OpenGL ES 3.2 and relative extensions
+			- OpenGL for Windows (WGL) and relative extensions
+			- OpenGL for X11 1.4 (XGL) and relative extensions
+			- Native Platform Interface 1.5 (EGL) and relative extensions
+
+			This package includes the ANGLE libraries that allow binding OpenGL ES API onto Windows platforms. For more
+			information see https://github.com/google/angle.",OpenGL.Net,False,2017-12-15T00:24:51.86+00:00,True,False,Modern OpenGL bindings for C#.,"OpenGL,OpenGL-ES,GLSL,GLES,EGL,C#,.Net,Graphics,3D",11076,False,0.2.2
+Dan Nemec,2016-08-28T06:01:59.237Z,445,600,Simple command line argument parser inspired by Python's argparse.,clipr,False,2017-01-30T07:20:29.893+00:00,True,False,,"command,line,parse,arguments,help,usage,argparse",18662,False,1.5.1
+tableify,2016-08-28T05:56:54.4Z,600,600,tableify,tableify,False,2016-08-27T22:56:54.4-07:00,True,False,,,157,False,1.0.0
+rdelrosario,2016-08-28T05:50:58.283Z,372,600,Handle Push Notifications. Across iOS and Android from a single API.,Xam.Plugin.PushNotification,False,2017-04-13T03:45:27.64+00:00,True,False,Cross Platform Push Notifications Support,"xamarin,pcl,xam.pcl,push,notification,android,ios,wp8.1,windows,uwp",36830,False,1.2.3
+Symber,2016-08-28T05:45:12.5Z,600,600,"APQuery.net is a lightweight ORM, open source framework. With the objectization of the database,
+SQL expression, database access layout, business logic process and data entity.
+
+Source code : https://github.com/leocaan/APQuery.net
+
+Documents : http://leocaan.github.io/APQuery.net/",Symber.Web.APQuery,False,2016-08-28T05:02:30.607-07:00,True,False,,"APQuery.net,ORM",2848,False,4.0.4.2

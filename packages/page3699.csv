@@ -1,0 +1,2094 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+Gigya Inc.,2018-04-17T09:21:09.933Z,3,3,Tools to help write tests for Microdot services.,Gigya.Microdot.Testing.Shared,False,2018-04-17T09:21:09.933+00:00,True,False,,"gigya,microdot,microservice,microservices,fakes,mocks,mocking,unit-testing",2119,False,1.9.6
+Gigya Inc.,2018-04-17T09:21:04.963Z,3,3,Tools to help write tests for Microdot services.,Gigya.Microdot.Testing,False,2018-04-17T09:21:04.963+00:00,True,False,,"gigya,microdot,microservice,microservices,fakes,mocks,mocking,unit-testing",5577,False,1.9.6
+Gigya Inc.,2018-04-17T09:20:59.81Z,3,3,Various components and utilities shared between different parts of the Microdot framework.,Gigya.Microdot.SharedLogic,False,2018-04-17T09:20:59.81+00:00,True,False,,"gigya,microdot,microservice,microservices",6921,False,1.9.6
+Gigya Inc.,2018-04-17T09:20:55.09Z,3,3,"ServiceProxy is used to call remote Microdot services. It is a
+runtime-generated transparent proxy which implements the remote	service's
+public interface, translating all calls performed on it to HTTP calls.
+Part of the Microdot framework.",Gigya.Microdot.ServiceProxy,False,2018-04-17T09:20:55.09+00:00,True,False,,"gigya,microdot,microservice,microservices,serviceproxy,http,rpc",6309,False,1.9.6
+Gigya Inc.,2018-04-17T09:20:50.34Z,3,3,"Using this component you can find other Microdot services (and any other
+remote system), perform client-side load balancing between multiple
+servers, detect and	skip unresponsive servers and resume using them
+when they return to full operation. Discovery is typically perfomed with
+Consul by HashiCorp	(http://consul.io) but it also supports manual server
+lists specified in Microdot configuration (see NuGet package
+Gigya.Microdot.Configuration) and can be expanded to support additional
+service discovery systems.",Gigya.Microdot.ServiceDiscovery,False,2018-04-17T09:20:50.34+00:00,True,False,,"gigya,microdot,microservice,microservices,discovery,service-discovery,consul",6344,False,1.9.6
+Gigya Inc.,2018-04-17T09:20:46.26Z,3,3,"A container used to host an Orleans Microdot service which uses Ninject for
+dependency injection. Incoming HTTP calls (via Gigya.Microdot.ServiceProxy)
+are handled and processed inside Orleans and are then dispatched to
+specific Grains. Part of the Microdot framework.",Gigya.Microdot.Orleans.Ninject.Host,False,2018-04-17T09:20:46.26+00:00,True,False,,"gigya,microdot,microservice,microservices",5900,False,1.9.6
+Signere.no,2018-04-17T09:20:54.84Z,43209,3,"Client library POCOs for the REST API  
+		
+		Also, check out the REST API documentation at Https://api.signere.no for further details about the resources that can be accessed through this library.",Unipluss.Sign.Models,False,1900-01-01T00:00:00+00:00,False,False,,"Signere,Sign,BankID,Digital,signatur,Uni,Pluss,Signere.no",197380,False,1.0.2948
+Gigya Inc.,2018-04-17T09:20:38.603Z,3,3,"A container used to host non-Orleans Microdot service which uses Ninject
+for	dependency injection. Incoming HTTP calls (via Gigya.Microdot.ServiceProxy)
+are dispatched to a specified class instance. Part of the Microdot framework.",Gigya.Microdot.Ninject.Host,False,2018-04-17T09:20:38.603+00:00,True,False,,"gigya,microdot,microservice,microservices,ninject,ioc,di",5813,False,1.9.6
+Gigya Inc.,2018-04-17T09:20:42.417Z,3,3,"Infrastructure used for hosting Orleans Microdot services, part of the
+Microdot framework.",Gigya.Microdot.Orleans.Hosting,False,2018-04-17T09:20:42.417+00:00,True,False,,"gigya,microdot,microservice,microservices",5940,False,1.9.6
+Gigya Inc.,2018-04-17T09:20:24.993Z,3,3,"Interface abstractions used by various Microdot components, seperated from
+their implementations to allow easy unit testing with mocks	(see
+Gigya.Microdot.Fakes). Part of the Microdot Framework.",Gigya.Microdot.Interfaces,False,2018-04-17T09:20:24.993+00:00,True,False,,"gigya,microdot,microservice,microservices",7280,False,1.9.6
+Administrator,2018-04-17T09:19:55.79Z,3,3,滨诚科技支付宝官方库,BC_OriginalPayment,False,2018-04-17T09:19:55.79+00:00,True,False,,,32,False,1.0.0
+Gigya Inc.,2018-04-17T09:20:20.9Z,3,3,"Infrastructure used for hosting Microdot services, part of the Microdot
+framework.",Gigya.Microdot.Hosting,False,2018-04-17T09:20:20.9+00:00,True,False,,"gigya,microdot,microservice,microservices",6633,False,1.9.6
+Gigya Inc.,2018-04-17T09:20:16.087Z,3,3,"A Collection of fakes for various Microdot components, used for testing.
+Part of the Microdot framework. See also Gigya.Microdot.Testing.",Gigya.Microdot.Fakes,False,2018-04-17T09:20:16.087+00:00,True,False,,"gigya,microdot,microservice,microservices,fakes,mocks,mocking,unit-testing",6342,False,1.9.6
+Gigya Inc.,2018-04-17T09:20:12.01Z,3,3,"A configuration system based on a hierarchy of XML files, the values of
+which are accessed using strongly-typed configuration objects. Supports
+modification of the files on live service, environment variable substitution,
+encryption and collections. Part of the Microdot framework.",Gigya.Microdot.Configuration,False,2018-04-17T09:20:12.01+00:00,True,False,,"gigya,microdot,microservice,microservices,configuration",6851,False,1.9.6
+Gigya Inc.,2018-04-17T09:20:33.713Z,3,3,"Ninject modules, providers and binding resolvers for various Microdot
+components, part of the Microdot framework.",Gigya.Microdot.Ninject,False,2018-04-17T09:20:33.713+00:00,True,False,,"gigya,microdot,microservice,microservices,ninject,ioc,di",6650,False,1.9.6
+Gigya Inc.,2018-04-17T09:20:28.963Z,3,3,An implementation of Microdot's logging and tracing using NLog.,Gigya.Microdot.Logging.NLog,False,2018-04-17T09:20:28.963+00:00,True,False,,"gigya,microdot,microservice,microservices,NLog,logging,tracing",4246,False,1.9.6
+Gigya Inc.,2018-04-17T09:20:33.713Z,3,3,"Ninject modules, providers and binding resolvers for various Microdot
+components, part of the Microdot framework.",Gigya.Microdot.Ninject,False,2018-04-17T09:20:33.713+00:00,True,False,,"gigya,microdot,microservice,microservices,ninject,ioc,di",6650,False,1.9.6
+Gigya Inc.,2018-04-17T09:20:12.01Z,3,3,"A configuration system based on a hierarchy of XML files, the values of
+which are accessed using strongly-typed configuration objects. Supports
+modification of the files on live service, environment variable substitution,
+encryption and collections. Part of the Microdot framework.",Gigya.Microdot.Configuration,False,2018-04-17T09:20:12.01+00:00,True,False,,"gigya,microdot,microservice,microservices,configuration",6851,False,1.9.6
+Gigya Inc.,2018-04-17T09:20:16.087Z,3,3,"A Collection of fakes for various Microdot components, used for testing.
+Part of the Microdot framework. See also Gigya.Microdot.Testing.",Gigya.Microdot.Fakes,False,2018-04-17T09:20:16.087+00:00,True,False,,"gigya,microdot,microservice,microservices,fakes,mocks,mocking,unit-testing",6342,False,1.9.6
+Gigya Inc.,2018-04-17T09:20:20.9Z,3,3,"Infrastructure used for hosting Microdot services, part of the Microdot
+framework.",Gigya.Microdot.Hosting,False,2018-04-17T09:20:20.9+00:00,True,False,,"gigya,microdot,microservice,microservices",6633,False,1.9.6
+Gigya Inc.,2018-04-17T09:20:42.417Z,3,3,"Infrastructure used for hosting Orleans Microdot services, part of the
+Microdot framework.",Gigya.Microdot.Orleans.Hosting,False,2018-04-17T09:20:42.417+00:00,True,False,,"gigya,microdot,microservice,microservices",5940,False,1.9.6
+Administrator,2018-04-17T09:19:55.79Z,3,3,滨诚科技支付宝官方库,BC_OriginalPayment,False,2018-04-17T09:19:55.79+00:00,True,False,,,32,False,1.0.0
+Gigya Inc.,2018-04-17T09:20:28.963Z,3,3,An implementation of Microdot's logging and tracing using NLog.,Gigya.Microdot.Logging.NLog,False,2018-04-17T09:20:28.963+00:00,True,False,,"gigya,microdot,microservice,microservices,NLog,logging,tracing",4246,False,1.9.6
+prokesmartin,2018-04-17T09:14:11.497Z,3,3,ERabbitMQ,ERabbitMQ,False,2018-04-17T09:14:11.497+00:00,True,False,,,1404,False,19.5.24
+Nathan Voxland,2018-04-17T09:12:48.413Z,3,3,"LiquiBase is an open source, database-independent library for tracking, managing and applying database changes. It is built on a simple premise: All database changes are stored in a human readable yet trackable form and checked into source control.",Liquibase.Cli,False,2018-04-17T09:13:25.65+00:00,True,False,,"liquibase,database,migration",295,False,3.5.5
+Nathan Voxland,2018-04-17T09:11:28.693Z,3,3,"LiquiBase is an open source, database-independent library for tracking, managing and applying database changes. It is built on a simple premise: All database changes are stored in a human readable yet trackable form and checked into source control.",Liquibase.Cli,False,2018-04-17T09:13:25.65+00:00,True,False,,"liquibase,database,migration",295,False,3.4.2
+Nathan Voxland,2018-04-17T09:13:25.65Z,3,3,"LiquiBase is an open source, database-independent library for tracking, managing and applying database changes. It is built on a simple premise: All database changes are stored in a human readable yet trackable form and checked into source control.",Liquibase.Cli,False,2018-04-17T09:13:25.65+00:00,True,False,,"liquibase,database,migration",295,False,3.6.0
+Nathan Voxland,2018-04-17T09:12:22.54Z,3,3,"LiquiBase is an open source, database-independent library for tracking, managing and applying database changes. It is built on a simple premise: All database changes are stored in a human readable yet trackable form and checked into source control.",Liquibase.Cli,False,2018-04-17T09:13:25.65+00:00,True,False,,"liquibase,database,migration",295,False,3.5.4
+Nathan Voxland,2018-04-17T09:11:57.397Z,3,3,"LiquiBase is an open source, database-independent library for tracking, managing and applying database changes. It is built on a simple premise: All database changes are stored in a human readable yet trackable form and checked into source control.",Liquibase.Cli,False,2018-04-17T09:13:25.65+00:00,True,False,,"liquibase,database,migration",295,False,3.5.3
+prokesmartin,2018-04-17T09:14:11.497Z,3,3,ERabbitMQ,ERabbitMQ,False,2018-04-17T09:14:11.497+00:00,True,False,,,1404,False,19.5.24
+Nathan Voxland,2018-04-17T09:13:25.65Z,3,3,"LiquiBase is an open source, database-independent library for tracking, managing and applying database changes. It is built on a simple premise: All database changes are stored in a human readable yet trackable form and checked into source control.",Liquibase.Cli,False,2018-04-17T09:13:25.65+00:00,True,False,,"liquibase,database,migration",295,False,3.6.0
+Nathan Voxland,2018-04-17T09:12:48.413Z,3,3,"LiquiBase is an open source, database-independent library for tracking, managing and applying database changes. It is built on a simple premise: All database changes are stored in a human readable yet trackable form and checked into source control.",Liquibase.Cli,False,2018-04-17T09:13:25.65+00:00,True,False,,"liquibase,database,migration",295,False,3.5.5
+Nathan Voxland,2018-04-17T09:12:22.54Z,3,3,"LiquiBase is an open source, database-independent library for tracking, managing and applying database changes. It is built on a simple premise: All database changes are stored in a human readable yet trackable form and checked into source control.",Liquibase.Cli,False,2018-04-17T09:13:25.65+00:00,True,False,,"liquibase,database,migration",295,False,3.5.4
+Nathan Voxland,2018-04-17T09:11:57.397Z,3,3,"LiquiBase is an open source, database-independent library for tracking, managing and applying database changes. It is built on a simple premise: All database changes are stored in a human readable yet trackable form and checked into source control.",Liquibase.Cli,False,2018-04-17T09:13:25.65+00:00,True,False,,"liquibase,database,migration",295,False,3.5.3
+Nathan Voxland,2018-04-17T09:11:28.693Z,3,3,"LiquiBase is an open source, database-independent library for tracking, managing and applying database changes. It is built on a simple premise: All database changes are stored in a human readable yet trackable form and checked into source control.",Liquibase.Cli,False,2018-04-17T09:13:25.65+00:00,True,False,,"liquibase,database,migration",295,False,3.4.2
+Appstream,2018-04-17T09:09:29.547Z,3,3,Appstream Class Library,Appstream.Appstreamlib,False,2018-04-17T09:09:29.547+00:00,True,False,,Appstream,2225,False,3.3.0
+"Charles Sanderson,Hugo Morgan",2018-04-17T09:10:21.91Z,3,3,A.Net Core Class Library for developing methods and Models for use in acturial work,ActuarialLibrary,False,2018-04-17T09:10:21.91+00:00,True,False,,,33,False,1.0.0
+DNV GL,2018-04-17T09:10:24.143Z,3,3,A package used to help digital services to invoke MyDNVGL service,VerIT.Service.MyDNVGL.API.Client,False,2018-04-17T11:56:22.073+00:00,True,False,,"MyDNVGL,API",950,False,2.3.2
+Appstream,2018-04-17T09:09:29.547Z,3,3,Appstream Class Library,Appstream.Appstreamlib,False,2018-04-17T09:09:29.547+00:00,True,False,,Appstream,2225,False,3.3.0
+DNV GL,2018-04-17T09:10:24.143Z,3,3,A package used to help digital services to invoke MyDNVGL service,VerIT.Service.MyDNVGL.API.Client,False,2018-04-17T11:56:22.073+00:00,True,False,,"MyDNVGL,API",950,False,2.3.2
+"Charles Sanderson,Hugo Morgan",2018-04-17T09:10:21.91Z,3,3,A.Net Core Class Library for developing methods and Models for use in acturial work,ActuarialLibrary,False,2018-04-17T09:10:21.91+00:00,True,False,,,33,False,1.0.0
+WeiGe,2018-04-17T09:09:06.75Z,3,3,"AspNetCore.DocView;
+      .net Core Mvc document UI",AspNetCore.DocView,False,2018-04-17T10:16:35.457+00:00,True,False,,,3376,False,2.0.3.54
+WeiGe,2018-04-17T09:09:00.047Z,3,3,"update/delete entity without load entity from database,run raw sql to any entity.",AspNetCore.EFCore.SqlServer,False,2018-04-17T10:16:20.38+00:00,True,False,,"AspNetCore,.Net,Core,EF,EntityFrameworkCore,Sql,Server",3372,False,2.0.3.54
+WeiGe,2018-04-17T09:08:54.453Z,3,3,"AspNetCore.ThirdParty
+      SMS,Payment:Alipay,WeChat ,Verfy Identity, Baidu Map, JPush,Car,Approve",AspNetCore.ThirdParty,False,2018-04-17T10:16:25.223+00:00,True,False,,,957,False,2.0.3.54
+WeiGe,2018-04-17T09:08:47.813Z,3,3,"Microsoft.AspNetCore.MvcFactory
+            used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,True,False,,,6796,False,2.0.3.54
+TechTalk,2018-04-17T09:07:40.933Z,3,3,Combined package to setup SpecFlow with NUnit easily for running the tests with the NUnit runners.,SpecFlow.NUnit.Runners,False,2018-04-17T09:07:40.933+00:00,True,False,Combined package to setup SpecFlow with NUnit easily for running the tests with the NUnit runners.,"specflow,nunit,nunit.runners,nunit-console",96440,True,2.3.2
+Appstream,2018-04-17T08:11:34.113Z,3,3,Appstream Class Library,Appstream.Appstreamlib,False,2018-04-17T09:09:29.547+00:00,False,False,,Appstream,2225,False,3.2.0
+TechTalk,2018-04-17T09:08:12.043Z,3,3,Package to enable the code-behind file generation during build time http://specflow.org/documentation/Generate-Tests-from-MsBuild/,SpecFlow.Tools.MsBuild.Generation,False,2018-04-17T09:08:12.043+00:00,True,False,Package to enable the code-behind file generation during build time http://specflow.org/documentation/Generate-Tests-from-MsBuild/,"specflow,msbuild",1853,True,2.3.2
+DNV GL,2018-04-17T08:58:39.727Z,3,3,A package used to help digital services to invoke MyDNVGL service,VerIT.Service.MyDNVGL.API.Client,False,2018-04-17T11:56:22.073+00:00,False,False,,"MyDNVGL,API",950,False,2.3.1
+WeiGe,2018-04-17T09:09:10.437Z,3,3,"AspNetCore.CodeGenerator for sqlserver of ef Core,
+      Automatic generation of database/table description",AspNetCore.CodeGenerator.SqlServer,False,2018-04-17T10:16:39.097+00:00,True,False,,,1334,False,2.0.3.54
+TechTalk,2018-04-17T09:06:07.307Z,3,3,SpecFlow aims at bridging the communication gap between domain experts and developers by binding business readable behavior specifications to the underlying implementation. Our mission is to provide a pragmatic and frictionless approach to Acceptance Test Driven Development and Behavior Driven Development for .NET projects today.,SpecFlow,False,2018-04-17T09:06:07.307+00:00,True,False,SpecFlow aims at bridging the communication gap between domain experts and developers by binding business readable behavior specifications to the underlying implementation. Our mission is to provide a pragmatic and frictionless approach to Acceptance Test Driven Development and Behavior Driven Development for .NET projects today.,"specflow,bdd,gherkin,cucumber",2724006,True,2.3.2
+TechTalk,2018-04-17T09:08:32.89Z,3,3,Combined package to setup SpecFlow with xUnit easily.,SpecFlow.xUnit,False,2018-04-17T09:08:32.89+00:00,True,False,Combined package to setup SpecFlow with xUnit easily.,"specflow,xUnit",164512,True,2.3.2
+artyom.chernenko@deleteagency.com,2018-04-17T09:07:46.17Z,3,3,uFlexiMail allows you to map Umbraco content to plain objects (POCO) using Automapper.,Delete.uFlexiMapper,False,2018-04-17T09:07:46.17+00:00,True,False,Umbraco content mapping has never been so easy!,"Umbraco,mapping,Automapper,POCO",186,False,1.0.2
+TechTalk,2018-04-17T09:06:54.48Z,3,3,Package to setup SpecFlow for use with MsTest. Does not install MsTest and should be installed into a Test-project template,SpecFlow.MsTest,False,2018-04-17T09:06:54.48+00:00,True,False,Package to setup SpecFlow for use with MsTest. Does not install MsTest and should be installed into a Test-project template,"specflow,mstest",203631,True,2.3.2
+TechTalk,2018-04-17T09:06:30.87Z,3,3,Package for writing custom extensions for SpecFlow.,SpecFlow.CustomPlugin,False,2018-04-17T09:06:30.87+00:00,True,False,Package for writing custom extensions for SpecFlow.,"specflow,bdd,gherkin,cucumber,generator",282829,True,2.3.2
+ToolGood,2018-04-17T09:06:17.4Z,2,3,"A high performance Micro-ORM supporting SQL Server, MySQL, Sqlite, SqlCE, PostgreSQL, Firebird etc..",ToolGood.ReadyGo3,False,2018-04-18T12:12:26.77+00:00,True,False,,,1049,False,3.1.0.22
+TechTalk,2018-04-17T09:07:29.59Z,3,3,"Combined package to setup SpecFlow with NUnit v2.6+ easily. For running tests with NUnit runners, use SpecFlow.NUnit.Runners package!",SpecFlow.NUnit,False,2018-04-17T09:07:29.59+00:00,True,False,"Combined package to setup SpecFlow with NUnit v2.6+ easily. For running tests with NUnit runners, use SpecFlow.NUnit.Runners package!","specflow,nunit",836336,True,2.3.2
+WeiGe,2018-04-17T09:09:10.437Z,3,3,"AspNetCore.CodeGenerator for sqlserver of ef Core,
+      Automatic generation of database/table description",AspNetCore.CodeGenerator.SqlServer,False,2018-04-17T10:16:39.097+00:00,True,False,,,1334,False,2.0.3.54
+TechTalk,2018-04-17T09:06:54.48Z,3,3,Package to setup SpecFlow for use with MsTest. Does not install MsTest and should be installed into a Test-project template,SpecFlow.MsTest,False,2018-04-17T09:06:54.48+00:00,True,False,Package to setup SpecFlow for use with MsTest. Does not install MsTest and should be installed into a Test-project template,"specflow,mstest",203631,True,2.3.2
+TechTalk,2018-04-17T09:07:40.933Z,3,3,Combined package to setup SpecFlow with NUnit easily for running the tests with the NUnit runners.,SpecFlow.NUnit.Runners,False,2018-04-17T09:07:40.933+00:00,True,False,Combined package to setup SpecFlow with NUnit easily for running the tests with the NUnit runners.,"specflow,nunit,nunit.runners,nunit-console",96440,True,2.3.2
+TechTalk,2018-04-17T09:08:12.043Z,3,3,Package to enable the code-behind file generation during build time http://specflow.org/documentation/Generate-Tests-from-MsBuild/,SpecFlow.Tools.MsBuild.Generation,False,2018-04-17T09:08:12.043+00:00,True,False,Package to enable the code-behind file generation during build time http://specflow.org/documentation/Generate-Tests-from-MsBuild/,"specflow,msbuild",1853,True,2.3.2
+ToolGood,2018-04-17T09:06:17.4Z,2,3,"A high performance Micro-ORM supporting SQL Server, MySQL, Sqlite, SqlCE, PostgreSQL, Firebird etc..",ToolGood.ReadyGo3,False,2018-04-18T12:12:26.77+00:00,True,False,,,1049,False,3.1.0.22
+artyom.chernenko@deleteagency.com,2018-04-17T09:07:46.17Z,3,3,uFlexiMail allows you to map Umbraco content to plain objects (POCO) using Automapper.,Delete.uFlexiMapper,False,2018-04-17T09:07:46.17+00:00,True,False,Umbraco content mapping has never been so easy!,"Umbraco,mapping,Automapper,POCO",186,False,1.0.2
+TechTalk,2018-04-17T09:06:30.87Z,3,3,Package for writing custom extensions for SpecFlow.,SpecFlow.CustomPlugin,False,2018-04-17T09:06:30.87+00:00,True,False,Package for writing custom extensions for SpecFlow.,"specflow,bdd,gherkin,cucumber,generator",282829,True,2.3.2
+TechTalk,2018-04-17T09:06:07.307Z,3,3,SpecFlow aims at bridging the communication gap between domain experts and developers by binding business readable behavior specifications to the underlying implementation. Our mission is to provide a pragmatic and frictionless approach to Acceptance Test Driven Development and Behavior Driven Development for .NET projects today.,SpecFlow,False,2018-04-17T09:06:07.307+00:00,True,False,SpecFlow aims at bridging the communication gap between domain experts and developers by binding business readable behavior specifications to the underlying implementation. Our mission is to provide a pragmatic and frictionless approach to Acceptance Test Driven Development and Behavior Driven Development for .NET projects today.,"specflow,bdd,gherkin,cucumber",2724006,True,2.3.2
+artyom.chernenko@deleteagency.com,2018-04-17T09:03:45.253Z,3,3,uFlexiMail allows you to map Umbraco content to plain objects (POCO) using Automapper.,Delete.uFlexiMapper,False,2018-04-17T09:07:46.17+00:00,True,False,Umbraco content mapping has never been so easy!,"Umbraco,mapping,Automapper,POCO",186,False,1.0.1
+Google Inc.,2018-04-17T09:03:35.86Z,2,3,"Google APIs Client Library for working with Streetviewpublish v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/streetviewpublish/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.StreetViewPublish.v1,False,2018-04-18T09:05:36.75+00:00,True,False,,Google,6213,True,1.32.2.1198
+Google Inc.,2018-04-17T09:03:56.957Z,2,3,"Google APIs Client Library for working with Texttospeech v1beta1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/texttospeech/v1beta1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.Texttospeech.v1beta1,False,2018-04-18T09:05:59.08+00:00,True,False,,Google,211,True,1.32.2.1199
+Google Inc.,2018-04-17T09:03:23.737Z,3,3,"Google APIs Client Library for working with Storagetransfer v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/storagetransfer/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.Storagetransfer.v1,False,2018-04-17T09:03:23.737+00:00,True,False,,Google,7538,True,1.32.2.1201
+Google Inc.,2018-04-17T09:02:09.797Z,2,3,"Google APIs Client Library for working with Serviceconsumermanagement v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/serviceconsumermanagement/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.ServiceConsumerManagement.v1,False,2018-04-18T09:04:18.31+00:00,True,False,,Google,3278,True,1.32.2.1198
+qix,2018-04-17T09:03:48.113Z,1,3,DotNet Develope Kit - qix,DotNet.Kit,False,2018-04-20T08:15:38.08+00:00,True,False,,"DotNet,Kit,qix",315,False,1.0.4
+Google Inc.,2018-04-17T09:02:26.047Z,2,3,"Google APIs Client Library for working with Serviceusage v1beta1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/serviceusage/v1beta1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.ServiceUsage.v1beta1,False,2018-04-18T09:04:33.59+00:00,True,False,,Google,878,True,1.32.2.1198
+Google Inc.,2018-04-17T09:04:10.287Z,2,3,"Google APIs Client Library for working with Toolresults v1beta3.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/toolresults/v1beta3
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.ToolResults.v1beta3,False,2018-04-18T09:06:14.25+00:00,True,False,,Google,26482,True,1.32.2.1201
+Google Inc.,2018-04-17T09:02:40.47Z,2,3,"Google APIs Client Library for working with Sheets v4.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/sheets/v4
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.Sheets.v4,False,2018-04-18T09:04:49.64+00:00,True,False,,Google,112355,True,1.32.2.1198
+WeiGe,2018-04-17T09:01:51.81Z,3,3,AspNetCore.Utilities,AspNetCore.Utilities,False,2018-04-17T09:52:07.82+00:00,True,False,,,3119,False,2.0.3.54
+codat.io,2018-04-17T09:01:01.793Z,22,3,Client package for the Codat public API.,Codat.Public.Client,True,2018-03-29T10:17:37.4+00:00,True,False,,"Codat,api,accounting",5128,False,4.1.1-beta4868
+Google Inc.,2018-04-17T09:03:35.86Z,2,3,"Google APIs Client Library for working with Streetviewpublish v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/streetviewpublish/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.StreetViewPublish.v1,False,2018-04-18T09:05:36.75+00:00,True,False,,Google,6213,True,1.32.2.1198
+artyom.chernenko@deleteagency.com,2018-04-17T09:03:45.253Z,3,3,uFlexiMail allows you to map Umbraco content to plain objects (POCO) using Automapper.,Delete.uFlexiMapper,False,2018-04-17T09:07:46.17+00:00,True,False,Umbraco content mapping has never been so easy!,"Umbraco,mapping,Automapper,POCO",186,False,1.0.1
+Google Inc.,2018-04-17T09:02:09.797Z,2,3,"Google APIs Client Library for working with Serviceconsumermanagement v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/serviceconsumermanagement/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.ServiceConsumerManagement.v1,False,2018-04-18T09:04:18.31+00:00,True,False,,Google,3278,True,1.32.2.1198
+Google Inc.,2018-04-17T09:01:12.67Z,3,3,"Google APIs Client Library for working with People v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/people/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.PeopleService.v1,False,2018-04-17T09:01:12.67+00:00,True,False,,Google,12431,True,1.32.2.1198
+Google Inc.,2018-04-17T09:04:10.287Z,2,3,"Google APIs Client Library for working with Toolresults v1beta3.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/toolresults/v1beta3
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.ToolResults.v1beta3,False,2018-04-18T09:06:14.25+00:00,True,False,,Google,26482,True,1.32.2.1201
+qix,2018-04-17T09:03:48.113Z,1,3,DotNet Develope Kit - qix,DotNet.Kit,False,2018-04-20T08:15:38.08+00:00,True,False,,"DotNet,Kit,qix",315,False,1.0.4
+Google Inc.,2018-04-17T09:02:26.047Z,2,3,"Google APIs Client Library for working with Serviceusage v1beta1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/serviceusage/v1beta1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.ServiceUsage.v1beta1,False,2018-04-18T09:04:33.59+00:00,True,False,,Google,878,True,1.32.2.1198
+Google Inc.,2018-04-17T09:03:56.957Z,2,3,"Google APIs Client Library for working with Texttospeech v1beta1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/texttospeech/v1beta1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.Texttospeech.v1beta1,False,2018-04-18T09:05:59.08+00:00,True,False,,Google,211,True,1.32.2.1199
+Google Inc.,2018-04-17T09:03:23.737Z,3,3,"Google APIs Client Library for working with Storagetransfer v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/storagetransfer/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.Storagetransfer.v1,False,2018-04-17T09:03:23.737+00:00,True,False,,Google,7538,True,1.32.2.1201
+Google Inc.,2018-04-17T09:02:40.47Z,2,3,"Google APIs Client Library for working with Sheets v4.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/sheets/v4
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.Sheets.v4,False,2018-04-18T09:04:49.64+00:00,True,False,,Google,112355,True,1.32.2.1198
+Google Inc.,2018-04-17T09:01:30.483Z,3,3,"Google APIs Client Library for working with Poly v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/poly/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.PolyService.v1,False,2018-04-17T09:01:30.483+00:00,True,False,,Google,1628,True,1.32.2.1201
+Google Inc.,2018-04-17T09:02:57.47Z,2,3,"Google APIs Client Library for working with Slides v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/slides/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.Slides.v1,False,2018-04-18T09:05:08.14+00:00,True,False,,Google,7705,True,1.32.2.1195
+codat.io,2018-04-17T09:01:01.793Z,22,3,Client package for the Codat public API.,Codat.Public.Client,True,2018-03-29T10:17:37.4+00:00,True,False,,"Codat,api,accounting",5128,False,4.1.1-beta4868
+Google Inc.,2018-04-17T09:02:57.47Z,2,3,"Google APIs Client Library for working with Slides v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/slides/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.Slides.v1,False,2018-04-18T09:05:08.14+00:00,True,False,,Google,7705,True,1.32.2.1195
+WeiGe,2018-04-17T09:01:51.81Z,3,3,AspNetCore.Utilities,AspNetCore.Utilities,False,2018-04-17T09:52:07.82+00:00,True,False,,,3119,False,2.0.3.54
+Google Inc.,2018-04-17T09:01:30.483Z,3,3,"Google APIs Client Library for working with Poly v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/poly/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.PolyService.v1,False,2018-04-17T09:01:30.483+00:00,True,False,,Google,1628,True,1.32.2.1201
+Google Inc.,2018-04-17T09:01:12.67Z,3,3,"Google APIs Client Library for working with People v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/people/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.PeopleService.v1,False,2018-04-17T09:01:12.67+00:00,True,False,,Google,12431,True,1.32.2.1198
+Hendry,2018-04-17T08:32:23.307Z,1,3,A lightweight back-end framework and utilities kit based on MongoDB/Redis,SquirrelFramework,False,2018-04-19T09:23:16.39+00:00,False,False,,"mongodb,redis,utility,kit,back,end,light,repository,dao,squirrel,framework,ddd",466,False,1.0.8
+Google Inc.,2018-04-17T08:57:54.037Z,3,3,"Google APIs Client Library for working with Cloudshell v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/cloudshell/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudShell.v1,False,2018-04-17T08:57:54.037+00:00,True,False,,Google,1403,True,1.32.2.1198
+WeiGe,2018-04-17T08:41:37.123Z,3,3,"AspNetCore.CodeGenerator for sqlserver of ef Core,
+      Automatic generation of database/table description",AspNetCore.CodeGenerator.SqlServer,False,2018-04-17T10:16:39.097+00:00,False,False,,,1334,False,2.0.3.53
+Google Inc.,2018-04-17T08:59:33.26Z,3,3,"Google APIs Client Library for working with Dlp v2beta1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/dlp/v2beta1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.DLP.v2beta1,False,2018-04-17T08:59:33.26+00:00,True,False,,Google,5709,True,1.32.2.1198
+Google Inc.,2018-04-17T08:59:46.273Z,3,3,"Google APIs Client Library for working with Dlp v2beta2.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/dlp/v2beta2
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.DLP.v2beta2,False,2018-04-17T08:59:46.273+00:00,True,False,,Google,1243,True,1.32.2.1198
+Google Inc.,2018-04-17T08:56:52.27Z,3,3,"Google APIs Client Library for working with Language v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/language/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudNaturalLanguage.v1,False,2018-04-17T08:56:52.27+00:00,True,False,,Google,5894,True,1.32.2.1201
+Google Inc.,2018-04-17T08:57:05.567Z,3,3,"Google APIs Client Library for working with Language v1beta1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/language/v1beta1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudNaturalLanguage.v1beta1,False,2018-04-17T08:57:05.567+00:00,True,False,,Google,5934,True,1.32.2.1201
+WeiGe,2018-04-17T08:37:30.177Z,3,3,"Microsoft.AspNetCore.MvcFactory
+            used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,False,False,,,6796,False,2.0.3.53
+DNV GL,2018-04-17T08:58:39.727Z,3,3,A package used to help digital services to invoke MyDNVGL service,VerIT.Service.MyDNVGL.API.Client,False,2018-04-17T11:56:22.073+00:00,True,False,,"MyDNVGL,API",950,False,2.3.1
+Hendry,2018-04-17T07:56:34.39Z,1,3,A lightweight back-end framework and utilities kit based on MongoDB/Redis,SquirrelFramework,False,2018-04-19T09:23:16.39+00:00,False,False,,"mongodb,redis,utility,kit,back,end,light,repository,dao,squirrel,framework,ddd",466,False,1.0.7
+WeiGe,2018-04-17T08:08:55.717Z,3,3,AspNetCore.Utilities,AspNetCore.Utilities,False,2018-04-17T09:52:07.82+00:00,False,False,,,3119,False,2.0.3.52
+Google Inc.,2018-04-17T09:00:40.48Z,3,3,"Google APIs Client Library for working with Chat v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/chat/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.HangoutsChat.v1,False,2018-04-17T09:00:40.48+00:00,True,False,,Google,375,True,1.32.2.1196
+Google Inc.,2018-04-17T09:00:03.963Z,3,3,"Google APIs Client Library for working with Doubleclicksearch v2.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/doubleclicksearch/v2
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.Doubleclicksearch.v2,False,2018-04-17T09:00:03.963+00:00,True,False,,Google,26195,True,1.32.2.1196
+WeiGe,2018-04-17T08:37:43.363Z,3,3,"update/delete entity without load entity from database,run raw sql to any entity.",AspNetCore.EFCore.SqlServer,False,2018-04-17T10:16:20.38+00:00,False,False,,"AspNetCore,.Net,Core,EF,EntityFrameworkCore,Sql,Server",3372,False,2.0.3.53
+WeiGe,2018-04-17T08:37:36.363Z,3,3,"AspNetCore.DocView;
+      .net Core Mvc document UI",AspNetCore.DocView,False,2018-04-17T10:16:35.457+00:00,False,False,,,3376,False,2.0.3.53
+Google Inc.,2018-04-17T08:58:22.63Z,3,3,"Google APIs Client Library for working with Cloudtrace v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/cloudtrace/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudTrace.v1,False,2018-04-17T08:58:22.63+00:00,True,False,,Google,7735,True,1.32.2.1194
+DNV GL,2018-04-17T08:50:33.91Z,3,3,A package used to help digital services to invoke MyDNVGL service,VerIT.Service.MyDNVGL.API.Client,False,2018-04-17T11:56:22.073+00:00,False,False,,"MyDNVGL,API",950,False,2.3.0
+Google Inc.,2018-04-17T08:58:07.21Z,3,3,"Google APIs Client Library for working with Cloudshell v1alpha1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/cloudshell/v1alpha1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudShell.v1alpha1,False,2018-04-17T08:58:07.21+00:00,True,False,,Google,1384,True,1.32.2.1198
+WeiGe,2018-04-17T08:37:50.57Z,3,3,"AspNetCore.ThirdParty
+      SMS,Payment:Alipay,WeChat ,Verfy Identity, Baidu Map, JPush,Car,Approve",AspNetCore.ThirdParty,False,2018-04-17T10:16:25.223+00:00,False,False,,,957,False,2.0.3.53
+Google Inc.,2018-04-17T08:58:35.43Z,3,3,"Google APIs Client Library for working with Cloudtrace v2.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/cloudtrace/v2
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudTrace.v2,False,2018-04-17T08:58:35.43+00:00,True,False,,Google,2767,True,1.32.2.1194
+Google Inc.,2018-04-17T08:59:20.117Z,3,3,"Google APIs Client Library for working with Dlp v2.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/dlp/v2
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.DLP.v2,False,2018-04-17T08:59:20.117+00:00,True,False,,Google,190,True,1.32.2.1198
+Google Inc.,2018-04-17T08:56:38.41Z,3,3,"Google APIs Client Library for working with Cloudkms v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/cloudkms/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudKMS.v1,False,2018-04-17T08:56:38.41+00:00,True,False,,Google,19505,True,1.32.2.1198
+Google Inc.,2018-04-17T08:58:22.63Z,3,3,"Google APIs Client Library for working with Cloudtrace v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/cloudtrace/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudTrace.v1,False,2018-04-17T08:58:22.63+00:00,True,False,,Google,7735,True,1.32.2.1194
+Google Inc.,2018-04-17T08:57:17.33Z,3,3,"Google APIs Client Library for working with Language v1beta2.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/language/v1beta2
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudNaturalLanguage.v1beta2,False,2018-04-17T08:57:17.33+00:00,True,False,,Google,4134,True,1.32.2.1201
+Google Inc.,2018-04-17T08:58:07.21Z,3,3,"Google APIs Client Library for working with Cloudshell v1alpha1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/cloudshell/v1alpha1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudShell.v1alpha1,False,2018-04-17T08:58:07.21+00:00,True,False,,Google,1384,True,1.32.2.1198
+Google Inc.,2018-04-17T08:57:05.567Z,3,3,"Google APIs Client Library for working with Language v1beta1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/language/v1beta1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudNaturalLanguage.v1beta1,False,2018-04-17T08:57:05.567+00:00,True,False,,Google,5934,True,1.32.2.1201
+Google Inc.,2018-04-17T08:56:26.19Z,3,3,"Google APIs Client Library for working with Cloudiot v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/cloudiot/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudIot.v1,False,2018-04-17T08:56:26.19+00:00,True,False,,Google,2008,True,1.32.2.1195
+Google Inc.,2018-04-17T08:59:46.273Z,3,3,"Google APIs Client Library for working with Dlp v2beta2.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/dlp/v2beta2
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.DLP.v2beta2,False,2018-04-17T08:59:46.273+00:00,True,False,,Google,1243,True,1.32.2.1198
+Google Inc.,2018-04-17T09:00:40.48Z,3,3,"Google APIs Client Library for working with Chat v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/chat/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.HangoutsChat.v1,False,2018-04-17T09:00:40.48+00:00,True,False,,Google,375,True,1.32.2.1196
+Google Inc.,2018-04-17T08:59:20.117Z,3,3,"Google APIs Client Library for working with Dlp v2.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/dlp/v2
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.DLP.v2,False,2018-04-17T08:59:20.117+00:00,True,False,,Google,190,True,1.32.2.1198
+Google Inc.,2018-04-17T08:56:05.877Z,2,3,"Google APIs Client Library for working with Cloudbuild v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/cloudbuild/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudBuild.v1,False,2018-04-18T08:58:22.997+00:00,True,False,,Google,25693,True,1.32.2.1199
+Google Inc.,2018-04-17T08:57:54.037Z,3,3,"Google APIs Client Library for working with Cloudshell v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/cloudshell/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudShell.v1,False,2018-04-17T08:57:54.037+00:00,True,False,,Google,1403,True,1.32.2.1198
+Google Inc.,2018-04-17T08:58:35.43Z,3,3,"Google APIs Client Library for working with Cloudtrace v2.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/cloudtrace/v2
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudTrace.v2,False,2018-04-17T08:58:35.43+00:00,True,False,,Google,2767,True,1.32.2.1194
+Google Inc.,2018-04-17T08:56:52.27Z,3,3,"Google APIs Client Library for working with Language v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/language/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudNaturalLanguage.v1,False,2018-04-17T08:56:52.27+00:00,True,False,,Google,5894,True,1.32.2.1201
+Google Inc.,2018-04-17T09:00:03.963Z,3,3,"Google APIs Client Library for working with Doubleclicksearch v2.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/doubleclicksearch/v2
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.Doubleclicksearch.v2,False,2018-04-17T09:00:03.963+00:00,True,False,,Google,26195,True,1.32.2.1196
+Google Inc.,2018-04-17T08:57:34.13Z,3,3,"Google APIs Client Library for working with Oslogin v1beta.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/oslogin/v1beta
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudOSLogin.v1beta,False,2018-04-17T08:57:34.13+00:00,True,False,,Google,1546,True,1.32.2.1198
+DNV GL,2018-04-17T08:58:39.727Z,3,3,A package used to help digital services to invoke MyDNVGL service,VerIT.Service.MyDNVGL.API.Client,False,2018-04-17T11:56:22.073+00:00,True,False,,"MyDNVGL,API",950,False,2.3.1
+Google Inc.,2018-04-17T08:59:33.26Z,3,3,"Google APIs Client Library for working with Dlp v2beta1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/dlp/v2beta1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.DLP.v2beta1,False,2018-04-17T08:59:33.26+00:00,True,False,,Google,5709,True,1.32.2.1198
+Google Inc.,2018-04-17T08:57:34.13Z,3,3,"Google APIs Client Library for working with Oslogin v1beta.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/oslogin/v1beta
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudOSLogin.v1beta,False,2018-04-17T08:57:34.13+00:00,True,False,,Google,1546,True,1.32.2.1198
+Google Inc.,2018-04-17T08:57:17.33Z,3,3,"Google APIs Client Library for working with Language v1beta2.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/language/v1beta2
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudNaturalLanguage.v1beta2,False,2018-04-17T08:57:17.33+00:00,True,False,,Google,4134,True,1.32.2.1201
+Google Inc.,2018-04-17T08:56:05.877Z,2,3,"Google APIs Client Library for working with Cloudbuild v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/cloudbuild/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudBuild.v1,False,2018-04-18T08:58:22.997+00:00,True,False,,Google,25693,True,1.32.2.1199
+"Rendy Del Rosario,Sameer Khandekar,Vikram Mahendrakar",2018-04-17T06:44:36.23Z,2,3,Receive and handle push notifications across Xamarin.iOS and Xamarin.Android,Plugin.PushNotification-updated,False,2018-04-18T01:49:47.787+00:00,False,False,Receive and handle push notifications across Xamarin.iOS and Xamarin.Android,"iOS,Android,push,notifications,pcl,xamarin,plugins,xam.pcl,fcm,apn",173,False,1.3.3
+Google Inc.,2018-04-17T08:56:38.41Z,3,3,"Google APIs Client Library for working with Cloudkms v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/cloudkms/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudKMS.v1,False,2018-04-17T08:56:38.41+00:00,True,False,,Google,19505,True,1.32.2.1198
+Google Inc.,2018-04-17T08:56:26.19Z,3,3,"Google APIs Client Library for working with Cloudiot v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/cloudiot/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.CloudIot.v1,False,2018-04-17T08:56:26.19+00:00,True,False,,Google,2008,True,1.32.2.1195
+Util.Extensions.Logging.Step,2018-04-17T08:54:52.92Z,3,3,Package Description,Util.Extensions.Logging.Step,True,2018-04-17T08:54:52.92+00:00,True,False,,,261,False,1.0.0-beta3
+Google Inc.,2018-04-17T08:54:08.683Z,3,3,"Google APIs Client Library for working with Androidenterprise v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/androidenterprise/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.AndroidEnterprise.v1,False,2018-04-17T08:54:08.683+00:00,True,False,,Google,17123,True,1.32.2.1201
+Google Inc.,2018-04-17T08:53:38.777Z,2,3,"Google APIs Client Library for working with Adsense v1.4.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/adsense/v1.4
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.AdSense.v1_4,False,2018-04-18T08:56:26.54+00:00,True,False,,Google,40106,True,1.32.2.1200
+Google Inc.,2018-04-17T08:54:51.577Z,3,3,"Google APIs Client Library for working with Androidpublisher v1.1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/androidpublisher/v1.1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.AndroidPublisher.v1_1,False,2018-04-17T08:54:51.577+00:00,True,False,,Google,20711,True,1.32.2.1200
+Google Inc.,2018-04-17T08:55:47.42Z,3,3,"Google APIs Client Library for working with Books v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/books/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.Books.v1,False,2018-04-17T08:55:47.42+00:00,True,False,,Google,25053,True,1.32.2.1194
+Paket team,2018-04-17T08:54:04.56Z,2,3,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket.Core,False,2018-04-18T10:23:20.457+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",298256,False,5.156.4
+Google Inc.,2018-04-17T08:53:52.01Z,2,3,"Google APIs Client Library for working with Adsensehost v4.1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/adsensehost/v4.1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.AdSenseHost.v4_1,False,2018-04-18T08:56:41.54+00:00,True,False,,Google,44090,True,1.32.2.1200
+Google Inc.,2018-04-17T08:55:26.78Z,2,3,"Google APIs Client Library for working with Appsactivity v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/appsactivity/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.Appsactivity.v1,False,2018-04-18T08:57:27.043+00:00,True,False,,Google,11631,True,1.32.2.1199
+赛恩倍吉科技顾问(深圳)有限公司,2018-04-17T08:55:54.03Z,43209,3,Application.DataContracts,ScienBiziP.TAOS.Services.SystemConfig.Application.DataContracts,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.1.0
+Google Inc.,2018-04-17T08:54:38.107Z,3,3,"Google APIs Client Library for working with Androidpublisher v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/androidpublisher/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.AndroidPublisher.v1,False,2018-04-17T08:54:38.107+00:00,True,False,,Google,14903,True,1.32.2.1200
+Paket team,2018-04-17T08:54:34.933Z,2,3,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket,False,2018-04-18T10:23:50.3+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",835609,False,5.156.4
+Google Inc.,2018-04-17T08:54:24.37Z,3,3,"Google APIs Client Library for working with Androiddeviceprovisioning v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/androiddeviceprovisioning/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.AndroidProvisioningPartner.v1,False,2018-04-17T08:54:24.37+00:00,True,False,,Google,2856,True,1.32.2.1198
+Google Inc.,2018-04-17T08:55:05.483Z,3,3,"Google APIs Client Library for working with Androidpublisher v2.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/androidpublisher/v2
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.AndroidPublisher.v2,False,2018-04-17T08:55:05.483+00:00,True,False,,Google,116161,True,1.32.2.1200
+Google Inc.,2018-04-17T08:55:47.42Z,3,3,"Google APIs Client Library for working with Books v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/books/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.Books.v1,False,2018-04-17T08:55:47.42+00:00,True,False,,Google,25053,True,1.32.2.1194
+赛恩倍吉科技顾问(深圳)有限公司,2018-04-17T08:55:54.03Z,43209,3,Application.DataContracts,ScienBiziP.TAOS.Services.SystemConfig.Application.DataContracts,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.1.0
+Google Inc.,2018-04-17T08:53:52.01Z,2,3,"Google APIs Client Library for working with Adsensehost v4.1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/adsensehost/v4.1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.AdSenseHost.v4_1,False,2018-04-18T08:56:41.54+00:00,True,False,,Google,44090,True,1.32.2.1200
+Google Inc.,2018-04-17T08:54:24.37Z,3,3,"Google APIs Client Library for working with Androiddeviceprovisioning v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/androiddeviceprovisioning/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.AndroidProvisioningPartner.v1,False,2018-04-17T08:54:24.37+00:00,True,False,,Google,2856,True,1.32.2.1198
+Paket team,2018-04-17T08:54:34.933Z,2,3,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket,False,2018-04-18T10:23:50.3+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",835609,False,5.156.4
+Google Inc.,2018-04-17T08:54:08.683Z,3,3,"Google APIs Client Library for working with Androidenterprise v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/androidenterprise/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.AndroidEnterprise.v1,False,2018-04-17T08:54:08.683+00:00,True,False,,Google,17123,True,1.32.2.1201
+Google Inc.,2018-04-17T08:54:38.107Z,3,3,"Google APIs Client Library for working with Androidpublisher v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/androidpublisher/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.AndroidPublisher.v1,False,2018-04-17T08:54:38.107+00:00,True,False,,Google,14903,True,1.32.2.1200
+Google Inc.,2018-04-17T08:55:26.78Z,2,3,"Google APIs Client Library for working with Appsactivity v1.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/appsactivity/v1
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.Appsactivity.v1,False,2018-04-18T08:57:27.043+00:00,True,False,,Google,11631,True,1.32.2.1199
+Google Inc.,2018-04-17T08:55:05.483Z,3,3,"Google APIs Client Library for working with Androidpublisher v2.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/androidpublisher/v2
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.AndroidPublisher.v2,False,2018-04-17T08:55:05.483+00:00,True,False,,Google,116161,True,1.32.2.1200
+Google Inc.,2018-04-17T08:53:38.777Z,2,3,"Google APIs Client Library for working with Adsense v1.4.
+
+      Supported Platforms:
+      - .NET Framework 4.5+
+      - NetStandard1.3, providing .NET Core support.
+
+      Legacy platforms:
+      - .NET Framework 4.0
+      - Windows 8 Apps
+      - Windows Phone 8.1
+      - Windows Phone Silverlight 8.0
+	  
+      Incompatible platforms:
+      - .NET Framework < 4.0
+      - Silverlight
+      - UWP (will build, but is known not to work at runtime)
+
+      More documentation on the API is available at:
+      https://developers.google.com/api-client-library/dotnet/apis/adsense/v1.4
+
+      The package source code is available at:
+      https://github.com/google/google-api-dotnet-client/tree/master/Src/Generated",Google.Apis.AdSense.v1_4,False,2018-04-18T08:56:26.54+00:00,True,False,,Google,40106,True,1.32.2.1200
+Baris Kanlica - Mawens Business Solutions,2018-04-17T08:52:19.227Z,3,3,This is a Xrm Tool Box Plugin for count Records in Dynamics CRM Views or FetchXML result.,Cube.XRMToolBox.RecordCounter,False,2018-04-17T08:52:19.227+00:00,True,False,,"XrmToolBox,Plugins,RecordCounter",131819,False,1.2018.4.1
+WorkData,2018-04-17T08:49:52.41Z,3,3,WorkData集成Redis,WorkData.Util.Redis,False,2018-04-17T08:49:52.41+00:00,True,False,,"Tag1,Tag2",29,False,1.0.0
+DNV GL,2018-04-17T08:50:33.91Z,3,3,A package used to help digital services to invoke MyDNVGL service,VerIT.Service.MyDNVGL.API.Client,False,2018-04-17T11:56:22.073+00:00,True,False,,"MyDNVGL,API",950,False,2.3.0
+WorkData,2018-04-17T08:49:52.41Z,3,3,WorkData集成Redis,WorkData.Util.Redis,False,2018-04-17T08:49:52.41+00:00,True,False,,"Tag1,Tag2",29,False,1.0.0
+Baris Kanlica - Mawens Business Solutions,2018-04-17T08:52:19.227Z,3,3,This is a Xrm Tool Box Plugin for count Records in Dynamics CRM Views or FetchXML result.,Cube.XRMToolBox.RecordCounter,False,2018-04-17T08:52:19.227+00:00,True,False,,"XrmToolBox,Plugins,RecordCounter",131819,False,1.2018.4.1
+DNV GL,2018-04-17T08:50:33.91Z,3,3,A package used to help digital services to invoke MyDNVGL service,VerIT.Service.MyDNVGL.API.Client,False,2018-04-17T11:56:22.073+00:00,True,False,,"MyDNVGL,API",950,False,2.3.0
+Umbraco HQ,2018-04-17T08:45:48.43Z,3,3,Contains the core assemblies needed to run Umbraco Cms. This package only contains assemblies and can be used for package development. Use the UmbracoCms-package to setup Umbraco in Visual Studio as an ASP.NET project.,UmbracoCms.Core,False,2018-04-17T08:45:48.43+00:00,True,False,Contains the core assemblies needed to run Umbraco Cms,umbraco,865622,True,7.10.3
+Umbraco HQ,2018-04-17T08:46:36.73Z,3,3,Contains the core assemblies needed to run Umbraco Cms. This package only contains assemblies and can be used for package development. Use the UmbracoCms-package to setup Umbraco in Visual Studio as an ASP.NET project.,UmbracoCms.Core,False,2018-04-17T08:45:48.43+00:00,True,False,Contains the core assemblies needed to run Umbraco Cms,umbraco,865622,True,7.8.2
+Umbraco HQ,2018-04-17T08:46:04.04Z,3,3,Contains the core assemblies needed to run Umbraco Cms. This package only contains assemblies and can be used for package development. Use the UmbracoCms-package to setup Umbraco in Visual Studio as an ASP.NET project.,UmbracoCms.Core,False,2018-04-17T08:45:48.43+00:00,True,False,Contains the core assemblies needed to run Umbraco Cms,umbraco,865622,True,7.9.5
+Umbraco HQ,2018-04-17T08:46:32.4Z,3,3,Installs Umbraco Cms in your Visual Studio ASP.NET project,UmbracoCms,False,2018-04-17T08:45:42.51+00:00,True,False,Installs Umbraco Cms in your Visual Studio ASP.NET project,umbraco,761472,True,7.8.2
+WorkData,2018-04-17T08:47:38.37Z,3,3,WorkData集成RabbitMQ,WorkData.Util.RabbitMQ,False,2018-04-17T08:47:38.37+00:00,True,False,,"Tag1,Tag2",29,False,1.0.0
+Umbraco HQ,2018-04-17T08:45:42.51Z,3,3,Installs Umbraco Cms in your Visual Studio ASP.NET project,UmbracoCms,False,2018-04-17T08:45:42.51+00:00,True,False,Installs Umbraco Cms in your Visual Studio ASP.NET project,umbraco,761472,True,7.10.3
+Webdiyer,2018-04-17T08:44:27.007Z,3,3,MvcPager for ASP.NET Core Mvc 2.0+,Webdiyer.MvcPagerCore,False,2018-04-17T08:44:27.007+00:00,True,False,Pagination compoment for ASP.NET Core Mvc 2.0+,"MvcPager,MvcPagerCore",27,False,1.0.1
+Umbraco HQ,2018-04-17T08:45:59.26Z,3,3,Installs Umbraco Cms in your Visual Studio ASP.NET project,UmbracoCms,False,2018-04-17T08:45:42.51+00:00,True,False,Installs Umbraco Cms in your Visual Studio ASP.NET project,umbraco,761472,True,7.9.5
+Umbraco HQ,2018-04-17T08:45:42.51Z,3,3,Installs Umbraco Cms in your Visual Studio ASP.NET project,UmbracoCms,False,2018-04-17T08:45:42.51+00:00,True,False,Installs Umbraco Cms in your Visual Studio ASP.NET project,umbraco,761472,True,7.10.3
+WorkData,2018-04-17T08:47:38.37Z,3,3,WorkData集成RabbitMQ,WorkData.Util.RabbitMQ,False,2018-04-17T08:47:38.37+00:00,True,False,,"Tag1,Tag2",29,False,1.0.0
+Umbraco HQ,2018-04-17T08:46:32.4Z,3,3,Installs Umbraco Cms in your Visual Studio ASP.NET project,UmbracoCms,False,2018-04-17T08:45:42.51+00:00,True,False,Installs Umbraco Cms in your Visual Studio ASP.NET project,umbraco,761472,True,7.8.2
+Umbraco HQ,2018-04-17T08:46:36.73Z,3,3,Contains the core assemblies needed to run Umbraco Cms. This package only contains assemblies and can be used for package development. Use the UmbracoCms-package to setup Umbraco in Visual Studio as an ASP.NET project.,UmbracoCms.Core,False,2018-04-17T08:45:48.43+00:00,True,False,Contains the core assemblies needed to run Umbraco Cms,umbraco,865622,True,7.8.2
+Umbraco HQ,2018-04-17T08:46:04.04Z,3,3,Contains the core assemblies needed to run Umbraco Cms. This package only contains assemblies and can be used for package development. Use the UmbracoCms-package to setup Umbraco in Visual Studio as an ASP.NET project.,UmbracoCms.Core,False,2018-04-17T08:45:48.43+00:00,True,False,Contains the core assemblies needed to run Umbraco Cms,umbraco,865622,True,7.9.5
+Umbraco HQ,2018-04-17T08:45:48.43Z,3,3,Contains the core assemblies needed to run Umbraco Cms. This package only contains assemblies and can be used for package development. Use the UmbracoCms-package to setup Umbraco in Visual Studio as an ASP.NET project.,UmbracoCms.Core,False,2018-04-17T08:45:48.43+00:00,True,False,Contains the core assemblies needed to run Umbraco Cms,umbraco,865622,True,7.10.3
+Umbraco HQ,2018-04-17T08:45:59.26Z,3,3,Installs Umbraco Cms in your Visual Studio ASP.NET project,UmbracoCms,False,2018-04-17T08:45:42.51+00:00,True,False,Installs Umbraco Cms in your Visual Studio ASP.NET project,umbraco,761472,True,7.9.5
+CuongNguyen,2018-04-17T08:45:18.74Z,3,3,Just For Demo,ASBNugetCommon,False,2018-04-17T08:45:18.74+00:00,True,False,,"Demo,V1",58,False,1.0.1
+iwate,2018-04-17T08:43:15.503Z,3,3,The simplest implementation from of OData client.,ODataHttpClient,False,2018-04-17T08:43:15.503+00:00,True,False,,,250,False,1.3.0
+iwate,2018-04-17T08:43:15.503Z,3,3,The simplest implementation from of OData client.,ODataHttpClient,False,2018-04-17T08:43:15.503+00:00,True,False,,,250,False,1.3.0
+CuongNguyen,2018-04-17T08:45:18.74Z,3,3,Just For Demo,ASBNugetCommon,False,2018-04-17T08:45:18.74+00:00,True,False,,"Demo,V1",58,False,1.0.1
+WorkData,2018-04-17T08:41:27.45Z,3,3,WorkData 基础设施模块,WorkData,False,2018-04-17T08:41:27.45+00:00,True,False,,"Tag1,Tag2",24,False,1.0.0
+WeiGe,2018-04-17T08:41:37.123Z,3,3,"AspNetCore.CodeGenerator for sqlserver of ef Core,
+      Automatic generation of database/table description",AspNetCore.CodeGenerator.SqlServer,False,2018-04-17T10:16:39.097+00:00,True,False,,,1334,False,2.0.3.53
+JKorf,2018-04-17T08:40:27.637Z,3,3,"Bittrex.Net is a .Net wrapper for the Bittrex API, including the SignalR websocket. It includes all features the API provides using clear and readable objects including but not limited to Reading market info, Placing and managing orders and Reading balances and funds",Bittrex.Net,False,2018-04-17T08:40:27.637+00:00,True,False,,"Bittrex,Bittrex.Net,CryptoCurrency,Exchange,API,wrapper",10405,False,2.1.2
+JKorf,2018-04-17T08:40:27.637Z,3,3,"Bittrex.Net is a .Net wrapper for the Bittrex API, including the SignalR websocket. It includes all features the API provides using clear and readable objects including but not limited to Reading market info, Placing and managing orders and Reading balances and funds",Bittrex.Net,False,2018-04-17T08:40:27.637+00:00,True,False,,"Bittrex,Bittrex.Net,CryptoCurrency,Exchange,API,wrapper",10405,False,2.1.2
+WeiGe,2018-04-17T08:41:37.123Z,3,3,"AspNetCore.CodeGenerator for sqlserver of ef Core,
+      Automatic generation of database/table description",AspNetCore.CodeGenerator.SqlServer,False,2018-04-17T10:16:39.097+00:00,True,False,,,1334,False,2.0.3.53
+WeiGe,2018-04-17T08:37:36.363Z,3,3,"AspNetCore.DocView;
+      .net Core Mvc document UI",AspNetCore.DocView,False,2018-04-17T10:16:35.457+00:00,True,False,,,3376,False,2.0.3.53
+WeiGe,2018-04-17T08:37:43.363Z,3,3,"update/delete entity without load entity from database,run raw sql to any entity.",AspNetCore.EFCore.SqlServer,False,2018-04-17T10:16:20.38+00:00,True,False,,"AspNetCore,.Net,Core,EF,EntityFrameworkCore,Sql,Server",3372,False,2.0.3.53
+ABC arbitrage,2018-04-17T08:38:22.333Z,3,3,The Persistence service used by Zebus,Zebus.Persistence,False,2018-04-17T08:38:22.333+00:00,True,False,,,1764,False,2.2.0
+WeiGe,2018-04-17T08:37:30.177Z,3,3,"Microsoft.AspNetCore.MvcFactory
+            used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,True,False,,,6796,False,2.0.3.53
+ABC arbitrage,2018-04-17T08:39:23.29Z,3,3,An implementation of the Persistence backed out by Cassandra,Zebus.Persistence.CQL.Testing,False,2018-04-17T08:39:23.29+00:00,True,False,,,1628,False,2.2.0
+Kevin Smith,2018-04-17T08:37:18.397Z,3,3,A simple .NET API client wrapper for CompaniesHouse,CompaniesHouse,False,2018-04-17T08:37:18.397+00:00,True,False,,"CompaniesHouse,Registrar,Kevsoft,API,REST,WebService",9114,False,4.0.0
+WeiGe,2018-04-17T08:37:50.57Z,3,3,"AspNetCore.ThirdParty
+      SMS,Payment:Alipay,WeChat ,Verfy Identity, Baidu Map, JPush,Car,Approve",AspNetCore.ThirdParty,False,2018-04-17T10:16:25.223+00:00,True,False,,,957,False,2.0.3.53
+ABC arbitrage,2018-04-17T08:38:57.587Z,3,3,An implementation of the Persistence backed out by Cassandra,Zebus.Persistence.CQL,False,2018-04-17T08:38:57.587+00:00,True,False,,,1658,False,2.2.0
+ABC arbitrage,2018-04-17T08:39:23.29Z,3,3,An implementation of the Persistence backed out by Cassandra,Zebus.Persistence.CQL.Testing,False,2018-04-17T08:39:23.29+00:00,True,False,,,1628,False,2.2.0
+ABC arbitrage,2018-04-17T08:38:57.587Z,3,3,An implementation of the Persistence backed out by Cassandra,Zebus.Persistence.CQL,False,2018-04-17T08:38:57.587+00:00,True,False,,,1658,False,2.2.0
+ABC arbitrage,2018-04-17T08:38:22.333Z,3,3,The Persistence service used by Zebus,Zebus.Persistence,False,2018-04-17T08:38:22.333+00:00,True,False,,,1764,False,2.2.0
+WeiGe,2018-04-17T08:37:50.57Z,3,3,"AspNetCore.ThirdParty
+      SMS,Payment:Alipay,WeChat ,Verfy Identity, Baidu Map, JPush,Car,Approve",AspNetCore.ThirdParty,False,2018-04-17T10:16:25.223+00:00,True,False,,,957,False,2.0.3.53
+Kevin Smith,2018-04-17T08:37:18.397Z,3,3,A simple .NET API client wrapper for CompaniesHouse,CompaniesHouse,False,2018-04-17T08:37:18.397+00:00,True,False,,"CompaniesHouse,Registrar,Kevsoft,API,REST,WebService",9114,False,4.0.0
+WeiGe,2018-04-17T08:37:30.177Z,3,3,"Microsoft.AspNetCore.MvcFactory
+            used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,True,False,,,6796,False,2.0.3.53
+WeiGe,2018-04-17T08:37:43.363Z,3,3,"update/delete entity without load entity from database,run raw sql to any entity.",AspNetCore.EFCore.SqlServer,False,2018-04-17T10:16:20.38+00:00,True,False,,"AspNetCore,.Net,Core,EF,EntityFrameworkCore,Sql,Server",3372,False,2.0.3.53
+WeiGe,2018-04-17T08:37:36.363Z,3,3,"AspNetCore.DocView;
+      .net Core Mvc document UI",AspNetCore.DocView,False,2018-04-17T10:16:35.457+00:00,True,False,,,3376,False,2.0.3.53
+WeiGe,2018-04-17T08:20:36.433Z,3,3,"AspNetCore.DocView;
+      .net Core Mvc document UI",AspNetCore.DocView,False,2018-04-17T10:16:35.457+00:00,False,False,,,3376,False,2.0.3.52
+WeiGe,2018-04-17T08:20:47.103Z,3,3,"AspNetCore.ThirdParty
+      SMS,Payment:Alipay,WeChat ,Verfy Identity, Baidu Map, JPush,Car,Approve",AspNetCore.ThirdParty,False,2018-04-17T10:16:25.223+00:00,False,False,,,957,False,2.0.3.52
+WeiGe,2018-04-17T08:19:59.68Z,3,3,"Microsoft.AspNetCore.MvcFactory
+            used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,False,False,,,6796,False,2.0.3.52
+WeiGe,2018-04-17T08:20:09.837Z,3,3,"AspNetCore.CodeGenerator for sqlserver of ef Core,
+      Automatic generation of database/table description",AspNetCore.CodeGenerator.SqlServer,False,2018-04-17T10:16:39.097+00:00,False,False,,,1334,False,2.0.3.52
+WeiGe,2018-04-17T08:20:23.667Z,3,3,"update/delete entity without load entity from database,run raw sql to any entity.",AspNetCore.EFCore.SqlServer,False,2018-04-17T10:16:20.38+00:00,False,False,,"AspNetCore,.Net,Core,EF,EntityFrameworkCore,Sql,Server",3372,False,2.0.3.52
+Emily,2018-04-17T08:33:46.153Z,3,3,Package Description,ExpressTree,False,2018-04-17T08:33:46.153+00:00,True,False,,lambda,75,False,1.0.1
+Emily,2018-04-17T08:33:46.153Z,3,3,Package Description,ExpressTree,False,2018-04-17T08:33:46.153+00:00,True,False,,lambda,75,False,1.0.1
+Lee,2018-04-17T08:30:17.38Z,3,3,MES系统接口,Realgoal.MES.IAppService.ShanMu,False,2018-04-17T08:30:17.38+00:00,True,False,,,2522,False,1.4.3
+Lee,2018-04-17T08:29:11.94Z,1,3,MES系统接口,Realgoal.MES.IAppService.JinNiu,False,2018-04-20T07:38:59.103+00:00,True,False,,,237,False,1.0.3
+WorkData,2018-04-17T08:29:55.47Z,3,3,WorkData共有库,WorkData.Util.Common,False,2018-04-17T08:29:55.47+00:00,True,False,,"Tag1,Tag2",29,False,1.0.0
+LogCollections,2018-04-17T08:32:54.37Z,2,3,File log based collections with compactification,LogCollections,False,2018-04-18T14:45:44.207+00:00,True,False,,"Collection,Generic,Log",328,False,0.0.6
+Hendry,2018-04-17T08:32:23.307Z,1,3,A lightweight back-end framework and utilities kit based on MongoDB/Redis,SquirrelFramework,False,2018-04-19T09:23:16.39+00:00,True,False,,"mongodb,redis,utility,kit,back,end,light,repository,dao,squirrel,framework,ddd",466,False,1.0.8
+LogCollections,2018-04-17T08:32:54.37Z,2,3,File log based collections with compactification,LogCollections,False,2018-04-18T14:45:44.207+00:00,True,False,,"Collection,Generic,Log",328,False,0.0.6
+Hendry,2018-04-17T08:32:23.307Z,1,3,A lightweight back-end framework and utilities kit based on MongoDB/Redis,SquirrelFramework,False,2018-04-19T09:23:16.39+00:00,True,False,,"mongodb,redis,utility,kit,back,end,light,repository,dao,squirrel,framework,ddd",466,False,1.0.8
+WorkData,2018-04-17T08:29:55.47Z,3,3,WorkData共有库,WorkData.Util.Common,False,2018-04-17T08:29:55.47+00:00,True,False,,"Tag1,Tag2",29,False,1.0.0
+Lee,2018-04-17T08:29:11.94Z,1,3,MES系统接口,Realgoal.MES.IAppService.JinNiu,False,2018-04-20T07:38:59.103+00:00,True,False,,,237,False,1.0.3
+Lee,2018-04-17T08:30:17.38Z,3,3,MES系统接口,Realgoal.MES.IAppService.ShanMu,False,2018-04-17T08:30:17.38+00:00,True,False,,,2522,False,1.4.3
+DevsDNA,2018-04-17T08:26:31.027Z,3,3,A cross platform multiple selection images.,DevsDNA.XMedia,False,2018-04-17T11:48:59.993+00:00,True,False,,,557,False,1.0.9
+DevsDNA,2018-04-17T08:26:31.027Z,3,3,A cross platform multiple selection images.,DevsDNA.XMedia,False,2018-04-17T11:48:59.993+00:00,True,False,,,557,False,1.0.9
+electricessence,2018-04-17T08:24:59.037Z,1,3,Useful set of utilities and abstractions for simplifying modern data-access operations and ensuring DI compatibility.,Open.Database.Extensions,False,2018-04-20T08:58:25.393+00:00,True,False,,,2372,False,5.10.0
+Quellatalo Nin,2018-04-17T08:22:58.11Z,2,3,An utility to read Html OCR data from Tesseract.,Quellatalo.Nin.HOCRReader,False,2018-04-18T00:40:07.39+00:00,True,False,,"Tesseract,HTML,OCR,Reader",199,False,0.0.2
+Saad ZAGHLOUL,2018-04-17T08:25:26.303Z,3,3,"Export your solutions Easily in one click
+
+The plugin fives only the choice to export to 8.2, 8.1, 8.0",Sza.SolutionExportPlugin,False,2018-04-17T08:25:26.303+00:00,True,False,,"XrmToolBox,Sza.SolutionExportPlugin",6173,False,1.0.5
+Saad ZAGHLOUL,2018-04-17T08:25:26.303Z,3,3,"Export your solutions Easily in one click
+
+The plugin fives only the choice to export to 8.2, 8.1, 8.0",Sza.SolutionExportPlugin,False,2018-04-17T08:25:26.303+00:00,True,False,,"XrmToolBox,Sza.SolutionExportPlugin",6173,False,1.0.5
+Quellatalo Nin,2018-04-17T08:22:58.11Z,2,3,An utility to read Html OCR data from Tesseract.,Quellatalo.Nin.HOCRReader,False,2018-04-18T00:40:07.39+00:00,True,False,,"Tesseract,HTML,OCR,Reader",199,False,0.0.2
+NIPO,2018-04-17T08:22:08.827Z,1,3,NIPO Software Nfield SDK for Windows,Nfield.SDK,True,2018-04-19T15:21:20.217+00:00,True,False,,"nfield,marketresearch,capi,cawi",12929,False,1.5.33609-alpha
+WeiGe,2018-04-17T08:20:47.103Z,3,3,"AspNetCore.ThirdParty
+      SMS,Payment:Alipay,WeChat ,Verfy Identity, Baidu Map, JPush,Car,Approve",AspNetCore.ThirdParty,False,2018-04-17T10:16:25.223+00:00,True,False,,,957,False,2.0.3.52
+ChenHui,2018-04-17T08:18:42.647Z,1,3,DeltaRT核心组件，封装着框架核心及数据存储，缓存等功能,Hcf.Core,False,2018-04-19T12:32:18.46+00:00,True,False,DeltaRT核心组件,DeltaRT,171,False,1.0.0
+"Ad van der Hoeven,Corniel Nobel,Erik Ammerlaan,Jack Kester,Hanif Hafez Nezami,Vincent Lesierse,Wilko Frieke",2018-04-17T08:20:42.853Z,3,3,"Qowaiv implements common, universal domain objects. These types form the base of your domain model.",Qowaiv.Web,False,2018-04-17T08:20:42.853+00:00,True,False,,"qowaiv,domain,model",1814,False,3.1.3
+ChenHui,2018-04-17T08:19:20.943Z,3,3,Hcf工具组件，对Excel工具类辅助操作进行封装,Hcf.Utility.Excel,False,2018-04-17T08:19:20.943+00:00,True,False,Hcf工具组件,"Hcf,Utility",29,False,1.0.0
+ChenHui,2018-04-17T08:18:36.007Z,3,3,Hcf Autofac WebApi组件，提供WebApi的Autofac依赖注入功能的封装,Hcf.Autofac.WebApi,False,2018-04-17T14:03:41.607+00:00,True,False,Hcf Autofac WebApi组件,Hcf,58,False,1.0.0
+WeiGe,2018-04-17T08:19:59.68Z,3,3,"Microsoft.AspNetCore.MvcFactory
+            used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,True,False,,,6796,False,2.0.3.52
+ChenHui,2018-04-17T08:18:50.49Z,3,3,Hcf 基础服务组件，提供系统资讯服务功能的封装,Hcf.InfoService,False,2018-04-17T13:15:23.423+00:00,True,False,Hcf InfoService 组件,Hcf,59,False,1.0.0
+WeiGe,2018-04-17T08:20:36.433Z,3,3,"AspNetCore.DocView;
+      .net Core Mvc document UI",AspNetCore.DocView,False,2018-04-17T10:16:35.457+00:00,True,False,,,3376,False,2.0.3.52
+"Ad van der Hoeven,Corniel Nobel,Erik Ammerlaan,Jack Kester,Hanif Hafez Nezami,Vincent Lesierse,Wilko Frieke",2018-04-17T08:20:27.823Z,3,3,"Qowaiv implements common, universal domain objects. These types form the base of your domain model.",Qowaiv.Json.Newtonsoft,False,2018-04-17T08:20:27.823+00:00,True,False,,"qowaiv,domain,model",2259,False,3.1.3
+WeiGe,2018-04-17T08:20:09.837Z,3,3,"AspNetCore.CodeGenerator for sqlserver of ef Core,
+      Automatic generation of database/table description",AspNetCore.CodeGenerator.SqlServer,False,2018-04-17T10:16:39.097+00:00,True,False,,,1334,False,2.0.3.52
+WeiGe,2018-04-17T08:20:23.667Z,3,3,"update/delete entity without load entity from database,run raw sql to any entity.",AspNetCore.EFCore.SqlServer,False,2018-04-17T10:16:20.38+00:00,True,False,,"AspNetCore,.Net,Core,EF,EntityFrameworkCore,Sql,Server",3372,False,2.0.3.52
+ChenHui,2018-04-17T08:19:07.71Z,1,3,Hcf工具组件，对常用工具类辅助操作进行封装,Hcf.Utility,False,2018-04-19T12:32:36.007+00:00,True,False,Hcf工具组件,"Hcf,Utility",53,False,1.0.0
+ChenHui,2018-04-17T08:19:35.947Z,1,3,Hcf Web 扩展组件，提供Mvc的Autofac依赖注入功能的封装,Hcf.Web.Mvc,False,2018-04-19T12:32:38.133+00:00,True,False,Hcf Web Mvc组件,Hcf,51,False,1.0.0
+"Ad van der Hoeven,Corniel Nobel,Erik Ammerlaan,Jack Kester,Hanif Hafez Nezami,Vincent Lesierse,Wilko Frieke",2018-04-17T08:19:55.15Z,3,3,"Qowaiv implements common, universal domain objects. These types form the base of your domain model.",Qowaiv,False,2018-04-17T08:19:55.15+00:00,True,False,,"qowaiv,domain,model",3917,False,3.1.3
+"Ad van der Hoeven,Corniel Nobel,Erik Ammerlaan,Jack Kester,Hanif Hafez Nezami,Vincent Lesierse,Wilko Frieke",2018-04-17T08:20:11.307Z,3,3,"Qowaiv implements common, universal domain objects. These types form the base of your domain model.",Qowaiv.ComponentModel,False,2018-04-17T08:20:11.307+00:00,True,False,,"qowaiv,domain,model",602,False,3.1.3
+ChenHui,2018-04-17T08:19:33.57Z,3,3,Hcf工具组件，对文件压缩Zip工具类辅助操作进行封装,Hcf.Utility.Zip,False,2018-04-17T08:19:33.57+00:00,True,False,Hcf工具组件,"Hcf,Utility",28,False,1.0.0
+NIPO,2018-04-17T08:22:08.827Z,1,3,NIPO Software Nfield SDK for Windows,Nfield.SDK,True,2018-04-19T15:21:20.217+00:00,True,False,,"nfield,marketresearch,capi,cawi",12929,False,1.5.33609-alpha
+WeiGe,2018-04-17T08:20:47.103Z,3,3,"AspNetCore.ThirdParty
+      SMS,Payment:Alipay,WeChat ,Verfy Identity, Baidu Map, JPush,Car,Approve",AspNetCore.ThirdParty,False,2018-04-17T10:16:25.223+00:00,True,False,,,957,False,2.0.3.52
+WeiGe,2018-04-17T08:20:36.433Z,3,3,"AspNetCore.DocView;
+      .net Core Mvc document UI",AspNetCore.DocView,False,2018-04-17T10:16:35.457+00:00,True,False,,,3376,False,2.0.3.52
+"Ad van der Hoeven,Corniel Nobel,Erik Ammerlaan,Jack Kester,Hanif Hafez Nezami,Vincent Lesierse,Wilko Frieke",2018-04-17T08:20:42.853Z,3,3,"Qowaiv implements common, universal domain objects. These types form the base of your domain model.",Qowaiv.Web,False,2018-04-17T08:20:42.853+00:00,True,False,,"qowaiv,domain,model",1814,False,3.1.3
+ChenHui,2018-04-17T08:18:52.787Z,3,3,Hcf Log4Net日志组件，提供基于Log4Net的基础日志记录功能的封装,Hcf.Logging.Log4Net,False,2018-04-17T08:18:52.787+00:00,True,False,Hcf Log4Net日志组件,Hcf,29,False,1.0.0
+"Ad van der Hoeven,Corniel Nobel,Erik Ammerlaan,Jack Kester,Hanif Hafez Nezami,Vincent Lesierse,Wilko Frieke",2018-04-17T08:20:11.307Z,3,3,"Qowaiv implements common, universal domain objects. These types form the base of your domain model.",Qowaiv.ComponentModel,False,2018-04-17T08:20:11.307+00:00,True,False,,"qowaiv,domain,model",602,False,3.1.3
+ChenHui,2018-04-17T08:19:33.57Z,3,3,Hcf工具组件，对文件压缩Zip工具类辅助操作进行封装,Hcf.Utility.Zip,False,2018-04-17T08:19:33.57+00:00,True,False,Hcf工具组件,"Hcf,Utility",28,False,1.0.0
+ChenHui,2018-04-17T08:18:33.1Z,2,3,Hcf Autofac Mvc组件，提供Mvc的Autofac依赖注入功能的封装,Hcf.Autofac.Mvc,False,2018-04-18T02:08:28+00:00,True,False,Hcf Autofac Mvc组件,Hcf,105,False,1.0.0
+ChenHui,2018-04-17T08:19:35.947Z,1,3,Hcf Web 扩展组件，提供Mvc的Autofac依赖注入功能的封装,Hcf.Web.Mvc,False,2018-04-19T12:32:38.133+00:00,True,False,Hcf Web Mvc组件,Hcf,51,False,1.0.0
+ChenHui,2018-04-17T08:18:37.833Z,1,3,Hcf AutoMapper 对象映射组件，封装基于AutoMapper的对象映射实现,Hcf.AutoMapper,False,2018-04-19T12:32:16.477+00:00,True,False,Hcf AutoMapper 对象映射组件,Hcf,48,False,1.0.0
+"Ad van der Hoeven,Corniel Nobel,Erik Ammerlaan,Jack Kester,Hanif Hafez Nezami,Vincent Lesierse,Wilko Frieke",2018-04-17T08:20:27.823Z,3,3,"Qowaiv implements common, universal domain objects. These types form the base of your domain model.",Qowaiv.Json.Newtonsoft,False,2018-04-17T08:20:27.823+00:00,True,False,,"qowaiv,domain,model",2259,False,3.1.3
+ChenHui,2018-04-17T08:19:20.943Z,3,3,Hcf工具组件，对Excel工具类辅助操作进行封装,Hcf.Utility.Excel,False,2018-04-17T08:19:20.943+00:00,True,False,Hcf工具组件,"Hcf,Utility",29,False,1.0.0
+WeiGe,2018-04-17T08:20:09.837Z,3,3,"AspNetCore.CodeGenerator for sqlserver of ef Core,
+      Automatic generation of database/table description",AspNetCore.CodeGenerator.SqlServer,False,2018-04-17T10:16:39.097+00:00,True,False,,,1334,False,2.0.3.52
+ChenHui,2018-04-17T08:18:40.223Z,3,3,Hcf 基础服务组件，提供系统基础模块功能的封装,Hcf.BaseService,False,2018-04-17T13:15:20.127+00:00,True,False,Hcf BaseService 组件,Hcf,59,False,1.0.0
+ChenHui,2018-04-17T08:18:48.223Z,1,3,Hcf数据对象映射组件，封装数据底层访问驱动,Hcf.Data.Orm,False,2018-04-19T12:32:23.117+00:00,True,False,Hcf ORM数据驱动访问组件,Hcf,52,False,1.0.0
+WeiGe,2018-04-17T08:19:59.68Z,3,3,"Microsoft.AspNetCore.MvcFactory
+            used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,True,False,,,6796,False,2.0.3.52
+"Ad van der Hoeven,Corniel Nobel,Erik Ammerlaan,Jack Kester,Hanif Hafez Nezami,Vincent Lesierse,Wilko Frieke",2018-04-17T08:19:55.15Z,3,3,"Qowaiv implements common, universal domain objects. These types form the base of your domain model.",Qowaiv,False,2018-04-17T08:19:55.15+00:00,True,False,,"qowaiv,domain,model",3917,False,3.1.3
+ChenHui,2018-04-17T08:18:45.477Z,1,3,Hcf数据访问组件，封装ORM数据访问功能的实现,Hcf.Data.Entity,False,2018-04-19T12:32:20.007+00:00,True,False,Hcf-ORM数据访问组件,Hcf,84,False,1.0.0
+ChenHui,2018-04-17T08:18:55.6Z,3,3,Hcf 基础服务组件，提供系统组织机构功能的封装,Hcf.OrgService,False,2018-04-17T13:15:25+00:00,True,False,Hcf OrgService 组件,Hcf,59,False,1.0.0
+ChenHui,2018-04-17T08:18:42.647Z,1,3,DeltaRT核心组件，封装着框架核心及数据存储，缓存等功能,Hcf.Core,False,2018-04-19T12:32:18.46+00:00,True,False,DeltaRT核心组件,DeltaRT,171,False,1.0.0
+WeiGe,2018-04-17T08:20:23.667Z,3,3,"update/delete entity without load entity from database,run raw sql to any entity.",AspNetCore.EFCore.SqlServer,False,2018-04-17T10:16:20.38+00:00,True,False,,"AspNetCore,.Net,Core,EF,EntityFrameworkCore,Sql,Server",3372,False,2.0.3.52
+ChenHui,2018-04-17T08:18:50.49Z,3,3,Hcf 基础服务组件，提供系统资讯服务功能的封装,Hcf.InfoService,False,2018-04-17T13:15:23.423+00:00,True,False,Hcf InfoService 组件,Hcf,59,False,1.0.0
+ChenHui,2018-04-17T08:18:36.007Z,3,3,Hcf Autofac WebApi组件，提供WebApi的Autofac依赖注入功能的封装,Hcf.Autofac.WebApi,False,2018-04-17T14:03:41.607+00:00,True,False,Hcf Autofac WebApi组件,Hcf,58,False,1.0.0
+ChenHui,2018-04-17T08:19:07.71Z,1,3,Hcf工具组件，对常用工具类辅助操作进行封装,Hcf.Utility,False,2018-04-19T12:32:36.007+00:00,True,False,Hcf工具组件,"Hcf,Utility",53,False,1.0.0
+WeiGe,2018-04-14T11:11:24.05Z,3,6,"Microsoft.AspNetCore.MvcFactory
+            used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,False,False,,,6796,False,2.0.3.51
+ChenHui,2018-04-17T08:18:45.477Z,1,3,Hcf数据访问组件，封装ORM数据访问功能的实现,Hcf.Data.Entity,False,2018-04-19T12:32:20.007+00:00,True,False,Hcf-ORM数据访问组件,Hcf,84,False,1.0.0
+ChenHui,2018-04-17T08:18:55.6Z,3,3,Hcf 基础服务组件，提供系统组织机构功能的封装,Hcf.OrgService,False,2018-04-17T13:15:25+00:00,True,False,Hcf OrgService 组件,Hcf,59,False,1.0.0
+ChenHui,2018-04-17T08:18:48.223Z,1,3,Hcf数据对象映射组件，封装数据底层访问驱动,Hcf.Data.Orm,False,2018-04-19T12:32:23.117+00:00,True,False,Hcf ORM数据驱动访问组件,Hcf,52,False,1.0.0
+ChenHui,2018-04-17T08:18:52.787Z,3,3,Hcf Log4Net日志组件，提供基于Log4Net的基础日志记录功能的封装,Hcf.Logging.Log4Net,False,2018-04-17T08:18:52.787+00:00,True,False,Hcf Log4Net日志组件,Hcf,29,False,1.0.0
+WeiGe,2018-04-14T10:31:02.067Z,3,6,"AspNetCore.DocView;
+      .net Core Mvc document UI",AspNetCore.DocView,False,2018-04-17T10:16:35.457+00:00,False,False,,,3376,False,2.0.3.50
+ChenHui,2018-04-17T08:18:33.1Z,2,3,Hcf Autofac Mvc组件，提供Mvc的Autofac依赖注入功能的封装,Hcf.Autofac.Mvc,False,2018-04-18T02:08:28+00:00,True,False,Hcf Autofac Mvc组件,Hcf,105,False,1.0.0
+WeiGe,2018-04-14T10:31:19.397Z,3,6,"update/delete entity without load entity from database,run raw sql to any entity.",AspNetCore.EFCore.SqlServer,False,2018-04-17T10:16:20.38+00:00,False,False,,"AspNetCore,.Net,Core,EF,EntityFrameworkCore,Sql,Server",3372,False,2.0.3.50
+ChenHui,2018-04-17T08:18:40.223Z,3,3,Hcf 基础服务组件，提供系统基础模块功能的封装,Hcf.BaseService,False,2018-04-17T13:15:20.127+00:00,True,False,Hcf BaseService 组件,Hcf,59,False,1.0.0
+ChenHui,2018-04-17T08:18:37.833Z,1,3,Hcf AutoMapper 对象映射组件，封装基于AutoMapper的对象映射实现,Hcf.AutoMapper,False,2018-04-19T12:32:16.477+00:00,True,False,Hcf AutoMapper 对象映射组件,Hcf,48,False,1.0.0
+WeiGe,2018-04-14T10:31:38.49Z,3,6,"AspNetCore.ThirdParty
+      SMS,Payment:Alipay,WeChat ,Verfy Identity, Baidu Map, JPush,Car,Approve",AspNetCore.ThirdParty,False,2018-04-17T10:16:25.223+00:00,False,False,,,957,False,2.0.3.50
+WeiGe,2018-04-14T10:31:11.473Z,3,6,"AspNetCore.CodeGenerator for sqlserver of ef Core,
+      Automatic generation of database/table description",AspNetCore.CodeGenerator.SqlServer,False,2018-04-17T10:16:39.097+00:00,False,False,,,1334,False,2.0.3.50
+WeiGe,2018-04-14T10:23:13.003Z,3,6,AspNetCore.Utilities,AspNetCore.Utilities,False,2018-04-17T09:52:07.82+00:00,False,False,,,3119,False,2.0.3.50
+ABC arbitrage,2018-04-17T08:13:51.337Z,3,3,An implementation of the Directory backed out by Cassandra,Zebus.Directory.Cassandra,False,2018-04-17T08:13:51.337+00:00,True,False,,,7537,False,2.2.0
+Storm Commerce AB,2018-04-17T08:12:24.27Z,2,3,Enferno Storm Commerce API Client library.,Enferno.StormApiClient,True,2018-04-18T08:59:53.19+00:00,True,False,,"Enferno,Storm,API,Client",32953,False,1.8.12-beta2
+"Alex Vorobiev,Naron Phou",2018-04-17T08:13:17.9Z,3,3,Simple API Helper Framework. To be used with NancyFX.,Redshift.Api,False,2018-04-17T08:13:17.9+00:00,True,False,,,553,False,3.2.9
+ABC arbitrage,2018-04-17T08:14:16.463Z,3,3,Standalone version of the Directory service used by Zebus,Zebus.Directory.Standalone,False,2018-04-17T08:14:16.463+00:00,True,False,,,8127,False,2.2.0
+"Alex Vorobiev,Naron Phou",2018-04-17T08:13:17.1Z,3,3,Simple ORM Framework.,Redshift.Orm,False,2018-04-17T08:13:17.1+00:00,True,False,,,545,False,3.2.9
+ABC arbitrage,2018-04-17T08:13:31.353Z,3,3,The Directory service used by Zebus,Zebus.Directory,False,2018-04-17T08:13:31.353+00:00,True,False,,,8456,False,2.2.0
+Appstream,2018-04-17T08:11:34.113Z,3,3,Appstream Class Library,Appstream.Appstreamlib,False,2018-04-17T09:09:29.547+00:00,True,False,,Appstream,2225,False,3.2.0
+Geeks ltd,2018-04-17T08:13:45.32Z,1,3,A framework for declarative UI testing for ASP.NET apps.,Pangolin,False,2018-04-19T07:48:35.627+00:00,True,False,,,1450,False,0.3.5
+ABC arbitrage,2018-04-17T08:14:16.463Z,3,3,Standalone version of the Directory service used by Zebus,Zebus.Directory.Standalone,False,2018-04-17T08:14:16.463+00:00,True,False,,,8127,False,2.2.0
+"Alex Vorobiev,Naron Phou",2018-04-17T08:13:17.9Z,3,3,Simple API Helper Framework. To be used with NancyFX.,Redshift.Api,False,2018-04-17T08:13:17.9+00:00,True,False,,,553,False,3.2.9
+Storm Commerce AB,2018-04-17T08:12:24.27Z,2,3,Enferno Storm Commerce API Client library.,Enferno.StormApiClient,True,2018-04-18T08:59:53.19+00:00,True,False,,"Enferno,Storm,API,Client",32953,False,1.8.12-beta2
+Appstream,2018-04-17T08:11:34.113Z,3,3,Appstream Class Library,Appstream.Appstreamlib,False,2018-04-17T09:09:29.547+00:00,True,False,,Appstream,2225,False,3.2.0
+"Alex Vorobiev,Naron Phou",2018-04-17T08:13:17.1Z,3,3,Simple ORM Framework.,Redshift.Orm,False,2018-04-17T08:13:17.1+00:00,True,False,,,545,False,3.2.9
+"Nilgun Tomrukcu,Cem Usta,Çağrı Özer",2018-04-17T08:10:44.877Z,1,3,Wrapper for Emarsys Api,Emarsys.Api,False,2018-04-19T08:42:45.76+00:00,True,False,,emarsys,557,False,1.0.5
+WeiGe,2018-04-17T08:08:55.717Z,3,3,AspNetCore.Utilities,AspNetCore.Utilities,False,2018-04-17T09:52:07.82+00:00,True,False,,,3119,False,2.0.3.52
+Savvas Kleanthous,2018-04-17T08:09:27.013Z,3,3,A full web server whose only dependency is Microsoft.Owin.Host.HttpListener. It can be used in-proc for super-easily stubbing 3rd party dependencies and validating.,SuperSimple.MiniWebServer,False,2018-04-17T08:09:27.013+00:00,True,False,,"OWIN,Web,server,API,acceptane,tests,custom",832,False,0.5.0
+"Nilgun Tomrukcu,Cem Usta,Çağrı Özer",2018-04-17T08:10:44.877Z,1,3,Wrapper for Emarsys Api,Emarsys.Api,False,2018-04-19T08:42:45.76+00:00,True,False,,emarsys,557,False,1.0.5
+WeiGe,2018-04-17T08:08:55.717Z,3,3,AspNetCore.Utilities,AspNetCore.Utilities,False,2018-04-17T09:52:07.82+00:00,True,False,,,3119,False,2.0.3.52
+Savvas Kleanthous,2018-04-17T08:09:27.013Z,3,3,A full web server whose only dependency is Microsoft.Owin.Host.HttpListener. It can be used in-proc for super-easily stubbing 3rd party dependencies and validating.,SuperSimple.MiniWebServer,False,2018-04-17T08:09:27.013+00:00,True,False,,"OWIN,Web,server,API,acceptane,tests,custom",832,False,0.5.0
+Emily,2018-04-17T07:55:15.137Z,3,3,Package Description,ExpressTree,False,2018-04-17T08:33:46.153+00:00,True,False,,lambda,75,False,1.0.0
+Sid Zhao,2018-04-17T08:05:11.613Z,3,3,Sid.SmsKit is an extensions to send sms,Sid.SmsKit,False,2018-04-17T08:05:11.613+00:00,True,False,,,238,False,1.1.0
+PI Applications A/S,2018-04-17T08:06:04.257Z,3,3,Use this package if you want to monitor status for one or more queues in Azure Storage with Azure Application Insights.,PI.ApplicationInsights.AzureQueue,False,2018-04-17T08:06:04.257+00:00,True,False,,"ApplicationInsights,Azure,Storage,Queue",31,False,0.1.0
+Secured Signing,2018-04-17T08:07:05.697Z,3,3,Secured Signing Rest Client SDK,securedsigning.client,True,2018-04-17T08:07:05.697+00:00,True,False,,"Secured,Signing",3745,False,1.4.21-beta1
+Secured Signing,2018-04-17T08:07:05.697Z,3,3,Secured Signing Rest Client SDK,securedsigning.client,True,2018-04-17T08:07:05.697+00:00,True,False,,"Secured,Signing",3745,False,1.4.21-beta1
+Sid Zhao,2018-04-17T08:05:11.613Z,3,3,Sid.SmsKit is an extensions to send sms,Sid.SmsKit,False,2018-04-17T08:05:11.613+00:00,True,False,,,238,False,1.1.0
+PI Applications A/S,2018-04-17T08:06:04.257Z,3,3,Use this package if you want to monitor status for one or more queues in Azure Storage with Azure Application Insights.,PI.ApplicationInsights.AzureQueue,False,2018-04-17T08:06:04.257+00:00,True,False,,"ApplicationInsights,Azure,Storage,Queue",31,False,0.1.0
+Emily,2018-04-17T07:55:15.137Z,3,3,Package Description,ExpressTree,False,2018-04-17T08:33:46.153+00:00,False,False,,lambda,75,False,1.0.0
+wipiano,2018-04-17T08:02:50.11Z,3,3,Utf8Json for JSONP,Utf8Json.Jsonp,False,2018-04-17T08:02:50.11+00:00,True,False,,,79,False,1.1.0
+Blue Chilli Technology Pty Ltd,2018-04-17T08:03:12.33Z,1,3,Web.MVC library for ChilliSource.Cloud,ChilliSource.Cloud.Web.MVC,True,2018-04-19T08:29:02.117+00:00,True,False,,"ChilliSource,Cloud,Web,MVC",714,False,1.0.0-alpha0022
+赛恩倍吉科技顾问(深圳)有限公司,2018-04-17T08:02:07.827Z,43209,3,Application.DataContracts,ScienBiziP.TAOS.Services.Users.Application.DataContracts,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Blue Chilli Technology Pty Ltd,2018-04-17T08:03:12.33Z,1,3,Web.MVC library for ChilliSource.Cloud,ChilliSource.Cloud.Web.MVC,True,2018-04-19T08:29:02.117+00:00,True,False,,"ChilliSource,Cloud,Web,MVC",714,False,1.0.0-alpha0022
+wipiano,2018-04-17T08:02:50.11Z,3,3,Utf8Json for JSONP,Utf8Json.Jsonp,False,2018-04-17T08:02:50.11+00:00,True,False,,,79,False,1.1.0
+赛恩倍吉科技顾问(深圳)有限公司,2018-04-17T08:02:07.827Z,43209,3,Application.DataContracts,ScienBiziP.TAOS.Services.Users.Application.DataContracts,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+"JunGao Computer Co.,Ltd.",2018-04-17T07:58:17.173Z,43209,3,Paging control for using in ASP.NET MVC 4.0+ applications,MicCodes.MvcPager,False,1900-01-01T00:00:00+00:00,False,False,,,124,False,3.0.2015.808
+Hendry,2018-04-17T07:56:34.39Z,1,3,A lightweight back-end framework and utilities kit based on MongoDB/Redis,SquirrelFramework,False,2018-04-19T09:23:16.39+00:00,True,False,,"mongodb,redis,utility,kit,back,end,light,repository,dao,squirrel,framework,ddd",466,False,1.0.7
+Umbraco,2018-04-17T07:57:21Z,3,3,"This project contains community contributions for the Umbraco deployment engine, Umbraco Deploy. Primarily this project offers ValueConnectors for the most popular Umbraco community packages - these are used by Umbraco Deploy (and Umbraco Cloud) to aid with the deployment and transferring of content/property-data to a target environment.",Umbraco.Deploy.Contrib,False,2018-04-17T07:57:21+00:00,True,False,"This project contains community contributions for the Umbraco deployment engine, Umbraco Deploy. Primarily this project offers ValueConnectors for the most popular Umbraco community packages - these are used by Umbraco Deploy (and Umbraco Cloud) to aid with the deployment and transferring of content/property-data to a target environment.",umbraco,1482,False,1.0.35
+"JunGao Computer Co.,Ltd.",2018-04-17T07:58:17.173Z,43209,3,Paging control for using in ASP.NET MVC 4.0+ applications,MicCodes.MvcPager,False,1900-01-01T00:00:00+00:00,False,False,,,124,False,3.0.2015.808
+Hendry,2018-04-17T07:56:34.39Z,1,3,A lightweight back-end framework and utilities kit based on MongoDB/Redis,SquirrelFramework,False,2018-04-19T09:23:16.39+00:00,True,False,,"mongodb,redis,utility,kit,back,end,light,repository,dao,squirrel,framework,ddd",466,False,1.0.7
+Umbraco,2018-04-17T07:57:21Z,3,3,"This project contains community contributions for the Umbraco deployment engine, Umbraco Deploy. Primarily this project offers ValueConnectors for the most popular Umbraco community packages - these are used by Umbraco Deploy (and Umbraco Cloud) to aid with the deployment and transferring of content/property-data to a target environment.",Umbraco.Deploy.Contrib,False,2018-04-17T07:57:21+00:00,True,False,"This project contains community contributions for the Umbraco deployment engine, Umbraco Deploy. Primarily this project offers ValueConnectors for the most popular Umbraco community packages - these are used by Umbraco Deploy (and Umbraco Cloud) to aid with the deployment and transferring of content/property-data to a target environment.",umbraco,1482,False,1.0.35
+Hendry,2018-04-17T07:10:57.95Z,1,3,A lightweight back-end framework and utilities kit based on MongoDB/Redis,SquirrelFramework,False,2018-04-19T09:23:16.39+00:00,False,False,,"mongodb,redis,utility,kit,back,end,light,repository,dao,squirrel,framework,ddd",466,False,1.0.6
+"JunGao Computer Co.,Ltd.",2018-04-17T07:34:38.117Z,43209,3,Paging control for using in ASP.NET MVC 4.0+ applications,MicCodes.MvcPager,False,1900-01-01T00:00:00+00:00,False,False,,,124,False,3.0.2018.802
+DWH24,2018-04-17T07:54:35.557Z,3,3,Compares two objects and creates a collection of differences that are compliant to JSON Patch RFC6902,NjDiff,False,2018-04-17T07:54:35.557+00:00,True,False,Compares two objects and creates a collection of differences that are compliant to JSON Patch RFC6902,"json,diff,patch,rfc6902",545,False,2.0.21
+Emily,2018-04-17T07:55:15.137Z,3,3,Package Description,ExpressTree,False,2018-04-17T08:33:46.153+00:00,True,False,,lambda,75,False,1.0.0
+DD4T Community,2018-04-17T07:54:06.79Z,3,3,DD4T .NET Core,DD4T.Core,True,2018-04-17T07:54:06.79+00:00,True,False,,"SDLTridion,Tridion,DD4T,DD4T.Core,DD4TCore,SDLWeb8,SDL,web,SDLWEB",20311,False,2.2.7.180-alpha
+Mike Wiese,2018-04-17T07:54:10.053Z,3,3,Calculation Engine for user-authored calculations,CalcEnginePlus,False,2018-04-17T07:54:10.053+00:00,True,False,,"Calculation,engine,developer,tool,user-authored,expressions",32,False,2.5.0
+Philipp Grathwohl,2018-04-17T07:54:11.633Z,3,3,Addin for running liquibase database migrations with the Cake build system.,Cake.Liquibase,True,2018-04-17T07:54:11.633+00:00,True,False,,"Cake,Cakebuild,Liquibase",530,False,0.1.6-preview
+DWH24,2018-04-17T07:54:35.557Z,3,3,Compares two objects and creates a collection of differences that are compliant to JSON Patch RFC6902,NjDiff,False,2018-04-17T07:54:35.557+00:00,True,False,Compares two objects and creates a collection of differences that are compliant to JSON Patch RFC6902,"json,diff,patch,rfc6902",545,False,2.0.21
+Emily,2018-04-17T07:55:15.137Z,3,3,Package Description,ExpressTree,False,2018-04-17T08:33:46.153+00:00,True,False,,lambda,75,False,1.0.0
+DD4T Community,2018-04-17T07:54:06.79Z,3,3,DD4T .NET Core,DD4T.Core,True,2018-04-17T07:54:06.79+00:00,True,False,,"SDLTridion,Tridion,DD4T,DD4T.Core,DD4TCore,SDLWeb8,SDL,web,SDLWEB",20311,False,2.2.7.180-alpha
+Philipp Grathwohl,2018-04-17T07:54:11.633Z,3,3,Addin for running liquibase database migrations with the Cake build system.,Cake.Liquibase,True,2018-04-17T07:54:11.633+00:00,True,False,,"Cake,Cakebuild,Liquibase",530,False,0.1.6-preview
+Mike Wiese,2018-04-17T07:54:10.053Z,3,3,Calculation Engine for user-authored calculations,CalcEnginePlus,False,2018-04-17T07:54:10.053+00:00,True,False,,"Calculation,engine,developer,tool,user-authored,expressions",32,False,2.5.0
+Dapplo,2018-04-17T07:50:24.483Z,2,3,Dapplo.Exchange contains supporting code for accessing a Microsoft Exchange server.,Dapplo.Exchange,False,2018-04-18T13:30:31.727+00:00,True,False,A library to access a Microsoft Exchange server,Exchange,1305,True,0.1.15
+Dapplo,2018-04-17T07:50:24.483Z,2,3,Dapplo.Exchange contains supporting code for accessing a Microsoft Exchange server.,Dapplo.Exchange,False,2018-04-18T13:30:31.727+00:00,True,False,A library to access a Microsoft Exchange server,Exchange,1305,True,0.1.15
+Paket team,2018-04-17T07:44:32.047Z,2,3,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket.Core,False,2018-04-18T10:23:20.457+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",298256,False,5.156.3
+Unity,2018-04-17T07:44:12.263Z,3,3,This is common code in DocWorks CMS Application,DocWorks.Common.Telemetry,False,2018-04-17T07:44:12.263+00:00,True,False,,,29,False,1.1.1
+Paket team,2018-04-17T07:45:22.877Z,2,3,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket,False,2018-04-18T10:23:50.3+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",835609,False,5.156.3
+Paket team,2018-04-17T07:44:32.047Z,2,3,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket.Core,False,2018-04-18T10:23:20.457+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",298256,False,5.156.3
+Paket team,2018-04-17T07:45:22.877Z,2,3,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket,False,2018-04-18T10:23:50.3+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",835609,False,5.156.3
+Unity,2018-04-17T07:44:12.263Z,3,3,This is common code in DocWorks CMS Application,DocWorks.Common.Telemetry,False,2018-04-17T07:44:12.263+00:00,True,False,,,29,False,1.1.1
+Alex Yandolin,2018-04-16T13:16:36.457Z,43209,4,Specification Library,SpecificationLibrary,False,1900-01-01T00:00:00+00:00,False,False,,specification,124,False,1.0.0
+CuongNguyen,2018-04-17T07:42:29.04Z,3,3,Just For Demo,ASBNugetCommon,False,2018-04-17T08:45:18.74+00:00,True,False,,Demo,58,False,1.0.0
+CuongNguyen,2018-04-17T07:42:29.04Z,3,3,Just For Demo,ASBNugetCommon,False,2018-04-17T08:45:18.74+00:00,True,False,,Demo,58,False,1.0.0
+Alex Yandolin,2018-04-16T13:16:36.457Z,43209,4,Specification Library,SpecificationLibrary,False,1900-01-01T00:00:00+00:00,False,False,,specification,124,False,1.0.0
+Falcon-Software Company Inc.,2018-04-17T07:38:16.983Z,3,3,The commercetools.NET SDK allows developers to work effectively with the commercetools platform in their .NET applications by providing typesafe access to the commercetools HTTP API.,commercetools.NET.SDK,True,2018-04-17T07:38:16.983+00:00,True,False,,commercetools,2195,False,1.0.0-dev-00268
+Falcon-Software Company Inc.,2018-04-17T07:38:16.983Z,3,3,The commercetools.NET SDK allows developers to work effectively with the commercetools platform in their .NET applications by providing typesafe access to the commercetools HTTP API.,commercetools.NET.SDK,True,2018-04-17T07:38:16.983+00:00,True,False,,commercetools,2195,False,1.0.0-dev-00268
+"JunGao Computer Co.,Ltd.",2018-04-17T07:34:38.117Z,43209,3,Paging control for using in ASP.NET MVC 4.0+ applications,MicCodes.MvcPager,False,1900-01-01T00:00:00+00:00,False,False,,,124,False,3.0.2018.802
+Util.Extensions.Logging.Step,2018-04-17T07:36:41.51Z,3,3,Package Description,Util.Extensions.Logging.Step,True,2018-04-17T08:54:52.92+00:00,True,False,,,261,False,1.0.0-beta2
+HelpMeJesus,2018-04-17T07:36:31.167Z,1,3,Package Description,HelpMeJesus,False,2018-04-20T08:24:01.477+00:00,True,False,,,1733,False,1.0.66
+HelpMeJesus,2018-04-17T07:36:31.167Z,1,3,Package Description,HelpMeJesus,False,2018-04-20T08:24:01.477+00:00,True,False,,,1733,False,1.0.66
+Util.Extensions.Logging.Step,2018-04-17T07:36:41.51Z,3,3,Package Description,Util.Extensions.Logging.Step,True,2018-04-17T08:54:52.92+00:00,True,False,,,261,False,1.0.0-beta2
+"JunGao Computer Co.,Ltd.",2018-04-17T07:34:38.117Z,43209,3,Paging control for using in ASP.NET MVC 4.0+ applications,MicCodes.MvcPager,False,1900-01-01T00:00:00+00:00,False,False,,,124,False,3.0.2018.802
+Solaris.LogLibrary,2018-04-17T07:32:51.72Z,3,3,Package Description,Solaris.LogLibrary,False,2018-04-17T12:13:53.117+00:00,True,False,,,54,False,1.0.4
+Medyanet Devteam,2018-04-17T07:33:21.533Z,3,3,Package Description,Solaris.ClientLibrary,False,2018-04-17T12:13:16.787+00:00,True,False,,,59,False,1.0.9
+Medyanet Devteam,2018-04-17T07:31:27.25Z,3,3,Package Description,Solaris.CoreLibrary,False,2018-04-17T07:31:27.25+00:00,True,False,,,29,False,1.0.16
+Medyanet Devteam,2018-04-17T07:32:35.843Z,3,3,Package Description,Solaris.ExceptionLibrary,False,2018-04-17T07:32:35.843+00:00,True,False,,,29,False,1.0.5
+Medyanet Devteam,2018-04-17T07:33:05.91Z,3,3,Package Description,Solaris.CacheLibrary,False,2018-04-17T07:33:05.91+00:00,True,False,,,29,False,1.0.6
+Medyanet Devteam,2018-04-17T07:31:59.17Z,3,3,Package Description,Solaris.DataAccessLibrary,False,2018-04-17T07:31:59.17+00:00,True,False,,,29,False,1.0.18
+Medyanet Devteam,2018-04-17T07:32:15.313Z,3,3,Package Description,Solaris.ExceptionCore,False,2018-04-17T07:32:15.313+00:00,True,False,,,29,False,1.0.1
+Medyanet Devteam,2018-04-17T07:32:35.843Z,3,3,Package Description,Solaris.ExceptionLibrary,False,2018-04-17T07:32:35.843+00:00,True,False,,,29,False,1.0.5
+Medyanet Devteam,2018-04-17T07:32:15.313Z,3,3,Package Description,Solaris.ExceptionCore,False,2018-04-17T07:32:15.313+00:00,True,False,,,29,False,1.0.1
+Medyanet Devteam,2018-04-17T07:31:59.17Z,3,3,Package Description,Solaris.DataAccessLibrary,False,2018-04-17T07:31:59.17+00:00,True,False,,,29,False,1.0.18
+Solaris.LogLibrary,2018-04-17T07:32:51.72Z,3,3,Package Description,Solaris.LogLibrary,False,2018-04-17T12:13:53.117+00:00,True,False,,,54,False,1.0.4
+Medyanet Devteam,2018-04-17T07:33:21.533Z,3,3,Package Description,Solaris.ClientLibrary,False,2018-04-17T12:13:16.787+00:00,True,False,,,59,False,1.0.9
+Medyanet Devteam,2018-04-17T07:31:27.25Z,3,3,Package Description,Solaris.CoreLibrary,False,2018-04-17T07:31:27.25+00:00,True,False,,,29,False,1.0.16
+Medyanet Devteam,2018-04-17T07:33:05.91Z,3,3,Package Description,Solaris.CacheLibrary,False,2018-04-17T07:33:05.91+00:00,True,False,,,29,False,1.0.6
+"JunGao Computer Co.,Ltd.",2018-04-11T10:19:24.803Z,43209,9,Paging control for using in ASP.NET MVC 4.0+ applications,MicCodes.MvcPager,False,1900-01-01T00:00:00+00:00,False,False,,,124,False,3.0.2015.802
+ToolGood,2018-04-17T07:21:56.523Z,2,3,"A high performance Micro-ORM supporting SQL Server, MySQL, Sqlite, SqlCE, PostgreSQL, Firebird etc..",ToolGood.ReadyGo3,False,2018-04-18T12:12:26.77+00:00,True,False,,,1049,False,3.1.0.21
+CC,2018-04-17T07:24:19.683Z,3,3,My package description.,CC.TestNuget,False,2018-04-17T07:24:19.683+00:00,True,False,,,30,False,1.1.0
+CC,2018-04-17T07:24:19.683Z,3,3,My package description.,CC.TestNuget,False,2018-04-17T07:24:19.683+00:00,True,False,,,30,False,1.1.0
+Aspose,2018-04-14T11:44:56.74Z,43209,6,"Redistributable components for package 'JusinyahTest.true'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",JusinyahTest.true.redist,False,1900-01-01T00:00:00+00:00,False,False,Redistributable components for for package 'JusinyahTest.true',"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,18.4.1
+Aspose,2018-04-14T11:44:07.393Z,43209,6,"Aspose.Cells for C++ is a native C++ library that offers a set of high-level APIs for most commonly used spreadsheet formats such as XLS, XLSX, XLSM and XLSB. Aspose.Cells for C++ allows you to build high performance C++ applications having the capabilities to create, manipulate and convert Excel spreadsheetswithout relying on Office Automation or Microsoft Excel application.",JusinyahTest.true,False,1900-01-01T00:00:00+00:00,False,False,Aspose.Cells for C++ is a native C++ library that enables the developers to add Cells handling capabilities to their C++ applications.,"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,18.4.1
+Aspose,2018-04-13T16:04:49.33Z,43209,7,"Redistributable components for package 'JusinyahTest.mod.include'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",JusinyahTest.mod.include.redist,False,1900-01-01T00:00:00+00:00,False,False,Redistributable components for for package 'JusinyahTest.mod.include',"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,18.4.0
+Aspose,2018-04-13T16:03:00.92Z,43209,7,"Aspose.Cells for C++ is a native C++ library that offers a set of high-level APIs for most commonly used spreadsheet formats such as XLS, XLSX, XLSM and XLSB. Aspose.Cells for C++ allows you to build high performance C++ applications having the capabilities to create, manipulate and convert Excel spreadsheetswithout relying on Office Automation or Microsoft Excel application.",JusinyahTest.mod.include,False,1900-01-01T00:00:00+00:00,False,False,Aspose.Cells for C++ is a native C++ library that enables the developers to add Cells handling capabilities to their C++ applications.,"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,18.4.0
+Aspose,2018-04-13T07:50:41.26Z,43209,7,"Redistributable components for package 'JusinyahTest.2018.90.0'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",JusinyahTest.2018.90.0.redist,False,1900-01-01T00:00:00+00:00,False,False,Redistributable components for for package 'JusinyahTest.2018.90.0',"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,18.4.0
+,,-1,-1,,JusinyahTest.2018.90.0,,,,True,,,,,18.4.0
+Aspose,2018-04-13T07:18:59.42Z,43209,7,"Aspose.Cells for C++ is a native C++ library that offers a set of high-level APIs for most commonly used spreadsheet formats such as XLS, XLSX, XLSM and XLSB. Aspose.Cells for C++ allows you to build high performance C++ applications having the capabilities to create, manipulate and convert Excel spreadsheetswithout relying on Office Automation or Microsoft Excel application.",JusinyahTest.2018.70.0,False,1900-01-01T00:00:00+00:00,False,False,Aspose.Cells for C++ is a native C++ library that enables the developers to add Cells handling capabilities to their C++ applications.,"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,18.4.0
+Aspose,2018-04-13T07:38:30.403Z,43209,7,"Redistributable components for package 'JusinyahTest.2018.60.0'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",JusinyahTest.2018.60.0.redist,False,1900-01-01T00:00:00+00:00,False,False,Redistributable components for for package 'JusinyahTest.2018.60.0',"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,18.4.0
+Aspose,2018-04-13T07:34:13.843Z,43209,7,"Aspose.Cells for C++ is a native C++ library that offers a set of high-level APIs for most commonly used spreadsheet formats such as XLS, XLSX, XLSM and XLSB. Aspose.Cells for C++ allows you to build high performance C++ applications having the capabilities to create, manipulate and convert Excel spreadsheetswithout relying on Office Automation or Microsoft Excel application.",JusinyahTest.2018.80.0,False,1900-01-01T00:00:00+00:00,False,False,Aspose.Cells for C++ is a native C++ library that enables the developers to add Cells handling capabilities to their C++ applications.,"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,18.4.0
+Aspose,2018-04-13T07:34:45.003Z,43209,7,"Aspose.Cells for C++ is a native C++ library that offers a set of high-level APIs for most commonly used spreadsheet formats such as XLS, XLSX, XLSM and XLSB. Aspose.Cells for C++ allows you to build high performance C++ applications having the capabilities to create, manipulate and convert Excel spreadsheetswithout relying on Office Automation or Microsoft Excel application.",JusinyahTest.2018.60.0,False,1900-01-01T00:00:00+00:00,False,False,Aspose.Cells for C++ is a native C++ library that enables the developers to add Cells handling capabilities to their C++ applications.,"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,18.4.0
+Aspose,2018-04-13T07:29:54.82Z,43209,7,"Redistributable components for package 'JusinyahTest.2018.80.0'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",JusinyahTest.2018.80.0.redist,False,1900-01-01T00:00:00+00:00,False,False,Redistributable components for for package 'JusinyahTest.2018.80.0',"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,18.4.0
+Aspose,2018-04-13T06:03:00.827Z,43209,7,"Aspose.Cells for C++ is a native C++ library that offers a set of high-level APIs for most commonly used spreadsheet formats such as XLS, XLSX, XLSM and XLSB. Aspose.Cells for C++ allows you to build high performance C++ applications having the capabilities to create, manipulate and convert Excel spreadsheetswithout relying on Office Automation or Microsoft Excel application.",JusinyahTest.2018.40.0,False,1900-01-01T00:00:00+00:00,False,False,Aspose.Cells for C++ is a native C++ library that enables the developers to add Cells handling capabilities to their C++ applications.,"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,18.4.0
+ToolGood,2018-04-17T07:21:56.523Z,2,3,"A high performance Micro-ORM supporting SQL Server, MySQL, Sqlite, SqlCE, PostgreSQL, Firebird etc..",ToolGood.ReadyGo3,False,2018-04-18T12:12:26.77+00:00,True,False,,,1049,False,3.1.0.21
+Aspose,2018-04-13T06:16:46.487Z,43209,7,"Redistributable components for package 'JusinyahTest.2018.40.0'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",JusinyahTest.2018.40.0.redist,False,1900-01-01T00:00:00+00:00,False,False,Redistributable components for for package 'JusinyahTest.2018.40.0',"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,18.4.0
+jusinyah,2018-04-12T08:59:23.817Z,43209,8,This package just for Nuget Test,jusinyahTest.2018.4.9,False,1900-01-01T00:00:00+00:00,False,False,this is a sample for cvte native nuget,"sample,native,CoApp,nativepackage",-1,False,18.4.9
+jusinyah,2018-04-12T06:50:35.323Z,43209,8,This package just for Nuget Test,jusinyahTest.2018.4.7,False,1900-01-01T00:00:00+00:00,False,False,this is a sample for cvte native nuget,"sample,native,CoApp,nativepackage",-1,False,18.4.7
+Ipsita Routray,2018-04-17T07:20:25.177Z,3,3,Logging enabled,sample_ClassLibrary_NugetDemo_latest,False,2018-04-17T07:20:25.177+00:00,True,False,,,29,False,1.0.0
+jusinyah,2018-04-12T06:45:41.173Z,43209,8,This package just for Nuget Test,jusinyahTest.2018.4.6,False,1900-01-01T00:00:00+00:00,False,False,this is a sample for cvte native nuget,"sample,native,CoApp,nativepackage",-1,False,18.4.6
+jusinyah,2018-04-12T06:01:49.793Z,43209,8,"Redistributable components for package 'jusinyahTest.2018.4.3'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",jusinyahTest.2018.4.3.redist,False,1900-01-01T00:00:00+00:00,False,False,Redistributable components for for package 'jusinyahTest.2018.4.3',"sample,native,CoApp,nativepackage",-1,False,18.4.3
+NAME,2018-04-13T04:43:01.427Z,43209,7,"Redistributable components for package 'JusinyahTest.2018.4.10'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",JusinyahTest.2018.4.10.redist,False,1900-01-01T00:00:00+00:00,False,False,Redistributable components for for package 'JusinyahTest.2018.4.10',"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,18.4.0
+Aspose,2018-04-14T08:09:58.527Z,43209,6,"Redistributable components for package 'JusinyahTest.00'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",JusinyahTest.00.redist,False,1900-01-01T00:00:00+00:00,False,False,Redistributable components for for package 'JusinyahTest.00',"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,0.1.0
+Paket team,2018-04-17T07:18:40.843Z,2,3,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket.Core,False,2018-04-18T10:23:20.457+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",298256,False,5.156.2
+Paket team,2018-04-17T07:18:59.97Z,2,3,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket,False,2018-04-18T10:23:50.3+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",835609,False,5.156.2
+jusinyah,2018-04-12T06:35:57.053Z,43209,8,"Redistributable components for package 'jusinyahTest.2018.4.5'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",jusinyahTest.2018.4.5.redist,False,1900-01-01T00:00:00+00:00,False,False,Redistributable components for for package 'jusinyahTest.2018.4.5',"sample,native,CoApp,nativepackage",-1,False,18.4.5
+jusinyah,2018-04-12T06:35:30.787Z,43209,8,This package just for Nuget Test,jusinyahTest.2018.4.5,False,1900-01-01T00:00:00+00:00,False,False,this is a sample for cvte native nuget,"sample,native,CoApp,nativepackage",-1,False,18.4.5
+jusinyah,2018-04-12T05:05:16.417Z,43209,8,Package description,jusinyahTest.2018.4.4,False,1900-01-01T00:00:00+00:00,False,False,"this is a sample for cvte native nuget.
+        description: This package just for Nuget Test","sample,native,CoApp,nativepackage",-1,False,18.4.4
+jusinyah,2018-04-12T07:13:18.86Z,43209,8,"Redistributable components for package 'jusinyahTest.2018.4.7'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",jusinyahTest.2018.4.7.redist,False,1900-01-01T00:00:00+00:00,False,False,Redistributable components for for package 'jusinyahTest.2018.4.7',"sample,native,CoApp,nativepackage",-1,False,18.4.7
+Shuai Zhang,2018-04-17T07:17:32.98Z,3,3,This is a package to run Grpc tools automatically when msbuild building.,Grpc.Tools.MsBuild.Unofficial,False,2018-04-17T07:17:32.98+00:00,True,False,,"grpc,protobuf,msbuild",1481,False,1.0.51
+Paket team,2018-04-17T07:18:40.843Z,2,3,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket.Core,False,2018-04-18T10:23:20.457+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",298256,False,5.156.2
+Paket team,2018-04-17T07:18:59.97Z,2,3,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket,False,2018-04-18T10:23:50.3+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",835609,False,5.156.2
+Ipsita Routray,2018-04-17T07:20:25.177Z,3,3,Logging enabled,sample_ClassLibrary_NugetDemo_latest,False,2018-04-17T07:20:25.177+00:00,True,False,,,29,False,1.0.0
+Aspose,2018-04-14T08:59:19.417Z,43209,6,"Redistributable components for package 'JusinyahTest.00'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",JusinyahTest.00.redist,False,1900-01-01T00:00:00+00:00,False,False,Redistributable components for for package 'JusinyahTest.00',"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,0.2.0
+Aspose,2018-04-14T09:33:48.763Z,43209,6,"Redistributable components for package 'JusinyahTest.00'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",JusinyahTest.00.redist,False,1900-01-01T00:00:00+00:00,False,False,Redistributable components for for package 'JusinyahTest.00',"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,0.3.0
+Aspose,2018-04-14T08:09:31.4Z,43209,6,"Aspose.Cells for C++ is a native C++ library that offers a set of high-level APIs for most commonly used spreadsheet formats such as XLS, XLSX, XLSM and XLSB. Aspose.Cells for C++ allows you to build high performance C++ applications having the capabilities to create, manipulate and convert Excel spreadsheetswithout relying on Office Automation or Microsoft Excel application.",JusinyahTest.00,False,1900-01-01T00:00:00+00:00,False,False,Aspose.Cells for C++ is a native C++ library that enables the developers to add Cells handling capabilities to their C++ applications.,"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,0.1.0
+jusinyah,2018-04-12T06:01:10.523Z,43209,8,This package just for Nuget Test,jusinyahTest.2018.4.3,False,1900-01-01T00:00:00+00:00,False,False,this is a sample for cvte native nuget,"sample,native,CoApp,nativepackage",-1,False,18.4.3
+NAME,2018-04-13T04:39:18.15Z,43209,7,"Aspose.Cells for C++ is a native C++ library that offers a set of high-level APIs for most commonly used spreadsheet formats such as XLS, XLSX, XLSM and XLSB. Aspose.Cells for C++ allows you to build high performance C++ applications having the capabilities to create, manipulate and convert Excel spreadsheetswithout relying on Office Automation or Microsoft Excel application.",JusinyahTest.2018.4.10,False,1900-01-01T00:00:00+00:00,False,False,Aspose.Cells for C++ is a native C++ library that enables the developers to add Cells handling capabilities to their C++ applications.,"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,18.4.0
+jusinyah,2018-04-12T09:23:29.953Z,43209,8,This package just for Nuget Test,jusinyahTest.2018.4.12,False,1900-01-01T00:00:00+00:00,False,False,this is a sample for cvte native nuget,"sample,native,CoApp,nativepackage",-1,False,18.4.12
+jusinyah,2018-04-12T05:28:50.493Z,43209,8,This package just for Nuget Test,jusinyahTest.2018.4.2,False,1900-01-01T00:00:00+00:00,False,False,this is a sample for cvte native nuget,"sample,native,CoApp,nativepackage",-1,False,18.4.2
+Aspose,2018-04-14T08:58:55.477Z,43209,6,"Aspose.Cells for C++ is a native C++ library that offers a set of high-level APIs for most commonly used spreadsheet formats such as XLS, XLSX, XLSM and XLSB. Aspose.Cells for C++ allows you to build high performance C++ applications having the capabilities to create, manipulate and convert Excel spreadsheetswithout relying on Office Automation or Microsoft Excel application.",JusinyahTest.00,False,1900-01-01T00:00:00+00:00,False,False,Aspose.Cells for C++ is a native C++ library that enables the developers to add Cells handling capabilities to their C++ applications.,"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,0.2.0
+Shuai Zhang,2018-04-17T07:17:32.98Z,3,3,This is a package to run Grpc tools automatically when msbuild building.,Grpc.Tools.MsBuild.Unofficial,False,2018-04-17T07:17:32.98+00:00,True,False,,"grpc,protobuf,msbuild",1481,False,1.0.51
+Hendry,2018-04-17T06:17:11.24Z,1,3,A lightweight back-end framework and utilities kit based on MongoDB/Redis,SquirrelFramework,False,2018-04-19T09:23:16.39+00:00,False,False,,"mongodb,redis,utility,kit,back,end,light,repository,dao,squirrel,framework,ddd",466,False,1.0.5
+filipw,2018-04-17T07:14:17.3Z,3,3,Dotnet CLI tool allowing you to run C# (CSX) scripts.,Dotnet.Script,False,2018-04-17T07:14:17.3+00:00,True,False,,"dotnet,cli,script,csx,csharp,roslyn",2425,False,0.21.0
+filipw,2018-04-17T07:14:18.677Z,3,3,A cross platform library allowing you to run C# (CSX) scripts from a project.json dependency definition file and with support for debugging. Based on Roslyn.,Dotnet.Script.Core,False,2018-04-17T07:14:18.677+00:00,True,False,,"script,csx,csharp,roslyn",1775,False,0.21.0
+filipw,2018-04-17T07:14:04.503Z,3,3,Dotnet CLI tool allowing you to run C# (CSX) scripts.,dotnet-script,False,2018-04-17T07:14:04.503+00:00,True,False,,https://github.com/filipw/dotnet-script.git,149,False,0.21.0
+jusinyah1,2018-04-12T03:28:33.537Z,43209,8,Package description,jusinyahTest.2018.4.0,False,1900-01-01T00:00:00+00:00,False,False,"this is a sample for cvte native nuget.
+        description: This package just for Nuget Test","sample,native,CoApp,nativepackage",-1,False,18.4.0
+Aspose,2018-04-13T08:15:47.867Z,43209,7,Description here,JusinyahTest.2018,False,1900-01-01T00:00:00+00:00,False,False,Summary here,"Aspose.Cells,Cells,C++,native,library",-1,False,18.0.0
+Aspose,2018-04-14T09:33:25.84Z,43209,6,"Aspose.Cells for C++ is a native C++ library that offers a set of high-level APIs for most commonly used spreadsheet formats such as XLS, XLSX, XLSM and XLSB. Aspose.Cells for C++ allows you to build high performance C++ applications having the capabilities to create, manipulate and convert Excel spreadsheetswithout relying on Office Automation or Microsoft Excel application.",JusinyahTest.00,False,1900-01-01T00:00:00+00:00,False,False,Aspose.Cells for C++ is a native C++ library that enables the developers to add Cells handling capabilities to their C++ applications.,"Aspose.Cells,Cells,native,C++,nativepackage",-1,False,0.3.0
+filipw,2018-04-17T07:14:17.3Z,3,3,Dotnet CLI tool allowing you to run C# (CSX) scripts.,Dotnet.Script,False,2018-04-17T07:14:17.3+00:00,True,False,,"dotnet,cli,script,csx,csharp,roslyn",2425,False,0.21.0
+filipw,2018-04-17T07:14:18.677Z,3,3,A cross platform library allowing you to run C# (CSX) scripts from a project.json dependency definition file and with support for debugging. Based on Roslyn.,Dotnet.Script.Core,False,2018-04-17T07:14:18.677+00:00,True,False,,"script,csx,csharp,roslyn",1775,False,0.21.0
+filipw,2018-04-17T07:14:04.503Z,3,3,Dotnet CLI tool allowing you to run C# (CSX) scripts.,dotnet-script,False,2018-04-17T07:14:04.503+00:00,True,False,,https://github.com/filipw/dotnet-script.git,149,False,0.21.0
+Hendry,2018-04-17T07:10:57.95Z,1,3,A lightweight back-end framework and utilities kit based on MongoDB/Redis,SquirrelFramework,False,2018-04-19T09:23:16.39+00:00,True,False,,"mongodb,redis,utility,kit,back,end,light,repository,dao,squirrel,framework,ddd",466,False,1.0.6
+jusinyah1,2018-04-12T03:28:33.537Z,43209,8,Package description,jusinyahTest.2018.4.0,False,1900-01-01T00:00:00+00:00,False,False,"this is a sample for cvte native nuget.
+        description: This package just for Nuget Test","sample,native,CoApp,nativepackage",-1,False,18.4.0
+i-e-b,2018-04-17T07:08:37.803Z,3,3,A simple C# generator for HTML/XML,Tag,False,2018-04-17T07:08:37.803+00:00,True,False,,"HTML,XML",395,False,1.1.0
+i-e-b,2018-04-17T07:08:37.803Z,3,3,A simple C# generator for HTML/XML,Tag,False,2018-04-17T07:08:37.803+00:00,True,False,,"HTML,XML",395,False,1.1.0
+Hendry,2018-04-17T07:10:57.95Z,1,3,A lightweight back-end framework and utilities kit based on MongoDB/Redis,SquirrelFramework,False,2018-04-19T09:23:16.39+00:00,True,False,,"mongodb,redis,utility,kit,back,end,light,repository,dao,squirrel,framework,ddd",466,False,1.0.6
+"savorboard,dotnetcore",2018-04-17T07:06:17.36Z,2,3,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.Kafka,False,2018-04-18T09:59:42.71+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,Kafka",5032,False,2.2.0
+"savorboard,dotnetcore",2018-04-17T07:06:18.08Z,2,3,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.MySql,False,2018-04-18T09:59:46.023+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,MySQL",4174,False,2.2.0
+"savorboard,dotnetcore",2018-04-17T07:06:21.173Z,2,3,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.SqlServer,False,2018-04-18T09:59:55.71+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,SQL,Server",5880,False,2.2.0
+Enguerran Boissier,2018-04-17T07:05:47.013Z,1,3,Terradue Tep .Net library,Terradue.Tep,True,2018-04-19T15:50:42.49+00:00,True,False,,,5184,False,1.1.0-ftea20180417T070541
+Alibaba Cloud,2018-04-17T07:08:06.88Z,3,3,Alibaba Cloud SDK for C#,aliyun-net-sdk-cloudphoto,False,2018-04-17T07:08:06.88+00:00,True,False,,"alibaba,aliyun,SDK,CloudPhoto",806,False,1.1.17
+"savorboard,dotnetcore",2018-04-17T07:06:15.797Z,2,3,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP,False,2018-04-18T09:59:38.007+00:00,True,False,,"CAP,EventBus,Distributed,Transaction",7340,False,2.2.0
+"savorboard,dotnetcore",2018-04-17T07:06:20.173Z,2,3,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.RabbitMQ,False,2018-04-18T09:59:51.93+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,RabbitMQ",6852,False,2.2.0
+"savorboard,dotnetcore",2018-04-17T07:06:19.28Z,2,3,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.PostgreSql,False,2018-04-18T09:59:48.943+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,PostgreSQL",2675,False,2.2.0
+"savorboard,dotnetcore",2018-04-17T07:06:20.173Z,2,3,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.RabbitMQ,False,2018-04-18T09:59:51.93+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,RabbitMQ",6852,False,2.2.0
+"savorboard,dotnetcore",2018-04-17T07:06:17.36Z,2,3,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.Kafka,False,2018-04-18T09:59:42.71+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,Kafka",5032,False,2.2.0
+"savorboard,dotnetcore",2018-04-17T07:06:19.28Z,2,3,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.PostgreSql,False,2018-04-18T09:59:48.943+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,PostgreSQL",2675,False,2.2.0
+"savorboard,dotnetcore",2018-04-17T07:06:18.08Z,2,3,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.MySql,False,2018-04-18T09:59:46.023+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,MySQL",4174,False,2.2.0
+Enguerran Boissier,2018-04-17T07:05:47.013Z,1,3,Terradue Tep .Net library,Terradue.Tep,True,2018-04-19T15:50:42.49+00:00,True,False,,,5184,False,1.1.0-ftea20180417T070541
+"savorboard,dotnetcore",2018-04-17T07:06:21.173Z,2,3,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP.SqlServer,False,2018-04-18T09:59:55.71+00:00,True,False,,"CAP,EventBus,Distributed,Transaction,SQL,Server",5880,False,2.2.0
+"savorboard,dotnetcore",2018-04-17T07:06:15.797Z,2,3,EventBus and eventually consistency in distributed architectures.,DotNetCore.CAP,False,2018-04-18T09:59:38.007+00:00,True,False,,"CAP,EventBus,Distributed,Transaction",7340,False,2.2.0
+Alibaba Cloud,2018-04-17T07:08:06.88Z,3,3,Alibaba Cloud SDK for C#,aliyun-net-sdk-cloudphoto,False,2018-04-17T07:08:06.88+00:00,True,False,,"alibaba,aliyun,SDK,CloudPhoto",806,False,1.1.17
+Christiaan Van den Poel,2018-04-17T07:01:51.927Z,3,3,A dotnet-new template for .NET core Digipolis engines,Foreach.Digipolis.Engine.Template,False,2018-04-17T07:01:51.927+00:00,True,False,A dotnet-new template for .NET core Digipolis engines,"foreach,digipolis,dotnet,new,template",408,False,0.1.6
+Christiaan Van den Poel,2018-04-17T07:01:51.927Z,3,3,A dotnet-new template for .NET core Digipolis engines,Foreach.Digipolis.Engine.Template,False,2018-04-17T07:01:51.927+00:00,True,False,A dotnet-new template for .NET core Digipolis engines,"foreach,digipolis,dotnet,new,template",408,False,0.1.6
+san.fung,2018-04-17T07:00:18.393Z,3,3,Log4Net - Log Entry/Exit Time,HA.KWCIT.Log4NetExtension,False,2018-04-17T07:00:18.393+00:00,True,False,,"Log,Tag2",30,False,0.9.0
+ady,2018-04-17T07:00:27.767Z,3,3,Testing library to send zebra code to printer,CMY.Printer.Code.Sender.BETA,False,2018-04-17T07:00:27.767+00:00,True,False,,,30,False,1.0.0
+PI Applications A/S,2018-04-17T07:00:11.377Z,3,3,Package Description,PI.ApplicationInsights.Hangfire,False,2018-04-17T07:00:11.377+00:00,True,False,,"ApplicationInsights,Hangfire",30,False,0.1.0
+ady,2018-04-17T07:00:27.767Z,3,3,Testing library to send zebra code to printer,CMY.Printer.Code.Sender.BETA,False,2018-04-17T07:00:27.767+00:00,True,False,,,30,False,1.0.0
+san.fung,2018-04-17T07:00:18.393Z,3,3,Log4Net - Log Entry/Exit Time,HA.KWCIT.Log4NetExtension,False,2018-04-17T07:00:18.393+00:00,True,False,,"Log,Tag2",30,False,0.9.0
+PI Applications A/S,2018-04-17T07:00:11.377Z,3,3,Package Description,PI.ApplicationInsights.Hangfire,False,2018-04-17T07:00:11.377+00:00,True,False,,"ApplicationInsights,Hangfire",30,False,0.1.0
+Sebastian Holager,2018-04-17T06:55:07.083Z,3,3,A library with extensions to CRMSvcUtil,CRMSvcUtilExtensions,False,2018-04-17T06:55:07.083+00:00,True,False,,"Dynamics,CRM,XRM,CRMSvcUtil",1745,False,3.0.0
+Sebastian Holager,2018-04-17T06:55:07.083Z,3,3,A library with extensions to CRMSvcUtil,CRMSvcUtilExtensions,False,2018-04-17T06:55:07.083+00:00,True,False,,"Dynamics,CRM,XRM,CRMSvcUtil",1745,False,3.0.0
+"Heine Furubotten,Stian Sandve,Sander Struijk",2018-04-17T06:54:54.05Z,1,3,"Reusable ActionFilters for Web Api. 
+      - Automation of non success status responses, with stop execution. 
+      - Request/response validation. 
+      - Logging action filters through NLog with structural logging.",Heine.Mvc.ActionFilters,True,2018-04-19T13:58:14.14+00:00,True,False,,,5749,False,3.0.0-beta16
+"Heine Furubotten,Stian Sandve,Sander Struijk",2018-04-17T06:54:54.05Z,1,3,"Reusable ActionFilters for Web Api. 
+      - Automation of non success status responses, with stop execution. 
+      - Request/response validation. 
+      - Logging action filters through NLog with structural logging.",Heine.Mvc.ActionFilters,True,2018-04-19T13:58:14.14+00:00,True,False,,,5749,False,3.0.0-beta16
+Daniel Hindrikes and Johan Karlsson,2018-04-17T06:50:51.447Z,3,3,Account manager for Xamarin and UWP. Store account information in your app in a secure way.,TinyAccountManager,False,2018-04-17T06:50:51.447+00:00,True,False,,"xamarin,plugin,windows,android,xamarin.forms,ios",768,False,1.0.9
+dmanning23,2018-04-17T06:49:48.74Z,2,3,MonoGame library for menus and game state management,MenuBuddy,False,2018-04-18T21:17:00.663+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",11115,False,1.0.129
+dmanning23,2018-04-17T06:49:48.74Z,2,3,MonoGame library for menus and game state management,MenuBuddy,False,2018-04-18T21:17:00.663+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",11115,False,1.0.129
+Daniel Hindrikes and Johan Karlsson,2018-04-17T06:50:51.447Z,3,3,Account manager for Xamarin and UWP. Store account information in your app in a secure way.,TinyAccountManager,False,2018-04-17T06:50:51.447+00:00,True,False,,"xamarin,plugin,windows,android,xamarin.forms,ios",768,False,1.0.9
+ady,2018-04-17T06:46:30.11Z,3,3,Testing library to send zebra code to printer,ady_zpl_direct_print,False,2018-04-17T06:46:30.11+00:00,True,False,,,29,False,1.0.0
+sdcb,2018-04-17T06:46:35.11Z,3,3,A template engine for writing dynamic sql.,sdmap,False,2018-04-17T06:46:35.11+00:00,True,False,,"dynamic,sql,ibatis",4589,False,0.14.2
+flysha.zhou,2018-04-17T06:46:17.013Z,3,3,"A template engine for writing dynamic sql.
+Note: FlySql has renamed to SMSOneSQL.",SMSOneSQL,False,2018-04-17T06:46:17.013+00:00,True,False,,"dynamic,sql,ibatis,sdmap,FlySql",640,False,0.14.2
+sdcb,2018-04-17T06:46:35.11Z,3,3,A template engine for writing dynamic sql.,sdmap,False,2018-04-17T06:46:35.11+00:00,True,False,,"dynamic,sql,ibatis",4589,False,0.14.2
+flysha.zhou,2018-04-17T06:46:17.013Z,3,3,"A template engine for writing dynamic sql.
+Note: FlySql has renamed to SMSOneSQL.",SMSOneSQL,False,2018-04-17T06:46:17.013+00:00,True,False,,"dynamic,sql,ibatis,sdmap,FlySql",640,False,0.14.2
+ady,2018-04-17T06:46:30.11Z,3,3,Testing library to send zebra code to printer,ady_zpl_direct_print,False,2018-04-17T06:46:30.11+00:00,True,False,,,29,False,1.0.0
+Microsoft,2018-04-17T06:42:16.677Z,3,3,Enterprise Smart Contracts Testdrive - CryptletCore library for building .Net based Cryptlets and Blockchain Contract Proxies.,EnterpriseSmartContracts.Cryptlets.CryptletCore,False,2018-04-17T06:42:16.677+00:00,True,False,Enterprise Smart Contracts Testdrive release library is only used to build the sample Cryptlets and ESC applications located in the project repo.  New Cryptlet Projects should use the newer Cryptlet Framework assemblies to be released for .Net Core and Java.  New Cryptlets built using these assemblies will need to be ported over to the new library once released.,"cryptlets,enterprisesmartcontracts,enterprise,smart,contracts,blockchain",29,False,1.0.11.2
+"Rendy Del Rosario,Sameer Khandekar,Vikram Mahendrakar",2018-04-17T06:44:36.23Z,2,3,Receive and handle push notifications across Xamarin.iOS and Xamarin.Android,Plugin.PushNotification-updated,False,2018-04-18T01:49:47.787+00:00,True,False,Receive and handle push notifications across Xamarin.iOS and Xamarin.Android,"iOS,Android,push,notifications,pcl,xamarin,plugins,xam.pcl,fcm,apn",173,False,1.3.3
+ady,2018-04-17T06:43:44.633Z,3,3,Testing library to send zebra code to printer,ady_Package,False,2018-04-17T06:43:44.633+00:00,True,False,,,30,False,1.0.0
+"Rendy Del Rosario,Sameer Khandekar,Vikram Mahendrakar",2018-04-17T06:44:36.23Z,2,3,Receive and handle push notifications across Xamarin.iOS and Xamarin.Android,Plugin.PushNotification-updated,False,2018-04-18T01:49:47.787+00:00,True,False,Receive and handle push notifications across Xamarin.iOS and Xamarin.Android,"iOS,Android,push,notifications,pcl,xamarin,plugins,xam.pcl,fcm,apn",173,False,1.3.3
+Microsoft,2018-04-17T06:42:16.677Z,3,3,Enterprise Smart Contracts Testdrive - CryptletCore library for building .Net based Cryptlets and Blockchain Contract Proxies.,EnterpriseSmartContracts.Cryptlets.CryptletCore,False,2018-04-17T06:42:16.677+00:00,True,False,Enterprise Smart Contracts Testdrive release library is only used to build the sample Cryptlets and ESC applications located in the project repo.  New Cryptlet Projects should use the newer Cryptlet Framework assemblies to be released for .Net Core and Java.  New Cryptlets built using these assemblies will need to be ported over to the new library once released.,"cryptlets,enterprisesmartcontracts,enterprise,smart,contracts,blockchain",29,False,1.0.11.2
+ady,2018-04-17T06:43:44.633Z,3,3,Testing library to send zebra code to printer,ady_Package,False,2018-04-17T06:43:44.633+00:00,True,False,,,30,False,1.0.0
+hetao,2018-04-17T06:33:34.797Z,3,3,解决 OpenQuant 的策略工程脱离 OpenQuant 环境运行遇到的问题,OpenQuantOutside,False,2018-04-17T06:33:34.797+00:00,True,False,,,739,False,1.0.9
+Jaroslav Ruzicka,2018-04-17T06:33:18.467Z,1,3,Wrapper for ADO SqlServer provider to ease database access.,RoseByte.AdoSession,False,2018-04-19T21:01:21.98+00:00,True,False,,"ADO,Database,SQL,SqlServer",144,False,1.4.0
+Manas,2018-04-17T06:31:42.277Z,3,3,Application Logger Sample,ManasTestAppLogger,False,2018-04-17T06:31:42.277+00:00,True,False,,"Test,App,Logger",30,False,1.0.0
+Trackmatic Solutions (Pty) Ltd,2018-04-17T06:34:47.377Z,3,3,.Net rest client library for Trackmatic rest api,Trackmatic.Client.Lite,True,2018-04-17T06:34:47.377+00:00,True,False,,Trackmatic,253,False,2.0.6-beta
+Trackmatic Solutions (Pty) Ltd,2018-04-17T06:34:47.377Z,3,3,.Net rest client library for Trackmatic rest api,Trackmatic.Client.Lite,True,2018-04-17T06:34:47.377+00:00,True,False,,Trackmatic,253,False,2.0.6-beta
+hetao,2018-04-17T06:33:34.797Z,3,3,解决 OpenQuant 的策略工程脱离 OpenQuant 环境运行遇到的问题,OpenQuantOutside,False,2018-04-17T06:33:34.797+00:00,True,False,,,739,False,1.0.9
+Jaroslav Ruzicka,2018-04-17T06:33:18.467Z,1,3,Wrapper for ADO SqlServer provider to ease database access.,RoseByte.AdoSession,False,2018-04-19T21:01:21.98+00:00,True,False,,"ADO,Database,SQL,SqlServer",144,False,1.4.0
+Manas,2018-04-17T06:31:42.277Z,3,3,Application Logger Sample,ManasTestAppLogger,False,2018-04-17T06:31:42.277+00:00,True,False,,"Test,App,Logger",30,False,1.0.0
+OSU CASS SDG,2018-04-17T06:29:29.63Z,43209,3,Package Description,SmarterBalanced.SampleItems.Dal,True,1900-01-01T00:00:00+00:00,False,False,,,2991,False,1.1.0-alpha-367504434
+OSU CASS SDG,2018-04-17T06:29:29.63Z,43209,3,Package Description,SmarterBalanced.SampleItems.Dal,True,1900-01-01T00:00:00+00:00,False,False,,,2991,False,1.1.0-alpha-367504434
+赛恩倍吉科技顾问(深圳)有限公司,2018-04-17T06:24:37.227Z,43209,3,Application.DataContracts,ScienBiziP.TAOS.Services.Claims.Application.DataContracts,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+赛恩倍吉科技顾问(深圳)有限公司,2018-04-17T06:24:37.227Z,43209,3,Application.DataContracts,ScienBiziP.TAOS.Services.Claims.Application.DataContracts,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Quellatalo Nin,2018-04-17T06:22:04.847Z,2,3,An utility to read Html OCR data from Tesseract.,Quellatalo.Nin.HOCRReader,False,2018-04-18T00:40:07.39+00:00,True,False,,"Tesseract,HTML,OCR,Reader",199,False,0.0.1.2
+Quellatalo Nin,2018-04-17T06:22:04.847Z,2,3,An utility to read Html OCR data from Tesseract.,Quellatalo.Nin.HOCRReader,False,2018-04-18T00:40:07.39+00:00,True,False,,"Tesseract,HTML,OCR,Reader",199,False,0.0.1.2
+赛恩倍吉科技顾问(深圳)有限公司,2018-04-17T06:19:35.09Z,43209,3,Domain Service层通用类库,ScienBiziP.TAOS.Common.Server.Domain.Services,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.1.0.2
+赛恩倍吉科技顾问(深圳)有限公司,2018-04-17T06:19:35.09Z,43209,3,Domain Service层通用类库,ScienBiziP.TAOS.Common.Server.Domain.Services,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.1.0.2
+Mario Toffia,2018-04-17T06:16:32.037Z,1,3,"Ms Test Support to allow for create, run one or more docker images while testing using docker, compose, machine (Linux, Windows, Mac).
+Documentation: https://github.com/mariotoffia/FluentDocker",Ductus.FluentDocker.MsTest,False,2018-04-20T08:58:49.973+00:00,True,False,,"Docker,Docker-Compose,Compose,Docker-Machine,Machine,Linux,Windows,Mac,Test,NET,Core",2531,False,2.2.10
+Hendry,2018-04-17T06:17:11.24Z,1,3,A lightweight back-end framework and utilities kit based on MongoDB/Redis,SquirrelFramework,False,2018-04-19T09:23:16.39+00:00,True,False,,"mongodb,redis,utility,kit,back,end,light,repository,dao,squirrel,framework,ddd",466,False,1.0.5
+Hendry,2018-04-17T05:06:52.867Z,1,3,A lightweight back-end framework and utilities kit based on MongoDB/Redis,SquirrelFramework,False,2018-04-19T09:23:16.39+00:00,False,False,,"mongodb,redis,utility,kit,back,end,light,repository,dao,squirrel,framework,ddd",466,False,1.0.4
+Mario Toffia,2018-04-17T06:16:22.02Z,1,3,"Library to manage docker-machine, docker-compose, and docker containers for windows / mac or native linux.",Ductus.FluentDocker,False,2018-04-20T08:58:43.817+00:00,True,False,,"Docker,Docker-Compose,Compose,Docker-Machine,Machine,Linux,Windows,Mac,Fluent,NET,Core",3574,False,2.2.10
+Hendry,2018-04-17T06:17:11.24Z,1,3,A lightweight back-end framework and utilities kit based on MongoDB/Redis,SquirrelFramework,False,2018-04-19T09:23:16.39+00:00,True,False,,"mongodb,redis,utility,kit,back,end,light,repository,dao,squirrel,framework,ddd",466,False,1.0.5
+Mario Toffia,2018-04-17T06:16:22.02Z,1,3,"Library to manage docker-machine, docker-compose, and docker containers for windows / mac or native linux.",Ductus.FluentDocker,False,2018-04-20T08:58:43.817+00:00,True,False,,"Docker,Docker-Compose,Compose,Docker-Machine,Machine,Linux,Windows,Mac,Fluent,NET,Core",3574,False,2.2.10
+Mikey,2017-03-02T02:38:18.117Z,43209,414,MikeyLibrary,MikeyLibrary,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.9
+Mikey,2017-03-02T08:26:50.793Z,43209,414,MikeyWpfControlLibrary,MikeyWpfControlLibrary,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.2
+赛恩倍吉科技顾问(深圳)有限公司,2018-04-17T06:12:34.293Z,43209,3,Application.DataContracts,ScienBiziP.TAOS.Services.BusinessCenter.Application.DataContracts,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+MikeyLibrary,2017-03-02T09:15:19.613Z,43209,414,MikeyLibrary,MikeyLibrary,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.10
+MikeyLibrary,2017-03-03T01:13:25.58Z,43209,413,MikeyLibrary,MikeyLibrary,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.11
+Mikey,2017-03-06T01:38:03.517Z,43209,410,MikeyLibrary,MikeyLibrary,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.12
+Mikey,2017-03-07T13:53:42.517Z,43209,409,MikeyLibrary,MikeyLibrary,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.13
+Mikey,2017-03-09T07:48:55.68Z,43209,407,MikeyLibrary,MikeyLibrary,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.14
+Mikey,2017-03-22T06:32:08.093Z,43209,394,MikeyLibrary,MikeyLibrary,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.15
+Mikey,2017-03-22T06:49:58.703Z,43209,394,MikeyLibrary,MikeyLibrary,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.16
+Simon Cropp,2018-04-17T06:11:40.603Z,3,3,Add property notification to all classes that implement INotifyPropertyChanged.,PropertyChanged.Fody,False,2018-04-17T06:11:40.603+00:00,True,False,,"Xaml,MVVM,INotifyPropertyChanged,DataBinding,ILWeaving,Cecil",655126,False,2.5.4
+Simon Cropp,2018-04-17T06:11:40.603Z,3,3,Add property notification to all classes that implement INotifyPropertyChanged.,PropertyChanged.Fody,False,2018-04-17T06:11:40.603+00:00,True,False,,"Xaml,MVVM,INotifyPropertyChanged,DataBinding,ILWeaving,Cecil",655126,False,2.5.4
+赛恩倍吉科技顾问(深圳)有限公司,2018-04-17T06:12:34.293Z,43209,3,Application.DataContracts,ScienBiziP.TAOS.Services.BusinessCenter.Application.DataContracts,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Dorus Verhoeckx,2018-04-17T05:56:22.033Z,3,3,Some shared types for my Mtg project,Ruzzie.Mtg.Core,False,2018-04-17T05:56:43.27+00:00,False,False,,,3373,False,1.0.0
+Ruzzie.Mtg.Core.UnitTests,2018-04-17T05:56:38.287Z,43209,3,Package Description,Ruzzie.Mtg.Core.UnitTests,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Dorus Verhoeckx,2018-04-17T05:56:22.033Z,3,3,Some shared types for my Mtg project,Ruzzie.Mtg.Core,False,2018-04-17T05:56:43.27+00:00,True,False,,,3373,False,1.0.0
+Dorus Verhoeckx,2018-04-17T05:56:43.27Z,3,3,Some shared types for my Mtg project,Ruzzie.Mtg.Core,False,2018-04-17T05:56:43.27+00:00,True,False,,,3373,False,4.1.46
+Ruzzie.Mtg.Core.UnitTests,2018-04-17T05:56:38.287Z,43209,3,Package Description,Ruzzie.Mtg.Core.UnitTests,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Dorus Verhoeckx,2018-04-17T05:56:22.033Z,3,3,Some shared types for my Mtg project,Ruzzie.Mtg.Core,False,2018-04-17T05:56:43.27+00:00,True,False,,,3373,False,1.0.0
+Ruzzie.Mtg.Core.UnitTests,2018-04-17T05:56:38.287Z,43209,3,Package Description,Ruzzie.Mtg.Core.UnitTests,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Dorus Verhoeckx,2018-04-17T05:56:43.27Z,3,3,Some shared types for my Mtg project,Ruzzie.Mtg.Core,False,2018-04-17T05:56:43.27+00:00,True,False,,,3373,False,4.1.46
+NBitcoin.TestFramework,2018-04-17T05:54:20.2Z,1,3,Package Description,NBitcoin.TestFramework,False,2018-04-19T06:36:31.577+00:00,True,False,,,1699,False,1.5.4
+Quellatalo Nin,2018-04-17T05:55:02.703Z,2,3,An utility to read Html OCR data from Tesseract.,Quellatalo.Nin.HOCRReader,False,2018-04-18T00:40:07.39+00:00,True,False,,"Tesseract,HTML,OCR,Reader",199,False,0.0.1.1
+NBitcoin.Altcoins,2018-04-17T05:51:02.977Z,1,3,The C# Bitcoin Library,NBitcoin.Altcoins,False,2018-04-19T06:36:08.747+00:00,True,False,,"bitcoin,altcoins,litecoin",919,False,1.0.0.13
+NBitcoin.Altcoins,2018-04-17T05:51:02.977Z,1,3,The C# Bitcoin Library,NBitcoin.Altcoins,False,2018-04-19T06:36:08.747+00:00,True,False,,"bitcoin,altcoins,litecoin",919,False,1.0.0.13
+NBitcoin.TestFramework,2018-04-17T05:54:20.2Z,1,3,Package Description,NBitcoin.TestFramework,False,2018-04-19T06:36:31.577+00:00,True,False,,,1699,False,1.5.4
+Quellatalo Nin,2018-04-17T05:55:02.703Z,2,3,An utility to read Html OCR data from Tesseract.,Quellatalo.Nin.HOCRReader,False,2018-04-18T00:40:07.39+00:00,True,False,,"Tesseract,HTML,OCR,Reader",199,False,0.0.1.1
+Built to Roam Pty Ltd,2018-04-17T05:45:05.07Z,3,3,"Adds VisualStateManager, ContentButton and IconButton to Xamarin.Forms!",BuildIt.Forms,True,2018-04-17T05:45:05.07+00:00,True,False,,"BuildIt,Xamarin,Forms,Visual,States,Controls",6590,False,1.1.0.140-beta
+NBitcoin,2018-04-17T05:45:52.43Z,1,3,The C# Bitcoin Library,NBitcoin,False,2018-04-19T06:29:50.217+00:00,True,False,,bitcoin,123192,False,4.1.0.12
+NBitcoin,2018-04-17T05:45:52.43Z,1,3,The C# Bitcoin Library,NBitcoin,False,2018-04-19T06:29:50.217+00:00,True,False,,bitcoin,123192,False,4.1.0.12
+Built to Roam Pty Ltd,2018-04-17T05:45:05.07Z,3,3,"Adds VisualStateManager, ContentButton and IconButton to Xamarin.Forms!",BuildIt.Forms,True,2018-04-17T05:45:05.07+00:00,True,False,,"BuildIt,Xamarin,Forms,Visual,States,Controls",6590,False,1.1.0.140-beta
+2D Enterprise,2018-04-17T03:26:55.74Z,43209,3,Description,FTPmvs,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0-CI-20180417-030938
+2D Enterprise,2018-04-17T05:40:46.607Z,43209,3,Description,Y2D.FTPmvs,False,1900-01-01T00:00:00+00:00,False,False,,,70,False,2018.4.17.2
+2D Enterprise,2018-04-17T05:40:46.607Z,43209,3,Description,Y2D.FTPmvs,False,1900-01-01T00:00:00+00:00,False,False,,,70,False,2018.4.17.2
+Quellatalo Nin,2018-04-17T05:35:56.173Z,2,3,An utility to read Html OCR data from Tesseract.,Quellatalo.Nin.HOCRReader,False,2018-04-18T00:40:07.39+00:00,True,False,,"Tesseract,HTML,OCR,Reader",199,False,0.0.1
+Neo.Lab Convergence,2018-04-17T05:34:48.53Z,3,3,Neo SmartPen SDK for UWP,Neosmartpen.Net,False,2018-04-17T05:34:48.53+00:00,True,False,,"SDK,UWP",2377,False,2.1.144
+Hamed Saeedi,2018-04-17T05:35:34.22Z,3,3,Tabler (https://tabler.github.io/) is free premium and Open Source dashboard template with responsive and high quality UI and this package contains Tabler files and sample layout for ASP.NET MVC projects,Tabler,False,2018-04-17T05:35:34.22+00:00,True,False,,"AdminUI,Tabler,AdminDashboard,DashboardTemplate,Bootstrap4",88,False,0.0.32
+Neo.Lab Convergence,2018-04-17T05:34:48.53Z,3,3,Neo SmartPen SDK for UWP,Neosmartpen.Net,False,2018-04-17T05:34:48.53+00:00,True,False,,"SDK,UWP",2377,False,2.1.144
+Quellatalo Nin,2018-04-17T05:35:56.173Z,2,3,An utility to read Html OCR data from Tesseract.,Quellatalo.Nin.HOCRReader,False,2018-04-18T00:40:07.39+00:00,True,False,,"Tesseract,HTML,OCR,Reader",199,False,0.0.1
+Hamed Saeedi,2018-04-17T05:35:34.22Z,3,3,Tabler (https://tabler.github.io/) is free premium and Open Source dashboard template with responsive and high quality UI and this package contains Tabler files and sample layout for ASP.NET MVC projects,Tabler,False,2018-04-17T05:35:34.22+00:00,True,False,,"AdminUI,Tabler,AdminDashboard,DashboardTemplate,Bootstrap4",88,False,0.0.32
+"David Turner,Robert Wilhelm,Werner Lemberg,freetype contributors",2018-04-09T18:00:11.953Z,11,11,"Redistributable components for package 'freetype'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",freetype.v141.redist,True,2018-04-09T19:13:04.42+00:00,False,False,Redistributable components for for package 'freetype',"freetype,font,native,CoApp,v141,v140,v120,v110,v100,dynamic,static,nativepackage",232,False,2.6.2.1-rc1
+Matthew Olivo,2018-04-17T05:21:34.077Z,3,3,"C# client library for the Mixer streaming service: https://mixer.com
+      
+For more information, please see our project site: https://github.com/SaviorXTanren/mixer-client-csharp",mixer-client-csharp,True,2018-04-17T05:21:34.077+00:00,True,False,,"Mixer,Streaming,Bot,Chat,Interactive",3562,False,0.6.1.3-beta
+Matthew Olivo,2018-04-17T05:21:34.077Z,3,3,"C# client library for the Mixer streaming service: https://mixer.com
+      
+For more information, please see our project site: https://github.com/SaviorXTanren/mixer-client-csharp",mixer-client-csharp,True,2018-04-17T05:21:34.077+00:00,True,False,,"Mixer,Streaming,Bot,Chat,Interactive",3562,False,0.6.1.3-beta
+Lykke,2018-04-17T05:16:08.827Z,3,3,Client for Lykke.Service.ClientActivityAnalysis API,Lykke.Service.ClientActivityAnalysis.Client,True,2018-04-17T05:16:08.827+00:00,True,False,,Lykke,508,False,1.0.9-beta
+Lykke,2018-04-17T05:16:08.827Z,3,3,Client for Lykke.Service.ClientActivityAnalysis API,Lykke.Service.ClientActivityAnalysis.Client,True,2018-04-17T05:16:08.827+00:00,True,False,,Lykke,508,False,1.0.9-beta
+Finflaex.Support.EFCore,2018-04-17T05:13:46.93Z,2,3,Package Description,Finflaex.Support.EFCore,False,2018-04-18T22:33:43.85+00:00,True,False,,,432,False,2018.4.17.4
+Finflaex.Support.EFCore,2018-04-17T05:13:46.93Z,2,3,Package Description,Finflaex.Support.EFCore,False,2018-04-18T22:33:43.85+00:00,True,False,,,432,False,2018.4.17.4
+Finflaex.Support.EFCore,2018-04-17T03:57:42.707Z,2,3,Package Description,Finflaex.Support.EFCore,False,2018-04-18T22:33:43.85+00:00,False,False,,,432,False,2018.4.17.3
+CuongNguyen,2018-04-17T05:09:57.61Z,3,3,Package Description,DemoCreateNuget,False,2018-04-17T05:09:57.61+00:00,True,False,,,30,False,1.0.0
+CuongNguyen,2018-04-17T05:09:57.61Z,3,3,Package Description,DemoCreateNuget,False,2018-04-17T05:09:57.61+00:00,True,False,,,30,False,1.0.0

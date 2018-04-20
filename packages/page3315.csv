@@ -1,0 +1,900 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+Hassie,2018-02-03T12:41:52.02Z,18,76,A simple to use async library to retrieve news from News API; written in .NET Standard 1.1.,Hassie.NET.API.NewsAPI,False,2018-04-02T06:33:07.92+00:00,True,False,,"news,api,hassie,hassie-dash",553,False,2.0.1
+懒得勤快,2018-02-03T12:33:29.82Z,33,76,"包含MongoDB的所有的增删查改。
+客户端类采用单例模式进行封装，所以只需要调用MongoDbClient.GetInstance()即可使用。",Masuit.Tools.NoSQL.MongoDBClient,False,2018-03-18T16:26:23.74+00:00,True,False,MongoDB的C#客户端操作封装,Masuit.Tools,469,False,1.8.2
+懒得勤快,2018-02-03T12:33:08.07Z,3,76,"包含一些常用的操作类，大都是静态类，加密解密，反射操作，硬件信息，字符串扩展方法，日期时间扩展操作，大文件拷贝，图像裁剪，html处理，验证码、NoSql等常用封装。
+
+示例代码：
+
+1.检验字符串是否是Email
+
+bool isEmail=""1170397736@qq.com"".MatchEmail();
+
+2.获取CPU核心数
+
+int core = SystemInfo.GetCpuCount();
+
+3.大文件操作
+
+FileStream fs = new FileStream(@""D:\boot.vmdk"", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+
+{
+
+//fs.CopyToFile(@""D:\1.bak"");//同步复制大文件
+
+fs.CopyToFileAsync(@""D:\1.bak"");//异步复制大文件
+
+string md5 = fs.GetFileMD5Async().Result;//异步获取文件的MD5
+
+}
+
+4.html的防XSS处理：
+
+string html = @""<link href='/Content/font-awesome/css' rel='stylesheet'/>
+
+<!--[if IE 7]>
+
+<link href='/Content/font-awesome-ie7.min.css' rel='stylesheet'/>
+
+<![endif]-->
+
+<script src='/Scripts/modernizr'></script>
+
+<div id='searchBox' role='search'>
+
+<form action='/packages' method='get'>
+
+<span class='user-actions'><a href='/users/account/LogOff'>退出</a></span>
+
+<input name='q' id='searchBoxInput'/>
+
+<input id='searchBoxSubmit' type='submit' value='Submit' />
+
+</form>
+
+</div>"";
+
+string s = html.HtmlSantinizerStandard();//清理后：<div><span><a href=""/users/account/LogOff"">退出</a></span></div>
+
+5.整理操作系统的内存：
+
+Windows.ClearMemorySilent();
+
+......",Masuit.Tools,False,2018-04-17T02:26:25.393+00:00,True,False,包含一些常用的操作类，加密解密，大文件拷贝，图像裁剪，验证码,Masuit.Tools,6348,False,1.8.5
+Xamarin,2018-02-03T12:33:37.693Z,4,76,A cross-platform API for authenticating users and storing their accounts.,Xamarin.Auth,True,2018-04-16T07:32:33.28+00:00,True,False,"Xamarin.Auth helps you authenticate users via standard authentication
+			mechanisms (e.g. OAuth 1.0 and 2.0), and store user credentials.
+			It's also straightforward to add support for non-standard authentication schemes.
+			The library is cross-platform, so once you learn it on iOS, you're all set on
+			Android.","xamarin,
+,pcl,android,monoandroid,monodroid,xamarin.android,ios,monotouch,xamarin.ios
+,windows,phone,winphone,wp,8,silverlight,sl,wp8,sl
+,8.1,wp81,winrt,win81
+,wpa81
+,universal,platform,uwp,10
+,plugin,for,xamarin.forms",269044,True,1.6.0-alpha01
+懒得勤快,2018-02-03T12:33:08.07Z,3,76,"包含一些常用的操作类，大都是静态类，加密解密，反射操作，硬件信息，字符串扩展方法，日期时间扩展操作，大文件拷贝，图像裁剪，html处理，验证码、NoSql等常用封装。
+
+示例代码：
+
+1.检验字符串是否是Email
+
+bool isEmail=""1170397736@qq.com"".MatchEmail();
+
+2.获取CPU核心数
+
+int core = SystemInfo.GetCpuCount();
+
+3.大文件操作
+
+FileStream fs = new FileStream(@""D:\boot.vmdk"", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+
+{
+
+//fs.CopyToFile(@""D:\1.bak"");//同步复制大文件
+
+fs.CopyToFileAsync(@""D:\1.bak"");//异步复制大文件
+
+string md5 = fs.GetFileMD5Async().Result;//异步获取文件的MD5
+
+}
+
+4.html的防XSS处理：
+
+string html = @""<link href='/Content/font-awesome/css' rel='stylesheet'/>
+
+<!--[if IE 7]>
+
+<link href='/Content/font-awesome-ie7.min.css' rel='stylesheet'/>
+
+<![endif]-->
+
+<script src='/Scripts/modernizr'></script>
+
+<div id='searchBox' role='search'>
+
+<form action='/packages' method='get'>
+
+<span class='user-actions'><a href='/users/account/LogOff'>退出</a></span>
+
+<input name='q' id='searchBoxInput'/>
+
+<input id='searchBoxSubmit' type='submit' value='Submit' />
+
+</form>
+
+</div>"";
+
+string s = html.HtmlSantinizerStandard();//清理后：<div><span><a href=""/users/account/LogOff"">退出</a></span></div>
+
+5.整理操作系统的内存：
+
+Windows.ClearMemorySilent();
+
+......",Masuit.Tools,False,2018-04-17T02:26:25.393+00:00,True,False,包含一些常用的操作类，加密解密，大文件拷贝，图像裁剪，验证码,Masuit.Tools,6348,False,1.8.5
+Xamarin,2018-02-03T12:33:37.693Z,4,76,A cross-platform API for authenticating users and storing their accounts.,Xamarin.Auth,True,2018-04-16T07:32:33.28+00:00,True,False,"Xamarin.Auth helps you authenticate users via standard authentication
+			mechanisms (e.g. OAuth 1.0 and 2.0), and store user credentials.
+			It's also straightforward to add support for non-standard authentication schemes.
+			The library is cross-platform, so once you learn it on iOS, you're all set on
+			Android.","xamarin,
+,pcl,android,monoandroid,monodroid,xamarin.android,ios,monotouch,xamarin.ios
+,windows,phone,winphone,wp,8,silverlight,sl,wp8,sl
+,8.1,wp81,winrt,win81
+,wpa81
+,universal,platform,uwp,10
+,plugin,for,xamarin.forms",269044,True,1.6.0-alpha01
+懒得勤快,2018-02-03T12:33:29.82Z,33,76,"包含MongoDB的所有的增删查改。
+客户端类采用单例模式进行封装，所以只需要调用MongoDbClient.GetInstance()即可使用。",Masuit.Tools.NoSQL.MongoDBClient,False,2018-03-18T16:26:23.74+00:00,True,False,MongoDB的C#客户端操作封装,Masuit.Tools,469,False,1.8.2
+nick.randell@sceneskope.com,2018-02-03T12:29:05.437Z,29,76,Service Fabric Event Hubs support,SceneSkope.ServiceFabric.EventHubs,False,2018-03-22T09:36:38.697+00:00,True,False,,,2827,False,3.0.0
+pepeizq,2018-02-03T12:28:56.717Z,67,76,https://pepeizqapps.com/,pepeizq.Twitter,False,2018-02-12T14:41:57.75+00:00,True,False,,,4224,False,1.0.23
+懒得勤快,2018-02-03T12:27:31.947Z,33,76,"包含MongoDB的所有的增删查改。
+客户端类采用单例模式进行封装，所以只需要调用MongoDbClient.GetInstance()即可使用。",Masuit.Tools.NoSQL.MongoDBClient.Core,False,2018-03-18T16:21:47.433+00:00,True,False,,Masuit.Tools,559,False,1.8.2
+pepeizq,2018-02-03T12:28:56.717Z,67,76,https://pepeizqapps.com/,pepeizq.Twitter,False,2018-02-12T14:41:57.75+00:00,True,False,,,4224,False,1.0.23
+nick.randell@sceneskope.com,2018-02-03T12:29:05.437Z,29,76,Service Fabric Event Hubs support,SceneSkope.ServiceFabric.EventHubs,False,2018-03-22T09:36:38.697+00:00,True,False,,,2827,False,3.0.0
+懒得勤快,2018-02-03T12:27:31.947Z,33,76,"包含MongoDB的所有的增删查改。
+客户端类采用单例模式进行封装，所以只需要调用MongoDbClient.GetInstance()即可使用。",Masuit.Tools.NoSQL.MongoDBClient.Core,False,2018-03-18T16:21:47.433+00:00,True,False,,Masuit.Tools,559,False,1.8.2
+懒得勤快,2018-02-03T12:25:00.333Z,4,76,"包含一些常用的操作类，大都是静态类，加密解密，反射操作，硬件信息，字符串扩展方法，日期时间扩展操作，大文件拷贝，图像裁剪，html处理，验证码、NoSql等常用封装。
+
+示例代码：
+
+1.检验字符串是否是Email
+
+bool isEmail=""1170397736@qq.com"".MatchEmail();
+
+2.获取线程内唯一对象
+
+CallContext<T>.GetData(""db"");
+
+3.获取当前请求上下文
+
+var context=HttpContext2.Current;
+
+4.获取IP详细地理信息
+
+var address=""114.114.114.114"".GetPhysicsAddress();
+
+5.大文件操作
+
+FileStream fs = new FileStream(@""D:\boot.vmdk"", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+
+{
+
+//fs.CopyToFile(@""D:\1.bak"");//同步复制大文件
+
+fs.CopyToFileAsync(@""D:\1.bak"");//异步复制大文件
+
+string md5 = fs.GetFileMD5Async().Result;//异步获取文件的MD5
+
+}
+
+6.html的防XSS处理：
+
+string html = @""<link href=""/Content/font-awesome/css"" rel=""stylesheet"" />
+
+<!--[if IE 7]>
+
+<link href='/Content/font-awesome-ie7.min.css' rel='stylesheet'/>
+
+<![endif]-->
+
+<script src=""/Scripts/modernizr""></script>
+
+<div id=""searchBox"" role=""search"">
+
+<form action=""/packages"" method=""get"">
+
+<span class=""user-actions""><a href=""/users/account/LogOff"">退出</a></span>
+
+<input name=""q"" id=""searchBoxInput"" />
+
+<input id=""searchBoxSubmit"" type=""submit"" value=""Submit"" />
+
+</form>
+
+</div>"";
+
+string s = html.HtmlSantinizerStandard();//清理后：<div><span><a href=""/users/account/LogOff"">退出</a></span></div>",Masuit.Tools.Core,False,2018-04-16T13:41:20.863+00:00,True,False,,Masuit.Tools,2232,False,1.8.8
+Vasily Kabanov,2018-02-03T12:26:01.257Z,65,76,A library for Excel export/import.,ExcelEi,False,2018-02-14T02:02:54.543+00:00,True,False,"Builds on top of EPPlus, ExcelDataReader and AutoMapper, adding POCO mapping. The goal was loose coupling between data mapping, formatting and data itself, code brevity and type safety (expressions rather than reflection).","excel,import,export,OpenXML,epplus",265,False,1.0.1
+Vasily Kabanov,2018-02-03T12:26:01.257Z,65,76,A library for Excel export/import.,ExcelEi,False,2018-02-14T02:02:54.543+00:00,True,False,"Builds on top of EPPlus, ExcelDataReader and AutoMapper, adding POCO mapping. The goal was loose coupling between data mapping, formatting and data itself, code brevity and type safety (expressions rather than reflection).","excel,import,export,OpenXML,epplus",265,False,1.0.1
+nick.randell@sceneskope.com,2018-02-03T12:23:15.283Z,76,76,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers.Tools,False,2018-02-03T12:23:15.283+00:00,True,False,,,1098,False,2.0.0
+nick.randell@sceneskope.com,2018-02-03T12:23:05.423Z,76,76,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers,False,2018-02-03T12:23:05.423+00:00,True,False,,,1096,False,2.0.0
+nick.randell@sceneskope.com,2018-02-03T12:22:54.563Z,76,76,Package Description,SceneSkope.ServiceFabric.GrpcRemoting,False,2018-02-03T12:22:54.563+00:00,True,False,,,1133,False,2.0.0
+懒得勤快,2018-02-03T12:25:00.333Z,4,76,"包含一些常用的操作类，大都是静态类，加密解密，反射操作，硬件信息，字符串扩展方法，日期时间扩展操作，大文件拷贝，图像裁剪，html处理，验证码、NoSql等常用封装。
+
+示例代码：
+
+1.检验字符串是否是Email
+
+bool isEmail=""1170397736@qq.com"".MatchEmail();
+
+2.获取线程内唯一对象
+
+CallContext<T>.GetData(""db"");
+
+3.获取当前请求上下文
+
+var context=HttpContext2.Current;
+
+4.获取IP详细地理信息
+
+var address=""114.114.114.114"".GetPhysicsAddress();
+
+5.大文件操作
+
+FileStream fs = new FileStream(@""D:\boot.vmdk"", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+
+{
+
+//fs.CopyToFile(@""D:\1.bak"");//同步复制大文件
+
+fs.CopyToFileAsync(@""D:\1.bak"");//异步复制大文件
+
+string md5 = fs.GetFileMD5Async().Result;//异步获取文件的MD5
+
+}
+
+6.html的防XSS处理：
+
+string html = @""<link href=""/Content/font-awesome/css"" rel=""stylesheet"" />
+
+<!--[if IE 7]>
+
+<link href='/Content/font-awesome-ie7.min.css' rel='stylesheet'/>
+
+<![endif]-->
+
+<script src=""/Scripts/modernizr""></script>
+
+<div id=""searchBox"" role=""search"">
+
+<form action=""/packages"" method=""get"">
+
+<span class=""user-actions""><a href=""/users/account/LogOff"">退出</a></span>
+
+<input name=""q"" id=""searchBoxInput"" />
+
+<input id=""searchBoxSubmit"" type=""submit"" value=""Submit"" />
+
+</form>
+
+</div>"";
+
+string s = html.HtmlSantinizerStandard();//清理后：<div><span><a href=""/users/account/LogOff"">退出</a></span></div>",Masuit.Tools.Core,False,2018-04-16T13:41:20.863+00:00,True,False,,Masuit.Tools,2232,False,1.8.8
+nick.randell@sceneskope.com,2018-02-03T12:23:15.283Z,76,76,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers.Tools,False,2018-02-03T12:23:15.283+00:00,True,False,,,1098,False,2.0.0
+nick.randell@sceneskope.com,2018-02-03T12:23:05.423Z,76,76,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers,False,2018-02-03T12:23:05.423+00:00,True,False,,,1096,False,2.0.0
+Mikkel Jensen,2018-02-03T12:22:06.11Z,76,76,Helper for fetching and caching of data from the web,artm.fetcher,True,2018-02-03T20:46:38.387+00:00,True,False,,"mvvm,mvvmcross,xamarin,monodroid,monotouch,wp,wpdev,windowsphone,wpa81,win81,mvx",15489,False,2.11.0-unstable0008
+nick.randell@sceneskope.com,2018-02-03T12:22:54.563Z,76,76,Package Description,SceneSkope.ServiceFabric.GrpcRemoting,False,2018-02-03T12:22:54.563+00:00,True,False,,,1133,False,2.0.0
+Mikkel Jensen,2018-02-03T12:22:06.11Z,76,76,Helper for fetching and caching of data from the web,artm.fetcher,True,2018-02-03T20:46:38.387+00:00,True,False,,"mvvm,mvvmcross,xamarin,monodroid,monotouch,wp,wpdev,windowsphone,wpa81,win81,mvx",15489,False,2.11.0-unstable0008
+nick.randell@sceneskope.com,2018-02-03T12:18:21.197Z,29,76,Service Fabric Event Hubs support,SceneSkope.ServiceFabric.EventHubs,True,2018-03-22T09:36:38.697+00:00,True,False,,,2827,False,3.0.0-dev-00044
+nick.randell@sceneskope.com,2018-02-03T12:18:21.197Z,29,76,Service Fabric Event Hubs support,SceneSkope.ServiceFabric.EventHubs,True,2018-03-22T09:36:38.697+00:00,True,False,,,2827,False,3.0.0-dev-00044
+nick.randell@sceneskope.com,2018-02-03T12:13:20.2Z,76,76,Service Fabric Serilog Logging,ServiceFabric.Serilog,False,2018-02-03T12:13:20.2+00:00,True,False,,"ServiceFabric,Serilog",7100,False,4.0.0
+nick.randell@sceneskope.com,2018-02-03T12:13:30.34Z,76,76,Service Fabric Seq Logging,ServiceFabric.Serilog.Seq,False,2018-02-03T12:13:30.34+00:00,True,False,,"ServiceFabric,Serilog",6411,False,4.0.0
+nick.randell@sceneskope.com,2018-02-03T12:13:50.623Z,76,76,SceneSkope Service Fabric Actors Utilities,ServiceFabric.Utilities.Actors,False,2018-02-03T12:13:50.623+00:00,True,False,,ServiceFabric,5673,False,4.0.0
+nick.randell@sceneskope.com,2018-02-03T12:13:39.577Z,76,76,SceneSkope Service Fabric Utilities,ServiceFabric.Utilities,False,2018-02-03T12:13:39.577+00:00,True,False,,ServiceFabric,6794,False,4.0.0
+Mikkel Jensen,2018-02-03T12:15:22.08Z,76,76,Helper for fetching and caching of data from the web,artm.fetcher,False,2018-02-03T20:46:38.387+00:00,True,False,,"mvvm,mvvmcross,xamarin,monodroid,monotouch,wp,wpdev,windowsphone,wpa81,win81,mvx",15489,False,2.10.3
+nick.randell@sceneskope.com,2018-02-03T12:13:39.577Z,76,76,SceneSkope Service Fabric Utilities,ServiceFabric.Utilities,False,2018-02-03T12:13:39.577+00:00,True,False,,ServiceFabric,6794,False,4.0.0
+nick.randell@sceneskope.com,2018-02-03T12:13:30.34Z,76,76,Service Fabric Seq Logging,ServiceFabric.Serilog.Seq,False,2018-02-03T12:13:30.34+00:00,True,False,,"ServiceFabric,Serilog",6411,False,4.0.0
+Mikkel Jensen,2018-02-03T12:15:22.08Z,76,76,Helper for fetching and caching of data from the web,artm.fetcher,False,2018-02-03T20:46:38.387+00:00,True,False,,"mvvm,mvvmcross,xamarin,monodroid,monotouch,wp,wpdev,windowsphone,wpa81,win81,mvx",15489,False,2.10.3
+nick.randell@sceneskope.com,2018-02-03T12:13:50.623Z,76,76,SceneSkope Service Fabric Actors Utilities,ServiceFabric.Utilities.Actors,False,2018-02-03T12:13:50.623+00:00,True,False,,ServiceFabric,5673,False,4.0.0
+nick.randell@sceneskope.com,2018-02-03T12:13:09.03Z,76,76,Service Fabric Bond Support,ServiceFabric.Bond,False,2018-02-03T12:13:09.03+00:00,True,False,,"ServiceFabric,Bond",2700,False,4.0.0
+nick.randell@sceneskope.com,2018-02-03T12:12:46.73Z,76,76,Service Fabric Actor Seq Logging,ServiceFabric.Actors.Serilog,False,2018-02-03T12:12:46.73+00:00,True,False,,"ServiceFabric,Serilog",6370,False,4.0.0
+nick.randell@sceneskope.com,2018-02-03T12:12:58.387Z,76,76,Application Insights for sceneskope and service fabric,ServiceFabric.ApplicationInsights,False,2018-02-03T12:12:58.387+00:00,True,False,,"SceneSkope,ServiceFabric",6179,False,4.0.0
+Mikkel Jensen,2018-02-03T12:11:50.073Z,76,76,Helper for fetching and caching of data from the web,artm.fetcher,True,2018-02-03T20:46:38.387+00:00,True,False,,"mvvm,mvvmcross,xamarin,monodroid,monotouch,wp,wpdev,windowsphone,wpa81,win81,mvx",15489,False,2.11.0-unstable0006
+Igor.Gateway.Dtos,2018-02-03T12:11:26.59Z,1,76,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,4.0.0-prerelease942
+Anton Yaroshenko,2018-02-03T12:13:29.483Z,27,76,"CoinMarketCal API C# wrapper
+https://coinmarketcal.com",CoinMarketCalApi,False,2018-03-24T16:40:16.15+00:00,True,False,,"cryptocurrency,C#,dot-net,netstandard2.0,bitcoin",697,False,0.2.0
+Anton Yaroshenko,2018-02-03T12:13:29.483Z,27,76,"CoinMarketCal API C# wrapper
+https://coinmarketcal.com",CoinMarketCalApi,False,2018-03-24T16:40:16.15+00:00,True,False,,"cryptocurrency,C#,dot-net,netstandard2.0,bitcoin",697,False,0.2.0
+Igor.Gateway.Dtos,2018-02-03T12:11:26.59Z,1,76,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,4.0.0-prerelease942
+Mikkel Jensen,2018-02-03T12:07:51.58Z,76,76,Helper for fetching and caching of data from the web,artm.fetcher,True,2018-02-03T20:46:38.387+00:00,True,False,,"mvvm,mvvmcross,xamarin,monodroid,monotouch,wp,wpdev,windowsphone,wpa81,win81,mvx",15489,False,2.11.0-unstable0005
+Adrian Bilics,2018-02-03T12:09:04.493Z,43209,76,C# SixMaking artificial intelligence,Alligator.SixMaking,False,1900-01-01T00:00:00+00:00,False,False,,"artificial,intelligence,sixmaking,six,making",-1,False,0.5.0
+Adrian Bilics,2018-02-03T12:09:04.493Z,43209,76,C# SixMaking artificial intelligence,Alligator.SixMaking,False,1900-01-01T00:00:00+00:00,False,False,,"artificial,intelligence,sixmaking,six,making",-1,False,0.5.0
+Mikkel Jensen,2018-02-03T12:07:51.58Z,76,76,Helper for fetching and caching of data from the web,artm.fetcher,True,2018-02-03T20:46:38.387+00:00,True,False,,"mvvm,mvvmcross,xamarin,monodroid,monotouch,wp,wpdev,windowsphone,wpa81,win81,mvx",15489,False,2.11.0-unstable0005
+George Minashin,2018-02-03T12:04:09.323Z,3,76,Gives some useful infrastructure classes.,Cil,False,2018-04-17T12:55:12.25+00:00,True,False,,"infrastructure,common",2925,False,1.0.0.23
+George Minashin,2018-02-03T12:04:09.323Z,3,76,Gives some useful infrastructure classes.,Cil,False,2018-04-17T12:55:12.25+00:00,True,False,,"infrastructure,common",2925,False,1.0.0.23
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2018-02-03T12:02:25.087Z,54,76,"F# Modules for Math.NET Numerics, the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports .Net Framework 4.5 or higher and .Net Standard 1.6 or higher, on Windows, Linux and Mac.",MathNet.Numerics.FSharp,True,2018-02-25T13:37:47.927+00:00,True,False,,"fsharp,F#,math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft",118327,True,4.0.0-beta06
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2018-02-03T12:02:02.727Z,54,76,"Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports .Net Framework 4.0 or higher and .Net Standard 1.3 or higher, on Windows, Linux and Mac.",MathNet.Numerics,True,2018-02-25T13:37:24.88+00:00,True,False,,"math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft",982031,True,4.0.0-beta06
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2018-02-03T12:02:02.727Z,54,76,"Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports .Net Framework 4.0 or higher and .Net Standard 1.3 or higher, on Windows, Linux and Mac.",MathNet.Numerics,True,2018-02-25T13:37:24.88+00:00,True,False,,"math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft",982031,True,4.0.0-beta06
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2018-02-03T12:02:25.087Z,54,76,"F# Modules for Math.NET Numerics, the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports .Net Framework 4.5 or higher and .Net Standard 1.6 or higher, on Windows, Linux and Mac.",MathNet.Numerics.FSharp,True,2018-02-25T13:37:47.927+00:00,True,False,,"fsharp,F#,math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft",118327,True,4.0.0-beta06
+Henk Mollema,2018-02-03T11:58:38.3Z,43209,76,Standalone password hasher for ASP.NET Core using a PBKDF2 implementation.,CryptoHelper.StrongName,False,1900-01-01T00:00:00+00:00,False,False,,"hashing,crypto,core,PBKDF2,Rfc2898DeriveBytes",14136,False,3.0.1.1
+Gary Doublé,2018-02-03T12:00:46.147Z,76,76,"A superbly simple, object-to-object mapping library for .NET",NanoMapper,False,2018-02-03T12:00:46.147+00:00,True,False,,"nanomapper,object,mapper,cloner",367,False,1.1.0
+Alisa Soft,2018-02-03T11:58:42.313Z,2,76,Sport Exchanges Hi Level wrapper library,ExchangeAPI,False,2018-04-18T21:33:12.55+00:00,True,False,,"Betfair,API,API-NG,Pinnacle",98693,False,1.476.972
+Gary Doublé,2018-02-03T12:00:46.147Z,76,76,"A superbly simple, object-to-object mapping library for .NET",NanoMapper,False,2018-02-03T12:00:46.147+00:00,True,False,,"nanomapper,object,mapper,cloner",367,False,1.1.0
+Henk Mollema,2018-02-03T11:58:38.3Z,43209,76,Standalone password hasher for ASP.NET Core using a PBKDF2 implementation.,CryptoHelper.StrongName,False,1900-01-01T00:00:00+00:00,False,False,,"hashing,crypto,core,PBKDF2,Rfc2898DeriveBytes",14136,False,3.0.1.1
+Alisa Soft,2018-02-03T11:58:42.313Z,2,76,Sport Exchanges Hi Level wrapper library,ExchangeAPI,False,2018-04-18T21:33:12.55+00:00,True,False,,"Betfair,API,API-NG,Pinnacle",98693,False,1.476.972
+Alexej Hirsch,2018-02-03T11:51:33.347Z,47,76,Bug Shooting provides a plugin API to create custom Outputs.,BugShooting.Plugin.V3,False,2018-03-04T09:07:31.06+00:00,True,False,,"Bug,Shooting",520,True,3.0.4
+Alexej Hirsch,2018-01-07T18:53:06.667Z,47,103,Bug Shooting provides a plugin API to create custom Outputs.,BugShooting.Plugin.V3,False,2018-03-04T09:07:31.06+00:00,False,False,,"Bug,Shooting",520,True,3.0.3
+Alexej Hirsch,2018-02-03T11:51:33.347Z,47,76,Bug Shooting provides a plugin API to create custom Outputs.,BugShooting.Plugin.V3,False,2018-03-04T09:07:31.06+00:00,True,False,,"Bug,Shooting",520,True,3.0.4
+nick.randell@sceneskope.com,2018-02-03T11:45:06.82Z,76,76,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers.Tools,True,2018-02-03T12:23:15.283+00:00,True,False,,,1098,False,2.0.0-dev-00025
+nick.randell@sceneskope.com,2018-02-03T11:45:06.82Z,76,76,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers.Tools,True,2018-02-03T12:23:15.283+00:00,True,False,,,1098,False,2.0.0-dev-00025
+nick.randell@sceneskope.com,2018-02-03T11:44:44.897Z,76,76,Package Description,SceneSkope.ServiceFabric.GrpcRemoting,True,2018-02-03T12:22:54.563+00:00,True,False,,,1133,False,2.0.0-dev-00025
+nick.randell@sceneskope.com,2018-02-03T11:43:38.537Z,29,76,Service Fabric Event Hubs support,SceneSkope.ServiceFabric.EventHubs,True,2018-03-22T09:36:38.697+00:00,True,False,,,2827,False,3.0.0-dev-00043
+Henk Mollema,2018-02-03T11:44:30.52Z,44,76,Standalone password hasher for ASP.NET Core using a PBKDF2 implementation.,CryptoHelper,False,2018-03-07T09:10:33.2+00:00,True,False,,"hashing,crypto,core,PBKDF2,Rfc2898DeriveBytes",128488,False,3.0.1
+Henk Mollema,2018-02-03T11:44:55.1Z,43209,76,Standalone password hasher for ASP.NET Core using a PBKDF2 implementation.,CryptoHelper.StrongName,False,1900-01-01T00:00:00+00:00,False,False,,"hashing,crypto,core,PBKDF2,Rfc2898DeriveBytes",14136,False,3.0.1
+Henk Mollema,2018-02-03T11:05:33.513Z,43209,76,Standalone password hasher for ASP.NET Core using a PBKDF2 implementation.,CryptoHelper.StrongName,False,1900-01-01T00:00:00+00:00,False,False,,"hashing,crypto,core,PBKDF2,Rfc2898DeriveBytes",14136,False,3.0.0
+nick.randell@sceneskope.com,2018-02-03T11:42:53.347Z,76,76,SceneSkope Service Fabric Actors Utilities,ServiceFabric.Utilities.Actors,True,2018-02-03T12:13:50.623+00:00,True,False,,ServiceFabric,5673,False,4.0.0-dev-00145
+nick.randell@sceneskope.com,2018-02-03T11:44:56.04Z,76,76,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers,True,2018-02-03T12:23:05.423+00:00,True,False,,,1096,False,2.0.0-dev-00025
+nick.randell@sceneskope.com,2018-02-03T11:42:53.347Z,76,76,SceneSkope Service Fabric Actors Utilities,ServiceFabric.Utilities.Actors,True,2018-02-03T12:13:50.623+00:00,True,False,,ServiceFabric,5673,False,4.0.0-dev-00145
+nick.randell@sceneskope.com,2018-02-03T11:44:56.04Z,76,76,Package Description,SceneSkope.ServiceFabric.ProtocolBuffers,True,2018-02-03T12:23:05.423+00:00,True,False,,,1096,False,2.0.0-dev-00025
+nick.randell@sceneskope.com,2018-02-03T11:41:59.597Z,76,76,Application Insights for sceneskope and service fabric,ServiceFabric.ApplicationInsights,True,2018-02-03T12:12:58.387+00:00,True,False,,"SceneSkope,ServiceFabric",6179,False,4.0.0-dev-00145
+nick.randell@sceneskope.com,2018-02-03T11:42:32.503Z,76,76,Service Fabric Seq Logging,ServiceFabric.Serilog.Seq,True,2018-02-03T12:13:30.34+00:00,True,False,,"ServiceFabric,Serilog",6411,False,4.0.0-dev-00145
+nick.randell@sceneskope.com,2018-02-03T11:42:22.033Z,76,76,Service Fabric Serilog Logging,ServiceFabric.Serilog,True,2018-02-03T12:13:20.2+00:00,True,False,,"ServiceFabric,Serilog",7100,False,4.0.0-dev-00145
+nick.randell@sceneskope.com,2018-02-03T11:41:48.283Z,76,76,Service Fabric Actor Seq Logging,ServiceFabric.Actors.Serilog,True,2018-02-03T12:12:46.73+00:00,True,False,,"ServiceFabric,Serilog",6370,False,4.0.0-dev-00145
+nick.randell@sceneskope.com,2018-02-03T11:44:44.897Z,76,76,Package Description,SceneSkope.ServiceFabric.GrpcRemoting,True,2018-02-03T12:22:54.563+00:00,True,False,,,1133,False,2.0.0-dev-00025
+nick.randell@sceneskope.com,2018-02-03T11:42:12.19Z,76,76,Service Fabric Bond Support,ServiceFabric.Bond,True,2018-02-03T12:13:09.03+00:00,True,False,,"ServiceFabric,Bond",2700,False,4.0.0-dev-00145
+nick.randell@sceneskope.com,2018-02-03T11:42:42.863Z,76,76,SceneSkope Service Fabric Utilities,ServiceFabric.Utilities,True,2018-02-03T12:13:39.577+00:00,True,False,,ServiceFabric,6794,False,4.0.0-dev-00145
+Henk Mollema,2018-02-03T11:44:30.52Z,44,76,Standalone password hasher for ASP.NET Core using a PBKDF2 implementation.,CryptoHelper,False,2018-03-07T09:10:33.2+00:00,True,False,,"hashing,crypto,core,PBKDF2,Rfc2898DeriveBytes",128488,False,3.0.1
+nick.randell@sceneskope.com,2018-02-03T11:43:38.537Z,29,76,Service Fabric Event Hubs support,SceneSkope.ServiceFabric.EventHubs,True,2018-03-22T09:36:38.697+00:00,True,False,,,2827,False,3.0.0-dev-00043
+Henk Mollema,2018-02-03T11:44:55.1Z,43209,76,Standalone password hasher for ASP.NET Core using a PBKDF2 implementation.,CryptoHelper.StrongName,False,1900-01-01T00:00:00+00:00,False,False,,"hashing,crypto,core,PBKDF2,Rfc2898DeriveBytes",14136,False,3.0.1
+nick.randell@sceneskope.com,2018-02-03T11:42:42.863Z,76,76,SceneSkope Service Fabric Utilities,ServiceFabric.Utilities,True,2018-02-03T12:13:39.577+00:00,True,False,,ServiceFabric,6794,False,4.0.0-dev-00145
+nick.randell@sceneskope.com,2018-02-03T11:42:32.503Z,76,76,Service Fabric Seq Logging,ServiceFabric.Serilog.Seq,True,2018-02-03T12:13:30.34+00:00,True,False,,"ServiceFabric,Serilog",6411,False,4.0.0-dev-00145
+nick.randell@sceneskope.com,2018-02-03T11:42:22.033Z,76,76,Service Fabric Serilog Logging,ServiceFabric.Serilog,True,2018-02-03T12:13:20.2+00:00,True,False,,"ServiceFabric,Serilog",7100,False,4.0.0-dev-00145
+nick.randell@sceneskope.com,2018-02-03T11:42:12.19Z,76,76,Service Fabric Bond Support,ServiceFabric.Bond,True,2018-02-03T12:13:09.03+00:00,True,False,,"ServiceFabric,Bond",2700,False,4.0.0-dev-00145
+nick.randell@sceneskope.com,2018-02-03T11:41:59.597Z,76,76,Application Insights for sceneskope and service fabric,ServiceFabric.ApplicationInsights,True,2018-02-03T12:12:58.387+00:00,True,False,,"SceneSkope,ServiceFabric",6179,False,4.0.0-dev-00145
+nick.randell@sceneskope.com,2018-02-03T11:41:48.283Z,76,76,Service Fabric Actor Seq Logging,ServiceFabric.Actors.Serilog,True,2018-02-03T12:12:46.73+00:00,True,False,,"ServiceFabric,Serilog",6370,False,4.0.0-dev-00145
+Asfalad.JsonLocalization,2018-02-03T11:33:44.407Z,76,76,Package Description,Asfalad.JsonLocalization,False,2018-02-03T11:33:44.407+00:00,True,False,,,65,False,0.0.1
+Asfalad.JsonLocalization,2018-02-03T11:33:44.407Z,76,76,Package Description,Asfalad.JsonLocalization,False,2018-02-03T11:33:44.407+00:00,True,False,,,65,False,0.0.1
+Henk Mollema,2018-02-03T11:25:54.313Z,43209,76,Standalone password hasher for ASP.NET Core using a PBKDF2 implementation.,CryptoHelper.StrongName,False,1900-01-01T00:00:00+00:00,False,False,,"hashing,crypto,core,PBKDF2,Rfc2898DeriveBytes",14136,False,3.0.0.1
+Henk Mollema,2018-02-03T11:25:54.313Z,43209,76,Standalone password hasher for ASP.NET Core using a PBKDF2 implementation.,CryptoHelper.StrongName,False,1900-01-01T00:00:00+00:00,False,False,,"hashing,crypto,core,PBKDF2,Rfc2898DeriveBytes",14136,False,3.0.0.1
+Marc Sallin,2018-02-03T11:20:08.6Z,76,76,"Creates a SQLite Database from Code, using Entity Framework CodeFirst. This Project ships several IDbInitializer which creates a new SQLite Database, based on your model/code.",SQLite.CodeFirst,False,2018-02-03T11:20:08.6+00:00,True,False,"Creates a SQLite Database from Code, using Entity Framework CodeFirst.","SQLite,EntityFramework,EF,CodeFirst",54667,False,1.5.1.25
+Marc Sallin,2018-02-03T11:20:08.6Z,76,76,"Creates a SQLite Database from Code, using Entity Framework CodeFirst. This Project ships several IDbInitializer which creates a new SQLite Database, based on your model/code.",SQLite.CodeFirst,False,2018-02-03T11:20:08.6+00:00,True,False,"Creates a SQLite Database from Code, using Entity Framework CodeFirst.","SQLite,EntityFramework,EF,CodeFirst",54667,False,1.5.1.25
+Marc Sallin,2018-02-03T11:11:21.27Z,76,76,"Creates a SQLite Database from Code, using Entity Framework CodeFirst. This Project ships several IDbInitializer which creates a new SQLite Database, based on your model/code.",SQLite.CodeFirst,False,2018-02-03T11:20:08.6+00:00,True,False,"Creates a SQLite Database from Code, using Entity Framework CodeFirst.","SQLite,EntityFramework,EF,CodeFirst",54667,False,1.5.0.22
+José A. Saldaña Perez,2018-02-03T11:10:42.443Z,3,76,"An easy way to sync all your C# backend models with your frontend Angular TypeScript models without having to modify your frontend manually. The TypeScriptModelsGenerator generates TypeScript convention .ts files based on an Assembly, a destination directory and using 'Models' and 'NameSpace' Match and MatchAndReplace rules to scope input and manipulate output.
+
+Usage: TypeScriptModelsGenerator.Execute(config)",TypeScriptModelsGenerator,False,2018-04-17T15:30:47.557+00:00,True,False,,,312,False,1.0.0
+Marc Sallin,2018-02-03T11:11:21.27Z,76,76,"Creates a SQLite Database from Code, using Entity Framework CodeFirst. This Project ships several IDbInitializer which creates a new SQLite Database, based on your model/code.",SQLite.CodeFirst,False,2018-02-03T11:20:08.6+00:00,True,False,"Creates a SQLite Database from Code, using Entity Framework CodeFirst.","SQLite,EntityFramework,EF,CodeFirst",54667,False,1.5.0.22
+José A. Saldaña Perez,2018-02-03T11:10:42.443Z,3,76,"An easy way to sync all your C# backend models with your frontend Angular TypeScript models without having to modify your frontend manually. The TypeScriptModelsGenerator generates TypeScript convention .ts files based on an Assembly, a destination directory and using 'Models' and 'NameSpace' Match and MatchAndReplace rules to scope input and manipulate output.
+
+Usage: TypeScriptModelsGenerator.Execute(config)",TypeScriptModelsGenerator,False,2018-04-17T15:30:47.557+00:00,True,False,,,312,False,1.0.0
+Tom Pallister,2018-02-03T11:05:12.933Z,2,76,This project is aimed at people using .NET running a micro services / service orientated architecture that need a unified point of entry into their system. In particular I want easy integration with IdentityServer reference and bearer tokens. We have been unable to find this in my current workplace without having to write our own Javascript middlewares to handle the IdentityServer reference tokens. We would rather use the IdentityServer code that already exists to do this. Ocelot is a bunch of middlewares in a specific order. Ocelot manipulates the HttpRequest object into a state specified by its configuration until it reaches a request builder middleware where it creates a HttpRequestMessage object which is used to make a request to a downstream service. The middleware that makes the request is the last thing in the Ocelot pipeline. It does not call the next middleware. The response from the downstream service is stored in a per request scoped repository and retrived as the requests goes back up the Ocelot pipeline. There is a piece of middleware that maps the HttpResponseMessage onto the HttpResponse object and that is returned to the client. That is basically it with a bunch of other features.,Ocelot,True,2018-04-18T19:42:30.527+00:00,True,False,,"API,Gateway,.NET,core",26760,False,3.1.0-unstable0004
+the humans of HUMANiT,2018-02-03T11:05:36.2Z,19,76,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,False,2018-04-01T19:39:13.153+00:00,True,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.4.0
+Henk Mollema,2018-02-03T11:05:33.513Z,43209,76,Standalone password hasher for ASP.NET Core using a PBKDF2 implementation.,CryptoHelper.StrongName,False,1900-01-01T00:00:00+00:00,False,False,,"hashing,crypto,core,PBKDF2,Rfc2898DeriveBytes",14136,False,3.0.0
+Henk Mollema,2018-02-03T11:05:33.513Z,43209,76,Standalone password hasher for ASP.NET Core using a PBKDF2 implementation.,CryptoHelper.StrongName,False,1900-01-01T00:00:00+00:00,False,False,,"hashing,crypto,core,PBKDF2,Rfc2898DeriveBytes",14136,False,3.0.0
+the humans of HUMANiT,2018-02-03T11:05:36.2Z,19,76,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,False,2018-04-01T19:39:13.153+00:00,True,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.4.0
+Tom Pallister,2018-02-03T11:05:12.933Z,2,76,This project is aimed at people using .NET running a micro services / service orientated architecture that need a unified point of entry into their system. In particular I want easy integration with IdentityServer reference and bearer tokens. We have been unable to find this in my current workplace without having to write our own Javascript middlewares to handle the IdentityServer reference tokens. We would rather use the IdentityServer code that already exists to do this. Ocelot is a bunch of middlewares in a specific order. Ocelot manipulates the HttpRequest object into a state specified by its configuration until it reaches a request builder middleware where it creates a HttpRequestMessage object which is used to make a request to a downstream service. The middleware that makes the request is the last thing in the Ocelot pipeline. It does not call the next middleware. The response from the downstream service is stored in a per request scoped repository and retrived as the requests goes back up the Ocelot pipeline. There is a piece of middleware that maps the HttpResponseMessage onto the HttpResponse object and that is returned to the client. That is basically it with a bunch of other features.,Ocelot,True,2018-04-18T19:42:30.527+00:00,True,False,,"API,Gateway,.NET,core",26760,False,3.1.0-unstable0004
+the humans of HUMANiT,2018-02-02T23:23:17.613Z,19,77,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,False,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.4.0-preview
+the humans of HUMANiT,2018-02-03T10:04:54.09Z,19,76,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,False,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.4.0-rc
+the humans of HUMANiT,2018-02-02T21:44:02.32Z,19,77,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,False,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.4.0-alpha-587
+"Beyova Co.,Ltd",2018-02-03T10:41:13.013Z,3,76,Internal Library,Beyova.CodeSmith,True,2018-04-17T16:43:11.263+00:00,True,False,Internal Library,,1087,False,1.4.0-preview01
+"Beyova Co.,Ltd",2018-02-03T10:41:13.013Z,3,76,Internal Library,Beyova.CodeSmith,True,2018-04-17T16:43:11.263+00:00,True,False,Internal Library,,1087,False,1.4.0-preview01
+Ben Taylor,2018-02-03T10:33:00.45Z,71,76,Package Description,EqualityComparers,False,2018-02-08T16:24:44.233+00:00,True,False,,,115,False,1.0.0
+Ben Taylor,2018-02-03T10:33:00.45Z,71,76,Package Description,EqualityComparers,False,2018-02-08T16:24:44.233+00:00,True,False,,,115,False,1.0.0
+Sergio Pedri,2018-02-03T10:31:02.993Z,71,76,"A complete, ligthweight and self-contained .NET Standard 2.0 offline exception logging library, powered by Realm",BigWatson,False,2018-02-08T14:08:10.27+00:00,True,False,,"csharp,netstandard,realm,exception,report,debug,coding,test,log",700,False,1.1.1
+Sergio Pedri,2018-02-03T10:31:02.993Z,71,76,"A complete, ligthweight and self-contained .NET Standard 2.0 offline exception logging library, powered by Realm",BigWatson,False,2018-02-08T14:08:10.27+00:00,True,False,,"csharp,netstandard,realm,exception,report,debug,coding,test,log",700,False,1.1.1
+AleXiao,2018-02-03T10:27:37.49Z,71,76,Awaken.Utils.Widgets,Awaken.Utils.Widgets,False,2018-02-08T16:08:44.7+00:00,True,False,,,765,False,1.1.4
+AleXiao,2018-02-03T10:27:37.49Z,71,76,Awaken.Utils.Widgets,Awaken.Utils.Widgets,False,2018-02-08T16:08:44.7+00:00,True,False,,,765,False,1.1.4
+Max-Planck-Institute of Biochemistry,2018-02-03T10:21:47.76Z,1,76,PerseusApi implementation,PerseusLibS,False,2018-04-20T09:10:17.28+00:00,True,False,,,69455,False,1.6.0.1610
+Max-Planck-Institute of Biochemistry,2018-02-03T10:21:47.76Z,1,76,PerseusApi implementation,PerseusLibS,False,2018-04-20T09:10:17.28+00:00,True,False,,,69455,False,1.6.0.1610
+AleXiao,2018-02-03T10:11:22.82Z,71,76,Awaken.Utils.Widgets,Awaken.Utils.Widgets,False,2018-02-08T16:08:44.7+00:00,True,False,,,765,False,1.1.3
+AleXiao,2018-02-03T10:11:22.82Z,71,76,Awaken.Utils.Widgets,Awaken.Utils.Widgets,False,2018-02-08T16:08:44.7+00:00,True,False,,,765,False,1.1.3
+the humans of HUMANiT,2018-02-03T10:04:54.09Z,19,76,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,True,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.4.0-rc
+Ben Ishiyama-levy (Xamariners),2018-02-03T10:04:29.747Z,76,76,"Cross platform Xamarin AppSettings reader
+			Contributors: Ben Ishiyama-levy (Xamariners), Seyyed Soroosh Hosseinalipour",PCLAppConfig,False,2018-02-03T10:04:29.747+00:00,True,False,Cross platform Xamarin AppSettings Reader,"xamarin,xamarin.forms,PCL,Config,App.Config,AppSettings,Configuration,ConfigurationManager,uwp,winrt,android,ios,monoandroid,monodroid,monotouch,xamariners",29168,False,0.3.4
+Ben Ishiyama-levy (Xamariners),2018-02-03T10:04:29.747Z,76,76,"Cross platform Xamarin AppSettings reader
+			Contributors: Ben Ishiyama-levy (Xamariners), Seyyed Soroosh Hosseinalipour",PCLAppConfig,False,2018-02-03T10:04:29.747+00:00,True,False,Cross platform Xamarin AppSettings Reader,"xamarin,xamarin.forms,PCL,Config,App.Config,AppSettings,Configuration,ConfigurationManager,uwp,winrt,android,ios,monoandroid,monodroid,monotouch,xamariners",29168,False,0.3.4
+the humans of HUMANiT,2018-02-03T10:04:54.09Z,19,76,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,True,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.4.0-rc
+Piotr Falkowski,2018-02-03T09:58:08.437Z,48,76,"Package for boilerplate serialization code, containing following extensions: SerializeToXDoc, Deserialize, ToCsv.
+Third party lib ""CsvHelper"" licenced under dual licence MS-PL / Apache-2.0: http://www.opensource.org/licenses/MS-PL http://opensource.org/licenses/Apache-2.0",Extensions.Serialization,False,2018-03-03T14:44:36.23+00:00,True,False,,"serialization,netcore,netstandard,xml,csv,extension-methods",582,False,3.1.0
+Piotr Falkowski,2018-02-03T09:58:08.437Z,48,76,"Package for boilerplate serialization code, containing following extensions: SerializeToXDoc, Deserialize, ToCsv.
+Third party lib ""CsvHelper"" licenced under dual licence MS-PL / Apache-2.0: http://www.opensource.org/licenses/MS-PL http://opensource.org/licenses/Apache-2.0",Extensions.Serialization,False,2018-03-03T14:44:36.23+00:00,True,False,,"serialization,netcore,netstandard,xml,csv,extension-methods",582,False,3.1.0
+AleXiao,2018-02-03T09:53:21.21Z,71,76,Awaken.Utils.Widgets,Awaken.Utils.Widgets,False,2018-02-08T16:08:44.7+00:00,True,False,,,765,False,1.1.2
+AleXiao,2018-02-03T09:53:21.21Z,71,76,Awaken.Utils.Widgets,Awaken.Utils.Widgets,False,2018-02-08T16:08:44.7+00:00,True,False,,,765,False,1.1.2
+shadowIdeas,2018-02-03T09:46:24.48Z,60,76,A basic library to construct keybinders for SA:MP,shadowBasic,False,2018-02-19T13:14:11.403+00:00,True,False,,"SAMP,Keybinder",341,False,1.0.0
+shadowIdeas,2018-02-03T09:46:24.48Z,60,76,A basic library to construct keybinders for SA:MP,shadowBasic,False,2018-02-19T13:14:11.403+00:00,True,False,,"SAMP,Keybinder",341,False,1.0.0
+Targetprocess,2018-02-03T09:35:03.68Z,7,76,Utils for RabbitMQ client,Targetprocess.RabbitMq,False,2018-04-13T08:15:18.303+00:00,True,False,,"targetprocess,rabbitmq",1639,False,0.0.6
+Targetprocess,2018-02-03T09:35:03.68Z,7,76,Utils for RabbitMQ client,Targetprocess.RabbitMq,False,2018-04-13T08:15:18.303+00:00,True,False,,"targetprocess,rabbitmq",1639,False,0.0.6
+Lemon,2018-02-03T09:29:18.42Z,57,76,Reference implementation of OpenTracing API,Butterfly.OpenTracing,False,2018-02-22T10:17:28.85+00:00,True,False,,"OpenTracing,Tracing",3740,False,0.0.5
+Butterfly Team,2018-02-03T09:29:06.89Z,67,76,Package Description,Butterfly.DataContract,False,2018-02-12T09:43:08.8+00:00,True,False,,"Butterfly,DataContract",3698,False,0.0.5
+Lemon,2018-02-03T09:28:44.593Z,57,76,A Asp.Net Core client for Butterfly.,Butterfly.Client.AspNetCore,False,2018-02-22T10:17:03.27+00:00,True,False,,"OpenTracing,Tracing",3792,False,0.0.5
+Lemon,2018-02-03T09:28:56.11Z,57,76,A .NET client for Butterfly.,Butterfly.Client,False,2018-02-22T10:17:16.74+00:00,True,False,,"OpenTracing,Tracing",3787,False,0.0.5
+Lemon,2018-02-03T09:29:18.42Z,57,76,Reference implementation of OpenTracing API,Butterfly.OpenTracing,False,2018-02-22T10:17:28.85+00:00,True,False,,"OpenTracing,Tracing",3740,False,0.0.5
+Butterfly Team,2018-02-03T09:29:06.89Z,67,76,Package Description,Butterfly.DataContract,False,2018-02-12T09:43:08.8+00:00,True,False,,"Butterfly,DataContract",3698,False,0.0.5
+Lemon,2018-02-03T09:28:56.11Z,57,76,A .NET client for Butterfly.,Butterfly.Client,False,2018-02-22T10:17:16.74+00:00,True,False,,"OpenTracing,Tracing",3787,False,0.0.5
+Lemon,2018-02-03T09:28:44.593Z,57,76,A Asp.Net Core client for Butterfly.,Butterfly.Client.AspNetCore,False,2018-02-22T10:17:03.27+00:00,True,False,,"OpenTracing,Tracing",3792,False,0.0.5
+Lsj,2018-02-03T09:21:04.177Z,57,76,My Utility For Web,Lsj.Util.Net.Web.Core,False,2018-02-22T12:15:43.38+00:00,True,False,,,297,False,1.1.2
+Lsj,2018-02-03T09:21:04.177Z,57,76,My Utility For Web,Lsj.Util.Net.Web.Core,False,2018-02-22T12:15:43.38+00:00,True,False,,,297,False,1.1.2
+Simon Cropp,2018-02-03T09:12:35.913Z,20,76,Fody add-in for reading embedded resources.,Resourcer.Fody,False,2018-03-31T22:33:04.843+00:00,True,False,,"Embedded,Resource,ILWeaving,Fody,Cecil",9522,False,1.6.4
+Simon Cropp,2018-02-03T09:12:35.913Z,20,76,Fody add-in for reading embedded resources.,Resourcer.Fody,False,2018-03-31T22:33:04.843+00:00,True,False,,"Embedded,Resource,ILWeaving,Fody,Cecil",9522,False,1.6.4
+Oleg Tarasov,2018-02-03T09:09:03.003Z,6,76,.NET wrapper for original fastText implementation.,FastText.NetWrapper,False,2018-04-14T07:12:24.9+00:00,True,False,,,399,False,1.0.5
+Matteo Bortolazzo,2018-02-03T09:08:32.033Z,27,76,Use this Xamarin.Forms plugin to display HTML content into a label.,Xam.Plugin.HtmlLabel,False,2018-03-24T13:27:40.72+00:00,True,False,Use this Xamarin.Forms plugin to display HTML content into a label.,"xamarin,html,label,htmllabel,plugin,for,plugins,xamarin.android,xamarin.ios,xamarin.uwp,xamarin.forms,android,ios,uwp",5776,False,2.1.3
+Oleg Tarasov,2018-02-03T09:09:03.003Z,6,76,.NET wrapper for original fastText implementation.,FastText.NetWrapper,False,2018-04-14T07:12:24.9+00:00,True,False,,,399,False,1.0.5
+Matteo Bortolazzo,2018-02-03T09:08:32.033Z,27,76,Use this Xamarin.Forms plugin to display HTML content into a label.,Xam.Plugin.HtmlLabel,False,2018-03-24T13:27:40.72+00:00,True,False,Use this Xamarin.Forms plugin to display HTML content into a label.,"xamarin,html,label,htmllabel,plugin,for,plugins,xamarin.android,xamarin.ios,xamarin.uwp,xamarin.forms,android,ios,uwp",5776,False,2.1.3
+Shuxin Qin,2018-02-03T09:04:26.81Z,24,76,A lightweight and high-performance Object/Relational Mapping(ORM) library.,Chloe.SqlServer,False,2018-03-27T12:47:03.72+00:00,True,False,,"Chloe,ORM,Data,SqlServer,.NET,Core",5898,False,2.24.0
+Shuxin Qin,2018-02-03T09:04:26.81Z,24,76,A lightweight and high-performance Object/Relational Mapping(ORM) library.,Chloe.SqlServer,False,2018-03-27T12:47:03.72+00:00,True,False,,"Chloe,ORM,Data,SqlServer,.NET,Core",5898,False,2.24.0
+Shuxin Qin,2018-02-03T09:03:38.387Z,24,76,A lightweight and high-performance Object/Relational Mapping(ORM) library.,Chloe.Oracle,False,2018-03-27T12:46:14.64+00:00,True,False,,"Chloe,ORM,Data,Oracle,.NET,Core",3929,False,2.24.0
+Shuxin Qin,2018-02-03T09:03:14.183Z,24,76,A lightweight and high-performance Object/Relational Mapping(ORM) library.,Chloe.MySql,False,2018-03-27T12:45:33.59+00:00,True,False,,"Chloe,ORM,Data,MySql,.NET,Core",5370,False,2.24.0
+Shuxin Qin,2018-02-03T09:02:21.417Z,24,76,A lightweight and high-performance Object/Relational Mapping(ORM) library.,Chloe,False,2018-03-27T12:45:06.527+00:00,True,False,,"Chloe,ORM,Data,.NET,Core",4477,False,2.24.0
+Shuxin Qin,2018-02-03T09:02:47.747Z,40,76,Extension for Chloe.ORM,Chloe.Extension,False,2018-03-11T04:13:23.213+00:00,True,False,,"Chloe,ORM,Data",2022,False,1.11.0
+Shuxin Qin,2018-02-03T09:04:01.98Z,24,76,A lightweight and high-performance Object/Relational Mapping(ORM) library.,Chloe.SQLite,False,2018-03-27T12:46:37.95+00:00,True,False,,"Chloe,ORM,Data,SQLite,.NET,Core",4647,False,2.24.0
+Shuxin Qin,2018-02-03T09:03:38.387Z,24,76,A lightweight and high-performance Object/Relational Mapping(ORM) library.,Chloe.Oracle,False,2018-03-27T12:46:14.64+00:00,True,False,,"Chloe,ORM,Data,Oracle,.NET,Core",3929,False,2.24.0
+Shuxin Qin,2018-02-03T09:03:14.183Z,24,76,A lightweight and high-performance Object/Relational Mapping(ORM) library.,Chloe.MySql,False,2018-03-27T12:45:33.59+00:00,True,False,,"Chloe,ORM,Data,MySql,.NET,Core",5370,False,2.24.0
+Shuxin Qin,2018-02-03T09:02:47.747Z,40,76,Extension for Chloe.ORM,Chloe.Extension,False,2018-03-11T04:13:23.213+00:00,True,False,,"Chloe,ORM,Data",2022,False,1.11.0
+Shuxin Qin,2018-02-03T09:04:01.98Z,24,76,A lightweight and high-performance Object/Relational Mapping(ORM) library.,Chloe.SQLite,False,2018-03-27T12:46:37.95+00:00,True,False,,"Chloe,ORM,Data,SQLite,.NET,Core",4647,False,2.24.0
+Shuxin Qin,2018-02-03T09:02:21.417Z,24,76,A lightweight and high-performance Object/Relational Mapping(ORM) library.,Chloe,False,2018-03-27T12:45:06.527+00:00,True,False,,"Chloe,ORM,Data,.NET,Core",4477,False,2.24.0
+rynn.wang,2018-02-03T09:02:02.103Z,76,76,Azure extension,Beyova.AzureExtension,True,2018-02-03T09:02:02.103+00:00,True,False,Azure extension,,3804,False,2.5.0-preview01
+rynn.wang,2018-02-03T09:02:02.103Z,76,76,Azure extension,Beyova.AzureExtension,True,2018-02-03T09:02:02.103+00:00,True,False,Azure extension,,3804,False,2.5.0-preview01
+InvertedTomato,2018-02-03T08:56:32.27Z,76,76,Message formats for sending over networks or storing in files.,InvertedTomato.Messages,False,2018-02-03T08:56:32.27+00:00,True,False,,,450,False,1.2.1
+InvertedTomato,2018-02-03T08:56:32.27Z,76,76,Message formats for sending over networks or storing in files.,InvertedTomato.Messages,False,2018-02-03T08:56:32.27+00:00,True,False,,,450,False,1.2.1
+Fedja Adam,2018-02-03T08:44:33.613Z,13,76,The Duality editor.,AdamsLair.Duality.Editor,False,2018-04-07T19:31:04.407+00:00,True,False,The Duality editor.,"Duality,Editor",38962,False,2.10.9
+Fedja Adam,2018-02-03T08:44:45.08Z,60,76,"Provides basic infrastructure for the Duality editor, such as PropertyEditors and Importers.",AdamsLair.Duality.Editor.Plugins.Base,False,2018-02-19T09:27:18.4+00:00,True,False,"Provides basic infrastructure for the Duality editor, such as PropertyEditors and Importers.","Duality,Editor,Plugin,PropertyEditor,Importer,Preview,EditorAction,DataConverter",19852,False,2.2.13
+Fedja Adam,2018-02-03T08:44:45.08Z,60,76,"Provides basic infrastructure for the Duality editor, such as PropertyEditors and Importers.",AdamsLair.Duality.Editor.Plugins.Base,False,2018-02-19T09:27:18.4+00:00,True,False,"Provides basic infrastructure for the Duality editor, such as PropertyEditors and Importers.","Duality,Editor,Plugin,PropertyEditor,Importer,Preview,EditorAction,DataConverter",19852,False,2.2.13
+Fedja Adam,2018-02-03T08:44:33.613Z,13,76,The Duality editor.,AdamsLair.Duality.Editor,False,2018-04-07T19:31:04.407+00:00,True,False,The Duality editor.,"Duality,Editor",38962,False,2.10.9
+SmartLife-Solutions Corporation,2018-02-03T08:41:53.34Z,2,76,"Official Library for Solutions The Library contains the main operations, data, utilities and Base forms for the Solutions. 
+	It's build using Visual Studio 2017, C# 7.0 and .Net framework 4.6.1 .",SmartLifeLtd,False,2018-04-18T09:40:15.393+00:00,True,False,"SmartLife Solutions (SLS) specialized in innovative, interactive and smart solutions that provides clients with a fully integrated and professional range of individual services, like smart electronic devices, Software, innovative mobile apps, etc
+
+We provide products and services in SmartLife Solutions for your shop, home, factory, company and even university.","Smart,Library,Technology,Utility,Solutions",9564,False,1.0.2.60
+SmartLife-Solutions Corporation,2018-02-03T08:41:53.34Z,2,76,"Official Library for Solutions The Library contains the main operations, data, utilities and Base forms for the Solutions. 
+	It's build using Visual Studio 2017, C# 7.0 and .Net framework 4.6.1 .",SmartLifeLtd,False,2018-04-18T09:40:15.393+00:00,True,False,"SmartLife Solutions (SLS) specialized in innovative, interactive and smart solutions that provides clients with a fully integrated and professional range of individual services, like smart electronic devices, Software, innovative mobile apps, etc
+
+We provide products and services in SmartLife Solutions for your shop, home, factory, company and even university.","Smart,Library,Technology,Utility,Solutions",9564,False,1.0.2.60
+ZeegZag.Data,2018-02-03T08:37:38.31Z,63,76,Package Description,ZeegZag.Data,False,2018-02-16T18:18:19.417+00:00,True,False,,,595,False,1.17.0
+ZeegZag.Data,2018-02-03T08:37:38.31Z,63,76,Package Description,ZeegZag.Data,False,2018-02-16T18:18:19.417+00:00,True,False,,,595,False,1.17.0
+Xyfy,2018-01-31T07:36:13.307Z,21,79,消费循环系统sdk,Yfh.CreditsApi.Sdk,False,2018-03-30T05:42:52.383+00:00,False,False,,,2633,False,2.1.4
+Calabonga,2018-02-03T08:25:02.24Z,9,76,Status Processor for entity with changing state validation. Special ruler executed before Enter stasus and Leave status.,Calabonga.StatusProcessor,False,2018-04-11T10:45:22.557+00:00,True,False,Status Processor for entity with changing state validation. Special ruler executed before Enter stasus and Leave status. Guid status property adds for entity for validation between statuses changing.,"calabonga,status,state,processor,rules,validation,guid",1260,False,2.2.1
+Calabonga,2018-02-03T08:25:02.24Z,9,76,Status Processor for entity with changing state validation. Special ruler executed before Enter stasus and Leave status.,Calabonga.StatusProcessor,False,2018-04-11T10:45:22.557+00:00,True,False,Status Processor for entity with changing state validation. Special ruler executed before Enter stasus and Leave status. Guid status property adds for entity for validation between statuses changing.,"calabonga,status,state,processor,rules,validation,guid",1260,False,2.2.1
+Calabonga,2018-02-03T08:19:27.207Z,9,76,Status Processor for entity with changing state validation. Special ruler executed before Enter stasus and Leave status.,Calabonga.StatusProcessor,False,2018-04-11T10:45:22.557+00:00,True,False,Status Processor for entity with changing state validation. Special ruler executed before Enter stasus and Leave status. Guid status property adds for entity for validation between statuses changing.,"calabonga,status,state,processor,rules,validation,guid",1260,False,2.2.0
+Calabonga,2018-02-03T08:19:27.207Z,9,76,Status Processor for entity with changing state validation. Special ruler executed before Enter stasus and Leave status.,Calabonga.StatusProcessor,False,2018-04-11T10:45:22.557+00:00,True,False,Status Processor for entity with changing state validation. Special ruler executed before Enter stasus and Leave status. Guid status property adds for entity for validation between statuses changing.,"calabonga,status,state,processor,rules,validation,guid",1260,False,2.2.0
+Lsj,2018-02-03T08:15:49.147Z,72,76,My Utility For Net,Lsj.Util.Net.Core,False,2018-02-07T11:37:10.95+00:00,True,False,,,186,False,1.1.1
+Lsj,2018-02-03T08:17:45.997Z,57,76,My Utility For Web,Lsj.Util.Net.Web.Core,False,2018-02-22T12:15:43.38+00:00,True,False,,,297,False,1.1.1
+Lsj,2018-02-03T08:17:45.997Z,57,76,My Utility For Web,Lsj.Util.Net.Web.Core,False,2018-02-22T12:15:43.38+00:00,True,False,,,297,False,1.1.1
+Lsj,2018-02-03T08:15:49.147Z,72,76,My Utility For Net,Lsj.Util.Net.Core,False,2018-02-07T11:37:10.95+00:00,True,False,,,186,False,1.1.1
+Lsj,2018-02-03T08:13:41.673Z,57,76,My Utility,Lsj.Util.Core,False,2018-02-22T12:14:50.847+00:00,True,False,,,313,False,1.1.1
+Simon Cropp,2018-02-03T08:15:10.863Z,20,76,Fody add-in for reading embedded resources.,Resourcer.Fody,False,2018-03-31T22:33:04.843+00:00,True,False,,"Embedded,Resource,ILWeaving,Fody,Cecil",9522,False,1.6.3
+Simon Cropp,2018-02-03T08:15:10.863Z,20,76,Fody add-in for reading embedded resources.,Resourcer.Fody,False,2018-03-31T22:33:04.843+00:00,True,False,,"Embedded,Resource,ILWeaving,Fody,Cecil",9522,False,1.6.3
+Lsj,2018-02-03T08:13:41.673Z,57,76,My Utility,Lsj.Util.Core,False,2018-02-22T12:14:50.847+00:00,True,False,,,313,False,1.1.1
+Lykke,2018-02-03T08:06:31.213Z,4,76,Client for Lykke.Service.FeeCalculator API,Lykke.Service.FeeCalculator.Client,False,2018-04-16T15:43:57.247+00:00,True,False,,Lykke,2143,False,1.1.1
+Lykke,2018-02-03T08:06:31.213Z,4,76,Client for Lykke.Service.FeeCalculator API,Lykke.Service.FeeCalculator.Client,False,2018-04-16T15:43:57.247+00:00,True,False,,Lykke,2143,False,1.1.1
+Xyfy,2018-02-03T08:00:07.147Z,21,76,消费循环系统sdk,Yfh.CreditsApi.Sdk,False,2018-03-30T05:42:52.383+00:00,True,False,,,2633,False,2.1.5
+Xyfy,2018-02-03T08:00:07.147Z,21,76,消费循环系统sdk,Yfh.CreditsApi.Sdk,False,2018-03-30T05:42:52.383+00:00,True,False,,,2633,False,2.1.5
+InvertedTomato,2018-02-03T07:53:31.61Z,76,76,Message formats for sending over networks or storing in files.,InvertedTomato.Messages,False,2018-02-03T08:56:32.27+00:00,True,False,,,450,False,1.2.0
+InvertedTomato,2018-02-03T07:53:31.61Z,76,76,Message formats for sending over networks or storing in files.,InvertedTomato.Messages,False,2018-02-03T08:56:32.27+00:00,True,False,,,450,False,1.2.0
+Artak Mkrtchyan,2018-02-03T07:50:36.35Z,55,76,This package contains a set of libraries simplifying validation of arguments during coding.,AM.Common.Validation,False,2018-02-24T08:29:33.39+00:00,True,False,,"argument,validation,utilities",288,False,2.5.0
+Rick Strahl,2018-02-03T07:48:24.78Z,8,76,".NET utility library that includes Application Configuration, lightweight ADO.NET Data Access Layer, logging, utility classes include: StringUtils, ReflectionUtils, FileUtils, DataUtils, SerializationUtils, TimeUtils, SecurityUtils and XmlUtils. These classes are useful in any kind of .NET project.",Westwind.Utilities,False,2018-04-12T09:24:38.173+00:00,True,False,,"Westwind,ApplicationConfiguration,StringUtils,ReflectionUtils,DataUtils,FileUtils,TimeUtils,SerializationUtils,ImageUtils,Logging,DAL,Sql,ADO.NET",132129,False,3.0.12
+Artak Mkrtchyan,2018-02-03T07:50:36.35Z,55,76,This package contains a set of libraries simplifying validation of arguments during coding.,AM.Common.Validation,False,2018-02-24T08:29:33.39+00:00,True,False,,"argument,validation,utilities",288,False,2.5.0
+Rick Strahl,2018-02-03T07:48:24.78Z,8,76,".NET utility library that includes Application Configuration, lightweight ADO.NET Data Access Layer, logging, utility classes include: StringUtils, ReflectionUtils, FileUtils, DataUtils, SerializationUtils, TimeUtils, SecurityUtils and XmlUtils. These classes are useful in any kind of .NET project.",Westwind.Utilities,False,2018-04-12T09:24:38.173+00:00,True,False,,"Westwind,ApplicationConfiguration,StringUtils,ReflectionUtils,DataUtils,FileUtils,TimeUtils,SerializationUtils,ImageUtils,Logging,DAL,Sql,ADO.NET",132129,False,3.0.12
+Savran,2018-02-03T07:38:29.34Z,10,76,Package Description,ApplicationBlock.ContentDispatcher.Client.Model,True,2018-04-10T05:42:45.83+00:00,True,False,,,906,False,0.2.2-alpha
+Savran,2018-02-03T07:38:29.34Z,10,76,Package Description,ApplicationBlock.ContentDispatcher.Client.Model,True,2018-04-10T05:42:45.83+00:00,True,False,,,906,False,0.2.2-alpha
+demystifyfp,2018-02-03T07:22:55.917Z,56,76,F# Libary for managing configuration data from environment variables and application config in a type-safe way,FsConfig,False,2018-02-23T13:04:57.107+00:00,True,False,F# Libary for managing configuration data from environment variables and application config in a type-safe way,"fsharp,config,typeshape,envvar,appconfig,environment-variables",399,False,0.0.3
+demystifyfp,2018-02-03T07:22:55.917Z,56,76,F# Libary for managing configuration data from environment variables and application config in a type-safe way,FsConfig,False,2018-02-23T13:04:57.107+00:00,True,False,F# Libary for managing configuration data from environment variables and application config in a type-safe way,"fsharp,config,typeshape,envvar,appconfig,environment-variables",399,False,0.0.3
+DarkByte7,2018-02-03T07:13:55.383Z,43209,76,"The VisualPlus Framework (VPF), VisualPlus UI for WinForms allows you to rapidly deploy professional .NET applications with customizable components and controls.",VisualPlus,True,1900-01-01T00:00:00+00:00,False,False,,"UI,Framework,Development,Toolbox,Windows,Forms,VisualStudio,Visual-Studio,.NET,Metro,ModernUI,MetroFramework,MetroUI,WinForms,Controls,Graphics,Rendering,Library,Components,Visual,Plus,Visual-Plus,VB,VB.NET,User,Interface,User-Interface,VPF",2090,False,0.4.1.2-beta
+DarkByte7,2018-02-03T07:13:55.383Z,43209,76,"The VisualPlus Framework (VPF), VisualPlus UI for WinForms allows you to rapidly deploy professional .NET applications with customizable components and controls.",VisualPlus,True,1900-01-01T00:00:00+00:00,False,False,,"UI,Framework,Development,Toolbox,Windows,Forms,VisualStudio,Visual-Studio,.NET,Metro,ModernUI,MetroFramework,MetroUI,WinForms,Controls,Graphics,Rendering,Library,Components,Visual,Plus,Visual-Plus,VB,VB.NET,User,Interface,User-Interface,VPF",2090,False,0.4.1.2-beta
+jjxtra,2018-01-29T22:46:31.783Z,15,81,"ExchangeSharp is a C# API for working with various exchanges for stocks and cryptocurrency. Binance, Bitfinex, Bithumb, Bitstamp, Bittrex, Gemini, GDAX, Kraken and Poloniex are supported.",DigitalRuby.ExchangeSharp,False,2018-04-05T19:05:24.563+00:00,False,False,,"C#,API,bitcoin,exchange,cryptocurrency,stock,trade,trader,coin,litecoin,ethereum,gdax,cash,poloniex,gemini,bitfinex,kraken,bittrex,binance,iota,mana,cardano,eos,cordana,ripple,xrp,tron,socket,web,websocket",3355,False,0.2.2
+HomeImageProcessing,2018-02-03T06:47:44.363Z,76,76,Package Description,Prb.HomeImageProcessing,False,2018-02-03T06:47:44.363+00:00,True,False,,"image,video,processing",773,False,0.5.5
+HomeImageProcessing,2018-02-03T06:47:44.363Z,76,76,Package Description,Prb.HomeImageProcessing,False,2018-02-03T06:47:44.363+00:00,True,False,,"image,video,processing",773,False,0.5.5
+Viktor Borisov,2018-02-03T06:31:14.677Z,41,76,This is a unofficial Telegram client api library,TelegramClientApi,False,2018-03-10T04:01:13.167+00:00,True,False,,"telegram,api,client",6063,False,0.4.73
+Viktor Borisov,2018-02-03T06:31:14.677Z,41,76,This is a unofficial Telegram client api library,TelegramClientApi,False,2018-03-10T04:01:13.167+00:00,True,False,,"telegram,api,client",6063,False,0.4.73
+Viktor Borisov,2018-02-03T06:22:59.52Z,41,76,This is a unofficial Telegram client api library,TelegramClientApi,False,2018-03-10T04:01:13.167+00:00,True,False,,"telegram,api,client",6063,False,0.4.72
+Viktor Borisov,2018-02-03T06:22:59.52Z,41,76,This is a unofficial Telegram client api library,TelegramClientApi,False,2018-03-10T04:01:13.167+00:00,True,False,,"telegram,api,client",6063,False,0.4.72
+PNNL-Comp-Mass-Spec,2018-02-03T06:21:35.08Z,9,76,Library of functions used by software applications that automate tasks in the Proteomics Research Information and Management System (PRISM) at Pacific Northwest National Laboratory.,PRISM-Library,False,2018-04-11T00:38:45.493+00:00,True,False,,,5901,False,2.4.60
+PNNL-Comp-Mass-Spec,2018-02-03T06:21:35.08Z,9,76,Library of functions used by software applications that automate tasks in the Proteomics Research Information and Management System (PRISM) at Pacific Northwest National Laboratory.,PRISM-Library,False,2018-04-11T00:38:45.493+00:00,True,False,,,5901,False,2.4.60
+AleXiao,2018-02-03T06:04:15.75Z,71,76,Awaken.Utils.Widgets,Awaken.Utils.Widgets,False,2018-02-08T16:08:44.7+00:00,True,False,,,765,False,1.1.1
+AleXiao,2018-02-03T06:04:15.75Z,71,76,Awaken.Utils.Widgets,Awaken.Utils.Widgets,False,2018-02-08T16:08:44.7+00:00,True,False,,,765,False,1.1.1
+Alexi,2018-01-16T16:40:23.3Z,71,94,插件工具集合,Awaken.Utils.Widgets,False,2018-02-08T16:08:44.7+00:00,True,False,,,765,False,1.1.0
+Sergii Semenov,2018-02-03T05:54:17.56Z,43209,76,Dynamically builds proxy types at runtime (see examples on the GitHub page).,Dasync.Proxy,False,1900-01-01T00:00:00+00:00,False,False,Dynamically builds proxy types at runtime.,"dasync,proxy,stub",-1,False,0.1.0
+Sergii Semenov,2018-02-03T05:54:17.56Z,43209,76,Dynamically builds proxy types at runtime (see examples on the GitHub page).,Dasync.Proxy,False,1900-01-01T00:00:00+00:00,False,False,Dynamically builds proxy types at runtime.,"dasync,proxy,stub",-1,False,0.1.0
+HomeImageProcessing,2018-02-03T05:41:40.057Z,76,76,Package Description,Prb.HomeImageProcessing,False,2018-02-03T06:47:44.363+00:00,True,False,,"image,video,processing",773,False,0.5.4
+HomeImageProcessing,2018-02-03T05:41:40.057Z,76,76,Package Description,Prb.HomeImageProcessing,False,2018-02-03T06:47:44.363+00:00,True,False,,"image,video,processing",773,False,0.5.4
+demystifyfp,2018-02-03T05:38:44.8Z,56,76,F# Libary for managing configuration data from environment variables and application config in a type-safe way,FsConfig,False,2018-02-23T13:04:57.107+00:00,True,False,F# Libary for managing configuration data from environment variables and application config in a type-safe way,"fsharp,config,typeshape,envvar,appconfig,environment-variables",399,False,0.0.2
+demystifyfp,2018-02-03T05:38:44.8Z,56,76,F# Libary for managing configuration data from environment variables and application config in a type-safe way,FsConfig,False,2018-02-23T13:04:57.107+00:00,True,False,F# Libary for managing configuration data from environment variables and application config in a type-safe way,"fsharp,config,typeshape,envvar,appconfig,environment-variables",399,False,0.0.2
+virtual,2018-02-03T05:31:24.913Z,53,76,通用.net类库Quartz定时任务,DotCommon.Quartz,False,2018-02-26T03:00:19.4+00:00,True,False,,,656,False,2.8.7
+virtual,2018-02-03T05:31:04.507Z,53,76,通用.net类库ProtoBuf扩展,DotCommon.ProtoBuf,False,2018-02-26T02:59:47.133+00:00,True,False,,,986,False,2.8.7
+virtual,2018-02-03T05:30:11.94Z,53,76,通用.net类库Log4Net日志,DotCommon.Log4Net,False,2018-02-26T02:59:19.897+00:00,True,False,,,1403,False,2.8.7
+virtual,2018-02-03T05:29:33.22Z,53,76,通用.net类库Json4Net序列化,DotCommon.Json4Net,False,2018-02-26T02:58:51.803+00:00,True,False,,,878,False,2.8.7
+virtual,2018-02-03T05:30:11.94Z,53,76,通用.net类库Log4Net日志,DotCommon.Log4Net,False,2018-02-26T02:59:19.897+00:00,True,False,,,1403,False,2.8.7
+virtual,2018-02-03T05:31:24.913Z,53,76,通用.net类库Quartz定时任务,DotCommon.Quartz,False,2018-02-26T03:00:19.4+00:00,True,False,,,656,False,2.8.7
+virtual,2018-02-03T05:31:04.507Z,53,76,通用.net类库ProtoBuf扩展,DotCommon.ProtoBuf,False,2018-02-26T02:59:47.133+00:00,True,False,,,986,False,2.8.7
+virtual,2018-02-03T05:29:33.22Z,53,76,通用.net类库Json4Net序列化,DotCommon.Json4Net,False,2018-02-26T02:58:51.803+00:00,True,False,,,878,False,2.8.7
+virtual,2018-02-03T05:28:28.5Z,53,76,"通用的.net类库,缓存操作",DotCommon.Caching,False,2018-02-26T02:58:02.223+00:00,True,False,,,970,False,2.8.7
+virtual,2018-02-03T05:29:04.737Z,53,76,通用.net类库CastleWindsor注入,DotCommon.CastleWindsor,False,2018-02-26T02:58:30.693+00:00,True,False,,,730,False,2.8.7
+virtual,2018-02-03T05:28:07.517Z,53,76,通用.net类库AutoMapper扩展,DotCommon.AutoMapper,False,2018-02-26T02:57:43.41+00:00,True,False,,,1008,False,2.8.7
+virtual,2018-02-03T05:29:04.737Z,53,76,通用.net类库CastleWindsor注入,DotCommon.CastleWindsor,False,2018-02-26T02:58:30.693+00:00,True,False,,,730,False,2.8.7
+virtual,2018-02-03T05:28:07.517Z,53,76,通用.net类库AutoMapper扩展,DotCommon.AutoMapper,False,2018-02-26T02:57:43.41+00:00,True,False,,,1008,False,2.8.7
+virtual,2018-02-03T05:26:12.497Z,53,76,通用.net类库Autofac注入,DotCommon.Autofac,False,2018-02-26T02:57:18.16+00:00,True,False,,,1844,False,2.8.7
+virtual,2018-02-03T05:23:36.18Z,53,76,通用的.net类库,DotCommon,False,2018-02-26T02:57:00.173+00:00,True,False,,,3014,False,2.8.7
+virtual,2018-02-03T05:26:12.497Z,53,76,通用.net类库Autofac注入,DotCommon.Autofac,False,2018-02-26T02:57:18.16+00:00,True,False,,,1844,False,2.8.7
+virtual,2018-02-03T05:23:36.18Z,53,76,通用的.net类库,DotCommon,False,2018-02-26T02:57:00.173+00:00,True,False,,,3014,False,2.8.7
+jjxtra,2018-02-03T05:19:12.827Z,15,76,"ExchangeSharp is a C# API for working with various exchanges for stocks and cryptocurrency. Binance, Bitfinex, Bithumb, Bitstamp, Bittrex, Gemini, GDAX, Kraken and Poloniex are supported.",DigitalRuby.ExchangeSharp,False,2018-04-05T19:05:24.563+00:00,True,False,,"C#,API,bitcoin,exchange,cryptocurrency,stock,trade,trader,coin,litecoin,ethereum,gdax,cash,poloniex,gemini,bitfinex,kraken,bittrex,binance,iota,mana,cardano,eos,cordana,ripple,xrp,tron,socket,web,websocket",3355,False,0.2.3
+jjxtra,2018-02-03T05:19:12.827Z,15,76,"ExchangeSharp is a C# API for working with various exchanges for stocks and cryptocurrency. Binance, Bitfinex, Bithumb, Bitstamp, Bittrex, Gemini, GDAX, Kraken and Poloniex are supported.",DigitalRuby.ExchangeSharp,False,2018-04-05T19:05:24.563+00:00,True,False,,"C#,API,bitcoin,exchange,cryptocurrency,stock,trade,trader,coin,litecoin,ethereum,gdax,cash,poloniex,gemini,bitfinex,kraken,bittrex,binance,iota,mana,cardano,eos,cordana,ripple,xrp,tron,socket,web,websocket",3355,False,0.2.3
+OCTGN,2018-02-03T05:15:39.18Z,8,76,Stand alone OCTGN game server. This process can support a single OCTGN game.,Octgn.Online.StandAloneServer,False,2018-04-12T03:23:07.273+00:00,True,False,,OCTGN,2964,False,3.2.60
+Kelly Elton,2018-02-03T05:15:52.383Z,8,76,Shared library for online access in OCTGN.,Octgn.Online,False,2018-04-12T03:23:18.447+00:00,True,False,,,2990,False,3.2.60
+Kelly Elton,2018-02-03T05:15:52.383Z,8,76,Shared library for online access in OCTGN.,Octgn.Online,False,2018-04-12T03:23:18.447+00:00,True,False,,,2990,False,3.2.60
+OCTGN,2018-02-03T05:15:39.18Z,8,76,Stand alone OCTGN game server. This process can support a single OCTGN game.,Octgn.Online.StandAloneServer,False,2018-04-12T03:23:07.273+00:00,True,False,,OCTGN,2964,False,3.2.60
+dmanning23,2018-02-03T04:54:05.11Z,47,76,A very simple particle engine for Monogame projects,ParticleBuddy,False,2018-03-04T05:13:53.91+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",2421,False,1.0.26
+dmanning23,2018-02-03T04:55:57.58Z,47,76,A very simple particle engine for Monogame projects,ParticleBuddy,False,2018-03-04T05:13:53.91+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",2421,False,1.0.27
+dmanning23,2018-02-03T04:55:57.58Z,47,76,A very simple particle engine for Monogame projects,ParticleBuddy,False,2018-03-04T05:13:53.91+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",2421,False,1.0.27
+dmanning23,2018-02-03T04:54:05.11Z,47,76,A very simple particle engine for Monogame projects,ParticleBuddy,False,2018-03-04T05:13:53.91+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",2421,False,1.0.26
+DuGu.Peefy,2018-02-03T04:44:52.2Z,2,76,A C# util library support .NET Framework2.0+ .NET Core2.0 .NET Standard2.0 and Xamarin.,ArkLight,False,2018-04-18T13:28:31.657+00:00,True,False,,"ArkLight,Util,Helper,.NET,Standard,Core,Xamarin,Framework2.0,Framework4.5",157,False,0.0.2
+DuGu.Peefy,2018-02-03T04:44:52.2Z,2,76,A C# util library support .NET Framework2.0+ .NET Core2.0 .NET Standard2.0 and Xamarin.,ArkLight,False,2018-04-18T13:28:31.657+00:00,True,False,,"ArkLight,Util,Helper,.NET,Standard,Core,Xamarin,Framework2.0,Framework4.5",157,False,0.0.2
+Ovan Crone,2018-02-03T04:43:43.48Z,4,76,Concurrency primitives such as Semaphores and mutexes build on REstate Machines.,REstate.Concurrency.Primitives,False,2018-04-16T23:06:53.347+00:00,True,False,,REstate,371,False,6.0.1
+Ovan Crone,2018-02-03T04:43:30.167Z,4,76,Entity Framework Core repository for REstate Machines and Schematics.,REstate.Engine.Repositories.EntityFrameworkCore,False,2018-04-16T23:06:52.313+00:00,True,False,,REstate,395,False,6.0.1
+Ovan Crone,2018-02-03T04:43:17.12Z,4,76,Redis storage provider for REstate's engine.,REstate.Engine.Repositories.Redis,False,2018-04-16T23:06:51.44+00:00,True,False,,REstate,826,False,6.0.1
+Ovan Crone,2018-02-03T04:43:03.277Z,4,76,Provides gRPC/HTTP2 interconnect support for REstate's engine in either client or server configuration.,REstate.Remote,False,2018-04-16T23:06:50.597+00:00,True,False,,REstate,769,False,6.0.1
+Ovan Crone,2018-02-03T04:43:43.48Z,4,76,Concurrency primitives such as Semaphores and mutexes build on REstate Machines.,REstate.Concurrency.Primitives,False,2018-04-16T23:06:53.347+00:00,True,False,,REstate,371,False,6.0.1
+Ovan Crone,2018-02-03T04:43:30.167Z,4,76,Entity Framework Core repository for REstate Machines and Schematics.,REstate.Engine.Repositories.EntityFrameworkCore,False,2018-04-16T23:06:52.313+00:00,True,False,,REstate,395,False,6.0.1
+Ovan Crone,2018-02-03T04:43:17.12Z,4,76,Redis storage provider for REstate's engine.,REstate.Engine.Repositories.Redis,False,2018-04-16T23:06:51.44+00:00,True,False,,REstate,826,False,6.0.1
+Ovan Crone,2018-02-03T04:43:03.277Z,4,76,Provides gRPC/HTTP2 interconnect support for REstate's engine in either client or server configuration.,REstate.Remote,False,2018-04-16T23:06:50.597+00:00,True,False,,REstate,769,False,6.0.1
+Ovan Crone,2018-02-03T04:42:46.417Z,4,76,"Create state-machines for complicated flows, in a serializable and pluggable system.",REstate,False,2018-04-16T23:06:49.597+00:00,True,False,,REstate,1360,False,6.0.1
+Ovan Crone,2018-02-03T04:42:46.417Z,4,76,"Create state-machines for complicated flows, in a serializable and pluggable system.",REstate,False,2018-04-16T23:06:49.597+00:00,True,False,,REstate,1360,False,6.0.1
+Obaidul Kabir Chowdhury,2018-02-03T04:28:54.077Z,72,76,Entity Find Repository,Prospectbd.Software.EFFindRepository,False,2018-02-07T11:52:21.47+00:00,True,False,,"Entity,Find,EF,EntityFraework,Repository",357,False,1.0.1
+hai.liu,2018-02-03T04:27:55.45Z,76,76,高效智能的映射工具，可达到无需任何配置即可映射，同时支持复杂绑定，智能化处理循环引用与映射的问题。,RobotMapper,False,2018-02-03T04:27:55.45+00:00,True,False,RobotMapper、Mapper、智能化映射工具,,1040,False,2.5.2
+dmanning23,2018-02-03T04:29:17.25Z,2,76,MonoGame library for menus and game state management,MenuBuddy,False,2018-04-18T21:17:00.663+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",11115,False,1.0.108
+hai.liu,2018-02-03T04:27:55.45Z,76,76,高效智能的映射工具，可达到无需任何配置即可映射，同时支持复杂绑定，智能化处理循环引用与映射的问题。,RobotMapper,False,2018-02-03T04:27:55.45+00:00,True,False,RobotMapper、Mapper、智能化映射工具,,1040,False,2.5.2
+dmanning23,2018-02-03T04:29:17.25Z,2,76,MonoGame library for menus and game state management,MenuBuddy,False,2018-04-18T21:17:00.663+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",11115,False,1.0.108
+Obaidul Kabir Chowdhury,2018-02-03T04:28:54.077Z,72,76,Entity Find Repository,Prospectbd.Software.EFFindRepository,False,2018-02-07T11:52:21.47+00:00,True,False,,"Entity,Find,EF,EntityFraework,Repository",357,False,1.0.1
+dmanning23,2018-02-03T04:18:16.307Z,76,76,"Some handy Monogame timer objects that can be used for time effects like hiererchical time, slowdown, speedup, hitpause, etc.",GameTimer,False,2018-02-03T04:18:16.307+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",828,False,1.0.8
+dmanning23,2018-02-03T04:18:16.307Z,76,76,"Some handy Monogame timer objects that can be used for time effects like hiererchical time, slowdown, speedup, hitpause, etc.",GameTimer,False,2018-02-03T04:18:16.307+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",828,False,1.0.8
+HSNXT.Extensions,2018-02-03T03:57:09.11Z,66,76,Yet another extension method library.,HSNXT.Extensions,False,2018-02-13T02:19:57.18+00:00,True,False,,,833,False,1.0.122
+Nabin Kakri Thapa,2018-02-03T03:57:14.44Z,1,76,Dot Net abstraction of javascript toastr to create toast notification on ASP.NET Core MVC Projects,NToastNotify,False,2018-04-20T06:48:54.293+00:00,True,False,,"ASP.NET,Core,MVC,toastr,toast,notification,server,side,rendered",8456,False,4.0.0
+David Driscoll,2018-02-03T03:56:11.75Z,11,76,Package Description,Rocket.Surgery.Extensions.Autofac,False,2018-04-09T01:14:33.19+00:00,True,False,,,1263,False,0.5.7
+David Driscoll,2018-02-03T03:56:33.437Z,11,76,Package Description,Rocket.Surgery.Extensions.DependencyInjection,False,2018-04-09T01:14:56.767+00:00,True,False,,,1294,False,0.5.7
+David Driscoll,2018-02-03T03:56:45.5Z,11,76,Package Description,Rocket.Surgery.Extensions.DependencyInjection.Abstractions,False,2018-04-09T01:15:08.313+00:00,True,False,,,1307,False,0.5.7
+David Driscoll,2018-02-03T03:56:21.983Z,11,76,Package Description,Rocket.Surgery.Extensions.Autofac.Abstractions,False,2018-04-09T01:14:45.237+00:00,True,False,,,1255,False,0.5.7
+Nabin Kakri Thapa,2018-02-03T03:57:14.44Z,1,76,Dot Net abstraction of javascript toastr to create toast notification on ASP.NET Core MVC Projects,NToastNotify,False,2018-04-20T06:48:54.293+00:00,True,False,,"ASP.NET,Core,MVC,toastr,toast,notification,server,side,rendered",8456,False,4.0.0
+HSNXT.Extensions,2018-02-03T03:57:09.11Z,66,76,Yet another extension method library.,HSNXT.Extensions,False,2018-02-13T02:19:57.18+00:00,True,False,,,833,False,1.0.122
+David Driscoll,2018-02-03T03:56:45.5Z,11,76,Package Description,Rocket.Surgery.Extensions.DependencyInjection.Abstractions,False,2018-04-09T01:15:08.313+00:00,True,False,,,1307,False,0.5.7
+David Driscoll,2018-02-03T03:56:11.75Z,11,76,Package Description,Rocket.Surgery.Extensions.Autofac,False,2018-04-09T01:14:33.19+00:00,True,False,,,1263,False,0.5.7
+David Driscoll,2018-02-03T03:56:33.437Z,11,76,Package Description,Rocket.Surgery.Extensions.DependencyInjection,False,2018-04-09T01:14:56.767+00:00,True,False,,,1294,False,0.5.7
+David Driscoll,2018-02-03T03:56:21.983Z,11,76,Package Description,Rocket.Surgery.Extensions.Autofac.Abstractions,False,2018-04-09T01:14:45.237+00:00,True,False,,,1255,False,0.5.7
+evolvedmicrobe,2018-02-03T03:53:01.37Z,76,76,A CSharp Parser for VCF Files,Bio.VCF.ajc,False,2018-02-03T03:53:01.37+00:00,True,False,,,684,False,0.0.55
+HomeImageProcessing,2018-02-03T03:52:01.537Z,76,76,Package Description,Prb.HomeImageProcessing,False,2018-02-03T06:47:44.363+00:00,True,False,,"image,video,processing",773,False,0.5.3
+HomeImageProcessing,2018-02-03T03:52:01.537Z,76,76,Package Description,Prb.HomeImageProcessing,False,2018-02-03T06:47:44.363+00:00,True,False,,"image,video,processing",773,False,0.5.3
+evolvedmicrobe,2018-02-03T03:53:01.37Z,76,76,A CSharp Parser for VCF Files,Bio.VCF.ajc,False,2018-02-03T03:53:01.37+00:00,True,False,,,684,False,0.0.55
+dmanning23,2018-02-03T03:48:16.39Z,21,76,MonoGame library for making little flashcard games,FlashCards,False,2018-03-30T22:05:05.15+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",2622,False,1.0.22
+dmanning23,2018-02-03T03:48:16.39Z,21,76,MonoGame library for making little flashcard games,FlashCards,False,2018-03-30T22:05:05.15+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",2622,False,1.0.22
+CapableObjects,2018-02-03T03:40:06Z,2,76,Descr,EcoWindowsStore,False,2018-04-18T02:42:38.66+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",141694,False,7.0.0.9824
+CapableObjects,2018-02-03T03:40:06Z,2,76,Descr,EcoWindowsStore,False,2018-04-18T02:42:38.66+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",141694,False,7.0.0.9824
+CapableObjects,2018-02-03T03:38:13.15Z,2,76,Descr,EcoWpf,False,2018-04-18T02:37:48.523+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",144767,False,7.0.0.9824
+CapableObjects,2018-02-03T03:38:31.387Z,2,76,Descr,EcoOtherDatabasePersistenceMappers,False,2018-04-18T02:38:04.54+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",144087,False,7.0.0.9824
+CapableObjects,2018-02-03T03:39:35.903Z,2,76,Descr,EcoWebProviders,False,2018-04-18T02:39:04.713+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",116695,False,7.0.0.9824
+CapableObjects,2018-02-03T03:39:50.483Z,2,76,Descr,EcoWebMVC,False,2018-04-18T02:42:21.33+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",116749,False,7.0.0.9824
+CapableObjects,2018-02-03T03:39:21.483Z,2,76,Descr,EcoWebASP,False,2018-04-18T02:38:50.37+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",118270,False,7.0.0.9824
+CapableObjects,2018-02-03T03:37:54.747Z,2,76,This contains the core assemblies - for different frameworks,EcoCore,False,2018-04-18T02:37:33.803+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",148111,False,7.0.0.9824
+CapableObjects,2018-02-03T03:39:05.137Z,2,76,Descr,EcoWindowsForms,False,2018-04-18T02:38:36.54+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",143192,False,7.0.0.9824
+CapableObjects,2018-02-03T03:38:48.48Z,2,76,Descr,EcoSqlServer,False,2018-04-18T02:38:20.023+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",145399,False,7.0.0.9824
+CapableObjects,2018-02-03T03:37:54.747Z,2,76,This contains the core assemblies - for different frameworks,EcoCore,False,2018-04-18T02:37:33.803+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",148111,False,7.0.0.9824
+CapableObjects,2018-02-03T03:38:31.387Z,2,76,Descr,EcoOtherDatabasePersistenceMappers,False,2018-04-18T02:38:04.54+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",144087,False,7.0.0.9824
+CapableObjects,2018-02-03T03:39:05.137Z,2,76,Descr,EcoWindowsForms,False,2018-04-18T02:38:36.54+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",143192,False,7.0.0.9824
+CapableObjects,2018-02-03T03:38:13.15Z,2,76,Descr,EcoWpf,False,2018-04-18T02:37:48.523+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",144767,False,7.0.0.9824
+CapableObjects,2018-02-03T03:39:35.903Z,2,76,Descr,EcoWebProviders,False,2018-04-18T02:39:04.713+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",116695,False,7.0.0.9824
+CapableObjects,2018-02-03T03:39:21.483Z,2,76,Descr,EcoWebASP,False,2018-04-18T02:38:50.37+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",118270,False,7.0.0.9824
+CapableObjects,2018-02-03T03:38:48.48Z,2,76,Descr,EcoSqlServer,False,2018-04-18T02:38:20.023+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",145399,False,7.0.0.9824
+CapableObjects,2018-02-03T03:39:50.483Z,2,76,Descr,EcoWebMVC,False,2018-04-18T02:42:21.33+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",116749,False,7.0.0.9824
+DSTLC-V.S.I.N,2018-02-03T03:25:04.5Z,76,76,Nature Remo APIを.NETから利用するためのライブラリです。,NatureRemoAPI,False,2018-02-03T03:25:04.5+00:00,True,False,,"Nature,Remo",129,False,1.0.0.1
+DSTLC-V.S.I.N,2018-02-03T03:25:04.5Z,76,76,Nature Remo APIを.NETから利用するためのライブラリです。,NatureRemoAPI,False,2018-02-03T03:25:04.5+00:00,True,False,,"Nature,Remo",129,False,1.0.0.1
+Microsoft,2018-02-03T03:17:45.893Z,76,76,testing project transfer,Grades,False,2018-02-03T03:17:45.893+00:00,True,False,,"Tag1,Tag2",65,False,1.0.0
+dmanning23,2018-02-03T03:17:03.16Z,2,76,MonoGame library for menus and game state management,MenuBuddy,False,2018-04-18T21:17:00.663+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",11115,False,1.0.107
+dmanning23,2018-02-03T03:17:03.16Z,2,76,MonoGame library for menus and game state management,MenuBuddy,False,2018-04-18T21:17:00.663+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",11115,False,1.0.107
+Microsoft,2018-02-03T03:17:45.893Z,76,76,testing project transfer,Grades,False,2018-02-03T03:17:45.893+00:00,True,False,,"Tag1,Tag2",65,False,1.0.0
+NL,2018-02-03T03:13:28.073Z,37,76,A collection of utilities in F#.,CLibNl,False,2018-03-14T01:43:46.363+00:00,True,False,,,1047,False,0.6.1
+NL,2018-02-03T03:13:28.073Z,37,76,A collection of utilities in F#.,CLibNl,False,2018-03-14T01:43:46.363+00:00,True,False,,,1047,False,0.6.1
+electricessence,2018-02-03T03:10:26.333Z,65,76,Extensions for method chaining Task<IEnumerable<T>>.  Directly map to synchronous System.Linq methods.,Open.Linq.AsyncExtensions,False,2018-02-14T07:40:02.577+00:00,True,False,,,272,False,1.0.0
+electricessence,2018-02-03T03:10:26.333Z,65,76,Extensions for method chaining Task<IEnumerable<T>>.  Directly map to synchronous System.Linq methods.,Open.Linq.AsyncExtensions,False,2018-02-14T07:40:02.577+00:00,True,False,,,272,False,1.0.0
+dmanning23,2018-02-03T03:08:04.55Z,2,76,MonoGame library for menus and game state management,MenuBuddy,False,2018-04-18T21:17:00.663+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",11115,False,1.0.106
+dmanning23,2018-02-03T03:08:04.55Z,2,76,MonoGame library for menus and game state management,MenuBuddy,False,2018-04-18T21:17:00.663+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",11115,False,1.0.106
+AtomIoc,2018-02-03T02:31:18.39Z,76,76,Package Description,AtomIoc,True,2018-02-03T02:31:18.39+00:00,True,False,,,56,False,1.0.0-RC1005
+AtomIoc.Register,2018-02-03T02:31:34.2Z,76,76,Package Description,AtomIoc.Register,True,2018-02-03T02:31:34.2+00:00,True,False,,,56,False,1.0.0-RC1005
+AtomIoc.Register,2018-02-03T02:31:34.2Z,76,76,Package Description,AtomIoc.Register,True,2018-02-03T02:31:34.2+00:00,True,False,,,56,False,1.0.0-RC1005
+AtomIoc,2018-02-03T02:31:18.39Z,76,76,Package Description,AtomIoc,True,2018-02-03T02:31:18.39+00:00,True,False,,,56,False,1.0.0-RC1005
+Venyo,2018-02-03T02:26:23.723Z,43209,76,JsonRpc.Net is a. NET implementation of the jsonrpc2.0 protocol.,JsonRpcNet,True,1900-01-01T00:00:00+00:00,False,False,,jsonrpc,-1,False,0.2.1-alpha
+OCTGN,2018-02-03T02:26:20.1Z,8,76,Stand alone OCTGN game server. This process can support a single OCTGN game.,Octgn.Online.StandAloneServer,False,2018-04-12T03:23:07.273+00:00,True,False,,OCTGN,2964,False,3.2.59
+Kelly Elton,2018-02-03T02:26:30.867Z,8,76,Shared library for online access in OCTGN.,Octgn.Online,False,2018-04-12T03:23:18.447+00:00,True,False,,,2990,False,3.2.59
+Kelly Elton,2018-02-03T02:26:30.867Z,8,76,Shared library for online access in OCTGN.,Octgn.Online,False,2018-04-12T03:23:18.447+00:00,True,False,,,2990,False,3.2.59
+OCTGN,2018-02-03T02:26:20.1Z,8,76,Stand alone OCTGN game server. This process can support a single OCTGN game.,Octgn.Online.StandAloneServer,False,2018-04-12T03:23:07.273+00:00,True,False,,OCTGN,2964,False,3.2.59
+Venyo,2018-02-03T02:26:23.723Z,43209,76,JsonRpc.Net is a. NET implementation of the jsonrpc2.0 protocol.,JsonRpcNet,True,1900-01-01T00:00:00+00:00,False,False,,jsonrpc,-1,False,0.2.1-alpha
+Venyo,2017-10-20T14:40:53.15Z,43209,182,JsonRpc.Net is a. NET implementation of the jsonrpc2.0 protocol.,JsonRpcNet,True,1900-01-01T00:00:00+00:00,False,False,,jsonrpc,-1,False,0.1.0-alpha
+Venyo,2018-01-13T09:28:14.08Z,43209,97,JsonRpc.Net is a. NET implementation of the jsonrpc2.0 protocol.,JsonRpcNet,True,1900-01-01T00:00:00+00:00,False,False,,jsonrpc,-1,False,0.2.0-alpha
+Igor.Gateway.Dtos,2018-02-03T02:17:01.757Z,1,76,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,4.0.0-prerelease941
+evolvedmicrobe,2018-02-03T02:16:44.49Z,76,76,A CSharp Parser for VCF Files,Bio.VCF.ajc,False,2018-02-03T03:53:01.37+00:00,True,False,,,684,False,0.0.54
+Igor.Gateway.Dtos,2018-02-03T02:17:01.757Z,1,76,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,4.0.0-prerelease941
+evolvedmicrobe,2018-02-03T02:16:44.49Z,76,76,A CSharp Parser for VCF Files,Bio.VCF.ajc,False,2018-02-03T03:53:01.37+00:00,True,False,,,684,False,0.0.54
+OCTGN,2018-02-03T01:54:02.417Z,69,76,OCTGN Communication integration with the Windows desktop,Octgn.Communication.WindowsDesktop,False,2018-02-10T16:37:33.693+00:00,True,False,,OCTGN,3171,False,2.0.76
+OCTGN,2018-02-03T01:54:02.417Z,69,76,OCTGN Communication integration with the Windows desktop,Octgn.Communication.WindowsDesktop,False,2018-02-10T16:37:33.693+00:00,True,False,,OCTGN,3171,False,2.0.76
+Octgn.Communication,2018-02-03T01:53:51.747Z,69,76,Core OCTGN Communication Library,Octgn.Communication,False,2018-02-10T16:37:22.63+00:00,True,False,,,3278,False,2.0.76
+Octgn.Communication,2018-02-03T01:53:51.747Z,69,76,Core OCTGN Communication Library,Octgn.Communication,False,2018-02-10T16:37:22.63+00:00,True,False,,,3278,False,2.0.76
+Kelly Elton,2018-02-03T01:42:38.583Z,8,76,Shared library for online access in OCTGN.,Octgn.Online,False,2018-04-12T03:23:18.447+00:00,True,False,,,2990,False,3.2.58
+OCTGN,2018-02-03T01:42:27.537Z,8,76,Stand alone OCTGN game server. This process can support a single OCTGN game.,Octgn.Online.StandAloneServer,False,2018-04-12T03:23:07.273+00:00,True,False,,OCTGN,2964,False,3.2.58
+OCTGN,2018-02-03T01:42:27.537Z,8,76,Stand alone OCTGN game server. This process can support a single OCTGN game.,Octgn.Online.StandAloneServer,False,2018-04-12T03:23:07.273+00:00,True,False,,OCTGN,2964,False,3.2.58
+Kelly Elton,2018-02-03T01:42:38.583Z,8,76,Shared library for online access in OCTGN.,Octgn.Online,False,2018-04-12T03:23:18.447+00:00,True,False,,,2990,False,3.2.58
+PNNL-Comp-Mass-Spec,2018-02-03T01:35:32.883Z,9,76,Library of functions used by software applications that automate tasks in the Proteomics Research Information and Management System (PRISM) at Pacific Northwest National Laboratory.,PRISM-Library,False,2018-04-11T00:38:45.493+00:00,True,False,,,5901,False,2.4.59
+buildguest,2018-02-03T01:37:26.81Z,1,76,Description,I2M.Client45.Test,False,2018-04-20T01:20:53.76+00:00,True,False,,,18777,False,2018.2.3.1
+Integrity Marketing Group,2018-02-03T01:37:39.763Z,1,76,I2M is Integrity's platform to create a highly scalable service orientated architecture,IntegrityMarketingGroup.I2M.Client,False,2018-04-20T01:20:55.62+00:00,True,False,,"I2M,Integrity,IntegrityMarketingGroup",20202,False,2018.2.3.1
+Integrity Marketing Group,2018-02-03T01:37:39.763Z,1,76,I2M is Integrity's platform to create a highly scalable service orientated architecture,IntegrityMarketingGroup.I2M.Client,False,2018-04-20T01:20:55.62+00:00,True,False,,"I2M,Integrity,IntegrityMarketingGroup",20202,False,2018.2.3.1
+PNNL-Comp-Mass-Spec,2018-02-03T01:35:32.883Z,9,76,Library of functions used by software applications that automate tasks in the Proteomics Research Information and Management System (PRISM) at Pacific Northwest National Laboratory.,PRISM-Library,False,2018-04-11T00:38:45.493+00:00,True,False,,,5901,False,2.4.59
+buildguest,2018-02-03T01:37:26.81Z,1,76,Description,I2M.Client45.Test,False,2018-04-20T01:20:53.76+00:00,True,False,,,18777,False,2018.2.3.1
+Kamran Fallah,2018-02-03T01:24:55.117Z,23,76,Repository pattern common usages.,KamiSama.Repositories,True,2018-03-28T04:40:41.667+00:00,True,False,,,348,False,1.0.0-alpha01
+Kamran Fallah,2018-02-03T01:25:32.76Z,76,76,Serialization helpers  for Json and XML,KamiSama.Extenders.Serialization,False,2018-02-03T01:25:32.76+00:00,True,False,,,163,False,1.0.1
+Microsoft,2018-02-03T01:25:24.353Z,28,76,Microsoft.Azure.Management.Gsm Library,Microsoft.Azure.Management.ManagementPartner,True,2018-03-23T22:45:19.24+00:00,True,False,,"ManagementPartner,ManagementPartner_2018-02-01",1686,True,1.0.0-preview
+Kamran Fallah,2018-02-03T01:25:14.227Z,23,76,"Useful extenders suchas ToBytes, ToHex, ...",KamiSama.Extenders,False,2018-03-28T15:52:09.51+00:00,True,False,,,222,False,1.0.1
+Kamran Fallah,2018-02-03T01:25:32.76Z,76,76,Serialization helpers  for Json and XML,KamiSama.Extenders.Serialization,False,2018-02-03T01:25:32.76+00:00,True,False,,,163,False,1.0.1
+Microsoft,2018-02-03T01:25:24.353Z,28,76,Microsoft.Azure.Management.Gsm Library,Microsoft.Azure.Management.ManagementPartner,True,2018-03-23T22:45:19.24+00:00,True,False,,"ManagementPartner,ManagementPartner_2018-02-01",1686,True,1.0.0-preview
+Kamran Fallah,2018-02-03T01:25:14.227Z,23,76,"Useful extenders suchas ToBytes, ToHex, ...",KamiSama.Extenders,False,2018-03-28T15:52:09.51+00:00,True,False,,,222,False,1.0.1
+Kamran Fallah,2018-02-03T01:24:55.117Z,23,76,Repository pattern common usages.,KamiSama.Repositories,True,2018-03-28T04:40:41.667+00:00,True,False,,,348,False,1.0.0-alpha01
+mbaccaro,2018-02-03T01:21:03.55Z,4,76,McApp,McApp,False,2018-04-16T18:00:49.033+00:00,True,False,,,718,False,1.0.1
+Kamran Fallah,2018-02-03T01:20:59.08Z,76,76,Ninject Wrapper with BindTo additional attribute.,KamiSama.Extenders.Ninject,False,2018-02-03T01:20:59.08+00:00,True,False,,,82,False,1.1.0
+Kamran Fallah,2018-02-03T01:20:59.08Z,76,76,Ninject Wrapper with BindTo additional attribute.,KamiSama.Extenders.Ninject,False,2018-02-03T01:20:59.08+00:00,True,False,,,82,False,1.1.0
+mbaccaro,2018-02-03T01:21:03.55Z,4,76,McApp,McApp,False,2018-04-16T18:00:49.033+00:00,True,False,,,718,False,1.0.1
+Isaac.Joy.Cn,2018-02-03T01:18:06.967Z,76,76,Package Description,LiteResquest,False,2018-02-03T01:18:06.967+00:00,True,False,,,46,False,1.0.0
+"Arnold Wang,Ingeniux Corporation",2018-02-03T01:13:22.3Z,1,76,Nuget Package for Ingeniux Dynamic Site Server Runtime API,Ingeniux_DSS_RTAPI,True,2018-04-19T19:56:06.677+00:00,True,False,,"ingeniux,dss,cms,runtime,api,dynamic,site,server",6259,False,10.1.10-prerelease
+"Arnold Wang,Ingeniux Corporation",2018-02-03T01:13:22.3Z,1,76,Nuget Package for Ingeniux Dynamic Site Server Runtime API,Ingeniux_DSS_RTAPI,True,2018-04-19T19:56:06.677+00:00,True,False,,"ingeniux,dss,cms,runtime,api,dynamic,site,server",6259,False,10.1.10-prerelease
+"Angelos Bousias,Laurens van den Berg",2018-02-03T01:11:05.797Z,43209,76,Package Description,ConsoleAppBase,True,1900-01-01T00:00:00+00:00,False,False,,,174,False,1.0.0-preview-01
+"Angelos Bousias,Laurens van den Berg",2018-02-03T01:11:05.797Z,43209,76,Package Description,ConsoleAppBase,True,1900-01-01T00:00:00+00:00,False,False,,,174,False,1.0.0-preview-01
+Kamran Fallah,2018-02-03T01:08:35.807Z,21,76,Agents for safe threading,KamiSama.Agents,True,2018-03-30T05:01:45.777+00:00,True,False,,,175,False,1.0.0-beta2
+Kamran Fallah,2018-02-03T01:08:35.807Z,21,76,Agents for safe threading,KamiSama.Agents,True,2018-03-30T05:01:45.777+00:00,True,False,,,175,False,1.0.0-beta2
+Gary Doublé,2017-11-18T23:17:24.96Z,76,153,"The superbly simple, thread safe object mapping library for .NET",NanoMapper,True,2018-02-03T12:00:46.147+00:00,False,False,,"thread-safe,object,mapping",367,False,1.0.0-rc2
+Gary Doublé,2017-11-18T22:16:35.757Z,76,153,"The superbly simple, thread safe object mapping library for .NET",NanoMapper,True,2018-02-03T12:00:46.147+00:00,False,False,,"thread-safe,object,mapper",367,False,1.0.0-rc1
+OCTGN,2018-02-03T00:53:40.503Z,8,76,Stand alone OCTGN game server. This process can support a single OCTGN game.,Octgn.Online.StandAloneServer,False,2018-04-12T03:23:07.273+00:00,True,False,,OCTGN,2964,False,3.2.57
+Kelly Elton,2018-02-03T00:53:52.673Z,8,76,Shared library for online access in OCTGN.,Octgn.Online,False,2018-04-12T03:23:18.447+00:00,True,False,,,2990,False,3.2.57
+OCTGN,2018-02-03T00:53:40.503Z,8,76,Stand alone OCTGN game server. This process can support a single OCTGN game.,Octgn.Online.StandAloneServer,False,2018-04-12T03:23:07.273+00:00,True,False,,OCTGN,2964,False,3.2.57
+Kelly Elton,2018-02-03T00:53:52.673Z,8,76,Shared library for online access in OCTGN.,Octgn.Online,False,2018-04-12T03:23:18.447+00:00,True,False,,,2990,False,3.2.57
+Lykke,2018-02-03T00:45:15.737Z,4,76,Client for Lykke.Service.FeeCalculator API,Lykke.Service.FeeCalculator.Client,False,2018-04-16T15:43:57.247+00:00,True,False,,Lykke,2143,False,1.1.0
+Wilson Vargas,2018-02-03T00:45:55.74Z,76,76,"Custom control for your Xamarin.Forms project to create a label as hyperlink. With this plugin you can show a label as a hyperlink for your websites, phone numbers and mails. Available for Android and iOs
+          Built against: 2.3.4.224",Plugins.Forms.HyperLinkControl,False,2018-02-03T00:45:55.74+00:00,True,False,Use a HyperLink in your Xamarin.Forms projects!,"xamarin,pcl,xam.pcl,android,xamarin.forms,ios,hyperlink,link,website",136,False,1.0.8
+Wilson Vargas,2018-02-03T00:45:55.74Z,76,76,"Custom control for your Xamarin.Forms project to create a label as hyperlink. With this plugin you can show a label as a hyperlink for your websites, phone numbers and mails. Available for Android and iOs
+          Built against: 2.3.4.224",Plugins.Forms.HyperLinkControl,False,2018-02-03T00:45:55.74+00:00,True,False,Use a HyperLink in your Xamarin.Forms projects!,"xamarin,pcl,xam.pcl,android,xamarin.forms,ios,hyperlink,link,website",136,False,1.0.8
+Lykke,2018-02-03T00:45:15.737Z,4,76,Client for Lykke.Service.FeeCalculator API,Lykke.Service.FeeCalculator.Client,False,2018-04-16T15:43:57.247+00:00,True,False,,Lykke,2143,False,1.1.0
+Gary Doublé,2018-02-03T00:40:27.993Z,76,76,"A superbly simple, object-to-object mapping library for .NET",NanoMapper,False,2018-02-03T12:00:46.147+00:00,True,False,,"nanomapper,object,mapper,cloner",367,False,1.0.1
+Gary Doublé,2018-02-03T00:40:27.993Z,76,76,"A superbly simple, object-to-object mapping library for .NET",NanoMapper,False,2018-02-03T12:00:46.147+00:00,True,False,,"nanomapper,object,mapper,cloner",367,False,1.0.1
+Sebastien Ros,2018-02-03T00:29:30.567Z,57,76,Package Description,YesSql.Provider.SqlServer,True,2018-02-22T22:39:59.13+00:00,True,False,,,20951,False,1.0.0-beta-1182
+Sebastien Ros,2018-02-03T00:29:20.113Z,57,76,Package Description,YesSql.Provider.Sqlite,True,2018-02-22T22:39:48.1+00:00,True,False,,,20887,False,1.0.0-beta-1182
+Sebastien Ros,2018-02-03T00:29:30.567Z,57,76,Package Description,YesSql.Provider.SqlServer,True,2018-02-22T22:39:59.13+00:00,True,False,,,20951,False,1.0.0-beta-1182
+Sebastien Ros,2018-02-03T00:29:20.113Z,57,76,Package Description,YesSql.Provider.Sqlite,True,2018-02-22T22:39:48.1+00:00,True,False,,,20887,False,1.0.0-beta-1182
+Sebastien Ros,2018-02-03T00:28:35.97Z,57,76,Package Description,YesSql.Core,True,2018-02-22T22:39:03.143+00:00,True,False,,,51418,False,2.0.0-beta-1182
+Sebastien Ros,2018-02-03T00:28:25.113Z,57,76,Package Description,YesSql.Abstractions,True,2018-02-22T22:38:51.44+00:00,True,False,,,22857,False,2.0.0-beta-1182
+Sebastien Ros,2018-02-03T00:29:09.317Z,57,76,Package Description,YesSql.Provider.PostgreSql,True,2018-02-22T22:39:37.38+00:00,True,False,,,20816,False,1.0.0-beta-1182
+Sebastien Ros,2018-02-03T00:28:48.393Z,57,76,Package Description,YesSql.Provider.Common,True,2018-02-22T22:39:14.16+00:00,True,False,,,20409,False,1.0.0-beta-1182
+Sebastien Ros,2018-02-03T00:28:58.863Z,57,76,Package Description,YesSql.Provider.MySql,True,2018-02-22T22:39:25.287+00:00,True,False,,,20896,False,1.0.0-beta-1182
+Sebastien Ros,2018-02-03T00:29:09.317Z,57,76,Package Description,YesSql.Provider.PostgreSql,True,2018-02-22T22:39:37.38+00:00,True,False,,,20816,False,1.0.0-beta-1182
+Sebastien Ros,2018-02-03T00:28:58.863Z,57,76,Package Description,YesSql.Provider.MySql,True,2018-02-22T22:39:25.287+00:00,True,False,,,20896,False,1.0.0-beta-1182
+Sebastien Ros,2018-02-03T00:28:48.393Z,57,76,Package Description,YesSql.Provider.Common,True,2018-02-22T22:39:14.16+00:00,True,False,,,20409,False,1.0.0-beta-1182
+Sebastien Ros,2018-02-03T00:28:25.113Z,57,76,Package Description,YesSql.Abstractions,True,2018-02-22T22:38:51.44+00:00,True,False,,,22857,False,2.0.0-beta-1182
+Sebastien Ros,2018-02-03T00:28:35.97Z,57,76,Package Description,YesSql.Core,True,2018-02-22T22:39:03.143+00:00,True,False,,,51418,False,2.0.0-beta-1182
+Microsoft,2018-02-03T00:21:44.46Z,10,76,A PowerShell module that leverages the Windows Store Submission API to allow easy automation of application submissions to the Windows Store.,Microsoft.Windows.StoreBroker,False,2018-04-10T19:51:19.73+00:00,True,False,,"microsoft,windows,store,broker,storebroker,submission,api,powershell,posh,module",4128,True,1.14.1
+Microsoft,2018-02-03T00:21:44.46Z,10,76,A PowerShell module that leverages the Windows Store Submission API to allow easy automation of application submissions to the Windows Store.,Microsoft.Windows.StoreBroker,False,2018-04-10T19:51:19.73+00:00,True,False,,"microsoft,windows,store,broker,storebroker,submission,api,powershell,posh,module",4128,True,1.14.1
+HSNXT.Extensions,2018-02-03T00:18:44.14Z,66,76,Yet another extension method library.,HSNXT.Extensions,False,2018-02-13T02:19:57.18+00:00,True,False,,,833,False,1.0.120
+HSNXT.Extensions,2018-02-03T00:18:44.14Z,66,76,Yet another extension method library.,HSNXT.Extensions,False,2018-02-13T02:19:57.18+00:00,True,False,,,833,False,1.0.120
+Sebastien Ros,2018-02-03T00:10:32.923Z,57,76,Package Description,YesSql.Provider.SqlServer,True,2018-02-22T22:39:59.13+00:00,True,False,,,20951,False,1.0.0-beta-1179
+Sebastien Ros,2018-02-03T00:10:11.957Z,57,76,Package Description,YesSql.Provider.PostgreSql,True,2018-02-22T22:39:37.38+00:00,True,False,,,20816,False,1.0.0-beta-1179
+Sebastien Ros,2018-02-03T00:10:00.783Z,57,76,Package Description,YesSql.Provider.MySql,True,2018-02-22T22:39:25.287+00:00,True,False,,,20896,False,1.0.0-beta-1179
+James Crow,2018-02-03T00:09:08.97Z,76,76,Package Description,OpenDSRIP.Shared.Abstractions,False,2018-02-03T00:09:08.97+00:00,True,False,,,470,False,1.0.6
+Sebastien Ros,2018-02-03T00:09:50.11Z,57,76,Package Description,YesSql.Provider.Common,True,2018-02-22T22:39:14.16+00:00,True,False,,,20409,False,1.0.0-beta-1179
+Sebastien Ros,2018-02-03T00:09:29.877Z,57,76,Package Description,YesSql.Abstractions,True,2018-02-22T22:38:51.44+00:00,True,False,,,22857,False,2.0.0-beta-1179
+Sebastien Ros,2018-02-03T00:09:39.58Z,57,76,Package Description,YesSql.Core,True,2018-02-22T22:39:03.143+00:00,True,False,,,51418,False,2.0.0-beta-1179
+Sebastien Ros,2018-02-03T00:10:22.847Z,57,76,Package Description,YesSql.Provider.Sqlite,True,2018-02-22T22:39:48.1+00:00,True,False,,,20887,False,1.0.0-beta-1179
+Sebastien Ros,2018-02-03T00:10:22.847Z,57,76,Package Description,YesSql.Provider.Sqlite,True,2018-02-22T22:39:48.1+00:00,True,False,,,20887,False,1.0.0-beta-1179
+Sebastien Ros,2018-02-03T00:09:50.11Z,57,76,Package Description,YesSql.Provider.Common,True,2018-02-22T22:39:14.16+00:00,True,False,,,20409,False,1.0.0-beta-1179
+Sebastien Ros,2018-02-03T00:10:00.783Z,57,76,Package Description,YesSql.Provider.MySql,True,2018-02-22T22:39:25.287+00:00,True,False,,,20896,False,1.0.0-beta-1179
+Sebastien Ros,2018-02-03T00:09:29.877Z,57,76,Package Description,YesSql.Abstractions,True,2018-02-22T22:38:51.44+00:00,True,False,,,22857,False,2.0.0-beta-1179
+James Crow,2018-02-03T00:09:08.97Z,76,76,Package Description,OpenDSRIP.Shared.Abstractions,False,2018-02-03T00:09:08.97+00:00,True,False,,,470,False,1.0.6
+Sebastien Ros,2018-02-03T00:09:39.58Z,57,76,Package Description,YesSql.Core,True,2018-02-22T22:39:03.143+00:00,True,False,,,51418,False,2.0.0-beta-1179
+Sebastien Ros,2018-02-03T00:10:32.923Z,57,76,Package Description,YesSql.Provider.SqlServer,True,2018-02-22T22:39:59.13+00:00,True,False,,,20951,False,1.0.0-beta-1179
+Sebastien Ros,2018-02-03T00:10:11.957Z,57,76,Package Description,YesSql.Provider.PostgreSql,True,2018-02-22T22:39:37.38+00:00,True,False,,,20816,False,1.0.0-beta-1179
+Stéphane Dufour,2018-02-03T00:08:19.593Z,1,76,Service de base de la plateforme MakeSens,MakeSensFrameworkCoreServices,False,2018-04-19T11:17:43.823+00:00,True,False,"Permet d'utiliser des services local MakeSens
+      - Sécurité applicative
+      - Réservation (gestion concurrence)
+      - Journalisation
+      - Config
+      - Core Service
+      - Dynamic
+
+      Facilite l'utilisation de MakeSens
+
+      Dépendent de MakeSens Core","GBSens,MakeSens,Core,Presenter,Web,HTML",10403,False,2018.2.3.1
+James Crow,2018-02-03T00:07:02.23Z,76,76,Package Description,OpenDSRIP.Shared.Services,False,2018-02-03T00:07:02.23+00:00,True,False,,,936,False,0.8.11
+Stéphane Dufour,2018-02-03T00:08:31.25Z,1,76,"ACCÉLÉRER LES DÉVELOPPEMENTS
+      NORMALISER LES DÉVELOPPEMENTS
+      AUGMENTER LA ROBUSTESSE DES APPLICATIONS
+      AMÉLIORER LA MAINTENANCE DES APPLICATIONS",MakeSensFrameworkPresenter,False,2018-04-19T11:17:56.433+00:00,True,False,"Permet de créer une logique de présentation abstraite aux différents patterns et technologie d'interfaces utilisateurs.
+
+      Dépendent de MakeSens Core","GBSens,MakeSens,Core,Presenter,MVC,MVP,MVVM,Communication,TCP,Form,Web",13813,False,2018.2.3.1
+OpenDSRIP.Shared.Clients,2018-02-03T00:08:05.64Z,76,76,Package Description,OpenDSRIP.Shared.Clients,False,2018-02-03T00:08:05.64+00:00,True,False,,,351,False,0.7.7
+Stéphane Dufour,2018-02-03T00:08:07.577Z,1,76,"ACCÉLÉRER LES DÉVELOPPEMENTS
+      NORMALISER LES DÉVELOPPEMENTS
+      AUGMENTER LA ROBUSTESSE DES APPLICATIONS
+      AMÉLIORER LA MAINTENANCE DES APPLICATIONS",MakeSensFramework,False,2018-04-19T11:17:30.01+00:00,True,False,MakeSens est un framework de développement .NET qui augmente l'efficacité du développement logiciel.,"GBSens,MakeSens,Core,Presenter,MVC,MVP,MVVM,Communication,TCP,Form,Web",18615,False,2018.2.3.1
+Stéphane Dufour,2018-02-03T00:08:19.593Z,1,76,Service de base de la plateforme MakeSens,MakeSensFrameworkCoreServices,False,2018-04-19T11:17:43.823+00:00,True,False,"Permet d'utiliser des services local MakeSens
+      - Sécurité applicative
+      - Réservation (gestion concurrence)
+      - Journalisation
+      - Config
+      - Core Service
+      - Dynamic
+
+      Facilite l'utilisation de MakeSens
+
+      Dépendent de MakeSens Core","GBSens,MakeSens,Core,Presenter,Web,HTML",10403,False,2018.2.3.1
+Stéphane Dufour,2018-02-03T00:08:07.577Z,1,76,"ACCÉLÉRER LES DÉVELOPPEMENTS
+      NORMALISER LES DÉVELOPPEMENTS
+      AUGMENTER LA ROBUSTESSE DES APPLICATIONS
+      AMÉLIORER LA MAINTENANCE DES APPLICATIONS",MakeSensFramework,False,2018-04-19T11:17:30.01+00:00,True,False,MakeSens est un framework de développement .NET qui augmente l'efficacité du développement logiciel.,"GBSens,MakeSens,Core,Presenter,MVC,MVP,MVVM,Communication,TCP,Form,Web",18615,False,2018.2.3.1
+James Crow,2018-02-03T00:07:02.23Z,76,76,Package Description,OpenDSRIP.Shared.Services,False,2018-02-03T00:07:02.23+00:00,True,False,,,936,False,0.8.11
+Stéphane Dufour,2018-02-03T00:08:31.25Z,1,76,"ACCÉLÉRER LES DÉVELOPPEMENTS
+      NORMALISER LES DÉVELOPPEMENTS
+      AUGMENTER LA ROBUSTESSE DES APPLICATIONS
+      AMÉLIORER LA MAINTENANCE DES APPLICATIONS",MakeSensFrameworkPresenter,False,2018-04-19T11:17:56.433+00:00,True,False,"Permet de créer une logique de présentation abstraite aux différents patterns et technologie d'interfaces utilisateurs.
+
+      Dépendent de MakeSens Core","GBSens,MakeSens,Core,Presenter,MVC,MVP,MVVM,Communication,TCP,Form,Web",13813,False,2018.2.3.1
+OpenDSRIP.Shared.Clients,2018-02-03T00:08:05.64Z,76,76,Package Description,OpenDSRIP.Shared.Clients,False,2018-02-03T00:08:05.64+00:00,True,False,,,351,False,0.7.7
+OpenDSRIP.Shared.Utilities,2018-02-03T00:05:30.353Z,76,76,Package Description,OpenDSRIP.Shared.Utilities,False,2018-02-03T00:05:30.353+00:00,True,False,,,426,False,0.7.5
+OpenDSRIP.Shared.Utilities,2018-02-03T00:05:30.353Z,76,76,Package Description,OpenDSRIP.Shared.Utilities,False,2018-02-03T00:05:30.353+00:00,True,False,,,426,False,0.7.5
+klisitsyn,2018-02-02T20:39:34.32Z,77,77,Microsoft.ReportViewer.WinForms and Common DLLs (may not be installed with VS),AAS.Microsoft.ReportViewer,False,2018-02-02T21:32:19.05+00:00,False,False,,,185,False,12.0.0
+Sergio Pedri,2018-02-02T23:48:00.433Z,71,77,"A complete, ligthweight and self-contained .NET Standard 2.0 offline exception logging library, powered by Realm",BigWatson,False,2018-02-08T14:08:10.27+00:00,True,False,,"csharp,netstandard,realm,exception,report,debug,coding,test,log",700,False,1.1.0
+Sergio Pedri,2018-02-02T23:48:00.433Z,71,77,"A complete, ligthweight and self-contained .NET Standard 2.0 offline exception logging library, powered by Realm",BigWatson,False,2018-02-08T14:08:10.27+00:00,True,False,,"csharp,netstandard,realm,exception,report,debug,coding,test,log",700,False,1.1.0
+Sam Bloomberg,2018-02-02T23:37:55.48Z,77,77,"Spin is a simple library for dialogue trees designed for use with games. It includes a human-readable file format for writing dialogue, and an extendable interpreter for executing them.",xbloom.Spin,True,2018-02-02T23:37:55.48+00:00,True,False,,"dialogue,gamedev",536,False,0.1.1-beta7
+Sam Bloomberg,2018-02-02T23:37:55.48Z,77,77,"Spin is a simple library for dialogue trees designed for use with games. It includes a human-readable file format for writing dialogue, and an extendable interpreter for executing them.",xbloom.Spin,True,2018-02-02T23:37:55.48+00:00,True,False,,"dialogue,gamedev",536,False,0.1.1-beta7
+OCTGN,2018-02-02T23:33:47.6Z,8,77,Stand alone OCTGN game server. This process can support a single OCTGN game.,Octgn.Online.StandAloneServer,False,2018-04-12T03:23:07.273+00:00,True,False,,OCTGN,2964,False,3.2.56
+Kelly Elton,2018-02-02T23:33:57.74Z,8,77,Shared library for online access in OCTGN.,Octgn.Online,False,2018-04-12T03:23:18.447+00:00,True,False,,,2990,False,3.2.56
+Kelly Elton,2018-02-02T23:33:57.74Z,8,77,Shared library for online access in OCTGN.,Octgn.Online,False,2018-04-12T03:23:18.447+00:00,True,False,,,2990,False,3.2.56
+OCTGN,2018-02-02T23:33:47.6Z,8,77,Stand alone OCTGN game server. This process can support a single OCTGN game.,Octgn.Online.StandAloneServer,False,2018-04-12T03:23:07.273+00:00,True,False,,OCTGN,2964,False,3.2.56
+Cody Schrank,2018-02-02T23:31:45.19Z,7,77,Converts C# DTOs to Typescript using MSBUILD Tasks.,MTT,False,2018-04-13T21:55:42.727+00:00,True,False,,,1453,False,0.1.1
+Lykke,2018-02-02T23:31:58.08Z,3,77,Lykke common tools and utilities,Lykke.Common,False,2018-04-17T11:41:11.223+00:00,True,False,,"Lykke,Common",23008,False,4.4.0
+Cody Schrank,2018-02-02T23:31:45.19Z,7,77,Converts C# DTOs to Typescript using MSBUILD Tasks.,MTT,False,2018-04-13T21:55:42.727+00:00,True,False,,,1453,False,0.1.1
+Lykke,2018-02-02T23:31:58.08Z,3,77,Lykke common tools and utilities,Lykke.Common,False,2018-04-17T11:41:11.223+00:00,True,False,,"Lykke,Common",23008,False,4.4.0
+McApp,2018-02-02T23:27:52.2Z,4,77,McApp,McApp,False,2018-04-16T18:00:49.033+00:00,False,False,,,718,False,1.0.0
+McApp,2018-02-02T23:27:52.2Z,4,77,McApp,McApp,False,2018-04-16T18:00:49.033+00:00,False,False,,,718,False,1.0.0
+LEI Hongfaan,2018-01-27T19:45:10.99Z,44,83,UltimateOrb Base Class Library.,UltimateOrb.Core,False,2018-03-07T17:14:44.47+00:00,False,False,,"UltimateOrb,Core,BCL,ref",1487,False,1.4.0.1
+the humans of HUMANiT,2018-02-02T23:23:17.613Z,19,77,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,True,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.4.0-preview
+the humans of HUMANiT,2018-02-02T23:23:17.613Z,19,77,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,True,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.4.0-preview
+Richie Lee,2018-02-02T23:22:06.52Z,22,77,Migrate Azure SQL Data Warehouse Objects from a source database to a target database.,SQLDWSchemaMigrate,True,2018-03-29T08:37:25.16+00:00,True,False,,,838,False,0.0.0.2819-beta
+Richie Lee,2018-02-02T23:22:06.52Z,22,77,Migrate Azure SQL Data Warehouse Objects from a source database to a target database.,SQLDWSchemaMigrate,True,2018-03-29T08:37:25.16+00:00,True,False,,,838,False,0.0.0.2819-beta
+Inverted Tomato,2018-02-02T23:16:07.387Z,77,77,"Library for compressing integers in the minimal number of bits. Includes VLQ, Elias Omega, Elias Gamma, Elias Delta, Fibonacci and others.",InvertedTomato.IntegerCompression,False,2018-02-02T23:16:07.387+00:00,True,False,,"Compression,VLQ,Elias,Omega,Gamma,Delta,Fibonacci,Integer,Numbers",2284,False,1.2.3
+Inverted Tomato,2018-02-02T23:16:07.387Z,77,77,"Library for compressing integers in the minimal number of bits. Includes VLQ, Elias Omega, Elias Gamma, Elias Delta, Fibonacci and others.",InvertedTomato.IntegerCompression,False,2018-02-02T23:16:07.387+00:00,True,False,,"Compression,VLQ,Elias,Omega,Gamma,Delta,Fibonacci,Integer,Numbers",2284,False,1.2.3
+James Crow,2018-02-02T23:16:01.12Z,76,77,Package Description,OpenDSRIP.Shared.Services,False,2018-02-03T00:07:02.23+00:00,True,False,,,936,False,0.8.10
+James Crow,2018-02-02T23:16:01.12Z,76,77,Package Description,OpenDSRIP.Shared.Services,False,2018-02-03T00:07:02.23+00:00,True,False,,,936,False,0.8.10
+Anders Busted-Janum,2018-02-02T23:04:11.383Z,61,77,Client library for using the RipplesMQ Message Broker Server,Grumpy.RipplesMQ.Client,False,2018-02-18T08:31:30.943+00:00,True,False,"This library makes it easy to use the RipplesMQ Message Broker, both for setting up handlers in services and for using the message broker to publish messages or call requests.","ripplesmq,ripplesmq-client,message-broker,message-queue,message-bus,client-lib,api,msmq",3115,False,1.2.15
+Anders Busted-Janum,2018-02-02T23:02:55.697Z,58,77,RipplesMQ Message Broker Server,Grumpy.RipplesMQ.Server,False,2018-02-21T14:03:18.59+00:00,True,False,"RipplesMQ is a simple Message Broker, this library contain the server part, use Grumpy.RipplesMQ.Client to build services using RipplesMQ Server.","ripplesmq,ripplesmq-client,configuration",3384,False,1.1.27
+evolvedmicrobe,2018-02-02T23:05:47.153Z,76,77,A CSharp Parser for VCF Files,Bio.VCF.ajc,False,2018-02-03T03:53:01.37+00:00,True,False,,,684,False,0.0.53
+"NeoSmart Technologies,Mahmoud Al-Qudsi",2018-02-02T23:04:35.557Z,77,77,A standards-compliant implementation of url-safe base64 encode/decode for .NET projects.,UrlBase64,False,2018-02-02T23:04:35.557+00:00,True,False,,"url,web,base64,encoding,binary",1800,False,0.1.2
+Anders Busted-Janum,2018-02-02T23:04:11.383Z,61,77,Client library for using the RipplesMQ Message Broker Server,Grumpy.RipplesMQ.Client,False,2018-02-18T08:31:30.943+00:00,True,False,"This library makes it easy to use the RipplesMQ Message Broker, both for setting up handlers in services and for using the message broker to publish messages or call requests.","ripplesmq,ripplesmq-client,message-broker,message-queue,message-bus,client-lib,api,msmq",3115,False,1.2.15
+"NeoSmart Technologies,Mahmoud Al-Qudsi",2018-02-02T23:04:35.557Z,77,77,A standards-compliant implementation of url-safe base64 encode/decode for .NET projects.,UrlBase64,False,2018-02-02T23:04:35.557+00:00,True,False,,"url,web,base64,encoding,binary",1800,False,0.1.2
+evolvedmicrobe,2018-02-02T23:05:47.153Z,76,77,A CSharp Parser for VCF Files,Bio.VCF.ajc,False,2018-02-03T03:53:01.37+00:00,True,False,,,684,False,0.0.53
+Cody Schrank,2018-02-02T23:03:53.523Z,7,77,Converts C# DTOs to Typescript using MSBUILD Tasks.  Not being actively maintained.,MTT,False,2018-04-13T21:55:42.727+00:00,True,False,,,1453,False,0.1.0
+Ivo Tadic,2018-02-02T23:00:56.693Z,66,77,Package Description,Spirent.Gateway.API.Client,False,2018-02-13T12:58:01.807+00:00,True,False,,,6370,False,1.0.112.180202
+OCTGN,2018-02-02T22:58:48.41Z,69,77,OCTGN Communication integration with the Windows desktop,Octgn.Communication.WindowsDesktop,False,2018-02-10T16:37:33.693+00:00,True,False,,OCTGN,3171,False,2.0.75
+Octgn.Communication,2018-02-02T22:58:36.283Z,69,77,Core OCTGN Communication Library,Octgn.Communication,False,2018-02-10T16:37:22.63+00:00,True,False,,,3278,False,2.0.75
+OCTGN,2018-02-02T22:58:48.41Z,69,77,OCTGN Communication integration with the Windows desktop,Octgn.Communication.WindowsDesktop,False,2018-02-10T16:37:33.693+00:00,True,False,,OCTGN,3171,False,2.0.75
+Octgn.Communication,2018-02-02T22:58:36.283Z,69,77,Core OCTGN Communication Library,Octgn.Communication,False,2018-02-10T16:37:22.63+00:00,True,False,,,3278,False,2.0.75
+Ivo Tadic,2018-02-02T22:53:53.527Z,66,77,Package Description,Spirent.Gateway.API.Client,False,2018-02-13T12:58:01.807+00:00,True,False,,,6370,False,1.0.111.180202
+Sebastian Fuhrhop,2018-02-02T22:56:28.703Z,77,77,Clean Architecture Adaption in C#,Felandil.CleanArchitecture,False,2018-02-02T22:56:28.703+00:00,True,False,,"clean,architecture",86,False,1.0.0
+Sebastian Fuhrhop,2018-02-02T22:56:28.703Z,77,77,Clean Architecture Adaption in C#,Felandil.CleanArchitecture,False,2018-02-02T22:56:28.703+00:00,True,False,,"clean,architecture",86,False,1.0.0
+Ivo Tadic,2018-02-02T22:53:53.527Z,66,77,Package Description,Spirent.Gateway.API.Client,False,2018-02-13T12:58:01.807+00:00,True,False,,,6370,False,1.0.111.180202
+appveyor,2018-02-02T22:50:05.037Z,58,77,Description,Splitio.TestSupport,True,2018-02-21T23:24:33.62+00:00,True,False,,,1270,False,3.3.4-rc27
+InvertedTomato,2018-02-02T22:50:32.553Z,75,77,"No-nonsense, high performance pub-sub for distributing time-critical data over UDP.",InvertedTomato.Zeta.Udp,False,2018-02-04T06:21:28.447+00:00,True,False,,"pubsub,udp,socket,performance",133,False,1.2.3
+Emby Team,2018-02-02T22:52:07.447Z,6,77,Contains common model objects and interfaces used by all Emby solutions.,MediaBrowser.Common,True,2018-04-14T14:59:42.14+00:00,True,False,,,144351,False,3.3.24-beta
+Emby Team,2018-02-02T22:52:04.977Z,6,77,Contains core components required to build plugins for Emby Server.,MediaBrowser.Server.Core,True,2018-04-14T14:59:39.967+00:00,True,False,,,138327,False,3.3.24-beta
+appveyor,2018-02-02T22:49:53.957Z,58,77,Description,Splitio.Redis,True,2018-02-21T23:24:21.637+00:00,True,False,,,1463,False,3.3.4-rc27
+appveyor,2018-02-02T22:49:53.957Z,58,77,Description,Splitio.Redis,True,2018-02-21T23:24:21.637+00:00,True,False,,,1463,False,3.3.4-rc27
+Emby Team,2018-02-02T22:52:07.447Z,6,77,Contains common model objects and interfaces used by all Emby solutions.,MediaBrowser.Common,True,2018-04-14T14:59:42.14+00:00,True,False,,,144351,False,3.3.24-beta
+InvertedTomato,2018-02-02T22:50:32.553Z,75,77,"No-nonsense, high performance pub-sub for distributing time-critical data over UDP.",InvertedTomato.Zeta.Udp,False,2018-02-04T06:21:28.447+00:00,True,False,,"pubsub,udp,socket,performance",133,False,1.2.3
+Emby Team,2018-02-02T22:52:04.977Z,6,77,Contains core components required to build plugins for Emby Server.,MediaBrowser.Server.Core,True,2018-04-14T14:59:39.967+00:00,True,False,,,138327,False,3.3.24-beta
+appveyor,2018-02-02T22:50:05.037Z,58,77,Description,Splitio.TestSupport,True,2018-02-21T23:24:33.62+00:00,True,False,,,1270,False,3.3.4-rc27
+appveyor,2018-02-02T22:49:42.41Z,58,77,Description,Splitio,True,2018-02-21T23:24:08.98+00:00,True,False,,,18445,False,3.3.4-rc27
+Microsoft,2018-02-02T22:47:40.5Z,1,77,Common code shared between AutoRest modeler and code generators,Microsoft.AutoRest.Common,False,2018-04-19T19:45:04.1+00:00,True,False,,"autorest.common,AutoRest",1031,True,2.4.40
+Krzysztof Cieslak,2018-02-02T22:48:30.94Z,52,77,"Opinionated, web development framework for F# which implements the server-side, functional MVC pattern",Saturn,False,2018-02-27T16:17:18.603+00:00,True,False,"Opinionated, web development framework for F# which implements the server-side, functional MVC pattern","F#,web,framework,ASP.Net,Core,HTTP,Service,MVC,functional",1766,False,0.3.0
+InvertedTomato,2018-01-07T21:50:05.943Z,43209,103,"No-nonsense, high performance pub-sub for distributing time-critical data over UDP.",InvertedTomato.Zeta,False,1900-01-01T00:00:00+00:00,False,False,,"pubsub,udp,socket,performance",305,False,1.2.1
+appveyor,2018-02-02T22:49:42.41Z,58,77,Description,Splitio,True,2018-02-21T23:24:08.98+00:00,True,False,,,18445,False,3.3.4-rc27
+Microsoft,2018-02-02T22:47:40.5Z,1,77,Common code shared between AutoRest modeler and code generators,Microsoft.AutoRest.Common,False,2018-04-19T19:45:04.1+00:00,True,False,,"autorest.common,AutoRest",1031,True,2.4.40
+Krzysztof Cieslak,2018-02-02T22:48:30.94Z,52,77,"Opinionated, web development framework for F# which implements the server-side, functional MVC pattern",Saturn,False,2018-02-27T16:17:18.603+00:00,True,False,"Opinionated, web development framework for F# which implements the server-side, functional MVC pattern","F#,web,framework,ASP.Net,Core,HTTP,Service,MVC,functional",1766,False,0.3.0
+buildguest,2018-02-02T22:45:14.997Z,1,77,Description,I2M.Client45.Test,False,2018-04-20T01:20:53.76+00:00,True,False,,,18777,False,2018.2.2.1
+D2L Corporation,2018-02-02T22:47:06.547Z,77,77,A .NET implementation of the MQTT control packets,D2L.MQTT.Packets,False,2018-02-02T22:47:06.547+00:00,True,False,,MQTT,519,False,0.2.0
+Integrity Marketing Group,2018-02-02T22:45:26.997Z,1,77,I2M is Integrity's platform to create a highly scalable service orientated architecture,IntegrityMarketingGroup.I2M.Client,False,2018-04-20T01:20:55.62+00:00,True,False,,"I2M,Integrity,IntegrityMarketingGroup",20202,False,2018.2.2.1
+buildguest,2018-02-02T22:45:14.997Z,1,77,Description,I2M.Client45.Test,False,2018-04-20T01:20:53.76+00:00,True,False,,,18777,False,2018.2.2.1
+Integrity Marketing Group,2018-02-02T22:45:26.997Z,1,77,I2M is Integrity's platform to create a highly scalable service orientated architecture,IntegrityMarketingGroup.I2M.Client,False,2018-04-20T01:20:55.62+00:00,True,False,,"I2M,Integrity,IntegrityMarketingGroup",20202,False,2018.2.2.1
+D2L Corporation,2018-02-02T22:47:06.547Z,77,77,A .NET implementation of the MQTT control packets,D2L.MQTT.Packets,False,2018-02-02T22:47:06.547+00:00,True,False,,MQTT,519,False,0.2.0
+GreetingTasks,2018-01-27T20:31:41.993Z,43209,83,Package Description,GreetingTasks,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.1.0-build20180127-1217
+Łukasz Klimek,2018-02-02T22:44:16.633Z,77,77,Creates a VSCode-debuggable basic WPF project.,Luigi.WpfTemplate,False,2018-02-02T22:44:16.633+00:00,True,False,,,173,False,1.0.0
+Four51,2018-02-02T22:40:36.923Z,22,77,The official .NET SDK for interacting with the OrderClould.io platform. OrderCloud.io is a cloud-hosted headless B2B eCommerce platform.,OrderCloud.SDK,False,2018-03-29T20:40:14.557+00:00,True,False,,"ecommerce,b2b,four51,ordercloud,cloud,api,headless",693,False,0.0.1
+Łukasz Klimek,2018-02-02T22:44:16.633Z,77,77,Creates a VSCode-debuggable basic WPF project.,Luigi.WpfTemplate,False,2018-02-02T22:44:16.633+00:00,True,False,,,173,False,1.0.0
+Four51,2018-02-02T22:40:36.923Z,22,77,The official .NET SDK for interacting with the OrderClould.io platform. OrderCloud.io is a cloud-hosted headless B2B eCommerce platform.,OrderCloud.SDK,False,2018-03-29T20:40:14.557+00:00,True,False,,"ecommerce,b2b,four51,ordercloud,cloud,api,headless",693,False,0.0.1
+Anders Busted-Janum,2018-02-02T22:38:01.34Z,67,77,Windows Service Base using Topshelf as a ServiceRunner,Grumpy.ServiceBase,False,2018-02-12T11:57:28.94+00:00,True,False,"Base class for building Windows Services, using Topshelf as a Service Host. This base class simplify building cancelable windows services.","topshelf,servicehost",1462,False,1.1.13
+Anders Busted-Janum,2018-02-02T22:39:28.077Z,67,77,Windows Service Base using Topshelf as a ServiceRunner,Grumpy.ServiceBase,False,2018-02-12T11:57:28.94+00:00,True,False,"Base class for building Windows Services, using Topshelf as a Service Host. This base class simplify building cancelable windows services.","topshelf,servicehost",1462,False,1.1.5
+Anders Busted-Janum,2018-02-02T22:38:01.34Z,67,77,Windows Service Base using Topshelf as a ServiceRunner,Grumpy.ServiceBase,False,2018-02-12T11:57:28.94+00:00,True,False,"Base class for building Windows Services, using Topshelf as a Service Host. This base class simplify building cancelable windows services.","topshelf,servicehost",1462,False,1.1.13
+Anders Busted-Janum,2018-02-02T22:39:28.077Z,67,77,Windows Service Base using Topshelf as a ServiceRunner,Grumpy.ServiceBase,False,2018-02-12T11:57:28.94+00:00,True,False,"Base class for building Windows Services, using Topshelf as a Service Host. This base class simplify building cancelable windows services.","topshelf,servicehost",1462,False,1.1.5
+Fluency,2018-02-02T22:36:41.07Z,77,77,Package Description,Fluency,False,2018-02-02T22:36:41.07+00:00,True,False,,,11563,False,1.0.64
+InvertedTomato,2018-02-02T22:36:24.383Z,76,77,Message formats for sending over networks or storing in files.,InvertedTomato.Messages,False,2018-02-03T08:56:32.27+00:00,True,False,,,450,False,1.1.0
+InvertedTomato,2018-02-02T22:36:24.383Z,76,77,Message formats for sending over networks or storing in files.,InvertedTomato.Messages,False,2018-02-03T08:56:32.27+00:00,True,False,,,450,False,1.1.0
+Fluency,2018-02-02T22:36:41.07Z,77,77,Package Description,Fluency,False,2018-02-02T22:36:41.07+00:00,True,False,,,11563,False,1.0.64
+Splitio-net-core.Redis,2018-02-02T22:34:24.627Z,57,77,Package Description,Splitio-net-core.Redis,True,2018-02-22T00:17:10.39+00:00,True,False,,,1381,False,3.3.4-rc24
+Splitio-net-core,2018-02-02T22:34:35.77Z,57,77,Package Description,Splitio-net-core,True,2018-02-22T00:17:21.64+00:00,True,False,,,6853,False,3.3.4-rc24
+Ivo Tadic,2018-02-02T22:33:40.923Z,60,77,Package Description,Spirent.Provisioning.API.Client,False,2018-02-19T14:21:42.903+00:00,True,False,,,3810,False,1.0.36.180202
+Splitio-net-core.Redis,2018-02-02T22:34:24.627Z,57,77,Package Description,Splitio-net-core.Redis,True,2018-02-22T00:17:10.39+00:00,True,False,,,1381,False,3.3.4-rc24
+Splitio-net-core,2018-02-02T22:34:35.77Z,57,77,Package Description,Splitio-net-core,True,2018-02-22T00:17:21.64+00:00,True,False,,,6853,False,3.3.4-rc24
+Ivo Tadic,2018-02-02T22:33:40.923Z,60,77,Package Description,Spirent.Provisioning.API.Client,False,2018-02-19T14:21:42.903+00:00,True,False,,,3810,False,1.0.36.180202
+Ivo Tadic,2018-02-02T22:28:58.24Z,60,77,Package Description,Spirent.Provisioning.API.Client,False,2018-02-19T14:21:42.903+00:00,True,False,,,3810,False,1.0.35.180202
+Microsoft,2018-02-02T22:28:41.287Z,37,77,"Provides developers with libraries for the updated compute platform under Azure Resource manager to deploy virtual machine, virtual machine extensions and availability set management capabilities. Launch, restart, scale, capture and manage VMs, VM Extensions and more. Note: This client library is for Virtual Machines under Azure Resource Manager.",Microsoft.Azure.Management.Compute,False,2018-03-14T23:33:24.61+00:00,True,False,,"management,virtual,machine,compute,Compute_2017-12-01,Compute_2017-03-30,Compute_2017-09-01,ContainerService_2017-01-31",168248,True,17.4.0
+Ivo Tadic,2018-02-02T22:28:58.24Z,60,77,Package Description,Spirent.Provisioning.API.Client,False,2018-02-19T14:21:42.903+00:00,True,False,,,3810,False,1.0.35.180202
+Microsoft,2018-02-02T22:28:41.287Z,37,77,"Provides developers with libraries for the updated compute platform under Azure Resource manager to deploy virtual machine, virtual machine extensions and availability set management capabilities. Launch, restart, scale, capture and manage VMs, VM Extensions and more. Note: This client library is for Virtual Machines under Azure Resource Manager.",Microsoft.Azure.Management.Compute,False,2018-03-14T23:33:24.61+00:00,True,False,,"management,virtual,machine,compute,Compute_2017-12-01,Compute_2017-03-30,Compute_2017-09-01,ContainerService_2017-01-31",168248,True,17.4.0
+ova at aari.dot ru,2018-02-02T22:22:55.683Z,43209,77,interfaces and classes for trade objects,ova.common.NetCore.Info.Trade,False,1900-01-01T00:00:00+00:00,False,False,,"Currency,CurrencyPair",-1,False,1.3.1.6
+Anders Busted-Janum,2018-02-02T22:22:57.78Z,67,77,Extended and opinionated API for Microsoft Message Queue (MSMQ),Grumpy.MessageQueue,False,2018-02-12T11:48:05.643+00:00,True,False,This API includes the features that are most used (and needed for my other solution). The API makes the use of MSMQ easy and strait forward. I know this library is opinionated and only provide a sub set of the features in MSMQ API for Microsoft Message Queue (MSMQ).,"msmq,queue,message-queue,messagequeue,api-wrapper,nack,transaction-message,listener,ack",3068,False,1.3.13
+ova at aari.dot ru,2018-02-02T22:22:55.683Z,43209,77,interfaces and classes for trade objects,ova.common.NetCore.Info.Trade,False,1900-01-01T00:00:00+00:00,False,False,,"Currency,CurrencyPair",-1,False,1.3.1.6
+Anders Busted-Janum,2018-02-02T22:22:57.78Z,67,77,Extended and opinionated API for Microsoft Message Queue (MSMQ),Grumpy.MessageQueue,False,2018-02-12T11:48:05.643+00:00,True,False,This API includes the features that are most used (and needed for my other solution). The API makes the use of MSMQ easy and strait forward. I know this library is opinionated and only provide a sub set of the features in MSMQ API for Microsoft Message Queue (MSMQ).,"msmq,queue,message-queue,messagequeue,api-wrapper,nack,transaction-message,listener,ack",3068,False,1.3.13
+SocialTalents Software Inc,2018-02-02T22:18:34.193Z,6,77,"Subscribe/Publish events implementation with customizable execution patterns.
+      Refer to https://github.com/Socialtalents/SocialTalents.hp for sources and samples",SocialTalents.Hp.Events,False,2018-04-14T08:53:11.833+00:00,True,False,,"Events,Subscribe,Publish",1244,False,1.4.0
+SocialTalents.Hp.MongoDB.netstandard,2018-02-02T22:19:06.96Z,63,77,Helper classes for DAL based on MongoDB,SocialTalents.Hp.MongoDB.netstandard,False,2018-02-16T22:41:11.547+00:00,True,False,,,908,False,1.0.3
+SocialTalents Software Inc,2018-02-02T22:18:51.49Z,6,77,"Subscribe/Publish events implementation with customizable execution patterns.
+See https://github.com/Socialtalents/SocialTalents.hp for sources and samples",SocialTalents.Hp.Events.netstandard,False,2018-04-14T08:53:26.863+00:00,True,False,,"Events,Subscribe,Publish,netstandard",1562,False,1.4.0
+SocialTalents.Hp.MongoDB.netstandard,2018-02-02T22:19:06.96Z,63,77,Helper classes for DAL based on MongoDB,SocialTalents.Hp.MongoDB.netstandard,False,2018-02-16T22:41:11.547+00:00,True,False,,,908,False,1.0.3
+SocialTalents Software Inc,2018-02-02T22:18:34.193Z,6,77,"Subscribe/Publish events implementation with customizable execution patterns.
+      Refer to https://github.com/Socialtalents/SocialTalents.hp for sources and samples",SocialTalents.Hp.Events,False,2018-04-14T08:53:11.833+00:00,True,False,,"Events,Subscribe,Publish",1244,False,1.4.0
+SocialTalents Software Inc,2018-02-02T22:18:51.49Z,6,77,"Subscribe/Publish events implementation with customizable execution patterns.
+See https://github.com/Socialtalents/SocialTalents.hp for sources and samples",SocialTalents.Hp.Events.netstandard,False,2018-04-14T08:53:26.863+00:00,True,False,,"Events,Subscribe,Publish,netstandard",1562,False,1.4.0
+Anders Busted-Janum,2018-02-02T22:14:37.97Z,67,77,Extended and opinionated API for Microsoft Message Queue (MSMQ),Grumpy.MessageQueue,False,2018-02-12T11:48:05.643+00:00,True,False,This API includes the features that are most used (and needed for my other solution). The API makes the use of MSMQ easy and strait forward. I know this library is opinionated and only provide a sub set of the features in MSMQ API for Microsoft Message Queue (MSMQ).,"msmq,queue,message-queue,messagequeue,api-wrapper,nack,transaction-message,listener,ack",3068,False,1.3.12
+Niclas Olofsson,2018-02-02T22:13:57.123Z,77,77,MiNET - a Minecraft PocketEdition Server,MiNET,False,2018-02-02T22:13:57.123+00:00,True,False,,"MiNET,Plugin,API,MCPE,Minecraft,PocketEdition",143965,False,1.0.1740
+Martin Cook,2018-02-02T22:13:49.827Z,48,77,"This package contains a simple, reusable, extensible builder library.
+
+Platforms supported:
+.NET 4.6x or above
+.NET Standard 2.x
+.NET Core 2.x",CG.Builder,False,2018-03-03T23:17:53.853+00:00,True,False,,"builder,CG.Builer,CodeGator",4360,False,0.2018.13.47
+Niclas Olofsson,2018-02-02T22:13:57.123Z,77,77,MiNET - a Minecraft PocketEdition Server,MiNET,False,2018-02-02T22:13:57.123+00:00,True,False,,"MiNET,Plugin,API,MCPE,Minecraft,PocketEdition",143965,False,1.0.1740
+Anders Busted-Janum,2018-02-02T22:14:37.97Z,67,77,Extended and opinionated API for Microsoft Message Queue (MSMQ),Grumpy.MessageQueue,False,2018-02-12T11:48:05.643+00:00,True,False,This API includes the features that are most used (and needed for my other solution). The API makes the use of MSMQ easy and strait forward. I know this library is opinionated and only provide a sub set of the features in MSMQ API for Microsoft Message Queue (MSMQ).,"msmq,queue,message-queue,messagequeue,api-wrapper,nack,transaction-message,listener,ack",3068,False,1.3.12
+Martin Cook,2018-02-02T22:13:49.827Z,48,77,"This package contains a simple, reusable, extensible builder library.
+
+Platforms supported:
+.NET 4.6x or above
+.NET Standard 2.x
+.NET Core 2.x",CG.Builder,False,2018-03-03T23:17:53.853+00:00,True,False,,"builder,CG.Builer,CodeGator",4360,False,0.2018.13.47
+Igor.Gateway.Dtos,2018-02-02T22:08:07.88Z,1,77,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,4.0.0-prerelease940
+the humans of HUMANiT,2018-02-02T22:07:17.487Z,19,77,"RESTful base client that can call any RESTful API. Supports the HTTP verbs GET, POST and PATCH (more to come). Deals with the HTTP status code 200, 201, 204, 400, 404, 409 and 500 (more to come).",HUMANiT.Core.Web,True,2018-04-01T20:26:05.267+00:00,True,False,RESTful client.,"REST,API,CLIENT,RESTful,HTTP,JSON,Web,Service,Client,HttpClient,WebClient,WebServiceClient,RawWebCallResult",3936,False,0.4.0-alpha-588
+Paul den Dulk,2018-02-02T22:06:46.05Z,57,77,Mapsui - Library for mapping,Mapsui,True,2018-02-22T08:00:44.697+00:00,True,False,,"map,maps,mapping,geo,gis,osm",22308,False,1.3.2-beta3
+Paul den Dulk,2018-02-02T22:06:46.05Z,57,77,Mapsui - Library for mapping,Mapsui,True,2018-02-22T08:00:44.697+00:00,True,False,,"map,maps,mapping,geo,gis,osm",22308,False,1.3.2-beta3
+the humans of HUMANiT,2018-02-02T22:07:17.487Z,19,77,"RESTful base client that can call any RESTful API. Supports the HTTP verbs GET, POST and PATCH (more to come). Deals with the HTTP status code 200, 201, 204, 400, 404, 409 and 500 (more to come).",HUMANiT.Core.Web,True,2018-04-01T20:26:05.267+00:00,True,False,RESTful client.,"REST,API,CLIENT,RESTful,HTTP,JSON,Web,Service,Client,HttpClient,WebClient,WebServiceClient,RawWebCallResult",3936,False,0.4.0-alpha-588
+Igor.Gateway.Dtos,2018-02-02T22:08:07.88Z,1,77,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,4.0.0-prerelease940
+Fix8,2018-02-02T22:04:20.73Z,43209,77,Develop branch of FIX8 libraries,ezesoft.fix8.dev,False,1900-01-01T00:00:00+00:00,False,False,Prebuilt FIX8 library (develoment branch),"FIX8,native,CoApp,v1.5.0,nativepackage",868,False,1.5.20180202.4
+"buckstephenh,eswwaa",2018-02-02T22:04:15.637Z,43209,77,"Welcome to lifeIMAGE Transfer Exchange!  This utility connects your enterprise data sources with lifeIMAGE 
+to create powerful workflows using an extensible connection framework.  Built-in bi-directional
+connectors include DICOM, HL7, lifeIMAGE, and file.  Build your own additional connectors or
+contact lifeIMAGE for support.
+
+Supported Platforms: Linux, Mac, Windows",lifeimage-agent,False,1900-01-01T00:00:00+00:00,False,False,,"lifeIMAGE,life,image,PACS,VNA,EMR,CAD,DICOM,HL7,IHE",-1,False,1.0.110
+the humans of HUMANiT,2018-02-02T09:24:06.937Z,19,77,"RESTful base client that can call any RESTful API. Supports the HTTP verbs GET, POST and PATCH (more to come). Deals with the HTTP status code 200, 201, 204, 400, 404, 409 and 500 (more to come).",HUMANiT.Core.Web,True,2018-04-01T20:26:05.267+00:00,False,False,RESTful client.,"REST,API,CLIENT,RESTful,HTTP,JSON,Web,Service,Client,HttpClient,WebClient,WebServiceClient,RawWebCallResult",3936,False,0.4.0-alpha-583
+"buckstephenh,eswwaa",2018-02-02T22:04:15.637Z,43209,77,"Welcome to lifeIMAGE Transfer Exchange!  This utility connects your enterprise data sources with lifeIMAGE 
+to create powerful workflows using an extensible connection framework.  Built-in bi-directional
+connectors include DICOM, HL7, lifeIMAGE, and file.  Build your own additional connectors or
+contact lifeIMAGE for support.
+
+Supported Platforms: Linux, Mac, Windows",lifeimage-agent,False,1900-01-01T00:00:00+00:00,False,False,,"lifeIMAGE,life,image,PACS,VNA,EMR,CAD,DICOM,HL7,IHE",-1,False,1.0.110
+Fix8,2018-02-02T22:04:20.73Z,43209,77,Develop branch of FIX8 libraries,ezesoft.fix8.dev,False,1900-01-01T00:00:00+00:00,False,False,Prebuilt FIX8 library (develoment branch),"FIX8,native,CoApp,v1.5.0,nativepackage",868,False,1.5.20180202.4
+Martin Cook,2018-02-02T22:02:05.663Z,43209,77,"This package contains common code used by other CodeGator packages. Please do not directly reference this package.
+
+Platforms supported:
+.NET 4.6x or above
+.NET Standard 2.x
+.NET Core 2.x",CG.Core,False,1900-01-01T00:00:00+00:00,False,False,,"core,CG.Core,CodeGator",8086,False,0.2018.13.65
+Martin Cook,2018-02-02T22:02:05.663Z,43209,77,"This package contains common code used by other CodeGator packages. Please do not directly reference this package.
+
+Platforms supported:
+.NET 4.6x or above
+.NET Standard 2.x
+.NET Core 2.x",CG.Core,False,1900-01-01T00:00:00+00:00,False,False,,"core,CG.Core,CodeGator",8086,False,0.2018.13.65
+Bruce Krakower,2018-02-02T21:56:35.28Z,77,77,"Using RestKit is as simple as 'representation = Resource.Json().Get(uri)', then 'representation.GetContentAsJson()'. You can therefore handle unexpected content. Variations exist for Xml and Text. For advanced scenarios, you have full control of serialization, a callback pipeline, and full access to the underlying HttpClient and HttpResponseMessage. Use of RestKit is mockable using the IHttpResource interface and/or by injecting a mock HttpMessageHandler into a stub.",RestKit,False,2018-02-02T21:56:35.28+00:00,True,False,RestKit is a very simple HttpClient wrapper to remove the common HTTP boilerplate you are tired of writing.,"REST,""Http,Client"",JSON,XML,HTTP",810,False,1.3.1
+Bruce Krakower,2018-02-02T21:56:35.28Z,77,77,"Using RestKit is as simple as 'representation = Resource.Json().Get(uri)', then 'representation.GetContentAsJson()'. You can therefore handle unexpected content. Variations exist for Xml and Text. For advanced scenarios, you have full control of serialization, a callback pipeline, and full access to the underlying HttpClient and HttpResponseMessage. Use of RestKit is mockable using the IHttpResource interface and/or by injecting a mock HttpMessageHandler into a stub.",RestKit,False,2018-02-02T21:56:35.28+00:00,True,False,RestKit is a very simple HttpClient wrapper to remove the common HTTP boilerplate you are tired of writing.,"REST,""Http,Client"",JSON,XML,HTTP",810,False,1.3.1
+Morgan Abel,2018-02-02T21:50:39.643Z,77,77,"TLSH is a fuzzy matching library designed by Trend Micro. Given a byte stream with a minimum length of 256 characters (and a minimum amount of randomness), TLSH generates a hash value which can be used for similarity comparisons.",TLSHSharp,False,2018-02-02T21:50:39.643+00:00,True,False,,"Tlsh,Locality,Sensitive,Hashing",76,False,1.0.0
+Morgan Abel,2018-02-02T21:50:39.643Z,77,77,"TLSH is a fuzzy matching library designed by Trend Micro. Given a byte stream with a minimum length of 256 characters (and a minimum amount of randomness), TLSH generates a hash value which can be used for similarity comparisons.",TLSHSharp,False,2018-02-02T21:50:39.643+00:00,True,False,,"Tlsh,Locality,Sensitive,Hashing",76,False,1.0.0
+Ivo Tadic,2018-02-02T21:47:28.78Z,66,77,Package Description,Spirent.Gateway.API.Client,False,2018-02-13T12:58:01.807+00:00,True,False,,,6370,False,1.0.110.180202
+Ivo Tadic,2018-02-02T21:47:28.78Z,66,77,Package Description,Spirent.Gateway.API.Client,False,2018-02-13T12:58:01.807+00:00,True,False,,,6370,False,1.0.110.180202
+the humans of HUMANiT,2018-02-02T21:27:18.867Z,19,77,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,False,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.4.0-alpha-585
+Ivo Tadic,2018-02-02T21:42:48.85Z,66,77,Package Description,Spirent.Gateway.API.Client,False,2018-02-13T12:58:01.807+00:00,True,False,,,6370,False,1.0.109.180202
+Alen Toma,2018-02-02T21:44:01.587Z,1,77,"EntityWorker is an object-relation mapper that enable .NET developers to work with relations data using objects. EntityWorker is an alternative to entityframwork. is more flexible and much faster than entity framework.
+And it have support to multiple providers like mssql, sqlite and postgressql",EntityWorker.Core,False,2018-04-19T22:48:28.743+00:00,True,False,,"Entity,EntityWorker.Core,sql,object-relation,mappar,LinqToSql,alternative-to-entityframework,C#,System.Reflection,generic,Microsoft,EntityFramework,EF,Database,Data,O/RM,ADO.NET,sqlite,postgres,postgressql",4731,False,1.4.3
+the humans of HUMANiT,2018-02-02T21:44:02.32Z,19,77,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,True,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.4.0-alpha-587
+Felandil,2018-02-02T21:42:08.77Z,9,77,IOTA Library C# Port,Tangle.Net,False,2018-04-11T20:14:13.843+00:00,True,False,,"iota,csharp",1059,False,1.0.1
+Lykke,2018-02-02T21:45:37.087Z,3,77,Lykke common tools and utilities,Lykke.Common,False,2018-04-17T11:41:11.223+00:00,True,False,,"Lykke,Common",23008,False,4.3.1

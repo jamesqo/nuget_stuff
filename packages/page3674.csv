@@ -1,0 +1,985 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+Bjarne Pedersen,2018-02-09T17:23:05.253Z,9,70,"The goal is to provide at small and lightweight framework that support Syslog
+I need a small framework that can work with a syslog server and NLog
+
+Usage
+Downlod the zip file or clone the repository.
+
+If there is a NLog.config file present in the assembly library, it wil automatic start using NLog.
+
+Log level
+The Log Level is diveded up like this:
+
+Emergency, Alert, Critical is equal to Fatal in NLog
+Error is equal to Error in NLog
+Warn is equal to Warn in NLog
+Info is equal to Info in NLog
+Debug is equal to Debug in NLog
+Trace is equal to Trace in NLog
+NLog Wrapper
+It's possible to log in the same way as using NLog.
+
+MaxNLog log = new MaxNLog();
+log.Info(""Nlog Wrapper - Info"");
+log.Debug(""NLog Wrapper - Debug"");
+log.Error(""NLog Wrapper - Error"");
+Initialize
+Start with initialize the logging, it's a static class so only do it once.
+
+Syslog.Initialize(""192.168.0.2"", 514,""tag"");
+The complete signature for initialize is:
+
+public static void Initialize(string hostName, int port, string appName = """", Facility facility = Facility.User)
+Facility is a static class with all the provided options.
+
+For logging you just use:
+
+Logger.Emergency(""Message"");
+Notice that if you dont supply it with a tag then is use the assembly, class name and method in the tag section.
+
+Syslog server
+I have only tested the framework on Syslog Watcher from https://syslogwatcher.com/
+
+The framework should be working with any Syslog server, but with Syslog Watcher i can guarantee the framework is working.",MaxSimpleSysLogNetFramework,False,2018-04-11T20:35:46.91+00:00,False,False,The goal is to provide at small and lightweight framework that support Syslog,,366,False,1.0.0.2
+Bjarne Pedersen,2018-02-09T15:58:21.34Z,9,70,"The goal is to provide at small and lightweight framework that support Syslog
+I need a small framework that can work with a syslog server and NLog
+
+Usage
+Downlod the zip file or clone the repository.
+
+If there is a NLog.config file present in the assembly library, it wil automatic start using NLog.
+
+Log level
+The Log Level is diveded up like this:
+
+Emergency, Alert, Critical is equal to Fatal in NLog
+Error is equal to Error in NLog
+Warn is equal to Warn in NLog
+Info is equal to Info in NLog
+Debug is equal to Debug in NLog
+Trace is equal to Trace in NLog
+NLog Wrapper
+It's possible to log in the same way as using NLog.
+
+MaxNLog log = new MaxNLog();
+log.Info(""Nlog Wrapper - Info"");
+log.Debug(""NLog Wrapper - Debug"");
+log.Error(""NLog Wrapper - Error"");
+Initialize
+Start with initialize the logging, it's a static class so only do it once.
+
+Syslog.Initialize(""192.168.0.2"", 514,""tag"");
+The complete signature for initialize is:
+
+public static void Initialize(string hostName, int port, string appName = """", Facility facility = Facility.User)
+Facility is a static class with all the provided options.
+
+For logging you just use:
+
+Logger.Emergency(""Message"");
+Notice that if you dont supply it with a tag then is use the assembly, class name and method in the tag section.
+
+Syslog server
+I have only tested the framework on Syslog Watcher from https://syslogwatcher.com/
+
+The framework should be working with any Syslog server, but with Syslog Watcher i can guarantee the framework is working.",MaxSimpleSysLogNetFramework,False,2018-04-11T20:35:46.91+00:00,False,False,The goal is to provide at small and lightweight framework that support Syslog,,366,False,1.0.0.1
+Code9Insta.API.Core,2018-04-11T20:39:45.327Z,3,9,Package Description,Code9Insta.API.Core,False,2018-04-17T18:44:59.42+00:00,True,False,,,188,False,1.0.2
+Code9Insta.API.Core,2018-04-11T20:39:45.327Z,3,9,Package Description,Code9Insta.API.Core,False,2018-04-17T18:44:59.42+00:00,True,False,,,188,False,1.0.2
+Microwave.LanguageModel,2018-04-11T20:27:33.593Z,9,9,Package Description,Microwave.LanguageModel,False,2018-04-11T20:27:33.593+00:00,True,False,,,196,False,1.3.1
+Microwave.LanguageParser,2018-04-11T20:27:45.127Z,9,9,Package Description,Microwave.LanguageParser,False,2018-04-11T20:27:45.127+00:00,True,False,,,202,False,1.3.1
+Quilin,2018-04-11T20:26:53.733Z,9,9,This is a simple BB code parser library that allows you to create your own BB-tags with several levels of XSS protection and some other cool features.,BBCodeParser,False,2018-04-11T20:26:53.733+00:00,True,False,,,32,False,1.0.0
+Simon Heiss,2018-04-11T20:27:21.953Z,9,9,A framework that generates a domain driven webservice with only a schema file to describe Models and generating functions to implement domain logic. More at https://github.com/Lauchi/Microwave,Microwave,False,2018-04-11T20:27:21.953+00:00,True,False,,,359,False,1.3.1
+VIEApps.net,2018-04-11T20:27:18.297Z,9,9,"The .NET Standard 2.0 memcached client library, fully async with various transcoders (binary formatter, bson, protobuf, msgpack)",VIEApps.Enyim.Caching.StrongName,False,2018-04-11T20:27:18.297+00:00,True,False,,"cache,caching,distributed,distributedcache,memcached,enyim,enyimmemcached,enyim.memcached,enyim.caching,vieapps,vieapps.components",710,False,1.4.4.1804
+Microwave.WebServiceModel,2018-04-11T20:28:06.597Z,9,9,Package Description,Microwave.WebServiceModel,False,2018-04-11T20:28:06.597+00:00,True,False,,,162,False,1.3.1
+Jason Sylvestre,2018-04-11T20:30:12.99Z,1,9,Test Helpers for .NET Core,AspNetCore.TestHelpers,False,2018-04-19T15:36:01.407+00:00,True,False,,,292,False,1.0.13
+Daniel Rayson,2018-04-11T20:29:14.603Z,9,9,"An Customisable Object Crawler which iterates over the properties of an instance of an class, applies a given set of rules to each property, and performs an action if the rule passes on given property, optionally returning a result.
+
+Useful for tasks such as Complex Data Adapters for CLR objects.",Rayson.ObjectCrawling,True,2018-04-11T20:29:14.603+00:00,True,False,,"Tools,Adapters,Data,Adapter,Pattern",46,False,0.0.5-pre
+Jason Sylvestre,2018-04-11T20:30:12.99Z,1,9,Test Helpers for .NET Core,AspNetCore.TestHelpers,False,2018-04-19T15:36:01.407+00:00,True,False,,,292,False,1.0.13
+Microwave.WebServiceModel,2018-04-11T20:28:06.597Z,9,9,Package Description,Microwave.WebServiceModel,False,2018-04-11T20:28:06.597+00:00,True,False,,,162,False,1.3.1
+Daniel Rayson,2018-04-11T20:29:14.603Z,9,9,"An Customisable Object Crawler which iterates over the properties of an instance of an class, applies a given set of rules to each property, and performs an action if the rule passes on given property, optionally returning a result.
+
+Useful for tasks such as Complex Data Adapters for CLR objects.",Rayson.ObjectCrawling,True,2018-04-11T20:29:14.603+00:00,True,False,,"Tools,Adapters,Data,Adapter,Pattern",46,False,0.0.5-pre
+Digital Forge,2018-04-11T20:26:17.793Z,9,9,Client for use with Reach Web API,Reach.Api.Client,False,2018-04-11T20:26:17.793+00:00,True,False,,"api,reach",1554,False,0.8.8
+"Johan Larsson,milleniumbug",2018-04-11T20:27:47.703Z,8,9,Roslyn analyzers for IDisposable.,IDisposableAnalyzers,False,2018-04-12T17:21:54.67+00:00,True,False,,"Roslyn,Diagnostic,Analyzer,DotnetAnalyzers,IDisposable",5931,False,2.0.0.2
+VIEApps.net,2018-04-11T20:26:30.31Z,9,9,"The .NET Standard 2.0 memcached client library, fully async with various transcoders (binary formatter, bson, protobuf, msgpack)",VIEApps.Enyim.Caching,False,2018-04-11T20:26:30.31+00:00,True,False,,"cache,caching,distributed,distributedcache,memcached,enyim,enyimmemcached,enyim.memcached,enyim.caching,vieapps,vieapps.components",3203,False,1.4.4.1804
+Microwave.WebServiceGenerator,2018-04-11T20:27:56.347Z,9,9,Package Description,Microwave.WebServiceGenerator,False,2018-04-11T20:27:56.347+00:00,True,False,,,212,False,1.3.1
+Microwave.WebServiceGenerator,2018-04-11T20:27:56.347Z,9,9,Package Description,Microwave.WebServiceGenerator,False,2018-04-11T20:27:56.347+00:00,True,False,,,212,False,1.3.1
+Digital Forge,2018-04-11T20:26:17.793Z,9,9,Client for use with Reach Web API,Reach.Api.Client,False,2018-04-11T20:26:17.793+00:00,True,False,,"api,reach",1554,False,0.8.8
+VIEApps.net,2018-04-11T20:26:30.31Z,9,9,"The .NET Standard 2.0 memcached client library, fully async with various transcoders (binary formatter, bson, protobuf, msgpack)",VIEApps.Enyim.Caching,False,2018-04-11T20:26:30.31+00:00,True,False,,"cache,caching,distributed,distributedcache,memcached,enyim,enyimmemcached,enyim.memcached,enyim.caching,vieapps,vieapps.components",3203,False,1.4.4.1804
+"Johan Larsson,milleniumbug",2018-04-11T20:27:47.703Z,8,9,Roslyn analyzers for IDisposable.,IDisposableAnalyzers,False,2018-04-12T17:21:54.67+00:00,True,False,,"Roslyn,Diagnostic,Analyzer,DotnetAnalyzers,IDisposable",5931,False,2.0.0.2
+NetFusion Contributors,2018-04-11T20:20:47.313Z,7,9,Common assembly containing common classes and extensions.,NetFusion.Common,False,2018-04-13T20:09:52.89+00:00,True,False,,"netfusion,plugin",24914,False,3.0.25
+Digital Forge,2018-03-26T16:31:23Z,9,25,Client for use with Reach Web API,Reach.Api.Client,False,2018-04-11T20:26:17.793+00:00,False,False,,"api,reach",1554,False,0.8.6
+Kim Hugener-Ohlsen,2018-04-11T20:23:04.317Z,9,9,Simple library for creating a command line.,Sundew.CommandLine,True,2018-04-11T20:23:04.317+00:00,True,False,,,1375,False,2.0.0-pre008
+NetFusion Contributors,2018-04-11T20:22:25.847Z,7,9,Assembly containing classes and extensions to aid in unit-testing NetFusion based projects.,NetFusion.Test,False,2018-04-13T20:11:30.52+00:00,True,False,,"netfusion,testing",4027,False,3.0.25
+Bitprim,2018-04-11T20:21:06.94Z,3,9,C# binding for Bitprim Bitcoin platform,bitprim-bch,True,2018-04-17T20:53:48.683+00:00,True,False,,"Bitcoin,C#,Litecoin,Cash",542,False,0.2.2-cs-9-0749
+NetFusion Contributors,2018-04-11T20:21:16.11Z,7,9,Plug-In providing Roslyn implementations for executing expressions against domain entities.,NetFusion.Roslyn,False,2018-04-13T20:10:21.987+00:00,True,False,,"netfusion,plugin,domain,roslyn",2139,False,3.0.25
+NetFusion Contributors,2018-04-11T20:21:57.487Z,7,9,Assembly containing base types used for defining message type within the business domain.,NetFusion.Messaging.Types,False,2018-04-13T20:11:04.067+00:00,True,False,,"netfusion,messaging,ddd",2300,False,3.0.25
+NetFusion Contributors,2018-04-11T20:22:12.33Z,7,9,Plug-In used to define application settings based on Microsoft Extension Configurations.,NetFusion.Settings,False,2018-04-13T20:11:16.91+00:00,True,False,,"netfusion,plugin,settings,configuration,microsoft",21031,False,3.0.25
+NetFusion Contributors,2018-04-11T20:21:42.847Z,7,9,Plug-in providing in-process messaging with extension points other plug-ins can extend to provided additional messaging patterns.,NetFusion.Messaging,False,2018-04-13T20:10:49.91+00:00,True,False,,"netfusion,plugin,messaging,inprocess,ddd",20555,False,3.0.25
+NetFusion Contributors,2018-04-11T20:21:01.063Z,7,9,Plug-In providing process and structure for mapping objects.  Provides extension point for specifying an open-source mapping library of choice.,NetFusion.Mapping,False,2018-04-13T20:10:08.83+00:00,True,False,,"netfusion,plugin,mapping",1982,False,3.0.25
+Christian Kratky,2018-04-11T20:20:46.28Z,9,9,This is a extension library which allows executing synchronous device calls including a response using MQTTnet.,MQTTnet.Extensions.Rpc,False,2018-04-11T20:20:46.28+00:00,True,False,,"MQTT,Message,Queue,Telemetry,Transport,MQTTClient,MQTTServer,Server,MQTTBroker,Broker,NETStandard,IoT,InternetOfThings,Messaging,Hardware,Arduino,Sensor,Actuator,M2M,ESP,Smart,Home,Cities,Automation,Xamarin",48,False,2.7.4
+NetFusion Contributors,2018-04-11T20:22:25.847Z,7,9,Assembly containing classes and extensions to aid in unit-testing NetFusion based projects.,NetFusion.Test,False,2018-04-13T20:11:30.52+00:00,True,False,,"netfusion,testing",4027,False,3.0.25
+NetFusion Contributors,2018-04-11T20:21:01.063Z,7,9,Plug-In providing process and structure for mapping objects.  Provides extension point for specifying an open-source mapping library of choice.,NetFusion.Mapping,False,2018-04-13T20:10:08.83+00:00,True,False,,"netfusion,plugin,mapping",1982,False,3.0.25
+NetFusion Contributors,2018-04-11T20:21:57.487Z,7,9,Assembly containing base types used for defining message type within the business domain.,NetFusion.Messaging.Types,False,2018-04-13T20:11:04.067+00:00,True,False,,"netfusion,messaging,ddd",2300,False,3.0.25
+NetFusion Contributors,2018-04-11T20:21:42.847Z,7,9,Plug-in providing in-process messaging with extension points other plug-ins can extend to provided additional messaging patterns.,NetFusion.Messaging,False,2018-04-13T20:10:49.91+00:00,True,False,,"netfusion,plugin,messaging,inprocess,ddd",20555,False,3.0.25
+NetFusion Contributors,2018-04-11T20:21:29.61Z,7,9,Contains bootstrap process for loading NetFusion based plug-in components.,NetFusion.Bootstrap,False,2018-04-13T20:10:35.347+00:00,True,False,,"netfusion,bootstrap,composite,plugin,component",21371,False,3.0.25
+Kim Hugener-Ohlsen,2018-04-11T20:23:04.317Z,9,9,Simple library for creating a command line.,Sundew.CommandLine,True,2018-04-11T20:23:04.317+00:00,True,False,,,1375,False,2.0.0-pre008
+Bitprim,2018-04-11T20:21:19.283Z,3,9,C# binding for Bitprim Bitcoin platform,bitprim-btc,True,2018-04-17T20:53:50.34+00:00,True,False,,"Bitcoin,C#,Litecoin,Cash",680,False,0.2.2-cs-9-0749
+NetFusion Contributors,2018-04-11T20:21:16.11Z,7,9,Plug-In providing Roslyn implementations for executing expressions against domain entities.,NetFusion.Roslyn,False,2018-04-13T20:10:21.987+00:00,True,False,,"netfusion,plugin,domain,roslyn",2139,False,3.0.25
+NetFusion Contributors,2018-04-11T20:20:47.313Z,7,9,Common assembly containing common classes and extensions.,NetFusion.Common,False,2018-04-13T20:09:52.89+00:00,True,False,,"netfusion,plugin",24914,False,3.0.25
+Bitprim,2018-04-11T20:21:06.94Z,3,9,C# binding for Bitprim Bitcoin platform,bitprim-bch,True,2018-04-17T20:53:48.683+00:00,True,False,,"Bitcoin,C#,Litecoin,Cash",542,False,0.2.2-cs-9-0749
+Christian Kratky,2018-04-11T20:20:46.28Z,9,9,This is a extension library which allows executing synchronous device calls including a response using MQTTnet.,MQTTnet.Extensions.Rpc,False,2018-04-11T20:20:46.28+00:00,True,False,,"MQTT,Message,Queue,Telemetry,Transport,MQTTClient,MQTTServer,Server,MQTTBroker,Broker,NETStandard,IoT,InternetOfThings,Messaging,Hardware,Arduino,Sensor,Actuator,M2M,ESP,Smart,Home,Cities,Automation,Xamarin",48,False,2.7.4
+NetFusion Contributors,2018-04-11T20:22:12.33Z,7,9,Plug-In used to define application settings based on Microsoft Extension Configurations.,NetFusion.Settings,False,2018-04-13T20:11:16.91+00:00,True,False,,"netfusion,plugin,settings,configuration,microsoft",21031,False,3.0.25
+NetFusion Contributors,2018-04-11T20:21:29.61Z,7,9,Contains bootstrap process for loading NetFusion based plug-in components.,NetFusion.Bootstrap,False,2018-04-13T20:10:35.347+00:00,True,False,,"netfusion,bootstrap,composite,plugin,component",21371,False,3.0.25
+Bitprim,2018-04-11T20:21:19.283Z,3,9,C# binding for Bitprim Bitcoin platform,bitprim-btc,True,2018-04-17T20:53:50.34+00:00,True,False,,"Bitcoin,C#,Litecoin,Cash",680,False,0.2.2-cs-9-0749
+NetFusion Contributors,2018-04-11T20:20:31.263Z,7,9,Assembly containing additional classes and extensions specifically for use by NetFusion.,NetFusion.Base,False,2018-04-13T20:09:38.717+00:00,True,False,,"netfusion,plugin",5435,False,3.0.25
+NetFusion Contributors,2018-04-11T20:20:31.263Z,7,9,Assembly containing additional classes and extensions specifically for use by NetFusion.,NetFusion.Base,False,2018-04-13T20:09:38.717+00:00,True,False,,"netfusion,plugin",5435,False,3.0.25
+Gavin Power,2018-04-11T20:13:52.407Z,1,9,Sync and Async client library for communicating with the Pubg Developer API supporting .net standard 2.0,Pubg-DotNet,False,2018-04-19T16:23:38.883+00:00,False,False,,"pubg,playerunknown,battlegrounds,developer,api",252,False,1.0.1
+f-miyu,2018-04-11T20:16:47.083Z,7,9,Xamarin.iOS binding for CHTCollectionViewWaterfallLayout,Xamarin.CHTCollectionViewWaterfallLayout,False,2018-04-13T04:14:20.2+00:00,True,False,,"Xamarin,iOS,Xamarin.iOS,CHTCollectionViewWaterfallLayout",143,False,1.0.1
+Nick Chapsas,2018-04-06T17:18:53.37Z,4,14,A simple and lightweight ORM for Microsoft's CosmosDB.,Cosmonaut,False,2018-04-16T21:33:05.233+00:00,False,False,Please report any issues on Github.,"cosmosdb,azure,cosmos,entitystore,entity,db,orm",491,False,1.0.5
+Petabridge,2018-04-11T20:14:26.483Z,7,9,Akka.Remote and Akka.Cluster bootstrapping utilities for Docker.,Akka.Bootstrap.Docker,False,2018-04-13T20:39:33.52+00:00,True,False,,,451,False,0.1.1
+Petabridge,2018-04-11T20:14:40.377Z,7,9,Akka.Remote and Akka.Cluster bootstrapping utilities for Pivotal Cloud Foundry (PCF.),Akka.Bootstrap.PCF,False,2018-04-13T20:39:47.02+00:00,True,False,,,137,False,0.1.1
+f-miyu,2018-04-11T20:16:47.083Z,7,9,Xamarin.iOS binding for CHTCollectionViewWaterfallLayout,Xamarin.CHTCollectionViewWaterfallLayout,False,2018-04-13T04:14:20.2+00:00,True,False,,"Xamarin,iOS,Xamarin.iOS,CHTCollectionViewWaterfallLayout",143,False,1.0.1
+Petabridge,2018-04-11T20:14:26.483Z,7,9,Akka.Remote and Akka.Cluster bootstrapping utilities for Docker.,Akka.Bootstrap.Docker,False,2018-04-13T20:39:33.52+00:00,True,False,,,451,False,0.1.1
+Petabridge,2018-04-11T20:14:40.377Z,7,9,Akka.Remote and Akka.Cluster bootstrapping utilities for Pivotal Cloud Foundry (PCF.),Akka.Bootstrap.PCF,False,2018-04-13T20:39:47.02+00:00,True,False,,,137,False,0.1.1
+Nick Chapsas,2018-04-11T20:13:45.107Z,4,9,A simple and lightweight ORM for Microsoft's CosmosDB.,Cosmonaut,False,2018-04-16T21:33:05.233+00:00,True,False,A simple and lightweight ORM for Microsoft's CosmosDB.,"cosmosdb,azure,cosmos,entitystore,entity,db,orm",491,False,1.0.6
+Microsoft Studios (BigPark),2018-04-11T20:11:49.277Z,9,9,"YAMS is a framework for deploying and hosting microservices that allows quick deployments of Azure services (~1 minute), sharing infrastructure (multiple services on the same VM), versioning and more.",Etg.Yams,False,2018-04-11T20:11:49.277+00:00,True,False,,,6473,False,1.8.1
+Felandil,2018-04-11T20:11:44.48Z,9,9,.NET Standard 2.0 IOTA Library C# Port,Tangle.Net.Standard,False,2018-04-11T20:11:44.48+00:00,True,False,,,522,False,1.0.7
+f-miyu,2018-04-11T17:05:13.323Z,7,9,Xamarin.iOS binding for CHTCollectionViewWaterfallLayout,Xamarin.CHTCollectionViewWaterfallLayout,False,2018-04-13T04:14:20.2+00:00,False,False,,"Xamarin,iOS,Xamarin.iOS,CHTCollectionViewWaterfallLayout",143,False,1.0.0
+AlexaCore.Testing,2018-04-11T20:13:02.217Z,9,9,Package Description,AlexaCore.Testing,False,2018-04-11T20:13:02.217+00:00,True,False,,,2011,False,1.0.1.40
+boro2g,2018-04-11T20:12:47.67Z,9,9,"Some helpers for streamlining Alexa C# Lambda functions.
+
+Breaking changes:
+- AlexaIntent no longer has the parameters passed into the ctor
+- The old container is gone in favour of AutoFac
+- Registering dependencies is done via RegisterDependencies
+-- This enables ctor injection to work in any Intents",AlexaCore,False,2018-04-11T20:12:47.67+00:00,True,False,,"alexa,lambda",5182,False,1.0.1.40
+Felandil,2018-04-11T20:14:13.843Z,9,9,.NET 4.6.1 IOTA Library C# Port,Tangle.Net,False,2018-04-11T20:14:13.843+00:00,True,False,,"iota,csharp",1059,False,1.0.7
+Gavin Power,2018-04-11T20:13:52.407Z,1,9,Sync and Async client library for communicating with the Pubg Developer API supporting .net standard 2.0,Pubg-DotNet,False,2018-04-19T16:23:38.883+00:00,True,False,,"pubg,playerunknown,battlegrounds,developer,api",252,False,1.0.1
+Felandil,2018-04-11T20:14:13.843Z,9,9,.NET 4.6.1 IOTA Library C# Port,Tangle.Net,False,2018-04-11T20:14:13.843+00:00,True,False,,"iota,csharp",1059,False,1.0.7
+Felandil,2018-04-11T20:11:44.48Z,9,9,.NET Standard 2.0 IOTA Library C# Port,Tangle.Net.Standard,False,2018-04-11T20:11:44.48+00:00,True,False,,,522,False,1.0.7
+AlexaCore.Testing,2018-04-11T20:13:02.217Z,9,9,Package Description,AlexaCore.Testing,False,2018-04-11T20:13:02.217+00:00,True,False,,,2011,False,1.0.1.40
+boro2g,2018-04-11T20:12:47.67Z,9,9,"Some helpers for streamlining Alexa C# Lambda functions.
+
+Breaking changes:
+- AlexaIntent no longer has the parameters passed into the ctor
+- The old container is gone in favour of AutoFac
+- Registering dependencies is done via RegisterDependencies
+-- This enables ctor injection to work in any Intents",AlexaCore,False,2018-04-11T20:12:47.67+00:00,True,False,,"alexa,lambda",5182,False,1.0.1.40
+Gavin Power,2018-04-11T20:13:52.407Z,1,9,Sync and Async client library for communicating with the Pubg Developer API supporting .net standard 2.0,Pubg-DotNet,False,2018-04-19T16:23:38.883+00:00,True,False,,"pubg,playerunknown,battlegrounds,developer,api",252,False,1.0.1
+Microsoft Studios (BigPark),2018-04-11T20:11:49.277Z,9,9,"YAMS is a framework for deploying and hosting microservices that allows quick deployments of Azure services (~1 minute), sharing infrastructure (multiple services on the same VM), versioning and more.",Etg.Yams,False,2018-04-11T20:11:49.277+00:00,True,False,,,6473,False,1.8.1
+MarqMetrix,2018-04-11T20:09:49.363Z,9,9,This is the direct client API communications abstractions library.,MarqMetrix.Communications.Client.Direct.Abstractions,True,2018-04-11T20:09:49.363+00:00,True,False,,,1173,False,1.20.0-alpha-18101-01
+MarqMetrix,2018-04-11T20:09:36.503Z,9,9,This is the direct client API communications library.,MarqMetrix.Communications.Client.Direct,True,2018-04-11T20:09:36.503+00:00,True,False,,,1173,False,1.20.0-alpha-18101-01
+MarqMetrix,2018-04-11T20:09:49.363Z,9,9,This is the direct client API communications abstractions library.,MarqMetrix.Communications.Client.Direct.Abstractions,True,2018-04-11T20:09:49.363+00:00,True,False,,,1173,False,1.20.0-alpha-18101-01
+MarqMetrix,2018-04-11T20:09:36.503Z,9,9,This is the direct client API communications library.,MarqMetrix.Communications.Client.Direct,True,2018-04-11T20:09:36.503+00:00,True,False,,,1173,False,1.20.0-alpha-18101-01
+Andrew Gunn,2018-04-11T20:06:02.417Z,9,9,Gunnsoft CQS,Gunnsoft.Cqs,False,2018-04-11T20:06:02.417+00:00,True,False,,"Gunnsoft,AspNetCore,CQS,Commands,Queries,Events",322,False,0.1.11
+Canducci,2018-04-11T20:07:11.653Z,4,9,Note: based on repository https://github.com/TroyGoode/PagedList,Canducci.Pagination,False,2018-04-16T00:25:38.343+00:00,True,False,,Paginated,270,False,1.0.2
+Bitprim,2018-04-11T20:07:14.42Z,3,9,C# binding for Bitprim Bitcoin platform,bitprim-btc,True,2018-04-17T20:53:50.34+00:00,True,False,,"Bitcoin,C#,Litecoin,Cash",680,False,0.2.2-cs-9-0748
+Bitprim,2018-04-11T20:07:01.513Z,3,9,C# binding for Bitprim Bitcoin platform,bitprim-bch,True,2018-04-17T20:53:48.683+00:00,True,False,,"Bitcoin,C#,Litecoin,Cash",542,False,0.2.2-cs-9-0748
+Donal Fenwick,2018-04-11T20:05:39.84Z,9,9,Package Description,Swashbuckle.SwaggerToPostman,True,2018-04-11T20:46:11.96+00:00,True,False,,,77,False,0.1.0-alpha
+Absolunet,2018-04-11T20:06:20.823Z,3,9,Absolunet inRiver Core based on inRiver iPMC,Absolunet.InRiver.IPMC.Core,False,2018-04-17T19:07:10.92+00:00,True,False,,,629,False,7.0.0.25
+Absolunet,2018-04-11T20:06:20.823Z,3,9,Absolunet inRiver Core based on inRiver iPMC,Absolunet.InRiver.IPMC.Core,False,2018-04-17T19:07:10.92+00:00,True,False,,,629,False,7.0.0.25
+Bitprim,2018-04-11T20:07:01.513Z,3,9,C# binding for Bitprim Bitcoin platform,bitprim-bch,True,2018-04-17T20:53:48.683+00:00,True,False,,"Bitcoin,C#,Litecoin,Cash",542,False,0.2.2-cs-9-0748
+Canducci,2018-04-11T20:07:11.653Z,4,9,Note: based on repository https://github.com/TroyGoode/PagedList,Canducci.Pagination,False,2018-04-16T00:25:38.343+00:00,True,False,,Paginated,270,False,1.0.2
+Andrew Gunn,2018-04-11T20:06:02.417Z,9,9,Gunnsoft CQS,Gunnsoft.Cqs,False,2018-04-11T20:06:02.417+00:00,True,False,,"Gunnsoft,AspNetCore,CQS,Commands,Queries,Events",322,False,0.1.11
+Bitprim,2018-04-11T20:07:14.42Z,3,9,C# binding for Bitprim Bitcoin platform,bitprim-btc,True,2018-04-17T20:53:50.34+00:00,True,False,,"Bitcoin,C#,Litecoin,Cash",680,False,0.2.2-cs-9-0748
+Donal Fenwick,2018-04-11T20:05:39.84Z,9,9,Package Description,Swashbuckle.SwaggerToPostman,True,2018-04-11T20:46:11.96+00:00,True,False,,,77,False,0.1.0-alpha
+Mark Vulfson,2018-04-11T20:03:21.19Z,2,9,"Simple, easy to use Amplitude Analytics library for C#",AmplitudeSharp,False,2018-04-18T17:32:15.193+00:00,True,False,,"amplitude,analytics",532,False,1.0.11
+Kapé,2018-04-11T20:02:22.877Z,9,9,An easy to use Gmail client library,KP.GmailClient,False,2018-04-11T20:02:22.877+00:00,True,False,,"gmail,google",174,False,2.0.1.188
+Stone Pagamentos,2018-04-11T20:03:45.723Z,9,9,"Simple health-checking library supporting RabbitMQ, SQL Server and HTTP Services",Stone.HealthChecker,True,2018-04-11T20:03:45.723+00:00,True,False,,"health,healthcheck,healthchecker,stone,rabbitmq,http,sqlserver",496,False,1.3.0-rc1
+Mark Vulfson,2018-04-11T20:03:21.19Z,2,9,"Simple, easy to use Amplitude Analytics library for C#",AmplitudeSharp,False,2018-04-18T17:32:15.193+00:00,True,False,,"amplitude,analytics",532,False,1.0.11
+Sven Mawby<fr34kyn01535@bam.yt>,2018-04-11T20:01:38.217Z,1,9,Unity3D Game Server Mod,Rocket.Runtime,False,2018-04-19T21:23:25.88+00:00,True,False,,"Rocket,Mod,Unity3D",5107,False,5.0.0.223
+Sven Mawby<fr34kyn01535@bam.yt>,2018-04-11T20:01:27.733Z,1,9,Unity3D Game Server Mod,Rocket.Core,False,2018-04-19T21:23:25.147+00:00,True,False,,"Rocket,Mod,Unity3D",8838,False,5.0.0.223
+Digital Forge,2018-04-11T20:01:31.907Z,9,9,Client for use with Reach Web API,Reach.Api.Client,False,2018-04-11T20:26:17.793+00:00,True,False,,"api,reach",1554,False,0.8.7
+Stone Pagamentos,2018-04-11T20:03:45.723Z,9,9,"Simple health-checking library supporting RabbitMQ, SQL Server and HTTP Services",Stone.HealthChecker,True,2018-04-11T20:03:45.723+00:00,True,False,,"health,healthcheck,healthchecker,stone,rabbitmq,http,sqlserver",496,False,1.3.0-rc1
+Sven Mawby<fr34kyn01535@bam.yt>,2018-04-11T20:01:05.123Z,1,9,Unity3D Game Server Mod,Rocket.API,False,2018-04-19T21:23:23.24+00:00,True,False,,"Rocket,Mod,Unity3D",5104,False,5.0.0.223
+Kapé,2018-04-11T20:02:22.877Z,9,9,An easy to use Gmail client library,KP.GmailClient,False,2018-04-11T20:02:22.877+00:00,True,False,,"gmail,google",174,False,2.0.1.188
+Sven Mawby<fr34kyn01535@bam.yt>,2018-04-11T20:01:16.047Z,1,9,Unity3D Game Server Mod,Rocket.Compability,False,2018-04-19T21:23:23.973+00:00,True,False,,"Rocket,Mod,Unity3D",4991,False,5.0.0.223
+Sven Mawby<fr34kyn01535@bam.yt>,2018-04-11T20:01:38.217Z,1,9,Unity3D Game Server Mod,Rocket.Runtime,False,2018-04-19T21:23:25.88+00:00,True,False,,"Rocket,Mod,Unity3D",5107,False,5.0.0.223
+Digital Forge,2018-04-11T20:01:31.907Z,9,9,Client for use with Reach Web API,Reach.Api.Client,False,2018-04-11T20:26:17.793+00:00,True,False,,"api,reach",1554,False,0.8.7
+Sven Mawby<fr34kyn01535@bam.yt>,2018-04-11T20:01:27.733Z,1,9,Unity3D Game Server Mod,Rocket.Core,False,2018-04-19T21:23:25.147+00:00,True,False,,"Rocket,Mod,Unity3D",8838,False,5.0.0.223
+Sven Mawby<fr34kyn01535@bam.yt>,2018-04-11T20:01:16.047Z,1,9,Unity3D Game Server Mod,Rocket.Compability,False,2018-04-19T21:23:23.973+00:00,True,False,,"Rocket,Mod,Unity3D",4991,False,5.0.0.223
+Sven Mawby<fr34kyn01535@bam.yt>,2018-04-11T20:01:05.123Z,1,9,Unity3D Game Server Mod,Rocket.API,False,2018-04-19T21:23:23.24+00:00,True,False,,"Rocket,Mod,Unity3D",5104,False,5.0.0.223
+Daniel Rayson,2018-04-11T19:57:54.88Z,9,9,"An Ambient Context Wrapper for Dependency Injection, with a DefaultContainer.
+
+An ultra thin API designed to permiate all projects in a solution and provide quick and easy access to either a default container or customised injection engine, allowing projects to remain unchanged even when changing providers for your container.",Rayson.DI,True,2018-04-11T19:57:54.88+00:00,True,False,,"DI,IoC,Dependency,Injection,Inversion,of,Control,Base,Core",49,False,0.0.5-pre
+Daniel Rayson,2018-04-11T19:57:54.88Z,9,9,"An Ambient Context Wrapper for Dependency Injection, with a DefaultContainer.
+
+An ultra thin API designed to permiate all projects in a solution and provide quick and easy access to either a default container or customised injection engine, allowing projects to remain unchanged even when changing providers for your container.",Rayson.DI,True,2018-04-11T19:57:54.88+00:00,True,False,,"DI,IoC,Dependency,Injection,Inversion,of,Control,Base,Core",49,False,0.0.5-pre
+respo,2018-04-11T19:54:07.913Z,9,9,responsive.kaysta.Frontend,responsive.kaysta.Frontend,False,2018-04-11T21:12:55.873+00:00,True,False,,,1084,False,0.9.14
+respo,2018-04-11T19:54:07.913Z,9,9,responsive.kaysta.Frontend,responsive.kaysta.Frontend,False,2018-04-11T21:12:55.873+00:00,True,False,,,1084,False,0.9.14
+Andrew Gunn,2018-04-11T19:52:19.44Z,9,9,Gunnsoft CQS,Gunnsoft.Cqs,False,2018-04-11T20:06:02.417+00:00,True,False,,"Gunnsoft,AspNetCore,CQS,Commands,Queries,Events",322,False,0.1.10
+Andrew Gunn,2018-04-11T19:52:19.44Z,9,9,Gunnsoft CQS,Gunnsoft.Cqs,False,2018-04-11T20:06:02.417+00:00,True,False,,"Gunnsoft,AspNetCore,CQS,Commands,Queries,Events",322,False,0.1.10
+Daniel Stockhammer,2018-04-11T19:46:11.737Z,9,9,ASP.NET Core integration for Brighter,Paramore.Brighter.AspNetCore,False,2018-04-11T19:46:11.737+00:00,True,False,,,1210,False,1.0.0
+Daniel Stockhammer,2018-04-11T19:46:11.737Z,9,9,ASP.NET Core integration for Brighter,Paramore.Brighter.AspNetCore,False,2018-04-11T19:46:11.737+00:00,True,False,,,1210,False,1.0.0
+Daniel Rayson,2018-04-11T19:45:38.767Z,9,9,"An Ambient Context Wrapper for Caching, with a DefaultCache.
+
+An ultra thin API designed to permiate all projects in a solution and provide quick and easy access to either a default or customised caching engine, allowing projects to remain unchanged even when changing providers for your caching.",Rayson.Caching,True,2018-04-11T19:45:38.767+00:00,True,False,,"IoC,Inversion,of,Control,Base,Core,Caching",46,False,0.0.5-pre
+LinkDotNet,2018-04-11T19:45:45.487Z,5,9,Generates an unique hardware id,LinkDotNet.NUniqueHardwareID,False,2018-04-15T06:35:11.297+00:00,True,False,,"hardware,id,unique,hardwareid",130,False,0.3.0
+Jason Taylor,2018-04-11T18:13:45.56Z,9,9,See the support docs at http://support.stackify.com for details on usage.,StackifyHttpModule,False,2018-04-11T18:13:45.56+00:00,True,False,,,111798,False,1.0.33
+Daniel Rayson,2018-04-11T19:46:01.783Z,9,9,"An Ambient Context Wrapper for Logging, with a DefaultLogger.",Rayson.Logging,True,2018-04-11T19:46:01.783+00:00,True,False,,"IoC,Inversion,of,Control,Base,Core,Logging",40,False,0.0.5-pre
+Daniel Rayson,2018-04-11T19:45:38.767Z,9,9,"An Ambient Context Wrapper for Caching, with a DefaultCache.
+
+An ultra thin API designed to permiate all projects in a solution and provide quick and easy access to either a default or customised caching engine, allowing projects to remain unchanged even when changing providers for your caching.",Rayson.Caching,True,2018-04-11T19:45:38.767+00:00,True,False,,"IoC,Inversion,of,Control,Base,Core,Caching",46,False,0.0.5-pre
+LinkDotNet,2018-04-11T19:45:45.487Z,5,9,Generates an unique hardware id,LinkDotNet.NUniqueHardwareID,False,2018-04-15T06:35:11.297+00:00,True,False,,"hardware,id,unique,hardwareid",130,False,0.3.0
+Daniel Rayson,2018-04-11T19:46:01.783Z,9,9,"An Ambient Context Wrapper for Logging, with a DefaultLogger.",Rayson.Logging,True,2018-04-11T19:46:01.783+00:00,True,False,,"IoC,Inversion,of,Control,Base,Core,Logging",40,False,0.0.5-pre
+Andrey Taritsyn,2018-04-11T19:35:38.57Z,8,9,"This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Linux (x64).
+
+This package is only compatible with .NET Core.",JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64,False,2018-04-12T11:20:34.09+00:00,True,False,This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Linux (x64).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,ChakraCore,Linux,x64",2394,False,2.4.15
+Andrey Taritsyn,2018-04-11T19:34:21.66Z,8,9,"This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Windows (ARM).
+
+This package is only compatible with .NET Core and .NET Framework 4.5.",JavaScriptEngineSwitcher.ChakraCore.Native.win8-arm,False,2018-04-12T11:19:13.133+00:00,True,False,This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Windows (ARM).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,ChakraCore,Windows,ARM",2015,False,2.4.15
+Andrey Taritsyn,2018-04-11T19:36:18.01Z,8,9,"This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for OS X (x64).
+
+This package is only compatible with .NET Core.",JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64,False,2018-04-12T11:21:15.483+00:00,True,False,This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for OS X (x64).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,ChakraCore,macOS,OSX,x64",6784,False,2.4.15
+Andrey Taritsyn,2018-04-11T19:35:00.91Z,8,9,"This package is deprecated. Instead, it is recommended to use a 'JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64' package.",JavaScriptEngineSwitcher.ChakraCore.Native.debian-x64,False,2018-04-12T11:19:55.073+00:00,True,False,"This package is deprecated. Instead, it is recommended to use a 'JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64' package.","JavaScriptEngineSwitcher,JavaScript,ECMAScript,ChakraCore,Debian,Ubuntu,LinuxMint,x64",5410,False,2.4.15
+Andrey Taritsyn,2018-04-11T19:36:49.43Z,12,9,"JavaScriptEngineSwitcher.Vroom contains adapter `VroomJsEngine` (wrapper for the VroomJs (http://github.com/pauldotknopf/vroomjs-core) version 1.2.3 with support of V8 version 3.17.16.2).
+
+For correct working of the VroomJs on Windows require the Visual C++ Redistributable for Visual Studio 2012 and Microsoft Visual C++ 2015 Redistributable.",JavaScriptEngineSwitcher.Vroom,False,2018-04-08T19:47:15.513+00:00,True,False,JavaScriptEngineSwitcher.Vroom contains adapter `VroomJsEngine` (wrapper for the VroomJs version 1.2.3 with support of V8 version 3.17.16.2).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,VroomJs,V8",1852,False,2.4.15
+Patrick Ineichen,2018-04-11T19:33:01.233Z,9,9,Common setup for your C# production code projects,froko.csprojSetup.ProductionCode,False,2018-04-11T19:33:01.233+00:00,True,False,,,2437,False,2.1.0
+Andrey Taritsyn,2018-04-11T19:33:46.11Z,8,9,"This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Windows (x64).
+
+For correct working of the ChakraCore require the Microsoft Visual C++ 2015 Redistributable.",JavaScriptEngineSwitcher.ChakraCore.Native.win-x64,False,2018-04-12T11:18:42.193+00:00,True,False,This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Windows (x64).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,ChakraCore,Windows,x64",20814,False,2.4.15
+Andrey Taritsyn,2018-04-11T19:34:21.66Z,8,9,"This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Windows (ARM).
+
+This package is only compatible with .NET Core and .NET Framework 4.5.",JavaScriptEngineSwitcher.ChakraCore.Native.win8-arm,False,2018-04-12T11:19:13.133+00:00,True,False,This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Windows (ARM).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,ChakraCore,Windows,ARM",2015,False,2.4.15
+Andrey Taritsyn,2018-04-11T19:36:18.01Z,8,9,"This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for OS X (x64).
+
+This package is only compatible with .NET Core.",JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64,False,2018-04-12T11:21:15.483+00:00,True,False,This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for OS X (x64).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,ChakraCore,macOS,OSX,x64",6784,False,2.4.15
+Andrey Taritsyn,2018-04-11T19:36:49.43Z,12,9,"JavaScriptEngineSwitcher.Vroom contains adapter `VroomJsEngine` (wrapper for the VroomJs (http://github.com/pauldotknopf/vroomjs-core) version 1.2.3 with support of V8 version 3.17.16.2).
+
+For correct working of the VroomJs on Windows require the Visual C++ Redistributable for Visual Studio 2012 and Microsoft Visual C++ 2015 Redistributable.",JavaScriptEngineSwitcher.Vroom,False,2018-04-08T19:47:15.513+00:00,True,False,JavaScriptEngineSwitcher.Vroom contains adapter `VroomJsEngine` (wrapper for the VroomJs version 1.2.3 with support of V8 version 3.17.16.2).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,VroomJs,V8",1852,False,2.4.15
+Andrey Taritsyn,2018-04-11T19:33:46.11Z,8,9,"This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Windows (x64).
+
+For correct working of the ChakraCore require the Microsoft Visual C++ 2015 Redistributable.",JavaScriptEngineSwitcher.ChakraCore.Native.win-x64,False,2018-04-12T11:18:42.193+00:00,True,False,This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Windows (x64).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,ChakraCore,Windows,x64",20814,False,2.4.15
+Andrey Taritsyn,2018-04-11T19:35:00.91Z,8,9,"This package is deprecated. Instead, it is recommended to use a 'JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64' package.",JavaScriptEngineSwitcher.ChakraCore.Native.debian-x64,False,2018-04-12T11:19:55.073+00:00,True,False,"This package is deprecated. Instead, it is recommended to use a 'JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64' package.","JavaScriptEngineSwitcher,JavaScript,ECMAScript,ChakraCore,Debian,Ubuntu,LinuxMint,x64",5410,False,2.4.15
+Andrey Taritsyn,2018-04-11T19:35:38.57Z,8,9,"This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Linux (x64).
+
+This package is only compatible with .NET Core.",JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64,False,2018-04-12T11:20:34.09+00:00,True,False,This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Linux (x64).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,ChakraCore,Linux,x64",2394,False,2.4.15
+Andrey Taritsyn,2018-04-11T19:33:12.237Z,8,9,"This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Windows (x86).
+
+For correct working of the ChakraCore require the Microsoft Visual C++ 2015 Redistributable.",JavaScriptEngineSwitcher.ChakraCore.Native.win-x86,False,2018-04-12T11:18:11.41+00:00,True,False,This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Windows (x86).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,ChakraCore,Windows,x86",11025,False,2.4.15
+Patrick Ineichen,2018-04-11T19:32:36.22Z,9,9,Common setup for your C# test projects,froko.csprojSetup.Facts,False,2018-04-11T19:32:36.22+00:00,True,False,,,2388,False,2.1.0
+Patrick Ineichen,2018-04-11T19:33:13.813Z,9,9,Generates XML documentation out of your code comments,froko.csprojSetup.XmlDocumentation,False,2018-04-11T19:33:13.813+00:00,True,False,,,2230,False,2.1.0
+ZZZ Projects Inc.,2018-04-11T19:32:56.53Z,4,9,"Entity Framework: Bulk Insert, BulkSaveChanges, Bulk Update, Bulk Delete, Bulk Merge, and Bulk Synchronize.
+
+Support: SQL Server, SQL Azure, PostgreSQL
+
+Coming soon: SQL Compact, Oracle, MySQL, and SQLite
+
+This library is NOT FREE. Trial period always stops at the end of the month.",Z.EntityFramework.Extensions.EFCore,False,2018-04-16T03:10:16.123+00:00,True,False,"Entity Framework: Bulk Insert, BulkSaveChanges, Bulk Update, Bulk Delete, Bulk Merge, and Bulk Synchronize.
+
+Support: SQL Server, SQL Azure, PostgreSQL
+
+Coming soon: SQL Compact, Oracle, MySQL, and SQLite
+
+This library is NOT FREE. Trial period always stops at the end of the month.","Entity,Framework,Bulk,Insert,EntityFramework,BulkInsert,EF,EF6,Batch,Update,Delete,Merge,BulkCopy,SqlBulkCopy,SaveChanges,C#",6971,False,2.1.8
+Andrey Taritsyn,2018-04-11T19:32:01.437Z,12,9,JavaScriptEngineSwitcher.Msie contains adapter `MsieJsEngine` (wrapper for the MSIE JavaScript Engine for .Net (http://github.com/Taritsyn/MsieJavaScriptEngine)). For correct working of the MSIE JavaScript Engine it is recommended to install Internet Explorer 9+ or Microsoft Edge on the machine.,JavaScriptEngineSwitcher.Msie,False,2018-04-08T19:40:02.603+00:00,True,False,JavaScriptEngineSwitcher.Msie contains adapter `MsieJsEngine` (wrapper for the MSIE JavaScript Engine for .Net).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,MSIE,IE,Chakra",665778,False,2.4.15
+Andrey Taritsyn,2018-04-11T19:32:41.517Z,8,9,"JavaScriptEngineSwitcher.ChakraCore contains adapter `ChakraCoreJsEngine` (wrapper for the ChakraCore (http://github.com/Microsoft/ChakraCore)). Project was based on the code of Chakra-Samples (http://github.com/Microsoft/Chakra-Samples) and jsrt-dotnet (http://github.com/robpaveza/jsrt-dotnet).
+
+This package does not contain the native implementations of ChakraCore. Therefore, you need to choose and install the most appropriate package(s) for your platform. The following packages are available:
+
+ * JavaScriptEngineSwitcher.ChakraCore.Native.win-x86
+ * JavaScriptEngineSwitcher.ChakraCore.Native.win-x64
+ * JavaScriptEngineSwitcher.ChakraCore.Native.win8-arm
+ * JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64
+ * JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64",JavaScriptEngineSwitcher.ChakraCore,False,2018-04-12T11:17:35+00:00,True,False,JavaScriptEngineSwitcher.ChakraCore contains adapter `ChakraCoreJsEngine` (wrapper for the ChakraCore).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,ChakraCore",154599,False,2.4.15
+Patrick Ineichen,2018-04-11T19:32:49.33Z,9,9,Adds an automatic NuGet packaging step to the the release build using OctoPack,froko.csprojSetup.OctoPack,False,2018-04-11T19:32:49.33+00:00,True,False,,,2431,False,2.1.0
+Patrick Ineichen,2018-04-11T19:33:24.877Z,9,9,Common setup for your C# projects,froko.csprojSetup,False,2018-04-11T19:33:24.877+00:00,True,False,,,4198,False,2.1.0
+ZZZ Projects Inc.,2018-04-11T19:32:56.53Z,4,9,"Entity Framework: Bulk Insert, BulkSaveChanges, Bulk Update, Bulk Delete, Bulk Merge, and Bulk Synchronize.
+
+Support: SQL Server, SQL Azure, PostgreSQL
+
+Coming soon: SQL Compact, Oracle, MySQL, and SQLite
+
+This library is NOT FREE. Trial period always stops at the end of the month.",Z.EntityFramework.Extensions.EFCore,False,2018-04-16T03:10:16.123+00:00,True,False,"Entity Framework: Bulk Insert, BulkSaveChanges, Bulk Update, Bulk Delete, Bulk Merge, and Bulk Synchronize.
+
+Support: SQL Server, SQL Azure, PostgreSQL
+
+Coming soon: SQL Compact, Oracle, MySQL, and SQLite
+
+This library is NOT FREE. Trial period always stops at the end of the month.","Entity,Framework,Bulk,Insert,EntityFramework,BulkInsert,EF,EF6,Batch,Update,Delete,Merge,BulkCopy,SqlBulkCopy,SaveChanges,C#",6971,False,2.1.8
+Andrey Taritsyn,2018-04-11T19:32:41.517Z,8,9,"JavaScriptEngineSwitcher.ChakraCore contains adapter `ChakraCoreJsEngine` (wrapper for the ChakraCore (http://github.com/Microsoft/ChakraCore)). Project was based on the code of Chakra-Samples (http://github.com/Microsoft/Chakra-Samples) and jsrt-dotnet (http://github.com/robpaveza/jsrt-dotnet).
+
+This package does not contain the native implementations of ChakraCore. Therefore, you need to choose and install the most appropriate package(s) for your platform. The following packages are available:
+
+ * JavaScriptEngineSwitcher.ChakraCore.Native.win-x86
+ * JavaScriptEngineSwitcher.ChakraCore.Native.win-x64
+ * JavaScriptEngineSwitcher.ChakraCore.Native.win8-arm
+ * JavaScriptEngineSwitcher.ChakraCore.Native.linux-x64
+ * JavaScriptEngineSwitcher.ChakraCore.Native.osx-x64",JavaScriptEngineSwitcher.ChakraCore,False,2018-04-12T11:17:35+00:00,True,False,JavaScriptEngineSwitcher.ChakraCore contains adapter `ChakraCoreJsEngine` (wrapper for the ChakraCore).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,ChakraCore",154599,False,2.4.15
+Patrick Ineichen,2018-04-11T19:33:24.877Z,9,9,Common setup for your C# projects,froko.csprojSetup,False,2018-04-11T19:33:24.877+00:00,True,False,,,4198,False,2.1.0
+Andrey Taritsyn,2018-04-11T19:33:12.237Z,8,9,"This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Windows (x86).
+
+For correct working of the ChakraCore require the Microsoft Visual C++ 2015 Redistributable.",JavaScriptEngineSwitcher.ChakraCore.Native.win-x86,False,2018-04-12T11:18:11.41+00:00,True,False,This package complements the JavaScriptEngineSwitcher.ChakraCore package and contains the native implementation of ChakraCore version 1.8.3 for Windows (x86).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,ChakraCore,Windows,x86",11025,False,2.4.15
+Patrick Ineichen,2018-04-11T19:32:49.33Z,9,9,Adds an automatic NuGet packaging step to the the release build using OctoPack,froko.csprojSetup.OctoPack,False,2018-04-11T19:32:49.33+00:00,True,False,,,2431,False,2.1.0
+Patrick Ineichen,2018-04-11T19:32:36.22Z,9,9,Common setup for your C# test projects,froko.csprojSetup.Facts,False,2018-04-11T19:32:36.22+00:00,True,False,,,2388,False,2.1.0
+Andrey Taritsyn,2018-04-11T19:32:01.437Z,12,9,JavaScriptEngineSwitcher.Msie contains adapter `MsieJsEngine` (wrapper for the MSIE JavaScript Engine for .Net (http://github.com/Taritsyn/MsieJavaScriptEngine)). For correct working of the MSIE JavaScript Engine it is recommended to install Internet Explorer 9+ or Microsoft Edge on the machine.,JavaScriptEngineSwitcher.Msie,False,2018-04-08T19:40:02.603+00:00,True,False,JavaScriptEngineSwitcher.Msie contains adapter `MsieJsEngine` (wrapper for the MSIE JavaScript Engine for .Net).,"JavaScriptEngineSwitcher,JavaScript,ECMAScript,MSIE,IE,Chakra",665778,False,2.4.15
+Patrick Ineichen,2018-04-11T19:33:13.813Z,9,9,Generates XML documentation out of your code comments,froko.csprojSetup.XmlDocumentation,False,2018-04-11T19:33:13.813+00:00,True,False,,,2230,False,2.1.0
+Andrew Gunn,2018-04-11T19:27:55.893Z,9,9,Gunnsoft CQS,Gunnsoft.Cqs,False,2018-04-11T20:06:02.417+00:00,True,False,,"Gunnsoft,AspNetCore,CQS,Commands,Queries,Events",322,False,0.1.9
+Daniel Rayson,2018-04-11T19:26:09.56Z,43209,9,"An Ambient Context Wrapper for Logging, with a DefaultLogger.",Rayson.Aspects.Logging,False,1900-01-01T00:00:00+00:00,False,False,,"IoC,Inversion,of,Control,Base,Core,Logging",-1,False,0.0.21
+Daniel Rayson,2018-04-11T19:24:09.93Z,43209,9,"An Ambient Context Wrapper for Caching, with a DefaultCache.
+
+An ultra thin API designed to permiate all projects in a solution and provide quick and easy access to either a default or customised caching engine, allowing projects to remain unchanged even when changing providers for your caching.",Rayson.Aspects.Caching,False,1900-01-01T00:00:00+00:00,False,False,,"IoC,Inversion,of,Control,Base,Core,Caching",-1,False,0.0.20
+Daniel Rayson,2018-04-11T19:26:09.56Z,43209,9,"An Ambient Context Wrapper for Logging, with a DefaultLogger.",Rayson.Aspects.Logging,False,1900-01-01T00:00:00+00:00,False,False,,"IoC,Inversion,of,Control,Base,Core,Logging",-1,False,0.0.21
+Andrew Gunn,2018-04-11T19:27:55.893Z,9,9,Gunnsoft CQS,Gunnsoft.Cqs,False,2018-04-11T20:06:02.417+00:00,True,False,,"Gunnsoft,AspNetCore,CQS,Commands,Queries,Events",322,False,0.1.9
+Romfos,2018-04-11T16:34:38.48Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.TestData,False,2018-04-11T17:55:10.733+00:00,False,False,,"Specflow,AutoTests",2772,False,2.1.1
+Daniel Rayson,2018-04-11T19:24:09.93Z,43209,9,"An Ambient Context Wrapper for Caching, with a DefaultCache.
+
+An ultra thin API designed to permiate all projects in a solution and provide quick and easy access to either a default or customised caching engine, allowing projects to remain unchanged even when changing providers for your caching.",Rayson.Aspects.Caching,False,1900-01-01T00:00:00+00:00,False,False,,"IoC,Inversion,of,Control,Base,Core,Caching",-1,False,0.0.20
+Christian Kratky,2018-04-11T19:24:56.31Z,9,9,MQTTnet is a high performance .NET library for MQTT based communication. It provides a MQTT client and a MQTT server (broker).,MQTTnet,False,2018-04-11T19:24:56.31+00:00,True,False,,"MQTT,Message,Queue,Telemetry,Transport,MQTTClient,MQTTServer,Server,MQTTBroker,Broker,NETStandard,IoT,InternetOfThings,Messaging,Hardware,Arduino,Sensor,Actuator,M2M,ESP,Smart,Home,Cities,Automation,Xamarin",14467,False,2.7.4
+Romfos,2018-04-11T16:34:51.37Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Web,False,2018-04-11T17:55:23.657+00:00,False,False,,"Specflow,AutoTests,Selenium,WebDriver",4355,False,2.1.1
+Romfos,2018-04-11T16:34:04.04Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Core,False,2018-04-11T17:54:35.06+00:00,False,False,,"Specflow,AutoTests",4431,False,2.1.1
+Code Endeavors Inc.,2018-04-11T19:22:02.097Z,1,9,Videre CMS Core,Videre.Core,False,2018-04-19T16:26:16.92+00:00,True,False,,,9096,False,2.2.132
+Christian Kratky,2018-04-11T19:25:19.073Z,9,9,This is a support library to integrate MQTTnet into AspNetCore.,MQTTnet.AspNetCore,False,2018-04-11T19:25:19.073+00:00,True,False,,"MQTT,Message,Queue,Telemetry,Transport,MQTTClient,MQTTServer,Server,MQTTBroker,Broker,NETStandard,IoT,InternetOfThings,Messaging,Hardware,Arduino,Sensor,Actuator,M2M,ESP,Smart,Home,Cities,Automation,Xamarin",2926,False,2.7.4
+Romfos,2018-04-11T16:34:27.9Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.PreProcessor,False,2018-04-11T17:54:58.873+00:00,False,False,,"Specflow,AutoTests",4396,False,2.1.1
+Romfos,2018-04-11T16:34:16.603Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Models,False,2018-04-11T17:54:47.093+00:00,False,False,,"Specflow,AutoTests",4412,False,2.1.1
+Code Endeavors Inc.,2018-04-11T19:22:02.097Z,1,9,Videre CMS Core,Videre.Core,False,2018-04-19T16:26:16.92+00:00,True,False,,,9096,False,2.2.132
+Daniel Rayson,2018-04-11T19:24:09.93Z,43209,9,"An Ambient Context Wrapper for Caching, with a DefaultCache.
+
+An ultra thin API designed to permiate all projects in a solution and provide quick and easy access to either a default or customised caching engine, allowing projects to remain unchanged even when changing providers for your caching.",Rayson.Aspects.Caching,False,1900-01-01T00:00:00+00:00,False,False,,"IoC,Inversion,of,Control,Base,Core,Caching",-1,False,0.0.20
+Lykke,2018-04-11T19:22:19.957Z,10,9,Client for Lykke.Service.ArbitrageDetector API,Lykke.Service.ArbitrageDetector.Client,False,2018-04-10T16:17:07.483+00:00,True,False,,Lykke,1986,False,1.0.2
+Christian Kratky,2018-04-11T19:24:56.31Z,9,9,MQTTnet is a high performance .NET library for MQTT based communication. It provides a MQTT client and a MQTT server (broker).,MQTTnet,False,2018-04-11T19:24:56.31+00:00,True,False,,"MQTT,Message,Queue,Telemetry,Transport,MQTTClient,MQTTServer,Server,MQTTBroker,Broker,NETStandard,IoT,InternetOfThings,Messaging,Hardware,Arduino,Sensor,Actuator,M2M,ESP,Smart,Home,Cities,Automation,Xamarin",14467,False,2.7.4
+Christian Kratky,2018-04-11T19:25:19.073Z,9,9,This is a support library to integrate MQTTnet into AspNetCore.,MQTTnet.AspNetCore,False,2018-04-11T19:25:19.073+00:00,True,False,,"MQTT,Message,Queue,Telemetry,Transport,MQTTClient,MQTTServer,Server,MQTTBroker,Broker,NETStandard,IoT,InternetOfThings,Messaging,Hardware,Arduino,Sensor,Actuator,M2M,ESP,Smart,Home,Cities,Automation,Xamarin",2926,False,2.7.4
+Lykke,2018-04-11T19:22:19.957Z,10,9,Client for Lykke.Service.ArbitrageDetector API,Lykke.Service.ArbitrageDetector.Client,False,2018-04-10T16:17:07.483+00:00,True,False,,Lykke,1986,False,1.0.2
+ZZZ Projects Inc.,2018-04-11T19:20:14.983Z,3,9,"Entity Framework: Bulk Insert, BulkSaveChanges, Bulk Update, Bulk Delete, Bulk Merge, and Bulk Synchronize.
+
+Support: SQL Server, SQL Azure, SQL Compact, Oracle, MySQL, SQLite, and PostgreSQL.
+
+This library is NOT FREE. Trial period always stops at the end of the month.",Z.EntityFramework.Extensions,False,2018-04-17T15:14:39.207+00:00,True,False,"Entity Framework: Bulk Insert, BulkSaveChanges, Bulk Update, Bulk Delete, Bulk Merge, and Bulk Synchronize.
+
+Support: SQL Server, SQL Azure, SQL Compact, Oracle, MySQL, SQLite, and PostgreSQL.
+
+This library is NOT FREE. Trial period always stops at the end of the month.","Entity,Framework,Bulk,Insert,EntityFramework,BulkInsert,EF,EF6,Batch,Update,Delete,Merge,BulkCopy,SqlBulkCopy,SaveChanges,C#",246413,False,3.14.20
+ZZZ Projects Inc.,2018-04-11T19:18:33.557Z,3,9,"Entity Framework: BulkSaveChanges, BulkInsert, BulkUpdate, BulkDelete, and BulkMerge.
+
+Support: SQL Server, SQL Azure, SQL Compact, Oracle, MySQL, SQLite, and PostgreSQL.
+
+This library is NOT free. FREE Trial always available for the current month.",Z.EntityFramework.Extensions.EF4,False,2018-04-17T15:13:16.093+00:00,True,False,"Entity Framework: BulkSaveChanges, BulkInsert, BulkUpdate, BulkDelete, and BulkMerge.
+
+Support: SQL Server, SQL Azure, SQL Compact, Oracle, MySQL, SQLite, and PostgreSQL.
+
+This library is NOT free. FREE Trial always available for the current month.","C#,EF4,EF,EntityFramework,Entity,Framework,Batch,Bulk,BulkCopy,SqlBulkCopy,SaveChanges,Insert,Update,Delete,Merge,BulkInsert",1040,False,3.14.20
+ZZZ Projects Inc.,2018-04-11T19:19:19.887Z,3,9,"Entity Framework: BulkSaveChanges, BulkInsert, BulkUpdate, BulkDelete, and BulkMerge.
+
+Support: SQL Server, SQL Azure, SQL Compact, Oracle, MySQL, SQLite, and PostgreSQL.
+
+This library is NOT free. FREE Trial always available for the current month.",Z.EntityFramework.Extensions.EF5,False,2018-04-17T15:13:58.847+00:00,True,False,"Entity Framework: BulkSaveChanges, BulkInsert, BulkUpdate, BulkDelete, and BulkMerge.
+
+Support: SQL Server, SQL Azure, SQL Compact, Oracle, MySQL, SQLite, and PostgreSQL.
+
+This library is NOT free. FREE Trial always available for the current month.","C#,EF5,EF,EntityFramework,Entity,Framework,Batch,Bulk,BulkCopy,SqlBulkCopy,SaveChanges,Insert,Update,Delete,Merge,BulkInsert",8625,False,3.14.20
+ZZZ Projects Inc.,2018-04-11T19:20:14.983Z,3,9,"Entity Framework: Bulk Insert, BulkSaveChanges, Bulk Update, Bulk Delete, Bulk Merge, and Bulk Synchronize.
+
+Support: SQL Server, SQL Azure, SQL Compact, Oracle, MySQL, SQLite, and PostgreSQL.
+
+This library is NOT FREE. Trial period always stops at the end of the month.",Z.EntityFramework.Extensions,False,2018-04-17T15:14:39.207+00:00,True,False,"Entity Framework: Bulk Insert, BulkSaveChanges, Bulk Update, Bulk Delete, Bulk Merge, and Bulk Synchronize.
+
+Support: SQL Server, SQL Azure, SQL Compact, Oracle, MySQL, SQLite, and PostgreSQL.
+
+This library is NOT FREE. Trial period always stops at the end of the month.","Entity,Framework,Bulk,Insert,EntityFramework,BulkInsert,EF,EF6,Batch,Update,Delete,Merge,BulkCopy,SqlBulkCopy,SaveChanges,C#",246413,False,3.14.20
+ZZZ Projects Inc.,2018-04-11T19:18:33.557Z,3,9,"Entity Framework: BulkSaveChanges, BulkInsert, BulkUpdate, BulkDelete, and BulkMerge.
+
+Support: SQL Server, SQL Azure, SQL Compact, Oracle, MySQL, SQLite, and PostgreSQL.
+
+This library is NOT free. FREE Trial always available for the current month.",Z.EntityFramework.Extensions.EF4,False,2018-04-17T15:13:16.093+00:00,True,False,"Entity Framework: BulkSaveChanges, BulkInsert, BulkUpdate, BulkDelete, and BulkMerge.
+
+Support: SQL Server, SQL Azure, SQL Compact, Oracle, MySQL, SQLite, and PostgreSQL.
+
+This library is NOT free. FREE Trial always available for the current month.","C#,EF4,EF,EntityFramework,Entity,Framework,Batch,Bulk,BulkCopy,SqlBulkCopy,SaveChanges,Insert,Update,Delete,Merge,BulkInsert",1040,False,3.14.20
+ZZZ Projects Inc.,2018-04-11T19:19:19.887Z,3,9,"Entity Framework: BulkSaveChanges, BulkInsert, BulkUpdate, BulkDelete, and BulkMerge.
+
+Support: SQL Server, SQL Azure, SQL Compact, Oracle, MySQL, SQLite, and PostgreSQL.
+
+This library is NOT free. FREE Trial always available for the current month.",Z.EntityFramework.Extensions.EF5,False,2018-04-17T15:13:58.847+00:00,True,False,"Entity Framework: BulkSaveChanges, BulkInsert, BulkUpdate, BulkDelete, and BulkMerge.
+
+Support: SQL Server, SQL Azure, SQL Compact, Oracle, MySQL, SQLite, and PostgreSQL.
+
+This library is NOT free. FREE Trial always available for the current month.","C#,EF5,EF,EntityFramework,Entity,Framework,Batch,Bulk,BulkCopy,SqlBulkCopy,SaveChanges,Insert,Update,Delete,Merge,BulkInsert",8625,False,3.14.20
+cdowney@cimpress.com,2018-04-11T19:17:48.493Z,9,9,An additional library to handle security for Cimpress.Nancy,Cimpress.Nancy.Security,True,2018-04-11T19:17:48.493+00:00,True,False,,"nancy,cimpress,auth0,cimpress.nancy,cimpress.nancy.security",4169,False,1.0.34-alpha
+cdowney@cimpress.com,2018-04-11T19:17:25.053Z,9,9,A helper library for handling reproducible tasks such as logging and authentication for Nancy microservices,Cimpress.Nancy,True,2018-04-11T19:17:25.053+00:00,True,False,,"nancy,cimpress,cimpress.nancy,microservice",4747,False,1.0.34-alpha
+cdowney@cimpress.com,2018-04-11T19:17:36.587Z,9,9,An additional library to handle logging for Cimpress.Nancy,Cimpress.Nancy.Logging,True,2018-04-11T19:17:36.587+00:00,True,False,,"nancy,cimpress,cimpress.nancy,cimpress.nancy.logging",4453,False,1.0.34-alpha
+cdowney@cimpress.com,2018-04-11T19:18:00.993Z,9,9,An additional library to handle Swagger output for Cimpress.Nancy,Cimpress.Nancy.Swagger,True,2018-04-11T19:18:00.993+00:00,True,False,,"nancy,cimpress,swagger,cimpress.nancy,cimpress.nancy.swagger",4169,False,1.0.34-alpha
+Chris Holt,2018-04-11T19:15:04.563Z,9,9,A sister package to canopy for integration tests.,canopy.integration,False,2018-04-11T19:15:04.563+00:00,True,False,,"f#,fsharp,canopy,selenium,ui,automation,tests",400,False,1.6.5
+cdowney@cimpress.com,2018-04-11T19:17:36.587Z,9,9,An additional library to handle logging for Cimpress.Nancy,Cimpress.Nancy.Logging,True,2018-04-11T19:17:36.587+00:00,True,False,,"nancy,cimpress,cimpress.nancy,cimpress.nancy.logging",4453,False,1.0.34-alpha
+cdowney@cimpress.com,2018-04-11T19:18:00.993Z,9,9,An additional library to handle Swagger output for Cimpress.Nancy,Cimpress.Nancy.Swagger,True,2018-04-11T19:18:00.993+00:00,True,False,,"nancy,cimpress,swagger,cimpress.nancy,cimpress.nancy.swagger",4169,False,1.0.34-alpha
+cdowney@cimpress.com,2018-04-11T19:17:48.493Z,9,9,An additional library to handle security for Cimpress.Nancy,Cimpress.Nancy.Security,True,2018-04-11T19:17:48.493+00:00,True,False,,"nancy,cimpress,auth0,cimpress.nancy,cimpress.nancy.security",4169,False,1.0.34-alpha
+Chris Holt,2018-04-11T19:15:04.563Z,9,9,A sister package to canopy for integration tests.,canopy.integration,False,2018-04-11T19:15:04.563+00:00,True,False,,"f#,fsharp,canopy,selenium,ui,automation,tests",400,False,1.6.5
+cdowney@cimpress.com,2018-04-11T19:17:25.053Z,9,9,A helper library for handling reproducible tasks such as logging and authentication for Nancy microservices,Cimpress.Nancy,True,2018-04-11T19:17:25.053+00:00,True,False,,"nancy,cimpress,cimpress.nancy,microservice",4747,False,1.0.34-alpha
+Joe Audette,2018-04-11T19:10:08.537Z,1,9,MVC Controllers for cloudscribe.Core.Web,cloudscribe.Core.Web.Mvc,False,2018-04-19T16:09:32.88+00:00,True,False,,,9803,False,2.1.16
+Chris Holt,2018-04-11T18:53:10.93Z,9,9,A sister package to canopy for integration tests.,canopy.integration,False,2018-04-11T19:15:04.563+00:00,False,False,,"f#,fsharp,canopy,selenium,ui,automation,tests",400,False,1.6.4
+Joe Audette,2018-04-11T19:09:37.597Z,1,9,"Multi-tenant web application foundation with management for sites, users, roles, claims, and geographic data.",cloudscribe.Core.Web,False,2018-04-19T16:09:14.333+00:00,True,False,,"cloudscribe,multi-tenant,asp.net,core,site,management",18204,False,2.1.8
+Joe Audette,2018-04-11T19:10:08.537Z,1,9,MVC Controllers for cloudscribe.Core.Web,cloudscribe.Core.Web.Mvc,False,2018-04-19T16:09:32.88+00:00,True,False,,,9803,False,2.1.16
+Joe Audette,2018-04-11T19:09:37.597Z,1,9,"Multi-tenant web application foundation with management for sites, users, roles, claims, and geographic data.",cloudscribe.Core.Web,False,2018-04-19T16:09:14.333+00:00,True,False,,"cloudscribe,multi-tenant,asp.net,core,site,management",18204,False,2.1.8
+dotnetsay,2018-04-11T19:02:57.517Z,9,9,A simple global tool.,dotnetsay,False,2018-04-11T19:02:57.517+00:00,True,False,,,478,False,2.0.0
+Dan Siegel,2018-04-11T19:04:45.18Z,9,9,Additional MSBuild targets and properties for .NET projects. Especially enhances Xamarin targets. Enables better development practices with CI/CD pipelines,Mobile.BuildTools,False,2018-04-11T19:04:45.18+00:00,True,False,,"msbuild,dotnet,xamarin,android,ios,macos,uwp,tizen,buildtools",2107,False,1.1.0.544
+Fucci Leonardo,2018-04-11T19:03:40.69Z,43209,9,"This package is private and works only in DevCity environments.
+This package contains core files for developers.",DevCity.Framework,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.8
+Dan Siegel,2018-04-11T19:04:45.18Z,9,9,Additional MSBuild targets and properties for .NET projects. Especially enhances Xamarin targets. Enables better development practices with CI/CD pipelines,Mobile.BuildTools,False,2018-04-11T19:04:45.18+00:00,True,False,,"msbuild,dotnet,xamarin,android,ios,macos,uwp,tizen,buildtools",2107,False,1.1.0.544
+dotnetsay,2018-04-11T19:02:57.517Z,9,9,A simple global tool.,dotnetsay,False,2018-04-11T19:02:57.517+00:00,True,False,,,478,False,2.0.0
+Fucci Leonardo,2018-04-11T19:03:40.69Z,43209,9,"This package is private and works only in DevCity environments.
+This package contains core files for developers.",DevCity.Framework,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.8
+Peter Waher,2018-04-11T19:01:05.013Z,9,9,Contains a basic metering architecture.,Waher.Things.Metering,False,2018-04-11T19:01:05.013+00:00,True,False,,"IoT,Metering",1125,False,1.0.15
+Peter Waher,2018-04-11T19:00:34.183Z,9,9,Class library defining generic properties for things.,Waher.Things,False,2018-04-11T19:00:34.183+00:00,True,False,,IoT,1785,False,1.0.22
+Peter Waher,2018-04-11T18:54:56.03Z,7,9,"Implements the XMPP IoT concentrator extesion XEP-0326. The concentrator interface allows a device to manage a set of internal virtual devices, all sharing the same XMPP connection.",Waher.Networking.XMPP.Concentrator,False,2018-04-13T09:59:25.317+00:00,True,False,,"networking,communication,xmpp,iot,concentrator,XEP-0326",1577,False,0.1.24
+Peter Waher,2018-04-11T19:00:34.183Z,9,9,Class library defining generic properties for things.,Waher.Things,False,2018-04-11T19:00:34.183+00:00,True,False,,IoT,1785,False,1.0.22
+Peter Waher,2018-04-11T18:54:56.03Z,7,9,"Implements the XMPP IoT concentrator extesion XEP-0326. The concentrator interface allows a device to manage a set of internal virtual devices, all sharing the same XMPP connection.",Waher.Networking.XMPP.Concentrator,False,2018-04-13T09:59:25.317+00:00,True,False,,"networking,communication,xmpp,iot,concentrator,XEP-0326",1577,False,0.1.24
+Peter Waher,2018-04-11T19:01:05.013Z,9,9,Contains a basic metering architecture.,Waher.Things.Metering,False,2018-04-11T19:01:05.013+00:00,True,False,,"IoT,Metering",1125,False,1.0.15
+Chris Holt,2018-04-11T18:53:10.93Z,9,9,A sister package to canopy for integration tests.,canopy.integration,False,2018-04-11T19:15:04.563+00:00,True,False,,"f#,fsharp,canopy,selenium,ui,automation,tests",400,False,1.6.4
+"The Bootstrap Authors,Twitter Inc.",2018-04-11T18:53:15.307Z,9,9,"The most popular front-end framework for developing responsive, mobile first projects on the web.",bootstrap,False,2018-04-11T18:53:15.307+00:00,True,False,Bootstrap framework in CSS. Includes fonts and JavaScript,"css,mobile-first,responsive,front-end,framework,web",16715978,False,4.1.0
+Roberto Camara,2018-04-11T18:52:59.697Z,1,9,"Encapsula a criação de conexões e chamada aos métodos de um serviço SignalR.
+Ex.: SignalRCreateConnection exemploHub = new SignalRCreateConnection(""http://localhost:8082/signalr"", ""ExampleHub"");
+  SignalRCreateConnection notificationHub = new SignalRCreateConnection(host, ""NotificationHub"");
+
+1- ""Invocando um método no server SignalR""
+Task<string> date = exemploHub.Invoke<string>(""GetDateTimeFormated"");
+Console.WriteLine(date.Result);
+
+2- Registrando-se para um evento
+notificationHub.On<string>(""getNewGuid"", d =>
+{
+ Console.WriteLine(d);
+});
+
+3- Verificar disponibilidade do serviço
+if(notificationHub.ServerOnline)
+{
+Console.WriteLine(""Serviço OnLine"");
+}",SignalRConnection,False,2018-04-19T19:14:24.653+00:00,True,False,Encapsula a criação de conexões e chamada aos métodos de um serviço SignalR.,"signalr,signalr-client,self-hosted,topshelf,simpleinjector,ioc,log4net,signalr-core,windows-service,dependency-injection,roberto-camara",641,False,1.0.6
+Peter Waher,2018-04-11T18:54:15.17Z,7,9,"Implements the XMPP IoT concentrator extesion XEP-0326. The concentrator interface allows a device to manage a set of internal virtual devices, all sharing the same XMPP connection.",Waher.Networking.XMPP.Concentrator.UWP,False,2018-04-13T09:59:55.49+00:00,True,False,,"networking,communication,xmpp,iot,concentrator,XEP-0326",1506,False,0.1.24
+"The Bootstrap Authors,Twitter Inc.",2018-04-11T18:53:42.31Z,9,9,"The most popular front-end framework for developing responsive, mobile first projects on the web.",bootstrap.sass,False,2018-04-11T18:53:42.31+00:00,True,False,Bootstrap framework in Sass. Includes fonts and JavaScript,"css,sass,mobile-first,responsive,front-end,framework,web",24813,False,4.1.0
+WeiGe,2018-04-11T18:36:19.283Z,3,9,"Microsoft.AspNetCore.MvcFactory
+used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,False,False,,,6796,False,2.0.3.44
+WeiGe,2018-04-11T18:53:13.073Z,3,9,"Microsoft.AspNetCore.MvcFactory
+used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,True,False,,,6796,False,2.0.3.45
+One Frame Link,2018-04-11T18:49:09.733Z,8,9,Elasticsearch-specific implementation of Ofl.Search.Abstractions abstractions.,Ofl.Search.Elasticsearch,False,2018-04-12T02:45:25.87+00:00,True,False,,"search,elasticsearch",1412,True,4.0.26
+One Frame Link,2018-04-11T18:49:09.733Z,8,9,Elasticsearch-specific implementation of Ofl.Search.Abstractions abstractions.,Ofl.Search.Elasticsearch,False,2018-04-12T02:45:25.87+00:00,True,False,,"search,elasticsearch",1412,True,4.0.26
+Roberto Camara,2018-04-11T18:52:59.697Z,1,9,"Encapsula a criação de conexões e chamada aos métodos de um serviço SignalR.
+Ex.: SignalRCreateConnection exemploHub = new SignalRCreateConnection(""http://localhost:8082/signalr"", ""ExampleHub"");
+  SignalRCreateConnection notificationHub = new SignalRCreateConnection(host, ""NotificationHub"");
+
+1- ""Invocando um método no server SignalR""
+Task<string> date = exemploHub.Invoke<string>(""GetDateTimeFormated"");
+Console.WriteLine(date.Result);
+
+2- Registrando-se para um evento
+notificationHub.On<string>(""getNewGuid"", d =>
+{
+ Console.WriteLine(d);
+});
+
+3- Verificar disponibilidade do serviço
+if(notificationHub.ServerOnline)
+{
+Console.WriteLine(""Serviço OnLine"");
+}",SignalRConnection,False,2018-04-19T19:14:24.653+00:00,True,False,Encapsula a criação de conexões e chamada aos métodos de um serviço SignalR.,"signalr,signalr-client,self-hosted,topshelf,simpleinjector,ioc,log4net,signalr-core,windows-service,dependency-injection,roberto-camara",641,False,1.0.6
+Chris Holt,2018-04-11T18:53:10.93Z,9,9,A sister package to canopy for integration tests.,canopy.integration,False,2018-04-11T19:15:04.563+00:00,True,False,,"f#,fsharp,canopy,selenium,ui,automation,tests",400,False,1.6.4
+"The Bootstrap Authors,Twitter Inc.",2018-04-11T18:53:15.307Z,9,9,"The most popular front-end framework for developing responsive, mobile first projects on the web.",bootstrap,False,2018-04-11T18:53:15.307+00:00,True,False,Bootstrap framework in CSS. Includes fonts and JavaScript,"css,mobile-first,responsive,front-end,framework,web",16715978,False,4.1.0
+Peter Waher,2018-04-11T18:54:15.17Z,7,9,"Implements the XMPP IoT concentrator extesion XEP-0326. The concentrator interface allows a device to manage a set of internal virtual devices, all sharing the same XMPP connection.",Waher.Networking.XMPP.Concentrator.UWP,False,2018-04-13T09:59:55.49+00:00,True,False,,"networking,communication,xmpp,iot,concentrator,XEP-0326",1506,False,0.1.24
+Wahid H. Joudrey,2018-04-11T18:47:21.543Z,9,9,The Files are CSS and JavaScript codes that are needed to use Sweet Alert 2. Please link to the files as you normally would in cshtml. This are the source code from Sweet Alert2 on Github.,Wahid-SweetAlert2,False,2018-04-11T18:47:21.543+00:00,True,False,This Files are the CCS and JavaScript for SweetAlert2 as an open source project from GitHub.,,70,False,1.0.0
+"The Bootstrap Authors,Twitter Inc.",2018-04-11T18:53:42.31Z,9,9,"The most popular front-end framework for developing responsive, mobile first projects on the web.",bootstrap.sass,False,2018-04-11T18:53:42.31+00:00,True,False,Bootstrap framework in Sass. Includes fonts and JavaScript,"css,sass,mobile-first,responsive,front-end,framework,web",24813,False,4.1.0
+WeiGe,2018-04-11T18:53:13.073Z,3,9,"Microsoft.AspNetCore.MvcFactory
+used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,True,False,,,6796,False,2.0.3.45
+Wahid H. Joudrey,2018-04-11T18:47:21.543Z,9,9,The Files are CSS and JavaScript codes that are needed to use Sweet Alert 2. Please link to the files as you normally would in cshtml. This are the source code from Sweet Alert2 on Github.,Wahid-SweetAlert2,False,2018-04-11T18:47:21.543+00:00,True,False,This Files are the CCS and JavaScript for SweetAlert2 as an open source project from GitHub.,,70,False,1.0.0
+Braintree,2018-04-11T18:46:21.917Z,9,9,Braintree Client Library,Braintree,False,2018-04-11T18:46:21.917+00:00,True,False,,"braintree,paypal,venmo,intenational,payments,gateway,currencies,money,visa,mastercard,bitcoin,maestro,apple,pay,android,amex,jcb,diners,club,discover,american,express",358940,False,4.1.1
+Braintree,2018-04-11T18:46:21.917Z,9,9,Braintree Client Library,Braintree,False,2018-04-11T18:46:21.917+00:00,True,False,,"braintree,paypal,venmo,intenational,payments,gateway,currencies,money,visa,mastercard,bitcoin,maestro,apple,pay,android,amex,jcb,diners,club,discover,american,express",358940,False,4.1.1
+Maarten v.d. Donk,2018-04-11T18:32:44.273Z,43209,9,Create multiple pages with realistic test content by just using the Umbraco interface,MvdDonk.Umbraco.TestContent,False,1900-01-01T00:00:00+00:00,False,False,Create multiple pages with realistic test content by just using the Umbraco interface,"umbraco,bogus,testcontent,create,fake,umbracocms,lorem",-1,False,0.3.2
+Maarten v.d. Donk,2018-04-11T18:32:55.477Z,43209,9,Create multiple pages with realistic test content by just using the Umbraco interface,MvdDonk.Umbraco.TestContent.Core,False,1900-01-01T00:00:00+00:00,False,False,Create multiple pages with realistic test content by just using the Umbraco interface,"umbraco,bogus,testcontent,create,fake,umbracocms,lorem",-1,False,0.3.2
+WeiGe,2018-04-11T18:36:51.817Z,3,9,"update/delete entity without load entity from database,run raw sql to any entity.",AspNetCore.EFCore.SqlServer,False,2018-04-17T10:16:20.38+00:00,True,False,,"AspNetCore,.Net,Core,EF,EntityFrameworkCore,Sql,Server",3372,False,2.0.3.44
+WeiGe,2018-04-11T18:37:01.393Z,3,9,"AspNetCore.DocView;
+      .net Core Mvc document UI",AspNetCore.DocView,False,2018-04-17T10:16:35.457+00:00,True,False,,,3376,False,2.0.3.44
+WeiGe,2018-04-11T18:36:19.283Z,3,9,"Microsoft.AspNetCore.MvcFactory
+used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,True,False,,,6796,False,2.0.3.44
+Gokulnath,2018-04-11T18:36:39.97Z,9,9,AutoMocker for use with NSubstitute,NSubstituteAutoMocker.Standard,False,2018-04-11T18:36:39.97+00:00,True,False,,,47,False,1.0.0
+WeiGe,2018-04-11T18:36:44.22Z,3,9,"AspNetCore.ThirdParty
+      SMS,Payment:Alipay,WeChat ,Verfy Identity, Baidu Map, JPush,Car,Approve",AspNetCore.ThirdParty,False,2018-04-17T10:16:25.223+00:00,True,False,,,957,False,2.0.3.44
+stackify_matt,2018-04-10T19:15:56.013Z,10,10,Required by Prefix and Stackify APM to properly track the performance of ASP.NET Core apps,StackifyMiddleware,False,2018-04-10T19:15:56.013+00:00,True,False,,,63892,False,2.1.2
+WeiGe,2018-04-11T18:36:32.97Z,3,9,"AspNetCore.CodeGenerator for sqlserver of ef Core,
+      Automatic generation of database/table description",AspNetCore.CodeGenerator.SqlServer,False,2018-04-17T10:16:39.097+00:00,True,False,,,1334,False,2.0.3.44
+WeiGe,2018-04-11T18:36:51.817Z,3,9,"update/delete entity without load entity from database,run raw sql to any entity.",AspNetCore.EFCore.SqlServer,False,2018-04-17T10:16:20.38+00:00,True,False,,"AspNetCore,.Net,Core,EF,EntityFrameworkCore,Sql,Server",3372,False,2.0.3.44
+WeiGe,2018-04-11T18:36:19.283Z,3,9,"Microsoft.AspNetCore.MvcFactory
+used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,True,False,,,6796,False,2.0.3.44
+WeiGe,2018-04-11T18:36:44.22Z,3,9,"AspNetCore.ThirdParty
+      SMS,Payment:Alipay,WeChat ,Verfy Identity, Baidu Map, JPush,Car,Approve",AspNetCore.ThirdParty,False,2018-04-17T10:16:25.223+00:00,True,False,,,957,False,2.0.3.44
+WeiGe,2018-04-11T18:37:01.393Z,3,9,"AspNetCore.DocView;
+      .net Core Mvc document UI",AspNetCore.DocView,False,2018-04-17T10:16:35.457+00:00,True,False,,,3376,False,2.0.3.44
+Gokulnath,2018-04-11T18:36:39.97Z,9,9,AutoMocker for use with NSubstitute,NSubstituteAutoMocker.Standard,False,2018-04-11T18:36:39.97+00:00,True,False,,,47,False,1.0.0
+WeiGe,2018-04-11T18:36:32.97Z,3,9,"AspNetCore.CodeGenerator for sqlserver of ef Core,
+      Automatic generation of database/table description",AspNetCore.CodeGenerator.SqlServer,False,2018-04-17T10:16:39.097+00:00,True,False,,,1334,False,2.0.3.44
+WeiGe,2018-04-11T16:01:13.257Z,3,9,"AspNetCore.ThirdParty
+      SMS,Payment:Alipay,WeChat ,Verfy Identity, Baidu Map, JPush,Car,Approve",AspNetCore.ThirdParty,False,2018-04-17T10:16:25.223+00:00,False,False,,,957,False,2.0.3.42
+WeiGe,2018-04-11T16:01:18.16Z,3,9,"Microsoft.AspNetCore.MvcFactory
+used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,False,False,,,6796,False,2.0.3.42
+Maarten v.d. Donk,2018-04-11T18:32:44.273Z,43209,9,Create multiple pages with realistic test content by just using the Umbraco interface,MvdDonk.Umbraco.TestContent,False,1900-01-01T00:00:00+00:00,False,False,Create multiple pages with realistic test content by just using the Umbraco interface,"umbraco,bogus,testcontent,create,fake,umbracocms,lorem",-1,False,0.3.2
+WeiGe,2018-04-11T16:01:39.13Z,3,9,"AspNetCore.DocView;
+      .net Core Mvc document UI",AspNetCore.DocView,False,2018-04-17T10:16:35.457+00:00,False,False,,,3376,False,2.0.3.42
+Maarten v.d. Donk,2018-04-11T18:32:55.477Z,43209,9,Create multiple pages with realistic test content by just using the Umbraco interface,MvdDonk.Umbraco.TestContent.Core,False,1900-01-01T00:00:00+00:00,False,False,Create multiple pages with realistic test content by just using the Umbraco interface,"umbraco,bogus,testcontent,create,fake,umbracocms,lorem",-1,False,0.3.2
+WeiGe,2018-04-11T16:01:27.32Z,3,9,"update/delete entity without load entity from database,run raw sql to any entity.",AspNetCore.EFCore.SqlServer,False,2018-04-17T10:16:20.38+00:00,False,False,,"AspNetCore,.Net,Core,EF,EntityFrameworkCore,Sql,Server",3372,False,2.0.3.42
+Mxmgt,2018-04-11T18:34:03.963Z,8,9,Печать штрихкодов,EmEx.Barcode.Print,False,2018-04-12T05:36:00.8+00:00,True,False,,,226,False,2.0.1
+Maarten v.d. Donk,2018-04-11T18:32:55.477Z,43209,9,Create multiple pages with realistic test content by just using the Umbraco interface,MvdDonk.Umbraco.TestContent.Core,False,1900-01-01T00:00:00+00:00,False,False,Create multiple pages with realistic test content by just using the Umbraco interface,"umbraco,bogus,testcontent,create,fake,umbracocms,lorem",-1,False,0.3.2
+Mxmgt,2018-04-11T18:34:03.963Z,8,9,Печать штрихкодов,EmEx.Barcode.Print,False,2018-04-12T05:36:00.8+00:00,True,False,,,226,False,2.0.1
+Maarten v.d. Donk,2018-04-11T18:32:44.273Z,43209,9,Create multiple pages with realistic test content by just using the Umbraco interface,MvdDonk.Umbraco.TestContent,False,1900-01-01T00:00:00+00:00,False,False,Create multiple pages with realistic test content by just using the Umbraco interface,"umbraco,bogus,testcontent,create,fake,umbracocms,lorem",-1,False,0.3.2
+WeiGe,2018-04-11T18:28:56.453Z,3,9,AspNetCore.Utilities,AspNetCore.Utilities,False,2018-04-17T09:52:07.82+00:00,True,False,,,3119,False,2.0.3.44
+WeiGe,2018-04-11T15:49:24.773Z,3,9,AspNetCore.Utilities,AspNetCore.Utilities,False,2018-04-17T09:52:07.82+00:00,False,False,,,3119,False,2.0.3.42
+Neomode.MagentoV1.Jobs,2018-04-11T18:25:08.507Z,9,9,Package Description,Neomode.MagentoV1.Jobs,False,2018-04-11T18:25:08.507+00:00,True,False,,,183,False,1.0.30
+Maarten v.d. Donk,2018-04-11T18:15:17.483Z,43209,9,Create multiple pages with realistic test content by just using the Umbraco interface,MvdDonk.Umbraco.TestContent.Core,False,1900-01-01T00:00:00+00:00,False,False,Create multiple pages with realistic test content by just using the Umbraco interface,"umbraco,bogus,test,content,create,fake",-1,False,0.3.1
+Maarten v.d. Donk,2018-04-11T18:15:05.797Z,43209,9,Create multiple pages with realistic test content by just using the Umbraco interface,MvdDonk.Umbraco.TestContent,False,1900-01-01T00:00:00+00:00,False,False,Create multiple pages with realistic test content by just using the Umbraco interface,"umbraco,bogus,test,content,create,fake",-1,False,0.3.1
+Neomode.MagentoV1.Integration,2018-04-11T18:28:38.577Z,9,9,Package Description,Neomode.MagentoV1.Integration,False,2018-04-11T18:28:38.577+00:00,True,False,,,186,False,1.0.30
+Neomode.MagentoV1.Integration,2018-04-11T18:28:38.577Z,9,9,Package Description,Neomode.MagentoV1.Integration,False,2018-04-11T18:28:38.577+00:00,True,False,,,186,False,1.0.30
+WeiGe,2018-04-11T18:28:56.453Z,3,9,AspNetCore.Utilities,AspNetCore.Utilities,False,2018-04-17T09:52:07.82+00:00,True,False,,,3119,False,2.0.3.44
+Neomode.MagentoV1.Jobs,2018-04-11T18:25:08.507Z,9,9,Package Description,Neomode.MagentoV1.Jobs,False,2018-04-11T18:25:08.507+00:00,True,False,,,183,False,1.0.30
+Dmitry Sidorov,2018-04-11T18:23:19.503Z,1,9,Emerald framework.,Emerald,False,2018-04-19T15:17:30.003+00:00,True,False,,emerald,1171,False,1.1.9
+Roman Kuzmin,2018-04-11T18:20:54.31Z,9,9,"Invoke-Build is a build and test automation tool which invokes tasks defined in
+PowerShell v2.0+ scripts. It is similar to psake but arguably easier to use and
+more powerful. It is complete, bug free, well covered by tests.",Invoke-Build,False,2018-04-11T18:20:54.31+00:00,True,False,"Invoke-Build is a build and test automation tool which invokes tasks defined in
+PowerShell v2.0+ scripts. It is similar to psake but arguably easier to use and
+more powerful. It is complete, bug free, well covered by tests.","PowerShell,Build,Test,Automation",72051,False,5.4.1
+Roman Kuzmin,2018-04-11T18:20:54.31Z,9,9,"Invoke-Build is a build and test automation tool which invokes tasks defined in
+PowerShell v2.0+ scripts. It is similar to psake but arguably easier to use and
+more powerful. It is complete, bug free, well covered by tests.",Invoke-Build,False,2018-04-11T18:20:54.31+00:00,True,False,"Invoke-Build is a build and test automation tool which invokes tasks defined in
+PowerShell v2.0+ scripts. It is similar to psake but arguably easier to use and
+more powerful. It is complete, bug free, well covered by tests.","PowerShell,Build,Test,Automation",72051,False,5.4.1
+Dmitry Sidorov,2018-04-11T18:23:19.503Z,1,9,Emerald framework.,Emerald,False,2018-04-19T15:17:30.003+00:00,True,False,,emerald,1171,False,1.1.9
+Maarten v.d. Donk,2018-04-11T18:15:05.797Z,43209,9,Create multiple pages with realistic test content by just using the Umbraco interface,MvdDonk.Umbraco.TestContent,False,1900-01-01T00:00:00+00:00,False,False,Create multiple pages with realistic test content by just using the Umbraco interface,"umbraco,bogus,test,content,create,fake",-1,False,0.3.1
+"Microsoft,Xamarin University",2018-04-11T18:18:51.96Z,8,9,"This library provides a set of Xamarin.Forms classes for enterprise and MVVM development; includes markup extensions, behaviors, custom controls and abstractions for MVVM.",XamarinUniversity.Infrastructure,False,2018-04-12T21:33:22.04+00:00,True,False,,"mvvm,ios,xamarin,android,winphone,uwp,windows,wpf,macos",14269,False,1.1.6
+Lykke.Service.PersonalData,2018-04-11T18:16:10.847Z,1,9,Client for Lykke Personal Data service,Lykke.Service.PersonalData,False,2018-04-19T16:40:06.613+00:00,True,False,,,5559,False,1.0.47
+Gabriel.Cat.XamarinForms,2018-04-11T18:16:48.33Z,9,9,Package Description,Gabriel.Cat.XamarinForms,True,2018-04-11T18:16:48.33+00:00,True,False,,,292,False,1.0.1-preview
+Kartik Visweswaran,2018-04-11T18:18:38.193Z,9,9,"An enhanced HTML 5 file input for Bootstrap 3.x with file preview for various files, offers multiple selection, and more.",bootstrap-fileinput,False,2018-04-11T18:18:38.193+00:00,True,False,,"bootstrap,bootstrap-fileinput",65106,False,4.4.8
+"Microsoft,Xamarin University",2018-04-11T18:18:29.773Z,9,9,This library provides a set of .NET classes for XAML based MVVM development.,XamarinUniversity.Core,False,2018-04-11T18:18:29.773+00:00,True,False,,"mvvm,ios,xamarin,android,winphone,uwp,windows,wpf,macos",11903,False,1.1.6
+Maarten v.d. Donk,2018-04-11T18:15:17.483Z,43209,9,Create multiple pages with realistic test content by just using the Umbraco interface,MvdDonk.Umbraco.TestContent.Core,False,1900-01-01T00:00:00+00:00,False,False,Create multiple pages with realistic test content by just using the Umbraco interface,"umbraco,bogus,test,content,create,fake",-1,False,0.3.1
+Microsoft,2018-04-11T18:15:04.17Z,9,9,Simple popover menu for Xamarin.iOS,Xamarin.JVMenuPopover,False,2018-04-11T18:15:04.17+00:00,True,False,,,47,True,1.7.0
+Lykke.Service.PersonalData,2018-04-11T18:16:10.847Z,1,9,Client for Lykke Personal Data service,Lykke.Service.PersonalData,False,2018-04-19T16:40:06.613+00:00,True,False,,,5559,False,1.0.47
+"Microsoft,Xamarin University",2018-04-11T18:18:51.96Z,8,9,"This library provides a set of Xamarin.Forms classes for enterprise and MVVM development; includes markup extensions, behaviors, custom controls and abstractions for MVVM.",XamarinUniversity.Infrastructure,False,2018-04-12T21:33:22.04+00:00,True,False,,"mvvm,ios,xamarin,android,winphone,uwp,windows,wpf,macos",14269,False,1.1.6
+Gabriel.Cat.XamarinForms,2018-04-11T18:16:48.33Z,9,9,Package Description,Gabriel.Cat.XamarinForms,True,2018-04-11T18:16:48.33+00:00,True,False,,,292,False,1.0.1-preview
+"Microsoft,Xamarin University",2018-04-11T18:18:29.773Z,9,9,This library provides a set of .NET classes for XAML based MVVM development.,XamarinUniversity.Core,False,2018-04-11T18:18:29.773+00:00,True,False,,"mvvm,ios,xamarin,android,winphone,uwp,windows,wpf,macos",11903,False,1.1.6
+Maarten v.d. Donk,2018-04-11T18:15:05.797Z,43209,9,Create multiple pages with realistic test content by just using the Umbraco interface,MvdDonk.Umbraco.TestContent,False,1900-01-01T00:00:00+00:00,False,False,Create multiple pages with realistic test content by just using the Umbraco interface,"umbraco,bogus,test,content,create,fake",-1,False,0.3.1
+Microsoft,2018-04-11T18:15:04.17Z,9,9,Simple popover menu for Xamarin.iOS,Xamarin.JVMenuPopover,False,2018-04-11T18:15:04.17+00:00,True,False,,,47,True,1.7.0
+Maarten v.d. Donk,2018-04-11T18:15:17.483Z,43209,9,Create multiple pages with realistic test content by just using the Umbraco interface,MvdDonk.Umbraco.TestContent.Core,False,1900-01-01T00:00:00+00:00,False,False,Create multiple pages with realistic test content by just using the Umbraco interface,"umbraco,bogus,test,content,create,fake",-1,False,0.3.1
+Jason Taylor,2018-04-11T18:13:45.56Z,9,9,See the support docs at http://support.stackify.com for details on usage.,StackifyHttpModule,False,2018-04-11T18:13:45.56+00:00,False,False,,,111798,False,1.0.33
+Piotr Falkowski,2018-04-11T18:09:28.017Z,9,9,"Lightweight extensions methods (and constants) for common programming tasks, like:
+
+Suffixes (AsMemory, AsTime), Interpolate, Partition, Shuffle (O(n)), Softmax, InnerProduct, IsPrime, ManhattanDistance, EuclideanDistance, InClosedRange, MeanSquaredError, EqualsWithTolerance, HsVtoArgb, Scale, Fit and many more. Also a useful interfces IValueEquatable and IValidatable are introduced. Members are unit tested and the code is openly available at github to check/contribute:  https://github.com/PFalkowski/Extensions.Standard",Extensions.Standard,False,2018-04-11T18:09:28.017+00:00,True,False,,"extensions,extension-methods,netcore,netstandard,boilerplate",903,False,3.0.0
+Maximus37,2018-04-11T18:09:09.203Z,9,9,Package Description,Nurvis.Core.UWP,False,2018-04-11T18:09:09.203+00:00,True,False,,,362,False,1.0.3.4
+Piotr Falkowski,2018-04-11T18:09:28.017Z,9,9,"Lightweight extensions methods (and constants) for common programming tasks, like:
+
+Suffixes (AsMemory, AsTime), Interpolate, Partition, Shuffle (O(n)), Softmax, InnerProduct, IsPrime, ManhattanDistance, EuclideanDistance, InClosedRange, MeanSquaredError, EqualsWithTolerance, HsVtoArgb, Scale, Fit and many more. Also a useful interfces IValueEquatable and IValidatable are introduced. Members are unit tested and the code is openly available at github to check/contribute:  https://github.com/PFalkowski/Extensions.Standard",Extensions.Standard,False,2018-04-11T18:09:28.017+00:00,True,False,,"extensions,extension-methods,netcore,netstandard,boilerplate",903,False,3.0.0
+Jason Taylor,2018-04-11T18:13:45.56Z,9,9,See the support docs at http://support.stackify.com for details on usage.,StackifyHttpModule,False,2018-04-11T18:13:45.56+00:00,False,False,,,111798,False,1.0.33
+Codenesium LLC,2018-04-11T18:05:52.023Z,9,9,Libary of data conversion extension methods,Codenesium.DataConversionExtensions,False,2018-04-11T18:05:52.023+00:00,True,False,,".NET,c#,data,conversion",777,False,2018.1.3
+Maximus37,2018-04-11T18:09:09.203Z,9,9,Package Description,Nurvis.Core.UWP,False,2018-04-11T18:09:09.203+00:00,True,False,,,362,False,1.0.3.4
+Geotab Inc,2018-04-11T18:05:58.633Z,9,9,SDK library for accessing MyGeotab customer databases,Geotab.Checkmate.ObjectModel,False,2018-04-11T18:05:58.633+00:00,True,False,,"geotab,mygeotab,api,sdk",28192,False,5.7.1802
+Andrew Gunn,2018-04-11T18:08:33.67Z,9,9,Gunnsoft ASP.NET Core Razor,Gunnsoft.IdentityServer.Stores.MongoDB,False,2018-04-11T18:08:33.67+00:00,True,False,,"Gunnsoft,IdentityServer,MongoDB",145,False,0.1.6
+Geotab Inc,2018-04-11T18:05:58.633Z,9,9,SDK library for accessing MyGeotab customer databases,Geotab.Checkmate.ObjectModel,False,2018-04-11T18:05:58.633+00:00,True,False,,"geotab,mygeotab,api,sdk",28192,False,5.7.1802
+Andrew Gunn,2018-04-11T18:08:33.67Z,9,9,Gunnsoft ASP.NET Core Razor,Gunnsoft.IdentityServer.Stores.MongoDB,False,2018-04-11T18:08:33.67+00:00,True,False,,"Gunnsoft,IdentityServer,MongoDB",145,False,0.1.6
+Codenesium LLC,2018-04-11T18:05:52.023Z,9,9,Libary of data conversion extension methods,Codenesium.DataConversionExtensions,False,2018-04-11T18:05:52.023+00:00,True,False,,".NET,c#,data,conversion",777,False,2018.1.3
+Maarten v.d. Donk,2018-04-11T18:03:25.473Z,43209,9,TODO README,MvdDonk.Umbraco.TestContent.Core,False,1900-01-01T00:00:00+00:00,False,False,TODO README,umbraco,-1,False,0.3.0
+Maarten v.d. Donk,2018-04-11T18:03:13.69Z,43209,9,TODO README,MvdDonk.Umbraco.TestContent,False,1900-01-01T00:00:00+00:00,False,False,TODO README,umbraco,-1,False,0.3.0
+Maarten v.d. Donk,2018-04-11T18:03:25.473Z,43209,9,TODO README,MvdDonk.Umbraco.TestContent.Core,False,1900-01-01T00:00:00+00:00,False,False,TODO README,umbraco,-1,False,0.3.0
+Maarten v.d. Donk,2018-04-11T18:03:13.69Z,43209,9,TODO README,MvdDonk.Umbraco.TestContent,False,1900-01-01T00:00:00+00:00,False,False,TODO README,umbraco,-1,False,0.3.0
+MarginTrading.Backend.Contracts,2018-04-11T17:59:54.603Z,1,9,Package Description,Lykke.MarginTrading.Backend.Contracts,True,2018-04-19T23:38:04.04+00:00,True,False,,,3181,False,3.0.0-beta03
+Georg Dangl,2018-04-11T17:58:52.447Z,9,9,Library to transform Rtf and Html to plain text and vice versa,Dangl.TextConverter,False,2018-04-11T17:58:52.447+00:00,True,False,,"antlr4,rtf,html,plain,text,conversion",1494,False,1.1.0
+MarginTrading.Backend.Contracts,2018-04-11T17:59:54.603Z,1,9,Package Description,Lykke.MarginTrading.Backend.Contracts,True,2018-04-19T23:38:04.04+00:00,True,False,,,3181,False,3.0.0-beta03
+Georg Dangl,2018-04-11T17:58:52.447Z,9,9,Library to transform Rtf and Html to plain text and vice versa,Dangl.TextConverter,False,2018-04-11T17:58:52.447+00:00,True,False,,"antlr4,rtf,html,plain,text,conversion",1494,False,1.1.0
+Romfos,2018-04-11T17:54:58.873Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.PreProcessor,False,2018-04-11T17:54:58.873+00:00,True,False,,"Specflow,AutoTests",4396,False,2.1.2
+Romfos,2018-04-11T17:54:47.093Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Models,False,2018-04-11T17:54:47.093+00:00,True,False,,"Specflow,AutoTests",4412,False,2.1.2
+Romfos,2017-09-30T14:03:20.153Z,9,202,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Core,False,2018-04-11T17:54:35.06+00:00,False,False,,"Specflow,AutoTests",4431,False,1.4.2
+Romfos,2017-09-30T14:03:58.17Z,9,202,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.TestData,False,2018-04-11T17:55:10.733+00:00,False,False,,"Specflow,AutoTests",2772,False,1.4.2
+Romfos,2018-04-11T17:55:10.733Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.TestData,False,2018-04-11T17:55:10.733+00:00,True,False,,"Specflow,AutoTests",2772,False,2.1.2
+Romfos,2018-04-11T17:55:23.657Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Web,False,2018-04-11T17:55:23.657+00:00,True,False,,"Specflow,AutoTests,Selenium,WebDriver",4355,False,2.1.2
+Romfos,2017-09-30T14:03:33.78Z,9,202,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Models,False,2018-04-11T17:54:47.093+00:00,False,False,,"Specflow,AutoTests",4412,False,1.4.2
+Romfos,2017-09-30T14:04:09.203Z,9,202,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Web,False,2018-04-11T17:55:23.657+00:00,False,False,,"Specflow,AutoTests,Selenium,WebDriver",4355,False,1.4.2
+Romfos,2018-04-11T17:54:35.06Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Core,False,2018-04-11T17:54:35.06+00:00,True,False,,"Specflow,AutoTests",4431,False,2.1.2
+Romfos,2017-09-30T14:03:45.797Z,9,202,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.PreProcessor,False,2018-04-11T17:54:58.873+00:00,False,False,,"Specflow,AutoTests",4396,False,1.4.2
+Microsoft,2018-04-11T17:50:45.803Z,9,9,YAMS Client can be used by YAMS application to take advantage of health monitoring and graceful shutdown features.,Etg.Yams.Client,False,2018-04-11T17:50:45.803+00:00,True,False,,,394,False,1.1.0
+Romfos,2018-04-11T17:55:23.657Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Web,False,2018-04-11T17:55:23.657+00:00,True,False,,"Specflow,AutoTests,Selenium,WebDriver",4355,False,2.1.2
+Romfos,2018-04-11T17:55:10.733Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.TestData,False,2018-04-11T17:55:10.733+00:00,True,False,,"Specflow,AutoTests",2772,False,2.1.2
+Microsoft,2018-04-11T17:50:45.803Z,9,9,YAMS Client can be used by YAMS application to take advantage of health monitoring and graceful shutdown features.,Etg.Yams.Client,False,2018-04-11T17:50:45.803+00:00,True,False,,,394,False,1.1.0
+Romfos,2018-04-11T17:54:35.06Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Core,False,2018-04-11T17:54:35.06+00:00,True,False,,"Specflow,AutoTests",4431,False,2.1.2
+Lykke.HttpClientGenerator,2018-04-11T17:48:22.063Z,1,9,"This package helps to generate client proxy for an api using the Refit library.
+            It adds cache and retries using Polly to the generated proxies.
+            User logic can also be added as wrappers to the requests or to the method calls.",Lykke.HttpClientGenerator,True,2018-04-19T23:31:40.51+00:00,True,False,,"refit,polly,dotnet-core,csharp,api-client",113,False,1.0.0-beta01
+Microsoft Studios (BigPark),2018-04-11T17:47:35.857Z,9,9,"YAMS is a framework for deploying and hosting microservices that allows quick deployments of Azure services (~1 minute), sharing infrastructure (multiple services on the same VM), versioning and more.",Etg.Yams,False,2018-04-11T20:11:49.277+00:00,True,False,,,6473,False,1.8.0
+"Pedro Fonseca,Pedro Santos,Hugo Lage",2018-04-11T17:48:44.673Z,9,9,Metodos comuns à todos os projetos,ADSPrev.Framework.Common,False,2018-04-11T17:48:44.673+00:00,True,False,,"ADSPrev,Framework,Common",366,False,2.0.0.1
+Microsoft Studios (BigPark),2018-04-11T17:47:35.857Z,9,9,"YAMS is a framework for deploying and hosting microservices that allows quick deployments of Azure services (~1 minute), sharing infrastructure (multiple services on the same VM), versioning and more.",Etg.Yams,False,2018-04-11T20:11:49.277+00:00,True,False,,,6473,False,1.8.0
+Lykke.HttpClientGenerator,2018-04-11T17:48:22.063Z,1,9,"This package helps to generate client proxy for an api using the Refit library.
+            It adds cache and retries using Polly to the generated proxies.
+            User logic can also be added as wrappers to the requests or to the method calls.",Lykke.HttpClientGenerator,True,2018-04-19T23:31:40.51+00:00,True,False,,"refit,polly,dotnet-core,csharp,api-client",113,False,1.0.0-beta01
+"Pedro Fonseca,Pedro Santos,Hugo Lage",2018-04-11T17:48:44.673Z,9,9,Metodos comuns à todos os projetos,ADSPrev.Framework.Common,False,2018-04-11T17:48:44.673+00:00,True,False,,"ADSPrev,Framework,Common",366,False,2.0.0.1
+Crossroads Church,2018-04-11T17:45:50.277Z,8,9,C# .Net common components for use in various Crossroads web applications.  This contains some common shared components needed by many or all of these applications.,Crossroads.Web.Common,False,2018-04-12T14:05:32.527+00:00,True,False,,,5199,False,1.1.14
+PSNS,2018-04-11T17:44:11.867Z,9,9,Contains functions for communicating with SQL Service Broker,Psns.Common.Clients.Broker,False,2018-04-11T17:44:11.867+00:00,True,False,,"PSNS,SQL,Service,Broker",2885,False,2018.4.11.1
+Crossroads Church,2018-04-11T17:45:50.277Z,8,9,C# .Net common components for use in various Crossroads web applications.  This contains some common shared components needed by many or all of these applications.,Crossroads.Web.Common,False,2018-04-12T14:05:32.527+00:00,True,False,,,5199,False,1.1.14
+PSNS,2018-04-11T17:44:11.867Z,9,9,Contains functions for communicating with SQL Service Broker,Psns.Common.Clients.Broker,False,2018-04-11T17:44:11.867+00:00,True,False,,"PSNS,SQL,Service,Broker",2885,False,2018.4.11.1
+"Aliyun,Jun",2018-04-11T17:39:09.743Z,9,9,Logary support for ASP.NET Core logging,aliyun-log-csharp-sdk,False,2018-04-11T17:39:09.743+00:00,True,False,,"log,aliyun,netcore",3044,False,1.0.0
+freeMartin,2018-04-11T17:41:20.61Z,1,9,A library that warps the ivanti API in a nice user-friendly package.,fm.ivanti.API,True,2018-04-19T14:43:54.53+00:00,True,False,,"ivanti,Service,Manager,fm,API",631,False,2.4.0-preview2
+freeMartin,2018-04-11T17:41:20.61Z,1,9,A library that warps the ivanti API in a nice user-friendly package.,fm.ivanti.API,True,2018-04-19T14:43:54.53+00:00,True,False,,"ivanti,Service,Manager,fm,API",631,False,2.4.0-preview2
+"Aliyun,Jun",2018-04-11T17:39:09.743Z,9,9,Logary support for ASP.NET Core logging,aliyun-log-csharp-sdk,False,2018-04-11T17:39:09.743+00:00,True,False,,"log,aliyun,netcore",3044,False,1.0.0
+Codenesium LLC,2018-04-11T17:34:14.623Z,9,9,Libary of data conversion extension methods,Codenesium.DataConversionExtensions,False,2018-04-11T18:05:52.023+00:00,True,False,,".NET,c#,data,conversion",777,False,2018.1.2
+IntentBot Team,2018-04-11T17:35:50.877Z,1,9,Package Description,IntentBot.LuisIntentProvider,False,2018-04-19T22:29:47.713+00:00,True,False,,,153,False,1.2.2
+Emerson Brito,2018-04-11T17:34:13.217Z,9,9,"Contains extension methods for different components of the Microsoft Dynamics CRM SDK. Also a set of wrappers and utilities created around the Organization Service Context, metadata and more.",XrmUtils.CrmSdk.Extensions,False,2018-04-11T17:34:13.217+00:00,True,False,"Extenion methods for the Organization Service, Entity and other Microsoft Dynamics CRM SDK components.","dynamics,crm,365,sdk,xrm,extensions",566,False,1.0.3
+IntentBot Team,2018-04-11T17:36:14.317Z,1,9,Package Description,IntentBot.SoftRouter,False,2018-04-19T22:31:37.72+00:00,True,False,,,194,False,1.3.2
+IntentBot Team,2018-04-11T17:35:25.83Z,1,9,Package Description,IntentBot.DefaultCommandProcessor,False,2018-04-19T22:26:43.19+00:00,True,False,,,101,False,1.1.3
+IntentBot Team,2018-04-11T17:35:25.83Z,1,9,Package Description,IntentBot.DefaultCommandProcessor,False,2018-04-19T22:26:43.19+00:00,True,False,,,101,False,1.1.3
+Piotr Falkowski,2018-04-11T17:33:32.48Z,2,9,"Your everyday interfaces: IFactory<T>, IValidatable, IValueEquatable<T>. Nothing more, nothing less. .NET Standard, MIT licenced.",StandardInterfaces,False,2018-04-18T22:31:13.83+00:00,True,False,,"IFactory,IValueEquatable,IValidatable,Factory",72,False,1.0.0
+IntentBot Team,2018-04-11T17:36:14.317Z,1,9,Package Description,IntentBot.SoftRouter,False,2018-04-19T22:31:37.72+00:00,True,False,,,194,False,1.3.2
+Emerson Brito,2018-04-11T17:34:13.217Z,9,9,"Contains extension methods for different components of the Microsoft Dynamics CRM SDK. Also a set of wrappers and utilities created around the Organization Service Context, metadata and more.",XrmUtils.CrmSdk.Extensions,False,2018-04-11T17:34:13.217+00:00,True,False,"Extenion methods for the Organization Service, Entity and other Microsoft Dynamics CRM SDK components.","dynamics,crm,365,sdk,xrm,extensions",566,False,1.0.3
+Codenesium LLC,2018-04-11T17:34:14.623Z,9,9,Libary of data conversion extension methods,Codenesium.DataConversionExtensions,False,2018-04-11T18:05:52.023+00:00,True,False,,".NET,c#,data,conversion",777,False,2018.1.2
+IntentBot Team,2018-04-11T17:35:50.877Z,1,9,Package Description,IntentBot.LuisIntentProvider,False,2018-04-19T22:29:47.713+00:00,True,False,,,153,False,1.2.2
+Piotr Falkowski,2018-04-11T17:33:32.48Z,2,9,"Your everyday interfaces: IFactory<T>, IValidatable, IValueEquatable<T>. Nothing more, nothing less. .NET Standard, MIT licenced.",StandardInterfaces,False,2018-04-18T22:31:13.83+00:00,True,False,,"IFactory,IValueEquatable,IValidatable,Factory",72,False,1.0.0
+"Aliyun,Jun",2018-04-11T17:23:24.973Z,43209,9,Logary support for ASP.NET Core logging,Aliyun.Api.Log,False,1900-01-01T00:00:00+00:00,False,False,,"log,aliyun,netcore",-1,False,1.0.0
+Jason Sylvestre,2018-04-11T17:30:24.507Z,1,9,Test Helpers for .NET Core,AspNetCore.TestHelpers,False,2018-04-19T15:36:01.407+00:00,True,False,,,292,False,1.0.9
+Jason Sylvestre,2018-04-11T17:30:24.507Z,1,9,Test Helpers for .NET Core,AspNetCore.TestHelpers,False,2018-04-19T15:36:01.407+00:00,True,False,,,292,False,1.0.9
+TropicoHash.Utility.CurrentDBConnection,2018-04-11T17:27:11.623Z,9,9,Package Description,TropicoHash.Utility.CurrentDBConnection,False,2018-04-11T17:27:11.623+00:00,True,False,,,89,False,1.0.1
+TropicoHash.Utility.CurrentDBConnection,2018-04-11T17:27:11.623Z,9,9,Package Description,TropicoHash.Utility.CurrentDBConnection,False,2018-04-11T17:27:11.623+00:00,True,False,,,89,False,1.0.1
+"Aliyun,Jun",2018-04-11T17:23:24.973Z,43209,9,Logary support for ASP.NET Core logging,Aliyun.Api.Log,False,1900-01-01T00:00:00+00:00,False,False,,"log,aliyun,netcore",-1,False,1.0.0
+Xiaoyu Yin,2018-04-11T17:21:08.297Z,9,9,MensaPlus app companion library and utilities.,In.Xiaoyu.MensaPlusKit,False,2018-04-11T17:21:08.297+00:00,True,False,,mensaplus,449,False,0.5.5
+"Aliyun,Jun",2018-04-11T17:23:24.973Z,43209,9,Logary support for ASP.NET Core logging,Aliyun.Api.Log,False,1900-01-01T00:00:00+00:00,False,False,,"log,aliyun,netcore",-1,False,1.0.0
+Xiaoyu Yin,2018-04-11T17:21:08.297Z,9,9,MensaPlus app companion library and utilities.,In.Xiaoyu.MensaPlusKit,False,2018-04-11T17:21:08.297+00:00,True,False,,mensaplus,449,False,0.5.5
+John Lenz,2018-04-11T17:20:37.42Z,9,9,"Machine Watch is a generic conduit which allows SeedTactic software to monitor and control the cell.
+      The communication between the MachineWatch server and the cell happens via a plugin, and
+      this package implements some common code to help implement plugins.
+
+      For documentation and source code, visit [the bitbucket project](https://bitbucket.org/blackmaple/machinewatch).",BlackMaple.MachineFramework,False,2018-04-11T17:20:37.42+00:00,True,False,,,1361,False,8.0.1
+Elder Santos,2018-04-11T17:18:42.76Z,3,9,A dotnet core implementation for the Secure Remote Protocol,SRPDotNet,False,2018-04-17T14:05:25.36+00:00,True,False,,"srp,security,zero,knowledge",160,False,1.0.0
+John Lenz,2018-04-11T17:20:37.42Z,9,9,"Machine Watch is a generic conduit which allows SeedTactic software to monitor and control the cell.
+      The communication between the MachineWatch server and the cell happens via a plugin, and
+      this package implements some common code to help implement plugins.
+
+      For documentation and source code, visit [the bitbucket project](https://bitbucket.org/blackmaple/machinewatch).",BlackMaple.MachineFramework,False,2018-04-11T17:20:37.42+00:00,True,False,,,1361,False,8.0.1
+Elder Santos,2018-04-11T17:18:42.76Z,3,9,A dotnet core implementation for the Secure Remote Protocol,SRPDotNet,False,2018-04-17T14:05:25.36+00:00,True,False,,"srp,security,zero,knowledge",160,False,1.0.0
+spaz,2018-04-11T17:12:55.37Z,9,9,My package description.,SdkTID,False,2018-04-11T23:54:34.507+00:00,True,False,,,4752,False,1.0.0.56
+Eberhard Beilharz,2018-04-11T17:10:46.007Z,9,9,"Provides a small msbuild task named ""dependencies"" that allows to download dependencies from a TeamCity server.",BuildDependencyTasks,False,2018-04-11T17:10:46.007+00:00,True,False,,"msbuild,dependencies,teamcity",4998,False,0.4.2
+ORPALIS,2018-04-11T17:10:05.427Z,9,9,ORPALIS PassportPDF API Client SDK,PassportPDF,False,2018-04-11T17:10:05.427+00:00,True,False,"PassportPDF is a modern cloud infrastructure offering freemium microservices dedicated to addressing document management challenges of professional and general public users.
+        It offers productivity-oriented solutions in many fields such as compression, conversion, OCR, content protection, digital signature, data compliance, and more...",,1234,False,1.0.22
+"Johan Larsson,milleniumbug",2018-04-11T17:12:15.197Z,6,9,Roslyn analyzers.,Gu.Analyzers,True,2018-04-14T16:56:25.367+00:00,True,False,,"Roslyn,Diagnostic,Analyzer,DotnetAnalyzers",14763,False,1.2.9.1-dev
+PSNS,2018-04-11T17:08:21.097Z,3,9,Some helpful extension methods,Psns.Common.SystemExtensions,False,2018-04-17T14:11:24.563+00:00,True,False,,PSNS,1333,False,2018.4.11.5
+Fredrik Schultz / Kaliko,2018-04-11T17:12:30.37Z,43209,9,Web provider for image functions,ImageLibrary.WebResizer,True,1900-01-01T00:00:00+00:00,False,False,,"image,resizer,resizing,resize,crop,thumbnail,filters,scale,cached,web",-1,False,1.0.1-beta
+PSNS,2018-04-11T17:08:21.097Z,3,9,Some helpful extension methods,Psns.Common.SystemExtensions,False,2018-04-17T14:11:24.563+00:00,True,False,,PSNS,1333,False,2018.4.11.5
+"Johan Larsson,milleniumbug",2018-04-11T17:12:15.197Z,6,9,Roslyn analyzers.,Gu.Analyzers,True,2018-04-14T16:56:25.367+00:00,True,False,,"Roslyn,Diagnostic,Analyzer,DotnetAnalyzers",14763,False,1.2.9.1-dev
+ORPALIS,2018-04-11T17:10:05.427Z,9,9,ORPALIS PassportPDF API Client SDK,PassportPDF,False,2018-04-11T17:10:05.427+00:00,True,False,"PassportPDF is a modern cloud infrastructure offering freemium microservices dedicated to addressing document management challenges of professional and general public users.
+        It offers productivity-oriented solutions in many fields such as compression, conversion, OCR, content protection, digital signature, data compliance, and more...",,1234,False,1.0.22
+spaz,2018-04-11T17:12:55.37Z,9,9,My package description.,SdkTID,False,2018-04-11T23:54:34.507+00:00,True,False,,,4752,False,1.0.0.56
+Eberhard Beilharz,2018-04-11T17:10:46.007Z,9,9,"Provides a small msbuild task named ""dependencies"" that allows to download dependencies from a TeamCity server.",BuildDependencyTasks,False,2018-04-11T17:10:46.007+00:00,True,False,,"msbuild,dependencies,teamcity",4998,False,0.4.2
+Fredrik Schultz / Kaliko,2018-04-11T17:12:30.37Z,43209,9,Web provider for image functions,ImageLibrary.WebResizer,True,1900-01-01T00:00:00+00:00,False,False,,"image,resizer,resizing,resize,crop,thumbnail,filters,scale,cached,web",-1,False,1.0.1-beta
+Eberhard Beilharz,2017-10-17T09:11:24.533Z,9,185,"Provides a small msbuild task named ""dependencies"" that allows to download dependencies from a TeamCity server.",BuildDependencyTasks,False,2018-04-11T17:10:46.007+00:00,False,False,,"msbuild,dependencies,teamcity",4998,False,0.3.1
+f-miyu,2018-04-11T17:05:13.323Z,7,9,Xamarin.iOS binding for CHTCollectionViewWaterfallLayout,Xamarin.CHTCollectionViewWaterfallLayout,False,2018-04-13T04:14:20.2+00:00,True,False,,"Xamarin,iOS,Xamarin.iOS,CHTCollectionViewWaterfallLayout",143,False,1.0.0
+Denis Somok,2018-04-11T17:06:57.857Z,3,9,This package contains Hosting to wire Milde infrastructure to your application.,Milde.Hosting,False,2018-04-17T14:18:50.757+00:00,True,False,,,178,False,2018.1.18
+Denis Somok,2018-04-11T17:06:31.357Z,3,9,"This package contains ES abstractios for aggregates, event bus and event store",Milde.EventSourcing,False,2018-04-17T14:18:46.723+00:00,True,False,,,181,False,2018.1.18
+Denis Somok,2018-04-11T17:07:10.7Z,3,9,This package contains Redis cache for Milde.EventSourcing.,Milde.Redis,False,2018-04-17T14:18:53.38+00:00,True,False,,,181,False,2018.1.18
+"Alexander Nalbandov,Denis Somok",2018-04-11T17:07:25.203Z,3,9,This package contains async RPC API to communicate between components over chosen transport.,Milde.Remoting,False,2018-04-17T14:18:55.24+00:00,True,False,,,179,False,2018.1.18
+Eberhard Beilharz,2017-10-20T13:00:31.18Z,9,182,"Provides a small msbuild task named ""dependencies"" that allows to download dependencies from a TeamCity server.",BuildDependencyTasks,False,2018-04-11T17:10:46.007+00:00,False,False,,"msbuild,dependencies,teamcity",4998,False,0.4.1
+Denis Somok,2018-04-11T17:06:44.623Z,3,9,This package contains SDK to persist aggregates in EventStore,Milde.EventStore,False,2018-04-17T14:18:48.91+00:00,True,False,,,161,False,2018.1.18
+Bynder B.V.,2018-04-11T17:06:54.03Z,9,9,The main goal of this SDK is to speed up the integration of Bynder customers who use C# making it easier to connect to the Bynder API (http://docs.bynder.apiary.io) and executing requests on it.,Bynder.Sdk,False,2018-04-11T17:06:54.03+00:00,True,False,,"Bynder,Api,C#,Sdk",877,False,1.2.2
+Denis Somok,2018-04-11T17:06:16.823Z,3,9,This package contains combined inmemory and Redis persistence layer for ES aggregate state,Milde.AggregateCache,False,2018-04-17T14:18:44.77+00:00,True,False,,,178,False,2018.1.18
+"Alexander Nalbandov,Denis Somok",2018-04-11T17:07:37.17Z,3,9,This package contains Rabbit transport for Milde.Remoting.,Milde.Remoting.Rabbit,False,2018-04-17T14:18:57.583+00:00,True,False,,,179,False,2018.1.18
+Eberhard Beilharz,2017-10-19T12:39:05.987Z,9,183,"Provides a small msbuild task named ""dependencies"" that allows to download dependencies from a TeamCity server.",BuildDependencyTasks,False,2018-04-11T17:10:46.007+00:00,False,False,,"msbuild,dependencies,teamcity",4998,False,0.4.0
+Denis Somok,2018-04-11T17:06:57.857Z,3,9,This package contains Hosting to wire Milde infrastructure to your application.,Milde.Hosting,False,2018-04-17T14:18:50.757+00:00,True,False,,,178,False,2018.1.18
+Denis Somok,2018-04-11T17:06:31.357Z,3,9,"This package contains ES abstractios for aggregates, event bus and event store",Milde.EventSourcing,False,2018-04-17T14:18:46.723+00:00,True,False,,,181,False,2018.1.18
+Denis Somok,2018-04-11T17:06:16.823Z,3,9,This package contains combined inmemory and Redis persistence layer for ES aggregate state,Milde.AggregateCache,False,2018-04-17T14:18:44.77+00:00,True,False,,,178,False,2018.1.18
+"Alexander Nalbandov,Denis Somok",2018-04-11T17:07:37.17Z,3,9,This package contains Rabbit transport for Milde.Remoting.,Milde.Remoting.Rabbit,False,2018-04-17T14:18:57.583+00:00,True,False,,,179,False,2018.1.18
+Denis Somok,2018-04-11T17:07:10.7Z,3,9,This package contains Redis cache for Milde.EventSourcing.,Milde.Redis,False,2018-04-17T14:18:53.38+00:00,True,False,,,181,False,2018.1.18
+f-miyu,2018-04-11T17:05:13.323Z,7,9,Xamarin.iOS binding for CHTCollectionViewWaterfallLayout,Xamarin.CHTCollectionViewWaterfallLayout,False,2018-04-13T04:14:20.2+00:00,True,False,,"Xamarin,iOS,Xamarin.iOS,CHTCollectionViewWaterfallLayout",143,False,1.0.0
+Bynder B.V.,2018-04-11T17:06:54.03Z,9,9,The main goal of this SDK is to speed up the integration of Bynder customers who use C# making it easier to connect to the Bynder API (http://docs.bynder.apiary.io) and executing requests on it.,Bynder.Sdk,False,2018-04-11T17:06:54.03+00:00,True,False,,"Bynder,Api,C#,Sdk",877,False,1.2.2
+"Alexander Nalbandov,Denis Somok",2018-04-11T17:07:25.203Z,3,9,This package contains async RPC API to communicate between components over chosen transport.,Milde.Remoting,False,2018-04-17T14:18:55.24+00:00,True,False,,,179,False,2018.1.18
+Denis Somok,2018-04-11T17:06:44.623Z,3,9,This package contains SDK to persist aggregates in EventStore,Milde.EventStore,False,2018-04-17T14:18:48.91+00:00,True,False,,,161,False,2018.1.18
+IntentBot Team,2018-04-11T17:03:01.627Z,1,9,Package Description,IntentBot.LuisIntentProvider,False,2018-04-19T22:29:47.713+00:00,True,False,,,153,False,1.2.1
+Robson da Silva <robson.silva@pagueveloz.com.br>,2017-03-17T13:31:20.18Z,9,399,Biblioteca para montagem e leitura de mensagens ISO8583,ISO8583,False,2018-04-11T16:57:27.207+00:00,False,False,,"pagueveloz,pague,veloz,iso,iso8583",832,False,5.0.0
+Lykke Corp.,2018-04-11T16:58:05.397Z,4,9,Package Description,Lykke.Service.Session.Client,False,2018-04-16T23:30:13.307+00:00,True,False,,,1334,False,1.12.1
+IntentBot Team,2018-04-11T17:03:01.627Z,1,9,Package Description,IntentBot.LuisIntentProvider,False,2018-04-19T22:29:47.713+00:00,True,False,,,153,False,1.2.1
+James Montemagno,2018-04-11T16:57:10.13Z,9,9,"Provides a simple solution for getting access to the current Activity of the application when developing a Plugin for Xamarin.
+      This will lay down a base ""application"" class for developers in their Android application with boilerplate code to get them started.",Plugin.CurrentActivity,True,2018-04-11T16:57:10.13+00:00,True,False,,"xamarin,pcl,xam.pcl,plugin,for,android,activity,current",672473,False,2.0.0.6-beta
+Igor.Gateway.Dtos,2018-04-11T16:57:10.723Z,1,9,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,4.1.0-prerelease1373
+Lykke Corp.,2018-04-11T16:58:05.397Z,4,9,Package Description,Lykke.Service.Session.Client,False,2018-04-16T23:30:13.307+00:00,True,False,,,1334,False,1.12.1
+Robson da Silva <robson.silva@pagueveloz.com.br>,2018-04-11T16:57:27.207Z,9,9,Biblioteca para montagem e leitura de mensagens ISO8583,ISO8583,False,2018-04-11T16:57:27.207+00:00,True,False,,"pagueveloz,pague,veloz,iso,iso8583",832,False,6.0.0
+Robson da Silva <robson.silva@pagueveloz.com.br>,2018-04-11T16:57:27.207Z,9,9,Biblioteca para montagem e leitura de mensagens ISO8583,ISO8583,False,2018-04-11T16:57:27.207+00:00,True,False,,"pagueveloz,pague,veloz,iso,iso8583",832,False,6.0.0
+Igor.Gateway.Dtos,2018-04-11T16:57:10.723Z,1,9,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,4.1.0-prerelease1373
+James Montemagno,2018-04-11T16:57:10.13Z,9,9,"Provides a simple solution for getting access to the current Activity of the application when developing a Plugin for Xamarin.
+      This will lay down a base ""application"" class for developers in their Android application with boilerplate code to get them started.",Plugin.CurrentActivity,True,2018-04-11T16:57:10.13+00:00,True,False,,"xamarin,pcl,xam.pcl,plugin,for,android,activity,current",672473,False,2.0.0.6-beta
+Romfos,2018-04-11T11:16:15.567Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.PreProcessor,False,2018-04-11T17:54:58.873+00:00,False,False,,"Specflow,AutoTests",4396,False,2.1.0
+Romfos,2018-04-11T11:16:27.693Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.TestData,False,2018-04-11T17:55:10.733+00:00,False,False,,"Specflow,AutoTests",2772,False,2.1.0
+Jason Sylvestre,2018-04-11T16:52:22.727Z,1,9,Test Helpers for .NET Core,AspNetCore.TestHelpers,False,2018-04-19T15:36:01.407+00:00,True,False,,,292,False,1.0.6
+PSNS,2018-04-11T16:52:03.18Z,3,9,Some helpful extension methods,Psns.Common.SystemExtensions,False,2018-04-17T14:11:24.563+00:00,True,False,,PSNS,1333,False,2018.4.11.4
+Romfos,2018-04-11T11:16:03.817Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Models,False,2018-04-11T17:54:47.093+00:00,False,False,,"Specflow,AutoTests",4412,False,2.1.0
+Romfos,2018-04-11T11:16:41.007Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Web,False,2018-04-11T17:55:23.657+00:00,False,False,,"Specflow,AutoTests,Selenium,WebDriver",4355,False,2.1.0
+Romfos,2018-04-11T11:15:51.77Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Core,False,2018-04-11T17:54:35.06+00:00,False,False,,"Specflow,AutoTests",4431,False,2.1.0
+PSNS,2018-04-11T16:52:03.18Z,3,9,Some helpful extension methods,Psns.Common.SystemExtensions,False,2018-04-17T14:11:24.563+00:00,True,False,,PSNS,1333,False,2018.4.11.4
+"Alexander Nalbandov,Denis Somok",2018-04-11T16:51:25.707Z,3,9,This package contains Rabbit transport for Milde.Remoting.,Milde.Remoting.Rabbit,False,2018-04-17T14:18:57.583+00:00,True,False,,,179,False,1.0.0
+Jason Sylvestre,2018-04-11T16:52:22.727Z,1,9,Test Helpers for .NET Core,AspNetCore.TestHelpers,False,2018-04-19T15:36:01.407+00:00,True,False,,,292,False,1.0.6
+"Alexander Nalbandov,Denis Somok",2018-04-11T16:51:25.707Z,3,9,This package contains Rabbit transport for Milde.Remoting.,Milde.Remoting.Rabbit,False,2018-04-17T14:18:57.583+00:00,True,False,,,179,False,1.0.0
+"Alexander Nalbandov,Denis Somok",2018-04-11T16:51:11.3Z,3,9,This package contains async RPC API to communicate between components over chosen transport.,Milde.Remoting,False,2018-04-17T14:18:55.24+00:00,True,False,,,179,False,1.0.0
+Denis Somok,2018-04-11T16:50:00.94Z,3,9,This package contains combined inmemory and Redis persistence layer for ES aggregate state,Milde.AggregateCache,False,2018-04-17T14:18:44.77+00:00,True,False,,,178,False,1.0.0
+Denis Somok,2018-04-11T16:50:28.94Z,3,9,This package contains SDK to persist aggregates in EventStore,Milde.EventStore,False,2018-04-17T14:18:48.91+00:00,True,False,,,161,False,1.0.0
+BruceBayne,2018-04-11T16:48:40.857Z,3,9,Another .NET framework,Friday.Base,False,2018-04-17T15:41:56.833+00:00,True,False,,,2251,False,1.0.34
+Denis Somok,2018-04-11T16:50:58.08Z,3,9,This package contains Redis cache for Milde.EventSourcing.,Milde.Redis,False,2018-04-17T14:18:53.38+00:00,True,False,,,181,False,1.0.0
+Denis Somok,2018-04-11T16:50:43.817Z,3,9,This package contains Hosting to wire Milde infrastructure to your application.,Milde.Hosting,False,2018-04-17T14:18:50.757+00:00,True,False,,,178,False,1.0.0
+Denis Somok,2018-04-11T16:50:15.737Z,3,9,"This package contains ES abstractios for aggregates, event bus and event store",Milde.EventSourcing,False,2018-04-17T14:18:46.723+00:00,True,False,,,181,False,1.0.0
+"Alexander Nalbandov,Denis Somok",2018-04-11T16:51:11.3Z,3,9,This package contains async RPC API to communicate between components over chosen transport.,Milde.Remoting,False,2018-04-17T14:18:55.24+00:00,True,False,,,179,False,1.0.0
+Denis Somok,2018-04-11T16:50:58.08Z,3,9,This package contains Redis cache for Milde.EventSourcing.,Milde.Redis,False,2018-04-17T14:18:53.38+00:00,True,False,,,181,False,1.0.0
+Denis Somok,2018-04-11T16:50:43.817Z,3,9,This package contains Hosting to wire Milde infrastructure to your application.,Milde.Hosting,False,2018-04-17T14:18:50.757+00:00,True,False,,,178,False,1.0.0
+Denis Somok,2018-04-11T16:50:00.94Z,3,9,This package contains combined inmemory and Redis persistence layer for ES aggregate state,Milde.AggregateCache,False,2018-04-17T14:18:44.77+00:00,True,False,,,178,False,1.0.0
+BruceBayne,2018-04-11T16:48:40.857Z,3,9,Another .NET framework,Friday.Base,False,2018-04-17T15:41:56.833+00:00,True,False,,,2251,False,1.0.34
+Denis Somok,2018-04-11T16:50:15.737Z,3,9,"This package contains ES abstractios for aggregates, event bus and event store",Milde.EventSourcing,False,2018-04-17T14:18:46.723+00:00,True,False,,,181,False,1.0.0
+MaxMind.MinFraud,2018-04-11T16:44:00.66Z,9,9,API for MaxMind minFraud Score and Insights web services,MaxMind.MinFraud,False,2018-04-11T16:44:00.66+00:00,True,False,,"maxmind,minfraud,fraud,detection",7206,False,2.0.0
+Code9Insta.API.Core,2018-04-11T16:45:17.24Z,3,9,Package Description,Code9Insta.API.Core,False,2018-04-17T18:44:59.42+00:00,True,False,,,188,False,1.0.1
+Embarr Software Ltd,2018-04-10T22:07:07.793Z,43209,10,Contains model classes for the REST CMS management API.,RestCms.Api.Models,True,1900-01-01T00:00:00+00:00,False,False,,"REST,CMS",-1,False,0.0.1-alpha
+Microsoft,2018-04-06T22:25:57.963Z,14,14,The Configuration Manager Management Point Interface contains management point interface libraries.,Microsoft.ConfigurationManagement.MPAPI.i386,False,2018-04-06T22:25:57.963+00:00,True,False,Configuration Manager Management Point Interface,"configmgr,sccm,configurationmanager,systemcenter,mpapi",178,True,5.0.8640.1001
+Embarr Software Ltd,2018-04-10T16:42:03.623Z,43209,10,"Contains core classes around REST CMS API exceptions, extensions, logging, serialization and utilities.",RestCms.Api.Core,True,1900-01-01T00:00:00+00:00,False,False,,"REST,CMS",-1,False,0.0.1-alpha
+Embarr Software Ltd,2018-04-10T22:13:36.37Z,43209,10,Class contains the models used for the JSON serialization of content resources.,RestCms.Api.Content.Models,True,1900-01-01T00:00:00+00:00,False,False,,"REST,CMS",-1,False,0.0.1-alpha
+Microsoft,2018-04-06T22:26:18.4Z,14,14,The Configuration Manager Management Point Interface contains management point interface libraries.,Microsoft.ConfigurationManagement.MPAPI.amd64,False,2018-04-06T22:26:18.4+00:00,True,False,Configuration Manager Management Point Interface,"configmgr,sccm,configurationmanager,systemcenter,mpapi",180,True,5.0.8640.1001
+Code9Insta.API.Core,2018-04-11T16:45:17.24Z,3,9,Package Description,Code9Insta.API.Core,False,2018-04-17T18:44:59.42+00:00,True,False,,,188,False,1.0.1
+MaxMind.MinFraud,2018-04-11T16:44:00.66Z,9,9,API for MaxMind minFraud Score and Insights web services,MaxMind.MinFraud,False,2018-04-11T16:44:00.66+00:00,True,False,,"maxmind,minfraud,fraud,detection",7206,False,2.0.0
+rynn.wang,2018-04-11T16:43:27.033Z,1,9,"Background of Common 4.x
+
+
+To support .NET core 2.0, common is refined to supported 4.6.2 first. Meanwhile, regarding unavoidable incompatibility between .NET framework and .NET
+core, implementation and scope have to be changed to meet goal.
+
+ 
+
+Scope Change (Based on aspects)
+
+-   Kept:
+
+    -   Common contracts and entity interfaces.
+
+    -   AOP
+
+    -   Restful API
+
+    -   Reflection
+
+    -   Http enhancements and extension. (System.Web based classes is supported in .NET framework only.)
+
+    -   Sandbox and dynamic compiling.
+
+    -   Data access controller (for Microsoft SQL Server)
+
+-   New:
+
+    -   HttpRequestMessage + HttpResponseMessage supports.
+
+-   Removed:
+
+    -   System.Draw based.
+
+    -   Win Form/WPF UI based.
+
+    -   LDAP extension.
+
+-   As new library:
+
+    -   Common service interfaces: moved to Beyova.FunctionService.Generic (TBD)",Beyova.Common,True,2018-04-19T15:08:20.933+00:00,True,False,"Common library for .NET projects. Including REST Api handler, exception handler, AOP, Reflection, Extensions, Configurations, etc.",,22476,False,4.0.0-preview22
+rynn.wang,2018-04-11T16:43:27.033Z,1,9,"Background of Common 4.x
+
+
+To support .NET core 2.0, common is refined to supported 4.6.2 first. Meanwhile, regarding unavoidable incompatibility between .NET framework and .NET
+core, implementation and scope have to be changed to meet goal.
+
+ 
+
+Scope Change (Based on aspects)
+
+-   Kept:
+
+    -   Common contracts and entity interfaces.
+
+    -   AOP
+
+    -   Restful API
+
+    -   Reflection
+
+    -   Http enhancements and extension. (System.Web based classes is supported in .NET framework only.)
+
+    -   Sandbox and dynamic compiling.
+
+    -   Data access controller (for Microsoft SQL Server)
+
+-   New:
+
+    -   HttpRequestMessage + HttpResponseMessage supports.
+
+-   Removed:
+
+    -   System.Draw based.
+
+    -   Win Form/WPF UI based.
+
+    -   LDAP extension.
+
+-   As new library:
+
+    -   Common service interfaces: moved to Beyova.FunctionService.Generic (TBD)",Beyova.Common,True,2018-04-19T15:08:20.933+00:00,True,False,"Common library for .NET projects. Including REST Api handler, exception handler, AOP, Reflection, Extensions, Configurations, etc.",,22476,False,4.0.0-preview22
+Tobii AB,2018-04-11T16:39:14.21Z,9,9,Tobii Pro .NET SDK. Used for developing applications for the Tobii Pro line of eye trackers. You need at least one eye tracker to make use of this SDK.,Tobii.Research.x86,False,2018-04-11T16:39:14.21+00:00,True,False,Tobii Pro .NET SDK,"Tobii,TobiiPro,Pro,Research,EyeTracking,Eye,Tracking,SDK,Gaze,x86",2399,False,1.4.0.926
+PSNS,2018-04-11T16:38:45.257Z,3,9,Some helpful extension methods,Psns.Common.SystemExtensions,False,2018-04-17T14:11:24.563+00:00,True,False,,PSNS,1333,False,2018.4.11.3
+Tobii AB,2018-04-11T16:38:51.677Z,9,9,Tobii Pro .NET SDK. Used for developing applications for the Tobii Pro line of eye trackers. You need at least one eye tracker to make use of this SDK.,Tobii.Research.x64,False,2018-04-11T16:38:51.677+00:00,True,False,Tobii Pro .NET SDK,"Tobii,TobiiPro,Pro,Research,EyeTracking,Eye,Tracking,SDK,Gaze,x64",1088,False,1.4.0.926
+Tobii AB,2018-04-11T16:38:51.677Z,9,9,Tobii Pro .NET SDK. Used for developing applications for the Tobii Pro line of eye trackers. You need at least one eye tracker to make use of this SDK.,Tobii.Research.x64,False,2018-04-11T16:38:51.677+00:00,True,False,Tobii Pro .NET SDK,"Tobii,TobiiPro,Pro,Research,EyeTracking,Eye,Tracking,SDK,Gaze,x64",1088,False,1.4.0.926
+PSNS,2018-04-11T16:38:45.257Z,3,9,Some helpful extension methods,Psns.Common.SystemExtensions,False,2018-04-17T14:11:24.563+00:00,True,False,,PSNS,1333,False,2018.4.11.3
+Tobii AB,2018-04-11T16:39:14.21Z,9,9,Tobii Pro .NET SDK. Used for developing applications for the Tobii Pro line of eye trackers. You need at least one eye tracker to make use of this SDK.,Tobii.Research.x86,False,2018-04-11T16:39:14.21+00:00,True,False,Tobii Pro .NET SDK,"Tobii,TobiiPro,Pro,Research,EyeTracking,Eye,Tracking,SDK,Gaze,x86",2399,False,1.4.0.926
+Romfos,2018-04-11T16:34:16.603Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Models,False,2018-04-11T17:54:47.093+00:00,True,False,,"Specflow,AutoTests",4412,False,2.1.1
+"Heine Furubotten,Stian Sandve,Sander Struijk",2018-04-11T16:34:51.2Z,1,9,"Reusable ActionFilters for Web Api. 
+      - Automation of non success status responses, with stop execution. 
+      - Request/response validation. 
+      - Logging action filters through NLog with structural logging.",Heine.Mvc.ActionFilters,True,2018-04-19T13:58:14.14+00:00,True,False,,,5749,False,3.0.0-beta03
+Romfos,2018-04-11T16:34:38.48Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.TestData,False,2018-04-11T17:55:10.733+00:00,True,False,,"Specflow,AutoTests",2772,False,2.1.1
+Romfos,2018-04-11T16:34:04.04Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Core,False,2018-04-11T17:54:35.06+00:00,True,False,,"Specflow,AutoTests",4431,False,2.1.1
+Romfos,2018-04-11T16:34:27.9Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.PreProcessor,False,2018-04-11T17:54:58.873+00:00,True,False,,"Specflow,AutoTests",4396,False,2.1.1
+Romfos,2018-04-11T16:34:51.37Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Web,False,2018-04-11T17:55:23.657+00:00,True,False,,"Specflow,AutoTests,Selenium,WebDriver",4355,False,2.1.1
+"Heine Furubotten,Stian Sandve,Sander Struijk",2018-04-11T16:34:51.2Z,1,9,"Reusable ActionFilters for Web Api. 
+      - Automation of non success status responses, with stop execution. 
+      - Request/response validation. 
+      - Logging action filters through NLog with structural logging.",Heine.Mvc.ActionFilters,True,2018-04-19T13:58:14.14+00:00,True,False,,,5749,False,3.0.0-beta03
+Romfos,2018-04-11T16:34:16.603Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Models,False,2018-04-11T17:54:47.093+00:00,True,False,,"Specflow,AutoTests",4412,False,2.1.1
+Romfos,2018-04-11T16:34:38.48Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.TestData,False,2018-04-11T17:55:10.733+00:00,True,False,,"Specflow,AutoTests",2772,False,2.1.1
+Romfos,2018-04-11T16:34:27.9Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.PreProcessor,False,2018-04-11T17:54:58.873+00:00,True,False,,"Specflow,AutoTests",4396,False,2.1.1
+Romfos,2018-04-11T16:34:04.04Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Core,False,2018-04-11T17:54:35.06+00:00,True,False,,"Specflow,AutoTests",4431,False,2.1.1
+Romfos,2018-04-11T16:34:51.37Z,9,9,"Plugin\Extension for specflow. Main features: Automatic Model Transformations, PreProcessor, WebDriver integration and many another features. Please, see example on github. Any questions you can send me to email",AutoTests.Framework.Web,False,2018-04-11T17:55:23.657+00:00,True,False,,"Specflow,AutoTests,Selenium,WebDriver",4355,False,2.1.1
+Martin,2018-04-11T16:30:01.14Z,8,9,Basic geometry structs and extension methods for System.Numerics,SwizzleMyVectors,False,2018-04-12T15:36:04.3+00:00,True,False,,,4925,False,8.1.0
+IntentBot Team,2018-04-11T16:30:01.03Z,1,9,Package Description,IntentBot.SoftRouter,False,2018-04-19T22:31:37.72+00:00,True,False,,,194,False,1.3.1
+IntentBot Team,2018-04-11T16:30:01.03Z,1,9,Package Description,IntentBot.SoftRouter,False,2018-04-19T22:31:37.72+00:00,True,False,,,194,False,1.3.1
+Shum Hrom Alex,2018-04-11T16:28:13.807Z,9,9,Package for work with RKepeer via Xml protocol.,Mds.Integrations.RKeeper.Xml,False,2018-04-11T16:28:13.807+00:00,True,False,Library for work with RKepeer via Xml protocol.,,464,False,1.5.1
+Martin,2018-04-11T16:30:01.14Z,8,9,Basic geometry structs and extension methods for System.Numerics,SwizzleMyVectors,False,2018-04-12T15:36:04.3+00:00,True,False,,,4925,False,8.1.0
+Shum Hrom Alex,2018-04-11T16:28:13.807Z,9,9,Package for work with RKepeer via Xml protocol.,Mds.Integrations.RKeeper.Xml,False,2018-04-11T16:28:13.807+00:00,True,False,Library for work with RKepeer via Xml protocol.,,464,False,1.5.1
+Naos Project,2018-04-11T16:26:32.693Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.ComputingManagement,False,2018-04-11T16:26:32.693+00:00,True,False,,,14734,False,1.0.360
+Naos Project,2018-04-11T16:25:47.35Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.MessageBus.Handler,False,2018-04-11T16:25:47.35+00:00,True,False,,,19498,False,1.0.360
+Naos Project,2018-04-11T16:25:17.723Z,9,9,"Common config for Naos.Deployment.Console or other implementation to initialize SetupStepFactory, ComputingInfrastructureManager, and a default DeploymentConfiguration.",Naos.Deployment.Config.Common,False,2018-04-11T16:25:17.723+00:00,True,False,,,2254,False,1.0.360
+Naos Project,2018-04-11T16:25:02.88Z,9,9,"Recipe that installs the basic classes and references needed to run Naos.Deployment logic, servers to abstract configuration and not need to provided everything on the command line.",Naos.Deployment.Bootstrapper,False,2018-04-11T16:25:02.88+00:00,True,False,,,3727,False,1.0.360
+Naos Project,2018-04-11T16:26:16.99Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.Tracking,False,2018-04-11T16:26:16.99+00:00,True,False,,,14710,False,1.0.360
+Naos Project,2018-04-11T16:26:02.473Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.Persistence,False,2018-04-11T16:26:02.473+00:00,True,False,,,14978,False,1.0.360
+Naos Project,2018-04-11T16:24:46.707Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.Core,False,2018-04-11T16:24:46.707+00:00,True,False,,,38154,False,1.0.360
+Naos Project,2018-04-11T16:27:21.26Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.MessageBus.Hangfire.Console,False,2018-04-11T16:27:21.26+00:00,True,False,,,3829,False,1.0.360
+Naos Project,2018-04-11T16:27:02.993Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.Domain,False,2018-04-11T16:27:02.993+00:00,True,False,,,16292,False,1.0.360
+Naos Project,2018-04-11T16:25:32.147Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.MessageBus.Scheduler,False,2018-04-11T16:25:32.147+00:00,True,False,,,4277,False,1.0.360
+Naos Project,2018-04-11T16:27:21.26Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.MessageBus.Hangfire.Console,False,2018-04-11T16:27:21.26+00:00,True,False,,,3829,False,1.0.360
+Hung Vo,2018-04-11T16:24:16.453Z,4,9,A mini configuration framework for .NET developers,AppCfg.Net,False,2018-04-16T18:13:29.347+00:00,True,False,,"configuration,appsetting,json,dotnet,csharp,netstandard20,dotnetcore",312,False,0.3.0
+Naos Project,2018-04-11T16:27:02.993Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.Domain,False,2018-04-11T16:27:02.993+00:00,True,False,,,16292,False,1.0.360
+Naos Project,2018-04-11T16:25:17.723Z,9,9,"Common config for Naos.Deployment.Console or other implementation to initialize SetupStepFactory, ComputingInfrastructureManager, and a default DeploymentConfiguration.",Naos.Deployment.Config.Common,False,2018-04-11T16:25:17.723+00:00,True,False,,,2254,False,1.0.360
+Naos Project,2018-04-11T16:26:16.99Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.Tracking,False,2018-04-11T16:26:16.99+00:00,True,False,,,14710,False,1.0.360
+Naos Project,2018-04-11T16:25:47.35Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.MessageBus.Handler,False,2018-04-11T16:25:47.35+00:00,True,False,,,19498,False,1.0.360
+Naos Project,2018-04-11T16:24:46.707Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.Core,False,2018-04-11T16:24:46.707+00:00,True,False,,,38154,False,1.0.360
+Naos Project,2018-04-11T16:25:32.147Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.MessageBus.Scheduler,False,2018-04-11T16:25:32.147+00:00,True,False,,,4277,False,1.0.360
+Naos Project,2018-04-11T16:25:02.88Z,9,9,"Recipe that installs the basic classes and references needed to run Naos.Deployment logic, servers to abstract configuration and not need to provided everything on the command line.",Naos.Deployment.Bootstrapper,False,2018-04-11T16:25:02.88+00:00,True,False,,,3727,False,1.0.360
+Naos Project,2018-04-11T16:26:32.693Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.ComputingManagement,False,2018-04-11T16:26:32.693+00:00,True,False,,,14734,False,1.0.360
+Naos Project,2018-04-11T16:26:02.473Z,9,9,Created on 2018-04-11 09:24,Naos.Deployment.Persistence,False,2018-04-11T16:26:02.473+00:00,True,False,,,14978,False,1.0.360
+Hung Vo,2018-04-11T16:24:16.453Z,4,9,A mini configuration framework for .NET developers,AppCfg.Net,False,2018-04-16T18:13:29.347+00:00,True,False,,"configuration,appsetting,json,dotnet,csharp,netstandard20,dotnetcore",312,False,0.3.0
+Geeks Ltd,2018-04-11T16:21:24.59Z,2,9,Compiles M# definitions into .NET code.,MSharp,False,2018-04-18T14:14:37.973+00:00,True,False,,,13437,False,4.1.202
+TropicoHash.Utility.HttpHelper,2018-04-11T16:22:38.28Z,9,9,Package Description,TropicoHash.Utility.HttpHelper,False,2018-04-11T16:22:38.28+00:00,True,False,,,42,False,1.0.0
+Geeks ltd,2018-04-11T16:23:09.187Z,1,9,A framework for declarative UI testing for ASP.NET apps.,Pangolin,False,2018-04-19T07:48:35.627+00:00,True,False,,,1450,False,0.3.3
+Geeks Ltd,2018-04-11T16:21:24.59Z,2,9,Compiles M# definitions into .NET code.,MSharp,False,2018-04-18T14:14:37.973+00:00,True,False,,,13437,False,4.1.202
+TropicoHash.Utility.HttpHelper,2018-04-11T16:22:38.28Z,9,9,Package Description,TropicoHash.Utility.HttpHelper,False,2018-04-11T16:22:38.28+00:00,True,False,,,42,False,1.0.0
+Geeks ltd,2018-04-11T16:23:09.187Z,1,9,A framework for declarative UI testing for ASP.NET apps.,Pangolin,False,2018-04-19T07:48:35.627+00:00,True,False,,,1450,False,0.3.3
+takenet,2018-04-11T16:18:16.3Z,1,9,Iris messaging data types package,Takenet.Iris.Messaging,False,2018-04-19T20:20:15.22+00:00,True,False,,,13423,False,2.32.232
+takenet,2018-04-11T16:18:01.533Z,1,9,Iris common data types package,Takenet.Iris.Common,False,2018-04-19T20:20:12.39+00:00,True,False,,"Iris,Lime",46430,False,2.32.232
+Tyler Bratton,2018-04-11T16:19:42.193Z,9,9,"AnitomySharp is a C# port of Anitomy by erengy, a library for parsing anime video filenames. All credit to erengy for the actual library and logic.",AnitomySharp,False,2018-04-11T16:19:42.193+00:00,True,False,,,42,False,0.1.0
+SumoSoft,2018-04-11T16:19:19.74Z,1,9,"SumoSoft Cms is an advanced Framework based on MVC5 that will let you build highly customizable websites with extreme ease. 
+      The main features include: blog, e-commerce, dynamic user permissions, advanced internationalization, 
+      IP based geo-localization, media management using both local FTP folders and Windows Azure Storage accounts, email templating, logging system",SumoSoft.Cms.Mvc,False,2018-04-19T11:52:22.957+00:00,True,False,SumoSoft Cms,,26908,False,7.1.9
+takenet,2018-04-11T16:17:47.58Z,1,9,Iris client utility package,Takenet.Iris.Client,False,2018-04-19T20:20:08.97+00:00,True,False,,,17723,False,2.32.232
+takenet,2018-04-11T16:18:01.533Z,1,9,Iris common data types package,Takenet.Iris.Common,False,2018-04-19T20:20:12.39+00:00,True,False,,"Iris,Lime",46430,False,2.32.232
+SumoSoft,2018-04-11T16:19:19.74Z,1,9,"SumoSoft Cms is an advanced Framework based on MVC5 that will let you build highly customizable websites with extreme ease. 
+      The main features include: blog, e-commerce, dynamic user permissions, advanced internationalization, 
+      IP based geo-localization, media management using both local FTP folders and Windows Azure Storage accounts, email templating, logging system",SumoSoft.Cms.Mvc,False,2018-04-19T11:52:22.957+00:00,True,False,SumoSoft Cms,,26908,False,7.1.9
+takenet,2018-04-11T16:17:47.58Z,1,9,Iris client utility package,Takenet.Iris.Client,False,2018-04-19T20:20:08.97+00:00,True,False,,,17723,False,2.32.232
+Tyler Bratton,2018-04-11T16:19:42.193Z,9,9,"AnitomySharp is a C# port of Anitomy by erengy, a library for parsing anime video filenames. All credit to erengy for the actual library and logic.",AnitomySharp,False,2018-04-11T16:19:42.193+00:00,True,False,,,42,False,0.1.0
+TropicoHash.Utility.Quartz,2018-04-11T16:16:21.45Z,9,9,Package Description,TropicoHash.Utility.Quartz,False,2018-04-11T16:16:21.45+00:00,True,False,,,42,False,1.0.0
+takenet,2018-04-11T16:18:16.3Z,1,9,Iris messaging data types package,Takenet.Iris.Messaging,False,2018-04-19T20:20:15.22+00:00,True,False,,,13423,False,2.32.232
+TropicoHash.Utility.Quartz,2018-04-11T16:16:21.45Z,9,9,Package Description,TropicoHash.Utility.Quartz,False,2018-04-11T16:16:21.45+00:00,True,False,,,42,False,1.0.0
+Tyler Bratton,2018-04-11T15:41:35.067Z,43209,9,"AnitomySharp is a C# port of Anitomy by erengy, a library for parsing anime video filenames. All credit to erengy for the actual library and logic.",AnitomySharp_Tyler_Bratton,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.1.0
+Iatec.Adems.PeopleManagement.Client,2018-04-11T16:10:46.75Z,4,9,Package Description,Iatec.Adems.PeopleManagement.Client,False,2018-04-16T16:27:42.913+00:00,True,False,,,481,False,1.0.5
+iamcarbon,2018-04-11T16:08:53.777Z,43209,9,A modern .NET Standard library for Amazon's Simple Storage Service.,Amazon.S3,False,1900-01-01T00:00:00+00:00,False,False,,"aws,s3,netstandard",18418,False,0.10.8
+Iatec.Adems.PeopleManagement.Client,2018-04-11T16:10:46.75Z,4,9,Package Description,Iatec.Adems.PeopleManagement.Client,False,2018-04-16T16:27:42.913+00:00,True,False,,,481,False,1.0.5
+iamcarbon,2018-04-11T16:08:53.777Z,43209,9,A modern .NET Standard library for Amazon's Simple Storage Service.,Amazon.S3,False,1900-01-01T00:00:00+00:00,False,False,,"aws,s3,netstandard",18418,False,0.10.8
+Le Huu Hoang Gia,2018-04-11T16:06:51.787Z,2,9,A command line tool for database migration (SQL Server) that uses raw sql.,st2forget.migrations,False,2018-04-18T07:56:54.45+00:00,True,False,,"sql,migration",518,False,2.0.5
+Dan Siegel,2018-04-11T16:05:49.063Z,9,9,Additional MSBuild targets and properties for .NET projects. Especially enhances Xamarin targets. Enables better development practices with CI/CD pipelines,Mobile.BuildTools,True,2018-04-11T19:04:45.18+00:00,True,False,,"msbuild,dotnet,xamarin,android,ios,macos,uwp,tizen,buildtools",2107,False,1.1.0.542-pre
+ByteScout,2018-04-11T16:06:57.21Z,9,9,Bytescout PDF Viewer SDK - WinForms control to view PDF files,Bytescout.PDFViewer,False,2018-04-11T16:06:57.21+00:00,True,False,"Bytescout PDF Viewer SDK for .NET WinForms
+
+ByteScout (c) 2012-2017
+
+System Requirements: Visual Studio 2005, .NET Framework 2.0 or later
+
+Benefits:
+
+- WinForms control to view PDF files;
+- Does not require any Adobe or 3rd-party tools installed;
+- Supports zoom-in/zoom-out, rotation;
+- Copies selected text to clipboard;
+- Finds text in PDF document;
+- Supports custom paint routings allowing to draw anything over the canvas.
+
+Web-site: 
+http://bytescout.com/","bytescout,pdf,viewer,winforms,control",1770,False,9.0.0.3083
+ByteScout,2018-04-11T16:06:57.21Z,9,9,Bytescout PDF Viewer SDK - WinForms control to view PDF files,Bytescout.PDFViewer,False,2018-04-11T16:06:57.21+00:00,True,False,"Bytescout PDF Viewer SDK for .NET WinForms
+
+ByteScout (c) 2012-2017
+
+System Requirements: Visual Studio 2005, .NET Framework 2.0 or later
+
+Benefits:
+
+- WinForms control to view PDF files;
+- Does not require any Adobe or 3rd-party tools installed;
+- Supports zoom-in/zoom-out, rotation;
+- Copies selected text to clipboard;
+- Finds text in PDF document;
+- Supports custom paint routings allowing to draw anything over the canvas.
+
+Web-site: 
+http://bytescout.com/","bytescout,pdf,viewer,winforms,control",1770,False,9.0.0.3083
+Le Huu Hoang Gia,2018-04-11T16:06:51.787Z,2,9,A command line tool for database migration (SQL Server) that uses raw sql.,st2forget.migrations,False,2018-04-18T07:56:54.45+00:00,True,False,,"sql,migration",518,False,2.0.5
+Dan Siegel,2018-04-11T16:05:49.063Z,9,9,Additional MSBuild targets and properties for .NET projects. Especially enhances Xamarin targets. Enables better development practices with CI/CD pipelines,Mobile.BuildTools,True,2018-04-11T19:04:45.18+00:00,True,False,,"msbuild,dotnet,xamarin,android,ios,macos,uwp,tizen,buildtools",2107,False,1.1.0.542-pre
+WeiGe,2018-04-11T16:01:27.32Z,3,9,"update/delete entity without load entity from database,run raw sql to any entity.",AspNetCore.EFCore.SqlServer,False,2018-04-17T10:16:20.38+00:00,True,False,,"AspNetCore,.Net,Core,EF,EntityFrameworkCore,Sql,Server",3372,False,2.0.3.42
+WeiGe,2018-04-11T04:38:15.483Z,3,9,"AspNetCore.ThirdParty
+      SMS,Payment:Alipay,WeChat ,Verfy Identity, Baidu Map, JPush,Car,Approve",AspNetCore.ThirdParty,False,2018-04-17T10:16:25.223+00:00,False,False,,,957,False,2.0.3.40
+WeiGe,2018-04-11T16:01:39.13Z,3,9,"AspNetCore.DocView;
+      .net Core Mvc document UI",AspNetCore.DocView,False,2018-04-17T10:16:35.457+00:00,True,False,,,3376,False,2.0.3.42
+WeiGe,2018-04-11T04:33:30.457Z,3,9,"AspNetCore.DocView;
+      .net Core Mvc document UI",AspNetCore.DocView,False,2018-04-17T10:16:35.457+00:00,False,False,,,3376,False,2.0.3.40
+WeiGe,2018-04-11T16:01:13.257Z,3,9,"AspNetCore.ThirdParty
+      SMS,Payment:Alipay,WeChat ,Verfy Identity, Baidu Map, JPush,Car,Approve",AspNetCore.ThirdParty,False,2018-04-17T10:16:25.223+00:00,True,False,,,957,False,2.0.3.42
+TropicoHash.Utility.CurrentDBConnection,2018-04-11T16:01:30.333Z,9,9,Package Description,TropicoHash.Utility.CurrentDBConnection,False,2018-04-11T17:27:11.623+00:00,True,False,,,89,False,1.0.0
+WeiGe,2018-04-11T16:01:18.16Z,3,9,"Microsoft.AspNetCore.MvcFactory
+used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,True,False,,,6796,False,2.0.3.42
+WeiGe,2018-04-11T04:33:20.897Z,3,9,"AspNetCore.CodeGenerator for sqlserver of ef Core,
+      Automatic generation of database/table description",AspNetCore.CodeGenerator.SqlServer,False,2018-04-17T10:16:39.097+00:00,False,False,,,1334,False,2.0.3.40
+WeiGe,2018-04-11T04:33:38.193Z,3,9,"update/delete entity without load entity from database,run raw sql to any entity.",AspNetCore.EFCore.SqlServer,False,2018-04-17T10:16:20.38+00:00,False,False,,"AspNetCore,.Net,Core,EF,EntityFrameworkCore,Sql,Server",3372,False,2.0.3.40
+WeiGe,2018-04-11T16:01:27.32Z,3,9,"update/delete entity without load entity from database,run raw sql to any entity.",AspNetCore.EFCore.SqlServer,False,2018-04-17T10:16:20.38+00:00,True,False,,"AspNetCore,.Net,Core,EF,EntityFrameworkCore,Sql,Server",3372,False,2.0.3.42
+WeiGe,2018-04-11T16:01:13.257Z,3,9,"AspNetCore.ThirdParty
+      SMS,Payment:Alipay,WeChat ,Verfy Identity, Baidu Map, JPush,Car,Approve",AspNetCore.ThirdParty,False,2018-04-17T10:16:25.223+00:00,True,False,,,957,False,2.0.3.42
+WeiGe,2018-04-11T16:01:39.13Z,3,9,"AspNetCore.DocView;
+      .net Core Mvc document UI",AspNetCore.DocView,False,2018-04-17T10:16:35.457+00:00,True,False,,,3376,False,2.0.3.42
+TropicoHash.Utility.CurrentDBConnection,2018-04-11T16:01:30.333Z,9,9,Package Description,TropicoHash.Utility.CurrentDBConnection,False,2018-04-11T17:27:11.623+00:00,True,False,,,89,False,1.0.0
+WeiGe,2018-04-11T16:01:18.16Z,3,9,"Microsoft.AspNetCore.MvcFactory
+used myself now",AspNetCore.MvcFactory,False,2018-04-17T10:16:30.347+00:00,True,False,,,6796,False,2.0.3.42
+Igor.Gateway.Dtos,2018-04-11T15:59:48.44Z,1,9,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,4.1.0-prerelease1372
+Austin Drenski,2018-04-11T15:58:02.81Z,1,9,Provides configuration extensions for API building with ASP.NET Core.,AD.ApiExtensions,False,2018-04-19T21:51:02.603+00:00,True,False,,,3385,False,1.1.50
+Autyan,2018-04-11T15:59:05.343Z,4,9,Simple taghelpers based on bootstrap v3,MvcCore.TagHelpers,True,2018-04-16T14:35:22.673+00:00,True,False,,,807,False,0.1.0.411-prerelease-00000004
+Autyan,2018-04-11T15:59:05.343Z,4,9,Simple taghelpers based on bootstrap v3,MvcCore.TagHelpers,True,2018-04-16T14:35:22.673+00:00,True,False,,,807,False,0.1.0.411-prerelease-00000004
+Austin Drenski,2018-04-11T15:58:02.81Z,1,9,Provides configuration extensions for API building with ASP.NET Core.,AD.ApiExtensions,False,2018-04-19T21:51:02.603+00:00,True,False,,,3385,False,1.1.50
+Valentin Panovskiy,2018-04-11T15:55:59.85Z,43209,9,Package Description,OSOL.Extremum.Core.DotNet,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.0.2
+Igor.Gateway.Dtos,2018-04-11T15:59:48.44Z,1,9,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,4.1.0-prerelease1372
+Valentin Panovskiy,2018-04-11T15:55:59.85Z,43209,9,Package Description,OSOL.Extremum.Core.DotNet,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.0.2
+"Jeremy D. Miller,Mark Wuthrich,Jordan Zaerr",2018-04-11T15:53:09.233Z,9,9,Integrate Consul into JasperFx Applications,Jasper.Consul,False,2018-04-11T15:53:09.233+00:00,True,False,,,167,False,0.7.0
+Murphy,2018-04-11T15:52:54.407Z,9,9,Conceptually immutable byte string type,Murphy.ByteString,False,2018-04-11T15:52:54.407+00:00,True,False,,"f#,fsharp,data,immutable,bytes,blob,bytestring,encoding,compression,hashing,authentication,encryption",140,False,3.0.0
+"Jeremy D. Miller,Mike Schenk,Mark Wuhrich",2018-04-11T15:54:13.47Z,9,9,Storyteller Adapter for JasperFx Applications,Jasper.Storyteller,False,2018-04-11T15:54:13.47+00:00,True,False,,,101,False,0.7.0
+Fabricio dos Santos silva,2018-04-11T15:54:07.457Z,9,9,envio de push notifications e emails,UtilityFramework.Services.Core,False,2018-04-11T15:54:07.457+00:00,True,False,,,2412,False,1.3.4
+"Jeremy D. Miller,Mike Schenk,Mark Wuhrich",2018-04-11T15:54:13.47Z,9,9,Storyteller Adapter for JasperFx Applications,Jasper.Storyteller,False,2018-04-11T15:54:13.47+00:00,True,False,,,101,False,0.7.0
+Fabricio dos Santos silva,2018-04-11T15:54:07.457Z,9,9,envio de push notifications e emails,UtilityFramework.Services.Core,False,2018-04-11T15:54:07.457+00:00,True,False,,,2412,False,1.3.4
+Naos Project,2018-04-11T15:50:44.26Z,9,9,"Common config for Naos.Deployment.Console or other implementation to initialize SetupStepFactory, ComputingInfrastructureManager, and a default DeploymentConfiguration.",Naos.Deployment.Config.Common,True,2018-04-11T16:25:17.723+00:00,True,False,,,2254,False,1.0.359-newexecutionorderlog
+MarcPlaying,2018-04-11T15:51:08.01Z,9,9,A Libary for managing Batch with c# core,BashNET,False,2018-04-11T15:51:08.01+00:00,True,False,,"batch,bat,bashnet,bash,enjuu",92,False,1.1.2
+"Jeremy D. Miller,Mike Schenk,Mark Wuhrich",2018-04-11T15:51:52.23Z,4,9,Core Library for JasperFx Applications,Jasper,False,2018-04-16T21:54:40.497+00:00,True,False,,,1457,False,0.7.0
+Naos Project,2018-04-11T15:51:16.497Z,9,9,Created on 2018-04-11 08:49,Naos.Deployment.MessageBus.Handler,True,2018-04-11T16:25:47.35+00:00,True,False,,,19498,False,1.0.359-newexecutionorderlog
+Naos Project,2018-04-11T15:52:12.2Z,9,9,Created on 2018-04-11 08:49,Naos.Deployment.ComputingManagement,True,2018-04-11T16:26:32.693+00:00,True,False,,,14734,False,1.0.359-newexecutionorderlog
+Jeremy D. Miller,2018-04-11T15:53:31.72Z,9,9,Console Application Hosting for JasperFx Applications,Jasper.CommandLine,False,2018-04-11T15:53:31.72+00:00,True,False,,,282,False,0.7.0
+Naos Project,2018-04-11T15:52:44.187Z,9,9,Created on 2018-04-11 08:49,Naos.Deployment.MessageBus.Hangfire.Console,True,2018-04-11T16:27:21.26+00:00,True,False,,,3829,False,1.0.359-newexecutionorderlog
+"Jeremy D. Miller,Mark Wuthrich,Jordan Zaerr",2018-04-11T15:52:22.513Z,8,9,Integrate Marten into JasperFx Applications,Jasper.Marten,False,2018-04-12T15:42:29.313+00:00,True,False,,,219,False,0.7.0
+Naos Project,2018-04-11T15:52:26.327Z,9,9,Created on 2018-04-11 08:49,Naos.Deployment.Domain,True,2018-04-11T16:27:02.993+00:00,True,False,,,16292,False,1.0.359-newexecutionorderlog
+"Jeremy D. Miller,Mark Wuthrich,Jordan Zaerr",2018-04-11T15:53:09.233Z,9,9,Integrate Consul into JasperFx Applications,Jasper.Consul,False,2018-04-11T15:53:09.233+00:00,True,False,,,167,False,0.7.0
+Naos Project,2018-04-11T15:51:34.277Z,9,9,Created on 2018-04-11 08:49,Naos.Deployment.Persistence,True,2018-04-11T16:26:02.473+00:00,True,False,,,14978,False,1.0.359-newexecutionorderlog
+Naos Project,2018-04-11T15:51:52.84Z,9,9,Created on 2018-04-11 08:49,Naos.Deployment.Tracking,True,2018-04-11T16:26:16.99+00:00,True,False,,,14710,False,1.0.359-newexecutionorderlog
+spaz,2018-04-11T15:53:12.313Z,9,9,My package description.,SdkTID,False,2018-04-11T23:54:34.507+00:00,True,False,,,4752,False,1.0.0.55
+Naos Project,2018-04-11T15:51:02.823Z,9,9,Created on 2018-04-11 08:49,Naos.Deployment.MessageBus.Scheduler,True,2018-04-11T16:25:32.147+00:00,True,False,,,4277,False,1.0.359-newexecutionorderlog
+Murphy,2018-04-11T15:52:54.407Z,9,9,Conceptually immutable byte string type,Murphy.ByteString,False,2018-04-11T15:52:54.407+00:00,True,False,,"f#,fsharp,data,immutable,bytes,blob,bytestring,encoding,compression,hashing,authentication,encryption",140,False,3.0.0
+Nate McMaster,2018-04-11T15:49:53.68Z,9,9,A simple command-line HTTP server.,dotnet-serve,False,2018-04-11T15:49:53.68+00:00,True,False,,,478,False,0.3.0
+spaz,2018-04-11T15:49:37.133Z,9,9,My package description.,SdkTID,False,2018-04-11T23:54:34.507+00:00,True,False,,,4752,False,1.0.0.54
+Naos Project,2018-04-11T15:50:28.32Z,9,9,"Recipe that installs the basic classes and references needed to run Naos.Deployment logic, servers to abstract configuration and not need to provided everything on the command line.",Naos.Deployment.Bootstrapper,True,2018-04-11T16:25:02.88+00:00,True,False,,,3727,False,1.0.359-newexecutionorderlog
+support@osigu.com,2018-04-11T15:52:30.75Z,9,9,.NET SDK for sales reporting,osigu.sales.reporting.sdk,False,2018-04-11T15:52:30.75+00:00,True,False,,,44,False,1.0.0
+Naos Project,2018-04-11T15:50:12.01Z,9,9,Created on 2018-04-11 08:49,Naos.Deployment.Core,True,2018-04-11T16:24:46.707+00:00,True,False,,,38154,False,1.0.359-newexecutionorderlog

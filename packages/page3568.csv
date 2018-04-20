@@ -1,0 +1,1972 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+vm,2018-03-23T00:02:40.693Z,28,28,"Features:
+            * Very simple interface. Essentially the interface consists of two methods (with a couple of convenient overloads) on the class XmlExpressionSerializer from the namespace vm.Aspects.ExpressionSerialization:
+            - public static XElement ToXmlElement(Expression expression);
+            - public static Expression ToExpression(XElement document);
+            * The overloads allow for serializing to and from whole XDocument objects.
+            * The serializer supports serialization of constant expression of the following data types:
+            - all primitive types;
+            - enum types;
+            - nullable types;
+            - the most of the FCL basic types like: string, DateTime, TimeSpan, Uri, Guid, DBNull;
+            - any serializable types;
+            - any types marked with DataContractAttribute;
+            - anonymous types;
+            - arrays and generic sequences of the above;
+            - The XML documents are validated against a schema:  urn:schemas-vm-com:Aspects.Expression
+
+            -- targets .NET 4.6.2 and 4.7.1",AspectExpressionSerialization,False,2018-03-23T00:02:40.693+00:00,True,False,Easy to use and integrate component which serializes Linq expression trees to and from XML documents.,".net,LINQ,expression,tree,serialization,XML,aspects",657,False,1.0.114
+Amazon Web Services,2018-03-23T00:02:44.74Z,1,28,"Amazon EC2 Container Service is a highly scalable, high performance container management service that supports Docker containers and allows you to easily run distributed applications on a managed cluster of Amazon EC2 instances.",AWSSDK.ECS,False,2018-04-20T05:27:26.5+00:00,True,False,,"AWS,Amazon,cloud,ECS,aws-sdk-v3",64586,False,3.3.13
+Amazon Web Services,2018-03-23T00:02:23.77Z,1,28,"AWS CodeBuild is a fully-managed build service in the cloud. AWS CodeBuild compiles your source code, runs unit tests, and produces artifacts that are ready to deploy.",AWSSDK.CodeBuild,False,2018-04-20T05:26:08.497+00:00,True,False,,"AWS,Amazon,cloud,CodeBuild,aws-sdk-v3",3460,False,3.3.9
+Amazon Web Services,2018-03-23T00:02:03.63Z,1,28,"Amazon AppStream is a fully managed, secure application streaming service that allows you to stream desktop applications from AWS to a web browser.",AWSSDK.AppStream,False,2018-04-20T05:24:48.323+00:00,True,False,,"AWS,Amazon,cloud,AppStream,aws-sdk-v3",5042,False,3.3.11
+Projeto Internet,2018-03-22T23:57:17.267Z,25,29,Projeto de Repositorios no DynamoDB da Projeto Internet,ProjetoInternet.Infrastructure.Repositories.Dynamo.Core,False,2018-03-26T21:59:22.227+00:00,True,False,,,515,False,1.1.1
+"LyonL Interactive,Inc.",2018-03-22T23:57:25.783Z,29,29,Package Description,LyonL.Caching,False,2018-03-22T23:57:25.783+00:00,True,False,,,228,False,1.0.3
+Projeto Internet,2018-03-22T23:57:17.267Z,25,29,Projeto de Repositorios no DynamoDB da Projeto Internet,ProjetoInternet.Infrastructure.Repositories.Dynamo.Core,False,2018-03-26T21:59:22.227+00:00,True,False,,,515,False,1.1.1
+"LyonL Interactive,Inc.",2018-03-22T23:57:25.783Z,29,29,Package Description,LyonL.Caching,False,2018-03-22T23:57:25.783+00:00,True,False,,,228,False,1.0.3
+Microsoft,2018-03-22T23:53:55.957Z,29,29,Microsoft Azure Billing Management Library,Microsoft.Azure.Management.Billing,True,2018-03-22T23:53:55.957+00:00,True,False,,"Microsoft,Azure,Billing,management,Billing_2018-03-01-preview",2475,True,2.1.0-preview
+Microsoft,2018-03-22T23:53:55.957Z,29,29,Microsoft Azure Billing Management Library,Microsoft.Azure.Management.Billing,True,2018-03-22T23:53:55.957+00:00,True,False,,"Microsoft,Azure,Billing,management,Billing_2018-03-01-preview",2475,True,2.1.0-preview
+csubj,2018-03-22T23:50:32.227Z,29,29,Package Description,RUID,False,2018-03-22T23:50:32.227+00:00,True,False,,,49,False,1.0.0
+csubj,2018-03-22T23:50:32.227Z,29,29,Package Description,RUID,False,2018-03-22T23:50:32.227+00:00,True,False,,,49,False,1.0.0
+Bitprim,2018-03-22T23:47:46.92Z,3,29,C# binding for Bitprim Bitcoin platform,bitprim,False,2018-04-17T20:12:32.993+00:00,True,False,,"Bitcoin,C#,Litecoin,Cash",14565,False,0.2.190
+Bitprim,2018-03-22T23:47:46.92Z,3,29,C# binding for Bitprim Bitcoin platform,bitprim,False,2018-04-17T20:12:32.993+00:00,True,False,,"Bitcoin,C#,Litecoin,Cash",14565,False,0.2.190
+Michael Maier,2018-03-22T23:45:31.39Z,27,29,"MSBuild extension that adds new targets for automated SCM-based versioning using SemVer 2.0.
+Currently supports Bazaar (bzr), Git and Mercurial (hg).",XploRe.Versioning.Tools.DotNet,True,2018-03-24T12:21:29.273+00:00,True,False,,"Versioning,SemVer,SemVer2.0,Git,Mercurial,Bazaar,MSBuild,Core,.NETCore",213,True,0.1.0-dev.3
+Michael Maier,2018-03-22T23:45:31.39Z,27,29,"MSBuild extension that adds new targets for automated SCM-based versioning using SemVer 2.0.
+Currently supports Bazaar (bzr), Git and Mercurial (hg).",XploRe.Versioning.Tools.DotNet,True,2018-03-24T12:21:29.273+00:00,True,False,,"Versioning,SemVer,SemVer2.0,Git,Mercurial,Bazaar,MSBuild,Core,.NETCore",213,True,0.1.0-dev.3
+"LyonL Interactive,Inc.",2018-03-22T23:35:21.527Z,25,29,Package Description,LyonL.Core,False,2018-03-26T23:42:28.8+00:00,True,False,,,894,False,1.0.6
+AgoraRepo,2018-03-22T23:34:58.883Z,43209,29,Package Description,AgoraRepo,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.1.0
+AgoraRepo,2018-03-22T23:34:58.883Z,43209,29,Package Description,AgoraRepo,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.1.0
+"LyonL Interactive,Inc.",2018-03-22T23:35:21.527Z,25,29,Package Description,LyonL.Core,False,2018-03-26T23:42:28.8+00:00,True,False,,,894,False,1.0.6
+Matthew Parker,2018-03-22T23:27:22.683Z,43209,29,DelayedEcho class library for Console App interaction,DelayedEcho.MatthewParker,False,1900-01-01T00:00:00+00:00,False,False,,DelayedEcho,-1,False,1.0.0
+Matthew Parker,2018-03-22T23:34:28.667Z,43209,29,DelayedEcho class library for Console App interaction,DelayedEcho.MP.AP,False,1900-01-01T00:00:00+00:00,False,False,,DelayedEcho,149,False,1.0.0
+Matthew Parker,2018-03-22T23:34:28.667Z,43209,29,DelayedEcho class library for Console App interaction,DelayedEcho.MP.AP,False,1900-01-01T00:00:00+00:00,False,False,,DelayedEcho,149,False,1.0.0
+LaunchDarkly.Client,2018-03-22T23:29:44.627Z,28,29,Package Description,LaunchDarkly.Client,True,2018-03-23T22:46:03.99+00:00,True,False,,,155362,False,4.1.1-beta1
+LaunchDarkly.Client,2018-03-22T23:29:44.627Z,28,29,Package Description,LaunchDarkly.Client,True,2018-03-23T22:46:03.99+00:00,True,False,,,155362,False,4.1.1-beta1
+amccool,2018-03-22T23:28:49.093Z,28,29,TraceListener for ElasticSearch and kibana,ElasticSearch.Diagnostics,False,2018-03-23T05:05:53.377+00:00,True,False,A TraceListener for submitting trace events and trace data to ElasticSearch,"Diagnostics,Trace,TraceListener,ElasticSearch,Kibana",5931,False,2.5.39
+Matthew Parker,2018-03-22T23:27:22.683Z,43209,29,DelayedEcho class library for Console App interaction,DelayedEcho.MatthewParker,False,1900-01-01T00:00:00+00:00,False,False,,DelayedEcho,-1,False,1.0.0
+Matthew Parker,2018-03-22T23:27:22.683Z,43209,29,DelayedEcho class library for Console App interaction,DelayedEcho.MatthewParker,False,1900-01-01T00:00:00+00:00,False,False,,DelayedEcho,-1,False,1.0.0
+amccool,2018-03-22T23:28:49.093Z,28,29,TraceListener for ElasticSearch and kibana,ElasticSearch.Diagnostics,False,2018-03-23T05:05:53.377+00:00,True,False,A TraceListener for submitting trace events and trace data to ElasticSearch,"Diagnostics,Trace,TraceListener,ElasticSearch,Kibana",5931,False,2.5.39
+Projeto Internet,2018-03-22T23:23:52.74Z,25,29,Projeto de Repositorios no DynamoDB da Projeto Internet,ProjetoInternet.Infrastructure.Repositories.Dynamo.Core,False,2018-03-26T21:59:22.227+00:00,True,False,,,515,False,1.0.10
+Projeto Internet,2018-03-21T19:27:12.25Z,25,30,Projeto Referencia de Repositorio da Projeto Internet,ProjetoInternet.Infrastructure.Repositories.Dynamo.Core,False,2018-03-26T21:59:22.227+00:00,False,False,,,515,False,1.0.5
+Projeto Internet,2018-03-21T08:39:30.75Z,25,30,Projeto Referencia de Repositorio da Projeto Internet,ProjetoInternet.Infrastructure.Repositories.Dynamo.Core,False,2018-03-26T21:59:22.227+00:00,False,False,,,515,False,1.0.3
+Projeto Internet,2018-03-21T08:30:39.06Z,25,30,Projeto Referencia de Repositorio da Projeto Internet,ProjetoInternet.Infrastructure.Repositories.Dynamo.Core,False,2018-03-26T21:59:22.227+00:00,False,False,,,515,False,1.0.2
+Projeto Internet,2018-03-21T08:08:27.12Z,25,30,Projeto Referencia de Repositorio da Projeto Internet,ProjetoInternet.Infrastructure.Repositories.Dynamo.Core,False,2018-03-26T21:59:22.227+00:00,False,False,,,515,False,1.0.1
+Projeto Internet,2018-03-21T07:29:02.303Z,25,30,Package Description,ProjetoInternet.Infrastructure.Repositories.Dynamo.Core,False,2018-03-26T21:59:22.227+00:00,False,False,,,515,False,1.0.0
+Projeto Internet,2018-03-22T23:23:52.74Z,25,29,Projeto de Repositorios no DynamoDB da Projeto Internet,ProjetoInternet.Infrastructure.Repositories.Dynamo.Core,False,2018-03-26T21:59:22.227+00:00,True,False,,,515,False,1.0.10
+Sergey Seroukhov,2018-03-22T23:19:10.4Z,2,29,Open source components for Pip.Services in .NET,PipServices.Oss,False,2018-04-18T21:07:16.767+00:00,True,False,,"pip-services,open,source",666,False,1.0.0
+PageUp,2018-03-22T23:20:36.547Z,1,29,PageUp EventBus,PageUp.EventBus,False,2018-04-19T00:49:36.88+00:00,True,False,,"PageUp,EventBus",3566,False,1.3.151
+PageUp,2018-03-22T23:20:36.547Z,1,29,PageUp EventBus,PageUp.EventBus,False,2018-04-19T00:49:36.88+00:00,True,False,,"PageUp,EventBus",3566,False,1.3.151
+Sergey Seroukhov,2018-03-22T23:19:10.4Z,2,29,Open source components for Pip.Services in .NET,PipServices.Oss,False,2018-04-18T21:07:16.767+00:00,True,False,,"pip-services,open,source",666,False,1.0.0
+Realm,2018-03-22T23:16:50.63Z,29,29,Server side components for use with Realm.,Realm.Server,False,2018-03-22T23:16:50.63+00:00,True,False,,"Realm,database,db,persistence,sqlite",232,False,1.1.0
+Realm,2018-03-22T23:16:50.63Z,29,29,Server side components for use with Realm.,Realm.Server,False,2018-03-22T23:16:50.63+00:00,True,False,,"Realm,database,db,persistence,sqlite",232,False,1.1.0
+Auth0,2018-03-19T03:35:05.383Z,2,32,Client library for the Auth0 Authentication API,Auth0.AuthenticationApi,False,2018-04-18T08:04:18.67+00:00,False,False,,"Auth0,OAuth",214961,False,4.4.0
+J.Sakamoto,2018-03-22T23:08:21.413Z,29,29,"This library allows you to parse range of IP address string such as ""192.168.0.0/24"" and ""192.168.0.0/255.255.255.0"" and ""192.168.0.0-192.168.0.255"", and can conatins check. This library supports both IPv4 and IPv6.",IPAddressRange,False,2018-03-22T23:08:21.413+00:00,True,False,"This library allows you to parse range of IP address string, and can conatins check.",IPAddress,125475,False,3.1.0
+ObsidianMinor,2018-03-22T23:08:18.053Z,29,29,An unofficial wrapper around the Gfycat analytics API,Gfycat.Net.Analytics,False,2018-03-22T23:08:18.053+00:00,True,False,,"gfycat,netstandard,analytics",1205,False,1.0.10.73
+ObsidianMinor,2018-03-22T23:08:06.693Z,29,29,A complete wrapper around the Gfycat API,Gfycat.Net,False,2018-03-22T23:08:06.693+00:00,True,False,,"gfycat,netstandard",1597,False,1.0.10.73
+J.Sakamoto,2018-03-22T23:08:42.13Z,29,29,"[Superseded] This package became  only metadata package for installing ""IPAddressRange"" NuGet package, because ""IPAddressRange"" NuGet package became strong-named assembly.
+Please consider to installing ""IPAddress"" NuGet package directly instead of this package.
+----------------------------
+This library allows you to parse range of IP address string such as ""192.168.0.0/24"" and ""192.168.0.0/255.255.255.0"" and ""192.168.0.0-192.168.0.255"", and can conatins check. This library supports both IPv4 and IPv6.",IPAddressRange.Signed,False,2018-03-22T23:08:42.13+00:00,True,False,"This library allows you to parse range of IP address string, and can conatins check.",IPAddress,9447,False,3.1.0
+ObsidianMinor,2018-03-22T23:08:06.693Z,29,29,A complete wrapper around the Gfycat API,Gfycat.Net,False,2018-03-22T23:08:06.693+00:00,True,False,,"gfycat,netstandard",1597,False,1.0.10.73
+J.Sakamoto,2018-03-22T23:08:21.413Z,29,29,"This library allows you to parse range of IP address string such as ""192.168.0.0/24"" and ""192.168.0.0/255.255.255.0"" and ""192.168.0.0-192.168.0.255"", and can conatins check. This library supports both IPv4 and IPv6.",IPAddressRange,False,2018-03-22T23:08:21.413+00:00,True,False,"This library allows you to parse range of IP address string, and can conatins check.",IPAddress,125475,False,3.1.0
+J.Sakamoto,2018-03-22T23:08:42.13Z,29,29,"[Superseded] This package became  only metadata package for installing ""IPAddressRange"" NuGet package, because ""IPAddressRange"" NuGet package became strong-named assembly.
+Please consider to installing ""IPAddress"" NuGet package directly instead of this package.
+----------------------------
+This library allows you to parse range of IP address string such as ""192.168.0.0/24"" and ""192.168.0.0/255.255.255.0"" and ""192.168.0.0-192.168.0.255"", and can conatins check. This library supports both IPv4 and IPv6.",IPAddressRange.Signed,False,2018-03-22T23:08:42.13+00:00,True,False,"This library allows you to parse range of IP address string, and can conatins check.",IPAddress,9447,False,3.1.0
+ObsidianMinor,2018-03-22T23:08:18.053Z,29,29,An unofficial wrapper around the Gfycat analytics API,Gfycat.Net.Analytics,False,2018-03-22T23:08:18.053+00:00,True,False,,"gfycat,netstandard,analytics",1205,False,1.0.10.73
+Ashley Marques,2018-03-22T23:05:25.94Z,27,29,DistributedCache using postgres,Community.Microsoft.Extensions.Caching.PostgreSql,False,2018-03-24T01:04:22.98+00:00,True,False,,,153,False,1.0.5
+Realm,2018-03-22T23:04:39.203Z,4,29,"Realm is a mobile database: a replacement for SQLite and ORMs. This package contains just classes for communicating with the offline database. If you're looking to synchronize realm files with the Realm Mobile Platform, add the Realm parent package.",Realm.Database,False,2018-04-16T15:33:54.36+00:00,True,False,,"Realm,database,db,persistence,sqlite",97547,False,2.2.0
+Polyhydra Games,2018-03-22T23:04:22.187Z,29,29,PolyhydraGames.Core,PolyhydraGames.Core,False,2018-03-22T23:04:22.187+00:00,True,False,,PolyhydraGames,224,False,1.0.20
+Polyhydra Games,2018-03-22T23:05:13.063Z,29,29,PolyhydraGames.Core,PolyhydraGames.Core.Forms,False,2018-03-22T23:05:13.063+00:00,True,False,,PolyhydraGames,217,False,1.0.18
+Jim,2018-03-22T23:04:41.907Z,28,29,Listeners to support the Plisky Diagnostic Library.,Plisky.Listeners,False,2018-03-23T11:43:19.927+00:00,True,False,,"trace,logger,logging,logs,application,app,bilge,plisky,piffle,error,diagnostics",975,False,2.0.8
+Realm,2018-03-22T23:05:42.283Z,4,29,Realm is a mobile database: a replacement for SQLite and ORMs. This package includes classes that allow you to synchronize realm files using the Realm Mobile Platform.,Realm,False,2018-04-16T15:35:58.193+00:00,True,False,,"Realm,database,db,persistence,sqlite",144204,False,2.2.0
+Jim,2018-03-22T23:04:12.577Z,28,29,"Plisky Diagnostics Library - featuring Bilge and Piffle, offering comprehensive trace and error handling facilities to applications.",Plisky.Diagnostics,False,2018-03-23T11:43:34.13+00:00,True,False,,"trace,logger,logging,logs,application,app,bilge,plisky,piffle,error,diagnostics",1463,False,2.0.8
+Polyhydra Games,2018-03-22T23:05:13.063Z,29,29,PolyhydraGames.Core,PolyhydraGames.Core.Forms,False,2018-03-22T23:05:13.063+00:00,True,False,,PolyhydraGames,217,False,1.0.18
+Realm,2018-03-22T23:05:42.283Z,4,29,Realm is a mobile database: a replacement for SQLite and ORMs. This package includes classes that allow you to synchronize realm files using the Realm Mobile Platform.,Realm,False,2018-04-16T15:35:58.193+00:00,True,False,,"Realm,database,db,persistence,sqlite",144204,False,2.2.0
+Jim,2018-03-22T23:04:41.907Z,28,29,Listeners to support the Plisky Diagnostic Library.,Plisky.Listeners,False,2018-03-23T11:43:19.927+00:00,True,False,,"trace,logger,logging,logs,application,app,bilge,plisky,piffle,error,diagnostics",975,False,2.0.8
+Polyhydra Games,2018-03-22T23:04:22.187Z,29,29,PolyhydraGames.Core,PolyhydraGames.Core,False,2018-03-22T23:04:22.187+00:00,True,False,,PolyhydraGames,224,False,1.0.20
+Realm,2018-03-22T23:04:39.203Z,4,29,"Realm is a mobile database: a replacement for SQLite and ORMs. This package contains just classes for communicating with the offline database. If you're looking to synchronize realm files with the Realm Mobile Platform, add the Realm parent package.",Realm.Database,False,2018-04-16T15:33:54.36+00:00,True,False,,"Realm,database,db,persistence,sqlite",97547,False,2.2.0
+Jim,2018-03-22T23:04:12.577Z,28,29,"Plisky Diagnostics Library - featuring Bilge and Piffle, offering comprehensive trace and error handling facilities to applications.",Plisky.Diagnostics,False,2018-03-23T11:43:34.13+00:00,True,False,,"trace,logger,logging,logs,application,app,bilge,plisky,piffle,error,diagnostics",1463,False,2.0.8
+Chris F Carroll,2018-03-22T23:00:15.413Z,28,29,"*TestBase* gives you a flying start with 
+- fluent assertions that are easy to extend
+- tools for testing with dependencies on AspNetMvc, HttpClient, Ado.Net, Streams
+
+Chainable fluent assertions get you to the point concisely
+------------------
+```
+- ShouldEqualByValue(), ShouldEqualByValueExceptFor() 
+  work with all kinds of object and collections, and report what differed.
+- string.ShouldMatch().ShouldEqualIgnoringCase(), ...
+- numeric.ShouldBeBetween().ShouldEqualWithTolerance(), ...
+- IEnumerable.ShouldAll().ShouldContain().ShouldNotContain(), ...
+- Stream.ShouldHaveSameStreamContentAs(), Stream.ShouldContain()
+
+UnitUnderTest.Action()
+    .ShouldNotBeNull()
+    .ShouldEqualByValue(new {Id=1, Payload=expected} )
+    .Payload
+        .ShouldMatchIgnoringCase(""I expected this"")
+		    .Should(somePredicate);
+```
+
+TestBase.HttpClient.Fake
+------------------------
+
+```
+  var uut = new FakeHttpClient()
+        .Setup(x=>x.RequestUri.PathAndQuery.StartsWith(""/this"")).Returns(response)
+        .Setup(x=>x.Method==HttpMethod.Put).Returns(new HttpResponseMessage(HttpStatusCode.Accepted))
+```
+
+TestBase.FakeDb
+------------------
+`FakeDbConnection` 
+
+```
+- db.SetupForQuery(…)
+- db.SetupForExecuteNonQuery(…)
+- db.ShouldHaveUpdated(""tableName"", …)
+- db.ShouldHaveSelected(""tableName"", …)
+- db.ShouldHaveUpdated(""tableName"", …)
+- db.ShouldHaveDeleted(""tableName"", …)
+- db.ShouldHaveInvoked(cmd => predicate(cmd))
+- db.ShouldHaveXXX().ShouldHaveParameter(""name"", value)
+- db.Verify(x=>x.CommandText.Matches(""Insert [case] .*"") && x.Parameters[""id""].Value==1)
+```
+
+TestBase.Mvc
+------------
+```
+ControllerUnderTest.Action()
+  .ShouldbeViewResult()
+  .ShouldHaveModel<TModel>()
+  .ShouldEqualByValue(expected)
+ControllerUnderTest.Action()
+  .ShouldBeRedirectToRouteResult()
+  .ShouldHaveRouteValue(""expectedKey"", [Optional] ""expectedValue"");
+
+ShouldHaveViewDataContaining(), ShouldBeJsonResult() etc.
+```
+
+TestBase.Mvc Version 4 for netstandard20 & AspNetCore Mvc
+---------------------------------------------------------
+
+- Test most controllers with zero setup using `controllerUnderTest.WithControllerContext(actionUnderTest)` :
+
+```
+[Test]
+public void ShouldBeViewWithModel_ShouldAssertViewResultAndNameAndModel()
+{
+    var controllerUnderTest = new AController().WithControllerContext(""Action"");
+    
+    controllerUnderTest
+        .Action().ShouldBeViewWithModel<AClass>(""ViewName"")
+        .ShouldBeOfType<AClass>()
+        .FooterLink.ShouldBe(""/AController/ActionName"");
+}
+
+```
+
+- Test more complex controller/application dependencies using `HostedMvcTestFixtureBase` and specify your MVCApplications `Startup` class:
+
+```
+[TestCase(""/dummy"")]
+public async Task Put_Should_ReturnA(string url)
+{
+    var something= new Fixture().Create<Something>();
+    var jsonBody= new StringContent(something.ToJSon(), Encoding.UTF8, ""application/json"");
+    var httpClient=GivenClientForRunningServer<Startup>();
+    GivenRequestHeaders(httpClient, ""CustomHeader"", ""HeaderValue1"");
+
+    var result = await httpClient.PutAsync(url, jsonBody);
+
+    result.ShouldBe_202Accepted();
+    DummyController.Putted.ShouldEqualByValue( something );
+}
+```
+
+TestBase.Mvc Version 3 for Net4
+-------------------------------
+
+`Controller.WithHttpContextAndRoutes()` fakes your http request &amp; context. 
+Use the RegisterRoutes method of your actual application to test Controller.Url with your application's configured routes.
+
+```
+ControllerUnderTest
+  .WithHttpContextAndRoutes(
+    RouteConfig.RegisterRoutes, 
+    ""/incomingurl"")
+
+ApiControllerUnderTest.WithWebApiHttpContext&lt;T&gt;(
+    httpMethod, 
+    requestUri,
+    routeTemplate)
+```
+
+Testable Logging with `StringListLogger`.
+Mix and match with your favourite test runners and frameworks.
+
+- Building on Mono : define compile symbol NoMSTest to remove dependency on Microsoft.VisualStudio.QualityTools.UnitTestFramework",TestBase.HttpClient.Fake,False,2018-03-23T22:45:25.083+00:00,True,False,,"nunit,test,unittest,tdd,fluent,assertions,mock,httpclient,system.net,httprequestmessage",172,False,4.0.7.1
+"John Sheehan,Michael Lehenbauer,Alexander Batishchev",2018-03-22T23:01:21.103Z,28,29,"Jwt.Net, a JWT (JSON Web Token) implementation for .NET",JWT,True,2018-03-23T19:00:15.177+00:00,True,False,,"jwt,json",941691,False,5.0.0-beta1
+Chris F Carroll,2018-03-22T23:00:15.413Z,28,29,"*TestBase* gives you a flying start with 
+- fluent assertions that are easy to extend
+- tools for testing with dependencies on AspNetMvc, HttpClient, Ado.Net, Streams
+
+Chainable fluent assertions get you to the point concisely
+------------------
+```
+- ShouldEqualByValue(), ShouldEqualByValueExceptFor() 
+  work with all kinds of object and collections, and report what differed.
+- string.ShouldMatch().ShouldEqualIgnoringCase(), ...
+- numeric.ShouldBeBetween().ShouldEqualWithTolerance(), ...
+- IEnumerable.ShouldAll().ShouldContain().ShouldNotContain(), ...
+- Stream.ShouldHaveSameStreamContentAs(), Stream.ShouldContain()
+
+UnitUnderTest.Action()
+    .ShouldNotBeNull()
+    .ShouldEqualByValue(new {Id=1, Payload=expected} )
+    .Payload
+        .ShouldMatchIgnoringCase(""I expected this"")
+		    .Should(somePredicate);
+```
+
+TestBase.HttpClient.Fake
+------------------------
+
+```
+  var uut = new FakeHttpClient()
+        .Setup(x=>x.RequestUri.PathAndQuery.StartsWith(""/this"")).Returns(response)
+        .Setup(x=>x.Method==HttpMethod.Put).Returns(new HttpResponseMessage(HttpStatusCode.Accepted))
+```
+
+TestBase.FakeDb
+------------------
+`FakeDbConnection` 
+
+```
+- db.SetupForQuery(…)
+- db.SetupForExecuteNonQuery(…)
+- db.ShouldHaveUpdated(""tableName"", …)
+- db.ShouldHaveSelected(""tableName"", …)
+- db.ShouldHaveUpdated(""tableName"", …)
+- db.ShouldHaveDeleted(""tableName"", …)
+- db.ShouldHaveInvoked(cmd => predicate(cmd))
+- db.ShouldHaveXXX().ShouldHaveParameter(""name"", value)
+- db.Verify(x=>x.CommandText.Matches(""Insert [case] .*"") && x.Parameters[""id""].Value==1)
+```
+
+TestBase.Mvc
+------------
+```
+ControllerUnderTest.Action()
+  .ShouldbeViewResult()
+  .ShouldHaveModel<TModel>()
+  .ShouldEqualByValue(expected)
+ControllerUnderTest.Action()
+  .ShouldBeRedirectToRouteResult()
+  .ShouldHaveRouteValue(""expectedKey"", [Optional] ""expectedValue"");
+
+ShouldHaveViewDataContaining(), ShouldBeJsonResult() etc.
+```
+
+TestBase.Mvc Version 4 for netstandard20 & AspNetCore Mvc
+---------------------------------------------------------
+
+- Test most controllers with zero setup using `controllerUnderTest.WithControllerContext(actionUnderTest)` :
+
+```
+[Test]
+public void ShouldBeViewWithModel_ShouldAssertViewResultAndNameAndModel()
+{
+    var controllerUnderTest = new AController().WithControllerContext(""Action"");
+    
+    controllerUnderTest
+        .Action().ShouldBeViewWithModel<AClass>(""ViewName"")
+        .ShouldBeOfType<AClass>()
+        .FooterLink.ShouldBe(""/AController/ActionName"");
+}
+
+```
+
+- Test more complex controller/application dependencies using `HostedMvcTestFixtureBase` and specify your MVCApplications `Startup` class:
+
+```
+[TestCase(""/dummy"")]
+public async Task Put_Should_ReturnA(string url)
+{
+    var something= new Fixture().Create<Something>();
+    var jsonBody= new StringContent(something.ToJSon(), Encoding.UTF8, ""application/json"");
+    var httpClient=GivenClientForRunningServer<Startup>();
+    GivenRequestHeaders(httpClient, ""CustomHeader"", ""HeaderValue1"");
+
+    var result = await httpClient.PutAsync(url, jsonBody);
+
+    result.ShouldBe_202Accepted();
+    DummyController.Putted.ShouldEqualByValue( something );
+}
+```
+
+TestBase.Mvc Version 3 for Net4
+-------------------------------
+
+`Controller.WithHttpContextAndRoutes()` fakes your http request &amp; context. 
+Use the RegisterRoutes method of your actual application to test Controller.Url with your application's configured routes.
+
+```
+ControllerUnderTest
+  .WithHttpContextAndRoutes(
+    RouteConfig.RegisterRoutes, 
+    ""/incomingurl"")
+
+ApiControllerUnderTest.WithWebApiHttpContext&lt;T&gt;(
+    httpMethod, 
+    requestUri,
+    routeTemplate)
+```
+
+Testable Logging with `StringListLogger`.
+Mix and match with your favourite test runners and frameworks.
+
+- Building on Mono : define compile symbol NoMSTest to remove dependency on Microsoft.VisualStudio.QualityTools.UnitTestFramework",TestBase.HttpClient.Fake,False,2018-03-23T22:45:25.083+00:00,True,False,,"nunit,test,unittest,tdd,fluent,assertions,mock,httpclient,system.net,httprequestmessage",172,False,4.0.7.1
+"John Sheehan,Michael Lehenbauer,Alexander Batishchev",2018-03-22T23:01:21.103Z,28,29,"Jwt.Net, a JWT (JSON Web Token) implementation for .NET",JWT,True,2018-03-23T19:00:15.177+00:00,True,False,,"jwt,json",941691,False,5.0.0-beta1
+Projeto Internet,2018-03-22T22:56:27.06Z,25,29,Projeto de Repositorios no DynamoDB da Projeto Internet,ProjetoInternet.Infrastructure.Repositories.Dynamo.Core,False,2018-03-26T21:59:22.227+00:00,True,False,,,515,False,1.0.9
+Projeto Internet,2018-03-22T22:56:27.06Z,25,29,Projeto de Repositorios no DynamoDB da Projeto Internet,ProjetoInternet.Infrastructure.Repositories.Dynamo.Core,False,2018-03-26T21:59:22.227+00:00,True,False,,,515,False,1.0.9
+Chris F Carroll,2018-03-22T22:52:01.43Z,28,29,"*TestBase* gives you a flying start with 
+- fluent assertions that are easy to extend
+- tools for testing with dependencies on AspNetMvc, HttpClient, Ado.Net, Streams
+
+Chainable fluent assertions get you to the point concisely
+------------------
+```
+- ShouldEqualByValue(), ShouldEqualByValueExceptFor() 
+  work with all kinds of object and collections, and report what differed.
+- string.ShouldMatch().ShouldEqualIgnoringCase(), ...
+- numeric.ShouldBeBetween().ShouldEqualWithTolerance(), ...
+- IEnumerable.ShouldAll().ShouldContain().ShouldNotContain(), ...
+- Stream.ShouldHaveSameStreamContentAs(), Stream.ShouldContain()
+
+UnitUnderTest.Action()
+    .ShouldNotBeNull()
+    .ShouldEqualByValue(new {Id=1, Payload=expected} )
+    .Payload
+        .ShouldMatchIgnoringCase(""I expected this"")
+		    .Should(somePredicate);
+```
+
+TestBase.HttpClient.Fake
+------------------------
+
+```
+  var uut = new FakeHttpClient()
+        .Setup(x=>x.RequestUri.PathAndQuery.StartsWith(""/this"")).Returns(response)
+        .Setup(x=>x.Method==HttpMethod.Put).Returns(new HttpResponseMessage(HttpStatusCode.Accepted))
+```
+
+TestBase.FakeDb
+------------------
+`FakeDbConnection` 
+
+```
+- db.SetupForQuery(…)
+- db.SetupForExecuteNonQuery(…)
+- db.ShouldHaveUpdated(""tableName"", …)
+- db.ShouldHaveSelected(""tableName"", …)
+- db.ShouldHaveUpdated(""tableName"", …)
+- db.ShouldHaveDeleted(""tableName"", …)
+- db.ShouldHaveInvoked(cmd => predicate(cmd))
+- db.ShouldHaveXXX().ShouldHaveParameter(""name"", value)
+- db.Verify(x=>x.CommandText.Matches(""Insert [case] .*"") && x.Parameters[""id""].Value==1)
+```
+
+TestBase.Mvc
+------------
+```
+ControllerUnderTest.Action()
+  .ShouldbeViewResult()
+  .ShouldHaveModel<TModel>()
+  .ShouldEqualByValue(expected)
+ControllerUnderTest.Action()
+  .ShouldBeRedirectToRouteResult()
+  .ShouldHaveRouteValue(""expectedKey"", [Optional] ""expectedValue"");
+
+ShouldHaveViewDataContaining(), ShouldBeJsonResult() etc.
+```
+
+TestBase.Mvc Version 4 for netstandard20 & AspNetCore Mvc
+---------------------------------------------------------
+
+- Test most controllers with zero setup using `controllerUnderTest.WithControllerContext(actionUnderTest)` :
+
+```
+[Test]
+public void ShouldBeViewWithModel_ShouldAssertViewResultAndNameAndModel()
+{
+    var controllerUnderTest = new AController().WithControllerContext(""Action"");
+    
+    controllerUnderTest
+        .Action().ShouldBeViewWithModel<AClass>(""ViewName"")
+        .ShouldBeOfType<AClass>()
+        .FooterLink.ShouldBe(""/AController/ActionName"");
+}
+
+```
+
+- Test more complex controller/application dependencies using `HostedMvcTestFixtureBase` and specify your MVCApplications `Startup` class:
+
+```
+[TestCase(""/dummy"")]
+public async Task Put_Should_ReturnA(string url)
+{
+    var something= new Fixture().Create<Something>();
+    var jsonBody= new StringContent(something.ToJSon(), Encoding.UTF8, ""application/json"");
+    var httpClient=GivenClientForRunningServer<Startup>();
+    GivenRequestHeaders(httpClient, ""CustomHeader"", ""HeaderValue1"");
+
+    var result = await httpClient.PutAsync(url, jsonBody);
+
+    result.ShouldBe_202Accepted();
+    DummyController.Putted.ShouldEqualByValue( something );
+}
+```
+
+TestBase.Mvc Version 3 for Net4
+-------------------------------
+
+`Controller.WithHttpContextAndRoutes()` fakes your http request &amp; context. 
+Use the RegisterRoutes method of your actual application to test Controller.Url with your application's configured routes.
+
+```
+ControllerUnderTest
+  .WithHttpContextAndRoutes(
+    RouteConfig.RegisterRoutes, 
+    ""/incomingurl"")
+
+ApiControllerUnderTest.WithWebApiHttpContext&lt;T&gt;(
+    httpMethod, 
+    requestUri,
+    routeTemplate)
+```
+
+Testable Logging with `StringListLogger`.
+Mix and match with your favourite test runners and frameworks.
+
+- Building on Mono : define compile symbol NoMSTest to remove dependency on Microsoft.VisualStudio.QualityTools.UnitTestFramework",TestBase.HttpClient.Fake,False,2018-03-23T22:45:25.083+00:00,True,False,,"nunit,test,unittest,tdd,fluent,assertions,mock,httpclient,system.net,httprequestmessage",172,False,4.0.7
+Chris F Carroll,2018-03-22T22:52:01.43Z,28,29,"*TestBase* gives you a flying start with 
+- fluent assertions that are easy to extend
+- tools for testing with dependencies on AspNetMvc, HttpClient, Ado.Net, Streams
+
+Chainable fluent assertions get you to the point concisely
+------------------
+```
+- ShouldEqualByValue(), ShouldEqualByValueExceptFor() 
+  work with all kinds of object and collections, and report what differed.
+- string.ShouldMatch().ShouldEqualIgnoringCase(), ...
+- numeric.ShouldBeBetween().ShouldEqualWithTolerance(), ...
+- IEnumerable.ShouldAll().ShouldContain().ShouldNotContain(), ...
+- Stream.ShouldHaveSameStreamContentAs(), Stream.ShouldContain()
+
+UnitUnderTest.Action()
+    .ShouldNotBeNull()
+    .ShouldEqualByValue(new {Id=1, Payload=expected} )
+    .Payload
+        .ShouldMatchIgnoringCase(""I expected this"")
+		    .Should(somePredicate);
+```
+
+TestBase.HttpClient.Fake
+------------------------
+
+```
+  var uut = new FakeHttpClient()
+        .Setup(x=>x.RequestUri.PathAndQuery.StartsWith(""/this"")).Returns(response)
+        .Setup(x=>x.Method==HttpMethod.Put).Returns(new HttpResponseMessage(HttpStatusCode.Accepted))
+```
+
+TestBase.FakeDb
+------------------
+`FakeDbConnection` 
+
+```
+- db.SetupForQuery(…)
+- db.SetupForExecuteNonQuery(…)
+- db.ShouldHaveUpdated(""tableName"", …)
+- db.ShouldHaveSelected(""tableName"", …)
+- db.ShouldHaveUpdated(""tableName"", …)
+- db.ShouldHaveDeleted(""tableName"", …)
+- db.ShouldHaveInvoked(cmd => predicate(cmd))
+- db.ShouldHaveXXX().ShouldHaveParameter(""name"", value)
+- db.Verify(x=>x.CommandText.Matches(""Insert [case] .*"") && x.Parameters[""id""].Value==1)
+```
+
+TestBase.Mvc
+------------
+```
+ControllerUnderTest.Action()
+  .ShouldbeViewResult()
+  .ShouldHaveModel<TModel>()
+  .ShouldEqualByValue(expected)
+ControllerUnderTest.Action()
+  .ShouldBeRedirectToRouteResult()
+  .ShouldHaveRouteValue(""expectedKey"", [Optional] ""expectedValue"");
+
+ShouldHaveViewDataContaining(), ShouldBeJsonResult() etc.
+```
+
+TestBase.Mvc Version 4 for netstandard20 & AspNetCore Mvc
+---------------------------------------------------------
+
+- Test most controllers with zero setup using `controllerUnderTest.WithControllerContext(actionUnderTest)` :
+
+```
+[Test]
+public void ShouldBeViewWithModel_ShouldAssertViewResultAndNameAndModel()
+{
+    var controllerUnderTest = new AController().WithControllerContext(""Action"");
+    
+    controllerUnderTest
+        .Action().ShouldBeViewWithModel<AClass>(""ViewName"")
+        .ShouldBeOfType<AClass>()
+        .FooterLink.ShouldBe(""/AController/ActionName"");
+}
+
+```
+
+- Test more complex controller/application dependencies using `HostedMvcTestFixtureBase` and specify your MVCApplications `Startup` class:
+
+```
+[TestCase(""/dummy"")]
+public async Task Put_Should_ReturnA(string url)
+{
+    var something= new Fixture().Create<Something>();
+    var jsonBody= new StringContent(something.ToJSon(), Encoding.UTF8, ""application/json"");
+    var httpClient=GivenClientForRunningServer<Startup>();
+    GivenRequestHeaders(httpClient, ""CustomHeader"", ""HeaderValue1"");
+
+    var result = await httpClient.PutAsync(url, jsonBody);
+
+    result.ShouldBe_202Accepted();
+    DummyController.Putted.ShouldEqualByValue( something );
+}
+```
+
+TestBase.Mvc Version 3 for Net4
+-------------------------------
+
+`Controller.WithHttpContextAndRoutes()` fakes your http request &amp; context. 
+Use the RegisterRoutes method of your actual application to test Controller.Url with your application's configured routes.
+
+```
+ControllerUnderTest
+  .WithHttpContextAndRoutes(
+    RouteConfig.RegisterRoutes, 
+    ""/incomingurl"")
+
+ApiControllerUnderTest.WithWebApiHttpContext&lt;T&gt;(
+    httpMethod, 
+    requestUri,
+    routeTemplate)
+```
+
+Testable Logging with `StringListLogger`.
+Mix and match with your favourite test runners and frameworks.
+
+- Building on Mono : define compile symbol NoMSTest to remove dependency on Microsoft.VisualStudio.QualityTools.UnitTestFramework",TestBase.HttpClient.Fake,False,2018-03-23T22:45:25.083+00:00,True,False,,"nunit,test,unittest,tdd,fluent,assertions,mock,httpclient,system.net,httprequestmessage",172,False,4.0.7
+Chris F Carroll,2018-03-22T22:49:27.39Z,28,29,"*TestBase* gives you a flying start with 
+- fluent assertions that are easy to extend
+- tools for testing with dependencies on AspNetMvc, HttpClient, Ado.Net, Streams
+
+Chainable fluent assertions get you to the point concisely
+------------------
+```
+- ShouldEqualByValue(), ShouldEqualByValueExceptFor() 
+  work with all kinds of object and collections, and report what differed.
+- string.ShouldMatch().ShouldEqualIgnoringCase(), ...
+- numeric.ShouldBeBetween().ShouldEqualWithTolerance(), ...
+- IEnumerable.ShouldAll().ShouldContain().ShouldNotContain(), ...
+- Stream.ShouldHaveSameStreamContentAs(), Stream.ShouldContain()
+
+UnitUnderTest.Action()
+    .ShouldNotBeNull()
+    .ShouldEqualByValue(new {Id=1, Payload=expected} )
+    .Payload
+        .ShouldMatchIgnoringCase(""I expected this"")
+		    .Should(somePredicate);
+```
+
+TestBase.Mvc
+------------
+```
+ControllerUnderTest.Action()
+  .ShouldbeViewResult()
+  .ShouldHaveModel<TModel>()
+  .ShouldEqualByValue(expected)
+ControllerUnderTest.Action()
+  .ShouldBeRedirectToRouteResult()
+  .ShouldHaveRouteValue(""expectedKey"", [Optional] ""expectedValue"");
+
+ShouldHaveViewDataContaining(), ShouldBeJsonResult() etc.
+```
+
+TestBase.Mvc Version 4 for netstandard20 & AspNetCore Mvc
+---------------------------------------------------------
+
+- Test most controllers with zero setup using `controllerUnderTest.WithControllerContext(actionUnderTest)` :
+
+```
+[Test]
+public void ShouldBeViewWithModel_ShouldAssertViewResultAndNameAndModel()
+{
+    var controllerUnderTest = new AController().WithControllerContext(""Action"");
+    
+    controllerUnderTest
+        .Action().ShouldBeViewWithModel<AClass>(""ViewName"")
+        .ShouldBeOfType<AClass>()
+        .FooterLink.ShouldBe(""/AController/ActionName"");
+}
+
+```
+
+- Test more complex controller/application dependencies using `HostedMvcTestFixtureBase` and specify your MVCApplications `Startup` class:
+
+```
+[TestCase(""/dummy"")]
+public async Task Put_Should_ReturnA(string url)
+{
+    var something= new Fixture().Create<Something>();
+    var jsonBody= new StringContent(something.ToJSon(), Encoding.UTF8, ""application/json"");
+    var httpClient=GivenClientForRunningServer<Startup>();
+    GivenRequestHeaders(httpClient, ""CustomHeader"", ""HeaderValue1"");
+
+    var result = await httpClient.PutAsync(url, jsonBody);
+
+    result.ShouldBe_202Accepted();
+    DummyController.Putted.ShouldEqualByValue( something );
+}
+```
+
+TestBase.Mvc Version 3 for Net4
+-------------------------------
+
+`Controller.WithHttpContextAndRoutes()` fakes your http request &amp; context. 
+Use the RegisterRoutes method of your actual application to test Controller.Url with your application's configured routes.
+
+```
+ControllerUnderTest
+  .WithHttpContextAndRoutes(
+    RouteConfig.RegisterRoutes, 
+    ""/incomingurl"")
+
+ApiControllerUnderTest.WithWebApiHttpContext&lt;T&gt;(
+    httpMethod, 
+    requestUri,
+    routeTemplate)
+```
+
+TestBase.HttpClient.Fake
+------------------------
+
+```
+  var uut = new FakeHttpClient()
+        .Setup(x=>x.RequestUri.PathAndQuery.StartsWith(""/this"")).Returns(response)
+        .Setup(x=>x.Method==HttpMethod.Put).Returns(new HttpResponseMessage(HttpStatusCode.Accepted))
+```
+
+TestBase.FakeDb
+------------------
+`FakeDbConnection` 
+
+```
+- db.SetupForQuery(…)
+- db.SetupForExecuteNonQuery(…)
+- db.ShouldHaveUpdated(""tableName"", …)
+- db.ShouldHaveSelected(""tableName"", …)
+- db.ShouldHaveUpdated(""tableName"", …)
+- db.ShouldHaveDeleted(""tableName"", …)
+- db.ShouldHaveInvoked(cmd => predicate(cmd))
+- db.ShouldHaveXXX().ShouldHaveParameter(""name"", value)
+- db.Verify(x=>x.CommandText.Matches(""Insert [case] .*"") && x.Parameters[""id""].Value==1)
+```
+
+Testable Logging with `StringListLogger`.
+Mix and match with your favourite test runners and frameworks.
+
+- Building on Mono : define compile symbol NoMSTest to remove dependency on Microsoft.VisualStudio.QualityTools.UnitTestFramework",TestBase.Mvc,False,2018-03-23T22:55:25.167+00:00,True,False,,"nunit,test,unittest,tdd,fluent,assertions,mock,mvc,aspnetmvc,aspnetcore,aspnetcoremvc",369,False,4.0.7
+mystborn,2018-03-22T22:49:40.737Z,29,29,The base class library for the TaffyScript language.,TaffyScript.BCL,False,2018-03-22T22:49:40.737+00:00,True,False,,"taffyscript,bcl,compiler",335,False,1.5.1
+vm,2018-03-22T22:50:35.893Z,29,29,"Features:
+            * The dump output is separated from the targeted dump media by the familiar TextWriter interface.
+            * The programmer can dump the value of any type of object: primitive and enum types (including those marked with FlagsAttribute), custom classes, struct-s, collections, etc.
+            * For complex type objects (classes and structs) the dumper outputs the names and the values of the properties.
+            * The dump is recursive: the complex members of the dumped object are dumped indented.
+            * Dumps the elements of sequences (arrays, lists, dictionaries, etc.)
+            * Handles circular references.
+            * The developers can easily customize various aspects of the dump by using an attribute (DumpAttribute) on the classes and their members, such as:
+                - the order in which the properties are dumped;
+                - formatting of the property names and/or values;
+                - suppressing the dump of some uninteresting properties;
+                - masking the values of sensitive properties (e.g. PII);
+                - the depth of the recursion into complex members;
+                - the maximum number of dumped elements of sequence properties.
+            * The dumper picks the customization attributes also from buddy classes declared with MetadataTypeAttribute.
+            * Even if the class doesn't have any attributes, the programmer can still pass a metadata class as a separate parameter to the dumping method. This allows for control over the dump of BCL and third party classes.
+            * Built and tested with .NET 4.5.2, 4.6.2, 4.7.1.
+            For more information see the documentation at https://github.com/vmelamed/vm/blob/master/Aspects/Diagnostics/ObjectDumper.md.",AspectObjectDumper,False,2018-03-22T22:50:35.893+00:00,True,False,Easy to integrate and easy to use component that dumps the value of an arbitrary .NET object in a easy to read text form. Helpful for debugging and logging purposes.,"dump,object,.net,diagnostics,debug,log,aspects",23010,False,1.9.11
+Chris F Carroll,2018-03-22T22:49:27.39Z,28,29,"*TestBase* gives you a flying start with 
+- fluent assertions that are easy to extend
+- tools for testing with dependencies on AspNetMvc, HttpClient, Ado.Net, Streams
+
+Chainable fluent assertions get you to the point concisely
+------------------
+```
+- ShouldEqualByValue(), ShouldEqualByValueExceptFor() 
+  work with all kinds of object and collections, and report what differed.
+- string.ShouldMatch().ShouldEqualIgnoringCase(), ...
+- numeric.ShouldBeBetween().ShouldEqualWithTolerance(), ...
+- IEnumerable.ShouldAll().ShouldContain().ShouldNotContain(), ...
+- Stream.ShouldHaveSameStreamContentAs(), Stream.ShouldContain()
+
+UnitUnderTest.Action()
+    .ShouldNotBeNull()
+    .ShouldEqualByValue(new {Id=1, Payload=expected} )
+    .Payload
+        .ShouldMatchIgnoringCase(""I expected this"")
+		    .Should(somePredicate);
+```
+
+TestBase.Mvc
+------------
+```
+ControllerUnderTest.Action()
+  .ShouldbeViewResult()
+  .ShouldHaveModel<TModel>()
+  .ShouldEqualByValue(expected)
+ControllerUnderTest.Action()
+  .ShouldBeRedirectToRouteResult()
+  .ShouldHaveRouteValue(""expectedKey"", [Optional] ""expectedValue"");
+
+ShouldHaveViewDataContaining(), ShouldBeJsonResult() etc.
+```
+
+TestBase.Mvc Version 4 for netstandard20 & AspNetCore Mvc
+---------------------------------------------------------
+
+- Test most controllers with zero setup using `controllerUnderTest.WithControllerContext(actionUnderTest)` :
+
+```
+[Test]
+public void ShouldBeViewWithModel_ShouldAssertViewResultAndNameAndModel()
+{
+    var controllerUnderTest = new AController().WithControllerContext(""Action"");
+    
+    controllerUnderTest
+        .Action().ShouldBeViewWithModel<AClass>(""ViewName"")
+        .ShouldBeOfType<AClass>()
+        .FooterLink.ShouldBe(""/AController/ActionName"");
+}
+
+```
+
+- Test more complex controller/application dependencies using `HostedMvcTestFixtureBase` and specify your MVCApplications `Startup` class:
+
+```
+[TestCase(""/dummy"")]
+public async Task Put_Should_ReturnA(string url)
+{
+    var something= new Fixture().Create<Something>();
+    var jsonBody= new StringContent(something.ToJSon(), Encoding.UTF8, ""application/json"");
+    var httpClient=GivenClientForRunningServer<Startup>();
+    GivenRequestHeaders(httpClient, ""CustomHeader"", ""HeaderValue1"");
+
+    var result = await httpClient.PutAsync(url, jsonBody);
+
+    result.ShouldBe_202Accepted();
+    DummyController.Putted.ShouldEqualByValue( something );
+}
+```
+
+TestBase.Mvc Version 3 for Net4
+-------------------------------
+
+`Controller.WithHttpContextAndRoutes()` fakes your http request &amp; context. 
+Use the RegisterRoutes method of your actual application to test Controller.Url with your application's configured routes.
+
+```
+ControllerUnderTest
+  .WithHttpContextAndRoutes(
+    RouteConfig.RegisterRoutes, 
+    ""/incomingurl"")
+
+ApiControllerUnderTest.WithWebApiHttpContext&lt;T&gt;(
+    httpMethod, 
+    requestUri,
+    routeTemplate)
+```
+
+TestBase.HttpClient.Fake
+------------------------
+
+```
+  var uut = new FakeHttpClient()
+        .Setup(x=>x.RequestUri.PathAndQuery.StartsWith(""/this"")).Returns(response)
+        .Setup(x=>x.Method==HttpMethod.Put).Returns(new HttpResponseMessage(HttpStatusCode.Accepted))
+```
+
+TestBase.FakeDb
+------------------
+`FakeDbConnection` 
+
+```
+- db.SetupForQuery(…)
+- db.SetupForExecuteNonQuery(…)
+- db.ShouldHaveUpdated(""tableName"", …)
+- db.ShouldHaveSelected(""tableName"", …)
+- db.ShouldHaveUpdated(""tableName"", …)
+- db.ShouldHaveDeleted(""tableName"", …)
+- db.ShouldHaveInvoked(cmd => predicate(cmd))
+- db.ShouldHaveXXX().ShouldHaveParameter(""name"", value)
+- db.Verify(x=>x.CommandText.Matches(""Insert [case] .*"") && x.Parameters[""id""].Value==1)
+```
+
+Testable Logging with `StringListLogger`.
+Mix and match with your favourite test runners and frameworks.
+
+- Building on Mono : define compile symbol NoMSTest to remove dependency on Microsoft.VisualStudio.QualityTools.UnitTestFramework",TestBase.Mvc,False,2018-03-23T22:55:25.167+00:00,True,False,,"nunit,test,unittest,tdd,fluent,assertions,mock,mvc,aspnetmvc,aspnetcore,aspnetcoremvc",369,False,4.0.7
+vm,2018-03-22T22:50:35.893Z,29,29,"Features:
+            * The dump output is separated from the targeted dump media by the familiar TextWriter interface.
+            * The programmer can dump the value of any type of object: primitive and enum types (including those marked with FlagsAttribute), custom classes, struct-s, collections, etc.
+            * For complex type objects (classes and structs) the dumper outputs the names and the values of the properties.
+            * The dump is recursive: the complex members of the dumped object are dumped indented.
+            * Dumps the elements of sequences (arrays, lists, dictionaries, etc.)
+            * Handles circular references.
+            * The developers can easily customize various aspects of the dump by using an attribute (DumpAttribute) on the classes and their members, such as:
+                - the order in which the properties are dumped;
+                - formatting of the property names and/or values;
+                - suppressing the dump of some uninteresting properties;
+                - masking the values of sensitive properties (e.g. PII);
+                - the depth of the recursion into complex members;
+                - the maximum number of dumped elements of sequence properties.
+            * The dumper picks the customization attributes also from buddy classes declared with MetadataTypeAttribute.
+            * Even if the class doesn't have any attributes, the programmer can still pass a metadata class as a separate parameter to the dumping method. This allows for control over the dump of BCL and third party classes.
+            * Built and tested with .NET 4.5.2, 4.6.2, 4.7.1.
+            For more information see the documentation at https://github.com/vmelamed/vm/blob/master/Aspects/Diagnostics/ObjectDumper.md.",AspectObjectDumper,False,2018-03-22T22:50:35.893+00:00,True,False,Easy to integrate and easy to use component that dumps the value of an arbitrary .NET object in a easy to read text form. Helpful for debugging and logging purposes.,"dump,object,.net,diagnostics,debug,log,aspects",23010,False,1.9.11
+mystborn,2018-03-22T22:49:40.737Z,29,29,The base class library for the TaffyScript language.,TaffyScript.BCL,False,2018-03-22T22:49:40.737+00:00,True,False,,"taffyscript,bcl,compiler",335,False,1.5.1
+Chris F Carroll,2018-03-22T22:48:37.97Z,17,29,"TestBase – Rich, fluent assertions and useful fakes for Mvc &amp; AdoNet. For a flying start to Automated and Unit Testing.
+
+TestBase.Shoulds
+------------------
+Chainable fluent assertions get you to the point concisely
+```
+UnitUnderTest.Action()
+  .ShouldNotBeNull()
+  .ShouldContain(expected);
+UnitUnderTest.OtherAction()
+  .ShouldEqualByValue( 
+    new {Id=1, Payload=expectedPayload, Additional=new[]{ expected1, expected2 }}
+);
+```
+* `ShouldBe(), ShouldMatch(), ShouldNotBe(), ShouldContain(), ShouldNotContain(), ShouldBeEmpty(), ShouldNotBeEmpty(), ShouldAll()` and many more
+* `ShouldEqualByValue()` works with all kinds of object and collections
+
+## TestBase.AdoNet adds:
+
+TestBase.FakeDb
+------------------
+Works with Ado.Net and technologies on top of it, including Dapper.
+* `fakeDbConnection.SetupForQuery(IEnumerable<TFakeData> )`
+* `fakeDbConnection.SetupForQuery(IEnumerable<Tuple<TFakeDataForTable1,TFakeDataForTable2>> )`
+* `fakeDbConnection.SetupForQuery(fakeData, new[] {""""FieldName1"""", FieldName2""""})`
+* `fakeDbConnection.SetupForExecuteNonQuery(rowsAffected)`
+
+* `fakeDbConnection.ShouldHaveUpdated(""""tableName"""", [Optional] fieldList, whereClauseField)`
+* `fakeDbConnection.ShouldHaveSelected(""""tableName"""", [Optional] fieldList, whereClauseField)`
+* `fakeDbConnection.ShouldHaveUpdated(""""tableName"""", [Optional] fieldList, whereClauseField)`
+* `fakeDbConnection.ShouldHaveDeleted(""""tableName"""", whereClauseField)`
+* `fakeDbConnection.ShouldHaveInvoked(cmd => predicate(cmd))`
+* `fakeDbConnection.ShouldHaveXXX().ShouldHaveParameter(""""name"""", value)`
+
+* `fakeDbConnection.Verify(x=>x.CommandText.Matches(""""Insert [case] .*"""") && x.Parameters[""""id""""].Value==1)`
+
+TestBase.RecordingDb
+--------------------
+* `new RecordingDbConnection(IDbConnection)` helps you profile Ado.Net Db calls
+
+Latest Change: 4.0.3.0 Port to NetCore",TestBase.AdoNet,False,2018-04-03T15:42:47.78+00:00,True,False,,,532,False,4.0.7
+Chris F Carroll,2018-03-22T22:47:51.78Z,12,29,"*TestBase* gives you a flying start with 
+- fluent assertions that are easy to extend
+- tools for testing with dependencies on AspNetMvc, HttpClient, Ado.Net, Streams
+
+Chainable fluent assertions get you to the point concisely
+------------------
+```
+- ShouldEqualByValue(), ShouldEqualByValueExceptFor() 
+  work with all kinds of object and collections, and report what differed.
+- string.ShouldMatch().ShouldEqualIgnoringCase(), ...
+- numeric.ShouldBeBetween().ShouldEqualWithTolerance(), ...
+- IEnumerable.ShouldAll().ShouldContain().ShouldNotContain(), ...
+- Stream.ShouldHaveSameStreamContentAs(), Stream.ShouldContain()
+
+UnitUnderTest.Action()
+    .ShouldNotBeNull()
+    .ShouldEqualByValue(new {Id=1, Payload=expected} )
+    .Payload
+        .ShouldMatchIgnoringCase(""I expected this"")
+		    .Should(somePredicate);
+```
+
+TestBase.HttpClient.Fake
+------------------------
+
+```
+  var uut = new FakeHttpClient()
+        .Setup(x=>x.RequestUri.PathAndQuery.StartsWith(""/this"")).Returns(response)
+        .Setup(x=>x.Method==HttpMethod.Put).Returns(new HttpResponseMessage(HttpStatusCode.Accepted))
+```
+
+TestBase.FakeDb
+------------------
+`FakeDbConnection` 
+
+```
+- db.SetupForQuery(…)
+- db.SetupForExecuteNonQuery(…)
+- db.ShouldHaveUpdated(""tableName"", …)
+- db.ShouldHaveSelected(""tableName"", …)
+- db.ShouldHaveUpdated(""tableName"", …)
+- db.ShouldHaveDeleted(""tableName"", …)
+- db.ShouldHaveInvoked(cmd => predicate(cmd))
+- db.ShouldHaveXXX().ShouldHaveParameter(""name"", value)
+- db.Verify(x=>x.CommandText.Matches(""Insert [case] .*"") && x.Parameters[""id""].Value==1)
+```
+
+TestBase.Mvc
+------------
+```
+ControllerUnderTest.Action()
+  .ShouldbeViewResult()
+  .ShouldHaveModel<TModel>()
+  .ShouldEqualByValue(expected)
+ControllerUnderTest.Action()
+  .ShouldBeRedirectToRouteResult()
+  .ShouldHaveRouteValue(""expectedKey"", [Optional] ""expectedValue"");
+
+ShouldHaveViewDataContaining(), ShouldBeJsonResult() etc.
+```
+
+TestBase.Mvc Version 4 for netstandard20 & AspNetCore Mvc
+---------------------------------------------------------
+
+- Test most controllers with zero setup using `controllerUnderTest.WithControllerContext(actionUnderTest)` :
+
+```
+[Test]
+public void ShouldBeViewWithModel_ShouldAssertViewResultAndNameAndModel()
+{
+    var controllerUnderTest = new AController().WithControllerContext(""Action"");
+    
+    controllerUnderTest
+        .Action().ShouldBeViewWithModel<AClass>(""ViewName"")
+        .ShouldBeOfType<AClass>()
+        .FooterLink.ShouldBe(""/AController/ActionName"");
+}
+
+```
+
+- Test more complex controller/application dependencies using `HostedMvcTestFixtureBase` and specify your MVCApplications `Startup` class:
+
+```
+[TestCase(""/dummy"")]
+public async Task Put_Should_ReturnA(string url)
+{
+    var something= new Fixture().Create<Something>();
+    var jsonBody= new StringContent(something.ToJSon(), Encoding.UTF8, ""application/json"");
+    var httpClient=GivenClientForRunningServer<Startup>();
+    GivenRequestHeaders(httpClient, ""CustomHeader"", ""HeaderValue1"");
+
+    var result = await httpClient.PutAsync(url, jsonBody);
+
+    result.ShouldBe_202Accepted();
+    DummyController.Putted.ShouldEqualByValue( something );
+}
+```
+
+TestBase.Mvc Version 3 for Net4
+-------------------------------
+
+`Controller.WithHttpContextAndRoutes()` fakes your http request &amp; context. 
+Use the RegisterRoutes method of your actual application to test Controller.Url with your application's configured routes.
+
+```
+ControllerUnderTest
+  .WithHttpContextAndRoutes(
+    RouteConfig.RegisterRoutes, 
+    ""/incomingurl"")
+
+ApiControllerUnderTest.WithWebApiHttpContext&lt;T&gt;(
+    httpMethod, 
+    requestUri,
+    routeTemplate)
+```
+
+Testable Logging with `StringListLogger`.
+Mix and match with your favourite test runners and frameworks.
+
+- Building on Mono : define compile symbol NoMSTest to remove dependency on Microsoft.VisualStudio.QualityTools.UnitTestFramework",TestBase,False,2018-04-08T15:15:19.33+00:00,True,False,,"nunit,test,unittest,tdd,fluent,assertions,mock,ado.net,mvc,aspnetmvc,aspnetcore,aspnetcoremvc",9346,False,4.0.7
+Chris F Carroll,2018-03-22T22:48:37.97Z,17,29,"TestBase – Rich, fluent assertions and useful fakes for Mvc &amp; AdoNet. For a flying start to Automated and Unit Testing.
+
+TestBase.Shoulds
+------------------
+Chainable fluent assertions get you to the point concisely
+```
+UnitUnderTest.Action()
+  .ShouldNotBeNull()
+  .ShouldContain(expected);
+UnitUnderTest.OtherAction()
+  .ShouldEqualByValue( 
+    new {Id=1, Payload=expectedPayload, Additional=new[]{ expected1, expected2 }}
+);
+```
+* `ShouldBe(), ShouldMatch(), ShouldNotBe(), ShouldContain(), ShouldNotContain(), ShouldBeEmpty(), ShouldNotBeEmpty(), ShouldAll()` and many more
+* `ShouldEqualByValue()` works with all kinds of object and collections
+
+## TestBase.AdoNet adds:
+
+TestBase.FakeDb
+------------------
+Works with Ado.Net and technologies on top of it, including Dapper.
+* `fakeDbConnection.SetupForQuery(IEnumerable<TFakeData> )`
+* `fakeDbConnection.SetupForQuery(IEnumerable<Tuple<TFakeDataForTable1,TFakeDataForTable2>> )`
+* `fakeDbConnection.SetupForQuery(fakeData, new[] {""""FieldName1"""", FieldName2""""})`
+* `fakeDbConnection.SetupForExecuteNonQuery(rowsAffected)`
+
+* `fakeDbConnection.ShouldHaveUpdated(""""tableName"""", [Optional] fieldList, whereClauseField)`
+* `fakeDbConnection.ShouldHaveSelected(""""tableName"""", [Optional] fieldList, whereClauseField)`
+* `fakeDbConnection.ShouldHaveUpdated(""""tableName"""", [Optional] fieldList, whereClauseField)`
+* `fakeDbConnection.ShouldHaveDeleted(""""tableName"""", whereClauseField)`
+* `fakeDbConnection.ShouldHaveInvoked(cmd => predicate(cmd))`
+* `fakeDbConnection.ShouldHaveXXX().ShouldHaveParameter(""""name"""", value)`
+
+* `fakeDbConnection.Verify(x=>x.CommandText.Matches(""""Insert [case] .*"""") && x.Parameters[""""id""""].Value==1)`
+
+TestBase.RecordingDb
+--------------------
+* `new RecordingDbConnection(IDbConnection)` helps you profile Ado.Net Db calls
+
+Latest Change: 4.0.3.0 Port to NetCore",TestBase.AdoNet,False,2018-04-03T15:42:47.78+00:00,True,False,,,532,False,4.0.7
+amccool,2018-03-22T22:48:30.013Z,28,29,Microsoft.Extensions.Logging piping to ElasticSearch,AM.ElasticSearch.Extensions.Logging,False,2018-03-23T05:48:24.8+00:00,True,False,,ElasticSearch,414,False,1.0.29
+amccool,2018-03-22T22:48:30.013Z,28,29,Microsoft.Extensions.Logging piping to ElasticSearch,AM.ElasticSearch.Extensions.Logging,False,2018-03-23T05:48:24.8+00:00,True,False,,ElasticSearch,414,False,1.0.29
+amccool,2018-03-22T22:43:20.817Z,28,29,Microsoft.Extensions.Logging piping to ElasticSearch,AM.ElasticSearch.Extensions.Logging,False,2018-03-23T05:48:24.8+00:00,True,False,,ElasticSearch,414,False,1.0.28
+buildguest,2018-03-22T22:43:33.27Z,1,29,Description,I2M.Client45.Test,False,2018-04-20T01:20:53.76+00:00,True,False,,,18777,False,2018.3.22.3
+Integrity Marketing Group,2018-03-22T22:43:44.663Z,1,29,I2M is Integrity's platform to create a highly scalable service orientated architecture,IntegrityMarketingGroup.I2M.Client,False,2018-04-20T01:20:55.62+00:00,True,False,,"I2M,Integrity,IntegrityMarketingGroup",20202,False,2018.3.22.3
+buildguest,2018-03-22T22:43:33.27Z,1,29,Description,I2M.Client45.Test,False,2018-04-20T01:20:53.76+00:00,True,False,,,18777,False,2018.3.22.3
+Integrity Marketing Group,2018-03-22T22:43:44.663Z,1,29,I2M is Integrity's platform to create a highly scalable service orientated architecture,IntegrityMarketingGroup.I2M.Client,False,2018-04-20T01:20:55.62+00:00,True,False,,"I2M,Integrity,IntegrityMarketingGroup",20202,False,2018.3.22.3
+amccool,2018-03-22T22:43:20.817Z,28,29,Microsoft.Extensions.Logging piping to ElasticSearch,AM.ElasticSearch.Extensions.Logging,False,2018-03-23T05:48:24.8+00:00,True,False,,ElasticSearch,414,False,1.0.28
+Roman Vaughan,2018-03-22T22:41:20.58Z,29,29,UDP Socket implementation for NZSmartie.CoAPNet,NZSmartie.CoAPNet.Udp,False,2018-03-22T22:41:20.58+00:00,True,False,,"CoAP,IoT,sensors,devices,hardware,network,protocol,udp,socket",1526,False,0.7.0
+Roman Vaughan,2018-03-22T22:41:34.063Z,29,29,Server and handler implementation for NZSmartie.CoAPNet,NZSmartie.CoAPNet.Server,False,2018-03-22T22:41:34.063+00:00,True,False,,"CoAP,IoT,sensors,devices,hardware,network,protocol",1076,False,0.7.0
+Roman Vaughan,2018-03-22T22:41:05.33Z,29,29,Provides client/server CoAP protocol support for .Net using arbitary transports.,NZSmartie.CoAPNet,False,2018-03-22T22:41:05.33+00:00,True,False,,"CoAP,IoT,sensors,devices,hardware,network,protocol",2236,False,0.7.0
+mystborn,2018-03-22T22:40:37.39Z,29,29,The basic implementation of data types and functions in the TaffyScript language.,TaffyScript,False,2018-03-22T22:40:37.39+00:00,True,False,,"taffyscript,compiler,bcl",327,False,1.5.1
+Roman Vaughan,2018-03-22T22:41:05.33Z,29,29,Provides client/server CoAP protocol support for .Net using arbitary transports.,NZSmartie.CoAPNet,False,2018-03-22T22:41:05.33+00:00,True,False,,"CoAP,IoT,sensors,devices,hardware,network,protocol",2236,False,0.7.0
+Roman Vaughan,2018-03-22T22:41:34.063Z,29,29,Server and handler implementation for NZSmartie.CoAPNet,NZSmartie.CoAPNet.Server,False,2018-03-22T22:41:34.063+00:00,True,False,,"CoAP,IoT,sensors,devices,hardware,network,protocol",1076,False,0.7.0
+Roman Vaughan,2018-03-22T22:41:20.58Z,29,29,UDP Socket implementation for NZSmartie.CoAPNet,NZSmartie.CoAPNet.Udp,False,2018-03-22T22:41:20.58+00:00,True,False,,"CoAP,IoT,sensors,devices,hardware,network,protocol,udp,socket",1526,False,0.7.0
+nugetsvc,2018-03-22T22:39:14.2Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.8
+nugetsvc,2018-03-22T22:40:47.937Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.9
+nugetsvc,2018-03-22T22:39:14.2Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.8
+nugetsvc,2018-03-22T22:40:47.937Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.9
+nugetsvc,2018-03-22T22:36:13.163Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.6
+nugetsvc,2018-03-22T22:37:46.993Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.7
+nugetsvc,2018-03-22T22:37:46.993Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.7
+nugetsvc,2018-03-22T22:36:13.163Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.6
+nugetsvc,2018-03-22T22:34:46.347Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.5
+nugetsvc,2018-03-22T22:33:04.267Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.4
+nugetsvc,2018-03-22T22:34:46.347Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.5
+nugetsvc,2018-03-22T22:33:04.267Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.4
+nugetsvc,2018-03-22T22:30:05.603Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.2
+nugetsvc,2018-03-22T22:31:36.03Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.3
+nugetsvc,2018-03-22T22:31:36.03Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.3
+nugetsvc,2018-03-22T22:28:33.35Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.1
+nugetsvc,2018-03-22T22:30:05.603Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.2
+nugetsvc,2018-03-22T22:28:33.35Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.1
+Highsoft,2018-02-14T18:17:56.633Z,2,65,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6619.24135
+Chrome Artiste,2018-03-22T22:25:35.61Z,29,29,A .NET wrapper for the API provided by https://backpack.tf/. Support for all currently implemented (and safe to use) APIs.,BackpackWebAPI,False,2018-03-22T22:25:35.61+00:00,True,False,,"json,api,backpack,tf2",465,False,1.3.1
+Highsoft,2018-02-20T18:18:03.56Z,2,59,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6625.24179
+Highsoft,2018-02-27T18:18:14.58Z,2,52,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6632.24191
+Highsoft,2018-02-22T18:18:07.45Z,2,57,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6627.24180
+Highsoft,2018-02-23T18:18:09.11Z,2,56,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6628.24144
+Highsoft,2018-02-13T18:17:54.487Z,2,66,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6618.24105
+Highsoft,2018-02-17T18:17:58.26Z,2,62,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6622.24111
+Highsoft,2018-02-24T18:19:16.157Z,2,55,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6629.24128
+Highsoft,2018-02-15T18:17:59.327Z,2,64,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6620.24173
+Highsoft,2018-02-26T18:18:09.93Z,2,53,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6631.24150
+Highsoft,2018-02-16T18:17:58.527Z,2,63,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6621.24185
+Highsoft,2018-02-19T18:18:04.267Z,2,60,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6624.24143
+Highsoft,2018-02-18T18:18:00.59Z,2,61,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6623.24155
+Highsoft,2018-03-02T18:18:19.763Z,2,49,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6635.24168
+Highsoft,2018-02-25T18:18:10.133Z,2,54,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6630.24144
+Highsoft,2018-02-21T18:18:04.467Z,2,58,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6626.24150
+Highsoft,2018-03-01T18:18:21.18Z,2,50,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6634.24141
+Highsoft,2018-02-28T18:18:15.193Z,2,51,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6633.24173
+nugetsvc,2018-03-22T22:27:00.88Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.0
+Chrome Artiste,2018-03-22T22:25:35.61Z,29,29,A .NET wrapper for the API provided by https://backpack.tf/. Support for all currently implemented (and safe to use) APIs.,BackpackWebAPI,False,2018-03-22T22:25:35.61+00:00,True,False,,"json,api,backpack,tf2",465,False,1.3.1
+nugetsvc,2018-03-22T22:27:00.88Z,29,29,This is a test package created by the NuGet team.,DuplicatePushesAreRejectedAndNotDeleted.636573543964260818,False,2018-03-22T22:40:47.937+00:00,True,False,,"Tag1,Tag2",508,False,1.0.0
+Highsoft,2018-03-01T18:18:01.6Z,2,50,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6634.23932
+Highsoft,2018-02-28T18:17:56.663Z,2,51,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6633.23934
+Highsoft,2018-02-27T18:17:56.08Z,2,52,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6632.23935
+Highsoft,2018-02-25T18:17:53.51Z,2,54,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6630.23932
+Highsoft,2018-02-26T18:17:52.943Z,2,53,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6631.23931
+Highsoft,2018-02-21T18:17:46.797Z,2,58,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6626.23928
+Highsoft,2018-02-17T18:17:40.307Z,2,62,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6622.23922
+Highsoft,2018-02-13T18:17:35.92Z,2,66,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6618.23922
+Highsoft,2018-02-20T18:17:45.2Z,2,59,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6625.23927
+Highsoft,2018-02-22T18:17:49.713Z,2,57,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6627.23927
+Highsoft,2018-02-14T18:17:37.71Z,2,65,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6619.23922
+Highsoft,2018-02-23T18:17:49.357Z,2,56,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6628.23927
+Highsoft,2018-02-16T18:17:39.87Z,2,63,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6621.23922
+Highsoft,2018-02-19T18:17:45.61Z,2,60,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6624.23928
+Highsoft,2018-02-24T18:18:56.907Z,2,55,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6629.23931
+Highsoft,2018-02-18T18:17:42.807Z,2,61,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6623.23927
+Highsoft,2018-02-15T18:17:41.013Z,2,64,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6620.23922
+Community.Microsoft.Extensions.Caching.PostgreSql,2018-03-22T22:18:53.093Z,27,29,Package Description,Community.Microsoft.Extensions.Caching.PostgreSql,False,2018-03-24T01:04:22.98+00:00,True,False,,,153,False,1.0.0
+Ruskin Dantra,2018-03-22T22:21:27.413Z,29,29,Some common extensions used by Ruskin Dantra during the course of his coding life,RuskinDantra.Extensions,False,2018-03-22T22:21:27.413+00:00,True,False,,"CSharp,extensions",3969,False,2.0.8
+cdorst,2018-03-22T22:19:47.05Z,22,29,Function returns the AZURE_STORAGE_CONNECTION_STRING environment variable value,CDorst.Azure.Storage.Connection.GetConnectionString,False,2018-03-29T00:06:44.98+00:00,True,False,,,651,True,3.0.0
+Harry McIntyre,2018-03-22T22:19:42.957Z,29,29,"F# style discriminated unions or C#, using a custom type OneOf<T0, ... Tn> which holds a single value and has a .Match(...) method on it for exhaustive matching. Simple but powerful.",OneOf,False,2018-03-22T22:19:42.957+00:00,True,False,,"discriminated,unions,return,type,match,switch",13864,False,2.1.123
+Harry McIntyre,2018-03-22T22:19:56.207Z,29,29,This is an FSharp library for interop with the C# OneOf Types,OneOf.FSharp,False,2018-03-22T22:19:56.207+00:00,True,False,,"discriminated,unions,return,type,match,switch",482,False,2.1.123
+Bazinga Technologies Inc,2018-03-22T22:18:36.64Z,29,29,FSharp implementation of Facebook GraphQL query language (Server),FSharp.Data.GraphQL.Server,True,2018-03-22T22:18:36.64+00:00,True,False,FSharp implementation of Facebook GraphQL query language (Server),"FSharp,GraphQL,Relay,React",844,False,0.0.3-beta
+Bazinga Technologies Inc,2018-03-22T22:20:59.007Z,29,29,FSharp implementation of Facebook GraphQL query language (Client),FSharp.Data.GraphQL.Client,True,2018-03-22T22:20:59.007+00:00,True,False,FSharp implementation of Facebook GraphQL query language (Client),"FSharp,GraphQL,Relay,React",742,False,0.0.3-beta
+cdorst,2018-03-22T22:19:47.05Z,22,29,Function returns the AZURE_STORAGE_CONNECTION_STRING environment variable value,CDorst.Azure.Storage.Connection.GetConnectionString,False,2018-03-29T00:06:44.98+00:00,True,False,,,651,True,3.0.0
+Ruskin Dantra,2018-03-22T22:21:27.413Z,29,29,Some common extensions used by Ruskin Dantra during the course of his coding life,RuskinDantra.Extensions,False,2018-03-22T22:21:27.413+00:00,True,False,,"CSharp,extensions",3969,False,2.0.8
+Community.Microsoft.Extensions.Caching.PostgreSql,2018-03-22T22:18:53.093Z,27,29,Package Description,Community.Microsoft.Extensions.Caching.PostgreSql,False,2018-03-24T01:04:22.98+00:00,True,False,,,153,False,1.0.0
+Bazinga Technologies Inc,2018-03-22T22:18:36.64Z,29,29,FSharp implementation of Facebook GraphQL query language (Server),FSharp.Data.GraphQL.Server,True,2018-03-22T22:18:36.64+00:00,True,False,FSharp implementation of Facebook GraphQL query language (Server),"FSharp,GraphQL,Relay,React",844,False,0.0.3-beta
+Harry McIntyre,2018-03-22T22:19:42.957Z,29,29,"F# style discriminated unions or C#, using a custom type OneOf<T0, ... Tn> which holds a single value and has a .Match(...) method on it for exhaustive matching. Simple but powerful.",OneOf,False,2018-03-22T22:19:42.957+00:00,True,False,,"discriminated,unions,return,type,match,switch",13864,False,2.1.123
+Robert Foster,2018-03-22T22:16:30.323Z,29,29,Encapsulates email sending capabilities to enable sending HTML email with embedded images and field parsing for mail-merge like capabilities,Refactored.Email,False,2018-03-22T22:16:30.323+00:00,True,False,Encapsulates email sending capabilities to enable sending HTML email with embedded images and field parsing for mail-merge like capabilities,"Email,MailMerge,Template",5820,False,2.1.3.3
+DCastro,2018-03-22T22:15:48.307Z,29,29,"MementoContainer is an alternative approach to the Memento design pattern.
+
+It is a lightweight utility that takes a snapshot of your objects' state so that you can easily rollback to a previous state when recovering from errors.",MementoContainer,False,2018-03-22T22:15:48.307+00:00,True,False,,"memento,container,undo,rollback,recover,restore,state,snapshot",1545,False,1.1.1
+nugetsvc,2018-03-22T22:18:19.983Z,29,29,This is a test package created by the NuGet team.,TestMultipleVersion.636573538860223146,False,2018-03-22T22:18:32.87+00:00,True,False,,"Tag1,Tag2",98,False,1.0.0
+nugetsvc,2018-03-22T22:18:32.87Z,29,29,This is a test package created by the NuGet team.,TestMultipleVersion.636573538860223146,False,2018-03-22T22:18:32.87+00:00,True,False,,"Tag1,Tag2",98,False,2.0.0
+nugetsvc,2018-03-22T22:16:29.9Z,29,29,This is a test package created by the NuGet team.,GetUpdates1199RegressionTest.636573537767444903,False,2018-03-22T22:16:42.31+00:00,True,False,,"Tag1,Tag2",88,False,1.0.0
+nugetsvc,2018-03-22T22:16:42.31Z,29,29,This is a test package created by the NuGet team.,GetUpdates1199RegressionTest.636573537767444903,False,2018-03-22T22:16:42.31+00:00,True,False,,"Tag1,Tag2",88,False,6365731.537767.444903
+nugetsvc,2018-03-22T22:18:32.87Z,29,29,This is a test package created by the NuGet team.,TestMultipleVersion.636573538860223146,False,2018-03-22T22:18:32.87+00:00,True,False,,"Tag1,Tag2",98,False,2.0.0
+nugetsvc,2018-03-22T22:16:42.31Z,29,29,This is a test package created by the NuGet team.,GetUpdates1199RegressionTest.636573537767444903,False,2018-03-22T22:16:42.31+00:00,True,False,,"Tag1,Tag2",88,False,6365731.537767.444903
+nugetsvc,2018-03-22T22:18:19.983Z,29,29,This is a test package created by the NuGet team.,TestMultipleVersion.636573538860223146,False,2018-03-22T22:18:32.87+00:00,True,False,,"Tag1,Tag2",98,False,1.0.0
+nugetsvc,2018-03-22T22:16:05.4Z,29,29,This is a test package created by the NuGet team.,VerifyPackageKey_Returns404ForMissingPackage.636573537519664875,False,2018-03-22T22:16:05.4+00:00,True,False,,"Tag1,Tag2",39,False,1.0.0
+Microsoft,2018-03-22T22:15:05.15Z,29,29,This client library provides access to the Microsoft Cognitive Services Custom Search API.,Microsoft.Azure.CognitiveServices.Search.CustomSearch,False,2018-03-22T22:15:05.15+00:00,True,False,,"Microsoft,Cognitive,Services,SDK,CustomSearch,API,BingCustomSearch,REST,HTTPclient,CustomSearchSDK,BingCustomSearchSDK,netcore451511",151,True,1.2.0
+nugetsvc,2018-03-22T22:15:51.853Z,29,29,This is a test package created by the NuGet team.,PackagePush_Returns200IfMinClientVersionPolicyMet.636573537399891982,False,2018-03-22T22:15:51.853+00:00,True,False,,"Tag1,Tag2",39,False,1.0.0
+nugetsvc,2018-03-22T22:14:35.787Z,29,29,This is a test package created by the NuGet team.,PackagePush_Returns200IfMinProtocolVersionPolicyMet.636573536635462021,False,2018-03-22T22:14:35.787+00:00,True,False,,"Tag1,Tag2",49,False,1.0.0
+nugetsvc,2018-03-22T22:14:48.413Z,29,29,This is a test package created by the NuGet team.,VerifyKeyReturns400IfScopeNotMet.636573536759192800,False,2018-03-22T22:14:48.413+00:00,True,False,,"Tag1,Tag2",49,False,1.0.0
+Maksim Volkau,2018-03-22T22:12:33.063Z,29,29,Lightweight IoC Container based on service factory delegates generated at compile-time by DryIoc. Compile-time delegate generation minimizes run-time IoC setup time to Zero.,DryIocZero,True,2018-03-22T22:12:33.063+00:00,True,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",12785,False,4.0.0-preview-15
+nugetsvc,2018-03-22T22:15:39.87Z,29,29,This is a test package created by the NuGet team.,PackagePush_Returns200IfMinClientVersionPolicyMet.636573537280832671,False,2018-03-22T22:15:39.87+00:00,True,False,,"Tag1,Tag2",39,False,1.0.0
+nugetsvc,2018-03-22T22:14:09.473Z,43209,29,This is a test package created by the NuGet team.,UploadPackageToSelfFromUI_636573536092053782,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,2.0.0
+nugetsvc,2018-03-22T22:13:56.71Z,43209,29,This is a test package created by the NuGet team.,UploadPackageToSelfFromUI_636573536092053782,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T22:15:26.867Z,29,29,This is a test package created by the NuGet team.,VerifyPackageKeySupportsFullAndTempApiKeys.636573537124329203,False,2018-03-22T22:15:26.867+00:00,True,False,,"Tag1,Tag2",49,False,1.0.0
+nugetsvc,2018-03-22T22:15:11.15Z,29,29,This is a test package created by the NuGet team.,VerifyPackageKey_Returns200IfPackageVerifyScopePolicyMet.636573536982239288,False,2018-03-22T22:15:11.15+00:00,True,False,,"Tag1,Tag2",49,False,1.0.0
+Joshua Clark,2018-03-22T22:11:59.22Z,29,29,Mime-Detective can find the MIME Types of files,Mime-Detective,True,2018-03-22T22:11:59.22+00:00,True,False,,"mime,detective,file,types",8540,False,0.0.6-beta2
+nugetsvc,2018-03-22T22:13:29.067Z,74,29,This is a test package created by the NuGet team.,BaseTestOrganizationCollaboratorPackage,True,2018-02-05T22:05:42.04+00:00,False,False,,"Tag1,Tag2",2544,False,1.0.0-v636573535946200690
+nugetsvc,2018-03-22T22:13:14.473Z,43209,29,This is a test package created by the NuGet team.,UploadPackageToOrganizationAsAdminFromUI_636573535546648040,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,2.0.0
+nugetsvc,2018-03-22T22:13:02.113Z,43209,29,This is a test package created by the NuGet team.,UploadPackageToOrganizationAsAdminFromUI_636573535546648040,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T22:15:26.867Z,29,29,This is a test package created by the NuGet team.,VerifyPackageKeySupportsFullAndTempApiKeys.636573537124329203,False,2018-03-22T22:15:26.867+00:00,True,False,,"Tag1,Tag2",49,False,1.0.0
+nugetsvc,2018-03-22T22:15:11.15Z,29,29,This is a test package created by the NuGet team.,VerifyPackageKey_Returns200IfPackageVerifyScopePolicyMet.636573536982239288,False,2018-03-22T22:15:11.15+00:00,True,False,,"Tag1,Tag2",49,False,1.0.0
+nugetsvc,2018-03-22T22:14:48.413Z,29,29,This is a test package created by the NuGet team.,VerifyKeyReturns400IfScopeNotMet.636573536759192800,False,2018-03-22T22:14:48.413+00:00,True,False,,"Tag1,Tag2",49,False,1.0.0
+nugetsvc,2018-03-22T22:14:35.787Z,29,29,This is a test package created by the NuGet team.,PackagePush_Returns200IfMinProtocolVersionPolicyMet.636573536635462021,False,2018-03-22T22:14:35.787+00:00,True,False,,"Tag1,Tag2",49,False,1.0.0
+nugetsvc,2018-03-22T22:14:09.473Z,43209,29,This is a test package created by the NuGet team.,UploadPackageToSelfFromUI_636573536092053782,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,2.0.0
+nugetsvc,2018-03-22T22:13:14.473Z,43209,29,This is a test package created by the NuGet team.,UploadPackageToOrganizationAsAdminFromUI_636573535546648040,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,2.0.0
+nugetsvc,2018-03-22T22:13:02.113Z,43209,29,This is a test package created by the NuGet team.,UploadPackageToOrganizationAsAdminFromUI_636573535546648040,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+Joshua Clark,2018-03-22T22:11:59.22Z,29,29,Mime-Detective can find the MIME Types of files,Mime-Detective,True,2018-03-22T22:11:59.22+00:00,True,False,,"mime,detective,file,types",8540,False,0.0.6-beta2
+nugetsvc,2018-03-22T22:13:29.067Z,74,29,This is a test package created by the NuGet team.,BaseTestOrganizationCollaboratorPackage,True,2018-02-05T22:05:42.04+00:00,False,False,,"Tag1,Tag2",2544,False,1.0.0-v636573535946200690
+nugetsvc,2018-03-22T22:13:56.71Z,43209,29,This is a test package created by the NuGet team.,UploadPackageToSelfFromUI_636573536092053782,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T22:01:35.21Z,43209,29,This is a test package created by the NuGet team.,UploadAndUnlistPackagesAsOrganizationAdmin_636573524413338771,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",107,False,2.0.0
+Jovan Popovic,2018-03-22T22:06:53.723Z,6,29,ASP.NET Library that enables fast development of REST API that read data from SQL Server 2016+ and Azure SQL database.,Sql-Server-Rest-Api,False,2018-04-14T12:13:14.84+00:00,True,False,,"SqlServer,REST,C#,OData,JQueryDataTables",4104,False,0.5.3
+Jovan Popovic,2018-03-22T22:06:53.723Z,6,29,ASP.NET Library that enables fast development of REST API that read data from SQL Server 2016+ and Azure SQL database.,Sql-Server-Rest-Api,False,2018-04-14T12:13:14.84+00:00,True,False,,"SqlServer,REST,C#,OData,JQueryDataTables",4104,False,0.5.3
+Janno Põldma,2018-03-22T22:02:41.417Z,10,29,Type providers for generating types and service interfaces for XRoad producers.,XRoadProvider,False,2018-04-10T12:46:21.967+00:00,True,False,Type providers for generating types and service interfaces for XRoad producers.,"F#,fsharp,x-road,xroad,typeproviders,x-tee,xtee",1742,False,1.0.3
+"leo60228,EverestAPI",2018-03-22T22:03:32.42Z,29,29,Wrapper over MonoMod's RuntimeDetour,HookedMethod,True,2018-03-22T22:03:32.42+00:00,True,False,,modding,517,False,0.3.3-beta
+buildguest,2018-03-22T22:01:20.68Z,1,29,Description,I2M.Client45.Test,False,2018-04-20T01:20:53.76+00:00,True,False,,,18777,False,2018.3.22.2
+Integrity Marketing Group,2018-03-22T22:01:33.337Z,1,29,I2M is Integrity's platform to create a highly scalable service orientated architecture,IntegrityMarketingGroup.I2M.Client,False,2018-04-20T01:20:55.62+00:00,True,False,,"I2M,Integrity,IntegrityMarketingGroup",20202,False,2018.3.22.2
+Janno Põldma,2018-03-22T22:02:41.417Z,10,29,Type providers for generating types and service interfaces for XRoad producers.,XRoadProvider,False,2018-04-10T12:46:21.967+00:00,True,False,Type providers for generating types and service interfaces for XRoad producers.,"F#,fsharp,x-road,xroad,typeproviders,x-tee,xtee",1742,False,1.0.3
+"leo60228,EverestAPI",2018-03-22T22:03:32.42Z,29,29,Wrapper over MonoMod's RuntimeDetour,HookedMethod,True,2018-03-22T22:03:32.42+00:00,True,False,,modding,517,False,0.3.3-beta
+nugetsvc,2018-03-22T22:01:35.21Z,43209,29,This is a test package created by the NuGet team.,UploadAndUnlistPackagesAsOrganizationAdmin_636573524413338771,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",107,False,2.0.0
+nugetsvc,2018-03-22T22:01:35.21Z,43209,29,This is a test package created by the NuGet team.,UploadAndUnlistPackagesAsOrganizationAdmin_636573524413338771,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",107,False,2.0.0
+iamcarbon,2018-03-22T21:57:16.14Z,29,29,Validation and sanitization primitives.,Carbon.Validation,False,2018-03-22T21:57:16.14+00:00,True,False,,"validation,sanitization,carbon",3027,False,1.9.0
+Rendy Del Rosario,2018-03-22T21:56:43.73Z,26,29,"Facebook login, sharing, facebook graph requests and permissions handling across Xamarin.iOS and Xamarin.Android",Plugin.FacebookClient,False,2018-03-25T20:30:51.91+00:00,True,False,"Facebook login, sharing, facebook graph requests and permissions handling across Xamarin.iOS and Xamarin.Android","iOS,Android,facebook,login,share,xamarin,plugins",1375,False,1.1.0
+AgoraRepo,2018-03-22T21:56:23.357Z,43209,29,Package Description,AgoraRepo,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.1
+Bernhard Richter,2018-03-22T21:57:32.187Z,3,29,Just a collection of dotnet-script compatible scripts to be used in build scripts.,Dotnet.Build,False,2018-04-17T13:26:09.997+00:00,True,False,,"C#,Build,Scripting",1196,False,0.2.9
+Rendy Del Rosario,2018-03-22T21:56:43.73Z,26,29,"Facebook login, sharing, facebook graph requests and permissions handling across Xamarin.iOS and Xamarin.Android",Plugin.FacebookClient,False,2018-03-25T20:30:51.91+00:00,True,False,"Facebook login, sharing, facebook graph requests and permissions handling across Xamarin.iOS and Xamarin.Android","iOS,Android,facebook,login,share,xamarin,plugins",1375,False,1.1.0
+AgoraRepo,2018-03-22T21:56:23.357Z,43209,29,Package Description,AgoraRepo,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.1
+Bernhard Richter,2018-03-22T21:57:32.187Z,3,29,Just a collection of dotnet-script compatible scripts to be used in build scripts.,Dotnet.Build,False,2018-04-17T13:26:09.997+00:00,True,False,,"C#,Build,Scripting",1196,False,0.2.9
+iamcarbon,2018-03-22T21:57:16.14Z,29,29,Validation and sanitization primitives.,Carbon.Validation,False,2018-03-22T21:57:16.14+00:00,True,False,,"validation,sanitization,carbon",3027,False,1.9.0
+nugetsvc,2018-03-22T21:54:15.18Z,43209,29,This is a test package created by the NuGet team.,UploadAndUnlistPackagesAsOrganizationAdmin_636573524413338771,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",107,False,1.0.0
+Lykke,2018-03-22T21:55:33.777Z,29,29,Client for Lykke.MarginTrading.RiskManagement.RiskControlSystem API,Lykke.MarginTrading.RiskManagement.RiskControlSystem.Contracts,False,2018-03-22T21:55:33.777+00:00,True,False,,Lykke,453,False,2.1.4
+SoundMetrics.Aris.Messages,2018-03-22T21:53:39.553Z,43209,29,Defines the protobuf messages used to communicate with ARIS 2.,SoundMetrics.Aris.Messages,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.1-alpha
+nugetsvc,2018-03-22T21:54:15.18Z,43209,29,This is a test package created by the NuGet team.,UploadAndUnlistPackagesAsOrganizationAdmin_636573524413338771,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",107,False,1.0.0
+SoundMetrics.Aris.Messages,2018-03-22T21:53:39.553Z,43209,29,Defines the protobuf messages used to communicate with ARIS 2.,SoundMetrics.Aris.Messages,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.1-alpha
+Lykke,2018-03-22T21:55:33.777Z,29,29,Client for Lykke.MarginTrading.RiskManagement.RiskControlSystem API,Lykke.MarginTrading.RiskManagement.RiskControlSystem.Contracts,False,2018-03-22T21:55:33.777+00:00,True,False,,Lykke,453,False,2.1.4
+Microsoft,2018-03-22T21:51:28.703Z,29,29,This client library provides access to the Microsoft Cognitive Services SpellCheck API.,Microsoft.Azure.CognitiveServices.SpellCheck,False,2018-03-22T21:51:28.703+00:00,True,False,,"Microsoft,Cognitive,Services,SDK,SpellCheck,API,REST,HTTPclient,SpellCheckSDK,netcore451511",296,True,1.2.0
+nugetsvc,2018-03-22T21:44:50.627Z,74,29,This is a test package created by the NuGet team.,BaseTestOrganizationCollaboratorPackage,True,2018-02-05T22:05:42.04+00:00,False,False,,"Tag1,Tag2",2544,False,1.0.0-v636573518787302280
+Quicken Loans,2018-03-22T21:51:21.5Z,29,29,Add Elastic Beanstalk Environment Properties to environment variables.,RockLib.ElasticBeanstalk,False,2018-03-22T21:51:21.5+00:00,True,False,,"Elastic,Beanstalk,Environment,Properties,Variables",49,False,1.0.0
+thsilva,2018-03-22T21:48:50.23Z,1,29,Drapo,Drapo,False,2018-04-19T15:09:09.123+00:00,True,False,,"Drapo,Framework,SPA",3173,False,2018.3.22.5
+Quicken Loans,2018-03-22T21:51:21.5Z,29,29,Add Elastic Beanstalk Environment Properties to environment variables.,RockLib.ElasticBeanstalk,False,2018-03-22T21:51:21.5+00:00,True,False,,"Elastic,Beanstalk,Environment,Properties,Variables",49,False,1.0.0
+José Manuel Nieto (@SuperJMN),2018-03-22T21:50:04.62Z,29,29,Template to create an ASP.NET Core 2.0 application for Raspberry Pi,RaspberryPi.Template.WebApi,False,2018-03-22T21:50:04.62+00:00,True,False,An empty project template for .NET Core 2 IoT applications deployed to the Raspberry Pi 3.,,237,False,0.2.1
+Microsoft,2018-03-22T21:51:28.703Z,29,29,This client library provides access to the Microsoft Cognitive Services SpellCheck API.,Microsoft.Azure.CognitiveServices.SpellCheck,False,2018-03-22T21:51:28.703+00:00,True,False,,"Microsoft,Cognitive,Services,SDK,SpellCheck,API,REST,HTTPclient,SpellCheckSDK,netcore451511",296,True,1.2.0
+"Naylah,Infinitus",2018-03-22T21:48:56.383Z,28,29,Naylah.Identity.Client,Naylah.Identity.Client,False,2018-03-23T20:44:44.273+00:00,True,False,,,1961,False,2018.3.22.21
+José Manuel Nieto (@SuperJMN),2018-03-22T21:50:04.62Z,29,29,Template to create an ASP.NET Core 2.0 application for Raspberry Pi,RaspberryPi.Template.WebApi,False,2018-03-22T21:50:04.62+00:00,True,False,An empty project template for .NET Core 2 IoT applications deployed to the Raspberry Pi 3.,,237,False,0.2.1
+"Naylah,Infinitus",2018-03-22T21:48:56.383Z,28,29,Naylah.Identity.Client,Naylah.Identity.Client,False,2018-03-23T20:44:44.273+00:00,True,False,,,1961,False,2018.3.22.21
+thsilva,2018-03-22T21:48:50.23Z,1,29,Drapo,Drapo,False,2018-04-19T15:09:09.123+00:00,True,False,,"Drapo,Framework,SPA",3173,False,2018.3.22.5
+takenet,2018-03-22T21:47:48.57Z,1,29,Iris messaging data types package,Takenet.Iris.Messaging,False,2018-04-19T20:20:15.22+00:00,True,False,,,13423,False,2.30.196
+"Naylah,Infinitus",2018-03-22T21:47:13.6Z,29,29,Naylah.Core,Naylah.Core,False,2018-03-22T21:47:13.6+00:00,True,False,,"naylah,core,infinitus",8495,False,2018.3.22.21
+Vertica A/S,2018-03-22T21:48:31.557Z,63,29,Extends Integration Service with the ability to simple host WebApi controllers.,Vertica.Integration.WebApi,False,2018-02-16T13:56:43.853+00:00,True,False,,"Vertica,Integration,Service,WebApi,Owin",2353,False,1.20.4
+Vertica A/S,2018-03-22T21:47:44.757Z,63,29,Core component when using Vertica Integration Service.,Vertica.Integration,False,2018-02-16T13:51:57.693+00:00,True,False,,"Vertica,Integration,Service,IntegrationService",5207,False,1.31.1
+takenet,2018-03-22T21:47:23.13Z,1,29,Iris client utility package,Takenet.Iris.Client,False,2018-04-19T20:20:08.97+00:00,True,False,,,17723,False,2.30.196
+compulsivecoder,2018-03-22T21:45:51.817Z,12,29,A service for broadcasting arduino serial data to an MQTT broker.,BridgeArduinoSerialToMqttSplitCsv,False,2018-04-08T02:33:00.94+00:00,True,False,,arduino,2332,False,1.0.0.16
+takenet,2018-03-22T21:47:36.273Z,1,29,Iris common data types package,Takenet.Iris.Common,False,2018-04-19T20:20:12.39+00:00,True,False,,"Iris,Lime",46430,False,2.30.196
+DukeNuken,2018-03-22T21:47:10.82Z,28,29,Owin Middleware module for site vk.com (vkontakte). Working fine with mvc 5.,Duke.Owin.VkontakteMiddleware,False,2018-03-23T11:59:36.697+00:00,True,False,,"Vk.com,Vkontakte,Middleware,Owin",10561,False,1.3.0
+"Naylah,Infinitus",2018-03-22T21:48:13.587Z,29,29,Naylah.Services.Client,Naylah.Services.Client,False,2018-03-22T21:48:13.587+00:00,True,False,,,2121,False,2018.3.22.21
+Piotr Falkowski,2018-03-22T21:46:09.283Z,19,29,"Do you find yourself adding numbers to the collection and recalculating mean each time? This package is intended to solve the issue. The statistics are always ready and calculating mean for next element does not require iterating over whole collection. On-the-fly calculation of mean, variance, standard deviation, ZScore, sum, min, max and more supported.",OnTheFlyStats,False,2018-04-01T17:01:16.803+00:00,True,False,,"statistics,on-the-fly,eager,O(N),average,mean,variance,standardDeviation,population,sample",563,False,1.2.0
+Piotr Falkowski,2018-03-22T21:46:09.283Z,19,29,"Do you find yourself adding numbers to the collection and recalculating mean each time? This package is intended to solve the issue. The statistics are always ready and calculating mean for next element does not require iterating over whole collection. On-the-fly calculation of mean, variance, standard deviation, ZScore, sum, min, max and more supported.",OnTheFlyStats,False,2018-04-01T17:01:16.803+00:00,True,False,,"statistics,on-the-fly,eager,O(N),average,mean,variance,standardDeviation,population,sample",563,False,1.2.0
+Vertica A/S,2018-03-22T21:48:31.557Z,63,29,Extends Integration Service with the ability to simple host WebApi controllers.,Vertica.Integration.WebApi,False,2018-02-16T13:56:43.853+00:00,True,False,,"Vertica,Integration,Service,WebApi,Owin",2353,False,1.20.4
+Vertica A/S,2018-03-22T21:47:44.757Z,63,29,Core component when using Vertica Integration Service.,Vertica.Integration,False,2018-02-16T13:51:57.693+00:00,True,False,,"Vertica,Integration,Service,IntegrationService",5207,False,1.31.1
+takenet,2018-03-22T21:47:48.57Z,1,29,Iris messaging data types package,Takenet.Iris.Messaging,False,2018-04-19T20:20:15.22+00:00,True,False,,,13423,False,2.30.196
+takenet,2018-03-22T21:47:23.13Z,1,29,Iris client utility package,Takenet.Iris.Client,False,2018-04-19T20:20:08.97+00:00,True,False,,,17723,False,2.30.196
+compulsivecoder,2018-03-22T21:45:51.817Z,12,29,A service for broadcasting arduino serial data to an MQTT broker.,BridgeArduinoSerialToMqttSplitCsv,False,2018-04-08T02:33:00.94+00:00,True,False,,arduino,2332,False,1.0.0.16
+"Naylah,Infinitus",2018-03-22T21:47:13.6Z,29,29,Naylah.Core,Naylah.Core,False,2018-03-22T21:47:13.6+00:00,True,False,,"naylah,core,infinitus",8495,False,2018.3.22.21
+"Naylah,Infinitus",2018-03-22T21:48:13.587Z,29,29,Naylah.Services.Client,Naylah.Services.Client,False,2018-03-22T21:48:13.587+00:00,True,False,,,2121,False,2018.3.22.21
+takenet,2018-03-22T21:47:36.273Z,1,29,Iris common data types package,Takenet.Iris.Common,False,2018-04-19T20:20:12.39+00:00,True,False,,"Iris,Lime",46430,False,2.30.196
+DukeNuken,2018-03-22T21:47:10.82Z,28,29,Owin Middleware module for site vk.com (vkontakte). Working fine with mvc 5.,Duke.Owin.VkontakteMiddleware,False,2018-03-23T11:59:36.697+00:00,True,False,,"Vk.com,Vkontakte,Middleware,Owin",10561,False,1.3.0
+AgoraRepo,2018-03-22T21:43:38.17Z,43209,29,Package Description,AgoraRepo,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+nugetsvc,2018-03-22T21:44:50.627Z,74,29,This is a test package created by the NuGet team.,BaseTestOrganizationCollaboratorPackage,True,2018-02-05T22:05:42.04+00:00,True,False,,"Tag1,Tag2",2544,False,1.0.0-v636573518787302280
+nugetsvc,2018-03-22T21:44:50.627Z,74,29,This is a test package created by the NuGet team.,BaseTestOrganizationCollaboratorPackage,True,2018-02-05T22:05:42.04+00:00,True,False,,"Tag1,Tag2",2544,False,1.0.0-v636573518787302280
+AgoraRepo,2018-03-22T21:43:38.17Z,43209,29,Package Description,AgoraRepo,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+compulsivecoder,2018-03-22T21:42:34.747Z,12,29,A service for broadcasting arduino serial data to an MQTT broker.,BridgeArduinoSerialToMqttSplitCsv,True,2018-04-08T02:33:00.94+00:00,True,False,,arduino,2332,False,1.0.0.16-dev
+TypeScript Team,2018-03-22T21:42:17.947Z,1,29,"The TypeScript MSBuild task, and matching compiler version.",Microsoft.TypeScript.MSBuild,False,2018-04-19T21:48:18.36+00:00,True,False,,TypeScript,626232,True,2.6.5
+TypeScript Team,2018-03-22T21:42:53.857Z,1,29,The TypeScript compiler.,Microsoft.TypeScript.Compiler,False,2018-04-19T21:47:54.14+00:00,True,False,,TypeScript,407582,True,2.6.5
+Microsoft,2018-03-22T21:42:47.7Z,20,29,SDK for accessing Microsoft Partner center APIs,Microsoft.Store.PartnerCenter,False,2018-03-31T00:50:02.55+00:00,True,False,,"Microsoft,Store,Partner,Center,API,SDK",30872,False,1.7.1
+Ravenna Software,2018-03-22T21:41:08.023Z,25,29,A simple Product Badge to help you promote your apps.,RavennaSoftware.UWPBadge,False,2018-03-26T22:55:02.227+00:00,True,False,,,157,False,2.0.1
+TypeScript Team,2018-03-22T21:42:53.857Z,1,29,The TypeScript compiler.,Microsoft.TypeScript.Compiler,False,2018-04-19T21:47:54.14+00:00,True,False,,TypeScript,407582,True,2.6.5
+Microsoft,2018-03-22T21:42:47.7Z,20,29,SDK for accessing Microsoft Partner center APIs,Microsoft.Store.PartnerCenter,False,2018-03-31T00:50:02.55+00:00,True,False,,"Microsoft,Store,Partner,Center,API,SDK",30872,False,1.7.1
+Ravenna Software,2018-03-22T21:41:08.023Z,25,29,A simple Product Badge to help you promote your apps.,RavennaSoftware.UWPBadge,False,2018-03-26T22:55:02.227+00:00,True,False,,,157,False,2.0.1
+Microsoft,2018-03-22T21:39:09.05Z,29,29,This client library provides access to the Microsoft Cognitive Services Web Search API.,Microsoft.Azure.CognitiveServices.Search.WebSearch,False,2018-03-22T21:39:09.05+00:00,True,False,,"Microsoft,Cognitive,Services,SDK,WebSearch,API,BingWebSearch,REST,HTTPclient,WebSearchSDK,BingWebSearchSDK,netcore451511",213,True,1.2.0
+Stardust,2018-03-22T21:37:29.483Z,10,29,"A fast, easy to use and lightweight IOC container",Stardust.Nucleus,True,2018-04-10T15:45:28.61+00:00,True,False,,"IOC,DependencyInjection,factory",1993,False,4.1.0-pre0004
+Microsoft,2018-03-22T21:39:09.05Z,29,29,This client library provides access to the Microsoft Cognitive Services Web Search API.,Microsoft.Azure.CognitiveServices.Search.WebSearch,False,2018-03-22T21:39:09.05+00:00,True,False,,"Microsoft,Cognitive,Services,SDK,WebSearch,API,BingWebSearch,REST,HTTPclient,WebSearchSDK,BingWebSearchSDK,netcore451511",213,True,1.2.0
+Stardust,2018-03-22T21:37:29.483Z,10,29,"A fast, easy to use and lightweight IOC container",Stardust.Nucleus,True,2018-04-10T15:45:28.61+00:00,True,False,,"IOC,DependencyInjection,factory",1993,False,4.1.0-pre0004
+Stardust,2018-03-22T08:32:53.673Z,10,29,"A fast, easy to use and lightweight IOC container",Stardust.Nucleus,True,2018-04-10T15:45:28.61+00:00,False,False,,"IOC,DependencyInjection,factory",1993,False,4.1.0-pre0001
+Alfonso García-Caro Núñez,2018-03-22T21:34:36.04Z,1,29,DotNet CLI tool to run Fable,dotnet-fable,False,2018-04-19T09:57:53.427+00:00,True,False,,"fsharp,fable,javascript,f#,js",34219,False,1.3.12
+Stardust,2018-03-22T20:48:06.21Z,10,29,"A fast, easy to use and lightweight IOC container",Stardust.Nucleus,True,2018-04-10T15:45:28.61+00:00,False,False,,"IOC,DependencyInjection,factory",1993,False,4.1.0-pre0003
+Stardust,2018-03-22T09:23:55.48Z,10,29,"A fast, easy to use and lightweight IOC container",Stardust.Nucleus,True,2018-04-10T15:45:28.61+00:00,False,False,,"IOC,DependencyInjection,factory",1993,False,4.1.0-pre0002
+Alfonso García-Caro Núñez,2018-03-22T21:34:36.04Z,1,29,DotNet CLI tool to run Fable,dotnet-fable,False,2018-04-19T09:57:53.427+00:00,True,False,,"fsharp,fable,javascript,f#,js",34219,False,1.3.12
+nugetsvc,2018-03-22T21:34:55.463Z,29,29,This is a test package created by the NuGet team.,636573512816557859PackageWithDotCsNames.Cs,False,2018-03-22T21:34:55.463+00:00,True,False,,"Tag1,Tag2",57,False,1.0.0
+nugetsvc,2018-03-22T21:34:55.463Z,29,29,This is a test package created by the NuGet team.,636573512816557859PackageWithDotCsNames.Cs,False,2018-03-22T21:34:55.463+00:00,True,False,,"Tag1,Tag2",57,False,1.0.0
+nugetsvc,2018-03-22T21:24:45.22Z,43209,29,This is a test package created by the NuGet team.,UploadAndUnlistPackagesAsSelf_636573502316402697,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",113,False,2.0.0
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T21:31:30.97Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host.Abstractions,False,1900-01-01T00:00:00+00:00,False,False,,,961,False,0.0.7.39
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T21:31:57.22Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host.Dataflow,False,1900-01-01T00:00:00+00:00,False,False,,,473,False,0.0.7.39
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T21:31:19.407Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host,False,1900-01-01T00:00:00+00:00,False,False,,,957,False,0.0.7.39
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T21:31:45.44Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host.ApplicationInsights,False,1900-01-01T00:00:00+00:00,False,False,,,601,False,0.0.7.39
+Alfonso García-Caro Núñez,2018-03-22T21:32:17.457Z,29,29,Fable Core Library,Fable.Core,False,2018-03-22T21:32:17.457+00:00,True,False,,"fsharp,fable,javascript,f#,js",35296,False,1.3.12
+Alfonso García-Caro Núñez,2018-03-22T21:33:10.693Z,1,29,Fable: F# to JS Compiler,Fable.Compiler,False,2018-04-19T09:57:18.173+00:00,True,False,,"fsharp,fable,javascript,f#,js",30550,False,1.3.12
+Alfonso García-Caro Núñez,2018-03-22T21:33:10.693Z,1,29,Fable: F# to JS Compiler,Fable.Compiler,False,2018-04-19T09:57:18.173+00:00,True,False,,"fsharp,fable,javascript,f#,js",30550,False,1.3.12
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T21:31:19.407Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host,False,1900-01-01T00:00:00+00:00,False,False,,,957,False,0.0.7.39
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T21:31:30.97Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host.Abstractions,False,1900-01-01T00:00:00+00:00,False,False,,,961,False,0.0.7.39
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T21:31:57.22Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host.Dataflow,False,1900-01-01T00:00:00+00:00,False,False,,,473,False,0.0.7.39
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T21:31:45.44Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host.ApplicationInsights,False,1900-01-01T00:00:00+00:00,False,False,,,601,False,0.0.7.39
+Alfonso García-Caro Núñez,2018-03-22T21:32:17.457Z,29,29,Fable Core Library,Fable.Core,False,2018-03-22T21:32:17.457+00:00,True,False,,"fsharp,fable,javascript,f#,js",35296,False,1.3.12
+Dani Michel,2018-03-22T21:16:31.513Z,29,29,"Fast, convention-based, zero-code equality functions",ruler501.Equ,False,2018-03-22T21:16:31.513+00:00,True,False,,"equality,iequatable,generator",112,False,2.0.3
+,,-1,-1,,E2E.SemVer2PrerelRelisted.180322.210715.6207029,,,,True,,,,,1.0.0-alpha.1
+Microsoft,2018-03-22T21:23:36.187Z,29,29,This client library provides access to the Microsoft Cognitive Services News Search API.,Microsoft.Azure.CognitiveServices.Search.NewsSearch,False,2018-03-22T21:23:36.187+00:00,True,False,,"Microsoft,Cognitive,Services,SDK,NewsSearch,API,BingNewsSearch,REST,HTTPclient,NewsSearchSDK,BingNewsSearchSDK,netcore451511",171,True,1.2.0
+nugetsvc,2018-03-22T21:24:45.22Z,43209,29,This is a test package created by the NuGet team.,UploadAndUnlistPackagesAsSelf_636573502316402697,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",113,False,2.0.0
+Microsoft,2018-03-22T21:23:36.187Z,29,29,This client library provides access to the Microsoft Cognitive Services News Search API.,Microsoft.Azure.CognitiveServices.Search.NewsSearch,False,2018-03-22T21:23:36.187+00:00,True,False,,"Microsoft,Cognitive,Services,SDK,NewsSearch,API,BingNewsSearch,REST,HTTPclient,NewsSearchSDK,BingNewsSearchSDK,netcore451511",171,True,1.2.0
+nugetsvc,2018-03-22T21:24:45.22Z,43209,29,This is a test package created by the NuGet team.,UploadAndUnlistPackagesAsSelf_636573502316402697,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",113,False,2.0.0
+"Breno,Infinitus Solutions,Naylah Team",2018-03-22T21:20:57.4Z,28,29,"Naylah.Xamarin is a Xamarin App Toolkit, Lib, Module, etc.",Naylah.Xamarin,False,2018-03-23T17:40:37.893+00:00,True,False,,"Naylah,Toolkit,Xamarin,C#,Xaml",8471,False,2018.3.22.1
+"Breno,Infinitus Solutions,Naylah Team",2018-03-22T21:20:57.4Z,28,29,"Naylah.Xamarin is a Xamarin App Toolkit, Lib, Module, etc.",Naylah.Xamarin,False,2018-03-23T17:40:37.893+00:00,True,False,,"Naylah,Toolkit,Xamarin,C#,Xaml",8471,False,2018.3.22.1
+nugetsvc,2018-03-22T21:17:23.97Z,43209,29,This is a test package created by the NuGet team.,UploadAndUnlistPackagesAsSelf_636573502316402697,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",113,False,1.0.0
+amccool,2018-03-22T21:15:00.4Z,28,29,Microsoft.Extensions.Logging piping to ElasticSearch,AM.ElasticSearch.Extensions.Logging,False,2018-03-23T05:48:24.8+00:00,True,False,,ElasticSearch,414,False,1.0.27
+nugetsvc,2018-03-22T21:17:23.97Z,43209,29,This is a test package created by the NuGet team.,UploadAndUnlistPackagesAsSelf_636573502316402697,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",113,False,1.0.0
+nugetsvc,2018-03-22T21:15:49.963Z,43209,29,This is a test package created by the NuGet team.,ScopedApiKeysCanOnlyPushAndUnlistWithCorrectScopes_636573501135545816,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,2.0.0
+nugetsvc,2018-03-22T21:15:36.59Z,43209,29,This is a test package created by the NuGet team.,ScopedApiKeysCanOnlyPushAndUnlistWithCorrectScopes_636573501135545816,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:15:49.963Z,43209,29,This is a test package created by the NuGet team.,ScopedApiKeysCanOnlyPushAndUnlistWithCorrectScopes_636573501135545816,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,2.0.0
+nugetsvc,2018-03-22T21:15:36.59Z,43209,29,This is a test package created by the NuGet team.,ScopedApiKeysCanOnlyPushAndUnlistWithCorrectScopes_636573501135545816,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:13:10.147Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.8,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:12:56.77Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.7,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:13:22.35Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.9,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:12:42.63Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.6,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:11:59.83Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.3,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:11:46.44Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.2,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:12:28.723Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.5,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:12:15.19Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.4,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:11:33.877Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.1,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:11:19.953Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.0,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:11:19.953Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.0,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:11:33.877Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.1,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:11:46.44Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.2,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:11:59.83Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.3,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+amccool,2018-03-22T21:09:44.217Z,28,29,Microsoft.Extensions.Logging piping to ElasticSearch,AM.ElasticSearch.Extensions.Logging,False,2018-03-23T05:48:24.8+00:00,True,False,,ElasticSearch,414,False,1.0.25
+amccool,2018-03-22T21:11:14.89Z,28,29,Microsoft.Extensions.Logging piping to ElasticSearch,AM.ElasticSearch.Extensions.Logging,False,2018-03-23T05:48:24.8+00:00,True,False,,ElasticSearch,414,False,1.0.26
+nugetsvc,2018-03-22T21:13:10.147Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.8,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:13:22.35Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.9,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:12:15.19Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.4,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:12:28.723Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.5,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:12:42.63Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.6,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:12:56.77Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.7,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:13:10.147Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.8,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:13:22.35Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.9,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:12:56.77Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.7,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:11:59.83Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.3,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:12:28.723Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.5,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:12:42.63Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.6,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:12:15.19Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.4,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:11:33.877Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.1,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:11:46.44Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.2,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+nugetsvc,2018-03-22T21:11:19.953Z,43209,29,This is a test package created by the NuGet team.,TestV2FeedPackagesAppearInFeedInOrderTest.636573498655943296.0,False,1900-01-01T00:00:00+00:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+,,-1,-1,,E2E.SemVer2StableMetadataUnlisted.180322.210715.6207029,,,,True,,,,,1.0.0+metadata
+nugetsvc,2018-03-22T21:09:34.39Z,29,29,This is a test package created by the NuGet team.,TestV2FeedFindPackagesById.636573497600935123,False,2018-03-22T21:09:46.95+00:00,True,False,,"Tag1,Tag2",104,False,1.0.0
+nugetsvc,2018-03-22T21:09:46.95Z,29,29,This is a test package created by the NuGet team.,TestV2FeedFindPackagesById.636573497600935123,False,2018-03-22T21:09:46.95+00:00,True,False,,"Tag1,Tag2",104,False,2.0.0
+,,-1,-1,,E2E.SemVer2StableMetadata.180322.210715.6207029,,,,True,,,,,1.0.0+metadata
+EndToEndTests,2018-03-22T21:07:41.79Z,29,29,Description of E2E.FullValidation.180322.210715.6207029,E2E.FullValidation.180322.210715.6207029,False,2018-03-22T21:07:41.79+00:00,True,False,,,56,False,1.0.0
+,,-1,-1,,E2E.SemVer2PrerelUnlisted.180322.210715.6207029,,,,True,,,,,1.0.0-alpha.1
+EndToEndTests,2018-03-22T21:07:38.727Z,29,29,Description of E2E.SemVer1Stable.180322.210715.3238189,E2E.SemVer1Stable.180322.210715.3238189,False,2018-03-22T21:07:38.727+00:00,True,False,,,58,False,1.0.0
+Aaron Jensen,2018-03-22T21:07:12.257Z,29,29,"LibGit2 is a PowerShell module for working with Git repositories. You can use it to create, clone, query, push to, pull from, and commit to Git repositories.
+    
+    This module uses the .NET wrapper of [libgit2](https://libgit2.github.com/), ""a portable, pure C implementation of... Git"", which allows you to call Git via API instead using the Git command line interface.",LibGit2.PowerShell,False,2018-03-22T21:07:12.257+00:00,True,False,LibGit2 is a PowerShell module that wraps the libgit2 library.,"git,vcs,rcs,automation,github,gitlab,libgit2",1206,False,0.10.1
+nugetsvc,2018-03-22T21:08:49.963Z,4,29,This is a test package created by the NuGet team.,NuGetGallery.FunctionalTests.SearchWebMatrixCuratedFeed,False,2018-04-16T21:00:20.997+00:00,True,False,,Windows8,9868,False,636573.497155.18239
+,,-1,-1,,E2E.SemVer2PrerelRelisted.180322.210715.6207029,,,,True,,,,,1.0.0-alpha.1
+nugetsvc,2018-03-22T21:09:12.84Z,4,29,This is a test package created by the NuGet team.,NuGetGallery.FunctionalTests.SearchWindows8CuratedFeed,False,2018-04-16T21:00:40.217+00:00,True,False,,Windows8,9960,False,636573.497393.612705
+,,-1,-1,,E2E.SemVer2Prerel.180322.210715.6050775,,,,True,,,,,1.0.0-alpha.1
+EndToEndTests,2018-03-22T21:07:41.773Z,43209,29,Description of E2E.SemVer1StableUnlisted.180322.210715.3238189,E2E.SemVer1StableUnlisted.180322.210715.3238189,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+,,-1,-1,,E2E.SemVer2DueToSemVer2Dep.180322.210715.6050775,,,,True,,,,,1.0.0-beta
+nugetsvc,2018-03-22T21:09:46.95Z,29,29,This is a test package created by the NuGet team.,TestV2FeedFindPackagesById.636573497600935123,False,2018-03-22T21:09:46.95+00:00,True,False,,"Tag1,Tag2",104,False,2.0.0
+,,-1,-1,,E2E.SemVer2Prerel.180322.210715.6050775,,,,True,,,,,1.0.0-alpha.1
+,,-1,-1,,E2E.SemVer2DueToSemVer2Dep.180322.210715.6050775,,,,True,,,,,1.0.0-beta
+,,-1,-1,,E2E.SemVer2PrerelRelisted.180322.210715.6207029,,,,True,,,,,1.0.0-alpha.1
+nugetsvc,2018-03-22T21:08:49.963Z,4,29,This is a test package created by the NuGet team.,NuGetGallery.FunctionalTests.SearchWebMatrixCuratedFeed,False,2018-04-16T21:00:20.997+00:00,True,False,,Windows8,9868,False,636573.497155.18239
+,,-1,-1,,E2E.SemVer2StableMetadata.180322.210715.6207029,,,,True,,,,,1.0.0+metadata
+,,-1,-1,,E2E.SemVer2StableMetadataUnlisted.180322.210715.6207029,,,,True,,,,,1.0.0+metadata
+EndToEndTests,2018-03-22T21:07:41.79Z,29,29,Description of E2E.FullValidation.180322.210715.6207029,E2E.FullValidation.180322.210715.6207029,False,2018-03-22T21:07:41.79+00:00,True,False,,,56,False,1.0.0
+nugetsvc,2018-03-22T21:09:12.84Z,4,29,This is a test package created by the NuGet team.,NuGetGallery.FunctionalTests.SearchWindows8CuratedFeed,False,2018-04-16T21:00:40.217+00:00,True,False,,Windows8,9960,False,636573.497393.612705
+,,-1,-1,,E2E.SemVer2PrerelUnlisted.180322.210715.6207029,,,,True,,,,,1.0.0-alpha.1
+nugetsvc,2018-03-22T21:09:34.39Z,29,29,This is a test package created by the NuGet team.,TestV2FeedFindPackagesById.636573497600935123,False,2018-03-22T21:09:46.95+00:00,True,False,,"Tag1,Tag2",104,False,1.0.0
+EndToEndTests,2018-03-22T21:07:41.773Z,43209,29,Description of E2E.SemVer1StableUnlisted.180322.210715.3238189,E2E.SemVer1StableUnlisted.180322.210715.3238189,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Aaron Jensen,2018-03-22T21:07:12.257Z,29,29,"LibGit2 is a PowerShell module for working with Git repositories. You can use it to create, clone, query, push to, pull from, and commit to Git repositories.
+    
+    This module uses the .NET wrapper of [libgit2](https://libgit2.github.com/), ""a portable, pure C implementation of... Git"", which allows you to call Git via API instead using the Git command line interface.",LibGit2.PowerShell,False,2018-03-22T21:07:12.257+00:00,True,False,LibGit2 is a PowerShell module that wraps the libgit2 library.,"git,vcs,rcs,automation,github,gitlab,libgit2",1206,False,0.10.1
+EndToEndTests,2018-03-22T21:07:38.727Z,29,29,Description of E2E.SemVer1Stable.180322.210715.3238189,E2E.SemVer1Stable.180322.210715.3238189,False,2018-03-22T21:07:38.727+00:00,True,False,,,58,False,1.0.0
+Microsoft,2018-03-22T21:05:22.003Z,29,29,This client library provides access to the Microsoft Cognitive Services Video Search API.,Microsoft.Azure.CognitiveServices.Search.VideoSearch,False,2018-03-22T21:05:22.003+00:00,True,False,,"Microsoft,Cognitive,Services,SDK,VideoSearch,API,BingVideoSearch,REST,HTTPclient,VideoSearchSDK,BingVideoSearchSDK,netcore451511",150,True,1.2.0
+Microsoft,2018-03-22T21:05:22.003Z,29,29,This client library provides access to the Microsoft Cognitive Services Video Search API.,Microsoft.Azure.CognitiveServices.Search.VideoSearch,False,2018-03-22T21:05:22.003+00:00,True,False,,"Microsoft,Cognitive,Services,SDK,VideoSearch,API,BingVideoSearch,REST,HTTPclient,VideoSearchSDK,BingVideoSearchSDK,netcore451511",150,True,1.2.0
+Ivan Trendafilov,2018-03-22T21:01:33.573Z,29,29,Test logger package,AppLogger_IvanT,False,2018-03-22T21:01:33.573+00:00,True,False,,log,54,False,1.0.0
+Ivan Trendafilov,2018-03-22T21:01:33.573Z,29,29,Test logger package,AppLogger_IvanT,False,2018-03-22T21:01:33.573+00:00,True,False,,log,54,False,1.0.0
+RFSoft,2018-03-22T20:58:35.66Z,43209,29,Provide set of class for administrative settings,RfSoft_BaseClases,False,1900-01-01T00:00:00+00:00,False,False,,BaseClases,-1,False,1.0.3
+RFSoft,2018-03-22T20:58:35.66Z,43209,29,Provide set of class for administrative settings,RfSoft_BaseClases,False,1900-01-01T00:00:00+00:00,False,False,,BaseClases,-1,False,1.0.3
+Microsoft,2018-03-22T20:55:38.933Z,29,29,"This package provides the MSBuild, local run and deploy tools that support the CI/CD of Stream Analytics Visual Studio projects. You can find detailed instructions in readme.txt file",Microsoft.Azure.StreamAnalytics.CICD,False,2018-03-22T20:55:38.933+00:00,True,False,"This package provides the MSBuild, local run and deploy tools that support the CI/CD of Stream Analytics Visual Studio projects.","Azure,Stream,Analytics,MSBuild,CI/CD,LocalRun,Deployment",4157,True,1.2.0
+RFSoft,2018-03-22T20:56:55.593Z,43209,29,Provide set of class for administrative settings,RfSoft_BaseClases,False,1900-01-01T00:00:00+00:00,False,False,,BaseClases,-1,False,1.0.2
+Microsoft,2018-03-22T20:55:15.37Z,29,29,This client library provides access to the Microsoft Cognitive Services Image Search API.,Microsoft.Azure.CognitiveServices.Search.ImageSearch,False,2018-03-22T20:55:15.37+00:00,True,False,,"Microsoft,Cognitive,Services,SDK,ImageSearch,API,BingImageSearch,REST,HTTPclient,ImageSearchSDK,BingImageSearchSDK,netcore451511",461,True,1.2.0
+RFSoft,2018-03-22T20:56:55.593Z,43209,29,Provide set of class for administrative settings,RfSoft_BaseClases,False,1900-01-01T00:00:00+00:00,False,False,,BaseClases,-1,False,1.0.2
+Microsoft,2018-03-22T20:55:15.37Z,29,29,This client library provides access to the Microsoft Cognitive Services Image Search API.,Microsoft.Azure.CognitiveServices.Search.ImageSearch,False,2018-03-22T20:55:15.37+00:00,True,False,,"Microsoft,Cognitive,Services,SDK,ImageSearch,API,BingImageSearch,REST,HTTPclient,ImageSearchSDK,BingImageSearchSDK,netcore451511",461,True,1.2.0
+Microsoft,2018-03-22T20:55:38.933Z,29,29,"This package provides the MSBuild, local run and deploy tools that support the CI/CD of Stream Analytics Visual Studio projects. You can find detailed instructions in readme.txt file",Microsoft.Azure.StreamAnalytics.CICD,False,2018-03-22T20:55:38.933+00:00,True,False,"This package provides the MSBuild, local run and deploy tools that support the CI/CD of Stream Analytics Visual Studio projects.","Azure,Stream,Analytics,MSBuild,CI/CD,LocalRun,Deployment",4157,True,1.2.0
+amccool,2018-03-22T20:52:05.927Z,28,29,TraceListener for ElasticSearch and kibana,ElasticSearch.Diagnostics,False,2018-03-23T05:05:53.377+00:00,True,False,A TraceListener for submitting trace events and trace data to ElasticSearch,"Diagnostics,Trace,TraceListener,ElasticSearch,Kibana",5931,False,2.5.37
+amccool,2018-03-22T20:52:05.927Z,28,29,TraceListener for ElasticSearch and kibana,ElasticSearch.Diagnostics,False,2018-03-23T05:05:53.377+00:00,True,False,A TraceListener for submitting trace events and trace data to ElasticSearch,"Diagnostics,Trace,TraceListener,ElasticSearch,Kibana",5931,False,2.5.37
+Stardust,2018-03-22T20:48:06.21Z,10,29,"A fast, easy to use and lightweight IOC container",Stardust.Nucleus,True,2018-04-10T15:45:28.61+00:00,True,False,,"IOC,DependencyInjection,factory",1993,False,4.1.0-pre0003
+Stardust,2018-03-22T20:48:06.21Z,10,29,"A fast, easy to use and lightweight IOC container",Stardust.Nucleus,True,2018-04-10T15:45:28.61+00:00,True,False,,"IOC,DependencyInjection,factory",1993,False,4.1.0-pre0003
+Ben Hockley(@Togusa09),2018-03-22T20:43:18.997Z,27,29,Methods for running status checks on a remote web server,SiteStatusChecker,False,2018-03-24T10:26:10.617+00:00,True,False,,testing,382,False,1.2.0
+Ben Hockley(@Togusa09),2018-03-22T20:43:18.997Z,27,29,Methods for running status checks on a remote web server,SiteStatusChecker,False,2018-03-24T10:26:10.617+00:00,True,False,,testing,382,False,1.2.0
+Peter de Backer,2018-03-22T20:37:00.497Z,29,29,Railway programming with Monads and c#,RailwayResult,False,2018-03-22T20:37:00.497+00:00,True,False,,"Monads,c#",51,False,0.9.0
+"Daniel Luberda,Fabien Molinet",2018-03-22T20:35:48.54Z,22,29,"Xamarin Library to load images quickly and easily.
+
+Features:
+
+- Xamarin.iOS, Xamarin.Android, Xamarin.Forms, Xamarin.Mac and Windows (WinRT, UWP) support
+- Configurable disk and memory caching
+- Multiple image views using the same image source (url, path, resource) will use only one bitmap which is cached in memory (less memory usage)
+- Deduplication of similar download/load requests. *(If 100 similar requests arrive at same time then one real loading will be performed while 99 others will wait).*
+- Error and loading placeholders support
+- Images can be automatically downsampled to specified size (less memory usage)
+- Fluent API which is inspired by Picasso naming
+- SVG / WebP / GIF support
+- Image loading Fade-In animations support
+- Can retry image downloads (RetryCount, RetryDelay)
+- Android bitmap optimization. Saves 50% of memory by trying not to use transparency channel when possible.
+- Transformations support
+- BlurredTransformation
+- CircleTransformation, RoundedTransformation, CornersTransformation, CropTransformation
+- ColorSpaceTransformation, GrayscaleTransformation, SepiaTransformation, TintTransformation
+- FlipTransformation, RotateTransformation
+- Supports custom transformations (native platform `ITransformation` implementations)",Xamarin.FFImageLoading,False,2018-03-29T13:47:42.8+00:00,True,False,Xamarin library to load images quickly and easily on Xamarin.iOS / Xamarin.Android / Xamarin.Mac / Windows,"xamarin,android,ios,mac,windows,image,cache,caching,memory,bitmap,lru,load,loading,save,effects,photo",631174,False,2.3.5
+Dmitrii Osipov,2018-03-22T20:35:29.9Z,29,29,.NET Core compatiable C# Wrapper for QIWI Api. For bots and other stuff based on .NET Core and .NET Framework platforms.,QiwiApiSharp,False,2018-03-22T20:35:29.9+00:00,True,False,,"qiwi,api,payments",604,False,1.0.0.14
+"Daniel Luberda,Fabien Molinet",2018-03-22T20:36:01.4Z,22,29,"Xamarin Library to load images quickly and easily on Xamarin.Forms.
+
+Ensure you call CachedImageRenderer.Init() on each platform!!!
+
+Features:
+
+- Xamarin.iOS, Xamarin.Android, Xamarin.Forms, Xamarin.Mac and Windows (WinRT, UWP) support
+- Configurable disk and memory caching
+- Multiple image views using the same image source (url, path, resource) will use only one bitmap which is cached in memory (less memory usage)
+- Deduplication of similar download/load requests. *(If 100 similar requests arrive at same time then one real loading will be performed while 99 others will wait).*
+- Error and loading placeholders support
+- Images can be automatically downsampled to specified size (less memory usage)
+- Fluent API which is inspired by Picasso naming
+- SVG / WebP / GIF support
+- Image loading Fade-In animations support
+- Can retry image downloads (RetryCount, RetryDelay)
+- Android bitmap optimization. Saves 50% of memory by trying not to use transparency channel when possible.
+- Transformations support
+- BlurredTransformation
+- CircleTransformation, RoundedTransformation, CornersTransformation, CropTransformation
+- ColorSpaceTransformation, GrayscaleTransformation, SepiaTransformation, TintTransformation
+- FlipTransformation, RotateTransformation
+- Supports custom transformations (native platform `ITransformation` implementations)",Xamarin.FFImageLoading.Forms,False,2018-03-29T13:47:57.66+00:00,True,False,Xamarin Forms plugin to load images quickly and easily.,"xamarin,forms,xamarin.forms,mac,windows,android,ios,bitmap,image,cache,webp,quick,easy,lru,load,loading,save",496549,False,2.3.5
+"Daniel Luberda,Molinet Fabien",2018-03-22T20:36:38.183Z,22,29,"Transformations for FFImageLoading library.
+
+- BlurredTransformation
+- CircleTransformation, RoundedTransformation, CornersTransformation, CropTransformation
+- ColorSpaceTransformation, GrayscaleTransformation, SepiaTransformation, TintTransformation
+- FlipTransformation, RotateTransformation
+- Supports custom transformations (native platform `ITransformation` implementations)
+
+These transformations can be consumed from FFImageLoading and FFImageLoading.Forms (Xamarin Forms).
+Don't forget to add the package in all platform specific projects. This way the correct native implementation is injected.",Xamarin.FFImageLoading.Transformations,False,2018-03-29T13:48:34.49+00:00,True,False,Xamarin image transformations for FFImageLoading.,"xamarin,android,ios,mac,windows,bitmap,image,webp,transformation,blur,round,circle,effects,corners",347830,False,2.3.5
+Microsoft,2018-03-22T20:37:23.497Z,28,29,Utilerias de Logrand,Logrand.Utils,False,2018-03-23T14:12:12.23+00:00,True,False,,"Tag1,Tag2",722,False,1.0.5.4
+Daniel Luberda,2018-03-22T20:36:13.527Z,22,29,SVG support for FFImageLoading library.,Xamarin.FFImageLoading.Svg,False,2018-03-29T13:48:10.38+00:00,True,False,Xamarin SVG support for FFImageLoading.,"xamarin,android,ios,bitmap,image,svg",88192,False,2.3.5
+Daniel Luberda,2018-03-22T20:36:24.807Z,22,29,Xamarin.Forms SVG support for FFImageLoading library.,Xamarin.FFImageLoading.Svg.Forms,False,2018-03-29T13:48:21.427+00:00,True,False,Xamarin.Forms SVG support for FFImageLoading.,"xamarin,android,ios,windows,mac,bitmap,image,svg",73536,False,2.3.5
+ORPALIS,2018-03-22T20:36:08.557Z,1,29,Helper library to easily build WinForm productivity applications based on the PassportPDF API.,PassportPDF.Tools.WinForm,False,2018-04-20T01:09:54.14+00:00,True,False,,,567,False,1.0.5
+Peter de Backer,2018-03-22T20:37:00.497Z,29,29,Railway programming with Monads and c#,RailwayResult,False,2018-03-22T20:37:00.497+00:00,True,False,,"Monads,c#",51,False,0.9.0
+"Daniel Luberda,Molinet Fabien",2018-03-22T20:36:38.183Z,22,29,"Transformations for FFImageLoading library.
+
+- BlurredTransformation
+- CircleTransformation, RoundedTransformation, CornersTransformation, CropTransformation
+- ColorSpaceTransformation, GrayscaleTransformation, SepiaTransformation, TintTransformation
+- FlipTransformation, RotateTransformation
+- Supports custom transformations (native platform `ITransformation` implementations)
+
+These transformations can be consumed from FFImageLoading and FFImageLoading.Forms (Xamarin Forms).
+Don't forget to add the package in all platform specific projects. This way the correct native implementation is injected.",Xamarin.FFImageLoading.Transformations,False,2018-03-29T13:48:34.49+00:00,True,False,Xamarin image transformations for FFImageLoading.,"xamarin,android,ios,mac,windows,bitmap,image,webp,transformation,blur,round,circle,effects,corners",347830,False,2.3.5
+Microsoft,2018-03-22T20:37:23.497Z,28,29,Utilerias de Logrand,Logrand.Utils,False,2018-03-23T14:12:12.23+00:00,True,False,,"Tag1,Tag2",722,False,1.0.5.4
+Daniel Luberda,2018-03-22T20:36:13.527Z,22,29,SVG support for FFImageLoading library.,Xamarin.FFImageLoading.Svg,False,2018-03-29T13:48:10.38+00:00,True,False,Xamarin SVG support for FFImageLoading.,"xamarin,android,ios,bitmap,image,svg",88192,False,2.3.5
+ORPALIS,2018-03-22T20:36:08.557Z,1,29,Helper library to easily build WinForm productivity applications based on the PassportPDF API.,PassportPDF.Tools.WinForm,False,2018-04-20T01:09:54.14+00:00,True,False,,,567,False,1.0.5
+Dmitrii Osipov,2018-03-22T20:35:29.9Z,29,29,.NET Core compatiable C# Wrapper for QIWI Api. For bots and other stuff based on .NET Core and .NET Framework platforms.,QiwiApiSharp,False,2018-03-22T20:35:29.9+00:00,True,False,,"qiwi,api,payments",604,False,1.0.0.14
+"Daniel Luberda,Fabien Molinet",2018-03-22T20:36:01.4Z,22,29,"Xamarin Library to load images quickly and easily on Xamarin.Forms.
+
+Ensure you call CachedImageRenderer.Init() on each platform!!!
+
+Features:
+
+- Xamarin.iOS, Xamarin.Android, Xamarin.Forms, Xamarin.Mac and Windows (WinRT, UWP) support
+- Configurable disk and memory caching
+- Multiple image views using the same image source (url, path, resource) will use only one bitmap which is cached in memory (less memory usage)
+- Deduplication of similar download/load requests. *(If 100 similar requests arrive at same time then one real loading will be performed while 99 others will wait).*
+- Error and loading placeholders support
+- Images can be automatically downsampled to specified size (less memory usage)
+- Fluent API which is inspired by Picasso naming
+- SVG / WebP / GIF support
+- Image loading Fade-In animations support
+- Can retry image downloads (RetryCount, RetryDelay)
+- Android bitmap optimization. Saves 50% of memory by trying not to use transparency channel when possible.
+- Transformations support
+- BlurredTransformation
+- CircleTransformation, RoundedTransformation, CornersTransformation, CropTransformation
+- ColorSpaceTransformation, GrayscaleTransformation, SepiaTransformation, TintTransformation
+- FlipTransformation, RotateTransformation
+- Supports custom transformations (native platform `ITransformation` implementations)",Xamarin.FFImageLoading.Forms,False,2018-03-29T13:47:57.66+00:00,True,False,Xamarin Forms plugin to load images quickly and easily.,"xamarin,forms,xamarin.forms,mac,windows,android,ios,bitmap,image,cache,webp,quick,easy,lru,load,loading,save",496549,False,2.3.5
+Daniel Luberda,2018-03-22T20:36:24.807Z,22,29,Xamarin.Forms SVG support for FFImageLoading library.,Xamarin.FFImageLoading.Svg.Forms,False,2018-03-29T13:48:21.427+00:00,True,False,Xamarin.Forms SVG support for FFImageLoading.,"xamarin,android,ios,windows,mac,bitmap,image,svg",73536,False,2.3.5
+"Daniel Luberda,Fabien Molinet",2018-03-22T20:35:48.54Z,22,29,"Xamarin Library to load images quickly and easily.
+
+Features:
+
+- Xamarin.iOS, Xamarin.Android, Xamarin.Forms, Xamarin.Mac and Windows (WinRT, UWP) support
+- Configurable disk and memory caching
+- Multiple image views using the same image source (url, path, resource) will use only one bitmap which is cached in memory (less memory usage)
+- Deduplication of similar download/load requests. *(If 100 similar requests arrive at same time then one real loading will be performed while 99 others will wait).*
+- Error and loading placeholders support
+- Images can be automatically downsampled to specified size (less memory usage)
+- Fluent API which is inspired by Picasso naming
+- SVG / WebP / GIF support
+- Image loading Fade-In animations support
+- Can retry image downloads (RetryCount, RetryDelay)
+- Android bitmap optimization. Saves 50% of memory by trying not to use transparency channel when possible.
+- Transformations support
+- BlurredTransformation
+- CircleTransformation, RoundedTransformation, CornersTransformation, CropTransformation
+- ColorSpaceTransformation, GrayscaleTransformation, SepiaTransformation, TintTransformation
+- FlipTransformation, RotateTransformation
+- Supports custom transformations (native platform `ITransformation` implementations)",Xamarin.FFImageLoading,False,2018-03-29T13:47:42.8+00:00,True,False,Xamarin library to load images quickly and easily on Xamarin.iOS / Xamarin.Android / Xamarin.Mac / Windows,"xamarin,android,ios,mac,windows,image,cache,caching,memory,bitmap,lru,load,loading,save,effects,photo",631174,False,2.3.5
+Lykke.Service.Limitations.Client,2018-03-22T20:34:28.367Z,29,29,Package Description,Lykke.Service.Limitations.Client,False,2018-03-22T20:34:28.367+00:00,True,False,,,2721,False,1.1.1.16
+Özgür Özçıtak,2018-03-22T20:34:08.02Z,29,29,A ListView like control for displaying image files with asynchronously loaded thumbnails.,ImageListView,False,2018-03-22T20:34:08.02+00:00,True,False,,"winforms,controls,listview,image,imagelistview",16152,False,11.1.0
+Lykke.Service.Limitations.Client,2018-03-22T20:34:28.367Z,29,29,Package Description,Lykke.Service.Limitations.Client,False,2018-03-22T20:34:28.367+00:00,True,False,,,2721,False,1.1.1.16
+Özgür Özçıtak,2018-03-22T20:34:08.02Z,29,29,A ListView like control for displaying image files with asynchronously loaded thumbnails.,ImageListView,False,2018-03-22T20:34:08.02+00:00,True,False,,"winforms,controls,listview,image,imagelistview",16152,False,11.1.0
+Matt Wood,2018-03-22T20:27:43.303Z,43209,29,This data repository is used for accessing DDS 5 SQL data directly via Entity Framework Core.,Com.Absolute.PS.Dds5Data,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.2
+Dmitrii Osipov,2018-03-22T20:27:56.27Z,29,29,.NET Core compatiable C# Wrapper for QIWI Api. For bots and other stuff based on .NET Core and .NET Framework platforms.,QiwiApiSharp,False,2018-03-22T20:35:29.9+00:00,True,False,,"qiwi,api,payments",604,False,1.0.0.13
+Matt Wood,2018-03-22T20:27:43.303Z,43209,29,This data repository is used for accessing DDS 5 SQL data directly via Entity Framework Core.,Com.Absolute.PS.Dds5Data,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.2
+Dmitrii Osipov,2018-03-22T20:27:56.27Z,29,29,.NET Core compatiable C# Wrapper for QIWI Api. For bots and other stuff based on .NET Core and .NET Framework platforms.,QiwiApiSharp,False,2018-03-22T20:35:29.9+00:00,True,False,,"qiwi,api,payments",604,False,1.0.0.13
+Microsoft,2018-03-22T20:24:41.047Z,29,29,This client library provides access to the Microsoft Cognitive Services Entity Search API.,Microsoft.Azure.CognitiveServices.Search.EntitySearch,False,2018-03-22T20:24:41.047+00:00,True,False,,"Microsoft,Cognitive,Services,SDK,EntitySearch,API,BingEntitySearch,REST,HTTPclient,EntitySearchSDK,BingEntitySearchSDK,netcore451511",171,True,1.2.0
+Stanislav Muhametsin,2018-03-22T20:25:45.783Z,29,29,Provides easy way to execute NuGet-based MSBuild tasks.,UtilPack.NuGet.MSBuild,False,2018-03-22T20:25:45.783+00:00,True,False,,"utility,nuget,extensions,msbuild,task,package,resolve",2638,False,2.5.0
+Stanislav Muhametsin,2018-03-22T20:25:45.783Z,29,29,Provides easy way to execute NuGet-based MSBuild tasks.,UtilPack.NuGet.MSBuild,False,2018-03-22T20:25:45.783+00:00,True,False,,"utility,nuget,extensions,msbuild,task,package,resolve",2638,False,2.5.0
+Microsoft,2018-03-22T20:24:41.047Z,29,29,This client library provides access to the Microsoft Cognitive Services Entity Search API.,Microsoft.Azure.CognitiveServices.Search.EntitySearch,False,2018-03-22T20:24:41.047+00:00,True,False,,"Microsoft,Cognitive,Services,SDK,EntitySearch,API,BingEntitySearch,REST,HTTPclient,EntitySearchSDK,BingEntitySearchSDK,netcore451511",171,True,1.2.0
+Lykke,2018-03-22T20:22:08.01Z,5,29,Contract for generic Lykke.Service.BlockchainApi,Lykke.Service.BlockchainApi.Contract,False,2018-04-15T17:38:20.587+00:00,True,False,,Lykke,1882,False,12.0.2
+Lykke,2018-03-22T20:22:08.01Z,5,29,Contract for generic Lykke.Service.BlockchainApi,Lykke.Service.BlockchainApi.Contract,False,2018-04-15T17:38:20.587+00:00,True,False,,Lykke,1882,False,12.0.2
+Stone Pagamentos,2018-03-22T20:19:08.13Z,29,29,RabbitMQ Abstraction for messaging workflow and infrastructure management,Stone.RabbitMQ.Abstraction,True,2018-03-22T20:19:08.13+00:00,True,False,,"rabbitmq,queue,amqp,client,worker,workflow,stone",1898,False,1.7.2-rc1
+Stone Pagamentos,2018-03-22T20:19:08.13Z,29,29,RabbitMQ Abstraction for messaging workflow and infrastructure management,Stone.RabbitMQ.Abstraction,True,2018-03-22T20:19:08.13+00:00,True,False,,"rabbitmq,queue,amqp,client,worker,workflow,stone",1898,False,1.7.2-rc1
+Igor.Gateway.Dtos,2018-03-22T20:16:34.263Z,1,29,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,4.1.0-prerelease1278
+Christian Estrella,2018-03-22T20:16:26.327Z,29,29,Package Description,Noom.Tools.Helper,False,2018-03-22T20:16:26.327+00:00,True,False,,,706,False,1.0.9
+Igor.Gateway.Dtos,2018-03-22T20:16:34.263Z,1,29,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,4.1.0-prerelease1278
+Christian Estrella,2018-03-22T20:16:26.327Z,29,29,Package Description,Noom.Tools.Helper,False,2018-03-22T20:16:26.327+00:00,True,False,,,706,False,1.0.9
+Ihor Popkov,2018-03-22T20:11:20.72Z,29,29,Package Description,Orionik.NbuExchangeApi,False,2018-03-22T20:11:20.72+00:00,True,False,,,50,False,1.0.0
+SuavePirate,2018-03-22T20:09:25.03Z,29,29,Result models for the service result pattern. Allows for wrapping data and errors in a reusable way.,ServiceResult,False,2018-03-22T20:09:25.03+00:00,True,False,Result models for the service result pattern. Allows for wrapping data and errors in a reusable way.,".NET,C#,Result",108,False,1.0.1
+CentauroTech,2018-03-22T20:13:41.99Z,25,29,log4net appender that allow you to replace log information based on a regular expression,CentauroTech.Utils.RegexReplacementAppender,False,2018-03-26T17:53:31.64+00:00,True,False,log4net appender that allow you to replace log information based on a regular expression,"log4net,appender,regex,log",577,False,1.1.4
+Centauro Tech,2018-03-22T20:12:15.783Z,29,29,Nuget package to log requests made during HTTP request and responses on ASP.net web applications,CentauroTech.Utils.LogRequestHandler,False,2018-03-22T20:12:15.783+00:00,True,False,Nuget package to log requests made during HTTP request and responses on ASP.net web applications,"log4net,log,request,handler",1465,False,1.0.8
+CentauroTech,2018-03-22T20:13:41.99Z,25,29,log4net appender that allow you to replace log information based on a regular expression,CentauroTech.Utils.RegexReplacementAppender,False,2018-03-26T17:53:31.64+00:00,True,False,log4net appender that allow you to replace log information based on a regular expression,"log4net,appender,regex,log",577,False,1.1.4
+SuavePirate,2018-03-22T20:09:25.03Z,29,29,Result models for the service result pattern. Allows for wrapping data and errors in a reusable way.,ServiceResult,False,2018-03-22T20:09:25.03+00:00,True,False,Result models for the service result pattern. Allows for wrapping data and errors in a reusable way.,".NET,C#,Result",108,False,1.0.1
+Centauro Tech,2018-03-22T20:12:15.783Z,29,29,Nuget package to log requests made during HTTP request and responses on ASP.net web applications,CentauroTech.Utils.LogRequestHandler,False,2018-03-22T20:12:15.783+00:00,True,False,Nuget package to log requests made during HTTP request and responses on ASP.net web applications,"log4net,log,request,handler",1465,False,1.0.8
+Ihor Popkov,2018-03-22T20:11:20.72Z,29,29,Package Description,Orionik.NbuExchangeApi,False,2018-03-22T20:11:20.72+00:00,True,False,,,50,False,1.0.0
+RFSoft,2018-03-22T20:07:44.963Z,43209,29,Provide set of class for administrative settings,RfSoft_BaseClases,False,1900-01-01T00:00:00+00:00,False,False,,BaseClases,-1,False,1.0.1
+RFSoft,2018-03-22T20:07:44.963Z,43209,29,Provide set of class for administrative settings,RfSoft_BaseClases,False,1900-01-01T00:00:00+00:00,False,False,,BaseClases,-1,False,1.0.1
+Federico Barresi,2018-03-22T20:05:39.693Z,29,29,Multi-platform Ethernet S7 PLC communication suite (C# port of Snap7 Client by davenardella),Sharp7,False,2018-03-22T20:05:39.693+00:00,True,False,,,696,False,1.0.11
+DevelopmentHelpers.SqlLogging,2018-03-22T20:07:13.87Z,29,29,"Add the capability to Log events in the database.
+""DevelopmentHelperSqlLogSettings"": {
+    ""ConnectionString"": ""{connectionstring}"",
+    ""SchemaName"": ""dbo"",
+    ""TableName"": ""EventLog"",
+    ""IgnoreTableCreation"": ""true""
+  }",DevelopmentHelpers.SqlLogging,False,2018-03-22T20:07:13.87+00:00,True,False,,,635,False,2.0.6
+DevelopmentHelpers.SqlLogging,2018-03-22T20:07:13.87Z,29,29,"Add the capability to Log events in the database.
+""DevelopmentHelperSqlLogSettings"": {
+    ""ConnectionString"": ""{connectionstring}"",
+    ""SchemaName"": ""dbo"",
+    ""TableName"": ""EventLog"",
+    ""IgnoreTableCreation"": ""true""
+  }",DevelopmentHelpers.SqlLogging,False,2018-03-22T20:07:13.87+00:00,True,False,,,635,False,2.0.6
+Federico Barresi,2018-03-22T20:05:39.693Z,29,29,Multi-platform Ethernet S7 PLC communication suite (C# port of Snap7 Client by davenardella),Sharp7,False,2018-03-22T20:05:39.693+00:00,True,False,,,696,False,1.0.11
+Node.Net,2018-03-22T20:03:37.423Z,18,29,C# Library,Node.Net,False,2018-04-02T17:22:17.273+00:00,True,False,,JSON,70993,False,1.0.538
+Node.Net,2018-03-22T20:03:37.423Z,18,29,C# Library,Node.Net,False,2018-04-02T17:22:17.273+00:00,True,False,,JSON,70993,False,1.0.538
+Nano Contributors,2018-03-22T20:00:02.947Z,2,29,"Using Nano ensures high focus on modelling business requirements, and avoid spending resouces on rudenmentory implemenatations, related to infrastructure, logging, documentation, message quueing, data access, hosting, and son on.",NanoCore,True,2018-04-18T08:53:31.923+00:00,True,False,Rapidly build and deploy micro-services.,,4808,False,0.3.92-alpha
+Nano Contributors,2018-03-22T20:00:02.947Z,2,29,"Using Nano ensures high focus on modelling business requirements, and avoid spending resouces on rudenmentory implemenatations, related to infrastructure, logging, documentation, message quueing, data access, hosting, and son on.",NanoCore,True,2018-04-18T08:53:31.923+00:00,True,False,Rapidly build and deploy micro-services.,,4808,False,0.3.92-alpha
+Tim Stephansen,2018-03-22T19:57:41.393Z,6,29,This library contains security functions for WPF applications.,LandmarkDevs.Core.Security,False,2018-04-14T20:48:03.973+00:00,True,False,,"LandmarkDevs,Security",891,False,3.0.5
+Ryan Wilson,2018-03-22T19:57:08.923Z,29,29,Memory Adaptor For LitterBox Caching,LitterBox.Memory,False,2018-03-22T19:57:08.923+00:00,True,False,,"csharp,memory,caching,litterbox",1500,False,6.2.0
+Tim Stephansen,2018-03-22T19:58:05.74Z,6,29,"This library contains a Guid Generator, a change tracking model, a tracking message model, some extension methods, and a helper class used for progress reporting during async operations.",LandmarkDevs.Core.Shared,False,2018-04-14T20:48:29.88+00:00,True,False,,"LandmarkDevs,Shared",1195,False,3.0.5
+Tim Stephansen,2018-03-22T19:57:27.253Z,6,29,This library contains classes useful for telemetry tracking with HockeyApp and Application Insights.,LandmarkDevs.Core.Telemetry,False,2018-04-14T20:47:51.817+00:00,True,False,,"LandmarkDevs,Telemetry",1046,False,3.0.5
+Tim Stephansen,2018-03-22T19:57:53.457Z,6,29,This library is useful when using the Prism Library in an application.,LandmarkDevs.Core.Prism,False,2018-04-14T20:48:16.363+00:00,True,False,,"LandmarkDevs,Prism",1385,False,3.0.5
+Tim Stephansen,2018-03-22T19:57:10.097Z,6,29,"This library contains Observable and RelayCommand classes for ViewModels, error tracking functions, and logging functions.",LandmarkDevs.Core.Infrastructure,False,2018-04-14T20:47:38.377+00:00,True,False,,"LandmarkDevs,Infrastructure",1103,False,3.0.5
+Ryan Wilson,2018-03-22T19:57:41.643Z,29,29,Redis Adaptor For LitterBox Caching,LitterBox.Redis,False,2018-03-22T19:57:41.643+00:00,True,False,,"csharp,memory,caching,litterbox,redis",1439,False,6.2.0
+RFSoft,2018-03-22T19:56:52.19Z,43209,29,Provide set of class for administrative settings,RfSoft_BaseClases,False,1900-01-01T00:00:00+00:00,False,False,,BaseClases,-1,False,1.0.0
+Tim Stephansen,2018-03-22T19:58:05.74Z,6,29,"This library contains a Guid Generator, a change tracking model, a tracking message model, some extension methods, and a helper class used for progress reporting during async operations.",LandmarkDevs.Core.Shared,False,2018-04-14T20:48:29.88+00:00,True,False,,"LandmarkDevs,Shared",1195,False,3.0.5
+Ryan Wilson,2018-03-22T19:57:41.643Z,29,29,Redis Adaptor For LitterBox Caching,LitterBox.Redis,False,2018-03-22T19:57:41.643+00:00,True,False,,"csharp,memory,caching,litterbox,redis",1439,False,6.2.0
+Tim Stephansen,2018-03-22T19:57:10.097Z,6,29,"This library contains Observable and RelayCommand classes for ViewModels, error tracking functions, and logging functions.",LandmarkDevs.Core.Infrastructure,False,2018-04-14T20:47:38.377+00:00,True,False,,"LandmarkDevs,Infrastructure",1103,False,3.0.5
+Ryan Wilson,2018-03-22T19:57:08.923Z,29,29,Memory Adaptor For LitterBox Caching,LitterBox.Memory,False,2018-03-22T19:57:08.923+00:00,True,False,,"csharp,memory,caching,litterbox",1500,False,6.2.0
+Tim Stephansen,2018-03-22T19:57:53.457Z,6,29,This library is useful when using the Prism Library in an application.,LandmarkDevs.Core.Prism,False,2018-04-14T20:48:16.363+00:00,True,False,,"LandmarkDevs,Prism",1385,False,3.0.5
+RFSoft,2018-03-22T19:56:52.19Z,43209,29,Provide set of class for administrative settings,RfSoft_BaseClases,False,1900-01-01T00:00:00+00:00,False,False,,BaseClases,-1,False,1.0.0
+Tim Stephansen,2018-03-22T19:57:27.253Z,6,29,This library contains classes useful for telemetry tracking with HockeyApp and Application Insights.,LandmarkDevs.Core.Telemetry,False,2018-04-14T20:47:51.817+00:00,True,False,,"LandmarkDevs,Telemetry",1046,False,3.0.5
+Tim Stephansen,2018-03-22T19:57:41.393Z,6,29,This library contains security functions for WPF applications.,LandmarkDevs.Core.Security,False,2018-04-14T20:48:03.973+00:00,True,False,,"LandmarkDevs,Security",891,False,3.0.5
+Ryan Wilson,2018-03-22T19:53:22.2Z,29,29,DocumentDB Adaptor For LitterBox Caching,LitterBox.DocumentDB,False,2018-03-22T19:53:22.2+00:00,True,False,,"csharp,memory,caching,litterbox,documentdb",398,False,3.2.0
+Ryan Wilson,2018-03-22T19:53:22.2Z,29,29,DocumentDB Adaptor For LitterBox Caching,LitterBox.DocumentDB,False,2018-03-22T19:53:22.2+00:00,True,False,,"csharp,memory,caching,litterbox,documentdb",398,False,3.2.0
+Ryan Wilson,2018-03-22T19:52:45.51Z,29,29,LitterBox Caching Base,LitterBox,False,2018-03-22T19:52:45.51+00:00,True,False,,"csharp,memory,caching,litterbox",1141,False,6.2.0
+Kexia Tang,2018-03-22T19:53:13.887Z,29,29,Utility functions and extension methods,UniLib,False,2018-03-22T19:53:13.887+00:00,True,False,,"Utility,Library",224,False,1.0.3
+Kexia Tang,2018-03-22T19:53:13.887Z,29,29,Utility functions and extension methods,UniLib,False,2018-03-22T19:53:13.887+00:00,True,False,,"Utility,Library",224,False,1.0.3
+Ryan Wilson,2018-03-22T19:52:45.51Z,29,29,LitterBox Caching Base,LitterBox,False,2018-03-22T19:52:45.51+00:00,True,False,,"csharp,memory,caching,litterbox",1141,False,6.2.0
+ByteTerrace,2018-03-22T19:47:41.437Z,1,29,A library that implements core functionality used in ByteTerrace projects.,ByteTerrace.Core,False,2018-04-20T04:54:59.907+00:00,True,False,,,4694,False,0.0.36
+ByteTerrace,2018-03-22T19:47:41.437Z,1,29,A library that implements core functionality used in ByteTerrace projects.,ByteTerrace.Core,False,2018-04-20T04:54:59.907+00:00,True,False,,,4694,False,0.0.36
+ByteTerrace,2018-03-22T19:06:24.113Z,1,29,A library that implements core functionality used in ByteTerrace projects.,ByteTerrace.Core,False,2018-04-20T04:54:59.907+00:00,False,False,,,4694,False,0.0.35
+Scalider.Identity.BCrypt,2018-03-22T19:46:26.463Z,5,29,Uses BCrypt to provide password hashing.,Scalider.Identity.BCrypt,False,2018-04-15T14:56:41.68+00:00,True,False,,,280,False,2.0.3
+Chaoyi Xie,2018-03-22T19:45:17.32Z,29,29,Package Description,iServer.Toolkit,False,2018-03-22T19:45:17.32+00:00,True,False,,,461,False,1.0.2
+Alberto Mori,2018-03-22T19:43:20.05Z,29,29,Implementation of Authentication package for Entity Framework Core,Wilcommerce.Auth.Data.EFCore,True,2018-03-22T19:43:20.05+00:00,True,False,,"wilcommerce,ecommerce,opensource,.netcore,.net,entity,framework,core",109,False,1.0.0-rc2
+Scalider.Identity.BCrypt,2018-03-22T19:46:26.463Z,5,29,Uses BCrypt to provide password hashing.,Scalider.Identity.BCrypt,False,2018-04-15T14:56:41.68+00:00,True,False,,,280,False,2.0.3
+Chaoyi Xie,2018-03-22T19:45:17.32Z,29,29,Package Description,iServer.Toolkit,False,2018-03-22T19:45:17.32+00:00,True,False,,,461,False,1.0.2
+Alberto Mori,2018-03-22T19:43:20.05Z,29,29,Implementation of Authentication package for Entity Framework Core,Wilcommerce.Auth.Data.EFCore,True,2018-03-22T19:43:20.05+00:00,True,False,,"wilcommerce,ecommerce,opensource,.netcore,.net,entity,framework,core",109,False,1.0.0-rc2
+PNNL-Comp-Mass-Spec,2018-03-22T19:42:44.533Z,29,29,Library of Microsoft Windows-specific functions used by software applications that automate tasks in the Proteomics Research Information and Management System (PRISM) at Pacific Northwest National Laboratory.,PRISMWin-Library,False,2018-03-22T19:42:44.533+00:00,True,False,,,432,False,1.0.5
+PNNL-Comp-Mass-Spec,2018-03-22T19:42:29.613Z,9,29,Library of functions used by software applications that automate tasks in the Proteomics Research Information and Management System (PRISM) at Pacific Northwest National Laboratory.,PRISM-Library,False,2018-04-11T00:38:45.493+00:00,True,False,,,5901,False,2.4.81
+Jeff Keslinke,2018-03-22T19:42:11.207Z,11,29,Package Description,BTG.Infrastructure.Auth.SharedKernel,False,2018-04-09T20:44:21.193+00:00,True,False,,,337,False,1.0.1
+PNNL-Comp-Mass-Spec,2018-03-22T19:42:44.533Z,29,29,Library of Microsoft Windows-specific functions used by software applications that automate tasks in the Proteomics Research Information and Management System (PRISM) at Pacific Northwest National Laboratory.,PRISMWin-Library,False,2018-03-22T19:42:44.533+00:00,True,False,,,432,False,1.0.5
+Jeff Keslinke,2018-03-22T19:42:11.207Z,11,29,Package Description,BTG.Infrastructure.Auth.SharedKernel,False,2018-04-09T20:44:21.193+00:00,True,False,,,337,False,1.0.1
+PNNL-Comp-Mass-Spec,2018-03-22T19:42:29.613Z,9,29,Library of functions used by software applications that automate tasks in the Proteomics Research Information and Management System (PRISM) at Pacific Northwest National Laboratory.,PRISM-Library,False,2018-04-11T00:38:45.493+00:00,True,False,,,5901,False,2.4.81
+Node.Net,2018-03-22T19:39:12.667Z,18,29,C# Library,Node.Net,False,2018-04-02T17:22:17.273+00:00,True,False,,JSON,70993,False,1.0.537
+Node.Net,2018-03-22T19:39:12.667Z,18,29,C# Library,Node.Net,False,2018-04-02T17:22:17.273+00:00,True,False,,JSON,70993,False,1.0.537
+Joe4evr,2018-03-22T19:35:53.253Z,21,29,Base classes for text-based games in Discord,Discord.Addons.MpGame,False,2018-03-30T07:52:51.41+00:00,True,False,,"discord,commands,game",840,False,1.0.2
+Joe4evr,2018-03-22T19:35:53.253Z,21,29,Base classes for text-based games in Discord,Discord.Addons.MpGame,False,2018-03-30T07:52:51.41+00:00,True,False,,"discord,commands,game",840,False,1.0.2
+Lykke.Service.DataBridge.Data,2018-03-22T19:32:57.593Z,29,29,Package Description,Lykke.Service.DataBridge.Data,False,2018-03-22T19:32:57.593+00:00,True,False,,,2638,False,4.2.3
+Treehopper Electronics,2018-03-22T19:30:40.777Z,28,29,"Treehopper connects the physical world to your computer, smartphone, or tablet.",Treehopper.Libraries,False,2018-03-23T21:46:41.1+00:00,True,False,,,458,True,1.11.3
+Treehopper Electronics,2018-03-22T19:31:06.183Z,28,29,"Treehopper connects the physical world to your computer, smartphone, or tablet.",Treehopper,False,2018-03-23T21:44:27.687+00:00,True,False,,,3318,True,1.11.4
+Digital Forge,2018-03-22T19:32:38.983Z,9,29,Client for use with Reach Web API,Reach.Api.Client,False,2018-04-11T20:26:17.793+00:00,True,False,,"api,reach",1554,False,0.8.5
+Lykke.Service.DataBridge.Data,2018-03-22T19:32:57.593Z,29,29,Package Description,Lykke.Service.DataBridge.Data,False,2018-03-22T19:32:57.593+00:00,True,False,,,2638,False,4.2.3
+Digital Forge,2018-03-22T19:32:38.983Z,9,29,Client for use with Reach Web API,Reach.Api.Client,False,2018-04-11T20:26:17.793+00:00,True,False,,"api,reach",1554,False,0.8.5
+Treehopper Electronics,2018-03-22T19:30:40.777Z,28,29,"Treehopper connects the physical world to your computer, smartphone, or tablet.",Treehopper.Libraries,False,2018-03-23T21:46:41.1+00:00,True,False,,,458,True,1.11.3
+Treehopper Electronics,2018-03-22T19:31:06.183Z,28,29,"Treehopper connects the physical world to your computer, smartphone, or tablet.",Treehopper,False,2018-03-23T21:44:27.687+00:00,True,False,,,3318,True,1.11.4
+Treehopper Electronics,2018-03-22T19:29:24.63Z,28,29,"Treehopper connects the physical world to your computer, smartphone, or tablet.",Treehopper.Desktop,False,2018-03-23T21:45:53.143+00:00,True,False,,,476,True,1.11.3
+Treehopper Electronics,2018-03-22T19:29:24.63Z,28,29,"Treehopper connects the physical world to your computer, smartphone, or tablet.",Treehopper.Desktop,False,2018-03-23T21:45:53.143+00:00,True,False,,,476,True,1.11.3
+Jeff Keslinke,2018-03-22T19:26:48.953Z,21,29,OAuth Extensions for Asp.Net clients,BTG.Infrastructure.Auth.AspNet,False,2018-03-30T16:56:10.547+00:00,True,False,,,230,False,1.0.1
+Jeff Keslinke,2018-03-22T19:26:48.953Z,21,29,OAuth Extensions for Asp.Net clients,BTG.Infrastructure.Auth.AspNet,False,2018-03-30T16:56:10.547+00:00,True,False,,,230,False,1.0.1
+ByteTerrace,2018-03-22T18:24:47.95Z,1,29,A library that implements core functionality used in ByteTerrace projects.,ByteTerrace.Core,False,2018-04-20T04:54:59.907+00:00,False,False,,,4694,False,0.0.34
+ByteTerrace,2018-03-22T15:48:31.493Z,1,29,A library that implements core functionality used in ByteTerrace projects.,ByteTerrace.Core,False,2018-04-20T04:54:59.907+00:00,False,False,,,4694,False,0.0.33
+Michael Sperber (programmersidgest.de),2018-03-22T19:22:15.93Z,29,29,A parser for the SWIFT MT940/MT942 format.,programmersdigest.MT940Parser,False,2018-03-22T19:22:15.93+00:00,True,False,,"SWIFT,MT940,MT942,Parser",279,False,0.5.16
+Michael Sperber (programmersidgest.de),2018-03-22T19:22:15.93Z,29,29,A parser for the SWIFT MT940/MT942 format.,programmersdigest.MT940Parser,False,2018-03-22T19:22:15.93+00:00,True,False,,"SWIFT,MT940,MT942,Parser",279,False,0.5.16
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T19:18:08.11Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host.ApplicationInsights,False,1900-01-01T00:00:00+00:00,False,False,,,601,False,0.0.7.38
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T19:18:20.483Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host.Dataflow,False,1900-01-01T00:00:00+00:00,False,False,,,473,False,0.0.7.38
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T19:17:42.247Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host,False,1900-01-01T00:00:00+00:00,False,False,,,957,False,0.0.7.38
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T19:17:55.343Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host.Abstractions,False,1900-01-01T00:00:00+00:00,False,False,,,961,False,0.0.7.38
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T19:18:20.483Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host.Dataflow,False,1900-01-01T00:00:00+00:00,False,False,,,473,False,0.0.7.38
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T19:18:08.11Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host.ApplicationInsights,False,1900-01-01T00:00:00+00:00,False,False,,,601,False,0.0.7.38
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T19:17:55.343Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host.Abstractions,False,1900-01-01T00:00:00+00:00,False,False,,,961,False,0.0.7.38
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T19:17:42.247Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host,False,1900-01-01T00:00:00+00:00,False,False,,,957,False,0.0.7.38
+LinCli,2018-03-22T19:09:40.37Z,26,29,Dependent native linux package for IBM Data Server Provider for .NET Core,LinCli,False,2018-03-25T17:44:04.573+00:00,True,False,,,209,False,1.0.0.102
+"David Francoeur,David Masse,jenkins,Jenkins user,Julien Letrouit,Manuel Vonthron,Mauro Arias",2018-03-22T19:07:58.807Z,29,29,mnubo SmartObjects .Net SDK client,Mnubo.SmartObjects.Client,False,2018-03-22T19:07:58.807+00:00,True,False,,,1886,False,2.0.0
+elmah.io,2018-03-22T19:09:43.73Z,29,29,Log to elmah.io from System.Diagnostics.Trace and friends.,Elmah.Io.Trace,False,2018-03-22T19:09:43.73+00:00,True,False,,"Error,Exception,Reporting,Management,Logging,ELMAH,Diagnostics,Tracing",384,False,3.0.5
+ByteTerrace,2018-03-22T19:06:24.113Z,1,29,A library that implements core functionality used in ByteTerrace projects.,ByteTerrace.Core,False,2018-04-20T04:54:59.907+00:00,True,False,,,4694,False,0.0.35
+odinh,2018-03-22T19:08:35.76Z,7,29,My package description.,Shs.Starling.Plugins,False,2018-04-13T18:27:21.19+00:00,True,False,,,1989,False,1.0.23
+"David Francoeur,David Masse,jenkins,Jenkins user,Julien Letrouit,Manuel Vonthron,Mauro Arias",2018-03-22T19:07:58.807Z,29,29,mnubo SmartObjects .Net SDK client,Mnubo.SmartObjects.Client,False,2018-03-22T19:07:58.807+00:00,True,False,,,1886,False,2.0.0
+odinh,2018-03-22T19:08:35.76Z,7,29,My package description.,Shs.Starling.Plugins,False,2018-04-13T18:27:21.19+00:00,True,False,,,1989,False,1.0.23
+elmah.io,2018-03-22T19:09:43.73Z,29,29,Log to elmah.io from System.Diagnostics.Trace and friends.,Elmah.Io.Trace,False,2018-03-22T19:09:43.73+00:00,True,False,,"Error,Exception,Reporting,Management,Logging,ELMAH,Diagnostics,Tracing",384,False,3.0.5
+NetChris,2018-03-22T19:06:47.13Z,29,29,Package Description,NetChris.Secrets,False,2018-03-22T19:06:47.13+00:00,True,False,,"netchris,dotnet-core,security,password,data-protection,secrets,secret-protection",427,False,0.0.2
+Mocoding.AspNetCore.ODataApi.EasyDocDb,2018-03-22T19:04:53.86Z,1,29,Package Description,Mocoding.AspNetCore.ODataApi.EasyDocDb,True,2018-04-19T19:53:19.45+00:00,True,False,,,381,False,1.0.0-beta2
+Mocoding.AspNetCore.ODataApi,2018-03-22T19:04:41.393Z,1,29,Package Description,Mocoding.AspNetCore.ODataApi,True,2018-04-19T19:53:17.76+00:00,True,False,,,380,False,1.0.0-beta2
+vvvv,2018-03-22T19:06:11.02Z,11,29,OpenCV for VL,VL.OpenCV,True,2018-04-09T15:31:54.46+00:00,True,False,A VL wrapper for OpenCVSharp,"VL,opencv",5264,False,0.1.93-alpha
+Lykke,2018-03-22T19:06:43.833Z,27,29,Package Description,Lykke.Logs,False,2018-03-24T14:43:25.187+00:00,True,False,,Lykke,4540,False,3.6.1
+Lykke,2018-03-22T19:06:43.833Z,27,29,Package Description,Lykke.Logs,False,2018-03-24T14:43:25.187+00:00,True,False,,Lykke,4540,False,3.6.1
+NetChris,2018-03-22T19:06:47.13Z,29,29,Package Description,NetChris.Secrets,False,2018-03-22T19:06:47.13+00:00,True,False,,"netchris,dotnet-core,security,password,data-protection,secrets,secret-protection",427,False,0.0.2
+Mocoding.AspNetCore.ODataApi.EasyDocDb,2018-03-22T19:04:53.86Z,1,29,Package Description,Mocoding.AspNetCore.ODataApi.EasyDocDb,True,2018-04-19T19:53:19.45+00:00,True,False,,,381,False,1.0.0-beta2
+vvvv,2018-03-22T19:06:11.02Z,11,29,OpenCV for VL,VL.OpenCV,True,2018-04-09T15:31:54.46+00:00,True,False,A VL wrapper for OpenCVSharp,"VL,opencv",5264,False,0.1.93-alpha
+Mocoding.AspNetCore.ODataApi,2018-03-22T19:04:41.393Z,1,29,Package Description,Mocoding.AspNetCore.ODataApi,True,2018-04-19T19:53:17.76+00:00,True,False,,,380,False,1.0.0-beta2
+Marimer LLC,2018-03-22T18:56:49.41Z,29,29,"Supports legacy CSLA .NET 3.8 style validation and business rules in newer versions of CSLA .NET.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-UpdateValidation,False,2018-03-22T18:56:49.41+00:00,True,False,Supports legacy CSLA .NET 3.8 style validation and business rules in newer versions of CSLA .NET.,"CSLA,Validation",11695,False,4.7.100
+Marimer LLC,2018-03-22T18:55:55.75Z,29,29,"Supports the use of Entity Framework Core.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-EntityFrameworkCore,False,2018-03-22T18:55:55.75+00:00,True,False,Supports the use of Entity Framework Core.,"CSLA,Windows,EFCore,EntityFrameworkCore",240,False,4.7.100
+Marimer LLC,2018-03-22T18:57:41.8Z,29,29,"Supports the creation of Xamarin.Forms applications for iOS, Android, and Windows.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-XamarinForms,False,2018-03-22T18:57:41.8+00:00,True,False,Supports the creation of Xamarin.Forms applications.,"CSLA,Xamarin,Xamarin.Forms",3884,False,4.7.100
+Marimer LLC,2018-03-22T18:56:23.203Z,29,29,"Installs code snippets and item templates to assist in creating CSLA business objects.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-Templates,False,2018-03-22T18:56:23.203+00:00,True,False,Code snippets and templates that supports the creation of CSLA business objects.,"CSLA,Business,Object,Snippet,Templates",21952,False,4.7.100
+Marimer LLC,2018-03-22T18:56:08.783Z,29,29,"Supports the creation of Xamarin iOS applications using the unified API.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-iOS,False,2018-03-22T18:56:08.783+00:00,True,False,Supports the creation of Xamarin iOS applications using the unified API.,"CSLA,iOS,Unified",9143,False,4.7.100
+Marimer LLC,2018-03-22T18:57:02.627Z,29,29,"Supports the creation of UWP applications.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-UWP,False,2018-03-22T18:57:02.627+00:00,True,False,Supports the creation of UWP applications.,"CSLA,UWP,UI,Windows10,UAP",5601,False,4.7.100
+Marimer LLC,2018-03-22T18:55:29.377Z,29,29,"Supports the use of ADO.NET Entity Framework 5.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-EF5,False,2018-03-22T18:55:29.377+00:00,True,False,Supports the use of ADO.NET Entity Framework 5.,"CSLA,Windows,ADO.NET,EF",15065,False,4.7.100
+Marimer LLC,2018-03-22T18:55:13.797Z,29,29,"Supports the use of ADO.NET Entity Framework 4.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-EF4,False,2018-03-22T18:55:13.797+00:00,True,False,Supports the use of ADO.NET Entity Framework 4.,"CSLA,Windows,ADO.NET,EF",13738,False,4.7.100
+Marimer LLC,2018-03-22T18:56:35.487Z,29,29,"Supports legacy CSLA .NET 3.8 style validation and business rules in newer versions of CSLA .NET when targeting netstandard.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-UpdateValidation-NS,False,2018-03-22T18:56:35.487+00:00,True,False,Supports legacy CSLA .NET 3.8 style validation and business rules in newer versions of CSLA .NET when targeting netstandard.,"CSLA,Validation,netstandard",102,False,4.7.100
+Marimer LLC,2018-03-22T18:57:29.66Z,29,29,"Supports the creation of WPF applications.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-WPF,False,2018-03-22T18:57:29.66+00:00,True,False,Supports the creation of WPF applications.,"CSLA,WPF,UI",32006,False,4.7.100
+Marimer LLC,2018-03-22T18:57:16.223Z,29,29,"Supports the creation of Windows Forms applications.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-WindowsForms,False,2018-03-22T18:57:16.223+00:00,True,False,Supports the creation of Windows Forms applications.,"CSLA,Windows,WinForms,Forms",23571,False,4.7.100
+Marimer LLC,2018-03-22T18:57:41.8Z,29,29,"Supports the creation of Xamarin.Forms applications for iOS, Android, and Windows.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-XamarinForms,False,2018-03-22T18:57:41.8+00:00,True,False,Supports the creation of Xamarin.Forms applications.,"CSLA,Xamarin,Xamarin.Forms",3884,False,4.7.100
+Marimer LLC,2018-03-22T18:57:29.66Z,29,29,"Supports the creation of WPF applications.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-WPF,False,2018-03-22T18:57:29.66+00:00,True,False,Supports the creation of WPF applications.,"CSLA,WPF,UI",32006,False,4.7.100
+Marimer LLC,2018-03-22T18:56:49.41Z,29,29,"Supports legacy CSLA .NET 3.8 style validation and business rules in newer versions of CSLA .NET.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-UpdateValidation,False,2018-03-22T18:56:49.41+00:00,True,False,Supports legacy CSLA .NET 3.8 style validation and business rules in newer versions of CSLA .NET.,"CSLA,Validation",11695,False,4.7.100
+Marimer LLC,2018-03-22T18:57:02.627Z,29,29,"Supports the creation of UWP applications.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-UWP,False,2018-03-22T18:57:02.627+00:00,True,False,Supports the creation of UWP applications.,"CSLA,UWP,UI,Windows10,UAP",5601,False,4.7.100
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T18:54:53.95Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host.Dataflow,False,1900-01-01T00:00:00+00:00,False,False,,,473,False,0.0.7.37
+Marimer LLC,2018-03-22T18:55:13.797Z,29,29,"Supports the use of ADO.NET Entity Framework 4.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-EF4,False,2018-03-22T18:55:13.797+00:00,True,False,Supports the use of ADO.NET Entity Framework 4.,"CSLA,Windows,ADO.NET,EF",13738,False,4.7.100
+Marimer LLC,2018-03-22T18:55:42.877Z,29,29,"Supports the use of ADO.NET Entity Framework 6.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-EF6,False,2018-03-22T18:55:42.877+00:00,True,False,Supports the use of ADO.NET Entity Framework 6.,"CSLA,Windows,ADO.NET,EF",13415,False,4.7.100
+Marimer LLC,2018-03-22T18:55:00.953Z,29,29,"Supports the creation of Class Library projects containing business domain classes, Windows Services, Console applications and other native Windows application models.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-Core,False,2018-03-22T18:55:00.953+00:00,True,False,"Supports the creation of Class Library projects containing business domain classes, Windows Services, Console applications and other native Windows application models.","CSLA,Business,Core",95483,False,4.7.100
+Marimer LLC,2018-03-22T18:56:23.203Z,29,29,"Installs code snippets and item templates to assist in creating CSLA business objects.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-Templates,False,2018-03-22T18:56:23.203+00:00,True,False,Code snippets and templates that supports the creation of CSLA business objects.,"CSLA,Business,Object,Snippet,Templates",21952,False,4.7.100
+Marimer LLC,2018-03-22T18:57:16.223Z,29,29,"Supports the creation of Windows Forms applications.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-WindowsForms,False,2018-03-22T18:57:16.223+00:00,True,False,Supports the creation of Windows Forms applications.,"CSLA,Windows,WinForms,Forms",23571,False,4.7.100
+Marimer LLC,2018-03-22T18:56:08.783Z,29,29,"Supports the creation of Xamarin iOS applications using the unified API.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-iOS,False,2018-03-22T18:56:08.783+00:00,True,False,Supports the creation of Xamarin iOS applications using the unified API.,"CSLA,iOS,Unified",9143,False,4.7.100
+Marimer LLC,2018-03-22T18:55:29.377Z,29,29,"Supports the use of ADO.NET Entity Framework 5.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-EF5,False,2018-03-22T18:55:29.377+00:00,True,False,Supports the use of ADO.NET Entity Framework 5.,"CSLA,Windows,ADO.NET,EF",15065,False,4.7.100
+Marimer LLC,2018-03-22T18:56:35.487Z,29,29,"Supports legacy CSLA .NET 3.8 style validation and business rules in newer versions of CSLA .NET when targeting netstandard.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-UpdateValidation-NS,False,2018-03-22T18:56:35.487+00:00,True,False,Supports legacy CSLA .NET 3.8 style validation and business rules in newer versions of CSLA .NET when targeting netstandard.,"CSLA,Validation,netstandard",102,False,4.7.100
+https://github.com/smokedlinq/ConsoleHost,2018-03-22T18:54:40.7Z,43209,29,ConsoleHost library makes writing simple and testable .NET console apps easier.,Console.Host.ApplicationInsights,False,1900-01-01T00:00:00+00:00,False,False,,,601,False,0.0.7.37
+Marimer LLC,2018-03-22T18:54:42.357Z,29,29,"Supports the creation of Class Library projects targeting netstandard 2.0 and compatible platforms, such as .NET Core, UWP, and Xamarin.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-Core-NS,False,2018-03-22T18:54:42.357+00:00,True,False,"Supports the creation of Class Library projects targeting netstandard 2.0 and compatible platforms, such as .NET Core, UWP, and Xamarin.","CSLA,Business,Core,netstandard",318,False,4.7.100
+Marimer LLC,2018-03-22T18:55:55.75Z,29,29,"Supports the use of Entity Framework Core.
+
+CSLA .NET is an application development framework that reduces the cost of building and maintaining applications. The framework enables developers to build an object-oriented business layer for their application that encapsulates all business, authorization and validation logic for the application.",CSLA-EntityFrameworkCore,False,2018-03-22T18:55:55.75+00:00,True,False,Supports the use of Entity Framework Core.,"CSLA,Windows,EFCore,EntityFrameworkCore",240,False,4.7.100

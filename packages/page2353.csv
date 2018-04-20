@@ -1,0 +1,934 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+Microsoft,2017-04-04T00:26:19.343Z,139,381,"The RESTier Core contains framework classes like API-related logic, query inspector/filter/expander/sourcer/executor, convention-based logic like model builder.
+Part of a framework for authoring rich api data and logic over a data source proxy.
+Retargeted for .NET Standard 1.1",WinInsider.Microsoft.Restier.Core,False,2017-12-02T02:58:54.257+00:00,False,False,This package contains original RESTier from Microsoft retargeted for .NET Standard 1.1,"Restier,EntityFramework,OData",1443,False,1.0.2
+Microsoft,2017-04-05T02:44:16.64Z,139,380,"The RESTier Core contains framework classes like API-related logic, query inspector/filter/expander/sourcer/executor, convention-based logic like model builder.
+Part of a framework for authoring rich api data and logic over a data source proxy.
+Retargeted for .NET Standard 1.1",WinInsider.Microsoft.Restier.Core,False,2017-12-02T02:58:54.257+00:00,False,False,,"Restier,EntityFramework,OData",1443,False,1.0.4
+Microsoft,2017-04-10T02:51:12.027Z,139,375,"The RESTier EntityFramework Provider contains classes to access data sources exposed with Entity Framework library.
+This package contains original RESTier Entity Framework Core provider from Microsoft retargeted for .NET Standard 1.1",Microsoft.Restier.Providers.EntityFrameworkCore,False,2017-12-02T03:00:00.96+00:00,True,False,,"Restier,EntityFramework,OData",1297,False,1.0.8
+Microsoft,2017-04-08T02:53:25.33Z,139,377,"The RESTier Core contains framework classes like API-related logic, query inspector/filter/expander/sourcer/executor, convention-based logic like model builder.
+Part of a framework for authoring rich api data and logic over a data source proxy.
+Retargeted for .NET Standard 1.1",WinInsider.Microsoft.Restier.Core,False,2017-12-02T02:58:54.257+00:00,False,False,,"Restier,EntityFramework,OData",1443,False,1.0.5
+Microsoft,2017-04-04T00:27:56.057Z,139,381,"The RESTier EntityFramework Provider contains classes to access data sources exposed with Entity Framework library.
+This package contains original RESTier Entity Framework Core provider from Microsoft retargeted for .NET Standard 1.1",Microsoft.Restier.Providers.EntityFrameworkCore,False,2017-12-02T03:00:00.96+00:00,False,False,This package contains original RESTier Entity Framework Core provider from Microsoft retargeted for .NET Standard 1.1,"Restier,EntityFramework,OData",1297,False,1.0.2
+Microsoft,2017-04-09T22:18:10.263Z,139,376,"The RESTier EntityFramework Provider contains classes to access data sources exposed with Entity Framework library.
+This package contains original RESTier Entity Framework Core provider from Microsoft retargeted for .NET Standard 1.1",Microsoft.Restier.Providers.EntityFrameworkCore,False,2017-12-02T03:00:00.96+00:00,False,False,,"Restier,EntityFramework,OData",1297,False,1.0.7
+Microsoft,2017-04-05T02:44:56.997Z,139,380,"The RESTier EntityFramework Provider contains classes to access data sources exposed with Entity Framework library.
+This package contains original RESTier Entity Framework Core provider from Microsoft retargeted for .NET Standard 1.1",Microsoft.Restier.Providers.EntityFrameworkCore,False,2017-12-02T03:00:00.96+00:00,False,False,,"Restier,EntityFramework,OData",1297,False,1.0.4
+Microsoft,2017-04-08T15:24:21.137Z,139,377,"The RESTier Core contains framework classes like API-related logic, query inspector/filter/expander/sourcer/executor, convention-based logic like model builder.
+Part of a framework for authoring rich api data and logic over a data source proxy.
+Retargeted for .NET Standard 1.1",WinInsider.Microsoft.Restier.Core,False,2017-12-02T02:58:54.257+00:00,False,False,,"Restier,EntityFramework,OData",1443,False,1.0.6
+Microsoft,2017-04-08T02:53:59.553Z,139,377,"The RESTier EntityFramework Provider contains classes to access data sources exposed with Entity Framework library.
+This package contains original RESTier Entity Framework Core provider from Microsoft retargeted for .NET Standard 1.1",Microsoft.Restier.Providers.EntityFrameworkCore,False,2017-12-02T03:00:00.96+00:00,False,False,,"Restier,EntityFramework,OData",1297,False,1.0.5
+Microsoft,2017-04-09T22:17:22.883Z,139,376,"The RESTier Core contains framework classes like API-related logic, query inspector/filter/expander/sourcer/executor, convention-based logic like model builder.
+Part of a framework for authoring rich api data and logic over a data source proxy.
+Retargeted for .NET Standard 1.1",WinInsider.Microsoft.Restier.Core,False,2017-12-02T02:58:54.257+00:00,False,False,,"Restier,EntityFramework,OData",1443,False,1.0.7
+Mike,2017-03-26T00:32:47.167Z,139,390,Owin Hosting with MEF project compiled for .NET Standard,WinInsider.HttpHosting.Owin,False,2017-12-02T03:06:41.85+00:00,False,False,,,764,False,1.0.1
+Mike,2017-03-26T01:01:45.2Z,139,390,HTTP Hosting with MEF project compiled for .NET Standard,WinInsider.HttpHosting,False,2017-12-02T03:07:10.6+00:00,False,False,,,641,False,1.0.2
+Mike,2017-04-05T03:01:03.213Z,139,380,HTTP Hosting with MEF project compiled for .NET Standard,WinInsider.HttpHosting,False,2017-12-02T03:07:10.6+00:00,False,False,,"WebAPI,REST,MEF,HTTP",641,False,1.0.3
+Mike,2017-03-26T01:03:01.377Z,139,390,"Owin Hosting with MEF project compiled for .NET Standard
+
+HttpListener that comes with Owin can not be used in .NET Standard scenarios as is bases on Windows specific implementation, thus 
+
+var options = new StartOptions(""http://localhost:8080/"")
+{
+	ServerFactory = ""WinInsider.Owin.Host.SocketListener""
+};
+
+WebApp.Start<Startup>(options);",WinInsider.HttpHosting.Owin,False,2017-12-02T03:06:41.85+00:00,False,False,,,764,False,1.0.2
+Mike,2017-04-05T03:01:29.94Z,139,380,"Owin Hosting with MEF project compiled for .NET Standard
+
+HttpListener that comes with Owin can not be used in .NET Standard scenarios as is bases on Windows specific implementation, thus set ServerFactory as below...
+
+var options = new StartOptions(""http://localhost:8080/"")
+{
+        ServerFactory = ""WinInsider.Owin.Host.SocketListener""
+};
+WebApp.Start<Startup>(options);",WinInsider.HttpHosting.Owin,False,2017-12-02T03:06:41.85+00:00,False,False,,"WebAPI,REST,HTTP,MEF,OWIN",764,False,1.0.3
+jacob.phan,2017-04-10T02:57:09.343Z,43209,375,Excel Template with Epplus,Epplus.Mapper,False,1900-01-01T00:00:00+00:00,False,False,,,1456,False,1.0.0
+Mike,2017-04-10T02:56:36.85Z,139,375,HTTP Hosting for Microsoft Restier (OData) services.  Targets .NET Standard 1.3,WinInsider.HttpHosting.Restier,False,2017-12-02T03:06:11.43+00:00,True,False,,"OData,REST,MEF,HTTP,WebAPI,Restier,Entity,Framework",463,False,1.0.3
+Mike,2017-04-10T02:55:47.367Z,139,375,"Owin Hosting with MEF project compiled for .NET Standard
+
+HttpListener that comes with Owin can not be used in .NET Standard scenarios as is bases on Windows specific implementation, thus set ServerFactory as below...
+
+var options = new StartOptions(""http://localhost:8080/"")
+{
+        ServerFactory = ""WinInsider.Owin.Host.SocketListener""
+};
+WebApp.Start<Startup>(options);",WinInsider.HttpHosting.Owin,False,2017-12-02T03:06:41.85+00:00,True,False,,"WebAPI,REST,HTTP,MEF,OWIN",764,False,1.0.4
+Mike,2017-04-10T02:53:59.02Z,139,375,HTTP Hosting with MEF project compiled for .NET Standard,WinInsider.HttpHosting,False,2017-12-02T03:07:10.6+00:00,True,False,,"WebAPI,REST,MEF,HTTP",641,False,1.0.4
+Microsoft,2017-04-10T02:51:12.027Z,139,375,"The RESTier EntityFramework Provider contains classes to access data sources exposed with Entity Framework library.
+This package contains original RESTier Entity Framework Core provider from Microsoft retargeted for .NET Standard 1.1",Microsoft.Restier.Providers.EntityFrameworkCore,False,2017-12-02T03:00:00.96+00:00,True,False,,"Restier,EntityFramework,OData",1297,False,1.0.8
+Mike,2017-04-10T02:55:47.367Z,139,375,"Owin Hosting with MEF project compiled for .NET Standard
+
+HttpListener that comes with Owin can not be used in .NET Standard scenarios as is bases on Windows specific implementation, thus set ServerFactory as below...
+
+var options = new StartOptions(""http://localhost:8080/"")
+{
+        ServerFactory = ""WinInsider.Owin.Host.SocketListener""
+};
+WebApp.Start<Startup>(options);",WinInsider.HttpHosting.Owin,False,2017-12-02T03:06:41.85+00:00,True,False,,"WebAPI,REST,HTTP,MEF,OWIN",764,False,1.0.4
+Mike,2017-04-10T02:53:59.02Z,139,375,HTTP Hosting with MEF project compiled for .NET Standard,WinInsider.HttpHosting,False,2017-12-02T03:07:10.6+00:00,True,False,,"WebAPI,REST,MEF,HTTP",641,False,1.0.4
+Microsoft,2017-04-10T02:50:35.28Z,139,375,"The RESTier Core contains framework classes like API-related logic, query inspector/filter/expander/sourcer/executor, convention-based logic like model builder.
+Part of a framework for authoring rich api data and logic over a data source proxy.
+Retargeted for .NET Standard 1.1",WinInsider.Microsoft.Restier.Core,False,2017-12-02T02:58:54.257+00:00,True,False,,"Restier,EntityFramework,OData",1443,False,1.0.8
+Microsoft,2017-04-10T02:51:12.027Z,139,375,"The RESTier EntityFramework Provider contains classes to access data sources exposed with Entity Framework library.
+This package contains original RESTier Entity Framework Core provider from Microsoft retargeted for .NET Standard 1.1",Microsoft.Restier.Providers.EntityFrameworkCore,False,2017-12-02T03:00:00.96+00:00,True,False,,"Restier,EntityFramework,OData",1297,False,1.0.8
+Microsoft,2017-04-10T02:50:35.28Z,139,375,"The RESTier Core contains framework classes like API-related logic, query inspector/filter/expander/sourcer/executor, convention-based logic like model builder.
+Part of a framework for authoring rich api data and logic over a data source proxy.
+Retargeted for .NET Standard 1.1",WinInsider.Microsoft.Restier.Core,False,2017-12-02T02:58:54.257+00:00,True,False,,"Restier,EntityFramework,OData",1443,False,1.0.8
+wxf,2017-04-10T02:47:20.59Z,364,375,Modefy by wuxf .Add methods lines checked,Wintellect.Analyzers.WXF,False,2017-04-20T19:16:56.017-07:00,True,False,,"Roslyn,analyzers,Wintellect",1014,False,1.0.7.3
+Knyaz,2017-04-03T01:54:16.267Z,319,382,IL to JavaScript cross-compiler.,Knyaz.NoJS,False,2017-06-04T23:51:49.97-07:00,True,False,,,956,False,1.0.78
+Oleg Kleyman,2017-04-10T02:45:00.273Z,31,375,Extension methods galore,Omego.Extensions,False,2018-03-20T10:41:15.79+00:00,True,False,,"IEnumerable,Extensions",3614,False,2.0.7
+N/A,2017-04-10T02:44:28.543Z,375,375,A Serilog sink that writes events to Hockey App.,serilog-sinks-hockeyapp,False,2017-04-09T20:04:58.893-07:00,True,False,,"Serilog,HockeyApp,Xamarin",2037,False,0.1.11
+Stephen Cleary,2017-04-10T02:34:13.71Z,223,375,Dynamically attached object properties.,Nito.ConnectedProperties,True,2017-09-09T15:52:02.26+00:00,True,False,,"dynamic,attached,connected,properties",2617,True,4.0.0-eta-02
+igress,2017-04-06T03:41:10.01Z,166,379,"Object Extensions can be used to:
+(1) Deep compare two objects 
+(2) Get or Set member values
+(3) Deep Clone
+(4) Save or view object graph
+(5) Get metadata
+(6) Get type information
+
+Visit the project site to get more info on usage: https://harip.github.io/site/printclassinstance",PrintClassInstance,False,2017-11-05T02:11:37.763+00:00,True,False,,"PrintClassInstance,ClassInstance,Debug,Class,Instance,Inspect,Print,Reflection,MemberInfo,MemberValue,FieldInfo,TypeInfo,PropertyInfo,.NET,Core,.NETStandard1.6,Compare,Objects,Deep,Comparing,Object,Graph,ObjectGraph,Extensions,ObjectExtensions,SetPropertyValue,SetFieldValue,SetValue,DeepClone,Clone,Type,TypeExtensions",7071,False,3.1.0
+tianzh,2017-04-10T02:32:37.81Z,18,375,OPS internal lib to load and analysis ECMAXML documents,Microsoft.DocAsCode.ECMAHelper,False,2018-04-02T03:35:03.713+00:00,True,False,,ECMAXML,6897,False,1.0.28
+tianzh,2017-04-10T02:32:14.553Z,18,375,OPS internal tool to convert ECMAXML documents to Yaml format.,Microsoft.DocAsCode.ECMA2Yaml,False,2018-04-02T03:34:52.493+00:00,True,False,,ECMAXML,8388,False,1.0.28
+igress,2017-04-06T03:41:10.01Z,166,379,"Object Extensions can be used to:
+(1) Deep compare two objects 
+(2) Get or Set member values
+(3) Deep Clone
+(4) Save or view object graph
+(5) Get metadata
+(6) Get type information
+
+Visit the project site to get more info on usage: https://harip.github.io/site/printclassinstance",PrintClassInstance,False,2017-11-05T02:11:37.763+00:00,True,False,,"PrintClassInstance,ClassInstance,Debug,Class,Instance,Inspect,Print,Reflection,MemberInfo,MemberValue,FieldInfo,TypeInfo,PropertyInfo,.NET,Core,.NETStandard1.6,Compare,Objects,Deep,Comparing,Object,Graph,ObjectGraph,Extensions,ObjectExtensions,SetPropertyValue,SetFieldValue,SetValue,DeepClone,Clone,Type,TypeExtensions",7071,False,3.1.0
+"Joe Xue,Daisytech Pty Ltd",2017-04-10T02:27:30.78Z,41,375,DaisyTech PreTool Services,DaisyTech.PreTool.Services,False,2018-03-10T15:03:15.71+00:00,True,False,,"DaisyTech,PreTool,Services",3419,False,1.2.1.3
+"Joe Xue,Daisytech Pty Ltd",2017-04-10T02:27:26.78Z,41,375,DaisyTech PreTool Data,DaisyTech.PreTool.Data,False,2018-03-10T15:02:51.537+00:00,True,False,,"DaisyTech,PreTool,Data",3955,False,1.2.1.3
+wxf,2017-04-10T02:27:46.367Z,364,375,Modefy by wuxf .Add methods lines checked,Wintellect.Analyzers.WXF,False,2017-04-20T19:16:56.017-07:00,True,False,,"Roslyn,analyzers,Wintellect",1014,False,1.0.7.2
+"Joe Xue,Daisytech Pty Ltd",2017-04-10T02:27:30.11Z,41,375,DaisyTech PreTool Controls,DaisyTech.PreTool.Controls,False,2018-03-10T15:03:43.397+00:00,True,False,,"DaisyTech,PreTool,Controls",3418,False,1.2.1.3
+"Joe Xue,Daisytech Pty Ltd",2017-04-10T02:27:18.573Z,41,375,DaisyTech PreTool Kernel,DaisyTech.PreTool.Kernel,False,2018-03-10T15:02:13.927+00:00,True,False,,"DaisyTech,PreTool,Kernel",3409,False,1.2.1.3
+Konstantin Udilovich,2017-04-10T02:24:42.24Z,375,375,"Structural engineering automation library. Components for aluminum element and connection design for buildings and other structures, per AA 2015 Specification for Aluminum Structures.",Kodestruct.Aluminum,False,2017-04-09T19:24:42.24-07:00,True,False,,,679,False,0.0.6.7
+Microsoft,2016-10-05T09:53:19.953Z,562,562,Description,PresentationModuleChat,False,2016-10-05T02:53:19.953-07:00,True,False,,,192,False,1.0.2
+Microsoft,2016-10-05T09:53:19.953Z,562,562,Description,PresentationModuleChat,False,2016-10-05T02:53:19.953-07:00,True,False,,,192,False,1.0.2
+Beer4Social.Services,2017-04-10T02:19:57.307Z,375,375,Beer4Social.Services,Beer4Social.Services,False,2017-04-09T19:19:57.307-07:00,True,False,,,683,False,1.0.6
+Code Maker Inc. and Contributors,2017-04-10T02:08:06.253Z,359,375,"EppLib.NET provides a library that makes easy for registrars to interact with registries implementing the EPP protocol.
+
+Our library is a complete implementation of the EPP specification. Have a look at the How to section for code examples and recipes.
+
+    We now include EPP extensions for CIRA (the .CA registry), Nominet (the .UK registry) and IIS (the .SE registry).",EppLib,False,2017-04-25T18:27:24.993-07:00,True,False,EppLib.NET is a .NET library implementing the Extensible Provisioning Protocol (EPP),,8745,False,1.1.63
+Beer4Social.Services,2017-04-10T02:04:09.93Z,375,375,Beer4Social.Services,Beer4Social.Services,False,2017-04-09T19:19:57.307-07:00,True,False,,,683,False,1.0.5
+Larz White,2017-04-10T02:03:12.087Z,252,375,Codecov global executable uploader for PowerShell and Windows Command Line.,Codecov,True,2017-08-11T19:41:47.767+00:00,True,False,Codecov global executable uploader.,"coverage,codecov",32089,False,0.4.0-beta
+tianzh,2017-04-10T02:02:33.283Z,18,375,OPS internal lib to load and analysis ECMAXML documents,Microsoft.DocAsCode.ECMAHelper,False,2018-04-02T03:35:03.713+00:00,True,False,,ECMAXML,6897,False,1.0.27
+Craig Rice,2017-04-10T01:55:33.96Z,313,375,"For JSON Web Token (JWT) creation, parsing and validation.",EasyJwt,False,2017-06-11T12:36:07.733+00:00,True,False,,,1146,False,1.2.0
+alfredking12,2017-03-28T03:21:57.13Z,352,388,bec .net webapi framework,bec.webapi,False,2017-05-02T23:41:00.993-07:00,False,False,,"bec,.net,webapi,framework",2906,False,1.0.17
+alfredking12,2017-03-28T02:56:56.937Z,352,388,bec .net webapi framework,bec.webapi,False,2017-05-02T23:41:00.993-07:00,False,False,,"bec,.net,webapi,framework",2906,False,1.0.15
+alfredking12,2017-03-28T03:13:55.187Z,352,388,bec .net webapi framework,bec.webapi,False,2017-05-02T23:41:00.993-07:00,False,False,,"bec,.net,webapi,framework",2906,False,1.0.16
+alfredking12,2017-03-20T02:57:50.13Z,352,396,bec .net webapi framework,bec.webapi,False,2017-05-02T23:41:00.993-07:00,False,False,,"bec,.net,webapi,framework",2906,False,1.0.12
+alfredking12,2017-03-28T02:55:39.967Z,352,388,bec .net webapi framework,bec.webapi,False,2017-05-02T23:41:00.993-07:00,False,False,,"bec,.net,webapi,framework",2906,False,1.0.14
+alfredking12,2017-03-25T06:27:32.257Z,352,391,bec .net webapi framework,bec.webapi,False,2017-05-02T23:41:00.993-07:00,False,False,,"bec,.net,webapi,framework",2906,False,1.0.13
+Beer4Social.Services,2017-04-10T01:53:43.083Z,375,375,Beer4Social.Services,Beer4Social.Services,False,2017-04-09T19:19:57.307-07:00,True,False,,,683,False,1.0.4
+alfredking12,2017-04-10T01:53:40.613Z,352,375,bec .net webapi framework,bec.webapi,False,2017-05-02T23:41:00.993-07:00,True,False,,"bec,.net,webapi,framework",2906,False,1.0.19
+Digitalkraft,2017-04-10T01:31:51.997Z,172,375,Non-nullable strings for .NET,DK.LanguageExtensions,False,2017-10-30T08:25:11.69+00:00,True,False,,Digitalkraft,8227,False,1.0.0.1
+Simon Lu,2017-04-10T01:16:36.317Z,197,375,Transaction awareness AOP for NHibernate.,CompileTimeAOP.TransactionAwareness,False,2017-10-05T05:21:20.367+00:00,True,False,"
+      AOP to allow programmers to develop Transaction Aware classes in Transaction Awareness programming model for NHibernate. TransactionAware AOP is implemented at compile time with CompileTimeWeaver.Fody.
+    ","AOP,Transaction,Awareness,Compile,Time,ILWeaving",1931,False,3.4.1
+Simon Lu,2017-04-10T01:16:36.317Z,197,375,Transaction awareness AOP for NHibernate.,CompileTimeAOP.TransactionAwareness,False,2017-10-05T05:21:20.367+00:00,True,False,"
+      AOP to allow programmers to develop Transaction Aware classes in Transaction Awareness programming model for NHibernate. TransactionAware AOP is implemented at compile time with CompileTimeWeaver.Fody.
+    ","AOP,Transaction,Awareness,Compile,Time,ILWeaving",1931,False,3.4.1
+Stackery,2017-04-10T01:15:02.483Z,106,375,Package Description,Stackery,False,2018-01-04T20:06:46.86+00:00,True,False,,,4317,False,0.0.32
+"bleis-tift,Gab-km,pocketberserker,kekyo,yukitos",2017-04-10T01:14:01.2Z,143,375,Persimmon.MuscleAssert provide custom assertions for Persimmon.,Persimmon.MuscleAssert,False,2017-11-28T21:29:46.45+00:00,True,False,,"F#,fsharp,testing",1103,False,1.0.1
+"Ademar Gonzalez,Henrik Feldt",2017-04-10T01:07:33.197Z,111,375,Suave is a simple web development F# library providing a lightweight web server and a set of combinators to manipulate route flow and task composition.,Suave.Testing,False,2017-12-30T19:10:55.643+00:00,True,False,,,30429,False,2.1.0
+"Ademar Gonzalez,Henrik Feldt",2017-04-10T01:08:00.717Z,111,375,Suave is a simple web development F# library providing a lightweight web server and a set of combinators to manipulate route flow and task composition.,Suave.Xsp,False,2017-12-30T19:11:18.8+00:00,True,False,,,6991,False,2.1.0
+LouisTakePILLz,2017-04-10T01:06:38.243Z,375,375,A rich and elegant library for parameter-parsing that supports various syntaxes and flavors.,ArgumentParser,False,2017-04-09T18:06:38.243-07:00,True,False,,"argumentparser,argument,parameter,parser,parsing,library,cmd,commandline,command,line,option,POSIX,shell,syntax",2100,False,0.7.0
+Do-Be's,2017-04-10T01:06:03.11Z,375,375,"Ready to Xamarin & .NET Core, Basic Library Assy.",Xb,False,2017-04-09T18:06:03.11-07:00,True,False,"Ready to Xamarin & .NET Core, Basic Library Assy.",,881,False,1.0.7
+"Ademar Gonzalez,Henrik Feldt",2017-04-10T01:05:52.34Z,111,375,Suave is a simple web development F# library providing a lightweight web server and a set of combinators to manipulate route flow and task composition.,Suave.LibUv,False,2017-12-30T19:09:43.07+00:00,True,False,,,5103,False,2.1.0
+"Ademar Gonzalez,Henrik Feldt",2017-04-10T01:06:58.7Z,111,375,Suave is a simple web development F# library providing a lightweight web server and a set of combinators to manipulate route flow and task composition.,Suave.Razor,False,2017-12-30T19:10:34.063+00:00,True,False,,,8674,False,2.1.0
+"Ademar Gonzalez,Henrik Feldt",2017-04-10T01:06:28.677Z,111,375,Suave is a simple web development F# library providing a lightweight web server and a set of combinators to manipulate route flow and task composition.,Suave.OpenSSL,False,2017-12-30T19:10:09.407+00:00,True,False,,,8858,False,2.1.0
+"Ademar Gonzalez,Henrik Feldt",2017-04-10T01:05:23.503Z,111,375,Suave is a simple web development F# library providing a lightweight web server and a set of combinators to manipulate route flow and task composition.,Suave.Experimental,False,2017-12-30T19:09:16.147+00:00,True,False,,,11344,False,2.1.0
+Do-Be's,2017-04-10T01:05:21.05Z,75,375,"Xamarin & .NET Core Ready, SMB/CIFS(Windows shared folder) Access Library.
+This is a port of SharpCifs to .NET Standard.
+You can access the Windows shared folder, NAS by Xamarin & .NET Core.(= without mpr.dll, Netapi32.dll)  
+It's a little rework of SharpCifs, and The origin is JCIFS.",SharpCifs.Std,True,2018-02-04T12:27:19.133+00:00,True,False,"Xamarin & .NET Core Ready, SMB/CIFS(Windows shared folder) Access Library.
+This is a port of SharpCifs to .NET Standard.","SMB,CIFS,samba,NAS,shared,smbclient",6623,False,0.1.8-beta1
+wxf,2017-04-10T01:04:56.62Z,364,375,Modefy by wuxf .Add methods lines checked,Wintellect.Analyzers.WXF,False,2017-04-20T19:16:56.017-07:00,True,False,,"Roslyn,analyzers,Wintellect",1014,False,1.0.7.1
+"Ademar Gonzalez,Henrik Feldt",2017-04-10T01:04:48.807Z,111,375,Suave is a simple web development F# library providing a lightweight web server and a set of combinators to manipulate route flow and task composition.,Suave.DotLiquid,False,2017-12-30T19:08:52.347+00:00,True,False,,,23579,False,2.1.0
+"Ademar Gonzalez,Henrik Feldt",2017-04-10T01:04:17.533Z,111,375,Suave is a simple web development F# library providing a lightweight web server and a set of combinators to manipulate route flow and task composition.,Suave,False,2017-12-30T19:08:22.903+00:00,True,False,,,175983,False,2.1.0
+Stackery,2017-04-10T01:02:33.443Z,106,375,Package Description,Stackery,False,2018-01-04T20:06:46.86+00:00,True,False,,,4317,False,0.0.31
+scrapetimelambda,2017-04-10T01:01:32.893Z,367,375,Package Description,scrapetimelambda,True,2017-04-17T17:26:05.723-07:00,True,False,,,1774,False,1.0.1-ci-49
+Joel Christner,2017-04-10T00:57:09.193Z,25,375,Simple async C# web server for handling REST requests.,Watson,False,2018-03-26T23:24:16.97+00:00,True,False,Simple async C# web server for handling REST requests.,"web,server,rest,restful,http,https,async",3051,False,1.1.4
+Stackery,2017-04-10T00:41:57.16Z,106,375,Package Description,Stackery,False,2018-01-04T20:06:46.86+00:00,True,False,,,4317,False,0.0.30
+Beer4Social.Services,2017-04-10T00:33:33.283Z,375,375,Beer4Social.Services,Beer4Social.Services,False,2017-04-09T19:19:57.307-07:00,True,False,,,683,False,1.0.3
+Charles Solar,2017-04-10T00:27:13.25Z,43209,375,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains entities for DDD such as aggregates, entities, repository, value object, etc",Aggregates.NET.Domain,True,1900-01-01T00:00:00+00:00,False,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",-1,False,0.5.0.57-beta
+Charles Solar,2017-04-10T00:26:59.15Z,8,375,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains useful classes for business use such as Enumeration and Specifications",Aggregates.NET,True,2018-04-12T23:31:46.977+00:00,True,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",111255,False,0.5.0.57-beta
+Charles Solar,2017-04-10T00:27:31.46Z,43209,375,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains objects for subscribing to events from the event store",Aggregates.NET.Consumer,True,1900-01-01T00:00:00+00:00,False,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",-1,False,0.5.0.57-beta
+Charles Solar,2017-04-10T00:27:45.933Z,43209,375,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains the GetEventStore specific implementation for the domain project",Aggregates.NET.GetEventStore,True,1900-01-01T00:00:00+00:00,False,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",-1,False,0.5.0.57-beta
+Jamie Pollock,2017-04-10T00:13:46.34Z,300,375,A backoffice plugin to add additional property editors for Umbraco Grid row & column settings,Our.Umbraco.GridSettings,False,2017-06-24T15:32:57.213-07:00,True,False,A backoffice plugin to add additional property editors for Umbraco Grid row & column settings,"umbraco,umbraco-grid",700,False,0.2.0
+iamcarbon,2017-04-10T00:13:10.403Z,81,375,Primitives for operating a multicloud service.,Carbon.Platform,False,2018-01-29T22:13:59.2+00:00,True,False,,"platform,carbon",20261,False,1.20.4
+iamcarbon,2017-04-10T00:12:50.613Z,81,375,Data access abstractions for operating a multicloud service.,Carbon.Platform.Services,False,2018-01-29T21:46:50.48+00:00,True,False,,"platform,carbon",19501,False,0.29.4
+Antarr Byrd,2017-04-09T23:58:18.623Z,315,376,Wrapper around the Withings Health Data api.,Withings.NET,False,2017-06-09T15:04:30.677-07:00,True,False,Withings.NET,"Withings,OAuth",1144,False,3.0.2
+Antarr Byrd,2017-04-09T23:58:18.623Z,315,376,Wrapper around the Withings Health Data api.,Withings.NET,False,2017-06-09T15:04:30.677-07:00,True,False,Withings.NET,"Withings,OAuth",1144,False,3.0.2
+Antarr Byrd,2017-04-09T23:58:18.623Z,315,376,Wrapper around the Withings Health Data api.,Withings.NET,False,2017-06-09T15:04:30.677-07:00,True,False,Withings.NET,"Withings,OAuth",1144,False,3.0.2
+rpgmaker,2017-04-09T23:50:53.69Z,376,376,IL Weaver Framework,RAspect,False,2017-04-09T16:50:53.69-07:00,True,False,,"ILWeaving,AOP,Cecil,Weaver",124,False,1.0.0
+"Nicholas Fleck,Andrew Rogers",2017-04-09T23:25:47.517Z,150,376,"Rant is a free, all-purpose procedural text generation language developed for .NET. It has been refined over several years of development to include a dizzying array of features designed to handle everything from the most rudimentary of string generation tasks to dynamic game dialogue generation, code templating, automatic formatting, poetry, and much more.",Rant,True,2017-11-21T20:04:23.8+00:00,True,False,"Flexible, powerful procedural text engine","rant,procedural,text,generation,scripting,language,.net,C#",43346,False,3.0.483-dev
+"David Sehnal,Matt Campbell",2017-04-09T23:16:34.597Z,182,376,"This project is a convex hull algorithm and library for 2D,  3D, and higher dimensions. The code can also be used to compute Delaunay triangulations and Voronoi meshes of the input data. The benchmarks indicate that the convex hull code and 4 and higher dimensional triangulation code is on par or better than the solution provided by the C++ library CGAL.
+The code is written in C# 4.0 and provides a template based API that allows extensive customization of the underlying types that represents vertices and faces of the convex hull. The algorithm itself is technically an implementation of the QuickHull algorithm. Nevertheless, it's not just a simple port of QHull as a different approach and data structures are used in the MIConvexHull algorithm.",MIConvexHull,False,2017-10-20T04:50:49.04+00:00,True,False,"This project is a convex hull algorithm and library for 2D, 3D, and higher dimensions. The code can also be used to compute Delaunay triangulations and Voronoi meshes of the input data.","math,geometry,convex,hull,portable,class,library",20888,False,1.1.17.409
+CYINT Technologies,2017-04-09T23:12:23.54Z,376,376,.NET Framework network services library,NETWorkService,False,2017-04-09T16:12:23.54-07:00,True,False,,".NET,Network,API",229,False,1.0.1
+,,-1,-1,,Raven.Client,,,,True,,,,,4.0.0-alpha-40012
+Aaron Lord,2017-04-09T23:09:10.4Z,376,376,"Multipurpose universal utilities library so you don't have to write your own utils for every project. Includes extensions, encapsulation of logging and encryption, basic datareader-to-POCO mapping, a mailer throttle, and strongly-typed API callers.",Devlord.Utilities,False,2017-04-09T16:09:10.4-07:00,True,False,Utilities class library so you don't have to rewrite your utilities on every project.,"utils,utilities,email,distance-matrix,micro-orm,logging,encryption",623,False,5.0.123
+CYINT Technologies,2017-04-09T23:07:01.617Z,376,376,.NET Framework network services library,NETWorkService,False,2017-04-09T16:12:23.54-07:00,True,False,,".NET,Network,API",229,False,1.0.0
+ghk,2017-04-09T23:05:17.387Z,374,376,Package Description,ghk,False,2017-04-10T23:43:15.54-07:00,True,False,,,676,False,1.0.0
+Peter Varga,2017-04-09T23:02:01.603Z,141,376,ClubArcada.Common,ClubArcada.Common,False,2017-11-30T01:33:05.79+00:00,True,False,,ClubArcada.Common,19478,False,3.0.41
+iamcarbon,2017-04-09T23:00:42.56Z,81,376,Primitives for operating a multicloud service.,Carbon.Platform,False,2018-01-29T22:13:59.2+00:00,True,False,,"platform,carbon",20261,False,1.20.3
+iamcarbon,2017-04-09T23:01:02.163Z,81,376,Data access abstractions for operating a multicloud service.,Carbon.Platform.Services,False,2018-01-29T21:46:50.48+00:00,True,False,,"platform,carbon",19501,False,0.29.3
+Diego Ponce de Leon,2017-04-09T22:51:14.483Z,361,376,Simple cross platform internationalization/translations for Xamarin and Windows apps,I18NPortable,False,2017-04-24T07:22:56.48-07:00,True,False,,"I18N,Internationalization,Translations,Xamarin,Xamarin.Forms,Mvvm,Xamarin.iOS,Xamarin.Android,iOS,Android,UWP,Windows,Universal",11681,False,0.5.0
+Diego Ponce de Leon,2017-04-09T22:51:14.483Z,361,376,Simple cross platform internationalization/translations for Xamarin and Windows apps,I18NPortable,False,2017-04-24T07:22:56.48-07:00,True,False,,"I18N,Internationalization,Translations,Xamarin,Xamarin.Forms,Mvvm,Xamarin.iOS,Xamarin.Android,iOS,Android,UWP,Windows,Universal",11681,False,0.5.0
+TIKSN,2017-04-09T22:08:21.133Z,14,376,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,False,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration",41055,False,1.6.42-pre
+TIKSN,2017-04-07T22:27:40.967Z,14,378,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,False,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration",41055,False,1.6.34-pre
+TIKSN,2017-04-09T05:39:38Z,14,376,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,False,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration",41055,False,1.6.37-pre
+TIKSN,2017-04-07T22:41:23.98Z,14,378,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,False,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration",41055,False,1.6.35-pre
+TIKSN,2017-03-08T20:19:07.9Z,14,408,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,False,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration",41055,False,1.6.32-pre
+TIKSN,2017-04-09T06:01:01.707Z,14,376,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,False,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration",41055,False,1.6.38-pre
+TIKSN,2017-04-09T20:43:52.707Z,14,376,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,False,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration",41055,False,1.6.40-pre
+TIKSN,2017-04-07T22:47:05.583Z,14,378,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,False,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration",41055,False,1.6.36-pre
+TIKSN,2017-04-09T06:09:04.24Z,14,376,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,False,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration",41055,False,1.6.39-pre
+TIKSN,2017-04-07T22:13:43.173Z,14,378,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,False,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration",41055,False,1.6.33-pre
+TIKSN,2017-04-09T21:46:16.067Z,14,376,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,False,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration",41055,False,1.6.41-pre
+TIKSN,2017-04-09T22:44:33.24Z,14,376,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,True,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration",41055,False,1.6.43-pre
+dk-xamarin,2017-04-09T22:41:41.61Z,369,376,DK: android platform specific code,DK.Android,False,2017-04-16T06:22:52.547+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51079,False,3.0.0.1
+Simon Lu,2017-04-09T22:35:07.467Z,353,376,Compile time IL weaver for AOP implementation.,CompileTimeWeaver.Fody,False,2017-05-01T18:16:45.597-07:00,True,False,"
+      A tool for VS.Net to weave IL for AOP implementation at compile time. The generated code is much faster than AOP with dynamic proxy.
+      This tool can gracefully weave async methods asyn way without blocking (No call to Task.Wait and Task.Result in implementation).
+      See instruction at https://brooksidebeauty.blogspot.com/2017/02/compiletimeweaverfody.html.
+    ","AOP,Advice,Aspect,IL,Weaving,Compile,Time,Fody,Cecil",1960,False,2.1.1
+Simon Lu,2017-04-09T22:35:07.467Z,353,376,Compile time IL weaver for AOP implementation.,CompileTimeWeaver.Fody,False,2017-05-01T18:16:45.597-07:00,True,False,"
+      A tool for VS.Net to weave IL for AOP implementation at compile time. The generated code is much faster than AOP with dynamic proxy.
+      This tool can gracefully weave async methods asyn way without blocking (No call to Task.Wait and Task.Result in implementation).
+      See instruction at https://brooksidebeauty.blogspot.com/2017/02/compiletimeweaverfody.html.
+    ","AOP,Advice,Aspect,IL,Weaving,Compile,Time,Fody,Cecil",1960,False,2.1.1
+akarnokd,2017-04-09T22:35:53.81Z,219,376,ReactiveX style Reactive-Streams compliant library for composing synchronous and asynchronous sequences.,Reactive4.NET,False,2017-09-13T14:38:22.717+00:00,True,False,"Modern, 4th generation, Reactive-Streams compliant fluent reactive library based on RxJava 2.x Flowable API.","reactive,reactive-streams,rxjava",1952,False,0.2.0
+dk-xamarin,2017-04-09T22:35:04.937Z,369,376,DK: android platform specific code,DK.Android,False,2017-04-16T06:22:52.547+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51079,False,0.0.0
+DK,2017-04-09T22:33:52.177Z,193,376,Common helper and extension classes for .NET 4.6.1 projects,DK.Controls,False,2017-10-09T23:19:55.443+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",58042,False,3.0.0
+DK,2017-04-09T22:27:07.66Z,362,376,Common helper and extension classes for .NET Standard projects,DK.Portable,False,2017-04-23T16:25:35.32+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51803,False,3.0.0
+DK,2017-04-09T22:26:43.67Z,51,376,"Fork of SQLite.Net-PCL. It supports 64 bit unsigned integers (ulong) stored as blob's, and contains many performance optimizations.",DK.SQLite,False,2018-02-28T22:21:53.7+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",61697,False,3.0.0
+iamcarbon,2017-04-09T22:22:26.873Z,81,376,Data access abstractions for operating a multicloud service.,Carbon.Platform.Services,False,2018-01-29T21:46:50.48+00:00,True,False,,"platform,carbon",19501,False,0.29.2
+iamcarbon,2017-04-09T22:23:18.633Z,81,376,Primitives for operating a multicloud service.,Carbon.Platform,False,2018-01-29T22:13:59.2+00:00,True,False,,"platform,carbon",20261,False,1.20.2
+iamcarbon,2017-04-09T22:22:58.813Z,91,376,Platform abstractions.,Carbon.Platform.Abstractions,False,2018-01-19T18:16:40.453+00:00,True,False,,"platform,carbon",9266,False,1.2.2
+Microsoft,2017-04-09T22:18:10.263Z,139,376,"The RESTier EntityFramework Provider contains classes to access data sources exposed with Entity Framework library.
+This package contains original RESTier Entity Framework Core provider from Microsoft retargeted for .NET Standard 1.1",Microsoft.Restier.Providers.EntityFrameworkCore,False,2017-12-02T03:00:00.96+00:00,True,False,,"Restier,EntityFramework,OData",1297,False,1.0.7
+Simon Lu,2017-04-09T22:19:31.2Z,353,376,Compile time IL weaver for AOP implementation.,CompileTimeWeaver.Fody,False,2017-05-01T18:16:45.597-07:00,True,False,"
+      A tool for VS.Net to weave IL for AOP implementation at compile time. The generated code is much faster than AOP with dynamic proxy.
+      This tool can gracefully weave async methods asyn way without blocking (No call to Task.Wait and Task.Result in implementation).
+      See instruction at https://brooksidebeauty.blogspot.com/2017/02/compiletimeweaverfody.html.
+    ","AOP,Advice,Aspect,IL,Weaving,Compile,Time,Fody,Cecil",1960,False,2.1.0
+Microsoft,2017-04-09T22:17:22.883Z,139,376,"The RESTier Core contains framework classes like API-related logic, query inspector/filter/expander/sourcer/executor, convention-based logic like model builder.
+Part of a framework for authoring rich api data and logic over a data source proxy.
+Retargeted for .NET Standard 1.1",WinInsider.Microsoft.Restier.Core,False,2017-12-02T02:58:54.257+00:00,True,False,,"Restier,EntityFramework,OData",1443,False,1.0.7
+Simon Lu,2017-04-09T22:19:31.2Z,353,376,Compile time IL weaver for AOP implementation.,CompileTimeWeaver.Fody,False,2017-05-01T18:16:45.597-07:00,True,False,"
+      A tool for VS.Net to weave IL for AOP implementation at compile time. The generated code is much faster than AOP with dynamic proxy.
+      This tool can gracefully weave async methods asyn way without blocking (No call to Task.Wait and Task.Result in implementation).
+      See instruction at https://brooksidebeauty.blogspot.com/2017/02/compiletimeweaverfody.html.
+    ","AOP,Advice,Aspect,IL,Weaving,Compile,Time,Fody,Cecil",1960,False,2.1.0
+Microsoft,2017-04-09T22:18:10.263Z,139,376,"The RESTier EntityFramework Provider contains classes to access data sources exposed with Entity Framework library.
+This package contains original RESTier Entity Framework Core provider from Microsoft retargeted for .NET Standard 1.1",Microsoft.Restier.Providers.EntityFrameworkCore,False,2017-12-02T03:00:00.96+00:00,True,False,,"Restier,EntityFramework,OData",1297,False,1.0.7
+Robert Peele,2017-04-09T22:18:50.48Z,375,376,Automatic 9th grader -- CAS at compile time for dead-simple business formulas,Auto9G,False,2017-04-09T21:12:05.66-07:00,True,False,,"fsharp,typeprovider,cas,formula",222,False,0.0.1
+Microsoft,2017-04-09T22:17:22.883Z,139,376,"The RESTier Core contains framework classes like API-related logic, query inspector/filter/expander/sourcer/executor, convention-based logic like model builder.
+Part of a framework for authoring rich api data and logic over a data source proxy.
+Retargeted for .NET Standard 1.1",WinInsider.Microsoft.Restier.Core,False,2017-12-02T02:58:54.257+00:00,True,False,,"Restier,EntityFramework,OData",1443,False,1.0.7
+Alexander Schunk and Contributors,2017-04-09T22:16:23.8Z,43209,376,.NET library that handles SSO and common Eve Online API calls,EveOnlineApi.NET,True,1900-01-01T00:00:00+00:00,False,False,.NET library that handles SSO and common Eve Online API calls,"Eve,Online,SSO,Cauldron",-1,False,1.2.0-beta
+Diego Ponce de Leon,2017-04-09T22:11:12.377Z,361,376,Simple cross platform internationalization/translations for Xamarin and Windows apps,I18NPortable,True,2017-04-24T07:22:56.48-07:00,True,False,,"I18N,Internationalization,Translations,Xamarin,Xamarin.Forms,Mvvm,Xamarin.iOS,Xamarin.Android,iOS,Android,UWP,Windows,Universal",11681,False,0.5.0-beta
+Capgemini Deutschland GmbH,2017-04-09T22:15:40.83Z,3,376,"Fody add-in that provides method, property and field interception.",Cauldron.Interception.Fody,True,2018-04-17T01:20:47.36+00:00,True,False,"Fody add-in that provides method, property and field interception. (Open Source)","Toolkit,Capgemini,Cauldron,Interception,interceptor,interception,AOP,Fody,Cecil,CIL,ILWeaving",5289,False,1.2.0-beta
+Capgemini Deutschland GmbH,2017-04-09T22:15:28.73Z,43209,376,Validation Framework for Cauldron.XAML,Capgemini.Cauldron.XAML.Validation,True,1900-01-01T00:00:00+00:00,False,False,(beta)  Validation Framework for Cauldron.XAML (Open Source),"Toolkit,Capgemini,Cauldron,XAML,WPF,Validation,MVVM",-1,False,1.2.0-beta
+Capgemini Deutschland GmbH,2017-04-09T22:15:18.4Z,43209,376,Behaviours and Action for Cauldron.XAML,Capgemini.Cauldron.XAML.Interactivity,True,1900-01-01T00:00:00+00:00,False,False,(beta) Behaviours and Action for Cauldron.XAML (Open Source),"Toolkit,Capgemini,Cauldron,XAML,WPF,Behaviours,Actions,MVVM",-1,False,1.2.0-beta
+Capgemini Deutschland GmbH,2017-04-09T22:14:53.34Z,14,376,A simple localization implementation that can work with different sources.,Capgemini.Cauldron.Localization,True,2018-04-06T11:10:20.523+00:00,True,False,A simple localization implementation that can work with different sources (Open Source),"Toolkit,Capgemini,Cauldron,Multisource,Localization,Language",4912,False,1.2.0-beta
+Capgemini Deutschland GmbH,2017-04-09T22:14:39.743Z,14,376,"Contains typical implementations for AES, RSA and RSA-AES encryptions. It also contains extensions that helps working with SecureString.",Capgemini.Cauldron.Cryptography,True,2018-04-06T11:10:01.99+00:00,True,False,"Implementation for AES, RSA and AES-RSA encryptions  (Open Source)","Toolkit,Capgemini,Crypto,Encryption,Cryptography,AES,RSA",4899,False,1.2.0-beta
+Capgemini Deutschland GmbH,2017-04-09T22:14:04.493Z,14,376,The activator is a simple and extensible dependency injection framework. It is based on attributes and does not require any configuration files for configuration. It also supports using static methods as component constructor.,Capgemini.Cauldron.Activator,True,2018-04-06T11:03:27.833+00:00,True,False,Simple Extensible Dependency Injection Framework (Open Source),"Toolkit,Capgemini,Activator,Dependency,Injection,Factory,Cauldron",5019,False,1.2.0-beta
+Capgemini Deutschland GmbH,2017-04-09T22:14:29.363Z,14,376,Cauldron Core is the core toolkit assembly that the Cauldron Toolkit builds upon,Capgemini.Cauldron.Core,True,2018-04-06T11:04:10.63+00:00,True,False,Cauldron Core is the core toolkit assembly that the Cauldron Toolkit builds upon  (Open Source),"Toolkit,Capgemini,Cauldron,Core,AOP,Fody,interceptor,interception",5013,False,1.2.0-beta
+Capgemini Deutschland GmbH,2017-04-09T22:15:04.627Z,43209,376,A Simple MVVM framework based on Cauldron.Core,Capgemini.Cauldron.XAML,True,1900-01-01T00:00:00+00:00,False,False,(beta) A Simple MVVM framework based on Cauldron.Core (Open Source),"Toolkit,Capgemini,Cauldron,XAML,WPF,MVVM,Framework,ViewModels",-1,False,1.2.0-beta
+Capgemini Deutschland GmbH,2017-04-09T22:14:14.717Z,14,376,Cauldron.Consoles is a Cauldron.Core based parameter parser which supports grouping of parameters in execution groups. It is also supports localization and has a nice parameter table :),Capgemini.Cauldron.Consoles,True,2018-04-06T11:03:48.147+00:00,True,False,A simple parameter parser for console applications. (Open Source),"Toolkit,Capgemini,Console,Parameter,Parsing,Argument,Arguments,Parameters,Cauldron,Command,CommandLine,Args",4821,False,1.2.0-beta
+Diego Ponce de Leon,2017-04-09T22:11:12.377Z,361,376,Simple cross platform internationalization/translations for Xamarin and Windows apps,I18NPortable,True,2017-04-24T07:22:56.48-07:00,True,False,,"I18N,Internationalization,Translations,Xamarin,Xamarin.Forms,Mvvm,Xamarin.iOS,Xamarin.Android,iOS,Android,UWP,Windows,Universal",11681,False,0.5.0-beta
+TIKSN,2017-04-09T22:08:21.133Z,14,376,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,True,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration",41055,False,1.6.42-pre
+dkackman,2017-04-09T22:06:45.617Z,373,376,A library to allow faking of client http logic with System.Net.Http. Supports recording and playback of responses. Particularly useful for separating client-side unit tests from web services.,Dkackman.FakeHttp,False,2017-04-11T18:25:33.68-07:00,True,False,,"fake,http,REST,mock,stub,unit,test,testing,.net",1598,False,2.0.0
+Dimitar Dobrev,2017-04-09T22:00:09.247Z,75,376,"CppSharp is a tool and set of libraries which allows programmers to use C/C++ libraries with high-level programming languages (such as C#).
+
+It is a tool that takes C/C++ header and library files and generates the necessary glue to surface the native API as a managed API. Such an API can be used to consume an existing native library in your high-level code or add scripting support to a native codebase.
+
+The supported target languages at present are C# and C++/CLI.
+
+It can also be used as a library to parse native code into a syntax tree with a rich declaration and type information model.
+
+The NuGet version is Windows 64-bit only for the time being. Binary 32-bit releases for Windows can be found at https://github.com/mono/CppSharp/releases .",CppSharp,False,2018-02-04T15:09:41.647+00:00,True,False,CppSharp is a collection of libraries for working with C++ code from high-level languages.,,10853,False,0.8.8
+TIKSN,2017-04-09T21:46:16.067Z,14,376,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,True,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration",41055,False,1.6.41-pre
+iamcarbon,2017-04-09T21:43:10.367Z,91,376,Platform abstractions.,Carbon.Platform.Abstractions,False,2018-01-19T18:16:40.453+00:00,True,False,,"platform,carbon",9266,False,1.2.1
+iamcarbon,2017-04-09T21:43:31.807Z,81,376,Data access abstractions for operating a multicloud service.,Carbon.Platform.Services,False,2018-01-29T21:46:50.48+00:00,True,False,,"platform,carbon",19501,False,0.29.1
+iamcarbon,2017-04-09T21:42:50.893Z,81,376,Primitives for operating a multicloud service.,Carbon.Platform,False,2018-01-29T22:13:59.2+00:00,True,False,,"platform,carbon",20261,False,1.20.1
+Amit Ozalvo,2017-04-09T21:15:31.197Z,43209,376,Photon server implementation without being dependent on photon,PhotonServerImplementation,False,1900-01-01T00:00:00+00:00,False,False,,"Photon,Server,PhotonServer",2500,False,1.3.4
+"Ross McKinlay,Colin Bull",2017-04-09T21:10:35.423Z,4,376,Type providers for SQL database access.,SQLProvider,False,2018-04-16T19:20:53.603+00:00,True,False,Type providers for SQL database access.,"F#,fsharp,typeprovider,sql,sqlserver",47463,False,1.0.52
+"Luppes Consulting,Inc.",2017-04-09T21:02:38.84Z,165,376,"If you have an existing SQL Server table, use this program to whip up a batch of MVC5 goodness in seconds - models, controllers, views (both desktop and mobile versions) and REST API's by simply pointing this app to that table.
+      Visit the Project Website for a quick demo/tutorial.",LCI.FoodTruck.MVC5,False,2017-11-06T12:32:40.923+00:00,True,False,"Use this tasty program to whip up a batch of MVC5 goodness - models, controllers, views (desktop and mobile) and REST API's from an existing SQL Table.","MVC,MVC5,code,generator,mobile,web",11643,False,1.0.68
+CapableObjects,2017-04-09T21:00:24.273Z,2,376,Descr,EcoWindowsStore,False,2018-04-18T02:42:38.66+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",141694,False,7.0.0.9203
+CapableObjects,2017-04-09T21:00:11.223Z,2,376,Descr,EcoWebMVC,False,2018-04-18T02:42:21.33+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",116749,False,7.0.0.9203
+CapableObjects,2017-04-09T20:59:56.72Z,2,376,Descr,EcoWebProviders,False,2018-04-18T02:39:04.713+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",116695,False,7.0.0.9203
+CapableObjects,2017-04-09T20:59:42.247Z,2,376,Descr,EcoWebASP,False,2018-04-18T02:38:50.37+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",118270,False,7.0.0.9203
+CapableObjects,2017-04-09T20:59:27.38Z,2,376,Descr,EcoWindowsForms,False,2018-04-18T02:38:36.54+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",143192,False,7.0.0.9203
+CapableObjects,2017-04-09T20:59:13.393Z,2,376,Descr,EcoSqlServer,False,2018-04-18T02:38:20.023+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",145399,False,7.0.0.9203
+CapableObjects,2017-04-09T20:58:34.007Z,2,376,This contains the core assemblies - for different frameworks,EcoCore,False,2018-04-18T02:37:33.803+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",148109,False,7.0.0.9203
+CapableObjects,2017-04-09T20:58:47.653Z,2,376,Descr,EcoWpf,False,2018-04-18T02:37:48.523+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",144767,False,7.0.0.9203
+CapableObjects,2017-04-09T20:59:00.39Z,2,376,Descr,EcoOtherDatabasePersistenceMappers,False,2018-04-18T02:38:04.54+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",144087,False,7.0.0.9203
+Lasse V. Karlsen,2017-04-09T20:44:19.417Z,121,376,Class library that adds additional LINQ extension methods.,Linqy,False,2017-12-20T08:32:32.33+00:00,True,False,,,1209,False,2017.4.9.2244
+TIKSN,2017-04-09T20:43:52.707Z,14,376,"This is a .NET Framework enhancement framework. Main features are Versioning, Finance, Currency, Foreign Exchange, Money, Pricing strategy, Telemetry, Composite Weighted Progress, Repository and Unity of Wok pattern implementation with Entity Framework Core, Network Connectivity Service and Triggering, Settings, Windows Registry configuration source.",TIKSN-Framework,True,2018-04-06T22:47:35.373+00:00,True,False,,"Framework,Versioning,Finance,Currency,Money,Foreign,Exchange,Telemetry,Configuration",41055,False,1.6.40-pre
+Anthony Leatherwood,2017-04-09T20:42:12.647Z,4,376,A gathering place for things that identify as monads but are C# in orientation,LeagueOfMonads,False,2018-04-16T12:26:30.303+00:00,True,False,,"monad,rop,railway,oriented,league,monads",3895,False,0.9.0
+Hovik Aghajanyan,2017-04-09T20:26:43.387Z,262,376,Sql execution based on models,FastSql,False,2017-08-01T11:27:36.35+00:00,True,False,,"SQL,Stored,Procedure,query,execute",412,False,1.0.1
+Adrian Stevens,2017-04-09T20:35:05.173Z,7,376,"A light-weight and easy to use cross-platform audio player for Windows, Xamarin and Xamarin.Forms. Load wav and mp3 files from any location including a shared library. Works well for sound effects or application music. Multiple instances can be instantiated to play multiple sources simultaniously.",Xam.Plugin.SimpleAudioPlayer,True,2018-04-13T19:59:42.367+00:00,True,False,Cross-platform audio player for Xamarin and Windows,"audio,wav,wave,mp3,xamarin,pcl,portable,shared,xam.pcl,plugin,for,windows,phone,winphone,wp8,winrt,win81,uwp,uap,xamarin.android,android,xamarin.forms,xamarin.ios,ios",8009,False,0.8.0-beta
+"Nicholas Fleck,Andrew Rogers",2017-04-09T20:40:43.81Z,150,376,"Rant is a free, all-purpose procedural text generation language developed for .NET. It has been refined over several years of development to include a dizzying array of features designed to handle everything from the most rudimentary of string generation tasks to dynamic game dialogue generation, code templating, automatic formatting, poetry, and much more.",Rant,True,2017-11-21T20:04:23.8+00:00,True,False,"Flexible, powerful procedural text engine","rant,procedural,text,generation,scripting,language,.net,C#",43346,False,3.0.482-dev
+Robert Schiefer Jr.,2017-04-09T20:39:05.42Z,58,376,Adds clustered deployment to WebDeploy.,MSDeployAllTheThings.WebDeployPlus,False,2018-02-21T15:58:49.267+00:00,True,False,,"deploy,automation,msdeploy,webdeploy,web",817,False,1.1.9
+Robert Schiefer Jr.,2017-04-09T20:38:35.113Z,58,376,Deploys sql scripts to target databases MSDeploy,MSDeployAllTheThings.SqlDeploy,False,2018-02-21T15:58:17.19+00:00,True,False,,"deploy,automation,msdeploy,webdeploy,sql",1424,False,2.3.6
+Robert Schiefer Jr.,2017-04-09T20:37:57.68Z,58,376,Deploys application to target server using MSDeploy,MSDeployAllTheThings.AppDeploy,False,2018-02-21T15:56:27.683+00:00,True,False,,"deploy,automation,msdeploy,webdeploy,application,windows_service,scheduled_task",3315,False,1.2.8
+Robert Schiefer Jr.,2017-04-09T20:37:23.45Z,58,376,Shared components for MSDeploy-based deployment packages.,MSDeployAllTheThings.PublishingPipeline,False,2018-02-21T15:57:39.797+00:00,True,False,,,3413,False,1.1.5
+Adrian Stevens,2017-04-09T20:35:05.173Z,7,376,"A light-weight and easy to use cross-platform audio player for Windows, Xamarin and Xamarin.Forms. Load wav and mp3 files from any location including a shared library. Works well for sound effects or application music. Multiple instances can be instantiated to play multiple sources simultaniously.",Xam.Plugin.SimpleAudioPlayer,True,2018-04-13T19:59:42.367+00:00,True,False,Cross-platform audio player for Xamarin and Windows,"audio,wav,wave,mp3,xamarin,pcl,portable,shared,xam.pcl,plugin,for,windows,phone,winphone,wp8,winrt,win81,uwp,uap,xamarin.android,android,xamarin.forms,xamarin.ios,ios",8009,False,0.8.0-beta
+@jordimontana,2017-04-09T20:34:17.347Z,10,376,Utilities to streamline unit testing in Dynamics CRM 365 by faking the IOrganizationService against an In-Memory context which runs blazing fast.,FakeXrmEasy.365,False,2018-04-10T23:56:17.57+00:00,True,False,,"dynamics,crm,365,unit,testing,xrm,mock,mocking,fake,fakes",18563,False,1.26.0
+@jordimontana,2017-04-09T20:34:06.75Z,10,376,Utilities to streamline unit testing in Dynamics CRM 2016 by faking the IOrganizationService against an In-Memory context which runs blazingly fast.,FakeXrmEasy.2016,False,2018-04-10T23:56:03.147+00:00,True,False,,"dynamics,crm,2016,unit,testing,xrm,mock,mocking,fake,fakes",34183,False,1.26.0
+@jordimontana,2017-04-09T20:33:42.053Z,10,376,Utilities to streamline unit testing in Dynamics CRM 2013 by faking the IOrganizationService against an In-Memory context which runs blazingly fast.,FakeXrmEasy.2013,False,2018-04-10T23:55:26.91+00:00,True,False,,"dynamics,crm,2013,unit,testing,xrm,mock,mocking,fake,fakes",15496,False,1.26.0
+@jordimontana,2017-04-09T20:33:30.833Z,10,376,Utilities to streamline unit testing in Dynamics CRM 2011 by faking the IOrganizationService against an In-Memory context which runs blazingly fast.,FakeXrmEasy,False,2018-04-10T23:55:12.583+00:00,True,False,,"dynamics,crm,2011,unit,testing,xrm,mock,mocking,fake,fakes",17415,False,1.26.0
+@jordimontana,2017-04-09T20:33:55.073Z,10,376,Utilities to streamline unit testing in Dynamics CRM 2015 by faking the IOrganizationService against an In-Memory context which runs blazingly fast.,FakeXrmEasy.2015,False,2018-04-10T23:55:44.083+00:00,True,False,,"dynamics,crm,2015,unit,testing,xrm,mock,mocking,fake,fakes",24604,False,1.26.0
+andrevv,2017-04-09T20:32:16.277Z,367,376,Extensions for AutoFixture,AutoFixture.Extensions.Json,False,2017-04-18T11:48:54.127-07:00,True,False,,"AutoFixture,UnitTest,JSON",614,False,0.1.21
+andrevv,2017-04-09T20:32:05.273Z,367,376,Extensions for AutoFixture,AutoFixture.Extensions,False,2017-04-18T11:48:43.937-07:00,True,False,,"AutoFixture,UnitTest",943,False,0.1.21
+Iskandar Rafiev,2017-04-09T20:24:46.657Z,55,376,RavenDB user/role store management implementation for ASP.NET Core identity provider.,Maqduni.AspNetCore.Identity.RavenDb,False,2018-02-24T15:17:09.067+00:00,True,False,,"ravendb,aspnetcore,identity,membership,authentication",3249,False,1.3.32
+"Luppes Consulting,Inc.",2017-04-09T20:28:07.54Z,165,376,"If you have an existing SQL Server table, use this program to whip up a batch of MVC5 goodness in seconds - models, controllers, views (both desktop and mobile versions) and REST API's by simply pointing this app to that table.
+      Visit the Project Website for a quick demo/tutorial.",LCI.FoodTruck.MVC5,False,2017-11-06T12:32:40.923+00:00,True,False,"Use this tasty program to whip up a batch of MVC5 goodness - models, controllers, views (desktop and mobile) and REST API's from an existing SQL Table.","MVC,MVC5,code,generator,mobile,web",11643,False,1.0.67
+Hovik Aghajanyan,2017-04-09T20:26:43.387Z,262,376,Sql execution based on models,FastSql,False,2017-08-01T11:27:36.35+00:00,True,False,,"SQL,Stored,Procedure,query,execute",412,False,1.0.1
+UCASoft,2017-04-09T20:17:20.547Z,375,376,Dynamic Control for MVC,Dynamic.Controls,False,2017-04-10T03:57:11.64-07:00,True,False,,,580,False,1.0.2
+Iskandar Rafiev,2017-04-09T20:24:46.657Z,55,376,RavenDB user/role store management implementation for ASP.NET Core identity provider.,Maqduni.AspNetCore.Identity.RavenDb,False,2018-02-24T15:17:09.067+00:00,True,False,,"ravendb,aspnetcore,identity,membership,authentication",3249,False,1.3.32
+UCASoft,2017-04-09T20:14:48.913Z,375,376,Dynamic Control for MVC,Dynamic.Controls,False,2017-04-10T03:57:11.64-07:00,False,False,,,580,False,1.0.1
+Pavel Shumihai,2017-04-09T20:20:58.42Z,40,376,Library created to represent data from EPiServer dynamic data storage,EPi.Dds.Manager,True,2018-03-11T15:35:26.803+00:00,True,False,,"EPiServer,CMS",3770,False,0.1.0-alpha005
+UCASoft,2017-04-09T20:17:20.547Z,375,376,Dynamic Control for MVC,Dynamic.Controls,False,2017-04-10T03:57:11.64-07:00,True,False,,,580,False,1.0.2
+UCASoft,2017-04-09T20:14:48.913Z,375,376,Dynamic Control for MVC,Dynamic.Controls,False,2017-04-10T03:57:11.64-07:00,False,False,,,580,False,1.0.1
+UCASoft,2017-04-09T20:14:48.913Z,375,376,Dynamic Control for MVC,Dynamic.Controls,False,2017-04-10T03:57:11.64-07:00,False,False,,,580,False,1.0.1
+UCASoft,2017-04-09T20:17:20.547Z,375,376,Dynamic Control for MVC,Dynamic.Controls,False,2017-04-10T03:57:11.64-07:00,True,False,,,580,False,1.0.2
+Damian Hickey,2017-04-09T20:18:16.88Z,267,376,Fork of KatanaProject's Microsoft.Owin that targets NetStandard1.3 and merges in IAppBuilder from owin.dll. Does not contain the other middleware.,KatanaNetStandard,False,2017-07-27T11:00:45.197+00:00,True,False,,"owin,katana",1133,False,3.0.1
+UCASoft,2017-04-09T19:17:48.65Z,375,376,Dynamic Control for MVC,Dynamic.Controls,False,2017-04-10T03:57:11.64-07:00,False,False,,,580,False,1.0.0
+UCASoft,2017-04-09T20:14:48.913Z,375,376,Dynamic Control for MVC,Dynamic.Controls,False,2017-04-10T03:57:11.64-07:00,True,False,,,580,False,1.0.1
+Squared Infinity,2017-04-09T20:08:34.117Z,350,376,"Squared Infinity ▪ Graphics ▪ Drawing
+    
+Types:
+SquaredInfinity.Graphics.Drawing.IPixelCanvas
+SquaredInfinity.Graphics.Drawing.PixelArrayCanvas",SquaredInfinity.Graphics.Drawing,False,2017-05-05T10:32:50.057-07:00,True,False,,,659,False,2.0.2
+andyfmiller.com,2017-04-09T20:04:31.99Z,103,376,"ASP.NET Core library with IMS LTI support for Tool Consumer and Tool Provider applications. Supports IMS LTI 1.0, 1.1, 1.1.1 and 1.2; Outcomes 1.0; Outcomes 2.0 (Draft); and Content-Item Message 1.0.",LtiLibrary.AspNetCore,True,2018-01-07T16:54:14.763+00:00,True,False,,"IMS,LTI,.NET,Core,ASP.NET",2162,False,2.0.1-beta
+andyfmiller.com,2017-04-09T20:03:24.727Z,103,376,".NET Core library with IMS LTI support for Tool Consumer and Tool Provider applications. Supports IMS LTI 1.0, 1.1, 1.1.1 and 1.2; Outcomes 1.0; Outcomes 2.0 (Draft); and Content-Item Message 1.0.",LtiLibrary.NetCore,True,2018-01-07T16:16:35.41+00:00,True,False,,"IMS,LTI,.NET,Core",2622,False,2.0.1-beta
+Eran Gil,2017-04-09T20:02:52.167Z,43209,376,This package allows Autofac to integrate with the log4net logging framework. The main feature of the package is its Log4NetModule for Autofac.,Autofac.log4net,True,1900-01-01T00:00:00+00:00,False,False,,,3920,False,0.1.0.18-beta
+Squared Infinity,2017-04-09T20:00:31.327Z,321,376,Squared Infinity ▪ Extensions,SquaredInfinity.Extensions,False,2017-06-03T03:31:33.41-07:00,True,False,,,1306,False,2.0.2
+Eran Gil,2017-04-09T19:58:05.297Z,43209,376,This package allows Autofac to integrate with the log4net logging framework. The main feature of the package is its Log4NetModule for Autofac.,Autofac.log4net,True,1900-01-01T00:00:00+00:00,False,False,,,3920,False,0.1.0.17-beta
+Squared Infinity,2017-04-09T19:55:44.547Z,375,376,"Squared Infinity ▪ Maths ▪ Extensions
+    
+Extension Methods:
+System.Decimal
+System.Double
+System.Int32",SquaredInfinity.Maths.Extensions,False,2017-04-10T02:32:51.463-07:00,True,False,,,630,False,2.0.2
+Squared Infinity,2017-04-09T19:56:42.197Z,327,376,"Squared Infinity ▪ Maths
+    
+Types:
+SquaredInfintiy.Maths.Interval
+SquaredInfintiy.Maths.Line2D
+SquaredInfintiy.Maths.MathEx
+SquaredInfintiy.Maths.Point2D
+SquaredInfintiy.Maths.Point3D
+SquaredInfintiy.Maths.Rectangle
+SquaredInfintiy.Maths.Slope2D",SquaredInfinity.Maths,False,2017-05-28T10:44:37.1-07:00,True,False,,,1209,False,2.0.2
+Peter Varga,2017-04-09T19:53:08.557Z,141,376,ClubArcada.Common,ClubArcada.Common,False,2017-11-30T01:33:05.79+00:00,True,False,,ClubArcada.Common,19478,False,3.0.40
+Squared Infinity,2017-04-09T19:53:39.367Z,376,376,"Squared Infinity ▪ Primitives
+
+Types:
+SquaredInfinity.LogicalOrder
+SquaredInfinity.Direction
+SquaredInfinity.ForwardBackwardDirection",SquaredInfinity.Primitives,False,2017-04-09T12:53:39.367-07:00,True,False,,,1033,False,2.0.7
+DiffLib,2017-04-09T19:03:20.153Z,43209,376,"A Diff implementation for .NET Standard 1.0 and up, written in C#.",DiffLib,False,1900-01-01T00:00:00+00:00,False,False,,,18616,False,2017.4.9.2102
+DiffLib,2017-04-09T19:49:06.023Z,43209,376,"A Diff implementation for .NET Standard 1.0 and up, written in C#.",DiffLib,False,1900-01-01T00:00:00+00:00,False,False,,,18616,False,2017.4.9.2148
+Eran Gil,2017-04-09T19:48:55.237Z,43209,376,Enables a logging module for Autofac IoC containers,Autofac.log4net,True,1900-01-01T00:00:00+00:00,False,False,,,3920,False,0.1.0.16-beta
+Peter Varga,2017-04-09T19:45:55.887Z,141,376,ClubArcada.Common,ClubArcada.Common,False,2017-11-30T01:33:05.79+00:00,True,False,,ClubArcada.Common,19478,False,3.0.39
+Eran Gil,2017-04-09T19:44:49.167Z,43209,376,Enables a logging module for Autofac IoC containers,Autofac.log4net,True,1900-01-01T00:00:00+00:00,False,False,,,3920,False,0.1.0.15-beta
+DevExpress,2017-04-09T19:33:09.58Z,98,376,StatRush.Console,StatRush.Console,True,2018-01-12T14:20:06.46+00:00,True,False,,,66602,False,16.2.0.447-rc1
+DevExpress,2017-04-09T19:32:48.387Z,43209,376,StatRush,StatRush,True,1899-12-31T16:00:00-08:00,False,False,,,48898,False,16.2.0.447-rc1
+Peter Varga,2017-04-09T19:29:38.417Z,141,376,ClubArcada.Common,ClubArcada.Common,False,2017-11-30T01:33:05.79+00:00,True,False,,ClubArcada.Common,19478,False,3.0.38
+UCASoft,2017-04-09T19:24:54.873Z,376,376,Kendo additional for Dynamic Controls,Dynamic.Controls.Kendo,False,2017-04-09T12:24:54.873-07:00,True,False,,,167,False,1.0.0
+Hovik Aghajanyan,2017-04-09T18:54:24.657Z,262,376,Sql execution based on models,FastSql,False,2017-08-01T11:27:36.35+00:00,True,False,,"SQL,Stored,Procedure,query,execute",412,False,1.0.0
+UCASoft,2017-04-09T19:24:54.873Z,376,376,Kendo additional for Dynamic Controls,Dynamic.Controls.Kendo,False,2017-04-09T12:24:54.873-07:00,True,False,,,167,False,1.0.0
+iamcarbon,2017-04-09T19:21:50.587Z,81,376,Primitives for operating a multicloud service.,Carbon.Platform,False,2018-01-29T22:13:59.2+00:00,True,False,,"platform,carbon",20261,False,1.20.0
+iamcarbon,2017-04-09T19:21:10.69Z,78,376,Web rontend and web library implementations.,Carbon.Platform.Web,False,2018-02-01T21:08:11.66+00:00,True,False,,"frontends,libraries,carbon",4739,False,1.3.0
+iamcarbon,2017-04-09T19:21:31.1Z,91,376,Platform abstractions.,Carbon.Platform.Abstractions,False,2018-01-19T18:16:40.453+00:00,True,False,,"platform,carbon",9266,False,1.2.0
+iamcarbon,2017-04-09T19:20:52.623Z,81,376,Data access abstractions for operating a multicloud service.,Carbon.Platform.Services,False,2018-01-29T21:46:50.48+00:00,True,False,,"platform,carbon",19501,False,0.29.0
+UCASoft,2017-04-09T19:18:51.053Z,376,376,Bootstrap style for Dynamic Controls,Dynamic.Controls.Bootstrap,False,2017-04-09T12:18:51.053-07:00,True,False,,,147,False,1.0.0
+UCASoft,2017-04-09T19:17:48.65Z,375,376,Dynamic Control for MVC,Dynamic.Controls,False,2017-04-10T03:57:11.64-07:00,True,False,,,580,False,1.0.0
+UCASoft,2017-04-09T19:18:51.053Z,376,376,Bootstrap style for Dynamic Controls,Dynamic.Controls.Bootstrap,False,2017-04-09T12:18:51.053-07:00,True,False,,,147,False,1.0.0
+Abp.Zero.NHibernate,2017-04-09T19:17:10.58Z,39,376,Package Description,Abp.Zero.NHibernate,True,2018-03-12T13:55:19.68+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,multitenancy,user,management,role,identity,nhibernate,fluentmigrator",22077,False,2.0.0-preview4
+UCASoft,2017-04-09T19:17:48.65Z,375,376,Dynamic Control for MVC,Dynamic.Controls,False,2017-04-10T03:57:11.64-07:00,True,False,,,580,False,1.0.0
+Abp.ZeroCore.EntityFrameworkCore,2017-04-09T19:18:22.22Z,39,376,Package Description,Abp.ZeroCore.EntityFrameworkCore,True,2018-03-12T13:55:47.367+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,multitenancy,user,management,role,identity,entity,core",71628,False,2.0.0-preview4
+Abp.ZeroCore,2017-04-09T19:17:37.303Z,39,376,Package Description,Abp.ZeroCore,True,2018-03-12T13:55:34.257+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,multitenancy,user,management,role,identity",77992,False,2.0.0-preview4
+Hovik Aghajanyan,2017-04-09T18:54:24.657Z,262,376,Sql execution based on models,FastSql,False,2017-08-01T11:27:36.35+00:00,True,False,,"SQL,Stored,Procedure,query,execute",412,False,1.0.0
+Abp.Zero.EntityFramework,2017-04-09T19:16:09.63Z,39,376,Package Description,Abp.Zero.EntityFramework,True,2018-03-12T13:54:52.117+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,multitenancy,user,management,role,identity,entity",223388,False,2.0.0-preview4
+Abp.Zero.Owin,2017-04-09T19:15:32.167Z,39,376,Package Description,Abp.Zero.Owin,True,2018-03-12T13:54:24.443+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,multitenancy,user,management,role,identity,owin",40781,False,2.0.0-preview4
+Abp.Zero.AspNetCore,2017-04-09T19:15:54.25Z,39,376,Package Description,Abp.Zero.AspNetCore,True,2018-03-12T13:54:37.52+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,multitenancy,user,management,role,identity,aspnet,core",16331,False,2.0.0-preview4
+Abp.Zero.EntityFrameworkCore,2017-04-09T19:16:23.493Z,39,376,Package Description,Abp.Zero.EntityFrameworkCore,True,2018-03-12T13:55:05.32+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,multitenancy,user,management,role,identity,entity,core",6287,False,2.0.0-preview4
+Wm. Barrett Simms,2017-04-09T19:14:39.14Z,337,376,WordPress Rest API v2 PCL library,WmBarrettSimms.WordPressRestApi,False,2017-05-17T18:25:30.91-07:00,True,False,,"WordPress,API,REST,V2,PCL",1830,False,1.2.0
+Abp.Zero.Common,2017-04-09T19:14:37.61Z,39,376,Package Description,Abp.Zero.Common,True,2018-03-12T13:53:41.003+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,multitenancy,user,management,role,identity,aspnet,core",126889,False,2.0.0-preview4
+Abp.Zero,2017-04-09T19:15:11.913Z,39,376,Package Description,Abp.Zero,True,2018-03-12T13:54:10.46+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,multitenancy,user,management,role,identity",240089,False,2.0.0-preview4
+Abp.Zero.Ldap,2017-04-09T19:14:56.177Z,39,376,Package Description,Abp.Zero.Ldap,True,2018-03-12T13:53:56.02+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,multitenancy,user,management,role,identity,ldap,active,directory",99312,False,2.0.0-preview4
+DevExpress,2017-04-09T19:12:03.403Z,98,376,StatRush.Console,StatRush.Console,True,2018-01-12T14:20:06.46+00:00,True,False,,,66602,False,16.2.0.446-rc1
+DevExpress,2017-04-09T19:11:41.9Z,43209,376,StatRush,StatRush,True,1899-12-31T16:00:00-08:00,False,False,,,48898,False,16.2.0.446-rc1
+DiffLib,2017-04-09T19:03:20.153Z,43209,376,"A Diff implementation for .NET Standard 1.0 and up, written in C#.",DiffLib,False,1900-01-01T00:00:00+00:00,False,False,,,18616,False,2017.4.9.2102
+The Stanford Natural Language Processing Group,2017-04-09T18:57:24.807Z,48,376,"Tokenization of raw text is a standard pre-processing step for many NLP tasks. For English, tokenization usually involves punctuation splitting and separation of some affixes like possessives. Other languages require more extensive token pre-processing, which is usually called segmentation.",Stanford.NLP.Segmenter,False,2018-03-03T14:18:14.94+00:00,True,False,Stanford Word Segmenter,"nlp,stanford,segmenter,tokenization,splitting",5534,False,3.7.0.1
+The Stanford Natural Language Processing Group,2017-04-09T18:56:55.19Z,48,376,"""A Part-Of-Speech Tagger (POS Tagger) is a piece of software that reads text in some language and assigns parts of speech to each word (and other token), such as noun, verb, adjective, etc., although generally computational applications use more fine-grained POS tags like 'noun-plural'.",Stanford.NLP.POSTagger,False,2018-03-03T14:19:33.473+00:00,True,False,Stanford Log-linear Part-Of-Speech Tagger,"nlp,stanford,POS,tagger,Part-Of-Speech",18599,False,3.7.0.1
+AeonLucid,2017-04-09T18:56:02.68Z,226,376,Precompiled protobuf files for communication with PokemonGo.,POGOProtos.NetStandard1,False,2017-09-06T23:50:38.13+00:00,True,False,Precompiled protobuf files for communication with PokemonGo.,"Pokemon,POGOProtos,netstandard",11215,False,2.9.1
+The Stanford Natural Language Processing Group,2017-04-09T18:56:20.01Z,48,376,"A natural language parser is a program that works out the grammatical structure of sentences, for instance, which groups of words go together (as \""phrases\"") and which words are the subject or object of a verb. Probabilistic parsers use knowledge of language gained from hand-parsed sentences to try to produce the most likely analysis of new sentences.",Stanford.NLP.Parser,False,2018-03-03T14:20:23.71+00:00,True,False,Stanford Parser,"nlp,stanford,parser,POS,PCFG,Treebank",16898,False,3.7.0.1
+The Stanford Natural Language Processing Group,2017-04-09T18:55:42.503Z,48,376,"Stanford NER (also known as CRFClassifier) is a Java implementation of a Named Entity Recognizer. Named Entity Recognition (NER) labels sequences of words in a text which are the names of things, such as person and company names, or gene and protein names. The software provides a general (arbitrary order) implementation of linear chain Conditional Random Field (CRF) sequence models, coupled with well-engineered feature extractors for Named Entity Recognition.",Stanford.NLP.NER,False,2018-03-03T14:21:06.24+00:00,True,False,Stanford Named Entity Recognizer (NER),"nlp,stanford,NER,CRF",18330,False,3.7.0.1
+The Stanford Natural Language Processing Group,2017-04-09T18:54:56.913Z,48,376,"Stanford CoreNLP provides a set of natural language analysis tools which can take raw English language text input and give the base forms of words, their parts of speech, whether they are names of companies, people, etc., normalize dates, times, and numeric quantities, and mark up the structure of sentences in terms of phrases and word dependencies, and indicate which noun phrases refer to the same entities. Stanford CoreNLP is an integrated framework, which make it very easy to apply a bunch of language analysis tools to a piece of text. Starting from plain text, you can run all the tools on it with just two lines of code. Its analyses provide the foundational building blocks for higher-level and domain-specific text understanding applications.",Stanford.NLP.CoreNLP,False,2018-03-03T14:24:53.367+00:00,True,False,Stanford CoreNLP,"nlp,stanford,CoreNLP,POS,NER,CRS",78751,False,3.7.0.1
+Hovik Aghajanyan,2017-04-09T18:54:24.657Z,262,376,Sql execution based on models,FastSql,False,2017-08-01T11:27:36.35+00:00,True,False,,"SQL,Stored,Procedure,query,execute",412,False,1.0.0
+Abp.AspNetCore.TestBase,2017-04-09T18:50:31.283Z,39,376,Package Description,Abp.AspNetCore.TestBase,True,2018-03-12T13:53:14.283+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,core,integration,test,unit",18230,False,2.0.0-preview4
+Abp.TestBase,2017-04-09T18:50:16.53Z,39,376,Package Description,Abp.TestBase,True,2018-03-12T13:52:59.05+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,unit,testing",269031,False,2.0.0-preview4
+Abp.Castle.Log4Net,2017-04-09T18:49:42.803Z,39,376,Package Description,Abp.Castle.Log4Net,True,2018-03-12T13:52:43.127+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,log4net,castle",208165,False,2.0.0-preview4
+Abp.Web.Api.OData,2017-04-09T18:49:26.173Z,39,376,Package Description,Abp.Web.Api.OData,True,2018-03-12T13:52:26.55+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,api,odata",48411,False,2.0.0-preview4
+Abp.AspNetCore,2017-04-09T18:49:59.277Z,39,376,Package Description,Abp.AspNetCore,True,2018-03-12T13:46:18.66+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,core",103461,False,2.0.0-preview4
+Abp.Web.SignalR,2017-04-09T18:49:02.53Z,39,376,Package Description,Abp.Web.SignalR,True,2018-03-12T13:52:12.127+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,SignalR",185125,False,2.0.0-preview4
+Abp.Web.Mvc,2017-04-09T18:48:37.27Z,39,376,Package Description,Abp.Web.Mvc,True,2018-03-12T13:51:58.237+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design",285671,False,2.0.0-preview4
+Abp.Web.Api,2017-04-09T18:48:25.707Z,39,376,Package Description,Abp.Web.Api,True,2018-03-12T13:51:42.233+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,api",298813,False,2.0.0-preview4
+Abp.Web,2017-04-09T18:47:50.9Z,39,376,Package Description,Abp.Web,True,2018-03-12T13:51:26.343+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design",298414,False,2.0.0-preview4
+Abp.Web.Common,2017-04-09T18:47:36.85Z,39,376,Package Description,Abp.Web.Common,True,2018-03-12T13:51:12.577+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design",252700,False,2.0.0-preview4
+Abp.Web.Resources,2017-04-09T18:48:08.717Z,39,376,Package Description,Abp.Web.Resources,True,2018-03-12T13:53:28.363+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design",271091,False,2.0.0-preview4
+Abp.HangFire,2017-04-09T18:46:14.563Z,39,376,Package Description,Abp.HangFire,True,2018-03-12T13:47:31.79+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,HangFire,background,jobs",186143,False,2.0.0-preview4
+Abp.Quartz,2017-04-09T18:46:45.01Z,39,376,Package Description,Abp.Quartz,True,2018-03-12T13:47:59.15+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,Quartz,background,jobs",7929,False,2.0.0-preview4
+Abp.HangFire.AspNetCore,2017-04-09T18:46:30.07Z,39,376,Package Description,Abp.HangFire.AspNetCore,True,2018-03-12T13:47:44.603+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,HangFire,background,jobs,aspnet,core",32564,False,2.0.0-preview4
+Shunlifu Inc.,2017-04-09T18:47:00.607Z,125,376,Shunlifu SDK Library,Shunlifu,True,2017-12-16T16:23:24.603+00:00,True,False,,Shunlifu,729,False,1.0.0-beta-10032
+Abp.RedisCache.ProtoBuf,2017-04-09T18:45:59.013Z,39,376,Package Description,Abp.RedisCache.ProtoBuf,True,2018-03-12T13:50:44.343+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,Redis,Caching,Protobuf",5186,False,2.0.0-preview4
+Abp.Owin,2017-04-09T18:46:59.263Z,39,376,Package Description,Abp.Owin,True,2018-03-12T13:50:59.123+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,OWIN",192959,False,2.0.0-preview4
+Abp.RedisCache,2017-04-09T18:45:41.62Z,39,376,Package Description,Abp.RedisCache,True,2018-03-12T13:50:30.403+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,Redis,Caching",129607,False,2.0.0-preview4
+Abp.Dapper,2017-04-09T18:44:55.34Z,39,376,Package Description,Abp.Dapper,True,2018-03-12T13:49:08.793+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,Dapper,ORM",6134,False,2.0.0-preview4
+Abp.FluentMigrator,2017-04-09T18:45:10.017Z,39,376,Package Description,Abp.FluentMigrator,True,2018-03-12T13:49:25.823+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,FluentMigrator,database,migrations",51783,False,2.0.0-preview4
+Abp.EntityFramework,2017-04-09T18:44:09.05Z,39,376,Package Description,Abp.EntityFramework,True,2018-03-12T13:48:27.01+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,EntityFramework,ORM",301136,False,2.0.0-preview4
+Abp.EntityFrameworkCore,2017-04-09T18:44:42.387Z,39,376,Package Description,Abp.EntityFrameworkCore,True,2018-03-12T13:48:54.87+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,EntityFrameworkCore,ORM,Entity,Framework,Core",94136,False,2.0.0-preview4
+Abp.EntityFramework.GraphDiff,2017-04-09T18:44:23.113Z,39,376,Package Description,Abp.EntityFramework.GraphDiff,True,2018-03-12T13:48:40.93+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,GraphDiff,detached,graphs",8941,False,2.0.0-preview4
+Abp.NHibernate,2017-04-09T18:45:26.257Z,39,376,Package Description,Abp.NHibernate,True,2018-03-12T13:50:15.577+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,NHibernate,ORM",52052,False,2.0.0-preview4
+Abp.EntityFramework.Common,2017-04-09T18:43:54.577Z,39,376,Package Description,Abp.EntityFramework.Common,True,2018-03-12T13:48:13.04+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,EntityFramework,ORM",254200,False,2.0.0-preview4
+Abp,2017-04-09T18:43:17.817Z,39,376,Package Description,Abp,True,2018-03-12T13:46:01.927+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design",489436,False,2.0.0-preview4
+Abp.AutoMapper,2017-04-09T18:43:40.807Z,39,376,Package Description,Abp.AutoMapper,True,2018-03-12T13:47:01.63+00:00,True,False,,"asp.net,mvc,boilerplate,application,framework,web,domain,driven,design,automapper,object,mapper",353429,False,2.0.0-preview4
+Brandon Bell,2017-04-09T18:41:53.17Z,143,376,Common code components for WebApi,Bell.Common.WebApi,False,2017-11-28T12:43:22.947+00:00,True,False,,,1288,False,0.1.2
+Brandon Bell,2017-04-09T18:40:25.82Z,143,376,Common code tests,Bell.Common.Tests,False,2017-11-28T12:43:03.32+00:00,True,False,,,1023,False,0.1.2
+Brandon Bell,2017-04-09T18:39:44.4Z,143,376,Common code models,Bell.Common.Models,False,2017-11-28T12:42:24.99+00:00,True,False,,,1128,False,0.1.2
+Brandon Bell,2017-04-09T18:39:19.473Z,143,376,Common code components for Dapper,Bell.Common.Dapper,False,2017-11-28T12:41:25.943+00:00,True,False,,,1247,False,0.1.2
+Brandon Bell,2017-04-09T18:38:55.403Z,143,376,Package Description,Bell.Common,False,2017-11-28T12:41:07.677+00:00,True,False,,,1148,False,0.1.2
+TheDev6,2017-04-09T18:38:49.48Z,376,376,Wraps calls to EF Context in a using statement for easier disposing. This code can also help to isolate the use of Entity Framework in unit tests because it gives one more level of interface mocking before having to directly deal with EF in unit tests.,EntityFrameworkContextWrapper,False,2017-04-09T11:38:49.48-07:00,True,False,This library helps in avoiding newing up a context within a using statement by wrapping it. It can help with unit testing to further isolate the context. It also has helper methods for calling stored procedures.,"EntityFramework,EfContextWrapper",288,False,1.1.0
+Hovik Aghajanyan,2017-04-09T18:34:07.667Z,262,376,Sdk for Fast.Sql models,FastSql.Sdk,False,2017-08-01T11:21:47.93+00:00,True,False,,"SQL,Stored,Procedure,query,execute",215,False,1.0.0
+akarnokd,2017-04-09T18:26:22.577Z,219,376,ReactiveX style Reactive-Streams compliant library for composing synchronous and asynchronous sequences.,Reactive4.NET,False,2017-09-13T14:38:22.717+00:00,True,False,"Modern, 4th generation, Reactive-Streams compliant fluent reactive library based on RxJava 2.x Flowable API.","reactive,reactive-streams,rxjava",1952,False,0.1.9
+TrustSoft Ltd.,2015-06-17T14:28:14.087Z,43209,1038,Library that helps to create single instance WPF application. Fluent methods for validating method arguments by conditions for .NET 4.0/4.5/4.6.,Lasmera.Wpf.SingleInstanceApp,False,1899-12-31T16:00:00-08:00,False,False,Library for creating single instance WPF application for .NET 4.0/4.5/4.6.,"single,instance,WPF",-1,False,0.9.0
+DevExpress,2017-04-09T18:19:24.583Z,98,376,StatRush.Console,StatRush.Console,True,2018-01-12T14:20:06.46+00:00,True,False,,,66602,False,16.2.0.445-rc1
+DevExpress,2017-04-09T18:19:00.7Z,43209,376,StatRush,StatRush,True,1899-12-31T16:00:00-08:00,False,False,,,48898,False,16.2.0.445-rc1
+Yu Guan,2017-04-09T18:16:25.807Z,315,376,"https://devlibazure.codeplex.com/
+
+https://devlib.codeplex.com/
+
+DevLib is a highly reusable collection of components and core functionalities addressing common crosscutting concerns. It provides a comprehensive set of features that save development time, minimize costs, reduce the use of precious test resources, and decrease the overall maintenance effort.
+
+It is time to boost your productivity.",DevLib.Azure,False,2017-06-09T14:08:03.98-07:00,True,False,"https://devlibazure.codeplex.com/
+
+https://devlib.codeplex.com/
+
+DevLib is a highly reusable collection of components and core functionalities addressing common crosscutting concerns. It provides a comprehensive set of features that save development time, minimize costs, reduce the use of precious test resources, and decrease the overall maintenance effort.
+
+It is time to boost your productivity.",Azure,3280,False,1.5.10.25680
+Wolfgang Ziegler,2017-04-09T18:09:09.69Z,315,376,Package Description,wolf,True,2017-06-09T00:45:19.737-07:00,True,False,,,377,False,0.9.1-beta-8
+Alvaro Mari-Thompson,2017-04-09T18:09:40.64Z,94,376,An experimental API client library for the Billingbooth invoicing and billing engine.,Billingbooth.Api,False,2018-01-16T17:12:57.683+00:00,True,False,,"Billingbooth,API,billing,engine",32798,False,0.0.0.243
+Wallsmedia Ltd,2017-04-09T18:03:17.16Z,133,376,Dot NET Core Web Rest API simple client.,DotNet.RestApi.Client,False,2017-12-08T21:29:23.237+00:00,True,False,,"rest,httpclient",752,False,1.0.0
+Max-Planck-Institute of Biochemistry,2017-04-09T18:00:16.183Z,1,376,"Utility classes for MaxQuant and Perseus, independent of graphics",BaseLibS,False,2018-04-19T14:36:16.56+00:00,True,False,,,19359,False,1.6.0.192
+Max-Planck-Institute of Biochemistry,2017-04-09T18:00:36.99Z,1,376,Svm implementation for Perseus,NumPluginSvm,False,2018-04-19T14:36:21.683+00:00,True,False,,,19050,False,1.6.0.192
+Max-Planck-Institute of Biochemistry,2017-04-09T18:00:25.983Z,1,376,Numerical classes for MaxQuant and Perseus,NumPluginBase,False,2018-04-19T14:36:19.247+00:00,True,False,,,19057,False,1.6.0.192
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2017-04-09T17:59:37.7Z,88,376,"Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports .Net 4.0.",MathNet.Numerics.Signed,False,2018-01-22T19:07:16.97+00:00,True,False,"Math.NET Numerics, providing methods and algorithms for numerical computations in science, engineering and every day use.","math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft,signed",64360,True,3.18.0
+SYSTEM,2017-04-09T17:59:29.62Z,1,376,Description,BaseLib,False,2018-04-19T14:35:53.323+00:00,True,False,,,19216,False,1.6.0.192
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2017-04-09T17:59:27.18Z,88,376,"Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports .Net 4.0.",MathNet.Numerics.FSharp.Signed,False,2018-01-22T19:07:47.127+00:00,True,False,"F# Modules for Math.NET Numerics, providing methods and algorithms for numerical computations in science, engineering and every day use.","fsharp,F#,math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft,signed",8501,True,3.18.0
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2017-04-09T17:59:12.473Z,54,376,"Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports F# 3.0 on .Net 4.0, .Net 3.5 and Mono on Windows, Linux and Mac; Silverlight 5 and Windows 8 with PCL portable profile 47; Android/iOS with Xamarin.",MathNet.Numerics.FSharp,False,2018-02-25T13:37:47.927+00:00,True,False,"F# Modules for Math.NET Numerics, providing methods and algorithms for numerical computations in science, engineering and every day use.","fsharp,F#,math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft",118204,True,3.18.0
+Max-Planck-Institute of Biochemistry,2017-04-09T17:59:04.093Z,1,376,Absolute protein quantification PMID 25225357,PluginProteomicRuler,False,2018-04-19T14:40:23.337+00:00,True,False,,,22401,False,1.6.0.77
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2017-04-09T17:58:56.793Z,54,376,"Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports .Net 4.0, .Net 3.5 and Mono on Windows, Linux and Mac; Silverlight 5, WindowsPhone/SL 8, WindowsPhone 8.1 and Windows 8 with PCL portable profiles 7, 47, 78, 259 and 328; Android/iOS with Xamarin.",MathNet.Numerics,False,2018-02-25T13:37:24.88+00:00,True,False,"Math.NET Numerics, providing methods and algorithms for numerical computations in science, engineering and every day use.","math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft",980726,True,3.18.0
+Max-Planck-Institute of Biochemistry,2017-04-09T17:58:54.34Z,1,376,Collection of Perseus plugins,PerseusPluginLib,False,2018-04-19T14:40:20.68+00:00,True,False,,,22334,False,1.6.0.77
+Max-Planck-Institute of Biochemistry,2017-04-09T17:58:44.273Z,1,376,API for Perseus plugin development,PerseusApi,False,2018-04-19T14:40:17.773+00:00,True,False,,,22922,False,1.6.0.77
+kenakamu,2017-04-09T17:56:29.9Z,168,376,C# SDK library for Line Messaging API,LineMessagingAPI.CSharp,False,2017-11-03T16:57:54.64+00:00,True,False,This is a C# library for Line Messaging API.,"C#,Line,Bot,Messaging,API",2409,False,1.2.0
+Eran Gil,2017-04-09T17:49:11.967Z,43209,376,Enables a logging module for Autofac IoC containers,Autofac.log4net,True,1900-01-01T00:00:00+00:00,False,False,,,3920,False,0.1.0.14-beta
+Benjamin Hodgson,2017-04-09T17:44:56.277Z,60,376,"A lightweight, fast, and flexible parsing library for C#, developed at Stack Overflow.",Pidgin,False,2018-02-19T19:57:40.267+00:00,True,False,,parsing,1218,False,1.0.0
+Benjamin Hodgson,2017-04-09T17:44:56.277Z,60,376,"A lightweight, fast, and flexible parsing library for C#, developed at Stack Overflow.",Pidgin,False,2018-02-19T19:57:40.267+00:00,True,False,,parsing,1218,False,1.0.0
+Boas Enkler,2017-04-09T17:40:35.85Z,43209,376,CQRS Repository Pattern library,BE.CQRS.Eventstore,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.1.1-alpha
+Eran Gil,2017-04-09T17:41:34.093Z,43209,376,Enables a logging module for Autofac IoC containers,Autofac.log4net,True,1900-01-01T00:00:00+00:00,False,False,,,3920,False,0.1.0.7-beta
+Boas Enkler,2017-04-09T17:39:35.163Z,54,376,CQRS Repository Pattern library,BE.CQRS,True,2018-02-25T20:49:51.923+00:00,True,False,,,4170,False,0.1.1-alpha
+Eran Gil,2017-04-09T17:40:07.46Z,43209,376,Enables a logging module for Autofac IoC containers,Autofac.log4net,True,1900-01-01T00:00:00+00:00,False,False,,,3920,False,0.1.0.6-beta
+Digitalkraft,2017-04-09T17:36:09.897Z,175,376,Module Initializer,DK.ModuleInitializer,False,2017-10-27T14:53:10.117+00:00,True,False,,Digitalkraft,8680,False,1.0.0.16
+"Microsoft Corporation,Seabiscuit",2017-03-21T10:17:13.9Z,43209,395,This package provides an assembly containing classes which extend the .NET Framework 4.5 with base constructs from the OpenId Connect and WS-Federation protocols.,CuteAnt.IdentityModel.Protocol.Extensions,True,1899-12-31T16:00:00-08:00,False,False,,"Identity,Claims,OpenIdConnect,WS-Federation",-1,False,2.0.0-rtm-170201
+Facepunch Studios,2017-04-09T17:33:48.28Z,175,376,Context-free grammar parsing tool.,Facepunch.Parse,True,2017-10-27T10:27:55.223+00:00,True,False,,parser,1386,False,0.1.0-CI00024
+"Microsoft Corporation,Seabiscuit",2017-03-21T10:17:24.843Z,43209,395,"This package provides an assembly containing classes which extend the .NET Framework 4.5 with the necessary logic to process the JSON Web Token (JWT) format. That includes validating, parsing and generating JWT tokens; those capabilities can be applied both within the Windows Identity Foundation token processing pipeline and standalone, without any dependency on WIF’s configuration.",CuteAnt.IdentityModel.Tokens.Jwt,True,1899-12-31T16:00:00-08:00,False,False,,"JWT,JSON,Web,Token,WIF,Windows,Identity,Foundation,OAuth,OAuth2,Bearer,TokenHandler,Azure,Active,Directory,Claims,Authentication",-1,False,2.0.0-rtm-170201
+Eran Gil,2017-04-09T17:04:21.68Z,43209,376,Enables a logging module for Autofac IoC containers,Autofac.log4net,False,1900-01-01T00:00:00+00:00,False,False,,,3920,False,0.1.0.2
+Eran Gil,2017-04-09T17:18:38.83Z,43209,376,Enables a logging module for Autofac IoC containers,Autofac.log4net,True,1900-01-01T00:00:00+00:00,False,False,,,3920,False,0.1.0.5-beta
+Paket team,2017-04-09T17:06:35.283Z,2,376,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket,False,2018-04-18T10:23:50.3+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",834968,False,4.2.0
+Paket team,2017-04-09T17:06:35.69Z,2,376,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket.Core,False,2018-04-18T10:23:20.457+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",298246,False,4.2.0
+Paket team,2017-04-09T17:06:34.88Z,357,376,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket.PowerShell,False,2017-04-28T07:19:40.903+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",138115,False,4.2.0
+Microsoft,2017-04-09T17:06:10.03Z,43209,376,"Includes types that provide support for creating, serializing and validating JWT tokens.",System.IdentityModel.Tokens.Jwt.Net40,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.0-rtm-170301
+Microsoft,2017-04-09T17:06:01.34Z,43209,376,Includes types that provide support for cryptographic operations.,Microsoft.IdentityModel.Tokens.Net40,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.0-rtm-170301
+Microsoft,2017-04-09T17:05:53.09Z,43209,376,Includes types that provide support for OpenIdConnect protocol.,Microsoft.IdentityModel.Protocols.OpenIdConnect.Net40,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.0-rtm-170301
+Microsoft,2017-04-09T17:05:43.493Z,43209,376,Provides types that are common across openidconnect and wsfed protocols.,Microsoft.IdentityModel.Protocols.Net40,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.0-rtm-170301
+Microsoft,2017-04-09T17:05:33.99Z,43209,376,Includes Event Source based logging support.,Microsoft.IdentityModel.Logging.Net40,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.0-rtm-170301
+Dmitry Vsekhvalnov,2017-04-09T17:05:25.927Z,359,376,"Javascript Object Signing and Encryption (JOSE) and JSON Web Token (JWT) Implementation for .NET 
+
+
+
+Ultimate Javascript Object Signing and Encryption (JOSE) and JSON Web Token (JWT) Implementation for .NET. Minimallistic. Zero-dependency. Full suite of signature and encryption algorithms. 
+
+Supports generating, decoding, encryption and compression of JSON Web Tokens. JSON parsing agnostic. Supports two-phase validation. FIPS compliant. 
+
+
+
+CLR supported algorithms 
+
+
+
+Signing: 
+
+
+
+- HMAC signatures with HS256, HS384 and HS512. 
+
+- ECDSA signatures with ES256, ES384 and ES512. 
+
+- RSASSA-PKCS1-V1_5 signatures with RS256, RS384 and RS512. 
+
+- RSASSA-PSS signatures (probabilistic signature scheme with appendix) with PS256, PS384 and PS512. 
+
+- NONE (unprotected) plain text algorithm without integrity protection 
+
+
+
+Encryption: 
+
+
+
+- RSAES OAEP 256 encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM 
+
+- RSAES OAEP encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM 
+
+- RSAES-PKCS1-V1_5 encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM 
+
+- Direct symmetric key encryption with pre-shared key A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM and A256GCM 
+
+- A128KW, A192KW, A256KW encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM and A256GCM 
+
+- A128GCMKW, A192GCMKW, A256GCMKW encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM and A256GCM 
+
+- ECDH-ES encryption with A128CBC-HS256, A128GCM, A192GCM, A256GCM 
+
+- ECDH-ES+A128KW, ECDH-ES+A192KW, ECDH-ES+A256KW encryption with A128CBC-HS256, A128GCM, A192GCM, A256GCM 
+
+- PBES2-HS256+A128KW, PBES2-HS384+A192KW, PBES2-HS512+A256KW with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM 
+
+
+
+Compression: 
+
+
+
+- DEFLATE compression
+
+
+
+
+CORECLR supported algorithms 
+
+
+
+Signing: 
+
+
+
+- HMAC signatures with HS256, HS384 and HS512. 
+
+- ECDSA signatures with ES256, ES384 and ES512. 
+
+- RSASSA-PKCS1-V1_5 signatures with RS256, RS384 and RS512. 
+
+- NONE (unprotected) plain text algorithm without integrity protection 
+
+
+
+Encryption: 
+
+
+
+- RSAES OAEP 256 encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM 
+
+- RSAES OAEP encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM 
+
+- RSAES-PKCS1-V1_5 encryption with A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM, A256GCM 
+
+- Direct symmetric key encryption with pre-shared key A128CBC-HS256, A192CBC-HS384, A256CBC-HS512, A128GCM, A192GCM and A256GCM 
+
+
+Compression: 
+
+
+
+- DEFLATE compression",jose-jwt-signed,False,2017-04-26T12:22:29.067-07:00,True,False,,"jose,jwt,json,jwa,jwe,jws,aes,cbc,gcm,rsa,hmac,sha,rsassa,pss,rsaes,oaep,pkcs1-v1_5,es,elliptic,curve,diffe,hellman,agreement,ecdsa,key,wrap,kw,ecdh,pbes,pbes2,pbkdf,pbkdf2,password,based,encryption,javascript,object,signing,two,phase,validation,netcore,clr,coreclr,portable,fips,compliant",3562,False,2.2.0
+"Dominick Baier,Brock Allen,Seabiscuit",2017-04-09T17:05:08.487Z,376,376,OpenID Connect Client Library for Native Applications,IdentityModel.OidcClient.Unofficial,False,2017-04-09T10:05:08.487-07:00,True,False,,"OAuth2,OAuth,2.0,OpenID,Connect,Security,Identity,IdentityServer",413,False,2.1.2
+"Dominick Baier,Brock Allen,Seabiscuit",2017-04-09T17:05:16.833Z,337,376,"Helper library for claims-based identity, System.IdentityModel, JSON Web Tokens, OAuth 2.0 and OpenID Connect client",IdentityModel.Unofficial,False,2017-05-18T06:30:52.087-07:00,True,False,,"Auth2,OAuth2,OIDC,OpenID,Connect,JWT,Tokens,Federation,API,Authorization",2509,False,2.7.0
+Allan Ritchie,2017-04-09T17:04:47.013Z,282,376,"Local Notifications, Scheduled Notifications, Badges, and Vibration for Xamarin and Windows",Acr.Notifications,False,2017-07-11T17:35:56.853-07:00,True,False,,"notifications,windows,xamarin,xam.pcl",13601,False,3.1.0
+Eran Gil,2017-04-09T17:04:21.68Z,43209,376,Enables a logging module for Autofac IoC containers,Autofac.log4net,False,1900-01-01T00:00:00+00:00,False,False,,,3920,False,0.1.0.2
+Paket team,2017-04-09T17:00:25.77Z,357,376,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket.PowerShell,False,2017-04-28T07:19:40.903+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",138115,False,4.1.9
+Paket team,2017-04-09T16:59:49.653Z,2,376,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket.Core,False,2018-04-18T10:23:20.457+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",298246,False,4.1.9
+Alexander Gurinov,2017-04-09T16:59:35.73Z,376,376,Dynamics 365 for Net Core,Dyrix,False,2017-04-09T09:59:35.73-07:00,True,False,,"crm,dynamics,365",121,False,1.0.0
+Paket team,2017-04-09T16:59:49.607Z,2,376,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket,False,2018-04-18T10:23:50.3+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",834968,False,4.1.9
+Alexander Gurinov,2017-04-09T16:55:42.54Z,43209,376,Dynamics 365 for Net Core,Dyrix.AlexanderGurinov,False,1899-12-31T16:00:00-08:00,False,False,,"crm,dynamics,365",-1,False,1.0.0
+AspNetCore,2017-04-09T13:38:29.09Z,240,376,An AspNetCore middleware for (Tencent) Wechat/Weixin message handler and apis. (Windows/Linux works!),AspNetCore.Weixin,True,2017-08-23T11:11:55.06+00:00,False,False,,,1460,False,1.1.1-alpha-70410
+AspNetCore,2017-04-09T16:55:35.773Z,240,376,An AspNetCore middleware for (Tencent) Wechat/Weixin message handler and apis. (Windows/Linux works!),AspNetCore.Weixin,True,2017-08-23T11:11:55.06+00:00,True,False,,,1460,False,1.1.1-alpha-70411
+Alexander Gurinov,2017-04-09T16:55:42.54Z,43209,376,Dynamics 365 for Net Core,Dyrix.AlexanderGurinov,False,1899-12-31T16:00:00-08:00,False,False,,"crm,dynamics,365",-1,False,1.0.0
+Iskandar Rafiev,2017-04-09T16:46:32.44Z,55,376,RavenDB user/role store management implementation for ASP.NET Core identity provider.,Maqduni.AspNetCore.Identity.RavenDb,False,2018-02-24T15:17:09.067+00:00,True,False,,"ravendb,aspnetcore,identity,membership,authentication",3249,False,1.3.29
+Iskandar Rafiev,2017-04-09T16:46:32.44Z,55,376,RavenDB user/role store management implementation for ASP.NET Core identity provider.,Maqduni.AspNetCore.Identity.RavenDb,False,2018-02-24T15:17:09.067+00:00,True,False,,"ravendb,aspnetcore,identity,membership,authentication",3249,False,1.3.29
+Iskandar Rafiev,2017-04-09T16:46:32.44Z,55,376,RavenDB user/role store management implementation for ASP.NET Core identity provider.,Maqduni.AspNetCore.Identity.RavenDb,False,2018-02-24T15:17:09.067+00:00,True,False,,"ravendb,aspnetcore,identity,membership,authentication",3249,False,1.3.29
+Paket team,2017-04-09T16:45:12.157Z,2,376,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket,False,2018-04-18T10:23:50.3+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",834968,False,4.1.8
+Paket team,2017-04-09T16:45:00.03Z,2,376,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket.Core,False,2018-04-18T10:23:20.457+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",298246,False,4.1.8
+Paket team,2017-04-09T16:45:03.797Z,357,376,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket.PowerShell,False,2017-04-28T07:19:40.903+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",138115,False,4.1.8
+Peter Mitchell,2017-04-09T16:32:43.63Z,145,376,Provides configurators a way of configuring associated client configuration through a simple web interface with meta data and validation.,ConfigServer.Server,True,2017-11-26T17:27:49.987+00:00,True,False,,,1520,False,1.0.0-beta7-0067
+Peter Mitchell,2017-04-09T16:32:35.08Z,145,376,Handling of application configuration storage and management across multiple instances.,ConfigServer.Core,True,2017-11-26T17:27:38.813+00:00,True,False,,,1720,False,1.0.0-beta7-0067
+Peter Mitchell,2017-04-09T16:31:39.097Z,43209,376,Azure storage table implementation for the configurations repository,ConfigServer.AzureTableStorageProvider,True,1900-01-01T00:00:00+00:00,False,False,,,602,False,1.0.0-beta7-0067
+Peter Mitchell,2017-04-09T16:31:50.693Z,145,376,File storage implementation for the configurations repository,ConfigServer.FileProvider,True,2017-11-26T17:26:39.113+00:00,True,False,,,1699,False,1.0.0-beta7-0067
+Peter Mitchell,2017-04-09T16:32:27.33Z,145,376,Plugs in Config Server Client to Owin pipelin,ConfigServer.Client.Builder,True,2017-11-26T17:27:27.563+00:00,True,False,,,653,False,1.0.0-beta7-0067
+Peter Mitchell,2017-04-09T16:32:07.823Z,145,376,Common Configuration repository that uses a storage connector that returns and accepts json string,ConfigServer.TextProvider.Core,True,2017-11-26T17:27:04.363+00:00,True,False,,,880,False,1.0.0-beta7-0067
+Peter Mitchell,2017-04-09T16:31:59.65Z,145,376,In Memory implementation for the configurations repository,ConfigServer.InMemoryProvider,True,2017-11-26T17:26:50.393+00:00,True,False,,,1696,False,1.0.0-beta7-0067
+Peter Mitchell,2017-04-09T16:32:15.95Z,145,376,Client for ConfigServer.,ConfigServer.Client,True,2017-11-26T17:27:15.22+00:00,True,False,,,1421,False,1.0.0-beta7-0067
+Peter Mitchell,2017-04-09T16:31:30.627Z,145,376,Azure storage blob implementation for the configurations repository,ConfigServer.AzureBlobStorageProvider,True,2017-11-26T17:26:27.74+00:00,True,False,,,1284,False,1.0.0-beta7-0067
+BlobService,2017-04-09T16:16:28.463Z,77,376,BlobService.Core library for hosting blobservice on-permise,BlobService.Core,False,2018-02-02T16:30:23.617+00:00,False,False,,"blobservice,blobs,files,netcore",2521,False,0.2.1
+BlobService,2017-04-05T08:24:42.087Z,77,380,BlobService.Core library for hosting blobservice on-permise,BlobService.Core,False,2018-02-02T16:30:23.617+00:00,False,False,,"blobservice,blobs,files,netcore",2521,False,0.1.8
+BlobService,2017-04-09T16:09:02.497Z,77,376,BlobService.Core library for hosting blobservice on-permise,BlobService.Core,False,2018-02-02T16:30:23.617+00:00,False,False,,"blobservice,blobs,files,netcore",2521,False,0.2.0
+BlobService,2017-03-30T13:10:13.153Z,77,386,BlobService.Core library for hosting blobservice on-permise,BlobService.Core,False,2018-02-02T16:30:23.617+00:00,False,False,,"blobservice,blobs,files,netcore",2521,False,0.1.4
+BlobService.Core,2017-03-30T07:46:04.25Z,77,386,BlobService.Core component,BlobService.Core,False,2018-02-02T16:30:23.617+00:00,False,False,,"blobservice,blobs,files,netcore",2521,False,0.1.0
+BlobService,2017-04-04T08:55:28.293Z,77,381,BlobService.Core library for hosting blobservice on-permise,BlobService.Core,False,2018-02-02T16:30:23.617+00:00,False,False,,"blobservice,blobs,files,netcore",2521,False,0.1.5
+BlobService,2017-03-30T09:46:12.36Z,77,386,BlobService.Core component,BlobService.Core,False,2018-02-02T16:30:23.617+00:00,False,False,,"blobservice,blobs,files,netcore",2521,False,0.1.1
+BlobService,2017-04-05T08:03:25.82Z,77,380,BlobService.Core library for hosting blobservice on-permise,BlobService.Core,False,2018-02-02T16:30:23.617+00:00,False,False,,"blobservice,blobs,files,netcore",2521,False,0.1.6
+BlobService,2017-03-30T11:51:28.303Z,77,386,BlobService.Core component,BlobService.Core,False,2018-02-02T16:30:23.617+00:00,False,False,,"blobservice,blobs,files,netcore",2521,False,0.1.2
+BlobService,2017-04-05T08:19:15.56Z,77,380,BlobService.Core library for hosting blobservice on-permise,BlobService.Core,False,2018-02-02T16:30:23.617+00:00,False,False,,"blobservice,blobs,files,netcore",2521,False,0.1.7
+Zeus,2017-04-09T16:22:17.157Z,1,376,Biblioteca para geração de MDF-e.,Zeus.Net.MDFe,False,2018-04-19T13:22:13.8+00:00,True,False,,"df-e,dfe,mdfe,mdf-e",2868,False,0.0.0.503
+Zeus,2017-04-09T16:23:16.11Z,1,376,Biblioteca para geração de nf-e e nfc-e.,Zeus.Net.NFe.NFCe,False,2018-04-19T13:22:41.1+00:00,True,False,,"nfc-e,nf-e,nfce,nfe",8018,False,1.0.1.503
+Zeus,2017-04-09T16:23:16.11Z,1,376,Biblioteca para geração de nf-e e nfc-e.,Zeus.Net.NFe.NFCe,False,2018-04-19T13:22:41.1+00:00,True,False,,"nfc-e,nf-e,nfce,nfe",8018,False,1.0.1.503
+Zeus,2017-04-09T16:22:17.157Z,1,376,Biblioteca para geração de MDF-e.,Zeus.Net.MDFe,False,2018-04-19T13:22:13.8+00:00,True,False,,"df-e,dfe,mdfe,mdf-e",2868,False,0.0.0.503
+BlobService,2017-04-09T16:22:40.21Z,77,376,BlobService.Core library for hosting blobservice on-permise,BlobService.Core,False,2018-02-02T16:30:23.617+00:00,True,False,,"blobservice,blobs,files,netcore",2521,False,0.2.2
+Gaute Magnussen,2017-04-09T16:21:18.28Z,53,376,A lightweight framework to help write CQRS and Eventsourcing applications in C#,CqrsLite,False,2018-02-26T14:06:41.717+00:00,True,False,,,18240,False,0.12.7
+kenny,2017-04-09T16:19:42.173Z,376,376,Description,TestBinic,False,2017-04-09T09:19:42.173-07:00,True,False,,,203,False,1.0.0.1
+Ryan Conrad,2017-04-09T16:19:07.773Z,376,376,A managed library for communicating with the Android Debug Bridge. See more info @ https://github.com/camalot/madb,Managed.Adb,True,2017-04-09T09:19:07.773-07:00,True,False,This is a Managed port of the Android Debug Bridge to allow communication from .NET applications to Android devices. This wraps the same methods that the ddms uses to directly communicate with ADB. This gives more flexibility to the developer then launching an adb process and executing one of its build in commands.,"android,adb,library",12408,False,2.0.136.9917-beta
+Ryan Conrad,2017-04-09T16:19:16.137Z,376,376,A managed library for communicating with the Android Debug Bridge. See more info @ https://github.com/camalot/madb,Managed.Adb.x64,True,2017-04-09T09:19:16.137-07:00,True,False,This is a Managed port of the Android Debug Bridge to allow communication from .NET applications to Android devices. This wraps the same methods that the ddms uses to directly communicate with ADB. This gives more flexibility to the developer then launching an adb process and executing one of its build in commands.,"android,adb,library",2575,False,2.0.136.9917-beta
+"Egelke BVBA,e-Contract.be BVBA",2017-04-09T16:17:10.617Z,376,376,"Client for the ""Digital Signature Service Protocol"" as offered by e-Contract.be",DSS-P.Client,False,2017-04-09T09:17:10.617-07:00,True,False,"The new Digital Signature Service creates PAdES LTV signatures using the eID card according to the latest ETSI PAdES Baseline Profile version 2.2.2.
+      This standard is being pushed by the EC e-Signatures Expert Group to guarantee maximum recognition and interoperability of signed documents between
+      EU member states. Furthermore the Digital Signature Service product is not limited to PDF signatures. It also support XAdES-X-L and ETSI XAdES Baseline
+      Profile version 2.1.1 signatures (LT-Level compliance). The new DSS is the only solution today on the market offering such compliance.
+
+      The new Digital Signature Service comes with a new and highly secure Digital Signature Service Protocol. This protocol is a derivative of work that
+      we performed within the OASIS DSS-X group and offers maximum protection against various types of attacks. From a security point of view, this new protocol
+      is just it. The old protocol, as implemented in the original eID DSS, could easily be integrated in an insecure way by the developer. For the new protocol,
+      this is no longer possible given the design of the protocol. As we all know that protocols (and their implementation, especially authentication protocols)
+      are very vulnerable to attacks, this new protocol is a huge step forward. This makes the new Digital Signature Service truly unique compared to other
+      solutions.","e-Contract.be,DSS,eSigning,eID",2643,False,1.5.0
+BlobService,2017-04-09T16:16:28.463Z,77,376,BlobService.Core library for hosting blobservice on-permise,BlobService.Core,False,2018-02-02T16:30:23.617+00:00,True,False,,"blobservice,blobs,files,netcore",2521,False,0.2.1
+Tom Pallister,2017-04-09T16:13:38.643Z,119,376,RAFT consensus implementation,Rafty,False,2017-12-22T06:17:22.19+00:00,True,False,,"API,Gateway,.NET,core",6138,False,0.1.4
+Jeffrey Stedfast,2017-04-09T16:11:24.37Z,5,376,"MailKit is an Open Source cross-platform .NET mail-client library that is based on MimeKit and optimized for mobile devices.
+
+Features include:
+* SASL Authentication via SCRAM-SHA-256, SCRAM-SHA-1, NTLM, DIGEST-MD5, CRAM-MD5, LOGIN, PLAIN, and XOAUTH2.
+* A fully-cancellable SmtpClient with support for STARTTLS, 8BITMIME, BINARYMIME, ENHANCEDSTATUSCODES, SIZE, DSN, PIPELINING and SMTPUTF8.
+* A fully-cancellable Pop3Client with support for STLS, UIDL, APOP, PIPELINING, UTF8, and LANG.
+* A fully-cancellable ImapClient with support for ACL, QUOTA, LITERAL+, IDLE, NAMESPACE, ID, CHILDREN, LOGINDISABLED, STARTTLS, MULTIAPPEND, UNSELECT, UIDPLUS, CONDSTORE, ESEARCH, SASL-IR, COMPRESS, WITHIN, ENABLE, QRESYNC, SORT, THREAD, ESORT, METADATA, FILTERS, LIST-STATUS, SORT=DISPLAY, SPECIAL-USE, CREATE-SPECIAL-USE, MOVE, SEARCH=FUZZY, UTF8=ACCEPT, UTF8=ONLY, LITERAL-, APPENDLIMIT, XLIST, and X-GM-EXT1.
+* Client-side sorting and threading of messages (the Ordinal Subject and the Jamie Zawinski threading algorithms are supported).
+* Asynchronous versions of all methods that hit the network.
+* S/MIME, OpenPGP and DKIM signature support via MimeKit.
+* Microsoft TNEF support via MimeKit.",MailKit,False,2018-04-15T17:35:55.893+00:00,True,False,"An Open Source .NET mail-client library for Windows, Mac, Linux, and mobile platforms such as iOS and Android.","smtp,pop3,imap,mime,security,dkim,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,xamarin,android,ios,monodroid,monotouch,netstandard,net40,net45,wpa81",2494995,False,1.14.0
+BlobService,2017-04-09T16:09:02.497Z,77,376,BlobService.Core library for hosting blobservice on-permise,BlobService.Core,False,2018-02-02T16:30:23.617+00:00,True,False,,"blobservice,blobs,files,netcore",2521,False,0.2.0
+Mandrill.net,2017-04-09T16:06:33.167Z,376,376,Simple .net wrapper for the Mandrill.net api,Mandrill.net,False,2017-04-09T09:06:33.167-07:00,True,False,,"mandrill,mailchimp,mail",83732,False,4.1.0
+SlimGis,2017-04-09T15:38:13.227Z,43209,376,"“SlimGIS MapKit Extension - PostgreSQL""
+MapKit Postgre SQL Extension is a powerful package to support render/query/edit postgre dataformat.
+
+Supported Platforms: Windows",SGMapKitEx.PostgreSql,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,Postgre,PostgreSql,Extension",-1,False,3.0.0-beta01
+SlimGis,2017-04-09T15:57:29.283Z,43209,376,"“SlimGIS MapKit Extension - SQLite""
+ MapKit SQLite Extension is a powerful package to support render/query/edit sqlite dataformat.
+
+Supported Platforms: Windows",SGMapKitEx.Sqlite,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,Sqlite,Extension",-1,False,3.0.0-beta01
+Tom Pallister,2017-04-09T15:58:04.357Z,119,376,RAFT consensus implementation,Rafty,True,2017-12-22T06:17:22.19+00:00,True,False,,"API,Gateway,.NET,core",6138,False,0.2.0-unstable0016
+SlimGis,2017-04-09T15:57:29.283Z,43209,376,"“SlimGIS MapKit Extension - SQLite""
+ MapKit SQLite Extension is a powerful package to support render/query/edit sqlite dataformat.
+
+Supported Platforms: Windows",SGMapKitEx.Sqlite,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,Sqlite,Extension",-1,False,3.0.0-beta01
+kenny,2017-04-09T15:58:39.557Z,376,376,Description,TestBinic,False,2017-04-09T09:19:42.173-07:00,True,False,,,203,False,1.0.0
+SlimGis,2017-04-09T15:37:45.353Z,43209,376,"“SlimGis MapKit - WPF""
+MapKit for WPF enables .NET developers to build robust and interactive maps using the power of Windows Presentation Foundation (WPF). It brings your application to a whole new level with .NET controls. With fast rendering performance, fluent user experience, multi-touch, animation, multi-threading and much more.
+
+Supported Platforms: Windows",SGMapKit.Wpf,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,WPF",3211,False,3.0.0-beta01
+NL,2017-04-09T15:56:30.7Z,372,376,A collection of utility functions.,Nlc,False,2017-04-12T17:51:21.313-07:00,True,False,,"Tag1,Tag2",930,False,1.0.8
+Jeffrey Stedfast,2017-04-09T15:54:15.71Z,6,376,"MimeKit is an Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms. It also supports parsing of Unix mbox files.
+
+      Unlike any other .NET MIME parser, MimeKit's parser does not need to parse string input nor does it use a TextReader. Instead, it parses raw byte streams, thus allowing it to better support undeclared 8bit text in headers as well as message bodies. It also means that MimeKit's parser is significantly faster than other .NET MIME parsers (more than 25x faster than OpenPOP.NET and over 100x faster than AE.Net.Mail and MailSystem.NET).
+
+      MimeKit's parser also uses a real tokenizer when parsing the headers rather than regex or string.Split() like most other .NET MIME parsers. This means that MimeKit is much more RFC-compliant than any other .NET MIME parser out there, including the commercial implementations.
+
+      In addition to having a far superior parser implementation, MimeKit's object tree is not a derivative of System.Net.Mail objects and thus does not suffer from System.Net.Mail's massive limitations or bugs.
+
+      API documentation can be found on the web at http://www.mimekit.net/docs
+
+      For those that need SMTP, POP3 or IMAP support, check out https://github.com/jstedfast/MailKit",MimeKit,False,2018-04-14T17:17:00.29+00:00,True,False,"An Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms.","mime,encryption,dkim,security,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,netstandard,net35,net40,net45,xamarin,android,ios,monodroid,monotouch,win8,wp81",2617261,False,1.14.1
+SlimGis,2017-04-09T15:37:19.33Z,43209,376,"“SlimGis MapKit - Windows Forms""
+MapKit for WinForms is built with the popular and mature graphical (GUI) class library. It lets .NET developers add rich, interactive maps to their Windows desktop applications in a minute. It also supports developing and running on Linux and macOS with Mono with the same core features.
+
+Supported Platforms: Windows, Linux, maxOS, Mono",SGMapKit.WinForms,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,WinForms",-1,False,3.0.0-beta01
+NL,2017-04-09T15:49:10.37Z,372,376,Fixed a bug that leaves a serialized file open after serialization.,Nlc,False,2017-04-12T17:51:21.313-07:00,True,False,,"Tag1,Tag2",930,False,1.0.7
+SlimGis,2017-04-09T15:36:53.787Z,43209,376,"“SlimGis MapKit - WebAPI""
+MapKit for WebAPI is a .NET WebAPI component to help you to easily build up RESTful service based application on Windows; also supports working on Linux and macOS with Mono. It contains full function of SlimGIS MapKit Core which comes with Geometry, GeoFunction, Symbology, Renderer, DataSource, Layer and more.
+
+Supported Platforms: Windows, Linux, macOS, Mono",SGMapKit.WebApi,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,.NETCore,WebApi",-1,False,3.0.0-beta01
+"Egelke BVBA,e-Contract.be BVBA",2017-04-09T15:45:07.04Z,376,376,"Client for the ""Digital Signature Service Protocol"" as offered by e-Contract.be",DSS-P.Client,True,2017-04-09T09:17:10.617-07:00,True,False,"The new Digital Signature Service creates PAdES LTV signatures using the eID card according to the latest ETSI PAdES Baseline Profile version 2.2.2.
+      This standard is being pushed by the EC e-Signatures Expert Group to guarantee maximum recognition and interoperability of signed documents between
+      EU member states. Furthermore the Digital Signature Service product is not limited to PDF signatures. It also support XAdES-X-L and ETSI XAdES Baseline
+      Profile version 2.1.1 signatures (LT-Level compliance). The new DSS is the only solution today on the market offering such compliance.
+
+      The new Digital Signature Service comes with a new and highly secure Digital Signature Service Protocol. This protocol is a derivative of work that
+      we performed within the OASIS DSS-X group and offers maximum protection against various types of attacks. From a security point of view, this new protocol
+      is just it. The old protocol, as implemented in the original eID DSS, could easily be integrated in an insecure way by the developer. For the new protocol,
+      this is no longer possible given the design of the protocol. As we all know that protocols (and their implementation, especially authentication protocols)
+      are very vulnerable to attacks, this new protocol is a huge step forward. This makes the new Digital Signature Service truly unique compared to other
+      solutions.","e-Contract.be,DSS,eSigning,eID",2643,False,1.5.0-Beta2
+SlimGis,2017-04-09T15:36:06.093Z,43209,376,"“SlimGis MapKit - Core""
+MapKit for Core is a low level component which is also the infrastructure of the entire MapKit product line. With the power of MapKit Core, we could build tools for spatial data analysis, map rendering, spatial functions, projections and more. Or even build high level components above it. It also could port to Linux and macOS with Mono.
+
+Supported Platforms: Windows, Linux, maxOS, Mono",SGMapKit.Core,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,.NETCore",3711,False,3.0.0-beta01
+SlimGis,2017-04-09T15:36:06.093Z,43209,376,"“SlimGis MapKit - Core""
+MapKit for Core is a low level component which is also the infrastructure of the entire MapKit product line. With the power of MapKit Core, we could build tools for spatial data analysis, map rendering, spatial functions, projections and more. Or even build high level components above it. It also could port to Linux and macOS with Mono.
+
+Supported Platforms: Windows, Linux, maxOS, Mono",SGMapKit.Core,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,.NETCore",3711,False,3.0.0-beta01
+SlimGis,2017-04-09T15:37:19.33Z,43209,376,"“SlimGis MapKit - Windows Forms""
+MapKit for WinForms is built with the popular and mature graphical (GUI) class library. It lets .NET developers add rich, interactive maps to their Windows desktop applications in a minute. It also supports developing and running on Linux and macOS with Mono with the same core features.
+
+Supported Platforms: Windows, Linux, maxOS, Mono",SGMapKit.WinForms,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,WinForms",-1,False,3.0.0-beta01
+SlimGis,2017-04-09T15:37:45.353Z,43209,376,"“SlimGis MapKit - WPF""
+MapKit for WPF enables .NET developers to build robust and interactive maps using the power of Windows Presentation Foundation (WPF). It brings your application to a whole new level with .NET controls. With fast rendering performance, fluent user experience, multi-touch, animation, multi-threading and much more.
+
+Supported Platforms: Windows",SGMapKit.Wpf,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,WPF",3211,False,3.0.0-beta01
+SlimGis,2017-04-09T15:36:53.787Z,43209,376,"“SlimGis MapKit - WebAPI""
+MapKit for WebAPI is a .NET WebAPI component to help you to easily build up RESTful service based application on Windows; also supports working on Linux and macOS with Mono. It contains full function of SlimGIS MapKit Core which comes with Geometry, GeoFunction, Symbology, Renderer, DataSource, Layer and more.
+
+Supported Platforms: Windows, Linux, macOS, Mono",SGMapKit.WebApi,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,.NETCore,WebApi",-1,False,3.0.0-beta01
+SlimGis,2017-04-09T15:38:13.227Z,43209,376,"“SlimGIS MapKit Extension - PostgreSQL""
+MapKit Postgre SQL Extension is a powerful package to support render/query/edit postgre dataformat.
+
+Supported Platforms: Windows",SGMapKitEx.PostgreSql,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,Postgre,PostgreSql,Extension",-1,False,3.0.0-beta01
+Gaute Magnussen,2017-04-09T15:40:37.99Z,53,376,A lightweight framework to help write CQRS and Eventsourcing applications in C#,CqrsLite,False,2018-02-26T14:06:41.717+00:00,True,False,,,18240,False,0.12.6
+SlimGis,2017-04-09T15:38:13.227Z,43209,376,"“SlimGIS MapKit Extension - PostgreSQL""
+MapKit Postgre SQL Extension is a powerful package to support render/query/edit postgre dataformat.
+
+Supported Platforms: Windows",SGMapKitEx.PostgreSql,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,Postgre,PostgreSql,Extension",-1,False,3.0.0-beta01
+SlimGis,2017-04-09T15:36:53.787Z,43209,376,"“SlimGis MapKit - WebAPI""
+MapKit for WebAPI is a .NET WebAPI component to help you to easily build up RESTful service based application on Windows; also supports working on Linux and macOS with Mono. It contains full function of SlimGIS MapKit Core which comes with Geometry, GeoFunction, Symbology, Renderer, DataSource, Layer and more.
+
+Supported Platforms: Windows, Linux, macOS, Mono",SGMapKit.WebApi,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,.NETCore,WebApi",-1,False,3.0.0-beta01
+SlimGis,2017-04-09T15:37:19.33Z,43209,376,"“SlimGis MapKit - Windows Forms""
+MapKit for WinForms is built with the popular and mature graphical (GUI) class library. It lets .NET developers add rich, interactive maps to their Windows desktop applications in a minute. It also supports developing and running on Linux and macOS with Mono with the same core features.
+
+Supported Platforms: Windows, Linux, maxOS, Mono",SGMapKit.WinForms,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,WinForms",-1,False,3.0.0-beta01
+SlimGis,2017-04-09T15:37:45.353Z,43209,376,"“SlimGis MapKit - WPF""
+MapKit for WPF enables .NET developers to build robust and interactive maps using the power of Windows Presentation Foundation (WPF). It brings your application to a whole new level with .NET controls. With fast rendering performance, fluent user experience, multi-touch, animation, multi-threading and much more.
+
+Supported Platforms: Windows",SGMapKit.Wpf,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,WPF",3211,False,3.0.0-beta01
+SlimGis,2017-04-09T15:36:06.093Z,43209,376,"“SlimGis MapKit - Core""
+MapKit for Core is a low level component which is also the infrastructure of the entire MapKit product line. With the power of MapKit Core, we could build tools for spatial data analysis, map rendering, spatial functions, projections and more. Or even build high level components above it. It also could port to Linux and macOS with Mono.
+
+Supported Platforms: Windows, Linux, maxOS, Mono",SGMapKit.Core,True,1900-01-01T00:00:00+00:00,False,False,,"SlimGIS,GIS,Spatial,Mapping,Map,.NET,.NETCore",3711,False,3.0.0-beta01
+ZZZ Projects Inc.,2017-04-09T15:30:55.613Z,11,376,EF+ Full Version | C# Entity Framework Utilities (Bulk Operations | Batch Delete | Batch Update | Query Cache | Query Filter | Query Future | Query Include | Audit),Z.EntityFramework.Plus.EF5,False,2018-04-09T21:39:26.263+00:00,True,False,EF+ Full Version | C# Entity Framework Utilities (Bulk Operations | Batch Delete | Batch Update | Query Cache | Query Filter | Query Future | Query Include | Audit),"EF5,EF,EntityFramework,Audit,Batch,Cache",11166,False,1.4.42
+ZZZ Projects Inc.,2017-04-09T15:31:26.14Z,11,376,EF+ Full Version | C# Entity Framework Utilities (Bulk Operations | Batch Delete | Batch Update | Query Cache | Query Filter | Query Future | Query Include | Audit),Z.EntityFramework.Plus.EF6,False,2018-04-09T21:40:01.843+00:00,True,False,EF+ Full Version | C# Entity Framework Utilities (Bulk Operations | Batch Delete | Batch Update | Query Cache | Query Filter | Query Future | Query Include | Audit),"EF6,EF,EntityFramework,Audit,Batch,Cache",240481,False,1.4.42
+"Egelke BVBA,e-Contract.be BVBA",2017-04-09T15:31:46.417Z,376,376,"Client for the ""Digital Signature Service Protocol"" as offered by e-Contract.be",DSS-P.Client,True,2017-04-09T09:17:10.617-07:00,True,False,"The new Digital Signature Service creates PAdES LTV signatures using the eID card according to the latest ETSI PAdES Baseline Profile version 2.2.2.
+      This standard is being pushed by the EC e-Signatures Expert Group to guarantee maximum recognition and interoperability of signed documents between
+      EU member states. Furthermore the Digital Signature Service product is not limited to PDF signatures. It also support XAdES-X-L and ETSI XAdES Baseline
+      Profile version 2.1.1 signatures (LT-Level compliance). The new DSS is the only solution today on the market offering such compliance.
+
+      The new Digital Signature Service comes with a new and highly secure Digital Signature Service Protocol. This protocol is a derivative of work that
+      we performed within the OASIS DSS-X group and offers maximum protection against various types of attacks. From a security point of view, this new protocol
+      is just it. The old protocol, as implemented in the original eID DSS, could easily be integrated in an insecure way by the developer. For the new protocol,
+      this is no longer possible given the design of the protocol. As we all know that protocols (and their implementation, especially authentication protocols)
+      are very vulnerable to attacks, this new protocol is a huge step forward. This makes the new Digital Signature Service truly unique compared to other
+      solutions.","e-Contract.be,DSS,eSigning,eID",2643,False,1.5.0-Beta1
+ZZZ Projects Inc.,2017-04-09T15:29:42.813Z,199,376,EF+ Query IncludeOptimized | Entity Framework Filter Child Collections and Optimize Include.,Z.EntityFramework.Plus.QueryIncludeOptimized.EF5,False,2017-10-03T02:33:54.387+00:00,True,False,EF+ Query IncludeOptimized | Entity Framework Filter Child Collections and Optimize Include.,"EF5,EF,EntityFramework",3252,False,1.4.42
+ZZZ Projects Inc.,2017-04-09T15:30:16.547Z,122,376,EF+ Query IncludeOptimized | Entity Framework Filter Child Collections and Optimize Include.,Z.EntityFramework.Plus.QueryIncludeOptimized.EF6,False,2017-12-19T16:47:06.373+00:00,True,False,EF+ Query IncludeOptimized | Entity Framework Filter Child Collections and Optimize Include.,"EF6,EF,EntityFramework",16809,False,1.4.42
+ZZZ Projects Inc.,2017-04-09T15:29:04.2Z,122,376,EF+ Query IncludeFilter | Entity Framework Include Related Entities using Where Filter.,Z.EntityFramework.Plus.QueryIncludeFilter.EF6,False,2017-12-19T16:46:28.653+00:00,True,False,EF+ Query IncludeFilter | Entity Framework Include Related Entities using Where Filter.,"EF6,EF,EntityFramework",20988,False,1.4.42
+ZZZ Projects Inc.,2017-04-09T15:28:19.82Z,11,376,EF+ Full Version | C# Entity Framework Utilities (Bulk Operations | Batch Delete | Batch Update | Query Cache | Query Filter | Query Future | Query Include | Audit),Z.EntityFramework.Plus.EFCore,False,2018-04-09T21:38:50.76+00:00,True,False,EF+ Full Version | C# Entity Framework Utilities (Bulk Operations | Batch Delete | Batch Update | Query Cache | Query Filter | Query Future | Query Include | Audit),"EFCore,EF,EntityFramework,Audit,Batch,Cache",106598,False,1.4.42
+Facepunch Studios,2017-04-09T15:28:40.817Z,175,376,Context-free grammar parsing tool.,Facepunch.Parse,True,2017-10-27T10:27:55.223+00:00,True,False,,parser,1386,False,0.1.0-CI00023
+ZZZ Projects Inc.,2017-04-09T15:27:39.63Z,27,376,EF+ Batch Update | Entity Framework Batch Update Objects Without Loading Them.,Z.EntityFramework.Plus.BatchUpdate.EFCore,False,2018-03-24T19:13:55.567+00:00,True,False,EF+ Batch Update | Entity Framework Batch Update Objects Without Loading Them.,"EFCore,EF,EntityFramework,Batch",6275,False,1.4.42
+Redpoint Games,2017-04-09T15:12:20.453Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,False,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Android,type=library,commit=44029def7ee23ea2f6eeec7c79f84295103c313e,git=https://github.com/RedpointGames/Prototest",56002,False,1.4.3
+Redpoint Games,2017-04-09T15:12:32.38Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Android,type=library,commit=44029def7ee23ea2f6eeec7c79f84295103c313e,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHA960e0dadcb5c9763d10dad5bfcca53be300cb216
+Redpoint Games,2017-04-09T15:11:01.55Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Linux,type=library,commit=44029def7ee23ea2f6eeec7c79f84295103c313e,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHA1c769e1e43d6a596d12f61ef077cdf2d43a4f1d2
+Redpoint Games,2017-04-09T15:09:13.437Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Android,type=library,commit=583200f976b9390d70649237a2999902f2b6bb4f,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHAe8e24e675bab06ee5482ad71a86bc3e44b1ce788
+Redpoint Games,2017-04-09T15:08:30.35Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=iOS,type=library,commit=44029def7ee23ea2f6eeec7c79f84295103c313e,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHAa3ace87f45532e73571e2b2db6f384385914df50
+Redpoint Games,2017-04-09T15:07:52.347Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Linux,type=library,commit=583200f976b9390d70649237a2999902f2b6bb4f,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHA39a6ed7b82204550917748059f2fd18612d40d43
+Redpoint Games,2017-04-09T15:08:43.243Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Android,type=library,commit=44029def7ee23ea2f6eeec7c79f84295103c313e,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHA1c1db3283afe3c11b8155c7a00f35f5b5969be76
+Redpoint Games,2017-04-09T15:08:19.74Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=MacOS,type=library,commit=44029def7ee23ea2f6eeec7c79f84295103c313e,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHA3ba275047354598ba2842519de9e8e8704a7016d
+Redpoint Games,2017-04-09T15:06:20.623Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=iOS,type=library,commit=583200f976b9390d70649237a2999902f2b6bb4f,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHAf36919236b50c79750db3a98e47648132894e828
+Redpoint Games,2017-04-09T15:06:08.983Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Unity,type=library,commit=44029def7ee23ea2f6eeec7c79f84295103c313e,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHA55ce009088bca8ca111345670299e81aaa10acdf
+Redpoint Games,2017-04-09T15:05:58.653Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Windows,type=library,commit=44029def7ee23ea2f6eeec7c79f84295103c313e,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHA44c384f80c754c95495c65ab8c80922de35c2a63
+Redpoint Games,2017-04-09T15:06:09.03Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=MacOS,type=library,commit=583200f976b9390d70649237a2999902f2b6bb4f,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHA3792d00a60f06c25e6eda2e997b7db2a36994f8c
+Redpoint Games,2017-04-09T15:06:31.44Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Android,type=library,commit=583200f976b9390d70649237a2999902f2b6bb4f,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHAed00a1752f742a2a9fe11725c54be431ffbc6f7f
+Redpoint Games,2017-04-09T15:06:19.233Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=PCL,type=library,commit=44029def7ee23ea2f6eeec7c79f84295103c313e,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHA17fd1338b2cc2a4db6b35638deb2ce9d4fc8e9a4
+Redpoint Games,2017-04-09T15:04:39.607Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Unity,type=library,commit=583200f976b9390d70649237a2999902f2b6bb4f,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHAe0b9651963ede33aa1af96ff6f70dcf0144b796c
+Redpoint Games,2017-04-09T15:04:51.907Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=PCL,type=library,commit=583200f976b9390d70649237a2999902f2b6bb4f,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHA897d5968c2778c108a652b0045f326ee4fb458ac
+Redpoint Games,2017-04-09T15:04:29.15Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Windows,type=library,commit=583200f976b9390d70649237a2999902f2b6bb4f,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHAa6bfac1adbc7a77703d4a5b9c97bda307d236811
+Jeffrey Stedfast,2017-04-09T15:02:02.03Z,6,376,"MimeKit is an Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms. It also supports parsing of Unix mbox files.
+
+      Unlike any other .NET MIME parser, MimeKit's parser does not need to parse string input nor does it use a TextReader. Instead, it parses raw byte streams, thus allowing it to better support undeclared 8bit text in headers as well as message bodies. It also means that MimeKit's parser is significantly faster than other .NET MIME parsers (more than 25x faster than OpenPOP.NET and over 100x faster than AE.Net.Mail and MailSystem.NET).
+
+      MimeKit's parser also uses a real tokenizer when parsing the headers rather than regex or string.Split() like most other .NET MIME parsers. This means that MimeKit is much more RFC-compliant than any other .NET MIME parser out there, including the commercial implementations.
+
+      In addition to having a far superior parser implementation, MimeKit's object tree is not a derivative of System.Net.Mail objects and thus does not suffer from System.Net.Mail's massive limitations or bugs.
+
+      API documentation can be found on the web at http://www.mimekit.net/docs
+
+      For those that need SMTP, POP3 or IMAP support, check out https://github.com/jstedfast/MailKit",MimeKit,False,2018-04-14T17:17:00.29+00:00,True,False,"An Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms.","mime,encryption,dkim,security,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,netstandard,net35,net40,net45,xamarin,android,ios,monodroid,monotouch,win8,wp81",2617261,False,1.14.0
+DoraemonYu,2017-04-09T15:00:04.553Z,219,376,"This expansion pack is focus on paging query.
+
+It is from Optional Expansion Packs that for MicroDBHelper , which is a friendly interface library to use SQLHelper.",MicroDBHelper-ExpansionPack-PagingQuery,False,2017-09-13T08:18:25.137+00:00,True,False,,"MicroDBHelper,MicroDBHelper-ExpansionPack",1031,False,1.0.0.1
+DoraemonYu,2017-04-09T14:54:34.49Z,227,376,"This expansion pack is focus on convert DataTable object to target entity model.
+
+It is from Optional Expansion Packs that for MicroDBHelper , which is a friendly interface library to use SQLHelper.",MicroDBHelper-ExpansionPack-EntityConversion,False,2017-09-05T01:28:15.41+00:00,True,False,,"MicroDBHelper,MicroDBHelper-ExpansionPack",349,False,1.0.0.1
+Redpoint Games,2017-04-09T14:50:27.377Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Android,type=library,commit=eae53db23540b9df10d60519d843487ee44f834a,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHAac0990bea50be1ba2061632fa075b3190584c87b
+Redpoint Games,2017-04-09T14:48:50.327Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Android,type=library,commit=eae53db23540b9df10d60519d843487ee44f834a,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHAd69be438a6cb424d4803d32c8fa576ba0dd538b9
+Redpoint Games,2017-04-09T14:49:44.76Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Linux,type=library,commit=eae53db23540b9df10d60519d843487ee44f834a,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHAf225e86a5aec84939818b7fafdb6add9929d0690
+Redpoint Games,2017-04-09T14:48:39.15Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=iOS,type=library,commit=eae53db23540b9df10d60519d843487ee44f834a,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHAee47669100cffbb2abadf0933d644c43bbcbac06
+Jeffrey Stedfast,2017-04-09T14:48:49.107Z,6,376,"MimeKit is an Open Source library for creating and parsing MIME messages. It also supports parsing of Unix mbox files.
+
+      Unlike any other .NET MIME parser, MimeKit's parser does not need to parse string input nor does it use a TextReader. Instead, it parses raw byte streams, thus allowing it to better support undeclared 8bit text in headers as well as message bodies. It also means that MimeKit's parser is significantly faster than other .NET MIME parsers (more than 25x faster than OpenPOP.NET and over 100x faster than AE.Net.Mail and MailSystem.NET).
+
+      MimeKit's parser also uses a real tokenizer when parsing the headers rather than regex or string.Split() like most other .NET MIME parsers. This means that MimeKit is much more RFC-compliant than any other .NET MIME parser out there, including the commercial implementations.
+
+      In addition to having a far superior parser implementation, MimeKit's object tree is not a derivative of System.Net.Mail objects and thus does not suffer from System.Net.Mail's massive limitations or bugs.
+
+      API documentation can be found on the web at http://www.mimekit.net/docs
+
+      For those that need SMTP, POP3 or IMAP support, check out https://github.com/jstedfast/MailKit",MimeKitLite,False,2018-04-14T17:15:38.13+00:00,True,False,An Open Source library for creating and parsing MIME messages.,"mime,mbox,mail,email,parser,tnef,netstandard,net40,net45,xamarin,android,ios,monodroid,monotouch,win8,wp81",100543,False,1.14.0
+Redpoint Games,2017-04-09T14:48:26.663Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=MacOS,type=library,commit=eae53db23540b9df10d60519d843487ee44f834a,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHA90ff616ef7ef4a12574af923ea52b3b977ddf129
+Redpoint Games,2017-04-09T14:44:47.553Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Unity,type=library,commit=eae53db23540b9df10d60519d843487ee44f834a,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHA355629893a7bc91abbd0753be1f729596c1ca3ba
+Redpoint Games,2017-04-09T14:44:58.057Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=PCL,type=library,commit=eae53db23540b9df10d60519d843487ee44f834a,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHAf0f89204a0dff5085470f4608eaff3d04a16b918
+Redpoint Games,2017-04-09T14:44:37.053Z,117,376,Prototest is a cross-platform testing framework with guarenteed forward compatibility.,Prototest,True,2017-12-24T09:42:06.053+00:00,True,False,,"platforms=Windows,type=library,commit=eae53db23540b9df10d60519d843487ee44f834a,git=https://github.com/RedpointGames/Prototest",56002,False,0.0.0-SHA83e3c0267d4cd83d82fd28106936a57a590ca4ab
+Niklas Karl,2017-04-09T14:38:42.35Z,353,376,Reads time series channels from measurement data files (MDF) up to version 3.3.0.,BinaryMesh.Data.Mdf,False,2017-05-02T03:53:18.967-07:00,False,False,,"automotive,bosch,calibration,can,ecu,measurement,mdf,vector",1186,False,1.0.4
+Niklas Karl,2017-04-09T14:38:42.35Z,353,376,Reads time series channels from measurement data files (MDF) up to version 3.3.0.,BinaryMesh.Data.Mdf,False,2017-05-02T03:53:18.967-07:00,False,False,,"automotive,bosch,calibration,can,ecu,measurement,mdf,vector",1186,False,1.0.4
+Braspag,2017-04-09T13:48:24.753Z,39,376,Implementação do Sdk Api Pagador,Braspag.ApiDotNetSdk,False,2018-03-12T14:09:13.19+00:00,True,False,,,1351,False,2.9.6
+InstaSharper,2017-04-09T14:35:14.937Z,104,376,InstaSharper,InstaSharper,False,2018-01-06T14:10:08.15+00:00,True,False,,,2880,False,1.2.3
+Abiezer Matos,2017-04-09T14:26:07.897Z,38,376,DDD and TDD framework for .NET,AbiFramework,False,2018-03-13T20:07:33.59+00:00,True,False,Async repositories interfaces,,1280,False,2.5.0
+Braspag,2017-04-09T13:48:24.753Z,39,376,Implementação do Sdk Api Pagador,Braspag.ApiDotNetSdk,False,2018-03-12T14:09:13.19+00:00,True,False,,,1351,False,2.9.6
+MzAutomation,2017-04-09T14:27:33.153Z,10,376,"MzAutomation Test Framework.
+Documentation coming soon..",AutoToolKit,False,2018-04-10T07:32:58.507+00:00,True,False,,"Test,Selenium",13979,False,1.1.6
+Abiezer Matos,2017-04-09T14:26:07.897Z,38,376,DDD and TDD framework for .NET,AbiFramework,False,2018-03-13T20:07:33.59+00:00,True,False,,,1280,False,2.5.0
+bigys,2017-04-09T14:06:58.563Z,43209,376,inital,FlowerWorld,False,1899-12-31T16:00:00-08:00,False,False,,"mvc,framework,web,utility",-1,False,1.0.0
+Wouter Huysentruit,2017-04-09T14:24:48.44Z,8,376,Managed .NET (C#) library for handling CQRS/ES projections while maintaining the event sequence order,Projecto,False,2018-04-12T12:05:25.487+00:00,True,False,,,2451,False,1.0.0.21
+Wouter Huysentruit,2017-04-09T14:24:59.6Z,8,376,Projecto extensions for integrating with Autofac,Projecto.Autofac,False,2018-04-12T12:05:37.487+00:00,True,False,,,1914,False,1.0.0.21
+"Microsoft,Seabiscuit",2017-04-09T14:22:30.793Z,43209,376,"Provides classes that implement claims-based identity in the .NET Framework, including classes that represent claims, claims-based identities, and claims-based principals.",System.Security.Claims.Net40,True,1900-01-01T00:00:00+00:00,False,False,,claims,-1,False,2.0.0-rtm-170202
+MathML,2017-04-09T02:33:11.19Z,376,376,Package Description,MathML,False,2017-04-09T07:14:27.253-07:00,False,False,,,949,False,0.6.0
+MathML,2017-01-22T05:46:11.937Z,376,453,MathML,MathML,False,2017-04-09T07:14:27.253-07:00,False,False,,,949,False,0.1.0
+Matt Howlett,2017-01-30T04:41:42.587Z,376,445,Logistic Classifier implementation,MathML,False,2017-04-09T07:14:27.253-07:00,False,False,See the blog post: https://dotnet.blog/posts/logistic-classifier-csharp/,,949,False,0.3.0
+MathML,2017-04-09T01:43:22.513Z,376,376,Package Description,MathML,False,2017-04-09T07:14:27.253-07:00,False,False,,,949,False,0.5.0
+MathML,2017-01-23T01:35:22.57Z,376,452,MathML,MathML,False,2017-04-09T07:14:27.253-07:00,False,False,,,949,False,0.2.0
+Matt Howlett,2017-02-05T21:28:48.097Z,376,439,Logistic Classifier Implementation,MathML,False,2017-04-09T07:14:27.253-07:00,False,False,Logistic Classifier Implementation,"classifier,logistic,regression",949,False,0.4.0
+MathML,2017-04-09T14:14:27.253Z,376,376,Package Description,MathML,False,2017-04-09T07:14:27.253-07:00,True,False,,,949,False,0.7.0
+湖南心莱信息科技有限公司,2017-04-09T14:11:22.67Z,337,376,"Magicodes.WeChat.SDK为湖南心莱信息科技有限公司基于微信业务封装的工具包，以便更便捷更简单的调用和使用微信接口，以更好地和自己的业务结合。
+官方网址：http://xin-lai.com 
+开源库地址:https://github.com/xin-lai 
+博客地址：http://www.cnblogs.com/codelove/ 
+交流QQ群（Magicodes开源库交流群）：346487194 
+小店地址：https://shop113059108.taobao.com/",Magicodes.WeChat.SDK,False,2017-05-18T00:45:32.743-07:00,True,False,,,6977,False,1.0.6308.39931
+bigys,2017-04-09T14:06:58.563Z,43209,376,inital,FlowerWorld,False,1899-12-31T16:00:00-08:00,False,False,,"mvc,framework,web,utility",-1,False,1.0.0
+Braspag,2017-04-09T13:48:24.753Z,39,376,Implementação do Sdk Api Pagador,Braspag.ApiDotNetSdk,False,2018-03-12T14:09:13.19+00:00,False,False,,,1351,False,2.9.6
+Braspag,2015-01-15T15:49:17.96Z,43209,1191,Implementação do Sdk ApiPagador,BraspagApiDotNetSdk,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0.1
+Braspag,2015-01-15T15:49:17.96Z,43209,1191,Implementação do Sdk ApiPagador,BraspagApiDotNetSdk,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0.1
+Leomiko,2017-04-09T13:52:44.187Z,43209,376,简单的库,iSmart.Net,False,1900-01-01T00:00:00+00:00,False,False,,"iSmart,iSmart.Net",-1,False,1.0.3
+Braspag,2017-04-09T13:48:24.753Z,39,376,Implementação do Sdk Api Pagador,Braspag.ApiDotNetSdk,False,2018-03-12T14:09:13.19+00:00,True,False,,,1351,False,2.9.6
+Braspag,2015-01-15T15:49:17.96Z,43209,1191,Implementação do Sdk ApiPagador,BraspagApiDotNetSdk,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0.1
+Braspag,2017-04-09T13:48:24.753Z,39,376,Implementação do Sdk Api Pagador,Braspag.ApiDotNetSdk,False,2018-03-12T14:09:13.19+00:00,True,False,,,1351,False,2.9.6
+Leomiko,2017-04-09T13:47:50.727Z,274,376,HtmlUI为你的应用界面提供无限可能。,iSmart.HtmlUI,False,2017-07-20T02:02:26.837+00:00,True,False,,"iSmart,iSmart.HtmlUI",518,False,1.0.3
+Braspag,2015-01-15T15:49:17.96Z,43209,1191,Implementação do Sdk ApiPagador,BraspagApiDotNetSdk,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0.1
+Braspag,2015-01-15T15:49:17.96Z,43209,1191,Implementação do Sdk ApiPagador,BraspagApiDotNetSdk,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0.1
+AspNetCore,2017-04-09T13:38:29.09Z,240,376,An AspNetCore middleware for (Tencent) Wechat/Weixin message handler and apis. (Windows/Linux works!),AspNetCore.Weixin,True,2017-08-23T11:11:55.06+00:00,True,False,,,1460,False,1.1.1-alpha-70410
+Leomiko,2017-04-09T13:37:31.49Z,274,376,HtmlUI为你的应用界面提供无限可能。,iSmart.HtmlUI,False,2017-07-20T02:02:26.837+00:00,True,False,,"iSmart,iSmart.HtmlUI",518,False,1.0.2
+Braspag,2015-01-15T15:49:17.96Z,43209,1191,Implementação do Sdk ApiPagador,BraspagApiDotNetSdk,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0.1
+Braspag,2015-01-15T15:49:17.96Z,43209,1191,Implementação do Sdk ApiPagador,BraspagApiDotNetSdk,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0.1
+Leomiko,2017-04-09T13:31:31.44Z,274,376,HtmlUI为你的应用界面提供无限可能。,iSmart.HtmlUI,False,2017-07-20T02:02:26.837+00:00,True,False,,"iSmart,iSmart.HtmlUI",518,False,1.0.1
+"Microsoft,Seabiscuit",2017-04-09T13:28:07.117Z,43209,376,"Provides types for encoding and escaping strings for use in JavaScript, HyperText Markup Language (HTML), and uniform resource locators (URL).",CuteAnt.Text.Encodings.Web,True,1900-01-01T00:00:00+00:00,False,False,,primitives,-1,False,2.0.0-rtm-170202
+Leomiko,2017-04-09T13:26:35.177Z,43209,376,简单的库,iSmart.Net,False,1900-01-01T00:00:00+00:00,False,False,,"ASmart,.Net",-1,False,1.0.2
+Net Dimension Studio,2017-04-08T16:23:51.38Z,43209,377,HtmlUI为你的应用界面提供无限可能。,ASmart.HtmlUI,False,1899-12-31T16:00:00-08:00,False,False,,"Tag1,Tag2",-1,False,1.0.1
+leomiko,2017-04-08T11:04:56.757Z,43209,377,My package description.,MyPackageaf,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+leomiko,2017-04-08T11:07:04.413Z,43209,377,My package description.,MyPackageaf,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.1
+leomiko,2017-04-08T11:13:43.637Z,43209,377,My package description.,MyPackageaf,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.2
+leomiko,2017-04-08T11:51:59.343Z,43209,377,My package description.,MyPackageaf,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.3
+leomiko,2017-04-08T11:56:12.763Z,43209,377,My package description.,MyPackageaf,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.8
+leomiko,2017-04-08T12:01:17.147Z,43209,377,My package description.,MyPackageaf,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.9
+Leomiko,2017-04-09T12:50:55.87Z,43209,376,简单的库,ASmart.Net,False,1899-12-31T16:00:00-08:00,False,False,,"ASmart,.Net",-1,False,1.0.12
+Leomiko,2017-04-09T13:21:57.5Z,43209,376,简单的库,iSmart.Net,False,1900-01-01T00:00:00+00:00,False,False,,"ASmart,.Net",-1,False,1.0.1
+Borys Levytskyi,2017-04-09T13:21:38.43Z,375,376,Allows to create rich command line interface.,CommandFramework,True,2017-04-10T09:27:15.683-07:00,True,False,,"cli,commandline,parser,arguments,commands",1319,False,1.0.0-beta-3
+Hsin,2017-04-09T13:05:26.77Z,372,376,Secs4net SML format serialization helper,Secs4net.Sml,True,2017-04-13T06:58:05.163-07:00,True,False,,secs4net,450,False,2.0.0-CI00021
+Hsin,2017-04-09T13:05:17.517Z,372,376,Secs4net JSON format serialization helper,Secs4net.Json,True,2017-04-13T06:57:53.58-07:00,True,False,,secs4net,586,False,2.0.0-CI00021
+Hsin,2017-04-09T13:05:08.247Z,43209,376,"SECSII connector on HSMS Implement for .NET ,LittleEndian",Secs4Net,True,1899-12-31T16:00:00-08:00,False,False,,"HSMS,SECSII",1553,False,2.0.0-CI00021
+"Dox Sweden AB,Jovan Paskota",2017-04-09T12:57:36.683Z,144,376,Description,Concode.Common.Web,False,2017-11-27T10:08:11.543+00:00,True,False,,Dox,3927,False,1.1.5
+Borys Levytskyi,2017-04-09T13:03:23.64Z,375,376,Allows to create rich command line interface.,CommandFramework,True,2017-04-10T09:27:15.683-07:00,True,False,,"cli,commandline,parser,arguments,commands",1319,False,1.0.0-beta-2
+René Sackers,2017-04-09T13:02:54.797Z,376,376,GTA Network TypeScript Definitions,types-gtanetwork,False,2017-04-09T06:02:54.797-07:00,True,False,,"gta-network,typescript,definitions",2970,False,0.1.12
+"Dox Sweden AB,Jovan Paskota",2017-04-09T13:01:19.897Z,144,376,Description,Concode.Common.Web,False,2017-11-27T10:08:11.543+00:00,True,False,,Dox,3927,False,1.1.6
+"Dox Sweden AB,Jovan Paskota",2017-04-09T12:57:36.683Z,144,376,Description,Concode.Common.Web,False,2017-11-27T10:08:11.543+00:00,True,False,,Dox,3927,False,1.1.5
+"Dox Sweden AB,Jovan Paskota",2017-04-09T13:01:19.897Z,144,376,Description,Concode.Common.Web,False,2017-11-27T10:08:11.543+00:00,True,False,,Dox,3927,False,1.1.6
+"Dox Sweden AB,Jovan Paskota",2017-04-09T12:57:36.683Z,144,376,Description,Concode.Common.Web,False,2017-11-27T10:08:11.543+00:00,True,False,,,3927,False,1.1.5
+Leomiko,2017-04-08T10:12:06.213Z,43209,377,简单的库,aSmart.Net,False,1899-12-31T16:00:00-08:00,False,False,,"Tag1,Tag2",-1,False,1.0.1
+ddt,2017-04-09T12:55:50.37Z,43209,376,Description,LifePay.Uwp.Printing,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.6.2
+ddt,2017-04-09T12:55:50.37Z,43209,376,Description,LifePay.Uwp.Printing,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.6.2
+maliming,2017-04-09T12:47:08.593Z,283,376,Abp.Oss,Abp.Oss,False,2017-07-10T20:23:45.697-07:00,True,False,,,1379,False,1.0.0
+Leomiko,2017-04-09T12:50:55.87Z,43209,376,简单的库,ASmart.Net,False,1899-12-31T16:00:00-08:00,False,False,,"ASmart,.Net",-1,False,1.0.12
+maliming,2017-04-09T12:47:08.593Z,283,376,Abp.Oss,Abp.Oss,False,2017-07-10T20:23:45.697-07:00,True,False,,,1379,False,1.0.0
+Dmytro Dziuma,2017-04-09T12:37:46.42Z,211,376,Cake addin for Azure management.,Cake.Azure,False,2017-09-21T14:28:00.49+00:00,True,False,,"Cake,Script,Azure",5107,False,0.1.0
+Alessio Parma <alessio.parma@gmail.com>,2017-04-09T12:37:38.12Z,131,376,"Fully managed library providing convenience methods to perform argument checks. Thrower allows to write preconditions in a pretty lean way, which reduces the clutter at the beginning of each method by removing the need to use the cumbersome 'if true then throw ex' required to validate parameters. For example, a validation against null becomes 'Raise.ArgumentNullException.IfIsNull(myParam)', while a generic validation may be written as 'Raise.ArgumentException.If(condition)'. Moreover, this library embeds a portable copy of Marc Gravell's FastMember and Jeffrey Stedfast's EmailValidation libraries.",Thrower,False,2017-12-10T15:29:52.21+00:00,True,False,,"preconditions,check,integrity,parameters,fluent,arguments,validation,portable,netstandard",80048,False,4.1.3
+Max-Planck-Institute of Biochemistry,2017-04-09T12:33:00.217Z,1,376,"Utility classes for MaxQuant and Perseus, independent of graphics",BaseLibS,False,2018-04-19T14:36:16.56+00:00,True,False,,,19359,False,1.6.0.189
+Max-Planck-Institute of Biochemistry,2017-04-09T12:33:10.063Z,1,376,Numerical classes for MaxQuant and Perseus,NumPluginBase,False,2018-04-19T14:36:19.247+00:00,True,False,,,19057,False,1.6.0.189
+Max-Planck-Institute of Biochemistry,2017-04-09T12:33:19.36Z,1,376,Svm implementation for Perseus,NumPluginSvm,False,2018-04-19T14:36:21.683+00:00,True,False,,,19050,False,1.6.0.189
+Max-Planck-Institute of Biochemistry,2017-04-09T12:32:14.977Z,1,376,Utility classes for MaxQuant and Perseus,BaseLib,False,2018-04-19T14:35:53.323+00:00,True,False,,,19216,False,1.6.0.189
+"Dox Sweden AB,Jovan Paskota",2017-04-09T12:27:54.39Z,144,376,Description,Concode.Common.Web,False,2017-11-27T10:08:11.543+00:00,True,False,,Dox,3927,False,1.1.4
+"Dox Sweden AB,Jovan Paskota",2017-04-09T12:27:54.39Z,144,376,Description,Concode.Common.Web,False,2017-11-27T10:08:11.543+00:00,True,False,,,3927,False,1.1.4
+"Dox Sweden AB,Jovan Paskota",2017-04-09T12:23:45.93Z,144,376,Description,Concode.Common.Web,False,2017-11-27T10:08:11.543+00:00,True,False,,Dox,3927,False,1.1.3
+Max-Planck-Institute of Biochemistry,2017-04-09T12:25:35.463Z,1,376,"Utility classes for MaxQuant and Perseus, independent of graphics",BaseLibS,False,2018-04-19T14:36:16.56+00:00,True,False,,,19359,False,1.6.0.188
+tillable.net,2017-04-09T12:25:44.073Z,376,376,Application Utility for Wpf,WpfUtility,False,2017-04-09T05:25:44.073-07:00,True,False,,WPF,905,False,0.1.5
+Max-Planck-Institute of Biochemistry,2017-04-09T12:25:44.433Z,1,376,Numerical classes for MaxQuant and Perseus,NumPluginBase,False,2018-04-19T14:36:19.247+00:00,True,False,,,19057,False,1.6.0.188
+Max-Planck-Institute of Biochemistry,2017-04-09T12:25:53.403Z,1,376,Svm implementation for Perseus,NumPluginSvm,False,2018-04-19T14:36:21.683+00:00,True,False,,,19050,False,1.6.0.188
+Max-Planck-Institute of Biochemistry,2017-04-09T12:24:54.333Z,1,376,Utility classes for MaxQuant and Perseus,BaseLib,False,2018-04-19T14:35:53.323+00:00,True,False,,,19216,False,1.6.0.188
+"Dox Sweden AB,Jovan Paskota",2017-04-09T12:23:45.93Z,144,376,Description,Concode.Common.Web,False,2017-11-27T10:08:11.543+00:00,True,False,,,3927,False,1.1.3
+Alvaro Mari-Thompson,2017-04-09T12:15:08.643Z,94,376,An experimental API client library for the Billingbooth invoicing and billing engine.,Billingbooth.Api,False,2018-01-16T17:12:57.683+00:00,True,False,,"Billingbooth,API,billing,engine",32798,False,0.0.0.242
+Luca Sgroi,2017-04-08T17:40:59.297Z,325,377,Pask extension which provides NuGet functionality to create and publish a package.,Pask.NuGet,False,2017-05-30T04:53:33.177-07:00,False,False,Pask extension which provides NuGet functionality to create and publish a package.,"Invoke-Build,PowerShell,BuildAutomation,Pask,NuGet",2877,False,0.6.0
+Luca Sgroi,2017-04-08T22:39:19.307Z,325,377,Pask extension that provides test automation functionality.,Pask.Test,False,2017-05-30T05:56:16.05-07:00,False,False,Pask extension that provides test automation functionality.,"Invoke-Build,PowerShell,BuildAutomation,Pask,TestAutomation,MSpec,NUnit",1736,False,0.1.2
+NEvilES.Testing,2017-04-09T12:13:30.06Z,369,376,Package Description,NEvilES.Testing,True,2017-04-15T22:01:48.95-07:00,True,False,,,614,False,0.1.0-alpha65
+Craig Gardiner,2017-04-09T12:13:09.713Z,369,376,.Net Evil Event Sourcing Core,NEvilES,True,2017-04-15T22:01:31.99-07:00,True,False,,"event-sourcing,event-store,cqrs",794,False,0.1.0-alpha65
+Craig Gardiner,2017-04-09T12:13:19.497Z,369,376,.Net Evil Event Sourcing Data Store,NEvilES.DataStore,True,2017-04-15T22:01:40.4-07:00,True,False,,,651,False,0.1.0-alpha65
+Max-Planck-Institute of Biochemistry,2017-04-09T12:10:35.533Z,1,376,Utility classes for MaxQuant and Perseus,BaseLib,False,2018-04-19T14:35:53.323+00:00,True,False,,,19216,False,1.6.0.187
+Max-Planck-Institute of Biochemistry,2017-04-09T12:11:43.247Z,1,376,Svm implementation for Perseus,NumPluginSvm,False,2018-04-19T14:36:21.683+00:00,True,False,,,19050,False,1.6.0.187
+Max-Planck-Institute of Biochemistry,2017-04-09T12:11:33.51Z,1,376,Numerical classes for MaxQuant and Perseus,NumPluginBase,False,2018-04-19T14:36:19.247+00:00,True,False,,,19057,False,1.6.0.187
+Max-Planck-Institute of Biochemistry,2017-04-09T12:11:24.01Z,1,376,"Utility classes for MaxQuant and Perseus, independent of graphics",BaseLibS,False,2018-04-19T14:36:16.56+00:00,True,False,,,19359,False,1.6.0.187
+Luca Sgroi,2017-04-09T12:09:43.493Z,325,376,Pask extension that provides test automation functionality.,Pask.Test,False,2017-05-30T05:56:16.05-07:00,True,False,Pask extension that provides test automation functionality.,"PowerShell,Build,Automation,Script,Invoke-Build,Test,MSpec,NUnit,Pask",1736,False,0.2.0
+"Gerald Versluis,rafaelrmou,ArtjomP",2017-04-09T11:52:16.723Z,71,376,Unofficial. Simple cross-platform plug-in that allows you to pick files from the filesystem (iCloud drive in case of iOS) and work with them.,pt.Xamarin.Plugin.FilePicker,False,2018-02-08T17:29:41.84+00:00,True,False,Simple cross-platform plug-in that allows you to pick files from the filesystem (iCloud drive in case of iOS) and work with them. View full project page for README,"xamarin,file,picker,filepicker,filebrowser,pcl,xam.pcl,plugin,for,windows,phone,winphone,wp8,winrt,android,xamarin.forms,ios",3156,False,1.3.2
+Max-Planck-Institute of Biochemistry,2017-04-09T12:07:13.7Z,1,376,Absolute protein quantification PMID 25225357,PluginProteomicRuler,False,2018-04-19T14:40:23.337+00:00,True,False,,,22401,False,1.6.0.76
+Max-Planck-Institute of Biochemistry,2017-04-09T12:07:04.353Z,1,376,Collection of Perseus plugins,PerseusPluginLib,False,2018-04-19T14:40:20.68+00:00,True,False,,,22334,False,1.6.0.76
+Max-Planck-Institute of Biochemistry,2017-04-09T12:06:53.777Z,1,376,API for Perseus plugin development,PerseusApi,False,2018-04-19T14:40:17.773+00:00,True,False,,,22922,False,1.6.0.76
+"Gerald Versluis,rafaelrmou,ArtjomP",2017-04-09T11:52:16.723Z,71,376,Unofficial. Simple cross-platform plug-in that allows you to pick files from the filesystem (iCloud drive in case of iOS) and work with them.,pt.Xamarin.Plugin.FilePicker,False,2018-02-08T17:29:41.84+00:00,False,False,Simple cross-platform plug-in that allows you to pick files from the filesystem (iCloud drive in case of iOS) and work with them. View full project page for README,"xamarin,file,picker,filepicker,filebrowser,pcl,xam.pcl,plugin,for,windows,phone,winphone,wp8,winrt,android,xamarin.forms,ios",3156,False,1.3.2
+Max-Planck-Institute of Biochemistry,2017-04-09T11:53:22.8Z,1,376,Numerical classes for MaxQuant and Perseus,NumPluginBase,False,2018-04-19T14:36:19.247+00:00,True,False,,,19057,False,1.6.0.186
+Max-Planck-Institute of Biochemistry,2017-04-09T11:53:13.173Z,1,376,"Utility classes for MaxQuant and Perseus, independent of graphics",BaseLibS,False,2018-04-19T14:36:16.56+00:00,True,False,,,19359,False,1.6.0.186
+Max-Planck-Institute of Biochemistry,2017-04-09T11:53:33.597Z,1,376,Svm implementation for Perseus,NumPluginSvm,False,2018-04-19T14:36:21.683+00:00,True,False,,,19050,False,1.6.0.186
+"Gerald Versluis,rafaelrmou,ArtjomP",2017-04-09T11:52:16.723Z,71,376,Unofficial. Simple cross-platform plug-in that allows you to pick files from the filesystem (iCloud drive in case of iOS) and work with them.,pt.Xamarin.Plugin.FilePicker,False,2018-02-08T17:29:41.84+00:00,False,False,Simple cross-platform plug-in that allows you to pick files from the filesystem (iCloud drive in case of iOS) and work with them. View full project page for README,"xamarin,file,picker,filepicker,filebrowser,pcl,xam.pcl,plugin,for,windows,phone,winphone,wp8,winrt,android,xamarin.forms,ios",3156,False,1.3.2
+"Gerald Versluis,rafaelrmou,ArtjomP",2017-04-09T11:52:16.723Z,71,376,Unofficial. Simple cross-platform plug-in that allows you to pick files from the filesystem (iCloud drive in case of iOS) and work with them.,pt.Xamarin.Plugin.FilePicker,False,2018-02-08T17:29:41.84+00:00,False,False,Simple cross-platform plug-in that allows you to pick files from the filesystem (iCloud drive in case of iOS) and work with them. View full project page for README,"xamarin,file,picker,filepicker,filebrowser,pcl,xam.pcl,plugin,for,windows,phone,winphone,wp8,winrt,android,xamarin.forms,ios",3156,False,1.3.2
+Max-Planck-Institute of Biochemistry,2017-04-09T11:52:55.53Z,1,376,Utility classes for MaxQuant and Perseus,BaseLib,False,2018-04-19T14:35:53.323+00:00,True,False,,,19216,False,1.6.0.186
+csMACnz,2017-04-09T11:46:55.51Z,43209,376,"Coveralls.io uploader for .NET Code Coverage. Supports opencover and visual studio's codecoverage.exe on windows, and monocov for mono",coveralls.net,True,1899-12-31T16:00:00-08:00,False,False,Coveralls.io uploader for .NET Code Coverage.,"Code-Coverage,Coveralls,opencover,monocov,codecoverage.exe,coveralls.io,Reporting,Runner",151928,False,0.8.0-beta0001
+"Dox Sweden AB,Jovan Paskota",2017-04-09T11:32:57.98Z,144,376,Description,Concode.Common.Web,False,2017-11-27T10:08:11.543+00:00,True,False,,Dox,3927,False,1.1.2
+Max-Planck-Institute of Biochemistry,2017-04-09T11:33:46.52Z,1,376,"Utility classes for MaxQuant and Perseus, independent of graphics",BaseLibS,False,2018-04-19T14:36:16.56+00:00,True,False,,,19359,False,1.6.0.185
+Max-Planck-Institute of Biochemistry,2017-04-09T11:34:05.84Z,1,376,Svm implementation for Perseus,NumPluginSvm,False,2018-04-19T14:36:21.683+00:00,True,False,,,19050,False,1.6.0.185
+Max-Planck-Institute of Biochemistry,2017-04-09T11:33:56.1Z,1,376,Numerical classes for MaxQuant and Perseus,NumPluginBase,False,2018-04-19T14:36:19.247+00:00,True,False,,,19057,False,1.6.0.185
+Max-Planck-Institute of Biochemistry,2017-04-09T11:32:59.353Z,1,376,Utility classes for MaxQuant and Perseus,BaseLib,False,2018-04-19T14:35:53.323+00:00,True,False,,,19216,False,1.6.0.185
+"Dox Sweden AB,Jovan Paskota",2017-04-09T11:32:57.98Z,144,376,Description,Concode.Common.Web,False,2017-11-27T10:08:11.543+00:00,True,False,,,3927,False,1.1.2
+Luca Sgroi,2017-04-09T11:21:51.95Z,325,376,Pask extension which provides NuGet functionality to create and publish a package.,Pask.NuGet,False,2017-05-30T04:53:33.177-07:00,True,False,Pask extension which provides NuGet functionality to create and publish a package.,"PowerShell,Build,Automation,Script,Invoke-Build,NuGet,Pask",2877,False,0.7.0
+Digitalkraft,2017-04-09T11:19:27.867Z,175,376,Module Initializer,DK.ModuleInitializer,False,2017-10-27T14:53:10.117+00:00,True,False,,Digitalkraft,8680,False,1.0.0.15
+Digitalkraft,2017-04-09T11:12:55.483Z,175,376,Module Initializer,DK.ModuleInitializer,False,2017-10-27T14:53:10.117+00:00,True,False,,Digitalkraft,8680,False,1.0.0.14
+Luca Sgroi,2017-04-08T16:08:16.787Z,325,377,Pask is a modular task-oriented PowerShell build automation for .NET. It provides a set of predefined tasks and the ability to create custom ones.,Pask,False,2017-05-30T04:08:39.167-07:00,False,False,Modular task-oriented PowerShell build automation for .NET,"PowerShell,BuildAutomation,Invoke-Build",7586,False,0.24.0
+Paul den Dulk,2017-04-09T11:12:16.38Z,57,376,Mapsui - Library for mapping,Mapsui,False,2018-02-22T08:00:44.697+00:00,True,False,,"map,maps,mapping,geo,gis,osm",22244,False,0.16.0
+Max-Planck-Institute of Biochemistry,2017-04-09T11:12:09.863Z,1,376,Svm implementation for Perseus,NumPluginSvm,False,2018-04-19T14:36:21.683+00:00,True,False,,,19050,False,1.6.0.184
+Max-Planck-Institute of Biochemistry,2017-04-09T11:12:00.937Z,1,376,Numerical classes for MaxQuant and Perseus,NumPluginBase,False,2018-04-19T14:36:19.247+00:00,True,False,,,19057,False,1.6.0.184
