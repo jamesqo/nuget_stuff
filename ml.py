@@ -138,7 +138,6 @@ class Recommender(object):
 
         metrics_and_penalties = [
             (_freshness_vector(df), self.penalties['freshness']),
-            #(_icon_vector(df), self.penalties['icon']),
             (_popularity_vector(df), self.penalties['popularity']),
         ]
         self.metrics_, self.penalties_ = zip(*metrics_and_penalties)
