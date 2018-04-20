@@ -20,7 +20,10 @@ LOG = StyleAdapter(logging.getLogger(__name__))
 
 BLOBS_ROOT = os.path.join('.', 'blobs')
 PACKAGES_ROOT = os.path.join('.', 'packages')
+VECTORS_ROOT = os.path.join('.', 'vectors')
 ETAGS_FNAME = 'etags.log'
+
+PAGES_PER_CHUNK = 300
 
 def parse_args():
     parser = ArgumentParser()
@@ -114,12 +117,22 @@ def print_recs(df, recs):
     # print() can't handle certain characters because it uses the console's encoding.
     sys.stdout.buffer.write(output.encode('utf-8'))
 
+def add_chunkno(df):
+    df['chunkno'] = np.floor(df['pageno'] / PAGES_PER_CHUNK)
+    return df
+
 def gen_blobs(df, tagger):
     log_call()
-    os.makedirs(BLOBS_ROOT, exist_ok=True)
 
-    trans = FeatureTransformer(tags_vocab=tagger.vocab_)
-    feats = trans.fit_transform(df)
+    os.makedirs(BLOBS_ROOT, exist_ok=True)
+    os.makedirs(VECTORS_ROOT, exist_ok=True)
+
+    df = add_chunkno(df)
+    fname_fmt = os.path.join(VECTORS_ROOT, 'chunk{}.npz')
+    trans = FeatureTransformer(tags_vocab=tagger.vocab_,
+                               mode='chunked',
+                               fname_fmt=fname_fmt)
+    fnames = trans.fit_transform(df)
 
     magic = Recommender(n_recs=5)
     magic.fit(feats, df)

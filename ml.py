@@ -11,12 +11,6 @@ from utils.sklearn import linear_kernel
 
 LOG = StyleAdapter(logging.getLogger(__name__))
 
-DEFAULT_WEIGHTS = {
-    'authors': 1,
-    'description': 2,
-    'etags': 8,
-}
-
 def _authors_matrix(X):
     log_call()
     vectorizer = TfidfVectorizer(ngram_range=(2, 2))
@@ -63,15 +57,47 @@ def _hstack_with_weights(matrices, weights):
 
     return sparse.hstack(matrices, format='csr')
 
+DEFAULT_WEIGHTS = {
+    'authors': 1,
+    'description': 2,
+    'etags': 8,
+}
+
+MODES = ('onego', 'chunked')
+
 class FeatureTransformer(object):
-    def __init__(self, tags_vocab, weights=None):
+    def __init__(self,
+                 tags_vocab,
+                 weights=None,
+                 mode='onego',
+                 fname_fmt=None):
+        if mode not in MODES:
+            raise ValueError("Unrecognized mode {}".format(repr(mode)))
+        if mode == 'chunked' and (fname_fmt is None):
+            raise ValueError("'fname_fmt' is non-optional for mode {}".format(repr(mode)))
+
         self.tags_vocab = tags_vocab
         self.weights = weights or DEFAULT_WEIGHTS
+        self.mode = mode
+        self.fname_fmt = fname_fmt
 
         self.matrices_ = None
         self.weights_ = None
 
     def fit_transform(self, X):
+        if self.mode == 'onego':
+            return self._fit_transform(X)
+        elif self.mode == 'chunked':
+            chunknos = sorted(set(X['chunkno']))
+            fnames = [self.fname_fmt.format(chunkno=chunkno) for chunkno in chunknos]
+            for chunkno, fname in zip(chunknos, fnames):
+                LOG.debug("Saving vectors for chunk #{} to {}".format(chunkno, fname))
+                feats = self._fit_transform(X)
+                assert sparse.isspmatrix_csr(feats)
+                sparse.save_npz(fname, feats)
+            return fnames
+
+    def _fit_transform(self, X):
         matrices_and_weights = [
             (_authors_matrix(X), self.weights['authors']),
             (_description_matrix(X), self.weights['description']),
@@ -79,11 +105,6 @@ class FeatureTransformer(object):
         ]
         self.matrices_, self.weights_ = zip(*matrices_and_weights)
         return _hstack_with_weights(self.matrices_, self.weights_)
-
-DEFAULT_PENALTIES = {
-    'freshness': .1,
-    'popularity': .1,
-}
 
 def _freshness_vector(X):
     log_call()
@@ -111,6 +132,11 @@ def _apply_penalties(metrics, penalties):
     min_scales = [(1 - p) for p in penalties]
     return [1 * m + min_scale * (1 - m) for m, min_scale in zip(metrics, min_scales)]
 
+DEFAULT_PENALTIES = {
+    'freshness': .1,
+    'popularity': .1,
+}
+
 class Recommender(object):
     def __init__(self,
                  n_recs,
@@ -134,7 +160,7 @@ class Recommender(object):
 
     def fit(self, X, df):
         log_call()
-        assert sparse.issparse(X)
+        assert sparse.isspmatrix_csr(X)
 
         metrics_and_penalties = [
             (_freshness_vector(df), self.penalties['freshness']),
