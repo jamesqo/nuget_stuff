@@ -9,13 +9,12 @@ import sys
 
 from argparse import ArgumentParser
 from datetime import datetime
-from scipy import sparse
 
+from blobber import gen_blobs
 from data_prep import load_packages
 from ml import FeatureTransformer, Recommender
-from serializers import RecSerializer
 
-from utils.logging import log_call, StyleAdapter
+from utils.logging import StyleAdapter
 
 LOG = StyleAdapter(logging.getLogger(__name__))
 
@@ -24,8 +23,6 @@ PACKAGES_ROOT = os.path.join('.', 'packages')
 VECTORS_ROOT = os.path.join('.', 'vectors')
 ETAGS_FNAME = 'etags.log'
 
-PAGES_PER_CHUNK = 300
-
 def parse_args():
     parser = ArgumentParser()
     parser.add_argument(
@@ -33,6 +30,15 @@ def parse_args():
         help="generate json blobs",
         action='store_true',
         dest='generate_blobs'
+    )
+    parser.add_argument(
+        '-c', '--chunk-size',
+        metavar='SIZE',
+        help="set number of catalog pages per training batch",
+        action='store',
+        dest='pages_per_chunk',
+        type=int,
+        default=100
     )
     parser.add_argument(
         '-d', '--debug',
@@ -118,62 +124,6 @@ def print_recs(df, recs):
     # print() can't handle certain characters because it uses the console's encoding.
     sys.stdout.buffer.write(output.encode('utf-8'))
 
-def add_chunkno(df):
-    df['chunkno'] = np.floor(df['pageno'] / PAGES_PER_CHUNK)
-    return df
-
-def gen_blobs(df, tagger):
-    FNAME_FMT = os.path.join(VECTORS_ROOT, 'chunk{chunkno}.npz')
-
-    log_call()
-
-    os.makedirs(BLOBS_ROOT, exist_ok=True)
-    os.makedirs(VECTORS_ROOT, exist_ok=True)
-
-    df = add_chunkno(df)
-    trans = FeatureTransformer(tags_vocab=tagger.vocab_,
-                               mode='chunked',
-                               fname_fmt=FNAME_FMT)
-    fnames = trans.fit_transform(df)
-
-    assert all(~df['chunkno'].isna())
-    chunknos = sorted(set(df['chunkno']))
-    assert len(chunknos) == len(fnames)
-
-    for chunkno_pred in chunknos:
-        magic = Recommender(n_recs=5)
-
-        subdf_pred = df[df['chunkno'] == chunkno_pred]
-        fname_pred = FNAME_FMT.format(chunkno=chunkno_pred)
-        subfeats_pred = sparse.load_npz(fname_pred)
-
-        for chunkno in chunknos:
-            if chunkno == chunkno_pred:
-                subdf, fname, subfeats = subdf_pred, fname_pred, subfeats_pred
-            else:
-                subdf = df[df['chunkno'] == chunkno]
-                fname = FNAME_FMT.format(chunkno=chunkno)
-                subfeats_pred = sparse.load_npz(fname)
-
-            magic.partial_fit(subfeats, subdf, subfeats_pred, subdf_pred)
-
-        recs_dict = magic.predict(subfeats_pred, subdf_pred)
-
-        pagenos = sorted(set(subdf_pred['pageno']))
-        for pageno in pagenos:
-            subsubdf = subdf_pred[subdf_pred['pageno'] == pageno]
-            dirname = os.path.join(BLOBS_ROOT, 'page{}'.format(pageno))
-            os.makedirs(dirname, exist_ok=True)
-
-            ids = list(subsubdf['id'])
-            for id_ in ids:
-                hexid = id_.encode('utf-8').hex()
-                blob_fname = os.path.join(dirname, '{}.json'.format(hexid))
-
-                recs = recs_dict[id_]
-                writer = RecSerializer(blob_fname)
-                writer.writerecs(id_, recs)
-
 async def main():
     args = parse_args()
     logging.basicConfig(level=args.log_level)
@@ -181,7 +131,10 @@ async def main():
     df, tagger = await load_packages(PACKAGES_ROOT, args)
 
     if args.generate_blobs:
-        gen_blobs(df, tagger)
+        gen_blobs(df,
+                  tagger,
+                  blobs_root=BLOBS_ROOT,
+                  vectors_root=VECTORS_ROOT)
     else:
         trans = FeatureTransformer(tags_vocab=tagger.vocab_)
         feats = trans.fit_transform(df)

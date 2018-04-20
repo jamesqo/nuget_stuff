@@ -130,6 +130,12 @@ def read_packages(packages_root, args):
 
     return df
 
+def add_chunkno(df, args):
+    log_call()
+    assert args.pages_per_chunk > 0
+    df['chunkno'] = np.floor(df['pageno'] / args.pages_per_chunk)
+    return df
+
 def add_downloads_per_day(df):
     log_call()
     df['downloads_per_day'] = df['total_downloads'] / df['days_alive']
@@ -164,6 +170,7 @@ async def load_packages(packages_root, args):
         await write_packages(packages_root, args)
     df = read_packages(packages_root, args)
 
+    df = add_chunkno(df, args)
     df = add_downloads_per_day(df)
     df, tagger = add_etags(df)
 
