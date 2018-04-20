@@ -126,6 +126,8 @@ def gen_blobs(df, tagger):
 
     assert all(~df['pageno'].isna())
     for pageno in sorted(set(df['pageno'])):
+        LOG.debug("Generating blobs for page #{}".format(pageno))
+
         subdf = df[df['pageno'] == pageno]
         subfeats = feats[subdf.index]
         recs_dict = magic.predict(subfeats, subdf)

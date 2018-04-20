@@ -2,12 +2,13 @@ import asyncio
 import dateutil.parser as dateparser
 import logging
 import platform
+import pytz
 import re
 import traceback as tb
 
 from aiohttp.client_exceptions import ClientOSError, ClientResponseError, ServerDisconnectedError
 from asyncio import CancelledError
-from datetime import date, datetime, timedelta
+from datetime import datetime, timedelta
 from urllib.parse import urlencode
 
 from utils.http import JSONClient, RetryClient
@@ -23,9 +24,9 @@ SEARCH_TYPE = 'SearchQueryService'
 
 WINDOWS = platform.system() == 'Windows'
 
-TOMORROW = datetime.fromordinal(
-    (date.today() + timedelta(days=1)).toordinal()
-)
+UTC_TOMORROW = datetime.fromordinal(
+    (datetime.utcnow().date() + timedelta(days=1)).toordinal()
+).replace(tzinfo=pytz.utc)
 
 def ok_filter(exc):
     if isinstance(exc, (CancelledError, asyncio.TimeoutError)):
@@ -142,7 +143,7 @@ class NugetPackage(object):
         if not created:
             return -1
         dt = dateparser.parse(created)
-        return max((TOMORROW - dt).days, 1)
+        return max((UTC_TOMORROW - dt).days, 1)
 
     @property
     def days_abandoned(self):
@@ -150,12 +151,7 @@ class NugetPackage(object):
         if not last_updated:
             return -1
         dt = dateparser.parse(last_updated)
-        return max((TOMORROW - dt).days, 1)
-
-    @property
-    def downloads_per_day(self):
-        total_downloads = self.search.total_downloads
-        return -1 if total_downloads == -1 else (total_downloads / self.days_alive)
+        return max((UTC_TOMORROW - dt).days, 1)
 
     async def load(self, catalog=True, reg=True, search=True):
         try:

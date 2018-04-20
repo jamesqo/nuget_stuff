@@ -9,7 +9,6 @@ FEATURES = [
     'days_abandoned',
     'days_alive',
     'description',
-    'downloads_per_day',
     'id',
     'is_prerelease',
     'last_updated',
@@ -50,7 +49,6 @@ class PackageSerializer(object):
                 pkg.days_abandoned,
                 pkg.days_alive,
                 cinfo.description,
-                pkg.downloads_per_day,
                 pkg.id,
                 cinfo.is_prerelease,
                 rinfo.last_updated,
@@ -71,7 +69,6 @@ class PackageSerializer(object):
         row = [None] * len(FEATURES)
         row[FEATURES.index('days_abandoned')] = -1
         row[FEATURES.index('days_alive')] = -1
-        row[FEATURES.index('downloads_per_day')] = -1
         row[FEATURES.index('id')] = pkg.id
         row[FEATURES.index('missing_info')] = True
         row[FEATURES.index('version')] = pkg.version

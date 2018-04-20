@@ -21,6 +21,8 @@ LOG = StyleAdapter(logging.getLogger(__name__))
 SCHEMA = {
     'authors': object,
     'created': object,
+    'days_abandoned': np.int32,
+    'days_alive': np.int32,
     'description': object,
     'id': object,
     'is_prerelease': object, # bool (missing values)
@@ -95,10 +97,10 @@ def read_packages(packages_root, args):
 
     def use_nan_for_missing_values(df):
         features_and_defaults = [
-            (['days_abandoned', 'days_alive', 'downloads_per_day'], -1),
+            (['days_abandoned', 'days_alive'], -1),
             (DATE_FEATURES, DEFAULT_DATETIME)
         ]
-        for features, default in zip(*features_and_defaults):
+        for features, default in features_and_defaults:
             for feature in features:
                 assert all(~df[feature].isna())
                 df.loc[df[feature] == default, feature] = math.nan
@@ -128,6 +130,14 @@ def read_packages(packages_root, args):
 
     return df
 
+def add_downloads_per_day(df):
+    log_call()
+    df['downloads_per_day'] = df['total_downloads'] / df['days_alive']
+    df.loc[
+        (df['total_downloads'] == -1) | (df['days_alive'] == -1),
+        'downloads_per_day'] = math.nan
+    return df
+
 def add_etags(df):
     log_call()
     tagger = SmartTagger()
@@ -154,6 +164,7 @@ async def load_packages(packages_root, args):
         await write_packages(packages_root, args)
     df = read_packages(packages_root, args)
 
+    df = add_downloads_per_day(df)
     df, tagger = add_etags(df)
 
     if args.etags_fname is not None:

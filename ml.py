@@ -68,6 +68,9 @@ class FeatureTransformer(object):
         self.tags_vocab = tags_vocab
         self.weights = weights or DEFAULT_WEIGHTS
 
+        self.matrices_ = None
+        self.weights_ = None
+
     def fit_transform(self, X):
         matrices_and_weights = [
             (_authors_matrix(X), self.weights['authors']),
