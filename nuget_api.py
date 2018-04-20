@@ -6,7 +6,12 @@ import pytz
 import re
 import traceback as tb
 
-from aiohttp.client_exceptions import ClientOSError, ClientResponseError, ServerDisconnectedError
+from aiohttp.client_exceptions import (
+    ClientOSError,
+    ClientPayloadError,
+    ClientResponseError,
+    ServerDisconnectedError
+)
 from asyncio import CancelledError
 from datetime import datetime, timedelta
 from urllib.parse import urlencode
@@ -39,7 +44,7 @@ def ok_filter(exc):
 def can_ignore_exception(exc):
     if ok_filter(exc):
         return True
-    elif isinstance(exc, ServerDisconnectedError):
+    elif isinstance(exc, (ClientPayloadError, ServerDisconnectedError)):
         return True
     elif isinstance(exc, ClientResponseError) and exc.code == 404:
         return True
