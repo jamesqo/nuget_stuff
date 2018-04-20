@@ -5,7 +5,6 @@ from ml import FeatureTransformer, Recommender
 from scipy import sparse
 
 from serializers import RecSerializer
-
 from utils.logging import log_call, StyleAdapter
 
 LOG = StyleAdapter(logging.getLogger(__name__))

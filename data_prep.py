@@ -12,7 +12,6 @@ from datetime import datetime
 from nuget_api import can_ignore_exception, NugetCatalogClient, NugetContext
 from serializers import PackageSerializer
 from tagger import SmartTagger
-
 from utils.iter import aenumerate, aislice
 from utils.logging import log_call, StyleAdapter
 

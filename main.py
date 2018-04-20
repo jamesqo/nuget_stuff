@@ -13,7 +13,6 @@ from datetime import datetime
 from blobber import gen_blobs
 from data_prep import load_packages
 from ml import FeatureTransformer, Recommender
-
 from utils.logging import StyleAdapter
 
 LOG = StyleAdapter(logging.getLogger(__name__))
