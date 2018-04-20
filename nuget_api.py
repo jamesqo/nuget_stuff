@@ -6,7 +6,7 @@ import pytz
 import re
 import traceback as tb
 
-from aiohttp.client_exceptions import ClientOSError, ClientResponseError, ServerDisconnectedError
+from aiohttp.client_exceptions import ClientError, ClientResponseError
 from asyncio import CancelledError
 from datetime import datetime, timedelta
 from urllib.parse import urlencode
@@ -37,16 +37,7 @@ def ok_filter(exc):
     return False
 
 def can_ignore_exception(exc):
-    if ok_filter(exc):
-        return True
-    elif isinstance(exc, ServerDisconnectedError):
-        return True
-    elif isinstance(exc, ClientResponseError) and exc.code == 404:
-        return True
-    elif isinstance(exc, ClientOSError) and WINDOWS and exc.errno == 10054:
-        return True
-
-    return False
+    return ok_filter(exc) or isinstance(exc, ClientError)
 
 class NullPackageSearchInfo(object):
     def __init__(self):
