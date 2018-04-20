@@ -1,0 +1,1484 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+Arne Mayer,2017-04-11T19:31:50.607Z,374,374,A wrapper for XInput as well as an easy to use gamepad class.,ArneMayer.XInputNET,False,2017-04-11T12:31:50.607-07:00,True,False,,"XInput,Gamepad,Controller",210,False,1.0.0
+Jiro Shirota,2017-04-11T12:51:45.117Z,16,374,An ASP.NET tag helper that abstracts Esri JS map view.,Esri.TagHelpers,False,2018-04-04T02:11:58.153+00:00,False,False,,,9152,False,0.0.1
+Arne Mayer,2017-04-11T19:31:50.607Z,374,374,A wrapper for XInput as well as an easy to use gamepad class.,ArneMayer.XInputNET,False,2017-04-11T12:31:50.607-07:00,True,False,,"XInput,Gamepad,Controller",210,False,1.0.0
+王俊,2017-04-12T01:26:56.71Z,3,373,公共组件库Lib,lib.com.nuget,False,2018-04-17T10:00:02.353+00:00,True,False,,,5976,False,1.0.0.22
+dkackman,2017-04-12T01:25:33.68Z,373,373,A library to allow faking of client http logic with System.Net.Http. Supports recording and playback of responses. Particularly useful for separating client-side unit tests from web services.,Dkackman.FakeHttp,False,2017-04-11T18:25:33.68-07:00,True,False,,"fake,http,REST,mock,stub,unit,test,testing,.net",1598,False,2.0.1
+Sebastien Ros,2017-04-12T01:18:10.523Z,57,373,Package Description,YesSql.Provider.Sqlite,True,2018-02-22T22:39:48.1+00:00,True,False,,,20879,False,1.0.0-beta-0003
+Sebastien Ros,2017-04-12T01:18:18.73Z,57,373,Package Description,YesSql.Provider.SqlServer,True,2018-02-22T22:39:59.13+00:00,True,False,,,20945,False,1.0.0-beta-0003
+Sebastien Ros,2017-04-12T01:18:03.083Z,57,373,Package Description,YesSql.Provider.PostgreSql,True,2018-02-22T22:39:37.38+00:00,True,False,,,20807,False,1.0.0-beta-0003
+Sebastien Ros,2017-04-12T01:17:54.957Z,57,373,Package Description,YesSql.Provider.MySql,True,2018-02-22T22:39:25.287+00:00,True,False,,,20890,False,1.0.0-beta-0003
+Sebastien Ros,2017-04-12T01:17:46.44Z,367,373,Package Description,YesSql.Provider.InMemory,True,2017-04-17T23:00:36.623-07:00,True,False,,,516,False,1.0.0-beta-0003
+Jiro Shirota,2017-04-12T01:17:23.06Z,16,373,Esri map for the rest of us.,Esri.TagHelpers,False,2018-04-04T02:11:58.153+00:00,True,False,,,9152,False,0.0.2
+pepen_microsoft,2016-09-29T20:32:45.087Z,43209,568,Upload Micosoft Edge WebDriver to Nuget,Selenium.WebDriver.EdgeDriver,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,3.14393.0
+Liam Morrow,2017-04-12T01:13:43.48Z,352,373,An implementation of the Storks library using Azure storage.,Storks.AzureStorage,False,2017-05-03T01:20:45.247-07:00,True,False,An implementation of the Storks library using Azure storage.,"storage,azure,lazy",1049,False,1.1.0
+Sebastien Ros,2017-04-12T01:13:18.163Z,57,373,Package Description,YesSql.Core,True,2018-02-22T22:39:03.143+00:00,True,False,,,51410,False,2.0.0-beta-0015
+Liam Morrow,2017-04-12T01:13:43.48Z,352,373,Utilities for lazy loading and separating values into azure storage,Storks.AzureStorage,False,2017-05-03T01:20:45.247-07:00,True,False,,"storage,azure,lazy",1049,False,1.1.0
+Daniel Cazzulino,2017-04-12T01:12:34.963Z,58,373,"Exposes the following information for use directly from MSBuild, C# and VB:
+  $(GitBranch), ThisAssembly.Git.Branch
+  $(GitCommit), ThisAssembly.Git.Commit
+  $(GitSha), ThisAssembly.Git.Sha
+  $(GitBaseVersionMajor), ThisAssembly.Git.BaseVersion.Major
+  $(GitBaseVersionMinor), ThisAssembly.Git.BaseVersion.Minor
+  $(GitBaseVersionPatch), ThisAssembly.Git.BaseVersion.Patch
+  $(GitCommits), ThisAssembly.Git.Commits
+  $(GitTag), ThisAssembly.Git.Tag
+  $(GitBaseTag), ThisAssembly.Git.BaseTag
+  $(GitSemVerMajor), ThisAssembly.Git.SemVer.Major
+  $(GitSemVerMinor), ThisAssembly.Git.SemVer.Minor
+  $(GitSemVerPatch), ThisAssembly.Git.SemVer.Patch
+  $(GitSemVerLabel), ThisAssembly.Git.SemVer.Label
+  $(GitSemVerDashLabel), ThisAssembly.Git.SemVer.DashLabel
+  $(GitSemVerSource), ThisAssembly.Git.SemVer.Source
+  $(GitIsDirty), ThisAssembly.Git.IsDirty
+
+The generated code contains only constants, so it can be used to construct your own assembly/file version attributes:
+
+[assembly: AssemblyVersion(ThisAssembly.Git.SemVer.Major + ""."" + ThisAssembly.Git.SemVer.Minor + "".0"")] 
+[assembly: AssemblyInformationalVersion(ThisAssembly.Git.SemVer.Major + ""."" + 
+	ThisAssembly.Git.SemVer.Minor + ""."" + ThisAssembly.Git.SemVer.Patch + ""-"" + 
+	ThisAssembly.Git.Branch + ""+"" + ThisAssembly.Git.Commit)]",GitInfo,False,2018-02-21T13:01:34.56+00:00,True,False,"Access commit information from MSBuild and C#/VB code, and infer SemVer from branch, tag or version file in Git repository.","MSBuild,Git,Versioning,GitVersion,GitFlowVersion,GitFlow,GitHubFlow,SemVer",97388,False,1.1.53
+Wm. Barrett Simms,2017-04-12T01:07:17Z,337,373,WordPress Rest API v2 PCL library,WmBarrettSimms.WordPressRestApi,False,2017-05-17T18:25:30.91-07:00,True,False,,"WordPress,API,REST,V2,PCL",1830,False,1.4.0
+Liam Morrow,2017-04-12T01:04:34.76Z,372,373,Utilities for lazy loading and separating values into storage.  Very useful for message queues which have a limited size per message,Storks,False,2017-04-12T17:51:51.53-07:00,True,False,Utilities for lazy loading and separating values into storage,"storage,azure,lazy",692,False,1.1.0
+Sebastien Ros,2017-04-12T01:04:04.517Z,57,373,Package Description,YesSql.Provider.SqlServer,True,2018-02-22T22:39:59.13+00:00,True,False,,,20945,False,1.0.0-beta-0002
+Sebastien Ros,2017-04-12T01:03:44.527Z,57,373,Package Description,YesSql.Provider.PostgreSql,True,2018-02-22T22:39:37.38+00:00,True,False,,,20807,False,1.0.0-beta-0002
+Liam Morrow,2017-04-12T01:04:34.76Z,372,373,Utilities for lazy loading and separating values into storage,Storks,False,2017-04-12T17:51:51.53-07:00,True,False,,"storage,azure,lazy",692,False,1.1.0
+Sebastien Ros,2017-04-12T01:03:34.947Z,57,373,Package Description,YesSql.Provider.MySql,True,2018-02-22T22:39:25.287+00:00,True,False,,,20890,False,1.0.0-beta-0002
+CookieIoC,2017-04-12T01:03:28.913Z,71,373,CookieIoC Library,CookieIoC,False,2018-02-08T04:00:39.817+00:00,True,False,,,1546,False,1.3.0
+Sebastien Ros,2017-04-12T01:03:54.733Z,57,373,Package Description,YesSql.Provider.Sqlite,True,2018-02-22T22:39:48.1+00:00,True,False,,,20879,False,1.0.0-beta-0002
+Sebastien Ros,2017-04-12T01:03:23.29Z,367,373,Package Description,YesSql.Provider.InMemory,True,2017-04-17T23:00:36.623-07:00,True,False,,,516,False,1.0.0-beta-0002
+Azteca Software,2017-04-12T01:01:16.413Z,9,373,Clases del sub sistema principal,AztecaSoftware.Framework3.Kernel,False,2018-04-11T21:18:01.34+00:00,True,False,,"AztecaSoftware,Kernel,Framework3",7811,False,3.4.13
+Azteca Software,2017-04-12T01:02:08.05Z,9,373,Controladores y handlers de framework3,AztecaSoftware.Framework3.Web,False,2018-04-11T21:18:28.37+00:00,True,False,,"AztecaSoftware,Kernel,Framework3",5313,False,3.4.13
+王雪飞,2017-04-12T00:57:47.97Z,280,373,垃圾回收帮助类(内含黑科技),Lierda.WPFHelper,False,2017-07-14T01:19:28.727-07:00,True,False,"解决了强签名问题；
+1.0.2--垃圾回收时间可配置;1.0.2--增加了调用管理员权限运行项",,1071,False,1.0.2
+iamcarbon,2017-04-12T00:57:13.99Z,81,373,Data access abstractions for operating a multicloud service.,Carbon.Platform.Services,False,2018-01-29T21:46:50.48+00:00,True,False,,"platform,carbon",19501,False,0.32.1
+iamcarbon,2017-04-12T00:56:54.063Z,81,373,Primitives for operating a multicloud service.,Carbon.Platform,False,2018-01-29T22:13:59.2+00:00,True,False,,"platform,carbon",20261,False,1.23.1
+iamcarbon,2017-04-12T00:56:36.03Z,91,373,Platform abstractions.,Carbon.Platform.Abstractions,False,2018-01-19T18:16:40.453+00:00,True,False,,"platform,carbon",9266,False,1.5.1
+深蓝医生,2017-04-12T00:51:21.38Z,44,373,“PDF.NET框架”全称是“PWMIS数据开发框架”（有关名字的由来请看官网http://www.pwmis.com/sqlmap/ 介绍），它直接基于 ADO.NET，没有使用反射，没有过度封装，力求做速度最快、使用最简单、适应场景最广泛的的数据开发框架。框架自2006年推出第一版，到现在为止已经在实际项目中使用了9年了，框架中的每一行代码都是实际项目的总结。为了让更多的朋友使用本框架，自Ver3.0 开源之后，后续各个版本陆续保持开源，但是，之前的开源，都仅限于核心类库和一些Demo程序，而框架的支持工具仅面向会员用户开源，今天，我宣布PDF.NET SOD框架完全开源！,PDF.NET.SOD.WinForm.Extensions,False,2018-03-07T11:24:27.067+00:00,True,False,,,1649,False,5.6.1.412
+深蓝医生,2017-04-12T00:49:56.62Z,44,373,“PDF.NET框架”全称是“PWMIS数据开发框架”（有关名字的由来请看官网http://www.pwmis.com/sqlmap/ 介绍），它直接基于 ADO.NET，没有使用反射，没有过度封装，力求做速度最快、使用最简单、适应场景最广泛的的数据开发框架。框架自2006年推出第一版，到现在为止已经在实际项目中使用了9年了，框架中的每一行代码都是实际项目的总结。为了让更多的朋友使用本框架，自Ver3.0 开源之后，后续各个版本陆续保持开源，但是，之前的开源，都仅限于核心类库和一些Demo程序，而框架的支持工具仅面向会员用户开源，今天，我宣布PDF.NET SOD框架完全开源！,PDF.NET.SOD.MySQL.Provider,False,2018-03-07T11:08:43.793+00:00,True,False,,"ORM,SQL-MAP,OQL,PDF.NET,SOD",1134,False,5.6.1.412
+深蓝医生,2017-04-12T00:47:42.613Z,44,373,“PDF.NET框架”全称是“PWMIS数据开发框架”（有关名字的由来请看官网http://www.pwmis.com/sqlmap/ 介绍），它直接基于 ADO.NET，没有使用反射，没有过度封装，力求做速度最快、使用最简单、适应场景最广泛的的数据开发框架。框架自2006年推出第一版，到现在为止已经在实际项目中使用了9年了，框架中的每一行代码都是实际项目的总结。为了让更多的朋友使用本框架，自Ver3.0 开源之后，后续各个版本陆续保持开源，但是，之前的开源，都仅限于核心类库和一些Demo程序，而框架的支持工具仅面向会员用户开源，今天，我宣布PDF.NET SOD框架完全开源！,PDF.NET.SOD.Core,False,2018-03-07T11:05:25.397+00:00,True,False,,,2737,False,5.6.1.412
+深蓝医生,2017-04-12T00:48:49.447Z,44,373,“PDF.NET框架”全称是“PWMIS数据开发框架”（有关名字的由来请看官网http://www.pwmis.com/sqlmap/ 介绍），它直接基于 ADO.NET，没有使用反射，没有过度封装，力求做速度最快、使用最简单、适应场景最广泛的的数据开发框架。框架自2006年推出第一版，到现在为止已经在实际项目中使用了9年了，框架中的每一行代码都是实际项目的总结。为了让更多的朋友使用本框架，自Ver3.0 开源之后，后续各个版本陆续保持开源，但是，之前的开源，都仅限于核心类库和一些Demo程序，而框架的支持工具仅面向会员用户开源，今天，我宣布PDF.NET SOD框架完全开源！,PDF.NET.SOD,False,2018-03-07T11:06:59.307+00:00,True,False,,,1424,False,5.6.1.412
+Francisco C. de S. Junior,2017-04-12T00:43:30.057Z,43209,373,FrankJob.Log is a .NET library that creates a new log level for log4net and uses Newtonsoft Json.NET to serialize log data in json format.,FrankJob,False,1899-12-31T16:00:00-08:00,False,False,,"FrankJob,Log,Log4Net,Json",-1,False,0.1.2
+crmsdk,2017-04-12T00:45:26.45Z,156,373,"This package contains the official SDK tools authored by the Microsoft Dynamics 365 team.
+The included command line tools are installed in the project's bin\coretools folder.",Microsoft.CrmSdk.CoreTools,False,2017-11-15T20:38:52.307+00:00,True,False,Tools required to develop managed code applications and solutions for December 2016 update for Dynamics 365 (online and on-premises).,"Dynamics,CRM,2016,SDK,XRM,D365,Dynamics365,365",65902,True,8.2.0.5
+crmsdk,2017-04-12T00:46:18.387Z,156,373,"This package contains the following official Microsoft assemblies and has been authored by the Microsoft Dynamics CRM SDK team.
+- Microsoft.Xrm.Tooling.CrmConnectControl 
+- Microsoft.Xrm.Tooling.Ui.Resources
+- Microsoft.Xrm.Tooling.WebResourceUtility",Microsoft.CrmSdk.XrmTooling.WpfControls,False,2017-11-15T21:23:10.12+00:00,True,False,Assemblies required to add Xrm Tooling custom controls to Windows Presentation Foundation managed code applications.,"Dynamics,CRM,2016,SDK,XRM,D365,Dynamics365,365",20980,True,8.2.0.5
+crmsdk,2017-04-12T00:45:56.35Z,156,373,This package contains the official Microsoft.Xrm.Tooling.Connector assembly and has been authored by the Microsoft Dynamics CRM SDK team.,Microsoft.CrmSdk.XrmTooling.CoreAssembly,False,2017-11-15T21:19:42.35+00:00,True,False,Core assembly required to develop managed code applications using the Xrm Tooling Connector.,"Dynamics,CRM,2016,SDK,XRM,D365,Dynamics365,365",260414,True,8.2.0.5
+FrankJob,2017-04-12T00:43:30.057Z,43209,373,http://frankjob.blogspot.com.br,FrankJob,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.1.2
+Com.Absolute.PS.DomainDrivenDesign,2017-04-12T00:41:24.58Z,84,373,Domain-Driven Design classes for Professional Service projects,Com.Absolute.PS.DomainDrivenDesign,False,2018-01-26T22:39:48.24+00:00,True,False,,1.0.7,3048,False,1.0.7
+Sebastien Ros,2017-04-12T00:38:44.797Z,43209,373,Package Description,YesSql.Storage.Sql,True,1900-01-01T00:00:00+00:00,False,False,,,16253,False,1.0.0-beta-0006
+Sebastien Ros,2017-04-12T00:38:37.043Z,43209,373,Package Description,YesSql.Storage.LightningDB,True,1900-01-01T00:00:00+00:00,False,False,,,3760,False,1.0.0-beta-0003
+Sebastien Ros,2017-04-12T00:37:32.667Z,367,373,Package Description,YesSql.Provider.InMemory,True,2017-04-17T23:00:36.623-07:00,True,False,,,516,False,1.0.0-beta-0001
+Sebastien Ros,2017-04-12T00:38:01.36Z,57,373,Package Description,YesSql.Provider.Sqlite,True,2018-02-22T22:39:48.1+00:00,True,False,,,20879,False,1.0.0-beta-0001
+Sebastien Ros,2017-04-12T00:38:11.443Z,57,373,Package Description,YesSql.Provider.SqlServer,True,2018-02-22T22:39:59.13+00:00,True,False,,,20945,False,1.0.0-beta-0001
+Sebastien Ros,2017-04-12T00:37:52.047Z,57,373,Package Description,YesSql.Provider.PostgreSql,True,2018-02-22T22:39:37.38+00:00,True,False,,,20807,False,1.0.0-beta-0001
+Sebastien Ros,2017-04-12T00:37:23.913Z,57,373,Package Description,YesSql.Core,True,2018-02-22T22:39:03.143+00:00,True,False,,,51410,False,2.0.0-beta-0014
+Sebastien Ros,2017-04-12T00:38:19.883Z,43209,373,Package Description,YesSql.Storage.Cache,True,1900-01-01T00:00:00+00:00,False,False,,,943,False,1.0.0-beta-0003
+Sebastien Ros,2017-04-12T00:38:28.463Z,43209,373,Package Description,YesSql.Storage.InMemory,True,1900-01-01T00:00:00+00:00,False,False,,,1411,False,1.0.0-beta-0003
+Sebastien Ros,2017-04-12T00:37:42.84Z,57,373,Package Description,YesSql.Provider.MySql,True,2018-02-22T22:39:25.287+00:00,True,False,,,20890,False,1.0.0-beta-0001
+Jan Raak (Rocknet.Online),2017-04-12T00:19:13.35Z,365,373,"A framework for resilient coding. The framework provides: basic logging, statistics, forensic logging (and tracing) and exception management (retry policies).",rocknet.xyz.Resilience,False,2017-04-20T04:06:00.513-07:00,True,False,"The resilience framework provides a uniform method to collect runtime statistics, forensic logging and tracing and exception management thru retry policies.
+
+The framework extends ETW logging by writing logentries to EventSource.
+
+A customer shipper can be injected to capture the logs and to ship the logs to a centralized store.","logging,tracing,forensics,retrypolicies,exceptionmanagement,resilient",246,False,1.0.0
+Liam Morrow,2017-04-12T00:13:54.213Z,352,373,An implementation of the Storks library using Azure storage.,Storks.AzureStorage,False,2017-05-03T01:20:45.247-07:00,True,False,An implementation of the Storks library using Azure storage.,"storage,azure,lazy",1049,False,1.0.0
+rocknet.xyz.Resilience,2017-04-12T00:19:13.35Z,365,373,Package Description,rocknet.xyz.Resilience,False,2017-04-20T04:06:00.513-07:00,True,False,,,246,False,1.0.0
+iamcarbon,2017-04-12T00:17:50.977Z,81,373,Data access abstractions for operating a multicloud service.,Carbon.Platform.Services,False,2018-01-29T21:46:50.48+00:00,True,False,,"platform,carbon",19501,False,0.32.0
+iamcarbon,2017-04-12T00:16:39.53Z,91,373,Platform abstractions.,Carbon.Platform.Abstractions,False,2018-01-19T18:16:40.453+00:00,True,False,,"platform,carbon",9266,False,1.5.0
+iamcarbon,2017-04-12T00:17:24.297Z,78,373,"Website, web library, and web component models.",Carbon.Platform.Web,False,2018-02-01T21:08:11.66+00:00,True,False,,"frontends,libraries,carbon",4739,False,1.7.0
+iamcarbon,2017-04-12T00:17:02.38Z,81,373,Primitives for operating a multicloud service.,Carbon.Platform,False,2018-01-29T22:13:59.2+00:00,True,False,,"platform,carbon",20261,False,1.23.0
+Liam Morrow,2017-04-12T00:13:54.213Z,352,373,An implementation of the Storks library using Azure storage.,Storks.AzureStorage,False,2017-05-03T01:20:45.247-07:00,True,False,An implementation of the Storks library using Azure storage.,"storage,azure,lazy",1049,False,1.0.0
+Liam Morrow,2017-04-12T00:13:54.213Z,352,373,An implementation of the Storks library using Azure storage.,Storks.AzureStorage,False,2017-05-03T01:20:45.247-07:00,True,False,An implementation of the Storks library using Azure storage.,"storage,azure,lazy",1049,False,1.0.0
+Liam Morrow,2017-04-12T00:04:28.797Z,372,373,Utilities for lazy loading and separating values into storage.  Very useful for message queues which have a limited size per message,Storks,False,2017-04-12T17:51:51.53-07:00,True,False,Utilities for lazy loading and separating values into storage,"storage,azure,lazy",692,False,1.0.0
+Liam Morrow,2017-04-12T00:04:28.797Z,372,373,Utilities for lazy loading and separating values into storage,Storks,False,2017-04-12T17:51:51.53-07:00,True,False,,"storage,azure,lazy",692,False,1.0.0
+Saleem Mirza,2017-04-11T23:58:17.247Z,10,374,Serilog event sink that writes to Azure Analytics,Serilog.Sinks.AzureAnalytics,False,2018-04-10T15:17:13.94+00:00,True,False,,"serilog,logging,Azure,Analytics",23484,False,1.8.2
+Jonathan Holland,2017-04-11T23:55:11Z,374,374,RabbitMQ transport for Wave Service Bus.,Wave.Transports.RabbitMQ,False,2017-04-11T16:55:11-07:00,True,False,,,5329,False,1.10.3
+Jonathan Holland,2017-04-11T23:55:00.963Z,374,374,MSMQ Transport for Wave Service Bus.,Wave.Transports.MSMQ,False,2017-04-11T16:55:00.963-07:00,True,False,,,4806,False,1.10.3
+Jonathan Holland,2017-04-11T23:54:51.13Z,374,374,Use if you are testing your Wave Service Bus services with xUnit.,Wave.Testing.XUnit,False,2017-04-11T16:54:51.13-07:00,True,False,,,4251,False,1.10.3
+Jonathan Holland,2017-04-11T23:54:42.063Z,374,374,Use if you are testing your Wave Service Bus services with NUnit.,Wave.Testing.NUnit,False,2017-04-11T16:54:42.063-07:00,True,False,,,4384,False,1.10.3
+Jonathan Holland,2017-04-11T23:54:33.123Z,374,374,Use if you are testing your Wave Service Bus services with MSTest.,Wave.Testing.MSTest,False,2017-04-11T16:54:33.123-07:00,True,False,,,4213,False,1.10.3
+Jonathan Holland,2017-04-11T23:54:23.4Z,374,374,Allows Wave Service Bus applications to be hosted as TopShelf services.,Wave.ServiceHosting.TopShelf,False,2017-04-11T16:54:23.4-07:00,True,False,,,5045,False,1.10.3
+Jonathan  Holland,2017-04-11T23:52:30.3Z,374,374,Wave Service Bus,Wave.Core,False,2017-04-11T16:52:30.3-07:00,True,False,,,5866,False,1.10.3
+Jonathan Holland,2017-04-11T23:52:48.637Z,374,374,Integrates the Castle Windsor IoC framework into Wave Service Bus.,Wave.IoC.CastleWindsor,False,2017-04-11T16:52:48.637-07:00,True,False,,,4816,False,1.10.3
+Jonathan Holland,2017-04-11T23:52:39.757Z,374,374,Integrates the AutoFac IoC framework into Wave Service Bus.,Wave.IoC.AutoFac,False,2017-04-11T16:52:39.757-07:00,True,False,,,4885,False,1.10.3
+Jonathan Holland,2017-04-11T23:53:17.353Z,374,374,Integrates the Unity IoC framework into Wave Service Bus.,Wave.IoC.Unity,False,2017-04-11T16:53:17.353-07:00,True,False,,,5325,False,1.10.3
+Jonathan Holland,2017-04-11T23:53:55.01Z,374,374,Integrates the Json.NET serialization library into Wave Service Bus.,Wave.Serialization.JsonDotNet,False,2017-04-11T16:53:55.01-07:00,True,False,,,5442,False,1.10.3
+Jonathan Holland,2017-04-11T23:53:36.16Z,374,374,Integrates the Log4Net logging framework into Wave Service Bus.,Wave.Logging.Log4Net,False,2017-04-11T16:53:36.16-07:00,True,False,,,5412,False,1.10.3
+Jonathan Holland,2017-04-11T23:53:26.357Z,374,374,Integrates the CommonsLogging framework into Wave Service Bus.,Wave.Logging.CommonsLogging,False,2017-04-11T16:53:26.357-07:00,True,False,,,4949,False,1.10.3
+Jonathan Holland,2017-04-11T23:52:58.813Z,374,374,Integrates the NInject IoC framework into Wave Service Bus.,Wave.IoC.NInject,False,2017-04-11T16:52:58.813-07:00,True,False,,,4846,False,1.10.3
+Jonathan Holland,2017-04-11T23:53:08.113Z,374,374,Integrates the StructureMap IoC framework into Wave Service Bus.,Wave.IoC.StructureMap,False,2017-04-11T16:53:08.113-07:00,True,False,,,4818,False,1.10.3
+Jonathan Holland,2017-04-11T23:54:13.223Z,374,374,Allows Wave Service Bus applications to be hosted within IIS applications.,Wave.ServiceHosting.IIS,False,2017-04-11T16:54:13.223-07:00,True,False,,,5118,False,1.10.3
+Jonathan Holland,2017-04-11T23:53:45.163Z,374,374,Integrates the NLog logging framework into Wave Service Bus.,Wave.Logging.NLog,False,2017-04-11T16:53:45.163-07:00,True,False,,,4789,False,1.10.3
+Jonathan Holland,2017-04-11T23:54:03.687Z,374,374,Enables XML serialization support for Wave Service Bus.,Wave.Serialization.Xml,False,2017-04-11T16:54:03.687-07:00,True,False,,,4845,False,1.10.3
+Chris Holt,2017-04-11T23:51:31.85Z,12,374,A simple framework in F# on top of selenium for writing UI automation and tests.,canopy,False,2018-04-08T00:46:57.527+00:00,True,False,,"f#,fsharp,canopy,selenium,ui,automation,tests",103205,False,1.2.2
+Amazon Web Services,2017-04-11T23:49:13.32Z,1,374,"Amazon GameLift Service is a managed AWS service for developers who need a scalable, server-based solution for multiplayer games.",AWSSDK.GameLift,False,2018-04-20T05:28:01.11+00:00,True,False,,"AWS,Amazon,cloud,GameLift,aws-sdk-v3",8050,False,3.3.4
+Amazon Web Services,2017-04-11T23:48:43.723Z,1,374,"AWS Batch enables developers, scientists, and engineers to easily and efficiently run hundreds of thousands of batch computing jobs on AWS.",AWSSDK.Batch,False,2018-04-20T05:25:18.557+00:00,True,False,,"AWS,Amazon,cloud,Batch,aws-sdk-v3",7042,False,3.3.2
+Amazon Web Services,2017-04-11T23:48:19.233Z,1,374,The Amazon Web Services SDK for .NET - Core Runtime,AWSSDK.Core,False,2018-04-20T05:24:26.697+00:00,True,False,,"AWS,Amazon,cloud,aws-sdk-v3",5346426,False,3.3.11
+Amazon Web Services,2017-04-11T23:49:26.15Z,1,374,"AWS OpsWorks is an application management service that makes it easy to deploy and operate applications of all shapes and sizes. You can define the application's architecture and the specification of each component including package installation, software configuration and resources such as storage.",AWSSDK.OpsWorks,False,2018-04-20T05:29:54.13+00:00,True,False,,"AWS,Amazon,cloud,OpsWorks,aws-sdk-v3",26981,False,3.3.1
+Amazon Web Services,2017-04-11T23:48:58.863Z,1,374,"Amazon DynamoDB is a fast and flexible NoSQL database service for all applications that need consistent, single-digit millisecond latency at any scale.",AWSSDK.DynamoDBv2,False,2018-04-20T05:27:14.75+00:00,True,False,,"AWS,Amazon,cloud,DynamoDB,aws-sdk-v3",876533,False,3.3.4.5
+Amazon Web Services,2017-04-11T23:48:31.8Z,1,374,"Amazon API Gateway helps developers deliver robust, secure and scalable mobile and web application backends. Amazon API Gateway allows developers to securely connect mobile and web applications to APIs that run on AWS Lambda, Amazon EC2, or other publicly addressable web services that are hosted outside of AWS.",AWSSDK.APIGateway,False,2018-04-20T05:24:38.04+00:00,True,False,,"AWS,Amazon,cloud,APIGateway,aws-sdk-v3",43016,False,3.3.6
+Jim Schaad,2017-04-11T23:38:35.467Z,229,374,An implementation of the CBOR Object Signing and Encryption standards.,Com.AugustCellars.COSE,False,2017-09-03T00:03:35.663+00:00,True,False,,"COSE,CBOR",2015,False,0.1.0
+seo,2017-04-11T23:36:02.96Z,43209,374,"adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer service number✈adria airways
+adria airways ☎+1-844-817-7357 customer",adria-airways-customer-service-number-1-844-817-7357-adria-airways-reservation-phone-number,False,1899-12-31T16:00:00-08:00,False,False,,"southwest-Airlines-Phone-Number,southwest-Airlines-Customer-Service-Number,southwest-Airlines-Toll-Free-Number,southwest-Airlines-Helpline-Number,southwest-Airlines-800-Number,Phone-Number-of-southwest-Airlines-,Customer-Care-Number-of-southwest-Airlines-,southwest-Airlines-24X7-Support-Number,southwest-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+Flagstone Software Ltd.,2017-04-11T23:33:55.487Z,323,374,.NET Core port of Flagstone Transform SWF Java library for manipulating Adobe Flash swf files,SwfTransform,True,2017-06-01T14:05:18.547-07:00,True,False,,"swf,flash,adobe,netstandard",207,False,0.0.1-alpha
+Flagstone Software Ltd.,2017-04-11T23:33:55.487Z,323,374,.NET Core port of Flagstone Transform SWF Java library for manipulating Adobe Flash swf files,SwfTransform,True,2017-06-01T14:05:18.547-07:00,True,False,,"swf,flash,adobe,netstandard",207,False,0.0.1-alpha
+seo,2017-04-11T23:32:30.083Z,43209,374,"southwest customer ☎1-844-817-7357 service phone number✈southwest         southwest customer ☎1-844-817-7357 service phone number✈southwest
+southwest customer ☎1-844-817-7357 service phone number✈southwest         southwest customer ☎1-844-817-7357 service phone number✈southwest
+southwest customer ☎1-844-817-7357 service phone number✈southwest         southwest customer ☎1-844-817-7357 service phone number✈southwest
+southwest customer ☎1-844-817-7357 service phone number✈southwest         southwest customer ☎1-844-817-7357 service phone number✈southwest
+southwest customer ☎1-844-817-7357 service phone number✈southwest         southwest customer ☎1-844-817-7357 service phone number✈southwest
+southwest customer ☎1-844-817-7357 service phone number✈southwest         southwest customer ☎1-844-817-7357 service phone number✈southwest
+southwest customer ☎1-844-817-7357 service phone number✈southwest         southwest customer ☎1-844-817-7357 service phone number✈southwest
+southwest customer ☎1-844-817-7357 service phone number✈southwest         southwest customer ☎1-844-817-7357 service phone number✈southwest
+southwest customer ☎1-844-817-7357 service phone number✈southwest         southwest customer ☎1-844-817-7357 service phone number✈southwest
+southwest customer ☎1-844-817-7357 service phone number✈southwest         southwest customer ☎1-844-817-7357 service phone number✈southwest
+southwest customer ☎1-844-817-7357 service phone number✈southwest         southwest customer ☎1-844-817-7357 service phone number✈southwest
+southwest customer ☎1-844-817-7357 service phone number✈southwest         southwest customer ☎1-844-817-7357 service phone number✈southwest
+southwest customer ☎1-844-817-7357 service phone number✈southwest         southwest customer ☎1-844-817-7357 service phone number✈southwest
+southwest customer ☎1-844-817-7357 service phone number✈southwest         southwest customer ☎1-844-817-7357 service phone number✈southwest
+southwest customer",southwest-customer-service-phone-number-1-844-817-7357-southwest-flights-phone-number,False,1899-12-31T16:00:00-08:00,False,False,,"southwest-Airlines-Phone-Number,southwest-Airlines-Customer-Service-Number,southwest-Airlines-Toll-Free-Number,southwest-Airlines-Helpline-Number,southwest-Airlines-800-Number,Phone-Number-of-southwest-Airlines-,Customer-Care-Number-of-southwest-Airlines-,southwest-Airlines-24X7-Support-Number,southwest-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+Armand du Plessis; Tulpep,2017-04-11T23:27:46.8Z,154,374,Active Directory Object Picker.,Tulpep.ActiveDirectoryObjectPicker,False,2017-11-17T05:22:58.02+00:00,True,False,Active Directory Object Picker.,"WPF,Active,Directory,Dialog,WinForms,Windows,Forms,Picker",22623,False,2.1.106
+seo,2017-04-11T23:28:57.403Z,43209,374,"southwest airline ☎1-844-817-7357 phone number ✈adria airways                southwest airline ☎1-844-817-7357 phone number ✈adria airways
+southwest airline ☎1-844-817-7357 phone number ✈adria airways                southwest airline ☎1-844-817-7357 phone number ✈adria airways
+southwest airline ☎1-844-817-7357 phone number ✈adria airways                southwest airline ☎1-844-817-7357 phone number ✈adria airways
+southwest airline ☎1-844-817-7357 phone number ✈adria airways                southwest airline ☎1-844-817-7357 phone number ✈adria airways
+southwest airline ☎1-844-817-7357 phone number ✈adria airways                southwest airline ☎1-844-817-7357 phone number ✈adria airways
+southwest airline ☎1-844-817-7357 phone number ✈adria airways                southwest airline ☎1-844-817-7357 phone number ✈adria airways
+southwest airline ☎1-844-817-7357 phone number ✈adria airways                southwest airline ☎1-844-817-7357 phone number ✈adria airways
+southwest airline ☎1-844-817-7357 phone number ✈adria airways                southwest airline ☎1-844-817-7357 phone number ✈adria airways
+southwest airline ☎1-844-817-7357 phone number ✈adria airways                southwest airline ☎1-844-817-7357 phone number ✈adria airways
+southwest airline ☎1-844-817-7357 phone number ✈adria airways                southwest airline ☎1-844-817-7357 phone number ✈adria airways
+southwest airline ☎1-844-817-7357 phone number ✈adria airways                southwest airline ☎1-844-817-7357 phone number ✈adria airways
+southwest airline ☎1-844-817-7357 phone number ✈adria airways                southwest airline ☎1-844-817-7357 phone number ✈adria airways
+southwest airline ☎1-844-817-7357 phone number ✈adria airways                southwest airline ☎1-844-817-7357 phone number ✈adria airways
+southwest airline ☎1-844-817-7357 phone number ✈adria airways                southwest airline ☎1-844-817-7357 phone number ✈adria airways
+southwest airline ☎1-844-817-7357",southwest-airline-phone-number-1-844-817-7357-adria-airways-toll-free-number,False,1899-12-31T16:00:00-08:00,False,False,,"southwest-Airlines-Phone-Number,southwest-Airlines-Customer-Service-Number,southwest-Airlines-Toll-Free-Number,southwest-Airlines-Helpline-Number,southwest-Airlines-800-Number,Phone-Number-of-southwest-Airlines-,Customer-Care-Number-of-southwest-Airlines-,southwest-Airlines-24X7-Support-Number,southwest-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+seo,2017-04-11T23:18:19.94Z,43209,374,"southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria airways
+southwest number ☎1-844-817-7357 ✈adria",southwest-number-1-844-817-7357-adria-airways-reservation-number,False,1899-12-31T16:00:00-08:00,False,False,,"southwest-Airlines-Phone-Number,southwest-Airlines-Customer-Service-Number,southwest-Airlines-Toll-Free-Number,southwest-Airlines-Helpline-Number,southwest-Airlines-800-Number,Phone-Number-of-southwest-Airlines-,Customer-Care-Number-of-southwest-Airlines-,southwest-Airlines-24X7-Support-Number,southwest-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+seo,2017-04-11T23:15:12.517Z,43209,374,"adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-7357 reservations phone number ✈southwest air
+adria airways ☎+1-844-817-735",adria-airways-reservations-phone-number-1-844-817-7357-southwest-air-phone-number,False,1899-12-31T16:00:00-08:00,False,False,,"southwest-Airlines-Phone-Number,southwest-Airlines-Customer-Service-Number,southwest-Airlines-Toll-Free-Number,southwest-Airlines-Helpline-Number,southwest-Airlines-800-Number,Phone-Number-of-southwest-Airlines-,Customer-Care-Number-of-southwest-Airlines-,southwest-Airlines-24X7-Support-Number,southwest-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+NPoco,2017-04-11T23:11:09.68Z,100,374,"An extremely easy to use Micro-ORM supporting Sql Server, MySQL, PostgreSQL, Oracle, Sqlite, SqlCE. Originally Schotime's PetaPoco branch.",NPoco,False,2018-01-10T00:11:40.053+00:00,True,False,,"orm,sql,micro-orm,database,mvc",172702,False,3.5.1
+seo,2017-04-11T23:12:08.69Z,43209,374,"phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria airways
+phone number ☎1-844-817-7357✈ adria airways adria air",phone-number-adria-airways-1-844-817-7357-adria-airways-flight-status-phone-number,False,1899-12-31T16:00:00-08:00,False,False,,"southwest-Airlines-Phone-Number,southwest-Airlines-Customer-Service-Number,southwest-Airlines-Toll-Free-Number,southwest-Airlines-Helpline-Number,southwest-Airlines-800-Number,Phone-Number-of-southwest-Airlines-,Customer-Care-Number-of-southwest-Airlines-,southwest-Airlines-24X7-Support-Number,southwest-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+seo,2017-04-11T23:08:42.293Z,43209,374,"adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number
+adria airways ☎1-844-817-7357 telephone number ✈southwest airline number",adria-airways-telephone-number-1-844-817-7357-southwest-airline-number,False,1899-12-31T16:00:00-08:00,False,False,,"southwest-Airlines-Phone-Number,southwest-Airlines-Customer-Service-Number,southwest-Airlines-Toll-Free-Number,southwest-Airlines-Helpline-Number,southwest-Airlines-800-Number,Phone-Number-of-southwest-Airlines-,Customer-Care-Number-of-southwest-Airlines-,southwest-Airlines-24X7-Support-Number,southwest-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+shibaochina,2017-04-11T22:59:35.15Z,374,374,Package Description,shibaochina,False,2017-04-11T15:59:35.15-07:00,True,False,,,1231,False,1.0.13
+seo,2017-04-11T22:58:28.34Z,43209,374,"southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 service number ✈
+southwest customer ☎1-844-817-7357 serv",southwest-customer-service-number-1-844-817-7357-what-is-the-phone-number-for-adria-airways,False,1899-12-31T16:00:00-08:00,False,False,,"southwest-Airlines-Phone-Number,southwest-Airlines-Customer-Service-Number,southwest-Airlines-Toll-Free-Number,southwest-Airlines-Helpline-Number,southwest-Airlines-800-Number,Phone-Number-of-southwest-Airlines-,Customer-Care-Number-of-southwest-Airlines-,southwest-Airlines-24X7-Support-Number,southwest-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+seo,2017-04-11T22:55:36.46Z,43209,374,"southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways
+
+southwest ☎1-844-817-7357 phone number ✈adria airways",southwest-phone-number-1-844-817-7357-adria-airways-1-800-number,False,1899-12-31T16:00:00-08:00,False,False,"southwest ☎1-844-817-7357 phone number ✈adria airways
+southwest ☎1-844-817-7357 phone number ✈adria airways
+southwest ☎1-844-817-7357 phone number ✈adria airways
+southwest ☎1-844-817-7357 phone num","southwest-Airlines-Phone-Number,southwest-Airlines-Customer-Service-Number,southwest-Airlines-Toll-Free-Number,southwest-Airlines-Helpline-Number,southwest-Airlines-800-Number,Phone-Number-of-southwest-Airlines-,Customer-Care-Number-of-southwest-Airlines-,southwest-Airlines-24X7-Support-Number,southwest-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+seo,2017-04-11T22:50:38.557Z,43209,374,"adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+adria airways ☎1-844-817-7357 ✈phone number adria air",adria-airways-phone-number-1-844-817-7357-adria-airways-phone-number-customer-service,False,1899-12-31T16:00:00-08:00,False,False,"adria airways ☎1-844-817-7357 ✈phone number adria airways
+
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+
+adria airways ☎1-844-817-7357 ✈phone number adria airways
+
+adria airways ☎1-","Westjet-Airlines-Phone-Number,Westjet-Airlines-Customer-Service-Number,Westjet-Airlines-Toll-Free-Number,Westjet-Airlines-Helpline-Number,Westjet-Airlines-800-Number,Phone-Number-of-Westjet-Airlines-,Customer-Care-Number-of-Westjet-Airlines-,Westjet-Airlines-24X7-Support-Number,Westjet-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+SW SmarterWeb,2017-04-11T22:51:14.55Z,276,374,Descripción del paquete,SW-SDK-CPP,False,2017-07-18T11:08:06.917-07:00,True,False,,"CFDI,CFDI33,native,stamp,timbres,rest",669,False,0.0.0.4
+SpiegelSoft Ltd,2017-04-11T22:39:48.77Z,2,374,Fluent interface for building Xamarin Forms pages in F# using ReactiveUI.,XamarinForms.Reactive.FSharp,True,2018-04-18T20:03:05.78+00:00,True,False,,"Xamarin,F#,ReactiveUI",23028,False,0.6.9-beta
+SpiegelSoft Ltd,2017-04-11T22:39:48.77Z,2,374,Fluent interface for building Xamarin Forms pages in F# using ReactiveUI.,XamarinForms.Reactive.FSharp,True,2018-04-18T20:03:05.78+00:00,True,False,,"Xamarin,F#,ReactiveUI",23028,False,0.6.9-beta
+"Marcus Griep,Andrew Cherry,Ryan Riley",2017-04-11T21:34:38.95Z,206,374,Templates for Freya on Kestrel,Freya.Template,False,2017-09-26T20:19:03.743+00:00,False,False,,"functional,web,freya,f#,fsharp,template",1296,False,0.1.1
+Paul Schneider,2017-04-11T22:35:53.387Z,344,374,Parses and renders Markdown to Html and Xaml,MarkdownDeep.Gui.Gtk3,False,2017-05-11T16:37:12.337-07:00,True,False,,"Markdown,Text,GUI,Gtk",392,False,1.5.6.4
+Topten Software,2017-04-11T22:36:04.217Z,364,374,MarkdownDeep is a high performance .NET Markdown processor.,MarkdownDeep-av.NET,False,2017-04-21T04:34:23.88-07:00,True,False,This package contains MarkdownDeep.NET only - it does not include the JavaScript client edition,"Markdown,MarkdownExtra,MarkdownDeep",468,False,1.5.6.4
+"Marcus Griep,Andrew Cherry,Ryan Riley",2017-04-11T22:35:12.83Z,206,374,Templates for Freya on Kestrel,Freya.Template,False,2017-09-26T20:19:03.743+00:00,True,False,,"functional,web,freya,f#,fsharp,template",1296,False,0.1.2
+Dustin Moris Gorski and contributors,2017-04-11T22:34:51.527Z,45,374,A native functional ASP.NET Core web framework for F# developers.,Giraffe,True,2018-03-06T05:49:29.313+00:00,True,False,,"Giraffe,ASP.NET,Core,Lambda,FSharp,Functional,Http,Web,Framework,Micro,Service",17257,False,0.1.0-alpha009
+Fabricly.co,2017-04-11T22:30:50.577Z,340,374,Core platform functionallity to support deployment on the fabricly network,fabricly.core,True,2017-05-15T15:41:26.683-07:00,False,False,,"Tag1,Tag2",2200,False,0.0.34-alpha
+Fabricly.co,2017-04-11T22:30:50.577Z,340,374,Core platform functionallity to support deployment on the fabricly network,fabricly.core,True,2017-05-15T15:41:26.683-07:00,False,False,,"Tag1,Tag2",2200,False,0.0.34-alpha
+shibaochina,2017-04-11T22:28:37.013Z,374,374,Package Description,shibaochina,False,2017-04-11T15:59:35.15-07:00,True,False,,,1231,False,1.0.12
+Tony THONG,2017-03-30T20:00:10.727Z,318,386,CNeptune urbanize .net 4.0+ library with strategic private code to lay transparent foundations for frameworks.,CNeptune,False,2017-06-06T12:34:14.183-07:00,False,False,CNeptune urbanize .net 4.0+ library with strategic private code to lay transparent foundations for frameworks.,"CNeptune,Virtuoze,AOP,.NET,AOP.NET,C#,Proxy,Interception,Injection,Decoration,Dependency,Runtime,Framework",1905,False,1.0.5
+Tony THONG,2017-03-30T22:04:08.957Z,318,386,"AOP (Aspect-Oriented Programming) Framework for .NET 4.0+ developed in C# and based on runtime injection. It allows to produce and factorize cross-cutting concerns with lambda expressions, linq expressions or reflection.",NConcern,False,2017-06-06T13:01:40.983-07:00,False,False,"AOP (Aspect-Oriented Programming) Framework for .NET 4.0+ developed in C# and based on runtime injection. It allows to produce and factorize cross-cutting concerns with lamnda expressions, linq expressions or reflection.","NConcern,Virtuoze,AOP,.NET,AOP.NET,C#,Proxy,Interception,Injection,Decoration,Dependency,Runtime",3942,False,4.0.2
+Tony THONG,2017-04-05T20:18:49.777Z,318,380,CNeptune urbanize .net 4.0+ library with strategic private code to lay transparent foundations for frameworks.,CNeptune,False,2017-06-06T12:34:14.183-07:00,False,False,CNeptune urbanize .net 4.0+ library with strategic private code to lay transparent foundations for frameworks.,"CNeptune,Virtuoze,AOP,.NET,AOP.NET,C#,Proxy,Interception,Injection,Decoration,Dependency,Runtime,Framework",1905,False,1.0.6
+Triple G3,2017-04-11T22:01:02.58Z,373,374,"Reactive model package to help develop MVVM / reactive oriented models. Michael Puckett, II 'I love, praise, and worship God'",SpeckyDesktop,False,2017-04-11T19:49:32.593-07:00,True,False,,"WPF,WinForms,MVVM,Reactive,Specky,SpeckyDesktop",627,False,1.0.1.1
+Shippo,2017-04-11T21:09:53.223Z,193,374,"Shippo Shipping API client Library (USPS, FedEx, UPS, and more). Shippo provides a multi-carrier shipping API and dashboard for businesses to ship better.",Shippo,False,2017-10-09T07:54:04.12+00:00,True,False,"Shippo Shipping API client Library (USPS, FedEx, UPS, and more). Shippo provides a multi-carrier shipping API and dashboard for businesses to ship better.",Shippo,11224,False,2.0.0
+Raul Naupari,2017-04-11T22:08:42.13Z,21,374,Jal.Router integration with Common Logging,Jal.Router.Logger,False,2018-03-30T19:00:19.047+00:00,True,False,,,1721,False,1.0.2
+Dmytro Dziuma,2017-04-11T22:09:14.2Z,211,374,Cake addin for Azure management.,Cake.Azure,False,2017-09-21T14:28:00.49+00:00,True,False,,"Cake,Script,Azure",5107,False,0.1.1
+Shippo,2017-04-11T21:09:53.223Z,193,374,"Shippo Shipping API client Library (USPS, FedEx, UPS, and more). Shippo provides a multi-carrier shipping API and dashboard for businesses to ship better.",Shippo,False,2017-10-09T07:54:04.12+00:00,True,False,"Shippo Shipping API client Library (USPS, FedEx, UPS, and more). Shippo provides a multi-carrier shipping API and dashboard for businesses to ship better.",Shippo,11224,False,2.0.0
+Tony THONG,2017-04-11T22:06:21.273Z,318,374,"AOP (Aspect-Oriented Programming) Framework for .NET 4.0+ developed in C# and based on runtime injection. It allows to produce and factorize cross-cutting concerns with lambda expressions, linq expressions or reflection.",NConcern,False,2017-06-06T13:01:40.983-07:00,True,False,"AOP (Aspect-Oriented Programming) Framework for .NET 4.0+ developed in C# and based on runtime injection. It allows to produce and factorize cross-cutting concerns with lamnda expressions, linq expressions or reflection.","NConcern,Virtuoze,AOP,.NET,AOP.NET,C#,Proxy,Interception,Injection,Decoration,Dependency,Runtime",3942,False,4.0.3
+Azteca Software,2017-04-11T22:06:45.78Z,9,374,Controladores y handlers de framework3,AztecaSoftware.Framework3.Web,False,2018-04-11T21:18:28.37+00:00,True,False,,"AztecaSoftware,Kernel,Framework3",5313,False,3.4.12
+Azteca Software,2017-04-11T22:07:13.913Z,9,374,Clases del sub sistema principal,AztecaSoftware.Framework3.Kernel,False,2018-04-11T21:18:01.34+00:00,True,False,,"AztecaSoftware,Kernel,Framework3",7811,False,3.4.12
+Tony THONG,2017-04-11T22:05:44.683Z,318,374,CNeptune urbanize .net 4.0+ library with strategic private code to lay transparent foundations for frameworks.,CNeptune,False,2017-06-06T12:34:14.183-07:00,True,False,CNeptune urbanize .net 4.0+ library with strategic private code to lay transparent foundations for frameworks.,"CNeptune,Virtuoze,AOP,.NET,AOP.NET,C#,Proxy,Interception,Injection,Decoration,Dependency,Runtime,Framework",1905,False,1.1.0
+Shippo,2017-04-11T21:09:53.223Z,193,374,"Shippo Shipping API client Library (USPS, FedEx, UPS, and more). Shippo provides a multi-carrier shipping API and dashboard for businesses to ship better.",Shippo,False,2017-10-09T07:54:04.12+00:00,True,False,"Shippo Shipping API client Library (USPS, FedEx, UPS, and more). Shippo provides a multi-carrier shipping API and dashboard for businesses to ship better.",Shippo,11224,False,2.0.0
+Triple G3,2017-04-11T22:01:02.58Z,373,374,"Reactive model package to help develop MVVM / reactive oriented models. Michael Puckett, II 'I love, praise, and worship God'",SpeckyDesktop,False,2017-04-11T19:49:32.593-07:00,True,False,,"WPF,WinForms,MVVM,Reactive,Specky,SpeckyDesktop",627,False,1.0.1.1
+Shippo,2017-04-11T21:09:53.223Z,193,374,"Shippo Shipping API client Library (USPS, FedEx, UPS, and more)",Shippo,False,2017-10-09T07:54:04.12+00:00,True,False,"Shippo Shipping API client Library (USPS, FedEx, UPS, and more). Shippo provides a multi-carrier shipping API and dashboard for businesses to ship better.",Shippo,11224,False,2.0.0
+Delegate A/S,2017-04-11T13:30:06.9Z,77,374,A framework for automating a lot of xRM development processses. By using simple F# script commands/files one can save a lot of time and effort during this process by using Delegates DAXIF# library.,Delegate.Daxif,False,2018-02-02T14:49:46.677+00:00,False,False,Delegate Automated xRM Installation Framework,"F#,fsharp,delegate,crm,xrm,daxifsharp",9683,False,3.0.0
+Triple G3,2017-04-11T22:01:02.58Z,373,374,"Reactive model package to help develop MVVM / reactive oriented models. Michael Puckett, II 'I love, praise, and worship God'",SpeckyDesktop,False,2017-04-11T19:49:32.593-07:00,True,False,,,627,False,1.0.1.1
+shibaochina,2017-04-11T21:58:46.563Z,374,374,Package Description,shibaochina,False,2017-04-11T15:59:35.15-07:00,True,False,,,1231,False,1.0.11
+Mihai Mogosanu,2017-04-11T21:56:55.273Z,43209,374,"Fast, versatile data mapper with helpers to improve productivity when working with a RDBMS. Designed for flexibility and ease of use. Full async support for operations and helpers, featuring a strongly typed sql builder",SqlFu,False,1900-01-01T00:00:00+00:00,False,False,,"datamapper,micro-orm,ado.net,database,tools",15794,False,3.3.8
+Mihai Mogosanu,2017-04-11T21:52:15.123Z,43209,374,"Fast, versatile data mapper with helpers to improve productivity when working with a RDBMS. Designed for flexibility and ease of use. Full async support for operations and helpers, featuring a strongly typed sql builder",SqlFu,False,1900-01-01T00:00:00+00:00,False,False,,"datamapper,micro-orm,ado.net,database,tools",15794,False,3.3.7
+Leno Carvalho,2017-04-11T21:52:11.153Z,43209,374,This is the core JavaScript files of the Shared framework.,Shared.Web.Layout.Core,False,1899-12-31T16:00:00-08:00,False,False,,"shared,framework,solution,template,core,javascript",-1,False,1.0.1
+Triple G3,2017-04-11T21:42:48.673Z,373,374,"Reactive model package to help develop MVVM / reactive oriented models. Michael Puckett, II 'I love, praise, and worship God'",SpeckyDesktop,False,2017-04-11T19:49:32.593-07:00,True,False,,"WPF,WinForms,MVVM,Reactive,Specky,SpeckyDesktop",627,False,1.0.1
+Raul Naupari,2017-04-11T21:49:06.073Z,1,374,Just another library to route messages,Jal.Router,False,2018-04-19T22:13:36+00:00,True,False,,,8603,False,1.0.26
+Paul Schneider,2017-04-11T21:44:58.08Z,344,374,Parses and renders Markdown to Html and Xaml,MarkdownDeep.Gui.Gtk3,False,2017-05-11T16:37:12.337-07:00,True,False,,"Markdown,Text,GUI,Gtk",392,False,1.5.6.3
+Topten Software,2017-04-11T21:45:23.747Z,364,374,MarkdownDeep is a high performance .NET Markdown processor.,MarkdownDeep-av.NET,False,2017-04-21T04:34:23.88-07:00,True,False,This package contains MarkdownDeep.NET only - it does not include the JavaScript client edition,"Markdown,MarkdownExtra,MarkdownDeep",468,False,1.5.6.3
+Leno Carvalho,2017-04-11T21:44:04.687Z,43209,374,This is the core JavaScript directives of the Shared framework.,Shared.Web.Layout.Directives,False,1899-12-31T16:00:00-08:00,False,False,,"shared,framework,solution,template,core,javascript,directives",-1,False,1.0.0
+Leno Carvalho,2017-04-11T17:52:32.58Z,43209,374,This is the core JavaScript file of the Shared framework,Shared.Web.JavaScript.Core,False,1899-12-31T16:00:00-08:00,False,False,,"shared,framework,solution,template,core,javascript",-1,False,1.0.1
+Leno Carvalho,2017-04-11T21:43:40.147Z,43209,374,This is the core JavaScript files of the Shared framework.,Shared.Web.Layout.Core,False,1899-12-31T16:00:00-08:00,False,False,,"shared,framework,solution,template,core,javascript",-1,False,1.0.0
+Triple G3,2017-04-11T21:42:48.673Z,373,374,"Reactive model package to help develop MVVM / reactive oriented models. Michael Puckett, II 'I love, praise, and worship God'",SpeckyDesktop,False,2017-04-11T19:49:32.593-07:00,True,False,,,627,False,1.0.1
+Leno Carvalho,2017-04-11T21:43:13.433Z,43209,374,This is the core JavaScript controllers of the Shared framework.,Shared.Web.Layout.Controllers,False,1899-12-31T16:00:00-08:00,False,False,,"shared,framework,solution,template,core,javascript,controllers",-1,False,1.0.0
+Triple G3,2017-04-11T21:35:42.193Z,373,374,"Reactive model package to help develop MVVM / reactive oriented models. Michael Puckett, II 'I love, praise, and worship God'",SpeckyDesktop,False,2017-04-11T19:49:32.593-07:00,True,False,,"WPF,WinForms,MVVM,Reactive,Specky,SpeckyDesktop",627,False,1.0.0.1
+Digitalkraft,2017-04-11T21:37:42.63Z,172,374,Non-nullable strings for .NET,DK.LanguageExtensions,False,2017-10-30T08:25:11.69+00:00,True,False,,Digitalkraft,8227,False,1.0.0.9
+Digitalkraft,2017-04-11T21:38:44.123Z,175,374,Module Initializer,DK.ModuleInitializer,False,2017-10-27T14:53:10.117+00:00,True,False,,Digitalkraft,8680,False,1.0.0.30
+Triple G3,2017-04-11T21:35:42.193Z,373,374,"Reactive model package to help develop MVVM / reactive oriented models. Michael Puckett, II 'I love, praise, and worship God'",SpeckyDesktop,False,2017-04-11T19:49:32.593-07:00,True,False,,,627,False,1.0.0.1
+Skills Funding Agency,2017-04-11T21:35:14.883Z,287,374,Extends the System.Xml.Linq namespace with common Core Functionality.,Sfa.Core.Xml.Linq,False,2017-07-07T13:14:48.413+00:00,True,False,,,4866,False,2.10.3
+"Corneliu I. Tusnea,Riccardo Pietrucci,Thomas Freudenberg",2017-04-11T21:35:09.837Z,357,374,Package Description,StickyWindows.WPF,False,2017-04-28T14:03:39.693-07:00,True,False,,"Window,Sticky,WinForms",748,False,0.2.0
+"Corneliu I. Tusnea,Thomas Freudenberg",2017-04-11T21:35:01.35Z,357,374,Package Description,StickyWindows,False,2017-04-28T14:03:31.007-07:00,True,False,,"Window,Sticky,WinForms",959,False,0.2.0
+Skills Funding Agency,2017-04-11T21:35:03.553Z,287,374,Extends the System.Web.Mvc namespace with common Core Functionality.,Sfa.Core.Web.Mvc,False,2017-07-07T13:14:34.303+00:00,True,False,,,4805,False,2.10.3
+Skills Funding Agency,2017-04-11T21:34:53.313Z,287,374,Extends the System.Web.Http namespace with common Core Functionality.,Sfa.Core.Web.Http,False,2017-07-07T13:14:20.1+00:00,True,False,,,5029,False,2.10.3
+Skills Funding Agency,2017-04-11T21:34:43.03Z,287,374,Extends the System.Web namespace with common Core Functionality.,Sfa.Core.Web,False,2017-07-07T06:14:06.66-07:00,True,False,,,4728,False,2.10.3
+"Marcus Griep,Andrew Cherry,Ryan Riley",2017-04-11T21:34:38.95Z,206,374,Templates for Freya on Kestrel,Freya.Template,False,2017-09-26T20:19:03.743+00:00,True,False,,"functional,web,freya,f#,fsharp,template",1296,False,0.1.1
+Skills Funding Agency,2017-04-11T21:34:33.02Z,287,374,Adds consistent patterns for working with Unity when using the common Core Functionality.,Sfa.Core.Unity,False,2017-07-07T06:13:55.037-07:00,True,False,,,3799,False,2.10.3
+Skills Funding Agency,2017-04-11T21:34:22.517Z,287,374,Core Testing libraries to help when using the Core.NSubstitute libraries.,Sfa.Core.Testing.NSubstitute,False,2017-07-07T06:13:42.38-07:00,True,False,,,5176,False,2.10.3
+Skills Funding Agency,2017-04-11T21:34:11.733Z,287,374,Core Testing libraries to help when using the Core.Moq libraries.,Sfa.Core.Testing.Moq,False,2017-07-07T06:13:31.207-07:00,True,False,,,5379,False,2.10.3
+Skills Funding Agency,2017-04-11T21:34:01.197Z,287,374,Core Testing libraries to help when using the Core.LumiSoft.Net libraries.,Sfa.Core.Testing.LumiSoft.Net,False,2017-07-07T06:13:17.08-07:00,True,False,,,5332,False,2.10.3
+Skills Funding Agency,2017-04-11T21:33:50.847Z,287,374,Core Testing libraries to help when using the Core.EntityFramework libraries.,Sfa.Core.Testing.EntityFramework,False,2017-07-07T06:13:05.677-07:00,True,False,,,5229,False,2.10.3
+Skills Funding Agency,2017-04-11T21:33:37.56Z,287,374,Core Testing libraries to help when using the Core.Azure libraries.,Sfa.Core.Testing.Azure,False,2017-07-07T06:12:50.113-07:00,True,False,,,5101,False,2.10.3
+Skills Funding Agency,2017-04-11T21:33:27.29Z,287,374,Core Testing libraries for consistent frameworks,Sfa.Core.Testing,False,2017-07-07T06:12:36.457-07:00,True,False,,,5382,False,2.10.3
+Skills Funding Agency,2017-04-11T21:33:16.677Z,287,374,Extends the System.ServiceModel namespace with common Core Functionality.,Sfa.Core.ServiceModel,False,2017-07-07T06:12:21.8-07:00,True,False,,,5369,False,2.10.3
+Skills Funding Agency,2017-04-11T21:33:06.627Z,287,374,Extends the System.Runtime.Caching assembly with common Core Functionality.,Sfa.Core.Runtime.Caching,False,2017-07-07T06:12:07.033-07:00,True,False,,,3705,False,2.10.3
+Skills Funding Agency,2017-04-11T21:32:56.747Z,287,374,Adds consistent patterns for working with Newtonsoft.Json when using the common Core Functionality.,Sfa.Core.Newtonsoft.Json,False,2017-07-07T06:11:52.173-07:00,True,False,,,5376,False,2.10.3
+Skills Funding Agency,2017-04-11T21:32:46.07Z,287,374,Extends the System.Net.Http.Formatting namespace with common Core Functionality.,Sfa.Core.Net.Http.Formatting,False,2017-07-07T06:11:40.14-07:00,True,False,,,5503,False,2.10.3
+shibaochina,2017-04-11T21:32:45.447Z,374,374,"shibaochina,sqlhelp",shibaochina,False,2017-04-11T15:59:35.15-07:00,True,False,,,1231,False,1.0.9
+Skills Funding Agency,2017-04-11T21:32:34.597Z,287,374,Extends the System.Net.Http.ActiveDirectory namespace with common Core Functionality.,Sfa.Core.Net.Http.ActiveDirectory,False,2017-07-07T13:11:29.063+00:00,True,False,,,5385,False,2.10.3
+Skills Funding Agency,2017-04-11T21:32:24.36Z,287,374,Core libraries for consistent frameworks,Sfa.Core.Net.Http,False,2017-07-07T06:11:16.06-07:00,True,False,,,3733,False,2.10.3
+Skills Funding Agency,2017-04-11T21:32:13.45Z,287,374,Adds Logging adapters for Enterprise Library when using the common Core Functionality.,Sfa.Core.Logging.EnterpriseLibrary,False,2017-07-07T06:10:46.233-07:00,True,False,,,5091,False,2.10.3
+Skills Funding Agency,2017-04-11T21:32:02.757Z,287,374,Adds Logging adapters for Application Insights when using the common Core Functionality.,Sfa.Core.Logging.ApplicationInsights,False,2017-07-07T06:10:34.857-07:00,True,False,,,5359,False,2.10.3
+Skills Funding Agency,2017-04-11T21:31:52.16Z,287,374,Adds consistent patterns for working with the Identity Model and Active Directory when using the common Core Functionality.,Sfa.Core.IdentityModel.Clients.ActiveDirectory,False,2017-07-07T06:10:21.717-07:00,True,False,,,5310,False,2.10.3
+Skills Funding Agency,2017-04-11T21:31:40.683Z,287,374,Adds consistent patterns for working with Entity Framework when using the common Core Functionality.,Sfa.Core.EntityFramework,False,2017-07-07T06:10:10.2-07:00,True,False,,,5266,False,2.10.3
+Alex Davies,2017-04-11T21:31:38.48Z,10,374,JsonApiSerializer supports configurationless serializing and deserializing objects into the json:api format (http://jsonapi.org).,JsonApiSerializer,False,2018-04-10T13:20:47.94+00:00,True,False,,"jsonapiserializer,jsonapi,json:api,json.net,serialization,deserialization,jsonapi.net",12773,False,0.9.3
+Skills Funding Agency,2017-04-11T21:31:30.26Z,287,374,Extends the System.Drawing namespace with common Core Functionality.,Sfa.Core.Drawing,False,2017-07-07T06:09:57.997-07:00,True,False,,,5083,False,2.10.3
+shibaochina,2017-04-11T21:30:18.197Z,374,374,"shibaochina,sqlhelp",shibaochina,False,2017-04-11T15:59:35.15-07:00,True,False,,,1231,False,1.0.8
+Skills Funding Agency,2017-04-11T21:31:08.17Z,287,374,Adds common functionality for working with Castle Windsor and using the Core Framework.,Sfa.Core.CastleWindsor,False,2017-07-07T06:09:34.497-07:00,True,False,,,1108,False,2.10.3
+Skills Funding Agency,2017-04-11T21:30:44.66Z,287,374,Adds common functionality for working with Azure and using the Core Framework.,Sfa.Core.Azure,False,2017-07-07T13:09:10.713+00:00,True,False,,,5364,False,2.10.3
+Skills Funding Agency,2017-04-11T21:30:58.167Z,287,374,Adds common functionality for working with Azure ServiceBus and using the Core Framework.,Sfa.Core.Azure.ServiceBus,False,2017-07-07T13:09:22.23+00:00,True,False,,,5536,False,2.10.3
+Skills Funding Agency,2017-04-11T21:31:18.833Z,287,374,Extends the System.ComponentModel.DataAnnotations namespace with common Core Functionality.,Sfa.Core.ComponentModel.DataAnnotations,False,2017-07-07T13:09:46.34+00:00,True,False,,,5389,False,2.10.3
+Skills Funding Agency,2017-04-11T21:30:34.05Z,287,374,Core libraries for consistent frameworks,Sfa.Core,False,2017-07-07T06:08:54.73-07:00,True,False,,,6256,False,2.10.3
+Toby Johnson,2017-04-11T21:29:00.6Z,80,374,Create strongly-typed data models from IBM.Data.DB2.iSeries.iDB2DataReader,MetaVertex.DataModel.Db2,True,2018-01-30T18:03:53.503+00:00,True,False,,,1412,False,0.1.0-a006
+WeiGe,2017-04-11T21:29:18.233Z,43209,374,Microsoft.AspNetCore.MvcFactory,Microsoft.AspNetCore.MvcFactory,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.4.16
+"Elmer Thomas,SendGrid DX Team",2017-04-11T21:23:28.45Z,368,374,Quickly and easily access any REST or REST-like API using a fluent interface via method chaining and reflection.,SendGrid.CSharp.HTTP.Client,False,2017-04-17T13:15:35.69-07:00,True,False,Quickly and easily access any REST or REST-like API.,"SendGrid,Email,API,REST,Fluent",708287,False,3.2.0
+Charles Solar,2017-04-11T21:22:23.03Z,8,374,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains useful classes for business use such as Enumeration and Specifications",Aggregates.NET,True,2018-04-12T23:31:46.977+00:00,True,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",111255,False,0.5.0.61-beta
+Charles Solar,2017-04-11T21:22:33.863Z,43209,374,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains entities for DDD such as aggregates, entities, repository, value object, etc",Aggregates.NET.Domain,True,1900-01-01T00:00:00+00:00,False,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",-1,False,0.5.0.61-beta
+shibaochina,2017-04-11T21:23:11.96Z,374,374,"shibaochina,sqlhelp",shibaochina,False,2017-04-11T15:59:35.15-07:00,True,False,,,1231,False,1.0.7
+Charles Solar,2017-04-11T21:22:57.17Z,43209,374,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains the GetEventStore specific implementation for the domain project",Aggregates.NET.GetEventStore,True,1900-01-01T00:00:00+00:00,False,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",-1,False,0.5.0.61-beta
+Charles Solar,2017-04-11T21:22:45.947Z,43209,374,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains objects for subscribing to events from the event store",Aggregates.NET.Consumer,True,1900-01-01T00:00:00+00:00,False,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",-1,False,0.5.0.61-beta
+shibaochina,2017-04-11T21:21:21.923Z,374,374,"shibaochina,sqlhelp",shibaochina,False,2017-04-11T15:59:35.15-07:00,True,False,,,1231,False,1.0.6
+ObsidianMinor,2017-04-11T21:08:25.507Z,29,374,A complete wrapper around the Gfycat API built for the .NET Standard,Gfycat.Net,False,2018-03-22T23:08:06.693+00:00,True,False,,"gfycat,netstandard",1597,False,1.0.5
+Kelary,2017-04-11T21:17:45.09Z,99,374,Provides infrastructure components and helpers for developing WPF applications.,Kelary.Infrastructure,False,2018-01-11T15:47:22.833+00:00,True,False,,"XAML,WPF,Infrastructure",1159,False,1.0.6311.7617
+Skills Funding Agency,2017-04-11T21:16:39.67Z,287,374,Extends the System.Xml.Linq namespace with common Core Functionality.,Sfa.Core.Xml.Linq,False,2017-07-07T13:14:48.413+00:00,True,False,,,4866,False,2.10.2
+Skills Funding Agency,2017-04-11T21:15:56.837Z,287,374,Adds consistent patterns for working with Unity when using the common Core Functionality.,Sfa.Core.Unity,False,2017-07-07T06:13:55.037-07:00,True,False,,,3799,False,2.10.2
+Skills Funding Agency,2017-04-11T21:15:45.143Z,287,374,Core Testing libraries to help when using the Core.NSubstitute libraries.,Sfa.Core.Testing.NSubstitute,False,2017-07-07T06:13:42.38-07:00,True,False,,,5176,False,2.10.2
+Skills Funding Agency,2017-04-11T21:16:29.46Z,287,374,Extends the System.Web.Mvc namespace with common Core Functionality.,Sfa.Core.Web.Mvc,False,2017-07-07T13:14:34.303+00:00,True,False,,,4805,False,2.10.2
+Skills Funding Agency,2017-04-11T21:16:08.497Z,287,374,Extends the System.Web namespace with common Core Functionality.,Sfa.Core.Web,False,2017-07-07T06:14:06.66-07:00,True,False,,,4728,False,2.10.2
+Skills Funding Agency,2017-04-11T21:16:18.877Z,287,374,Extends the System.Web.Http namespace with common Core Functionality.,Sfa.Core.Web.Http,False,2017-07-07T13:14:20.1+00:00,True,False,,,5029,False,2.10.2
+ObsidianMinor,2017-04-11T21:07:40.643Z,29,374,An unofficial wrapper around the Gfycat analytics API,Gfycat.Net.Analytics,False,2018-03-22T23:08:18.053+00:00,True,False,,"gfycat,netstandard,analytics",1205,False,1.0.5
+Skills Funding Agency,2017-04-11T21:15:31.15Z,287,374,Core Testing libraries to help when using the Core.Moq libraries.,Sfa.Core.Testing.Moq,False,2017-07-07T06:13:31.207-07:00,True,False,,,5379,False,2.10.2
+Skills Funding Agency,2017-04-11T21:15:20.803Z,287,374,Core Testing libraries to help when using the Core.LumiSoft.Net libraries.,Sfa.Core.Testing.LumiSoft.Net,False,2017-07-07T06:13:17.08-07:00,True,False,,,5332,False,2.10.2
+Raul Naupari,2017-04-11T21:15:14.27Z,21,374,Jal.Router integration with azure service bus,Jal.Router.AzureServiceBus,False,2018-03-30T18:54:48.567+00:00,True,False,,,4362,False,1.0.24
+Skills Funding Agency,2017-04-11T21:15:10.047Z,287,374,Core Testing libraries to help when using the Core.EntityFramework libraries.,Sfa.Core.Testing.EntityFramework,False,2017-07-07T06:13:05.677-07:00,True,False,,,5229,False,2.10.2
+Skills Funding Agency,2017-04-11T21:14:59.057Z,287,374,Core Testing libraries to help when using the Core.Azure libraries.,Sfa.Core.Testing.Azure,False,2017-07-07T06:12:50.113-07:00,True,False,,,5101,False,2.10.2
+Skills Funding Agency,2017-04-11T21:14:48.32Z,287,374,Core Testing libraries for consistent frameworks,Sfa.Core.Testing,False,2017-07-07T06:12:36.457-07:00,True,False,,,5382,False,2.10.2
+Skills Funding Agency,2017-04-11T21:14:37.233Z,287,374,Extends the System.ServiceModel namespace with common Core Functionality.,Sfa.Core.ServiceModel,False,2017-07-07T06:12:21.8-07:00,True,False,,,5369,False,2.10.2
+Eric Domke,2017-04-11T21:14:34.623Z,10,374,Client library for communicating with Aras Innovator,Innovator.Client,False,2018-04-10T14:46:18.95+00:00,True,False,,"aras,innovator",12801,False,2017.4.11.804
+Raul Naupari,2017-04-11T21:14:41.237Z,1,374,Just another library to route messages,Jal.Router,False,2018-04-19T22:13:36+00:00,True,False,,,8603,False,1.0.25
+Skills Funding Agency,2017-04-11T21:14:25.713Z,287,374,Extends the System.Runtime.Caching assembly with common Core Functionality.,Sfa.Core.Runtime.Caching,False,2017-07-07T06:12:07.033-07:00,True,False,,,3705,False,2.10.2
+Skills Funding Agency,2017-04-11T21:14:15.02Z,287,374,Adds consistent patterns for working with Newtonsoft.Json when using the common Core Functionality.,Sfa.Core.Newtonsoft.Json,False,2017-07-07T06:11:52.173-07:00,True,False,,,5376,False,2.10.2
+Skills Funding Agency,2017-04-11T21:13:54.477Z,287,374,Extends the System.Net.Http.ActiveDirectory namespace with common Core Functionality.,Sfa.Core.Net.Http.ActiveDirectory,False,2017-07-07T13:11:29.063+00:00,True,False,,,5385,False,2.10.2
+Skills Funding Agency,2017-04-11T21:14:03.02Z,287,374,Extends the System.Net.Http.Formatting namespace with common Core Functionality.,Sfa.Core.Net.Http.Formatting,False,2017-07-07T06:11:40.14-07:00,True,False,,,5503,False,2.10.2
+Skills Funding Agency,2017-04-11T21:13:43.333Z,287,374,Core libraries for consistent frameworks,Sfa.Core.Net.Http,False,2017-07-07T06:11:16.06-07:00,True,False,,,3733,False,2.10.2
+Skills Funding Agency,2017-04-11T21:12:47.233Z,287,374,Extends the System.Drawing namespace with common Core Functionality.,Sfa.Core.Drawing,False,2017-07-07T06:09:57.997-07:00,True,False,,,5083,False,2.10.2
+Skills Funding Agency,2017-04-11T21:13:21.19Z,287,374,Adds Logging adapters for Application Insights when using the common Core Functionality.,Sfa.Core.Logging.ApplicationInsights,False,2017-07-07T06:10:34.857-07:00,True,False,,,5359,False,2.10.2
+Skills Funding Agency,2017-04-11T21:12:26.683Z,287,374,Adds common functionality for working with Castle Windsor and using the Core Framework.,Sfa.Core.CastleWindsor,False,2017-07-07T06:09:34.497-07:00,True,False,,,1108,False,2.10.2
+Skills Funding Agency,2017-04-11T21:11:52.977Z,287,374,Core libraries for consistent frameworks,Sfa.Core,False,2017-07-07T06:08:54.73-07:00,True,False,,,6256,False,2.10.2
+shibaochina,2017-04-11T21:12:05.337Z,374,374,"shibaochina,sqlhelp",shibaochina,False,2017-04-11T15:59:35.15-07:00,True,False,,,1231,False,1.0.5
+Skills Funding Agency,2017-04-11T21:13:09.953Z,287,374,Adds consistent patterns for working with the Identity Model and Active Directory when using the common Core Functionality.,Sfa.Core.IdentityModel.Clients.ActiveDirectory,False,2017-07-07T06:10:21.717-07:00,True,False,,,5310,False,2.10.2
+Skills Funding Agency,2017-04-11T21:12:59.42Z,287,374,Adds consistent patterns for working with Entity Framework when using the common Core Functionality.,Sfa.Core.EntityFramework,False,2017-07-07T06:10:10.2-07:00,True,False,,,5266,False,2.10.2
+Skills Funding Agency,2017-04-11T21:13:31.973Z,287,374,Adds Logging adapters for Enterprise Library when using the common Core Functionality.,Sfa.Core.Logging.EnterpriseLibrary,False,2017-07-07T06:10:46.233-07:00,True,False,,,5091,False,2.10.2
+Skills Funding Agency,2017-04-11T21:12:37.217Z,287,374,Extends the System.ComponentModel.DataAnnotations namespace with common Core Functionality.,Sfa.Core.ComponentModel.DataAnnotations,False,2017-07-07T13:09:46.34+00:00,True,False,,,5389,False,2.10.2
+Skills Funding Agency,2017-04-11T21:12:13.837Z,287,374,Adds common functionality for working with Azure ServiceBus and using the Core Framework.,Sfa.Core.Azure.ServiceBus,False,2017-07-07T13:09:22.23+00:00,True,False,,,5536,False,2.10.2
+Skills Funding Agency,2017-04-11T21:12:03.087Z,287,374,Adds common functionality for working with Azure and using the Core Framework.,Sfa.Core.Azure,False,2017-07-07T13:09:10.713+00:00,True,False,,,5364,False,2.10.2
+Administrator,2017-04-09T00:14:38.29Z,43209,376,My package description.,shibaochina.com.helper,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.7.4.13
+baiweidong13311213311,2017-04-04T18:47:16.937Z,43209,381,My package description.,shibaochina.com.helper,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.7.4.6
+baiweidong13311213311,2017-04-04T19:04:43.4Z,43209,381,My package description.,shibaochina.com.helper,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.7.4.8
+ObsidianMinor,2017-04-11T21:07:40.643Z,29,374,An unofficial wrapper around the Gfycat analytics API,Gfycat.Net.Analytics,False,2018-03-22T23:08:18.053+00:00,True,False,,"gfycat,netstandard,analytics",1205,False,1.0.5
+Shippo,2017-04-11T21:09:53.223Z,193,374,"Shippo Shipping API client Library (USPS, FedEx, UPS, and more)",Shippo,False,2017-10-09T07:54:04.12+00:00,True,False,,Shippo,11224,False,2.0.0
+baiweidong,2017-04-01T03:22:41.787Z,43209,384,My package description.,shibaochina.com.helper,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.7.4.1
+baiweidong13311213311,2017-04-01T03:54:20.163Z,43209,384,My package description.,shibaochina.com.helper,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.7.4.3
+baiweidong13311213311,2017-04-01T05:23:09.807Z,43209,384,My package description.,shibaochina.com.helper,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.7.4.5
+baiweidong13311213311,2017-04-04T19:01:50.607Z,43209,381,My package description.,shibaochina.com.helper,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.7.4.7
+ObsidianMinor,2017-04-11T21:08:25.507Z,29,374,A complete wrapper around the Gfycat API built for the .NET Standard,Gfycat.Net,False,2018-03-22T23:08:06.693+00:00,True,False,,"gfycat,netstandard",1597,False,1.0.5
+baiweidong13311213311,2017-04-04T19:18:13.747Z,43209,381,My package description.,shibaochina.com.helper,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.7.4.9
+baiweidong13311213311,2017-04-04T19:25:50.243Z,43209,381,My package description.,shibaochina.com.helper,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.7.4.10
+baiweidong13311213311,2017-04-04T19:41:02.403Z,43209,381,My package description.,shibaochina.com.helper,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.7.4.11
+baiweidong13311213311,2017-04-05T05:26:41.623Z,43209,380,My package description.,shibaochina.com.helper,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.7.4.12
+baiweidong,2017-04-01T03:32:49.17Z,43209,384,My package description.,shibaochina.com.helper,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.7.4.2
+Shippo,2017-04-11T21:09:53.223Z,193,374,"Shippo Shipping API client Library (USPS, FedEx, UPS, and more)",Shippo,False,2017-10-09T07:54:04.12+00:00,True,False,,,11224,False,2.0.0
+ObsidianMinor,2017-04-11T21:07:40.643Z,29,374,An unofficial wrapper around the Gfycat analytics API,Gfycat.Net.Analytics,False,2018-03-22T23:08:18.053+00:00,True,False,,"gfycat,netstandard,analytics",1205,False,1.0.5
+ObsidianMinor,2017-04-11T21:08:25.507Z,29,374,A complete wrapper around the Gfycat API built for the .NET Standard,Gfycat.Net,False,2018-03-22T23:08:06.693+00:00,True,False,,"gfycat,netstandard",1597,False,1.0.5
+shibaochina,2017-04-11T21:08:44.993Z,374,374,"shibaochina,sqlhelp",shibaochina,False,2017-04-11T15:59:35.15-07:00,True,False,,,1231,False,1.0.4
+"Corneliu I. Tusnea,Riccardo Pietrucci,Thomas Freudenberg",2017-04-11T21:06:50.2Z,357,374,Package Description,StickyWindows.WPF,True,2017-04-28T14:03:39.693-07:00,True,False,,"Window,Sticky,WinForms",748,False,0.2.0-unstable0007
+"Corneliu I. Tusnea,Thomas Freudenberg",2017-04-11T21:06:41.243Z,357,374,Package Description,StickyWindows,True,2017-04-28T14:03:31.007-07:00,True,False,,"Window,Sticky,WinForms",959,False,0.2.0-unstable0007
+Mihai Mogosanu,2017-04-11T21:04:28.943Z,43209,374,"Fast, versatile data mapper with helpers to improve productivity when working with a RDBMS. Designed for flexibility and ease of use. Full async support for operations and helpers, featuring a strongly typed sql builder",SqlFu,False,1900-01-01T00:00:00+00:00,False,False,,"datamapper,micro-orm,ado.net,database,tools",15794,False,3.3.6
+shibaochina,2017-04-11T20:26:04Z,374,374,My package description.,shibaochina,False,2017-04-11T15:59:35.15-07:00,True,False,,,1231,False,1.0.1
+"Kim Christensen,Julian Verdurmen",2017-04-11T20:58:47.57Z,4,374,Xml file to get started with configuring NLog. This package is not mandatory to get started with NLog: the configuration file can created manually and the configuration can be created programmatically.,NLog.Config,True,2018-04-16T18:22:33.587+00:00,True,False,Configuration file for NLog.,"nlog,xml,config",2744960,True,4.4.6-rc1
+"Kim Christensen,Julian Verdurmen",2017-04-11T20:58:30.253Z,43209,374,"NLog is a logging platform for .NET with rich log routing and management capabilities. It can help you produce and manage high-quality logs for your application regardless of its size or complexity.
+This package installs NLog.dll with includes core logging functionality.
+For your main project also need to install ""NLog Configuration"" package.",NLog,True,1900-01-01T00:00:00+00:00,False,False,NLog - Advanced .NET and Silverlight Logging,"NLog,logging,log,tracing,logfiles,archiving,database,eventlog,email",12253072,True,4.4.6-rc1
+"Kim Christensen,Julian Verdurmen",2017-04-11T20:58:58.01Z,4,374,"XSD file to enables Intellisense(TM) when editing NLog configuration files, for example in Visual Studio.  
+
+Note: extensions to NLog will report XSD errors. Those can be ignored safely.",NLog.Schema,True,2018-04-16T18:22:57.917+00:00,True,False,Enables Intellisense(TM) when editing NLog.config.,"nlog,intellisense,xsd",2837188,True,4.4.6-rc1
+shibaochina,2017-04-11T20:56:40.033Z,374,374,"shibaochina,sqlhelp",shibaochina,False,2017-04-11T15:59:35.15-07:00,True,False,,,1231,False,1.0.3
+Tomi Tuhkanen,2017-04-11T20:53:27.467Z,149,374,Simple JSON flat file datastore,JsonFlatFileDataStore,False,2017-11-22T20:46:55.23+00:00,True,False,,"json,flatfile,datastore,database,linq",2822,False,1.2.0
+EscolaDeVoce.Services,2017-04-11T20:52:07.423Z,346,374,EscolaDeVoce.Services,EscolaDeVoce.Services,False,2017-05-09T07:23:12.06-07:00,True,False,,,7881,False,3.7.1
+Skills Funding Agency,2017-04-11T20:52:02.36Z,287,374,Extends the System.Xml.Linq namespace with common Core Functionality.,Sfa.Core.Xml.Linq,False,2017-07-07T13:14:48.413+00:00,True,False,,,4866,False,2.10.1
+Skills Funding Agency,2017-04-11T20:51:51.047Z,287,374,Extends the System.Web.Mvc namespace with common Core Functionality.,Sfa.Core.Web.Mvc,False,2017-07-07T13:14:34.303+00:00,True,False,,,4805,False,2.10.1
+Skills Funding Agency,2017-04-11T20:51:40.683Z,287,374,Extends the System.Web.Http namespace with common Core Functionality.,Sfa.Core.Web.Http,False,2017-07-07T13:14:20.1+00:00,True,False,,,5029,False,2.10.1
+Skills Funding Agency,2017-04-11T20:51:19.79Z,287,374,Adds consistent patterns for working with Unity when using the common Core Functionality.,Sfa.Core.Unity,False,2017-07-07T06:13:55.037-07:00,True,False,,,3799,False,2.10.1
+Skills Funding Agency,2017-04-11T20:51:30.7Z,287,374,Extends the System.Web namespace with common Core Functionality.,Sfa.Core.Web,False,2017-07-07T06:14:06.66-07:00,True,False,,,4728,False,2.10.1
+Skills Funding Agency,2017-04-11T20:51:08.79Z,287,374,Core Testing libraries to help when using the Core.NSubstitute libraries.,Sfa.Core.Testing.NSubstitute,False,2017-07-07T06:13:42.38-07:00,True,False,,,5176,False,2.10.1
+shibaochina,2017-04-11T20:51:14.057Z,374,374,My package description.,shibaochina,False,2017-04-11T15:59:35.15-07:00,True,False,,,1231,False,1.0.2
+Skills Funding Agency,2017-04-11T20:50:58.537Z,287,374,Core Testing libraries to help when using the Core.Moq libraries.,Sfa.Core.Testing.Moq,False,2017-07-07T06:13:31.207-07:00,True,False,,,5379,False,2.10.1
+Skills Funding Agency,2017-04-11T20:50:47.363Z,287,374,Core Testing libraries to help when using the Core.LumiSoft.Net libraries.,Sfa.Core.Testing.LumiSoft.Net,False,2017-07-07T06:13:17.08-07:00,True,False,,,5332,False,2.10.1
+EscolaDeVoce.Services,2017-04-11T20:50:47.3Z,346,374,EscolaDeVoce.Services,EscolaDeVoce.Services,False,2017-05-09T07:23:12.06-07:00,True,False,,,7881,False,3.7.0
+Cireson,2017-04-11T20:50:35.613Z,213,374,Cireson Web UI,Cireson.Platform.Extension.WebUi,True,2017-09-19T20:29:16.32+00:00,True,False,,ciresonCPEX,32119,False,0.1.7-rc0074
+Skills Funding Agency,2017-04-11T20:50:35.097Z,287,374,Core Testing libraries to help when using the Core.EntityFramework libraries.,Sfa.Core.Testing.EntityFramework,False,2017-07-07T06:13:05.677-07:00,True,False,,,5229,False,2.10.1
+Skills Funding Agency,2017-04-11T20:50:24.783Z,287,374,Core Testing libraries to help when using the Core.Azure libraries.,Sfa.Core.Testing.Azure,False,2017-07-07T06:12:50.113-07:00,True,False,,,5101,False,2.10.1
+Skills Funding Agency,2017-04-11T20:50:13.047Z,287,374,Core Testing libraries for consistent frameworks,Sfa.Core.Testing,False,2017-07-07T06:12:36.457-07:00,True,False,,,5382,False,2.10.1
+EscolaDeVoce.Model,2017-04-11T20:50:00.59Z,346,374,EscolaDeVoce.Model,EscolaDeVoce.Model,False,2017-05-09T07:18:58.39-07:00,True,False,,,2897,False,4.0.4
+Skills Funding Agency,2017-04-11T20:50:02.263Z,287,374,Extends the System.ServiceModel namespace with common Core Functionality.,Sfa.Core.ServiceModel,False,2017-07-07T06:12:21.8-07:00,True,False,,,5369,False,2.10.1
+Skills Funding Agency,2017-04-11T20:49:51.17Z,287,374,Extends the System.Runtime.Caching assembly with common Core Functionality.,Sfa.Core.Runtime.Caching,False,2017-07-07T06:12:07.033-07:00,True,False,,,3705,False,2.10.1
+Skills Funding Agency,2017-04-11T20:49:40.573Z,287,374,Adds consistent patterns for working with Newtonsoft.Json when using the common Core Functionality.,Sfa.Core.Newtonsoft.Json,False,2017-07-07T06:11:52.173-07:00,True,False,,,5376,False,2.10.1
+Skills Funding Agency,2017-04-11T20:49:30.493Z,287,374,Extends the System.Net.Http.Formatting namespace with common Core Functionality.,Sfa.Core.Net.Http.Formatting,False,2017-07-07T06:11:40.14-07:00,True,False,,,5503,False,2.10.1
+Skills Funding Agency,2017-04-11T20:49:19.633Z,287,374,Extends the System.Net.Http.ActiveDirectory namespace with common Core Functionality.,Sfa.Core.Net.Http.ActiveDirectory,False,2017-07-07T13:11:29.063+00:00,True,False,,,5385,False,2.10.1
+Skills Funding Agency,2017-04-11T20:49:08.77Z,287,374,Core libraries for consistent frameworks,Sfa.Core.Net.Http,False,2017-07-07T06:11:16.06-07:00,True,False,,,3733,False,2.10.1
+Skills Funding Agency,2017-04-11T20:48:56.88Z,287,374,Adds Logging adapters for Enterprise Library when using the common Core Functionality.,Sfa.Core.Logging.EnterpriseLibrary,False,2017-07-07T06:10:46.233-07:00,True,False,,,5091,False,2.10.1
+Skills Funding Agency,2017-04-11T20:48:46.16Z,287,374,Adds Logging adapters for Application Insights when using the common Core Functionality.,Sfa.Core.Logging.ApplicationInsights,False,2017-07-07T06:10:34.857-07:00,True,False,,,5359,False,2.10.1
+Skills Funding Agency,2017-04-11T20:48:35.767Z,287,374,Adds consistent patterns for working with the Identity Model and Active Directory when using the common Core Functionality.,Sfa.Core.IdentityModel.Clients.ActiveDirectory,False,2017-07-07T06:10:21.717-07:00,True,False,,,5310,False,2.10.1
+Skills Funding Agency,2017-04-11T20:48:25.217Z,287,374,Adds consistent patterns for working with Entity Framework when using the common Core Functionality.,Sfa.Core.EntityFramework,False,2017-07-07T06:10:10.2-07:00,True,False,,,5266,False,2.10.1
+Skills Funding Agency,2017-04-11T20:48:15.28Z,287,374,Extends the System.Drawing namespace with common Core Functionality.,Sfa.Core.Drawing,False,2017-07-07T06:09:57.997-07:00,True,False,,,5083,False,2.10.1
+Skills Funding Agency,2017-04-11T20:48:03.73Z,287,374,Extends the System.ComponentModel.DataAnnotations namespace with common Core Functionality.,Sfa.Core.ComponentModel.DataAnnotations,False,2017-07-07T13:09:46.34+00:00,True,False,,,5389,False,2.10.1
+Skills Funding Agency,2017-04-11T20:47:53.573Z,287,374,Adds common functionality for working with Castle Windsor and using the Core Framework.,Sfa.Core.CastleWindsor,False,2017-07-07T06:09:34.497-07:00,True,False,,,1108,False,2.10.1
+Skills Funding Agency,2017-04-11T20:47:21.49Z,287,374,Core libraries for consistent frameworks,Sfa.Core,False,2017-07-07T06:08:54.73-07:00,True,False,,,6256,False,2.10.1
+Skills Funding Agency,2017-04-11T20:47:32.117Z,287,374,Adds common functionality for working with Azure and using the Core Framework.,Sfa.Core.Azure,False,2017-07-07T13:09:10.713+00:00,True,False,,,5364,False,2.10.1
+Skills Funding Agency,2017-04-11T20:47:42.867Z,287,374,Adds common functionality for working with Azure ServiceBus and using the Core Framework.,Sfa.Core.Azure.ServiceBus,False,2017-07-07T13:09:22.23+00:00,True,False,,,5536,False,2.10.1
+Grid Protection Alliance,2017-04-11T20:42:50.663Z,1,374,"Library of base Windows Form and WPF Window extensions and dialogs, including those needed for implementing role-based security inside a Windows application.",GSF.Windows,True,2018-04-20T04:18:07.593+00:00,True,False,"Library of base Windows Form and WPF Window extensions, common dialogs and security forms.","Windows,Forms,WPF,Security,User,Interface,Extensions,About,Dialog",69929,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:42:41.46Z,374,374,Enables role-based security using Grid Solutions Framework security layer in an ASP.NET application.,GSF.Web.Security,True,2017-04-11T20:42:41.46+00:00,True,False,,"Web,Application,Security",61164,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:42:30.96Z,374,374,Enables role-based security using Grid Solutions Framework security layer in an ASP.NET Model View Controller (MVC) framework based application.,GSF.Web.Mvc.Security,True,2017-04-11T13:42:30.96-07:00,True,False,,"Web,MVC,Model,View,Controller,Application,Security",60439,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:42:20.817Z,1,374,"Library of ASP.NET web forms extensions, embedded resource hosting and HTTP Module for implementing role-based security.",GSF.Web,True,2018-04-20T04:18:05.907+00:00,True,False,,"Web,ASP.NET,Extensions,Hosting,HTTP,Module,Security,Portal,JavaScript",71648,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:42:10.453Z,1,374,"Framework for enabling time-series data processing services including hosted input, action and output adapter implementations.",GSF.TimeSeries,True,2018-04-20T04:18:03.67+00:00,True,False,,"TimeSeries,Data,Framework,Adapter,Input,Action,Output,Measurement,Time,Concentration,Hosting,Environment,Publish,Subscribe,Metadata,Serialization,Schema,Routing,Event,Messaging,Complex,Processing",71709,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:41:57.517Z,1,374,"Library of components that facilitate remote interaction with a Windows Service from Console, Windows and Web applications.",GSF.ServiceProcess,True,2018-04-20T04:18:01.907+00:00,True,False,,"Windows,Services,Remote,Access,Console,Client,Server,Monitoring",71851,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:41:48.043Z,1,374,Library of base WCF service with self-hosting capability. Includes WCF Authorization Policy and Host Factories for implementing role-based security.,GSF.ServiceModel,True,2018-04-20T04:18:00.407+00:00,True,False,,"Web,WCF,Services,Self,Hosting,Secure,Activation",72073,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:41:37.87Z,1,374,Library of lightweight WCF-based service bus with queue and topic support for secure event-driven messaging between disjointed systems.,GSF.ServiceBus,True,2018-04-20T04:17:58.86+00:00,True,False,,"Service,Bus,WCF,Queue,Topic,Event,Messaging",69612,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:41:24.79Z,1,374,Library for parsing SEL (Schweitzer Engineering Laboratories) event files,GSF.SELEventParser,True,2018-04-20T04:17:56.983+00:00,True,False,,"Transient,Event,Data,Exchange,File,Format,Parser,SEL,Schweitzer,Engineering,Laboratories,Library",70680,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:41:15.133Z,1,374,"Library of core security framework for implementing role-based security with integrated Active Directory, local account and database style authentication across various .NET application types.",GSF.Security,True,2018-04-20T04:17:54.763+00:00,True,False,Library for implementing role-based security across various .NET application types.,"Security,Roles,Groups,Principal,Identity,User,LDAP,ActiveDirectory,Providers",72148,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:41:05.333Z,1,374,Library for parsing PQDIF (Power Quality Data Interchange Format) files,GSF.PQDIF,True,2018-04-20T04:17:53.17+00:00,True,False,,"Power,Quality,Data,Exchange,File,Format,Parser,PQDIF,Library",70722,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:40:55.037Z,1,374,Library for parsing and generating standard synchrophasor protocol data streams,GSF.PhasorProtocols,True,2018-04-20T04:17:51.513+00:00,True,False,,"Synchrophasor,Streaming,Data,Exchange,Protocol,Parser,Generator,PMU,PDC,Phasor,Concentrator,IEEE,C37118,1344,IEC,61850,FNET,Macrodyne,SELFastMessage,Library",70379,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:40:44.817Z,1,374,"Library of network protocol implementations (e.g., FTP)",GSF.Net,True,2018-04-20T04:17:49.78+00:00,True,False,,"FTP,File,Transfer,Protocol,Session,Network",71335,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:40:32.39Z,1,374,"Library of media components (e.g., WAV file parser, DTMF frequency generator, etc.)",GSF.Media,True,2018-04-20T04:17:47.857+00:00,True,False,,"Media,Music,WAV,Wave,Sound,DTMF,TouchTone,RIFF,Note,Song,Tempo,Timbre",71024,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:40:19.733Z,1,374,Library of time-series data historian archiving components.,GSF.Historian,True,2018-04-20T04:17:46.25+00:00,True,False,,"Historian,TimeSeries,Data,Archive,Query,Metadata,Sorting",71163,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:40:09.997Z,1,374,Library for parsing E-MAX Director control and record data files used for transient data exchange,GSF.EMAX,True,2018-04-20T04:17:44.797+00:00,True,False,,"Transient,Data,Exchange,File,Format,Parser,E-MAX,Library",69096,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:39:36.88Z,1,374,"Library of components for managing standard and TLS asynchronous TCP/UDP/Multicast client/server connections, as well as serial and file-based communication in a client/server interface based abstraction layer.",GSF.Communication,True,2018-04-20T04:17:38.89+00:00,True,False,"Library of interface based client/server communication components for TLS, TCP, UDP, Multicast, serial, files and ZeroMQ.","Communications,TCP,UDP,Multicast,TLS,SSL,ZeroMQ,Serial,Client,Server",73654,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:39:48.15Z,1,374,Library for parsing and creating COMTRADE (COMmon format for Transient Data Exchange for power systems) files,GSF.COMTRADE,True,2018-04-20T04:17:40.857+00:00,True,False,,"Transient,Data,Exchange,File,Format,Parser,Writer,COMTRADE,Library",69472,False,2.2.22-beta
+Grid Protection Alliance,2017-04-11T20:39:59.323Z,1,374,"Library of .NET functions, extensions and components including asynchronous processing queues, configuration APIs, diagnostics, error handling, console functions, adapter framework, active directory and local account functions, checksum algorithms, unit conversion, binary parsing, cron-style task scheduler, Unix and NTP time classes, precision timer, 24-bit signed and unsigned integers, database extensions and abstraction layer, extensions for drawing, reflection, XML, buffers, chars, date/times, enumerations, strings, etc.",GSF.Core,True,2018-04-20T04:17:43.233+00:00,True,False,"Library of functions, extensions, components and APIs for any .NET application.","Core,Energy,Utility,Adapters,Functions,Extensions,Queues,Threads,Serialization,Units,Checksums,Endianness,Bits,Words,Diagnostics,LDAP,ActiveDirectory,Configuration,User,Account,ADO,Database,Abstraction,Task,Scheduling",73957,False,2.2.22-beta
+"jdkelley,dalehenries,hallesesne",2017-04-11T20:34:50.287Z,346,374,A library to abstract storing files to S3.,SPFileStore.S3,False,2017-05-09T09:02:56.6-07:00,True,False,A library to abstract storing files to a S3.,"dotnet,persistence,S3,AWS",526,False,1.0.0
+takenet,2017-04-11T20:36:46.493Z,1,374,Messaging Hub Client Extensions - Take.net InfoEntertainment Team,Takenet.MessagingHub.Client.InfoEntertainmentExtensions,False,2018-04-19T10:59:40.373+00:00,True,False,,takenet,30947,False,1.0.220
+"jdkelley,dalehenries,hallesesne",2017-04-11T20:34:50.287Z,346,374,A library to abstract storing files to S3.,SPFileStore.S3,False,2017-05-09T09:02:56.6-07:00,True,False,A library to abstract storing files to a S3.,"dotnet,persistence,S3,AWS",526,False,1.0.0
+takenet,2017-04-11T20:36:31.46Z,137,374,Customer Success Template - Take.net Customer Success Team,Takenet.MessagingHub.Client.CustomerSuccess.Template,False,2017-12-04T13:06:06.847+00:00,True,False,,takenet,10431,False,1.0.220
+takenet,2017-04-11T20:36:21.253Z,245,374,A testing host for applications using BLiP SDK to ease integration testing. This host fakes the server incoming and outgoing message transport so you can control the delivery of messages to your chatbot and inspect whici messages are produced by it.,Take.Blip.Client.Testing,False,2017-08-18T18:30:08.93+00:00,True,False,,"blip,messagingHub",12298,False,1.0.220
+"jdkelley,dalehenries,hallesesne",2017-04-11T20:27:36.627Z,346,374,A library to abstract storing files to file system.,SPFileStore,False,2017-05-09T08:56:08.29-07:00,True,False,A library to abstract storing files to a file system.,"dotnet,persistence",395,False,1.0.0
+Momentum,2017-04-11T20:31:12.933Z,4,374,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.10.4599-beta
+Momentum,2017-04-11T20:30:59.633Z,4,374,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.10.4599-beta
+BrightSoul,2017-04-11T20:29:30.647Z,374,374,Programmatically execute XUnit tests in a console application. Just type: SimpleXUnit.RunTests(),SimpleXUnit,False,2017-04-11T13:29:30.647-07:00,True,False,,,348,False,0.2.0
+BBT Software AG,2017-04-11T20:28:22.68Z,301,374,The TFS / VSTS support for the Pull Request Code Analysis Addin for Cake allows you to write found issues as comments to Team Foundation Server or Visual Studio Team Services pull requests.,Cake.Prca.PullRequests.Tfs,True,2017-06-23T08:16:19.6+00:00,True,False,TFS support for the Pull Request Code Analysis Addin for Cake Build Automation System,"Cake,Script,PullRequest,CodeAnalysis,Cake-Prca-PullRequestSystem,TFS,VSTS,Linting",2044,False,0.3.0-beta0001
+Administrator,2017-04-09T00:58:16.237Z,374,376,My package description.,shibaochina,False,2017-04-11T15:59:35.15-07:00,False,False,,,1231,False,1.0.0
+buildguest,2017-04-11T20:01:01.303Z,43209,374,Description,ProductCatalog.Messages,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0-ci-20170411-200048
+"jdkelley,dalehenries,hallesesne",2017-04-11T20:27:36.627Z,346,374,A library to abstract storing files to file system.,SPFileStore,False,2017-05-09T08:56:08.29-07:00,True,False,A library to abstract storing files to a file system.,"dotnet,persistence",395,False,1.0.0
+gitizenme,2017-04-11T20:25:31.87Z,280,374,Unofficial package of the Xamarin.Auth0Client client,Xamarin.Auth0Client.Unofficial.X,True,2017-07-14T08:43:02.203-07:00,True,False,,"Auth0,OAuth,Xamarin",385,False,1.2.14-alpha
+shibaochina,2017-04-11T20:26:04Z,374,374,My package description.,shibaochina,False,2017-04-11T15:59:35.15-07:00,True,False,,,1231,False,1.0.1
+Splitio-net-core,2017-04-11T20:24:12.82Z,57,374,Package Description,Splitio-net-core,True,2018-02-22T00:17:21.64+00:00,True,False,,,6844,False,3.0.0-rc52
+Splitio,2017-04-11T20:23:28Z,58,374,Net SDK,Splitio,True,2018-02-21T23:24:08.98+00:00,True,False,,,18444,False,3.0.0-rc67
+PK,2017-04-11T20:21:16.003Z,43209,374,"the number to southwest airlines ☎1-844-817-7357 southwest flight status confirmation number
+the number to southwest airlines ☎1-844-817-7357 southwest flight status confirmation number
+the number to southwest airlines ☎1-844-817-7357 southwest flight status confirmation number
+the number to southwest airlines ☎1-844-817-7357 southwest flight status confirmation number
+the number to southwest airlines ☎1-844-817-7357 southwest flight status confirmation number
+the number to southwest airlines ☎1-844-817-7357 southwest flight status confirmation number
+southwest airlines airport codes
+☎➀➇➃➃➇➀➆➆➂➄➆ 
+southwest airlines cargo
+southwest airline change flight
+the number to southwest airlines ☎1-844-817-7357 southwest flight status confirmation number
+ceo of southwest airlines
+southwest airlinr
+southwest airlines offers
+the number to southwest airlines ☎1-844-817-7357 southwest flight status confirmation number
+the number to southwest airlines ☎1-844-817-7357 southwest flight status confirmation number
+✈ ✈✈✈✈✈✈✈✈
+southwest airline online check in
+southwest airlines gift card
+southwest airlines laguardia
+the number to southwest airlines ☎1-844-817-7357 southwest flight status confirmation number
+southwest airline website
+the number to southwest airlines ☎1-844-817-7357 southwest flight status confirmation number
+wiki southwest airlines
+☎1-844@817-7357
+southwest airlines bereavement fares
+southwest air stock
+number to southwest airlines
+southwest airlines bicycle
+southwest airlines $59 one way deal
+southwest airlines refunds
+southwest airline deals today
+southwest flights to orlando
+southwest airlines cities
+southwest airlines store
+southwest airlines flight times
+southwest flight 397
+☎1-844@817-7357
+southwest flight 792
+the number to southwest airlines ☎1-844-817-7357 southwest flight status confirmation number
+southwest airlines flight 529
+southwest airlines indianapolis airport
+southwest airlines sale tickets
+the number to southw",the-number-to-southwest-airlines-1-844-817-7357-southwest-flight-status-confirmation-number,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Charles Solar,2017-04-11T20:20:06.33Z,43209,374,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains the GetEventStore specific implementation for the domain project",Aggregates.NET.GetEventStore,True,1900-01-01T00:00:00+00:00,False,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",-1,False,0.5.0.60-beta
+Charles Solar,2017-04-11T20:19:55Z,43209,374,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains objects for subscribing to events from the event store",Aggregates.NET.Consumer,True,1900-01-01T00:00:00+00:00,False,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",-1,False,0.5.0.60-beta
+Charles Solar,2017-04-11T20:19:44.547Z,43209,374,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains entities for DDD such as aggregates, entities, repository, value object, etc",Aggregates.NET.Domain,True,1900-01-01T00:00:00+00:00,False,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",-1,False,0.5.0.60-beta
+Charles Solar,2017-04-11T20:19:32.53Z,8,374,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains useful classes for business use such as Enumeration and Specifications",Aggregates.NET,True,2018-04-12T23:31:46.977+00:00,True,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",111255,False,0.5.0.60-beta
+ZZZ Projects Inc.,2017-04-11T20:15:36.983Z,11,374,EF+ Full Version | C# Entity Framework Utilities (Bulk Operations | Batch Delete | Batch Update | Query Cache | Query Filter | Query Future | Query Include | Audit),Z.EntityFramework.Plus.EF6,False,2018-04-09T21:40:01.843+00:00,True,False,EF+ Full Version | C# Entity Framework Utilities (Bulk Operations | Batch Delete | Batch Update | Query Cache | Query Filter | Query Future | Query Include | Audit),"EF6,EF,EntityFramework,Audit,Batch,Cache",240481,False,1.4.44
+appveyor,2017-04-11T20:14:01.307Z,56,374,Description,Cinegy.Telemetry,True,2018-02-23T09:58:14.1+00:00,True,False,,,1430,False,2.0.7-alpha1
+ZZZ Projects Inc.,2017-04-11T20:14:57.77Z,11,374,EF+ Query Filter | Entity Framework Dynamic Instance and Global Filters.,Z.EntityFramework.Plus.QueryFilter.EF6,False,2018-04-09T21:36:40.85+00:00,True,False,EF+ Query Filter | Entity Framework Dynamic Instance and Global Filters.,"EF6,EF,EntityFramework",6215,False,1.4.44
+Mike,2017-04-11T20:13:43.567Z,365,374,"This is a simple data access layer with CRUD methods that can be called with or without a parameter collection. This DAL supports SqlClient, ODBC and OLEDB connections.",HITS.DAL,False,2017-04-20T07:38:52.54-07:00,True,False,"This is a simple data access layer with CRUD methods that can be called with or without a parameter collection. This DAL supports SqlClient, ODBC and OLEDB connections.","Data,Access,Layer,SQL,T/SQL,OLEDB,ODBC,GetDataSet,ExecuteNonQuery,GetDataTable,Bulk",586,False,2017.4.11
+James Montemagno,2017-04-11T20:11:43.65Z,315,374,"Collection of MVVM Helpers such as ObservableRangeCollection, BaseViewModel, Grouping, and others.",Refractored.MvvmHelpers,True,2017-06-09T12:52:29.29-07:00,True,False,"Collection of MVVM Helpers such as ObservableRangeCollection, BaseViewModel, Grouping, and others.","mvvm,observable,collection,view,model,grouping,xamarin,pcl,xam.pcl,plugin,for,windows,phone,winphone,wp8,winrt,android,xamarin.forms,ios",251275,False,1.3.0.28-beta
+buildguest,2017-04-11T20:01:01.303Z,43209,374,Description,ProductCatalog.Messages,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0-ci-20170411-200048
+gitizenme,2017-04-11T19:55:56.687Z,280,374,Unofficial package of the Xamarin.Auth0Client client,Xamarin.Auth0Client.Unofficial.X,True,2017-07-14T08:43:02.203-07:00,True,False,,"Auth0,OAuth,Xamarin",385,False,1.2.13-alpha
+Dmitriy Telyuk,2017-04-11T19:52:57.267Z,43209,374,Viki printers remote driver library,VikiPrint.Driver.Remote,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.1
+Dmitriy Telyuk,2017-04-11T19:52:57.267Z,43209,374,Viki printers remote driver library,VikiPrint.Driver.Remote,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.8.1
+Momentum,2017-04-11T19:53:21.71Z,4,374,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.10.4598-beta
+Alexandr Nikitin,2017-04-11T19:52:20.07Z,151,374,Implementation of CircuitBreaker pattern on .NET,CircuitBreaker.Net,False,2017-11-20T19:37:08.32+00:00,True,False,Implementation of CircuitBreaker pattern on .NET,"CircuitBreaker,Circuit,Breaker,C#",6444,False,0.5.0
+Momentum,2017-04-11T19:53:08.16Z,4,374,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.10.4598-beta
+Alexandr Nikitin,2017-04-11T19:52:44.073Z,374,374,Implementation of CircuitBreaker pattern on .NET,CircuitBreaker.Net.Source,False,2017-04-11T12:52:44.073-07:00,True,False,Implementation of CircuitBreaker pattern on .NET,"CircuitBreaker,Circuit,Breaker,C#",1760,False,0.5.0
+ddt,2017-04-11T19:51:47.343Z,43209,374,Description,LifePay.Printing,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.8.1
+ddt,2017-04-11T19:51:47.343Z,43209,374,Description,LifePay.Printing,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.8.1
+Jeremy D. Miller,2017-04-11T19:44:09.13Z,93,374,Acceptance Test Driven Development and Executable Specifications for .Net,Storyteller,True,2018-01-17T23:44:10.843+00:00,True,False,,"testing,storyteller,specifications,bdd,atdd",75993,False,4.2.0-alpha-528
+PlayFab,2017-04-11T19:49:17.76Z,66,374,"Authentication, in-game commerce, player data, title data, inventory, characters, statistics, leaderboards, analytics and reporting, friends, multiplayer, matchmaking, tournaments, cloud script, trading, real-time event handling, player management, live ops, and server hosting for all major platforms/devices and games of any scale. This sdk gives your game the ability log into PlayFab and access cloud data and services.",com.playfab.windowssdk.v140,False,2018-02-13T23:21:46.233+00:00,True,False,"PlayFab is the unified backend platform for games and everything you need to build and operate your game, all in one place, so you can focus on creating and delivering a great player experience.","PlayFab,Baas,Paas,JSON,REST,HTTP,SSL,API,cloud,liveops,game,gamedev,native,nativepackage",2482,False,1.6.170411
+PlayFab,2017-04-11T19:48:49.627Z,143,374,"Authentication, in-game commerce, player data, title data, inventory, characters, statistics, leaderboards, analytics and reporting, friends, multiplayer, matchmaking, tournaments, cloud script, trading, real-time event handling, player management, live ops, and server hosting for all major platforms/devices and games of any scale. This sdk gives your game the ability log into PlayFab and access cloud data and services.",com.playfab.windowssdk.v120,False,2017-11-28T00:21:55.673+00:00,True,False,"PlayFab is the unified backend platform for games and everything you need to build and operate your game, all in one place, so you can focus on creating and delivering a great player experience.","PlayFab,Baas,Paas,JSON,REST,HTTP,SSL,API,cloud,liveops,game,gamedev,native,nativepackage",2245,False,1.6.170411
+Charles Solar,2017-04-11T19:46:31.637Z,43209,374,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains the GetEventStore specific implementation for the domain project",Aggregates.NET.GetEventStore,True,1900-01-01T00:00:00+00:00,False,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",-1,False,0.5.0.59-beta
+Charles Solar,2017-04-11T19:46:19.867Z,43209,374,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains objects for subscribing to events from the event store",Aggregates.NET.Consumer,True,1900-01-01T00:00:00+00:00,False,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",-1,False,0.5.0.59-beta
+Charles Solar,2017-04-11T19:46:07.037Z,43209,374,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains entities for DDD such as aggregates, entities, repository, value object, etc",Aggregates.NET.Domain,True,1900-01-01T00:00:00+00:00,False,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",-1,False,0.5.0.59-beta
+Jeremy D. Miller,2017-04-11T19:44:09.13Z,93,374,Acceptance Test Driven Development and Executable Specifications for .Net,Storyteller,True,2018-01-17T23:44:10.843+00:00,True,False,,"testing,storyteller,specifications,bdd,atdd",75993,False,4.2.0-alpha-528
+Jeremy D. Miller,2017-04-11T19:44:09.13Z,93,374,Acceptance Test Driven Development and Executable Specifications for .Net,Storyteller,True,2018-01-17T23:44:10.843+00:00,True,False,,"testing,storyteller,specifications,bdd,atdd",75993,False,4.2.0-alpha-528
+Charles Solar,2017-04-11T19:45:53.36Z,8,374,"A framework to help developers integrate the excelent NServicebus and GetEventStore libraries together and provide basic DDD classes.
+      This package contains useful classes for business use such as Enumeration and Specifications",Aggregates.NET,True,2018-04-12T23:31:46.977+00:00,True,False,,"CQRS,NServicebus,GetEventStore,eventstore,event,store,aggregate,ddd,repository,unit,of,work,uow",111255,False,0.5.0.59-beta
+Nozzlegear,2017-04-11T19:44:30.433Z,7,374,"Davenport is a CouchDB client for simplifying common tasks like get, list, create, update and delete.",Davenport,False,2018-04-13T19:06:04.247+00:00,True,False,,"couchdb,couch,davenport,database",1194,False,1.0.0
+Raul Naupari,2017-04-11T19:43:43.093Z,21,374,Jal.Router integration with azure service bus,Jal.Router.AzureServiceBus,False,2018-03-30T18:54:48.567+00:00,True,False,,,4362,False,1.0.23
+Raul Naupari,2017-04-11T19:43:23.29Z,1,374,Just another library to route messages,Jal.Router,False,2018-04-19T22:13:36+00:00,True,False,,,8603,False,1.0.24
+James McCartney,2017-04-11T19:42:38.183Z,39,374,Beowulf Sync Utlity - Library,BSUSync,False,2018-03-12T21:28:41.15+00:00,True,False,,"BSU,ArmA",1125,False,0.0.43
+ZZZ Projects Inc.,2017-04-11T19:41:31.137Z,11,374,EF+ Full Version | C# Entity Framework Utilities (Bulk Operations | Batch Delete | Batch Update | Query Cache | Query Filter | Query Future | Query Include | Audit),Z.EntityFramework.Plus.EF6,False,2018-04-09T21:40:01.843+00:00,True,False,EF+ Full Version | C# Entity Framework Utilities (Bulk Operations | Batch Delete | Batch Update | Query Cache | Query Filter | Query Future | Query Include | Audit),"EF6,EF,EntityFramework,Audit,Batch,Cache",240481,False,1.4.43
+ZZZ Projects Inc.,2017-04-11T19:40:57.313Z,11,374,EF+ Full Version | C# Entity Framework Utilities (Bulk Operations | Batch Delete | Batch Update | Query Cache | Query Filter | Query Future | Query Include | Audit),Z.EntityFramework.Plus.EF5,False,2018-04-09T21:39:26.263+00:00,True,False,EF+ Full Version | C# Entity Framework Utilities (Bulk Operations | Batch Delete | Batch Update | Query Cache | Query Filter | Query Future | Query Include | Audit),"EF5,EF,EntityFramework,Audit,Batch,Cache",11166,False,1.4.43
+ZZZ Projects Inc.,2017-04-11T19:40:17.377Z,122,374,EF+ Query IncludeOptimized | Entity Framework Filter Child Collections and Optimize Include.,Z.EntityFramework.Plus.QueryIncludeOptimized.EF6,False,2017-12-19T16:47:06.373+00:00,True,False,EF+ Query IncludeOptimized | Entity Framework Filter Child Collections and Optimize Include.,"EF6,EF,EntityFramework",16809,False,1.4.43
+James McCartney,2017-04-11T19:29:04.977Z,39,374,Beowulf Sync Utlity - Library,BSUSync,False,2018-03-12T21:28:41.15+00:00,True,False,,"BSU,ArmA",1125,False,0.0.41
+ZZZ Projects Inc.,2017-04-11T19:39:42.023Z,199,374,EF+ Query IncludeOptimized | Entity Framework Filter Child Collections and Optimize Include.,Z.EntityFramework.Plus.QueryIncludeOptimized.EF5,False,2017-10-03T02:33:54.387+00:00,True,False,EF+ Query IncludeOptimized | Entity Framework Filter Child Collections and Optimize Include.,"EF5,EF,EntityFramework",3252,False,1.4.43
+ZZZ Projects Inc.,2017-04-11T19:39:05.2Z,122,374,EF+ Query IncludeFilter | Entity Framework Include Related Entities using Where Filter.,Z.EntityFramework.Plus.QueryIncludeFilter.EF6,False,2017-12-19T16:46:28.653+00:00,True,False,EF+ Query IncludeFilter | Entity Framework Include Related Entities using Where Filter.,"EF6,EF,EntityFramework",20988,False,1.4.43
+Nozzlegear,2017-04-11T19:37:37.88Z,7,374,"Davenport is a CouchDB client for simplifying common tasks like get, list, create, update and delete.",Davenport,True,2018-04-13T19:06:04.247+00:00,True,False,,"couchdb,couch,davenport,database",1194,False,0.1.3-alpha
+jawa-the-hutt,2017-04-07T11:51:40.147Z,43209,378,LZ String C# Compression Library,LZString,False,1899-12-31T16:00:00-08:00,False,False,,"compression,lz",-1,False,1.0.0.12293
+EscolaDeVoce.Services,2017-04-11T19:35:00.663Z,346,374,EscolaDeVoce.Services,EscolaDeVoce.Services,False,2017-05-09T07:23:12.06-07:00,True,False,,,7881,False,3.6.9
+James McCartney,2017-04-11T19:29:04.977Z,39,374,Beowulf Sync Utlity - Library,BSUSync,False,2018-03-12T21:28:41.15+00:00,False,False,,"BSU,ArmA",1125,False,0.0.41
+Cinegy GmbH,2017-04-11T19:33:24.54Z,56,374,Telemetry library for other Cinegy Open Source projects,Cinegy.Telemetry,False,2018-02-23T09:58:14.1+00:00,True,False,,"Telemetry,Logging",1430,False,1.0.5
+Arne Mayer,2017-04-11T19:31:50.607Z,374,374,A wrapper for XInput as well as an easy to use gamepad class.,ArneMayer.XInputNET,False,2017-04-11T12:31:50.607-07:00,True,False,,"XInput,Gamepad,Controller",210,False,1.0.0
+James McCartney,2017-04-11T19:29:04.977Z,39,374,Beowulf Sync Utlity - Library,BSUSync,False,2018-03-12T21:28:41.15+00:00,True,False,,"BSU,ArmA",1125,False,0.0.41
+Evgenia Filatova,2017-04-11T19:27:29.883Z,374,374,C# wrapper for Yandex DNS API,yandex-dns-api,False,2017-04-11T12:27:29.883-07:00,True,False,,"Yandex,DNS,API",213,False,1.0.1
+Alberto Mori,2017-04-11T19:23:55.457Z,50,374,Wilcommerce catalog classes,Wilcommerce.Catalog,True,2018-03-01T13:05:28.81+00:00,True,False,Wilcommerce Catalog library,"wilcommerce,ecommerce,opensource,.netcore,.net,catalog",913,False,1.0.0-beta3
+NORRIQ Belgium,2017-04-11T19:25:45.93Z,63,374,Provides a detailed overview of a specified System User's security.,Norriq.XrmToolBox.YourUserSecurityMagnified,False,2018-02-16T21:41:46.497+00:00,True,False,,"XrmToolBox,Plugin,User,Security,Magnified",73382,False,1.0.17101.16
+NORRIQ Belgium,2017-04-11T19:26:02.937Z,63,374,Customize entity attribute mappings.,Norriq.XrmToolBox.YourEntityAttributeMappingsCustomized,False,2018-02-16T21:43:24.827+00:00,True,False,,"XrmToolBox,Plugin,User,Security,Magnified",69666,False,1.0.17101.16
+iamcarbon,2017-04-11T19:25:49.777Z,81,374,Data access abstractions for operating a multicloud service.,Carbon.Platform.Services,False,2018-01-29T21:46:50.48+00:00,True,False,,"platform,carbon",19501,False,0.31.1
+Alberto Mori,2017-04-11T19:23:55.457Z,50,374,Wilcommerce.Catalog,Wilcommerce.Catalog,True,2018-03-01T13:05:28.81+00:00,True,False,Wilcommerce Catalog library,"wilcommerce,ecommerce,opensource,.netcore,.net,catalog",913,False,1.0.0-beta3
+Skills Funding Agency,2017-04-11T19:22:05.907Z,287,374,Extends the System.Xml.Linq namespace with common Core Functionality.,Sfa.Core.Xml.Linq,False,2017-07-07T13:14:48.413+00:00,True,False,,,4866,False,2.10.0
+Skills Funding Agency,2017-04-11T19:21:46.587Z,287,374,Extends the System.Web.Mvc namespace with common Core Functionality.,Sfa.Core.Web.Mvc,False,2017-07-07T13:14:34.303+00:00,True,False,,,4805,False,2.10.0
+Skills Funding Agency,2017-04-11T19:20:22.357Z,287,374,Core Testing libraries to help when using the Core.EntityFramework libraries.,Sfa.Core.Testing.EntityFramework,False,2017-07-07T06:13:05.677-07:00,True,False,,,5229,False,2.10.0
+Skills Funding Agency,2017-04-11T19:19:59.35Z,287,374,Core Testing libraries for consistent frameworks,Sfa.Core.Testing,False,2017-07-07T06:12:36.457-07:00,True,False,,,5382,False,2.10.0
+Skills Funding Agency,2017-04-11T19:20:11.9Z,287,374,Core Testing libraries to help when using the Core.Azure libraries.,Sfa.Core.Testing.Azure,False,2017-07-07T06:12:50.113-07:00,True,False,,,5101,False,2.10.0
+Skills Funding Agency,2017-04-11T19:20:35.673Z,287,374,Core Testing libraries to help when using the Core.LumiSoft.Net libraries.,Sfa.Core.Testing.LumiSoft.Net,False,2017-07-07T06:13:17.08-07:00,True,False,,,5332,False,2.10.0
+Skills Funding Agency,2017-04-11T19:21:10.14Z,287,374,Adds consistent patterns for working with Unity when using the common Core Functionality.,Sfa.Core.Unity,False,2017-07-07T06:13:55.037-07:00,True,False,,,3799,False,2.10.0
+Skills Funding Agency,2017-04-11T19:20:46.82Z,287,374,Core Testing libraries to help when using the Core.Moq libraries.,Sfa.Core.Testing.Moq,False,2017-07-07T06:13:31.207-07:00,True,False,,,5379,False,2.10.0
+Skills Funding Agency,2017-04-11T19:21:20.953Z,287,374,Extends the System.Web namespace with common Core Functionality.,Sfa.Core.Web,False,2017-07-07T06:14:06.66-07:00,True,False,,,4728,False,2.10.0
+Skills Funding Agency,2017-04-11T19:20:59.573Z,287,374,Core Testing libraries to help when using the Core.NSubstitute libraries.,Sfa.Core.Testing.NSubstitute,False,2017-07-07T06:13:42.38-07:00,True,False,,,5176,False,2.10.0
+Skills Funding Agency,2017-04-11T19:21:32.13Z,287,374,Extends the System.Web.Http namespace with common Core Functionality.,Sfa.Core.Web.Http,False,2017-07-07T13:14:20.1+00:00,True,False,,,5029,False,2.10.0
+Skills Funding Agency,2017-04-11T19:19:48.627Z,287,374,Extends the System.ServiceModel namespace with common Core Functionality.,Sfa.Core.ServiceModel,False,2017-07-07T06:12:21.8-07:00,True,False,,,5369,False,2.10.0
+Skills Funding Agency,2017-04-11T19:19:36.95Z,287,374,Extends the System.Runtime.Caching assembly with common Core Functionality.,Sfa.Core.Runtime.Caching,False,2017-07-07T06:12:07.033-07:00,True,False,,,3705,False,2.10.0
+Skills Funding Agency,2017-04-11T19:19:26.387Z,287,374,Adds consistent patterns for working with Newtonsoft.Json when using the common Core Functionality.,Sfa.Core.Newtonsoft.Json,False,2017-07-07T06:11:52.173-07:00,True,False,,,5376,False,2.10.0
+Skills Funding Agency,2017-04-11T19:19:15.007Z,287,374,Extends the System.Net.Http.Formatting namespace with common Core Functionality.,Sfa.Core.Net.Http.Formatting,False,2017-07-07T06:11:40.14-07:00,True,False,,,5503,False,2.10.0
+Skills Funding Agency,2017-04-11T19:19:03.38Z,287,374,Extends the System.Net.Http.ActiveDirectory namespace with common Core Functionality.,Sfa.Core.Net.Http.ActiveDirectory,False,2017-07-07T13:11:29.063+00:00,True,False,,,5385,False,2.10.0
+Skills Funding Agency,2017-04-11T19:18:50.97Z,287,374,Core libraries for consistent frameworks,Sfa.Core.Net.Http,False,2017-07-07T06:11:16.06-07:00,True,False,,,3733,False,2.10.0
+Skills Funding Agency,2017-04-11T19:18:39.48Z,287,374,Adds Logging adapters for Enterprise Library when using the common Core Functionality.,Sfa.Core.Logging.EnterpriseLibrary,False,2017-07-07T06:10:46.233-07:00,True,False,,,5091,False,2.10.0
+Skills Funding Agency,2017-04-11T19:18:28.49Z,287,374,Adds Logging adapters for Application Insights when using the common Core Functionality.,Sfa.Core.Logging.ApplicationInsights,False,2017-07-07T06:10:34.857-07:00,True,False,,,5359,False,2.10.0
+Skills Funding Agency,2017-04-11T19:18:16.393Z,287,374,Adds consistent patterns for working with the Identity Model and Active Directory when using the common Core Functionality.,Sfa.Core.IdentityModel.Clients.ActiveDirectory,False,2017-07-07T06:10:21.717-07:00,True,False,,,5310,False,2.10.0
+Skills Funding Agency,2017-04-11T19:18:05.83Z,287,374,Adds consistent patterns for working with Entity Framework when using the common Core Functionality.,Sfa.Core.EntityFramework,False,2017-07-07T06:10:10.2-07:00,True,False,,,5266,False,2.10.0
+Skills Funding Agency,2017-04-11T19:17:55.183Z,287,374,Extends the System.Drawing namespace with common Core Functionality.,Sfa.Core.Drawing,False,2017-07-07T06:09:57.997-07:00,True,False,,,5083,False,2.10.0
+Skills Funding Agency,2017-04-11T19:17:43.66Z,287,374,Extends the System.ComponentModel.DataAnnotations namespace with common Core Functionality.,Sfa.Core.ComponentModel.DataAnnotations,False,2017-07-07T13:09:46.34+00:00,True,False,,,5389,False,2.10.0
+Skills Funding Agency,2017-04-11T19:17:32.42Z,287,374,Adds common functionality for working with Castle Windsor and using the Core Framework.,Sfa.Core.CastleWindsor,False,2017-07-07T06:09:34.497-07:00,True,False,,,1108,False,2.10.0
+Skills Funding Agency,2017-04-11T19:17:20.043Z,287,374,Adds common functionality for working with Azure ServiceBus and using the Core Framework.,Sfa.Core.Azure.ServiceBus,False,2017-07-07T13:09:22.23+00:00,True,False,,,5536,False,2.10.0
+Skills Funding Agency,2017-04-11T19:17:09.493Z,287,374,Adds common functionality for working with Azure and using the Core Framework.,Sfa.Core.Azure,False,2017-07-07T13:09:10.713+00:00,True,False,,,5364,False,2.10.0
+Peter Mitchell,2017-04-11T19:17:06.727Z,145,374,Handling of application configuration storage and management across multiple instances.,ConfigServer.Core,True,2017-11-26T17:27:38.813+00:00,True,False,,,1720,False,1.0.0-beta7-0071
+EscolaDeVoce.Services,2017-04-11T19:16:55.613Z,346,374,EscolaDeVoce.Services,EscolaDeVoce.Services,False,2017-05-09T07:23:12.06-07:00,True,False,,,7881,False,3.6.8
+Skills Funding Agency,2017-04-11T19:16:58.503Z,287,374,Core libraries for consistent frameworks,Sfa.Core,False,2017-07-07T06:08:54.73-07:00,True,False,,,6256,False,2.10.0
+Peter Mitchell,2017-04-11T19:16:54.94Z,145,374,Plugs in Config Server Client to Owin pipelin,ConfigServer.Client.Builder,True,2017-11-26T17:27:27.563+00:00,True,False,,,653,False,1.0.0-beta7-0071
+Peter Mitchell,2017-04-11T19:16:37.137Z,145,374,Common Configuration repository that uses a storage connector that returns and accepts json string,ConfigServer.TextProvider.Core,True,2017-11-26T17:27:04.363+00:00,True,False,,,880,False,1.0.0-beta7-0071
+Semyon Krotkih,2017-04-11T19:16:46.297Z,1,374,Eseebase common classes,Eseebase.Common,False,2018-04-19T10:28:32.563+00:00,True,False,,Eseebase,12716,False,1.0.11
+Peter Mitchell,2017-04-11T19:16:45.56Z,145,374,Client for ConfigServer.,ConfigServer.Client,True,2017-11-26T17:27:15.22+00:00,True,False,,,1421,False,1.0.0-beta7-0071
+Peter Mitchell,2017-04-11T19:16:26.99Z,145,374,In Memory implementation for the configurations repository,ConfigServer.InMemoryProvider,True,2017-11-26T17:26:50.393+00:00,True,False,,,1696,False,1.0.0-beta7-0071
+Peter Mitchell,2017-04-11T19:16:15.317Z,145,374,File storage implementation for the configurations repository,ConfigServer.FileProvider,True,2017-11-26T17:26:39.113+00:00,True,False,,,1699,False,1.0.0-beta7-0071
+Peter Mitchell,2017-04-11T19:16:04.453Z,43209,374,Azure storage table implementation for the configurations repository,ConfigServer.AzureTableStorageProvider,True,1900-01-01T00:00:00+00:00,False,False,,,602,False,1.0.0-beta7-0071
+PlayFab Inc.,2017-04-11T19:15:45.68Z,11,374,"Authentication, in-game commerce, player data, title data, inventory, characters, statistics, leaderboards, analytics and reporting, friends, multiplayer, matchmaking, tournaments, cloud script, trading, real-time event handling, player management, live ops, and server hosting for all major platforms/devices and games of any scale. This sdk gives your game the ability log into PlayFab and access cloud data and services.",PlayFabAllSDK,False,2018-04-09T20:29:34.83+00:00,True,False,"PlayFab is the unified backend platform for games and everything you need to build and operate your game, all in one place, so you can focus on creating and delivering a great player experience.","PlayFab,Baas,Paas,JSON,REST,HTTP,SSL,API,cloud,liveops,game,gamedev,native",48314,False,1.9.170411
+Peter Mitchell,2017-04-11T19:15:53.34Z,145,374,Azure storage blob implementation for the configurations repository,ConfigServer.AzureBlobStorageProvider,True,2017-11-26T17:26:27.74+00:00,True,False,,,1284,False,1.0.0-beta7-0071
+Exceptionless,2017-04-11T19:09:36.35Z,64,374,Exceptionless client for WinForms applications. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.Windows,False,2018-02-15T14:21:56.363+00:00,True,False,,"Error,Report,Reporting,Exception,Logging,Log,ELMAH",120748,True,4.0.1951
+Exceptionless,2017-04-11T19:09:25.19Z,64,374,Exceptionless client for ASP.NET Web API applications. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.WebApi.Signed,False,2018-02-15T14:21:41.957+00:00,True,False,,"Web,Api,Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH",20632,True,4.0.1951
+Exceptionless,2017-04-11T19:08:25.857Z,64,374,[DEPRECATED] Please install the Exceptionless.Signed package instead.,Exceptionless.Portable.Signed,False,2018-02-15T14:20:35.127+00:00,True,False,,"Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH,pcl",21386,True,4.0.1951
+Exceptionless,2017-04-11T19:09:49.18Z,64,374,Exceptionless client for WinForms applications. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.Windows.Signed,False,2018-02-15T14:22:12.613+00:00,True,False,,"Error,Report,Reporting,Exception,Logging,Log,ELMAH",17102,True,4.0.1951
+"cneuwirt,provenstyle",2017-04-11T19:09:04.48Z,2,374,Core Miruken,Miruken,False,2018-04-18T21:29:13.663+00:00,True,False,,"Miruken,miruken",12144,False,1.1.0.26
+Exceptionless,2017-04-11T19:10:01.217Z,64,374,Exceptionless client for WPF applications. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.Wpf,False,2018-02-15T14:22:28.13+00:00,True,False,,"Error,Report,Reporting,Exception,Logging,Log,ELMAH",125781,True,4.0.1951
+Exceptionless,2017-04-11T19:08:51.71Z,64,374,Exceptionless client for ASP.NET WebForms applications. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.Web,False,2018-02-15T14:21:03.533+00:00,True,False,,"WebForms,Web,Forms,Wcf,Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH",131318,True,4.0.1951
+Exceptionless,2017-04-11T19:10:16.55Z,64,374,Exceptionless client for WPF applications. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.Wpf.Signed,False,2018-02-15T14:22:43.897+00:00,True,False,,"Error,Report,Reporting,Exception,Logging,Log,ELMAH",20677,True,4.0.1951
+Exceptionless,2017-04-11T19:09:14.373Z,64,374,Exceptionless client for ASP.NET Web API applications. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.WebApi,False,2018-02-15T14:21:30.19+00:00,True,False,,"Web,Api,Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH",145741,True,4.0.1951
+Exceptionless,2017-04-11T19:08:37.843Z,64,374,Exceptionless client for portable applications. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.Signed,False,2018-02-15T14:20:49.33+00:00,True,False,,"Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH,pcl,NETSTANDARD,Core",48822,True,4.0.1951
+Exceptionless,2017-04-11T19:09:02.82Z,64,374,Exceptionless client for ASP.NET WebForms applications. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.Web.Signed,False,2018-02-15T14:21:17.55+00:00,True,False,,"WebForms,Web,Forms,Wcf,Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH",21320,True,4.0.1951
+Exceptionless,2017-04-11T19:08:14.977Z,64,374,[DEPRECATED] Please install the Exceptionless package instead.,Exceptionless.Portable,False,2018-02-15T14:20:22.377+00:00,True,False,,"Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH,pcl",69194,True,4.0.1951
+Exceptionless,2017-04-11T19:08:04.233Z,64,374,NLog target that sends log entries to Exceptionless. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.NLog.Signed,False,2018-02-15T14:20:08.92+00:00,True,False,,"NLog,Target,Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH",17747,True,4.0.1951
+Exceptionless,2017-04-11T19:07:51.383Z,64,374,NLog target that sends log entries to Exceptionless. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.NLog,False,2018-02-15T14:19:55.187+00:00,True,False,,"NLog,Target,Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH",31030,True,4.0.1951
+Exceptionless,2017-04-11T19:07:05.12Z,64,374,Log4net appender that sends log entries to Exceptionless. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.Log4net.Signed,False,2018-02-15T14:18:23.433+00:00,True,False,,"Log4net,Appender,Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH",16754,True,4.0.1951
+"Dox Sweden AB,Jovan Paskota",2017-04-11T19:07:25.423Z,2,374,Database layer for Dox Objects,Dox.Net.MsSqlBuilder,False,2018-04-18T09:15:27.35+00:00,True,False,,Dox,22695,False,1.1.32
+Exceptionless,2017-04-11T19:06:09.033Z,64,374,Exceptionless client for portable applications. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless,False,2018-02-15T14:17:13.09+00:00,True,False,,"Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH,pcl,NETSTANDARD,Core",295998,True,4.0.1951
+Exceptionless,2017-04-11T19:07:28.313Z,64,374,Exceptionless client for ASP.NET MVC 3+ applications. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.Mvc.Signed,False,2018-02-15T14:19:28.547+00:00,True,False,,"MVC,ASP.NET,Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH",18476,True,4.0.1951
+Exceptionless,2017-04-11T19:07:16.653Z,64,374,Exceptionless client for ASP.NET MVC 3+ applications. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.Mvc,False,2018-02-15T14:19:13.42+00:00,True,False,,"MVC,ASP.NET,Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH",164677,True,4.0.1951
+Exceptionless,2017-04-11T19:06:42.343Z,64,374,Exceptionless client for ASP.NET Core. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.AspNetCore.Signed,False,2018-02-15T14:17:43.683+00:00,True,False,,"ASP.NET,Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH",9360,True,4.0.1951
+Exceptionless,2017-04-11T19:06:29.277Z,64,374,Exceptionless client for ASP.NET Core. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.AspNetCore,False,2018-02-15T14:17:26.807+00:00,True,False,,"ASP.NET,Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH",28202,True,4.0.1951
+Exceptionless,2017-04-11T19:07:38.817Z,64,374,Exceptionless client for Nancy applications. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.Nancy,False,2018-02-15T14:19:43.123+00:00,True,False,,"Nancy,NancyFx,Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH",20494,True,4.0.1951
+Exceptionless,2017-04-11T19:06:53.537Z,64,374,Log4net appender that sends log entries to Exceptionless. Exceptionless is a cloud based error reporting service that sends your exceptions to https://exceptionless.com and provides aggregated views and analytics.,Exceptionless.Log4net,False,2018-02-15T14:18:10.073+00:00,True,False,,"Log4net,Appender,Exceptionless,Error,Report,Reporting,Exception,Logging,Log,ELMAH",22334,True,4.0.1951
+"Dox Sweden AB,Jovan Paskota",2017-04-11T19:05:07.293Z,323,374,Object for Dox,Dox.Pcl.Object,False,2017-06-01T05:06:45.5-07:00,True,False,,Dox,7805,False,1.1.14
+Theo Paraskevopoulos,2017-04-11T19:05:18.22Z,322,374,A CRM package for the Umbraco 7 back-office,PipelineCRM,False,2017-06-02T09:52:12.727+00:00,True,False,"Pipeline CRM is embedded into the Umbraco CMS, giving you seamless integration with your website’s content, forms and users. Use Pipeline CRM for contact management, conversion handling, personalisation and segmentation.","Umbraco,CRM,content,management,system,GrowCreate",2259,False,1.0.7
+Momentum,2017-04-11T18:59:02.213Z,4,374,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.10.4597-beta
+Momentum,2017-04-11T18:59:14.97Z,4,374,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.10.4597-beta
+SpreadsheetGear,2017-04-11T18:44:59.15Z,56,374,SpreadsheetGear for .NET Standard is a high performance Excel compatible library.,SpreadsheetGear,True,2018-02-23T22:23:06.473+00:00,True,False,SpreadsheetGear for .NET Standard is a high performance Excel compatible library.,"excel,reporting,asp.net,c#,spreadsheet,charting,spreadsheetgear",14236,True,8.0.12-beta
+Genesys Developer Evangelists,2017-04-11T18:45:41.5Z,10,374,A .NET library to interface with the PureCloud Public API,PureCloudPlatform.Client.V2,False,2018-04-10T09:50:11.927+00:00,True,False,A .NET library to interface with the PureCloud Public API,"genesys,purecloud,pure,cloud,public,platform,api,sdk",7624,False,4.0.0
+Henry Kam,2017-04-11T18:38:42.567Z,84,374,Domain-Driven Design classes for Professional Service projects,Com.Absolute.PS.DomainDrivenDesign,False,2018-01-26T22:39:48.24+00:00,True,False,,1.0.6,3048,False,1.0.6
+Redpoint Games,2017-04-11T18:41:14.373Z,308,374,The basic template for a command line application.,Protobuild.Template.Console,True,2017-06-16T08:25:18.93+00:00,True,False,,"platforms=Template,type=template,commit=3f25d2b0aafe1b37757d5a6d25f13cd1b31b90b7,git=https://github.com/Protobuild/Protobuild.Template.Console",13602,False,0.0.0-SHA56078aca502bb92116b83df60308eb7ad375e95e
+Com.Absolute.PS.DomainDrivenDesign,2017-04-11T18:38:42.567Z,84,374,Domain-Driven Design classes for Professional Service projects,Com.Absolute.PS.DomainDrivenDesign,False,2018-01-26T22:39:48.24+00:00,True,False,,,3048,False,1.0.6
+jawa-the-hutt,2017-04-07T11:51:40.147Z,43209,378,LZ String C# Compression Library,LZString,False,1899-12-31T16:00:00-08:00,False,False,,"compression,lz",-1,False,1.0.0.12293
+Kugar,2017-04-11T18:33:26.247Z,311,374,"Kugar工具集中的远程事件总线,同步及异步都有实现,基于RabbitMQ的远程消息系统",Kugar.Tool.RemoteEventBus,False,2017-06-13T02:07:09.11-07:00,True,False,,,1260,False,1.2.7
+Thiago Aguiar,2017-04-11T18:33:15.493Z,357,374,"Extend knockout with BootStrap, Mask, Globalization and Format.
+Fast config: Integer, Date, DateTime, Currency, Percent, CreditCard, UploadFile",KnockoutExtend,False,2017-04-28T06:22:20.8-07:00,True,False,"Extend knockout with BootStrap, Mask, Globalization and Format",,5326,False,0.0.5.3
+FriendlyX,2015-01-28T06:57:19.513Z,1178,1178,"A lightweight, simple, flexible, extensible library to read configurations using strongly typed classes.
+	- you can use a standard way to read configuration from app.config or from a pure JSON configuration file.
+	- you can also use a mix of various configuration sources like app.config and config.json (look at the MixedConfiguration class sample)",FX.Configuration,False,2015-01-27T22:57:19.513-08:00,True,False,"A lightweight, simple, flexible, extensible library to read configurations using strongly typed classes.
+	Supports various configuration sources (like app.config, config.json, etc.)","fx,app,web,json,configuration,config",240048,False,0.4.1
+jawa-the-hutt,2017-04-07T11:51:40.147Z,43209,378,LZ String C# Compression Library,LZString,False,1899-12-31T16:00:00-08:00,False,False,,"compression,lz",-1,False,1.0.0.12293
+Dominik Pytlewski,2017-04-11T18:26:45.133Z,373,374,"Finds localizable messages in *.fs and *.cs files by looking for calls such as I18n.Translate(""message"") in those sources. Puts unique messages into specified JSON file (updates it if neccessary). Class name, method name and other things are configurable",OldSchool.I18n,False,2017-04-12T01:50:34.88-07:00,True,False,,"translation,i18n,extractor,extraction",219,False,1.0.0
+lukedoolittle,2017-04-11T18:25:28.637Z,140,374,"A cross-platform framework for gathering OAuth, Bluetooth and device specific data",Quantfabric.Material,False,2017-12-01T18:44:22.54+00:00,True,False,,,3553,False,1.3.9
+,,128,-1,,MapSuiteDependency-SqliteForMono,False,2017-12-13T06:57:12.05+00:00,True,False,,,502,False,10.0.2
+,,128,-1,,MapSuiteDependency-SqliteForMono,False,2017-12-13T06:57:12.05+00:00,True,False,,,502,False,10.0.3
+,,128,-1,,MapSuiteDependency-SqliteForMono,False,2017-12-13T06:57:12.05+00:00,True,False,,,502,False,10.0.0
+,,128,-1,,MapSuiteDependency-SqliteForMono,False,2017-12-13T06:57:12.05+00:00,True,False,,,502,False,10.0.4
+,,128,-1,,MapSuiteDependency-SqliteForMono,False,2017-12-13T06:57:12.05+00:00,True,False,,,502,False,10.0.1
+Microsoft,2017-04-11T18:23:43.963Z,43209,374,WinObjC.Logging,WinObjC.Logging,False,1900-01-01T00:00:00+00:00,False,False,WinObjC.Logging,WinObjC.Logging,8351,False,0.2.170407
+Microsoft,2017-04-11T18:23:53.34Z,43209,374,Include this package in any WinObjC project that you wish to be added to a final NuGet package,WinObjC.Packaging,False,1900-01-01T00:00:00+00:00,False,False,An extension of NuGet.Build.Packaging with WinObjC additions.,WinObjC.Packaging,7535,False,0.2.170407
+seo,2017-04-11T18:23:51.043Z,43209,374,"number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+number for",number-for-westjet-customer-service-1-844-817-7357-Westjet-Airlines-Flight-Booking-Number,False,1899-12-31T16:00:00-08:00,False,False,"number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈Flight Booking Number
+number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈Flight Booking Number
+number for westj","Westjet-Airlines-Phone-Number,Westjet-Airlines-Customer-Service-Number,Westjet-Airlines-Toll-Free-Number,Westjet-Airlines-Helpline-Number,Westjet-Airlines-800-Number,Phone-Number-of-Westjet-Airlines-,Customer-Care-Number-of-Westjet-Airlines-,Westjet-Airlines-24X7-Support-Number,Westjet-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+Microsoft,2017-04-11T18:23:33.993Z,43209,374,WinObjC.Language,WinObjC.Language,False,1900-01-01T00:00:00+00:00,False,False,WinObjC.Language,WinObjC.Language,9452,False,0.2.170407
+Mihai Mogosanu,2017-04-11T18:23:48.357Z,374,374,StartItUp integration with Autofac,StartItUp.Autofac,False,2017-04-11T11:23:48.357-07:00,True,False,,"bootstrap,autofac,startup",365,False,1.0.2
+Microsoft,2017-04-11T18:23:00.973Z,43209,374,WinObjC.Frameworks.UWP,WinObjC.Frameworks.UWP,False,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks.UWP,WinObjC.Frameworks.UWP,6801,False,0.2.170407
+Microsoft,2017-04-11T18:22:27.733Z,43209,374,WinObjC.Frameworks.Core,WinObjC.Frameworks.Core,False,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks.Core,WinObjC.Frameworks.Core,7394,False,0.2.170407
+"jawa-the-hutt,Christian Rondeau",2017-04-11T18:21:50.62Z,354,374,LZ String C# Compression Library,LZStringCSharp,False,2017-05-01T12:04:18.67-07:00,True,False,,"compression,lz",4374,False,1.1.0.19707
+Microsoft,2017-04-11T18:22:43.487Z,43209,374,WinObjC.Frameworks.ThirdParty,WinObjC.Frameworks.ThirdParty,False,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks.ThirdParty,WinObjC.Frameworks.ThirdParty,7347,False,0.2.170407
+Microsoft,2017-04-11T18:22:17.433Z,43209,374,WinObjC.Frameworks,WinObjC.Frameworks,False,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks,WinObjC.Frameworks,7965,False,0.2.170407
+Triple G3,2017-04-11T18:17:45.923Z,235,374,Reactive model package to help develop MVVM / reactive oriented models.,SpeckyUWP,False,2017-08-28T18:10:53.613+00:00,True,False,,"Specky,SpeckyUWP,MVVM,Reactive",716,False,1.0.0.1
+seo,2017-04-11T18:20:47.497Z,43209,374,"westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 number Westjet Airli",westjet-customer-number-1-844-817-7357-Westjet-Airlines-Flight-Booking-Number,False,1899-12-31T16:00:00-08:00,False,False,"westjet customer ☎1-844-817-7357 number Westjet Airlines✈Flight Booking Number
+westjet customer ☎1-844-817-7357 number Westjet Airlines✈Flight Booking Number
+westjet customer ☎1-844-817-7357 number","Westjet-Airlines-Phone-Number,Westjet-Airlines-Customer-Service-Number,Westjet-Airlines-Toll-Free-Number,Westjet-Airlines-Helpline-Number,Westjet-Airlines-800-Number,Phone-Number-of-Westjet-Airlines-,Customer-Care-Number-of-Westjet-Airlines-,Westjet-Airlines-24X7-Support-Number,Westjet-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+E01D Corp.,2017-04-11T18:17:41.737Z,366,374,E01D.Currencies.Crypto.Gdax.Enums,E01D.Currencies.Crypto.Gdax.Enums,False,2017-04-19T09:21:38.723-07:00,True,False,,"E01D,GDAX",922,False,1.2017.101.10
+E01D Corp.,2017-04-11T18:16:43.79Z,366,374,E01D.Core.Settings.Abstractions,E01D.Core.Settings.Abstractions,False,2017-04-19T09:20:50.283-07:00,True,False,,E01D,736,False,1.2017.101.3
+E01D Corp.,2017-04-11T18:17:20.28Z,366,374,E01D.Core.Data.Ef,E01D.Core.Data.Ef,False,2017-04-19T09:21:19.787-07:00,True,False,,E01D,734,False,1.2017.101.3
+E01D Corp.,2017-04-11T18:17:31.373Z,366,374,E01D.Core.Settings.Data.Ef,E01D.Core.Settings.Data.Ef,False,2017-04-19T09:21:29.6-07:00,True,False,,E01D,734,False,1.2017.101.3
+E01D Corp.,2017-04-11T18:17:06.043Z,366,374,E01D.Core.Settings.Data.Abstractions,E01D.Core.Settings.Data.Abstractions,False,2017-04-19T09:21:09.207-07:00,True,False,,E01D,733,False,1.2017.101.3
+E01D Corp.,2017-04-11T18:16:55.29Z,366,374,E01D.Core.Settings,E01D.Core.Settings,False,2017-04-19T09:21:00.003-07:00,True,False,,E01D,739,False,1.2017.101.3
+E01D Corp.,2017-04-11T18:17:51.847Z,366,374,E01D.Currencies.Crypto.Gdax.Constants,E01D.Currencies.Crypto.Gdax.Constants,False,2017-04-19T09:21:47.99-07:00,True,False,,"E01D,GDAX",916,False,1.2017.101.10
+Triple G3,2017-04-11T18:17:45.923Z,235,374,Reactive model package to help develop MVVM / reactive oriented models.,SpeckyUWP,False,2017-08-28T18:10:53.613+00:00,True,False,,,716,False,1.0.0.1
+E01D Corp.,2017-04-11T18:18:02.473Z,366,374,E01D.Currencies.Crypto.Gdax.Conversions,E01D.Currencies.Crypto.Gdax.Conversions,False,2017-04-19T09:21:57.46-07:00,True,False,,"E01D,GDAX",916,False,1.2017.101.10
+E01D Corp.,2017-04-11T18:15:55.517Z,366,374,E01D.Core.Abstractions,E01D.Core.Abstractions,False,2017-04-19T09:15:33.273-07:00,True,False,,E01D,1171,False,1.2017.101.10
+E01D Corp.,2017-04-11T18:16:18.52Z,366,374,E01D.Core.Math,E01D.Core.Math,False,2017-04-19T09:20:29.863-07:00,True,False,,E01D,731,False,1.2017.101.3
+Adam Stevenson,2017-04-11T18:16:07.237Z,366,374,The foundational core library for the E01D package library.,E01D.Core,True,2017-04-19T09:15:42.303-07:00,True,False,,E01D,1717,False,0.2017.101.10-beta
+E01D Corp.,2017-04-11T18:16:29.49Z,366,374,E01D.Core.Data.Configurational.Abstractions,E01D.Core.Data.Configurational.Abstractions,False,2017-04-19T09:20:40.347-07:00,True,False,,E01D,734,False,1.2017.101.3
+seo,2017-04-11T18:16:10.49Z,43209,374,"westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈
+
+westjet hr phone number ☎1-844-817-7357 Westjet",westjet-hr-phone-number-1-844-817-7357-Westjet-Airlines-Flight-Booking-Number,False,1899-12-31T16:00:00-08:00,False,False,"westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈Flight Booking Number
+westjet hr phone number ☎1-844-817-7357 Westjet Airlines✈Flight Booking Number
+westjet hr phone number ☎1-844-817-7357","Westjet-Airlines-Phone-Number,Westjet-Airlines-Customer-Service-Number,Westjet-Airlines-Toll-Free-Number,Westjet-Airlines-Helpline-Number,Westjet-Airlines-800-Number,Phone-Number-of-Westjet-Airlines-,Customer-Care-Number-of-Westjet-Airlines-,Westjet-Airlines-24X7-Support-Number,Westjet-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+E01D Corp.,2017-04-11T18:15:29.327Z,366,374,The low level framework library for the E01D system.,E01D.Framework,False,2017-04-19T09:15:11.837-07:00,True,False,,"E01D,Framework",1599,False,1.2017.101.10
+E01D Corp.,2017-04-11T18:15:40.953Z,374,374,E01D.Net.Http.Json.Rpc,E01D.Net.Http.Json.Rpc,False,2017-04-11T11:15:40.953-07:00,True,False,,"E01D,Net,HTTP,JSON,RPC",668,False,1.2017.101.10
+seo,2017-04-11T18:13:03.13Z,43209,374,"westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈
+
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈",westjet-helpline-1-844-817-7357-Westjet-Airlines-Flight-Booking-Number,False,1899-12-31T16:00:00-08:00,False,False,"westjet helpline ☎1-844-817-7357 Westjet Airlines✈Flight Booking Number
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈Flight Booking Number
+westjet helpline ☎1-844-817-7357 Westjet Airlines✈Flig","Westjet-Airlines-Phone-Number,Westjet-Airlines-Customer-Service-Number,Westjet-Airlines-Toll-Free-Number,Westjet-Airlines-Helpline-Number,Westjet-Airlines-800-Number,Phone-Number-of-Westjet-Airlines-,Customer-Care-Number-of-Westjet-Airlines-,Westjet-Airlines-24X7-Support-Number,Westjet-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+seo,2017-04-11T18:09:35.3Z,43209,374,"westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+       westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+       westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+       westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+       westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+       westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+       westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+       westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+       westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+       westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+       westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+       westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+       westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+       westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+       westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet contact ☎1-844-817-7357 phone number Westjet Airlines✈
+       westjet contact ☎1-844-817-7357 phone n",westjet-contact-phone-number-1-844-817-7357-Westjet-Airlines-Flight-Booking-Number,False,1899-12-31T16:00:00-08:00,False,False,westjet customer ☎1-844-817-7357 care number Westjet Airlines✈westjet customer ☎1-844-817-7357 care number Westjet Airlines✈westjet customer ☎1-844-817-7357 care number Westjet Airlines✈westjet custom,"Westjet-Airlines-Phone-Number,Westjet-Airlines-Customer-Service-Number,Westjet-Airlines-Toll-Free-Number,Westjet-Airlines-Helpline-Number,Westjet-Airlines-800-Number,Phone-Number-of-Westjet-Airlines-,Customer-Care-Number-of-Westjet-Airlines-,Westjet-Airlines-24X7-Support-Number,Westjet-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+seo,2017-04-11T18:06:37.41Z,43209,374,"westjet customer ☎1-844-817-7357 care number Westjet Airlines✈     westjet customer ☎1-844-817-7357 care number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 care number Westjet Airlines✈     westjet customer ☎1-844-817-7357 care number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 care number Westjet Airlines✈     westjet customer ☎1-844-817-7357 care number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 care number Westjet Airlines✈     westjet customer ☎1-844-817-7357 care number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 care number Westjet Airlines✈     westjet customer ☎1-844-817-7357 care number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 care number Westjet Airlines✈     westjet customer ☎1-844-817-7357 care number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 care number Westjet Airlines✈     westjet customer ☎1-844-817-7357 care number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 care number Westjet Airlines✈     westjet customer ☎1-844-817-7357 care number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 care number Westjet Airlines✈     westjet customer ☎1-844-817-7357 care number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 care number Westjet Airlines✈     westjet customer ☎1-844-817-7357 care number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 care number Westjet Airlines✈     westjet customer ☎1-844-817-7357 care number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 care number Westjet Airlines✈     westjet customer ☎1-844-817-7357 care number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 care number Westjet Airlines✈     westjet customer ☎1-844-817-7357 care number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 care number Westjet Airlines✈     westjet customer ☎1-844-817-7357 care number Westjet Airlines✈
+westjet customer ☎1-844-817-7357 care number Westjet Airlines✈     westjet customer ☎1-844-817-7357 care number Westjet Airlines✈
+westjet customer ☎1-844-817-7357",westjet-customer-care-number-1-844-817-7357-Westjet-Airlines-Flight-Booking-Number,False,1899-12-31T16:00:00-08:00,False,False,westjet customer ☎1-844-817-7357 care number Westjet Airlines✈westjet customer ☎1-844-817-7357 care number Westjet Airlines✈westjet customer ☎1-844-817-7357 care number Westjet Airlines✈westjet custom,"Westjet-Airlines-Phone-Number,Westjet-Airlines-Customer-Service-Number,Westjet-Airlines-Toll-Free-Number,Westjet-Airlines-Helpline-Number,Westjet-Airlines-800-Number,Phone-Number-of-Westjet-Airlines-,Customer-Care-Number-of-Westjet-Airlines-,Westjet-Airlines-24X7-Support-Number,Westjet-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+Stan Drapkin,2017-04-11T18:06:47.4Z,156,374,Simple and secure ORM for .NET.,TinyORM,False,2017-11-15T22:26:55.05+00:00,True,False,Simple and secure ORM for .NET.,"ORM,.NET",1762,False,1.0.6310.25316
+seo,2017-04-11T18:03:44.283Z,43209,374,"westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+
+westjet phone numbers ☎1-844-817-7357 Westjet Airline",westjet-phone-numbers-1-844-817-7357-Westjet-Airlines-Flight-Booking-Number,False,1899-12-31T16:00:00-08:00,False,False,"westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+westjet phone numbers ☎1-844-817-7357 Westjet Airlines✈
+westjet phone numbers ☎1-844-","Westjet-Airlines-Phone-Number,Westjet-Airlines-Customer-Service-Number,Westjet-Airlines-Toll-Free-Number,Westjet-Airlines-Helpline-Number,Westjet-Airlines-800-Number,Phone-Number-of-Westjet-Airlines-,Customer-Care-Number-of-Westjet-Airlines-,Westjet-Airlines-24X7-Support-Number,Westjet-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+Ivan Gavryliuk (@aloneguid),2017-04-11T17:59:51.37Z,4,374,"Storage.Net abstracts storage implementation like blobs, tables and messages from the .NET Application Developer. It's aimed to provide a generic interface regardless on which storage provider you are using. It also provides both synchronous and asynchronous alternatives of all methods and implements it to the best effort possible. Supports .NET 4.5.1 and .NET Standard 1.6.",Storage.Net,False,2018-04-16T12:37:11.923+00:00,True,False,,,15898,False,3.5.5
+seo,2017-04-11T18:01:01.1Z,43209,374,"westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+
+westjet 800 ☎1-844-817-7357 Westjet",westjet-800-1-844-817-7357-Westjet-Airlines-Flight-Booking-Number,False,1899-12-31T16:00:00-08:00,False,False,"westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈
+westjet 800 ☎1-844-817-7357 Westjet Airlines✈","Westjet-Airlines-Phone-Number,Westjet-Airlines-Customer-Service-Number,Westjet-Airlines-Toll-Free-Number,Westjet-Airlines-Helpline-Number,Westjet-Airlines-800-Number,Phone-Number-of-Westjet-Airlines-,Customer-Care-Number-of-Westjet-Airlines-,Westjet-Airlines-24X7-Support-Number,Westjet-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+Ivan Gavryliuk (@aloneguid),2017-04-11T18:00:04.67Z,332,374,"Extension to Storage.Net providing integration with Microsoft Azure for Azure Storage blobs, messages, queues, azure service bus queues and topics, event hub and more. See project page for more details.",Storage.Net.Microsoft.Azure,True,2017-05-23T08:32:55.473-07:00,True,False,,,4530,False,3.5.5-alpha-1
+SpiegelSoft Ltd,2017-04-11T17:51:30.643Z,2,374,Fluent interface for building Xamarin Forms pages in F# using ReactiveUI.,XamarinForms.Reactive.FSharp,True,2018-04-18T20:03:05.78+00:00,True,False,,"Xamarin,F#,ReactiveUI",23028,False,0.6.8-beta
+seo,2017-04-11T17:58:37.74Z,43209,374,"westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office",westjet-corporate-office-phone-number-1-844-817-7357-Westjet-Airlines-Flight-Booking-Number,False,1899-12-31T16:00:00-08:00,False,False,"westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet corporate office ☎1-844-817-7357 phone number","Westjet-Airlines-Phone-Number,Westjet-Airlines-Customer-Service-Number,Westjet-Airlines-Toll-Free-Number,Westjet-Airlines-Helpline-Number,Westjet-Airlines-800-Number,Phone-Number-of-Westjet-Airlines-,Customer-Care-Number-of-Westjet-Airlines-,Westjet-Airlines-24X7-Support-Number,Westjet-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+SpiegelSoft Ltd,2017-04-11T17:51:30.643Z,2,374,Fluent interface for building Xamarin Forms pages in F# using ReactiveUI.,XamarinForms.Reactive.FSharp,True,2018-04-18T20:03:05.78+00:00,True,False,,"Xamarin,F#,ReactiveUI",23028,False,0.6.8-beta
+seo,2017-04-11T17:53:27.777Z,43209,374,"westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈",westjet-customer-service-telephone-number-1-844-817-7357-Westjet-Airlines-Flight-Booking-Number,False,1899-12-31T16:00:00-08:00,False,False,"westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈Flight Booking Number\
+westjet ☎1-844-817-7357 customer service telephone number Westjet Airlines✈Flight Booking Number\","Westjet-Airlines-Phone-Number,Westjet-Airlines-Customer-Service-Number,Westjet-Airlines-Toll-Free-Number,Westjet-Airlines-Helpline-Number,Westjet-Airlines-800-Number,Phone-Number-of-Westjet-Airlines-,Customer-Care-Number-of-Westjet-Airlines-,Westjet-Airlines-24X7-Support-Number,Westjet-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+Pidgin,2017-04-11T16:57:42.197Z,60,374,Package Description,Pidgin,False,2018-02-19T19:57:40.267+00:00,False,False,,,1218,False,1.0.2
+Leno Carvalho,2017-04-11T17:52:32.58Z,43209,374,This is the core JavaScript file of the Shared framework,Shared.Web.JavaScript.Core,False,1899-12-31T16:00:00-08:00,False,False,,"shared,framework,solution,template,core,javascript",-1,False,1.0.1
+iamcarbon,2017-04-11T17:52:12.67Z,78,374,Web rontend and web library implementations.,Carbon.Platform.Web,False,2018-02-01T21:08:11.66+00:00,True,False,,"frontends,libraries,carbon",4739,False,1.6.0
+iamcarbon,2017-04-11T17:51:53.853Z,81,374,Data access abstractions for operating a multicloud service.,Carbon.Platform.Services,False,2018-01-29T21:46:50.48+00:00,True,False,,"platform,carbon",19501,False,0.31.0
+iamcarbon,2017-04-11T17:51:21.813Z,81,374,Primitives for operating a multicloud service.,Carbon.Platform,False,2018-01-29T22:13:59.2+00:00,True,False,,"platform,carbon",20261,False,1.22.0
+SpiegelSoft Ltd,2017-04-11T17:51:30.643Z,2,374,Fluent interface for building Xamarin Forms pages in F# using ReactiveUI.,XamarinForms.Reactive.FSharp,True,2018-04-18T20:03:05.78+00:00,True,False,,"Xamarin,F#,ReactiveUI",23028,False,0.6.8-beta
+iamcarbon,2017-04-11T17:50:42.113Z,43209,374,Services for continuous intergration.,Carbon.Platform.CI,False,1899-12-31T16:00:00-08:00,False,False,,"ci,carbon",-1,False,0.6.0
+iamcarbon,2017-04-11T17:51:02.54Z,91,374,Platform abstractions.,Carbon.Platform.Abstractions,False,2018-01-19T18:16:40.453+00:00,True,False,,"platform,carbon",9266,False,1.4.0
+appveyor,2017-04-11T17:50:42.77Z,53,374,Description,Cinegy.TtxDecoder,True,2018-02-26T12:39:20.13+00:00,True,False,,,1972,False,2.0.18-alpha1
+carlubian,2016-10-11T15:46:48.613Z,43209,556,Provides a new way of dealing with exceptions in .NET,carlubian.NETcorlib,False,1899-12-31T16:00:00-08:00,False,False,,".NET,exceptions,C#",-1,False,2.1.0
+carlubian,2016-10-12T07:27:13.26Z,43209,555,Provides a new way of dealing with exceptions in .NET,carlubian.NETcorlib,False,1899-12-31T16:00:00-08:00,False,False,,".NET,exceptions,C#",-1,False,2.1.1
+Pidgin,2017-04-11T17:49:29.1Z,60,374,Package Description,Pidgin,False,2018-02-19T19:57:40.267+00:00,True,False,,,1218,False,1.0.3
+seo,2017-04-11T17:49:15.58Z,43209,374,"westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈",westjet-service-phone-number-1-844-817-7357-Westjet-Airlines-Flight-Booking-Number,False,1899-12-31T16:00:00-08:00,False,False,"westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈
+westjet service ☎1-844-817-7357 phone number Westjet Airlines✈","Westjet-Airlines-Phone-Number,Westjet-Airlines-Customer-Service-Number,Westjet-Airlines-Toll-Free-Number,Westjet-Airlines-Helpline-Number,Westjet-Airlines-800-Number,Phone-Number-of-Westjet-Airlines-,Customer-Care-Number-of-Westjet-Airlines-,Westjet-Airlines-24X7-Support-Number,Westjet-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+ByronP,2017-04-11T17:44:21.963Z,88,374,A cross platform SocketCluster library for .NET NetStandard Core.,PureSocketCluster,False,2018-01-22T15:21:50.263+00:00,True,False,A cross platform SocketCluster library for .NET NetStandard Core.,"socketcluster,socket,cluster,core,netstandard,websockets,websocket",4162,False,1.0.10
+Alexandre Mutel,2017-04-11T17:46:07.64Z,69,374,Assembly providing DirectX - XInput managed API.,SharpDX.XInput,True,2018-02-10T09:05:47.813+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,XInput",33422,True,4.0.0-ci133
+E01D Corp.,2017-04-11T17:46:03.107Z,366,374,E01D.Currencies.Crypto.Gdax.Conversions,E01D.Currencies.Crypto.Gdax.Conversions,False,2017-04-19T09:21:57.46-07:00,True,False,,"E01D,GDAX",916,False,1.2017.101.9
+Alexandre Mutel,2017-04-11T17:45:58.67Z,69,374,"Assembly providing DirectX - XAudio2, X3DAudio and XAPO managed API.",SharpDX.XAudio2,True,2018-02-10T09:05:37.707+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,XAudio2,X3DAudio,XAPO",41758,True,4.0.0-ci133
+E01D Corp.,2017-04-11T17:45:52.34Z,366,374,E01D.Currencies.Crypto.Gdax.Constants,E01D.Currencies.Crypto.Gdax.Constants,False,2017-04-19T09:21:47.99-07:00,True,False,,"E01D,GDAX",916,False,1.2017.101.9
+Alexandre Mutel,2017-04-11T17:45:49.167Z,69,374,Assembly providing DirectX - RawInput managed API.,SharpDX.RawInput,True,2018-02-10T09:05:27.05+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,RawInput",28766,True,4.0.0-ci133
+E01D Corp.,2017-04-11T17:45:42.087Z,366,374,E01D.Currencies.Crypto.Gdax.Enums,E01D.Currencies.Crypto.Gdax.Enums,False,2017-04-19T09:21:38.723-07:00,True,False,,"E01D,GDAX",922,False,1.2017.101.9
+E01D Corp.,2017-04-11T17:45:30.507Z,366,374,E01D.Core.Settings.Data.Ef,E01D.Core.Settings.Data.Ef,False,2017-04-19T09:21:29.6-07:00,True,False,,E01D,734,False,1.2017.101.2
+Alexandre Mutel,2017-04-11T17:45:37.603Z,69,374,Assembly providing DirectX - MediaFoundation managed API.,SharpDX.MediaFoundation,True,2018-02-10T09:05:16.563+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,MediaFoundation",26318,True,4.0.0-ci133
+E01D Corp.,2017-04-11T17:45:19.647Z,366,374,E01D.Core.Data.Ef,E01D.Core.Data.Ef,False,2017-04-19T09:21:19.787-07:00,True,False,,E01D,734,False,1.2017.101.2
+Alexandre Mutel,2017-04-11T17:45:27.147Z,69,374,Assembly providing DirectX - Mathematics managed API.,SharpDX.Mathematics,True,2018-02-10T09:05:05.063+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,Mathematics,HLSL,fx,Shaders",84261,True,4.0.0-ci133
+MundiPagg,2017-04-11T17:45:23.85Z,374,374,A General purpose rest ApiClient write in C# language for the OneSignal API.,OneSignal.CSharp.SDK,False,2017-04-11T10:45:23.85-07:00,True,False,,"onesignal,push,notifications,mobile,android,ios",9870,False,0.10.0
+Alexandre Mutel,2017-04-11T17:45:07.47Z,69,374,Assembly providing DirectX - DirectSound managed API.,SharpDX.DirectSound,True,2018-02-10T09:04:42.72+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,DirectSound,DSound",37425,True,4.0.0-ci133
+Alexandre Mutel,2017-04-11T17:45:16.677Z,69,374,Assembly providing DirectX - DXGI managed API.,SharpDX.DXGI,True,2018-02-10T09:04:53.64+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,DXGI",289051,True,4.0.0-ci133
+E01D Corp.,2017-04-11T17:45:07.393Z,366,374,E01D.Core.Settings.Data.Abstractions,E01D.Core.Settings.Data.Abstractions,False,2017-04-19T09:21:09.207-07:00,True,False,,E01D,733,False,1.2017.101.2
+E01D Corp.,2017-04-11T17:44:56.907Z,366,374,E01D.Core.Settings,E01D.Core.Settings,False,2017-04-19T09:21:00.003-07:00,True,False,,E01D,739,False,1.2017.101.2
+Alexandre Mutel,2017-04-11T17:44:57.83Z,69,374,Assembly providing DirectX - DirectManipulation managed API.,SharpDX.DirectManipulation,True,2018-02-10T09:04:31.25+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,DirectManipulation,Touch,Input",5697,True,4.0.0-ci133
+E01D Corp.,2017-04-11T17:44:46.797Z,366,374,E01D.Core.Settings.Abstractions,E01D.Core.Settings.Abstractions,False,2017-04-19T09:20:50.283-07:00,True,False,,E01D,736,False,1.2017.101.2
+Alexandre Mutel,2017-04-11T17:44:48.11Z,69,374,Assembly providing DirectX - DirectInput managed API.,SharpDX.DirectInput,True,2018-02-10T09:04:19.593+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,DirectInput,DInput",46453,True,4.0.0-ci133
+Alexandre Mutel,2017-04-11T17:44:39.17Z,69,374,Assembly providing DirectX - DirectComposition managed API.,SharpDX.DirectComposition,True,2018-02-10T09:04:07.64+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,DirectComposition,DComposition",6164,True,4.0.0-ci133
+E01D Corp.,2017-04-11T17:44:35.12Z,366,374,E01D.Core.Data.Configurational.Abstractions,E01D.Core.Data.Configurational.Abstractions,False,2017-04-19T09:20:40.347-07:00,True,False,,E01D,734,False,1.2017.101.2
+Cinegy GmbH,2017-04-11T17:44:26.137Z,53,374,Teletext Decoder,Cinegy.TtxDecoder,False,2018-02-26T12:39:20.13+00:00,True,False,,Teletext,1972,False,1.0.16
+Alexandre Mutel,2017-04-11T17:44:19.12Z,69,374,Assembly providing DirectX - Direct3D12 managed API.,SharpDX.Direct3D12,True,2018-02-10T09:03:45.123+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,Direct3D12,D3D12",12904,True,4.0.0-ci133
+Alexandre Mutel,2017-04-11T17:44:29.81Z,69,374,Assembly providing DirectX - Direct3D9 managed API.,SharpDX.Direct3D9,True,2018-02-10T09:03:57.187+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,Direct3D9,D3D9",93933,True,4.0.0-ci133
+PureSocketCluster,2017-04-11T17:44:21.963Z,88,374,PureSocketCluster,PureSocketCluster,False,2018-01-22T15:21:50.263+00:00,True,False,,,4162,False,1.0.10
+E01D Corp.,2017-04-11T17:44:23.213Z,366,374,E01D.Core.Math,E01D.Core.Math,False,2017-04-19T09:20:29.863-07:00,True,False,,E01D,731,False,1.2017.101.2
+Adam Stevenson,2017-04-11T17:44:10.367Z,366,374,The foundational core library for the E01D package library.,E01D.Core,True,2017-04-19T09:15:42.303-07:00,True,False,,E01D,1717,False,0.2017.101.9-beta
+Alexandre Mutel,2017-04-11T17:43:48.067Z,69,374,Assembly providing DirectX - Direct3D10 and Direct3D10.1 managed API.,SharpDX.Direct3D10,True,2018-02-10T09:03:11.45+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,Direct3D10,D3D10",33363,True,4.0.0-ci133
+Alexandre Mutel,2017-04-11T17:44:08.96Z,69,374,Assembly providing DirectX - Effects11 managed API for Direct3D11.,SharpDX.Direct3D11.Effects,True,2018-02-10T09:03:33.34+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,Direct3D11,D3D11,Effects11",39916,True,4.0.0-ci133
+Alexandre Mutel,2017-04-11T17:43:28.657Z,69,374,Assembly providing APIs related to Desktop platform.,SharpDX.Desktop,True,2018-02-10T09:02:48.247+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D",25229,True,4.0.0-ci133
+Alexandre Mutel,2017-04-11T17:43:37.487Z,69,374,"Assembly providing DirectX - Direct2D, DirectWrite and WIC managed API.",SharpDX.Direct2D1,True,2018-02-10T09:02:59.78+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,Direct2D,D2D,DirectWrite,DWrite,WIC",226825,True,4.0.0-ci133
+Alexandre Mutel,2017-04-11T17:43:18.2Z,69,374,Assembly providing DirectX - D3DCompiler managed API.,SharpDX.D3DCompiler,True,2018-02-10T09:02:36.95+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D",133563,True,4.0.0-ci133
+E01D Corp.,2017-04-11T17:43:49.63Z,374,374,E01D.Net.Http.Json.Rpc,E01D.Net.Http.Json.Rpc,False,2017-04-11T11:15:40.953-07:00,True,False,,"E01D,Net,HTTP,JSON,RPC",668,False,1.2017.101.9
+E01D Corp.,2017-04-11T17:43:38.703Z,366,374,The low level framework library for the E01D system.,E01D.Framework,False,2017-04-19T09:15:11.837-07:00,True,False,,"E01D,Framework",1599,False,1.2017.101.9
+seo,2017-04-11T17:43:22.14Z,43209,374,"phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈",phone-number-for-westjet-customer-service-1-844-817-7357-Westjet-Airlines-Flight-Booking-Number,False,1899-12-31T16:00:00-08:00,False,False,"phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 customer service Westjet Airlines✈
+phone number for westjet ☎1-844-817-7357 custo","Westjet-Airlines-Phone-Number,Westjet-Airlines-Customer-Service-Number,Westjet-Airlines-Toll-Free-Number,Westjet-Airlines-Helpline-Number,Westjet-Airlines-800-Number,Phone-Number-of-Westjet-Airlines-,Customer-Care-Number-of-Westjet-Airlines-,Westjet-Airlines-24X7-Support-Number,Westjet-Airlines-Hotline-Telephone-Number",-1,False,1.0.0
+Alexandre Mutel,2017-04-11T17:42:57.447Z,69,374,Core assembly for all SharpDX assemblies.,SharpDX,True,2018-02-10T09:02:13.433+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D",458330,True,4.0.0-ci133
+E01D Corp.,2017-04-11T17:43:59.66Z,366,374,E01D.Core.Abstractions,E01D.Core.Abstractions,False,2017-04-19T09:15:33.273-07:00,True,False,,E01D,1171,False,1.2017.101.9
+Alexandre Mutel,2017-04-11T17:43:57.85Z,69,374,"Assembly providing DirectX - Direct3D11, Direct3D11.1 and Effects11 managed API.",SharpDX.Direct3D11,True,2018-02-10T09:03:23.483+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D,Direct3D11,D3D11,Effects11",207552,True,4.0.0-ci133
+Alexandre Mutel,2017-04-11T17:43:08.683Z,69,374,Assembly providing DirectX - Animation managed API.,SharpDX.Animation,True,2018-02-10T09:02:25.62+00:00,True,False,,"SharpDX,DirectX,Direct3D,Multimedia,MDX,3D",5884,True,4.0.0-ci133

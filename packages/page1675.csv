@@ -1,0 +1,924 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+Service Stack,2016-06-13T01:13:37.857Z,226,676,"Full details in Mvc PowerPack: http://servicestack.net/mvc-powerpack/
+      Adapter classes to provide tight integration and re-usable functionality between ServiceStack and MVC3.
+      Including adapters for: MiniProfiler, FluentValidation, Funq IOC Controller Factory, Funq Validator Factory
+      ControllerBase (configured with access to ServiceStack's ICacheClient, ISession, typed UserSession dependencies).",ServiceStack.Mvc.Signed,False,2017-09-06T16:53:41.08+00:00,True,False,.NET 4.0 project Integration of ServiceStack with MVC3,"MiniProfiler,FluentValidation,MVC,Controller,ServiceStack",66663,False,4.0.60
+Service Stack,2016-06-13T01:13:31.667Z,108,676,"Full details in MVC PowerPack: http://mono.servicestack.net/mvc-powerpack/
+      MVC Adapter classes to provide tight integration and re-usable functionality between ServiceStack and MVC.
+      Including adapters for: MiniProfiler, FluentValidation, Funq IOC Controller Factory, Funq Validator Factory
+      ControllerBase (configured with access to ServiceStack's ICacheClient, ISession, typed UserSession dependencies).",ServiceStack.Mvc,False,2018-01-02T14:48:56.73+00:00,True,False,ASP.NET MVC Integration adapters for ServiceStack,"MVC,ServiceStack,MiniProfiler,FluentValidation,Controller",127738,False,4.0.60
+Service Stack,2016-06-13T01:13:20.127Z,108,676,Provides Slack logging provider for ServiceStack projects,ServiceStack.Logging.Slack,False,2018-01-02T14:48:15.45+00:00,True,False,Slack logging provider for ServiceStack,"servicestack,slack,log,logging,logger,provider,adapter",3239,False,4.0.60
+Service Stack,2016-06-13T01:13:26.07Z,108,676,Add the MsgPack binary format and endpoint to a ServiceStack web service host.,ServiceStack.MsgPack,False,2018-01-02T14:48:28.103+00:00,True,False,MsgPack Format Serializer ContentType ServiceClients for ServiceStack,"MsgPack,MessagePack,Message,Pack,Fast,Binary,Serializer,Format,ContentType,REST,Web,Services,ServiceStack",16621,False,4.0.60
+Service Stack,2016-06-13T01:13:14.117Z,108,676,Provides NLog logging integration for other ServiceStack projects,ServiceStack.Logging.NLog,False,2018-01-02T14:47:47.853+00:00,True,False,"NLog logging integration for ServiceStack, the Opensource .NET and Mono REST Web Services Framework","servicestack,log,logging,nlog",93340,False,4.0.60
+Service Stack,2016-06-13T01:13:08.25Z,108,676,Provides log4net logging integration for other ServiceStack projects,ServiceStack.Logging.Log4Net,False,2018-01-02T14:47:35.103+00:00,True,False,"log4Net logging integration for ServiceStack, the Opensource .NET and Mono REST Web Services Framework","servicestack,log,logging,log4net",88992,False,4.0.60
+Service Stack,2016-06-13T01:12:55.873Z,108,676,Provides Enterprise Library 5.0 Logging Application Block logging integration for other ServiceStack projects,ServiceStack.Logging.EntLib5,False,2018-01-02T14:47:08.23+00:00,True,False,"Enterprise Library 5.0 Logging Application Block integration for ServiceStack, the Opensource .NET and Mono REST Web Services Framework","servicestack,log,logging,nlog",11247,False,4.0.60
+Service Stack,2016-06-13T01:13:02.293Z,108,676,Provides EventLog logging integration for other ServiceStack projects,ServiceStack.Logging.EventLog,False,2018-01-02T14:47:22.573+00:00,True,False,"Windows Event Log integration for ServiceStack, the Opensource .NET and Mono REST Web Services Framework","servicestack,log,logging,eventlog",22669,False,4.0.60
+Service Stack,2016-06-13T01:12:50.07Z,108,676,Provides Elmah logging integration for other ServiceStack projects,ServiceStack.Logging.Elmah,False,2018-01-02T14:46:54.18+00:00,True,False,"Elmah logging integration for ServiceStack, the Opensource .NET and Mono REST Web Services Framework","servicestack,log,logging,elmah",40017,False,4.0.60
+Service Stack,2016-06-13T01:12:44.26Z,108,676,"Lightweight and implementation-free interfaces for DTO's, providers and adapters.",ServiceStack.Interfaces,False,2018-01-02T14:46:07.553+00:00,True,False,Opensource .NET and Mono REST Web Services framework,"Fast,JSON,XML,CSV,HTML,SOAP,JSV,REST,Web,Service,Framework,MONO,ServiceStack",1701964,False,4.0.60
+Service Stack,2016-06-13T01:12:38.287Z,108,676,JSON ServiceClient implementation based on .NET's HttpClient,ServiceStack.HttpClient,False,2018-01-02T14:45:36.32+00:00,True,False,Opensource .NET and Mono REST Web Services framework,"ServiceStack,Common,Framework,Clients,ServiceClients,JSON,HttpClient,Gateway",47118,False,4.0.60
+Service Stack,2016-06-13T01:12:32.1Z,43209,676,"Host ServiceStack side-by-side with an existing ASP.NET MVC application at the path '/api'. 
+ServiceStack is a modern, high-performance, code-first web service framework promoting code and web services best practices. Simple, Fast, Elegant. Website: https://servicestack.net",ServiceStack.Host.Mvc,False,1900-01-01T00:00:00+00:00,False,False,Opensource .NET and Mono REST Web Services framework,"Fast,JSON,XML,CSV,HTML,SOAP,JSV,REST,Web,Service,Framework,MONO,ServiceStack",59213,False,4.0.60
+Service Stack,2016-06-13T01:12:25.92Z,43209,676,"Host ServiceStack in an existing ASP.NET web application at the root path '/'. 
+ServiceStack is a modern, high-performance, code-first web service framework promoting code and web services best practices. Simple, Fast, Elegant. Website: https://servicestack.net",ServiceStack.Host.AspNet,False,1900-01-01T00:00:00+00:00,False,False,Opensource .NET and Mono REST Web Services framework,"Fast,JSON,XML,CSV,HTML,SOAP,JSV,REST,Web,Service,Framework,MONO,ServiceStack",74670,False,4.0.60
+Service Stack,2016-06-13T01:12:20.1Z,108,676,"MSBuild Tasks to help creating self-contained embedded versions of ServiceStack that can be ILMerged into a single cross-platform .exe accessed by the users perferred browser or hosted inside a Native Desktop App shell containing a Web Browser widget.
+
+      Once added to a project the install.ps1 script will set the BuildAction to all Razor *.cshtml pages to 'Content' so they get pre-compiled and change all html/img/css assets to Embedded Resources so they get bundled inside the dll. 
+
+      This package also includes a copy of ILMerge.exe under \tools that can be used to merge all ServiceStack .dlls into a single exe. See the https://github.com/ServiceStack/ServiceStack.Gap project for more info.",ServiceStack.Gap,False,2018-01-02T14:45:22.38+00:00,True,False,Tools to help create embedded versions of ServiceStack,"Embed,Resources,Razor,ViewEngine,View,Templates,Mono,ASP.NET,Self-Host,ServiceStack",6462,False,4.0.60
+Service Stack,2016-06-13T01:12:13.993Z,226,676,Common base library for ServiceStack projects.,ServiceStack.Common.Signed,False,2017-09-06T16:49:37.91+00:00,True,False,Opensource .NET and Mono REST Web Services framework,"ServiceStack,Common,Framework,Clients,ServiceClients,Gateway",285646,False,4.0.60
+Service Stack,2016-06-13T01:12:02.2Z,226,676,"JSON, XML, JSV, SOAP and MQ Generic Service Clients.",ServiceStack.Client.Signed,False,2017-09-06T16:34:56.18+00:00,True,False,Opensource .NET and Mono REST Web Services framework,"ServiceStack,Common,Framework,Clients,ServiceClients,Gateway",256132,False,4.0.60
+Service Stack,2016-06-13T01:12:07.867Z,108,676,Common base library for ServiceStack projects.,ServiceStack.Common,False,2018-01-02T14:44:38.52+00:00,True,False,Opensource .NET and Mono REST Web Services framework,"ServiceStack,Common,Framework,Clients,ServiceClients,Gateway",1807788,False,4.0.60
+Service Stack,2016-06-13T01:11:56.343Z,108,676,"JSON, XML, JSV, SOAP and MQ Generic Service Clients.",ServiceStack.Client,False,2018-01-02T14:44:11.24+00:00,True,False,Opensource .NET and Mono REST Web Services framework,"ServiceStack,Common,Framework,Clients,ServiceClients,Gateway",1118345,False,4.0.60
+"Service Stack,Thomas Grassauer and ServiceStack contributors",2016-06-13T01:11:49.467Z,108,676,"An Memcached cache client implementing ServiceStack's ICacheClient:
+        https://github.com/ServiceStack/ServiceStack/wiki/Caching",ServiceStack.Caching.Memcached,False,2018-01-02T14:43:57.677+00:00,True,False,,"ServiceStack,Caching,Memcached,Cache,CacheClient,POCO,Code-First",29700,False,4.0.60
+"Manuel Nelson,ServiceStack contributors",2016-06-13T01:11:42.893Z,226,676,"An Azure In-Memory DataCache implementing ServiceStack's ICacheClient:
+        https://github.com/ServiceStack/ServiceStack/wiki/Caching",ServiceStack.Caching.Azure,False,2017-09-06T16:34:08.52+00:00,True,False,,"ServiceStack,Caching,Windows,Azure,Cache,CacheClient,POCO,Code-First",15583,False,4.0.60
+ServiceStack contributors,2016-06-13T01:11:36.957Z,619,676,"Deprecated use new ServiceStack.Aws package.
+        
+        An Amazon Web Services In-Memory DynamoDb DataCache implementing ServiceStack's ICacheClient.",ServiceStack.Caching.AwsDynamoDb,False,2016-08-09T16:11:53.78+00:00,True,False,,"ServiceStack,Caching,AwsDynamoDb,Amazon,WebServices,AWS,DynamoDb,Cache,CacheClient",11720,False,4.0.60
+ServiceStack,2016-06-13T01:11:31.38Z,226,676,(Signed) ServiceStack integration for Amazon Web Services (AWS),ServiceStack.Aws.Signed,False,2017-09-06T16:33:58.193+00:00,True,False,,"ServiceStack,AWS,Amazon,WebServices,DynamoDb,S3,SQS,Cache,CacheClient",1240,False,4.0.60
+ServiceStack,2016-06-13T01:11:25.967Z,108,676,ServiceStack integration for Amazon Web Services (AWS),ServiceStack.Aws,False,2018-01-02T14:43:03.143+00:00,True,False,,"ServiceStack,AWS,Amazon,WebServices,DynamoDb,S3,SQS,Cache,CacheClient",19350,False,4.0.60
+ServiceStack contributors,2016-06-13T01:11:20.34Z,108,676,"A RavenDB IUserAuthRepository to persist User registration and auth info in a NoSQL Raven DB.
+      Implements ServiceStack's built-in AuthProvider Model:
+      https://github.com/ServiceStack/ServiceStack/wiki/Authentication-and-authorization
+      inc. Twitter, Facebook, Basic, Digest, Credentials Auth modes out-of-the-box.",ServiceStack.Authentication.RavenDB,False,2018-01-02T14:42:48.673+00:00,True,False,A RavenDB IUserAuthRepository to persist User registration and auth info in a NoSQL Raven DB,"ServiceStack,Authentication,Authorization,RavenDB,Raven,NoSQL,POCO,Code-First",15080,False,4.0.60
+Service Stack,2016-06-13T01:11:14.2Z,108,676,"Adds OpenId Auth Providers for use in ServiceStack Web and REST Services. 
+        Includes built-in support for Google, Yahoo, MyOpenId and Custom OpenId providers.
+        
+        More Info on Auth Providers: 
+        https://github.com/ServiceStack/ServiceStack/wiki/Authentication-and-authorization",ServiceStack.Authentication.OpenId,False,2018-01-02T14:42:33.02+00:00,True,False,"OpenId Auth Providers for ServiceStack - inc. Google, Yahoo, MyOpenId","OpenId,Google,Yahoo,MyOpenId,Authentication,Auth,Provider,ServiceStack,REST,Web,Services",26737,False,4.0.60
+Service Stack,2016-06-13T01:11:08.287Z,226,676,"Adds OAuth2 Providers for use in ServiceStack Web and REST Services. 
+        Includes built-in support for Google and LinkedIn OAuth2 providers.
+        
+        More Info on Auth Providers: 
+        https://github.com/ServiceStack/ServiceStack/wiki/Authentication-and-authorization",ServiceStack.Authentication.OAuth2.Signed,False,2017-09-06T16:33:04.127+00:00,True,False,"OpenId Auth Providers for ServiceStack - inc. Google, LinkedIn","OAuth,OAuth2,Google,LinkedIn,Authentication,Auth,Provider,ServiceStack,Web,Services",2110,False,4.0.60
+Service Stack,2016-06-13T01:11:02.413Z,108,676,"Adds OAuth2 Providers for use in ServiceStack Web and REST Services. 
+        Includes built-in support for Google and LinkedIn OAuth2 providers.
+        
+        More Info on Auth Providers: 
+        https://github.com/ServiceStack/ServiceStack/wiki/Authentication-and-authorization",ServiceStack.Authentication.OAuth2,False,2018-01-02T14:42:18.44+00:00,True,False,"OpenId Auth Providers for ServiceStack - inc. Google, LinkedIn","OAuth,OAuth2,Google,LinkedIn,Authentication,Auth,Provider,ServiceStack,Web,Services",19413,False,4.0.60
+"Assaf Raman,ServiceStack contributors",2016-06-13T01:10:51.53Z,108,676,"A MongoDB IUserAuthRepository to persist User registration and auth info in a NoSQL Mongo DB.
+        Implements ServiceStack's built-in AuthProvider Model:
+        https://github.com/ServiceStack/ServiceStack/wiki/Authentication-and-authorization
+        inc. Twitter, Facebook, Basic, Digest, Credentials Auth modes out-of-the-box.",ServiceStack.Authentication.MongoDB,False,2018-01-02T14:41:50.08+00:00,True,False,A MongoDB IUserAuthRepository to persist User registration and auth info in a NoSQL Mongo DB,"ServiceStack,Authentication,Authorization,MongoDB,NoSQL,POCO,Code-First",23932,False,4.0.60
+"Joshua Lewis,ServiceStack contributors",2016-06-13T01:10:56.913Z,108,676,"An NHibernate IUserAuthRepository to persist User registration and authentication info in any RDBMS NHibernate supports.
+        Implements ServiceStack's built-in AuthProvider Model:
+        https://github.com/ServiceStack/ServiceStack/wiki/Authentication-and-authorization
+        inc. Twitter, Facebook, Basic, Digest, Credentials Auth modes out-of-the-box.",ServiceStack.Authentication.NHibernate,False,2018-01-02T14:42:02.517+00:00,True,False,An NHibernate IUserAuthRepository to persist User registration and auth info in any RDBMS NHibernate supports,"ServiceStack,Authentication,Authorization,NHibernate,SQLServer,Sqlite,Oracle,MySql,PostgreSQL,POCO,Code-First",14691,False,4.0.60
+Service Stack,2016-06-13T01:10:45.767Z,226,676,"Provides a set of services to be discovered by Swagger (http://swagger.wordnik.com/)
+      Swagger is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.",ServiceStack.Api.Swagger.Signed,False,2017-09-06T16:32:22.093+00:00,True,False,ServiceStack integration with Swagger,"Swagger,API,REST,Docs,ServiceStack",111782,False,4.0.60
+ServiceStack,2016-06-13T01:10:33.52Z,226,676,ServiceStack Admin UI and AutoQuery Browser,ServiceStack.Admin.Signed,False,2017-09-06T16:31:14.62+00:00,True,False,,"ServiceStack,Admin,AutoQuery,WebServices,Database,Browser",1596,False,4.0.60
+Service Stack,2016-06-13T01:10:21.07Z,108,676,"Binaries for the ServiceStack web framework.
+
+        A simple and fast alternative to WCF, MVC and Web API in one cohesive framework for all your services and web apps that's intuitive and Easy to use!
+
+        To get started see: https://servicestack.net/getting-started",ServiceStack,False,2018-01-02T14:40:21.217+00:00,True,False,Opensource .NET and Mono REST Web Services framework,"Fast,JSON,XML,CSV,HTML,SOAP,JSV,REST,Web,Service,Framework,MONO,ServiceStack",999320,False,4.0.60
+Service Stack,2016-06-13T01:10:39.59Z,108,676,"Provides a set of services to be discovered by Swagger (http://swagger.wordnik.com/)
+      Swagger is a specification and complete framework implementation for describing, producing, consuming, and visualizing RESTful web services.",ServiceStack.Api.Swagger,False,2018-01-02T14:41:37.033+00:00,True,False,ServiceStack integration with Swagger,"Swagger,API,REST,Docs,ServiceStack",195663,False,4.0.60
+ServiceStack,2016-06-13T01:10:27.317Z,108,676,ServiceStack Admin UI and AutoQuery Browser,ServiceStack.Admin,False,2018-01-02T14:40:37.203+00:00,True,False,,"ServiceStack,Admin,AutoQuery,WebServices,Database,Browser",10844,False,4.0.60
+Steven Jones,2016-06-13T00:58:30.923Z,71,676,A powerful C# web crawler that makes advanced crawling features easy to use. AbotX builds upon the open source Abot C# Web Crawler by providing a powerful set of wrappers and extensions.,AbotX,False,2018-02-08T21:47:08.793+00:00,True,False,A powerful C# web crawler that makes advanced crawling features easy to use. AbotX builds upon the open source Abot C# Web Crawler by providing a powerful set of wrappers and extensions.,"crawler,robot,spider,abot",14325,False,1.1.26
+Oscorp Technologies Ltd,2016-06-13T00:57:27.02Z,675,676,Loan Calculation Nuget for African Market,Oscorp_LoanCalc,False,2016-06-14T16:27:37.353+00:00,True,False,,,1002,False,1.0.3
+Nicholas Schell,2016-06-13T00:55:54.5Z,676,676,.NET wrapper for Xirsys API,Xirsys.Client,False,2016-06-13T00:55:54.5+00:00,True,False,,"Xirsys,API",1067,False,1.0.1.12
+Stéphane Dufour,2016-06-13T00:54:53.73Z,43209,676,"Permet de journaliser en fonction des activités du Business associé à un objet.
+Le mapping de base est compatible avec;
+-SQLServeur ou SQL Express.
+
+Installation
+- Executer le script SQL pour créer la base de données de journalisation",MakeSensActivityLog,False,1899-12-31T16:00:00-08:00,False,False,MakeSens est un framework de développement .NET qui augmente l'efficacité du développement logiciel.,"GBSens,MakeSens,Core,Presenter,MVC,MVP,MVVM,Communication,TCP,Form,Web",-1,False,3.1.0.3
+Stéphane Dufour,2016-06-13T00:54:06.12Z,1,676,"ACCÉLÉRER LES DÉVELOPPEMENTS
+MakeSens framework fournit un point de départ pour le développement de vos applications Le point de départ fourni par MakeSens inclut les mécanismes récurrents de vos applications, comme la gestion des erreurs,  leur journalisation, les composants de connexion à la base de données et encore plus...
+NORMALISER LES DÉVELOPPEMENTS
+MakeSens framework vous permet de construire toutes vos applications avec les mêmes technologies, les mêmes normes et les mêmes méthodes. 
+AUGMENTER LA ROBUSTESSE DES APPLICATIONS
+MakeSens framework s’appuie sur des composants techniques et sur une méthodologie maintes fois éprouvée. Les composants techniques utilisés de développement en développement ont gagneront forcément en robustesse. SUPPRIMER LES PROBLÈMES TECHNIQUES
+MakeSens prend en charge les parties plus techniques et ardues des développements. La majorité des problèmes et du temps perdu, le sont malheureusement à cause des problèmes techniques liés au manque d’expérience et de mauvaise technologie initiale. 
+AMÉLIORER LA MAINTENANCE DES APPLICATIONS
+MakeSens traite la plupart des problèmes techniques directement  et les collaborateurs n’ont plus qu’à maintenir la partie métier ou de présentation des applications.",MakeSensFrameworkPresenter,False,2018-04-19T11:17:56.433+00:00,True,False,"Permet de créer une logique de présentation abstraite aux différents patterns et technologie d'interfaces utilisateurs.
+
+Dépendent de MakeSens Core","GBSens,MakeSens,Core,Presenter,MVC,MVP,MVVM,Communication,TCP,Form,Web",13809,False,3.1.7.8
+ReflectSoftware Inc.,2016-06-13T00:54:03.707Z,310,676,"Traditional simple text base logging frameworks lack what your application can easily emit in providing you better insight into the health of your application. Wouldn’t it be great to easily instrument incredible rich details? Well, look no further. ReflectInsight was designed to easily let your application speak volumes!
+
+One of ReflectInsight’s most powerful features is its impressive and elegant Viewer. The Viewer was design to hone in on particular issues and filter any unwanted noise by creating User Defined Views. User Defined Views allow you to filter a given request and visualize the execution path that actually caused the issue at hand.
+
+Everyone knows that debugging multithread applications is no simple task. Due to racing conditions, traditional IDE debuggers are not well suited for the job and don’t really provide an accurate picture behind the scenes. With ReflectInsight’s Live Viewer, debugging multithread applications is that much easier!
+
+In order to use this library you must have the ReflectInsight Viewer installed. Download and install the ReflectInsight Viewer from this location:
+
+http://www.ReflectSoftware.com/Public/Download.aspx
+
+You can view your messages in realtime, in a rich viewer that allows you to filter out and search for what really matters to you.",ReflectSoftware.Insight,False,2017-06-14T11:52:01.39-07:00,True,False,"ReflectInsight - The Next Generation in Application Logging.
+
+ReflectInsight goes beyond where no text-based logging has gone before.",".NET,reflectinsight,logging,log,logfiles,events,ETW,semantic,exception,handling,structured,tracing,trace,debug,diagnostic,extensions,appender",13462,False,5.6.1.2
+Mig Salazar,2016-06-13T00:48:09.683Z,676,676,Liberaría para el cálculo del RFC (Registro Federal de Contribuyentes) en .NET,RfcFacil,False,2016-06-12T18:33:09.933-07:00,True,False,,"RFC,SAT,.NET",473,False,1.0.0
+Stéphane Dufour,2016-06-13T00:28:53.547Z,1,676,"ACCÉLÉRER LES DÉVELOPPEMENTS
+MakeSens framework fournit un point de départ pour le développement de vos applications Le point de départ fourni par MakeSens inclut les mécanismes récurrents de vos applications, comme la gestion des erreurs,  leur journalisation, les composants de connexion à la base de données et encore plus...
+NORMALISER LES DÉVELOPPEMENTS
+MakeSens framework vous permet de construire toutes vos applications avec les mêmes technologies, les mêmes normes et les mêmes méthodes. 
+AUGMENTER LA ROBUSTESSE DES APPLICATIONS
+MakeSens framework s’appuie sur des composants techniques et sur une méthodologie maintes fois éprouvée. Les composants techniques utilisés de développement en développement ont gagneront forcément en robustesse. SUPPRIMER LES PROBLÈMES TECHNIQUES
+MakeSens prend en charge les parties plus techniques et ardues des développements. La majorité des problèmes et du temps perdu, le sont malheureusement à cause des problèmes techniques liés au manque d’expérience et de mauvaise technologie initiale. 
+AMÉLIORER LA MAINTENANCE DES APPLICATIONS
+MakeSens traite la plupart des problèmes techniques directement  et les collaborateurs n’ont plus qu’à maintenir la partie métier ou de présentation des applications.",MakeSensFramework,False,2018-04-19T11:17:30.01+00:00,True,False,MakeSens est un framework de développement .NET qui augmente l'efficacité du développement logiciel.,"GBSens,MakeSens,Core,Presenter,MVC,MVP,MVVM,Communication,TCP,Form,Web",18611,False,3.1.7.7
+Oleg Kleyman,2016-06-13T00:27:51.67Z,31,676,Extension methods galore,Omego.Extensions,False,2018-03-20T10:41:15.79+00:00,True,False,,"IEnumerable,Extensions",3614,False,1.0.1
+Oleg Kleyman,2016-06-13T00:26:39.053Z,31,676,Extension methods galore,Omego.Extensions,False,2018-03-20T10:41:15.79+00:00,True,False,,"IEnumerable,Extensions",3614,False,0.0.6
+Oscorp Technologies Ltd,2016-06-13T00:22:13.19Z,675,676,Loan Calculation Nuget for African Market,Oscorp_LoanCalc,False,2016-06-14T16:27:37.353+00:00,True,False,,,1002,False,1.0.2
+Stéphane Dufour,2016-06-13T00:21:39.017Z,511,676,"Permet de faire des serveurs de communication sur TCP simplement.
+Permet de faire des clients TCP
+Permet d'intégrer un adapter qu Business Core pour le Tracage des activités.",MakeSensComminication,False,2016-11-25T03:09:02.29-08:00,True,False,MakeSens communication est un client et serveur TCP et un adapter pour le Business Core qui permet de transférer les traces d'exécution du séquenceur du Framework vers un serveur TCP.,"GBSens,MakeSens,Core,Presenter,MVC,MVP,MVVM,Communication,TCP,Form,Web",829,False,3.1.7.9
+Oscorp Technologies Ltd,2016-06-13T00:11:21.54Z,675,676,Loan Calculation Nuget for African Market,Oscorp_LoanCalc,False,2016-06-14T16:27:37.353+00:00,True,False,,,1002,False,1.0.1
+Oscorp Technologies Ltd,2016-06-13T00:11:21.54Z,675,676,Loan Calculation Nuget for African Market,Oscorp_LoanCalc,False,2016-06-14T16:27:37.353+00:00,True,False,,,1002,False,1.0.1
+Oscorp Technologies Ltd,2016-06-13T00:05:48.107Z,675,676,Loan Calculation Nuget for African Market,Oscorp_LoanCalc,False,2016-06-14T16:27:37.353+00:00,True,False,,,1002,False,1.0.0
+Thomas R. Lawrence,2016-06-13T00:10:48.36Z,392,676,"TreeLib: Balanced Binary Trees, Rank Augmented provides binary tree collections that maintain rank information for fast indexing and sparse indexing applications. This package contains HugeList, a class for efficiently managing very large lists.",TreeLibUtil,False,2017-03-24T17:26:55.39+00:00,True,False,,"binary,search,tree,bst,rank,augmented,sparse",573,False,1.0.0
+Thomas R. Lawrence,2016-06-13T00:10:00.577Z,392,676,"TreeLib: Balanced Binary Trees, Rank Augmented provides binary tree collections that maintain rank information for fast indexing and sparse indexing applications. This package contains array-embedded implementations.",TreeLibArray,False,2017-03-24T17:26:32.78+00:00,True,False,,"binary,search,tree,bst,rank,augmented,sparse",564,False,1.0.0
+Thomas R. Lawrence,2016-06-13T00:09:15.99Z,392,676,"TreeLib: Balanced Binary Trees, Rank Augmented provides binary tree collections that maintain rank information for fast indexing and sparse indexing applications. This package contains implementations with Int64 rank indexing.",TreeLibLong,False,2017-03-24T17:26:45.247+00:00,True,False,,"binary,search,tree,bst,rank,augmented,sparse",551,False,1.0.0
+Thomas R. Lawrence,2016-06-13T00:08:04.493Z,392,676,"TreeLib: Balanced Binary Trees, Rank Augmented provides binary tree collections that maintain rank information for fast indexing and sparse indexing applications. This package contains the primary implementations.",TreeLib,False,2017-03-24T17:26:21.013+00:00,True,False,,"binary,search,tree,bst,rank,augmented,sparse",642,False,1.0.0
+Thomas R. Lawrence,2016-06-13T00:07:41.853Z,392,676,"TreeLib: Balanced Binary Trees, Rank Augmented provides binary tree collections that maintain rank information for fast indexing and sparse indexing applications. This package contains the interface definition assembly.",TreeLibInterface,False,2017-03-24T17:26:09.857+00:00,True,False,,"binary,search,tree,bst,rank,augmented,sparse",646,False,1.0.0
+Oscorp Technologies Ltd,2016-06-13T00:05:48.107Z,675,676,Loan Calculation Nuget for African Market,Oscorp_LoanCalc,False,2016-06-14T16:27:37.353+00:00,True,False,,,1002,False,1.0.0
+Oscorp Technologies Ltd,2016-06-12T23:30:47.73Z,43209,677,Loan Calculation Nuget for African Market,NugetLoanCalc,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Larry Golding,2016-06-13T00:01:58.023Z,43209,676,Classes for working with JSON Pointer.,Microsoft.Json.Pointer,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.44.0
+Larry Golding,2016-06-13T00:01:58.023Z,43209,676,Classes for working with JSON Pointer.,Microsoft.Json.Pointer,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.44.0
+Asciutto990,2016-06-12T23:57:48.24Z,485,677,The Accurate Background API for .NET.,AccurateBackground,False,2016-12-21T13:46:51.717-08:00,True,False,,,676,False,1.0.0
+Oscorp Technologies Ltd,2016-06-12T23:30:47.73Z,43209,677,Loan Calculation Nuget for African Market,NugetLoanCalc,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Oscorp Technologies Ltd,2016-06-12T23:30:47.73Z,43209,677,Loan Calculation Nuget for African Market,NugetLoanCalc,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Stéphane Dufour,2016-06-12T23:23:33.28Z,511,677,"Permet de faire des serveurs de communication sur TCP simplement.
+Permet de faire des clients TCP
+Permet d'intégrer un adapter qu Business Core pour le Tracage des activités.",MakeSensComminication,False,2016-11-25T03:09:02.29-08:00,True,False,MakeSens communication est un client et serveur TCP et un adapter pour le Business Core qui permet de transférer les traces d'exécution du séquenceur du Framework vers un serveur TCP.,"GBSens,MakeSens,Core,Presenter,MVC,MVP,MVVM,Communication,TCP,Form,Web",829,False,3.1.7.8
+Meziantou,2016-06-12T23:06:55.08Z,43209,677,Meziantou.IpMapping.Client,Meziantou.IpMapping.Client,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.2
+Meziantou,2016-06-12T23:00:36.603Z,9,677,Meziantou.Framework,Meziantou.Framework,False,2018-04-11T20:56:12.987+00:00,True,False,,,2341,False,1.0.1
+Meziantou,2016-06-12T23:00:29.497Z,222,677,Meziantou.Framework.Templating,Meziantou.Framework.Templating,False,2017-09-10T20:48:01.797+00:00,True,False,,,919,False,1.0.1
+Meziantou,2016-06-12T23:00:22.733Z,222,677,Meziantou.Framework.Scheduling,Meziantou.Framework.Scheduling,False,2017-09-10T20:47:51.75+00:00,True,False,,,1199,False,1.0.1
+Serilog Contributors,2016-06-12T22:52:20.713Z,27,677,Simple .NET logging with fully-structured events,Serilog,True,2018-03-24T00:24:46.093+00:00,True,False,,"serilog,logging,semantic,structured",8878646,True,2.0.0-rc-606
+算神,2016-06-12T22:50:16.217Z,640,677,LSW.Weixin.MP Class Library，基于 Senpar 微信SDK的CoreClr移植,LSW.Weixin.MP,False,2016-07-19T20:40:00.74+00:00,True,False,,"weixin,wechat,微信",7574,False,1.4.8
+TTRider,2016-06-12T22:42:57.833Z,254,677,Fluid-style SQL statement generator,TTRider.FluidSql.dll,False,2017-08-09T02:23:12.623+00:00,True,False,,SQL,22917,False,1.9.2
+Johan Polson,2016-06-12T21:53:58.69Z,677,677,Json Configuration Manager is a small library to instantiate objects from JSON files.,JsonConfigurationManager,False,2016-06-12T21:53:58.69+00:00,True,False,Json Configuration Manager is a small library to instantiate objects from JSON files.,"C#,json,Configuration",369,False,1.1.2
+"Kim Christensen,Julian Verdurmen",2016-06-12T22:24:27.787Z,43209,677,"NLog is a logging platform for .NET with rich log routing and management capabilities. It can help you produce and manage high-quality logs for your application regardless of its size or complexity.
+This package installs NLog.dll with includes core logging functionality.
+For your main project also need to install ""NLog Configuration"" package.",NLog,False,1900-01-01T00:00:00+00:00,False,False,NLog - Advanced .NET and Silverlight Logging,"logging,log,tracing,logfiles,NLog,database,eventlog,email,wcf",12253072,True,4.3.5
+"Kim Christensen,Julian Verdurmen",2016-06-12T22:24:53.177Z,4,677,Xml file to get started with configuring NLog. This package is not mandatory to get started with NLog: the configuration file can created manually and the configuration can be created programmatically.,NLog.Config,False,2018-04-16T18:22:33.587+00:00,True,False,Configuration file for NLog.,"nlog,xml,config",2744960,True,4.3.5
+"Kim Christensen,Julian Verdurmen",2016-06-12T22:24:27.787Z,43209,677,"NLog is a logging platform for .NET with rich log routing and management capabilities. It can help you produce and manage high-quality logs for your application regardless of its size or complexity.
+This package installs NLog.dll with includes core logging functionality.
+For your main project also need to install ""NLog Configuration"" package.",NLog,False,1900-01-01T00:00:00+00:00,False,False,NLog - Advanced .NET and Silverlight Logging,"logging,log,tracing,logfiles,NLog,database,eventlog,email,wcf",12253072,True,4.3.5
+"Kim Christensen,Julian Verdurmen",2016-06-12T22:24:53.177Z,4,677,Xml file to get started with configuring NLog. This package is not mandatory to get started with NLog: the configuration file can created manually and the configuration can be created programmatically.,NLog.Config,False,2018-04-16T18:22:33.587+00:00,True,False,Configuration file for NLog.,"nlog,xml,config",2744960,True,4.3.5
+"Kim Christensen,Julian Verdurmen",2016-06-12T22:24:27.787Z,43209,677,"NLog is a logging platform for .NET with rich log routing and management capabilities. It can help you produce and manage high-quality logs for your application regardless of its size or complexity.
+This package installs NLog.dll with includes core logging functionality.
+For your main project also need to install ""NLog Configuration"" package.",NLog,False,1900-01-01T00:00:00+00:00,False,False,NLog - Advanced .NET and Silverlight Logging,"logging,log,tracing,logfiles,NLog,database,eventlog,email,wcf",12253072,True,4.3.5
+Aspose,2016-06-12T22:20:40.657Z,22,677,"Aspose.Tasks is a class library for working with Microsoft Project files. Using Aspose.Tasks for .NET you can work with MPP, MPT, XML, XLSX, HTML, PDF, XAML and other formats in your applications.",Aspose.Tasks,False,2018-03-29T17:31:54.137+00:00,True,False,,"Microsoft,Project,Aspose.Tasks,for,.NET,MPP,MPT,Oracle,Primavera,OpenProj",40599,False,9.4.1
+Intercom,2016-06-12T22:03:59.813Z,9,677,The official Intercom API client library for .NET,Intercom.Dotnet.Client,False,2018-04-11T13:45:49.47+00:00,True,False,The official Intercom API client library for .NET,,45126,False,1.0.8
+Derek Heiser,2016-06-12T22:02:20.407Z,74,677,A continuation of Juergen1969's Siemens communication library.,S7netplus,False,2018-02-05T20:06:27.497+00:00,True,False,,"PLC,Siemens,Communication,S7",13358,False,0.1.3
+Johan Polson,2016-06-12T21:53:58.69Z,677,677,Json Configuration Manager is a small library to instantiate objects from JSON files.,JsonConfigurationManager,False,2016-06-12T21:53:58.69+00:00,True,False,Json Configuration Manager is a small library to instantiate objects from JSON files.,"C#,json,Configuration",369,False,1.1.2
+Johan Polson,2016-06-11T17:23:14.367Z,43209,678,Jaon Configuration Manager is a small library to instantiate objects from JSON files.,JaonConfigurationManager,False,1900-01-01T00:00:00+00:00,False,False,Jaon Configuration Manager is a small library to instantiate objects from JSON files.,,-1,False,1.1.1
+ConocoPhillips,2016-06-12T21:49:24.273Z,677,677,Description,PrakashNuget,False,2016-06-12T14:49:24.273-07:00,True,False,,,191,False,1.0.0
+Johan Polson,2016-06-11T17:23:14.367Z,43209,678,Jaon Configuration Manager is a small library to instantiate objects from JSON files.,JaonConfigurationManager,False,1900-01-01T00:00:00+00:00,False,False,Jaon Configuration Manager is a small library to instantiate objects from JSON files.,,-1,False,1.1.1
+"David Bond,Roland Banks",2016-06-12T21:41:42.31Z,1,677,A .NET API for LogicMonitor,LogicMonitor.Api,False,2018-04-19T11:32:27.577+00:00,True,False,A .NET API for LogicMonitor,,47044,False,1.0.142
+ConocoPhillips,2016-06-12T21:01:33.83Z,43209,677,Description,PrakashNugetPackage,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Jeremy Lindsay,2016-06-12T21:14:11.85Z,670,677,This library contains an interface and abstract class to support interactions with I2C devices.,Magellanic.I2c,True,2016-06-19T15:15:19.647-07:00,True,False,This library contains an interface and abstract class to support interactions with I2C devices.,"raspberry,pi,iot,i2c",859,False,0.0.3-alpha
+Linvi,2016-06-12T21:09:11.083Z,43209,677,"Tweetinvi is an intuitive .NET C# library to access the Twitter REST API. It is a Portable Class Library that can be used for development on Windows, Windows RT, Windows Phone, Mono, Xamarin Android and Xamarin iOS. Tweetinvi is also compatible for Universal App development.",TweetinviAPI,False,1900-01-01T00:00:00+00:00,False,False,,"twitter,c#,rest,api,1.1,.net",181524,False,0.9.13
+Linvi,2016-06-12T21:09:11.083Z,43209,677,"Tweetinvi is an intuitive .NET C# library to access the Twitter REST API. It is a Portable Class Library that can be used for development on Windows, Windows RT, Windows Phone, Mono, Xamarin Android and Xamarin iOS. Tweetinvi is also compatible for Universal App development.",TweetinviAPI,False,1900-01-01T00:00:00+00:00,False,False,,"twitter,c#,rest,api,1.1,.net",181524,False,0.9.13
+Oleg Kleyman,2016-06-12T21:03:38.36Z,31,677,Extension methods galore,Omego.Extensions,False,2018-03-20T10:41:15.79+00:00,True,False,,"IEnumerable,Extensions",3614,False,0.0.5
+ConocoPhillips,2016-06-12T21:01:33.83Z,43209,677,Description,PrakashNugetPackage,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Linvi,2016-06-12T20:58:25.29Z,43209,677,"Tweetinvi is an intuitive .NET C# library to access the Twitter REST API. It is a Portable Class Library that can be used for development on Windows, Windows RT, Windows Phone, Mono, Xamarin Android and Xamarin iOS. Tweetinvi is also compatible for Universal App development.",TweetinviAPI,True,1900-01-01T00:00:00+00:00,False,False,,"twitter,c#,rest,api,1.1,.net",181524,False,0.9.13-test
+Linvi,2016-06-12T20:58:25.29Z,43209,677,"Tweetinvi is an intuitive .NET C# library to access the Twitter REST API. It is a Portable Class Library that can be used for development on Windows, Windows RT, Windows Phone, Mono, Xamarin Android and Xamarin iOS. Tweetinvi is also compatible for Universal App development.",TweetinviAPI,True,1900-01-01T00:00:00+00:00,False,False,,"twitter,c#,rest,api,1.1,.net",181524,False,0.9.13-test
+Paul Kiernan,2016-06-12T20:57:53.267Z,677,677,A view model builder that uses handlers to build the view model,Handsey.Practices.ViewModelBuilding,True,2016-06-12T13:08:51.137-07:00,True,False,,,381,False,0.1.0-a0013
+TTRider,2016-06-12T20:56:49.263Z,254,677,Fluid-style SQL statement generator,TTRider.FluidSql.dll,False,2017-08-09T02:23:12.623+00:00,True,False,,SQL,22917,False,1.9.1
+Prohorchik D.A.,2016-06-12T20:53:24.58Z,647,677,"Black bee - it is a framework which allows lightning fast to start developing applications Windows Phone 8.*,Windows Universal App",BlackBee,False,2016-07-12T19:05:24.323+00:00,True,False,,,4595,False,1.0.22
+Jeremy Lindsay,2016-06-12T20:48:05.61Z,670,677,This library contains an interface and abstract class to support interactions with I2C devices.,Magellanic.I2c,True,2016-06-19T15:15:19.647-07:00,True,False,This library contains an interface and abstract class to support interactions with I2C devices.,"raspberry,pi,iot,i2c",859,False,0.0.2-alpha
+openstore.craponne.fr,2016-06-12T20:29:44.35Z,251,677,Embeds (by default) or merges assemblies. Also solves the references problems. Fine-graind configuration is possible by adding a 'Blobber' file to target projet.,Blobber,False,2017-08-12T10:56:18.173+00:00,True,False,Embeds or merges referenced assemblies,,4966,False,0.2.0
+Meziantou.Framework.TemplatingTests,2016-06-12T20:23:10.527Z,43209,677,Meziantou.Framework.TemplatingTests,Meziantou.Framework.TemplatingTests,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Meziantou.FrameworkTests,2016-06-12T20:23:17.11Z,43209,677,Meziantou.FrameworkTests,Meziantou.FrameworkTests,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Meziantou.Framework.SchedulingTests,2016-06-12T20:23:03.633Z,43209,677,Meziantou.Framework.SchedulingTests,Meziantou.Framework.SchedulingTests,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Meziantou.FrameworkTests,2016-06-12T20:23:17.11Z,43209,677,Meziantou.FrameworkTests,Meziantou.FrameworkTests,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Meziantou.Framework.TemplatingTests,2016-06-12T20:23:10.527Z,43209,677,Meziantou.Framework.TemplatingTests,Meziantou.Framework.TemplatingTests,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Meziantou.Framework.SchedulingTests,2016-06-12T20:23:03.633Z,43209,677,Meziantou.Framework.SchedulingTests,Meziantou.Framework.SchedulingTests,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Meziantou,2016-06-12T20:22:56.617Z,9,677,Meziantou.Framework,Meziantou.Framework,False,2018-04-11T20:56:12.987+00:00,True,False,,,2341,False,1.0.0
+Meziantou,2016-06-12T20:22:49.35Z,222,677,Meziantou.Framework.Templating,Meziantou.Framework.Templating,False,2017-09-10T20:48:01.797+00:00,True,False,,,919,False,1.0.0
+Meziantou,2016-06-12T20:22:42.207Z,222,677,Meziantou.Framework.Scheduling,Meziantou.Framework.Scheduling,False,2017-09-10T20:47:51.75+00:00,True,False,,,1199,False,1.0.0
+Cheers,2016-06-12T20:21:29.303Z,653,677,Cheers Swagger api explorer with Swashbuckle,Cheers.Owin.WebApi.Swagger,False,2016-07-06T19:28:21.143+00:00,True,False,,"Cheers,Swagger,Swashbuckle",559,False,1.0.0
+Silvenga,2016-06-12T20:15:10.257Z,629,677,Portability components for Rocket.Chat.Net,Rocket.Chat.Net.Portability,True,2016-07-29T21:04:49.84-07:00,True,False,,Rocket.Chat,1655,False,0.2.222-pre
+Silvenga,2016-06-12T20:14:53.06Z,629,677,"A Rocket.Chat realtime, managed .Net bot.",Rocket.Chat.Net.Bot,True,2016-07-29T21:04:32.473-07:00,True,False,,Rocket.Chat,2122,False,0.2.222-pre
+Silvenga,2016-06-12T20:15:02.337Z,629,677,"A Rocket.Chat realtime, managed .Net driver.",Rocket.Chat.Net,True,2016-07-29T21:04:40.553-07:00,True,False,,Rocket.Chat,5788,False,0.2.222-pre
+teamcity,2016-06-12T20:08:51.137Z,677,677,Description,Handsey.Practices.ViewModelBuilding,True,2016-06-12T13:08:51.137-07:00,True,False,,,381,False,0.1.0-unstable0010
+FluentAssemblyScanner,2016-06-12T20:07:09.35Z,176,677,FluentAssemblyScanner,FluentAssemblyScanner,False,2017-10-26T20:11:48.14+00:00,True,False,Fluent assembly and type scanner for .Net,"asp.net,mvc,framework,library,assembly,scanner",4234,False,1.0.1
+Paul Kiernan,2016-06-12T20:06:00.587Z,677,677,A Ninject implementation of the Handsey IocContainer,Handsey.Ninject,True,2016-06-12T13:06:00.587-07:00,True,False,,,287,False,0.1.0-a0002
+Paul Kiernan,2016-06-12T20:04:56.453Z,677,677,A StructureMap implementation of the Handsey IocContainer,Handsey.StructureMap,True,2016-06-12T13:04:56.453-07:00,True,False,,,295,False,0.1.0-a0002
+Paul Kiernan,2016-06-12T20:03:45.69Z,677,677,A unity implementation of the Handsey IocContainer,Handsey.Unity,True,2016-06-12T13:03:45.69-07:00,True,False,,,410,False,0.1.0-a0009
+"Dávid Karnok,Stephane Maldini",2016-06-12T19:50:11.8Z,623,677,Non-blocking backpressure-enabled operators for streaming data in synchronous and asynchronous manner locally.,Reactor.Core,False,2016-08-05T03:54:34.373-07:00,True,False,"Extension methods: Flux and Mono, Schedulers and other tools.","reactive,fluent,flow,rx,backpressure",2214,False,0.3.6
+"Dávid Karnok,Stephane Maldini",2016-06-12T19:43:37.667Z,623,677,Non-blocking backpressure-enabled operators for streaming data in synchronous and asynchronous manner locally.,Reactor.Core,False,2016-08-05T03:54:34.373-07:00,True,False,"Extension methods: Flux and Mono, Schedulers and other tools.","reactive,fluent,flow,rx,backpressure",2214,False,0.3.5
+"Rob Reynolds,The Chocolatey Team",2016-06-12T19:35:20.36Z,8,677,"Chocolatey is a package manager for Windows (like apt-get but for Windows). It was designed to be a decentralized framework for quickly installing applications and tools that you need. It is built on the NuGet infrastructure currently using PowerShell as its focus for delivering packages from the distros to your door, err computer.
+
+Chocolatey is brought to you by the work and inspiration of the community, the work and thankless nights of the Chocolatey Team (https://github.com/orgs/chocolatey/people), and Rob heading up the direction.
+
+This is the core package which allows Chocolatey to be embedded in your application.",chocolatey.lib,True,2018-04-12T20:01:56.04+00:00,True,False,"Chocolatey is your machine level NuGet repository. Think apt-get for Windows (executables/application packages), not library packages.","apt-get,yum,machine,repository,chocolatey",9700,False,0.9.10-beta-20160612
+"Rob Reynolds,The Chocolatey Team",2016-06-12T19:32:59.383Z,8,677,"Chocolatey is a package manager for Windows (like apt-get but for Windows). It was designed to be a decentralized framework for quickly installing applications and tools that you need. It is built on the NuGet infrastructure currently using PowerShell as its focus for delivering packages from the distros to your door, err computer.
+
+Chocolatey is brought to you by the work and inspiration of the community, the work and thankless nights of the [Chocolatey Team](https://github.com/orgs/chocolatey/people), with Rob heading up the direction.
+
+You can host your own sources and add them to Chocolatey, you can extend Chocolatey's capabilities, and folks, it's only going to get better.
+
+### Commands
+There are quite a few commands you can call - you should check out the [command reference](https://chocolatey.org/docs/commands-reference). Here are the most common:
+
+ * Help - choco -? or choco command -?
+ * Search - choco search something
+ * List - choco list -lo
+ * Config - choco config list
+ * Install - choco install baretail
+ * Pin - choco pin windirstat
+ * Outdated - choco outdated
+ * Upgrade - choco upgrade baretail
+ * Uninstall - choco uninstall baretail
+
+#### Alternative installation sources:
+ * Install ruby gem - choco install compass -source ruby
+ * Install python egg - choco install sphynx -source python
+ * Install windows feature - choco install IIS -source windowsfeatures
+ * Install webpi feature - choco install IIS7.5Express -source webpi
+
+#### More
+For more advanced commands and switches, use `choco -?` or `choco command -h`. You can also look at the [command reference](https://chocolatey.org/docs/commands-reference), including how you can force a package to install the x86 version of a package.
+
+### Create Packages?
+We have some great guidance on how to do that. Where? I'll give you a hint, it rhymes with socks! [Docs!](https://chocolatey.org/docs/create-packages)
+
+In that mess there is a link to the [PowerShell Chocolatey module reference](https://chocolatey.org/docs/helpers-reference).",chocolatey,True,2018-04-12T20:04:46.847+00:00,True,False,Chocolatey is the package manager for Windows (like apt-get but for Windows),"nuget,apt-get,machine,repository,chocolatey",109546,False,0.9.10-beta-20160612
+Paul Kiernan,2016-06-12T19:32:26.453Z,43209,677,"Handsey, the automatic event handler registration framework",Handsey,True,1899-12-31T16:00:00-08:00,False,False,,"Tag1,Tag2",1254,False,0.1.0-a0085
+Samuel Kamber,2016-06-12T19:25:08.2Z,43209,677,A .Net  4.5 library for interacting with Stack Exchange chat. (Supports Mono.),ChatExchange.Net,True,1900-01-01T00:00:00+00:00,False,False,A .Net  4.5 library for interacting with Stack Exchange chat. (Supports Mono.),,-1,False,5.3.3-beta
+Cheers,2016-06-12T19:25:28.587Z,677,677,WebApi depenceny resolver,Cheers.Owin.WebApi.DependencyResolver,False,2016-06-12T19:25:28.587+00:00,True,False,,"Cheers,DependencyResolver,WebApi,StructureMap",359,False,1.0.0
+freeMartin,2016-06-12T19:14:31.883Z,92,677,"Commonly Used Types:
+Boxes
+ValueConverter<TSource>
+ValueConverter<TSource, TTarget>
+BoolToVisibilityConverter
+IntToStringConverter
+StringIsNullOrEmptyConverter
+various other Converters
+DefaultDataTemplateSelector
+NullTemplateSelector
+various other Template Selectors",fm.Extensions.Wpf,True,2018-01-18T17:30:49.363+00:00,False,False,"A collection of extensions for typical WPF scenarios, like Boxes, Value Converters, Template Selectors and other helpful extensions.","WPF,Extensions,ValueConverter,Value,Converter,TemplateSelector,Template,Selector",3937,False,1.5.0-rc2-3
+freeMartin,2016-06-12T19:14:52.297Z,53,677,"A consequent take on the MVVM pattern without any compromises.
+
+Commonly Used Types:
+DependencyViewModel
+ScopedNavigationService
+RelayCredentialModel
+RelayCommand
+RedirectCommand",fm.Mvvm.Wpf,True,2018-02-26T13:24:42.707+00:00,False,False,,"WPF,MVVM",3024,False,2.3.0-rc2-3
+freeMartin,2016-06-12T19:14:52.297Z,53,677,"A consequent take on the MVVM pattern without any compromises.
+
+Commonly Used Types:
+DependencyViewModel
+ScopedNavigationService
+RelayCredentialModel
+RelayCommand
+RedirectCommand",fm.Mvvm.Wpf,True,2018-02-26T13:24:42.707+00:00,False,False,,"WPF,MVVM",3024,False,2.3.0-rc2-3
+freeMartin,2016-06-12T19:14:52.297Z,53,677,"A consequent take on the MVVM pattern without any compromises.
+
+Commonly Used Types:
+DependencyViewModel
+ScopedNavigationService
+RelayCredentialModel
+RelayCommand
+RedirectCommand",fm.Mvvm.Wpf,True,2018-02-26T13:24:42.707+00:00,False,False,,"WPF,MVVM",3024,False,2.3.0-rc2-3
+freeMartin,2016-06-12T19:14:31.883Z,92,677,"Commonly Used Types:
+Boxes
+ValueConverter<TSource>
+ValueConverter<TSource, TTarget>
+BoolToVisibilityConverter
+IntToStringConverter
+StringIsNullOrEmptyConverter
+various other Converters
+DefaultDataTemplateSelector
+NullTemplateSelector
+various other Template Selectors",fm.Extensions.Wpf,True,2018-01-18T17:30:49.363+00:00,False,False,"A collection of extensions for typical WPF scenarios, like Boxes, Value Converters, Template Selectors and other helpful extensions.","WPF,Extensions,ValueConverter,Value,Converter,TemplateSelector,Template,Selector",3937,False,1.5.0-rc2-3
+freeMartin,2016-06-12T19:14:31.883Z,92,677,"Commonly Used Types:
+Boxes
+ValueConverter<TSource>
+ValueConverter<TSource, TTarget>
+BoolToVisibilityConverter
+IntToStringConverter
+StringIsNullOrEmptyConverter
+various other Converters
+DefaultDataTemplateSelector
+NullTemplateSelector
+various other Template Selectors",fm.Extensions.Wpf,True,2018-01-18T17:30:49.363+00:00,False,False,"A collection of extensions for typical WPF scenarios, like Boxes, Value Converters, Template Selectors and other helpful extensions.","WPF,Extensions,ValueConverter,Value,Converter,TemplateSelector,Template,Selector",3937,False,1.5.0-rc2-3
+Paul Kiernan,2016-06-12T19:09:22.96Z,43209,677,"Handsey, the automatic event handler registration framework",Handsey,True,1899-12-31T16:00:00-08:00,False,False,,"Tag1,Tag2",1254,False,0.1.0-a0084
+Cheesemacfly,2016-06-12T18:56:09.797Z,120,677,Get the latest New York City MTA service status,MTAServiceStatus,False,2017-12-21T06:31:43.253+00:00,True,False,,"MTA,NYC,New,York,City,Subway",1321,False,0.3.0
+openstore.craponne.fr,2016-06-12T18:51:54.107Z,124,677,"Classes for post-build tasks, to modify assemblies after generation (using dnlib). Allows to run from command-line or build task.",StitcherBoy,False,2017-12-17T14:10:05.047+00:00,True,False,Post build task helper,tasks,9243,False,0.4.1
+Kirill Osenkov,2016-06-12T18:50:44.507Z,106,677,An MSBuild logger that can be passed to MSBuild to record a detailed .xml log file.,Microsoft.Build.Logging.StructuredLogger,False,2018-01-04T23:25:55.207+00:00,True,False,Structured logger to investigate MSBuild builds,"MSBuild,Log,Logger,Structure,Structured",194789,False,1.0.40
+lithiumfluorine,2016-06-12T18:48:16.977Z,524,677,A library for interacting with the Bungie API.,BungieSharp,False,2016-11-12T23:59:11.877+00:00,True,False,,,1241,False,0.1.1.1
+danielwertheim,2016-06-12T11:21:20.643Z,449,677,"Provides a simple, effective sync and async library for interacting with NATS.io using DotNet. Uses IObservable so it is ReactiveX friendly.",MyNatsClient,False,2017-01-26T19:15:38.497+00:00,False,False,Used for working with NATS.io message broker,"NATS,NATS.io,messaging,reactivex,reactiveextensions",32773,False,0.1.1
+fm.Extensions.Common,2016-06-12T18:41:47.777Z,193,677,fm.Extensions.Common,fm.Extensions.Common,True,2017-10-09T11:06:19.75+00:00,True,False,,,4247,False,1.1.0-rc2-3
+openstore.craponne.fr,2016-06-12T18:39:51.16Z,124,677,"Classes for post-build tasks, to modify assemblies after generation (using dnlib). Allows to run from command-line or build task.",StitcherBoy,False,2017-12-17T14:10:05.047+00:00,True,False,Post build task helper,tasks,9243,False,0.4.0
+Cryptomic,2016-06-12T18:34:27.143Z,647,677,A portable API library for the Lisk blockchain.,Lisk.API,False,2016-07-12T10:46:09.66-07:00,False,False,,"Lisk,API,PCL,Blockchain,Bitcoin,Altcoin",2946,False,0.3.6007.25995
+Cryptomic,2016-06-12T18:34:27.143Z,647,677,A portable API library for the Lisk blockchain.,Lisk.API,False,2016-07-12T10:46:09.66-07:00,False,False,,"Lisk,API,PCL,Blockchain,Bitcoin,Altcoin",2946,False,0.3.6007.25995
+Bobby Cannon,2016-06-12T18:34:22.507Z,61,677,Integration testing framework for developers. TestR allows automating testing of web applications. Adds PowerShell features that are not part of the regular deployment.,TestR.PowerShell,False,2018-02-18T21:44:26.703+00:00,True,False,,"TestR,Test,UnitTest,IntegrationTest,Automation,Testing,Web,InternetExplorer,FireFox,Chrome,PowerShell",22150,False,0.9.4
+Cryptomic,2016-06-12T18:34:27.143Z,647,677,A portable API library for the Lisk blockchain.,Lisk.API,False,2016-07-12T10:46:09.66-07:00,False,False,,"Lisk,API,PCL,Blockchain,Bitcoin,Altcoin",2946,False,0.3.6007.25995
+Bobby Cannon,2016-06-12T18:34:15.71Z,61,677,Integration testing framework for developers. TestR allows automating testing of web applications.,TestR,False,2018-02-18T21:44:14.877+00:00,True,False,,"TestR,Test,UnitTest,IntegrationTest,Automation,Testing,Web,InternetExplorer,FireFox,Chrome",22711,False,0.9.4
+Christopher J. McClellan,2016-06-12T18:24:43.663Z,656,677,DataAnnotation and Validation Framework for Winforms,Rubberduck.Winforms,False,2016-07-03T15:29:22.613+00:00,True,False,,"DataAnnotations,Winforms",779,False,0.2.0
+Christopher J. McClellan,2016-06-12T18:24:43.663Z,656,677,DataAnnotation and Validation Framework for Winforms,Rubberduck.Winforms,False,2016-07-03T15:29:22.613+00:00,True,False,,"DataAnnotations,Winforms",779,False,0.2.0
+Paul Kiernan,2016-06-12T18:14:46.067Z,43209,677,"Handsey, the automatic event handler registration framework",Handsey,True,1899-12-31T16:00:00-08:00,False,False,,"Tag1,Tag2",1254,False,0.1.0-a0083
+danielwertheim,2016-06-12T18:13:36.607Z,449,677,"Provides a simple, effective sync and async library for interacting with NATS.io using DotNet. Uses IObservable so it is ReactiveX friendly.",MyNatsClient,False,2017-01-26T19:15:38.497+00:00,True,False,Used for working with NATS.io message broker,"NATS,NATS.io,messaging,reactivex,reactiveextensions",32773,False,0.1.2
+Bobby Cannon,2016-06-12T18:10:04.56Z,61,677,Integration testing framework for developers. TestR allows automating testing of web applications.,TestR,False,2018-02-18T21:44:14.877+00:00,True,False,,"TestR,Test,UnitTest,IntegrationTest,Automation,Testing,Web,InternetExplorer,FireFox,Chrome",22711,False,0.9.3
+Arthur_Khrabrov,2016-06-12T18:10:19.057Z,43209,677,VK API for .NET,VKNET.Api,False,1900-01-01T00:00:00+00:00,False,False,,"vk,api,net,vknet,vkontakte",-1,False,1.5.3
+Bobby Cannon,2016-06-12T18:10:11.887Z,61,677,Integration testing framework for developers. TestR allows automating testing of web applications. Adds PowerShell features that are not part of the regular deployment.,TestR.PowerShell,False,2018-02-18T21:44:26.703+00:00,True,False,,"TestR,Test,UnitTest,IntegrationTest,Automation,Testing,Web,InternetExplorer,FireFox,Chrome,PowerShell",22150,False,0.9.3
+Arthur_Khrabrov,2016-06-12T18:09:27.74Z,43209,677,VK API for .NET,VKNET.Api,False,1900-01-01T00:00:00+00:00,False,False,,"vk,api,net,vknet,vkontakte",-1,False,1.5.2
+NetEscapades.Configuration.Yaml,2016-06-12T18:06:18.29Z,22,677,YAML configuration provider implementation to use with Microsoft.Extensions.Configuration.,NetEscapades.Configuration.Yaml,False,2018-03-29T22:19:17.21+00:00,True,False,,"configuration,yaml,yml",18421,False,1.0.3
+Joe Bott,2016-06-12T18:02:54.14Z,4,677,Parsing library for Rocket League replay files,RocketLeagueReplayParser,False,2018-04-16T22:20:21.283+00:00,True,False,,RocketLeague,3437,False,1.4.0
+Arthur_Khrabrov,2016-06-12T17:58:29.74Z,43209,677,VK API for .NET,VKNET.Api,False,1900-01-01T00:00:00+00:00,False,False,,"vk,api,net,vknet,vkontakte",-1,False,1.5.1
+Paul Kiernan,2016-06-12T17:55:53.98Z,43209,677,"Handsey, the automatic event handler registration framework",Handsey,True,1899-12-31T16:00:00-08:00,False,False,,"Tag1,Tag2",1254,False,0.1.0-a0082
+Arthur_Khrabrov,2016-06-12T17:38:18.907Z,43209,677,VK API for .NET,VKNET.Api,False,1900-01-01T00:00:00+00:00,False,False,,"vk,api,net,vknet,vkontakte",-1,False,1.5.0
+Alex Rainman,2016-06-12T17:36:36.033Z,93,677,CarouselView Control for Xamarin Forms,CarouselView.FormsPlugin,False,2018-01-17T19:56:25.59+00:00,True,False,CarouselView Control for Xamarin Forms,"carouselview,carousel,pageslider,slider,viewpager,uipageviewcontroller,ios,android,xamarin,forms,monotouch,monodroid",171593,False,1.0.18
+Arthur_Khrabrov,2016-06-12T17:34:59.79Z,43209,677,VK API for .NET,VKNET.Api,False,1900-01-01T00:00:00+00:00,False,False,,"vk,api,net,vknet,vkontakte",-1,False,1.4.3
+Arthur_Khrabrov,2016-06-12T17:34:21.493Z,43209,677,VK API for .NET,VKNET.Api,False,1900-01-01T00:00:00+00:00,False,False,,"vk,api,net,vknet,vkontakte",-1,False,1.4.2
+SpecIt.Assert,2016-06-12T17:24:42.747Z,677,677,SpecIt.Assert,SpecIt.Assert,False,2016-06-12T10:24:42.747-07:00,True,False,,,199,False,1.0.0
+lithiumfluorine,2016-06-12T17:05:01.713Z,524,677,A library for interacting with the Bungie API.,BungieSharp,False,2016-11-12T23:59:11.877+00:00,False,False,,,1241,False,0.1.0
+SpecIt,2016-06-12T17:24:13.703Z,677,677,SpecIt,SpecIt,False,2016-06-12T10:24:13.703-07:00,True,False,,,180,False,1.0.0
+lithiumfluorine,2016-06-12T17:24:15.18Z,524,677,A library for interacting with the Bungie API.,BungieSharp,False,2016-11-12T23:59:11.877+00:00,True,False,,,1241,False,0.1.1
+appveyor,2016-06-12T17:23:48.26Z,674,677,Description,Sequin.ClaimsAuthentication.Owin,True,2016-06-15T00:57:43.35-07:00,True,False,,,558,False,0.5.136-sequin-owin
+Jason Mitchell,2016-06-12T17:23:43.26Z,674,677,Provides middleware for performing claims authentication on Sequin commands,Sequin.ClaimsAuthentication,True,2016-06-15T00:57:37.333-07:00,True,False,,"CQRS,OWIN,Sequin",5018,False,0.5.136-sequin-owin
+Jason Mitchell,2016-06-12T17:20:14.88Z,674,677,Provides support for resolving handler instances in Sequin using Autofac,Sequin.Autofac,True,2016-06-15T00:42:09.19-07:00,True,False,,"CQRS,OWIN,Sequin",6648,False,0.5.134-sequin-owin
+lithiumfluorine,2016-06-12T17:05:01.713Z,524,677,A library for interacting with the Bungie API.,BungieSharp,False,2016-11-12T23:59:11.877+00:00,True,False,,,1241,False,0.1.0
+Sivaprasad,2016-06-12T17:15:24.607Z,677,677,"Let you set the bill number its prefix and sufix, invoice number, etc..",Common.Numbers,False,2016-06-12T10:15:24.607-07:00,True,False,"Let you set the bill number its prefix and sufix, invoice number, etc..",,1659,False,1.1.0
+appveyor,2016-06-12T17:14:41.58Z,674,677,Description,Sequin.FluentValidation.Owin,True,2016-06-15T01:07:55.86-07:00,True,False,,,327,False,0.5.130-sequin-owin
+Jason Mitchell,2016-06-12T17:14:35.757Z,674,677,Provides middleware for validating commands in Sequin,Sequin.FluentValidation,True,2016-06-15T01:07:49.767-07:00,True,False,,"CQRS,OWIN,Sequin",5886,False,0.5.130-sequin-owin
+IT Adapter/Dmitriy Khmaladze,2016-06-12T17:13:43.27Z,128,677,"NFX UNISTACK includes:
+
+    Application Container + Dependency Injection facilities
+    Configuration engine
+    BigMemory: Local/Distributed piles/heaps, ability to store hundreds of millions of objects resident in memory for long times without killing GC
+    BigMemory Cache - store hudreds of millions of objects in RAM without GC pressure (full GC scan <20ms @ 300M+ objects 64 Gb taken)
+    Logging with 8+ destinations/sinks(text, email, flood filter etc.)
+    Distributed contact-oriented communication framework NFX.Glue (replaces WCF)
+    Security with users, credentials, roles, permissions
+    JSON parsing, ser/deser support
+    Ultra efficient Binary serialization support
+    Erlang CLR support with native types: tuples, lists, pattern matching
+    Text lexing/parsing and processing pipeline: C# lexer, JSON lexer/Parser
+    RelationalSchema language compiler - generate DDL for different targets
+    Templatization engine (for web, emails and not only textual content)
+    NFX.WAVE - Web Server with hybrid injectable threading model (replaces IIS + ASP.NET)
+    NFX.WAVE.Mvc - MVC framework for web pages
+    WV.js - a web component library auto-bindable to server MVC/MVVM
+    Database access layer with virtual commands/queries/transactions
+    ID generation - GlobalDistributed IDS (GDID), FID - fast process-wide ID
+    Virtual Social Network - Twitter/Facebook/Google+ et al
+    Virtual Payment Processing - Stripe,PayPal providers
+    Virtual File Systems - AmazonS3, SVN, Local
+    QR Code Creation
+    In progress: Virtual document model with rendering to PDF, HTML and other formats
+    In Progress: PDF DOM model + rendering",NFX,False,2017-12-13T23:41:11.927+00:00,True,False,"NFX UNISTACK
+ Slim, Glue, Wave, BigMemory, Pile, Cache, WebServer, MVC
+
+Does not depend on any 3rd parties byt the .NET System/Core","Serializer,Slim,Glue,Pile,Memory,BigMemory,Cache,Server,Web,MVC,Templates,Logging,Service,JSON,Binary,Heap,Parser,C#,Interprocess,Unistack,Cluster,Cloud,Azure,Amazon,S3,FileSystem,SVN,OAuth,Stripe,Payment,Financial,IRR,NPV,Injector,Configuration,Gate,Network,TCP,Socket,Erlang,OTP,GC,PDF",24138,False,3.0.0.2
+Salih KARAHAN,2016-06-12T17:08:55.167Z,677,677,"Rachistructure provides basic attribute based aspect oriented programming infrastructure.
+
+github.com/SalihKARAHAN/Rachistructure
+rachistructure.codeplex.com",Rachistructure,True,2016-06-12T17:08:55.167+00:00,True,False,Rachistructure provides basic attribute based aspect oriented programming infrastructure.,"salih,karahan,rachistructure,aspect,oriented,aop,ioc,dependecy,injection,container,software,infrastructure",217,False,1.0.0-alpha
+Andy Joslin,2016-06-12T17:12:59.333Z,677,677,"The basic idea: each time we add one or more promises to an instance of a promiseTracker, that instance's active() method will return true until all added promises are resolved. A common use case is showing some sort of loading spinner while some http requests are loading.",angular-promise-tracker,False,2016-06-12T10:12:59.333-07:00,True,False,"Small, feature filled library used to easily add spinners or general promise/request tracking to your angular app.","angularjs,angular-promise-tracker,promise,angular",11057,False,2.2.2
+Sivaprasad,2016-06-12T17:11:27.77Z,43209,677,"This package Contais all the nessary thing for connecting and creating database.
+Just Create a object of the  DataBase and call the method obj.GetConnectionString();
+
+try it",CommonDatabaseSettings,False,1899-12-31T16:00:00-08:00,False,False,using this NuGet you can connect your windows application easily with MSSQL,"Database,Common,winform,DatabaseConnection,Connection",1840,False,1.2.2
+Salih KARAHAN,2016-06-12T17:08:55.167Z,677,677,"Rachistructure provides basic attribute based aspect oriented programming infrastructure.
+
+github.com/SalihKARAHAN/Rachistructure
+rachistructure.codeplex.com",Rachistructure,True,2016-06-12T17:08:55.167+00:00,True,False,Rachistructure provides basic attribute based aspect oriented programming infrastructure.,"salih,karahan,rachistructure,aspect,oriented,aop,ioc,dependecy,injection,container,software,infrastructure",217,False,1.0.0-alpha
+Furesoft,2016-06-12T17:08:20.703Z,677,677,Simple API for IPC .Net,RemoteObjects,False,2016-06-12T10:08:20.703-07:00,True,False,,,186,False,1.0.0
+lithiumfluorine,2016-06-12T17:05:01.713Z,524,677,A library for interacting with the Bungie API.,BungieSharp,False,2016-11-12T23:59:11.877+00:00,False,False,,,1241,False,0.1.0
+lithiumfluorine,2016-06-12T17:05:01.713Z,524,677,A library for interacting with the Bungie API.,BungieSharp,False,2016-11-12T23:59:11.877+00:00,False,False,,,1241,False,0.1.0
+Arthur_Khrabrov,2016-06-12T17:04:14.587Z,43209,677,VK API for .NET,VKNET.Api,False,1900-01-01T00:00:00+00:00,False,False,,"vk,api,net,vknet,vkontakte",-1,False,1.4.1
+Jason Mitchell,2016-06-12T16:59:49.99Z,627,677,OWIN middleware for creating a customisable command processing pipeline in CQRS applications,Sequin.Owin,True,2016-08-01T12:34:54.72-07:00,True,False,,"CQRS,OWIN,Sequin",2377,False,0.5.185-sequin-owin
+Jason Mitchell,2016-06-12T16:59:44.417Z,627,677,OWIN middleware for creating a customisable command processing pipeline in CQRS applications,Sequin,True,2016-08-01T12:34:48.217-07:00,True,False,,"CQRS,OWIN,Sequin",9758,False,0.5.185-sequin-owin
+"Scott Keith Thomas,Jr.",2016-06-12T16:51:41.87Z,43209,677,Respository.NET is library containing the abstractions and fundamental types to support a generic and asynchronous repository.,Repository.NET,False,1899-12-31T16:00:00-08:00,False,False,,Repository.NET,-1,False,1.0.1
+Matt Perdeck,2016-06-12T16:40:12.76Z,82,677,Log JavaScript errors and other client side events in your Serilog server side log. Installs JSNLog and configures it for use with Serilog. Use with ASP.NET 4.x.,JSNLog.Serilog,False,2018-01-28T13:39:59.907+00:00,True,False,,"JavaScript,logging,exceptions,Serilog",58802,False,2.17.3
+Matt Perdeck,2016-06-12T16:40:04.613Z,82,677,Log JavaScript errors and other client side events in your Common.Logging based server side log. Installs JSNLog and configures it for use with Common.Logging. Use with ASP.NET 4.x.,JSNLog.CommonLogging,False,2018-01-28T13:39:47.533+00:00,True,False,,"JavaScript,logging,exceptions,Common.Logging",13504,False,2.17.3
+Matt Perdeck,2016-06-12T16:39:52.673Z,82,677,Log JavaScript errors and other client side events in your Elmah server side log. Installs JSNLog and configures it for use with Elmah. Use with ASP.NET 4.x.,JSNLog.Elmah,False,2018-01-28T13:39:33.5+00:00,True,False,,"JavaScript,logging,exceptions,Elmah",55088,False,2.17.3
+Matt Perdeck,2016-06-12T16:39:44.217Z,82,677,Log JavaScript errors and other client side events in your Log4Net server side log. Installs JSNLog and configures it for use with Log4Net. Use with ASP.NET 4.x.,JSNLog.Log4Net,False,2018-01-28T13:39:20.983+00:00,True,False,,"JavaScript,logging,exceptions,Log4Net",30243,False,2.17.3
+Matt Perdeck,2016-06-12T16:39:36.333Z,82,677,Log JavaScript errors and other client side events in your NLog server side log. Installs JSNLog and configures it for use with NLog. Use with ASP.NET 4.x.,JSNLog.NLog,False,2018-01-28T13:39:07.39+00:00,True,False,,"JavaScript,logging,exceptions,nlog",29747,False,2.17.3
+Matt Perdeck,2016-06-12T16:39:24.663Z,82,677,"JavaScript logging package that lets you log exceptions, AJAX timeouts and other client side events in your server side log. Supports ASP.NET 4.x (.Net 4.0+) and ASP.NET 5+ (DNX451, DNXCORE50).",JSNLog,False,2018-01-28T13:38:27.39+00:00,True,False,,"JavaScript,logging,exceptions,ajax,log4net,nlog,elmah,serilog,ASP.NET,4.x,5,DNX451,DNXCORE50",191711,False,2.17.3
+Administrator,2016-04-12T17:19:07.22Z,43209,738,A throwback to Roslyn CTP3.,Roslyn.Throwback.Services,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+"Ollon,LLC",2016-06-12T16:29:38.55Z,43209,677,Extension methods and other miscellany for dealing with Roslyn,Ollon.CodeAnalysis.Extensions,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.6007.3683
+Nyingi Maina,2016-06-12T16:22:43.613Z,676,677,FeatherMvvm is a light-weight package that brings the structure of an Mvvm Framework to Windows Forms programming,FeatherMvvm,False,2016-06-13T12:24:07.71-07:00,True,False,,"Windows,Forms,Mvvm,Framework",319,False,0.0.1
+GMT Europe B.V.,2016-06-12T16:18:16.98Z,366,677,Windows desktop application to query the Wastedge API.,WastedgeQuerier,False,2017-04-18T21:40:46.403-07:00,True,False,,,2985,False,3.0.0
+MCServerStatus,2016-06-12T16:02:25.187Z,55,677,Simple Minecraft server status api,MCServerStatus,False,2018-02-24T09:01:39.147+00:00,True,False,,,648,False,1.0.1
+MCServerStatus,2016-06-12T16:02:25.187Z,55,677,Simple Minecraft server status api,MCServerStatus,False,2018-02-24T09:01:39.147+00:00,True,False,,,648,False,1.0.1
+openstore.craponne.fr,2016-06-12T16:01:03.777Z,251,677,Embeds (by default) or merges assemblies. Also solves the references problems. Fine-graind configuration is possible by adding a 'Blobber' file to target projet.,Blobber,False,2017-08-12T10:56:18.173+00:00,True,False,Embeds or merges referenced assemblies,,4966,False,0.1.3.3
+Sakamoto Poteko,2016-06-08T16:45:42.81Z,43209,681,Simple Minecraft server status,MCPinger,False,1900-01-01T00:00:00+00:00,False,False,Get the MC server status in two lines.,Minecraft,-1,False,1.0.0
+Cheers,2016-06-12T15:57:47.133Z,662,677,Cheers data finder and repository implementation with EntityFramework,Cheers.Data.EF6,False,2016-06-27T13:23:46.193+00:00,True,False,,"Cheers,Data,EntityFramework",997,False,1.0.1
+openstore.craponne.fr,2016-06-12T15:54:49.143Z,124,677,"Classes for post-build tasks, to modify assemblies after generation (using dnlib). Allows to run from command-line or build task.",StitcherBoy,False,2017-12-17T14:10:05.047+00:00,True,False,Post build task helper,tasks,9243,False,0.3.1
+John Cachat,2016-06-12T15:48:29.43Z,161,677,Provides global & scoped filters for Entity Framework with dynamic filter parameters that are evaluated at query execution.  Supports use cases such as Multi-Tenancy and Soft Deletes.,EntityFramework.DynamicFilters,False,2017-11-10T20:12:14.037+00:00,True,False,,"Entity,Framework,Global,Dynamic,Filters",419618,False,1.4.11
+"Scott Keith Thomas,Jr.",2016-06-12T15:42:47.7Z,43209,677,Respository.NET is library containing the primary abstractions and fundamental types to support a generic and asynchronous repository.,Repository.NET,False,1899-12-31T16:00:00-08:00,False,False,,Repository.NET,-1,False,1.0.0
+Giacomo Stelluti Scala,2016-06-12T15:41:24.057Z,43209,677,Terse syntax C# command line parser for .NET with F# support. The Command Line Parser Library offers to CLR applications a clean and concise API for manipulating command line arguments and related tasks.,CoreCompat.CommandLineParser,True,1899-12-31T16:00:00-08:00,False,False,,,582,False,2.0.275-r002
+Sakamoto Poteko,2016-06-08T16:45:42.81Z,43209,681,Simple Minecraft server status,MCPinger,False,1900-01-01T00:00:00+00:00,False,False,Get the MC server status in two lines.,Minecraft,-1,False,1.0.0
+openstore.craponne.fr,2016-06-12T15:37:32.4Z,251,677,Embeds (by default) or merges assemblies. Also solves the references problems. Fine-graind configuration is possible by adding a 'Blobber' file to target projet.,Blobber,False,2017-08-12T10:56:18.173+00:00,True,False,Embeds or merges referenced assemblies,,4966,False,0.1.3.2
+fm.Extensions.Logging,2016-06-12T15:25:07.23Z,193,677,fm.Extensions.Logging,fm.Extensions.Logging,True,2017-10-09T11:08:17.937+00:00,True,False,,"Log,Logging,NLog",3563,False,2.0.0-rc2-3
+Cheers,2016-06-12T15:26:45.11Z,637,677,Cheers CQRS InMemory,Cheers.Cqrs.InMemory,False,2016-07-22T06:41:58.347+00:00,True,False,,"Cheers,CQRS,InMemory",1092,False,1.2.1
+fm.Extensions.Logging,2016-06-12T15:25:07.23Z,193,677,fm.Extensions.Logging,fm.Extensions.Logging,True,2017-10-09T11:08:17.937+00:00,True,False,,"Log,Logging,NLog",3563,False,2.0.0-rc2-3
+cherepets,2016-06-12T15:24:30.71Z,628,677,Simple and beautiful doughnut charts,FourToolkit.Charts,False,2016-07-31T02:56:16.377-07:00,True,False,,"pie,win10,windows,10,chart,charts,doughnut,report,xaml,controls",692,False,1.1.0
+fm.Core,2016-06-12T15:24:08.28Z,233,677,fm.Core,fm.Core,True,2017-08-30T16:05:44.53+00:00,True,False,,,1230,False,1.1.0-rc2-2
+Cheers,2016-06-12T15:23:00.007Z,655,677,Cheers Diagnostic NLog implementation,Cheers.Diagnostic.NLog,False,2016-07-04T08:54:25.017+00:00,True,False,,"Cheers,Diagnostic,NLog",769,False,1.0.2
+Cheers,2016-06-12T15:19:20.853Z,655,677,Cheers ServiceLocator StructureMap implementation,Cheers.ServiceLocator.StructureMap,False,2016-07-04T09:05:07.093+00:00,True,False,,"Cheers,ServiceLocator,StructureMap",633,False,1.0.1
+openstore.craponne.fr,2016-06-12T15:19:02.223Z,251,677,Embeds (by default) or merges assemblies. Also solves the references problems. Fine-graind configuration is possible by adding a 'Blobber' file to target projet.,Blobber,False,2017-08-12T10:56:18.173+00:00,True,False,Embeds or merges referenced assemblies,,4966,False,0.1.3.1
+John Cachat,2016-06-12T15:19:12.543Z,161,677,Provides global & scoped filters for Entity Framework with dynamic filter parameters that are evaluated at query execution.  Supports use cases such as Multi-Tenancy and Soft Deletes.,EntityFramework.DynamicFilters,False,2017-11-10T20:12:14.037+00:00,True,False,,"Entity,Framework,Global,Dynamic,Filters",419618,False,1.4.10.3
+Sivaprasad,2016-06-12T15:16:35.977Z,677,677,"Let you set the bill number its prefix and sufix, invoice number, etc..",Common.Numbers,False,2016-06-12T10:15:24.607-07:00,True,False,"Let you set the bill number its prefix and sufix, invoice number, etc..",,1659,False,1.0.10
+fr34kyn01535,2016-06-12T15:14:48.89Z,1,677,Unity3D Game Server Mod,Rocket.Core,False,2018-04-19T21:23:25.147+00:00,True,False,,"Rocket,Mod,Unity3D",8822,False,2.4.6
+@jordimontana,2016-06-12T15:14:32.047Z,10,677,Utilities to streamline unit testing in Dynamics CRM 2016 by faking the IOrganizationService against an In-Memory context which runs blazingly fast.,FakeXrmEasy.2016,False,2018-04-10T23:56:03.147+00:00,True,False,,"dynamics,crm,2016,unit,testing,xrm,mock,mocking,fake,fakes",34183,False,1.14.3
+@jordimontana,2016-06-12T15:14:23.123Z,10,677,Utilities to streamline unit testing in Dynamics CRM 2015 by faking the IOrganizationService against an In-Memory context which runs blazingly fast.,FakeXrmEasy.2015,False,2018-04-10T23:55:44.083+00:00,True,False,,"dynamics,crm,2015,unit,testing,xrm,mock,mocking,fake,fakes",24604,False,1.14.3
+@jordimontana,2016-06-12T15:14:12.537Z,10,677,Utilities to streamline unit testing in Dynamics CRM 2013 by faking the IOrganizationService against an In-Memory context which runs blazingly fast.,FakeXrmEasy.2013,False,2018-04-10T23:55:26.91+00:00,True,False,,"dynamics,crm,2013,unit,testing,xrm,mock,mocking,fake,fakes",15496,False,1.14.3
+@jordimontana,2016-06-12T15:14:03.07Z,10,677,Utilities to streamline unit testing in Dynamics CRM 2011 by faking the IOrganizationService against an In-Memory context which runs blazingly fast.,FakeXrmEasy,False,2018-04-10T23:55:12.583+00:00,True,False,,"dynamics,crm,2011,unit,testing,xrm,mock,mocking,fake,fakes",17415,False,1.14.3
+FrostAura Dynamics,2016-06-12T15:11:30.673Z,43209,677,FrostAura Generic Library,FrostAura.Dynamics.Generic,False,1900-01-01T00:00:00+00:00,False,False,FrostAura Generic Library,FrostAura,-1,False,1.1.8
+Robert Važan,2016-06-12T15:09:37.013Z,677,677,Hardware-accelerated implementation of CRC-32C (Castagnoli) with super fast software fallback for C++ projects. Don't confuse with ordinary CRC-32.,Crc32C,False,2016-06-12T08:09:37.013-07:00,True,False,,"crc,crc32,crc-32,crc32c,crc-32c,castagnoli,native",3951,False,1.1.0
+openstore.craponne.fr,2016-06-12T15:09:23.34Z,251,677,Embeds (by default) or merges assemblies. Also solves the references problems. Fine-graind configuration is possible by adding a 'Blobber' file to target projet.,Blobber,False,2017-08-12T10:56:18.173+00:00,True,False,Embeds or merges referenced assemblies,,4966,False,0.1.3
+Cheers,2016-06-12T15:08:38.163Z,610,677,Cheers data repository,Cheers.Data.Repository,False,2016-08-18T11:25:38.097+00:00,True,False,,"Cheers,Repository",1263,False,1.1.1
+Cheers,2016-06-12T15:05:31.737Z,664,677,Cheers data finder,Cheers.Data.Finder,False,2016-06-25T14:44:48.12+00:00,True,False,,"Cheers,Finder",1148,False,1.3.2
+Cheers,2016-06-12T15:01:54.407Z,677,677,Cheers Diagnostic contracts,Cheers.Diagnostic,False,2016-06-12T15:01:54.407+00:00,True,False,,"Cheers,Diagnostic",518,False,1.0.1
+Cheers,2016-06-12T14:58:51.757Z,637,677,Cheers CQRS contracts,Cheers.Cqrs,False,2016-07-22T06:33:27.03+00:00,True,False,,"Cheers,CQRS",1372,False,1.2.1
+Cheers,2016-06-12T14:55:46Z,578,677,Cheers StructureMap Container,Cheers.Container.StructureMap,False,2016-09-19T08:23:02.24+00:00,True,False,,"Cheers,StructureMap,Container",762,False,1.0.2
+kant,2016-06-12T14:55:40.72Z,677,677,Ruckus.Spot.PushApi Class Library,Ruckus.Spot.PushApi,False,2016-06-12T07:55:40.72-07:00,True,False,,,421,False,0.9.3
+Alistair Chapman,2016-06-12T14:55:10.187Z,400,677,A Cake addin to generate client code from API definitions (including Swagger) using AutoRest,Cake.AutoRest,True,2017-03-16T05:34:08.127-07:00,True,False,,"cake,build,script,swagger,azure",54418,False,0.2.0-unstable0001
+Cheers,2016-06-12T14:52:13.477Z,677,677,Cheers ServiceLocator contracts,Cheers.ServiceLocator,False,2016-06-12T14:52:13.477+00:00,True,False,,"Cheers,ServiceLocator",595,False,1.0.1
+Jakub Puchała,2016-04-30T23:35:32.02Z,43209,720,Cron parser and evaluation tool.,Cron.Converter,False,1899-12-31T16:00:00-08:00,False,False,"Cron parser and evaluation tool. Convert string expression to object, check it's validity or evaluate next fire time.","Cron,Parser,Expression,Evaluator,CronExpression",-1,False,0.91.0
+Jakub Puchała,2016-04-30T23:35:32.02Z,43209,720,Cron parser and evaluation tool.,Cron.Converter,False,1899-12-31T16:00:00-08:00,False,False,"Cron parser and evaluation tool. Convert string expression to object, check it's validity or evaluate next fire time.","Cron,Parser,Expression,Evaluator,CronExpression",-1,False,0.91.0
+Jakub Puchała,2016-04-30T15:32:19.95Z,43209,720,Cron expression parser and evaluator.,Cron.Converter,False,1899-12-31T16:00:00-08:00,False,False,,"Cron,CronExpression,Parser,Expression,Converter,Evaluator",-1,False,0.9.0
+Jakub Puchała,2016-05-04T16:30:48.223Z,43209,716,https://github.com/Puchaczov/CronExpression,Cron.Converter,False,1899-12-31T16:00:00-08:00,False,False,,"Cron,Parser,Expression,Evaluator,CronExpression",-1,False,0.9.2
+Jakub Puchała,2016-05-04T16:52:33.547Z,43209,716,"Advanced cron parser and evaluation environment with mixed complex type support. To find out more, visit:
+https://github.com/Puchaczov/CronExpression",Cron.Converter,False,1899-12-31T16:00:00-08:00,False,False,Advanced cron parser and evaluation environment with mixed complex types support.,"Cron,Parser,Expression,Evaluator,CronExpression",-1,False,0.9.2.1
+Jakub Puchała,2016-05-06T22:12:37.903Z,43209,714,Advanced cron parser and evaluation environment with mixable complex types support,Cron.Converter,False,1899-12-31T16:00:00-08:00,False,False,,"Cron,Parser,Expression,Evaluator,CronExpression",-1,False,0.9.4.1
+Jakub Puchała,2016-05-05T20:52:04.553Z,43209,715,Advanced cron parser and evaluation environment with mixable complex types support,Cron.Converter,False,1899-12-31T16:00:00-08:00,False,False,,"Cron,Parser,Expression,Evaluator,CronExpression",-1,False,0.9.3
+Jakub Puchała,2016-05-05T21:50:39.95Z,43209,715,Advanced cron parser and evaluation environment with mixable complex types support,Cron.Converter,False,1899-12-31T16:00:00-08:00,False,False,,"Cron,Parser,Expression,Evaluator,CronExpression",-1,False,0.9.4
+Jakub Puchała,2016-05-08T12:47:07.68Z,43209,712,Advanced cron parser and evaluation environment with mixable complex types support,Cron.Converter,False,1899-12-31T16:00:00-08:00,False,False,,"Cron,Parser,Expression,Evaluator,CronExpression",-1,False,0.9.5
+Jakub Puchała,2016-05-08T20:30:08.68Z,43209,712,Advanced cron parser and evaluation environment with mixable complex types support,Cron.Converter,False,1899-12-31T16:00:00-08:00,False,False,,"Cron,Parser,Expression,Evaluator,CronExpression",-1,False,0.9.5.1
+Jakub Puchała,2016-05-08T21:07:53.2Z,43209,712,Advanced cron parser and evaluation environment with mixable complex types support,Cron.Converter,False,1899-12-31T16:00:00-08:00,False,False,,"Cron,Parser,Expression,Evaluator,CronExpression",-1,False,0.9.5.2
+Jakub Puchała,2016-05-11T15:14:09.197Z,43209,709,Advanced cron parser and evaluation environment with mixable complex types support,Cron.Converter,False,1899-12-31T16:00:00-08:00,False,False,,"Cron,Parser,Expression,Evaluator,CronExpression",-1,False,0.9.5.3
+Jakub Puchała,2016-05-13T21:54:54.083Z,43209,707,Basic primitives shared between CronExpression libraries.,CronExpression.Common,False,1899-12-31T16:00:00-08:00,False,False,,"Cron,CronExpression,Cron.Common",-1,False,0.1.0
+Jakub Puchała,2016-05-15T13:29:19.247Z,43209,705,Basic primitives shared between CronExpression libraries.,CronExpression.Common,False,1899-12-31T16:00:00-08:00,False,False,,"Cron,CronExpression,Cron.Common",-1,False,1.0.0
+Jakub Puchała,2016-05-15T13:01:04.353Z,43209,705,Advanced cron parser and evaluation environment with mixable complex types support,CronExpression.Converter,False,1899-12-31T16:00:00-08:00,False,False,,"Cron,Parser,Expression,Evaluator,CronExpression,CronExpression.Converter",-1,False,1.0.0
+Jakub Puchała,2016-05-15T13:48:31.86Z,43209,705,Advanced cron parser and evaluation environment with mixable complex types support,CronExpression.Converter,False,1899-12-31T16:00:00-08:00,False,False,,"Cron,Parser,Expression,Evaluator,CronExpression",-1,False,1.0.0.1
+Jakub Puchała,2016-05-15T13:57:46.69Z,43209,705,Basic abstracts shared between CronExpression libraries.,CronExpression.Core,False,1899-12-31T16:00:00-08:00,False,False,,"CronExpression,Cron,Parser,CronExpression.Core",-1,False,1.0.0
+Jakub Puchała,2016-05-13T18:33:37.593Z,43209,707,Advanced cron parser and evaluation environment with mixable complex types support,Cron.Converter,False,1899-12-31T16:00:00-08:00,False,False,,"Cron,Parser,Expression,Evaluator,CronExpression",-1,False,0.9.5.5
+Jakub Puchała,2016-06-12T14:47:10.433Z,242,677,https://github.com/Puchaczov/TQL.CronExpression,TQL.CronExpression,False,2017-08-21T20:37:04.357+00:00,True,False,,"TQL,TQL.CronExpression,CronExpression,Cron",1226,False,2.0.0
+Alistair Chapman,2016-06-12T14:41:59.207Z,400,677,A Cake addin to generate client code from API definitions (including Swagger) using AutoRest,Cake.AutoRest,False,2017-03-16T05:34:08.127-07:00,True,False,,"cake,build,script,swagger,azure",54418,False,0.1.1
+Cheers,2016-06-12T14:39:54.183Z,578,677,Cheers StructureMap Container,Cheers.Container.StructureMap,False,2016-09-19T08:23:02.24+00:00,True,False,,"Cheers,StructureMap,Container",762,False,1.0.1
+ReflectSoftware Inc.,2016-05-30T01:50:00.283Z,310,690,"Traditional simple text base logging frameworks lack what your application can easily emit in providing you better insight into the health of your application. Wouldn’t it be great to easily instrument incredible rich details? Well, look no further. ReflectInsight was designed to easily let your application speak volumes!
+
+One of ReflectInsight’s most powerful features is its impressive and elegant Viewer. The Viewer was design to hone in on particular issues and filter any unwanted noise by creating User Defined Views. User Defined Views allow you to filter a given request and visualize the execution path that actually caused the issue at hand.
+
+Everyone knows that debugging multithread applications is no simple task. Due to racing conditions, traditional IDE debuggers are not well suited for the job and don’t really provide an accurate picture behind the scenes. With ReflectInsight’s Live Viewer, debugging multithread applications is that much easier!
+
+In order to use this library you must have the ReflectInsight Viewer installed. Download and install the ReflectInsight Viewer from this location:
+
+http://www.ReflectSoftware.com/Public/Download.aspx
+
+You can view your messages in realtime, in a rich viewer that allows you to filter out and search for what really matters to you.",ReflectSoftware.Insight,True,2017-06-14T11:52:01.39-07:00,False,False,"ReflectInsight - The Next Generation in Application Logging.
+
+ReflectInsight goes beyond where no text-based logging has gone before.",".NET,reflectinsight,logging,log,logfiles,events,ETW,semantic,exception,handling,structured,tracing,trace,debug,diagnostic,extensions,appender",13462,False,5.6.1-rc1
+ReflectSoftware Inc.,2016-05-01T01:34:44.043Z,310,719,"Traditional simple text base logging frameworks lack what your application can easily emit in providing you better insight into the health of your application. Wouldn’t it be great to easily instrument incredible rich details? Well, look no further. ReflectInsight was designed to easily let your application speak volumes!
+
+One of ReflectInsight’s most powerful features is its impressive and elegant Viewer. The Viewer was design to hone in on particular issues and filter any unwanted noise by creating User Defined Views. User Defined Views allow you to filter a given request and visualize the execution path that actually caused the issue at hand. 
+
+Everyone knows that debugging multithread applications is no simple task. Due to racing conditions, traditional IDE debuggers are not well suited for the job and don’t really provide an accurate picture behind the scenes. With ReflectInsight’s Live Viewer, debugging multithread applications is that much easier!
+
+In order to use this library you must have the ReflectInsight Viewer installed. Download and install the ReflectInsight Viewer from this location: 
+
+http://www.ReflectSoftware.com/Public/Download.aspx
+
+You can view your messages in realtime, in a rich viewer that allows you to filter out and search for what really matters to you.",ReflectSoftware.Insight,True,2017-06-14T11:52:01.39-07:00,False,False,"ReflectInsight - The Next Generation in Application Logging.
+
+ReflectInsight goes beyond where no text-based logging has gone before.",".NET,reflectinsight,logging,log,logfiles,events,ETW,semantic,exception,handling,structured,tracing,trace,debug,diagnostic,extensions,appender",13462,False,5.6.0-rc1
+ReflectSoftware Inc.,2016-05-31T17:27:49.613Z,310,689,"Traditional simple text base logging frameworks lack what your application can easily emit in providing you better insight into the health of your application. Wouldn’t it be great to easily instrument incredible rich details? Well, look no further. ReflectInsight was designed to easily let your application speak volumes!
+
+One of ReflectInsight’s most powerful features is its impressive and elegant Viewer. The Viewer was design to hone in on particular issues and filter any unwanted noise by creating User Defined Views. User Defined Views allow you to filter a given request and visualize the execution path that actually caused the issue at hand.
+
+Everyone knows that debugging multithread applications is no simple task. Due to racing conditions, traditional IDE debuggers are not well suited for the job and don’t really provide an accurate picture behind the scenes. With ReflectInsight’s Live Viewer, debugging multithread applications is that much easier!
+
+In order to use this library you must have the ReflectInsight Viewer installed. Download and install the ReflectInsight Viewer from this location:
+
+http://www.ReflectSoftware.com/Public/Download.aspx
+
+You can view your messages in realtime, in a rich viewer that allows you to filter out and search for what really matters to you.",ReflectSoftware.Insight,True,2017-06-14T11:52:01.39-07:00,False,False,"ReflectInsight - The Next Generation in Application Logging.
+
+ReflectInsight goes beyond where no text-based logging has gone before.",".NET,reflectinsight,logging,log,logfiles,events,ETW,semantic,exception,handling,structured,tracing,trace,debug,diagnostic,extensions,appender",13462,False,5.6.1-rc2
+Alistair Chapman,2016-06-12T14:33:01.887Z,400,677,A Cake addin to generate client code from API definitions (including Swagger) using AutoRest,Cake.AutoRest,True,2017-03-16T05:34:08.127-07:00,True,False,,"cake,build,script,swagger,azure",54418,False,0.1.0-unstable0005
+Jacob,2016-06-12T14:21:07.243Z,52,677,Azure addon for TastyDomainDriven,TastyDomainDriven.Azure,True,2018-02-27T23:03:17.8+00:00,True,False,,,7196,False,1.6.0-ci0000
+Jacob,2016-06-12T14:21:01.157Z,52,677,Event sourcing for ddd,TastyDomainDriven,True,2018-02-27T23:03:06.567+00:00,True,False,,,9173,False,1.6.0-ci0000
+Denis Gordin,2016-06-12T14:13:37.83Z,43209,677,MvvmCross plugin for getting information about device storage,g0rdan.MvvmCross.Plugin.DiskInfo,False,1899-12-31T16:00:00-08:00,False,False,,"MvvmCross,Mvvm",906,False,1.0.6
+CoreCompat.Selenium.WebDriver,2016-06-12T13:59:44.13Z,210,677,CoreCompat.Selenium.WebDriver,CoreCompat.Selenium.WebDriver,True,2017-09-22T14:28:32.617+00:00,True,False,,,36842,False,2.54.0-beta001
+Google Inc.,2016-06-07T16:01:25.997Z,43209,682,Google Pubsub v1 client library,Google.Pubsub.V1,True,1899-12-31T16:00:00-08:00,False,False,Google Pubsub v1 client library,Google,-1,False,0.1.0-CI00111
+Google Inc.,2016-06-12T13:49:52.803Z,43209,677,Google Pubsub v1 client library,Google.Pubsub.V1,True,1899-12-31T16:00:00-08:00,False,False,Google Pubsub v1 client library,Google,-1,False,0.1.0-CI00115
+Jeremy Lindsay,2016-06-12T13:50:12.973Z,670,677,This library contains an interface and abstract class to support interactions with I2C devices.,Magellanic.I2c,True,2016-06-19T15:15:19.647-07:00,True,False,This library contains an interface and abstract class to support interactions with I2C devices.,"raspberry,pi,iot,i2c",859,False,0.0.1-alpha
+Zeeshan Bhatti,2016-06-12T13:44:23.073Z,231,677,Common classes used in SDKs generated by APIMATIC as C# .NET Portable Class Library,APIMATIC.SDK.Common,False,2017-09-01T14:11:21.033+00:00,True,False,Common classes used in SDKs generated by APIMATIC as C# .NET Portable Class Library,APIMATIC,9581,False,1.0.1.25
+Elias Balasis (eliasbalasis@gmail.com),2016-06-12T13:13:38.3Z,43209,677,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606121311
+Elias Balasis (eliasbalasis@gmail.com),2016-06-12T13:13:38.3Z,43209,677,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606121311
+Florin Nitoi,2016-06-12T13:35:45.983Z,171,677,A simple mocking library for TypeScript,typemoq,False,2017-10-31T06:16:25.293+00:00,True,False,,"mock,stub,fake,spy,library,sandbox,typescript,javascript",4563,False,0.2.0
+Elias Balasis (eliasbalasis@gmail.com),2016-06-12T13:26:53.83Z,43209,677,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606121325
+Elias Balasis (eliasbalasis@gmail.com),2016-06-11T20:54:57.77Z,43209,678,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606111953
+diphap,2016-06-12T13:16:06.003Z,271,677,"A project to auto-generate JavaScript proxies for MVC and WebApi controllers.
+Build javascript Proxy Objects.
+With Intellisense. 
+No hard coded url.
+[HOW TO USE IT]: http://jsnet.codeplex.com/
+[SAMPLE APPLICATION]: https://jsnet.codeplex.com/releases",Diphap.JsNetBridge.Mvc,False,2017-07-23T18:49:19.357+00:00,True,False,"A project to auto-generate JavaScript proxies for MVC and WebApi controllers
+Build javascript Proxy Objects.
+With Intellisense.","Build,JS,javascript,ASP.NET,Generate,Intellisense,URL,API,PROXY,PROXIES,METADATA",3557,False,1.0.25
+Eldin,2016-06-12T13:12:58.08Z,677,677,A video player build upon the html 5 video tag that supports playback of subtitles. Supported formats (currently): SubStationAlpha (ass) & SubRip (srt),SubPlayerJS,False,2016-06-12T13:12:58.08+00:00,True,False,A video player build upon the html 5 video tag that supports playback of subtitles. Supported formats (currently): SubStationAlpha (ass) & SubRip (srt),"Javascript,Html,Html5,Js,JS,video,player,subtitle,substationalpha,ass,subrip,srt",320,False,0.3.0
+Elias Balasis (eliasbalasis@gmail.com),2016-06-12T13:13:38.3Z,43209,677,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606121311
+Eldin,2016-06-12T13:12:58.08Z,677,677,A video player build upon the html 5 video tag that supports playback of subtitles. Supported formats (currently): SubStationAlpha (ass) & SubRip (srt),SubPlayerJS,False,2016-06-12T13:12:58.08+00:00,True,False,A video player build upon the html 5 video tag that supports playback of subtitles. Supported formats (currently): SubStationAlpha (ass) & SubRip (srt),"Javascript,Html,Html5,Js,JS,video,player,subtitle,substationalpha,ass,subrip,srt",320,False,0.3.0
+Elias Balasis (eliasbalasis@gmail.com),2016-06-12T12:50:31.42Z,43209,677,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606121249
+Taha Hachana,2016-06-12T13:10:25.52Z,677,677,.NET client library for the dexi.io API,DexiSharp,False,2016-06-12T06:10:25.52-07:00,True,False,F# client library for dexi.io,"fsharp,dexi",320,False,0.0.2
+Loránd Biró,2016-06-11T15:52:15.133Z,538,678,"This package adds an ASP.NET precompile step to the build just before (and only if) OctoPack is called. Change your nuspec file to include the precompiled files and next time when TeamCity or another build tool invokes OctoPack, precompilation will kick in and your deploy package will contain a precompiled website. Visit the project site for more detailed instructions.",OctoPack.Precompile,False,2016-10-29T16:50:49.493+00:00,True,False,ASP.NET precompile build step for OctoPack.,"octopus,octopack,asp.net,website,precompile",18827,False,1.0.0
+"BinaryFog,Tyler Young",2016-06-12T13:04:19.7Z,82,677,"Human name parsing. Parses names using English conventions for persons names.
+Includes contributions from Tyler Young",BinaryFog.NameParser,False,2018-01-28T03:43:54.5+00:00,True,False,"Parses full names into its components, like first and last name.","nameparsing,name,parser,binaryfog",3422,False,1.2.5
+Elias Balasis (eliasbalasis@gmail.com),2016-06-12T12:50:31.42Z,43209,677,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606121249
+Wilcommerce.Core.Common,2016-06-12T12:32:29.743Z,55,677,Wilcommerce.Core.Common,Wilcommerce.Core.Common,False,2018-02-24T16:30:47.17+00:00,True,False,,,1123,False,0.1.0
+Elias Balasis (eliasbalasis@gmail.com),2016-06-11T20:54:57.77Z,43209,678,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606111953
+Elias Balasis (eliasbalasis@gmail.com),2016-06-12T12:30:43.24Z,43209,677,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606121229
+Elias Balasis (eliasbalasis@gmail.com),2016-06-12T12:24:23.73Z,43209,677,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606121223
+Wilcommerce.Core.Common,2016-06-12T12:32:29.743Z,55,677,Wilcommerce.Core.Common,Wilcommerce.Core.Common,False,2018-02-24T16:30:47.17+00:00,True,False,,,1123,False,0.1.0
+Elias Balasis (eliasbalasis@gmail.com),2016-06-12T12:30:43.24Z,43209,677,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606121229
+Elias Balasis (eliasbalasis@gmail.com),2016-06-11T20:54:57.77Z,43209,678,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606111953
+Elias Balasis (eliasbalasis@gmail.com),2016-06-12T12:24:23.73Z,43209,677,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606121223
+Jerry,2016-06-05T12:11:02.21Z,643,684,轻量方便的 MVC 分页插件,JPager.Net,False,2016-07-16T00:43:46.51-07:00,True,False,轻量方便的 MVC 分页插件,,564,False,0.0.1
+Bobby Cannon,2016-06-12T11:56:53.147Z,665,677,"Analytic software used to track feature usage, exceptions, and all other interesting points.",Bloodhound,True,2016-06-23T18:26:21.153-07:00,True,False,,"Bloodhound,Analytics,Feature,Tracking,Tracker,Analyzer",9853,False,5.0.3-pre
+Ciprian Ciurea,2016-06-12T11:49:35.603Z,441,677,Provides change tracking and validation support to your classes. It can enhance the validation with custom severity levels. Supports writting validation errors back to your entity. Supports key validation against the entity context.,ObservableEntitiesLightTracking,False,2017-02-03T09:40:21.84+00:00,True,False,,"change-tracking,observable,entities,validation,error-severity,n-tier,wpf,web-api,wcf",3578,False,1.0.15
+ProductiveRage,2016-06-12T11:30:36.537Z,657,677,"Service to performance test code by removing the database dependency, in order to always return consistent data for known queries - this is the Client package",ProductiveRage.SqlProxyAndReplay.Client,False,2016-07-02T21:53:27.087+00:00,True,False,,"C#,SQL,WCF",742,False,1.2.0
+ProductiveRage,2016-06-12T11:30:36.537Z,657,677,"Service to performance test code by removing the database dependency, in order to always return consistent data for known queries - this is the Client package",ProductiveRage.SqlProxyAndReplay.Client,False,2016-07-02T21:53:27.087+00:00,True,False,,"C#,SQL,WCF",742,False,1.2.0
+Johan Polson,2016-06-11T17:23:14.367Z,43209,678,Jaon Configuration Manager is a small library to instantiate objects from JSON files.,JaonConfigurationManager,False,1900-01-01T00:00:00+00:00,False,False,Jaon Configuration Manager is a small library to instantiate objects from JSON files.,,-1,False,1.1.1
+Maxim Chechulnikov,2016-06-12T11:28:06.783Z,253,677,Simple dependency injection framework based on emitting CIL code.,Photosphere.DependencyInjection,False,2017-08-10T22:18:37.85+00:00,True,False,,,12518,False,0.1.1.55
+"Ryan Davis,Jasper H. Bojsen",2016-06-12T11:25:34.497Z,29,677,"Socket PCL Xamarin Cross platform for iOS, Windows 10 (UWP) and Android",SocketLite.PCL,False,2018-03-22T13:11:56.24+00:00,True,False,,"Socket,Tcp,Udp,Xamarin,PCL,ios,android,uwp,windows,10",19760,False,1.1.1
+danielwertheim,2016-06-12T11:08:59.52Z,449,677,"Provides a simple, effective sync and async library for interacting with NATS.io using DotNet. Uses IObservable so it is ReactiveX friendly.",MyNatsClient,False,2017-01-26T19:15:38.497+00:00,False,False,Used for working with NATS.io message broker,"NATS,NATS.io,messaging,reactivex,reactiveextensions",32773,False,0.1.0
+Phil Curzon,2016-06-12T11:21:23.373Z,593,677,"A library for purely functional IO in .NET, implementing a Haskell-like IO monad.",NovelIO,True,2016-09-04T16:15:06.833-07:00,True,False,Functional IO Library,"F#,fsharp,io,binary,file",678,False,0.2.0-alpha
+danielwertheim,2016-06-12T11:21:20.643Z,449,677,"Provides a simple, effective sync and async library for interacting with NATS.io using DotNet. Uses IObservable so it is ReactiveX friendly.",MyNatsClient,False,2017-01-26T19:15:38.497+00:00,True,False,Used for working with NATS.io message broker,"NATS,NATS.io,messaging,reactivex,reactiveextensions",32773,False,0.1.1
+beamyplum,2016-06-12T11:21:13.877Z,16,677,PushAll API for .Net,PushAllNet,False,2018-04-04T18:41:18.04+00:00,True,False,,,661,False,1.0.0
+QuickFont,2016-06-12T10:26:30.897Z,525,677,QuickFont is a text rendering library for OpenTK. For more information please have a look at the GitHub repository https://github.com/opcon/QuickFont,QuickFont.ES20,False,2016-11-10T20:02:42.91-08:00,False,False,,"QuickFont,OpenGL,ES,OpenTK",777,False,4.2.6007.36305
+QuickFont,2016-06-12T10:25:22.673Z,525,677,QuickFont is a text rendering library for OpenTK. For more information please have a look at the GitHub repository https://github.com/opcon/QuickFont,QuickFont.Desktop,False,2016-11-11T04:00:09.077+00:00,False,False,,"QuickFont,OpenGL,OpenTK",2891,False,4.2.6007.36303
+Maxim Chechulnikov,2016-06-12T11:11:46.727Z,253,677,Simple dependency injection framework based on emitting CIL code.,Photosphere.DependencyInjection,False,2017-08-10T22:18:37.85+00:00,True,False,,,12518,False,0.1.1.54
+danielwertheim,2016-06-12T11:08:59.52Z,449,677,"Provides a simple, effective sync and async library for interacting with NATS.io using DotNet. Uses IObservable so it is ReactiveX friendly.",MyNatsClient,False,2017-01-26T19:15:38.497+00:00,True,False,Used for working with NATS.io message broker,"NATS,NATS.io,messaging,reactivex,reactiveextensions",32773,False,0.1.0
+QuickFont,2016-06-12T11:02:25.437Z,525,677,QuickFont is a text rendering library for OpenTK. For more information please have a look at the GitHub repository https://github.com/opcon/QuickFont,QuickFont.Desktop,False,2016-11-11T04:00:09.077+00:00,True,False,,"QuickFont,OpenGL,OpenTK",2891,False,4.2.6007.37384
+QuickFont,2016-06-12T11:01:35.683Z,525,677,QuickFont is a text rendering library for OpenTK. For more information please have a look at the GitHub repository https://github.com/opcon/QuickFont,QuickFont.ES20,False,2016-11-10T20:02:42.91-08:00,True,False,,"QuickFont,OpenGL,ES,OpenTK",777,False,4.2.6007.37328
+Daniel Haefele,2016-06-12T10:57:46.07Z,60,677,Makes my life with uwp projects easier.,UwCore,False,2018-02-19T21:46:56.99+00:00,True,False,,,11440,False,0.1.25
+Daniel Haefele,2016-06-12T10:46:49.913Z,60,677,Makes my life with uwp projects easier.,UwCore,False,2018-02-19T21:46:56.99+00:00,True,False,,,11440,False,0.1.24
+ysawabe,2016-05-31T00:42:41.49Z,689,689,Send E-Mail using the template file that is placed on the AzureStorage. E-Mail sent will use the SendGrid service. The template can be written in Velocity.,Ktnc.SendGrid,False,2016-05-31T00:42:41.49+00:00,True,False,Send E-Mail using the template file that is placed on the AzureStorage.,,437,False,0.0.4
+gaoshanag212,2016-06-12T10:21:06.09Z,665,677,Umeng for wpf with wp sdk code,UmengAnalyticsNet.WPF,False,2016-06-24T03:06:48.177+00:00,True,False,,,980,False,1.0.0
+QuickFont,2016-06-12T10:26:30.897Z,525,677,QuickFont is a text rendering library for OpenTK. For more information please have a look at the GitHub repository https://github.com/opcon/QuickFont,QuickFont.ES20,False,2016-11-10T20:02:42.91-08:00,True,False,,"QuickFont,OpenGL,ES,OpenTK",777,False,4.2.6007.36305
+QuickFont,2016-06-12T10:25:22.673Z,525,677,QuickFont is a text rendering library for OpenTK. For more information please have a look at the GitHub repository https://github.com/opcon/QuickFont,QuickFont.Desktop,False,2016-11-11T04:00:09.077+00:00,True,False,,"QuickFont,OpenGL,OpenTK",2891,False,4.2.6007.36303
+gaoshanag212,2016-06-12T10:21:06.09Z,665,677,Umeng for wpf with wp sdk code,UmengAnalyticsNet.WPF,False,2016-06-24T03:06:48.177+00:00,True,False,,,980,False,1.0.0
+"David Bond,Roland Banks",2016-06-12T10:17:20.37Z,1,677,A .NET API for LogicMonitor,LogicMonitor.Api,False,2018-04-19T11:32:27.577+00:00,True,False,A .NET API for LogicMonitor,,47044,False,1.0.141
+openstore.craponne.fr,2016-06-12T10:06:20.677Z,251,677,Embeds (by default) or merges assemblies. Also solves the references problems. Fine-graind configuration is possible by adding a 'Blobber' file to target projet.,Blobber,False,2017-08-12T10:56:18.173+00:00,True,False,Embeds or merges referenced assemblies,,4966,False,0.1.2
+a-thhua,2016-06-12T10:02:15.397Z,677,677,Description,NuGet.ClassSample,False,2016-06-12T03:02:15.397-07:00,True,False,,,182,False,1.0.0
+latticework,2016-06-12T09:58:02.95Z,1733,677,latticework.cs,latticework.cs,False,2013-07-22T14:32:56.307+00:00,True,False,,,312286,False,0.0.1709
+Stefan Becker,2016-05-21T10:57:00.173Z,55,699,Univedo.Data Class Library,Univedo.Data,True,2018-02-24T12:15:50.42+00:00,False,False,,,7176,False,0.9.2-beta
+Stefan Becker,2016-05-19T17:20:29.857Z,55,701,Univedo.Data Class Library,Univedo.Data,True,2018-02-24T12:15:50.42+00:00,False,False,,,7176,False,0.9.1-beta
+Stefan Becker,2016-05-23T02:31:00.783Z,55,697,Univedo.Data Class Library,Univedo.Data,True,2018-02-24T12:15:50.42+00:00,False,False,,,7176,False,0.9.3-beta
+Stefan Becker,2016-05-05T04:08:35.16Z,55,715,Univedo.Data Class Library,Univedo.Data,True,2018-02-24T12:15:50.42+00:00,False,False,,,7176,False,0.8.12-beta
+Stefan Becker,2016-06-12T06:11:40.497Z,55,677,Univedo.Data Class Library,Univedo.Data,True,2018-02-24T12:15:50.42+00:00,False,False,,,7176,False,0.10.2-beta
+Stefan Becker,2016-06-11T18:53:17.787Z,55,678,Univedo.Data Class Library,Univedo.Data,True,2018-02-24T12:15:50.42+00:00,False,False,,,7176,False,0.10.1-beta
+Stefan Becker,2016-06-11T18:48:17.54Z,55,678,Univedo.Data Class Library,Univedo.Data,True,2018-02-24T12:15:50.42+00:00,False,False,,,7176,False,0.10.0-beta
+Stefan Becker,2016-06-12T09:33:13.547Z,55,677,Univedo.Data Class Library,Univedo.Data,True,2018-02-24T12:15:50.42+00:00,True,False,,,7176,False,0.10.3-beta
+NetEscapades.Configuration.Yaml,2016-06-12T09:29:53.463Z,22,677,YAML configuration provider implementation to use with Microsoft.Extensions.Configuration.,NetEscapades.Configuration.Yaml,False,2018-03-29T22:19:17.21+00:00,True,False,,"configuration,yaml,yml",18421,False,1.0.2
+Randy Burden & contributors,2016-06-12T09:03:14.51Z,299,677,Slapper.AutoMapper is a mapping library that can convert dynamic data into static types and populate complex nested child objects.,Slapper.AutoMapper,False,2017-06-25T23:04:49.58+00:00,True,False,Slapper.AutoMapper is a mapping library that can convert dynamic data into static types and populate complex nested child objects.,"Slapper.AutoMapper,slapper,automapper,mapper,map,dynamic",107675,False,1.0.0.9
+"Route 2 Solutions,Inc.",2016-06-12T08:54:08.527Z,677,677,UWP Expander Control based on Dean Chalk's ExpanderUWP control.,Expander,False,2016-06-12T08:54:08.527+00:00,True,False,,"UWP,Controls,Expander",506,False,1.0.0
+"Route 2 Solutions,Inc.",2016-06-12T08:54:08.527Z,677,677,UWP Expander Control based on Dean Chalk's ExpanderUWP control.,Expander,False,2016-06-12T08:54:08.527+00:00,True,False,,"UWP,Controls,Expander",506,False,1.0.0
+a-thhua,2016-06-12T08:39:39.78Z,677,677,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,NuGet.PackagerSample,False,2016-06-12T01:39:39.78-07:00,True,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.",,215,False,1.0.0
+Hendrickx Jorn,2016-06-12T08:39:04.86Z,43209,677,"Upgraded version of Gobln.Extensions
+Contains extentions
+Also contains several methodes and an Csvreader",Gobln.Core,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.2.8
+Hendrickx Jorn,2016-06-12T08:39:04.86Z,43209,677,"Upgraded version of Gobln.Extensions
+Contains extentions
+Also contains several methodes and an Csvreader",Gobln.Core,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.2.8
+Sivaprasad,2016-06-12T08:38:25.797Z,677,677,"Let you set the bill number its prefix and sufix, invoice number, etc..",Common.Numbers,False,2016-06-12T10:15:24.607-07:00,True,False,"Let you set the bill number its prefix and sufix, invoice number, etc..",,1659,False,1.0.9
+Neusoft,2016-06-12T08:37:14.16Z,588,677,Amos HttpsClient,HttpClientUtil,False,2016-09-09T06:05:47.317+00:00,True,False,,,1223,False,0.3.0
+Sivaprasad,2016-06-12T08:34:42.427Z,43209,677,"This package Contais all the nessary thing for connecting and creating database.
+Just Create a object of the  DataBase and call the method obj.GetConnectionString();
+
+try it",CommonDatabaseSettings,False,1899-12-31T16:00:00-08:00,False,False,using this NuGet you can connect your windows application easily with MSSQL,"Database,Common,winform,DatabaseConnection,Connection",1840,False,1.2.1
+Wouter Demuynck,2016-06-12T08:33:30.557Z,311,677,Popsql is a library eliminating the need for magic SQL strings in your code.,popsql,False,2017-06-13T14:34:22.827-07:00,True,False,,"sql,orm,micro-orm,database",3216,False,2.0.0
+Michael Yap,2016-06-12T08:31:53.443Z,661,677,API for connecting and managing MERALCO billing information.,SpawnkidProjectMERALCO,False,2016-06-27T21:55:39.03-07:00,True,False,This is not official nor endorse by MERALCO. It is not for commercial use.,,1432,False,1.0.2.3
+Houssem Dellai,2016-06-12T08:22:18.417Z,677,677,Provides a sample implementation of a ContentPage that shows Foursquare places  using the Foursquare API.,Plugin.Foursquare,False,2016-06-12T08:22:18.417+00:00,True,False,Provides a sample implementation of a ContentPage that shows venues of using the Foursquare API.,"xamarin,pcl,xam.pcl,plugin,for,windows,phone,winphone,wp8,winrt,android,xamarin.forms,ios,Foursquare",553,False,1.0.0
+Streamcoders.com,2016-06-12T08:23:36.403Z,361,677,Is a comprehensive library for handling audio/video codecs and streaming technologies.,Streamcoders.MediaSuite.x64,False,2017-04-24T08:51:08.597+00:00,True,False,,"audio,video,streaming,html5,rtsp,rtp,h.264,vp8",101928,False,4.0.1122
+Streamcoders.com,2016-06-12T08:23:17.18Z,361,677,Is a comprehensive library for handling audio/video codecs and streaming technologies.,Streamcoders.MediaSuite.x86,False,2017-04-24T01:50:45.473-07:00,True,False,,"audio,video,streaming,html5,rtsp,rtp,h.264,vp8",102824,False,4.0.1122
+Meinrad Jean-Richard,2016-06-12T08:22:46.183Z,438,677,"This Package contains a extensible Map Control for Universal Windows Apps (Windows Phone, Desktop, Tablet, UWP etc.)
+
+			Supported Maps:
+			- OpenStreetMap
+			- Google
+			- Custom",UniversalMapControl,False,2017-02-06T12:24:59.503-08:00,True,False,,"Map,MapControl,XAML,Windows,Phone,OSM,OpenStreetMap,UWP,10,Google,Maps,Open,Street",6208,False,0.3.32
+Houssem Dellai,2016-06-12T08:22:18.417Z,677,677,Provides a sample implementation of a ContentPage that shows Foursquare places  using the Foursquare API.,Plugin.Foursquare,False,2016-06-12T08:22:18.417+00:00,True,False,Provides a sample implementation of a ContentPage that shows venues of using the Foursquare API.,"xamarin,pcl,xam.pcl,plugin,for,windows,phone,winphone,wp8,winrt,android,xamarin.forms,ios,Foursquare",553,False,1.0.0
+Michael Yap,2016-06-12T08:20:10.737Z,661,677,API for connecting and managing MERALCO billing information.,SpawnkidProjectMERALCO,True,2016-06-27T21:55:39.03-07:00,True,False,This is not official nor endorse by MERALCO. It is not for commercial use.,,1432,False,1.0.2.2-Fix
+R Eyres,2016-06-12T08:17:32.27Z,27,677,A lightweight and slightly experimental inference library for C#,LinqInfer,True,2018-03-24T13:22:15.85+00:00,True,False,,"inference,linq,bayesian,probability,reasoning,machine,learning",3553,False,1.1.4-beta
+Raphael ATALLAH,2016-06-12T08:01:57.54Z,677,677,Fluent OData queries from Angular\'s Resources.  This nuget package is identic to bower package.,AngularODataResources,False,2016-06-12T08:01:57.54+00:00,True,False,,"OData,Angular,Resources,Fluent,Resource,$resources",933,False,1.0.22
+"Raphael Dhainaut,David Vanschepdael",2016-06-12T08:05:02.137Z,441,677,A set of awesome modern components that you can use in every Web project,ModernWeb,False,2017-02-03T01:24:10.847-08:00,True,False,,"Modern,frontend,metro,modernUI,css,angularjs",2259,False,0.8.4
+Michael Yap,2016-06-12T08:04:08.777Z,661,677,API for connecting and managing MERALCO billing information.,SpawnkidProjectMERALCO,False,2016-06-27T21:55:39.03-07:00,True,False,This is not official nor endorse by MERALCO. It is not for commercial use.,,1432,False,1.0.2.2
+Raphael ATALLAH,2016-06-12T08:01:57.54Z,677,677,Fluent OData queries from Angular\'s Resources.  This nuget package is identic to bower package.,AngularODataResources,False,2016-06-12T08:01:57.54+00:00,True,False,,"OData,Angular,Resources,Fluent,Resource,$resources",933,False,1.0.22
+latticework,2016-06-12T08:00:53.937Z,1733,677,latticework.cs,latticework.cs,False,2013-07-22T14:32:56.307+00:00,True,False,,,312286,False,0.0.1708
+William Roush,2016-06-12T07:51:28.523Z,179,677,Rollbar Integration for .NET Core,RollbarDotNet,False,2017-10-23T03:36:16.42+00:00,True,False,,"Rollbar,dotnet,Core,Error",9935,False,0.3.0
+William Roush,2016-06-12T07:51:28.523Z,179,677,Rollbar Integration for .NET Core,RollbarDotNet,False,2017-10-23T03:36:16.42+00:00,True,False,,"Rollbar,dotnet,Core,Error",9935,False,0.3.0
+shuhari,2016-06-12T07:28:28.91Z,43209,677,Shuhari's Library for WPF,Shuhari.Library.Wpf,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.1.6
+shuhari,2016-06-12T07:28:06.317Z,43209,677,Common functions for Shuhari's Library,Shuhari.Library.Common,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.1.6
+Neusoft,2016-06-12T07:23:13.23Z,588,677,Amos HttpsClient,HttpClientUtil,False,2016-09-09T06:05:47.317+00:00,True,False,,,1223,False,0.2.0
+Mert Başaranlar,2016-06-12T07:14:38.557Z,43209,677,Contentter.Api.Core 1.0.2,Contentter.Api.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.2
+Mert Başaranlar,2016-06-12T07:14:38.557Z,43209,677,Contentter.Api.Core 1.0.2,Contentter.Api.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.2
+Sivaprasad,2016-06-12T07:12:50.8Z,677,677,"Let you set the bill number its prefix and sufix, invoice number, etc..",Common.Numbers,False,2016-06-12T10:15:24.607-07:00,True,False,"Let you set the bill number its prefix and sufix, invoice number, etc..",,1659,False,1.0.8
+Microsoft,2016-06-12T07:12:37.287Z,440,677,Enables logging of event messages for AutoRest generated client libraries via Log4Net.,Microsoft.Rest.ClientRuntime.Log4Net,True,2017-02-03T16:48:54.593-08:00,True,False,Provides Log4Net logging for AutoRest generated client libraries.,"Microsoft,AutoRest,ClientRuntime,REST,ETW",3909,True,2.0.3-preview
+Microsoft,2016-06-12T07:12:28.68Z,440,677,"Enables tracing of event messages for AutoRest generated client libraries events via ETW (Event Tracing for Windows). ETW events can be captured by subscribing to the ""Microsoft.Rest"" event source.",Microsoft.Rest.ClientRuntime.Etw,True,2017-02-03T16:48:44.543-08:00,True,False,"Provides ETW tracing of ""Microsoft.Rest"" Client Library events.","Microsoft,AutoRest,ClientRuntime,REST,ETW",2188,True,2.0.3-preview
+Microsoft,2016-06-12T07:12:19.413Z,43209,677,"Provides ADAL based authentication for Azure management client libraries 
+Supported Platforms:
+  -   Portable Class Libraries
+  -   .NET Framework 4.5
+  -   Windows 8
+  -   Windows Phone 8.1
+  -   DotNet Core",Microsoft.Rest.ClientRuntime.Azure.Authentication,True,1900-01-01T00:00:00+00:00,False,False,Client infrastructure for Azure client library ADAL based authentication.,"Microsoft,AutoRest,ClientRuntime,REST,adal",418040,True,3.0.3-preview
+Microsoft,2016-06-12T07:12:09.747Z,43209,677,"Provides common error handling, tracing, and HTTP/REST-based pipeline manipulation. 
+Supported Platforms:
+  -   Portable Class Libraries
+  -   .NET Framework 4.5
+  -   Windows 8
+  -   Windows Phone 8.1
+  -   DotNet Core",Microsoft.Rest.ClientRuntime.Azure,False,1900-01-01T00:00:00+00:00,False,False,Client infrastructure for Azure client libraries.,"Microsoft,Azure,AutoRest,ClientRuntime,REST,azureofficial",4155121,True,4.0.3
+Microsoft,2016-06-12T07:11:59.323Z,43209,677,"Infrastructure for error handling, tracing, and HttpClient pipeline configuration. Required by client libraries generated using AutoRest. 
+Supported Platforms:
+  -   Portable Class Libraries
+  -   .NET Framework 4.5
+  -   Windows 8
+  -   Windows Phone 8.1
+  -   DotNet Core",Microsoft.Rest.ClientRuntime,False,1900-01-01T00:00:00+00:00,False,False,Provides HttpClient infrastructure for clients generated by AutoRest.,"Microsoft,AutoRest,ClientRuntime,REST",6060110,True,3.0.3
+Mert Başaranlar,2016-06-12T07:09:27.83Z,43209,677,Contentter.Data.Core 1.0.2,Contentter.Data.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.2
+Mert Başaranlar,2016-06-12T07:09:27.83Z,43209,677,Contentter.Data.Core 1.0.2,Contentter.Data.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.2
+Michael Yap,2016-06-12T07:09:46.943Z,661,677,API for connecting and managing MERALCO billing information.,SpawnkidProjectMERALCO,False,2016-06-27T21:55:39.03-07:00,True,False,This is not official nor endorse by MERALCO. It is not for commercial use.,,1432,False,1.0.2.1
+Michael Yap,2016-06-12T07:06:44.693Z,661,677,API for connecting and managing MERALCO billing information.,SpawnkidProjectMERALCO,False,2016-06-27T21:55:39.03-07:00,True,False,This is not official nor endorse by MERALCO. It is not for commercial use.,,1432,False,1.0.2
+Mert Başaranlar,2016-06-12T07:03:47.75Z,43209,677,Contentter.Data.Core 1.0.1,Contentter.Data.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.1
+Mert Başaranlar,2016-06-12T07:03:47.75Z,43209,677,Contentter.Data.Core 1.0.1,Contentter.Data.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.1
+WangJi,2016-06-12T06:55:34.51Z,43209,677,自动化的串口测量基础类库,SerialPortDevice.Port,False,1900-01-01T00:00:00+00:00,False,False,,"SerialPort,AutoSurvey",-1,False,1.0.0
+Scott Lee,2016-06-12T06:44:05.163Z,660,677,"FLTK (pronounced ""fulltick"") is a cross-platform C++ GUI toolkit for UNIX®/Linux® (X11), Microsoft® Windows®, and MacOS® X. FLTK provides modern GUI functionality without the bloat and supports 3D graphics via OpenGL® and its built-in GLUT emulation.",fltk,False,2016-06-29T03:36:57.61+00:00,True,False,"FLTK (pronounced ""fulltick"") is a cross-platform C++ GUI toolkit for UNIX®/Linux® (X11), Microsoft® Windows®, and MacOS® X. FLTK provides modern GUI functionality without the bloat and supports 3D graphics via OpenGL® and its built-in GLUT emulation.","FLTK,native,C++,v120,v140,MT,MD,Release,Debug",2965,False,1.3.3.31
+Scott Lee,2016-06-12T06:44:05.163Z,660,677,"FLTK (pronounced ""fulltick"") is a cross-platform C++ GUI toolkit for UNIX®/Linux® (X11), Microsoft® Windows®, and MacOS® X. FLTK provides modern GUI functionality without the bloat and supports 3D graphics via OpenGL® and its built-in GLUT emulation.",fltk,False,2016-06-29T03:36:57.61+00:00,True,False,"FLTK (pronounced ""fulltick"") is a cross-platform C++ GUI toolkit for UNIX®/Linux® (X11), Microsoft® Windows®, and MacOS® X. FLTK provides modern GUI functionality without the bloat and supports 3D graphics via OpenGL® and its built-in GLUT emulation.","FLTK,native,C++,v120,v140,MT,MD,Release,Debug",2965,False,1.3.3.31
+Cain O'Sullivan,2016-06-12T06:35:52.88Z,106,677,A JSONAPI client library that enables conversion to and from .NET POCO's.,Hypermedia.JsonApi.Client,False,2018-01-04T13:47:01.85+00:00,True,False,,,6309,False,1.0.12
+cn.jpush,2016-06-12T06:15:43.34Z,158,677,JPush's officially supported C# client library for accessing JPush APIs.,cn.jpush.api,False,2017-11-13T05:44:13.187+00:00,True,False,,"Tag1,Tag2",10743,False,1.1.1.30001
+cn.jpush,2016-06-12T06:15:43.34Z,158,677,JPush's officially supported C# client library for accessing JPush APIs.,cn.jpush.api,False,2017-11-13T05:44:13.187+00:00,True,False,,"Tag1,Tag2",10743,False,1.1.1.30001
+Cain O'Sullivan,2016-06-12T06:21:57.663Z,254,677,A JSON library for parsing JSON into an Abstract Syntax Tree.,Json.Lite,False,2017-08-09T11:12:01.317+00:00,True,False,,,3452,False,1.2.1
+cn.jpush,2016-06-12T06:15:43.34Z,158,677,JPush's officially supported C# client library for accessing JPush APIs.,cn.jpush.api,False,2017-11-13T05:44:13.187+00:00,True,False,,"Tag1,Tag2",10743,False,1.1.1.30001
+cn.jpush,2016-06-12T06:13:20.277Z,158,677,JPush's officially supported C# client library for accessing JPush APIs.,cn.jpush.api,False,2017-11-13T05:44:13.187+00:00,True,False,,"Tag1,Tag2",10743,False,1.1.1.3
+Stefan Becker,2016-06-12T06:11:40.497Z,55,677,Univedo.Data Class Library,Univedo.Data,True,2018-02-24T12:15:50.42+00:00,True,False,,,7176,False,0.10.2-beta
+cn.jpush,2016-06-12T06:09:32.627Z,158,677,JPush's officially supported C# client library for accessing JPush APIs.,cn.jpush.api,False,2017-11-13T05:44:13.187+00:00,True,False,,"Tag1,Tag2",10743,False,1.1.1.25387
+cn.jpush,2016-06-12T05:45:57.69Z,158,677,JPush's officially supported C# client library for accessing JPush APIs.,cn.jpush.api,False,2017-11-13T05:44:13.187+00:00,True,False,JPush's officially supported C# client library for accessing JPush APIs.,Push,10743,False,1.1.1.24074
+cn.jpush,2016-06-12T05:45:57.69Z,158,677,JPush's officially supported C# client library for accessing JPush APIs.,cn.jpush.api,False,2017-11-13T05:44:13.187+00:00,True,False,JPush's officially supported C# client library for accessing JPush APIs.,Push,10743,False,1.1.1.24074
+Lee Richardson,2016-06-12T05:45:37.837Z,677,677,A UWP API for reading from and writing to a siren of shame device using the HID USB protocol.  Provies notifications for when a device is connected and disconnected.  Allows reading led and audio patterns available as well as playing those patterns on the device.,SirenOfShame.Device,False,2016-06-11T22:45:37.837-07:00,True,False,A UWP API for controlling a Siren of Shame device,"SirenOfShame,Siren,Shame,Continuous,Integration,CI,Jenkins,TeamCity,Windows,IoT",342,False,1.0.1
+cn.jpush,2016-06-12T05:23:34.587Z,158,677,JPush's officially supported C# client library for accessing JPush APIs.,cn.jpush.api,False,2017-11-13T05:44:13.187+00:00,True,False,,"Tag1,Tag2",10743,False,1.1.0.24074
+cn.jpush,2016-06-12T05:23:34.587Z,158,677,JPush's officially supported C# client library for accessing JPush APIs.,cn.jpush.api,False,2017-11-13T05:44:13.187+00:00,True,False,,"Tag1,Tag2",10743,False,1.1.0.24074
+M2MqttDotnetCore,2016-06-12T05:18:47.563Z,231,677,M2MqttDotnetCore,M2MqttDotnetCore,False,2017-09-01T10:47:50.687+00:00,True,False,,,13615,False,1.0.0
+M2MqttDotnetCore,2016-06-12T05:18:47.563Z,231,677,M2MqttDotnetCore,M2MqttDotnetCore,False,2017-09-01T10:47:50.687+00:00,True,False,,,13615,False,1.0.0
+"Scott Keith Thomas,Jr.",2016-06-12T05:12:40.27Z,659,677,Cryptocurrency.Blockchain is a library for interacting with the Blockchain.info API.,Cryptocurrency.Blockchain,False,2016-06-30T15:22:37.1-07:00,True,False,,Cryptocurrency.Blockchain,10284,False,1.0.0
+kayub,2016-06-12T05:04:00.31Z,677,677,Extension for Cassette that adds Subresource Integrity (SRI) hashing to script and stylesheet assets,Cassette.SubresourceIntegrity,False,2016-06-11T22:04:00.31-07:00,True,False,,"cassette,sri",620,False,1.0.3
+PivotalAnimal,2016-06-12T05:01:42.987Z,619,677,This package is a clone of the work done by the TwentyTwenty project. Entity Framework Core persistence layer for IdentityServer4,BlueConcord.IdentityServer.EntityFrameworkCore,True,2016-08-09T10:56:12.63-07:00,True,False,This package is a clone of the work done by the TwentyTwenty project.,"IdentityServer,OpenID,Connect,OpenIDConnect,OAuth2,ASP.NET,WebAPI,SSO,EntityFramework,EF,Claims,Identity,Federation,2020",4398,False,1.0.9-alpha
+machi_pon,2016-06-12T05:00:38.597Z,43209,677,Smart library for .NET,Smart.Web.Mvc,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+machi_pon,2016-06-12T05:00:08.943Z,43209,677,Smart library for .NET,Smart.Windows,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+machi_pon,2016-06-12T05:00:38.597Z,43209,677,Smart library for .NET,Smart.Web.Mvc,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+machi_pon,2016-06-12T05:00:08.943Z,43209,677,Smart library for .NET,Smart.Windows,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:59:49.21Z,43209,677,Smart library for .NET,Smart.Web,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:59:49.21Z,43209,677,Smart library for .NET,Smart.Web,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:59:21.22Z,43209,677,Smart library for .NET,Smart.Mvc,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:59:21.22Z,43209,677,Smart library for .NET,Smart.Mvc,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:57:03.977Z,34,677,Smart library for .NET,Usa.Smart.Navigation.Windows.Forms,True,2018-03-17T06:44:00.387+00:00,False,False,Smart library for .NET,"Smart,pcl",1020,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:56:45.49Z,34,677,Smart library for .NET,Usa.Smart.Navigation.Windows,True,2018-03-17T06:43:36.197+00:00,False,False,Smart library for .NET,"Smart,pcl",680,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:57:03.977Z,34,677,Smart library for .NET,Usa.Smart.Navigation.Windows.Forms,True,2018-03-17T06:44:00.387+00:00,False,False,Smart library for .NET,"Smart,pcl",1020,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:56:45.49Z,34,677,Smart library for .NET,Usa.Smart.Navigation.Windows,True,2018-03-17T06:43:36.197+00:00,False,False,Smart library for .NET,"Smart,pcl",680,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:56:08.597Z,43209,677,Smart library for .NET,Usa.Smart.Navigation.Universal,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:55:48.233Z,34,677,Smart library for .NET,Usa.Smart.Navigation.Forms,True,2018-03-17T06:43:12.26+00:00,False,False,Smart library for .NET,"Smart,pcl",684,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:56:08.597Z,43209,677,Smart library for .NET,Usa.Smart.Navigation.Universal,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:55:48.233Z,34,677,Smart library for .NET,Usa.Smart.Navigation.Forms,True,2018-03-17T06:43:12.26+00:00,False,False,Smart library for .NET,"Smart,pcl",684,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:53:45.03Z,43209,677,Smart library for .NET,Usa.Smart.Universal,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:53:26.727Z,49,677,Smart library for .NET,Usa.Smart.Windows,True,2018-03-02T07:51:02.017+00:00,False,False,Smart library for .NET,"Smart,pcl",2284,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:53:45.03Z,43209,677,Smart library for .NET,Usa.Smart.Universal,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:53:26.727Z,49,677,Smart library for .NET,Usa.Smart.Windows,True,2018-03-02T07:51:02.017+00:00,False,False,Smart library for .NET,"Smart,pcl",2284,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:52:20.237Z,7,677,Smart library for .NET,Usa.Smart.IO.ByteMapper,True,2018-04-13T01:25:01.34+00:00,False,False,Smart library for .NET,"Smart,pcl",243,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:52:40.323Z,43209,677,Smart library for .NET,Usa.Smart.Web,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:52:40.323Z,43209,677,Smart library for .NET,Usa.Smart.Web,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:52:20.237Z,7,677,Smart library for .NET,Usa.Smart.IO.ByteMapper,True,2018-04-13T01:25:01.34+00:00,False,False,Smart library for .NET,"Smart,pcl",243,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:50:41.997Z,39,677,Smart library for .NET,Usa.Smart.Mock.Data,True,2018-03-12T07:47:29.96+00:00,False,False,Smart library for .NET,"Smart,pcl",2507,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:51:17.13Z,34,677,Smart library for .NET,Usa.Smart.Navigation,True,2018-03-17T06:42:21.977+00:00,False,False,Smart library for .NET,"Smart,pcl",1030,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:51:17.13Z,34,677,Smart library for .NET,Usa.Smart.Navigation,True,2018-03-17T06:42:21.977+00:00,False,False,Smart library for .NET,"Smart,pcl",1030,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:50:41.997Z,39,677,Smart library for .NET,Usa.Smart.Mock.Data,True,2018-03-12T07:47:29.96+00:00,False,False,Smart library for .NET,"Smart,pcl",2507,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:48:49.787Z,44,677,Smart library for .NET,Usa.Smart.Forms,True,2018-03-07T02:45:52.55+00:00,False,False,Smart library for .NET,"Smart,pcl",3224,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:48:49.787Z,44,677,Smart library for .NET,Usa.Smart.Forms,True,2018-03-07T02:45:52.55+00:00,False,False,Smart library for .NET,"Smart,pcl",3224,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:48:20.143Z,43209,677,Smart library for .NET,Usa.Smart.CE,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+machi_pon,2016-06-12T04:48:20.143Z,43209,677,Smart library for .NET,Usa.Smart.CE,True,1899-12-31T16:00:00-08:00,False,False,Smart library for .NET,"Smart,pcl",-1,False,0.0.1-alpha1
+NSpectator Team,2016-04-04T12:22:43.593Z,23,746,NSpectator is is ready-to-use solution for development using .NET with Context/Specification flavor. Toolset is intended to be used to drive development through specifying behavior and interaction at the unit level. NSpectator has only one dependency on popular flexible FluentAssertions library.,NSpectator,False,2018-03-28T07:49:58.917+00:00,False,False,NSpectator is a toolset for .NET agile development with the xSpec (context/specification) flavor.,"agile,testing,bdd,tdd,spec,fluent",68465,False,0.9.8
+machi_pon,2016-06-12T04:18:08.08Z,28,677,Smart library fundation for .NET,Usa.Smart.Core,False,2018-03-23T01:23:13.99+00:00,True,False,Smart library fundation for .NET,"Smart,pcl",7183,False,0.0.1
+machi_pon,2016-06-10T11:51:31.433Z,43209,679,Smart library fundation for .NET,Smart-alpha,True,1899-12-31T16:00:00-08:00,False,False,Smart library fundation for .NET,"Smart,portable,pcl",-1,False,0.0.1-alpha5
+machi_pon,2016-06-10T12:02:37.243Z,43209,679,Smart library fundation for .NET,Smart-alpha,True,1899-12-31T16:00:00-08:00,False,False,Smart library fundation for .NET,"Smart,portable,pcl",-1,False,0.0.1-alpha6
+machi_pon,2016-06-10T12:05:56.5Z,43209,679,Smart library fundation for .NET,Smart-alpha,True,1899-12-31T16:00:00-08:00,False,False,Smart library fundation for .NET,"Smart,portable,pcl",-1,False,0.0.1-alpha7
+Chillisoft,2016-06-12T04:02:15.817Z,365,677,Habanero.Smooth,Habanero.Smooth,True,2017-04-20T04:03:20.277+00:00,True,False,,,160445,False,3.9.792-prerelease
+Chillisoft,2016-06-12T04:02:35.083Z,365,677,Habanero.Faces,Habanero.Faces,True,2017-04-19T21:02:45.06-07:00,True,False,,,165609,False,3.9.792-prerelease
+Chillisoft,2016-06-12T04:01:40.093Z,365,677,Habanero,Habanero,True,2017-04-19T21:01:31.993-07:00,True,False,,,167113,False,3.9.792-prerelease
+Chillisoft,2016-06-12T04:02:01.877Z,365,677,Habanero.Testability,Habanero.Testability,True,2017-04-19T21:02:28.027-07:00,True,False,,,160014,False,3.9.792-prerelease
+khanage@gmail.com,2016-06-12T03:50:27.8Z,52,677,A collection of applicative and monad implementations to enhance code.,Bearded.Monads,False,2018-02-27T05:53:26.23+00:00,True,False,,"Functional,Programming",13486,False,1.1.3
+Steven Jones,2016-06-12T03:31:28.41Z,71,677,A powerful C# web crawler that makes advanced crawling features easy to use. AbotX builds upon the open source Abot C# Web Crawler by providing a powerful set of wrappers and extensions.,AbotX,False,2018-02-08T21:47:08.793+00:00,True,False,A powerful C# web crawler that makes advanced crawling features easy to use. AbotX builds upon the open source Abot C# Web Crawler by providing a powerful set of wrappers and extensions.,"crawler,robot,spider,abot",14325,False,1.1.25
+"Rob Reynolds,The Chocolatey Team",2016-06-11T19:36:59.747Z,8,678,"Chocolatey is a package manager for Windows (like apt-get but for Windows). It was designed to be a decentralized framework for quickly installing applications and tools that you need. It is built on the NuGet infrastructure currently using PowerShell as its focus for delivering packages from the distros to your door, err computer.
+
+Chocolatey is brought to you by the work and inspiration of the community, the work and thankless nights of the Chocolatey Team (https://github.com/orgs/chocolatey/people), and Rob heading up the direction.
+
+This is the core package which allows Chocolatey to be embedded in your application.",chocolatey.lib,True,2018-04-12T20:01:56.04+00:00,False,False,"Chocolatey is your machine level NuGet repository. Think apt-get for Windows (executables/application packages), not library packages.","apt-get,yum,machine,repository,chocolatey",9700,False,0.9.10-beta-20160611
+"Rob Reynolds,The Chocolatey Team",2016-06-11T19:35:37.44Z,8,678,"Chocolatey is a package manager for Windows (like apt-get but for Windows). It was designed to be a decentralized framework for quickly installing applications and tools that you need. It is built on the NuGet infrastructure currently using PowerShell as its focus for delivering packages from the distros to your door, err computer.
+
+Chocolatey is brought to you by the work and inspiration of the community, the work and thankless nights of the [Chocolatey Team](https://github.com/orgs/chocolatey/people), with Rob heading up the direction.
+
+You can host your own sources and add them to Chocolatey, you can extend Chocolatey's capabilities, and folks, it's only going to get better.
+
+### Commands
+There are quite a few commands you can call - you should check out the [command reference](https://chocolatey.org/docs/commands-reference). Here are the most common:
+
+ * Help - choco -? or choco command -?
+ * Search - choco search something
+ * List - choco list -lo
+ * Config - choco config list
+ * Install - choco install baretail
+ * Pin - choco pin windirstat
+ * Outdated - choco outdated
+ * Upgrade - choco upgrade baretail
+ * Uninstall - choco uninstall baretail
+
+#### Alternative installation sources:
+ * Install ruby gem - choco install compass -source ruby
+ * Install python egg - choco install sphynx -source python
+ * Install windows feature - choco install IIS -source windowsfeatures
+ * Install webpi feature - choco install IIS7.5Express -source webpi
+
+#### More
+For more advanced commands and switches, use `choco -?` or `choco command -h`. You can also look at the [command reference](https://chocolatey.org/docs/commands-reference), including how you can force a package to install the x86 version of a package.
+
+### Create Packages?
+We have some great guidance on how to do that. Where? I'll give you a hint, it rhymes with socks! [Docs!](https://chocolatey.org/docs/create-packages)
+
+In that mess there is a link to the [PowerShell Chocolatey module reference](https://chocolatey.org/docs/helpers-reference).",chocolatey,True,2018-04-12T20:04:46.847+00:00,False,False,Chocolatey is the package manager for Windows (like apt-get but for Windows),"nuget,apt-get,machine,repository,chocolatey",109546,False,0.9.10-beta-20160611
+Jerome Haltom,2016-06-12T03:26:18.573Z,677,677,API client for the Clarify.IO service.,Clarify,False,2016-06-11T20:26:18.573-07:00,True,False,,clarify,2051,False,1.0.14
+https://github.com/ZacMarcus,2016-06-12T02:59:29.037Z,326,677,Download historical end of day stock data and historical dividend data via the Yahoo Finance API,YahooFinance.NET,False,2017-05-29T04:23:48.683+00:00,True,False,Download historical end of day stock data and historical dividend data via the Yahoo Finance API,"Yahoo,Finance,API,historical,stock,data,shares",1931,False,2.0.0.1
+https://github.com/ZacMarcus,2016-06-12T02:49:34.743Z,326,677,Download historical end of day stock data and historical dividend data via the Yahoo Finance API,YahooFinance.NET,False,2017-05-29T04:23:48.683+00:00,True,False,Download historical end of day stock data and historical dividend data via the Yahoo Finance API,"Yahoo,Finance,API,historical,stock,data,shares",1931,False,2.0.0
+Ericmas001,2016-06-12T02:22:55.197Z,512,677,Com.Ericmas001.Office.Word,Com.Ericmas001.Office.Word,False,2016-11-23T17:02:41.213-08:00,True,False,Com.Ericmas001.Office.Word,,319,False,0.1.0
+Ericmas001,2016-06-12T02:21:10.15Z,512,677,Com.Ericmas001.Office.Excel,Com.Ericmas001.Office.Excel,False,2016-11-23T17:02:17.167-08:00,True,False,Com.Ericmas001.Office.Excel,,666,False,0.1.0
+Ericmas001,2016-06-12T02:18:38.33Z,512,677,Com.Ericmas001.Office.Access,Com.Ericmas001.Office.Access,False,2016-11-23T17:01:58.183-08:00,True,False,Com.Ericmas001.Office.Access,,298,False,0.1.0
+Ericmas001,2016-06-12T02:15:16.353Z,43209,677,Com.Ericmas001.Common,Com.Ericmas001.Common,False,1900-01-01T00:00:00+00:00,False,False,Com.Ericmas001.Common,,1656,False,0.2.0
+Jalal,2016-06-12T02:15:16.833Z,320,677,This is mvc library for proggasoft projects.,Proggasoft.Mvc,False,2017-06-03T23:11:21.863-07:00,True,False,,,5336,False,2.0.5854
+"Scott Keith Thomas,Jr.",2016-06-12T01:52:10.157Z,671,677,Fundamental cryptocurrency classes and structures.,Cryptocurrency,False,2016-06-18T15:11:24.517-07:00,True,False,,Cryptocurrency,2380,False,1.0.0
+Eminent Technology,2016-06-12T01:22:18.143Z,537,677,Mailer - Simple SQL Email Queue,Mailer.Sql,False,2016-10-30T16:40:44.737-07:00,True,False,,"mailer,email,sql",2329,False,1.0.5
+Eminent Technology,2016-06-12T01:05:01.09Z,537,677,Mailer - Simple SQL Email Queue,Mailer.Sql,False,2016-10-30T16:40:44.737-07:00,True,False,,"mailer,email,sql",2329,False,1.0.4
+Beto Rodriguez,2016-06-12T00:40:19.263Z,297,677,"LiveCharts is a modern chartig library: Responsive, animated and MVVM orientated charts",LiveCharts.WinForms,False,2017-06-26T20:44:54.15-07:00,True,False,,"Chart,Charting,Plot,Plotting,WinForms",20741,False,0.7.2.2
+Beto Rodriguez,2016-06-12T00:39:41.89Z,304,677,"LiveCharts is a modern chartig library: Responsive, animated and MVVM orientated charts",LiveCharts.Wpf,False,2017-06-19T22:36:00.87-07:00,True,False,,"Chart,Charting,Plot,Plotting,Wpf,WindowsPresentationFoundation",71471,False,0.7.2.2
+Beto Rodriguez,2016-06-12T00:39:02.55Z,304,677,"LiveCharts is a modern chartig library: Responsive, animated and MVVM orientated charts, this package is only the core of the library, you must also download the specific version for your platform.",LiveCharts,False,2017-06-19T22:35:36.977-07:00,True,False,,"Chart,Charting,Plot,Plotting",81987,False,0.7.2.2
+Jerome Haltom,2016-06-12T00:35:30.633Z,677,677,API client for the Clarify.IO service.,Clarify,False,2016-06-11T20:26:18.573-07:00,True,False,,clarify,2051,False,1.0.13
+"Scott Keith Thomas,Jr.",2016-06-11T21:19:15.413Z,671,678,ConsoleObjects is a framework for creating test user interface (TUI) applications.,ConsoleObjects,False,2016-06-18T21:41:41.28+00:00,True,False,,ConsoleObjects,2705,False,1.0.0
+Beto Rodriguez,2016-06-12T00:13:34.743Z,304,677,"LiveCharts is a modern chartig library: Responsive, animated and MVVM orientated charts",LiveCharts.Wpf,False,2017-06-19T22:36:00.87-07:00,False,False,,"Chart,Charting,Plot,Plotting,Wpf,WindowsPresentationFoundation",71471,False,0.7.2.1
+Beto Rodriguez,2016-06-12T00:12:09.64Z,304,677,"LiveCharts is a modern chartig library: Responsive, animated and MVVM orientated charts, this package is only the core of the library, you must also download the specific version for your platform.",LiveCharts,False,2017-06-19T22:35:36.977-07:00,False,False,,"Chart,Charting,Plot,Plotting",81987,False,0.7.2.1
+Beto Rodriguez,2016-06-11T23:03:51.12Z,304,678,"LiveCharts is a modern chartig library: Responsive, animated and MVVM orientated charts, this package is only the core of the library, you must also download the specific version for your platform.",LiveCharts,False,2017-06-19T22:35:36.977-07:00,False,False,,"Chart,Charting,Plot,Plotting",81987,False,0.7.2
+Beto Rodriguez,2016-06-11T23:07:00.897Z,304,678,"LiveCharts is a modern chartig library: Responsive, animated and MVVM orientated charts",LiveCharts.Wpf,False,2017-06-19T22:36:00.87-07:00,False,False,,"Chart,Charting,Plot,Plotting,Wpf,WindowsPresentationFoundation",71471,False,0.7.2
+Bill Boga,2016-06-11T23:57:31.17Z,649,678,Provides the ability to bind models using both ModelBinder and ValueProvider in ASP.NET Core.,HybridModelBinding,False,2016-07-10T01:33:35.29+00:00,True,False,,"hybrid,modelbiner,valueprovider,asp.net,core,mvc",4927,False,0.1.0
+Microsoft Corporation,2016-06-12T00:18:54.36Z,677,677,Microsoft Analysis Services Server SDK,Microsoft.AnalysisServices.Server,False,2016-06-11T17:18:54.36-07:00,True,False,,,2746,False,13.0.1601.5
+Beto Rodriguez,2016-06-12T00:13:34.743Z,304,677,"LiveCharts is a modern chartig library: Responsive, animated and MVVM orientated charts",LiveCharts.Wpf,False,2017-06-19T22:36:00.87-07:00,True,False,,"Chart,Charting,Plot,Plotting,Wpf,WindowsPresentationFoundation",71471,False,0.7.2.1
+Beto Rodriguez,2016-06-12T00:12:09.64Z,304,677,"LiveCharts is a modern chartig library: Responsive, animated and MVVM orientated charts, this package is only the core of the library, you must also download the specific version for your platform.",LiveCharts,False,2017-06-19T22:35:36.977-07:00,True,False,,"Chart,Charting,Plot,Plotting",81987,False,0.7.2.1
+Microsoft Corporation,2016-06-11T23:48:16.42Z,43209,678,Microsoft Analysis Services Server AMO Core (Internal),Microsoft.AnalysisServices.Server.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,13.0.0
+openstore.craponne.fr,2016-06-12T00:07:02.063Z,124,677,"Classes for post-build tasks, to modify assemblies after generation (using dnlib). Allows to run from command-line or build task.",StitcherBoy,False,2017-12-17T14:10:05.047+00:00,True,False,Post build task helper,tasks,9243,False,0.3.0
+Bill Boga,2016-06-11T23:57:31.17Z,649,678,Provides the ability to bind models using both ModelBinder and ValueProvider in ASP.NET Core.,HybridModelBinding,False,2016-07-10T01:33:35.29+00:00,True,False,,"hybrid,modelbiner,valueprovider,asp.net,core,mvc",4927,False,0.1.0
+"Oscar Jimenez,Waf Estructuras Digitales",2016-06-11T23:58:46.293Z,65,678,Fuxion library for identity management.,Fuxion.Identity,True,2018-02-14T09:14:26.54+00:00,True,False,,,3303,False,0.0.1-alpha021
+"Oscar Jimenez,Waf Estructuras Digitales",2016-06-11T23:58:33.17Z,65,678,Fuxion Core (prototype),Fuxion,True,2018-02-14T09:13:45.333+00:00,True,False,,,12505,False,0.0.3-alpha089
+Bill Boga,2016-06-11T23:57:31.17Z,649,678,Provides the ability to bind models using both ModelBinder and ValueProvider in ASP.NET Core.,HybridModelBinding,False,2016-07-10T01:33:35.29+00:00,True,False,,"hybrid,modelbiner,valueprovider,asp.net,core,mvc",4927,False,0.1.0
+Microsoft Corporation,2016-06-11T23:48:16.42Z,43209,678,Microsoft Analysis Services Server AMO Core (Internal),Microsoft.AnalysisServices.Server.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,13.0.0
+"Ross McKinlay,Colin Bull",2016-06-11T21:08:58.377Z,4,678,Type providers for SQL database access.,SQLProvider,False,2018-04-16T19:20:53.603+00:00,True,False,Type providers for SQL database access.,"F#,fsharp,typeprovider,sql,sqlserver",47463,False,1.0.13
+Microsoft Corporation,2016-06-11T23:24:32.457Z,43209,678,Microsoft Analysis Services Server AMO Core (Internal),Microsoft.AnalysisServices.Server.Core.dll,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,13.0.0
+Microsoft Corporation,2016-06-11T23:24:32.457Z,43209,678,Microsoft Analysis Services Server AMO Core (Internal),Microsoft.AnalysisServices.Server.Core.dll,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,13.0.0
+Dávid Karnok,2016-06-08T11:35:26.623Z,43209,681,"Extension methods: Flux and Mono, Schedulers and other tools.
+
+This is a snapshot until we set up a custom account.",Reactor.Core.Dev,False,1899-12-31T16:00:00-08:00,False,False,"Fluent reactive programming library for C# on top of Reactive-Streams, mirroring the Reactor-Core for JVM.","reactive,fluent,flow,rx,backpressure",-1,False,0.1.0
+"Dávid Karnok,Stephane Maldini",2016-06-11T23:15:44.803Z,623,678,Non-blocking backpressure-enabled operators for streaming data in synchronous and asynchronous manner locally.,Reactor.Core,False,2016-08-05T03:54:34.373-07:00,True,False,"Extension methods: Flux and Mono, Schedulers and other tools.","reactive,fluent,flow,rx,backpressure",2214,False,0.3.0
+Wosad Inc,2016-06-11T23:13:51.283Z,629,678,Structural engineering automation library. Components for structural analysis of beams and frames.,Wosad.Analysis,False,2016-07-30T11:54:02.09-07:00,True,False,,,2042,False,0.0.6.1
+Yin-Chun Wang,2016-06-10T23:14:59.043Z,434,679,Unofficial task-based HelloSign api lib for dotnet with intellisense doc.,HelloSignApi,True,2017-02-09T16:59:28.59-08:00,False,False,,eSignature,5759,False,1.0.0-beta07
+Yin-Chun Wang,2016-06-11T23:10:24.82Z,434,678,Unofficial task-based HelloSign api lib for dotnet with intellisense doc.,HelloSignApi,True,2017-02-09T16:59:28.59-08:00,True,False,,eSignature,5759,False,1.0.0-beta08
+Beto Rodriguez,2016-06-11T23:07:00.897Z,304,678,"LiveCharts is a modern chartig library: Responsive, animated and MVVM orientated charts",LiveCharts.Wpf,False,2017-06-19T22:36:00.87-07:00,True,False,,"Chart,Charting,Plot,Plotting,Wpf,WindowsPresentationFoundation",71471,False,0.7.2
+Beto Rodriguez,2016-06-11T23:03:51.12Z,304,678,"LiveCharts is a modern chartig library: Responsive, animated and MVVM orientated charts, this package is only the core of the library, you must also download the specific version for your platform.",LiveCharts,False,2017-06-19T22:35:36.977-07:00,True,False,,"Chart,Charting,Plot,Plotting",81987,False,0.7.2
+Silvenga,2016-06-11T22:50:49.09Z,629,678,Portability components for Rocket.Chat.Net,Rocket.Chat.Net.Portability,True,2016-07-29T21:04:49.84-07:00,True,False,,Rocket.Chat,1655,False,0.2.220-pre
+Silvenga,2016-06-11T22:50:41.193Z,629,678,"A Rocket.Chat realtime, managed .Net driver.",Rocket.Chat.Net,True,2016-07-29T21:04:40.553-07:00,True,False,,Rocket.Chat,5788,False,0.2.220-pre
+Silvenga,2016-06-11T22:50:31.723Z,629,678,"A Rocket.Chat realtime, managed .Net bot.",Rocket.Chat.Net.Bot,True,2016-07-29T21:04:32.473-07:00,True,False,,Rocket.Chat,2122,False,0.2.220-pre
+Mert Basaranlar,2016-06-11T22:47:47.937Z,43209,678,Contentter.Data.Core 1.0.0,Contentter.Data.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Mert Basaranlar,2016-06-11T22:47:47.937Z,43209,678,Contentter.Data.Core 1.0.0,Contentter.Data.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Jason Mitchell,2016-06-11T22:40:33.673Z,674,678,Provides support for resolving handler instances in Sequin using Autofac,Sequin.Autofac,True,2016-06-15T00:42:09.19-07:00,True,False,,"CQRS,OWIN,Sequin",6648,False,0.5.133-sequin-owin
+Mert Basaranlar,2016-06-11T22:36:32.783Z,43209,678,Contentter.Api.Core 1.0.1,Contentter.Api.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.1
+Mert Basaranlar,2016-06-11T22:36:32.783Z,43209,678,Contentter.Api.Core 1.0.1,Contentter.Api.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.1
+Bar Arnon,2016-06-11T22:28:47.823Z,277,678,A thread-safe hash-based unique collection,ConcurrentHashSet,False,2017-07-17T13:53:32.337+00:00,True,False,,,27500,False,0.2.0
+"David Bond,Roland Banks",2016-06-11T22:27:37.817Z,1,678,A .NET API for LogicMonitor,LogicMonitor.Api,False,2018-04-19T11:32:27.577+00:00,True,False,A .NET API for LogicMonitor,,47044,False,1.0.140
+appveyor,2016-06-11T22:05:33.74Z,674,678,Description,Sequin.ClaimsAuthentication.Owin,True,2016-06-15T00:57:43.35-07:00,True,False,,,558,False,0.5.134-sequin-owin
+Jason Mitchell,2016-06-11T22:05:28.36Z,674,678,Provides middleware for performing claims authentication on Sequin commands,Sequin.ClaimsAuthentication,True,2016-06-15T00:57:37.333-07:00,True,False,,"CQRS,OWIN,Sequin",5018,False,0.5.134-sequin-owin
+Mert Basaranlar,2016-06-11T21:59:23.253Z,43209,678,Api Core,Contentter.Api.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Mert Basaranlar,2016-06-11T21:59:23.253Z,43209,678,Api Core,Contentter.Api.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+"David Bond,Roland Banks",2016-06-11T21:57:15.333Z,1,678,A .NET API for LogicMonitor,LogicMonitor.Api,False,2018-04-19T11:32:27.577+00:00,True,False,A .NET API for LogicMonitor,,47044,False,1.0.139
+appveyor,2016-06-11T21:57:12.307Z,674,678,Description,Sequin.ClaimsAuthentication.Owin,True,2016-06-15T00:57:43.35-07:00,True,False,,,558,False,0.5.133-sequin-owin
+Jason Mitchell,2016-06-11T21:57:06.223Z,674,678,Provides middleware for performing claims authentication on Sequin commands,Sequin.ClaimsAuthentication,True,2016-06-15T00:57:37.333-07:00,True,False,,"CQRS,OWIN,Sequin",5018,False,0.5.133-sequin-owin
+CoreCompat.NScrape,2016-06-11T21:54:01.96Z,210,678,CoreCompat.NScrape,CoreCompat.NScrape,True,2017-09-22T13:54:42.343+00:00,True,False,,,1402,False,0.3.0-beta001
+Mert Basaranlar,2016-06-11T21:41:10.37Z,43209,678,Contentter.Core Helpers and BaseResponses,Contentter.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Mert Basaranlar,2016-06-11T21:41:10.37Z,43209,678,Contentter.Core Helpers and BaseResponses,Contentter.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Allan Chadwick,2016-06-11T21:43:48.18Z,371,678,A simple .net retry library.,TreadMill,False,2017-04-14T05:36:06.17+00:00,True,False,,"Retry,C#,Transient,Fault",456,False,1.0.0
+Bar Arnon,2016-06-11T21:49:22.577Z,277,678,A thread-safe hash-based unique collection,ConcurrentHashSet,False,2017-07-17T13:53:32.337+00:00,True,False,,,27500,False,0.1.2
+PivotalAnimal,2016-06-11T21:48:10.63Z,619,678,This package is a clone of the work done by the TwentyTwenty project. Entity Framework Core persistence layer for IdentityServer4,BlueConcord.IdentityServer.EntityFrameworkCore,True,2016-08-09T10:56:12.63-07:00,True,False,This package is a clone of the work done by the TwentyTwenty project.,"IdentityServer,OpenID,Connect,OpenIDConnect,OAuth2,ASP.NET,WebAPI,SSO,EntityFramework,EF,Claims,Identity,Federation,2020",4398,False,1.0.8-alpha
+Allan Chadwick,2016-06-11T21:43:48.18Z,371,678,A simple .net retry library.,TreadMill,False,2017-04-14T05:36:06.17+00:00,True,False,,"Retry,C#,Transient,Fault",456,False,1.0.0
+Allan Chadwick,2016-06-11T21:43:48.18Z,371,678,A simple .net retry library.,TreadMill,False,2017-04-14T05:36:06.17+00:00,True,False,,"Retry,C#,Transient,Fault",456,False,1.0.0
+Mert Basaranlar,2016-06-11T21:41:10.37Z,43209,678,Contentter.Core Helpers and BaseResponses,Contentter.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Mert Basaranlar,2016-06-11T21:41:10.37Z,43209,678,Contentter.Core Helpers and BaseResponses,Contentter.Core,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+"Step Up Labs,Inc.",2016-06-11T21:35:26.12Z,15,678,Simple wrapper on top of Firebase Realtime Database REST API. Among others it supports streaming API which you can use for realtime notifications.,FirebaseDatabase.net,False,2018-04-05T22:59:53.547+00:00,True,False,,"Firebase,Database,Realtime",30634,False,1.1.3
+Bar Arnon,2016-06-11T21:28:21.4Z,277,678,A thread-safe hash-based unique collection,ConcurrentHashSet,False,2017-07-17T13:53:32.337+00:00,True,False,,,27500,False,0.1.1
+TakinosaJi,2016-06-11T21:19:33.143Z,427,678,Framework for scalable and productive automated web UI testing,TestUnium,True,2017-02-17T12:43:48.38-08:00,True,False,,"testing,selenium",4239,False,1.0.0-pre-07
+"Scott Keith Thomas,Jr.",2016-06-11T21:19:15.413Z,671,678,ConsoleObjects is a framework for creating test user interface (TUI) applications.,ConsoleObjects,False,2016-06-18T21:41:41.28+00:00,True,False,,ConsoleObjects,2705,False,1.0.0
+iharbury,2016-06-11T21:11:51.88Z,678,678,Misc. C# algorithms to be used in competitions and other projects,IharBury.Algorithms,False,2016-06-11T14:11:51.88-07:00,True,False,,,1465,False,1.0.6006.41740
+"Ross McKinlay,Colin Bull",2016-06-11T21:08:58.377Z,4,678,Type providers for SQL database access.,SQLProvider,False,2018-04-16T19:20:53.603+00:00,True,False,Type providers for SQL database access.,"F#,fsharp,typeprovider,sql,sqlserver",47463,False,1.0.13
+"fr34kyn01535,SDGNelson",2016-06-11T21:03:44.163Z,4,678,Unity3D Game Server Mod,Rocket.Unturned,False,2018-04-16T00:06:25.62+00:00,True,False,,"Unturned3,Rocket,Mod,Unity3D",4694,False,4.9.6
+Jason Mitchell,2016-06-11T21:01:18.573Z,627,678,OWIN middleware for creating a customisable command processing pipeline in CQRS applications,Sequin.Owin,True,2016-08-01T12:34:54.72-07:00,True,False,,"CQRS,OWIN,Sequin",2377,False,0.5.184-sequin-owin
+Jason Mitchell,2016-06-11T21:01:13Z,627,678,OWIN middleware for creating a customisable command processing pipeline in CQRS applications,Sequin,True,2016-08-01T12:34:48.217-07:00,True,False,,"CQRS,OWIN,Sequin",9758,False,0.5.184-sequin-owin
+mjsabby,2016-06-11T20:59:30.78Z,662,678,Do not use - used by me and a few others for a prototype,TraceEventCore,False,2016-06-26T19:25:19.67-07:00,True,False,,,582,False,1.0.41
+Samuel Kamber,2016-06-11T20:55:49.06Z,43209,678,A .Net  4.5 library for interacting with Stack Exchange chat. (Supports Mono.),ChatExchange.Net,True,1900-01-01T00:00:00+00:00,False,False,A .Net  4.5 library for interacting with Stack Exchange chat. (Supports Mono.),,-1,False,5.3.2-beta
+Elias Balasis (eliasbalasis@gmail.com),2016-06-11T20:54:57.77Z,43209,678,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606111953
+Elias Balasis (eliasbalasis@gmail.com),2016-06-11T20:45:26.803Z,43209,678,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606111944
+TraceEventReferenceAssembly,2016-06-11T20:47:50.63Z,678,678,Do not use - only a compilation assembly,TraceEventReferenceAssembly,False,2016-06-11T13:47:50.63-07:00,True,False,,,183,False,1.0.41
+wrongite,2016-06-10T19:46:13.467Z,679,679,String Expander Library for .NET,WrLib.Utils.StringExpander,False,2016-06-10T19:46:13.467+00:00,True,False,,"string,expander,utils",371,False,1.0.1
+Elias Balasis (eliasbalasis@gmail.com),2016-06-11T18:53:35.047Z,43209,678,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606111951
+Elias Balasis (eliasbalasis@gmail.com),2016-06-11T20:45:26.803Z,43209,678,Connectivity API for Finance Trading Platform. Contact owner for more information,finance.trading.platform.client.connectivity,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.14.3-Z201606111944
+Silvenga,2016-06-11T20:41:44.44Z,629,678,Portability components for Rocket.Chat.Net,Rocket.Chat.Net.Portability,True,2016-07-29T21:04:49.84-07:00,True,False,,Rocket.Chat,1655,False,0.2.218-pre
+Silvenga,2016-06-11T20:41:36.523Z,629,678,"A Rocket.Chat realtime, managed .Net driver.",Rocket.Chat.Net,True,2016-07-29T21:04:40.553-07:00,True,False,,Rocket.Chat,5788,False,0.2.218-pre
+Silvenga,2016-06-11T20:41:27.827Z,629,678,"A Rocket.Chat realtime, managed .Net bot.",Rocket.Chat.Net.Bot,True,2016-07-29T21:04:32.473-07:00,True,False,,Rocket.Chat,2122,False,0.2.218-pre
+"Scott Keith Thomas,Jr.",2016-06-11T20:37:17.88Z,671,678,ExtensibleServiceProcess is a library to support an extensible service application.,ExtensibleServiceProcess,False,2016-06-17T18:07:58.43-07:00,True,False,,ExtensibleServiceProcess,4916,False,1.0.0
+Anatoliy Koperin,2016-06-11T20:34:32.91Z,191,678,"C# library for convenient operation with configurations of one or groups of applications. The library supports work with standard XML configurations and  included files in format of XML, JSON, or the INI.",NConfiguration,False,2017-10-11T20:59:18.717+00:00,True,False,,"configuration,config,admin,reload",2476,False,2.1.0
+CheersTeam,2016-06-11T20:28:25.63Z,578,678,Cheers StructureMap Container,Cheers.Container.StructureMap,False,2016-09-19T08:23:02.24+00:00,True,False,,"Cheers,StructureMap,Container",762,False,1.0.0
+TakinosaJi,2016-06-11T20:28:18.57Z,427,678,Framework for scalable and productive automated web UI testing,TestUnium,True,2017-02-17T12:43:48.38-08:00,True,False,,"testing,selenium",4239,False,1.0.0-pre-06
+Vsevolod Konkov,2016-06-11T20:16:35.563Z,339,678,Vanessa Sharp - .Net library for data access to 1C:Enterprise. Supports standard software interfaces for data access. Vanessa Sharp contains 1C ADO.Net Provider and LinqTo1C (LINQ Provider).,VanessaSharp,False,2017-05-16T15:34:17.367-07:00,True,False,Vanessa Sharp - .Net library for data access to 1C:Enterprise. Supports standard software interfaces for data access. Vanessa Sharp contains 1C ADO.Net Provider and LinqTo1C (LINQ Provider).,"1С,ADO.Net,LINQ",1428,False,0.3.1
+Bar Arnon,2016-06-11T20:11:52.66Z,277,678,A thread-safe hash-based unique collection,ConcurrentHashSet,False,2017-07-17T13:53:32.337+00:00,True,False,,,27500,False,0.1.0
+Jason Mitchell,2016-06-11T20:12:15.92Z,627,678,OWIN middleware for creating a customisable command processing pipeline in CQRS applications,Sequin,True,2016-08-01T12:34:48.217-07:00,True,False,,"CQRS,OWIN,Sequin",9758,False,0.5.183-sequin-owin
+Jason Mitchell,2016-06-11T20:12:21.177Z,627,678,OWIN middleware for creating a customisable command processing pipeline in CQRS applications,Sequin.Owin,True,2016-08-01T12:34:54.72-07:00,True,False,,"CQRS,OWIN,Sequin",2377,False,0.5.183-sequin-owin
+Bar Arnon,2016-06-11T20:11:52.66Z,277,678,A thread-safe hash-based unique collection,ConcurrentHashSet,False,2017-07-17T13:53:32.337+00:00,False,False,,,27500,False,0.1.0
+Bar Arnon,2016-06-11T20:11:52.66Z,277,678,A thread-safe hash-based unique collection,ConcurrentHashSet,False,2017-07-17T13:53:32.337+00:00,False,False,,,27500,False,0.1.0
+Paul Louth,2016-06-11T20:08:48.177Z,4,678,"This library uses and abuses the features of C# 6 to provide a functional 'Base class library', that, if you squint, can look like extensions to the language itself. It also includes an 'Erlang like' process system (actors) that can optionally persist messages and state to Redis (note you can use it without Redis for in-app messaging). The process system additionally supports Rx streams of messages and state allowing for a complete system of reactive events and message dispatch.",LanguageExt.Core,True,2018-04-16T22:40:27.993+00:00,True,False,"Lst<T> - Immutable list
+Map<K,V> - Immutable map
+Set<T> - Immutable set
+Que<T> - Immutable queue
+Stck<T> - Immutable stack
+Option<T>
+OptionUnsafe<T> - Option monad that can be used with null values
+Either<L,R>
+EitherUnsafe<L,R> - Right/Left choice monad that can be used with null values
+Try<T> - Exception catching monad
+TryOption<T> - Option monad with third state 'Fail' that catches exceptions
+Reader<E,T> - Reader monad
+Writer<O,T> - Writer monad
+State<S,T> - State monad
+Rws<E,O,S,T> - Reader/Writer/State monad
+Monad transformers - A higher kinded type (ish)
+Process library - Actor system. The same as Erlang processes for massive concurrency with state management.
+Redis persistence - Persistence of the Process system message-queues and state, for robustness and inter-app communication.
+Currying - Partial application - Memoization - Improved lambda type inference - var add = fun( (int x, int y) => x + y)
+IObservable<T> extensions
+Bifunctors
+Bitraversables
+Bifoldables","C#,Functional,Language,Extension,Monad,Option,Either,Reader,Writer,State,List,Set,Map,Queue,Memo,Memoization,Immutable,Lambda,Pattern,Matching,Tuple,Actor,Process,Akka,Redis",165224,False,1.8.17-beta
+Gmich,2016-06-11T20:07:15.437Z,309,678,A lightweight functional results library for synchronous chained code execution.,Gmich.Results,False,2017-06-15T02:36:57.643-07:00,True,False,,"result,functional,gmich",530,False,1.0.0
+Johan Polson,2016-06-11T17:23:14.367Z,43209,678,Jaon Configuration Manager is a small library to instantiate objects from JSON files.,JaonConfigurationManager,False,1900-01-01T00:00:00+00:00,False,False,Jaon Configuration Manager is a small library to instantiate objects from JSON files.,,-1,False,1.1.1
+Mem,2016-06-11T20:01:39.763Z,568,678,SignalR based host for PlainValley.Messaging framework.,PlainValley.Messaging.SignalR,False,2016-09-29T13:22:07.297-07:00,True,False,,,1605,False,2.0.16163.5
+Mem,2016-06-11T20:01:23.72Z,568,678,This framework is base for online game development. Enables you design your game with specified model and then host it. This library is based on PlainValley.Messaging framework.,PlainValley.Games,False,2016-09-29T13:21:41.017-07:00,True,False,,,1879,False,2.0.16163.5
+Mem,2016-06-11T20:01:31.843Z,568,678,"Framework that enables owin-like pipeline for SignalR applications. For hosting may be used any library with PlainValley.Games support, for example PlainValley.Messaging.Hosting.SignalR (for hosting within SignalR environment)",PlainValley.Messaging,False,2016-09-29T13:21:49.573-07:00,True,False,,,1637,False,2.0.16163.5
+Titanium,2016-06-11T20:00:43.74Z,1,678,Titanium is a light weight web proxy.,Titanium.Web.Proxy,False,2018-04-19T12:54:39.483+00:00,True,False,,,44797,False,2.3000.150
+TakinosaJi,2016-06-11T19:59:57.59Z,427,678,Framework for scalable and productive automated web UI testing,TestUnium,True,2017-02-17T12:43:48.38-08:00,True,False,,"testing,selenium",4239,False,1.0.0-pre-05
+Titanium,2016-06-11T19:56:40.387Z,1,678,Titanium is a light weight web proxy.,Titanium.Web.Proxy,False,2018-04-19T12:54:39.483+00:00,True,False,,,44797,False,2.3000.149
+vo.muzyka,2016-06-11T19:12:46.723Z,676,678,Easy and configurable way to work with scheduled operations,ProcessingOperations,False,2016-06-13T06:28:20.527-07:00,False,False,,,557,False,1.0.0
+vo.muzyka,2016-06-11T19:40:18.563Z,676,678,Easy and configurable way to work with scheduled operations,ProcessingOperations,False,2016-06-13T06:28:20.527-07:00,False,False,,,557,False,1.0.1
+vo.muzyka,2016-06-11T19:47:40.72Z,676,678,Easy and configurable way to work with scheduled operations,ProcessingOperations,False,2016-06-13T06:28:20.527-07:00,True,False,,,557,False,1.0.2
+Johan Polson,2016-06-11T17:23:14.367Z,43209,678,Jaon Configuration Manager is a small library to instantiate objects from JSON files.,JaonConfigurationManager,False,1900-01-01T00:00:00+00:00,False,False,Jaon Configuration Manager is a small library to instantiate objects from JSON files.,,-1,False,1.1.1
+Paul Louth,2016-06-11T19:43:47.167Z,521,678,"Javascript actor library component that works with LanguageExt.Process: A library that uses and abuses the features of C# 6 to provide a functional 'Base class library', that, if you squint, can look like extensions to the language itself. It also includes an 'Erlang like' process system (actors) that can optionally persist messages and state to Redis (note you can use it without Redis for in-app messaging). The process system additionally supports Rx streams of messages and state allowing for a complete system of reactive events and message dispatch.",LanguageExt.ProcessJS,True,2016-11-15T10:03:33.213-08:00,True,False,,"C#,Functional,javascript,js,Language,Extension,Monad,Option,Either,Reader,Writer,State,List,Set,Map,Queue,Memo,Memoization,Immutable,Lambda,Pattern,Matching,Tuple,Actor,Process,Akka,Redis",8240,False,1.8.17-beta
+Paul Louth,2016-06-11T19:43:07.313Z,521,678,"F# API for the LanguageExt.Process actor library component that works with LanguageExt.Core: A library that uses and abuses the features of C# 6 to provide a functional 'Base class library', that, if you squint, can look like extensions to the language itself. It also includes an 'Erlang like' process system (actors) that can optionally persist messages and state to Redis (note you can use it without Redis for in-app messaging). The process system additionally supports Rx streams of messages and state allowing for a complete system of reactive events and message dispatch.",LanguageExt.Process.FSharp,True,2016-11-15T10:03:09.01-08:00,True,False,,"F#,C#,Functional,Language,Extension,Monad,Option,Either,Reader,Writer,State,List,Set,Map,Queue,Memo,Memoization,Immutable,Lambda,Pattern,Matching,Tuple,Actor,Process,Akka,Redis",8177,False,1.8.17-beta
+Paul Louth,2016-06-11T19:43:26.993Z,521,678,"Actor library component that works with LanguageExt.Core and LanguageExt.Process: A library that uses and abuses the features of C# 6 to provide a functional 'Base class library', that, if you squint, can look like extensions to the language itself. It also includes an 'Erlang like' process system (actors) that can optionally persist messages and state to Redis (note you can use it without Redis for in-app messaging). The process system additionally supports Rx streams of messages and state allowing for a complete system of reactive events and message dispatch.",LanguageExt.Process.Redis,True,2016-11-15T18:03:21.353+00:00,True,False,,"C#,Functional,Language,Extension,Monad,Option,Either,Reader,Writer,State,List,Set,Map,Queue,Memo,Memoization,Immutable,Lambda,Pattern,Matching,Tuple,Actor,Process,Akka,Redis",9685,False,1.8.17-beta
+Paul Louth,2016-06-11T19:40:07.95Z,521,678,"Actor library component that works with LanguageExt.Core: A library that uses and abuses the features of C# 6 to provide a functional 'Base class library', that, if you squint, can look like extensions to the language itself. It also includes an 'Erlang like' process system (actors) that can optionally persist messages and state to Redis (note you can use it without Redis for in-app messaging). The process system additionally supports Rx streams of messages and state allowing for a complete system of reactive events and message dispatch.",LanguageExt.Process,True,2016-11-15T18:02:22.567+00:00,True,False,,"C#,Functional,Language,Extension,Monad,Option,Either,Reader,Writer,State,List,Set,Map,Queue,Memo,Memoization,Immutable,Lambda,Pattern,Matching,Tuple,Actor,Process,Akka,Redis",10648,False,1.8.17-beta
+vo.muzyka,2016-06-11T19:40:18.563Z,676,678,Easy and configurable way to work with scheduled operations,ProcessingOperations,False,2016-06-13T06:28:20.527-07:00,True,False,,,557,False,1.0.1
+wrongite,2016-06-10T19:46:13.467Z,679,679,String Expander Library for .NET,WrLib.Utils.StringExpander,False,2016-06-10T19:46:13.467+00:00,True,False,,"string,expander,utils",371,False,1.0.1
+TIDASOFT,2016-06-11T19:39:10.98Z,67,678,"This component adds support for Mystere to delegate its build and complete operations to a injection strategy configured as an XML variable in the Keystone Quantum XML based component.
+
+Mystere is a lightweight dependency injector that builds and completes your objects behind the scene. Its fast execution is closely related to the fact that minimizes the use of reflexion and favors configurable build and complete rules written in plain old code.
+
+KEYSTONE is a modern, multi-paradigm, data-centric software development framework. Visit http://www.keystoneframework.com for more details.",Keystone.Mystere.Quantum.Xml,True,2018-02-12T06:14:28.48+00:00,True,False,,,5778,False,1.0.36-RC9
+TIDASOFT,2016-06-11T19:39:16.37Z,67,678,"Your software live a long and happy life when you decouple very stable components from others that holds ever changing business requirements.
+
+Mystere is a lightweight dependency injector that builds and completes your objects behind the scene. Its fast execution is closely related to the fact that minimizes the use of reflexion and favors configurable build and complete rules written in plain old code.
+
+KEYSTONE is a modern, multi-paradigm, data-centric software development framework. Visit http://www.keystoneframework.com for more details.",Keystone.Mystere,True,2018-02-12T06:13:31.79+00:00,True,False,,,11656,False,1.0.36-RC9
+TIDASOFT,2016-06-11T19:39:21.81Z,67,678,"This component adds support for Quantum to delegate its variable decryption requests to an encryption strategy based in the Keystone Enigma development library.
+
+Quantum is a configuration provider that feeds each of your component with its own variables kept on its own configuration media. This way you can be sure the configurations will always follow it's owner component no matter if it was developed for desktop and is reused in web or console.
+
+KEYSTONE is a modern, multi-paradigm, data-centric software development framework. Visit http://www.keystoneframework.com for more details.",Keystone.Quantum.Enigma,True,2018-02-12T06:12:59.46+00:00,True,False,,,5609,False,1.0.36-RC9
+TIDASOFT,2016-06-11T19:39:16.543Z,67,678,"KEYSTONE is a modern, multi-paradigm, data-centric software development framework.
+
+This component includes foundation classes as well as Keystone Polaris and Keystone Enigma development libraries.
+
+Polaris has many ready to use extensions and lambda friendly behaviors like map - reductions, comparisons, chainers, iterators and more, let you implement complex algorithms in a clear, brief but surprisingly expressive and lightning fast fashion.
+
+Enigma simplifies the use of the most popular and recurrent cryptographic operations and algorithms like hashing with SHA256 or encrypting/decrypting with RSA15 and X509 certificates.
+
+Visit http://www.keystoneframework.com for more details.",Keystone,True,2018-02-12T06:13:11.557+00:00,True,False,,,11773,False,1.0.36-RC9
+TIDASOFT,2016-06-11T19:39:27.94Z,67,678,"This component adds support for Quantum to read its variables from elements stored into XML files.
+
+Quantum is a configuration provider that feeds each of your component with its own variables kept on its own configuration media. This way you can be sure the configurations will always follow it's owner component no matter if it was developed for desktop and is reused in web or console.
+
+KEYSTONE is a modern, multi-paradigm, data-centric software development framework. Visit http://www.keystoneframework.com for more details.",Keystone.Quantum.Xml,True,2018-02-12T06:13:00.523+00:00,True,False,,,5708,False,1.0.36-RC9
+TIDASOFT,2016-06-11T19:39:10.59Z,67,678,"KEYSTONE philosophy favors the creation of loosely coupled components.
+
+Quantum is a configuration provider that feeds each of your component with its own variables kept on its own configuration media. This way you can be sure the configurations will always follow it's owner component no matter if it was developed for desktop and is reused in web or console.
+
+KEYSTONE is a modern, multi-paradigm, data-centric software development framework. Visit http://www.keystoneframework.com for more details.",Keystone.Quantum,True,2018-02-12T06:13:25.273+00:00,True,False,,,11764,False,1.0.36-RC9

@@ -1,0 +1,1003 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+Takenet,2016-11-24T17:33:41.75Z,172,512,Messaging Hub Client Host,Takenet.MessagingHub.Client.Host,False,2017-10-30T18:02:28.187+00:00,True,False,A host implementation to run libraries that use the Messaging Hub Client,messagingHub,48645,False,0.4.51
+takenet,2016-11-24T17:33:32.703Z,172,512,The C# SDK for the Messaging Hub,Takenet.MessagingHub.Client,False,2017-10-30T18:02:16.577+00:00,True,False,,"lime,messaginghub",78198,False,0.4.51
+MikaelGRA,2016-11-24T17:31:39.28Z,71,512,Provides an implementation of IDependencyResolver implemented using Unity.,Vibrant.QuerySearch.Unity,False,2018-02-08T18:37:33.72+00:00,True,False,,"queryable,unity",1574,False,4.0.0
+MikaelGRA,2016-11-24T17:30:51.11Z,71,512,Provides IQueryable extensions for easily working with filtering and pagination.,Vibrant.QuerySearch,False,2018-02-08T18:37:13.457+00:00,True,False,,"queryable,entity-framework",6188,False,4.0.0
+MikaelGRA,2016-11-24T17:31:08.58Z,71,512,Provides an asynchronous operations over the original Vibrant.QuerySearch library.,Vibrant.QuerySearch.EntityFramework,False,2018-02-08T18:38:16.957+00:00,True,False,,"queryable,entity-framework",1620,False,4.0.0
+MikaelGRA,2016-11-24T17:31:25.53Z,71,512,Provides an asynchronous operations over the original Vibrant.QuerySearch library.,Vibrant.QuerySearch.EntityFrameworkCore,False,2018-02-08T18:38:37.537+00:00,True,False,,"queryable,entity-framework",3700,False,4.0.0
+CARTO,2016-11-24T17:32:26.313Z,3,512,CARTO Maps SDK for Android,CartoMobileSDK.Android,True,2018-04-17T14:35:22.64+00:00,True,False,"Advanced cross-platform Maps library with offline vector tiles, GIS and 3D features",,19264,False,4.0.0-pre-180
+CARTO,2016-11-24T17:32:04.843Z,3,512,CARTO Maps SDK for iOS,CartoMobileSDK.iOS,True,2018-04-17T14:35:10.53+00:00,True,False,"Advanced cross-platform Maps library with offline vector tiles, GIS and 3D features",,18284,False,4.0.0-pre-180
+MikaelGRA,2016-11-24T17:31:39.28Z,71,512,Provides an implementation of IDependencyResolver implemented using Unity.,Vibrant.QuerySearch.Unity,False,2018-02-08T18:37:33.72+00:00,True,False,,"queryable,unity",1574,False,4.0.0
+MikaelGRA,2016-11-24T17:31:25.53Z,71,512,Provides an asynchronous operations over the original Vibrant.QuerySearch library.,Vibrant.QuerySearch.EntityFrameworkCore,False,2018-02-08T18:38:37.537+00:00,True,False,,"queryable,entity-framework",3700,False,4.0.0
+MikaelGRA,2016-11-24T17:30:51.11Z,71,512,Provides IQueryable extensions for easily working with filtering and pagination.,Vibrant.QuerySearch,False,2018-02-08T18:37:13.457+00:00,True,False,,"queryable,entity-framework",6188,False,4.0.0
+MikaelGRA,2016-11-24T17:31:08.58Z,71,512,Provides an asynchronous operations over the original Vibrant.QuerySearch library.,Vibrant.QuerySearch.EntityFramework,False,2018-02-08T18:38:16.957+00:00,True,False,,"queryable,entity-framework",1620,False,4.0.0
+Daniel Cazzulino,2016-11-24T17:19:18.58Z,58,512,"Exposes the following information for use directly from MSBuild, C# and VB:
+  $(GitBranch), ThisAssembly.Git.Branch
+  $(GitCommit), ThisAssembly.Git.Commit
+  $(GitSha), ThisAssembly.Git.Sha
+  $(GitBaseVersionMajor), ThisAssembly.Git.BaseVersion.Major
+  $(GitBaseVersionMinor), ThisAssembly.Git.BaseVersion.Minor
+  $(GitBaseVersionPatch), ThisAssembly.Git.BaseVersion.Patch
+  $(GitCommits), ThisAssembly.Git.Commits
+  $(GitTag), ThisAssembly.Git.Tag
+  $(GitBaseTag), ThisAssembly.Git.BaseTag
+  $(GitSemVerMajor), ThisAssembly.Git.SemVer.Major
+  $(GitSemVerMinor), ThisAssembly.Git.SemVer.Minor
+  $(GitSemVerPatch), ThisAssembly.Git.SemVer.Patch
+  $(GitSemVerLabel), ThisAssembly.Git.SemVer.Label
+  $(GitSemVerDashLabel), ThisAssembly.Git.SemVer.DashLabel
+  $(GitSemVerSource), ThisAssembly.Git.SemVer.Source
+
+The generated code contains only constants, so it can be used to construct your own assembly/file version attributes:
+
+[assembly: AssemblyVersion(ThisAssembly.Git.SemVer.Major + ""."" + ThisAssembly.Git.SemVer.Minor + "".0"")] 
+[assembly: AssemblyInformationalVersion(ThisAssembly.Git.SemVer.Major + ""."" + 
+	ThisAssembly.Git.SemVer.Minor + ""."" + ThisAssembly.Git.SemVer.Patch + ""-"" + 
+	ThisAssembly.Git.Branch + ""+"" + ThisAssembly.Git.Commit)]",GitInfo,False,2018-02-21T13:01:34.56+00:00,False,False,"Access commit information from MSBuild and C#/VB code, and infer SemVer from branch, tag or version file in Git repository.","MSBuild,Git,Versioning,GitVersion,GitFlowVersion,GitFlow,GitHubFlow,SemVer",97388,False,1.1.33
+Daniel Cazzulino,2016-09-27T21:32:13.403Z,58,570,"Exposes the following information for use directly from MSBuild, C# and VB:
+  $(GitBranch), ThisAssembly.Git.Branch
+  $(GitCommit), ThisAssembly.Git.Commit
+  $(GitSha), ThisAssembly.Git.Sha
+  $(GitBaseVersionMajor), ThisAssembly.Git.BaseVersion.Major
+  $(GitBaseVersionMinor), ThisAssembly.Git.BaseVersion.Minor
+  $(GitBaseVersionPatch), ThisAssembly.Git.BaseVersion.Patch
+  $(GitCommits), ThisAssembly.Git.Commits
+  $(GitTag), ThisAssembly.Git.Tag
+  $(GitBaseTag), ThisAssembly.Git.BaseTag
+  $(GitSemVerMajor), ThisAssembly.Git.SemVer.Major
+  $(GitSemVerMinor), ThisAssembly.Git.SemVer.Minor
+  $(GitSemVerPatch), ThisAssembly.Git.SemVer.Patch
+  $(GitSemVerLabel), ThisAssembly.Git.SemVer.Label
+  $(GitSemVerDashLabel), ThisAssembly.Git.SemVer.DashLabel
+  $(GitSemVerSource), ThisAssembly.Git.SemVer.Source
+
+The generated code contains only constants, so it can be used to construct your own assembly/file version attributes:
+
+[assembly: AssemblyVersion(ThisAssembly.Git.SemVer.Major + ""."" + ThisAssembly.Git.SemVer.Minor + "".0"")] 
+[assembly: AssemblyInformationalVersion(ThisAssembly.Git.SemVer.Major + ""."" + 
+	ThisAssembly.Git.SemVer.Minor + ""."" + ThisAssembly.Git.SemVer.Patch + ""-"" + 
+	ThisAssembly.Git.Branch + ""+"" + ThisAssembly.Git.Commit)]",GitInfo,False,2018-02-21T13:01:34.56+00:00,False,False,"Access commit information from MSBuild and C#/VB code, and infer SemVer from branch, tag or version file in Git repository.","MSBuild,Git,Versioning,GitVersion,GitFlowVersion,GitFlow,GitHubFlow,SemVer",97388,False,1.1.32
+Daniel Cazzulino,2016-11-24T17:28:43.39Z,58,512,"Exposes the following information for use directly from MSBuild, C# and VB:
+  $(GitBranch), ThisAssembly.Git.Branch
+  $(GitCommit), ThisAssembly.Git.Commit
+  $(GitSha), ThisAssembly.Git.Sha
+  $(GitBaseVersionMajor), ThisAssembly.Git.BaseVersion.Major
+  $(GitBaseVersionMinor), ThisAssembly.Git.BaseVersion.Minor
+  $(GitBaseVersionPatch), ThisAssembly.Git.BaseVersion.Patch
+  $(GitCommits), ThisAssembly.Git.Commits
+  $(GitTag), ThisAssembly.Git.Tag
+  $(GitBaseTag), ThisAssembly.Git.BaseTag
+  $(GitSemVerMajor), ThisAssembly.Git.SemVer.Major
+  $(GitSemVerMinor), ThisAssembly.Git.SemVer.Minor
+  $(GitSemVerPatch), ThisAssembly.Git.SemVer.Patch
+  $(GitSemVerLabel), ThisAssembly.Git.SemVer.Label
+  $(GitSemVerDashLabel), ThisAssembly.Git.SemVer.DashLabel
+  $(GitSemVerSource), ThisAssembly.Git.SemVer.Source
+
+The generated code contains only constants, so it can be used to construct your own assembly/file version attributes:
+
+[assembly: AssemblyVersion(ThisAssembly.Git.SemVer.Major + ""."" + ThisAssembly.Git.SemVer.Minor + "".0"")] 
+[assembly: AssemblyInformationalVersion(ThisAssembly.Git.SemVer.Major + ""."" + 
+	ThisAssembly.Git.SemVer.Minor + ""."" + ThisAssembly.Git.SemVer.Patch + ""-"" + 
+	ThisAssembly.Git.Branch + ""+"" + ThisAssembly.Git.Commit)]",GitInfo,False,2018-02-21T13:01:34.56+00:00,True,False,"Access commit information from MSBuild and C#/VB code, and infer SemVer from branch, tag or version file in Git repository.","MSBuild,Git,Versioning,GitVersion,GitFlowVersion,GitFlow,GitHubFlow,SemVer",97388,False,1.1.34
+"David Bond,Roland Banks",2016-11-24T17:26:19.277Z,1,512,A .NET API for LogicMonitor,LogicMonitor.Api,False,2018-04-19T11:32:27.577+00:00,True,False,A .NET API for LogicMonitor,,47044,False,1.2.10
+Teste.Nuget,2016-06-28T19:49:31.403Z,43209,661,Teste.Nuget,Teste.Nuget,False,1899-12-31T16:00:00-08:00,False,False,,,670,False,1.0.2
+Nepton,2016-11-24T17:23:23.55Z,43209,512,Profits Definition,ProfitsDefinition,False,1900-01-01T00:00:00+00:00,False,False,,"profits,tutuzou",-1,False,1.0.6172.31288
+Antoine-Ali Zarrouk,2016-11-24T17:21:52.19Z,333,512,A small utility library,Nuget.Side.Utils,False,2017-05-22T01:51:55.517-07:00,True,False,,"Utils,C#",1860,False,1.0.6172.23561
+Neomode.Iugu.Core.Integration,2016-11-24T17:21:14.737Z,60,512,Neomode.Iugu.Core.Integration,Neomode.Iugu.Core.Integration,False,2018-02-19T14:06:27.15+00:00,True,False,,,1805,False,1.0.1
+stop-cran,2016-11-24T17:19:35.847Z,294,512,-,CommitHash,False,2017-06-30T01:29:50.65-07:00,True,False,,Versioning,433,False,1.0.1
+Daniel Cazzulino,2016-11-24T17:19:18.58Z,58,512,"Exposes the following information for use directly from MSBuild, C# and VB:
+  $(GitBranch), ThisAssembly.Git.Branch
+  $(GitCommit), ThisAssembly.Git.Commit
+  $(GitSha), ThisAssembly.Git.Sha
+  $(GitBaseVersionMajor), ThisAssembly.Git.BaseVersion.Major
+  $(GitBaseVersionMinor), ThisAssembly.Git.BaseVersion.Minor
+  $(GitBaseVersionPatch), ThisAssembly.Git.BaseVersion.Patch
+  $(GitCommits), ThisAssembly.Git.Commits
+  $(GitTag), ThisAssembly.Git.Tag
+  $(GitBaseTag), ThisAssembly.Git.BaseTag
+  $(GitSemVerMajor), ThisAssembly.Git.SemVer.Major
+  $(GitSemVerMinor), ThisAssembly.Git.SemVer.Minor
+  $(GitSemVerPatch), ThisAssembly.Git.SemVer.Patch
+  $(GitSemVerLabel), ThisAssembly.Git.SemVer.Label
+  $(GitSemVerDashLabel), ThisAssembly.Git.SemVer.DashLabel
+  $(GitSemVerSource), ThisAssembly.Git.SemVer.Source
+
+The generated code contains only constants, so it can be used to construct your own assembly/file version attributes:
+
+[assembly: AssemblyVersion(ThisAssembly.Git.SemVer.Major + ""."" + ThisAssembly.Git.SemVer.Minor + "".0"")] 
+[assembly: AssemblyInformationalVersion(ThisAssembly.Git.SemVer.Major + ""."" + 
+	ThisAssembly.Git.SemVer.Minor + ""."" + ThisAssembly.Git.SemVer.Patch + ""-"" + 
+	ThisAssembly.Git.Branch + ""+"" + ThisAssembly.Git.Commit)]",GitInfo,False,2018-02-21T13:01:34.56+00:00,True,False,"Access commit information from MSBuild and C#/VB code, and infer SemVer from branch, tag or version file in Git repository.","MSBuild,Git,Versioning,GitVersion,GitFlowVersion,GitFlow,GitHubFlow,SemVer",97388,False,1.1.33
+stop-cran,2016-11-24T17:19:35.847Z,294,512,-,CommitHash,False,2017-06-30T01:29:50.65-07:00,True,False,,Versioning,433,False,1.0.1
+Vadim Zhogalskiy,2016-11-24T17:12:14.59Z,91,512,Light abstraction on top of MongoDB to provide basic message queue functionality.,MongoDBQueue,False,2018-01-19T13:09:39.56+00:00,True,False,Light abstraction on top of MongoDB to provide basic message queue functionality.,"MongoDB,message,queue",1975,False,1.0.15
+Vadim Zhogalskiy,2016-11-24T17:12:04.73Z,91,512,Light abstraction on top of MongoDB to provide basic message queue functionality (with legacy MongoDB driver).,MongoDBQueue.Legacy,False,2018-01-19T13:09:27.03+00:00,True,False,Light abstraction on top of MongoDB to provide basic message queue functionality (with legacy MongoDB driver).,"MongoDB,message,queue",2144,False,1.0.15
+Nidhi,2016-11-24T17:09:45.473Z,512,512,Package description,Testing_Nidhi,False,2016-11-24T09:09:45.473-08:00,True,False,,"Tag1,Tag2",386,False,1.0.2
+Nidhi,2016-11-24T17:07:31.94Z,512,512,Package description,Testing_Nidhi,False,2016-11-24T09:09:45.473-08:00,True,False,,"Tag1,Tag2",386,False,1.0.1
+Nidhi,2016-11-24T16:53:57.123Z,512,512,Package description,Testing_Nidhi,False,2016-11-24T09:09:45.473-08:00,False,False,,"Tag1,Tag2",386,False,1.0.0
+Matthew Rudolph,2016-11-24T17:00:49.523Z,511,512,Provides Noda Money support for NHibernate.,Dematt.Airy.Nhibernate.NodaMoney,True,2016-11-25T05:11:02.64-08:00,True,False,"NHibenrate Custom CompositeUserType implementations of the NodaMoney classes and structures.
+      Allows the use of the Noda Money classes and structures in Domain or POCO objects when using NHibernate for data access.","NodaMoney,NHibernate,Money,Noda,Airy",988,False,2.2.0-Beta10081
+Stone Pagamentos S/A,2016-11-24T17:01:03.443Z,477,512,Easy messaging queue management using RabbitMQ,Kyoo.Library.dll,False,2016-12-29T11:48:46.813-08:00,True,False,,RabbitMQ,1267,False,0.0.6
+Matthew Rudolph,2016-11-24T17:00:39.227Z,511,512,Provides Noda Time support for NHibernate.,Dematt.Airy.Nhibernate.NodaTime,True,2016-11-25T05:10:51.03-08:00,True,False,"NHibenrate Custom UserType and Custom CompositeUserType implementations of the NodaTime classes and structures.
+      Allows the use of the Noda Time classes and structures in Domain or POCO objects when using NHibernate for data access.","NodaTime,NHibernate,Noda,Airy",2291,False,2.2.0-Beta10081
+Matthew Rudolph,2016-11-24T17:00:58.367Z,511,512,"Provides helpful Custom User Types, Composite User Types, Mapper Helpers and Linq Extensions for NHibernate.
+      
+      - NHibernate Composite User Type for the DateTimeOffset struct:
+          Allows database such as SQLite that do not natively support the DateTimeOffset data type to store it in two separate columns one for the date and time and another for the offset.
+      
+      - Model Mapper static helper class:
+          Allows easy configuration of a mapper to apply the above DateTimeOffset Composite User Type to all properties that are of type DateTimeOffset.
+          Allows a mapper to be set to ignore abstract classes.
+      
+      - Linq extension that allows the use of object.IsNotNull() extension method to be mapped the native database is not null check when testing for child nullable entities.",Dematt.Airy.Nhibernate.Extensions,True,2016-11-25T05:11:12.687-08:00,True,False,"Provides helpful Custom User Types, Composite User Types, Mapper Helpers and Linq Extensions for NHibernate.
+
+      - NHibernate Composite User Type for the DateTimeOffset struct:
+      Allows database such as SQLite that do not natively support the DateTimeOffset data type to store it in two separate columns one for the date and time and another for the offset.
+
+      - Model Mapper static helper class:
+      Allows easy configuration of a mapper to apply the above DateTimeOffset Composite User Type to all properties that are of type DateTimeOffset.
+      Allows a mapper to be set to ignore of abstract classes.
+
+      - Linq extension that allows the use of object.IsNotNull() extension method to be mapped the native database is not null check when testing for child nullable entities.","NHibernate,Linq,DateTimeOffset,Extension",721,False,2.2.0-Beta10081
+Nidhi,2016-11-24T16:53:57.123Z,512,512,Package description,Testing_Nidhi,False,2016-11-24T09:09:45.473-08:00,True,False,,"Tag1,Tag2",386,False,1.0.0
+Thomas Carpe and Liquid Mercury Solutions,2016-11-24T16:54:35.72Z,192,512,Kraken is a battle tested library for developing SharePoint applications that's been around since before 2010 and is used in many projects. This package includes libraries for developing client applications (CSOM) including some non-SharePoint utilities designed to run in a partial trust policy and some that require full trust. This package includes those components which use use CSOM that can be referenced from a client or SharePoint provider hosted app.,Kraken.SharePoint.Client,False,2017-10-10T21:55:33.56+00:00,True,False,Developer library for creating SharePoint client (CSOM) projects and apps.,"SharePoint,Client,CSOM,Kraken,OfficeDevPnp,Office365",23188,False,0.2.12
+Lapiwe.Eventbus,2016-11-24T16:43:44.6Z,506,512,An eventbus implementation using RawRabbit on top of RabbitMQ,Lapiwe.Eventbus,False,2016-11-30T05:47:11.953-08:00,True,False,An eventbus implementation using RawRabbit on top of RabbitMQ,"WSA,Eventbus,Web,Scale,Architecture,RabbitMQ,RawRabbit",1264,False,0.2.3
+Lapiwe.Eventbus,2016-11-24T16:42:11.68Z,506,512,An eventbus implementation using RawRabbit on top of RabbitMQ,Lapiwe.Eventbus,False,2016-11-30T05:47:11.953-08:00,True,False,An eventbus implementation using RawRabbit on top of RabbitMQ,"WSA,Eventbus,Web,Scale,Architecture,RabbitMQ,RawRabbit",1264,False,0.2.2
+Lapiwe.Eventbus,2016-11-24T16:39:49.54Z,506,512,An eventbus implementation using RawRabbit on top of RabbitMQ,Lapiwe.Eventbus,False,2016-11-30T05:47:11.953-08:00,True,False,An eventbus implementation using RawRabbit on top of RabbitMQ,"WSA,Eventbus,Web,Scale,Architecture,RabbitMQ,RawRabbit",1264,False,0.2.1
+Lapiwe.Eventbus,2016-11-24T16:43:44.6Z,506,512,An eventbus implementation using RawRabbit on top of RabbitMQ,Lapiwe.Eventbus,False,2016-11-30T05:47:11.953-08:00,True,False,An eventbus implementation using RawRabbit on top of RabbitMQ,"WSA,Eventbus,Web,Scale,Architecture,RabbitMQ,RawRabbit",1264,False,0.2.3
+Xamarin Inc.,2016-11-24T16:43:42.617Z,37,512,"Xamarin.Android Bindings for Google Play Services - Wearable 9.6.1
+
+      You may also want to install the Xamarin.Android.Wear package if you are installing this.",Xamarin.GooglePlayServices.Wearable,False,2018-03-14T21:06:38.063+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Wearable 9.6.1,,45849,True,32.961.0
+Xamarin Inc.,2016-11-24T16:43:34.07Z,37,512,"Xamarin.Android Bindings for Google Play Services - Wallet 9.6.1
+
+      Android Pay enables simple and secure purchases of physical goods and services in Android apps, and eliminates the need to manually enter payment and shipping information. Integrate Android Pay to reach millions of signed-in Android users and drive higher conversions.",Xamarin.GooglePlayServices.Wallet,False,2018-03-14T21:06:23.987+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Wallet 9.6.1,,30665,True,32.961.0
+Xamarin Inc.,2016-11-24T16:43:25.867Z,37,512,"Xamarin.Android Bindings for Google Play Services - Vision 9.6.1
+
+      The Face API finds human faces in photos, videos, or live streams. It also finds and tracks positions of facial landmarks such as the eyes, nose, and mouth.
+
+      The API also provides information about the state of facial features -- are the subject's eyes open? Are they smiling? With these technologies, you can edit photos and video, enhance video feeds with effects and decorations, create hands-free controls for games and apps, or react when a person winks or smiles.
+
+      The Barcode Scanner API detects barcodes in real time in any orientation. You can also detect and parse several barcodes in different formats at the same time.",Xamarin.GooglePlayServices.Vision,False,2018-03-14T21:06:00.923+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Vision 9.6.1,,28598,True,32.961.0
+Xamarin Inc.,2016-11-24T16:43:17.94Z,37,512,Xamarin.Android Bindings for Google Play Services - Tasks 9.6.1,Xamarin.GooglePlayServices.Tasks,False,2018-03-14T21:05:48.08+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Tasks 9.6.1,,438489,True,32.961.0
+Xamarin Inc.,2016-11-24T16:43:08.8Z,37,512,Xamarin.Android Bindings for Google Play Services - TagManager API 9.6.1,Xamarin.GooglePlayServices.TagManager.Api,False,2018-03-14T21:05:21.233+00:00,True,False,Xamarin.Android Bindings for Google Play Services - TagManager API 9.6.1,,9257,True,32.961.0
+Xamarin Inc.,2016-11-24T16:43:01.44Z,37,512,Xamarin.Android Bindings for Google Play Services - TagManager 9.6.1,Xamarin.GooglePlayServices.TagManager,False,2018-03-14T21:05:09.157+00:00,True,False,Xamarin.Android Bindings for Google Play Services - TagManager 9.6.1,,9065,True,32.961.0
+Xamarin Inc.,2016-11-24T16:42:53.5Z,37,512,"Xamarin.Android Bindings for Google Play Services - SafetyNet 9.6.1
+
+      SafetyNet provides services for analyzing the configuration of a particular device, to make sure that apps function properly on a particular device and that users have a great experience.",Xamarin.GooglePlayServices.SafetyNet,False,2018-03-14T21:04:54.733+00:00,True,False,Xamarin.Android Bindings for Google Play Services - SafetyNet 9.6.1,,27484,True,32.961.0
+Xamarin Inc.,2016-11-24T16:42:44.673Z,37,512,"Xamarin.Android Bindings for Google Play Services - Plus 9.6.1
+
+      Create a more engaging experience and connect with more users by integrating social into your Android app.",Xamarin.GooglePlayServices.Plus,False,2018-03-14T21:04:41.967+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Plus 9.6.1,,80949,True,32.961.0
+Xamarin Inc.,2016-11-24T16:42:35.42Z,37,512,Xamarin.Android Bindings for Google Play Services - Places 9.6.1,Xamarin.GooglePlayServices.Places,False,2018-03-14T21:04:29.593+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Places 9.6.1,,21414,True,32.961.0
+Xamarin Inc.,2016-11-24T16:42:27.077Z,37,512,"Xamarin.Android Bindings for Google Play Services - Panorama 9.6.1
+
+      The Panorama API allows you to include a Panorama Viewer in your own applications.",Xamarin.GooglePlayServices.Panorama,False,2018-03-14T21:04:16.42+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Panorama 9.6.1,,26618,True,32.961.0
+Xamarin Inc.,2016-11-24T16:42:18.48Z,37,512,"Xamarin.Android Bindings for Google Play Services - Nearby 9.6.1
+
+      Nearby exposes simple publish and subscribe methods that rely on proximity. Your app publishes a payload that can be received by nearby subscribers. On top of this foundation, you can build a variety of user experiences to share messages and create real-time connections between nearby devices.",Xamarin.GooglePlayServices.Nearby,False,2018-03-14T21:03:52.043+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Nearby 9.6.1,,30392,True,32.961.0
+Lapiwe.Eventbus,2016-11-24T16:42:11.68Z,506,512,An eventbus implementation using RawRabbit on top of RabbitMQ,Lapiwe.Eventbus,False,2016-11-30T05:47:11.953-08:00,True,False,An eventbus implementation using RawRabbit on top of RabbitMQ,"WSA,Eventbus,Web,Scale,Architecture,RabbitMQ,RawRabbit",1264,False,0.2.2
+Xamarin Inc.,2016-11-24T16:42:09.743Z,37,512,"Xamarin.Android Bindings for Google Play Services - Maps 9.6.1
+
+      With the Google Maps Android API, you can add maps based on Google Maps data to your application. The API automatically handles access to Google Maps servers, data downloading, map display, and response to map gestures. You can also use API calls to add markers, polygons, and overlays to a basic map, and to change the user's view of a particular map area. These objects provide additional information for map locations, and allow user interaction with the map.",Xamarin.GooglePlayServices.Maps,False,2018-03-14T21:03:39.513+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Maps 9.6.1,,693983,True,32.961.0
+Xamarin Inc.,2016-11-24T16:42:01.51Z,37,512,"Xamarin.Android Bindings for Google Play Services - Location 9.6.1
+
+      One of the unique features of mobile applications is location awareness. Mobile users take their devices with them everywhere, and adding location awareness to your app offers users a more contextual experience. The location APIs available in Google Play services facilitate adding location awareness to your app with automated location tracking, geofencing, and activity recognition.",Xamarin.GooglePlayServices.Location,False,2018-03-14T21:03:25.827+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Location 9.6.1,,242794,True,32.961.0
+Xamarin Inc.,2016-11-24T16:41:44.98Z,37,512,Xamarin.Android Bindings for Google Play Services - IID 9.6.1,Xamarin.GooglePlayServices.Iid,False,2018-03-14T21:03:00.06+00:00,True,False,Xamarin.Android Bindings for Google Play Services - IID 9.6.1,,91630,True,32.961.0
+Xamarin Inc.,2016-11-24T16:41:53.26Z,37,512,Xamarin.Android Bindings for Google Play Services - InstantApps 9.6.1,Xamarin.GooglePlayServices.InstantApps,False,2018-03-14T21:03:13.183+00:00,True,False,Xamarin.Android Bindings for Google Play Services - InstantApps 9.6.1,,2353,True,32.961.0
+Developer Express Inc.,2016-11-24T16:41:42.447Z,4,512,"The blazing-fast DevExtreme HTML5 Data Grid, collection of high-performance data visualization widgets for all your business intelligence needs and a rich library of touch-enabled JavaScript widgets for use in your next web project.",DevExtreme.Web,False,2018-04-16T19:23:40.703+00:00,True,False,Create highly responsive web apps for touch-enabled devices and traditional desktops.,"DevExtreme,grid,datagrid,chart,gauge,javascript,visualization,HTML5,framework",76025,False,16.2.2
+Xamarin Inc.,2016-11-24T16:41:36.277Z,37,512,Xamarin.Android Bindings for Google Play Services - Identity 9.6.1,Xamarin.GooglePlayServices.Identity,False,2018-03-14T21:02:47.26+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Identity 9.6.1,,56950,True,32.961.0
+Xamarin Inc.,2016-11-24T16:41:28.18Z,37,512,"Xamarin.Android Bindings for Google Play Services - GCM 9.6.1
+
+      Google Cloud Messaging (GCM) is a free service that enables developers to send messages between servers and client apps. This includes downstream messages from servers to client apps, and upstream messages from client apps to servers.
+
+      For example, a lightweight downstream message could inform a client app that there is new data to be fetched from the server, as in the case of a ""new email"" notification. For use cases such as instant messaging, a GCM message can transfer up to 4kb of payload to the client app. The GCM service handles all aspects of queueing of messages and delivery to and from the target client app.",Xamarin.GooglePlayServices.Gcm,False,2018-03-14T21:02:35.12+00:00,True,False,Xamarin.Android Bindings for Google Play Services - GCM 9.6.1,,310736,True,32.961.0
+Developer Express Inc.,2016-11-24T16:41:26.15Z,4,512,PhoneJS contains everything you'll need to create native client applications using HTML5 and JavaScript with a single codebase and deliver solutions that target today's most popular smartphones and tablet devices.,PhoneJS,False,2018-04-16T19:23:16.95+00:00,True,False,DevExtreme Mobile - HTML5 JavaScript framework for smartphones and tablets,"DevExtreme,javascript,phonegap,mobile,HTML5,framework",14154,False,16.2.2
+Xamarin Inc.,2016-11-24T16:41:19.54Z,37,512,Xamarin.Android Bindings for Google Play Services - Gass 9.6.1,Xamarin.GooglePlayServices.Gass,False,2018-03-14T21:02:22.183+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Gass 9.6.1,,34536,True,32.961.0
+Developer Express Inc.,2016-11-24T16:41:13.667Z,4,512,"DevExtreme Web - Chart And Visualization - JavaScript Charting and Visualization library. From next-gen websites, to those targeting mobile devices, DevExtreme ships with a fully integrated collection of high-performance data visualization widgets for all your business intelligence needs.",ChartJS,False,2018-04-16T19:22:56.327+00:00,True,False,DevExtreme Web - Chart And Visualization - JavaScript Charting and Visualization library.,"DevExtreme,chart,gauge,javascript,visualization",43752,False,16.2.2
+Xamarin Inc.,2016-11-24T16:41:11.04Z,37,512,"Xamarin.Android Bindings for Google Play Services - Games 9.6.1
+
+      The Play Games SDK provides cross-platform Google Play games services that lets you easily integrate popular gaming features such as achievements, leaderboards, Saved Games, and real-time multiplayer in your tablet and mobile games.",Xamarin.GooglePlayServices.Games,False,2018-03-14T21:02:09.807+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Games 9.6.1,,33935,True,32.961.0
+Xamarin Inc.,2016-11-24T16:40:28.07Z,37,512,"Xamarin.Android Bindings for Google Play Services - Cast 9.6.1
+
+      The Google Cast SDK lets you extend your Android app to control a TV or sound system. It supports many media formats, protocols and codecs to ease integration.  Continuous playback is enabled by autoplay and queuing APIs and Game Manager APIs make Cast enabled gaming a breeze.",Xamarin.GooglePlayServices.Cast,False,2018-03-14T21:00:55.007+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Cast 9.6.1,,29445,True,32.961.0
+Xamarin Inc.,2016-11-24T16:40:19.1Z,37,512,"Xamarin.Android Bindings for Google Play Services - Basement 9.6.1
+
+      Instead of installing this package directly, install the specific package(s) you need.",Xamarin.GooglePlayServices.Basement,False,2018-03-14T21:00:40.99+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Basement 9.6.1 - do not install directly,,1083103,True,32.961.0
+Xamarin Inc.,2016-11-24T16:40:52.79Z,37,512,"Xamarin.Android Bindings for Google Play Services - Drive 9.6.1
+
+      With Drive now part of Android, integrating Drive services into your Android application has never been easier. With sync and offline support, we make it easier for you to focus on writing great apps. Simply read and write files and we’ll handle the details.",Xamarin.GooglePlayServices.Drive,False,2018-03-14T21:01:33.15+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Drive 9.6.1,,37421,True,32.961.0
+Xamarin Inc.,2016-11-24T16:40:36.243Z,37,512,Xamarin.Android Bindings for Google Play Services - Cast Framework 9.6.1,Xamarin.GooglePlayServices.Cast.Framework,False,2018-03-14T21:01:07.82+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Cast Framework 9.6.1,,3340,True,32.961.0
+Xamarin Inc.,2016-11-24T16:40:44.447Z,37,512,Xamarin.Android Bindings for Google Play Services - Clearcut 9.6.1,Xamarin.GooglePlayServices.Clearcut,False,2018-03-14T21:01:20.353+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Clearcut 9.6.1,,31457,True,32.961.0
+Xamarin Inc.,2016-11-24T16:40:10.68Z,37,512,"Xamarin.Android Bindings for Google Play Services - Base 9.6.1 - You should not install this package directly
+
+      Instead of installing this package directly, install the specific package(s) you need.",Xamarin.GooglePlayServices.Base,False,2018-03-14T21:00:23.897+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Base 9.6.1 - do not install directly,,1105455,True,32.961.0
+Xamarin Inc.,2016-11-24T16:41:01.76Z,37,512,"Xamarin.Android Bindings for Google Play Services - Fitness 9.6.1
+
+      Google Fit is an open platform that lets users control their fitness data, developers build smarter apps, and manufacturers focus on creating amazing devices.",Xamarin.GooglePlayServices.Fitness,False,2018-03-14T21:01:56.93+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Fitness 9.6.1,,37966,True,32.961.0
+Xamarin Inc.,2016-11-24T16:40:01.837Z,37,512,Xamarin.Android Bindings for Google Play Services - Awareness 9.6.1,Xamarin.GooglePlayServices.Awareness,False,2018-03-14T21:00:08.553+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Awareness 9.6.1,,3134,True,32.961.0
+Xamarin Inc.,2016-11-24T16:39:52.413Z,37,512,Xamarin.Android Bindings for Google Play Services - Auth Base 9.6.1,Xamarin.GooglePlayServices.Auth.Base,False,2018-03-14T20:59:55.973+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Auth Base 9.6.1,,46822,True,32.961.0
+Lapiwe.Eventbus,2016-11-24T16:39:49.54Z,506,512,An eventbus implementation using RawRabbit on top of RabbitMQ,Lapiwe.Eventbus,False,2016-11-30T05:47:11.953-08:00,True,False,An eventbus implementation using RawRabbit on top of RabbitMQ,"WSA,Eventbus,Web,Scale,Architecture,RabbitMQ,RawRabbit",1264,False,0.2.1
+Xamarin Inc.,2016-11-24T16:39:43.54Z,37,512,Xamarin.Android Bindings for Google Play Services - Auth 9.6.1,Xamarin.GooglePlayServices.Auth,False,2018-03-14T20:59:32.05+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Auth 9.6.1,,64679,True,32.961.0
+Xamarin Inc.,2016-11-24T16:39:31.1Z,37,512,"Xamarin.Android Bindings for Google Play Services - AppInvite 9.6.1
+
+      App Invites provide a powerful way to organically grow your app, user-to-user. Your users recommend your app to their friends using personalized, contextual invitations powered by Google. App Invites provide a great onboarding experience to your new users. Google optimizes your app install rates by reducing friction and using relevant context at every step of the user invitation flow.",Xamarin.GooglePlayServices.AppInvite,False,2018-03-14T20:59:18.333+00:00,True,False,Xamarin.Android Bindings for Google Play Services - AppInvite 9.6.1,,36438,True,32.961.0
+Xamarin Inc.,2016-11-24T16:39:22.663Z,37,512,"Xamarin.Android Bindings for Google Play Services - AppIndexing 9.6.1
+
+      App Indexing helps you get your app found in Google Search. Once your app is indexed, mobile users who search for content related to your app can see an install button to your Android app in Search results. This helps you increase your install base.",Xamarin.GooglePlayServices.AppIndexing,False,2018-03-14T20:59:06.38+00:00,True,False,Xamarin.Android Bindings for Google Play Services - AppIndexing 9.6.1,,226080,True,32.961.0
+Xamarin Inc.,2016-11-24T16:39:14.6Z,37,512,"Xamarin.Android Bindings for Google Play Services - Analytics Impl 9.6.1
+
+      The Google Analytics SDK for Android makes it easy for developers to collect user engagement data form their apps.",Xamarin.GooglePlayServices.Analytics.Impl,False,2018-03-14T20:58:53.05+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Analytics Impl 9.6.1,,53489,True,32.961.0
+Xamarin Inc.,2016-11-24T16:39:06.21Z,37,512,"Xamarin.Android Bindings for Google Play Services - Analytics 9.6.1
+
+      The Google Analytics SDK for Android makes it easy for developers to collect user engagement data form their apps.",Xamarin.GooglePlayServices.Analytics,False,2018-03-14T20:58:41.363+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Analytics 9.6.1,,184318,True,32.961.0
+Xamarin Inc.,2016-11-24T16:38:57.943Z,37,512,"Xamarin.Android Bindings for Google Play Services - Ads Lite 9.6.1
+
+      The Google Mobile Ads SDK is the latest generation in Google mobile advertising, featuring refined ad formats and streamlined APIs for access to mobile ad networks and advertising solutions. The SDK enables mobile app developers to maximize their monetization in native mobile apps.",Xamarin.GooglePlayServices.Ads.Lite,False,2018-03-14T20:58:28.173+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Ads Lite 9.6.1,,39935,True,32.961.0
+Xamarin Inc.,2016-11-24T16:38:49.79Z,37,512,"Xamarin.Android Bindings for Google Play Services - Ads 9.6.1
+
+      The Google Mobile Ads SDK is the latest generation in Google mobile advertising, featuring refined ad formats and streamlined APIs for access to mobile ad networks and advertising solutions. The SDK enables mobile app developers to maximize their monetization in native mobile apps.",Xamarin.GooglePlayServices.Ads,False,2018-03-14T20:58:15.453+00:00,True,False,Xamarin.Android Bindings for Google Play Services - Ads 9.6.1,,111213,True,32.961.0
+Xamarin Inc.,2016-11-24T16:38:41.74Z,37,512,Xamarin.Android Bindings for Firebase - Storage Common 9.6.1,Xamarin.Firebase.Storage.Common,False,2018-03-14T20:58:03.25+00:00,True,False,Xamarin.Android Bindings for Firebase - Storage Common 9.6.1,,5814,True,32.961.0
+Xamarin Inc.,2016-11-24T16:38:32.757Z,37,512,Xamarin.Android Bindings for Firebase - Storage 9.6.1,Xamarin.Firebase.Storage,False,2018-03-14T20:57:51.063+00:00,True,False,Xamarin.Android Bindings for Firebase - Storage 9.6.1,,5964,True,32.961.0
+Xamarin Inc.,2016-11-24T16:38:24.32Z,37,512,Xamarin.Android Bindings for Firebase - Messaging 9.6.1,Xamarin.Firebase.Messaging,False,2018-03-14T20:57:26.687+00:00,True,False,Xamarin.Android Bindings for Firebase - Messaging 9.6.1,,153171,True,32.961.0
+Xamarin Inc.,2016-11-24T16:38:16.477Z,37,512,Xamarin.Android Bindings for Firebase - Invites 9.6.1,Xamarin.Firebase.Invites,False,2018-03-14T20:57:13.81+00:00,True,False,Xamarin.Android Bindings for Firebase - Invites 9.6.1,,4933,True,32.961.0
+Xamarin Inc.,2016-11-24T16:38:07.977Z,37,512,Xamarin.Android Bindings for Firebase - Iid 9.6.1,Xamarin.Firebase.Iid,False,2018-03-14T20:57:02.53+00:00,True,False,Xamarin.Android Bindings for Firebase - Iid 9.6.1,,191580,True,32.961.0
+Xamarin Inc.,2016-11-24T16:37:59.82Z,37,512,Xamarin.Android Bindings for Firebase - Database Connection 9.6.1,Xamarin.Firebase.Database.Connection,False,2018-03-14T20:56:25.153+00:00,True,False,Xamarin.Android Bindings for Firebase - Database Connection 9.6.1,,11376,True,32.961.0
+Xamarin Inc.,2016-11-24T16:37:51.57Z,37,512,Xamarin.Android Bindings for Firebase - Database 9.6.1,Xamarin.Firebase.Database,False,2018-03-14T20:56:11.793+00:00,True,False,Xamarin.Android Bindings for Firebase - Database 9.6.1,,12286,True,32.961.0
+Xamarin Inc.,2016-11-24T16:37:43.88Z,37,512,Xamarin.Android Bindings for Firebase - Crash 9.6.1,Xamarin.Firebase.Crash,False,2018-03-14T20:55:59.433+00:00,True,False,Xamarin.Android Bindings for Firebase - Crash 9.6.1,,14828,True,32.961.0
+Xamarin Inc.,2016-11-24T16:37:36.007Z,37,512,Xamarin.Android Bindings for Firebase - Core 9.6.1,Xamarin.Firebase.Core,False,2018-03-14T20:55:47.387+00:00,True,False,Xamarin.Android Bindings for Firebase - Core 9.6.1,,28159,True,32.961.0
+Xamarin Inc.,2016-11-24T16:37:26.833Z,37,512,Xamarin.Android Bindings for Firebase - Config 9.6.1,Xamarin.Firebase.Config,False,2018-03-14T20:55:34.12+00:00,True,False,Xamarin.Android Bindings for Firebase - Config 9.6.1,,12250,True,32.961.0
+Xamarin Inc.,2016-11-24T16:37:18.74Z,37,512,Xamarin.Android Bindings for Firebase - Common 9.6.1 - You should not install this package directly,Xamarin.Firebase.Common,False,2018-03-14T20:55:21.73+00:00,True,False,Xamarin.Android Bindings for Firebase - Common 9.6.1 - do not install directly 9.6.1,,216091,True,32.961.0
+sfanuget scottcowan,2016-11-24T16:37:20.85Z,4,512,Provides types for the SFA.DAS.ApprenticeshipInfoService client service,SFA.DAS.Apprenticeships.Api.Types,True,2018-04-16T13:34:27.767+00:00,True,False,Types used for SFA.DAS.ApprenticeshipInfoService client service,,15134,False,0.9.137-prerelease
+sfanuget scottcowan,2016-11-24T16:37:11.93Z,43209,512,Provides a client layer to call the SFA.DAS.ApprenticeshipInfoService service,SFA.DAS.Apprenticeships.Api.Client,True,1900-01-01T00:00:00+00:00,False,False,Client layer for SFA.DAS.ApprenticeshipInfoService service,,18874,False,0.9.137-prerelease
+Xamarin Inc.,2016-11-24T16:37:10.193Z,512,512,Xamarin.Android Bindings for Firebase - Auth Module 9.6.1,Xamarin.Firebase.Auth.Module,False,2016-11-24T08:37:10.193-08:00,True,False,Xamarin.Android Bindings for Firebase - Auth Module 9.6.1,,3158,True,32.961.0
+Xamarin Inc.,2016-11-24T16:37:01.68Z,512,512,Xamarin.Android Bindings for Firebase - Auth Common 9.6.1,Xamarin.Firebase.Auth.Common,False,2016-11-24T08:37:01.68-08:00,True,False,Xamarin.Android Bindings for Firebase - Auth Common 9.6.1,,3111,True,32.961.0
+Xamarin Inc.,2016-11-24T16:36:53.193Z,37,512,Xamarin.Android Bindings for Firebase - Auth 9.6.1,Xamarin.Firebase.Auth,False,2018-03-14T20:55:09.183+00:00,True,False,Xamarin.Android Bindings for Firebase - Auth 9.6.1,,14082,True,32.961.0
+Xamarin Inc.,2016-11-24T16:36:45.1Z,37,512,Xamarin.Android Bindings for Firebase - Analytics Impl 9.6.1,Xamarin.Firebase.Analytics.Impl,False,2018-03-14T20:54:44.01+00:00,True,False,Xamarin.Android Bindings for Firebase - Analytics Impl 9.6.1,,92479,True,32.961.0
+Customer Analytics Technologies Inc,2016-11-24T16:36:45.82Z,125,512,"One click .NET API drop-in for data analytics solution to integrate real-time acquisition of CX data from customers, using multiple channels(mobile, tablet, paper, QR code, email, website, kiosk) to acquire, engage and analyse
+
+Features :
+- Capture customer sentiment on iPads and Android Tablets
+- Send your questionnaires by Email(Survey Token)
+- Add questionnaires to your website
+- Get responses from customers through their smartphones
+- Print paper questionnaires and feedback forms
+- Get notifications in Real-Time for quick service recovery
+- Measure Customer Satisfaction, NPS & Voice Of The Customer(VOC) Online
+- Post customer ratings live on your social media pages and website
+- Generate CX Analytics reports for customer data",CloudCherry.API,False,2017-12-16T07:18:29.013+00:00,True,False,"Integrate real-time acquisition of CX data from your customers, using 17+ different channels(mobile, tablet, paper, QR code, email, website, kiosk), Build CEM Journey Maps & more.","CX,CEM,customer,analytics,feedback,bigdata,delight,cloudcherry,survey,questionnaire,NPS,Net,Promoter,Score",2528,False,1.0.19
+Xamarin Inc.,2016-11-24T16:36:28.117Z,37,512,Xamarin.Android Bindings for Firebase - Ads 9.6.1,Xamarin.Firebase.Ads,False,2018-03-14T20:54:18.617+00:00,True,False,Xamarin.Android Bindings for Firebase - Ads 9.6.1,,5723,True,32.961.0
+Xamarin Inc.,2016-11-24T16:36:19.943Z,45,512,"Xamarin.Android Bindings for Android Wear Support and Wear Compat 9.6.1
+
+      Small, powerful devices, worn on the body. Useful information when you need it most. Intelligent answers to spoken questions. Tools to help reach fitness goals. Your key to a multiscreen world.
+
+      Android Wear extends the Android platform to a new generation of devices, with a user experience that's designed specifically for wearables.
+
+      This NuGet package contains bindings for both the Android Support Wearable and Wear Compat libraries.
+
+      You may also want to install the Xamarin.GooglePlayServices.Wearable package if you are installing this.",Xamarin.Android.Wear,False,2018-03-06T14:55:05.96+00:00,True,False,Xamarin.Android Bindings for Android Wear Support and Wear Compat 9.6.1,,66132,True,1.4.0
+Xamarin Inc.,2016-11-24T16:36:37.07Z,37,512,Xamarin.Android Bindings for Firebase - Analytics 9.6.1,Xamarin.Firebase.Analytics,False,2018-03-14T20:54:32.82+00:00,True,False,Xamarin.Android Bindings for Firebase - Analytics 9.6.1,,92673,True,32.961.0
+sfanuget scottcowan,2016-11-24T16:33:29.6Z,43209,512,Provides a client layer to call the SFA.DAS.ApprenticeshipInfoService service,SFA.DAS.Apprenticeships.Api.Client,True,1900-01-01T00:00:00+00:00,False,False,Client layer for SFA.DAS.ApprenticeshipInfoService service,,18874,False,0.9.136-prerelease
+sfanuget scottcowan,2016-11-24T16:33:38.363Z,4,512,Provides types for the SFA.DAS.ApprenticeshipInfoService client service,SFA.DAS.Apprenticeships.Api.Types,True,2018-04-16T13:34:27.767+00:00,True,False,Types used for SFA.DAS.ApprenticeshipInfoService client service,,15134,False,0.9.136-prerelease
+Grupo ACBr.Net,2016-11-24T16:29:46.783Z,6,512,Biblioteca para utilização do Sat,ACBr.Net.Sat,False,2018-04-14T20:10:21.607+00:00,True,False,,"ACBr,ACBr.Net,Automação,Comercial",1891,False,1.0.1.5
+Danny Arica Pesantes,2016-11-24T16:28:34.64Z,43209,512,Client for sending sms.,SafetyAuth.SmsClient,False,1899-12-31T16:00:00-08:00,False,False,,"mobile,sms,auth,token,application,webapi,mvc,lima,peru",-1,False,1.0.0.2
+Lapiwe.Eventbus,2016-11-24T16:25:22.647Z,506,512,An eventbus implementation using RawRabbit on top of RabbitMQ,Lapiwe.Eventbus,False,2016-11-30T05:47:11.953-08:00,True,False,An eventbus implementation using RawRabbit on top of RabbitMQ,"WSA,Eventbus,Web,Scale,Architecture,RabbitMQ,RawRabbit",1264,False,0.2.0
+Lapiwe.Eventbus,2016-11-24T16:25:22.647Z,506,512,An eventbus implementation using RawRabbit on top of RabbitMQ,Lapiwe.Eventbus,False,2016-11-30T05:47:11.953-08:00,True,False,An eventbus implementation using RawRabbit on top of RabbitMQ,"WSA,Eventbus,Web,Scale,Architecture,RabbitMQ,RawRabbit",1264,False,0.2.0
+JetBrains,2016-11-24T16:24:37.85Z,4,512,.NET unit test runner and code coverage tool.,JetBrains.dotCover.CommandLineTools,True,2018-04-16T13:00:38.043+00:00,True,False,,,244648,True,2016.3.20161124.94154-eap10
+JetBrains,2016-11-24T16:25:17.427Z,4,512,Standalone command line tools that enable running ReSharper inspections outside of Visual Studio,JetBrains.ReSharper.CommandLineTools,True,2018-04-16T13:01:28.437+00:00,True,False,,,158559,True,2016.3.20161124.94154-eap10
+JetBrains,2016-11-24T16:24:18.363Z,43209,512,JetBrains ReSharper SDK Internal Package Version 107.0.20161124.94842-eap10,JetBrains.ReSharper.SDK.Internal,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.94842-eap10
+JetBrains,2016-11-24T16:24:11.113Z,4,512,JetBrains ReSharper SDK Tests Package,JetBrains.ReSharper.SDK.Tests,True,2018-04-16T13:00:06.527+00:00,True,False,,"JetBrains,ReSharper,Plugin,SDK,Extension,Tests",36073,True,2016.3.20161124.94842-eap10
+JetBrains,2016-11-24T16:23:47.427Z,43209,512,JetBrains Platform Tests Framework Package Version 107.0.20161124.90159-eap10,JetBrains.Platform.Tests.Framework,True,1900-01-01T00:00:00+00:00,False,False,,,51764,True,107.0.20161124.90159-eap10
+JetBrains,2016-11-24T16:24:03.99Z,4,512,JetBrains ReSharper SDK Package,JetBrains.ReSharper.SDK,True,2018-04-16T12:59:54.54+00:00,True,False,,"JetBrains,ReSharper,Plugin,SDK,Extension",69163,True,2016.3.20161124.94842-eap10
+JetBrains,2016-11-24T16:23:56.003Z,43209,512,JetBrains Psi Features test Framework Package Version 107.0.20161124.90817-eap10,JetBrains.Psi.Features.test.Framework,True,1900-01-01T00:00:00+00:00,False,False,,,51304,True,107.0.20161124.90817-eap10
+JetBrains,2016-11-24T16:22:30.41Z,43209,512,JetBrains ReSharper src Package Version 107.0.20161124.91640-eap10,JetBrains.ReSharper.src,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91640-eap10
+JetBrains,2016-11-24T16:22:22.24Z,43209,512,JetBrains Psi Features TeamCity Src Package Version 107.0.20161124.91556-eap10,JetBrains.Psi.Features.TeamCity.Src,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91556-eap10
+JetBrains,2016-11-24T16:22:12.503Z,43209,512,JetBrains Psi Features Cpp Src Core Package Version 107.0.20161124.91531-eap10,JetBrains.Psi.Features.Cpp.Src.Core,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91531-eap10
+JetBrains,2016-11-24T16:21:55.253Z,43209,512,JetBrains Psi Features Cpp Src VisualStudio Package Version 107.0.20161124.91531-eap10,JetBrains.Psi.Features.Cpp.Src.VisualStudio,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91531-eap10
+JetBrains,2016-11-24T16:21:47.207Z,43209,512,JetBrains Psi Features UnitTesting Package Version 107.0.20161124.90817-eap10,JetBrains.Psi.Features.UnitTesting,True,1900-01-01T00:00:00+00:00,False,False,,,46564,True,107.0.20161124.90817-eap10
+JetBrains,2016-11-24T16:21:34.91Z,43209,512,JetBrains Psi Features Core Package Version 107.0.20161124.90817-eap10,JetBrains.Psi.Features.Core,True,1900-01-01T00:00:00+00:00,False,False,,,48885,True,107.0.20161124.90817-eap10
+JetBrains,2016-11-24T16:21:07.487Z,43209,512,JetBrains Psi Features Tasks Package Version 107.0.20161124.90817-eap10,JetBrains.Psi.Features.Tasks,True,1900-01-01T00:00:00+00:00,False,False,,,53066,True,107.0.20161124.90817-eap10
+JetBrains,2016-11-24T16:21:16.613Z,43209,512,JetBrains Psi Features VisualStudio Package Version 107.0.20161124.90817-eap10,JetBrains.Psi.Features.VisualStudio,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90817-eap10
+JetBrains,2016-11-24T16:20:56.83Z,43209,512,JetBrains Psi Features src Package Version 107.0.20161124.90817-eap10,JetBrains.Psi.Features.src,True,1900-01-01T00:00:00+00:00,False,False,,,55464,True,107.0.20161124.90817-eap10
+JetBrains,2016-11-24T16:20:31.143Z,43209,512,JetBrains Profiler Kernel Windows Native Core Package Version 107.0.20161124.91200-eap10,JetBrains.Profiler.Kernel.Windows.Native.Core,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91200-eap10
+JetBrains,2016-11-24T16:20:40.63Z,43209,512,JetBrains Psi Features SolutionBuilder Package Version 107.0.20161124.90817-eap10,JetBrains.Psi.Features.SolutionBuilder,True,1900-01-01T00:00:00+00:00,False,False,,,29870,True,107.0.20161124.90817-eap10
+JetBrains,2016-11-24T16:20:13.19Z,43209,512,JetBrains Profiler Kernel Windows Native Link Package Version 107.0.20161124.91200-eap10,JetBrains.Profiler.Kernel.Windows.Native.Link,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91200-eap10
+JetBrains,2016-11-24T16:20:05.83Z,43209,512,JetBrains Profiler VsIntegration Windows Package Version 107.0.20161124.91052-eap10,JetBrains.Profiler.VsIntegration.Windows,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91052-eap10
+JetBrains,2016-11-24T16:19:57.89Z,43209,512,JetBrains Profiler VsIntegration Core Package Version 107.0.20161124.91052-eap10,JetBrains.Profiler.VsIntegration.Core,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91052-eap10
+JetBrains,2016-11-24T16:19:49.97Z,43209,512,JetBrains Profiler Snapshot Package Version 107.0.20161124.91052-eap10,JetBrains.Profiler.Snapshot,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91052-eap10
+JetBrains,2016-11-24T16:19:42.267Z,43209,512,JetBrains Profiler Kernel Core Package Version 107.0.20161124.91052-eap10,JetBrains.Profiler.Kernel.Core,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91052-eap10
+JetBrains,2016-11-24T16:19:34.407Z,43209,512,JetBrains Profiler History WPF Package Version 107.0.20161124.91052-eap10,JetBrains.Profiler.History.WPF,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91052-eap10
+JetBrains,2016-11-24T16:19:26.14Z,43209,512,JetBrains Profiler History Core Package Version 107.0.20161124.91052-eap10,JetBrains.Profiler.History.Core,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91052-eap10
+JetBrains,2016-11-24T16:19:18.19Z,43209,512,JetBrains Profiler Editor Windows BehaviorModel Package Version 107.0.20161124.91052-eap10,JetBrains.Profiler.Editor.Windows.BehaviorModel,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91052-eap10
+JetBrains,2016-11-24T16:19:09.61Z,43209,512,JetBrains Profiler Editor Core Package Version 107.0.20161124.91052-eap10,JetBrains.Profiler.Editor.Core,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91052-eap10
+Woong Gyu La,2016-11-24T16:19:04.703Z,512,512,Visual C# Parallel Server/Client Engine,EpParallelSocket.cs,False,2016-11-24T08:19:04.703-08:00,True,False,,,311,False,1.0.1
+JetBrains,2016-11-24T16:18:53.83Z,43209,512,JetBrains Profiler Kernel Windows Engine Package Version 107.0.20161124.91052-eap10,JetBrains.Profiler.Kernel.Windows.Engine,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91052-eap10
+JetBrains,2016-11-24T16:19:01.58Z,43209,512,JetBrains Profiler Configurator Core Package Version 107.0.20161124.91052-eap10,JetBrains.Profiler.Configurator.Core,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91052-eap10
+JetBrains,2016-11-24T16:18:04.483Z,43209,512,JetBrains Platform Core Shell Package Version 107.0.20161124.85654-eap10,JetBrains.Platform.Core.Shell,True,1900-01-01T00:00:00+00:00,False,False,,,57390,True,107.0.20161124.85654-eap10
+JetBrains,2016-11-24T16:18:12.797Z,43209,512,JetBrains Profiler Configurator WPF Package Version 107.0.20161124.91052-eap10,JetBrains.Profiler.Configurator.WPF,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91052-eap10
+JetBrains,2016-11-24T16:18:29.877Z,43209,512,JetBrains Profiler Kernel CleanUp Package Version 107.0.20161124.91052-eap10,JetBrains.Profiler.Kernel.CleanUp,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91052-eap10
+JetBrains,2016-11-24T16:18:21.03Z,43209,512,JetBrains Profiler Editor Windows WPF Package Version 107.0.20161124.91052-eap10,JetBrains.Profiler.Editor.Windows.WPF,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91052-eap10
+JetBrains,2016-11-24T16:18:45.233Z,43209,512,JetBrains Profiler Kernel Windows Api Package Version 107.0.20161124.91052-eap10,JetBrains.Profiler.Kernel.Windows.Api,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91052-eap10
+JetBrains,2016-11-24T16:18:37.453Z,43209,512,JetBrains Profiler Kernel InternalLauncher Package Version 107.0.20161124.91052-eap10,JetBrains.Profiler.Kernel.InternalLauncher,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91052-eap10
+JetBrains,2016-11-24T16:17:45.47Z,43209,512,Empty package for JetBrains products semantic root.,Wave,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,7.0.0-eap10
+JetBrains,2016-11-24T16:17:37.093Z,43209,512,JetBrains Platform Core Ide Package Version 107.0.20161124.90159-eap10,JetBrains.Platform.Core.Ide,True,1900-01-01T00:00:00+00:00,False,False,,,53923,True,107.0.20161124.90159-eap10
+JetBrains,2016-11-24T16:17:25.687Z,43209,512,JetBrains Platform VisualStudio Package Version 107.0.20161124.90159-eap10,JetBrains.Platform.VisualStudio,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90159-eap10
+JetBrains,2016-11-24T16:17:16.483Z,43209,512,JetBrains Platform Tests Integration Framework Server Package Version 107.0.20161124.90159-eap10,JetBrains.Platform.Tests.Integration.Framework.Server,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90159-eap10
+JetBrains,2016-11-24T16:17:08.58Z,43209,512,JetBrains Platform Tests Integration Framework Common Package Version 107.0.20161124.90159-eap10,JetBrains.Platform.Tests.Integration.Framework.Common,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90159-eap10
+JetBrains,2016-11-24T16:17:00.64Z,43209,512,JetBrains Platform Symbols Package Version 107.0.20161124.90159-eap10,JetBrains.Platform.Symbols,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90159-eap10
+JetBrains,2016-11-24T16:16:52.33Z,43209,512,JetBrains Platform Standalone TextControl Package Version 107.0.20161124.90159-eap10,JetBrains.Platform.Standalone.TextControl,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90159-eap10
+JetBrains,2016-11-24T16:16:43.983Z,43209,512,JetBrains Platform Standalone TabWell Package Version 107.0.20161124.90159-eap10,JetBrains.Platform.Standalone.TabWell,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90159-eap10
+JetBrains,2016-11-24T16:16:35.313Z,43209,512,JetBrains Platform Standalone Shell Package Version 107.0.20161124.90159-eap10,JetBrains.Platform.Standalone.Shell,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90159-eap10
+JetBrains,2016-11-24T16:16:27.517Z,43209,512,JetBrains Platform Standalone Ide Package Version 107.0.20161124.90159-eap10,JetBrains.Platform.Standalone.Ide,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90159-eap10
+JetBrains,2016-11-24T16:16:19.42Z,43209,512,JetBrains Platform RdProtocol Package Version 107.0.20161124.90159-eap10,JetBrains.Platform.RdProtocol,True,1900-01-01T00:00:00+00:00,False,False,,,32127,True,107.0.20161124.90159-eap10
+JetBrains,2016-11-24T16:16:10.373Z,43209,512,JetBrains Platform Interop dotMemoryUnit Interop Package Version 107.0.20161124.90159-eap10,JetBrains.Platform.Interop.dotMemoryUnit.Interop,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90159-eap10
+JetBrains,2016-11-24T16:15:54.39Z,43209,512,JetBrains Platform Installer Package Version 107.0.20161124.90159-eap10,JetBrains.Platform.Installer,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90159-eap10
+JetBrains,2016-11-24T16:16:02.25Z,43209,512,JetBrains Platform Interop dotMemoryUnit Framework Package Version 107.0.20161124.90159-eap10,JetBrains.Platform.Interop.dotMemoryUnit.Framework,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90159-eap10
+JetBrains,2016-11-24T16:15:18.64Z,43209,512,JetBrains EtwService Native Core Package Version 107.0.20161124.91458-eap10,JetBrains.EtwService.Native.Core,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91458-eap10
+JetBrains,2016-11-24T16:15:45.687Z,43209,512,JetBrains Platform Core Text Package Version 107.0.20161124.90159-eap10,JetBrains.Platform.Core.Text,True,1900-01-01T00:00:00+00:00,False,False,,,53231,True,107.0.20161124.90159-eap10
+JetBrains,2016-11-24T16:15:37.03Z,43209,512,JetBrains EtwService Native Link Package Version 107.0.20161124.91458-eap10,JetBrains.EtwService.Native.Link,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91458-eap10
+JetBrains,2016-11-24T16:15:29.123Z,43209,512,JetBrains EtwService msi Package Version 107.0.20161124.91458-eap10,JetBrains.EtwService.msi,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91458-eap10
+Grupo ACBr.Net,2016-11-24T16:03:13.96Z,6,512,Biblioteca para utilização do Sat,ACBr.Net.Sat,False,2018-04-14T20:10:21.607+00:00,False,False,,"ACBr,ACBr.Net,Automação,Comercial",1891,False,1.0.1.4
+c.leftheris,2016-11-24T16:13:39.593Z,10,512,Edi.Net Class Library,indice.Edi,False,2018-04-10T15:35:07.143+00:00,True,False,"Edi.Net Class Library for Edi serialization. Reading & Writing EDIFact, Tradacoms and X12 files to and from Clr Objects.","EDI,EDIFact,Tradacoms,X12,Serializer,Parser",8223,False,1.1.1
+JetBrains,2016-11-24T16:14:44.983Z,43209,512,JetBrains EtwService Core Package Version 107.0.20161124.90801-eap10,JetBrains.EtwService.Core,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90801-eap10
+JetBrains,2016-11-24T16:14:36.873Z,43209,512,JetBrains dotTrace VisualStudio Package Version 107.0.20161124.93024-eap10,JetBrains.dotTrace.VisualStudio,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.93024-eap10
+JetBrains,2016-11-24T16:14:28.297Z,43209,512,JetBrains dotTrace Timeline Package Version 107.0.20161124.93024-eap10,JetBrains.dotTrace.Timeline,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.93024-eap10
+JetBrains,2016-11-24T16:14:19.467Z,43209,512,JetBrains dotTrace Snapshot Package Version 107.0.20161124.93024-eap10,JetBrains.dotTrace.Snapshot,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.93024-eap10
+JetBrains,2016-11-24T16:14:10.687Z,43209,512,JetBrains dotTrace AppBrowser Package Version 107.0.20161124.93024-eap10,JetBrains.dotTrace.AppBrowser,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.93024-eap10
+JetBrains,2016-11-24T16:14:01.39Z,43209,512,JetBrains Timeline Src Standalone Package Version 107.0.20161124.93024-eap10,JetBrains.Timeline.Src.Standalone,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.93024-eap10
+Danny Arica Pesantes,2016-11-24T16:13:54.45Z,43209,512,Client for sending sms.,SafetyAuth.SmsClient,False,1899-12-31T16:00:00-08:00,False,False,,"mobile,sms,auth,token,application,webapi,mvc,lima,peru",-1,False,1.0.0.1
+JetBrains,2016-11-24T16:13:52.06Z,43209,512,JetBrains Timeline Src Shared Package Version 107.0.20161124.93024-eap10,JetBrains.Timeline.Src.Shared,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.93024-eap10
+JetBrains,2016-11-24T16:13:43.2Z,43209,512,JetBrains dotTrace Performance Features Package Version 107.0.20161124.93024-eap10,JetBrains.dotTrace.Performance.Features,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.93024-eap10
+c.leftheris,2016-11-24T16:13:39.593Z,10,512,Edi.Net Class Library,indice.Edi,False,2018-04-10T15:35:07.143+00:00,True,False,"Edi.Net Class Library for Edi serialization. Reading & Writing EDIFact, Tradacoms and X12 files to and from Clr Objects.","EDI,EDIFact,Tradacoms,X12,Serializer,Parser",8223,False,1.1.1
+JetBrains,2016-11-24T16:13:35.373Z,43209,512,JetBrains dotTrace dotTrace Src Package Version 107.0.20161124.93024-eap10,JetBrains.dotTrace.dotTrace.Src,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.93024-eap10
+JetBrains,2016-11-24T16:13:24.56Z,43209,512,JetBrains dotTrace dotInstant Package Version 107.0.20161124.93024-eap10,JetBrains.dotTrace.dotInstant,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.93024-eap10
+JetBrains,2016-11-24T16:13:16.217Z,43209,512,JetBrains dotTrace Core Package Version 107.0.20161124.93024-eap10,JetBrains.dotTrace.Core,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.93024-eap10
+JetBrains,2016-11-24T16:13:06.717Z,43209,512,JetBrains dotTrace ConsoleTools Package Version 107.0.20161124.93024-eap10,JetBrains.dotTrace.ConsoleTools,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.93024-eap10
+JetBrains,2016-11-24T16:12:58.59Z,43209,512,JetBrains dotTrace CommonUI Package Version 107.0.20161124.93024-eap10,JetBrains.dotTrace.CommonUI,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.93024-eap10
+JetBrains,2016-11-24T16:12:49.95Z,43209,512,JetBrains dotPeek src Package Version 107.0.20161124.91627-eap10,JetBrains.dotPeek.src,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91627-eap10
+JetBrains,2016-11-24T16:12:40.967Z,43209,512,JetBrains dotMemory VisualStudio Package Version 107.0.20161124.92828-eap10,JetBrains.dotMemory.VisualStudio,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.92828-eap10
+JetBrains,2016-11-24T16:12:32.323Z,43209,512,JetBrains dotMemory Presentation Package Version 107.0.20161124.92828-eap10,JetBrains.dotMemory.Presentation,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.92828-eap10
+JetBrains,2016-11-24T16:12:22.967Z,43209,512,JetBrains dotMemory Standalone Package Version 107.0.20161124.92828-eap10,JetBrains.dotMemory.Standalone,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.92828-eap10
+JetBrains,2016-11-24T16:12:13.183Z,43209,512,JetBrains dotMemory Core Package Version 107.0.20161124.92828-eap10,JetBrains.dotMemory.Core,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.92828-eap10
+JetBrains,2016-11-24T16:12:04.013Z,43209,512,JetBrains dotCover VisualStudio Package Version 107.0.20161124.92919-eap10,JetBrains.dotCover.VisualStudio,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.92919-eap10
+JetBrains,2016-11-24T16:11:55.137Z,43209,512,JetBrains dotCover Core Package Version 107.0.20161124.92919-eap10,JetBrains.dotCover.Core,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.92919-eap10
+JetBrains,2016-11-24T16:11:46.09Z,43209,512,JetBrains dotCover Standalone Package Version 107.0.20161124.92919-eap10,JetBrains.dotCover.Standalone,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.92919-eap10
+JetBrains,2016-11-24T16:11:13.277Z,43209,512,JetBrains dotCommon Psi SourceView Package Version 107.0.20161124.91626-eap10,JetBrains.dotCommon.Psi.SourceView,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91626-eap10
+JetBrains,2016-11-24T16:11:04.857Z,43209,512,JetBrains dotCommon Native Core Package Version 107.0.20161124.90240-eap10,JetBrains.dotCommon.Native.Core,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90240-eap10
+JetBrains,2016-11-24T16:11:20.887Z,43209,512,JetBrains dotCommon Psi Navigation Package Version 107.0.20161124.91626-eap10,JetBrains.dotCommon.Psi.Navigation,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91626-eap10
+JetBrains,2016-11-24T16:10:46.09Z,43209,512,JetBrains dotCommon Native Libraries Package Version 107.0.20161124.90240-eap10,JetBrains.dotCommon.Native.Libraries,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90240-eap10
+JetBrains,2016-11-24T16:11:37.433Z,43209,512,JetBrains dotCover Presentation Package Version 107.0.20161124.92919-eap10,JetBrains.dotCover.Presentation,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.92919-eap10
+JetBrains,2016-11-24T16:11:28.997Z,43209,512,JetBrains dotCommon Psi UnitTesting Package Version 107.0.20161124.91626-eap10,JetBrains.dotCommon.Psi.UnitTesting,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.91626-eap10
+JetBrains,2016-11-24T16:10:54.323Z,43209,512,JetBrains dotCommon Native Link Package Version 107.0.20161124.90240-eap10,JetBrains.dotCommon.Native.Link,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90240-eap10
+JetBrains,2016-11-24T16:10:35.81Z,43209,512,JetBrains dotCommon Core Package Version 107.0.20161124.90904-eap10,JetBrains.dotCommon.Core,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90904-eap10
+JetBrains,2016-11-24T16:10:24.09Z,43209,512,JetBrains dotCommon Timeline Package Version 107.0.20161124.90904-eap10,JetBrains.dotCommon.Timeline,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90904-eap10
+JetBrains,2016-11-24T16:10:15.48Z,43209,512,JetBrains dotCommon Standalone Package Version 107.0.20161124.90904-eap10,JetBrains.dotCommon.Standalone,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90904-eap10
+JetBrains,2016-11-24T16:10:07.26Z,43209,512,JetBrains dotCommon RemoteAgentBuild Package Version 107.0.20161124.90904-eap10,JetBrains.dotCommon.RemoteAgentBuild,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90904-eap10
+JetBrains,2016-11-24T16:09:30.76Z,43209,512,JetBrains dotCommon ElevationAgent Package Version 107.0.20161124.90904-eap10,JetBrains.dotCommon.ElevationAgent,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90904-eap10
+JetBrains,2016-11-24T16:09:39.4Z,43209,512,JetBrains dotCommon ExternalStorage Package Version 107.0.20161124.90904-eap10,JetBrains.dotCommon.ExternalStorage,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90904-eap10
+Mike Goldsmith,2016-11-24T16:09:40.743Z,501,512,Build tester.,AppVeyorBuilder,False,2016-12-05T04:05:29.99-08:00,True,False,,"Build,Test",3237,False,1.0.2
+JetBrains,2016-11-24T16:09:48.387Z,43209,512,JetBrains dotCommon Remotable Package Version 107.0.20161124.90904-eap10,JetBrains.dotCommon.Remotable,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90904-eap10
+JetBrains,2016-11-24T16:09:58.65Z,43209,512,JetBrains dotCommon RemoteAgent Package Version 107.0.20161124.90904-eap10,JetBrains.dotCommon.RemoteAgent,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,107.0.20161124.90904-eap10
+Stephen Cleary,2016-11-24T16:06:58.087Z,512,512,Browser automation toolkit.,Nito.BrowserBoss,False,2016-11-24T08:06:58.087-08:00,True,False,Browser automation toolkit.,"browser,automation,linqpad-samples",1608,True,2.0.3
+Contentful,2016-11-21T08:51:00.43Z,1,515,Official .NET SDK for the Contentful Content Delivery API.,contentful.csharp,True,2018-04-19T12:42:11.03+00:00,False,False,,"contentful,CMS",50674,False,0.5.2-alpha
+Grupo ACBr.Net,2016-11-24T16:03:13.96Z,6,512,Biblioteca para utilização do Sat,ACBr.Net.Sat,False,2018-04-14T20:10:21.607+00:00,True,False,,"ACBr,ACBr.Net,Automação,Comercial",1891,False,1.0.1.4
+sfanuget scottcowan,2016-11-24T16:03:43.68Z,4,512,Provides types for the SFA.DAS.ApprenticeshipInfoService client service,SFA.DAS.Apprenticeships.Api.Types,True,2018-04-16T13:34:27.767+00:00,True,False,Types used for SFA.DAS.ApprenticeshipInfoService client service,,15134,False,0.9.135-prerelease
+sfanuget scottcowan,2016-11-24T16:03:34.76Z,43209,512,Provides a client layer to call the SFA.DAS.ApprenticeshipInfoService service,SFA.DAS.Apprenticeships.Api.Client,True,1900-01-01T00:00:00+00:00,False,False,Client layer for SFA.DAS.ApprenticeshipInfoService service,,18874,False,0.9.135-prerelease
+Jason Jarrett,2016-11-24T16:01:24.333Z,492,512,TypeScript Definitions (d.ts) for cassandra-driver. Generated based off the DefinitelyTyped repository [git commit: 8673f56639274fdfcaa22ded996ec867a5f547df]. http://github.com/DefinitelyTyped,cassandra-driver.TypeScript.DefinitelyTyped,False,2016-12-13T22:41:15-08:00,True,False,,"TypeScript,JavaScript",1484,False,0.0.6
+Logistical Labs,2016-11-24T15:58:07.457Z,505,512,LoadDex API client library,LoadDexClient,True,2016-12-01T09:07:52.407-08:00,True,False,,LoadDex,1178,False,1.0.1-beta6
+Stephen Cleary,2016-11-24T15:55:18.003Z,223,512,Basic helper types for MVVM applications.,Nito.Mvvm.Core,True,2017-09-09T15:42:55.88+00:00,True,False,,"mvvm,inotifypropertychanged,icommand,canexecute",5797,True,1.2.0-alpha-02
+slycoder,2016-11-24T15:52:29.257Z,449,512,My package description.,Slycoder.Portable,False,2017-01-26T11:03:26.31-08:00,True,False,,,1334,False,1.0.0.13
+NetTelegramBotApi,2016-11-24T15:50:59.1Z,126,512,Telegram Bot API library,NetTelegramBotApi,True,2017-12-15T09:40:51.4+00:00,True,False,Telegram Bot API library,"telegram,bot,api",12778,False,4.0.0-rc1
+NetTelegramBotApi,2016-11-24T15:50:59.1Z,126,512,Telegram Bot API library,NetTelegramBotApi,True,2017-12-15T09:40:51.4+00:00,True,False,Telegram Bot API library,"telegram,bot,api",12778,False,4.0.0-rc1
+Christian Woltering,2016-11-24T15:46:53.107Z,512,512,"AcoustID.NET is a managed version of the original AcoustID chromaprint code. Additionally, AcoustID.NET provides easy access to the AcoustID audio identification webservice.
+
+Requires .NET Framework 4.5 or higher.",AcoustID.NET,False,2016-11-24T07:46:53.107-08:00,True,False,AcoustID fingerprinter and webservice access.,"audio,fingerprint,acoustid,chromaprint",1523,False,1.3.2.1
+Contentful,2016-11-21T08:51:00.43Z,1,515,Official .NET SDK for the Contentful Content Delivery API.,contentful.csharp,True,2018-04-19T12:42:11.03+00:00,True,False,,"contentful,CMS",50674,False,0.5.2-alpha
+Vadim Zhogalskiy,2016-11-24T15:43:48.103Z,91,512,Light abstraction on top of MongoDB to provide basic message queue functionality.,MongoDBQueue,False,2018-01-19T13:09:39.56+00:00,True,False,Light abstraction on top of MongoDB to provide basic message queue functionality.,"MongoDB,message,queue",1975,False,1.0.13
+Vadim Zhogalskiy,2016-11-24T15:43:38.477Z,91,512,Light abstraction on top of MongoDB to provide basic message queue functionality (with legacy MongoDB driver).,MongoDBQueue.Legacy,False,2018-01-19T13:09:27.03+00:00,True,False,Light abstraction on top of MongoDB to provide basic message queue functionality (with legacy MongoDB driver).,"MongoDB,message,queue",2144,False,1.0.13
+vip32,2016-11-24T15:42:38.697Z,247,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Common,False,2017-08-16T21:22:38.483+00:00,True,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","xtricate,seq,common",5536,False,1.0.337
+vip32,2016-11-24T15:42:31.68Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Templ,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","razor,templ,templating",15581,False,1.0.337
+vip32,2016-11-24T15:42:01.9Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Configuration,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","xtricate,config,appsettings",19280,False,1.0.337
+vip32,2016-11-24T15:41:47.15Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.DocSet.Sqlite,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","nosql,data,sqlite,dapper,docset,xtricate",19317,False,1.0.337
+vip32,2016-11-24T15:42:17.447Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.DocSet.Serilog,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","nosql,data,dapper,docset,xtricate,serilog",15113,False,1.0.337
+vip32,2016-11-24T15:42:24.697Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.DocSet.Extras,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","nosql,data,dapper,docset,xtricate,extras",13325,False,1.0.337
+vip32,2016-11-24T15:42:09.447Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Web.Dashboard,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","web,mvc,razor,middleware,owin,webpages",22570,False,1.0.337
+vip32,2016-11-24T15:41:38.867Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.DocSet,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","nosql,data,dapper,docset,xtricate,sql",19535,False,1.0.337
+vip32,2016-11-24T15:41:54.07Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Dynamic,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","dynamic,expando,objects,xtricate",18684,False,1.0.337
+Stone Pagamentos S/A,2016-11-24T14:11:59.86Z,477,512,Easy messaging queue management using RabbitMQ,Kyoo.Library.dll,False,2016-12-29T11:48:46.813-08:00,False,False,,RabbitMQ,1267,False,0.0.5
+Xtricate.Core.IntegrationTests,2016-11-24T15:39:37.54Z,247,512,Xtricate.Core.IntegrationTests,Xtricate.Core.IntegrationTests,True,2017-08-16T21:24:41.037+00:00,True,False,,,2014,False,1.1.0-beta-0070
+vip32,2016-11-24T15:39:46.24Z,247,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Core.Templ,True,2017-08-16T21:24:50.52+00:00,True,False,,"xtricate,xtricate.core,templ,razor,templating",1610,False,1.1.0-beta-0070
+vip32,2016-11-24T15:39:28.07Z,247,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Core.Common,True,2017-08-16T21:24:29.88+00:00,True,False,,"xtricate,xtricate.core,seq,common",1804,False,1.1.0-beta-0070
+vip32,2016-11-24T15:40:03.337Z,247,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Core.Web.Dashboard,True,2017-08-16T21:25:10.63+00:00,True,False,,"xtricate,xtricate.core,web,razor,middleware,owin",1598,False,1.1.0-beta-0070
+Xtricate.Core.UnitTests,2016-11-24T15:39:54.883Z,247,512,Xtricate.Core.UnitTests,Xtricate.Core.UnitTests,True,2017-08-16T21:25:00.96+00:00,True,False,,,2013,False,1.1.0-beta-0070
+Swrve Mobile Inc,2016-11-24T15:36:31.473Z,512,512,Swrve is a single integrated platform delivering everything you need to drive mobile engagement and create valuable consumer relationships on mobile. This native Windows UWP SDK will enable your app to use all of these features.,SwrveSDK,False,2016-11-24T07:36:31.473-08:00,True,False,,"Swrve,SDK,engagement,push,notifications,IAP",748,False,4.7.0
+Ilya Margolin,2016-11-24T15:34:19.74Z,427,512,Deep equal library done right,DeepComparison,False,2017-02-17T10:00:04.107-08:00,True,False,Deep comparison of .net objects,"deep,deeply,equal,equals,equality,compare,comparer,comparison,structural",1788,False,1.0.10
+Richard Thombs,2016-11-24T15:34:53.55Z,227,512,.NET wrapper for the Google Maps Geocoding API,Stony.GoogleMaps.Geocoding,False,2017-09-05T15:05:41.21+00:00,True,False,,"google,geocoding",2248,False,0.0.1
+Swrve Mobile Inc,2016-11-24T15:32:15.407Z,512,512,Swrve SDK module for Conversations rendering in UWP,SwrveConversationsSDK,False,2016-11-24T07:32:15.407-08:00,True,False,,"Swrve,SDK,engagement,push,notifications,IAP",251,False,4.7.0
+johngoldinc,2016-11-24T15:29:40.093Z,440,512,"ErrorUnit automatically creates Unit Tests from errors. Not only reproducing the parameters that were passed to the Method that failed, but the static or private class variables, and the data accessed so far by Entity Framework.",ErrorUnit,True,2017-02-04T08:31:18.867-08:00,True,False,,"ErrorUnit,UnitTest,Errors,ErrorLogging,Logging,Log",3953,False,1.1.2-rc
+takenet,2016-11-24T15:31:31.19Z,1,512,Messaging Hub Client Extensions - Take.net InfoEntertainment Team,Takenet.MessagingHub.Client.InfoEntertainmentExtensions,False,2018-04-19T10:59:40.373+00:00,True,False,,takenet,30947,False,1.0.100
+Swrve Mobile Inc,2016-11-24T15:29:44.64Z,512,512,Swrve SDK common classes used by the full SDK and the Conversations SDK,SwrveSDKCommon,False,2016-11-24T07:29:44.64-08:00,True,False,,"Swrve,SDK,engagement,push,notifications,IAP",251,False,4.7.0
+johngoldinc,2016-11-24T15:29:40.093Z,440,512,"ErrorUnit automatically creates Unit Tests from errors. Not only reproducing the parameters that were passed to the Method that failed, but the static or private class variables, and the data accessed so far by Entity Framework.",ErrorUnit,True,2017-02-04T08:31:18.867-08:00,True,False,,"ErrorUnit,UnitTest,Errors,ErrorLogging,Logging,Log",3953,False,1.1.2-rc
+Takenet,2016-11-24T15:25:46.753Z,172,512,Messaging Hub Application Template for web projects,Takenet.MessagingHub.Client.WebTemplate,False,2017-10-30T18:03:27.563+00:00,True,False,A template to create Messaging Hub applications,messagingHub,12852,False,0.4.50
+Takenet,2016-11-24T15:25:01.033Z,172,512,Messaging Hub Application Template,Takenet.MessagingHub.Client.Template,False,2017-10-30T18:02:41.843+00:00,True,False,A template to create Messaging Hub applications,messagingHub,34838,False,0.4.50
+Takenet,2016-11-24T15:25:36.77Z,172,512,"A template to expose Blip MessagingHub applications through webhook, using ASP.NET WebApi",Takenet.MessagingHub.Client.WebhookTemplate,False,2017-10-30T18:03:12.703+00:00,True,False,,"messagingHub,blip,webhook,asp.net,webapi",16670,False,0.4.50
+takenet,2016-11-24T15:25:27.427Z,172,512,Textc extensions for the Messaging Hub Client,Takenet.MessagingHub.Client.Textc,False,2017-10-30T18:02:55.763+00:00,True,False,,"lime,messaginghub,textc",57160,False,0.4.50
+takenet,2016-11-24T15:25:13.503Z,288,512,The tester library for the C# SDK of the Messaging Hub,Takenet.MessagingHub.Client.Tester,False,2017-07-06T13:50:13.713-07:00,True,False,,"lime,messaginghub",25057,False,0.4.50
+Takenet,2016-11-24T15:24:51.003Z,172,512,Messaging Hub Client Host,Takenet.MessagingHub.Client.Host,False,2017-10-30T18:02:28.187+00:00,True,False,A host implementation to run libraries that use the Messaging Hub Client,messagingHub,48645,False,0.4.50
+Mike Goldsmith,2016-11-24T15:25:01.41Z,501,512,Build tester.,AppVeyorBuilder,False,2016-12-05T04:05:29.99-08:00,True,False,,"Build,Test",3237,False,1.0.1
+takenet,2016-11-24T15:24:36.143Z,172,512,The C# SDK for the Messaging Hub,Takenet.MessagingHub.Client,False,2017-10-30T18:02:16.577+00:00,True,False,,"lime,messaginghub",78198,False,0.4.50
+"Florian Bruggisser,Sandro Castronari",2015-05-31T20:19:09.63Z,43209,1055,ECNF Test Project RoutePlanner,ch.fhnw.ecnf.bruggissercastronarirouteplannerlib,False,1899-12-31T16:00:00-08:00,False,False,,"route,planner",-1,False,1.0.1
+"Florian Bruggisser,Sandro Castronari",2015-05-30T14:18:07.68Z,43209,1056,ECNF Test Project RoutePlanner,ch.fhnw.ecnf.bruggissercastronarirouteplannerlib,False,1899-12-31T16:00:00-08:00,False,False,,"route,planner",-1,False,1.0.0
+everis,2016-11-24T15:21:48.547Z,512,512,Servicio de sistema de Campo brasil,everisSantillanaBrasil.SistemaDeCampo.WCFServiceSDC,False,2016-11-24T07:21:48.547-08:00,True,False,,1.0.0,145,False,1.0.11
+sfanuget scottcowan,2016-11-24T15:17:37.48Z,4,512,Provides types for the SFA.DAS.ApprenticeshipInfoService client service,SFA.DAS.Apprenticeships.Api.Types,True,2018-04-16T13:34:27.767+00:00,True,False,Types used for SFA.DAS.ApprenticeshipInfoService client service,,15134,False,0.9.134-prerelease
+vip32,2016-11-24T15:18:00.04Z,247,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Core.Templ,True,2017-08-16T21:24:50.52+00:00,True,False,,"xtricate,xtricate.core,templ,razor,templating",1610,False,1.1.0-beta-0069
+vip32,2016-11-24T15:18:17.387Z,247,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Core.Web.Dashboard,True,2017-08-16T21:25:10.63+00:00,True,False,,"xtricate,xtricate.core,web,razor,middleware,owin",1598,False,1.1.0-beta-0069
+vip32,2016-11-24T15:17:41.713Z,247,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Core.Common,True,2017-08-16T21:24:29.88+00:00,True,False,,"xtricate,xtricate.core,seq,common",1804,False,1.1.0-beta-0069
+Xtricate.Core.UnitTests,2016-11-24T15:18:08.62Z,247,512,Xtricate.Core.UnitTests,Xtricate.Core.UnitTests,True,2017-08-16T21:25:00.96+00:00,True,False,,,2013,False,1.1.0-beta-0069
+sfanuget scottcowan,2016-11-24T15:17:28.933Z,43209,512,Provides a client layer to call the SFA.DAS.ApprenticeshipInfoService service,SFA.DAS.Apprenticeships.Api.Client,True,1900-01-01T00:00:00+00:00,False,False,Client layer for SFA.DAS.ApprenticeshipInfoService service,,18874,False,0.9.134-prerelease
+Xtricate.Core.IntegrationTests,2016-11-24T15:17:50.54Z,247,512,Xtricate.Core.IntegrationTests,Xtricate.Core.IntegrationTests,True,2017-08-16T21:24:41.037+00:00,True,False,,,2014,False,1.1.0-beta-0069
+CKSource - Frederico Knabben,2016-11-24T15:16:25.963Z,43209,512,The sample for CKFinder,CKSource.CKFinder.Connector.Sample,False,1900-01-01T00:00:00+00:00,False,False,,"CKSource,CKFinder,Sample",2635,False,3.4.1
+CKSource - Frederico Knabben,2016-11-24T15:16:01.98Z,259,512,NLog support for CKFinder,CKSource.CKFinder.Connector.Logs.NLog,False,2017-08-04T08:17:57.003+00:00,True,False,,"CKSource,CKFinder,NLog",5749,False,3.4.1
+vip32,2016-11-24T15:16:06.307Z,247,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Common,False,2017-08-16T21:22:38.483+00:00,True,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","xtricate,seq,common",5536,False,1.0.336
+vip32,2016-11-24T15:15:59.04Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Templ,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","razor,templ,templating",15581,False,1.0.336
+vip32,2016-11-24T15:14:59.69Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.DocSet,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","nosql,data,dapper,docset,xtricate,sql",19535,False,1.0.336
+vip32,2016-11-24T15:15:06.72Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.DocSet.Sqlite,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","nosql,data,sqlite,dapper,docset,xtricate",19317,False,1.0.336
+vip32,2016-11-24T15:15:36.473Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Web.Dashboard,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","web,mvc,razor,middleware,owin,webpages",22570,False,1.0.336
+vip32,2016-11-24T15:15:51.963Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.DocSet.Extras,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","nosql,data,dapper,docset,xtricate,extras",13325,False,1.0.336
+vip32,2016-11-24T15:15:24.83Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Configuration,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","xtricate,config,appsettings",19280,False,1.0.336
+vip32,2016-11-24T15:15:44.303Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.DocSet.Serilog,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","nosql,data,dapper,docset,xtricate,serilog",15113,False,1.0.336
+vip32,2016-11-24T15:15:14.487Z,43209,512,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,Xtricate.Dynamic,False,1900-01-01T00:00:00+00:00,False,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.","dynamic,expando,objects,xtricate",18684,False,1.0.336
+CKSource - Frederico Knabben,2016-11-24T15:13:50.907Z,259,512,A file system key-value store for CKFinder,CKSource.CKFinder.Connector.KeyValue.FileSystem,False,2017-08-04T08:17:23.83+00:00,True,False,,,1599,False,3.4.1
+Vadim Zhogalskiy,2016-11-24T15:14:28.33Z,91,512,Light abstraction on top of MongoDB to provide basic message queue functionality (with legacy MongoDB driver).,MongoDBQueue.Legacy,False,2018-01-19T13:09:27.03+00:00,True,False,Light abstraction on top of MongoDB to provide basic message queue functionality (with legacy MongoDB driver).,"MongoDB,message,queue",2144,False,1.0.9
+CKSource - Frederico Knabben,2016-11-24T15:12:50.89Z,259,512,A core library for CKFinder,CKSource.CKFinder.Connector.Core,False,2017-08-04T08:15:54.657+00:00,True,False,,"CKSource,CKFinder",9667,False,3.4.1
+CKSource - Frederico Knabben,2016-11-24T15:13:10.283Z,259,512,A hosting in Owin for CKFinder,CKSource.CKFinder.Connector.Host.Owin,False,2017-08-04T08:16:27.703+00:00,True,False,,"CKSource,CKFinder,Owin",8855,False,3.4.1
+CKSource - Frederico Knabben,2016-11-24T15:13:29.533Z,259,512,An EntityFramework key-value store for CKFinder,CKSource.CKFinder.Connector.KeyValue.EntityFramework,False,2017-08-04T08:16:59.97+00:00,True,False,,"CKSource,CKFinder,EntityFramework",3089,False,3.4.1
+CKSource - Frederico Knabben,2016-11-24T15:12:30.267Z,259,512,A configuration file support for CKFinder,CKSource.CKFinder.Connector.Config,False,2017-08-04T08:15:22.827+00:00,True,False,,"CKSource,CKFinder",9775,False,3.4.1
+Dipun Mistry,2016-11-24T15:09:43.683Z,512,512,Provides some useful tools for use within an MVC project.,ReturnNull.MvcTools,False,2016-11-24T07:09:43.683-08:00,True,False,,,548,False,1.0.1
+Applicita Ltd,2016-11-24T15:07:13.847Z,222,512,Application uploader for Microsoft Yams,Applicita.YamsUploader,False,2017-09-10T01:56:55.053+00:00,True,False,,,1173,False,1.0.0
+Vadim Zhogalskiy,2016-11-24T15:06:40.987Z,91,512,Light abstraction on top of MongoDB to provide basic message queue functionality.,MongoDBQueue,False,2018-01-19T13:09:39.56+00:00,True,False,Light abstraction on top of MongoDB to provide basic message queue functionality.,"MongoDB,message,queue",1975,False,1.0.9
+takenet,2016-11-24T15:06:22.41Z,1,512,Iris common data types package,Takenet.Iris.Common,False,2018-04-19T20:20:12.39+00:00,True,False,,"Iris,Lime",46396,False,1.8.260
+Robert Fuszenecker,2016-07-30T19:20:19.7Z,43209,629,"*** Please use the Arborium (multi-target) package instead. ***
+
+A versatile, tree-based data structure to store or exchange data and metadata efficiently (in binary format). Written in pure C#, can be used in F#, too.",Arborium.Core,False,1899-12-31T16:00:00-08:00,False,False,,"arborium,binary,tree,serialization,container",-1,False,2.0.8
+AdDeals (Ahead Solutions),2016-11-24T14:58:29.147Z,338,512,"This SDK provides powerful and highly profitable monetization solutions for Windows game & app developers using interstitial ads & rewarded videos. It is intended to be integrated by Windows PC/Tablet/Phone 8.1/10 app & game developers to monetize and/or cross-promote their apps. It supports C#/VB/Unity apps. It provides centered in-app interstitial ads and rewarded videos (both the most profitable ad formats for games and apps). 1:1 cross-promotion services are free, optional and only supported for interstitial ads. Monetization is supported for all ad formats and AdDeals works directly with major advertisers to deliver the highest possible revenues to developers. You will need to create a free account on http://www.addealsnetwork.com to add your app, get your AdDeals AppID/AppKey credentials and access near real-time statistics. The SDK can be quickly integrated with a few lines of codes. For Unity games, the SDK can be easily integrated via Visual Studio using this C# library/SDK.",AdDealsUniversalSDKW81,False,2017-05-17T09:24:06.857-07:00,True,False,This SDK is intended to be integrated in Windows PC/Tablet/Phone 8.1/10.0 C#/XAML/Unity apps/games to better monetize and/or cross-promote your apps for free. It supports C#/VB/Unity.,"addeals,windows,phone,app,apps,game,games,monetization,monetisation,cross-promotion,cross,promotion,winrt,interstitial,rewarded,videos,ad,ads,8.1,10.0,ahead,solutions,advertising,exchange",5491,False,4.3.2
+Robert Fuszenecker,2016-05-21T19:20:59.82Z,43209,699,"A versatile, tree-based data structure to store or exchange data and metadata efficiently (in binary format). Written in pure C#, can be used in F#, too.",Arborium.Core,False,1899-12-31T16:00:00-08:00,False,False,,"arborium,binary,tree,serialization,container",-1,False,2.0.7
+Robert Fuszenecker,2016-07-30T19:20:19.7Z,43209,629,"A versatile, tree-based data structure to store or exchange data and metadata efficiently (in binary format). Written in pure C#, can be used in F#, too.",Arborium.Core,False,1899-12-31T16:00:00-08:00,False,False,,"arborium,binary,tree,serialization,container",-1,False,2.0.8
+sergey.zhurbenko,2016-11-24T14:55:44.567Z,43209,512,NuGet.MongoDBQueue,NuGet.MongoDBQueue,False,1899-12-31T16:00:00-08:00,False,False,NuGet.MongoDBQueue,NuGet.MongoDBQueue,-1,False,1.0.9
+robert.fuszenecker@outlook.com,2016-11-24T14:55:34.94Z,512,512,"Arborium is a versatile, tree-based data structure to store or exchange data and metadata efficiently (in binary format). Written in pure C#, can be used in F#, too.",Arborium,False,2016-11-24T06:55:34.94-08:00,True,False,"Arborium is a versatile, tree-based data structure to store or exchange data and metadata efficiently (in binary format). Written in pure C#, can be used in F#, too.","arborium,binary,tree,serialization",2920,False,2.0.0.3
+robert.fuszenecker@outlook.com,2016-11-24T14:55:34.94Z,512,512,"Arborium is a versatile, tree-based data structure to store or exchange data and metadata efficiently (in binary format). Written in pure C#, can be used in F#, too.",Arborium,False,2016-11-24T06:55:34.94-08:00,True,False,"Arborium is a versatile, tree-based data structure to store or exchange data and metadata efficiently (in binary format). Written in pure C#, can be used in F#, too.","arborium,binary,tree,serialization",2920,False,2.0.0.3
+sergey.zhurbenko,2016-11-24T14:55:44.567Z,43209,512,NuGet.MongoDBQueue,NuGet.MongoDBQueue,False,1899-12-31T16:00:00-08:00,False,False,NuGet.MongoDBQueue,NuGet.MongoDBQueue,-1,False,1.0.9
+Momentum,2016-11-24T14:50:46.453Z,4,512,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.9.5.3533-beta
+Momentum,2016-11-24T14:50:58.11Z,4,512,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.9.5.3533-beta
+Zach Deibert,2016-11-24T14:49:54.593Z,512,512,The single player version of Latipium,Com.Latipium.SinglePlayer,False,2016-11-24T06:49:54.593-08:00,True,False,The single player version of Latipium,"Latipium,Development,Non-Mod",362,False,1.0.1.2
+HMS Networks,2016-11-24T14:49:12.467Z,435,512,Use Ixxat.Vci4 package to access CAN interfaces from Ixxat/HMS Networks via .NET and VCI4-API.,Ixxat.Vci4,False,2017-02-09T06:23:28.263-08:00,True,False,,"VCI4,CAN,Ixxat,HMS",2487,False,4.0.291
+Florin Nitoi,2016-11-24T14:49:01.187Z,171,512,A simple mocking library for TypeScript,typemoq,False,2017-10-31T06:16:25.293+00:00,True,False,,"mock,stub,fake,spy,library,sandbox,typescript,javascript",4563,False,1.0.0
+StumpDK,2016-11-24T14:41:08.82Z,512,512,MySql standalone server for C# unit tests. Use this package to run unit tests locally without spending time setting up a MySql server.,MySql.Server,False,2016-11-24T14:41:08.82+00:00,True,False,,"Unittest,MySql",2580,False,1.1.0
+Breeze Software,2016-11-24T14:36:06.167Z,1,512,Breeze CMS Library,BreezeLib.CMS,False,2018-04-19T18:09:50.707+00:00,True,False,,,2781,False,7.0.7.106
+Breeze Software,2016-11-24T14:35:23.79Z,1,512,Breeze Library Azure Media Storage,BreezeLib.Azure,False,2018-04-19T18:09:25.64+00:00,True,False,,,7226,False,7.0.7.106
+Breeze Software,2016-11-24T14:35:05.947Z,1,512,Breeze Library,BreezeLib,False,2018-04-19T18:08:45.28+00:00,True,False,,,9094,False,7.0.7.106
+Concode AB,2016-11-24T14:35:30.637Z,511,512,Redis cache layer for Settings and Session,Concode.Common.Redis,False,2016-11-25T11:25:08.353+00:00,True,False,,,2451,False,2.2.4
+MichaCo,2016-11-24T14:35:14.277Z,354,512,DnsClient,DnsClient,True,2017-05-01T09:16:52.687-07:00,True,False,A simple DNS client written in C#.,"DNS,Name,Server,CSharp,.NET,Core",367420,False,1.0.0-beta-1011
+Intersoft Solutions,2016-11-24T14:27:47.993Z,7,512,Provides utility to perform data operation using intersoft data to EntityFramework.,Intersoft.Data.ComponentModel.EntityFramework,True,2018-04-13T08:36:24.45+00:00,True,False,,,23411,False,5.0.5000.779-experimental
+Zach Deibert,2016-11-24T14:27:44.993Z,512,512,The default physics implementation for Latipium,Com.Latipium.Defaults.Physics,False,2016-11-24T06:27:44.993-08:00,True,False,The default physics implementation for Latipium,"Latipium,Development,Non-Mod",368,False,1.0.1.3
+Intersoft Solutions,2016-11-24T14:27:37.933Z,7,512,"Provides powerful data access components to WebAPI server featuring OData 4 extended implementation, view projection technology, two-way data synchronization and seamless integration with Entity Framework. For the client counterpart, please install Intersoft.AppFramework package.",Intersoft.Data.WebApi.v4,True,2018-04-13T08:36:09.34+00:00,True,False,,"Intersoft,Data,WebAPI,Server,Controller,Components,OData,Synchronization,EF,Entity,Framework",42549,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:27:27.697Z,7,512,"Provides a comprehensive charting data visualization suite featuring 12+ series, smooth animations, intuitive pinch-to-zoom, and beautiful modern design. Supports iOS and Android platforms.",Intersoft.Crosslight.UI.DataVisualization,True,2018-04-13T08:35:53.54+00:00,True,False,,"Intersoft,Crosslight,UI,User,Interface,Data,Visualization,Reporting,Charting,Components,iOS,Android,Xamarin",46407,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:27:16.493Z,7,512,Provides UI components tailored specifically for Material Design that works on Android API 21 and above.,Intersoft.Crosslight.UI.Android.v7,True,2018-04-13T08:35:37.98+00:00,True,False,,"Intersoft,Crosslight,UI,User,Interface,Components,Android,Material,Xamarin,v7",43124,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:27:06.557Z,7,512,"Provides a multitude of essential UI components for Crosslight development including Calendar, Map, Carousel, Signature Pad, and much more. Supports iOS and Android platforms.",Intersoft.Crosslight.UI,True,2018-04-13T08:35:22.697+00:00,True,False,,"Intersoft,Crosslight,UI,User,Interface,Components,Cross-Platform,iOS,Android,Xamarin",45017,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:26:53.823Z,7,512,Provides payment services for Crosslight development.,Intersoft.Crosslight.Services.Payment,True,2018-04-13T08:35:05.1+00:00,True,False,,"Intersoft,Crosslight,Services,Payment,Cross-Platform,PCL,Portable,Class,Library,Android,Xamarin",17963,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:25:48.51Z,7,512,Provides GPS location services for Crosslight development.,Intersoft.Crosslight.Services.Location,True,2018-04-13T08:33:15.52+00:00,True,False,,"Intersoft,Crosslight,Services,Location,PCL,Portable,Class,Library,GPS,iOS,Android,Xamarin,Cross-Platform",42745,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:26:19.917Z,7,512,"Provides extended capabilities to share and authenticate users with social network accounts, including Facebook and Twitter.",Intersoft.Crosslight.Services.Social,True,2018-04-13T08:34:02.38+00:00,True,False,,"Intersoft,Crosslight,Services,Social,Network,Facebook,Twitter,PCL,iOS,Android,Xamarin,Portable,Class,Library",47357,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:26:08.93Z,7,512,"Provides report viewer components for Crosslight development, featuring seamless integration with Intersoft ClientUI Reporting Server.",Intersoft.Crosslight.Services.Reporting,True,2018-04-13T08:33:46.397+00:00,True,False,,"Intersoft,Crosslight,Services,Reporting,Report,Viewer,PCL,Portable,Class,Library,Server,ClientUI",44944,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:25:59.133Z,7,512,"Provides end-to-end push messaging functionality to your Crosslight apps. Supports iOS, Android and Windows for the client platforms and .NET 4.5 for the server platforms.",Intersoft.Crosslight.Services.PushNotification,True,2018-04-13T08:33:30.723+00:00,True,False,,"Intersoft,Crosslight,Services,Push,Notification,PNS,PushNotification,Client,Server,PCL,Portable,Class,Library,iOS,Android,WinPhone,WindowsPhone,Phone,Xamarin",45998,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:26:40.337Z,7,512,Provides peripheral connectivity services for Crosslight development.,Intersoft.Crosslight.Services.Connectivity.Peripheral,True,2018-04-13T08:34:29.867+00:00,True,False,,"Intersoft,Crosslight,Services,Connectivity,Peripheral,Cross-Platform,PCL,Portable,Class,Library,Android,Xamarin",20395,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:26:30.447Z,7,512,Provides ethernet and bluetooth connectivity services for Crosslight development.,Intersoft.Crosslight.Services.Connectivity,True,2018-04-13T08:34:16.303+00:00,True,False,,"Intersoft,Crosslight,Services,Connectivity,Cross-Platform,PCL,Portable,Class,Library,Android,Xamarin",20376,False,5.0.5000.779-experimental
+Zach Deibert,2016-11-24T14:26:11.12Z,512,512,The default graphics implementation for Latipium,Com.Latipium.Defaults.Graphics,False,2016-11-24T06:26:11.12-08:00,True,False,The default graphics implementation for Latipium,Latipium,473,False,1.0.2.3
+Zach Deibert,2016-11-24T14:25:49.197Z,107,512,The core code for Latipium,Com.Latipium.Core,False,2018-01-03T14:31:05.387+00:00,True,False,The core code for Latipium,"Latipium,Development,Non-Mod",1243,False,1.0.2.15
+Intersoft Solutions,2016-11-24T14:25:37.837Z,7,512,"Provides high-performance, async image loading capabilities to your Crosslight apps, featuring smart queue, smooth animation, and various cache options.",Intersoft.Crosslight.Services.ImageLoader,True,2018-04-13T08:33:01.52+00:00,True,False,,"Intersoft,Crosslight,Services,ImageLoader,Image,Loader,Cross-Platform,PCL,Portable,Class,Library",45398,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:25:28.4Z,7,512,Provides barcode scanning capabilities to your Crosslight apps.,Intersoft.Crosslight.Services.Barcode,True,2018-04-13T08:32:46.767+00:00,True,False,,"Intersoft,Crosslight,Services,Barcode,Scanner,Reader,Cross-Platform,PCL,Portable,Class,Library,iOS,Android,Xamarin",44914,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:25:16.62Z,7,512,"Provides various authenticators for user authentication in Crosslight apps, including HttpBasic, NTLM, OAuth, OAuth2, and WebAPI authenticator.",Intersoft.Crosslight.Services.Auth,True,2018-04-13T08:32:30.877+00:00,True,False,,"Intersoft,Crosslight,Services,Auth,Authentication,User,HttpBasic,NTLM,OAuth,OAuth2,WebAPI,Authenticator",46074,False,5.0.5000.779-experimental
+Lapiwe.Common,2016-11-24T14:25:11.743Z,507,512,Lapiwe common package,Lapiwe.Common,False,2016-11-29T05:17:26.69-08:00,True,False,This is the Lapiwe common package,Common,1838,False,1.1.4
+Intersoft Solutions,2016-11-24T14:25:05.79Z,7,512,Provides a powerful yet lightweight Rest client to access remote resources in Crosslight apps.,Intersoft.Crosslight.RestClient,True,2018-04-13T08:32:16.267+00:00,True,False,,"Intersoft,Crosslight,Data,Access,Rest,RestClient,Cross-Platform,PCL,Portable,Class,Library,Client,Server,Mobile",46216,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:24:54.96Z,7,512,Provides server logging functionality that use Entity Framework for the storage.,Intersoft.Crosslight.Logging.EntityFramework,True,2018-04-13T08:32:00.563+00:00,True,False,,"Intersoft,Crosslight,Logging,Entity,Framework,EF,PCL,Portable,Class,Library,Log",43620,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:24:35.367Z,7,512,Provides powerful yet lightweight logging functionality to your Crosslight apps. Supports all client and server platforms.,Intersoft.Crosslight.Logging,True,2018-04-13T08:31:33.157+00:00,True,False,,"Intersoft,Crosslight,Logging,Log,Xamarin,iOS,Android,WinPhone,Windows,Phone,Client,Server,PCL,Portable,Class,Library",45017,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:23:56.9Z,7,512,"Supercharge your Crosslight.Android apps with 50+ Material components including Collapsible ToolBar, RecycleView with built-in Shared Transition and Swipe gesture, Parallax Header and much more. Supports Android API 21 or higher.",Intersoft.Crosslight.Android.v7,True,2018-04-13T08:30:45.327+00:00,True,False,,"Intersoft,Crosslight,Android,Material,Components,Xamarin,v7",46455,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:24:45.353Z,7,512,"Provides seamless logging integration to Microsoft Azure Insights service, including page view and error logs. Supports all client and server platforms.",Intersoft.Crosslight.Logging.AzureInsights,True,2018-04-13T08:31:47.453+00:00,True,False,,"Intersoft,Crosslight,Logging,Azure,Insights,Microsoft,PCL,Server,Portable,Class,Library",44140,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:24:23.977Z,7,512,Provides local database access components and offline changes functionality to your Crosslight apps.,Intersoft.Crosslight.Data.Sqlite,True,2018-04-13T08:31:18+00:00,True,False,,"Intersoft,Crosslight,Data,Sqlite,Cross-Platform,Access,Database,Sqllite",47647,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:24:09.04Z,7,512,Provides essential data components to your Crosslight apps.,Intersoft.Crosslight.Data,True,2018-04-13T08:30:59.497+00:00,True,False,,"Intersoft,Crosslight,Data,Access,Components,Cross-Platform,PCL,Portable,Class,Library",46791,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:23:44.57Z,7,512,"Crosslight is an advanced development toolset for building rich cross-platform mobile applications with 100% shared UI logic. Supported platforms include iOS, Android, and Windows.",Intersoft.Crosslight,True,2018-04-13T08:30:28.573+00:00,True,False,,"Intersoft,Crosslight,MVVM,iOS,Android,WindowsPhone,WinPhone,Windows,Xamarin,Cross-Platform,Mobile",54072,False,5.0.5000.779-experimental
+Intersoft Solutions,2016-11-24T14:23:31.197Z,7,512,"An advanced application framework designed to make enterprise apps development simple, featuring enterprise data access patterns such as generic repositories, query definitions, user management, authentication, security, push notifications, and more. For the server data access counterpart, please install Intersoft.Data.WebApi.v4 package.",Intersoft.AppFramework,True,2018-04-13T08:30:10.917+00:00,True,False,,"Intersoft,AppFramework,Application,Framework,Enterprise,Security,Query,Definitions,User,Management,Authentication,Push,Notification,PNS,Server,Client,WebAPI,Data,Portable,Class,Library,PCL,Mobile",45845,False,5.0.5000.779-experimental
+ChargeBee Inc,2016-11-24T14:16:17.727Z,22,512,Client library for easily integrating with the ChargeBee service,ChargeBee,False,2018-03-29T15:20:01.003+00:00,True,False,,,34952,False,2.2.0
+Dominik Thalhammer,2016-11-24T14:13:51.303Z,337,512,A library providing helper classes for use within EasyCppWeb plugins.,EasyCppWebShared,False,2017-05-18T13:31:03.507-07:00,True,False,,c++,2228,False,0.0.37
+Applicita Ltd,2016-11-24T14:12:24.61Z,222,512,Application uploader for Microsoft Yams,Applicita.YamsUploader,False,2017-09-10T01:56:55.053+00:00,True,False,,,1173,False,0.1.0
+Stone Pagamentos S/A,2016-11-24T14:11:59.86Z,477,512,Easy messaging queue management using RabbitMQ,Kyoo.Library.dll,False,2016-12-29T11:48:46.813-08:00,True,False,,RabbitMQ,1267,False,0.0.5
+Lapiwe.Common,2016-11-24T14:11:04.39Z,507,512,Lapiwe common package,Lapiwe.Common,False,2016-11-29T05:17:26.69-08:00,True,False,This is the Lapiwe common package,Common,1838,False,1.1.2
+Enferno AB,2016-11-24T14:08:27.997Z,2,512,Enferno Storm API Client library.,Enferno.StormApiClient,True,2018-04-18T08:59:53.19+00:00,True,False,,"Enferno,Storm,API,Client",32947,False,1.8.2-beta2
+Grupo ACBr.Net,2016-11-24T14:06:15.933Z,6,512,Biblioteca para serialização e deserialização de xml e comunicação com os webservices,ACBr.Net.DFe.Core,False,2018-04-14T04:39:18.093+00:00,True,False,,"ACBr,ACBr.Net,Automação,Comercial",5389,False,1.0.1.6
+Lapiwe.Common,2016-11-24T14:02:29.367Z,507,512,Lapiwe common package,Lapiwe.Common,False,2016-11-29T05:17:26.69-08:00,True,False,This is the Lapiwe common package,Common,1838,False,1.1.1
+SuggestGrid,2016-11-24T14:01:33.49Z,43209,512,SuggestGrid is a recommendation and personalization service.,SuggestGrid,False,1900-01-01T00:00:00+00:00,False,False,,,3328,False,0.1.25.1
+Grupo ACBr.Net,2016-11-24T13:59:09.897Z,6,512,Biblioteca com as principais funções usadas pelos componentes ACBr.Net,ACBr.Net.Core,False,2018-04-14T03:24:35.89+00:00,True,False,,"ACBr,ACBr.Net,Automação,Comercial",4550,False,1.0.1.4
+CARTO,2016-11-24T13:59:33.16Z,3,512,CARTO Maps SDK for Android,CartoMobileSDK.Android,True,2018-04-17T14:35:22.64+00:00,True,False,"Advanced cross-platform Maps library with offline vector tiles, GIS and 3D features",,19264,False,4.0.0-pre-179
+CARTO,2016-11-24T13:59:07.007Z,3,512,CARTO Maps SDK for iOS,CartoMobileSDK.iOS,True,2018-04-17T14:35:10.53+00:00,True,False,"Advanced cross-platform Maps library with offline vector tiles, GIS and 3D features",,18284,False,4.0.0-pre-179
+Stephen Cleary,2016-11-24T13:55:28.52Z,223,512,Asynchronous helper types for MVVM applications.,Nito.Mvvm.Async,True,2017-09-09T16:00:13.03+00:00,True,False,,"async,mvvm",4633,True,1.0.0-eta-04
+Aram Kocharyan,2016-11-24T13:54:16.58Z,511,512,EntityFramework.Guardian separate package for entities,EntityFramework.Guardian.Entities,False,2016-11-24T22:21:16.05-08:00,True,False,,"EntityFramework,Database,Security,Row-Level,Column-Level",1955,False,1.6.11
+sequencing.com,2016-11-24T13:33:37.483Z,379,512,App chains allows you to personalize your app and provide a genetically tailored user experience.,Sequencing.AppChainsSample,False,2017-04-06T05:11:05.08-07:00,True,False,,"app,chains,real-time,personalization",1448,False,2.0.0
+Loggly,2016-11-23T13:04:50.62Z,7,513,Custom log4Net Appender to send logs to Loggly,log4net-loggly,False,2018-04-13T07:32:56.263+00:00,True,False,,"Loggly-log4net,log4net,appender,logs",172488,False,7.2.3
+larsr,2016-11-24T13:51:28.19Z,2,512,Compello.InvoiceApproval.DocumentImport NuGetPackage,Compello.InvoiceApproval.DocumentImport,False,2018-04-18T12:29:35.61+00:00,True,False,,"Compello,AS",12485,False,1.1.59
+sequencing.com,2016-11-24T13:33:37.483Z,379,512,App chains allows you to personalize your app and provide a genetically tailored user experience.,Sequencing.AppChainsSample,False,2017-04-06T05:11:05.08-07:00,True,False,,"app,chains,real-time,personalization",1448,False,2.0.0
+Ruben Weituschewitz,2016-11-24T13:50:14.593Z,511,512,Simplistic data store - if you don't want to worry about your persistance layer (yet).,SimpleStore,False,2016-11-25T07:59:57.77-08:00,True,False,,,252,False,1.0.0
+Gurux Ltd,2016-11-24T13:50:13.873Z,98,512,"Open Source GXTerminal media component, made by Gurux Ltd, is a part of GXMedias set of media components, which programming interfaces help you implement communication using modem communication. 
+
+Our media components also support the following connection types: network and Serial Port RS-232, RS-485.",Gurux.Terminal,False,2018-01-12T08:10:11.9+00:00,True,False,,"Gurux,Device,Framework,Terminal,Modem",4188,False,8.1.16.1124
+Gurux Ltd,2016-11-24T13:49:29.403Z,98,512,"Open Source GXSMS media component, made by Gurux Ltd, is a part of GXMedias set of media components, which programming interfaces help you implement communication using modem communication. 
+
+Our media components also support the following connection types: network, terminal and Serial Port RS-232, RS-485.",Gurux.SMS,False,2018-01-12T08:09:16.667+00:00,True,False,Using Gurux SMS media component you can send Short messages using your mobile phone.,"Gurux,Device,Framework,SMS",2937,False,8.1.16.1124
+Jiří Helmich,2016-11-24T13:48:37.67Z,239,512,Client for EET - Czech fiscal machines.,Mews.Eet,False,2017-08-24T14:48:39.22+00:00,True,False,,"EET,Fiscal",2696,False,0.3.1
+Gurux Ltd,2016-11-24T13:48:38.467Z,98,512,"Open Source GXSerial media component, made by Gurux Ltd, is a part of GXMedias set of media components, which programming interfaces help you implement communication by chosen connection type. GXSerial offers you an easy way to build multithreaded, serial communication applications. GXSerial is made easy to use. Our media components also support the following connection types: network, terminal.",Gurux.Serial,False,2018-01-12T08:08:24.227+00:00,True,False,,"Gurux,Device,Framework,serial,port,RS-232",5930,False,8.1.16.1124
+Gurux Ltd,2016-11-24T13:47:51.437Z,98,512,"Open Source GXNet media component, made by Gurux Ltd, is a part of GXMedias set of media components, which programming interfaces help you implement communication by chosen connection type. GXNet is made easy to use. Gurux media components also support the following connection types: serial port and terminal.",Gurux.Net,False,2018-01-12T08:07:29.007+00:00,True,False,,"Gurux,Device,Framework,Network,TCP/IP,UDP",6611,False,8.1.16.1124
+,,-1,-1,,IFS.360.FloatableWindow,,,,True,,,,,1.0.0
+,,-1,-1,,IFS.360.HTMLToRichTextBox,,,,True,,,,,1.0.0
+sequencing.com,2016-11-24T13:15:47.713Z,379,512,App chains allows you to personalize your app and provide a genetically tailored user experience.,Sequencing.AppChainsSample,False,2017-04-06T05:11:05.08-07:00,False,False,,"app,chains,real-time,personalization",1448,False,1.0.0
+d.gordienko@gmail.com,2016-11-24T13:40:21.813Z,508,512,Пользовательские элементы управления и компоненты Distributor,Distributor.Launcher.Controls,False,2016-11-28T06:41:15.157-08:00,True,False,Пользовательские элементы управления и компоненты Distributor,,588,False,1.16.49.4
+Stuart Banks,2016-11-24T13:39:52.5Z,456,512,An IdentityServer plugin for authenticating against a ASP.NET 2.0 Membership Database,IdentityServer3.Contrib.Membership,False,2017-01-19T02:48:07.84-08:00,True,False,,IdentityServer,1852,False,1.0.18
+Lapiwe.Common,2016-11-24T13:39:08.843Z,507,512,Lapiwe common package,Lapiwe.Common,False,2016-11-29T05:17:26.69-08:00,True,False,This is the Lapiwe common package,Common,1838,False,1.1.0
+Stephen Cleary,2016-11-24T13:39:38.093Z,223,512,Asynchronous helper types for MVVM applications.,Nito.Mvvm.Async,True,2017-09-09T16:00:13.03+00:00,True,False,,"async,mvvm",4633,True,1.0.0-eta-03
+Go Mobile AS,2016-11-24T13:38:41.703Z,491,512,Mivai MCS Client for interacting with the Mivai Collector Service,MCSLib,False,2016-12-15T05:02:12.407-08:00,True,False,,Mivai,1054,False,1.0.0.7
+sequencing.com,2016-11-24T13:33:37.483Z,379,512,App chains allows you to personalize your app and provide a genetically tailored user experience.,Sequencing.AppChainsSample,False,2017-04-06T05:11:05.08-07:00,True,False,,"app,chains,real-time,personalization",1448,False,2.0.0
+Gurux Ltd,2016-11-24T13:32:25.563Z,98,512,Gurux.Common class implements interfaces that are needed for Gurux Media components and Gurux Device Framework.,Gurux.Common,False,2018-01-12T07:23:07.62+00:00,True,False,,"Gurux,device,framework",14509,False,8.1.16.1124
+SuggestGrid,2016-11-24T13:31:03.233Z,43209,512,SuggestGrid is a recommendation and personalization service.,SuggestGrid,False,1900-01-01T00:00:00+00:00,False,False,,,3328,False,0.1.25
+Froala Labs,2016-11-24T12:58:02.02Z,512,512,Ease server integration of the Froala WYSIWYG HTML Editor.,FroalaEditorSDK,False,2016-11-24T05:19:40.587-08:00,False,False,,"froala,wysiwyg,html,editor,richt,text,image,upload",2162,False,1.0.0
+Takenet,2016-11-24T13:26:45.337Z,172,512,Messaging Hub Application Template for web projects,Takenet.MessagingHub.Client.WebTemplate,False,2017-10-30T18:03:27.563+00:00,True,False,A template to create Messaging Hub applications,messagingHub,12852,False,0.4.49
+,,-1,-1,,IFS.360.DevComponents.Silverlight,,,,True,,,,,1.0.0
+Interact Software,2016-11-24T13:27:28.123Z,512,512,"Visual Studio test adapter for Fuchu. Shows Fuchu tests in Visual Studio's Test Explorer, and also enables them to be run in Visual Studio Online builds.",Fuchu.Adapter,False,2016-11-24T05:27:28.123-08:00,True,False,,"Fuchu,Visual,Studio,Test,Adapter,testadapter",1158,False,1.0.4.12
+Takenet,2016-11-24T13:26:31.693Z,172,512,"A template to expose Blip MessagingHub applications through webhook, using ASP.NET WebApi",Takenet.MessagingHub.Client.WebhookTemplate,False,2017-10-30T18:03:12.703+00:00,True,False,,"messagingHub,blip,webhook,asp.net,webapi",16670,False,0.4.49
+takenet,2016-11-24T13:26:22.57Z,172,512,Textc extensions for the Messaging Hub Client,Takenet.MessagingHub.Client.Textc,False,2017-10-30T18:02:55.763+00:00,True,False,,"lime,messaginghub,textc",57160,False,0.4.49
+takenet,2016-11-24T13:25:37.837Z,172,512,The C# SDK for the Messaging Hub,Takenet.MessagingHub.Client,False,2017-10-30T18:02:16.577+00:00,True,False,,"lime,messaginghub",78198,False,0.4.49
+takenet,2016-11-24T13:26:10.303Z,288,512,The tester library for the C# SDK of the Messaging Hub,Takenet.MessagingHub.Client.Tester,False,2017-07-06T13:50:13.713-07:00,True,False,,"lime,messaginghub",25057,False,0.4.49
+Takenet,2016-11-24T13:25:57.74Z,172,512,Messaging Hub Application Template,Takenet.MessagingHub.Client.Template,False,2017-10-30T18:02:41.843+00:00,True,False,A template to create Messaging Hub applications,messagingHub,34838,False,0.4.49
+Takenet,2016-11-24T13:25:47.867Z,172,512,Messaging Hub Client Host,Takenet.MessagingHub.Client.Host,False,2017-10-30T18:02:28.187+00:00,True,False,A host implementation to run libraries that use the Messaging Hub Client,messagingHub,48645,False,0.4.49
+Trimble Solutions Corporation,2016-11-24T13:22:46.913Z,106,512,"Trimble Identity OpenId Connect Client helps you authenticate users via Trimble Identity and store user tokens. The library is cross-platform, so once you learn it on iOS, you're all set on Android.",Trimble.Identity,False,2018-01-04T09:15:45.657+00:00,True,False,Trimble Identity OpenId Connect Client.,"Trimble,TID,TPaaS,auth",9186,False,1.1.11
+Direktoratet for forvaltning og IKT (Difi),2016-11-24T13:22:36.07Z,144,512,Klientbibliotek for sending av sikker digital post for offentlig sektor.,difi-sikker-digital-post-klient,False,2017-11-27T13:19:50.35+00:00,True,False,,"Posten,SikkerDigitalPost,Sikker,Post,eBoks,Digipost,Difi",18454,False,2.0.0
+,,-1,-1,,IFS.360.Microsoft.Maps.Silverlight,,,,True,,,,,1.0.0
+AgileHarbor,2016-11-24T13:20:43.54Z,165,512,MessageVault client library.,MessageVault.Client,False,2017-11-06T12:00:24.673+00:00,True,False,,,9850,False,4.2.2
+Froala Labs,2016-11-24T13:19:40.587Z,512,512,Ease server integration of the Froala WYSIWYG HTML Editor.,FroalaEditorSDK,False,2016-11-24T05:19:40.587-08:00,True,False,,"froala,wysiwyg,html,editor,richt,text,image,upload",2162,False,1.0.1
+Trimble Solutions Corporation,2016-11-24T13:19:40.477Z,106,512,Trimble Connect Platform Services REST API v2 client for desktop and mobile applications.,Trimble.Connect.Client,False,2018-01-04T09:26:21.25+00:00,True,False,Trimble Connect Platform Services REST API v2 Client.,"trimble,tcsdk,tcps,rest",7030,False,2.0.292
+乐逍遥,2016-11-24T13:17:10.823Z,504,512,E6 针对WebApi项目类型的包装,E6.Boot.Aspnet.WebApi,False,2016-12-01T16:43:10.11-08:00,True,False,,,1349,False,1.0.0.11
+adis,2016-11-24T13:16:06.48Z,144,512,Description,Concode.Common.Web,False,2017-11-27T10:08:11.543+00:00,True,False,,,3927,False,1.0.1
+sequencing.com,2016-11-24T13:15:47.713Z,379,512,App chains allows you to personalize your app and provide a genetically tailored user experience.,Sequencing.AppChainsSample,False,2017-04-06T05:11:05.08-07:00,True,False,,"app,chains,real-time,personalization",1448,False,1.0.0
+Trimble Solutions Corporation,2016-11-24T13:13:53.46Z,106,512,Portable SQLite .NET wrapper. All but iOS packages include a precompiled SQLite 3.14.1 binaries.,Trimble.SQLite,False,2018-01-04T09:20:07.453+00:00,True,False,SQLite portable wrapper for .NET.,"trimble,SQLite",1988,False,1.0.58
+Go Mobile AS,2016-11-24T13:13:40.727Z,491,512,Mivai MCS Client for interacting with the Mivai Collector Service,MCSLib,False,2016-12-15T05:02:12.407-08:00,True,False,,Mivai,1054,False,1.0.0.5
+IFS,2016-11-24T13:13:10.633Z,43209,512,Geocode library for resource manager,IFS.360.Geocode,False,1899-12-31T16:00:00-08:00,False,False,,IFS,-1,False,1.0.2
+Dmitry Rubtsov,2016-11-24T12:43:20.68Z,43209,512,Tested by Voland@DESKTOP-VEK78QJ at C:\Git\Test\kontur\trytobuild\bin\Debug\Test.exe commit d0365de3351bc0bb56a6fdf81b4cba7e48134b18,TestovoezadanieIsakov,False,1899-12-31T16:00:00-08:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+AgileHarbor,2016-11-24T13:10:38.83Z,165,512,MessageVault client library.,MessageVault.Client,False,2017-11-06T12:00:24.673+00:00,True,False,,,9850,False,4.2.1
+Gurux Ltd,2016-11-24T13:10:00.8Z,98,512,Gurux.Common class implements interfaces that are needed for Gurux Media components and Gurux Device Framework.,Gurux.Common,False,2018-01-12T07:23:07.62+00:00,True,False,,"Gurux,device,framework",14509,False,8.0.16329.10
+"Alexey Zimarev
+Chris Patterson
+Dru Sellers
+Travis Smith",2016-11-24T13:08:03.907Z,43209,512,Redis Saga persistence for PostgreSQL JSON storage using Marten document store library,MassTransit.PostgresMartenIntegration,False,1899-12-31T16:00:00-08:00,False,False,,"MassTransit,Postgres,Marten",-1,False,1.0.0
+IFS,2016-11-24T13:07:23.533Z,43209,512,Geocode library for resource manager,IFS.360.Geocode,False,1899-12-31T16:00:00-08:00,False,False,,IFS,-1,False,1.0.1
+Momentum,2016-11-24T13:04:01.7Z,4,512,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.9.5.3532-beta
+Momentum,2016-11-24T13:03:50.997Z,4,512,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.9.5.3532-beta
+Froala Labs,2016-11-24T12:58:02.02Z,512,512,Ease server integration of the Froala WYSIWYG HTML Editor.,FroalaEditorSDK,False,2016-11-24T05:19:40.587-08:00,True,False,,"froala,wysiwyg,html,editor,richt,text,image,upload",2162,False,1.0.0
+Elders,2016-11-24T13:02:23.7Z,18,512,Cronus.Projections.Cassandra,Cronus.Projections.Cassandra,True,2018-04-02T14:55:21.127+00:00,True,False,Cronus.Projections.Cassandra,"cronus,DDD,modeling,domain",5909,False,2.0.0-beta0001
+Stuart Banks,2016-11-24T12:59:53.38Z,456,512,An IdentityServer plugin for authenticating against a ASP.NET 2.0 Membership Database,IdentityServer3.Contrib.Membership,False,2017-01-19T02:48:07.84-08:00,True,False,,IdentityServer,1852,False,1.0.17
+IFS,2016-11-24T12:59:16.223Z,43209,512,Geocode library for resource manager,IFS.360.Geocode,False,1899-12-31T16:00:00-08:00,False,False,,IFS,-1,False,1.0.0
+Froala Labs,2016-11-24T12:58:02.02Z,512,512,>Ease server integration of the Froala WYSIWYG HTML Editor.,FroalaEditorSDK,False,2016-11-24T05:19:40.587-08:00,True,False,,"froala,wysiwyg,html,editor,richt,text,image,upload",2162,False,1.0.0
+GroupDocs,2016-11-24T12:51:26.44Z,233,512,"GroupDocs.Comparison for .NET is a lightweight library which allows you to merge and compare two versions of a PDF or Office document and display differences between them.
+      GroupDocs.Comparison is a one-stop solution for comparing documents of all common formats. It can be used to generate diffs for PDF files, Microsoft Word documents (DOC, DOCX), Excel spreadsheets (XLS, XSLSX), PowerPoint presentations (PPT, PPTX), TXT and HTML documents.
+      GroupDocs.Comparison works without any external dependencies and can be deployed with just a single DLL. There is no need to install any 3rd party software on the server or the client side. We also provide a C# demo, to help you explore the library quickly.
+      The product has the following key features:
+      - Native support for the following formats: PDF files, Microsoft Word documents (DOC, DOCX), Excel spreadsheets (XLS, XSLSX), PowerPoint presentations (PPT, PPTX), TXT and HTML
+      - Ability to compare file parts separately: pages, slides, paragraphs, worksheets
+      - Ability to get object model of the comparison  results
+      - Flexible comparison API that provides both unified API for all formats and format specific API.
+      - Apply/Discard changes support for all supported formats
+      - Designed as native .NET library which allow usage in all possible project types
+      - Improved comparison performance
+      For more details on the library, please visit GroupDocs website at:
+      http://groupdocs.com/dot-net/document-comparison-library
+
+      Note: The library comes up with some limitations in the evaluation mode. In order to test full features of GroupDocs.Viewer for .NET library, please request a free 30-day temporary license.",groupdocs-comparison-dotnet,False,2017-08-30T12:41:50.743+00:00,True,False,GroupDocs.Comparison for .NET is a lightweight library which allows you to merge and compare two versions of a PDF or Office document and display differences between them.,"Compare,Comparison,Documents,PDF,Word,Excel,PowerPoint,Visio,AutoCad,DOC,DOCX,XLS,XLSX,PPT,PPTX,VSD,DXF,TIFF",7242,False,16.11.0
+Unimake Software,2016-11-24T12:46:45.107Z,43209,512,DLL de comunicação com o SAT,Unimake.SAT,False,1900-01-01T00:00:00+00:00,False,False,,,1684,False,20161124.1045.0
+乐逍遥,2016-11-24T12:46:57.013Z,504,512,E6 针对WebApi项目类型的包装,E6.Boot.Aspnet.WebApi,False,2016-12-01T16:43:10.11-08:00,True,False,,,1349,False,1.0.0.10
+Dmitry Rubtsov,2016-11-24T12:43:20.68Z,43209,512,Tested by Voland@DESKTOP-VEK78QJ at C:\Git\Test\kontur\trytobuild\bin\Debug\Test.exe commit d0365de3351bc0bb56a6fdf81b4cba7e48134b18,TestovoezadanieIsakov,False,1899-12-31T16:00:00-08:00,False,False,,"Tag1,Tag2",-1,False,1.0.0
+Stephen Cleary,2016-11-24T12:40:44.353Z,512,512,Browser automation toolkit.,Nito.BrowserBoss,False,2016-11-24T08:06:58.087-08:00,True,False,Browser automation toolkit.,"browser,automation,linqpad-samples",1608,True,2.0.2
+QlikTech International AB,2016-11-24T12:35:52.71Z,64,512,The Qlik Sense .NET SDK is a development toolbox for embedding Qlik Sense into host application programs developed by software manufacturers on an OEM basis.,QlikSense.NetSDK,False,2018-02-15T12:19:11.013+00:00,True,False,Connect to a Qlik Sense engine and use the .NET framework API to build a Qlik Sense app from scratch or to embed Qlik Sense objects in client applications.,"qlik,sense",13635,False,3.1.2
+,,-1,-1,,IFS.360.AppLogger,,,,True,,,,,1.0.0
+Stuart Banks,2016-11-24T12:34:39.317Z,456,512,An IdentityServer plugin for authenticating against a ASP.NET 2.0 Membership Database,IdentityServer3.Contrib.Membership,False,2017-01-19T02:48:07.84-08:00,True,False,,IdentityServer,1852,False,1.0.16
+"Virgil Security,Inc",2016-11-24T12:35:03.8Z,52,512,"With Virgil Security every developer can build cryptographic features including end-to-end encryption, passwordless authentication, and cryptographic verification of data, devices, and identities into their products, with no cryptographic training. Virgil SDK simplifies their work with Virgil Security services(keys management and identities validation) and Crypto Library(modern algorithms with crypto agility).",Virgil.SDK,True,2018-02-27T15:17:21.993+00:00,True,False,"With Virgil Security every developer can build cryptographic features including end-to-end encryption, passwordless authentication, and cryptographic verification of data, devices, and identities into their products, with no cryptographic training. Virgil SDK simplifies their work with Virgil Security services(keys management and identities validation) and Crypto Library(modern algorithms with crypto agility).
+
+Docs - https://virgilsecurity.com/docs/sdk/net/v4.0(latest)/dot-net-csharp-sdk
+Source - https://github.com/VirgilSecurity/virgil-sdk-net
+
+Supported Platforms:
+  - .NET Framework 4.5+
+  - Windows 8+","PKI,Cryptography,Crossplatform",5033,False,4.2.0-beta
+Lapiwe.Common,2016-11-24T12:34:08.33Z,507,512,Lapiwe common package,Lapiwe.Common,False,2016-11-29T05:17:26.69-08:00,True,False,This is the Lapiwe common package,Common,1838,False,1.0.0
+Case2.JaJeSt.Common,2016-11-24T12:32:16.83Z,43209,512,Case2.JaJeSt.Common,Case2.JaJeSt.Common,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.2
+Zonaro,2016-11-24T12:33:07.66Z,3,512,"Uma bliblioteca de classes e métodos para .NET. Opções flexiveis e fáceis de usar para simplificar e manter seu código limpo.
+
+O projeto nasceu a partir da nescessidade de repetir os códigos em diversos projetos. No início era uma classe com alguns métodos que precisavam sempre ser modificados em cada projeto. Hoje InnerLibs conta com mais de 120 métodos de extensão para as mais diversas operaçoes comuns em ASP.NET e Aplicações Windows Forms. Entre as funções, você pode encontrar manipuladores de texto, manipuladores de imagem, conexão de banco de dados genérica, criação de vCards,integrações com API de terceiros (como o goqr.me, ViaCEP e o Google Maps) etc.",InnerLibs,False,2018-04-17T16:16:48.857+00:00,True,False,,,13153,False,1.0.7
+Dominik Pytlewski,2016-11-24T12:32:20.377Z,449,512,"Provides classes that interact with docker-machine.exe and docker.exe to automatically start machine, create and cleanup containers. Uses IDisposable for lowest ceremony to make tests shortest",DisposableSoftwareContainer.Docker,False,2017-01-26T09:31:26.457-08:00,True,False,,"docker,disposable,IDisposable",266,False,1.0.0
+IFS,2016-11-24T12:32:38.597Z,43209,512,Framework for excel,IFS.360.Ciloci.Flee.dll,False,1899-12-31T16:00:00-08:00,False,False,,Excel,-1,False,1.0.1
+IFS,2016-11-24T12:30:17.52Z,43209,512,Framework for excel,IFS.360.Ciloci.Flee.dll,False,1899-12-31T16:00:00-08:00,False,False,,Excel,-1,False,1.0.0
+乐逍遥,2016-11-24T12:30:55.19Z,505,512,E6文件系统，支持本地目录和分布式方式,E6.FileSystem,False,2016-12-01T00:22:20.367-08:00,True,False,,,701,False,1.0.0.3
+Antoine-Ali Zarrouk,2016-11-24T12:29:24.77Z,333,512,A small utility library,Nuget.Side.Utils,False,2017-05-22T01:51:55.517-07:00,True,False,,"Utils,C#",1860,False,1.0.6172.22437
+AgileHarbor,2016-11-24T12:28:22.567Z,165,512,MessageVault client library.,MessageVault.Client,False,2017-11-06T12:00:24.673+00:00,True,False,,,9850,False,4.2.0
+"Virgil Security,Inc",2016-11-24T12:07:46.157Z,43209,512,"This package provides a list of crypto services and all the necessary infrastructure to enable seamless, end-to-end encryption for any application.",Virgil.SDK.Crypto,True,1899-12-31T16:00:00-08:00,False,False,"Virgil is a stack of security libraries (ECIES with Crypto Agility wrapped in Virgil Cryptogram) and all the necessary infrastructure to enable seamless, end-to-end encryption for any application, platform or device. See below for currently available languages and platforms. Get in touch with us to get preview access to our key infrastructure.
+
+Virgil Security, Inc., guides software developers into the forthcoming security world in which everything will be encrypted (and passwords will be eliminated). In this world, the days of developers having to raise millions of dollars to build a secure chat, secure email, secure file-sharing, or a secure anything have come to an end. Now developers can instead focus on building features that give them a competitive market advantage while end-users can enjoy the privacy and security they increasingly demand.
+
+Docs - https://virgilsecurity.com/docs/sdk/net/v4.0(latest)/dot-net-csharp-sdk
+Source - https://github.com/VirgilSecurity/virgil-sdk-net
+
+Supported Platforms:
+  - .NET Framework 4.5+
+  - ASP.NET Core 1.0+
+  - Windows 8+
+  - Windows Phone 8.1+
+  - Windows Phone Silverlight 8+
+  - Xamarin.Android
+  - Xamarin.iOS
+  - Xamarin.iOS (Classic)","PKI,Cryptography,Cross,Platform",-1,False,2.0.0-beta
+shootdaj,2016-11-24T12:26:32.3Z,485,512,Connect your C# application to MIDI with ease.,MIDIator,False,2016-12-21T01:42:46.29-08:00,True,False,,midi,6008,False,1.0.35
+Microsoft,2016-11-24T12:26:30.097Z,21,512,This package contains SharePoint and Project Online Client Object Model libraries.,Microsoft.SharePointOnline.CSOM,False,2018-03-30T13:05:53.017+00:00,True,False,,"Microsoft,Office,API,SharePoint,Client,Object,Model,CSOM,Portable,Windows8,WindowsPhone8,Windows",461755,True,16.1.5903.1200
+"Virgil Security,Inc",2016-11-24T12:25:39.207Z,43209,512,"This package provides a list of crypto services and all the necessary infrastructure to enable seamless, end-to-end encryption for any application.",Virgil.SDK.Crypto,False,1899-12-31T16:00:00-08:00,False,False,"Virgil is a stack of security libraries (ECIES with Crypto Agility wrapped in Virgil Cryptogram) and all the necessary infrastructure to enable seamless, end-to-end encryption for any application, platform or device. See below for currently available languages and platforms. Get in touch with us to get preview access to our key infrastructure.
+
+Virgil Security, Inc., guides software developers into the forthcoming security world in which everything will be encrypted (and passwords will be eliminated). In this world, the days of developers having to raise millions of dollars to build a secure chat, secure email, secure file-sharing, or a secure anything have come to an end. Now developers can instead focus on building features that give them a competitive market advantage while end-users can enjoy the privacy and security they increasingly demand.
+
+Docs - https://virgilsecurity.com/docs/sdk/net/v4.0(latest)/dot-net-csharp-sdk
+Source - https://github.com/VirgilSecurity/virgil-sdk-net
+
+Supported Platforms:
+  - .NET Framework 4.5+
+  - ASP.NET Core 1.0+
+  - Windows 8+
+  - Windows Phone 8.1+
+  - Windows Phone Silverlight 8+
+  - Xamarin.Android
+  - Xamarin.iOS
+  - Xamarin.iOS (Classic)","PKI,Cryptography,Cross,Platform",-1,False,2.0.0
+Trackmatic Solutions (Pty) Ltd,2016-11-24T12:23:45.75Z,199,512,An object graph mapping library for .Net,Plot.Neo4j,False,2017-10-03T12:46:51.223+00:00,True,False,,"plot,n4g,ogm,neo4j",5738,False,0.2.1
+Stuart Banks,2016-11-24T12:22:53.747Z,456,512,An IdentityServer plugin for authenticating against a ASP.NET 2.0 Membership Database,IdentityServer3.Contrib.Membership,False,2017-01-19T02:48:07.84-08:00,True,False,,IdentityServer,1852,False,1.0.15
+RabbitMQ.Client.SimplePubSubWrapper,2016-11-24T12:21:21.497Z,43209,512,RabbitMQ.Client.SimplePubSubWrapper,RabbitMQ.Client.SimplePubSubWrapper,False,1900-01-01T00:00:00+00:00,False,False,,,2474,False,1.0.2
+TallComponents BV,2016-11-24T12:20:29.18Z,43209,512,"PDFKit.NET is a 100% managed .NET component for, reading, creating and manipulating PDF documents and PDF forms on the fly. With PDFKit.NET you can split, append, stamp, encrypt PDF documents and fill PDF forms.",TallComponents.PDFKit,False,1900-01-01T00:00:00+00:00,False,False,"A .NET class library for creating, manipulating and reading PDF documents.","pdf,create,forms,encryption,extract",15774,False,4.0.73
+Synechron Technologies,2016-11-24T12:19:37.54Z,350,512,STEPIN Open Entities,STEPIN.Open,False,2017-05-05T09:01:32.19-07:00,True,False,,,15749,False,1.0.20
+Octopus Deploy,2016-11-24T12:18:24.743Z,3,512,A JSON Document Store library for SQL Server,Nevermore.Contracts,False,2018-04-17T02:43:07.027+00:00,True,False,,,15170,False,2.0.2
+Nevermore,2016-11-24T12:18:38.73Z,3,512,Nevermore,Nevermore,False,2018-04-17T02:43:11.09+00:00,True,False,,,12397,False,2.0.2
+Bastian Eicher,2016-11-24T12:17:09.493Z,485,512,Owin.JwtAuth provides JSON Web Token authentication with X509 signing and configuration stored in App.config/Web.config.,Owin.JwtAuth,False,2016-12-21T03:05:55.607-08:00,True,False,JSON Web Token authentication with X509 signing,"OWIN,JWT,JSON,Web,Token,authentication",1053,False,0.4.0
+The Human Fertilisation and Embryology Authority,2016-11-24T12:17:45.57Z,43209,512,HFEA Open API,HFEA.IFQ.OpenSdk,False,1900-01-01T00:00:00+00:00,False,False,Alpha version of the SDK for HFEA Open API. This is an early alpha version which may and will change dramatically over time.,,-1,False,1.0.0.2035
+Microsoft,2016-11-24T12:12:56.757Z,505,512,E6文件系统，支持本地目录和分布式方式,E6.FileSystem,False,2016-12-01T00:22:20.367-08:00,True,False,,,701,False,1.0.0.2
+jack,2016-11-24T11:49:23.483Z,43209,512,"一个轻量级的O/RM 类库,支持Sql Server，Oledb、ODBC、SQLite等多种数据库驱动。
+能够快速实现实体对象的数据库通用操作，并且实现数据库无缝切换。",EasyEF,False,1900-01-01T00:00:00+00:00,False,False,,"DataBase,Data,O/RM,ADO.NET",3573,False,0.0.2.17
+,,-1,-1,,IFS.360.FlexCel.dll,,,,True,,,,,1.0.0
+"Virgil Security,Inc",2016-11-24T12:07:46.157Z,43209,512,"This package provides a list of crypto services and all the necessary infrastructure to enable seamless, end-to-end encryption for any application.",Virgil.SDK.Crypto,True,1899-12-31T16:00:00-08:00,False,False,"Virgil is a stack of security libraries (ECIES with Crypto Agility wrapped in Virgil Cryptogram) and all the necessary infrastructure to enable seamless, end-to-end encryption for any application, platform or device. See below for currently available languages and platforms. Get in touch with us to get preview access to our key infrastructure.
+
+Virgil Security, Inc., guides software developers into the forthcoming security world in which everything will be encrypted (and passwords will be eliminated). In this world, the days of developers having to raise millions of dollars to build a secure chat, secure email, secure file-sharing, or a secure anything have come to an end. Now developers can instead focus on building features that give them a competitive market advantage while end-users can enjoy the privacy and security they increasingly demand.
+
+Docs - https://virgilsecurity.com/docs/sdk/net/v4.0(latest)/dot-net-csharp-sdk
+Source - https://github.com/VirgilSecurity/virgil-sdk-net
+
+Supported Platforms:
+  - .NET Framework 4.5+
+  - ASP.NET Core 1.0+
+  - Windows 8+
+  - Windows Phone 8.1+
+  - Windows Phone Silverlight 8+
+  - Xamarin.Android
+  - Xamarin.iOS
+  - Xamarin.iOS (Classic)","PKI,Cryptography,Cross,Platform",-1,False,2.0.0-beta
+jack,2016-11-24T12:05:13.01Z,43209,512,"一个轻量级的O/RM 类库,支持Sql Server，Oledb、ODBC、SQLite等多种数据库驱动。
+能够快速实现实体对象的数据库通用操作，并且实现数据库无缝切换。",EasyEF,False,1900-01-01T00:00:00+00:00,False,False,,"DataBase,Data,O/RM,ADO.NET",3573,False,0.0.2.18
+"Virgil Security,Inc",2016-11-24T11:30:23.06Z,232,512,Virgil SDK enable simplified software development through the use of an intuitive and straightforward Virgil Services.,Virgil.SDK.Contracts,True,2017-08-31T11:18:28.467+00:00,False,False,"Virgil Security allows for every developer can build cryptographic features including end-to-end encryption, passwordless authentication, and cryptographic verification of data, devices, and identities into their products, with no cryptographic training. Virgil SDK simplifies their work with Virgil Security services(keys management and identities validation) and Crypto Library(modern algorithms with crypto agility).
+
+Docs - https://virgilsecurity.com/docs/sdk/net/v4.0(latest)/dot-net-csharp-sdk
+Source - https://github.com/VirgilSecurity/virgil-sdk-net
+
+Supported Platforms:
+  - .NET Framework 4.5+
+  - ASP.NET Core 1.0+
+  - Windows 8+
+  - Windows Phone 8.1+
+  - Windows Phone Silverlight 8+
+  - Xamarin.Android
+  - Xamarin.iOS
+  - Xamarin.iOS (Classic)","PKI,Cryptography,Cross,Platform",1643,False,1.0.0-beta
+hetp@chymeia.com,2016-11-24T12:03:05.48Z,141,512,Chymeia.AlphaOmega.DecisionTreeRESTTypes,Chymeia.AlphaOmega.DecisionTreeRESTTypes,False,2017-11-30T00:40:07.43+00:00,True,False,,,7389,False,1.0.16
+hetp@chymeia.com,2016-11-24T12:02:54.417Z,99,512,REST client for AlphaOmega Decision tree functionality.,Chymeia.AlphaOmega.Api.DecisionTreeClient,False,2018-01-11T10:08:59.367+00:00,True,False,,,8528,False,1.0.21
+RabbitMQ.Client.SimplePubSubWrapper,2016-11-24T12:03:21.167Z,43209,512,RabbitMQ.Client.SimplePubSubWrapper,RabbitMQ.Client.SimplePubSubWrapper,False,1900-01-01T00:00:00+00:00,False,False,,,2474,False,1.0.1
+OS33,2016-11-24T12:02:16.613Z,1,512,OS33 API transport,OS33.Api.Transport,False,2018-04-19T09:13:08.253+00:00,True,False,,"OS33,client,transport,API",10562,False,1.0.6172.21578
+OS33,2016-11-24T12:01:43.16Z,1,512,OS33 basic client API,OS33.Api.Client.Basic,False,2018-04-19T09:12:57.8+00:00,True,False,,"OS33,API",10645,False,1.0.6172.21578
+OS33,2016-11-24T12:01:28.597Z,1,512,OS33 client API,OS33.Api.Client,False,2018-04-19T09:12:55.38+00:00,True,False,,"OS33,client,API",56055,False,1.0.6172.21577
+OS33,2016-11-24T12:01:16.783Z,1,512,OS33 API data contracts,OS33.Api.DataContracts,False,2018-04-19T09:13:00.207+00:00,True,False,,"OS33,API,data,contracts",40513,False,1.0.6172.21577
+OS33,2016-11-24T12:02:00.47Z,1,512,OS33 API serialization,OS33.Api.Serialization,False,2018-04-19T09:13:06.1+00:00,True,False,,"OS33,API,serialization",13112,False,1.0.6172.21578
+Synechron Technologies,2016-11-24T12:00:43.72Z,350,512,STEPIN Open Entities,STEPIN.Open,False,2017-05-05T09:01:32.19-07:00,True,False,,,15749,False,1.0.19
+OS33,2016-11-24T12:01:06.737Z,1,512,OS33 client API interfaces,OS33.Api.Interfaces.Client,False,2018-04-19T09:13:03.003+00:00,True,False,,"OS33,client,API,interfaces",17419,False,1.0.6172.21577
+OS33,2016-11-24T11:59:00.627Z,1,512,OS33 API transport,OS33.Api.Transport,True,2018-04-19T09:13:08.253+00:00,True,False,,"OS33,client,transport,API",10562,False,1.0.6172-prerelease-21480
+OS33,2016-11-24T11:58:44.377Z,1,512,OS33 API serialization,OS33.Api.Serialization,True,2018-04-19T09:13:06.1+00:00,True,False,,"OS33,API,serialization",13112,False,1.0.6172-prerelease-21480
+OS33,2016-11-24T11:58:12.45Z,1,512,OS33 client API,OS33.Api.Client,True,2018-04-19T09:12:55.38+00:00,True,False,,"OS33,client,API",56055,False,1.0.6172-prerelease-21480
+OS33,2016-11-24T11:57:50.467Z,1,512,OS33 client API interfaces,OS33.Api.Interfaces.Client,True,2018-04-19T09:13:03.003+00:00,True,False,,"OS33,client,API,interfaces",17419,False,1.0.6172-prerelease-21480
+OS33,2016-11-24T11:58:00.323Z,1,512,OS33 API data contracts,OS33.Api.DataContracts,True,2018-04-19T09:13:00.207+00:00,True,False,,"OS33,API,data,contracts",40513,False,1.0.6172-prerelease-21480
+OS33,2016-11-24T11:58:26.67Z,1,512,OS33 basic client API,OS33.Api.Client.Basic,True,2018-04-19T09:12:57.8+00:00,True,False,,"OS33,API",10645,False,1.0.6172-prerelease-21481
+"Virgil Security,Inc",2016-11-24T11:58:31.62Z,232,512,Virgil SDK enable simplified software development through the use of an intuitive and straightforward Virgil Services.,Virgil.SDK.Contracts,False,2017-08-31T11:18:28.467+00:00,True,False,"Virgil Security allows for every developer can build cryptographic features including end-to-end encryption, passwordless authentication, and cryptographic verification of data, devices, and identities into their products, with no cryptographic training. Virgil SDK simplifies their work with Virgil Security services(keys management and identities validation) and Crypto Library(modern algorithms with crypto agility).
+
+Docs - https://virgilsecurity.com/docs/sdk/net/v4.0(latest)/dot-net-csharp-sdk
+Source - https://github.com/VirgilSecurity/virgil-sdk-net
+
+Supported Platforms:
+  - .NET Framework 4.5+
+  - ASP.NET Core 1.0+
+  - Windows 8+
+  - Windows Phone 8.1+
+  - Windows Phone Silverlight 8+
+  - Xamarin.Android
+  - Xamarin.iOS
+  - Xamarin.iOS (Classic)","PKI,Cryptography,Cross,Platform",1643,False,1.0.0
+,,-1,-1,,IFS.360.AppLogger,,,,True,,,,,1.0.0
+Stefano Teodorani,2016-11-24T11:51:43.88Z,28,512,Apex-net APPManager helper for iCommerce IOS App,AMHelper,False,2018-03-23T10:11:34.093+00:00,True,False,,"iorder,icommerce,ib,igamma",12610,False,2.0.5.5
+conorkel,2016-11-24T11:47:42.577Z,512,512,"Retry Operation Helper is a simple class which encapsulates the retry of any given piece of C# .NET logic a given number of times before failing, as well as running an optional function on failure. It is useful for any call where transient exception are possible, for example, making a call to a remote database or service. See the Project site at https://github.com/Microsoft/RetryOperationHelper. Retry Operation Helper is licensed under the MIT license. RetryOperationHelper uses third-party libraries or other resources that may be distributed under licenses different than RetryOperationHelper.",DotNetRetryOperationHelper,True,2016-11-24T03:47:42.577-08:00,True,False,"Retry Operation Helper is a simple class which encapsulates the retry of any given piece of C# .NET logic a given number of times before failing, as well as running an optional function on failure. It is useful for any call where transient exception are possible, for example, making a call to a remote database or service. See the Project site at https://github.com/Microsoft/RetryOperationHelper. Retry Operation Helper is licensed under the MIT license. RetryOperationHelper uses third-party libraries or other resources that may be distributed under licenses different than RetryOperationHelper.",,457,False,1.0.2-alpha
+jack,2016-11-24T11:20:23.027Z,43209,512,"一个轻量级的O/RM 类库,支持Sql Server，Oledb、ODBC、SQLite等多种数据库驱动。
+能够快速实现实体对象的数据库通用操作，并且实现数据库无缝切换。",EasyEF,False,1900-01-01T00:00:00+00:00,False,False,,"DataBase,Data,O/RM,ADO.NET",3573,False,0.0.2.16
+jack,2016-11-24T11:49:23.483Z,43209,512,"一个轻量级的O/RM 类库,支持Sql Server，Oledb、ODBC、SQLite等多种数据库驱动。
+能够快速实现实体对象的数据库通用操作，并且实现数据库无缝切换。",EasyEF,False,1900-01-01T00:00:00+00:00,False,False,,"DataBase,Data,O/RM,ADO.NET",3573,False,0.0.2.17
+conorkel,2016-11-24T11:47:42.577Z,512,512,RetryOperationHelper,DotNetRetryOperationHelper,True,2016-11-24T03:47:42.577-08:00,True,False,,,457,False,1.0.2-alpha
+conorkel,2016-11-24T11:37:44.997Z,512,512,"Retry Operation Helper is a simple class which encapsulates the retry of any given piece of C# .NET logic a given number of times before failing, as well as running an optional function on failure. It is useful for any call where transient exception are possible, for example, making a call to a remote database or service. See the Project site at https://github.com/Microsoft/RetryOperationHelper . RetryOperationHelper uses third-party libraries or other resources that may be distributed under licenses different than RetryOperationHelper.",DotNetRetryOperationHelper,True,2016-11-24T03:47:42.577-08:00,True,False,"Retry Operation Helper is a simple class which encapsulates the retry of any given piece of C# .NET logic a given number of times before failing, as well as running an optional function on failure. It is useful for any call where transient exception are possible, for example, making a call to a remote database or service. See the Project site at https://github.com/Microsoft/RetryOperationHelper . RetryOperationHelper uses third-party libraries or other resources that may be distributed under licenses different than RetryOperationHelper.",,457,False,1.0.1-alpha
+shootdaj,2016-11-24T11:46:41.797Z,485,512,Connect your C# application to MIDI with ease.,MIDIator,False,2016-12-21T01:42:46.29-08:00,True,False,,midi,6008,False,1.0.34
+pmengal (https://mailsystem.codeplex.com/team/view),2016-11-24T11:42:13.28Z,116,512,"MailSystem is a suite of .NET components that provide users with an extensive set of email tools. MailSystem provides full support for SMTP, POP3, IMAP4, NNTP, MIME, S/MIME, OpenPGP, DNS, vCard, vCalendar, Anti-Spam (Bayesian , RBL, DomainKeys), Queueing, Mail Merge and WhoIs",MailSystem.Net-trunk,False,2017-12-25T23:32:16.75+00:00,True,False,,"Mail,Library,csharp",18074,False,2.1.20
+conorkel,2016-11-24T11:37:44.997Z,512,512,"Retry Operation Helper is a simple class which encapsulates the retry of any given piece of C# .NET logic a given number of times before failing, as well as running an optional function on failure. It is useful for any call where transient exception are possible, for example, making a call to a remote database or service. See the Project site at https://github.com/Microsoft/RetryOperationHelper . RetryOperationHelper uses third-party libraries or other resources that may be distributed under licenses different than RetryOperationHelper.",DotNetRetryOperationHelper,True,2016-11-24T03:47:42.577-08:00,True,False,"Retry Operation Helper is a simple class which encapsulates the retry of any given piece of C# .NET logic a given number of times before failing, as well as running an optional function on failure. It is useful for any call where transient exception are possible, for example, making a call to a remote database or service. See the Project site at https://github.com/Microsoft/RetryOperationHelper . RetryOperationHelper uses third-party libraries or other resources that may be distributed under licenses different than RetryOperationHelper.",,457,False,1.0.1-alpha
+Sidoine,2016-11-24T11:39:33.59Z,512,512,Implements Microsoft.Extensions.Localization.Abstractions localization using JSON files,Folke.Localization.Json,False,2016-11-24T03:39:33.59-08:00,True,False,,localization,1946,False,1.4.0
+conorkel,2016-11-24T11:37:44.997Z,512,512,RetryOperationHelper,DotNetRetryOperationHelper,True,2016-11-24T03:47:42.577-08:00,True,False,,,457,False,1.0.1-alpha
+Stuart Banks,2016-11-24T11:36:58.527Z,456,512,An IdentityServer plugin for authenticating against a ASP.NET 2.0 Membership Database,IdentityServer3.Contrib.Membership,False,2017-01-19T02:48:07.84-08:00,True,False,,IdentityServer,1852,False,1.0.14
+conorkel,2016-11-24T11:35:19.37Z,512,512,"Retry Operation Helper is a simple class which encapsulates the retry of any given piece of C# .NET logic a given number of times before failing, as well as running an optional function on failure. It is useful for any call where transient exception are possible, for example, making a call to a remote database or service. See the Project site at https://github.com/Microsoft/RetryOperationHelper",DotNetRetryOperationHelper,True,2016-11-24T03:47:42.577-08:00,True,False,,,457,False,1.0.0-alpha
+conorkel,2016-11-24T11:35:19.37Z,512,512,"Retry Operation Helper is a simple class which encapsulates the retry of any given piece of C# .NET logic a given number of times before failing, as well as running an optional function on failure. It is useful for any call where transient exception are possible, for example, making a call to a remote database or service. See the Project site at https://github.com/Microsoft/RetryOperationHelper",DotNetRetryOperationHelper,True,2016-11-24T03:47:42.577-08:00,True,False,,,457,False,1.0.0-alpha
+shootdaj,2016-11-24T11:32:26.59Z,485,512,Connect your C# application to MIDI with ease.,MIDIator,False,2016-12-21T01:42:46.29-08:00,True,False,,midi,6008,False,1.0.32
+Authorize.Net,2016-11-24T11:30:40.7Z,154,512,"Use this SDK to integrate with the Authorize.Net AIM, SIM, ARB and CIM APIs for Payment Transactions, Recurring Billing and Customer Payment Profiles.",AuthorizeNet,False,2017-11-17T05:31:12.977+00:00,True,False,Authorize.Net SDK for .Net,"Payments,API,Authorize.Net",388366,False,1.9.1
+"Virgil Security,Inc",2016-11-24T11:30:23.06Z,232,512,Virgil SDK enable simplified software development through the use of an intuitive and straightforward Virgil Services.,Virgil.SDK.Contracts,True,2017-08-31T11:18:28.467+00:00,True,False,"Virgil Security allows for every developer can build cryptographic features including end-to-end encryption, passwordless authentication, and cryptographic verification of data, devices, and identities into their products, with no cryptographic training. Virgil SDK simplifies their work with Virgil Security services(keys management and identities validation) and Crypto Library(modern algorithms with crypto agility).
+
+Docs - https://virgilsecurity.com/docs/sdk/net/v4.0(latest)/dot-net-csharp-sdk
+Source - https://github.com/VirgilSecurity/virgil-sdk-net
+
+Supported Platforms:
+  - .NET Framework 4.5+
+  - ASP.NET Core 1.0+
+  - Windows 8+
+  - Windows Phone 8.1+
+  - Windows Phone Silverlight 8+
+  - Xamarin.Android
+  - Xamarin.iOS
+  - Xamarin.iOS (Classic)","PKI,Cryptography,Cross,Platform",1643,False,1.0.0-beta
+Sidoine,2016-11-24T11:28:23.34Z,512,512,Folke.Social Class Library,Folke.Social,False,2016-11-24T03:28:23.34-08:00,True,False,,,1499,False,1.4.0
+Microsoft,2016-11-24T11:24:53.29Z,505,512,E6 asp.net项目封装,E6.Boot.Aspnet,False,2016-12-01T06:27:19.553-08:00,True,False,,,920,False,1.0.0.6
+jack,2016-11-24T11:08:32.91Z,43209,512,"一个轻量级的O/RM 类库,支持Sql Server，Oledb、ODBC、SQLite等多种数据库驱动。
+能够快速实现实体对象的数据库通用操作，并且实现数据库无缝切换。",EasyEF,False,1900-01-01T00:00:00+00:00,False,False,,"DataBase,Data,O/RM,ADO.NET",3573,False,0.0.2.15
+Sidoine,2016-11-24T11:21:42.9Z,71,512,Create Typescript API Client classes from MVC 6 controllers,Folke.CsTsService,False,2018-02-08T20:43:36.233+00:00,True,False,,"typescript,services",3581,False,1.4.0.1
+jack,2016-11-24T11:20:23.027Z,43209,512,"一个轻量级的O/RM 类库,支持Sql Server，Oledb、ODBC、SQLite等多种数据库驱动。
+能够快速实现实体对象的数据库通用操作，并且实现数据库无缝切换。",EasyEF,False,1900-01-01T00:00:00+00:00,False,False,,"DataBase,Data,O/RM,ADO.NET",3573,False,0.0.2.16
+shootdaj,2016-11-24T11:19:19.23Z,485,512,Connect your C# application to MIDI with ease.,MIDIator,False,2016-12-21T01:42:46.29-08:00,True,False,,midi,6008,False,1.0.31
+wallstop,2016-11-24T11:13:50.007Z,511,512,"Core utilities, including a Guava-style in-memory cache",WallNet.Core,False,2016-11-24T16:46:39.973-08:00,True,False,,,308,False,1.0.0
+jack,2016-11-24T10:51:08.993Z,43209,512,"一个轻量级的O/RM 类库,支持Sql Server，Oledb、ODBC、SQLite等多种数据库驱动。
+能够快速实现实体对象的数据库通用操作，并且实现数据库无缝切换。",EasyEF,False,1900-01-01T00:00:00+00:00,False,False,,"DataBase,Data,O/RM,ADO.NET",3573,False,0.0.2.14
+jack,2016-11-24T11:08:32.91Z,43209,512,"一个轻量级的O/RM 类库,支持Sql Server，Oledb、ODBC、SQLite等多种数据库驱动。
+能够快速实现实体对象的数据库通用操作，并且实现数据库无缝切换。",EasyEF,False,1900-01-01T00:00:00+00:00,False,False,,"DataBase,Data,O/RM,ADO.NET",3573,False,0.0.2.15
+jQWidgets,2016-11-24T11:03:47.3Z,67,512,"jQWidgets is an advanced jQuery and HTML5 UI framework.
+
+jQWidgets provides a comprehensive solution for building professional web sites and mobile apps. It is built entirely on open standards and technologies like HTML5, CSS, Javascript and jQuery. jQWidgets enables responsive web development and helps you create apps and websites that look beautiful on desktops, tablets and smart phones.
+
+jQWidgets is a feature complete framework with professional touch-enabled jQuery widgets, themes, input validation, drag & drop plug-ins, data adapters, built-in WAI-ARIA accessibility, internationalization and MVVM support.",jQWidgets_Framework,False,2018-02-12T06:35:48.653+00:00,True,False,,,15241,False,4.4.0
+Jasper H. Bojsen,2016-11-23T16:03:25.04Z,28,513,"SSDP for the UPnP v2.0 Architecture. 
+Makes it easy to receive and send SSDP Notification and M-Search messages. 
+Any handling of these messages are out-side the scope of this Nuget.
+Uses Reactive Extensions (Rx) for simplicity.",SSDP.UPnP.PCL,True,2018-03-23T16:19:30.74+00:00,False,False,,"ssdp,upnp,iot,ios,android,uwp,netcore",4279,False,3.6.0-beta1
+1iveowl,2016-11-23T15:49:23.127Z,28,513,"Simple Http Listener - Cross Platform PCL/.NET Standard Library
+    
+Great for a simple http implementation. For example as a building block for UPnP device or client implementation.",SimpleHttpListener,True,2018-03-23T16:06:33.59+00:00,False,False,,"http,listerner,udp,tcp,upnp,xamarin,ios,uwp,.net,android,netcore",10583,False,3.6.0-beta1
+1iveowl,2016-11-23T17:57:44.673Z,28,513,"Simple Http Listener - Cross Platform PCL/.NET Standard Library
+    
+Great for a simple http implementation. For example as a building block for UPnP device or client implementation.",SimpleHttpListener,True,2018-03-23T16:06:33.59+00:00,False,False,,"http,listerner,udp,tcp,upnp,xamarin,ios,uwp,.net,android,netcore",10583,False,3.6.0-beta2
+Jasper H. Bojsen,2016-11-23T18:20:01.8Z,28,513,"SSDP for the UPnP v2.0 Architecture. 
+Makes it easy to receive and send SSDP Notification and M-Search messages. 
+Any handling of these messages are out-side the scope of this Nuget.
+Uses Reactive Extensions (Rx) for simplicity.",SSDP.UPnP.PCL,True,2018-03-23T16:19:30.74+00:00,False,False,,"ssdp,upnp,iot,ios,android,uwp,netcore",4279,False,3.6.0-beta2
+Bastian Eicher,2016-11-24T11:01:11.017Z,512,512,WebApi.Pagination allows you to easily add Range Header-based pagination to existing WebAPI endpoints that operate on IQueryable data sources.,WebApi.Pagination,False,2016-11-24T03:01:11.017-08:00,True,False,Add Range Header-based pagination to existing WebAPI endpoints,"WebAPI,Pagination,Range,HTTP,Header,Long,Polling",1341,False,0.9.0
+Bastian Eicher,2016-11-24T11:00:33.373Z,512,512,WebApi.HttpOptions adds automatic handling for the HTTP OPTIONS verb and the Allow header.,WebApi.HttpOptions,False,2016-11-24T03:00:33.373-08:00,True,False,Automatic handling for the HTTP OPTIONS verb and the Allow header,"WebAPI,HTTP,Link,Header",795,False,0.5.0
+Jasper H. Bojsen,2016-11-24T10:59:42.577Z,28,512,"SSDP for the UPnP v2.0 Architecture. 
+Makes it easy to receive and send SSDP Notification and M-Search messages. 
+Any handling of these messages are out-side the scope of this Nuget.
+Uses Reactive Extensions (Rx) for simplicity.",SSDP.UPnP.PCL,False,2018-03-23T16:19:30.74+00:00,True,False,,"ssdp,upnp,iot,ios,android,uwp,netcore",4279,False,3.6.0
+1iveowl,2016-11-24T10:57:58.483Z,28,512,"Simple Http Listener - Cross Platform PCL/.NET Standard Library
+    
+Great for a simple http implementation. For example as a building block for UPnP device or client implementation.",SimpleHttpListener,False,2018-03-23T16:06:33.59+00:00,True,False,,"http,listerner,udp,tcp,upnp,xamarin,ios,uwp,.net,android,netcore",10583,False,3.6.0
+Gurux Ltd,2016-11-24T10:57:10.387Z,98,512,"Open Source GXNet media component, made by Gurux Ltd, is a part of GXMedias set of media components, which programming interfaces help you implement communication by chosen connection type. GXNet is made easy to use. Gurux media components also support the following connection types: serial port and terminal.",Gurux.Net,False,2018-01-12T08:07:29.007+00:00,True,False,,"Gurux,Device,Framework,Network,TCP/IP,UDP",6611,False,8.0.16.1124
+Jasper H. Bojsen (inspired by socket-for.pcl by Ryan Davis),2016-11-24T10:20:32.05Z,29,512,Socket for .NET Core and Xamarin Cross platform.,SocketLite.PCL,False,2018-03-22T13:11:56.24+00:00,True,False,,"Socket,tcp,udp,xamarin,PCL,ios,android,uwp,windows,10,netstandard",19760,False,3.6.0
+Jasper H. Bojsen,2016-11-24T10:21:23.8Z,12,512,"A simple and light Websocket client. 
+.NET Core & Xamarin cross-platform.
+Can be set to ignore SSL/TLS server certificate issues. 
+Observe incoming message using Reactive Extensions (Rx)",WebsocketClientLite.PCL,False,2018-04-08T18:27:35.203+00:00,True,False,,"netstandard,pcl,netcore,ios,android,xamarin,uwp,websocket,rx,ssl,tls",8334,False,3.6.0
+Stuart Banks,2016-11-24T10:55:49.29Z,456,512,An IdentityServer plugin for authenticating against a ASP.NET 2.0 Membership Database,IdentityServer3.Contrib.Membership,False,2017-01-19T02:48:07.84-08:00,True,False,,IdentityServer,1852,False,1.0.13
+jack,2016-10-20T09:53:14.867Z,43209,547,A Simple ORM Class Library,EasyEF,False,1900-01-01T00:00:00+00:00,False,False,,"DataBase,Data,O/RM,ADO.NET",3573,False,0.0.2.12
+Momentum,2016-11-24T10:51:45.98Z,4,512,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.9.5.3531-beta
+Go Mobile AS,2016-11-24T10:51:32.29Z,491,512,Mivai MCS Client for interacting with the Mivai Collector Service,MCSLib,False,2016-12-15T05:02:12.407-08:00,True,False,,Mivai,1054,False,1.0.0.4
+Momentum,2016-11-24T10:51:35.573Z,4,512,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.9.5.3531-beta
+jack,2016-11-24T10:51:08.993Z,43209,512,"一个轻量级的O/RM 类库,支持Sql Server，Oledb、ODBC、SQLite等多种数据库驱动。
+能够快速实现实体对象的数据库通用操作，并且实现数据库无缝切换。",EasyEF,False,1900-01-01T00:00:00+00:00,False,False,,"DataBase,Data,O/RM,ADO.NET",3573,False,0.0.2.14
+Logicmedia,2016-11-23T10:09:17.14Z,43209,513,A simple library to create abstract concurrent polling in ASP.NET for WebPoll (Javascript),WebPollDotNet,False,1899-12-31T16:00:00-08:00,False,False,,"web,poll,concurrency,json,asp.net,dot,net,dotnet,aspnet,webpoll",-1,False,1.0.0
+Logicmedia,2016-11-23T10:46:10.05Z,43209,513,A simple library to create abstract concurrent polling in ASP.NET for WebPoll (Javascript),WebPollDotNet,False,1899-12-31T16:00:00-08:00,False,False,,"web,poll,concurrency,json,asp.net,dot,net,dotnet,aspnet,webpoll",-1,False,1.0.1
+Bastian Eicher,2016-11-24T10:49:31.587Z,485,512,Owin.JwtAuth provides JSON Web Token authentication with X509 signing and configuration stored in App.config/Web.config.,Owin.JwtAuth,False,2016-12-21T03:05:55.607-08:00,True,False,JSON Web Token authentication with X509 signing,"OWIN,JWT,JSON,Web,Token,authentication",1053,False,0.3.0
+Logicmedia,2016-11-23T12:24:02.68Z,43209,513,A simple library to create abstract concurrent polling in ASP.NET for WebPoll (Javascript),WebPollDotNet,False,1899-12-31T16:00:00-08:00,False,False,,"web,poll,concurrency,json,asp.net,dot,net,dotnet,aspnet,webpoll",-1,False,1.0.2
+Gurux Ltd,2016-11-24T10:48:25.103Z,9,512,"With Gurux DLMS/COSEM protocol component you can easily build your own AMR (Automatic Meter Reading) system for electricity consumption meters, through either TCP/IP, or Serial connection. If you are no expert in DLMS/COSEM, use our UI application, GXDLMSDirector, for the component to get started. Both the component, and its UI are OpenSource, and therefor available to anyone interested",Gurux.DLMS,False,2018-04-11T09:01:32.207+00:00,True,False,With Gurux DLMS/COSEM protocol component you can easily read your smart meters.,"DLMS,COSEM,AMI,ARM",26975,False,8.5.16.1124
+Concode AB,2016-11-24T10:46:42.727Z,511,512,Redis cache layer for Settings and Session,Concode.Common.Redis,False,2016-11-25T11:25:08.353+00:00,True,False,,,2451,False,2.2.3
+Gurux Ltd,2016-11-24T10:46:52.367Z,98,512,"Open Source GXTerminal media component, made by Gurux Ltd, is a part of GXMedias set of media components, which programming interfaces help you implement communication using modem communication. 
+
+Our media components also support the following connection types: network and Serial Port RS-232, RS-485.",Gurux.Terminal,False,2018-01-12T08:10:11.9+00:00,True,False,,"Gurux,Device,Framework,Terminal,Modem",4188,False,8.0.16.1124
+Gurux Ltd,2016-11-24T10:46:09.367Z,98,512,"Open Source GXSMS media component, made by Gurux Ltd, is a part of GXMedias set of media components, which programming interfaces help you implement communication using modem communication. 
+
+Our media components also support the following connection types: network, terminal and Serial Port RS-232, RS-485.",Gurux.SMS,False,2018-01-12T08:09:16.667+00:00,True,False,Using Gurux SMS media component you can send Short messages using your mobile phone.,"Gurux,Device,Framework,SMS",2937,False,8.0.16.1124
+Gurux Ltd,2016-11-24T10:45:26.243Z,98,512,"Open Source GXSerial media component, made by Gurux Ltd, is a part of GXMedias set of media components, which programming interfaces help you implement communication by chosen connection type. GXSerial offers you an easy way to build multithreaded, serial communication applications. GXSerial is made easy to use. Our media components also support the following connection types: network, terminal.",Gurux.Serial,False,2018-01-12T08:08:24.227+00:00,True,False,,"Gurux,Device,Framework,serial,port,RS-232",5930,False,8.0.16.1124
+DAS,2016-11-24T10:41:11.07Z,512,512,Client library for accessing Payments events API,SFA.DAS.Payments.Events.Api.Client,False,2016-11-24T02:41:11.07-08:00,True,False,Client library for DAS Payments events Api,,422,False,1.0.0.16420
+乐逍遥,2016-11-24T10:41:25.507Z,505,512,E6启动项,E6.Boot,False,2016-12-01T05:17:17.67-08:00,True,False,,,1043,False,1.0.0.6
+Redbridge,2016-11-24T10:41:31.71Z,1,512,Redbridge Xamarin Forms MVVM portable client SDK library for iOS,Redbridge.Xamarin.Forms.iOS,False,2018-04-19T20:55:33.107+00:00,True,False,,"Redbridge,MVVM,Forms,Portable,Xamarin,iOS,Library",15272,False,0.0.12
+me@kroniak.net,2016-11-24T10:40:27.537Z,280,512,C# services for MainSMS.ru API,MainSMS,False,2017-07-14T20:34:02.717+00:00,True,False,C# services for MainSMS.ru API,"mainsms,sms,api,client,rest,async",1039,False,1.2.0
+LapiweCommonPackage,2016-11-24T10:40:43.273Z,512,512,Lapiwe common package,LapiweCommonPackage,False,2016-11-24T02:40:43.273-08:00,True,False,This is the Lapiwe common package,Common,260,False,1.0.1
+Redbridge,2016-11-24T10:40:32.833Z,1,512,Redbridge Xamarin Forms MVVM portable client SDK library,Redbridge.Xamarin.Forms,False,2018-04-19T20:55:20.747+00:00,True,False,,"Redbridge,MVVM,Forms,Portable,Xamarin,iOS,Android,C#,Library",15730,False,0.0.12
+Redbridge,2016-11-24T10:39:50.32Z,1,512,Redbridge SDK portable client SDK library for iOS,Redbridge.SDK.iOS,False,2018-04-19T20:55:05.183+00:00,True,False,,"Redbridge,Portable,Xamarin,iOS,SDK",15373,False,0.0.12
+Redbridge,2016-11-24T10:39:13.973Z,1,512,Redbridge SDK portable client SDK library,Redbridge.SDK,False,2018-04-19T20:54:25.137+00:00,True,False,,"Redbridge,Portable,C#,SDK",16886,False,0.0.12
+Sidoine,2016-11-24T10:29:23.347Z,167,512,Folke.Mvc.Extensions Class Library,Folke.Mvc.Extensions,False,2017-11-04T11:39:22.823+00:00,True,False,,,2472,False,1.4.0
+Jasper H. Bojsen,2016-11-24T09:29:12.157Z,12,512,"A simple and light Websocket client. 
+Xamarin cross-platform.
+Can be set to ignore SSL/TLS server certificate issues. 
+Observe incoming message using Reactive Extensions (Rx)",WebsocketClientLite.PCL,True,2018-04-08T18:27:35.203+00:00,False,False,,"netstandard,pcl,netcore,ios,android,xamarin,uwp,websocket,rx,ssl,tls",8334,False,3.6.0-beta3
+Jasper H. Bojsen,2016-11-24T10:21:23.8Z,12,512,"A simple and light Websocket client. 
+Xamarin cross-platform.
+Can be set to ignore SSL/TLS server certificate issues. 
+Observe incoming message using Reactive Extensions (Rx)",WebsocketClientLite.PCL,False,2018-04-08T18:27:35.203+00:00,True,False,,"netstandard,pcl,netcore,ios,android,xamarin,uwp,websocket,rx,ssl,tls",8334,False,3.6.0
+Dapplo,2016-11-24T10:22:38.707Z,15,512,Dapplo.Owin takes care of bootstrapping Owin,Dapplo.Owin,False,2018-04-05T08:13:22.443+00:00,True,False,A library with code to use Owin with multiple configurations (as modules) in your application.,Owin,4976,True,0.1.24
+Jasper H. Bojsen (inspired by socket-for.pcl by Ryan Davis),2016-11-23T15:38:01.05Z,29,513,"Socket PCL Xamarin Cross platform for iOS, Windows 10 (UWP) and Android",SocketLite.PCL,True,2018-03-22T13:11:56.24+00:00,False,False,,"Socket,tcp,udp,xamarin,PCL,ios,android,uwp,windows,10,netstandard",19760,False,3.6.0-beta1
+Jasper H. Bojsen (inspired by socket-for.pcl by Ryan Davis),2016-11-24T09:13:56.163Z,29,512,"Socket PCL Xamarin Cross platform for iOS, Windows 10 (UWP) and Android",SocketLite.PCL,True,2018-03-22T13:11:56.24+00:00,False,False,,"Socket,tcp,udp,xamarin,PCL,ios,android,uwp,windows,10,netstandard",19760,False,3.6.0-beta2
+Jasper H. Bojsen,2016-11-24T09:29:12.157Z,12,512,"A simple and light Websocket client. 
+Xamarin cross-platform.
+Can be set to ignore SSL/TLS server certificate issues. 
+Observe incoming message using Reactive Extensions (Rx)",WebsocketClientLite.PCL,True,2018-04-08T18:27:35.203+00:00,False,False,,"websocket,rx,pcl,xamarin,ssl,tls",8334,False,3.6.0-beta3
+Jasper H. Bojsen,2016-11-24T10:21:23.8Z,12,512,"A simple and light Websocket client. 
+Xamarin cross-platform.
+Can be set to ignore SSL/TLS server certificate issues. 
+Observe incoming message using Reactive Extensions (Rx)",WebsocketClientLite.PCL,False,2018-04-08T18:27:35.203+00:00,True,False,,"websocket,rx,pcl,xamarin,ssl,tls",8334,False,3.6.0
+Jasper H. Bojsen (inspired by socket-for.pcl by Ryan Davis),2016-11-24T10:20:32.05Z,29,512,"Socket PCL Xamarin Cross platform for iOS, Windows 10 (UWP) and Android",SocketLite.PCL,False,2018-03-22T13:11:56.24+00:00,True,False,,"Socket,tcp,udp,xamarin,PCL,ios,android,uwp,windows,10,netstandard",19760,False,3.6.0
+nick.randell@sceneskope.com,2016-11-24T10:19:39.627Z,491,512,Application Insights for sceneskope and service fabric,SceneSkope.ServiceFabric.ApplicationInsights,False,2016-12-15T05:33:16.957-08:00,True,False,,"SceneSkope,ServiceFabric",1757,False,1.0.26
+nick.randell@sceneskope.com,2016-11-24T10:19:25.613Z,491,512,SceneSkope Service Fabric Actor Seq Logging,SceneSkope.ServiceFabric.Actors.Seq,False,2016-12-15T05:32:53.89-08:00,True,False,,"SceneSkope,ServiceFabric",3035,False,1.0.26
+nick.randell@sceneskope.com,2016-11-24T10:19:53.69Z,491,512,SceneSkope Service Fabric Utilities,SceneSkope.ServiceFabric.Utilities,False,2016-12-15T05:33:47.337-08:00,True,False,,"SceneSkope,ServiceFabric",3244,False,1.0.26
+nick.randell@sceneskope.com,2016-11-24T10:19:32.673Z,491,512,SceneSkope Service Fabric Actor Utilities,SceneSkope.ServiceFabric.Actors.Utilities,False,2016-12-15T05:33:09.05-08:00,True,False,,"SceneSkope,ServiceFabric",3021,False,1.0.26
+nick.randell@sceneskope.com,2016-11-24T10:19:46.393Z,491,512,SceneSkope Service Fabric Seq Logging,SceneSkope.ServiceFabric.Seq,False,2016-12-15T05:33:25.347-08:00,True,False,,"SceneSkope,ServiceFabric",3187,False,1.0.26
+daf,2016-11-24T10:15:54.933Z,2,512,A really tiny Event Aggregator,PeanutButter.TinyEventAggregator,False,2018-04-18T10:04:08.487+00:00,True,False,"Provides a very simple, unthreaded Event Aggregator implementation with a few convenient extras:
+      * one-time subscription
+      * limited-time subscription
+      * the ability to suspend and resume the eventing engine. Events raised during suspension are routed
+        once the engine is resumed",,45094,False,1.2.109
+daf,2016-11-24T10:15:41.12Z,2,512,Some generic test utilites.,PeanutButter.TestUtils.Generic,False,2018-04-18T10:04:09.017+00:00,True,False,"Includes 
+      * PropertyAssert for asserting property value equality by name in tests so that you can TestCase out multiple property set/get ops
+      * ConstructorTestUtils for quick, easy testing of DI constructors
+      * EnumerableExtensions for comparing items inside different collections which have different
+          refs for DTOs, for example,
+      * DecimalExtensions for testing against decimal values with tolerances (eg when using random decimals
+          which go through a layer which truncates, such as a database)
+      * TypeExtensions, for helpers like
+          .ShouldInheritFrom / ShouldImplement
+          .Should(/Not)HaveProperty
+          .VirtualProperties (gets a string array of virtual property names)
+          .PropertyNames
+          .IntersectingProperties
+          (and more)",,47348,False,1.2.109
+Davyd McColl,2016-11-24T10:15:38.607Z,2,512,A base package for PeanutButter.TempDb.* packages. This provides the generic TempDb base class,PeanutButter.TempDb,False,2018-04-18T10:04:08.517+00:00,True,False,"Provides only the base generic TempDb class. Please install the specific flavour of TempDb you want instead (which
+	should pull in this package):
+	* PeanutButter.TempDb.SqlCe
+	* PeanutButter.TempDb.Sqlite
+	* PeanutButter.TempDb.LocalDb",,34641,False,1.2.109
+Davyd McColl,2016-11-24T10:15:38.45Z,2,512,"A (very simple) HTTP server which you can use from within a testing environment or, if you're really ambitious, for some other reason.",PeanutButter.SimpleHTTPServer,False,2018-04-18T10:04:08.44+00:00,True,False,"Sometimes you just need a short-lived HTTP server, say for testing out something which relies on a WebRequest. This library provides
+      a very bare-bones HTTP server with which you can register handlers to serve up documents or files or to do basically whatever you want.
+      NB: unlike the rest of PeanutButter, this module is released under the Code Project Open License (CPOL) which differs from my 
+      regular license of choice (BSD) only in that it explicitly protects you from patent infringement. This license is carried through as
+      the library is a derivative work of:
+      http://www.codeproject.com/Articles/25050/Embedded-NET-HTTP-Server 
+      Thanks to user BobJanova for saving me some time (:",,41748,False,1.2.109
+Davyd McColl,2016-11-24T10:15:24.997Z,2,512,The SysTray component of the PeanutButter library.,PeanutButter.TrayIcon,False,2018-04-18T10:04:08.86+00:00,True,False,"A Library to facilitate easy tray icon usage, including managing tray icon animation, given frames to ""play"".",,42216,False,1.2.109
+Davyd McColl,2016-11-24T10:14:48.357Z,2,512,The miscellaneous utilities slice of the PeanutButter mini-suite (sans XML Utils),PeanutButter.Utils,False,2018-04-18T10:04:09.377+00:00,True,False,,,51066,False,1.2.109
+davyd,2016-11-24T10:15:05.98Z,2,512,"Provides the following:
+      * EntityBase
+        - a base entity class to inherit from. Provides the following fields:
+          Created (datetime)
+          LastModified (datetime?)
+          Enabled (bool)
+      * DbContextWithAutomaticTrackingFields
+        - when persisting entities which derive from EntityBase, this will automatically
+          set Created to the current timestamp on a new entity and update LastModified
+          on an updated entity
+      * Extensions to:
+        - AddRange on an IDbSet
+        - AddRange on an ICollection
+        - RemoveRange on an IDbSet
+        - RemoveRange on an ICollection
+        - Clear on IDbSet (delete all in dbset)
+        - AddNew on IDbSet and ICollection
+            - Convenience method so you can, for example, do:
+              var someItem = context.SomeCollection.FirstOrDefault(i => i.Name == ""bob"") ?? context.Collection.AddNew(e => e.Name = ""bob"");
+              which finds the first bob or adds a new one
+        - Transform, which provides a fluent manner to do what you would with Select(), but on a single result",PeanutButter.Utils.Entity,False,2018-04-18T10:04:08.847+00:00,True,False,"Provides some useful extensions for Entity-based projects as well as a base Entity class and associated base
+    DbContext which provide tracking fields (Created/LastModified) and a soft-delete field (Enabled)",,30579,False,1.2.109
+Davyd McColl,2016-11-24T10:15:22.607Z,2,512,The Service Shell slice of the PeanutButter mini-suite,PeanutButter.ServiceShell,False,2018-04-18T10:04:09.11+00:00,True,False,"Provides a simple, easy-to-use shell base class for polling services which can install and uninstall itself. Please
+      reade the included README.txt for the (few) steps you need to do to use this project.",,50206,False,1.2.109
+Davyd McColl,2016-11-24T10:15:07.247Z,2,512,The Sqlite TempDb<> implementation,PeanutButter.TempDb.Sqlite,False,2018-04-18T10:04:08.813+00:00,True,False,"Use this if you need an automagic temporary Sqlite database, for example in testing.",,31552,False,1.2.109
+Davyd McColl,2016-11-24T10:14:48.027Z,2,512,"The miscellaneous utilities slice of the PeanutButter mini-suite (XML-specific, so you'll need to reference System.Xml.Linq)",PeanutButter.XmlUtils,False,2018-04-18T10:04:08.563+00:00,True,False,,,45228,False,1.2.109
+Davyd McColl,2016-11-24T10:15:07.137Z,2,512,Helpers for testing when using PeanutButter.DatabaseHelpers,PeanutButter.DatabaseHelpers.Testability,False,2018-04-18T10:04:08.783+00:00,True,False,"If you're using NSubstitute to test your project and you're using PeanutButter DatabaseHelpers' sql statement
+      builders, you may wish to test against the interfaces for these builders. However, doing so is more work than
+      it would seem at the outset as each call into the builder returns the builder so when you're trying to do
+      Received() asserts against the Nth call, NSubstitute doesn't know that the call was done against the original
+      substituted object. The BuilderFaker helper produces fake builders which you can use to test the behaviour of
+      your applications instead of having to test sql strings",,50265,False,1.2.109
+Davyd McColl,2016-11-24T10:15:05.857Z,2,512,This is the random value generators slice of the PeanutButter mini-suite,PeanutButter.RandomGenerators,False,2018-04-18T10:04:09.05+00:00,True,False,"RandomGenerators helps you with testing by providing random values not only for simple types
+      such as strings and numerics, but also with more complex types using GenericBuilder",,50999,False,1.2.109
+Davyd McColl,2016-11-24T10:15:25.12Z,2,512,A generic Migrations Runner for FluentMigrator so you can run in migrations within your application.,PeanutButter.FluentMigrator,False,2018-04-18T10:04:08.377+00:00,True,False,"A generic Migrations Runner for FluentMigrator so you can run in migrations within your application.
+      The generic parameter is a ProcessorFactory type as exposed by FluentMigrator.Runner",,36929,False,1.2.109
+Davyd McColl,2016-11-24T10:14:48.793Z,2,512,"Use this project to pull in the three required Fluent Migrations to make your database able to store emails
+      that the PeanutButter.EmailSpooler.Win32Service service can spool for you. You will need to inherit from the following
+      migrations and add those inherited versions to your migration strategy:
+      * Migration_1_CreateEmail
+      * Migration_2_CreateEmailRecipient
+      * Migration_3_CreateEmailAttachment",EmailSpooler.Win32Service.DB,False,2018-04-18T10:04:08.953+00:00,True,False,"Contains the Fluent Migrations to provide the tables necessary to run EmailSpooler.Win32Service. Do not install this unless
+      you expect your project to provide a data source for the PeanutButter.EmailSpooler.Win32Service service.",,29892,False,1.2.109
+Davyd McColl,2016-11-24T10:15:07.01Z,2,512,"Contains classes to help with testing when entity and a SQL Server would be involved in production:
+    * TestFixtureWithTempDb provides bootstrapping for tests which would use a temporary database (TempDBLocalDb)
+    * EntityPersistenceTestFixtureBase provides helpers for the common test of persisting and recalling entities
+      to test that mappings (automatic or manual) work as expected
+    * DbContextExtensions adds SaveChangesWithErrorReporting(), an extension method for DbContext derivatives
+      to provide more information within tests as to why a test is failing (such information is usually buried within
+      the exception maze that Entity provides)",PeanutButter.TestUtils.Entity,False,2018-04-18T10:04:08.58+00:00,True,False,"Some utilities to make testing of Entity persistence and repositories which rely on having an actual context
+    a little less tedious",,29894,False,1.2.109
+Davyd McColl,2016-11-24T10:14:48.183Z,2,512,The Windows Service Management slice of the PeanutButter mini-suite,PeanutButter.WindowsServiceManagement,False,2018-04-18T10:04:08.5+00:00,True,False,"Provides Windows Service Management functionality:
+      * start
+      * stop
+      * pause
+      * install
+      * uninstall
+      services using wrappers around the native functions",,50000,False,1.2.109
+Davyd McColl,2016-11-24T10:14:48.12Z,2,512,The Database Helpers component of the Peanut Butter mini-suite,PeanutButter.DatabaseHelpers,False,2018-04-18T10:04:09.127+00:00,True,False,"Provides statement builders for Select, Insert, Update and Delete, compliant with MSSQL, SqlCE, Access, and, more
+      recently, Firebird. Also contains executors (for datareader and scalar exectution) compliant with Oledb connections
+      since the primary focus was support for apps with legacy ties into Access, but the idea is to be able to extend
+      as necessary to support other engines",,51243,False,1.2.109
+Davyd McColl,2016-11-24T10:15:06.637Z,2,512,The SqlCe TempDb implementation,PeanutButter.TempDb.SqlCe,False,2018-04-18T10:04:08.33+00:00,True,False,"Use this if you need an automagic temporary SqlCe database, for example in testing.",,33667,False,1.2.109
+Davyd McColl,2016-11-24T10:14:48.107Z,2,512,A basic INI file reader/writer class,PeanutButter.INI,False,2018-04-18T10:04:09.033+00:00,True,False,"Provides easy-to-use access to INI files, both reading and writing. Data is exposed via a public Dictionary of Dictionaries. 
+      Supports the global ""empty"" section, quoted values and case-insenstive section and key lookups.",,52555,False,1.2.109
+davyd,2016-11-24T10:15:22.823Z,2,512,Provides the Entity POCO classes for sharing data access with the EmailSpooler.Win32Service service,EmailSpooler.Win32Service.Entity,False,2018-04-18T10:04:09.143+00:00,True,False,Provides the Entity POCO classes for sharing data access with the EmailSpooler.Win32Service service,,28413,False,1.2.109
+Davyd,2016-11-24T10:15:06.857Z,2,512,The LocalDb TempDb implementation,PeanutButter.TempDb.LocalDb,False,2018-04-18T10:04:08.487+00:00,True,False,"Use this if you need an automagic temporary SqlCe database, for example in testing.",,35620,False,1.2.109
+Davyd McColl,2016-11-24T10:14:19.48Z,2,512,"Test helpers to use in conjunction with PeanutButter.Async, allowing your tests to
+    treat tasks as if they were run synchronously.",PeanutButter.TestUtils.Async,False,2018-04-18T10:04:08.72+00:00,True,False,"This package, in conjunction with PeanutButter.Async, makes testing easier for
+    code using tasks where the task itself (or artifacts) is never exposed. Inject
+    an ITaskRunner, using the default (or your own) implementation at run-time, and use
+    the ImmediateTaskRunnerBuilder to build a synchronous variant which you can inject
+    at test-time",,15062,False,1.2.109
+Davyd McColl,2016-11-24T10:14:14.9Z,2,512,"A few useful extensions for making testing against the PeanutButter.SimpleHTTPServer.HttpServer cleaner and easier to read,
+      providing extensions to:
+        - test for requests
+        - test for headers",PeanutButter.SimpleHTTPServer.Testability,False,2018-04-18T10:04:08.767+00:00,True,False,Some extensions to ease testability when using PeanutButter.SimpleHTTPServer.HttpServer in your tests.,,17066,False,1.2.109
+Davyd McColl,2016-11-24T10:14:14.933Z,2,512,"A (very simple) TCP server which you can use from within a testing environment or, if you're really ambitious, 
+      for some other reason.",PeanutButter.SimpleTcpServer,False,2018-04-18T10:04:08.923+00:00,True,False,"Sometimes you just need a short-lived TCP-based service. The PeanutButter.SimpleHTTPServer package depends on this
+      library for the lower-level TCP communications. This package is available for extension via other protocols
+      and to make installation of PeanutButter.SimpleHTTPServer easier: no need to manually reference PeanutButter.SimpleTCPServer.dll
+      any more -- at least, that's the plan (:
+      NB: unlike the rest of PeanutButter, this module is released under the Code Project Open License (CPOL) which differs from my 
+      regular license of choice (BSD) only in that it explicitly protects you from patent infringement. This license is carried through as
+      the library is a derivative work of:
+      http://www.codeproject.com/Articles/25050/Embedded-NET-HTTP-Server 
+      Thanks to user BobJanova for saving me some time (:",,21495,False,1.2.109
+Davyd McColl,2016-11-24T10:14:20.87Z,2,512,"A package to facilitate duck-typing through an object extension DuckAs<>.
+      There is also a FuzzyDuckAs<> facility for more case-insensitive ducking.
+      At no point is there use of DynamicObjects, which hurt performance.
+      Property read/write as well as methods are ducked, with the current caveat
+      that ref and out parameters may not behave as expected.",PeanutButter.DuckTyping,False,2018-04-18T10:04:08.94+00:00,True,False,"A package to facilitate duck-typing through object extensions without using
+      dynamic objects at all.",,13809,False,1.2.109
+Davyd McColl,2016-11-24T10:14:16.933Z,2,512,"A package to essentially wrap Task.Run and variants in a runner object which can
+    be substituted or have their implementation changed according to selected task
+    scheduling strategies.",PeanutButter.Async,False,2018-04-18T10:04:08.69+00:00,True,False,"A package to essentially wrap Task.Run and variants in a runner object which can
+    be substituted. This allows your consuming code to be more easily tested, especially
+    in conjunction with PeanutButter.TestUtils.Async, which provides a synchronous
+    ITaskRunner so your tests don't have to have access to internally-used tasks
+    or other artifacts but can just test as if the code under test is synchronous",,14096,False,1.2.109
+Davyd McColl,2016-11-24T10:14:15.793Z,2,512,Some utilities for using Castle.Windsor in your projects,PeanutButter.Utils.Windsor,False,2018-04-18T10:04:08.627+00:00,True,False,"Provides some commonly-replicated logic when dealing with Windsor
+      - extension method for IWindsorContainer to register all one-to-one resolutions in given assemblies
+      - extension method to register all MVC controllers from within an assembly (by ancestry class name and assembly,
+          so you don't need to import System.Web.Mvc to use other methods in this package)",,21669,False,1.2.109

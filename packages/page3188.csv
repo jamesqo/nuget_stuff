@@ -1,0 +1,825 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+Stuart Davies,2018-01-09T05:41:38.473Z,101,101,C# functional programming library,Fp.Common,True,2018-01-09T23:58:17.457+00:00,True,False,,"Fp,Functional",118,False,1.0.0-beta1
+sercan.gurbuz,2018-01-09T05:41:15.74Z,17,101,Rota SPA framework powered by angularJs and typescript,rota.spa,False,2018-04-03T05:39:27.663+00:00,True,False,,"rota,spa,angularjs,bimar,typescript",6278,False,1.3.12
+Bilal Fazlani,2018-01-09T05:36:46.09Z,101,101,Model your command line application interface in a class,CommandDotNet.IoC.MicrosoftDependencyInjection,True,2018-01-09T08:45:32.433+00:00,True,False,,"dotnet,core,console,argument,parse,ioc,dependency,injection,commanddotnet",285,False,0.0.4-alpha
+vCipher,2018-01-09T05:37:46.343Z,39,101,Cake AddIn that extends Cake with Mercurial features,Cake.Hg,False,2018-03-12T07:38:11.283+00:00,True,False,,"cake,hg,mercurial",1117,False,0.1.6
+Bilal Fazlani,2018-01-09T05:36:46.09Z,101,101,Model your command line application interface in a class,CommandDotNet.IoC.MicrosoftDependencyInjection,True,2018-01-09T08:45:32.433+00:00,True,False,,"dotnet,core,console,argument,parse,ioc,dependency,injection,commanddotnet",285,False,0.0.4-alpha
+vCipher,2018-01-09T05:37:46.343Z,39,101,Cake AddIn that extends Cake with Mercurial features,Cake.Hg,False,2018-03-12T07:38:11.283+00:00,True,False,,"cake,hg,mercurial",1117,False,0.1.6
+懒得勤快,2018-01-09T05:27:09.06Z,4,101,"包含一些常用的操作类，大都是静态类，加密解密，反射操作，硬件信息，字符串扩展方法，日期时间扩展操作，大文件拷贝，图像裁剪，html处理，验证码、NoSql等常用封装。
+
+示例代码：
+
+1.检验字符串是否是Email
+
+bool isEmail=""1170397736@qq.com"".MatchEmail();
+
+2.获取CPU核心数
+
+int core = SystemInfo.GetCpuCount();
+
+3.大文件操作
+
+FileStream fs = new FileStream(@""D:\boot.vmdk"", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+
+{
+
+//fs.CopyToFile(@""D:\1.bak"");//同步复制大文件
+
+fs.CopyToFileAsync(@""D:\1.bak"");//异步复制大文件
+
+string md5 = fs.GetFileMD5Async().Result;//异步获取文件的MD5
+
+}
+
+4.html的防XSS处理：
+
+string html = @""<link href=""/Content/font-awesome/css"" rel=""stylesheet"" /><!--[if IE 7]>
+
+<link href='/Content/font-awesome-ie7.min.css' rel='stylesheet'/>
+
+<![endif]--><script src=""/Scripts/modernizr""></script><div id=""searchBox"" role=""search""><form action=""/packages"" method=""get""><span class=""user-actions""><a href=""/users/account/LogOff"">退出</a></span><input name=""q"" id=""searchBoxInput"" /><input id=""searchBoxSubmit"" type=""submit"" value=""Submit"" /></form></div>"";
+
+string s = html.HtmlSantinizerStandard();//清理后：<div><span><a href=""/users/account/LogOff"">退出</a></span></div>
+
+5.整理操作系统的内存：
+
+Windows.ClearMemorySilent();
+
+......",Masuit.Tools.Core,False,2018-04-16T13:41:20.863+00:00,True,False,,Masuit.Tools,2232,False,1.8.4
+懒得勤快,2018-01-09T05:27:09.06Z,4,101,"包含一些常用的操作类，大都是静态类，加密解密，反射操作，硬件信息，字符串扩展方法，日期时间扩展操作，大文件拷贝，图像裁剪，html处理，验证码、NoSql等常用封装。
+
+示例代码：
+
+1.检验字符串是否是Email
+
+bool isEmail=""1170397736@qq.com"".MatchEmail();
+
+2.获取CPU核心数
+
+int core = SystemInfo.GetCpuCount();
+
+3.大文件操作
+
+FileStream fs = new FileStream(@""D:\boot.vmdk"", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+
+{
+
+//fs.CopyToFile(@""D:\1.bak"");//同步复制大文件
+
+fs.CopyToFileAsync(@""D:\1.bak"");//异步复制大文件
+
+string md5 = fs.GetFileMD5Async().Result;//异步获取文件的MD5
+
+}
+
+4.html的防XSS处理：
+
+string html = @""<link href=""/Content/font-awesome/css"" rel=""stylesheet"" /><!--[if IE 7]>
+
+<link href='/Content/font-awesome-ie7.min.css' rel='stylesheet'/>
+
+<![endif]--><script src=""/Scripts/modernizr""></script><div id=""searchBox"" role=""search""><form action=""/packages"" method=""get""><span class=""user-actions""><a href=""/users/account/LogOff"">退出</a></span><input name=""q"" id=""searchBoxInput"" /><input id=""searchBoxSubmit"" type=""submit"" value=""Submit"" /></form></div>"";
+
+string s = html.HtmlSantinizerStandard();//清理后：<div><span><a href=""/users/account/LogOff"">退出</a></span></div>
+
+5.整理操作系统的内存：
+
+Windows.ClearMemorySilent();
+
+......",Masuit.Tools.Core,False,2018-04-16T13:41:20.863+00:00,True,False,,Masuit.Tools,2232,False,1.8.4
+懒得勤快,2018-01-09T05:27:09.06Z,4,101,"包含一些常用的操作类，大都是静态类，加密解密，反射操作，硬件信息，字符串扩展方法，日期时间扩展操作，大文件拷贝，图像裁剪，html处理，验证码、NoSql等常用封装。
+
+示例代码：
+
+1.检验字符串是否是Email
+
+bool isEmail=""1170397736@qq.com"".MatchEmail();
+
+2.获取CPU核心数
+
+int core = SystemInfo.GetCpuCount();
+
+3.大文件操作
+
+FileStream fs = new FileStream(@""D:\boot.vmdk"", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+
+{
+
+//fs.CopyToFile(@""D:\1.bak"");//同步复制大文件
+
+fs.CopyToFileAsync(@""D:\1.bak"");//异步复制大文件
+
+string md5 = fs.GetFileMD5Async().Result;//异步获取文件的MD5
+
+}
+
+4.html的防XSS处理：
+
+string html = @""<link href=""/Content/font-awesome/css"" rel=""stylesheet"" /><!--[if IE 7]>
+
+<link href='/Content/font-awesome-ie7.min.css' rel='stylesheet'/>
+
+<![endif]--><script src=""/Scripts/modernizr""></script><div id=""searchBox"" role=""search""><form action=""/packages"" method=""get""><span class=""user-actions""><a href=""/users/account/LogOff"">退出</a></span><input name=""q"" id=""searchBoxInput"" /><input id=""searchBoxSubmit"" type=""submit"" value=""Submit"" /></form></div>"";
+
+string s = html.HtmlSantinizerStandard();//清理后：<div><span><a href=""/users/account/LogOff"">退出</a></span></div>
+
+5.整理操作系统的内存：
+
+Windows.ClearMemorySilent();
+
+......",Masuit.Tools.Core,False,2018-04-16T13:41:20.863+00:00,True,False,,Masuit.Tools,2232,False,1.8.4
+Ulysta,2017-12-29T12:23:00.203Z,43209,112,ViewModel And BindingModel for SaturnWebApi,SaturnAppModel.Ulysta,False,1900-01-01T00:00:00+00:00,False,False,,"saturn,ulysta,webmodel,webapi,viewmodel,bindingmodel",258,False,1.0.3
+the humans of HUMANiT,2018-01-09T04:28:06.617Z,19,101,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,False,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.3.2-alpha-487
+the humans of HUMANiT,2018-01-09T05:24:44.57Z,19,101,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,True,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.3.2-alpha-491
+the humans of HUMANiT,2018-01-09T05:24:44.57Z,19,101,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,True,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.3.2-alpha-491
+Mavidian Technologies,2018-01-09T05:21:48.317Z,101,101,Data Conveyer is a lightweight transformation engine to facilitate real-time data migrations.,DataConveyer,False,2018-01-09T05:21:48.317+00:00,True,False,,"data,parser,scrubber,transformer,router,formatter,etl,migration,dataflow",616,False,1.24.2
+Mavidian Technologies,2018-01-09T05:21:48.317Z,101,101,Data Conveyer is a lightweight transformation engine to facilitate real-time data migrations.,DataConveyer,False,2018-01-09T05:21:48.317+00:00,True,False,,"data,parser,scrubber,transformer,router,formatter,etl,migration,dataflow",616,False,1.24.2
+Mark Gil Libres,2018-01-09T05:20:32.14Z,100,101,Day Of Week Picker for Umbraco 7,MBran.DayOfWeekPicker,False,2018-01-10T07:38:01.427+00:00,True,False,,"Umbraco,DayOfWeekPicker,MBran",264,False,0.1.1
+Mark Gil Libres,2018-01-09T05:20:32.14Z,100,101,Day Of Week Picker for Umbraco 7,MBran.DayOfWeekPicker,False,2018-01-10T07:38:01.427+00:00,True,False,,"Umbraco,DayOfWeekPicker,MBran",264,False,0.1.1
+Naos Project,2018-01-09T05:01:17.17Z,9,101,Created on 2018-01-08 20:59,Naos.Deployment.ComputingManagement,False,2018-04-11T16:26:32.693+00:00,True,False,,,14734,False,1.0.345
+Naos Project,2018-01-09T05:01:48.03Z,9,101,Created on 2018-01-08 20:59,Naos.Deployment.MessageBus.Hangfire.Console,False,2018-04-11T16:27:21.26+00:00,True,False,,,3829,False,1.0.345
+Naos Project,2018-01-09T05:01:31.343Z,9,101,Created on 2018-01-08 20:59,Naos.Deployment.Domain,False,2018-04-11T16:27:02.993+00:00,True,False,,,16292,False,1.0.345
+Naos Project,2018-01-09T05:01:02.107Z,9,101,Created on 2018-01-08 20:59,Naos.Deployment.Tracking,False,2018-04-11T16:26:16.99+00:00,True,False,,,14710,False,1.0.345
+Naos Project,2018-01-09T05:01:02.107Z,9,101,Created on 2018-01-08 20:59,Naos.Deployment.Tracking,False,2018-04-11T16:26:16.99+00:00,True,False,,,14710,False,1.0.345
+Naos Project,2018-01-09T05:01:17.17Z,9,101,Created on 2018-01-08 20:59,Naos.Deployment.ComputingManagement,False,2018-04-11T16:26:32.693+00:00,True,False,,,14734,False,1.0.345
+Naos Project,2018-01-09T05:01:48.03Z,9,101,Created on 2018-01-08 20:59,Naos.Deployment.MessageBus.Hangfire.Console,False,2018-04-11T16:27:21.26+00:00,True,False,,,3829,False,1.0.345
+Naos Project,2018-01-09T05:01:31.343Z,9,101,Created on 2018-01-08 20:59,Naos.Deployment.Domain,False,2018-04-11T16:27:02.993+00:00,True,False,,,16292,False,1.0.345
+Naos Project,2018-01-09T05:00:35.78Z,9,101,Created on 2018-01-08 20:59,Naos.Deployment.MessageBus.Handler,False,2018-04-11T16:25:47.35+00:00,True,False,,,19498,False,1.0.345
+Naos Project,2018-01-09T05:00:18.637Z,9,101,Created on 2018-01-08 20:59,Naos.Deployment.MessageBus.Scheduler,False,2018-04-11T16:25:32.147+00:00,True,False,,,4277,False,1.0.345
+the humans of HUMANiT,2018-01-05T23:16:33.687Z,19,105,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,False,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.3.2-alpha-470
+Naos Project,2018-01-09T04:59:32.433Z,9,101,Created on 2018-01-08 20:58,Naos.Deployment.Core,False,2018-04-11T16:24:46.707+00:00,True,False,,,38154,False,1.0.345
+Naos Project,2018-01-09T05:00:49.03Z,9,101,Created on 2018-01-08 20:59,Naos.Deployment.Persistence,False,2018-04-11T16:26:02.473+00:00,True,False,,,14978,False,1.0.345
+the humans of HUMANiT,2017-12-22T07:33:30.687Z,19,119,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,False,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions",8494,False,0.3.1-alpha-396
+Naos Project,2018-01-09T05:00:02.043Z,9,101,"Common config for Naos.Deployment.Console or other implementation to initialize SetupStepFactory, ComputingInfrastructureManager, and a default DeploymentConfiguration.",Naos.Deployment.Config.Common,False,2018-04-11T16:25:17.723+00:00,True,False,,,2254,False,1.0.345
+Naos Project,2018-01-09T04:59:47.95Z,9,101,"Recipe that installs the basic classes and references needed to run Naos.Deployment logic, servers to abstract configuration and not need to provided everything on the command line.",Naos.Deployment.Bootstrapper,False,2018-04-11T16:25:02.88+00:00,True,False,,,3727,False,1.0.345
+Naos Project,2018-01-09T05:00:02.043Z,9,101,"Common config for Naos.Deployment.Console or other implementation to initialize SetupStepFactory, ComputingInfrastructureManager, and a default DeploymentConfiguration.",Naos.Deployment.Config.Common,False,2018-04-11T16:25:17.723+00:00,True,False,,,2254,False,1.0.345
+Naos Project,2018-01-09T04:59:47.95Z,9,101,"Recipe that installs the basic classes and references needed to run Naos.Deployment logic, servers to abstract configuration and not need to provided everything on the command line.",Naos.Deployment.Bootstrapper,False,2018-04-11T16:25:02.88+00:00,True,False,,,3727,False,1.0.345
+Naos Project,2018-01-09T04:59:32.433Z,9,101,Created on 2018-01-08 20:58,Naos.Deployment.Core,False,2018-04-11T16:24:46.707+00:00,True,False,,,38154,False,1.0.345
+Naos Project,2018-01-09T05:00:49.03Z,9,101,Created on 2018-01-08 20:59,Naos.Deployment.Persistence,False,2018-04-11T16:26:02.473+00:00,True,False,,,14978,False,1.0.345
+the humans of HUMANiT,2017-12-15T21:13:54.813Z,19,126,"RESTful base client that can call any RESTful API. Supports the HTTP verbs GET, POST and PATCH (more to come). Deals with the HTTP status code 200, 201, 204, 400, 404, 409 and 500 (more to come).",HUMANiT.Core.Web,True,2018-04-01T20:26:05.267+00:00,False,False,RESTful client.,"REST,API,CLIENT,RESTful,HTTP,JSON,Web,Service,Client,HttpClient,WebClient,WebServiceClient",3936,False,0.3.1-alpha-382
+the humans of HUMANiT,2017-12-15T21:13:54.813Z,19,126,"RESTful base client that can call any RESTful API. Supports the HTTP verbs GET, POST and PATCH (more to come). Deals with the HTTP status code 200, 201, 204, 400, 404, 409 and 500 (more to come).",HUMANiT.Core.Web,True,2018-04-01T20:26:05.267+00:00,True,False,RESTful client.,"REST,API,CLIENT,RESTful,HTTP,JSON,Web,Service,Client,HttpClient,WebClient,WebServiceClient",3936,False,0.3.1-alpha-382
+the humans of HUMANiT,2018-01-09T04:46:22.977Z,19,101,"RESTful base client that can call any RESTful API. Supports the HTTP verbs GET, POST and PATCH (more to come). Deals with the HTTP status code 200, 201, 204, 400, 404, 409 and 500 (more to come).",HUMANiT.Core.Web,True,2018-04-01T20:26:05.267+00:00,True,False,RESTful client.,"REST,API,CLIENT,RESTful,HTTP,JSON,Web,Service,Client,HttpClient,WebClient,WebServiceClient,RawWebCallResult",3936,False,0.3.2-alpha-488
+the humans of HUMANiT,2018-01-05T23:17:51.57Z,19,105,"RESTful base client that can call any RESTful API. Supports the HTTP verbs GET, POST and PATCH (more to come). Deals with the HTTP status code 200, 201, 204, 400, 404, 409 and 500 (more to come).",HUMANiT.Core.Web,True,2018-04-01T20:26:05.267+00:00,False,False,RESTful client.,"REST,API,CLIENT,RESTful,HTTP,JSON,Web,Service,Client,HttpClient,WebClient,WebServiceClient,RawWebCallResult",3936,False,0.3.2-alpha-471
+the humans of HUMANiT,2018-01-09T04:46:22.977Z,19,101,"RESTful base client that can call any RESTful API. Supports the HTTP verbs GET, POST and PATCH (more to come). Deals with the HTTP status code 200, 201, 204, 400, 404, 409 and 500 (more to come).",HUMANiT.Core.Web,True,2018-04-01T20:26:05.267+00:00,True,False,RESTful client.,"REST,API,CLIENT,RESTful,HTTP,JSON,Web,Service,Client,HttpClient,WebClient,WebServiceClient,RawWebCallResult",3936,False,0.3.2-alpha-488
+the humans of HUMANiT,2018-01-09T04:19:25.287Z,19,101,"RESTful base client that can call any RESTful API. Supports the HTTP verbs GET, POST and PATCH (more to come). Deals with the HTTP status code 200, 201, 204, 400, 404, 409 and 500 (more to come).",HUMANiT.Core.Web,True,2018-04-01T20:26:05.267+00:00,False,False,RESTful client.,"REST,API,CLIENT,RESTful,HTTP,JSON,Web,Service,Client,HttpClient,WebClient,WebServiceClient,RawWebCallResult",3936,False,0.3.2-alpha-485
+the humans of HUMANiT,2017-12-15T21:13:54.813Z,19,126,"RESTful base client that can call any RESTful API. Supports the HTTP verbs GET, POST and PATCH (more to come). Deals with the HTTP status code 200, 201, 204, 400, 404, 409 and 500 (more to come).",HUMANiT.Core.Web,True,2018-04-01T20:26:05.267+00:00,False,False,RESTful client.,"REST,API,CLIENT,RESTful,HTTP,JSON,Web,Service,Client,HttpClient,WebClient,WebServiceClient",3936,False,0.3.1-alpha-382
+the humans of HUMANiT,2018-01-09T04:28:06.617Z,19,101,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,True,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.3.2-alpha-487
+the humans of HUMANiT,2018-01-09T04:28:06.617Z,19,101,"Universal date and time support. Parameter and value inspections. Thread-safe cache, usable in SharePoint. Creation and verification of cryptographic salted hashes; fast; using RFC2898 instead of the insecure MD5. Date and time helpers. Various extensions including validators for emails, phone numbers, PINs and exceptions.",HUMANiT.Core,True,2018-04-01T19:39:13.153+00:00,True,False,Universal date and time support. Inspections. Cache. Cryptography. Various extensions. Exception support.,"Diagnostics,UniversalDateTime,DateTime,Date,Time,UTC,Inspect,Inspection,Parameters,ParameterInspections,Values,ValueInspections,Cache,Caching,SharePoint,Cryptography,RFC2898,SaltedHash,Email,Phone,PIN,Exceptions,CallResult",8494,False,0.3.2-alpha-487
+willhuo,2018-01-09T04:17:35.88Z,99,101,Dijing Tools,Dijing.Tools.Net,False,2018-01-11T07:36:32.933+00:00,True,False,,,374,False,1.0.3
+Max-Planck-Institute of Biochemistry,2018-01-09T04:18:04.02Z,1,101,PerseusApi implementation,PerseusLibS,False,2018-04-20T09:10:17.28+00:00,True,False,,,69455,False,1.6.0.1512
+the humans of HUMANiT,2018-01-09T04:19:25.287Z,19,101,"RESTful base client that can call any RESTful API. Supports the HTTP verbs GET, POST and PATCH (more to come). Deals with the HTTP status code 200, 201, 204, 400, 404, 409 and 500 (more to come).",HUMANiT.Core.Web,True,2018-04-01T20:26:05.267+00:00,True,False,RESTful client.,"REST,API,CLIENT,RESTful,HTTP,JSON,Web,Service,Client,HttpClient,WebClient,WebServiceClient,RawWebCallResult",3936,False,0.3.2-alpha-485
+Max-Planck-Institute of Biochemistry,2018-01-09T04:18:04.02Z,1,101,PerseusApi implementation,PerseusLibS,False,2018-04-20T09:10:17.28+00:00,True,False,,,69455,False,1.6.0.1512
+the humans of HUMANiT,2018-01-09T04:19:25.287Z,19,101,"RESTful base client that can call any RESTful API. Supports the HTTP verbs GET, POST and PATCH (more to come). Deals with the HTTP status code 200, 201, 204, 400, 404, 409 and 500 (more to come).",HUMANiT.Core.Web,True,2018-04-01T20:26:05.267+00:00,True,False,RESTful client.,"REST,API,CLIENT,RESTful,HTTP,JSON,Web,Service,Client,HttpClient,WebClient,WebServiceClient,RawWebCallResult",3936,False,0.3.2-alpha-485
+willhuo,2018-01-09T04:17:35.88Z,99,101,Dijing Tools,Dijing.Tools.Net,False,2018-01-11T07:36:32.933+00:00,True,False,,,374,False,1.0.3
+www.Tobto.com,2018-01-09T04:09:53.617Z,1,101,平台支持库的MVC扩展,Tobto.Portal.Mvc,False,2018-04-20T08:10:45.96+00:00,True,False,,"DDD,EF",1497,False,1.0.6583.21642
+www.Tobto.com,2018-01-09T04:09:41.867Z,1,101,ExtNet UI的适配,Tobto.Portal.ExtNet,False,2018-04-20T08:10:44.617+00:00,True,False,,"DDD,EF",1452,False,1.0.6583.21707
+www.Tobto.com,2018-01-09T04:09:53.617Z,1,101,平台支持库的MVC扩展,Tobto.Portal.Mvc,False,2018-04-20T08:10:45.96+00:00,True,False,,"DDD,EF",1497,False,1.0.6583.21642
+www.Tobto.com,2018-01-09T04:09:41.867Z,1,101,ExtNet UI的适配,Tobto.Portal.ExtNet,False,2018-04-20T08:10:44.617+00:00,True,False,,"DDD,EF",1452,False,1.0.6583.21707
+www.Tobto.com,2018-01-09T04:09:14.663Z,45,101,平台基础层WCF的类库,Tobto.Infrastructure.WCF,False,2018-03-06T01:27:29.46+00:00,True,False,,,391,False,1.0.6583.21641
+www.Tobto.com,2018-01-09T04:09:03.63Z,45,101,MSMQ 消息队列的实现,Tobto.Events.MSMQ,False,2018-03-06T01:26:21.897+00:00,True,False,,"DDD,EF",292,False,1.0.6583.21690
+www.Tobto.com,2018-01-09T04:09:14.663Z,45,101,平台基础层WCF的类库,Tobto.Infrastructure.WCF,False,2018-03-06T01:27:29.46+00:00,True,False,,,391,False,1.0.6583.21641
+www.Tobto.com,2018-01-09T04:09:03.63Z,45,101,MSMQ 消息队列的实现,Tobto.Events.MSMQ,False,2018-03-06T01:26:21.897+00:00,True,False,,"DDD,EF",292,False,1.0.6583.21690
+Benjamin Pettit,2018-01-09T03:59:52.29Z,100,101,Cake Build addin for receiving test results from Devices.Xunit test hosts.,Cake.DevicesXunitTestReceiver,False,2018-01-10T01:15:35.56+00:00,True,False,,"Cake,Script,Build,Xamarin,Xunit,Android,iOS",259,False,1.0.0
+Integration,2018-01-09T04:00:34.96Z,101,101,CCC Install,CCC.Install,False,2018-01-09T04:00:34.96+00:00,True,False,,,66,False,1.9.0
+www.Tobto.com,2018-01-09T04:01:34.23Z,7,101,平台AdminLTE UI适配,Tobto.Portal.AdminLTE,False,2018-04-13T02:40:19.043+00:00,True,False,,"DDD,EF",1051,False,1.0.6583.21642
+www.Tobto.com,2018-01-09T04:01:34.23Z,7,101,平台AdminLTE UI适配,Tobto.Portal.AdminLTE,False,2018-04-13T02:40:19.043+00:00,True,False,,"DDD,EF",1051,False,1.0.6583.21642
+Benjamin Pettit,2018-01-09T03:59:52.29Z,100,101,Cake Build addin for receiving test results from Devices.Xunit test hosts.,Cake.DevicesXunitTestReceiver,False,2018-01-10T01:15:35.56+00:00,True,False,,"Cake,Script,Build,Xamarin,Xunit,Android,iOS",259,False,1.0.0
+Integration,2018-01-09T04:00:34.96Z,101,101,CCC Install,CCC.Install,False,2018-01-09T04:00:34.96+00:00,True,False,,,66,False,1.9.0
+AlexXie,2018-01-09T03:55:25.843Z,31,101,Description,MetroERP.Caching.Redis,True,2018-03-20T04:00:37.4+00:00,True,False,,,719,False,2.0.0.3-beta
+Lykke,2018-01-09T03:54:06.217Z,92,101,Lykke Pay Common,Lykke.Pay.Common,False,2018-01-18T23:42:47.99+00:00,True,False,,,6862,False,1.0.95
+SKB Kontur,2018-01-09T03:55:02.47Z,2,101,Official Diadoc SDK,DiadocSDK,False,2018-04-18T07:21:34.993+00:00,True,False,,"diadoc,diadoc-api,diadoc-sdk,kontur,skbkontur",6808,False,1.49.1
+SKB Kontur,2018-01-09T03:55:02.47Z,2,101,Official Diadoc SDK,DiadocSDK,False,2018-04-18T07:21:34.993+00:00,True,False,,"diadoc,diadoc-api,diadoc-sdk,kontur,skbkontur",6808,False,1.49.1
+AlexXie,2018-01-09T03:55:25.843Z,31,101,Description,MetroERP.Caching.Redis,True,2018-03-20T04:00:37.4+00:00,True,False,,,719,False,2.0.0.3-beta
+Lykke,2018-01-09T03:54:06.217Z,92,101,Lykke Pay Common,Lykke.Pay.Common,False,2018-01-18T23:42:47.99+00:00,True,False,,,6862,False,1.0.95
+AlexXie,2018-01-09T03:52:17.607Z,32,101,Description,MetroERP.Caching.Memcached,True,2018-03-19T08:13:34.663+00:00,True,False,,,633,False,2.0.0.3-beta
+garoca,2018-01-09T03:52:04.137Z,101,101,Componente TableStorage.,ICCorp.Infraestructura.Repositorio.TableStorage,False,2018-01-09T03:52:04.137+00:00,True,False,,TableStorage,67,False,1.0.0
+NBXplorer.Client,2018-01-09T03:51:19.01Z,1,101,Client API for the minimalist HD Wallet Tracker NBXplorer,NBXplorer.Client,False,2018-04-19T07:24:26.443+00:00,True,False,,bitcoin,4835,False,1.0.0.26
+AlexXie,2018-01-09T03:52:17.607Z,32,101,Description,MetroERP.Caching.Memcached,True,2018-03-19T08:13:34.663+00:00,True,False,,,633,False,2.0.0.3-beta
+garoca,2018-01-09T03:52:04.137Z,101,101,Componente TableStorage.,ICCorp.Infraestructura.Repositorio.TableStorage,False,2018-01-09T03:52:04.137+00:00,True,False,,TableStorage,67,False,1.0.0
+NBXplorer.Client,2018-01-09T03:51:19.01Z,1,101,Client API for the minimalist HD Wallet Tracker NBXplorer,NBXplorer.Client,False,2018-04-19T07:24:26.443+00:00,True,False,,bitcoin,4835,False,1.0.0.26
+www.Tobto.com,2018-01-09T03:49:55.273Z,7,101,平台AdminLTE UI适配,Tobto.Portal.AdminLTE,False,2018-04-13T02:40:19.043+00:00,True,False,,"DDD,EF",1051,False,1.0.6583.21275
+www.Tobto.com,2018-01-09T03:49:55.273Z,7,101,平台AdminLTE UI适配,Tobto.Portal.AdminLTE,False,2018-04-13T02:40:19.043+00:00,True,False,,"DDD,EF",1051,False,1.0.6583.21275
+Highsoft,2018-01-09T03:44:19.443Z,2,101,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,True,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6582.42341
+Highsoft,2018-01-09T03:44:19.443Z,2,101,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,True,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37516,False,6.0.6582.42341
+Highsoft,2018-01-09T03:44:02.257Z,2,101,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,True,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6582.40939
+Highsoft,2018-01-09T03:44:02.257Z,2,101,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,True,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44260,False,6.0.6582.40939
+www.Tobto.com,2018-01-09T03:42:56.38Z,7,101,平台AdminLTE UI适配,Tobto.Portal.AdminLTE,False,2018-04-13T02:40:19.043+00:00,True,False,,,1051,False,1.0.6583.21084
+CapableObjects,2018-01-09T03:39:57.267Z,2,101,Descr,EcoWindowsStore,False,2018-04-18T02:42:38.66+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",141694,False,7.0.0.9770
+Jonathan Potts,2018-01-09T03:37:22.857Z,101,101,"A library offering basic image manipulation capabilities for cross-platform development (.NET Framework, .NET Core, ASP.NET, and Xamarin).",JonathanPotts.Imaging,False,2018-01-09T20:37:09.377+00:00,True,False,,,172,False,1.0.0
+CapableObjects,2018-01-09T03:39:12.42Z,2,101,Descr,EcoWebASP,False,2018-04-18T02:38:50.37+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",118270,False,7.0.0.9770
+Richard Schneider,2018-01-09T03:40:00.69Z,35,101,"Core objects for IPFS.
+
+The InterPlanetary File System is the permanent web. It is a new hypermedia distribution protocol, addressed by content and identities. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open.",Ipfs.Core,False,2018-03-16T06:15:59.81+00:00,True,False,,"ipfs,peer-to-peer,distributed,file-system",4819,False,0.17.0
+Raul Naupari,2018-01-09T03:41:55.97Z,21,101,Jal.Router integration with azure storage,Jal.Router.AzureStorage,False,2018-03-30T18:56:49.243+00:00,True,False,,,2353,False,1.2.2
+CapableObjects,2018-01-09T03:39:27.78Z,2,101,Descr,EcoWebProviders,False,2018-04-18T02:39:04.713+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",116695,False,7.0.0.9770
+CapableObjects,2018-01-09T03:39:42.297Z,2,101,Descr,EcoWebMVC,False,2018-04-18T02:42:21.33+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",116749,False,7.0.0.9770
+Raul Naupari,2018-01-09T03:41:32.05Z,21,101,Jal.Router integration with azure service bus,Jal.Router.AzureServiceBus,False,2018-03-30T18:54:48.567+00:00,True,False,,,4363,False,1.2.5
+Winner,2018-01-09T03:40:52.08Z,7,101,Description,Tobto.Portal.AdminLTE,False,2018-04-13T02:40:19.043+00:00,True,False,,,1051,False,1.0.0
+www.Tobto.com,2018-01-09T03:42:56.38Z,7,101,平台AdminLTE UI适配,Tobto.Portal.AdminLTE,False,2018-04-13T02:40:19.043+00:00,True,False,,,1051,False,1.0.6583.21084
+Raul Naupari,2018-01-09T03:41:55.97Z,21,101,Jal.Router integration with azure storage,Jal.Router.AzureStorage,False,2018-03-30T18:56:49.243+00:00,True,False,,,2353,False,1.2.2
+CapableObjects,2018-01-09T03:39:57.267Z,2,101,Descr,EcoWindowsStore,False,2018-04-18T02:42:38.66+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",141694,False,7.0.0.9770
+Winner,2018-01-09T03:40:52.08Z,7,101,Description,Tobto.Portal.AdminLTE,False,2018-04-13T02:40:19.043+00:00,True,False,,,1051,False,1.0.0
+CapableObjects,2018-01-09T03:39:12.42Z,2,101,Descr,EcoWebASP,False,2018-04-18T02:38:50.37+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",118270,False,7.0.0.9770
+CapableObjects,2018-01-09T03:39:27.78Z,2,101,Descr,EcoWebProviders,False,2018-04-18T02:39:04.713+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",116695,False,7.0.0.9770
+CapableObjects,2018-01-09T03:39:42.297Z,2,101,Descr,EcoWebMVC,False,2018-04-18T02:42:21.33+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",116749,False,7.0.0.9770
+Raul Naupari,2018-01-09T03:41:32.05Z,21,101,Jal.Router integration with azure service bus,Jal.Router.AzureServiceBus,False,2018-03-30T18:54:48.567+00:00,True,False,,,4363,False,1.2.5
+Richard Schneider,2018-01-09T03:40:00.69Z,35,101,"Core objects for IPFS.
+
+The InterPlanetary File System is the permanent web. It is a new hypermedia distribution protocol, addressed by content and identities. IPFS enables the creation of completely distributed applications. It aims to make the web faster, safer, and more open.",Ipfs.Core,False,2018-03-16T06:15:59.81+00:00,True,False,,"ipfs,peer-to-peer,distributed,file-system",4819,False,0.17.0
+Jonathan Potts,2018-01-09T03:37:22.857Z,101,101,"A library offering basic image manipulation capabilities for cross-platform development (.NET Framework, .NET Core, ASP.NET, and Xamarin).",JonathanPotts.Imaging,False,2018-01-09T20:37:09.377+00:00,True,False,,,172,False,1.0.0
+CreaSoft s.r.o.,2018-01-09T03:35:06.07Z,98,101,CreaSoft.Logging.EnterpriseLibrary,CreaSoft.Logging.EnterpriseLibrary,False,2018-01-12T12:42:06.627+00:00,True,False,,"CreaSoft,Logging,EnterpriseLibrary",665,False,1.3.0
+CapableObjects,2018-01-09T03:38:40.403Z,2,101,Descr,EcoSqlServer,False,2018-04-18T02:38:20.023+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",145399,False,7.0.0.9770
+CapableObjects,2018-01-09T03:38:57.327Z,2,101,Descr,EcoWindowsForms,False,2018-04-18T02:38:36.54+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",143192,False,7.0.0.9770
+CapableObjects,2018-01-09T03:38:22.183Z,2,101,Descr,EcoOtherDatabasePersistenceMappers,False,2018-04-18T02:38:04.54+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",144087,False,7.0.0.9770
+www.Tobto.com,2018-01-09T03:38:32.217Z,45,101,平台基础层WCF的类库,Tobto.Infrastructure.WCF,False,2018-03-06T01:27:29.46+00:00,True,False,,,391,False,1.0.6583.20951
+CapableObjects,2018-01-09T03:37:48.59Z,2,101,This contains the core assemblies - for different frameworks,EcoCore,False,2018-04-18T02:37:33.803+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",148111,False,7.0.0.9770
+CapableObjects,2018-01-09T03:38:04.573Z,2,101,Descr,EcoWpf,False,2018-04-18T02:37:48.523+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",144767,False,7.0.0.9770
+CapableObjects,2018-01-09T03:38:40.403Z,2,101,Descr,EcoSqlServer,False,2018-04-18T02:38:20.023+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",145399,False,7.0.0.9770
+CapableObjects,2018-01-09T03:38:57.327Z,2,101,Descr,EcoWindowsForms,False,2018-04-18T02:38:36.54+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",143192,False,7.0.0.9770
+www.Tobto.com,2018-01-09T03:38:32.217Z,45,101,平台基础层WCF的类库,Tobto.Infrastructure.WCF,False,2018-03-06T01:27:29.46+00:00,True,False,,,391,False,1.0.6583.20951
+CapableObjects,2018-01-09T03:38:22.183Z,2,101,Descr,EcoOtherDatabasePersistenceMappers,False,2018-04-18T02:38:04.54+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",144087,False,7.0.0.9770
+CapableObjects,2018-01-09T03:38:04.573Z,2,101,Descr,EcoWpf,False,2018-04-18T02:37:48.523+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",144767,False,7.0.0.9770
+CapableObjects,2018-01-09T03:37:48.59Z,2,101,This contains the core assemblies - for different frameworks,EcoCore,False,2018-04-18T02:37:33.803+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",148111,False,7.0.0.9770
+Jonathan Potts,2018-01-09T03:37:22.857Z,101,101,"A library offering basic image manipulation capabilities for cross-platform development (.NET Framework, .NET Core, ASP.NET, and Xamarin).",JonathanPotts.Imaging,False,2018-01-09T20:37:09.377+00:00,True,False,,,172,False,1.0.0
+CreaSoft s.r.o.,2018-01-09T03:35:06.07Z,98,101,CreaSoft.Logging.EnterpriseLibrary,CreaSoft.Logging.EnterpriseLibrary,False,2018-01-12T12:42:06.627+00:00,True,False,,"CreaSoft,Logging,EnterpriseLibrary",665,False,1.3.0
+Intersoft Solutions,2018-01-09T03:31:46.41Z,7,101,Provides payment services for Crosslight development.,Intersoft.Crosslight.Services.Payment,True,2018-04-13T08:35:05.1+00:00,True,False,,"Intersoft,Crosslight,Services,Payment,Cross-Platform,PCL,Portable,Class,Library,Android,Xamarin",17963,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:32:32.473Z,7,101,"Provides a comprehensive charting data visualization suite featuring 12+ series, smooth animations, intuitive pinch-to-zoom, and beautiful modern design. Supports iOS and Android platforms.",Intersoft.Crosslight.UI.DataVisualization,True,2018-04-13T08:35:53.54+00:00,True,False,,"Intersoft,Crosslight,UI,User,Interface,Data,Visualization,Reporting,Charting,Components,iOS,Android,Xamarin",46408,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:32:16.77Z,7,101,Provides UI components tailored specifically for Material Design that works on Android API 21 and above.,Intersoft.Crosslight.UI.Android.v7,True,2018-04-13T08:35:37.98+00:00,True,False,,"Intersoft,Crosslight,UI,User,Interface,Components,Android,Material,Xamarin,v7",43124,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:32:03.427Z,7,101,"Provides a multitude of essential UI components for Crosslight development including Calendar, Map, Carousel, Signature Pad, and much more. Supports iOS and Android platforms.",Intersoft.Crosslight.UI,True,2018-04-13T08:35:22.697+00:00,True,False,,"Intersoft,Crosslight,UI,User,Interface,Components,Cross-Platform,iOS,Android,Xamarin",45017,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:32:45.74Z,7,101,"Provides powerful data access components to WebAPI server featuring OData 4 extended implementation, view projection technology, two-way data synchronization and seamless integration with Entity Framework. For the client counterpart, please install Intersoft.AppFramework package.",Intersoft.Data.WebApi.v4,True,2018-04-13T08:36:09.34+00:00,True,False,,"Intersoft,Data,WebAPI,Server,Controller,Components,OData,Synchronization,EF,Entity,Framework",42549,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:32:57.253Z,7,101,Provides utility to perform data operation using intersoft data to EntityFramework.,Intersoft.Data.ComponentModel.EntityFramework,True,2018-04-13T08:36:24.45+00:00,True,False,,,23411,False,5.0.5000.954-experimental
+garoca,2018-01-09T03:31:55.317Z,101,101,Componente Redis.,ICCorp.Infraestructura.Repositorio.Redis,False,2018-01-09T03:31:55.317+00:00,True,False,,Redis,69,False,1.0.0
+Intersoft Solutions,2018-01-09T03:28:47.84Z,7,101,"Provides seamless logging integration to Microsoft Azure Insights service, including page view and error logs. Supports all client and server platforms.",Intersoft.Crosslight.Logging.AzureInsights,True,2018-04-13T08:31:47.453+00:00,True,False,,"Intersoft,Crosslight,Logging,Azure,Insights,Microsoft,PCL,Server,Portable,Class,Library",44140,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:29:28.14Z,7,101,"Provides various authenticators for user authentication in Crosslight apps, including HttpBasic, NTLM, OAuth, OAuth2, and WebAPI authenticator.",Intersoft.Crosslight.Services.Auth,True,2018-04-13T08:32:30.877+00:00,True,False,,"Intersoft,Crosslight,Services,Auth,Authentication,User,HttpBasic,NTLM,OAuth,OAuth2,WebAPI,Authenticator",46074,False,5.0.5000.954-experimental
+AlexXie,2018-01-09T03:29:30.657Z,32,101,Description,MetroERP.Caching,True,2018-03-19T07:56:11.733+00:00,True,False,,,644,False,2.0.0.3-beta
+雪雁,2018-01-09T03:28:51.53Z,25,101,Magicodes.Admin框架微信插件EF Core和迁移库,Magicodes.WeChat.EntityFrameworkCore,False,2018-03-26T07:19:39.55+00:00,True,False,,,1348,False,5.0.0.7
+Intersoft Solutions,2018-01-09T03:31:03.657Z,7,101,Provides ethernet and bluetooth connectivity services for Crosslight development.,Intersoft.Crosslight.Services.Connectivity,True,2018-04-13T08:34:16.303+00:00,True,False,,"Intersoft,Crosslight,Services,Connectivity,Cross-Platform,PCL,Portable,Class,Library,Android,Xamarin",20376,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:29:15.45Z,7,101,Provides a powerful yet lightweight Rest client to access remote resources in Crosslight apps.,Intersoft.Crosslight.RestClient,True,2018-04-13T08:32:16.267+00:00,True,False,,"Intersoft,Crosslight,Data,Access,Rest,RestClient,Cross-Platform,PCL,Portable,Class,Library,Client,Server,Mobile",46216,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:27:59.277Z,7,101,Provides essential data components to your Crosslight apps.,Intersoft.Crosslight.Data,True,2018-04-13T08:30:59.497+00:00,True,False,,"Intersoft,Crosslight,Data,Access,Components,Cross-Platform,PCL,Portable,Class,Library",46792,False,5.0.5000.954-experimental
+Administrator,2018-01-09T03:31:37.02Z,7,101,"Spire.PDF for .NET is a versatile PDF library that enables software developers to generate, edit, read and manipulate PDF files within their own .NET applications. As a standalone PDF component, Spire.PDF for .NET provides users an incredible wealth of features without installing Adobe Acrobat. This component is completely written in C#, but also supports VB.NET, Windows Forms and ASP.NET. 
+With the Spire.PDF for .NET API, you can get the ability to read PDF text and image even attachments with high efficiency. Even the special content such as language written from right to left can be extracted such as Herbrew and Arabic. Other basic features such as text, image, table, shapes, hyperlinks, bookmark, headings, footnotes, lists, form fields, pagination, booklet barcode, attachments, transparency, annotations, actions, overlay etc all work great for users. As for security, Spire.PDF for .NET enables you to protect your PDF files by passwords and digital signature.",Spire.PDF,False,2018-04-13T09:45:21.33+00:00,True,False,"This package is designed to introduce developers a .NET PDF application Spire.PDF for .NET. This PDF application enables users to create, read, edit and maniplate PDF files with high efficiency.","PDF,application,library,component,control,to,XPS,Image,HTML,PDF/A",110591,False,3.9.584
+Intersoft Solutions,2018-01-09T03:29:55.42Z,7,101,"Provides high-performance, async image loading capabilities to your Crosslight apps, featuring smart queue, smooth animation, and various cache options.",Intersoft.Crosslight.Services.ImageLoader,True,2018-04-13T08:33:01.52+00:00,True,False,,"Intersoft,Crosslight,Services,ImageLoader,Image,Loader,Cross-Platform,PCL,Portable,Class,Library",45398,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:29:00.933Z,7,101,Provides server logging functionality that use Entity Framework for the storage.,Intersoft.Crosslight.Logging.EntityFramework,True,2018-04-13T08:32:00.563+00:00,True,False,,"Intersoft,Crosslight,Logging,Entity,Framework,EF,PCL,Portable,Class,Library,Log",43620,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:28:18.543Z,7,101,Provides local database access components and offline changes functionality to your Crosslight apps.,Intersoft.Crosslight.Data.Sqlite,True,2018-04-13T08:31:18+00:00,True,False,,"Intersoft,Crosslight,Data,Sqlite,Cross-Platform,Access,Database,Sqllite",47648,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:31:15.83Z,7,101,Provides peripheral connectivity services for Crosslight development.,Intersoft.Crosslight.Services.Connectivity.Peripheral,True,2018-04-13T08:34:29.867+00:00,True,False,,"Intersoft,Crosslight,Services,Connectivity,Peripheral,Cross-Platform,PCL,Portable,Class,Library,Android,Xamarin",20395,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:30:50.097Z,7,101,"Provides extended capabilities to share and authenticate users with social network accounts, including Facebook and Twitter.",Intersoft.Crosslight.Services.Social,True,2018-04-13T08:34:02.38+00:00,True,False,,"Intersoft,Crosslight,Services,Social,Network,Facebook,Twitter,PCL,iOS,Android,Xamarin,Portable,Class,Library",47357,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:30:36.953Z,7,101,"Provides report viewer components for Crosslight development, featuring seamless integration with Intersoft ClientUI Reporting Server.",Intersoft.Crosslight.Services.Reporting,True,2018-04-13T08:33:46.397+00:00,True,False,,"Intersoft,Crosslight,Services,Reporting,Report,Viewer,PCL,Portable,Class,Library,Server,ClientUI",44944,False,5.0.5000.954-experimental
+雪雁,2018-01-09T03:29:25.763Z,25,101,Magicodes.Admin框架微信插件Web核心库，包含AppSession的扩展方法以及微信支付的通用处理、服务器事件处理和WeChatIgnoreOAuth、WeChatOAuth,Magicodes.WeChat.Web.Core.50,False,2018-03-26T07:20:25.893+00:00,True,False,,,894,False,5.0.0.7
+TopJet Yuy,2018-01-09T03:27:21.183Z,95,101,TopJet Helper,TopJet.FrameWorkCore.Helper,False,2018-01-15T06:00:05.947+00:00,True,False,,,271,False,1.0.0
+Intersoft Solutions,2018-01-09T03:30:22.72Z,7,101,"Provides end-to-end push messaging functionality to your Crosslight apps. Supports iOS, Android and Windows for the client platforms and .NET 4.5 for the server platforms.",Intersoft.Crosslight.Services.PushNotification,True,2018-04-13T08:33:30.723+00:00,True,False,,"Intersoft,Crosslight,Services,Push,Notification,PNS,PushNotification,Client,Server,PCL,Portable,Class,Library,iOS,Android,WinPhone,WindowsPhone,Phone,Xamarin",45998,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:30:08.173Z,7,101,Provides GPS location services for Crosslight development.,Intersoft.Crosslight.Services.Location,True,2018-04-13T08:33:15.52+00:00,True,False,,"Intersoft,Crosslight,Services,Location,PCL,Portable,Class,Library,GPS,iOS,Android,Xamarin,Cross-Platform",42745,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:31:29.003Z,7,101,Provides peripheral connectivity services for Crosslight development using NanoHttpd.,Intersoft.Crosslight.Services.Connectivity.Peripheral.NanoHttpd,True,2018-04-13T08:34:44.913+00:00,True,False,,"Intersoft,Crosslight,Services,Connectivity,Peripheral,NanoHttpd,Cross-Platform,PCL,Portable,Class,Library,Android,Xamarin",12144,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:29:42.453Z,7,101,Provides barcode scanning capabilities to your Crosslight apps.,Intersoft.Crosslight.Services.Barcode,True,2018-04-13T08:32:46.767+00:00,True,False,,"Intersoft,Crosslight,Services,Barcode,Scanner,Reader,Cross-Platform,PCL,Portable,Class,Library,iOS,Android,Xamarin",44914,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:32:16.77Z,7,101,Provides UI components tailored specifically for Material Design that works on Android API 21 and above.,Intersoft.Crosslight.UI.Android.v7,True,2018-04-13T08:35:37.98+00:00,True,False,,"Intersoft,Crosslight,UI,User,Interface,Components,Android,Material,Xamarin,v7",43124,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:32:45.74Z,7,101,"Provides powerful data access components to WebAPI server featuring OData 4 extended implementation, view projection technology, two-way data synchronization and seamless integration with Entity Framework. For the client counterpart, please install Intersoft.AppFramework package.",Intersoft.Data.WebApi.v4,True,2018-04-13T08:36:09.34+00:00,True,False,,"Intersoft,Data,WebAPI,Server,Controller,Components,OData,Synchronization,EF,Entity,Framework",42549,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:32:32.473Z,7,101,"Provides a comprehensive charting data visualization suite featuring 12+ series, smooth animations, intuitive pinch-to-zoom, and beautiful modern design. Supports iOS and Android platforms.",Intersoft.Crosslight.UI.DataVisualization,True,2018-04-13T08:35:53.54+00:00,True,False,,"Intersoft,Crosslight,UI,User,Interface,Data,Visualization,Reporting,Charting,Components,iOS,Android,Xamarin",46408,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:32:57.253Z,7,101,Provides utility to perform data operation using intersoft data to EntityFramework.,Intersoft.Data.ComponentModel.EntityFramework,True,2018-04-13T08:36:24.45+00:00,True,False,,,23411,False,5.0.5000.954-experimental
+garoca,2018-01-09T03:31:55.317Z,101,101,Componente Redis.,ICCorp.Infraestructura.Repositorio.Redis,False,2018-01-09T03:31:55.317+00:00,True,False,,Redis,69,False,1.0.0
+Administrator,2018-01-09T03:31:37.02Z,7,101,"Spire.PDF for .NET is a versatile PDF library that enables software developers to generate, edit, read and manipulate PDF files within their own .NET applications. As a standalone PDF component, Spire.PDF for .NET provides users an incredible wealth of features without installing Adobe Acrobat. This component is completely written in C#, but also supports VB.NET, Windows Forms and ASP.NET. 
+With the Spire.PDF for .NET API, you can get the ability to read PDF text and image even attachments with high efficiency. Even the special content such as language written from right to left can be extracted such as Herbrew and Arabic. Other basic features such as text, image, table, shapes, hyperlinks, bookmark, headings, footnotes, lists, form fields, pagination, booklet barcode, attachments, transparency, annotations, actions, overlay etc all work great for users. As for security, Spire.PDF for .NET enables you to protect your PDF files by passwords and digital signature.",Spire.PDF,False,2018-04-13T09:45:21.33+00:00,True,False,"This package is designed to introduce developers a .NET PDF application Spire.PDF for .NET. This PDF application enables users to create, read, edit and maniplate PDF files with high efficiency.","PDF,application,library,component,control,to,XPS,Image,HTML,PDF/A",110591,False,3.9.584
+Intersoft Solutions,2018-01-09T03:29:55.42Z,7,101,"Provides high-performance, async image loading capabilities to your Crosslight apps, featuring smart queue, smooth animation, and various cache options.",Intersoft.Crosslight.Services.ImageLoader,True,2018-04-13T08:33:01.52+00:00,True,False,,"Intersoft,Crosslight,Services,ImageLoader,Image,Loader,Cross-Platform,PCL,Portable,Class,Library",45398,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:29:42.453Z,7,101,Provides barcode scanning capabilities to your Crosslight apps.,Intersoft.Crosslight.Services.Barcode,True,2018-04-13T08:32:46.767+00:00,True,False,,"Intersoft,Crosslight,Services,Barcode,Scanner,Reader,Cross-Platform,PCL,Portable,Class,Library,iOS,Android,Xamarin",44914,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:30:22.72Z,7,101,"Provides end-to-end push messaging functionality to your Crosslight apps. Supports iOS, Android and Windows for the client platforms and .NET 4.5 for the server platforms.",Intersoft.Crosslight.Services.PushNotification,True,2018-04-13T08:33:30.723+00:00,True,False,,"Intersoft,Crosslight,Services,Push,Notification,PNS,PushNotification,Client,Server,PCL,Portable,Class,Library,iOS,Android,WinPhone,WindowsPhone,Phone,Xamarin",45998,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:31:15.83Z,7,101,Provides peripheral connectivity services for Crosslight development.,Intersoft.Crosslight.Services.Connectivity.Peripheral,True,2018-04-13T08:34:29.867+00:00,True,False,,"Intersoft,Crosslight,Services,Connectivity,Peripheral,Cross-Platform,PCL,Portable,Class,Library,Android,Xamarin",20395,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:28:47.84Z,7,101,"Provides seamless logging integration to Microsoft Azure Insights service, including page view and error logs. Supports all client and server platforms.",Intersoft.Crosslight.Logging.AzureInsights,True,2018-04-13T08:31:47.453+00:00,True,False,,"Intersoft,Crosslight,Logging,Azure,Insights,Microsoft,PCL,Server,Portable,Class,Library",44140,False,5.0.5000.954-experimental
+AlexXie,2018-01-09T03:29:30.657Z,32,101,Description,MetroERP.Caching,True,2018-03-19T07:56:11.733+00:00,True,False,,,644,False,2.0.0.3-beta
+雪雁,2018-01-09T03:29:25.763Z,25,101,Magicodes.Admin框架微信插件Web核心库，包含AppSession的扩展方法以及微信支付的通用处理、服务器事件处理和WeChatIgnoreOAuth、WeChatOAuth,Magicodes.WeChat.Web.Core.50,False,2018-03-26T07:20:25.893+00:00,True,False,,,894,False,5.0.0.7
+Intersoft Solutions,2018-01-09T03:29:15.45Z,7,101,Provides a powerful yet lightweight Rest client to access remote resources in Crosslight apps.,Intersoft.Crosslight.RestClient,True,2018-04-13T08:32:16.267+00:00,True,False,,"Intersoft,Crosslight,Data,Access,Rest,RestClient,Cross-Platform,PCL,Portable,Class,Library,Client,Server,Mobile",46216,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:32:03.427Z,7,101,"Provides a multitude of essential UI components for Crosslight development including Calendar, Map, Carousel, Signature Pad, and much more. Supports iOS and Android platforms.",Intersoft.Crosslight.UI,True,2018-04-13T08:35:22.697+00:00,True,False,,"Intersoft,Crosslight,UI,User,Interface,Components,Cross-Platform,iOS,Android,Xamarin",45017,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:29:28.14Z,7,101,"Provides various authenticators for user authentication in Crosslight apps, including HttpBasic, NTLM, OAuth, OAuth2, and WebAPI authenticator.",Intersoft.Crosslight.Services.Auth,True,2018-04-13T08:32:30.877+00:00,True,False,,"Intersoft,Crosslight,Services,Auth,Authentication,User,HttpBasic,NTLM,OAuth,OAuth2,WebAPI,Authenticator",46074,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:31:46.41Z,7,101,Provides payment services for Crosslight development.,Intersoft.Crosslight.Services.Payment,True,2018-04-13T08:35:05.1+00:00,True,False,,"Intersoft,Crosslight,Services,Payment,Cross-Platform,PCL,Portable,Class,Library,Android,Xamarin",17963,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:30:08.173Z,7,101,Provides GPS location services for Crosslight development.,Intersoft.Crosslight.Services.Location,True,2018-04-13T08:33:15.52+00:00,True,False,,"Intersoft,Crosslight,Services,Location,PCL,Portable,Class,Library,GPS,iOS,Android,Xamarin,Cross-Platform",42745,False,5.0.5000.954-experimental
+雪雁,2018-01-09T03:28:51.53Z,25,101,Magicodes.Admin框架微信插件EF Core和迁移库,Magicodes.WeChat.EntityFrameworkCore,False,2018-03-26T07:19:39.55+00:00,True,False,,,1348,False,5.0.0.7
+Intersoft Solutions,2018-01-09T03:31:29.003Z,7,101,Provides peripheral connectivity services for Crosslight development using NanoHttpd.,Intersoft.Crosslight.Services.Connectivity.Peripheral.NanoHttpd,True,2018-04-13T08:34:44.913+00:00,True,False,,"Intersoft,Crosslight,Services,Connectivity,Peripheral,NanoHttpd,Cross-Platform,PCL,Portable,Class,Library,Android,Xamarin",12144,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:31:03.657Z,7,101,Provides ethernet and bluetooth connectivity services for Crosslight development.,Intersoft.Crosslight.Services.Connectivity,True,2018-04-13T08:34:16.303+00:00,True,False,,"Intersoft,Crosslight,Services,Connectivity,Cross-Platform,PCL,Portable,Class,Library,Android,Xamarin",20376,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:29:00.933Z,7,101,Provides server logging functionality that use Entity Framework for the storage.,Intersoft.Crosslight.Logging.EntityFramework,True,2018-04-13T08:32:00.563+00:00,True,False,,"Intersoft,Crosslight,Logging,Entity,Framework,EF,PCL,Portable,Class,Library,Log",43620,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:30:36.953Z,7,101,"Provides report viewer components for Crosslight development, featuring seamless integration with Intersoft ClientUI Reporting Server.",Intersoft.Crosslight.Services.Reporting,True,2018-04-13T08:33:46.397+00:00,True,False,,"Intersoft,Crosslight,Services,Reporting,Report,Viewer,PCL,Portable,Class,Library,Server,ClientUI",44944,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:30:50.097Z,7,101,"Provides extended capabilities to share and authenticate users with social network accounts, including Facebook and Twitter.",Intersoft.Crosslight.Services.Social,True,2018-04-13T08:34:02.38+00:00,True,False,,"Intersoft,Crosslight,Services,Social,Network,Facebook,Twitter,PCL,iOS,Android,Xamarin,Portable,Class,Library",47357,False,5.0.5000.954-experimental
+雪雁,2018-01-09T03:28:27.497Z,25,101,Magicodes.Admin框架微信插件应用服务库，包含应用服务、Event等等,Magicodes.WeChat.Application.50,False,2018-03-26T07:19:02.75+00:00,True,False,,,942,False,5.0.0.7
+TopJet Yuy,2018-01-09T03:27:21.183Z,95,101,TopJet Helper,TopJet.FrameWorkCore.Helper,False,2018-01-15T06:00:05.947+00:00,True,False,,,271,False,1.0.0
+雪雁,2018-01-09T03:27:54.277Z,25,101,Magicodes.Admin框架微信插件模型库,Magicodes.WeChat.Core.50,False,2018-03-26T07:18:30.547+00:00,True,False,,,959,False,5.0.0.7
+Intersoft Solutions,2018-01-09T03:28:32.467Z,7,101,Provides powerful yet lightweight logging functionality to your Crosslight apps. Supports all client and server platforms.,Intersoft.Crosslight.Logging,True,2018-04-13T08:31:33.157+00:00,True,False,,"Intersoft,Crosslight,Logging,Log,Xamarin,iOS,Android,WinPhone,Windows,Phone,Client,Server,PCL,Portable,Class,Library",45017,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:27:29.713Z,7,101,"Crosslight is an advanced development toolset for building rich cross-platform mobile applications with 100% shared UI logic. Supported platforms include iOS, Android, and Windows.",Intersoft.Crosslight,True,2018-04-13T08:30:28.573+00:00,True,False,,"Intersoft,Crosslight,MVVM,iOS,Android,WindowsPhone,WinPhone,Windows,Xamarin,Cross-Platform,Mobile",54076,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:27:12.823Z,7,101,"An advanced application framework designed to make enterprise apps development simple, featuring enterprise data access patterns such as generic repositories, query definitions, user management, authentication, security, push notifications, and more. For the server data access counterpart, please install Intersoft.Data.WebApi.v4 package.",Intersoft.AppFramework,True,2018-04-13T08:30:10.917+00:00,True,False,,"Intersoft,AppFramework,Application,Framework,Enterprise,Security,Query,Definitions,User,Management,Authentication,Push,Notification,PNS,Server,Client,WebAPI,Data,Portable,Class,Library,PCL,Mobile",45845,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:27:45.2Z,7,101,"Supercharge your Crosslight.Android apps with 50+ Material components including Collapsible ToolBar, RecycleView with built-in Shared Transition and Swipe gesture, Parallax Header and much more. Supports Android API 21 or higher.",Intersoft.Crosslight.Android.v7,True,2018-04-13T08:30:45.327+00:00,True,False,,"Intersoft,Crosslight,Android,Material,Components,Xamarin,v7",46456,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:27:29.713Z,7,101,"Crosslight is an advanced development toolset for building rich cross-platform mobile applications with 100% shared UI logic. Supported platforms include iOS, Android, and Windows.",Intersoft.Crosslight,True,2018-04-13T08:30:28.573+00:00,True,False,,"Intersoft,Crosslight,MVVM,iOS,Android,WindowsPhone,WinPhone,Windows,Xamarin,Cross-Platform,Mobile",54076,False,5.0.5000.954-experimental
+Intersoft Solutions,2018-01-09T03:28:32.467Z,7,101,Provides powerful yet lightweight logging functionality to your Crosslight apps. Supports all client and server platforms.,Intersoft.Crosslight.Logging,True,2018-04-13T08:31:33.157+00:00,True,False,,"Intersoft,Crosslight,Logging,Log,Xamarin,iOS,Android,WinPhone,Windows,Phone,Client,Server,PCL,Portable,Class,Library",45017,False,5.0.5000.954-experimental
+雪雁,2018-01-09T03:27:54.277Z,25,101,Magicodes.Admin框架微信插件模型库,Magicodes.WeChat.Core.50,False,2018-03-26T07:18:30.547+00:00,True,False,,,959,False,5.0.0.7
+Intersoft Solutions,2018-01-09T03:27:45.2Z,7,101,"Supercharge your Crosslight.Android apps with 50+ Material components including Collapsible ToolBar, RecycleView with built-in Shared Transition and Swipe gesture, Parallax Header and much more. Supports Android API 21 or higher.",Intersoft.Crosslight.Android.v7,True,2018-04-13T08:30:45.327+00:00,True,False,,"Intersoft,Crosslight,Android,Material,Components,Xamarin,v7",46456,False,5.0.5000.954-experimental
+TopJet Yuy,2018-01-09T03:27:21.183Z,95,101,TopJet Helper,TopJet.FrameWorkCore.Helper,False,2018-01-15T06:00:05.947+00:00,True,False,,,271,False,1.0.0
+Intersoft Solutions,2018-01-09T03:27:12.823Z,7,101,"An advanced application framework designed to make enterprise apps development simple, featuring enterprise data access patterns such as generic repositories, query definitions, user management, authentication, security, push notifications, and more. For the server data access counterpart, please install Intersoft.Data.WebApi.v4 package.",Intersoft.AppFramework,True,2018-04-13T08:30:10.917+00:00,True,False,,"Intersoft,AppFramework,Application,Framework,Enterprise,Security,Query,Definitions,User,Management,Authentication,Push,Notification,PNS,Server,Client,WebAPI,Data,Portable,Class,Library,PCL,Mobile",45845,False,5.0.5000.954-experimental
+Haiping Chen,2018-01-09T03:21:05.263Z,101,101,Package Description,Quickflow.Core,False,2018-01-09T03:21:05.263+00:00,True,False,,"Workflow,Core,CustomEntityFoundation",564,False,1.3.2
+Winner,2018-01-09T03:25:49.413Z,45,101,Description,Tobto.Infrastructure.WCF,False,2018-03-06T01:27:29.46+00:00,True,False,,,391,False,1.0.0
+Haiping Chen,2018-01-09T03:21:58.08Z,101,101,Quickflow activity repository. Integrated with CustomEntityFoundation.,Quickflow.ActivityRepository,False,2018-01-09T03:21:58.08+00:00,True,False,,"Quickflow,CustomEntityFoundation,Workflow",557,False,1.5.1
+Haiping Chen,2018-01-09T03:21:05.263Z,101,101,Package Description,Quickflow.Core,False,2018-01-09T03:21:05.263+00:00,True,False,,"Workflow,Core,CustomEntityFoundation",564,False,1.3.2
+Winner,2018-01-09T03:25:49.413Z,45,101,Description,Tobto.Infrastructure.WCF,False,2018-03-06T01:27:29.46+00:00,True,False,,,391,False,1.0.0
+Haiping Chen,2018-01-09T03:21:58.08Z,101,101,Quickflow activity repository. Integrated with CustomEntityFoundation.,Quickflow.ActivityRepository,False,2018-01-09T03:21:58.08+00:00,True,False,,"Quickflow,CustomEntityFoundation,Workflow",557,False,1.5.1
+Dobii.Learning,2018-01-09T02:44:07.7Z,43209,101,Package Description,Dobii.Learning,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+LibGit2Sharp contributors,2018-01-09T02:54:16.86Z,100,101,"LibGit2Sharp brings all the might and speed of libgit2, a native Git implementation, to the managed world of .Net and Mono. Updated to use libssh2 1.8.1.0.",LibGit2Sharp-SSH-updated-libssh2,False,2018-01-10T03:22:55.3+00:00,True,False,,"libgit2,git,wrapper,bindings,API,dvcs,vcs,ssh",317,False,1.0.24
+Khabubu Phathutshedzo,2018-01-09T02:53:47.387Z,43209,101,Dobii Learning is an abstraction for adding machine learning algorithms into your .NET applications,Dobii.Learning,True,1900-01-01T00:00:00+00:00,False,False,,"Machine-Learning,Algorithms,Abstraction",-1,False,1.0.0-alpha
+LibGit2Sharp contributors,2018-01-09T02:53:55.87Z,100,101,"Native binaries for LibGit2Sharp-SSH, with libssh2 updated to version 1.8.1_DEV",LibGit2Sharp-SSH.NativeBinaries-libssh2-1.8.1.0,False,2018-01-10T03:23:31.037+00:00,True,False,,,69,False,1.0.15
+Khabubu Phathutshedzo,2018-01-09T02:53:47.387Z,43209,101,Dobii Learning is an abstraction for adding machine learning algorithms into your .NET applications,Dobii.Learning,True,1900-01-01T00:00:00+00:00,False,False,,"Machine-Learning,Algorithms,Abstraction",-1,False,1.0.0-alpha
+LibGit2Sharp contributors,2018-01-09T02:54:16.86Z,100,101,"LibGit2Sharp brings all the might and speed of libgit2, a native Git implementation, to the managed world of .Net and Mono. Updated to use libssh2 1.8.1.0.",LibGit2Sharp-SSH-updated-libssh2,False,2018-01-10T03:22:55.3+00:00,True,False,,"libgit2,git,wrapper,bindings,API,dvcs,vcs,ssh",317,False,1.0.24
+LibGit2Sharp contributors,2018-01-09T02:53:55.87Z,100,101,"Native binaries for LibGit2Sharp-SSH, with libssh2 updated to version 1.8.1_DEV",LibGit2Sharp-SSH.NativeBinaries-libssh2-1.8.1.0,False,2018-01-10T03:23:31.037+00:00,True,False,,,69,False,1.0.15
+Shannon Deminick,2018-01-09T02:45:49.267Z,87,101,"ClientDependency is a framework for simplifying colaborative development of ASP.NET components, allowing components to state what CSS and JavaScript files they require, and ensuring that each file only is only added once to the response. ClientDependency also handles combination, minification and compression of CSS and JavaScript.",ClientDependency,True,2018-01-23T17:56:41.987+00:00,True,False,A library for handling CSS and JavaScript dependencies,"css,html,javascript,minify,compress,combine",733304,False,1.9.4-beta03
+Shannon Deminick,2018-01-09T02:45:49.267Z,87,101,"ClientDependency is a framework for simplifying colaborative development of ASP.NET components, allowing components to state what CSS and JavaScript files they require, and ensuring that each file only is only added once to the response. ClientDependency also handles combination, minification and compression of CSS and JavaScript.",ClientDependency,True,2018-01-23T17:56:41.987+00:00,True,False,A library for handling CSS and JavaScript dependencies,"css,html,javascript,minify,compress,combine",733304,False,1.9.4-beta03
+Dobii.Learning,2018-01-09T02:44:07.7Z,43209,101,Package Description,Dobii.Learning,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+Dobii.Learning,2018-01-09T02:44:07.7Z,43209,101,Package Description,Dobii.Learning,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+"LiuLiang,WuWenHao",2018-01-09T02:37:39.65Z,101,101,WalkingTec.Mvvm,WalkingTec.Mvvm.Core,True,2018-01-09T02:37:39.65+00:00,True,False,,"asp.net,core",2976,False,1.3.10-pre2-insider100
+"LiuLiang,WuWenHao",2018-01-09T02:38:05.167Z,101,101,WalkingTec.Mvvm,WalkingTec.Mvvm.TagHelpers.LayUI,True,2018-01-09T02:38:05.167+00:00,True,False,,"asp.net,core",3091,False,1.3.10-pre2-insider100
+"LiuLiang,WuWenHao",2018-01-09T02:37:52.37Z,101,101,WalkingTec.Mvvm,WalkingTec.Mvvm.Mvc,True,2018-01-09T02:37:52.37+00:00,True,False,,"asp.net,core",3008,False,1.3.10-pre2-insider100
+Lykke,2018-01-09T02:37:44.417Z,101,101,Client for Lykke.Pay.Service.Wallets API,Lykke.Pay.Service.Wallets.Client,False,2018-01-09T23:55:35.133+00:00,True,False,,Lykke,895,False,1.0.15
+Lykke,2018-01-09T02:37:44.417Z,101,101,Client for Lykke.Pay.Service.Wallets API,Lykke.Pay.Service.Wallets.Client,False,2018-01-09T23:55:35.133+00:00,True,False,,Lykke,895,False,1.0.15
+winner,2018-01-09T02:36:19.99Z,45,101,AutoMapper 的扩展,Tobto.Infrastructure.AutoMapper,False,2018-03-06T01:26:44.71+00:00,True,False,,,388,False,1.0.0
+"LiuLiang,WuWenHao",2018-01-09T02:37:39.65Z,101,101,WalkingTec.Mvvm,WalkingTec.Mvvm.Core,True,2018-01-09T02:37:39.65+00:00,True,False,,"asp.net,core",2976,False,1.3.10-pre2-insider100
+"LiuLiang,WuWenHao",2018-01-09T02:38:05.167Z,101,101,WalkingTec.Mvvm,WalkingTec.Mvvm.TagHelpers.LayUI,True,2018-01-09T02:38:05.167+00:00,True,False,,"asp.net,core",3091,False,1.3.10-pre2-insider100
+"LiuLiang,WuWenHao",2018-01-09T02:37:52.37Z,101,101,WalkingTec.Mvvm,WalkingTec.Mvvm.Mvc,True,2018-01-09T02:37:52.37+00:00,True,False,,"asp.net,core",3008,False,1.3.10-pre2-insider100
+winner,2018-01-09T02:36:19.99Z,45,101,AutoMapper 的扩展,Tobto.Infrastructure.AutoMapper,False,2018-03-06T01:26:44.71+00:00,True,False,,,388,False,1.0.0
+Rick Strahl,2018-01-09T02:35:33.597Z,8,101,".NET utility library that includes Application Configuration, lightweight ADO.NET Data Access Layer, logging, utility classes include: StringUtils, ReflectionUtils, FileUtils, DataUtils, SerializationUtils, TimeUtils, SecurityUtils and XmlUtils. These classes are useful in any kind of .NET project.",Westwind.Utilities,False,2018-04-12T09:24:38.173+00:00,True,False,,"Westwind,ApplicationConfiguration,StringUtils,ReflectionUtils,DataUtils,FileUtils,TimeUtils,SerializationUtils,ImageUtils,Logging,DAL,Sql,ADO.NET",132129,False,3.0.10
+NianJiTao,2018-01-09T02:34:49.05Z,51,101,封装常用视图控件,NJT.Ui,False,2018-02-28T02:22:10.333+00:00,True,False,,,127,False,1.0.16
+Lmat.Model.Core,2018-01-09T02:33:28.09Z,101,101,Package Description,Lmat.Model.Core,False,2018-01-09T02:33:28.09+00:00,True,False,,,144,False,1.0.1
+Lmat.Model.Core,2018-01-09T02:33:28.09Z,101,101,Package Description,Lmat.Model.Core,False,2018-01-09T02:33:28.09+00:00,True,False,,,144,False,1.0.1
+NianJiTao,2018-01-09T02:34:49.05Z,51,101,封装常用视图控件,NJT.Ui,False,2018-02-28T02:22:10.333+00:00,True,False,,,127,False,1.0.16
+Rick Strahl,2018-01-09T02:35:33.597Z,8,101,".NET utility library that includes Application Configuration, lightweight ADO.NET Data Access Layer, logging, utility classes include: StringUtils, ReflectionUtils, FileUtils, DataUtils, SerializationUtils, TimeUtils, SecurityUtils and XmlUtils. These classes are useful in any kind of .NET project.",Westwind.Utilities,False,2018-04-12T09:24:38.173+00:00,True,False,,"Westwind,ApplicationConfiguration,StringUtils,ReflectionUtils,DataUtils,FileUtils,TimeUtils,SerializationUtils,ImageUtils,Logging,DAL,Sql,ADO.NET",132129,False,3.0.10
+vCipher,2018-01-09T02:17:21.143Z,39,101,Cake AddIn that extends Cake with SemVer versioning using Mercurial history,Cake.HgVersion,False,2018-03-12T07:37:38.503+00:00,True,False,,"cake,hg,mercurial,semver",626,False,0.1.5
+vCipher,2018-01-09T02:17:32.24Z,83,101,Provide Semantic versioning using Mercurial history,HgVersion,False,2018-01-27T11:14:57.32+00:00,True,False,,"hg,mercurial,semver",586,False,0.1.5
+vCipher,2018-01-09T02:17:32.24Z,83,101,Provide Semantic versioning using Mercurial history,HgVersion,False,2018-01-27T11:14:57.32+00:00,True,False,,"hg,mercurial,semver",586,False,0.1.5
+CreaSoft s.r.o.,2018-01-09T02:13:10.527Z,101,101,CreaSoft.Security.Cryptography,CreaSoft.Security.Cryptography,False,2018-01-09T02:13:10.527+00:00,True,False,,,128,False,1.1.0
+www.Tobto.com,2018-01-09T02:12:17.9Z,45,101,平台支持库的webapi扩展,Tobto.Portal.WebAPI,False,2018-03-06T01:28:43.743+00:00,True,False,,"DDD,EF",269,False,1.0.6583.17257
+www.Tobto.com,2018-01-09T02:12:30.357Z,45,101,平台服务层接口契约,Tobto.ServiceContracts,False,2018-03-06T01:28:56.637+00:00,True,False,,"DDD,EF",321,False,1.0.6583.17242
+www.Tobto.com,2018-01-09T02:10:56.68Z,1,101,基础设施层,Tobto.Infrastructure,False,2018-04-20T08:10:43.367+00:00,True,False,,,524,False,1.0.6583.17225
+www.Tobto.com,2018-01-09T02:11:08.04Z,45,101,基础设施层，切面实现,Tobto.Infrastructure.Crosscutting,False,2018-03-06T01:26:56.07+00:00,True,False,,"DDD,EF",314,False,1.0.6583.17243
+www.Tobto.com,2018-01-09T02:10:33.913Z,45,101,MongoDB仓储,Tobto.Domain.Repository.MongoDB,False,2018-03-06T01:25:58.147+00:00,True,False,,,275,False,1.0.6583.17234
+src,2018-01-09T02:10:17.537Z,97,101,Package Description,DONOTUSE.Alphacloud.Deployment.Test,False,2018-01-13T19:30:56.967+00:00,True,False,,,797,False,2.3.0
+www.Tobto.com,2018-01-09T02:10:10.1Z,45,101,Dapper 仓储,Tobto.Domain.Repository.Dapper,False,2018-03-06T01:25:32.44+00:00,True,False,,,350,False,1.0.6583.17230
+www.Tobto.com,2018-01-09T02:09:57.77Z,45,101,平台领域层,Tobto.Domain,False,2018-03-06T01:25:19.72+00:00,True,False,,"DDD,EF",375,False,1.0.6583.17226
+www.Tobto.com,2018-01-09T02:10:22.977Z,45,101,EF仓储,Tobto.Domain.Repository.EF,False,2018-03-06T01:25:45.863+00:00,True,False,,"DDD,EF",427,False,1.0.6583.17232
+www.Tobto.com,2018-01-09T02:10:44.943Z,45,101,领域事件支持类库,Tobto.Events,False,2018-03-06T01:26:09.91+00:00,True,False,,"DDD,EF",292,False,1.0.6583.17235
+www.Tobto.com,2018-01-09T02:11:54.82Z,1,101,ExtNet UI的适配,Tobto.Portal.ExtNet,False,2018-04-20T08:10:44.617+00:00,True,False,,"DDD,EF",1452,False,1.0.6583.17252
+NianJiTao,2018-01-09T02:10:52.367Z,51,101,"nlog日志,prism封装.
+引用NLog,Prism.Unity,
+NJT.Core,",NJT.Prism,False,2018-02-28T02:11:27.3+00:00,True,False,更新unity->5.5.4,,1232,False,1.0.17
+www.Tobto.com,2018-01-09T02:11:43.51Z,7,101,平台支持库,Tobto.Portal,False,2018-04-13T02:40:08.353+00:00,True,False,,"DDD,EF",762,False,1.0.6583.17248
+CreaSoft s.r.o.,2018-01-09T02:13:10.527Z,101,101,CreaSoft.Security.Cryptography,CreaSoft.Security.Cryptography,False,2018-01-09T02:13:10.527+00:00,True,False,,,128,False,1.1.0
+www.Tobto.com,2018-01-09T02:11:21.21Z,45,101,Description,Tobto.Infrastructure.Interfaces,False,2018-03-06T01:27:07.147+00:00,True,False,,,297,False,1.0.6583.17232
+www.Tobto.com,2018-01-09T02:11:31.93Z,45,101,平台服务层IoC的类库,Tobto.Infrastructure.IoC,False,2018-03-06T01:27:17.367+00:00,True,False,,,382,False,1.0.6583.17232
+"Ethan Lafrenais,Tristan Smith",2018-01-09T02:11:14.507Z,13,101,"Discore is a light-weight .NET Standard library designed for creating Discord bots.
+
+Please note: Discore is not an official Discord API interface!",Discore,False,2018-04-07T21:55:51.303+00:00,True,False,,"discord,discord-api,discord-library,dotnet-standard",6459,False,4.1.0
+www.Tobto.com,2018-01-09T02:12:06.29Z,1,101,平台支持库的MVC扩展,Tobto.Portal.Mvc,False,2018-04-20T08:10:45.96+00:00,True,False,,"DDD,EF",1497,False,1.0.6583.17252
+www.Tobto.com,2018-01-09T02:12:30.357Z,45,101,平台服务层接口契约,Tobto.ServiceContracts,False,2018-03-06T01:28:56.637+00:00,True,False,,"DDD,EF",321,False,1.0.6583.17242
+www.Tobto.com,2018-01-09T02:12:17.9Z,45,101,平台支持库的webapi扩展,Tobto.Portal.WebAPI,False,2018-03-06T01:28:43.743+00:00,True,False,,"DDD,EF",269,False,1.0.6583.17257
+www.Tobto.com,2018-01-09T02:12:06.29Z,1,101,平台支持库的MVC扩展,Tobto.Portal.Mvc,False,2018-04-20T08:10:45.96+00:00,True,False,,"DDD,EF",1497,False,1.0.6583.17252
+www.Tobto.com,2018-01-09T02:11:54.82Z,1,101,ExtNet UI的适配,Tobto.Portal.ExtNet,False,2018-04-20T08:10:44.617+00:00,True,False,,"DDD,EF",1452,False,1.0.6583.17252
+www.Tobto.com,2018-01-09T02:11:31.93Z,45,101,平台服务层IoC的类库,Tobto.Infrastructure.IoC,False,2018-03-06T01:27:17.367+00:00,True,False,,,382,False,1.0.6583.17232
+www.Tobto.com,2018-01-09T02:11:21.21Z,45,101,Description,Tobto.Infrastructure.Interfaces,False,2018-03-06T01:27:07.147+00:00,True,False,,,297,False,1.0.6583.17232
+"Ethan Lafrenais,Tristan Smith",2018-01-09T02:11:14.507Z,13,101,"Discore is a light-weight .NET Standard library designed for creating Discord bots.
+
+Please note: Discore is not an official Discord API interface!",Discore,False,2018-04-07T21:55:51.303+00:00,True,False,,"discord,discord-api,discord-library,dotnet-standard",6459,False,4.1.0
+www.Tobto.com,2018-01-09T02:11:08.04Z,45,101,基础设施层，切面实现,Tobto.Infrastructure.Crosscutting,False,2018-03-06T01:26:56.07+00:00,True,False,,"DDD,EF",314,False,1.0.6583.17243
+NianJiTao,2018-01-09T02:10:52.367Z,51,101,"nlog日志,prism封装.
+引用NLog,Prism.Unity,
+NJT.Core,",NJT.Prism,False,2018-02-28T02:11:27.3+00:00,True,False,更新unity->5.5.4,,1232,False,1.0.17
+www.Tobto.com,2018-01-09T02:10:56.68Z,1,101,基础设施层,Tobto.Infrastructure,False,2018-04-20T08:10:43.367+00:00,True,False,,,524,False,1.0.6583.17225
+www.Tobto.com,2018-01-09T02:10:44.943Z,45,101,领域事件支持类库,Tobto.Events,False,2018-03-06T01:26:09.91+00:00,True,False,,"DDD,EF",292,False,1.0.6583.17235
+www.Tobto.com,2018-01-09T02:11:43.51Z,7,101,平台支持库,Tobto.Portal,False,2018-04-13T02:40:08.353+00:00,True,False,,"DDD,EF",762,False,1.0.6583.17248
+www.Tobto.com,2018-01-09T02:10:33.913Z,45,101,MongoDB仓储,Tobto.Domain.Repository.MongoDB,False,2018-03-06T01:25:58.147+00:00,True,False,,,275,False,1.0.6583.17234
+www.Tobto.com,2018-01-09T02:10:22.977Z,45,101,EF仓储,Tobto.Domain.Repository.EF,False,2018-03-06T01:25:45.863+00:00,True,False,,"DDD,EF",427,False,1.0.6583.17232
+src,2018-01-09T02:10:17.537Z,97,101,Package Description,DONOTUSE.Alphacloud.Deployment.Test,False,2018-01-13T19:30:56.967+00:00,True,False,,,797,False,2.3.0
+www.Tobto.com,2018-01-09T02:10:10.1Z,45,101,Dapper 仓储,Tobto.Domain.Repository.Dapper,False,2018-03-06T01:25:32.44+00:00,True,False,,,350,False,1.0.6583.17230
+www.Tobto.com,2018-01-09T02:09:57.77Z,45,101,平台领域层,Tobto.Domain,False,2018-03-06T01:25:19.72+00:00,True,False,,"DDD,EF",375,False,1.0.6583.17226
+src,2018-01-09T02:07:53.423Z,97,101,Package Description,DONOTUSE.Alphacloud.Deployment.Test,False,2018-01-13T19:30:56.967+00:00,True,False,,,797,False,2.2.0
+www.Tobto.com,2018-01-09T02:09:33.27Z,45,101,平台的应用程序,Tobto.Application,False,2018-03-06T01:24:55.783+00:00,True,False,,,431,False,1.0.6583.17227
+www.Tobto.com,2018-01-09T02:09:44.147Z,45,101,平台数据传输对象,Tobto.DataTransferObject,False,2018-03-06T01:25:06.927+00:00,True,False,,"DDD,EF",417,False,1.0.6583.17242
+www.Tobto.com,2018-01-09T02:09:33.27Z,45,101,平台的应用程序,Tobto.Application,False,2018-03-06T01:24:55.783+00:00,True,False,,,431,False,1.0.6583.17227
+www.Tobto.com,2018-01-09T02:09:44.147Z,45,101,平台数据传输对象,Tobto.DataTransferObject,False,2018-03-06T01:25:06.927+00:00,True,False,,"DDD,EF",417,False,1.0.6583.17242
+src,2018-01-09T02:07:53.423Z,97,101,Package Description,DONOTUSE.Alphacloud.Deployment.Test,False,2018-01-13T19:30:56.967+00:00,True,False,,,797,False,2.2.0
+NianJiTao,2018-01-09T02:05:22.89Z,8,101,"常用扩展方法:单例,字符串,时间.",NJT.Ext,False,2018-04-12T06:55:02.38+00:00,True,False,,,1280,False,1.0.16
+NianJiTao,2018-01-09T02:05:22.89Z,8,101,"常用扩展方法:单例,字符串,时间.",NJT.Ext,False,2018-04-12T06:55:02.38+00:00,True,False,,,1280,False,1.0.16
+NianJiTao,2018-01-09T02:02:35.97Z,8,101,"常用接口,类",NJT.Core,False,2018-04-12T06:53:56.363+00:00,True,False,,,1359,False,1.0.16
+NianJiTao,2018-01-09T02:03:48.12Z,101,101,"常用值转换类.bool->object ,取反,真显示,假显示等.",NJT.Convert,False,2018-01-09T02:03:48.12+00:00,True,False,,,876,False,1.0.16
+"Arnold Wang,Ingeniux Corporation",2018-01-09T02:02:39.19Z,1,101,Nuget Package for Ingeniux Dynamic Site Server Runtime API,Ingeniux_DSS_RTAPI,False,2018-04-19T19:56:06.677+00:00,True,False,,"ingeniux,dss,cms,runtime,api,dynamic,site,server",6259,False,10.0.333
+LibGit2Sharp contributors,2018-01-09T02:03:30.743Z,100,101,"LibGit2Sharp brings all the might and speed of libgit2, a native Git implementation, to the managed world of .Net and Mono. Updated to use libssh2 1.8.1.0.",LibGit2Sharp-SSH-updated-libssh2,False,2018-01-10T03:22:55.3+00:00,True,False,,"libgit2,git,wrapper,bindings,API,dvcs,vcs,ssh",317,False,1.0.22
+NianJiTao,2018-01-09T02:03:48.12Z,101,101,"常用值转换类.bool->object ,取反,真显示,假显示等.",NJT.Convert,False,2018-01-09T02:03:48.12+00:00,True,False,,,876,False,1.0.16
+LibGit2Sharp contributors,2018-01-09T02:03:30.743Z,100,101,"LibGit2Sharp brings all the might and speed of libgit2, a native Git implementation, to the managed world of .Net and Mono. Updated to use libssh2 1.8.1.0.",LibGit2Sharp-SSH-updated-libssh2,False,2018-01-10T03:22:55.3+00:00,True,False,,"libgit2,git,wrapper,bindings,API,dvcs,vcs,ssh",317,False,1.0.22
+NianJiTao,2018-01-09T02:02:35.97Z,8,101,"常用接口,类",NJT.Core,False,2018-04-12T06:53:56.363+00:00,True,False,,,1359,False,1.0.16
+"Arnold Wang,Ingeniux Corporation",2018-01-09T02:02:39.19Z,1,101,Nuget Package for Ingeniux Dynamic Site Server Runtime API,Ingeniux_DSS_RTAPI,False,2018-04-19T19:56:06.677+00:00,True,False,,"ingeniux,dss,cms,runtime,api,dynamic,site,server",6259,False,10.0.333
+src,2018-01-09T02:00:37.027Z,97,101,Package Description,DONOTUSE.Alphacloud.Deployment.Test,False,2018-01-13T19:30:56.967+00:00,True,False,,,797,False,2.1.0
+src,2018-01-09T02:00:37.027Z,97,101,Package Description,DONOTUSE.Alphacloud.Deployment.Test,False,2018-01-13T19:30:56.967+00:00,True,False,,,797,False,2.1.0
+Raul Naupari,2018-01-09T01:56:53.12Z,1,101,Just another library to route messages,Jal.Router,False,2018-04-19T22:13:36+00:00,True,False,,,8625,False,1.3.0
+AlexXie,2018-01-09T01:57:30.39Z,31,101,Description,MetroERP.AopLogging,True,2018-03-20T07:10:00.75+00:00,True,False,,,790,False,2.0.0.3-beta
+AlexXie,2018-01-09T01:57:30.39Z,31,101,Description,MetroERP.AopLogging,True,2018-03-20T07:10:00.75+00:00,True,False,,,790,False,2.0.0.3-beta
+Raul Naupari,2018-01-09T01:56:53.12Z,1,101,Just another library to route messages,Jal.Router,False,2018-04-19T22:13:36+00:00,True,False,,,8625,False,1.3.0
+Microsoft.Practices.Unity,2018-01-09T01:51:20.503Z,43209,101,Unity for Microsoft Dependency Injection framework.,Unity.Microsoft.DependencyInjection,False,1900-01-01T00:00:00+00:00,False,False,,"Unity,Container,unitycontainer,Microsoft.Practices.Unity,IoC",2289,True,2.0.0
+AlexXie,2018-01-09T01:51:20.55Z,31,101,Description,MetroERP.Framework,True,2018-03-20T08:21:51.433+00:00,True,False,,,2664,False,4.0.0.3-beta
+AlexXie,2018-01-09T01:51:20.55Z,31,101,Description,MetroERP.Framework,True,2018-03-20T08:21:51.433+00:00,True,False,,,2664,False,4.0.0.3-beta
+Microsoft.Practices.Unity,2018-01-09T01:51:20.503Z,43209,101,Unity for Microsoft Dependency Injection framework.,Unity.Microsoft.DependencyInjection,False,1900-01-01T00:00:00+00:00,False,False,,"Unity,Container,unitycontainer,Microsoft.Practices.Unity,IoC",2289,True,2.0.0
+Amazon Web Services,2018-01-09T01:46:43.067Z,1,101,"AWS CodeDeploy is a service that automates code deployments. AWS CodeDeploy makes it easier for you to rapidly release new features, helps you avoid downtime during deployment, and handles the complexity of updating your applications.",AWSSDK.CodeDeploy,False,2018-04-20T05:26:15.857+00:00,True,False,,"AWS,Amazon,cloud,CodeDeploy,aws-sdk-v3",19261,False,3.3.9
+Amazon Web Services,2018-01-09T01:46:25.787Z,1,101,"AWS Application Discovery Service helps Systems Integrators quickly and reliably plan application migration projects by automatically identifying applications running in your data center, their associated dependencies, and their performance profile.",AWSSDK.ApplicationDiscoveryService,False,2018-04-20T05:24:44.79+00:00,True,False,,"AWS,Amazon,cloud,ApplicationDiscoveryService,aws-sdk-v3",4868,False,3.3.3.4
+Amazon Web Services,2018-01-09T01:47:08.41Z,1,101,Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service.,AWSSDK.Route53,False,2018-04-20T05:30:48.993+00:00,True,False,,"AWS,Amazon,cloud,Route53,aws-sdk-v3",97342,False,3.3.13
+Amazon Web Services,2018-01-09T01:46:25.787Z,1,101,"AWS Application Discovery Service helps Systems Integrators quickly and reliably plan application migration projects by automatically identifying applications running in your data center, their associated dependencies, and their performance profile.",AWSSDK.ApplicationDiscoveryService,False,2018-04-20T05:24:44.79+00:00,True,False,,"AWS,Amazon,cloud,ApplicationDiscoveryService,aws-sdk-v3",4868,False,3.3.3.4
+Amazon Web Services,2018-01-09T01:47:08.41Z,1,101,Amazon Route 53 is a highly available and scalable cloud Domain Name System (DNS) web service.,AWSSDK.Route53,False,2018-04-20T05:30:48.993+00:00,True,False,,"AWS,Amazon,cloud,Route53,aws-sdk-v3",97342,False,3.3.13
+Microsoft Corporation,2018-01-09T01:44:26.487Z,18,101,Monitors exceptions in your application and automatically collects snapshots for offline analysis.,Microsoft.ApplicationInsights.SnapshotCollector,False,2018-04-02T17:04:55.307+00:00,True,False,,"ApplicationInsights,Snapshot,Collector,Exception,Exemplification,Cloud,Debugging",154492,True,1.1.1
+Microsoft Corporation,2018-01-09T01:44:26.487Z,18,101,Monitors exceptions in your application and automatically collects snapshots for offline analysis.,Microsoft.ApplicationInsights.SnapshotCollector,False,2018-04-02T17:04:55.307+00:00,True,False,,"ApplicationInsights,Snapshot,Collector,Exception,Exemplification,Cloud,Debugging",154492,True,1.1.1
+Matthew Kitchin,2018-01-08T03:04:37.05Z,101,102,Set of classes to allow display of Bootstrap-style flash messages between ASP.NET Core Razor Pages,Sapient.AspNetCore.FlashMessages,False,2018-01-09T01:38:00.413+00:00,False,False,,"bootstrap,flash,messages",235,False,1.0.1
+Matthew Kitchin,2018-01-09T01:38:00.413Z,101,101,Set of classes to allow display of Bootstrap-style flash messages between ASP.NET Core Razor Pages,Sapient.AspNetCore.FlashMessages,False,2018-01-09T01:38:00.413+00:00,True,False,,"bootstrap,flash,messages",235,False,1.0.2
+Matthew Kitchin,2018-01-09T01:38:00.413Z,101,101,Set of classes to allow display of Bootstrap-style flash messages between ASP.NET Core Razor Pages,Sapient.AspNetCore.FlashMessages,False,2018-01-09T01:38:00.413+00:00,True,False,,"bootstrap,flash,messages",235,False,1.0.2
+Juan Roman Escamilla,2018-01-09T01:34:48.667Z,71,101,Openpay (https://openpay.mx) client API built for Xamarin. Ensure you have proper permissions set by reading the README.,Openpay.Xamarin,False,2018-02-08T17:54:49.81+00:00,True,False,Openpay (https://openpay.mx) client API built for Xamarin. Ensure you have proper permissions set by reading the README.,"xamarin,pcl,xam.pcl,openpay,xamarin.android,xamarin.ios,android,xamarin.forms,ios,credit,card",349,False,1.0.0.3
+jonnii,2018-01-09T01:35:11.213Z,101,101,SpeakEasy... making http easy!,SpeakEasy,False,2018-01-09T01:35:11.213+00:00,True,False,,SpeakEasy,18425,False,1.0.0
+Juan Roman Escamilla,2018-01-09T01:34:48.667Z,71,101,Openpay (https://openpay.mx) client API built for Xamarin. Ensure you have proper permissions set by reading the README.,Openpay.Xamarin,False,2018-02-08T17:54:49.81+00:00,True,False,Openpay (https://openpay.mx) client API built for Xamarin. Ensure you have proper permissions set by reading the README.,"xamarin,pcl,xam.pcl,openpay,xamarin.android,xamarin.ios,android,xamarin.forms,ios,credit,card",349,False,1.0.0.3
+jonnii,2018-01-09T01:35:11.213Z,101,101,SpeakEasy... making http easy!,SpeakEasy,False,2018-01-09T01:35:11.213+00:00,True,False,,SpeakEasy,18425,False,1.0.0
+RefactorForce,2018-01-09T01:31:29.613Z,101,101,A direct reimplementation of SmartThreadPool in .NET Standard that keeps 100% of the public API.,UniversalThreadManagement,False,2018-01-09T01:31:29.613+00:00,True,False,,"threading,thread,smart,SmartThreadPool,ThreadPool,async,background,multithreading,universal,netstandard,netstandard2_0,netstandard2.0",66,False,0.1.0
+"Geek Learning,Adrien Siffermann,Cyprien Autexier,Anna Yafi",2018-01-09T01:30:17.69Z,14,101,EntityFramework Core helper library to deal with a Domain layer.,GeekLearning.Domain.EntityFramework,True,2018-04-06T00:21:05.087+00:00,True,False,,,972,False,0.4.0-alpha0024
+"Geek Learning,Adrien Siffermann,Cyprien Autexier,Anna Yafi",2018-01-09T01:30:05.597Z,14,101,ASP.NET Core helper library to deal with a Domain layer.,GeekLearning.Domain.AspnetCore,True,2018-04-06T00:20:48.583+00:00,True,False,,,2901,False,0.4.0-alpha0024
+"Geek Learning,Adrien Siffermann,Cyprien Autexier,Anna Yafi",2018-01-09T01:30:46.317Z,14,101,Primitive types used by the Domain.,GeekLearning.Domain.Primitives,True,2018-04-06T00:21:35.743+00:00,True,False,,,1506,False,0.4.0-alpha0024
+"Geek Learning,Adrien Siffermann,Cyprien Autexier,Anna Yafi",2018-01-09T01:30:32.05Z,14,101,Plugin to use FluentValidation as the validation layer for GeekLearning.Domain.,GeekLearning.Domain.FluentValidation,True,2018-04-06T00:21:20.867+00:00,True,False,,,2000,False,0.4.0-alpha0024
+"Geek Learning,Adrien Siffermann,Cyprien Autexier,Anna Yafi",2018-01-09T01:31:00.253Z,14,101,Library to help implement the Domain Driven Design.,GeekLearning.Domain,True,2018-04-06T00:21:50.383+00:00,True,False,,,4008,False,0.4.0-alpha0024
+"Geek Learning,Adrien Siffermann,Cyprien Autexier,Anna Yafi",2018-01-09T01:29:51.173Z,14,101,ASP.NET Core helper library to deal with a Domain layer.,GeekLearning.Domain.AspnetCore.Core,True,2018-04-06T00:20:33.053+00:00,True,False,,,1375,False,0.4.0-alpha0024
+RefactorForce,2018-01-09T01:31:29.613Z,101,101,A direct reimplementation of SmartThreadPool in .NET Standard that keeps 100% of the public API.,UniversalThreadManagement,False,2018-01-09T01:31:29.613+00:00,True,False,,"threading,thread,smart,SmartThreadPool,ThreadPool,async,background,multithreading,universal,netstandard,netstandard2_0,netstandard2.0",66,False,0.1.0
+"Geek Learning,Adrien Siffermann,Cyprien Autexier,Anna Yafi",2018-01-09T01:30:46.317Z,14,101,Primitive types used by the Domain.,GeekLearning.Domain.Primitives,True,2018-04-06T00:21:35.743+00:00,True,False,,,1506,False,0.4.0-alpha0024
+"Geek Learning,Adrien Siffermann,Cyprien Autexier,Anna Yafi",2018-01-09T01:31:00.253Z,14,101,Library to help implement the Domain Driven Design.,GeekLearning.Domain,True,2018-04-06T00:21:50.383+00:00,True,False,,,4008,False,0.4.0-alpha0024
+"Geek Learning,Adrien Siffermann,Cyprien Autexier,Anna Yafi",2018-01-09T01:29:51.173Z,14,101,ASP.NET Core helper library to deal with a Domain layer.,GeekLearning.Domain.AspnetCore.Core,True,2018-04-06T00:20:33.053+00:00,True,False,,,1375,False,0.4.0-alpha0024
+"Geek Learning,Adrien Siffermann,Cyprien Autexier,Anna Yafi",2018-01-09T01:30:05.597Z,14,101,ASP.NET Core helper library to deal with a Domain layer.,GeekLearning.Domain.AspnetCore,True,2018-04-06T00:20:48.583+00:00,True,False,,,2901,False,0.4.0-alpha0024
+"Geek Learning,Adrien Siffermann,Cyprien Autexier,Anna Yafi",2018-01-09T01:30:32.05Z,14,101,Plugin to use FluentValidation as the validation layer for GeekLearning.Domain.,GeekLearning.Domain.FluentValidation,True,2018-04-06T00:21:20.867+00:00,True,False,,,2000,False,0.4.0-alpha0024
+src,2018-01-09T01:22:49.853Z,97,101,Package Description,DONOTUSE.Alphacloud.Deployment.Test,True,2018-01-13T19:30:56.967+00:00,True,False,,,797,False,2.1.0-alpha0002
+src,2018-01-09T01:22:49.853Z,97,101,Package Description,DONOTUSE.Alphacloud.Deployment.Test,True,2018-01-13T19:30:56.967+00:00,True,False,,,797,False,2.1.0-alpha0002
+JDM Software,2018-01-09T01:17:27.453Z,52,101,"Core Library for JDM App Development, install this to your Windows 8.1 and UWP projects.",JDMSoftware.JDMAppCore.CoreWindows,False,2018-02-27T03:43:29.877+00:00,True,False,,"JDM,Core",1461,False,1.3.2
+JDM Software,2018-01-09T01:18:18.22Z,38,101,"Core Library for JDM App Development, install this into all projects apart from Windows 8.1 and UWP",JDMSoftware.JDMAppCore.Core,False,2018-03-13T05:03:06.95+00:00,True,False,,"JDM,Core",5265,False,1.3.2
+JDM Software,2018-01-09T01:18:18.22Z,38,101,"Core Library for JDM App Development, install this into all projects apart from Windows 8.1 and UWP",JDMSoftware.JDMAppCore.Core,False,2018-03-13T05:03:06.95+00:00,True,False,,"JDM,Core",5265,False,1.3.2
+JDM Software,2018-01-09T01:17:27.453Z,52,101,"Core Library for JDM App Development, install this to your Windows 8.1 and UWP projects.",JDMSoftware.JDMAppCore.CoreWindows,False,2018-02-27T03:43:29.877+00:00,True,False,,"JDM,Core",1461,False,1.3.2
+Eddy Zavaleta,2018-01-09T01:14:52.387Z,91,101,.NET client library for ProFact web services (ProFact.com.mx),Mictlanix.ProFactClient,True,2018-01-19T02:49:13.19+00:00,True,False,,"cfdi,factura,invoice,web,services,api,client,library,.net",805,False,3.3.0-beta2
+Eddy Zavaleta,2018-01-09T01:14:52.387Z,91,101,.NET client library for ProFact web services (ProFact.com.mx),Mictlanix.ProFactClient,True,2018-01-19T02:49:13.19+00:00,True,False,,"cfdi,factura,invoice,web,services,api,client,library,.net",805,False,3.3.0-beta2
+Mutuduxf,2018-01-09T01:07:42.38Z,68,101,Redis client wrapper for asp.net core or Zaaby,Zaaby.Cache.RedisProvider,False,2018-02-11T13:06:18.54+00:00,True,False,,,201,False,1.1.0
+Mutuduxf,2018-01-09T01:07:42.38Z,68,101,Redis client wrapper for asp.net core or Zaaby,Zaaby.Cache.RedisProvider,False,2018-02-11T13:06:18.54+00:00,True,False,,,201,False,1.1.0
+Richard.Hu,2018-01-05T12:16:51.653Z,1,105,一个包含网络通讯库，PLC访问库，日志库，多线程处理，Modbus服务区客户端，数据转换，版本类，基础控件等工具库,HslCommunication,False,2018-04-20T00:33:03.707+00:00,False,False,一个包含网络通讯库，PLC访问库，日志库，多线程处理，Modbus服务区客户端，数据转换，版本类，基础控件等工具库,,4829,False,4.2.2
+CreaSoft s.r.o.,2018-01-09T01:03:37.893Z,101,101,CreaSoft.Security.Cryptography,CreaSoft.Security.Cryptography,False,2018-01-09T02:13:10.527+00:00,True,False,,,128,False,1.0.0
+CreaSoft s.r.o.,2018-01-09T01:03:37.893Z,101,101,CreaSoft.Security.Cryptography,CreaSoft.Security.Cryptography,False,2018-01-09T02:13:10.527+00:00,True,False,,,128,False,1.0.0
+Martin Cook,2018-01-09T00:59:58.377Z,43209,101,"This package contains common code used by other CodeGator packages. Please do not directly reference this package.
+
+Platforms supported:
+.NET 4.6x or above
+.NET Standard 2.x
+.NET Core 2.x",CG.Core,False,1900-01-01T00:00:00+00:00,False,False,,"core,CG.Core,CodeGator",8086,False,0.2018.12.59
+Cinchoo,2018-01-09T00:59:57.33Z,3,101,Cinchoo ETL - JSON Reader / Writer,ChoETL.JSON,False,2018-04-17T00:37:23.633+00:00,True,False,Cinchoo ETL - JSON Reader / Writer,"ETL,c#,.NET",3228,False,1.0.2.5
+Cinchoo,2018-01-09T00:59:57.33Z,3,101,Cinchoo ETL - JSON Reader / Writer,ChoETL.JSON,False,2018-04-17T00:37:23.633+00:00,True,False,Cinchoo ETL - JSON Reader / Writer,"ETL,c#,.NET",3228,False,1.0.2.5
+Martin Cook,2018-01-09T00:59:58.377Z,43209,101,"This package contains common code used by other CodeGator packages. Please do not directly reference this package.
+
+Platforms supported:
+.NET 4.6x or above
+.NET Standard 2.x
+.NET Core 2.x",CG.Core,False,1900-01-01T00:00:00+00:00,False,False,,"core,CG.Core,CodeGator",8086,False,0.2018.12.59
+Team enbiso,2018-01-09T00:57:52.03Z,101,101,"Simple unit test helpers uing xUnit, moq, and Autofixture",Enbiso.Common.UnitTest,False,2018-01-09T00:57:52.03+00:00,True,False,,,106,False,1.0.0
+Kenneth Ito,2018-01-09T00:57:38.28Z,3,101,Akka.NET Split Brain Resolver,Akka.Cluster.SplitBrainResolver,True,2018-04-17T04:48:28.743+00:00,True,False,,,2615,False,0.0.3-beta1
+Team enbiso,2018-01-09T00:57:52.03Z,101,101,"Simple unit test helpers uing xUnit, moq, and Autofixture",Enbiso.Common.UnitTest,False,2018-01-09T00:57:52.03+00:00,True,False,,,106,False,1.0.0
+Kenneth Ito,2018-01-09T00:57:38.28Z,3,101,Akka.NET Split Brain Resolver,Akka.Cluster.SplitBrainResolver,True,2018-04-17T04:48:28.743+00:00,True,False,,,2615,False,0.0.3-beta1
+SkyWire,2018-01-09T00:54:58.79Z,99,101,Core library for creating a SkyWire Provider.,SkyWire.Core,False,2018-01-11T19:22:14.75+00:00,True,False,,"core,skywire.core,provider,skywire",1208,False,1.2.14
+Cinchoo,2018-01-09T00:54:40.917Z,3,101,An ETL framework for .NET,ChoETL,False,2018-04-17T00:36:27.27+00:00,True,False,An ETL framework for .NET,"ETL,c#,.NET",8063,False,1.0.5.2
+Cinchoo,2018-01-09T00:54:40.917Z,3,101,An ETL framework for .NET,ChoETL,False,2018-04-17T00:36:27.27+00:00,True,False,An ETL framework for .NET,"ETL,c#,.NET",8063,False,1.0.5.2
+SkyWire,2018-01-09T00:54:58.79Z,99,101,Core library for creating a SkyWire Provider.,SkyWire.Core,False,2018-01-11T19:22:14.75+00:00,True,False,,"core,skywire.core,provider,skywire",1208,False,1.2.14
+Jim Bennett,2018-01-09T00:50:15.1Z,53,101,"The Azure Custom Vision service (https://customvision.ai) is able to create models that can be exported as CoreML or Tensorflow models to do image classification.
+
+      This plugin makes it easy to download and use these models offline from inside your mobile app, using CoreML on iOS or Tensorflow on Android.
+      These models can then be called from a .NET standard library or PCL, using something like Xam.Plugins.Media to take photos for classification.",Xam.Plugins.OnDeviceCustomVision,True,2018-02-26T15:10:52.07+00:00,True,False,Cross platform library that allows you to use models from the https://CustomVision.ai locally on the device,"xamarin,image,classification,AI,ML,custom,vision,pcl,xam.pcl,plugin,for,android,xamarin.forms,ios,monoandroid,monodroid,monotouch",335,False,0.1.1-alpha
+CreaSoft s.r.o.,2018-01-09T00:51:40.727Z,101,101,CreaSoft.ObjectSerializer,CreaSoft.ObjectSerializer,False,2018-01-09T00:51:40.727+00:00,True,False,,,70,False,1.0.0
+vCipher,2018-01-09T00:50:40.85Z,101,101,Mercurial command line client wrapper assembly,Hg.Net,False,2018-01-09T00:50:40.85+00:00,True,False,,"hg,mercurial,vcs",581,False,0.1.5
+vCipher,2018-01-09T00:50:40.85Z,101,101,Mercurial command line client wrapper assembly,Hg.Net,False,2018-01-09T00:50:40.85+00:00,True,False,,"hg,mercurial,vcs",581,False,0.1.5
+CreaSoft s.r.o.,2018-01-09T00:51:40.727Z,101,101,CreaSoft.ObjectSerializer,CreaSoft.ObjectSerializer,False,2018-01-09T00:51:40.727+00:00,True,False,,,70,False,1.0.0
+Jim Bennett,2018-01-09T00:50:15.1Z,53,101,"The Azure Custom Vision service (https://customvision.ai) is able to create models that can be exported as CoreML or Tensorflow models to do image classification.
+
+      This plugin makes it easy to download and use these models offline from inside your mobile app, using CoreML on iOS or Tensorflow on Android.
+      These models can then be called from a .NET standard library or PCL, using something like Xam.Plugins.Media to take photos for classification.",Xam.Plugins.OnDeviceCustomVision,True,2018-02-26T15:10:52.07+00:00,True,False,Cross platform library that allows you to use models from the https://CustomVision.ai locally on the device,"xamarin,image,classification,AI,ML,custom,vision,pcl,xam.pcl,plugin,for,android,xamarin.forms,ios,monoandroid,monodroid,monotouch",335,False,0.1.1-alpha
+DAS,2018-01-09T00:44:58.63Z,64,101,Client library for DAS Activities,SFA.DAS.Activities.Client,False,2018-02-15T17:35:24.267+00:00,True,False,,,1898,False,0.1.98
+Haiping Chen,2018-01-09T00:46:01.07Z,23,101,EntityFrameworkCore Boot Kit (EFBK) is a quick start lib for using EntityFrameworkCore.,EntityFrameworkCore.BootKit,False,2018-03-28T01:35:51.223+00:00,True,False,,"EntityFramework,EntityFrameworkCore,Database",1002,False,1.4.2
+DAS,2018-01-09T00:44:58.63Z,64,101,Client library for DAS Activities,SFA.DAS.Activities.Client,False,2018-02-15T17:35:24.267+00:00,True,False,,,1898,False,0.1.98
+Haiping Chen,2018-01-09T00:46:01.07Z,23,101,EntityFrameworkCore Boot Kit (EFBK) is a quick start lib for using EntityFrameworkCore.,EntityFrameworkCore.BootKit,False,2018-03-28T01:35:51.223+00:00,True,False,,"EntityFramework,EntityFrameworkCore,Database",1002,False,1.4.2
+Alexander Paskhin (paskhin@hotmail.co.uk),2018-01-09T00:39:36.597Z,101,101,"WPF MVVM Binding Package.
+      Features: AutoWireVmDataContext, AutoWireViewConrols.
+      How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf",MvvmBindingPack.Debug,False,2018-01-09T00:39:36.597+00:00,True,False,"Revolutionary features:
+      AutoWireVmDataContext - setups ""DataContext"".
+      AutoWireViewConrols - wires and binds XAML elements to View Model.
+      See demo examples: https://github.com/Wallsmedia/MvvmBindingPack
+      See How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf","Mvvm,Xaml,Wpf,Uwp,MvvmBinding,Binding",2198,False,2.0.1
+Alexander Paskhin (paskhin@hotmail.co.uk),2018-01-09T00:40:43.393Z,101,101,"WPF MVVM Binding Package.
+      Features: AutoWireVmDataContext, AutoWireViewConrols.
+      How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf",MvvmBindingPack.Unity.Debug,False,2018-01-09T00:40:43.393+00:00,True,False,"Revolutionary features:
+      AutoWireVmDataContext - setups ""DataContext"".
+      AutoWireViewConrols - wires and binds XAML elements to View Model.
+      See demo examples: https://github.com/Wallsmedia/MvvmBindingPack
+      See How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf","Mvvm,Xaml,Wpf,Unity,MvvmBinding,Binding",74,False,2.0.1
+Alexander Paskhin (paskhin@hotmail.co.uk),2018-01-09T00:40:10.393Z,101,101,"WPF MVVM Binding Package.
+      Features: AutoWireVmDataContext, AutoWireViewConrols.
+      How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf",MvvmBindingPack,False,2018-01-09T00:40:10.393+00:00,True,False,"Revolutionary features:
+      AutoWireVmDataContext - setups ""DataContext"".
+      AutoWireViewConrols - wires and binds XAML elements to View Model.
+      See demo examples: https://github.com/Wallsmedia/MvvmBindingPack
+      See How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf","Mvvm,Xaml,Wpf,Uwp,MvvmBinding,Binding",6388,False,2.0.1
+Alexander Paskhin (paskhin@hotmail.co.uk),2018-01-09T00:40:43.393Z,101,101,"WPF MVVM Binding Package.
+      Features: AutoWireVmDataContext, AutoWireViewConrols.
+      How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf",MvvmBindingPack.Unity.Debug,False,2018-01-09T00:40:43.393+00:00,True,False,"Revolutionary features:
+      AutoWireVmDataContext - setups ""DataContext"".
+      AutoWireViewConrols - wires and binds XAML elements to View Model.
+      See demo examples: https://github.com/Wallsmedia/MvvmBindingPack
+      See How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf","Mvvm,Xaml,Wpf,Unity,MvvmBinding,Binding",74,False,2.0.1
+Alexander Paskhin (paskhin@hotmail.co.uk),2018-01-09T00:40:10.393Z,101,101,"WPF MVVM Binding Package.
+      Features: AutoWireVmDataContext, AutoWireViewConrols.
+      How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf",MvvmBindingPack,False,2018-01-09T00:40:10.393+00:00,True,False,"Revolutionary features:
+      AutoWireVmDataContext - setups ""DataContext"".
+      AutoWireViewConrols - wires and binds XAML elements to View Model.
+      See demo examples: https://github.com/Wallsmedia/MvvmBindingPack
+      See How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf","Mvvm,Xaml,Wpf,Uwp,MvvmBinding,Binding",6388,False,2.0.1
+Alexander Paskhin (paskhin@hotmail.co.uk),2018-01-09T00:39:36.597Z,101,101,"WPF MVVM Binding Package.
+      Features: AutoWireVmDataContext, AutoWireViewConrols.
+      How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf",MvvmBindingPack.Debug,False,2018-01-09T00:39:36.597+00:00,True,False,"Revolutionary features:
+      AutoWireVmDataContext - setups ""DataContext"".
+      AutoWireViewConrols - wires and binds XAML elements to View Model.
+      See demo examples: https://github.com/Wallsmedia/MvvmBindingPack
+      See How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf","Mvvm,Xaml,Wpf,Uwp,MvvmBinding,Binding",2198,False,2.0.1
+Juan Manuel Abanto,2018-01-09T00:38:04.097Z,51,101,Metodos comunes,Expertec.Sigeco.CrossCutting.Common,False,2018-02-28T16:27:36.683+00:00,True,False,,,622,False,1.0.1
+Juan Manuel Abanto,2018-01-09T00:38:04.097Z,51,101,Metodos comunes,Expertec.Sigeco.CrossCutting.Common,False,2018-02-28T16:27:36.683+00:00,True,False,,,622,False,1.0.1
+"Microsoft,patterns-and-practices,Trimble,matthewjonesco",2018-01-09T00:35:41.22Z,101,101,Non-Configurable Enterprise Library Shared Library based on .NETStandard,NonConfigurable.EnterpriseLibrary.Common,False,2018-01-09T21:14:52.783+00:00,True,False,,"entlib,entlib6,Enterprise,Library,validation,validator,vab,WCF,service,LOB,futures,OSS,Trimble,non-configurable,.NETStandard",286,False,6.0.1312
+LibGit2Sharp contributors,2018-01-09T00:34:44.36Z,100,101,"Native binaries for LibGit2Sharp-SSH, with libssh2 updated to version 1.8.1_DEV",LibGit2Sharp-SSH.NativeBinaries-libssh2-1.8.1.0,False,2018-01-10T03:23:31.037+00:00,True,False,,,69,False,1.0.14
+Jim Bennett,2018-01-09T00:31:26.223Z,53,101,"The Azure Custom Vision service (https://customvision.ai) is able to create models that can be exported as CoreML or Tensorflow models to do image classification.
+
+      This plugin makes it easy to download and use these models offline from inside your mobile app, using CoreML on iOS or Tensorflow on Android.
+      These models can then be called from a .NET standard library or PCL, using something like Xam.Plugin.Media to take photos for classification.",Xam.Plugins.OnDeviceCustomVision,True,2018-02-26T15:10:52.07+00:00,True,False,Cross platform library that allows you to use models from the https://CustomVision.ai locally on the device,"xamarin,image,classification,AI,ML,custom,vision,pcl,xam.pcl,plugin,for,android,xamarin.forms,ios,monoandroid,monodroid,monotouch",335,False,0.1.0-alpha
+"Microsoft,patterns-and-practices,Trimble,matthewjonesco",2018-01-09T00:35:41.22Z,101,101,Non-Configurable Enterprise Library Shared Library based on .NETStandard,NonConfigurable.EnterpriseLibrary.Common,False,2018-01-09T21:14:52.783+00:00,True,False,,"entlib,entlib6,Enterprise,Library,validation,validator,vab,WCF,service,LOB,futures,OSS,Trimble,non-configurable,.NETStandard",286,False,6.0.1312
+LibGit2Sharp contributors,2018-01-09T00:34:44.36Z,100,101,"Native binaries for LibGit2Sharp-SSH, with libssh2 updated to version 1.8.1_DEV",LibGit2Sharp-SSH.NativeBinaries-libssh2-1.8.1.0,False,2018-01-10T03:23:31.037+00:00,True,False,,,69,False,1.0.14
+Jim Bennett,2018-01-09T00:31:26.223Z,53,101,"The Azure Custom Vision service (https://customvision.ai) is able to create models that can be exported as CoreML or Tensorflow models to do image classification.
+
+      This plugin makes it easy to download and use these models offline from inside your mobile app, using CoreML on iOS or Tensorflow on Android.
+      These models can then be called from a .NET standard library or PCL, using something like Xam.Plugin.Media to take photos for classification.",Xam.Plugins.OnDeviceCustomVision,True,2018-02-26T15:10:52.07+00:00,True,False,Cross platform library that allows you to use models from the https://CustomVision.ai locally on the device,"xamarin,image,classification,AI,ML,custom,vision,pcl,xam.pcl,plugin,for,android,xamarin.forms,ios,monoandroid,monodroid,monotouch",335,False,0.1.0-alpha
+Jim Bennett,2018-01-09T00:31:26.223Z,53,101,"The Azure Custom Vision service (https://customvision.ai) is able to create models that can be exported as CoreML or Tensorflow models to do image classification.
+
+      This plugin makes it easy to download and use these models offline from inside your mobile app, using CoreML on iOS or Tensorflow on Android.
+      These models can then be called from a .NET standard library or PCL, using something like Xam.Plugin.Media to take photos for classification.",Xam.Plugins.OnDeviceCustomVision,True,2018-02-26T15:10:52.07+00:00,True,False,Cross platform library that allows you to use models from the https://CustomVision.ai locally on the device,"xamarin,image,classification,AI,ML,custom,vision,pcl,xam.pcl,plugin,for,android,xamarin.forms,ios,monoandroid,monodroid,monotouch",335,False,0.1.0-alpha
+NoOperation,2018-01-09T00:23:32.573Z,3,101,Library for interacting with the contents of Sansar Bag files,LibSanBag,False,2018-04-17T22:36:47.107+00:00,True,False,,"Sansar,Bag,Utilities",1716,False,1.1.8
+Serj-Tm,2018-01-09T00:22:16.573Z,101,101,Qss format utilities,NitroBolt.Qss,False,2018-01-09T00:22:16.573+00:00,True,False,,"Qss,Format",63,False,1.0.44
+Fucci Leonardo,2018-01-09T00:22:00.823Z,43209,101,"This package is private and works only in DevCity environments.
+This package contains core files for developers.",DevCity.Framework,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.7.2
+Fucci Leonardo,2018-01-09T00:22:00.823Z,43209,101,"This package is private and works only in DevCity environments.
+This package contains core files for developers.",DevCity.Framework,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.7.2
+NoOperation,2018-01-09T00:23:32.573Z,3,101,Library for interacting with the contents of Sansar Bag files,LibSanBag,False,2018-04-17T22:36:47.107+00:00,True,False,,"Sansar,Bag,Utilities",1716,False,1.1.8
+Serj-Tm,2018-01-09T00:22:16.573Z,101,101,Qss format utilities,NitroBolt.Qss,False,2018-01-09T00:22:16.573+00:00,True,False,,"Qss,Format",63,False,1.0.44
+meganuckhead,2018-01-09T00:18:18.293Z,44,101,Heroes of the Storm Replay Parsing Tool compatible with Base Build 60821. Latest version supports all previous builds.,HeroProtocol,False,2018-03-07T23:12:11.963+00:00,True,False,,"hots,heroprotocol,heroesofthestorm,blizzard",1404,False,1.2.60821
+meganuckhead,2018-01-09T00:18:18.293Z,44,101,Heroes of the Storm Replay Parsing Tool compatible with Base Build 60821. Latest version supports all previous builds.,HeroProtocol,False,2018-03-07T23:12:11.963+00:00,True,False,,"hots,heroprotocol,heroesofthestorm,blizzard",1404,False,1.2.60821
+Jonathan Potts,2017-08-22T17:26:13.317Z,241,241,"An unofficial Ring API for .NET. This library is in no way endorsed by Ring.
+
+For more information and example usage, go to: https://github.com/jonathanpotts/Ring/blob/master/README.md",Ring,False,2017-08-22T17:26:13.317+00:00,True,False,An unofficial Ring API for .NET. This library is in no way endorsed by Ring.,,323,False,1.1.1
+KaVE Team,2018-01-09T00:07:39.887Z,93,101,Common test utils of the KaVE project.,KaVE.Commons.TestUtils,True,2018-01-17T02:42:08.52+00:00,True,False,,,622,False,0.0.6-Experimental
+KaVE Team,2018-01-09T00:07:27.73Z,93,101,Common data structures and utils of the KaVE project.,KaVE.Commons,True,2018-01-17T02:41:53.05+00:00,True,False,,,1273,False,0.0.6-Experimental
+KaVE Team,2018-01-09T00:07:53.277Z,93,101,Common interfaces of the KaVE project that are relevant for plugins that extend FeedBaG.,KaVE.VS.Commons,True,2018-01-17T02:42:21.85+00:00,True,False,,,601,False,0.0.6-Experimental
+KaVE Team,2018-01-09T00:08:06.527Z,93,101,Common test utils of the KaVE project for plugins of FeedBaG.,KaVE.VS.Commons.TestUtils,True,2018-01-17T02:42:34.16+00:00,True,False,,,588,False,0.0.6-Experimental
+Grzegorz Cebulak Norbert Wieczorek Michal Zamaria,2018-01-09T00:07:10.277Z,2,101,Web layer utilities package,CommonWeb,True,2018-04-18T12:46:33.137+00:00,True,False,,"MVC,layered,web,utility",22090,False,2.0.3-alpha007
+KaVE Team,2018-01-09T00:08:06.527Z,93,101,Common test utils of the KaVE project for plugins of FeedBaG.,KaVE.VS.Commons.TestUtils,True,2018-01-17T02:42:34.16+00:00,True,False,,,588,False,0.0.6-Experimental
+KaVE Team,2018-01-09T00:07:27.73Z,93,101,Common data structures and utils of the KaVE project.,KaVE.Commons,True,2018-01-17T02:41:53.05+00:00,True,False,,,1273,False,0.0.6-Experimental
+KaVE Team,2018-01-09T00:07:53.277Z,93,101,Common interfaces of the KaVE project that are relevant for plugins that extend FeedBaG.,KaVE.VS.Commons,True,2018-01-17T02:42:21.85+00:00,True,False,,,601,False,0.0.6-Experimental
+KaVE Team,2018-01-09T00:07:39.887Z,93,101,Common test utils of the KaVE project.,KaVE.Commons.TestUtils,True,2018-01-17T02:42:08.52+00:00,True,False,,,622,False,0.0.6-Experimental
+Grzegorz Cebulak Norbert Wieczorek Michal Zamaria,2018-01-09T00:07:10.277Z,2,101,Web layer utilities package,CommonWeb,True,2018-04-18T12:46:33.137+00:00,True,False,,"MVC,layered,web,utility",22090,False,2.0.3-alpha007
+"Arnold Wang,Ingeniux Corporation",2018-01-09T00:04:27.46Z,4,101,Nuget Package for Ingeniux InSite Search V2,Ingeniux_InSite_Search_2,False,2018-04-16T16:25:49.88+00:00,True,False,,"ingeniux,insite,search,cms,dss,dynamic,mvc,asp.net",19836,False,2.9.8
+"Arnold Wang,Ingeniux Corporation",2018-01-09T00:04:38.663Z,4,101,"Nuget Package for Ingeniux InSite Search Dynamic Execute Components.
+			This package works with Ingeniux Dynamic Site Server RTAPI v10 only. Do not install this package on projects using any other
+			versions of Dynamic Site Server RTAPI.",Ingeniux_InSite_Search_2_Dex_Dss10,False,2018-04-16T16:26:02.847+00:00,True,False,,"ingeniux,insite,search,cms,dss,dynamic,dex,execute,mvc,asp.net",10784,False,2.9.8
+"Arnold Wang,Ingeniux Corporation",2018-01-09T00:04:53.18Z,4,101,"Nuget Package for Ingeniux InSite Search Dynamic Execute Components.
+			This package works with Ingeniux Dynamic Site Server RTAPI v9 only. Do not install this package on projects using any other
+			versions of Dynamic Site Server RTAPI.",Ingeniux_InSite_Search_2_Dex_Dss9,False,2018-04-16T16:26:25.99+00:00,True,False,,"ingeniux,insite,search,cms,dss,dynamic,dex,execute,mvc,asp.net",10844,False,2.9.8
+"Arnold Wang,Ingeniux Corporation",2018-01-09T00:04:38.663Z,4,101,"Nuget Package for Ingeniux InSite Search Dynamic Execute Components.
+			This package works with Ingeniux Dynamic Site Server RTAPI v10 only. Do not install this package on projects using any other
+			versions of Dynamic Site Server RTAPI.",Ingeniux_InSite_Search_2_Dex_Dss10,False,2018-04-16T16:26:02.847+00:00,True,False,,"ingeniux,insite,search,cms,dss,dynamic,dex,execute,mvc,asp.net",10784,False,2.9.8
+"Arnold Wang,Ingeniux Corporation",2018-01-09T00:04:53.18Z,4,101,"Nuget Package for Ingeniux InSite Search Dynamic Execute Components.
+			This package works with Ingeniux Dynamic Site Server RTAPI v9 only. Do not install this package on projects using any other
+			versions of Dynamic Site Server RTAPI.",Ingeniux_InSite_Search_2_Dex_Dss9,False,2018-04-16T16:26:25.99+00:00,True,False,,"ingeniux,insite,search,cms,dss,dynamic,dex,execute,mvc,asp.net",10844,False,2.9.8
+"Arnold Wang,Ingeniux Corporation",2018-01-09T00:04:27.46Z,4,101,Nuget Package for Ingeniux InSite Search V2,Ingeniux_InSite_Search_2,False,2018-04-16T16:25:49.88+00:00,True,False,,"ingeniux,insite,search,cms,dss,dynamic,mvc,asp.net",19836,False,2.9.8
+Ian Kenley,2018-01-08T23:59:39.29Z,102,102,C# port of Adam W Draper's NumeralJS library,NumeralSharp,False,2018-01-08T23:59:39.29+00:00,True,False,,"numeraljs,number-format",232,False,1.0.2
+Ian Kenley,2018-01-08T23:59:39.29Z,102,102,C# port of Adam W Draper's NumeralJS library,NumeralSharp,False,2018-01-08T23:59:39.29+00:00,True,False,,"numeraljs,number-format",232,False,1.0.2
+raphael,2018-01-08T23:56:27.173Z,102,102,Client to a butler service https://github.com/tuwrraphael/butler,ButlerClient,False,2018-01-08T23:56:27.173+00:00,True,False,,"butler,butlerclient",131,False,1.0.1
+raphael,2018-01-08T23:56:27.173Z,102,102,Client to a butler service https://github.com/tuwrraphael/butler,ButlerClient,False,2018-01-08T23:56:27.173+00:00,True,False,,"butler,butlerclient",131,False,1.0.1
+Alexander Paskhin (paskhin@hotmail.co.uk),2018-01-08T23:56:08.14Z,102,102,"WPF MVVM Binding Package.
+      Features: AutoWireVmDataContext, AutoWireViewConrols.
+      How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf",MvvmBindingPack.Unity,False,2018-01-08T23:56:08.14+00:00,True,False,"Revolutionary features:
+      AutoWireVmDataContext - setups ""DataContext"".
+      AutoWireViewConrols - wires and binds XAML elements to View Model.
+      See demo examples: https://github.com/Wallsmedia/MvvmBindingPack
+      See How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf","Mvvm,Xaml,Wpf,Uwp,MvvmBinding,Binding",140,False,2.0.1
+Alexander Paskhin (paskhin@hotmail.co.uk),2018-01-08T23:56:08.14Z,102,102,"WPF MVVM Binding Package.
+      Features: AutoWireVmDataContext, AutoWireViewConrols.
+      How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf",MvvmBindingPack.Unity,False,2018-01-08T23:56:08.14+00:00,True,False,"Revolutionary features:
+      AutoWireVmDataContext - setups ""DataContext"".
+      AutoWireViewConrols - wires and binds XAML elements to View Model.
+      See demo examples: https://github.com/Wallsmedia/MvvmBindingPack
+      See How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf","Mvvm,Xaml,Wpf,Uwp,MvvmBinding,Binding",140,False,2.0.1
+Grzegorz Cebulak,2018-01-08T23:48:40.03Z,16,102,Web and business layer connectors,CommonWebDataConnector,True,2018-04-04T19:28:29.247+00:00,True,False,,"web-layer,utility",1145,False,1.0.0-alpha014
+Grzegorz Cebulak,2018-01-08T23:48:40.03Z,16,102,Web and business layer connectors,CommonWebDataConnector,True,2018-04-04T19:28:29.247+00:00,True,False,,"web-layer,utility",1145,False,1.0.0-alpha014
+Grzegorz Cebulak Norbert Wieczorek Michal Zamaria,2018-01-08T23:48:07.827Z,2,102,Web layer utilities package,CommonWeb,True,2018-04-18T12:46:33.137+00:00,True,False,,"MVC,layered,web,utility",22090,False,2.0.3-alpha006
+Grzegorz Cebulak Norbert Wieczorek Michal Zamaria,2018-01-08T23:48:07.827Z,2,102,Web layer utilities package,CommonWeb,True,2018-04-18T12:46:33.137+00:00,True,False,,"MVC,layered,web,utility",22090,False,2.0.3-alpha006
+Reed Kimble,2018-01-08T23:44:46.553Z,99,102,"A simplistic and robust video game engine for .Net Windows Forms, based entirely on managed code and GDI+ graphics (authored in Visual Basic .Net).",ReedKimble.PuppyBreath,False,2018-01-11T20:50:54.373+00:00,True,False,,"game-engine,api,framework,windows-forms,dotnet,dot-net,vb-net,visual-basic,gdi,gdi-plus",231,False,0.1.0.1
+Alexander Paskhin (paskhin@hotmail.co.uk),2018-01-08T23:38:59.89Z,102,102,"WPF MVVM Binding Package.
+      Features: AutoWireVmDataContext, AutoWireViewConrols.
+      How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf",MvvmBindingPack.Unity,False,2018-01-08T23:56:08.14+00:00,False,False,"Revolutionary features:
+      AutoWireVmDataContext - setups ""DataContext"".
+      AutoWireViewConrols - wires and binds XAML elements to View Model.
+      See demo examples: https://github.com/Wallsmedia/MvvmBindingPack
+      See How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf","Mvvm,Xaml,Wpf,Uwp,MvvmBinding,Binding",140,False,2.0.0
+Reed Kimble,2018-01-08T23:44:46.553Z,99,102,"A simplistic and robust video game engine for .Net Windows Forms, based entirely on managed code and GDI+ graphics (authored in Visual Basic .Net).",ReedKimble.PuppyBreath,False,2018-01-11T20:50:54.373+00:00,True,False,,"game-engine,api,framework,windows-forms,dotnet,dot-net,vb-net,visual-basic,gdi,gdi-plus",231,False,0.1.0.1
+Brendan Connolly,2018-01-08T19:54:46.677Z,95,102,Friendly Traits for Xunit,xunit.categories,False,2018-01-15T19:45:38.66+00:00,True,False,,"Xunit,xunit,test,category,categories,trait",14490,False,2.0.2
+Alexander Paskhin (paskhin@hotmail.co.uk),2018-01-08T23:38:59.89Z,102,102,"WPF MVVM Binding Package.
+      Features: AutoWireVmDataContext, AutoWireViewConrols.
+      How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf",MvvmBindingPack.Unity,False,2018-01-08T23:56:08.14+00:00,True,False,"Revolutionary features:
+      AutoWireVmDataContext - setups ""DataContext"".
+      AutoWireViewConrols - wires and binds XAML elements to View Model.
+      See demo examples: https://github.com/Wallsmedia/MvvmBindingPack
+      See How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf","Mvvm,Xaml,Wpf,Uwp,MvvmBinding,Binding",140,False,2.0.0
+Alexander Paskhin (paskhin@hotmail.co.uk),2018-01-08T23:38:59.89Z,102,102,"WPF MVVM Binding Package.
+      Features: AutoWireVmDataContext, AutoWireViewConrols.
+      How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf",MvvmBindingPack.Unity,False,2018-01-08T23:56:08.14+00:00,True,False,"Revolutionary features:
+      AutoWireVmDataContext - setups ""DataContext"".
+      AutoWireViewConrols - wires and binds XAML elements to View Model.
+      See demo examples: https://github.com/Wallsmedia/MvvmBindingPack
+      See How to use: https://github.com/Wallsmedia/MvvmBindingPack/blob/master/MvvmBindingPack.1.9.pdf","Mvvm,Xaml,Wpf,Uwp,MvvmBinding,Binding",140,False,2.0.0
+Chakra Team,2018-01-08T23:34:36.54Z,9,102,ChakraCore is the core part of the Chakra Javascript engine that powers Microsoft Edge.,Microsoft.ChakraCore.vc140,False,2018-04-11T00:07:28.957+00:00,True,False,,"Chakra,ChakraCore,javascript,js,ecmascript,compiler,platform,oss,opensource,native,nativepackage,C++,vc140",12051,True,1.7.6
+初码,2018-01-08T23:35:08.743Z,2,102,初码-AlphaMS开发库-微服务,Chuma.AlphaMS.MicroService,False,2018-04-18T18:05:29.52+00:00,True,False,,,4886,False,5.0.0.13
+Chakra Team,2018-01-08T23:34:36.54Z,9,102,ChakraCore is the core part of the Chakra Javascript engine that powers Microsoft Edge.,Microsoft.ChakraCore.vc140,False,2018-04-11T00:07:28.957+00:00,True,False,,"Chakra,ChakraCore,javascript,js,ecmascript,compiler,platform,oss,opensource,native,nativepackage,C++,vc140",12051,True,1.7.6
+初码,2018-01-08T23:35:08.743Z,2,102,初码-AlphaMS开发库-微服务,Chuma.AlphaMS.MicroService,False,2018-04-18T18:05:29.52+00:00,True,False,,,4886,False,5.0.0.13
+Chakra Team,2018-01-08T23:32:23.547Z,9,102,ChakraCore is the core part of the Chakra Javascript engine that powers Microsoft Edge.,Microsoft.ChakraCore,False,2018-04-11T00:03:32.62+00:00,True,False,,"Chakra,ChakraCore,javascript,js,ecmascript,compiler,platform,oss,opensource,native",39445,True,1.7.6
+Chakra Team,2018-01-08T23:32:23.547Z,9,102,ChakraCore is the core part of the Chakra Javascript engine that powers Microsoft Edge.,Microsoft.ChakraCore,False,2018-04-11T00:03:32.62+00:00,True,False,,"Chakra,ChakraCore,javascript,js,ecmascript,compiler,platform,oss,opensource,native",39445,True,1.7.6
+RedisEntityLogs,2018-01-08T23:26:59.243Z,102,102,Handy client and Lua script combo for storing per-entity logs in Redis,RedisEntityLogs,False,2018-01-08T23:26:59.243+00:00,True,False,,"redis,event,events,log,append,entity",76,False,1.0.0
+RedisEntityLogs,2018-01-08T23:26:59.243Z,102,102,Handy client and Lua script combo for storing per-entity logs in Redis,RedisEntityLogs,False,2018-01-08T23:26:59.243+00:00,True,False,,"redis,event,events,log,append,entity",76,False,1.0.0
+Jason Holloway,2018-01-05T22:58:45.737Z,43209,105,Handy client and Lua script combo for storing per-entity logs in Redis,RedisAppendLogs,False,1900-01-01T00:00:00+00:00,False,False,,"redis,event,log,append",-1,False,0.1.0
+raphael,2018-01-08T23:22:06.027Z,102,102,Client to a butler service https://github.com/tuwrraphael/butler,ButlerClient,False,2018-01-08T23:56:27.173+00:00,True,False,,"butler,butlerclient",131,False,1.0.0
+J/A,2018-01-08T23:23:21.127Z,72,102,"Crockford Base32 encoding for 64-bit identifiers. In comparison to other, similar libraries, quickford focuses on speed and efficiency. Have fun saving electricity!",quickford,True,2018-02-07T17:24:01.76+00:00,True,False,,"Crockford,Base32,encoding,decoding",207,False,1.0.0-rc
+J/A,2018-01-08T23:23:21.127Z,72,102,"Crockford Base32 encoding for 64-bit identifiers. In comparison to other, similar libraries, quickford focuses on speed and efficiency. Have fun saving electricity!",quickford,True,2018-02-07T17:24:01.76+00:00,True,False,,"Crockford,Base32,encoding,decoding",207,False,1.0.0-rc
+raphael,2018-01-08T23:22:06.027Z,102,102,Client to a butler service https://github.com/tuwrraphael/butler,ButlerClient,False,2018-01-08T23:56:27.173+00:00,True,False,,"butler,butlerclient",131,False,1.0.0
+IKoshelev,2018-01-06T21:59:18.337Z,100,104,"This library consists of IKoshelev.Mapper.ExpressionMappingComponents type, which is used to define expressions mapping type A to type B,
+      and IKoshelev.Roslyn.Mapper analyzer, which at design-time checks that no field or propperty of types A or B is missing from the mapping definition.",IKoshelev.Roslyn.Mapper,False,2018-01-10T22:01:43.14+00:00,False,False,,"Roslyn,automatic,mapper,autmapping",450,False,0.2.6580.41150
+IKoshelev,2018-01-07T01:18:54.893Z,100,103,"This library consists of IKoshelev.Mapper.ExpressionMappingComponents type, which is used to define expressions mapping type A to type B, and IKoshelev.Roslyn.Mapper analyzer, which at design-time checks that no field or propperty of types A or B is missing from the mapping definition.",IKoshelev.Roslyn.Mapper,False,2018-01-10T22:01:43.14+00:00,False,False,,"Roslyn,automatic,mapper,autmapping",450,False,0.2.6581.4108
+IKoshelev,2018-01-08T23:20:21.787Z,100,102,"This library consists of IKoshelev.Mapper.ExpressionMappingComponents type, which is used to define expressions mapping type A to type B, and IKoshelev.Roslyn.Mapper analyzer, which at design-time checks that no field or propperty of types A or B is missing from the mapping definition.",IKoshelev.Roslyn.Mapper,False,2018-01-10T22:01:43.14+00:00,True,False,,"Roslyn,automatic,mapper,autmapping",450,False,0.4.6583.549
+IKoshelev,2018-01-08T22:38:52.937Z,100,102,"This library consists of IKoshelev.Mapper.ExpressionMappingComponents type, which is used to define expressions mapping type A to type B, and IKoshelev.Roslyn.Mapper analyzer, which at design-time checks that no field or propperty of types A or B is missing from the mapping definition.",IKoshelev.Roslyn.Mapper,False,2018-01-10T22:01:43.14+00:00,False,False,,"Roslyn,automatic,mapper,autmapping",450,False,0.3.6582.42499
+IKoshelev,2018-01-08T23:20:21.787Z,100,102,"This library consists of IKoshelev.Mapper.ExpressionMappingComponents type, which is used to define expressions mapping type A to type B, and IKoshelev.Roslyn.Mapper analyzer, which at design-time checks that no field or propperty of types A or B is missing from the mapping definition.",IKoshelev.Roslyn.Mapper,False,2018-01-10T22:01:43.14+00:00,True,False,,"Roslyn,automatic,mapper,autmapping",450,False,0.4.6583.549
+Kenneth Ito,2018-01-08T23:15:22.07Z,3,102,Akka.NET Split Brain Resolver,Akka.Cluster.SplitBrainResolver,False,2018-04-17T04:48:28.743+00:00,True,False,,,2615,False,0.0.2
+OSU CASS SDG,2018-01-08T23:16:32.623Z,43209,102,Package Description,SmarterBalanced.SampleItems.Dal,True,1900-01-01T00:00:00+00:00,False,False,,,2991,False,1.1.0-alpha-326597230
+Kenneth Ito,2018-01-08T23:15:22.07Z,3,102,Akka.NET Split Brain Resolver,Akka.Cluster.SplitBrainResolver,False,2018-04-17T04:48:28.743+00:00,True,False,,,2615,False,0.0.2
+OSU CASS SDG,2018-01-08T23:16:32.623Z,43209,102,Package Description,SmarterBalanced.SampleItems.Dal,True,1900-01-01T00:00:00+00:00,False,False,,,2991,False,1.1.0-alpha-326597230
+iamcarbon,2018-01-08T23:12:25.133Z,92,102,A modern .NET Standard library for Amazon's EC2 service.,Amazon.Ec2,False,2018-01-18T21:06:31.203+00:00,True,False,,"aws,ec2,netstandard",4591,False,0.10.4
+bnoffer,2018-01-08T23:14:36.25Z,102,102,A C# client library for ownCloud 8.2+,bnoffer.owncloudsharp,False,2018-01-08T23:14:36.25+00:00,True,False,A portable class library to interact with ownCloud servers through WebDAV and the ownCloud OCS API.,"ownCloud,WebDAV,Http,Client",330,False,0.4.0
+iamcarbon,2018-01-08T23:12:58.15Z,43209,102,A modern .NET Standard library for Amazon's Simple Storage Service.,Amazon.S3,False,1900-01-01T00:00:00+00:00,False,False,,"aws,s3,netstandard",18418,False,0.10.4
+iamcarbon,2018-01-08T23:12:58.15Z,43209,102,A modern .NET Standard library for Amazon's Simple Storage Service.,Amazon.S3,False,1900-01-01T00:00:00+00:00,False,False,,"aws,s3,netstandard",18418,False,0.10.4
+iamcarbon,2018-01-08T23:12:25.133Z,92,102,A modern .NET Standard library for Amazon's EC2 service.,Amazon.Ec2,False,2018-01-18T21:06:31.203+00:00,True,False,,"aws,ec2,netstandard",4591,False,0.10.4
+bnoffer,2018-01-08T23:14:36.25Z,102,102,A C# client library for ownCloud 8.2+,bnoffer.owncloudsharp,False,2018-01-08T23:14:36.25+00:00,True,False,A portable class library to interact with ownCloud servers through WebDAV and the ownCloud OCS API.,"ownCloud,WebDAV,Http,Client",330,False,0.4.0
+iamcarbon,2018-01-08T23:10:59.08Z,91,102,A modern .NET Standard library for Kinesis Firehose.,Amazon.Kinesis.Firehose,False,2018-01-19T02:08:34.347+00:00,True,False,,"aws,kinesis,firehose,netstandard",1191,False,0.3.2
+iamcarbon,2018-01-08T23:11:26.803Z,91,102,Shared library for Amazon API implementations.,Amazon.Core,False,2018-01-19T02:02:30.777+00:00,True,False,,"aws,netstandard",23946,False,0.10.2
+iamcarbon,2018-01-08T23:11:52.913Z,91,102,A modern .NET Standard library for Amazon's Security Token Service.,Amazon.Sts,False,2018-01-19T02:09:24.38+00:00,True,False,,"aws,sts,netstandard",1981,False,0.4.3
+iamcarbon,2018-01-08T23:10:25.03Z,91,102,A modern .NET Standard library for Amazon Kinesis.,Amazon.Kinesis,False,2018-01-19T02:08:03.127+00:00,True,False,,"aws,kinesis,netstandard",2082,False,0.10.3
+iamcarbon,2018-01-08T23:11:26.803Z,91,102,Shared library for Amazon API implementations.,Amazon.Core,False,2018-01-19T02:02:30.777+00:00,True,False,,"aws,netstandard",23946,False,0.10.2
+iamcarbon,2018-01-08T23:10:59.08Z,91,102,A modern .NET Standard library for Kinesis Firehose.,Amazon.Kinesis.Firehose,False,2018-01-19T02:08:34.347+00:00,True,False,,"aws,kinesis,firehose,netstandard",1191,False,0.3.2
+iamcarbon,2018-01-08T23:11:52.913Z,91,102,A modern .NET Standard library for Amazon's Security Token Service.,Amazon.Sts,False,2018-01-19T02:09:24.38+00:00,True,False,,"aws,sts,netstandard",1981,False,0.4.3
+iamcarbon,2018-01-08T23:10:25.03Z,91,102,A modern .NET Standard library for Amazon Kinesis.,Amazon.Kinesis,False,2018-01-19T02:08:03.127+00:00,True,False,,"aws,kinesis,netstandard",2082,False,0.10.3
+TomSun.AspNetCore.Extensions,2018-01-08T23:05:07.02Z,102,102,Package Description,TomSun.AspNetCore.Extensions,False,2018-01-08T23:05:07.02+00:00,True,False,,,1700,False,1.0.61
+Ivo Tadic,2018-01-08T23:05:48.137Z,66,102,Package Description,Spirent.UserManagement.API.Client,False,2018-02-13T13:06:07.963+00:00,True,False,,,11167,False,1.0.174.180108
+Ivo Tadic,2018-01-08T23:05:48.137Z,66,102,Package Description,Spirent.UserManagement.API.Client,False,2018-02-13T13:06:07.963+00:00,True,False,,,11167,False,1.0.174.180108
+TomSun.AspNetCore.Extensions,2018-01-08T23:05:07.02Z,102,102,Package Description,TomSun.AspNetCore.Extensions,False,2018-01-08T23:05:07.02+00:00,True,False,,,1700,False,1.0.61
+Ivo Tadic,2018-01-08T23:02:12.683Z,66,102,Package Description,Spirent.UserManagement.API.Client,False,2018-02-13T13:06:07.963+00:00,True,False,,,11167,False,1.0.173.180108
+Ivo Tadic,2018-01-08T23:02:12.683Z,66,102,Package Description,Spirent.UserManagement.API.Client,False,2018-02-13T13:06:07.963+00:00,True,False,,,11167,False,1.0.173.180108
+TomSun.BridgeNet.Loader,2018-01-08T22:53:15.183Z,102,102,Package Description,TomSun.BridgeNet.Loader,False,2018-01-08T22:53:15.183+00:00,True,False,,,68,False,1.0.4
+TomSun.BridgeNet.Loader,2018-01-08T22:53:15.183Z,102,102,Package Description,TomSun.BridgeNet.Loader,False,2018-01-08T22:53:15.183+00:00,True,False,,,68,False,1.0.4
+ETS Corporation,2018-01-08T22:43:39.537Z,183,102,Consumes a generic inventory document store to be used in PMoney applications.,PMoney.Inventory,False,2017-10-19T18:31:10.31+00:00,True,False,"A document-based setup allowing for consumers to create 'outlets' and digest products, orders, and store-related items for whatever their application needs.","inventory,store,eShop,eStore,GameChangerPOS,POS,couchdb,elastic,search,couch",30370,False,1.0.23.24
+Pose,2018-01-08T22:42:11.753Z,102,102,Replace any .NET method (including static and non-virtual) with a delegate,Pose,False,2018-01-08T22:42:11.753+00:00,True,False,,"pose,mocking,testing,unit-test,isolation-framework,test-framework",1183,False,1.2.0
+ETS Corporation,2018-01-08T22:43:39.537Z,183,102,Consumes a generic inventory document store to be used in PMoney applications.,PMoney.Inventory,False,2017-10-19T18:31:10.31+00:00,True,False,"A document-based setup allowing for consumers to create 'outlets' and digest products, orders, and store-related items for whatever their application needs.","inventory,store,eShop,eStore,GameChangerPOS,POS,couchdb,elastic,search,couch",30370,False,1.0.23.24
+Ludvig Pedersen,2018-01-08T22:40:59.017Z,42,102,Efficiently process large TIFF images,TiffExpress,True,2018-03-09T06:21:57.76+00:00,True,False,,"tiff,image",1941,False,0.0.2-alpha-build46
+Pose,2018-01-08T22:42:11.753Z,102,102,Replace any .NET method (including static and non-virtual) with a delegate,Pose,False,2018-01-08T22:42:11.753+00:00,True,False,,"pose,mocking,testing,unit-test,isolation-framework,test-framework",1183,False,1.2.0
+Pose,2018-01-08T22:42:11.753Z,102,102,Replace any .NET method (including static and non-virtual) with a delegate,Pose,False,2018-01-08T22:42:11.753+00:00,True,False,,"pose,mocking,testing,unit-test,isolation-framework,test-framework",1183,False,1.2.0
+Ludvig Pedersen,2018-01-08T22:40:59.017Z,42,102,Efficiently process large TIFF images,TiffExpress,True,2018-03-09T06:21:57.76+00:00,True,False,,"tiff,image",1941,False,0.0.2-alpha-build46
+IKoshelev,2018-01-08T22:38:52.937Z,100,102,"This library consists of IKoshelev.Mapper.ExpressionMappingComponents type, which is used to define expressions mapping type A to type B, and IKoshelev.Roslyn.Mapper analyzer, which at design-time checks that no field or propperty of types A or B is missing from the mapping definition.",IKoshelev.Roslyn.Mapper,False,2018-01-10T22:01:43.14+00:00,True,False,,"Roslyn,automatic,mapper,autmapping",450,False,0.3.6582.42499
+IKoshelev,2018-01-08T22:38:52.937Z,100,102,"This library consists of IKoshelev.Mapper.ExpressionMappingComponents type, which is used to define expressions mapping type A to type B, and IKoshelev.Roslyn.Mapper analyzer, which at design-time checks that no field or propperty of types A or B is missing from the mapping definition.",IKoshelev.Roslyn.Mapper,False,2018-01-10T22:01:43.14+00:00,True,False,,"Roslyn,automatic,mapper,autmapping",450,False,0.3.6582.42499
+Adam James Naylor,2018-01-08T22:37:54.34Z,101,102,Package Description,Leuwen.Common,False,2018-01-09T15:04:19.887+00:00,True,False,,,237,False,1.0.2
+Adam James Naylor,2018-01-08T22:37:54.34Z,101,102,Package Description,Leuwen.Common,False,2018-01-09T15:04:19.887+00:00,True,False,,,237,False,1.0.2
+"tloehlein,ChristianSchaefer,bnoffer",2018-01-08T22:36:32.56Z,97,102,WebDAVNet is a client library for interacting with WebDAV written in C#,bnoffer.webdavnet,False,2018-01-13T02:02:20.433+00:00,True,False,WebDAVNet is a client library for interacting with WebDAV written in C#,WebDAV,496,False,1.0.2
+Tomasz Pęczek,2018-01-08T22:37:21.2Z,58,102,Lib.Net.Http.WebPush is a library which provides a Web Push Protocol based client for Push Service.,Lib.Net.Http.WebPush,False,2018-02-21T20:54:13.11+00:00,True,False,,"push,notifications,webpush,vapid",455,False,1.0.0
+Tomasz Pęczek,2018-01-08T22:37:21.2Z,58,102,Lib.Net.Http.WebPush is a library which provides a Web Push Protocol based client for Push Service.,Lib.Net.Http.WebPush,False,2018-02-21T20:54:13.11+00:00,True,False,,"push,notifications,webpush,vapid",455,False,1.0.0
+bnoffer,2018-01-08T22:27:51.667Z,97,102,Web client is a wrapper around System.Net.Http.HttpClient,bnoffer.webclient,False,2018-01-13T01:20:21.39+00:00,True,False,Web client is a wrapper around System.Net.Http.HttpClient,"http,client",544,False,1.0.3
+bnoffer,2018-01-08T22:27:51.667Z,97,102,Web client is a wrapper around System.Net.Http.HttpClient,bnoffer.webclient,False,2018-01-13T01:20:21.39+00:00,True,False,Web client is a wrapper around System.Net.Http.HttpClient,"http,client",544,False,1.0.3
+tiscca-raphael,2018-01-08T22:25:37.777Z,102,102,Simple json file persistence,FileStore.tiscca-raphael,False,2018-01-08T22:25:37.777+00:00,True,False,,"filestore,file,json",71,False,1.0.0
+tiscca-raphael,2018-01-08T22:25:37.777Z,102,102,Simple json file persistence,FileStore.tiscca-raphael,False,2018-01-08T22:25:37.777+00:00,True,False,,"filestore,file,json",71,False,1.0.0
+Job Scheffers,2018-01-08T22:20:00.707Z,65,102,Helper classes for bridge related unit tests,Bridge.TestHelpers,False,2018-02-14T09:15:30.117+00:00,True,False,,"computerbridge,bridge",734,False,2018.1.8.1
+Job Scheffers,2018-01-08T22:20:00.707Z,65,102,Helper classes for bridge related unit tests,Bridge.TestHelpers,False,2018-02-14T09:15:30.117+00:00,True,False,,"computerbridge,bridge",734,False,2018.1.8.1
+Job Scheffers,2018-01-08T22:18:55Z,65,102,"Base classes (like suits, ranks, cards, auction, play, contract) that are helpful in creating a bridge card game.",Bridge.Fundamentals,False,2018-02-14T09:14:46.447+00:00,True,False,,"computerbridge,bridge,card,suit,rank,contract,auction",750,False,2018.1.8.1
+bnoffer,2018-01-08T22:18:03.83Z,97,102,Web client is a wrapper around System.Net.Http.HttpClient,bnoffer.webclient,False,2018-01-13T01:20:21.39+00:00,True,False,Web client is a wrapper around System.Net.Http.HttpClient,"http,client",544,False,1.0.2
+Job Scheffers,2018-01-08T22:19:31.117Z,65,102,Basic functionality for creating a bridge card game that can compete in the World Computer-Bridge Championship (see www.computerbridge.com),Bridge.Networking,False,2018-02-14T09:15:08.163+00:00,True,False,,"computerbridge,network,protocol,bridge,tablemanager,bridgemoniteur",793,False,2018.1.8.1
+Job Scheffers,2018-01-08T22:19:31.117Z,65,102,Basic functionality for creating a bridge card game that can compete in the World Computer-Bridge Championship (see www.computerbridge.com),Bridge.Networking,False,2018-02-14T09:15:08.163+00:00,True,False,,"computerbridge,network,protocol,bridge,tablemanager,bridgemoniteur",793,False,2018.1.8.1
+Job Scheffers,2018-01-08T22:18:55Z,65,102,"Base classes (like suits, ranks, cards, auction, play, contract) that are helpful in creating a bridge card game.",Bridge.Fundamentals,False,2018-02-14T09:14:46.447+00:00,True,False,,"computerbridge,bridge,card,suit,rank,contract,auction",750,False,2018.1.8.1
+bnoffer,2018-01-08T22:18:03.83Z,97,102,Web client is a wrapper around System.Net.Http.HttpClient,bnoffer.webclient,False,2018-01-13T01:20:21.39+00:00,True,False,Web client is a wrapper around System.Net.Http.HttpClient,"http,client",544,False,1.0.2
+Micah Vertal,2018-01-08T22:14:56.223Z,97,102,Imaging library based off of the ConnectLibSTD connection library,ImageLibSTD,True,2018-01-13T18:12:44.287+00:00,True,False,,"C#,csharp,dotnet,connection,manager,messaging,library,images,imaging,video",812,False,1.2.0-beta
+Micah Vertal,2018-01-08T22:14:56.223Z,97,102,Imaging library based off of the ConnectLibSTD connection library,ImageLibSTD,True,2018-01-13T18:12:44.287+00:00,True,False,,"C#,csharp,dotnet,connection,manager,messaging,library,images,imaging,video",812,False,1.2.0-beta
+test,2017-12-13T21:41:32.457Z,128,128,none,MyTestPackage1111,False,2017-12-13T21:41:32.457+00:00,True,False,none,none,213,False,1.0.3
+Juan Roman Escamilla,2018-01-08T22:10:14.577Z,71,102,Openpay (https://openpay.mx) client API built for Xamarin. Ensure you have proper permissions set by reading the README.,Openpay.Xamarin,False,2018-02-08T17:54:49.81+00:00,True,False,Openpay (https://openpay.mx) client API built for Xamarin. Ensure you have proper permissions set by reading the README.,"xamarin,pcl,xam.pcl,openpay,xamarin.android,xamarin.ios,android,xamarin.forms,ios,credit,card",349,False,1.0.0.2
+Juan Roman Escamilla,2018-01-08T22:10:14.577Z,71,102,Openpay (https://openpay.mx) client API built for Xamarin. Ensure you have proper permissions set by reading the README.,Openpay.Xamarin,False,2018-02-08T17:54:49.81+00:00,True,False,Openpay (https://openpay.mx) client API built for Xamarin. Ensure you have proper permissions set by reading the README.,"xamarin,pcl,xam.pcl,openpay,xamarin.android,xamarin.ios,android,xamarin.forms,ios,credit,card",349,False,1.0.0.2
+Igor.Gateway.Dtos,2018-01-08T22:03:55.583Z,1,102,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,3.2.0-prerelease742
+Igor.Gateway.Dtos,2018-01-08T22:03:55.583Z,1,102,Package Description,Igor.Gateway.Dtos,True,2018-04-19T21:16:54.77+00:00,True,False,,,35790,False,3.2.0-prerelease742
+Raul Naupari,2018-01-08T22:00:15.787Z,21,102,LightInject installer for the Jal.Router.Logger library,Jal.Router.Logger.LightInject.Installer,False,2018-03-30T19:01:09.69+00:00,True,False,,,1051,False,1.2.1
+Raul Naupari,2018-01-08T21:58:42.137Z,19,102,Castle Windsor installer for the Jal.Router library,Jal.Router.Installer,False,2018-04-01T21:35:47.953+00:00,True,False,,,2509,False,1.2.1
+Joshua Richards,2018-01-08T21:59:30.013Z,26,102,An app plugin to Our.Shield.Core Umbraco Cms package to handle restricting access to the frontend,Our.Shield.FrontendAccess,False,2018-03-25T14:16:33.3+00:00,True,False,,"Umbraco,UmbracoCms,Security,Locker,FrontendAccess,Frontend,Access",276,False,1.0.5
+Raul Naupari,2018-01-08T21:59:26.607Z,21,102,Jal.Router integration with Common Logging,Jal.Router.Logger,False,2018-03-30T19:00:19.047+00:00,True,False,,,1722,False,1.2.1
+Joshua Richards,2018-01-08T22:00:33.407Z,26,102,An app plugin to Our.Shield.Core Umbraco Cms package adding the popular error logging library ELMAH to umbraco. Adds the ability to  handle restricting access to ~/elmah.axd via white/black list of IP Addresses or whether the user is logged in as an authorised Umbraco User,Our.Shield.Elmah,False,2018-03-25T14:15:40.44+00:00,True,False,,"Umbraco,UmbracoCms,Security,Elmah",122,False,1.0.5
+Joshua Richards,2018-01-08T21:59:59.677Z,26,102,An app plugin to Our.Shield.Core Umbraco Cms package to handle media protection,Our.Shield.MediaProtection,False,2018-03-25T14:17:23+00:00,True,False,,"Umbraco,UmbracoCms,Security,MediaProtection,Media,Protection",557,False,1.0.5
+Raul Naupari,2018-01-08T21:59:47.81Z,21,102,Castle Windsor installer for the Jal.Router.Logger library,Jal.Router.Logger.Installer,False,2018-03-30T19:00:47.173+00:00,True,False,,,932,False,1.2.1
+Raul Naupari,2018-01-08T21:59:03.233Z,19,102,LightInject installer for the Jal.Router library,Jal.Router.LightInject.Installer,False,2018-04-01T21:36:26.44+00:00,True,False,,,2810,False,1.2.2
+Joshua Richards,2018-01-08T21:59:59.677Z,26,102,An app plugin to Our.Shield.Core Umbraco Cms package to handle media protection,Our.Shield.MediaProtection,False,2018-03-25T14:17:23+00:00,True,False,,"Umbraco,UmbracoCms,Security,MediaProtection,Media,Protection",557,False,1.0.5
+Joshua Richards,2018-01-08T22:00:33.407Z,26,102,An app plugin to Our.Shield.Core Umbraco Cms package adding the popular error logging library ELMAH to umbraco. Adds the ability to  handle restricting access to ~/elmah.axd via white/black list of IP Addresses or whether the user is logged in as an authorised Umbraco User,Our.Shield.Elmah,False,2018-03-25T14:15:40.44+00:00,True,False,,"Umbraco,UmbracoCms,Security,Elmah",122,False,1.0.5
+Raul Naupari,2018-01-08T21:58:42.137Z,19,102,Castle Windsor installer for the Jal.Router library,Jal.Router.Installer,False,2018-04-01T21:35:47.953+00:00,True,False,,,2509,False,1.2.1
+Raul Naupari,2018-01-08T21:58:20.05Z,60,102,LightInject installer for the Jal.Router.AzureStorage library,Jal.Router.AzureStorage.LightInject.Installer,False,2018-02-19T00:46:19.533+00:00,True,False,,,675,False,1.2.1
+Joshua Richards,2018-01-08T21:59:30.013Z,26,102,An app plugin to Our.Shield.Core Umbraco Cms package to handle restricting access to the frontend,Our.Shield.FrontendAccess,False,2018-03-25T14:16:33.3+00:00,True,False,,"Umbraco,UmbracoCms,Security,Locker,FrontendAccess,Frontend,Access",276,False,1.0.5
+Raul Naupari,2018-01-08T21:59:26.607Z,21,102,Jal.Router integration with Common Logging,Jal.Router.Logger,False,2018-03-30T19:00:19.047+00:00,True,False,,,1722,False,1.2.1
+Raul Naupari,2018-01-08T21:59:47.81Z,21,102,Castle Windsor installer for the Jal.Router.Logger library,Jal.Router.Logger.Installer,False,2018-03-30T19:00:47.173+00:00,True,False,,,932,False,1.2.1
+Raul Naupari,2018-01-08T21:58:20.05Z,60,102,LightInject installer for the Jal.Router.AzureStorage library,Jal.Router.AzureStorage.LightInject.Installer,False,2018-02-19T00:46:19.533+00:00,True,False,,,675,False,1.2.1
+Raul Naupari,2018-01-08T21:59:03.233Z,19,102,LightInject installer for the Jal.Router library,Jal.Router.LightInject.Installer,False,2018-04-01T21:36:26.44+00:00,True,False,,,2810,False,1.2.2
+Raul Naupari,2018-01-08T21:56:59.363Z,21,102,LightInject installer for the Jal.Router.AzureServiceBus library,Jal.Router.AzureServiceBus.LightInject.Installer,False,2018-03-30T18:56:24.163+00:00,True,False,,,1928,False,1.2.1
+Raul Naupari,2018-01-08T21:57:40.627Z,21,102,Castle Windsor installer for the Jal.Router.AzureStorage library,Jal.Router.AzureStorage.Installer,False,2018-03-30T18:58:08.417+00:00,True,False,,,988,False,1.2.1
+Joshua Richards,2018-01-08T21:56:48.53Z,26,102,An app plugin to Our.Shield.Core Umbraco Cms package to handle restricting access to the backoffice via a white-list of IP address(es),Our.Shield.BackofficeAccess,False,2018-03-25T14:14:54.957+00:00,True,False,,"Umbraco,UmbracoCms,Security,BackofficeAccess,Access,Backoffice",657,False,1.0.5
+Raul Naupari,2018-01-08T21:57:19.923Z,21,102,Jal.Router integration with azure storage,Jal.Router.AzureStorage,False,2018-03-30T18:56:49.243+00:00,True,False,,,2353,False,1.2.1
+Joshua Richards,2018-01-08T21:56:08.807Z,26,102,Our.Shield.Core is the Framework for Our.Shield Security package for the Umbraco Cms,Our.Shield.Core,False,2018-03-25T14:13:53.123+00:00,True,False,,"Umbraco,UmbracoCms,Security",672,False,1.0.5
+stellar-dotnetstandard-sdk,2018-01-08T21:54:51.463Z,102,102,Package Description,stellar-dotnetstandard-sdk,False,2018-01-08T21:54:51.463+00:00,True,False,,,108,False,1.0.0
+Raul Naupari,2018-01-08T21:55:12.73Z,21,102,Jal.Router integration with azure service bus,Jal.Router.AzureServiceBus,False,2018-03-30T18:54:48.567+00:00,True,False,,,4363,False,1.2.4
+Raul Naupari,2018-01-08T21:56:37.65Z,21,102,Castle Windsor installer for the Jal.Router.AzureServiceBus library,Jal.Router.AzureServiceBus.Installer,False,2018-03-30T18:55:58.697+00:00,True,False,,,1726,False,1.2.1
+Raul Naupari,2018-01-08T21:57:40.627Z,21,102,Castle Windsor installer for the Jal.Router.AzureStorage library,Jal.Router.AzureStorage.Installer,False,2018-03-30T18:58:08.417+00:00,True,False,,,988,False,1.2.1
+Joshua Richards,2018-01-08T21:56:48.53Z,26,102,An app plugin to Our.Shield.Core Umbraco Cms package to handle restricting access to the backoffice via a white-list of IP address(es),Our.Shield.BackofficeAccess,False,2018-03-25T14:14:54.957+00:00,True,False,,"Umbraco,UmbracoCms,Security,BackofficeAccess,Access,Backoffice",657,False,1.0.5
+Joshua Richards,2018-01-08T21:56:08.807Z,26,102,Our.Shield.Core is the Framework for Our.Shield Security package for the Umbraco Cms,Our.Shield.Core,False,2018-03-25T14:13:53.123+00:00,True,False,,"Umbraco,UmbracoCms,Security",672,False,1.0.5
+Raul Naupari,2018-01-08T21:56:59.363Z,21,102,LightInject installer for the Jal.Router.AzureServiceBus library,Jal.Router.AzureServiceBus.LightInject.Installer,False,2018-03-30T18:56:24.163+00:00,True,False,,,1928,False,1.2.1
+stellar-dotnetstandard-sdk,2018-01-08T21:54:51.463Z,102,102,Package Description,stellar-dotnetstandard-sdk,False,2018-01-08T21:54:51.463+00:00,True,False,,,108,False,1.0.0
+Raul Naupari,2018-01-08T21:57:19.923Z,21,102,Jal.Router integration with azure storage,Jal.Router.AzureStorage,False,2018-03-30T18:56:49.243+00:00,True,False,,,2353,False,1.2.1
+Raul Naupari,2018-01-08T21:56:37.65Z,21,102,Castle Windsor installer for the Jal.Router.AzureServiceBus library,Jal.Router.AzureServiceBus.Installer,False,2018-03-30T18:55:58.697+00:00,True,False,,,1726,False,1.2.1
+Raul Naupari,2018-01-08T21:55:12.73Z,21,102,Jal.Router integration with azure service bus,Jal.Router.AzureServiceBus,False,2018-03-30T18:54:48.567+00:00,True,False,,,4363,False,1.2.4
+Sean Ian Hale,2018-01-02T07:36:16.177Z,102,108,Provides extension methods for Microsoft.Azure.Documents.Client.DocumentClient that streamline CRUD operations against a Cosmos DB graph using generated Gremlin script.,Zoeri.Azure.Graphs,True,2018-01-08T21:54:22.57+00:00,False,False,,"asp.net,core,azure,cosmos,db,DocumentClient,Gremlin,graph,api",159,False,0.1.0-preview
+Raul Naupari,2018-01-08T21:52:14.64Z,1,102,Just another library to route messages,Jal.Router,False,2018-04-19T22:13:36+00:00,True,False,,,8625,False,1.2.9
+Raul Naupari,2018-01-08T21:53:40.26Z,21,102,LightInject installer for the Jal.Router.ApplicationInsights library,Jal.Router.ApplicationInsights.LightInject.Installer,False,2018-03-30T18:53:48.58+00:00,True,False,,,594,False,1.2.1
+Raul Naupari,2018-01-08T21:52:42.087Z,21,102,Jal.Router integration with ApplicationInsights,Jal.Router.ApplicationInsights,False,2018-03-30T18:52:30.297+00:00,True,False,,,1359,False,1.2.1
+Sean Ian Hale,2018-01-08T21:54:22.57Z,102,102,Provides extension methods for Microsoft.Azure.Documents.Client.DocumentClient that streamline CRUD operations against a Cosmos DB graph using generated Gremlin script.,Zoeri.Azure.Graphs,True,2018-01-08T21:54:22.57+00:00,True,False,,"asp.net,core,azure,cosmos,db,DocumentClient,Gremlin,graph,api",159,False,0.1.1-preview
+Raul Naupari,2018-01-08T21:53:11.54Z,21,102,Castle Windsor installer for the Jal.Router.ApplicationInsights library,Jal.Router.ApplicationInsights.Installer,False,2018-03-30T18:52:55.597+00:00,True,False,,,451,False,1.2.1
+Sean Ian Hale,2018-01-08T21:54:22.57Z,102,102,Provides extension methods for Microsoft.Azure.Documents.Client.DocumentClient that streamline CRUD operations against a Cosmos DB graph using generated Gremlin script.,Zoeri.Azure.Graphs,True,2018-01-08T21:54:22.57+00:00,True,False,,"asp.net,core,azure,cosmos,db,DocumentClient,Gremlin,graph,api",159,False,0.1.1-preview
+Raul Naupari,2018-01-08T21:52:14.64Z,1,102,Just another library to route messages,Jal.Router,False,2018-04-19T22:13:36+00:00,True,False,,,8625,False,1.2.9
+Raul Naupari,2018-01-08T21:53:11.54Z,21,102,Castle Windsor installer for the Jal.Router.ApplicationInsights library,Jal.Router.ApplicationInsights.Installer,False,2018-03-30T18:52:55.597+00:00,True,False,,,451,False,1.2.1
+Raul Naupari,2018-01-08T21:52:42.087Z,21,102,Jal.Router integration with ApplicationInsights,Jal.Router.ApplicationInsights,False,2018-03-30T18:52:30.297+00:00,True,False,,,1359,False,1.2.1
+Raul Naupari,2018-01-08T21:53:40.26Z,21,102,LightInject installer for the Jal.Router.ApplicationInsights library,Jal.Router.ApplicationInsights.LightInject.Installer,False,2018-03-30T18:53:48.58+00:00,True,False,,,594,False,1.2.1
+SpiegelSoft Ltd,2018-01-08T21:51:28.35Z,2,102,Fluent interface for building Xamarin Forms pages in F# using ReactiveUI.,XamarinForms.Reactive.FSharp,True,2018-04-18T20:03:05.78+00:00,True,False,,,23029,False,0.11.11-beta
+ietws,2018-01-08T21:51:21.74Z,102,102,Package Description,ietws,False,2018-01-08T21:51:21.74+00:00,True,False,,,314,False,0.1.7
+ietws,2018-01-08T21:51:21.74Z,102,102,Package Description,ietws,False,2018-01-08T21:51:21.74+00:00,True,False,,,314,False,0.1.7
+SpiegelSoft Ltd,2018-01-08T21:51:28.35Z,2,102,Fluent interface for building Xamarin Forms pages in F# using ReactiveUI.,XamarinForms.Reactive.FSharp,True,2018-04-18T20:03:05.78+00:00,True,False,,,23029,False,0.11.11-beta
+kbeard,2018-01-08T21:47:30.62Z,102,102,Description,Aptera.Automation.De.Sullivan,False,2018-01-08T21:47:30.62+00:00,True,False,"NuGet package for Automated Testing Base using Selenium, NUnit and SpecFlow. Base on Dan Sullivan's original BasePage.",,280,False,1.2.1
+Olivier Nizet,2018-01-08T21:47:06.79Z,65,102,A library to convert simple or advanced html to plain OpenXml document,HtmlToOpenXml.dll,False,2018-02-14T22:23:06.537+00:00,True,False,,"office,openxml,netcore,html",48217,False,2.0.0
+Olivier Nizet,2018-01-08T21:47:06.79Z,65,102,A library to convert simple or advanced html to plain OpenXml document,HtmlToOpenXml.dll,False,2018-02-14T22:23:06.537+00:00,True,False,,"office,openxml,netcore,html",48217,False,2.0.0
+kbeard,2018-01-08T21:47:30.62Z,102,102,Description,Aptera.Automation.De.Sullivan,False,2018-01-08T21:47:30.62+00:00,True,False,"NuGet package for Automated Testing Base using Selenium, NUnit and SpecFlow. Base on Dan Sullivan's original BasePage.",,280,False,1.2.1
+Momentum,2018-01-08T21:43:35.323Z,4,102,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.12.687-beta
+Momentum,2018-01-08T21:43:51.217Z,4,102,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.12.687-beta
+Momentum,2018-01-08T21:43:35.323Z,4,102,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.12.687-beta
+Momentum,2018-01-08T21:43:51.217Z,4,102,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.12.687-beta
+Krytan.Common.Producer.Direct,2018-01-08T21:41:38.12Z,44,102,Package Description,Krytan.Common.Producer.Direct,False,2018-03-07T07:31:44.577+00:00,True,False,,,629,False,1.1.2
+Krytan.Common.Producer.Direct,2018-01-08T21:41:38.12Z,44,102,Package Description,Krytan.Common.Producer.Direct,False,2018-03-07T07:31:44.577+00:00,True,False,,,629,False,1.1.2
+Lykke,2018-01-08T21:37:19.237Z,8,102,Client for generic Lykke.Service.BlockchainApi,Lykke.Service.BlockchainApi.Client,False,2018-04-12T12:59:27.33+00:00,True,False,,Lykke,2901,False,5.0.0
+Lykke,2018-01-08T21:37:19.237Z,8,102,Client for generic Lykke.Service.BlockchainApi,Lykke.Service.BlockchainApi.Client,False,2018-04-12T12:59:27.33+00:00,True,False,,Lykke,2901,False,5.0.0
+Micah Vertal,2018-01-08T21:31:00.657Z,97,102,Connection library for the .NET Standard 2.0 framework. Allows for implementation of custom commands and tools across a client-server or peer-to-peer connection.,ConnectLibSTD,True,2018-01-13T18:12:02.333+00:00,True,False,,"C#,csharp,dotnet,connection,manager,messaging,library",868,False,1.2.0-beta
+Micah Vertal,2018-01-08T21:31:00.657Z,97,102,Connection library for the .NET Standard 2.0 framework. Allows for implementation of custom commands and tools across a client-server or peer-to-peer connection.,ConnectLibSTD,True,2018-01-13T18:12:02.333+00:00,True,False,,"C#,csharp,dotnet,connection,manager,messaging,library",868,False,1.2.0-beta
+Alex Rainman,2018-01-08T21:26:08.93Z,93,102,"Create Horizontal and Vertical carousels, add page indicators, navigation arrows and much more. “How to” at Github repository.",CarouselView.FormsPlugin,False,2018-01-17T19:56:25.59+00:00,True,False,CarouselView Control for Xamarin Forms,"carouselview,carousel,pageslider,slider,viewpager,uipageviewcontroller,flipview,ios,android,uwp,xamarin,forms,monotouch,monodroid",172021,False,5.1.2
+Alex Rainman,2018-01-08T21:26:08.93Z,93,102,"Create Horizontal and Vertical carousels, add page indicators, navigation arrows and much more. “How to” at Github repository.",CarouselView.FormsPlugin,False,2018-01-17T19:56:25.59+00:00,True,False,CarouselView Control for Xamarin Forms,"carouselview,carousel,pageslider,slider,viewpager,uipageviewcontroller,flipview,ios,android,uwp,xamarin,forms,monotouch,monodroid",172021,False,5.1.2
+Gordon Suchomski,2018-01-08T21:16:54.91Z,102,102,extension methods for enum,EnumHelper.GS,False,2018-01-08T21:16:54.91+00:00,True,False,,"enum,extension",78,False,1.0.0
+Eric Woodruff,2018-01-08T21:16:11.753Z,102,102,This package allows you to deploy the Sandcastle Help File Builder tools inside of a project to build help files without installing the tools manually such as on a build server.  Some limitations apply.  You will also need to install the reflection data set packages that you need for your projects.,EWSoftware.SHFB,False,2018-01-08T21:16:11.753+00:00,True,False,,"SHFB,documentation,sandcastle,help,XML,comments",99229,False,2017.12.30.2
+Gordon Suchomski,2018-01-08T21:16:54.91Z,102,102,extension methods for enum,EnumHelper.GS,False,2018-01-08T21:16:54.91+00:00,True,False,,"enum,extension",78,False,1.0.0
+Eric Woodruff,2018-01-08T21:16:11.753Z,102,102,This package allows you to deploy the Sandcastle Help File Builder tools inside of a project to build help files without installing the tools manually such as on a build server.  Some limitations apply.  You will also need to install the reflection data set packages that you need for your projects.,EWSoftware.SHFB,False,2018-01-08T21:16:11.753+00:00,True,False,,"SHFB,documentation,sandcastle,help,XML,comments",99229,False,2017.12.30.2
+Max-Planck-Institute of Biochemistry,2018-01-08T21:12:55.233Z,1,102,PerseusApi implementation,PerseusLibS,False,2018-04-20T09:10:17.28+00:00,True,False,,,69455,False,1.6.0.1511
+Max-Planck-Institute of Biochemistry,2018-01-08T21:12:55.233Z,1,102,PerseusApi implementation,PerseusLibS,False,2018-04-20T09:10:17.28+00:00,True,False,,,69455,False,1.6.0.1511
+Huor Swords,2018-01-08T21:11:18.853Z,3,102,"Allows to configure Log4net as Microsoft Extensions Logging handler on any ASP.NET Core application.
+
+Original code proposal by @anuraj --> https://dotnetthoughts.net/how-to-use-log4net-with-aspnetcore-for-logging/",Microsoft.Extensions.Logging.Log4Net.AspNetCore,False,2018-04-17T12:17:57.097+00:00,True,False,,"Microsoft,Extensions,Logging,Log4Net,AspNet,Core",18021,False,2.0.1
+"alexey.petriashev,MicroElements",2018-01-08T21:11:03.29Z,92,102,FileStorage is a document database with file system.,MicroElements.FileStorage,False,2018-01-18T22:14:12.16+00:00,True,False,,"DocumentDb,json,database,NoSql",983,False,1.0.3
+"alexey.petriashev,MicroElements",2018-01-08T21:11:03.29Z,92,102,FileStorage is a document database with file system.,MicroElements.FileStorage,False,2018-01-18T22:14:12.16+00:00,True,False,,"DocumentDb,json,database,NoSql",983,False,1.0.3
+Huor Swords,2018-01-08T21:11:18.853Z,3,102,"Allows to configure Log4net as Microsoft Extensions Logging handler on any ASP.NET Core application.
+
+Original code proposal by @anuraj --> https://dotnetthoughts.net/how-to-use-log4net-with-aspnetcore-for-logging/",Microsoft.Extensions.Logging.Log4Net.AspNetCore,False,2018-04-17T12:17:57.097+00:00,True,False,,"Microsoft,Extensions,Logging,Log4Net,AspNet,Core",18021,False,2.0.1

@@ -1,0 +1,1121 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+David Driscoll,2017-11-24T20:04:21.093Z,11,147,Package Description,Rocket.Surgery.Conventions.Abstractions,False,2018-04-09T00:36:56.47+00:00,True,False,,,1978,False,0.4.1
+Nelson D. Campos B.,2017-11-24T20:04:41.417Z,144,147,In Motion Colombia VisualTIME domain model.,InMotionColombia.VisualTIME.Domain,False,2017-11-27T20:27:09.687+00:00,True,False,,"InMotionColombia,VisualTIME,InMotion",288,False,1.0.1
+davidraleigh,2017-11-24T20:03:51.13Z,145,147,"GIS Computational Geometry library ported from the open sourced ESRI geometry library (this branch supplies the automated build of this library: https://github.com/davidraleigh/geometry-api-java/tree/ci-build). All relational operators from ESRI's computational geometry library are supported (Contains, Touches, Crosses, de-9im pattern matrix string). Most all topological operators (difference, simplify, intersection, buffer, convex hull, etc).",EchoParkLabs.Computational.Geometry,True,2017-11-26T03:46:34.75+00:00,True,False,GIS Computational Geometry library from Echo Park Labs. Ported from the open sourced ESRI geometry library (https://github.com/Esri/geometry-api-java),"geometry,computational,gis,geography,geographic,geometric,topological,topology,difference,relational,operators",524,False,1.2.1-alpha51
+Jonathan Leaver,2017-11-24T20:05:53.01Z,134,147,Nata.Core,Nata.Core,False,2017-12-07T17:54:35.097+00:00,True,False,,,1131,False,1.0.12
+David Driscoll,2017-11-24T20:04:10.547Z,11,147,Package Description,Rocket.Surgery.Conventions,False,2018-04-09T00:36:44.69+00:00,True,False,,,1986,False,0.4.1
+Richard J. Cabral,2017-11-24T19:55:40.35Z,67,147,"Constellation is a collection of utilities for .NET CMS implementers.
+		The Foundation.Datasources namespace contains contracts for specifying whether an Item is meant to (primarily) be a context datasource,
+		a subcontent datasource (unique to the hosting page) or a reusable page component (widget). This package includes rules for testing
+		items based on inheriting from specific Templates.
+		
+		To flag an Item for use by the rules included, ensure they inherit from the appropriate Templates/Foundation/Constellation/Datasources template:
+		* Context Datasource for pages.
+		* Subcontent Datasource for content that appears exclusively on the hosting page.
+		* Widget Datasource for content that can be shared by many pages.
+		
+		You must install the included package to get the Templates required to use the rules in this library.
+
+		Configured for use with Sitecore 9.0.
+		Requires Sitecore 9.0 NuGet packages, available here: https://sitecore.myget.org/F/sc-packages/api/v3/index.json
+		Requires the installation of the included Package.",Constellation.Foundation.Datasources,False,2018-02-12T16:25:44.673+00:00,True,False,"Sitecore Helix library for classifying content based on whether the content is a page, a page fragment, and/or reusable.","Sitecore,Helix,Habitat,SXA,Foundation",599,False,9.0.0.26790
+Adam O'Neil Software,2017-11-24T19:07:03.14Z,21,147,Lightweight code-first ORM made with Dapper,Postulate.Orm.Core,False,2018-03-30T23:18:34.46+00:00,False,False,,"orm,dapper,codefirst",3138,False,1.0.10
+Adam O'Neil Software,2017-11-24T19:08:52.42Z,21,147,"Lightweight code-first ORM made with Dapper, targeting SQL Server",Postulate.Orm.SqlServer,True,2018-03-30T15:21:13.87+00:00,False,False,,"orm,dapper,codefirst,sqlserver",1580,False,1.0.9-beta
+Adam O'Neil Software,2017-11-24T18:08:34.21Z,21,147,"Lightweight code-first ORM made with Dapper, targeting SQL Server",Postulate.Orm.SqlServer,True,2018-03-30T15:21:13.87+00:00,False,False,,"orm,dapper,codefirst,sqlserver",1580,False,1.0.8-beta
+Adam O'Neil Software,2017-11-24T19:50:59.373Z,21,147,"Lightweight code-first ORM made with Dapper, targeting MySql",Postulate.Orm.MySql,True,2018-03-30T15:24:43.733+00:00,True,False,,"orm,dapper,codefirst,mysql",1274,False,1.0.11-alpha
+Adam O'Neil Software,2017-11-24T19:49:35.13Z,21,147,"Lightweight code-first ORM made with Dapper, targeting SQL Server",Postulate.Orm.SqlServer,True,2018-03-30T15:21:13.87+00:00,True,False,,"orm,dapper,codefirst,sqlserver",1580,False,1.0.10-beta
+"Richard J. Cabral,Chris Lees,Ed Lane",2017-11-24T19:49:52.547Z,67,147,"Constellation is a collection of utilities for .NET CMS implementers.
+		The Foundation.Data namespace contains an Item extension class that allows the developer to:
+		- Get an Item's ancestor based on Template
+		- Test an Item's Template inheritance
+		- Retrieve an Item's children based on a specific Template
+		- Retrieve the URL for the Item using the currently active LinkManager configuration.
+		- Determine if the Item is in the Context Site.
+		- Find or create an Item's child given a name and a Template ID.
+
+		Configured for use with Sitecore 9.0.
+		Requires Sitecore 9.0 NuGet packages, available here: https://sitecore.myget.org/F/sc-packages/api/v3/index.json",Constellation.Foundation.Data,False,2018-02-12T14:57:46.75+00:00,True,False,"Sitecore Helix library extending Item with utilities to check ancestry, template derivation, and to retrieve Item children of a specific template.","Sitecore,Helix,Habitat,SXA,Foundation",430,False,9.0.0.26659
+Adam O'Neil Software,2017-11-24T19:49:06.76Z,21,147,Lightweight code-first ORM made with Dapper,Postulate.Orm.Core,False,2018-03-30T23:18:34.46+00:00,True,False,,"orm,dapper,codefirst",3138,False,1.0.11
+Peter Waher,2017-11-24T19:42:01.453Z,41,147,"Library that provides an object database that stores objects in local AES-256 encrypted files. Storage, indices, searching and retrieval is based solely on meta-data provided through the corresponding class definitions. Object serializers are created dynamically. Dynamic code is compiled.",Waher.Persistence.Files,False,2018-03-10T13:27:52.74+00:00,True,False,,"persistence,object,database,enryption,file,storage,encryption",2156,False,1.0.18
+Peter Waher,2017-11-24T19:42:37.693Z,41,147,"Library that provides an object database that stores objects in local files. Storage, indices, searching and retrieval is based solely on meta-data provided through the corresponding class definitions. Object serializers are created dynamically.",Waher.Persistence.FilesLW,False,2018-03-10T13:28:18.757+00:00,True,False,,"persistence,object,database,file,storage",2141,False,1.0.18
+Peter Waher,2017-11-24T19:41:17.7Z,14,147,"The Waher.Events.Persistence project creates an even sink that stores incoming (logged) events in the local object database, as defined by Waher.Persistence. Event life time in the database is defined in the constructor. Searches can be made for historical events.",Waher.Events.Persistence,False,2018-04-06T15:21:35.197+00:00,True,False,,"logger,logging,logs,events,eventlogging,eventlogs,local,persistence,object,database",718,False,1.0.6
+Peter Waher,2017-11-24T19:41:17.7Z,14,147,"The Waher.Events.Persistence project creates an even sink that stores incoming (logged) events in the local object database, as defined by Waher.Persistence. Event life time in the database is defined in the constructor. Searches can be made for historical events.",Waher.Events.Persistence,False,2018-04-06T15:21:35.197+00:00,True,False,,"logger,logging,logs,events,eventlogging,eventlogs,local,persistence,object,database",718,False,1.0.6
+Peter Waher,2017-11-24T19:42:01.453Z,41,147,"Library that provides an object database that stores objects in local AES-256 encrypted files. Storage, indices, searching and retrieval is based solely on meta-data provided through the corresponding class definitions. Object serializers are created dynamically. Dynamic code is compiled.",Waher.Persistence.Files,False,2018-03-10T13:27:52.74+00:00,True,False,,"persistence,object,database,enryption,file,storage,encryption",2156,False,1.0.18
+Peter Waher,2017-11-24T19:42:37.693Z,41,147,"Library that provides an object database that stores objects in local files. Storage, indices, searching and retrieval is based solely on meta-data provided through the corresponding class definitions. Object serializers are created dynamically.",Waher.Persistence.FilesLW,False,2018-03-10T13:28:18.757+00:00,True,False,,"persistence,object,database,file,storage",2141,False,1.0.18
+gfoidl,2017-11-24T19:38:58.537Z,119,147,Base package for serialization,gfoidl.Serializer,False,2017-12-22T13:39:43.73+00:00,True,False,,serializer,455,False,1.0.0
+gfoidl,2017-11-24T19:38:34.48Z,119,147,"(Super) fast serializer for CSV-files. 
+No explicit mapping to columns needed. Displaynames can be specified, to map to different property names.",gfoidl.Serializer.Csv,False,2017-12-22T13:39:55.777+00:00,True,False,,"serializer,csv,fast",413,False,1.0.0
+Codefoco,2017-11-24T19:38:42.433Z,132,147,Library to create simple Mazes,MazeCreator,True,2017-12-09T17:59:22.163+00:00,True,False,,"maze,dfs",1458,False,1.0.5-beta-build
+gfoidl,2017-11-24T19:38:46.37Z,119,147,Serializer for Excel-files (xslx),gfoidl.Serializer.Excel,False,2017-12-22T13:40:07.15+00:00,True,False,,"serializer,excel,xlsx",364,False,1.0.0
+Fabricio dos Santos Silva,2017-11-24T19:37:36.78Z,126,147,HELPER INTREGRATION IUGU GETWAY PAYMENTS,UtilityFramework.Services.Iugu.Core,False,2017-12-15T11:05:54.03+00:00,True,False,,,3431,False,1.3.5
+Cameron Taggart,2017-11-24T19:36:49.433Z,142,147,my dotnet templates,ctaggart.templates,False,2017-11-29T16:31:15.21+00:00,True,False,,"template,fsharp,fable,http2",385,False,0.2.0
+Brandon Bell,2017-11-24T19:33:33.743Z,143,147,Common code web repositories,Bell.Common.WebRepositories,False,2017-11-28T12:43:41.727+00:00,True,False,,,339,False,0.5.3
+Brandon Bell,2017-11-24T19:32:58.1Z,143,147,Common code components for testing,Bell.Common.Tests,False,2017-11-28T12:43:03.32+00:00,True,False,,,1023,False,0.5.3
+leandroadolfo,2017-11-24T19:32:42.98Z,147,147,All dependences for queries in tfs.,Unofficial.Microsoft.TeamFoundation.ServerAPI,False,2017-11-24T21:24:03.493+00:00,True,False,,,320,False,1.0.0
+Luca Briguglia,2017-11-24T19:32:29.42Z,43209,147,Entity Framework Core implementation for the Weapsy.Mediator event store,Weapsy.Mediator.EventStore.EF,False,1900-01-01T00:00:00+00:00,False,False,,".net,core,mediator,ddd,cqrs,event,sourcing",-1,False,1.2.0
+Brandon Bell,2017-11-24T19:32:10.85Z,143,147,Common code services,Bell.Common.Services,False,2017-11-28T12:42:43.71+00:00,True,False,,,341,False,0.5.3
+Brandon Bell,2017-11-24T19:31:51.323Z,143,147,Common code models,Bell.Common.Models,False,2017-11-28T12:42:24.99+00:00,True,False,,,1128,False,0.5.3
+Luca Briguglia,2017-11-24T19:31:34.767Z,43209,147,Mediator for .NET Core,Weapsy.Mediator,False,1900-01-01T00:00:00+00:00,False,False,,".net,core,mediator,ddd,cqrs,event,sourcing",-1,False,1.2.0
+Brandon Bell,2017-11-24T19:30:48.56Z,143,147,Common code components for Dapper,Bell.Common.Dapper,False,2017-11-28T12:41:25.943+00:00,True,False,,,1247,False,0.5.3
+Brandon Bell,2017-11-24T19:31:26.91Z,143,147,Common database repository code,Bell.Common.DatabaseRepositories,False,2017-11-28T12:42:08.523+00:00,True,False,,,340,False,0.5.3
+Brandon Bell,2017-11-24T19:31:07.837Z,143,147,Common database tables and connections,Bell.Common.Database,False,2017-11-28T12:41:50.053+00:00,True,False,,,340,False,0.5.3
+Trias.DataService,2017-11-24T19:23:37.467Z,12,147,Package Description,Trias.DataService,False,2018-04-08T18:16:18.737+00:00,True,False,,,388,False,1.0.0
+Fred Morales,2017-11-24T19:22:00.597Z,145,147,Memento library for Undo/Redo management,Opentribe.Memento,False,2017-11-26T22:51:36.38+00:00,True,False,,"Undo,Redo,Memento,C#,dotnet,dot.net,Opentribe,Fred,Morales",577,False,0.1.7
+leandroadolfo,2017-11-24T19:20:31.44Z,147,147,All dependences for queries in tfs.,TfsQuerys,False,2017-11-24T19:20:31.44+00:00,True,False,TfsQuerys,,431,False,3.0.0
+Max-Planck-Institute of Biochemistry,2017-11-24T19:20:15.987Z,1,147,PerseusApi implementation,PerseusLibS,False,2018-04-20T09:10:17.28+00:00,True,False,,,69380,False,1.6.0.1383
+Jeffrey Stedfast,2016-08-16T13:53:18.763Z,5,612,"MailKit is an Open Source cross-platform .NET mail-client library that is based on MimeKit and optimized for mobile devices.
+
+Features include:
+* SASL Authentication via SCRAM-SHA-256, SCRAM-SHA-1, NTLM, DIGEST-MD5, CRAM-MD5, LOGIN, PLAIN, and XOAUTH2.
+* A fully-cancellable SmtpClient with support for STARTTLS, 8BITMIME, BINARYMIME, ENHANCEDSTATUSCODES, SIZE, DSN, PIPELINING and SMTPUTF8.
+* A fully-cancellable Pop3Client with support for STLS, UIDL, APOP, PIPELINING, UTF8, and LANG.
+* A fully-cancellable ImapClient with support for ACL, QUOTA, LITERAL+, IDLE, NAMESPACE, ID, CHILDREN, LOGINDISABLED, STARTTLS, MULTIAPPEND, UNSELECT, UIDPLUS, CONDSTORE, ESEARCH, SASL-IR, COMPRESS, WITHIN, ENABLE, QRESYNC, SORT, THREAD, ESORT, METADATA, LIST-STATUS, SPECIAL-USE, CREATE-SPECIAL-USE, MOVE, SORT=DISPLAY, SEARCH=FUZZY, UTF8=ACCEPT, UTF8=ONLY, XLIST, and X-GM-EXT1.
+* Client-side sorting and threading of messages (the Ordinal Subject and the Jamie Zawinski threading algorithms are supported).
+* Asynchronous versions of all methods that hit the network.
+* S/MIME, OpenPGP and DKIM signature support via MimeKit.
+* Microsoft TNEF support via MimeKit.",MailKit,False,2018-04-15T17:35:55.893+00:00,False,False,"An Open Source .NET mail-client library for Windows, Mac, Linux, and mobile platforms such as iOS and Android.","smtp,pop3,imap,mime,security,dkim,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,xamarin,android,ios,monodroid,monotouch,dnx,dnxcore50,netcore,netstandard,net40,net45,wpa81",2497451,False,1.4.2.1
+Jeffrey Stedfast,2016-09-26T13:20:44.517Z,5,571,"MailKit is an Open Source cross-platform .NET mail-client library that is based on MimeKit and optimized for mobile devices.
+
+Features include:
+* SASL Authentication via SCRAM-SHA-256, SCRAM-SHA-1, NTLM, DIGEST-MD5, CRAM-MD5, LOGIN, PLAIN, and XOAUTH2.
+* A fully-cancellable SmtpClient with support for STARTTLS, 8BITMIME, BINARYMIME, ENHANCEDSTATUSCODES, SIZE, DSN, PIPELINING and SMTPUTF8.
+* A fully-cancellable Pop3Client with support for STLS, UIDL, APOP, PIPELINING, UTF8, and LANG.
+* A fully-cancellable ImapClient with support for ACL, QUOTA, LITERAL+, IDLE, NAMESPACE, ID, CHILDREN, LOGINDISABLED, STARTTLS, MULTIAPPEND, UNSELECT, UIDPLUS, CONDSTORE, ESEARCH, SASL-IR, COMPRESS, WITHIN, ENABLE, QRESYNC, SORT, THREAD, ESORT, METADATA, FILTERS, LIST-STATUS, SORT=DISPLAY, SPECIAL-USE, CREATE-SPECIAL-USE, MOVE, SEARCH=FUZZY, UTF8=ACCEPT, UTF8=ONLY, LITERAL-, APPENDLIMIT, XLIST, and X-GM-EXT1.
+* Client-side sorting and threading of messages (the Ordinal Subject and the Jamie Zawinski threading algorithms are supported).
+* Asynchronous versions of all methods that hit the network.
+* S/MIME, OpenPGP and DKIM signature support via MimeKit.
+* Microsoft TNEF support via MimeKit.",MailKit,False,2018-04-15T17:35:55.893+00:00,False,False,"An Open Source .NET mail-client library for Windows, Mac, Linux, and mobile platforms such as iOS and Android.","smtp,pop3,imap,mime,security,dkim,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,xamarin,android,ios,monodroid,monotouch,dnx,dnxcore50,netcore,netstandard,net40,net45,wpa81",2494995,False,1.8.1
+Jeffrey Stedfast,2016-09-11T22:07:02.14Z,5,586,"MailKit is an Open Source cross-platform .NET mail-client library that is based on MimeKit and optimized for mobile devices.
+
+Features include:
+* SASL Authentication via SCRAM-SHA-256, SCRAM-SHA-1, NTLM, DIGEST-MD5, CRAM-MD5, LOGIN, PLAIN, and XOAUTH2.
+* A fully-cancellable SmtpClient with support for STARTTLS, 8BITMIME, BINARYMIME, ENHANCEDSTATUSCODES, SIZE, DSN, PIPELINING and SMTPUTF8.
+* A fully-cancellable Pop3Client with support for STLS, UIDL, APOP, PIPELINING, UTF8, and LANG.
+* A fully-cancellable ImapClient with support for ACL, QUOTA, LITERAL+, IDLE, NAMESPACE, ID, CHILDREN, LOGINDISABLED, STARTTLS, MULTIAPPEND, UNSELECT, UIDPLUS, CONDSTORE, ESEARCH, SASL-IR, COMPRESS, WITHIN, ENABLE, QRESYNC, SORT, THREAD, ESORT, METADATA, LIST-STATUS, SPECIAL-USE, CREATE-SPECIAL-USE, MOVE, SORT=DISPLAY, SEARCH=FUZZY, UTF8=ACCEPT, UTF8=ONLY, LITERAL-, APPENDLIMIT, XLIST, and X-GM-EXT1.
+* Client-side sorting and threading of messages (the Ordinal Subject and the Jamie Zawinski threading algorithms are supported).
+* Asynchronous versions of all methods that hit the network.
+* S/MIME, OpenPGP and DKIM signature support via MimeKit.
+* Microsoft TNEF support via MimeKit.",MailKit,False,2018-04-15T17:35:55.893+00:00,False,False,"An Open Source .NET mail-client library for Windows, Mac, Linux, and mobile platforms such as iOS and Android.","smtp,pop3,imap,mime,security,dkim,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,xamarin,android,ios,monodroid,monotouch,dnx,dnxcore50,netcore,netstandard,net40,net45,wpa81",2494995,False,1.6.0
+Jeffrey Stedfast,2016-08-14T19:10:37.307Z,5,614,"MailKit is an Open Source cross-platform .NET mail-client library that is based on MimeKit and optimized for mobile devices.
+
+Features include:
+* SASL Authentication via SCRAM-SHA-256, SCRAM-SHA-1, NTLM, DIGEST-MD5, CRAM-MD5, LOGIN, PLAIN, and XOAUTH2.
+* A fully-cancellable SmtpClient with support for STARTTLS, 8BITMIME, BINARYMIME, ENHANCEDSTATUSCODES, SIZE, DSN, PIPELINING and SMTPUTF8.
+* A fully-cancellable Pop3Client with support for STLS, UIDL, APOP, PIPELINING, UTF8, and LANG.
+* A fully-cancellable ImapClient with support for ACL, QUOTA, LITERAL+, IDLE, NAMESPACE, ID, CHILDREN, LOGINDISABLED, STARTTLS, MULTIAPPEND, UNSELECT, UIDPLUS, CONDSTORE, ESEARCH, SASL-IR, COMPRESS, WITHIN, ENABLE, QRESYNC, SORT, THREAD, ESORT, METADATA, LIST-STATUS, SPECIAL-USE, CREATE-SPECIAL-USE, MOVE, SORT=DISPLAY, SEARCH=FUZZY, UTF8=ACCEPT, UTF8=ONLY, XLIST, and X-GM-EXT1.
+* Client-side sorting and threading of messages (the Ordinal Subject and the Jamie Zawinski threading algorithms are supported).
+* Asynchronous versions of all methods that hit the network.
+* S/MIME, OpenPGP and DKIM signature support via MimeKit.
+* Microsoft TNEF support via MimeKit.",MailKit,False,2018-04-15T17:35:55.893+00:00,False,False,"An Open Source .NET mail-client library for Windows, Mac, Linux, and mobile platforms such as iOS and Android.","smtp,pop3,imap,mime,security,dkim,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,xamarin,android,ios,monodroid,monotouch,dnx,dnxcore50,netcore,netstandard,net40,net45,wpa81",2497451,False,1.4.2
+Jeffrey Stedfast,2016-07-17T12:54:55.877Z,5,642,"MailKit is an Open Source cross-platform .NET mail-client library that is based on MimeKit and optimized for mobile devices.
+
+Features include:
+* SASL Authentication via SCRAM-SHA-256, SCRAM-SHA-1, NTLM, DIGEST-MD5, CRAM-MD5, LOGIN, PLAIN, and XOAUTH2.
+* A fully-cancellable SmtpClient with support for STARTTLS, 8BITMIME, BINARYMIME, ENHANCEDSTATUSCODES, SIZE, DSN, PIPELINING and SMTPUTF8.
+* A fully-cancellable Pop3Client with support for STLS, UIDL, APOP, PIPELINING, UTF8, and LANG.
+* A fully-cancellable ImapClient with support for ACL, QUOTA, LITERAL+, IDLE, NAMESPACE, ID, CHILDREN, LOGINDISABLED, STARTTLS, MULTIAPPEND, UNSELECT, UIDPLUS, CONDSTORE, ESEARCH, SASL-IR, COMPRESS, WITHIN, ENABLE, QRESYNC, SORT, THREAD, ESORT, METADATA, LIST-STATUS, SPECIAL-USE, CREATE-SPECIAL-USE, MOVE, SORT=DISPLAY, SEARCH=FUZZY, UTF8=ACCEPT, UTF8=ONLY, XLIST, and X-GM-EXT1.
+* Client-side sorting and threading of messages (the Ordinal Subject and the Jamie Zawinski threading algorithms are supported).
+* Asynchronous versions of all methods that hit the network.
+* S/MIME, OpenPGP and DKIM signature support via MimeKit.
+* Microsoft TNEF support via MimeKit.",MailKit,False,2018-04-15T17:35:55.893+00:00,False,False,"An Open Source .NET mail-client library for Windows, Mac, Linux, and mobile platforms such as iOS and Android.","smtp,pop3,imap,mime,security,dkim,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,xamarin,android,ios,monodroid,monotouch,net40,net45,wpa81,dnxcore50,netstandard",2494995,False,1.4.1
+Jeffrey Stedfast,2016-07-01T14:25:39.697Z,5,658,"MailKit is an Open Source cross-platform .NET mail-client library that is based on MimeKit and optimized for mobile devices.
+
+Features include:
+* SASL Authentication via SCRAM-SHA-256, SCRAM-SHA-1, NTLM, DIGEST-MD5, CRAM-MD5, LOGIN, PLAIN, and XOAUTH2.
+* A fully-cancellable SmtpClient with support for STARTTLS, 8BITMIME, BINARYMIME, ENHANCEDSTATUSCODES, SIZE, DSN, PIPELINING and SMTPUTF8.
+* A fully-cancellable Pop3Client with support for STLS, UIDL, APOP, PIPELINING, UTF8, and LANG.
+* A fully-cancellable ImapClient with support for ACL, QUOTA, LITERAL+, IDLE, NAMESPACE, ID, CHILDREN, LOGINDISABLED, STARTTLS, MULTIAPPEND, UNSELECT, UIDPLUS, CONDSTORE, ESEARCH, SASL-IR, COMPRESS, WITHIN, ENABLE, QRESYNC, SORT, THREAD, ESORT, METADATA, LIST-STATUS, SPECIAL-USE, CREATE-SPECIAL-USE, MOVE, SORT=DISPLAY, SEARCH=FUZZY, UTF8=ACCEPT, UTF8=ONLY, XLIST, and X-GM-EXT1.
+* Client-side sorting and threading of messages (the Ordinal Subject and the Jamie Zawinski threading algorithms are supported).
+* Asynchronous versions of all methods that hit the network.
+* S/MIME, OpenPGP and DKIM signature support via MimeKit.
+* Microsoft TNEF support via MimeKit.",MailKit,False,2018-04-15T17:35:55.893+00:00,False,False,"An Open Source .NET mail-client library for Windows, Mac, Linux, and mobile platforms such as iOS and Android.","smtp,pop3,imap,mime,security,dkim,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,xamarin,android,ios,monodroid,monotouch,net40,net45,wpa81,dnxcore50,netstandard",2494995,False,1.4.0
+Adam O'Neil Software,2017-11-24T18:08:04.117Z,21,147,"Lightweight code-first ORM made with Dapper, targeting MySql",Postulate.Orm.MySql,True,2018-03-30T15:24:43.733+00:00,False,False,,"orm,dapper,codefirst,mysql",1274,False,1.0.9-alpha
+Adam O'Neil Software,2017-11-24T03:10:02.493Z,21,147,"Lightweight code-first ORM made with Dapper, targeting MySql",Postulate.Orm.MySql,True,2018-03-30T15:24:43.733+00:00,False,False,,"orm,dapper,codefirst,mysql",1274,False,1.0.8-alpha
+Adam O'Neil Software,2017-11-24T18:07:08.4Z,21,147,Lightweight code-first ORM made with Dapper,Postulate.Orm.Core,False,2018-03-30T23:18:34.46+00:00,False,False,,"orm,dapper,codefirst",3138,False,1.0.9
+Jeffrey Stedfast,2017-11-24T19:09:27.75Z,5,147,"MailKit is an Open Source cross-platform .NET mail-client library that is based on MimeKit and optimized for mobile devices.
+
+Features include:
+* SASL Authentication via SCRAM-SHA-256, SCRAM-SHA-1, NTLM, DIGEST-MD5, CRAM-MD5, LOGIN, PLAIN, and XOAUTH2.
+* A fully-cancellable SmtpClient with support for STARTTLS, 8BITMIME, BINARYMIME, ENHANCEDSTATUSCODES, SIZE, DSN, PIPELINING and SMTPUTF8.
+* A fully-cancellable Pop3Client with support for STLS, UIDL, APOP, PIPELINING, UTF8, and LANG.
+* A fully-cancellable ImapClient with support for ACL, QUOTA, LITERAL+, IDLE, NAMESPACE, ID, CHILDREN, LOGINDISABLED, STARTTLS, MULTIAPPEND, UNSELECT, UIDPLUS, CONDSTORE, ESEARCH, SASL-IR, COMPRESS, WITHIN, ENABLE, QRESYNC, SORT, THREAD, ESORT, METADATA, FILTERS, LIST-STATUS, SORT=DISPLAY, SPECIAL-USE, CREATE-SPECIAL-USE, MOVE, SEARCH=FUZZY, UTF8=ACCEPT, UTF8=ONLY, LITERAL-, APPENDLIMIT, XLIST, and X-GM-EXT1.
+* Client-side sorting and threading of messages (the Ordinal Subject and the Jamie Zawinski threading algorithms are supported).
+* Asynchronous versions of all methods that hit the network.
+* S/MIME, OpenPGP and DKIM signature support via MimeKit.
+* Microsoft TNEF support via MimeKit.",MailKit,False,2018-04-15T17:35:55.893+00:00,True,False,"An Open Source .NET mail-client library for Windows, Mac, Linux, and mobile platforms such as iOS and Android.","smtp,pop3,imap,mime,security,dkim,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,xamarin,android,ios,monodroid,monotouch,netstandard,net40,net45,wpa81",2497451,False,1.22.0
+Elders,2017-11-24T19:08:13.373Z,129,147,PushNotifications,push-notifications.api.host,True,2017-12-12T14:25:33.303+00:00,True,False,PushNotifications,,958,False,3.0.0-beta0005
+Elders,2017-11-24T19:08:47.047Z,129,147,PushNotifications,push-notifications.api.reference,True,2017-12-12T14:26:07.04+00:00,True,False,PushNotifications,,656,False,3.0.0-beta0003
+Peter Csajtai,2017-11-24T19:07:29.967Z,31,147,ASP.NET SignalR OWIN integration for Stashbox,Stashbox.AspNet.SignalR.Owin,False,2018-03-20T12:27:16.487+00:00,True,False,,,1083,False,1.1.19
+Adam O'Neil Software,2017-11-24T19:08:52.42Z,21,147,"Lightweight code-first ORM made with Dapper, targeting SQL Server",Postulate.Orm.SqlServer,True,2018-03-30T15:21:13.87+00:00,True,False,,"orm,dapper,codefirst,sqlserver",1580,False,1.0.9-beta
+Stone Pagamentos,2017-11-24T19:08:19.187Z,29,147,RabbitMQ Abstraction for messaging workflow and infrastructure management,Stone.RabbitMQ.Abstraction,True,2018-03-22T20:19:08.13+00:00,True,False,,"rabbitmq,queue,amqp,client,worker,workflow,stone",1898,False,1.4.0-rc2
+Adam O'Neil Software,2017-11-24T19:07:43.843Z,21,147,"Lightweight code-first ORM made with Dapper, targeting MySql",Postulate.Orm.MySql,True,2018-03-30T15:24:43.733+00:00,True,False,,"orm,dapper,codefirst,mysql",1274,False,1.0.10-alpha
+Adam O'Neil Software,2017-11-24T19:07:03.14Z,21,147,Lightweight code-first ORM made with Dapper,Postulate.Orm.Core,False,2018-03-30T23:18:34.46+00:00,True,False,,"orm,dapper,codefirst",3138,False,1.0.10
+WMaxZimmerman,2017-11-24T19:08:19.14Z,35,147,A library to make the creation of .Net Command Line Application as simple as possible. Let this library take care of the wiring so you can focus on building your application.,WMZ.CommandAndConquer.CLI,False,2018-03-16T17:42:40.273+00:00,True,False,,"CommandLine,Command,CLI,CLA,Application,Terminal,Console,MVCLI",1075,False,1.1.0
+Peter Csajtai,2017-11-24T19:05:32.42Z,31,147,ASP.NET Web API OWIN integration for Stashbox,Stashbox.AspNet.WebApi.Owin,False,2018-03-20T11:21:02.763+00:00,True,False,,,1053,False,1.1.14
+Peter Csajtai,2017-11-24T19:02:29.31Z,31,147,ASP.NET SignalR integration for Stashbox,Stashbox.AspNet.SignalR,False,2018-03-20T10:59:34.623+00:00,True,False,,,1622,False,1.1.24
+Brandon Bell,2017-11-24T19:00:53.78Z,143,147,Common code base library,Bell.Common,False,2017-11-28T12:41:07.677+00:00,True,False,,,1148,False,0.5.3
+"""Daniel Häfele""",2017-11-24T18:59:20.263Z,60,147,Makes my life with uwp projects easier.,UwCore,False,2018-02-19T21:46:56.99+00:00,True,False,,,11440,False,0.1.102
+Brandon Bell,2017-11-24T19:01:12.28Z,143,147,Common code components for WebApi,Bell.Common.WebApi,False,2017-11-28T12:43:22.947+00:00,True,False,,,1288,False,0.5.3
+Peter Csajtai,2017-11-24T19:00:11.843Z,31,147,ASP.NET Web API integration for Stashbox,Stashbox.Web.WebApi,False,2018-03-20T11:05:05.37+00:00,True,False,,,3391,False,2.3.17
+guibber,2017-11-24T18:54:20.89Z,122,147,changed System.Net.WebSocket dependency to version 4.0 instead of 4.3,guibber.WebRocket,False,2017-12-19T16:03:18.96+00:00,True,False,,"Async,WebSocket,Listener",566,False,1.0.0.3
+Peter Csajtai,2017-11-24T18:58:45.25Z,31,147,OWIN integration for Stashbox,Stashbox.Owin,False,2018-03-20T10:58:04.387+00:00,True,False,,,1184,False,1.1.16
+Peter Csajtai,2017-11-24T18:56:22.03Z,31,147,Auto configuration reader extension for Stashbox,Stashbox.Configuration,False,2018-03-20T10:28:36.437+00:00,True,False,,,426,False,1.1.5
+WeiGe,2017-11-24T18:58:07.843Z,3,147,"AspNetCore.CodeGenerator for sqlserver of ef Core,
+      Automatic generation of database/table description",AspNetCore.CodeGenerator.SqlServer,False,2018-04-17T10:16:39.097+00:00,True,False,,,1334,False,2.0.1.5
+guibber,2017-11-24T18:54:20.89Z,122,147,Async WebSocket Listener and Client based on .Net Framework,guibber.WebRocket,False,2017-12-19T16:03:18.96+00:00,True,False,,"Async,WebSocket,Listener",566,False,1.0.0.3
+,,-1,-1,,Tftp.NetStandard,,,,True,,,,,1.0.0-rc
+Peter Csajtai,2017-11-24T18:53:11.92Z,31,147,"A custom Microsoft.Extensions.DependencyInjection service provider implementation, which enables the Stashbox DI container to be used in ASP.NET core applications.",Stashbox.Extensions.Dependencyinjection,False,2018-03-20T10:27:41.67+00:00,True,False,,"Stashbox,Core,stashbox-core,Dependency,Injection,DI",3349,False,2.5.7
+Peter Csajtai,2017-11-24T18:51:56.187Z,31,147,Moq auto mocking integration for Stashbox.,Stashbox.Moq,False,2018-03-20T10:55:57.74+00:00,True,False,,"Stashbox,Moq,mock,unit,test,mocking",2952,False,1.2.11
+Peter Csajtai,2017-11-24T18:51:40.75Z,31,147,FakeItEasy auto mocking integration for Stashbox.,Stashbox.FakeItEasy,False,2018-03-20T10:55:44.16+00:00,True,False,,"Stashbox,FakeItEasy,mock,unit,test,mocking",986,False,1.2.11
+Peter Csajtai,2017-11-24T18:52:10.5Z,31,147,NSubstitute auto mocking integration for Stashbox.,Stashbox.NSubstitute,False,2018-03-20T10:56:11.07+00:00,True,False,,"Stashbox,NSubstitute,mock,unit,test,mocking",923,False,1.2.11
+Peter Csajtai,2017-11-24T18:52:00.75Z,31,147,ASP.NET MVC integration for Stashbox,Stashbox.Web.Mvc,False,2018-03-20T11:00:58.843+00:00,True,False,,,3324,False,2.3.15
+Peter Csajtai,2017-11-24T18:52:57.78Z,31,147,ASP.NET core application builder extension for enabling Stashbox to be configured as the default service provider.,Stashbox.AspNetCore.Hosting,False,2018-03-20T10:27:27.2+00:00,True,False,,"Stashbox,AspNetCore,stashbox,hosting,Dependency,Injection,DI",2893,False,2.5.7
+Peter Csajtai,2017-11-24T18:52:37.047Z,31,147,Rocks auto mocking integration for Stashbox.,Stashbox.Rocks,False,2018-03-20T10:56:38.99+00:00,True,False,,"Stashbox,Rocks,mock,unit,test,mocking",917,False,1.2.11
+Peter Csajtai,2017-11-24T18:52:24.047Z,31,147,RhinoMocks auto mocking integration for Stashbox.,Stashbox.RhinoMocks,False,2018-03-20T10:56:25.523+00:00,True,False,,"Stashbox,RhinoMocks,mock,unit,test,mocking",839,False,1.2.11
+Ethan Hann,2017-11-24T18:43:24.14Z,43209,147,Plugin-based queuing and scheduling command server.,InEngine,True,1900-01-01T00:00:00+00:00,False,False,,"Integration,Scheduler,Queue,Server,Quartz.NET,Redis",-1,False,3.4.0-beta1
+Ethan Hann,2017-11-24T18:44:45.623Z,123,147,Plugin-based queuing and scheduling command server.,InEngine.Core,True,2017-12-18T02:47:19.533+00:00,True,False,,"Integration,Scheduler,Queue,Server,Quartz.NET,Redis",936,False,3.4.0-beta1
+,,-1,-1,,Tftp.NetStandard,,,,True,,,,,1.0.0-rc
+Stone Pagamentos,2017-11-24T18:46:19.14Z,29,147,RabbitMQ Abstraction for messaging workflow and infrastructure management,Stone.RabbitMQ.Abstraction,True,2018-03-22T20:19:08.13+00:00,True,False,,"rabbitmq,queue,amqp,client,worker,workflow,stone",1894,False,1.4.0-rc1
+Jeffrey Stedfast,2016-09-25T23:47:16.557Z,6,572,"MimeKit is an Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms. It also supports parsing of Unix mbox files.
+
+Unlike any other .NET MIME parser, MimeKit's parser does not need to parse string input nor does it use a TextReader. Instead, it parses raw byte streams, thus allowing it to better support undeclared 8bit text in headers as well as message bodies. It also means that MimeKit's parser is significantly faster than other .NET MIME parsers (more than 25x faster than OpenPOP.NET and over 100x faster than AE.Net.Mail and MailSystem.NET).
+
+MimeKit's parser also uses a real tokenizer when parsing the headers rather than regex or string.Split() like most other .NET MIME parsers. This means that MimeKit is much more RFC-compliant than any other .NET MIME parser out there, including the commercial implementations.
+
+In addition to having a far superior parser implementation, MimeKit's object tree is not a derivative of System.Net.Mail objects and thus does not suffer from System.Net.Mail's massive limitations or bugs.
+
+API documentation can be found on the web at http://www.mimekit.net/docs
+
+For those that need SMTP, POP3 or IMAP support, check out https://github.com/jstedfast/MailKit",MimeKit,False,2018-04-14T17:17:00.29+00:00,False,False,"An Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms.","mime,encryption,dkim,security,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,dnx,dnxcore50,netcore,netstandard,net35,net40,net45,xamarin,android,ios,monodroid,monotouch,win8,wp81",2617261,False,1.8.0
+Jeffrey Stedfast,2016-09-11T21:45:30.303Z,6,586,"MimeKit is an Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms. It also supports parsing of Unix mbox files.
+
+Unlike any other .NET MIME parser, MimeKit's parser does not need to parse string input nor does it use a TextReader. Instead, it parses raw byte streams, thus allowing it to better support undeclared 8bit text in headers as well as message bodies. It also means that MimeKit's parser is significantly faster than other .NET MIME parsers (more than 25x faster than OpenPOP.NET and over 100x faster than AE.Net.Mail and MailSystem.NET).
+
+MimeKit's parser also uses a real tokenizer when parsing the headers rather than regex or string.Split() like most other .NET MIME parsers. This means that MimeKit is much more RFC-compliant than any other .NET MIME parser out there, including the commercial implementations.
+
+In addition to having a far superior parser implementation, MimeKit's object tree is not a derivative of System.Net.Mail objects and thus does not suffer from System.Net.Mail's massive limitations or bugs.
+
+API documentation can be found on the web at http://www.mimekit.net/docs
+
+For those that need SMTP, POP3 or IMAP support, check out https://github.com/jstedfast/MailKit",MimeKit,False,2018-04-14T17:17:00.29+00:00,False,False,"An Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms.","mime,encryption,dkim,security,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,dnx,dnxcore50,netcore,netstandard,net35,net40,net45,xamarin,android,ios,monodroid,monotouch,win8,wp81",2617261,False,1.6.0
+Jeffrey Stedfast,2016-08-14T18:52:30.613Z,6,614,"MimeKit is an Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms. It also supports parsing of Unix mbox files.
+
+Unlike any other .NET MIME parser, MimeKit's parser does not need to parse string input nor does it use a TextReader. Instead, it parses raw byte streams, thus allowing it to better support undeclared 8bit text in headers as well as message bodies. It also means that MimeKit's parser is significantly faster than other .NET MIME parsers (more than 25x faster than OpenPOP.NET and over 100x faster than AE.Net.Mail and MailSystem.NET).
+
+MimeKit's parser also uses a real tokenizer when parsing the headers rather than regex or string.Split() like most other .NET MIME parsers. This means that MimeKit is much more RFC-compliant than any other .NET MIME parser out there, including the commercial implementations.
+
+In addition to having a far superior parser implementation, MimeKit's object tree is not a derivative of System.Net.Mail objects and thus does not suffer from System.Net.Mail's massive limitations or bugs.
+
+API documentation can be found on the web at http://www.mimekit.net/docs
+
+For those that need SMTP, POP3 or IMAP support, check out https://github.com/jstedfast/MailKit",MimeKit,False,2018-04-14T17:17:00.29+00:00,False,False,"An Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms.","mime,encryption,dkim,security,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,dnx,dnxcore50,netcore,netstandard,net35,net40,net45,xamarin,android,ios,monodroid,monotouch,win8,wp81",2619947,False,1.4.2
+Jeffrey Stedfast,2016-07-17T12:05:34.137Z,6,642,"MimeKit is an Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms. It also supports parsing of Unix mbox files.
+
+Unlike any other .NET MIME parser, MimeKit's parser does not need to parse string input nor does it use a TextReader. Instead, it parses raw byte streams, thus allowing it to better support undeclared 8bit text in headers as well as message bodies. It also means that MimeKit's parser is significantly faster than other .NET MIME parsers (more than 25x faster than OpenPOP.NET and over 100x faster than AE.Net.Mail and MailSystem.NET).
+
+MimeKit's parser also uses a real tokenizer when parsing the headers rather than regex or string.Split() like most other .NET MIME parsers. This means that MimeKit is much more RFC-compliant than any other .NET MIME parser out there, including the commercial implementations.
+
+In addition to having a far superior parser implementation, MimeKit's object tree is not a derivative of System.Net.Mail objects and thus does not suffer from System.Net.Mail's massive limitations or bugs.
+
+API documentation can be found on the web at http://www.mimekit.net/docs
+
+For those that need SMTP, POP3 or IMAP support, check out https://github.com/jstedfast/MailKit",MimeKit,False,2018-04-14T17:17:00.29+00:00,False,False,"An Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms.","mime,encryption,dkim,security,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,dnxcore50,net35,net40,net45,xamarin,android,ios,monodroid,monotouch,win8,wp81,netstandard",2619947,False,1.4.1
+Elastic and contributors,2017-11-24T18:43:46.093Z,43209,147,Elasticsearch.Net,Ref12.Codex.Elasticsearch.Net,True,1900-01-01T00:00:00+00:00,False,False,Exposes all the elasticsearch API endpoints but leaves you in control of building the request and response bodies. Comes with built in cluster failover/connection pooling support.,"elasticsearch,elastic,search,lucene,nest",-1,False,6.0.0-beta1-b55
+Martin Andreas Ullrich,2017-11-24T18:43:00.39Z,25,147,Helper classes to set up and run as Win32 services without depending on full .NET Framework.,DasMulli.Win32.ServiceUtils,False,2018-03-26T15:32:43.293+00:00,True,False,,"windows,service,.net,core,netstandard",57181,False,1.1.0
+Ethan Hann,2017-11-24T18:43:24.14Z,43209,147,Plugin-based queuing and scheduling command server.,InEngine,True,1900-01-01T00:00:00+00:00,False,False,,"Integration,Scheduler,Queue,Server,Quartz.NET,Redis",-1,False,3.4.0-beta1
+Peter Csajtai,2017-11-24T18:44:12.47Z,31,147,"Stashbox is a lightweight, portable dependency injection framework for .NET based solutions.",Stashbox,False,2018-03-20T10:09:25.287+00:00,True,False,,"Stashbox,di,dependencyinjection,ioc,dotnet,netstandard",18794,False,2.5.6
+Ethan Hann,2017-11-24T18:44:45.623Z,123,147,Plugin-based queuing and scheduling command server.,InEngine.Core,True,2017-12-18T02:47:19.533+00:00,True,False,,"Integration,Scheduler,Queue,Server,Quartz.NET,Redis",936,False,3.4.0-beta1
+Elastic and contributors,2017-11-24T18:43:58.39Z,43209,147,Strongly typed interface to Elasticsearch. Fluent and classic object initializer mappings of requests and responses. Uses and exposes Elasticsearch.Net,Ref12.Codex.NEST,True,1900-01-01T00:00:00+00:00,False,False,Strongly typed interface to Elasticsearch. Fluent and classic object initializer mappings of requests and responses. Uses and exposes Elasticsearch.Net,"elasticsearch,elastic,search,lucene,nest",-1,False,6.0.0-beta1-b55
+Jeffrey Stedfast,2016-07-01T14:13:47.553Z,6,658,"MimeKit is an Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms. It also supports parsing of Unix mbox files.
+
+Unlike any other .NET MIME parser, MimeKit's parser does not need to parse string input nor does it use a TextReader. Instead, it parses raw byte streams, thus allowing it to better support undeclared 8bit text in headers as well as message bodies. It also means that MimeKit's parser is significantly faster than other .NET MIME parsers (more than 25x faster than OpenPOP.NET and over 100x faster than AE.Net.Mail and MailSystem.NET).
+
+MimeKit's parser also uses a real tokenizer when parsing the headers rather than regex or string.Split() like most other .NET MIME parsers. This means that MimeKit is much more RFC-compliant than any other .NET MIME parser out there, including the commercial implementations.
+
+In addition to having a far superior parser implementation, MimeKit's object tree is not a derivative of System.Net.Mail objects and thus does not suffer from System.Net.Mail's massive limitations or bugs.
+
+API documentation can be found on the web at http://www.mimekit.net/docs
+
+For those that need SMTP, POP3 or IMAP support, check out https://github.com/jstedfast/MailKit",MimeKit,False,2018-04-14T17:17:00.29+00:00,False,False,"An Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms.","mime,encryption,dkim,security,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,dnxcore50,net35,net40,net45,xamarin,android,ios,monodroid,monotouch,win8,wp81,netstandard",2617261,False,1.4.0
+Jeffrey Stedfast,2016-05-22T15:50:10.327Z,6,698,"MimeKit is an Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms. It also supports parsing of Unix mbox files.
+
+Unlike any other .NET MIME parser, MimeKit's parser does not need to parse string input nor does it use a TextReader. Instead, it parses raw byte streams, thus allowing it to better support undeclared 8bit text in headers as well as message bodies. It also means that MimeKit's parser is significantly faster than other .NET MIME parsers (more than 25x faster than OpenPOP.NET and over 100x faster than AE.Net.Mail and MailSystem.NET).
+
+MimeKit's parser also uses a real tokenizer when parsing the headers rather than regex or string.Split() like most other .NET MIME parsers. This means that MimeKit is much more RFC-compliant than any other .NET MIME parser out there, including the commercial implementations.
+
+In addition to having a far superior parser implementation, MimeKit's object tree is not a derivative of System.Net.Mail objects and thus does not suffer from System.Net.Mail's massive limitations or bugs.
+
+API documentation can be found on the web at http://www.mimekit.net/docs
+
+For those that need SMTP, POP3 or IMAP support, check out https://github.com/jstedfast/MailKit",MimeKit,True,2018-04-14T17:17:00.29+00:00,False,False,"An Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms.","mime,encryption,dkim,security,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,dnxcore50,net35,net40,net45,xamarin,android,ios,monodroid,monotouch,win8,wp81",2619947,False,1.3.0-rc1
+Equipe COGESP,2017-11-24T18:40:16.14Z,143,147,Conjunto de classes e metodos para facilitar a vida dos desenvolvedores.,XimboFramework.EF4,False,2017-11-28T13:12:14.147+00:00,True,False,Conjunto de classes e mêtodos para acesso a dados,"DB,Oracle,SQLServer,Mysql,PostgreSql,Ef4",338,False,1.0.0
+Jônatas Piazzi,2017-11-24T18:39:43.08Z,147,147,Helper to easy process console arguments and generate command help text.,ConsoleArguments,False,2017-11-24T18:39:43.08+00:00,True,False,,,147,False,0.1.1
+Kittyfisto,2017-11-24T18:39:22.14Z,141,147,.NET WPF library for metro apps,Metrolib,False,2017-11-30T21:57:27.343+00:00,True,False,,".NET,WPF,Metro",12330,False,0.3.0.62
+Jeffrey Stedfast,2017-11-24T18:38:32.627Z,6,147,"MimeKit is an Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms. It also supports parsing of Unix mbox files.
+
+      Unlike any other .NET MIME parser, MimeKit's parser does not need to parse string input nor does it use a TextReader. Instead, it parses raw byte streams, thus allowing it to better support undeclared 8bit text in headers as well as message bodies. It also means that MimeKit's parser is significantly faster than other .NET MIME parsers (more than 25x faster than OpenPOP.NET and over 100x faster than AE.Net.Mail and MailSystem.NET).
+
+      MimeKit's parser also uses a real tokenizer when parsing the headers rather than regex or string.Split() like most other .NET MIME parsers. This means that MimeKit is much more RFC-compliant than any other .NET MIME parser out there, including the commercial implementations.
+
+      In addition to having a far superior parser implementation, MimeKit's object tree is not a derivative of System.Net.Mail objects and thus does not suffer from System.Net.Mail's massive limitations or bugs.
+
+      API documentation can be found on the web at http://www.mimekit.net/docs
+
+      For those that need SMTP, POP3 or IMAP support, check out https://github.com/jstedfast/MailKit",MimeKit,False,2018-04-14T17:17:00.29+00:00,True,False,"An Open Source library for creating and parsing MIME, S/MIME and PGP messages on desktop and mobile platforms.","mime,encryption,dkim,security,smime,s/mime,openpgp,pgp,mbox,mail,email,parser,tnef,netstandard,net35,net40,net45,xamarin,android,ios,monodroid,monotouch,win8,wp81",2619947,False,1.22.0
+Jeffrey Stedfast,2016-09-25T23:40:57.657Z,6,572,"MimeKit is an Open Source library for creating and parsing MIME messages. It also supports parsing of Unix mbox files.
+
+Unlike any other .NET MIME parser, MimeKit's parser does not need to parse string input nor does it use a TextReader. Instead, it parses raw byte streams, thus allowing it to better support undeclared 8bit text in headers as well as message bodies. It also means that MimeKit's parser is significantly faster than other .NET MIME parsers (more than 25x faster than OpenPOP.NET and over 100x faster than AE.Net.Mail and MailSystem.NET).
+
+MimeKit's parser also uses a real tokenizer when parsing the headers rather than regex or string.Split() like most other .NET MIME parsers. This means that MimeKit is much more RFC-compliant than any other .NET MIME parser out there, including the commercial implementations.
+
+In addition to having a far superior parser implementation, MimeKit's object tree is not a derivative of System.Net.Mail objects and thus does not suffer from System.Net.Mail's massive limitations or bugs.
+
+API documentation can be found on the web at http://www.mimekit.net/docs
+
+For those that need SMTP, POP3 or IMAP support, check out https://github.com/jstedfast/MailKit",MimeKitLite,False,2018-04-14T17:15:38.13+00:00,False,False,An Open Source library for creating and parsing MIME messages.,"mime,mbox,mail,email,parser,tnef,net40,net45,xamarin,android,ios,monodroid,monotouch,win8,wp81",100543,False,1.8.0
+Jeffrey Stedfast,2016-07-17T11:58:47.763Z,6,642,"MimeKit is an Open Source library for creating and parsing MIME messages. It also supports parsing of Unix mbox files.
+
+Unlike any other .NET MIME parser, MimeKit's parser does not need to parse string input nor does it use a TextReader. Instead, it parses raw byte streams, thus allowing it to better support undeclared 8bit text in headers as well as message bodies. It also means that MimeKit's parser is significantly faster than other .NET MIME parsers (more than 25x faster than OpenPOP.NET and over 100x faster than AE.Net.Mail and MailSystem.NET).
+
+MimeKit's parser also uses a real tokenizer when parsing the headers rather than regex or string.Split() like most other .NET MIME parsers. This means that MimeKit is much more RFC-compliant than any other .NET MIME parser out there, including the commercial implementations.
+
+In addition to having a far superior parser implementation, MimeKit's object tree is not a derivative of System.Net.Mail objects and thus does not suffer from System.Net.Mail's massive limitations or bugs.
+
+API documentation can be found on the web at http://www.mimekit.net/docs
+
+For those that need SMTP, POP3 or IMAP support, check out https://github.com/jstedfast/MailKit",MimeKitLite,False,2018-04-14T17:15:38.13+00:00,False,False,An Open Source library for creating and parsing MIME messages.,"mime,mbox,mail,email,parser,tnef,net40,net45,xamarin,android,ios,monodroid,monotouch,win8,wp81",100820,False,1.4.1
+Jeffrey Stedfast,2016-07-01T14:09:59.74Z,6,658,"MimeKit is an Open Source library for creating and parsing MIME messages. It also supports parsing of Unix mbox files.
+
+Unlike any other .NET MIME parser, MimeKit's parser does not need to parse string input nor does it use a TextReader. Instead, it parses raw byte streams, thus allowing it to better support undeclared 8bit text in headers as well as message bodies. It also means that MimeKit's parser is significantly faster than other .NET MIME parsers (more than 25x faster than OpenPOP.NET and over 100x faster than AE.Net.Mail and MailSystem.NET).
+
+MimeKit's parser also uses a real tokenizer when parsing the headers rather than regex or string.Split() like most other .NET MIME parsers. This means that MimeKit is much more RFC-compliant than any other .NET MIME parser out there, including the commercial implementations.
+
+In addition to having a far superior parser implementation, MimeKit's object tree is not a derivative of System.Net.Mail objects and thus does not suffer from System.Net.Mail's massive limitations or bugs.
+
+API documentation can be found on the web at http://www.mimekit.net/docs
+
+For those that need SMTP, POP3 or IMAP support, check out https://github.com/jstedfast/MailKit",MimeKitLite,False,2018-04-14T17:15:38.13+00:00,False,False,An Open Source library for creating and parsing MIME messages.,"mime,mbox,mail,email,parser,tnef,net40,net45,xamarin,android,ios,monodroid,monotouch,win8,wp81",100820,False,1.4.0
+Jeffrey Stedfast,2017-11-24T18:32:57.893Z,6,147,"MimeKit is an Open Source library for creating and parsing MIME messages. It also supports parsing of Unix mbox files.
+
+      Unlike any other .NET MIME parser, MimeKit's parser does not need to parse string input nor does it use a TextReader. Instead, it parses raw byte streams, thus allowing it to better support undeclared 8bit text in headers as well as message bodies. It also means that MimeKit's parser is significantly faster than other .NET MIME parsers (more than 25x faster than OpenPOP.NET and over 100x faster than AE.Net.Mail and MailSystem.NET).
+
+      MimeKit's parser also uses a real tokenizer when parsing the headers rather than regex or string.Split() like most other .NET MIME parsers. This means that MimeKit is much more RFC-compliant than any other .NET MIME parser out there, including the commercial implementations.
+
+      In addition to having a far superior parser implementation, MimeKit's object tree is not a derivative of System.Net.Mail objects and thus does not suffer from System.Net.Mail's massive limitations or bugs.
+
+      API documentation can be found on the web at http://www.mimekit.net/docs
+
+      For those that need SMTP, POP3 or IMAP support, check out https://github.com/jstedfast/MailKit",MimeKitLite,False,2018-04-14T17:15:38.13+00:00,True,False,An Open Source library for creating and parsing MIME messages.,"mime,mbox,mail,email,parser,tnef,netstandard,net40,net45,xamarin,android,ios,monodroid,monotouch,win8,wp81",100820,False,1.22.0
+Geeks Ltd,2017-11-24T18:31:46.503Z,9,147,A plugin for Olive Framework,Olive.BlobAws,False,2018-04-11T09:47:23.583+00:00,True,False,,,809,False,1.0.2
+Lykke,2017-11-24T18:20:38.357Z,120,147,Client for Lykke.Service.Visa API,Lykke.Service.Visa.Client,False,2017-12-21T07:32:56.863+00:00,True,False,,Lykke,2900,False,1.0.12
+Equipe COGESP,2017-11-24T18:18:40.827Z,58,147,Conjunto de classes e metodos para facilitar a vida dos desenvolvedores.,XimboFramework.Web,False,2018-02-21T20:50:59.57+00:00,True,False,Conjunto de classes e metodos,"Funções,MVC,GSI,SGE",426,False,1.0.1
+Max-Planck-Institute of Biochemistry,2017-11-24T18:14:51.657Z,1,147,PerseusApi implementation,PerseusLibS,False,2018-04-20T09:10:17.28+00:00,True,False,,,69455,False,1.6.0.1382
+thiago.chagas,2017-11-24T18:07:43.29Z,43209,147,Tomei a liberdade de pegar o pacote Flunt criando pelo MVP Asp Net André Baltieri e transformar em uma portable library para ser usando no xamarin forms . A wiki contendo a explicação de usar o pacote está em https://github.com/andrebaltieri/flunt,XFormsValidator,False,1900-01-01T00:00:00+00:00,False,False,,"Xamarin,forms",217,False,1.1.0
+Adam O'Neil Software,2017-11-24T03:10:42.337Z,21,147,"Lightweight code-first ORM made with Dapper, targeting SQL Server",Postulate.Orm.SqlServer,True,2018-03-30T15:21:13.87+00:00,False,False,,"orm,dapper,codefirst,sqlserver",1580,False,1.0.7-beta
+Lykke.Service.TemplateFormatter,2017-11-24T18:10:59.1Z,128,147,Package Description,Lykke.Service.TemplateFormatter,False,2017-12-13T18:59:14.67+00:00,True,False,,,743,False,1.0.29
+Adam O'Neil Software,2017-11-24T18:08:34.21Z,21,147,"Lightweight code-first ORM made with Dapper, targeting SQL Server",Postulate.Orm.SqlServer,True,2018-03-30T15:21:13.87+00:00,True,False,,"orm,dapper,codefirst,sqlserver",1580,False,1.0.8-beta
+Adam O'Neil Software,2017-11-24T03:09:14.963Z,21,147,Lightweight code-first ORM made with Dapper,Postulate.Orm.Core,False,2018-03-30T23:18:34.46+00:00,False,False,,"orm,dapper,codefirst",3138,False,1.0.8
+Guilherme Fernando Angelico,2017-11-24T18:04:07.09Z,146,147,Implementação base para pattern CQRS,MettaDomainCore.Domain.Cqrs,False,2017-11-25T13:17:25.027+00:00,True,False,,,297,False,1.0.2
+Microsoft,2017-11-15T22:31:37.573Z,135,156,Microsoft Cognitive Services Emotion Recognition Client Library,Microsoft.ProjectOxford.Emotion,False,2017-12-06T10:36:53.97+00:00,False,False,This client library allows the use of Microsoft's state-of-the-art cloud-based algorithms to recognize emotions. See https://github.com/Microsoft/Cognitive-Emotion-Windows for more information.,"Microsoft,Cognitive,Services,Emotion,Project,Oxford",54886,True,1.0.341
+Jônatas Piazzi,2017-11-24T17:59:25.94Z,147,147,Helper to easy process console arguments and generate command help text.,ConsoleArguments,False,2017-11-24T18:39:43.08+00:00,True,False,,,147,False,0.1.0
+Adam O'Neil Software,2017-11-24T18:08:04.117Z,21,147,"Lightweight code-first ORM made with Dapper, targeting MySql",Postulate.Orm.MySql,True,2018-03-30T15:24:43.733+00:00,True,False,,"orm,dapper,codefirst,mysql",1274,False,1.0.9-alpha
+Adam O'Neil Software,2017-11-24T18:07:08.4Z,21,147,Lightweight code-first ORM made with Dapper,Postulate.Orm.Core,False,2018-03-30T23:18:34.46+00:00,True,False,,"orm,dapper,codefirst",3138,False,1.0.9
+thiago.chagas,2017-11-24T18:07:43.29Z,43209,147,Tomei a liberdade de pegar o pacote Flunt criando pelo MVP Asp Net André Baltieri e transformar em uma portable library para ser usando no xamarin forms . A wiki contendo a explicação de usar o pacote está em https://github.com/andrebaltieri/flunt,XFormsValidator,False,1900-01-01T00:00:00+00:00,False,False,,"Xamarin,forms",217,False,1.1.0
+Guilherme Fernando Angelico,2017-11-24T18:04:07.09Z,146,147,Implementação base para pattern CQRS,MettaDomainCore.Domain.Cqrs,False,2017-11-25T13:17:25.027+00:00,True,False,,,297,False,1.0.2
+Jônatas Piazzi,2017-11-24T17:59:25.94Z,147,147,Helper to easy process console arguments and generate command help text.,ConsoleArguments,False,2017-11-24T18:39:43.08+00:00,True,False,,,147,False,0.1.0
+nick.randell@sceneskope.com,2017-11-24T18:01:41.58Z,29,147,Service Fabric Event Hubs support,SceneSkope.ServiceFabric.EventHubs,True,2018-03-22T09:36:38.697+00:00,True,False,,,2827,False,2.0.0-dev-00031
+Tomasz Heimowski,2017-11-24T18:01:46.767Z,1,147,SAFE Stack Template,SAFE.Template,False,2018-04-19T20:08:14.77+00:00,True,False,,"template,fsharp,fable,suave,elmish",3650,False,0.0.7
+Jônatas Piazzi,2017-11-24T17:59:25.94Z,147,147,Helper to easy process console arguments and generate command help text.,ConsoleArguments,False,2017-11-24T18:39:43.08+00:00,True,False,,,147,False,0.1.0
+"Valdis Iljuconoks,https://tech-fellow.net",2017-11-24T17:53:38.59Z,16,147,Database driven localization provider,LocalizationProvider,False,2018-04-04T21:47:58.933+00:00,True,False,,"Localization,Provider,DbLocalization,DbLocalizationProvider,LocalizationProvider",24395,False,2.9.2
+Thiago Chagas,2017-11-24T17:22:39.977Z,43209,147,Tomei a liberdade de pegar o pacote Flunt criando pelo MVP Asp Net André Baltieri e transformar em uma portable library para ser usando no xamarin forms . A wiki contendo a explicação de usar o pacote está em https://github.com/andrebaltieri/flunt,XFormsValidator,False,1900-01-01T00:00:00+00:00,False,False,,"Xamarin,forms",217,False,1.0.0
+"Valdis Iljuconoks,https://tech-fellow.net",2017-11-24T17:53:38.59Z,16,147,Database driven localization provider,LocalizationProvider,False,2018-04-04T21:47:58.933+00:00,True,False,,"Localization,Provider,DbLocalization,DbLocalizationProvider,LocalizationProvider",24417,False,2.9.2
+Peter Waher,2017-11-24T17:51:06.673Z,14,147,"The Waher.Events.Persistence project creates an even sink that stores incoming (logged) events in the local object database, as defined by Waher.Persistence. Event life time in the database is defined in the constructor. Searches can be made for historical events.",Waher.Events.Persistence,False,2018-04-06T15:21:35.197+00:00,True,False,,"logger,logging,logs,events,eventlogging,eventlogs,local,persistence,object,database",718,False,1.0.5
+Peter Waher,2017-11-24T17:51:06.673Z,14,147,"The Waher.Events.Persistence project creates an even sink that stores incoming (logged) events in the local object database, as defined by Waher.Persistence. Event life time in the database is defined in the constructor. Searches can be made for historical events.",Waher.Events.Persistence,False,2018-04-06T15:21:35.197+00:00,True,False,,"logger,logging,logs,events,eventlogging,eventlogs,local,persistence,object,database",718,False,1.0.5
+ZooqBooq.Communicator.Clients,2017-11-24T17:52:07.263Z,134,147,Package Description,ZooqBooq.Communicator.Clients,False,2017-12-07T17:12:27.09+00:00,True,False,,,1527,False,1.0.33
+Highsoft,2017-11-22T22:09:25.71Z,2,149,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37512,False,6.0.6534.41643
+Josef Ottosson,2017-11-24T17:37:41.06Z,81,147,Let's you serialize any ContentData object by simply calling .Serialize or .ToJson on it.,JOS.ContentSerializer,False,2018-01-29T14:01:58.84+00:00,True,False,,episerver,2543,False,2.0.0
+Highsoft,2017-11-22T22:03:53.923Z,2,149,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,False,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44242,False,6.0.6534.39794
+Josef Ottosson,2017-11-24T17:37:41.06Z,81,147,Let's you serialize any ContentData object by simply calling .Serialize or .ToJson on it.,JOS.ContentSerializer,False,2018-01-29T14:01:58.84+00:00,True,False,,,2549,False,2.0.0
+Logiwa,2017-11-24T17:37:28.717Z,9,147,"The Logiwa.Common deployment package, built on 11/24/2017 8:37:10 PM",Logiwa.Common,False,2018-04-11T12:19:41.283+00:00,True,False,,Common,19201,False,2017.11.24.2
+Peter Csajtai,2017-11-24T17:25:38.84Z,31,147,ASP.NET MVC integration for Stashbox,Stashbox.Web.Mvc,False,2018-03-20T11:00:58.843+00:00,True,False,,,3324,False,2.3.14
+Peter Csajtai,2017-11-24T17:24:42.19Z,31,147,ASP.NET core application builder extension for enabling Stashbox to be configured as the default service provider.,Stashbox.AspNetCore.Hosting,False,2018-03-20T10:27:27.2+00:00,True,False,,"Stashbox,AspNetCore,stashbox,hosting,Dependency,Injection,DI",2893,False,2.5.6
+Peter Csajtai,2017-11-24T17:25:01.14Z,31,147,"A custom Microsoft.Extensions.DependencyInjection service provider implementation, which enables the Stashbox DI container to be used in ASP.NET core applications.",Stashbox.Extensions.Dependencyinjection,False,2018-03-20T10:27:41.67+00:00,True,False,,"Stashbox,Core,stashbox-core,Dependency,Injection,DI",3349,False,2.5.6
+Brandon Bell,2017-11-24T17:20:49.637Z,143,147,Common code web repositories,Bell.Common.WebRepositories,False,2017-11-28T12:43:41.727+00:00,True,False,,,339,False,0.5.2
+Mobile Essentials,2017-11-24T17:22:02.197Z,147,147,"Allows creating reliable, flexible and fast VS SDK integration (VSIX) tests that run using any xUnit capable runner, such as Visual Studio built-in Test Explorer or TestDriven.NET.",xunit.vsix,True,2017-11-24T22:02:35.917+00:00,True,False,,"xunit,vssdk,testing",12212,False,0.3.9-beta
+thiago.chagas,2017-11-24T17:22:39.977Z,43209,147,Validação de objetos de domínio para xamarin forms,XFormsValidator,False,1900-01-01T00:00:00+00:00,False,False,,"Xamarin,forms",217,False,1.0.0
+Andreas Grimme,2017-11-24T17:20:58.153Z,133,147,Collection of general purpose .NET utility classes,sidi-util,False,2017-12-08T04:02:12.64+00:00,True,False,,,38384,False,14.2.1
+Brandon Bell,2017-11-24T17:18:28.567Z,143,147,Common code components for testing,Bell.Common.Tests,False,2017-11-28T12:43:03.32+00:00,True,False,,,1023,False,0.5.2
+Wouter Huysentruit,2017-11-24T17:20:20.5Z,45,147,An OpenXml implementation for Exportr.,Exportr.OpenXml,False,2018-03-06T15:23:54.45+00:00,True,False,,,522,False,1.0.0.5
+Brandon Bell,2017-11-24T17:18:10.77Z,143,147,Common code services,Bell.Common.Services,False,2017-11-28T12:42:43.71+00:00,True,False,,,341,False,0.5.2
+Brandon Bell,2017-11-24T17:18:56.77Z,143,147,Common code components for WebApi,Bell.Common.WebApi,False,2017-11-28T12:43:22.947+00:00,True,False,,,1288,False,0.5.2
+Wouter Huysentruit,2017-11-24T17:20:09.67Z,45,147,Helper classes and interfaces for building a worksheet based export.,Exportr,False,2018-03-06T15:23:41.34+00:00,True,False,,,494,False,1.0.0.5
+Brandon Bell,2017-11-24T17:17:47.773Z,143,147,Common code models,Bell.Common.Models,False,2017-11-28T12:42:24.99+00:00,True,False,,,1128,False,0.5.2
+ASCON,2017-11-24T17:17:28.93Z,8,147,This package contains everything you need to develop plugins for ASCON Pilot client,Ascon.Pilot.SDK,False,2018-04-12T11:00:34.647+00:00,True,False,,,5611,False,17.0.31
+Brandon Bell,2017-11-24T17:17:26.587Z,143,147,Common database repository code,Bell.Common.DatabaseRepositories,False,2017-11-28T12:42:08.523+00:00,True,False,,,340,False,0.5.2
+Brandon Bell,2017-11-24T17:16:28.98Z,143,147,Common code base library,Bell.Common,False,2017-11-28T12:41:07.677+00:00,True,False,,,1148,False,0.5.2
+Brandon Bell,2017-11-24T17:17:08.667Z,143,147,Common database tables and connections,Bell.Common.Database,False,2017-11-28T12:41:50.053+00:00,True,False,,,340,False,0.5.2
+Brandon Bell,2017-11-24T17:16:49.667Z,143,147,Common code components for Dapper,Bell.Common.Dapper,False,2017-11-28T12:41:25.943+00:00,True,False,,,1247,False,0.5.2
+psutak,2017-11-24T17:14:41.41Z,147,147,Awesome application logging utility,CtAppLogger,False,2017-11-24T17:14:41.41+00:00,True,False,,"mogger,mogging,mogs",52,False,1.0.0
+Peter Csajtai,2017-11-24T17:14:03.333Z,31,147,"Stashbox is a lightweight, portable dependency injection framework for .NET based solutions.",Stashbox,False,2018-03-20T10:09:25.287+00:00,True,False,,"Stashbox,di,dependencyinjection,ioc,dotnet,netstandard",18794,False,2.5.5
+Abp.AspNetZeroCore.Web,2017-11-24T17:11:42.437Z,2,147,Package Description,Abp.AspNetZeroCore.Web,False,2018-04-18T08:49:12.913+00:00,True,False,,,10997,False,1.0.12
+Sergey Tihon,2017-11-24T17:11:29.763Z,50,147,F# Type Provider for Swagger,SwaggerProvider,True,2018-03-01T05:53:38.62+00:00,True,False,F# Type Provider for Swagger,"F#,fsharp,data,typeprovider,Swagger,API,REST",12881,False,0.10.0-alpha2
+Abp.AspNetZeroCore,2017-11-24T17:11:19.733Z,2,147,Package Description,Abp.AspNetZeroCore,False,2018-04-18T08:48:40.787+00:00,True,False,,,12133,False,1.0.12
+gfoidl,2017-11-24T17:11:21.06Z,147,147,Helper for boosting speed of .net Reflection,gfoidl.FastReflection,False,2017-11-24T17:11:21.06+00:00,True,False,,"Reflection,fast,il-generation",1416,False,1.3.1
+ZooqBooq.Communicator.Clients,2017-11-24T17:09:04.51Z,134,147,Package Description,ZooqBooq.Communicator.Clients,False,2017-12-07T17:12:27.09+00:00,True,False,,,1527,False,1.0.28
+ZooqBooq.Communicator.Clients,2017-11-24T17:02:25.02Z,134,147,Package Description,ZooqBooq.Communicator.Clients,False,2017-12-07T17:12:27.09+00:00,True,False,,,1527,False,1.0.27
+Daniel Redondo,2017-11-24T17:01:23.62Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Serialization.WSerializer,False,2018-04-19T13:24:32.773+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6820,False,0.2.51
+Daniel Redondo,2017-11-24T17:02:06.943Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Web,False,2018-04-19T13:24:42.883+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6691,False,0.2.51
+Daniel Redondo,2017-11-24T17:01:51.803Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Triggers,False,2018-04-19T13:24:39.667+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6798,False,0.2.51
+Daniel Redondo,2017-11-24T17:01:36.85Z,1,147,"TWCore Framework.
+      A multipurpose framework library for .net core",TWCore.Services,False,2018-04-19T13:24:36.29+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",5109,False,0.2.51
+Daniel Redondo,2017-11-24T17:01:08.73Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Serialization.PWSerializer,False,2018-04-19T13:24:29.023+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6802,False,0.2.51
+Daniel Redondo,2017-11-24T17:00:06.513Z,1,147,"TWCore Framework.
+      A multipurpose framework library for .net core",TWCore.Net.Rpc.Messaging,False,2018-04-19T13:24:03.743+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",5093,False,0.2.51
+Daniel Redondo,2017-11-24T17:00:39.637Z,1,147,"TWCore Framework.
+      A multipurpose framework library for .net core",TWCore.Object,False,2018-04-19T13:24:10.21+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",5307,False,0.2.51
+Daniel Redondo,2017-11-24T17:00:53.683Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Serialization.MsgPack,False,2018-04-19T13:24:19.32+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6384,False,0.2.51
+Hibernating Rhinos,2017-11-24T17:00:02.72Z,43209,147,"Use this package if you want extend RavenDB. Don't use this package if you just want to work with existing RavenDB server, in order to so just use the client API which is in the RavenDB.Client package. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.
+
+Note: If you encounter issue to install this package, please consult the following link: https://groups.google.com/forum/#!topic/ravendb/4TeMq7_7Esc",RavenDB.Database,True,1900-01-01T00:00:00+00:00,False,False,This package allows you to extend RavenDB database.,"nosql,ravendb,raven,document,database",663232,True,3.5.5-patch-35241
+Daniel Redondo,2017-11-24T16:59:05.473Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Net.Browser,False,2018-04-19T13:23:47.96+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6512,False,0.2.51
+Daniel Redondo,2017-11-24T16:59:33.58Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Net.Rpc,False,2018-04-19T13:23:55.227+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",7674,False,0.2.51
+Daniel Redondo,2017-11-24T17:00:22.187Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Numerics,False,2018-04-19T13:24:07.29+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6263,False,0.2.51
+codat.io,2017-11-24T16:58:35.35Z,22,147,"Client package for the Codat public API,",Codat.Public.Client,True,2018-03-29T10:17:37.4+00:00,True,False,,"Codat,api,accounting",5128,False,4.0.0-beta3124
+Daniel Redondo,2017-11-24T16:58:51.677Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Messaging.RabbitMQ,False,2018-04-19T13:23:44.727+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6692,False,0.2.51
+Daniel Redondo,2017-11-24T16:59:51.797Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Net.Rpc.Http,False,2018-04-19T13:24:00.18+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6593,False,0.2.51
+Daniel Redondo,2017-11-24T16:59:20.347Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Net.HttpServer,False,2018-04-19T13:23:51.633+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6907,False,0.2.51
+Daniel Redondo,2017-11-24T16:58:34.333Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Messaging.NSQ,False,2018-04-19T13:23:41.29+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6426,False,0.2.51
+Daniel Redondo,2017-11-24T16:56:34.563Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Data,False,2018-04-19T13:23:12.74+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6777,False,0.2.51
+Daniel Redondo,2017-11-24T16:58:01.667Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Messaging,False,2018-04-19T13:23:34.1+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6759,False,0.2.51
+Daniel Redondo,2017-11-24T16:56:20.14Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Collections,False,2018-04-19T13:23:09.63+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6523,False,0.2.51
+Chris Hogan,2017-11-24T16:55:50.55Z,147,147,Buddy.Database PostgreSql-specific implementation,Buddy.Database.PostgreSql,False,2017-11-24T16:55:50.55+00:00,True,False,,,1475,False,1.4.3
+Daniel Redondo,2017-11-24T16:57:44.947Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Geo,False,2018-04-19T13:23:30.617+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6584,False,0.2.51
+Daniel Redondo,2017-11-24T16:57:32.323Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Data.SqlServer,False,2018-04-19T13:23:27.24+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6647,False,0.2.51
+Daniel Redondo,2017-11-24T16:55:51.13Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Cache.Client,False,2018-04-19T13:23:00.943+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6879,False,0.2.51
+Daniel Redondo,2017-11-24T16:57:02.17Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Data.PostgreSQL,False,2018-04-19T13:23:20.037+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6434,False,0.2.51
+Daniel Redondo,2017-11-24T16:56:47.92Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Data.MySql,False,2018-04-19T13:23:15.96+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6472,False,0.2.51
+Daniel Redondo,2017-11-24T16:56:05.143Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Cache.Server,False,2018-04-19T13:23:05.537+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6821,False,0.2.51
+Daniel Redondo,2017-11-24T16:58:16.15Z,1,147,"TWCore Framework.
+      A multipurpose framework library for .net core",TWCore.Messaging.NATS,False,2018-04-19T13:23:37.71+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",3870,False,0.2.51
+Daniel Redondo,2017-11-24T16:57:15.81Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Data.SQLite,False,2018-04-19T13:23:23.897+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6433,False,0.2.51
+Chris Hogan,2017-11-24T16:55:36.677Z,147,147,Database utilities,Buddy.Database,False,2017-11-24T16:55:36.677+00:00,True,False,,"Buddy,database,testing",1541,False,1.4.3
+Daniel Redondo,2017-11-24T16:55:35.52Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Cache,False,2018-04-19T13:22:57.1+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6857,False,0.2.51
+Daniel Redondo,2017-11-24T16:55:22.38Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Bot.Telegram,False,2018-04-19T13:22:52.943+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6725,False,0.2.51
+Daniel Redondo,2017-11-24T16:54:50.103Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore,False,2018-04-19T13:22:43.16+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",7845,False,0.2.51
+Daniel Redondo,2017-11-24T16:55:06.07Z,1,147,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Bot,False,2018-04-19T13:22:48.817+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6787,False,0.2.51
+Marc Temkin,2017-11-24T16:47:50.467Z,43209,147,Demonstration project to learn how to package NuGet files,Demo.Guggenheim.Temkin.NuGetDemoLibrary1,False,1900-01-01T00:00:00+00:00,False,False,,"Demo,Sample",-1,False,1.0.0
+"Joel Hammond-Turner,Steve Grattan",2017-09-06T14:04:20.12Z,84,226,Templated NuSpec and packaging targets file to allow easier Package'n'Publish integration with TFS (or other CI) builds,NuGet.PackageNPublish,False,2018-01-26T15:47:13.363+00:00,False,False,NuGet.PackageNPublish MSBuild targets file packaged as a NuGet package!,,33679,False,0.10.1.1
+David Driscoll,2017-11-24T16:48:22.213Z,11,147,Package Description,Rocket.Surgery.Extensions.Autofac.Abstractions,False,2018-04-09T01:14:45.237+00:00,True,False,,,1255,False,0.2.1
+Marc Temkin,2017-11-24T16:47:50.467Z,43209,147,Demonstration project to learn how to package NuGet files,Demo.Guggenheim.Temkin.NuGetDemoLibrary1,False,1900-01-01T00:00:00+00:00,False,False,,"Demo,Sample",-1,False,1.0.0
+Abp.AspNetZeroCore.Web,2017-11-24T16:49:29.897Z,2,147,Package Description,Abp.AspNetZeroCore.Web,False,2018-04-18T08:49:12.913+00:00,True,False,,,10952,False,1.0.10
+David Driscoll,2017-11-24T16:48:33.04Z,11,147,Package Description,Rocket.Surgery.Extensions.DependencyInjection,False,2018-04-09T01:14:56.767+00:00,True,False,,,1294,False,0.2.1
+David Driscoll,2017-11-24T16:48:44.663Z,11,147,Package Description,Rocket.Surgery.Extensions.DependencyInjection.Abstractions,False,2018-04-09T01:15:08.313+00:00,True,False,,,1307,False,0.2.1
+David Driscoll,2017-11-24T16:48:10.933Z,11,147,Package Description,Rocket.Surgery.Extensions.Autofac,False,2018-04-09T01:14:33.19+00:00,True,False,,,1263,False,0.2.1
+Lykke,2017-11-24T16:47:07.44Z,43209,147,Client for Lykke.Service.Assets API,Lykke.Service.Assets.Client,True,1900-01-01T00:00:00+00:00,False,False,,Lykke,11622,False,2.1.0.16-beta
+dmiller,2017-11-24T16:45:19.043Z,138,147,Port of clojure.core.specs.alpha to ClojureCLR,clojure.core.specs.alpha,False,2017-12-03T21:38:59.363+00:00,True,False,,"Clojure,ClojureCLR",314,False,0.1.0
+Abp.AspNetZeroCore.Web,2017-11-24T16:45:53.01Z,2,147,Package Description,Abp.AspNetZeroCore.Web,False,2018-04-18T08:49:12.913+00:00,True,False,,,10952,False,1.0.11
+D2L,2017-11-24T16:46:07.117Z,16,147,D2L.CodeStyle analyzers,D2L.CodeStyle.Analyzers,False,2018-04-04T18:07:31.177+00:00,True,False,,,4450,False,0.44.0
+Abp.AspNetZeroCore,2017-11-24T16:46:37.77Z,2,147,Package Description,Abp.AspNetZeroCore,False,2018-04-18T08:48:40.787+00:00,True,False,,,12188,False,1.0.11
+ZooqBooq.Communicator.Clients,2017-11-24T16:42:46.027Z,134,147,Package Description,ZooqBooq.Communicator.Clients,False,2017-12-07T17:12:27.09+00:00,True,False,,,1527,False,1.0.26
+Elders,2017-11-24T16:41:38.813Z,129,147,PushNotifications,push-notifications.ws.msi,True,2017-12-12T14:24:52.853+00:00,True,False,PushNotifications,,914,False,3.0.0-beta0003
+Richie Lee,2017-11-24T16:43:06.01Z,122,147,Use PowerShell and Microsoft.Data.Tools.MSBuild to build and deploy SSDT-based database projects.,PoshSSDTBuildDeploy,False,2017-12-19T06:39:02.307+00:00,True,False,,,990,False,1.0.88
+Hibernating Rhinos,2017-11-24T15:31:41.6Z,21,147,"This package includes the client API of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Client,True,2018-03-30T12:13:14.39+00:00,False,False,This package includes the client API of RavenDB.,"nosql,ravendb,raven,document,database,client",1120189,True,3.5.5-patch-35240
+Hibernating Rhinos,2017-11-24T15:33:12.627Z,43209,147,RavenDB 'Unique Constraints' bundle client. Allow the user to implement unique constraints in the objects (useful for properties like email or social security number).,RavenDB.Client.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles",242647,True,3.5.5-patch-35240
+Hibernating Rhinos,2017-11-24T15:32:19.17Z,43209,147,RavenDB 'Authorization' bundle client extend RavenDB and add document level permissions.,RavenDB.Client.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles,authorization",168508,True,3.5.5-patch-35240
+Hibernating Rhinos,2017-11-24T15:35:04.287Z,43209,147,"Note: this package is deprecated. You should use RavenDB.Database package instead.
+
+        This package let you include RavenDB embedded in-process with your application. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Embedded,True,1900-01-01T00:00:00+00:00,False,False,This package let you include RavenDB embedded in-process with your application.,"nosql,ravendb,raven,document,database,embedded",547497,True,3.5.5-patch-35240
+Hibernating Rhinos,2017-11-24T15:32:35.853Z,43209,147,RavenDB Client MvcIntegration let you include a visual profiler in your ASP.NET MVC application which will show you all the opened sessions and the time took to complete each database request. This can help you when developing with RavenDB.,RavenDB.Client.MvcIntegration,True,1900-01-01T00:00:00+00:00,False,False,A visual profiler for RavenDB that you can use in your ASP.NET MVC application.,"nosql,ravendb,raven,document,database,client,mvc",243195,True,3.5.5-patch-35240
+Hibernating Rhinos,2017-11-24T15:30:48.38Z,43209,147,This bundle aims to allow the user to implement unique constraints in the objects (usefull for properties like email or social security number).,RavenDB.Bundles.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",215470,True,3.5.5-patch-35240
+Hibernating Rhinos,2017-11-24T15:30:34.977Z,43209,147,The cascade delete bundle allows for a specified set of documents and attachments to be deleted when the document that owns it is deleted. Typical usage scenarios include deleting an attachment that is referenced by a document or removing a set of child documents referenced by a parent document.,RavenDB.Bundles.CascadeDelete,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",199443,True,3.5.5-patch-35240
+Hibernating Rhinos,2017-11-24T15:30:21.447Z,43209,147,"The Authorization Bundle extend RavenDB and add document level permissions. The Auth Bundle allows to define permissions for a specific user, a group or using arbitrary tagging. The system is design to be high performance, scalable and flexible.",RavenDB.Bundles.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles,authorization",201812,True,3.5.5-patch-35240
+Hibernating Rhinos,2017-11-24T15:37:01.82Z,43209,147,"This package includes a utility class that helps test features of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Tests.Helpers,True,1900-01-01T00:00:00+00:00,False,False,This package includes a utility class that helps test features of RavenDB.,"nosql,ravendb,raven,document,database,test",244252,True,3.5.5-patch-35240
+Lykke.Messages,2017-11-24T16:38:53.097Z,2,147,Package Description,Lykke.Messages,False,2018-04-18T14:15:39.88+00:00,True,False,,,2398,False,1.0.21
+Ivan Gagis,2017-11-24T16:38:52.003Z,43209,147,OpenGL 2 renderer for morda C++ GUI library,libmorda-opengl2-ren,False,1900-01-01T00:00:00+00:00,False,False,OpenGL 2 renderer for morda C++ GUI library,"native,nativepackage",2179,False,0.1.13
+Chris Hogan,2017-11-24T16:37:24.013Z,147,147,Simple utility classes,Buddy,False,2017-11-24T16:37:24.013+00:00,True,False,,buddy,4739,False,1.15.6
+takenet,2017-11-24T16:35:00.183Z,1,147,Iris messaging data types package,Takenet.Iris.Messaging,False,2018-04-19T20:20:15.22+00:00,True,False,,,13373,False,2.11.74
+takenet,2017-11-24T16:34:48.387Z,1,147,Iris common data types package,Takenet.Iris.Common,False,2018-04-19T20:20:12.39+00:00,True,False,,"Iris,Lime",46396,False,2.11.74
+Lykke,2017-11-24T16:34:55.56Z,51,147,Client for Lykke.Service.ClientAccount API,Lykke.Service.ClientAccount.Client,False,2018-02-28T13:15:02.34+00:00,True,False,,Lykke,7339,False,1.0.74
+takenet,2017-11-24T16:34:35.687Z,1,147,Iris client utility package,Takenet.Iris.Client,False,2018-04-19T20:20:08.97+00:00,True,False,,,17723,False,2.11.74
+ZooqBooq.Communicator.Clients,2017-11-24T16:32:15.467Z,134,147,Package Description,ZooqBooq.Communicator.Clients,False,2017-12-07T17:12:27.09+00:00,True,False,,,1527,False,1.0.25
+takenet,2017-11-24T16:28:54.117Z,1,147,BLiP C# client console,Take.Blip.Client.Console,True,2018-04-19T18:01:11.027+00:00,True,False,,,12774,False,0.5.42-beta
+takenet,2017-11-24T16:29:19.923Z,1,147,A testing host for applications using BLiP SDK to ease integration testing. This host fakes the server incoming and outgoing message transport so you can control the delivery of messages to your chatbot and inspect which messages are produced by it.,Take.Blip.Client.TestKit,True,2018-04-19T18:01:17.107+00:00,True,False,,"blip,messagingHub",10704,False,0.5.42-beta
+take,2017-11-24T16:29:06.207Z,1,147,Templates for BLiP projets.,Take.Blip.Client.Templates,True,2018-04-19T18:01:14.137+00:00,True,False,.NET Core bot templates,"blip,bot,chatbots",12218,False,0.5.42-beta
+Take.Blip.Builder,2017-11-24T16:28:30.557Z,1,147,Package Description,Take.Blip.Builder,True,2018-04-19T18:01:04.697+00:00,True,False,,,7156,False,0.5.42-beta
+takenet,2017-11-24T16:28:42.553Z,1,147,BLiP C# client,Take.Blip.Client,True,2018-04-19T18:01:08.167+00:00,True,False,,,13224,False,0.5.42-beta
+Take.Blip.Client.Web,2017-11-24T16:29:34.563Z,1,147,Package Description,Take.Blip.Client.Web,True,2018-04-19T18:01:20.167+00:00,True,False,,,10136,False,0.5.42-beta
+Lemon,2017-11-24T16:27:17.173Z,43209,147,Redis client profiler system for AspectCore APM.,AspectCore.APM.RedisProfiler,False,1900-01-01T00:00:00+00:00,False,False,,"Redis,Profiler,RedisProfiler,AspectCore,APM",-1,False,0.1.3
+Lemon,2017-11-24T16:27:02.113Z,43209,147,LineProtocol collector system for AspectCore APM.,AspectCore.APM.LineProtocolCollector,False,1900-01-01T00:00:00+00:00,False,False,,"APM,InfluxDB,AspectCore,LineProtocol,Collector",-1,False,0.1.3
+Lemon,2017-11-24T16:26:48.957Z,43209,147,Http profiler system for AspectCore APM.,AspectCore.APM.HttpProfiler,False,1900-01-01T00:00:00+00:00,False,False,,"Http,Profiler,Metric,AspectCore,APM",-1,False,0.1.3
+Lemon,2017-11-24T16:26:35.57Z,43209,147,AspNetCore profiler system for AspectCore APM.,AspectCore.APM.AspNetCore,False,1900-01-01T00:00:00+00:00,False,False,,"AspNetCore,Profiler,AspectCore,AOP,APM",-1,False,0.1.3
+Richie Lee,2017-11-24T16:25:28.623Z,122,147,Use PowerShell and Microsoft.Data.Tools.MSBuild to build and deploy SSDT-based database projects.,PoshSSDTBuildDeploy,False,2017-12-19T06:39:02.307+00:00,True,False,,,990,False,1.0.87
+Lemon,2017-11-24T16:26:09.883Z,43209,147,The abstract design of the AspectCore APM.,AspectCore.APM.Abstractions,False,1900-01-01T00:00:00+00:00,False,False,,"APM,AspectCore,AOP",-1,False,0.1.3
+Lemon,2017-11-24T16:26:22.68Z,43209,147,Application profiler system for AspectCore APM.,AspectCore.APM.ApplicationProfiler,False,1900-01-01T00:00:00+00:00,False,False,,"ApplicationProfiler,Profiler,Metric,AspectCore,APM",-1,False,0.1.3
+Enguerran Boissier,2017-11-24T16:23:06.89Z,1,147,Terradue Tep .Net library,Terradue.Tep,True,2018-04-19T15:50:42.49+00:00,True,False,,,5184,False,1.1.0-ftea20171124T162249
+ZooqBooq.Communicator.Clients,2017-11-24T16:23:29.373Z,134,147,Package Description,ZooqBooq.Communicator.Clients,False,2017-12-07T17:12:27.09+00:00,True,False,,,1527,False,1.0.24
+Abp.AspNetZeroCore,2017-11-24T16:22:10.447Z,2,147,Package Description,Abp.AspNetZeroCore,False,2018-04-18T08:48:40.787+00:00,True,False,,,12133,False,1.0.10
+Jeffrey T. Fritz,2017-11-24T16:14:33.63Z,75,147,A collection of useful ConfigurationBuilders for .NET Framework,Fritz.ConfigurationBuilders,True,2018-02-04T18:38:51.81+00:00,True,False,A collection of useful ConfigurationBuilders for .NET Framework,Configuration,191,False,0.2.0-preview
+ZooqBooq.Api.Clients,2017-11-24T16:14:49.457Z,7,147,Package Description,ZooqBooq.Api.Clients,False,2018-04-13T15:30:52.407+00:00,True,False,,,4354,False,1.0.165
+Jeffrey T. Fritz,2017-11-24T16:14:33.63Z,75,147,A collection of useful ConfigurationBuilders for .NET Framework,Fritz.ConfigurationBuilders,True,2018-02-04T18:38:51.81+00:00,True,False,A collection of useful ConfigurationBuilders for .NET Framework,Configuration,191,False,0.2.0-preview
+Google Inc.,2017-11-24T16:14:11.12Z,3,147,"Recommended Google client library to access the Google Cloud Pub/Sub API, which provides reliable, many-to-many, asynchronous messaging between applications.",Google.Cloud.PubSub.V1,True,2018-04-17T14:40:09.81+00:00,True,False,,"PubSub,Google,Cloud",76546,True,1.0.0-beta14
+"Chainers,KorzunAV",2017-11-24T16:14:01.98Z,43209,147,"The essence of the library is to generate a transaction according to the required operations (vote, comment, etc.), sign the transaction and broadcast to the Graphene-based blockchain (Golos/Steem).",Ditch.Steem,False,1900-01-01T00:00:00+00:00,False,False,,"Graphene,Ditch,Golos,Steem,Steepshot",995,False,3.0.4
+Google Inc.,2017-11-24T16:13:56.45Z,136,147,gRPC services for the Google Identity and Access Management API. This library is typically used as a dependency for other API client libraries.,Google.Cloud.Iam.V1,True,2017-12-05T23:37:06.047+00:00,True,False,,"IAM,Identity,Access,Google,Cloud",81523,True,1.0.0-beta13
+DotNetProjects,2017-11-24T16:13:53.95Z,1,147,DLL for Accessing S7 PLCs,DotNetProjects.DotNetSiemensPLCToolBoxLibrary,False,2018-04-19T18:07:27.683+00:00,True,False,,,12239,False,2.0.218
+"Chainers,KorzunAV",2017-11-24T16:13:26.89Z,16,147,"The essence of the library is to generate a transaction according to the required operations (vote, comment, etc.), sign the transaction and broadcast to the Graphene-based blockchain (Golos/Steem).",Ditch.Golos,False,2018-04-04T08:00:29.03+00:00,True,False,,"Graphene,Ditch,Golos,Steem,Steepshot",1052,False,3.0.4
+Hibernating Rhinos,2017-11-24T16:09:14.913Z,43209,147,"Note: this package is deprecated. You should use RavenDB.Database package instead.
+
+        This package let you include RavenDB embedded in-process with your application. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Embedded,True,1900-01-01T00:00:00+00:00,False,False,This package let you include RavenDB embedded in-process with your application.,"nosql,ravendb,raven,document,database,embedded",547497,True,3.5.5-patch-35241
+Hibernating Rhinos,2017-11-24T16:11:10.083Z,43209,147,"This package includes a utility class that helps test features of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Tests.Helpers,True,1900-01-01T00:00:00+00:00,False,False,This package includes a utility class that helps test features of RavenDB.,"nosql,ravendb,raven,document,database,test",244252,True,3.5.5-patch-35241
+Peter Waher,2017-11-24T16:04:15.367Z,41,147,"Library that provides an object database that stores objects in local files. Storage, indices, searching and retrieval is based solely on meta-data provided through the corresponding class definitions. Object serializers are created dynamically.",Waher.Persistence.FilesLW,False,2018-03-10T13:28:18.757+00:00,True,False,,"persistence,object,database,file,storage",2141,False,1.0.17
+Peter Waher,2017-11-24T16:03:43.37Z,41,147,"Library that provides an object database that stores objects in local AES-256 encrypted files. Storage, indices, searching and retrieval is based solely on meta-data provided through the corresponding class definitions. Object serializers are created dynamically. Dynamic code is compiled.",Waher.Persistence.Files,False,2018-03-10T13:27:52.74+00:00,True,False,,"persistence,object,database,enryption,file,storage,encryption",2156,False,1.0.17
+Hibernating Rhinos,2017-11-24T16:05:56.647Z,21,147,"This package includes the client API of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Client,True,2018-03-30T12:13:14.39+00:00,True,False,This package includes the client API of RavenDB.,"nosql,ravendb,raven,document,database,client",1120189,True,3.5.5-patch-35241
+Elders,2017-11-24T16:06:47.717Z,129,147,PushNotifications,push-notifications.api.reference,True,2017-12-12T14:26:07.04+00:00,True,False,PushNotifications,,656,False,3.0.0-beta0002
+David Driscoll,2017-11-24T16:06:17.33Z,11,147,Package Description,Rocket.Surgery.Extensions.Serilog.Abstractions,False,2018-04-09T01:24:38.917+00:00,True,False,,,981,False,0.1.1
+Hibernating Rhinos,2017-11-24T16:07:22.023Z,43209,147,RavenDB 'Unique Constraints' bundle client. Allow the user to implement unique constraints in the objects (useful for properties like email or social security number).,RavenDB.Client.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles",242613,True,3.5.5-patch-35241
+Hibernating Rhinos,2017-11-24T16:06:45.577Z,43209,147,RavenDB Client MvcIntegration let you include a visual profiler in your ASP.NET MVC application which will show you all the opened sessions and the time took to complete each database request. This can help you when developing with RavenDB.,RavenDB.Client.MvcIntegration,True,1900-01-01T00:00:00+00:00,False,False,A visual profiler for RavenDB that you can use in your ASP.NET MVC application.,"nosql,ravendb,raven,document,database,client,mvc",243184,True,3.5.5-patch-35241
+Ivan Gagis,2017-11-24T16:07:21.087Z,15,147,C++ GUI library,libmorda,False,2018-04-05T15:24:00.747+00:00,True,False,C++ GUI library,"native,nativepackage",10362,False,0.5.60
+Hibernating Rhinos,2017-11-24T16:06:30.483Z,43209,147,RavenDB 'Authorization' bundle client extend RavenDB and add document level permissions.,RavenDB.Client.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles,authorization",168508,True,3.5.5-patch-35241
+Hibernating Rhinos,2017-11-24T16:04:55.843Z,43209,147,This bundle aims to allow the user to implement unique constraints in the objects (usefull for properties like email or social security number).,RavenDB.Bundles.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",215495,True,3.5.5-patch-35241
+Peter Waher,2017-11-24T16:03:43.37Z,41,147,"Library that provides an object database that stores objects in local AES-256 encrypted files. Storage, indices, searching and retrieval is based solely on meta-data provided through the corresponding class definitions. Object serializers are created dynamically. Dynamic code is compiled.",Waher.Persistence.Files,False,2018-03-10T13:27:52.74+00:00,True,False,,"persistence,object,database,enryption,file,storage,encryption",2156,False,1.0.17
+David Driscoll,2017-11-24T16:04:01.29Z,11,147,Package Description,Rocket.Surgery.Extensions.Logging,False,2018-04-09T01:24:02.62+00:00,True,False,,,984,False,0.1.1
+Hibernating Rhinos,2017-11-24T16:04:30.83Z,43209,147,"The Authorization Bundle extend RavenDB and add document level permissions. The Auth Bundle allows to define permissions for a specific user, a group or using arbitrary tagging. The system is design to be high performance, scalable and flexible.",RavenDB.Bundles.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles,authorization",201812,True,3.5.5-patch-35241
+Richie Lee,2017-11-24T16:04:18.973Z,122,147,Use PowerShell and Microsoft.Data.Tools.MSBuild to build and deploy SSDT-based database projects.,PoshSSDTBuildDeploy,False,2017-12-19T06:39:02.307+00:00,True,False,,,990,False,1.0.86
+Hibernating Rhinos,2017-11-24T16:04:43.487Z,43209,147,The cascade delete bundle allows for a specified set of documents and attachments to be deleted when the document that owns it is deleted. Typical usage scenarios include deleting an attachment that is referenced by a document or removing a set of child documents referenced by a parent document.,RavenDB.Bundles.CascadeDelete,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",199442,True,3.5.5-patch-35241
+Peter Waher,2017-11-24T16:04:15.367Z,41,147,"Library that provides an object database that stores objects in local files. Storage, indices, searching and retrieval is based solely on meta-data provided through the corresponding class definitions. Object serializers are created dynamically.",Waher.Persistence.FilesLW,False,2018-03-10T13:28:18.757+00:00,True,False,,"persistence,object,database,file,storage",2141,False,1.0.17
+David Driscoll,2017-11-24T16:04:26.427Z,11,147,Package Description,Rocket.Surgery.Extensions.Serilog,False,2018-04-09T01:24:27.057+00:00,True,False,,,982,False,0.1.1
+David Driscoll,2017-11-24T16:04:13.507Z,11,147,Package Description,Rocket.Surgery.Extensions.Logging.Abstractions,False,2018-04-09T01:24:15.777+00:00,True,False,,,962,False,0.1.1
+Daniel A. Monetelli L.,2017-11-24T15:57:55.867Z,147,147,RestClient for Xamarin Forms,Monetelli.RestClient,False,2017-11-24T15:57:55.867+00:00,True,False,,"Xamarin.Forms,RestClient",230,False,1.0.1
+Mastertech,2017-11-24T15:56:42.13Z,43209,147,Mastertech DLLs,MastertechModel.Model,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.5.0
+Peter Waher,2017-11-24T15:52:41.143Z,61,147,"Class library that defines a script language and an object abstraction of computable elements. The library helps application parse and execute script. Script is extensible, and it is easy for modules to extend the script engine.",Waher.Script,False,2018-02-18T16:45:39.747+00:00,True,False,,"script,execution,parsing",1624,False,1.0.9
+Daniel A. Monetelli L.,2017-11-24T15:57:55.867Z,147,147,RestClient for Xamarin Forms,Monetelli.RestClient,False,2017-11-24T15:57:55.867+00:00,True,False,,"Xamarin.Forms,RestClient",230,False,1.0.1
+Mastertech,2017-11-24T15:56:42.13Z,43209,147,Mastertech DLLs,MastertechModel.Model,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.5.0
+spaz,2017-11-24T15:56:38.193Z,9,147,My package description.,SdkTID,False,2018-04-11T23:54:34.507+00:00,True,False,,,4752,False,1.0.0.50
+Docati,2017-11-24T15:54:31.997Z,86,147,"Docati.Api is a .NET library that can be used to generate documents (either DOCX or PDF) based on templates created with Microsoft Word and our special add-in. Check our site for more information. For a trial license, contact support@docati.com.",Docati.Api,False,2018-01-24T18:48:26.91+00:00,True,False,,"docx,pdf,generate,generation,template,word,openxml,api",2875,False,5.0.6682
+Peter Waher,2017-11-24T15:52:41.143Z,61,147,"Class library that defines a script language and an object abstraction of computable elements. The library helps application parse and execute script. Script is extensible, and it is easy for modules to extend the script engine.",Waher.Script,False,2018-02-18T16:45:39.747+00:00,True,False,,"script,execution,parsing",1624,False,1.0.9
+Gurux Ltd,2017-11-24T15:50:50.367Z,98,147,"Open Source GXSMS media component, made by Gurux Ltd, is a part of GXMedias set of media components, which programming interfaces help you implement communication using modem communication.
+
+      Our media components also support the following connection types: network, terminal and Serial Port RS-232, RS-485.",Gurux.SMS,False,2018-01-12T08:09:16.667+00:00,True,False,Using Gurux SMS media component you can send Short messages using your mobile phone.,"Gurux,Device,Framework,SMS",2938,False,8.1.1711.2401
+David Driscoll,2017-11-24T15:50:48.757Z,11,147,Package Description,Rocket.Surgery.Extensions.Configuration,False,2018-04-09T01:05:59.103+00:00,True,False,,,985,False,0.1.0
+David Driscoll,2017-11-24T15:51:00.177Z,11,147,Package Description,Rocket.Surgery.Extensions.Configuration.Abstractions,False,2018-04-09T01:06:13.06+00:00,True,False,,,1001,False,0.1.0
+Elders,2017-11-24T15:49:45.787Z,129,147,PushNotifications,push-notifications.api.host,True,2017-12-12T14:25:33.303+00:00,True,False,PushNotifications,,958,False,3.0.0-beta0004
+Eduardo,2017-11-24T15:43:47.437Z,102,147,"Target .NetFramework 4.5.1, .NetStandard 1.5, .NetStandard 1.6 y NetStandard 2.0 (.Net Core 2.0)
+      https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support
+      Utilitarios de uso comun:
+      -Entidades Base
+      -XmlManager
+      -SerializationUtil
+      -RegeditManager
+      -EventLogManager
+      -MsmqOperations
+      -Functions
+      -ProxyWcf",Med.Comun.Core,True,2018-01-08T20:59:56.833+00:00,True,False,,"MED,Comun,Core,Utilitarios,EntidadesBase",4996,False,2.0.0-rc
+VIEApps.net,2017-11-24T15:45:32.633Z,9,147,"The .NET Standard 2.0 memcached client library, fully async with various transcoders (binary formatter, bson, protobuf, msgpack)",VIEApps.Enyim.Caching,True,2018-04-11T20:26:30.31+00:00,True,False,"The .NET Standard 2.0 memcached client library, fully async with various transcoders (binary formatter, bson, protobuf, msgpack)","cache,caching,distributed,distributedcache,memcached,enyim,enyimmemcached,enyim.memcached,enyim.caching,vieapps,vieapps.components",3203,False,1.3.0.1712-rc9
+Mastertech,2017-11-24T15:46:21.2Z,43209,147,Mastertech DLLs,MastertechDatabase.Database,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.4.0
+Mastertech,2017-11-24T15:46:21.2Z,43209,147,Mastertech DLLs,MastertechDatabase.Database,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.4.0
+VIEApps.net,2017-11-24T15:45:32.633Z,9,147,"The .NET Standard 2.0 memcached client library, fully async with various transcoders (binary formatter, bson, protobuf, msgpack)",VIEApps.Enyim.Caching,True,2018-04-11T20:26:30.31+00:00,True,False,"The .NET Standard 2.0 memcached client library, fully async with various transcoders (binary formatter, bson, protobuf, msgpack)","cache,caching,distributed,distributedcache,memcached,enyim,enyimmemcached,enyim.memcached,enyim.caching,vieapps,vieapps.components",3203,False,1.3.0.1712-rc9
+David Driscoll,2017-11-24T15:43:06.023Z,11,147,Package Description,Rocket.Surgery.Extensions.CommandLine.Abstractions,False,2018-04-09T00:59:36.447+00:00,True,False,,,1505,False,0.1.1
+David Driscoll,2017-11-24T15:42:55.417Z,11,147,Package Description,Rocket.Surgery.Extensions.CommandLine,False,2018-04-09T00:59:24.993+00:00,True,False,,,1491,False,0.1.1
+Richie Lee,2017-11-24T15:42:50.307Z,122,147,Use PowerShell and Microsoft.Data.Tools.MSBuild to build and deploy SSDT-based database projects.,PoshSSDTBuildDeploy,False,2017-12-19T06:39:02.307+00:00,True,False,,,990,False,1.0.85
+Eduardo,2017-11-24T15:43:47.437Z,102,147,"Target .NetFramework 4.5.1, .NetStandard 1.5, .NetStandard 1.6 y NetStandard 2.0 (.Net Core 2.0)
+      https://docs.microsoft.com/en-us/dotnet/standard/net-standard#net-implementation-support
+      Utilitarios de uso comun:
+      -Entidades Base
+      -XmlManager
+      -SerializationUtil
+      -RegeditManager
+      -MsmqOperations
+      -Functions
+      -ProxyWcf",Med.Comun.Core,True,2018-01-08T20:59:56.833+00:00,True,False,,"MED,Comun,Core,Utilitarios,EntidadesBase",4995,False,2.0.0-rc
+"Rei Miyasaka,Jan van Veldhuizen",2017-11-24T15:43:32.907Z,147,147,WinForms ScreenSaver Base Class,JanWare.ScreenSaverBase,False,2017-11-24T15:43:32.907+00:00,True,False,,,106,False,1.0.1
+Lykke,2017-11-24T15:39:57.72Z,43209,147,Client for Lykke.Service.Assets API,Lykke.Service.Assets.Client,True,1900-01-01T00:00:00+00:00,False,False,,Lykke,11622,False,2.1.0.15-beta
+Pavel Yosifovich,2017-11-24T15:37:36.767Z,43209,147,DbgHelp.Dll .NET Wrapper,DebugHelp,False,1900-01-01T00:00:00+00:00,False,False,,,1250,False,0.4.1
+Richie Lee,2017-11-24T15:38:01.59Z,122,147,Use PowerShell and Microsoft.Data.Tools.MSBuild to build and deploy SSDT-based database projects.,PoshSSDTBuildDeploy,False,2017-12-19T06:39:02.307+00:00,True,False,,,990,False,1.0.84
+Romanian Software,2017-11-24T15:37:15.723Z,130,147,RS.Office,RS.Office,False,2017-12-11T17:04:47.42+00:00,True,False,,,274,False,1.3.0
+Hibernating Rhinos,2017-11-24T15:37:01.82Z,43209,147,"This package includes a utility class that helps test features of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Tests.Helpers,True,1900-01-01T00:00:00+00:00,False,False,This package includes a utility class that helps test features of RavenDB.,"nosql,ravendb,raven,document,database,test",244289,True,3.5.5-patch-35240
+Daniel A. Monetelli L.,2017-11-22T21:41:29.077Z,147,149,RestClient for Xamarin Forms,Monetelli.RestClient,False,2017-11-24T15:57:55.867+00:00,True,False,,"Xamarin.Forms,RestClient",230,False,1.0.0
+Fucci Leonardo,2017-11-24T15:36:42.077Z,43209,147,"This package is private and works only in DevCity environments.
+This package contains core files for developers.",DevCity.Framework,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.5.8
+Fucci Leonardo,2017-11-24T15:36:42.077Z,43209,147,"This package is private and works only in DevCity environments.
+This package contains core files for developers.",DevCity.Framework,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.5.8
+Hibernating Rhinos,2017-11-24T15:35:04.287Z,43209,147,"Note: this package is deprecated. You should use RavenDB.Database package instead.
+
+        This package let you include RavenDB embedded in-process with your application. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Embedded,True,1900-01-01T00:00:00+00:00,False,False,This package let you include RavenDB embedded in-process with your application.,"nosql,ravendb,raven,document,database,embedded",547497,True,3.5.5-patch-35240
+Hibernating Rhinos,2017-11-24T15:33:12.627Z,43209,147,RavenDB 'Unique Constraints' bundle client. Allow the user to implement unique constraints in the objects (useful for properties like email or social security number).,RavenDB.Client.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles",242647,True,3.5.5-patch-35240
+Hibernating Rhinos,2017-11-24T15:32:19.17Z,43209,147,RavenDB 'Authorization' bundle client extend RavenDB and add document level permissions.,RavenDB.Client.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,client,bundles,authorization",168508,True,3.5.5-patch-35240
+Hibernating Rhinos,2017-11-24T15:31:41.6Z,21,147,"This package includes the client API of RavenDB. RavenDB is a document database for the .NET platform, offering a flexible data model design to fit the needs of real world systems.",RavenDB.Client,True,2018-03-30T12:13:14.39+00:00,True,False,This package includes the client API of RavenDB.,"nosql,ravendb,raven,document,database,client",1120189,True,3.5.5-patch-35240
+Hibernating Rhinos,2017-11-24T15:32:35.853Z,43209,147,RavenDB Client MvcIntegration let you include a visual profiler in your ASP.NET MVC application which will show you all the opened sessions and the time took to complete each database request. This can help you when developing with RavenDB.,RavenDB.Client.MvcIntegration,True,1900-01-01T00:00:00+00:00,False,False,A visual profiler for RavenDB that you can use in your ASP.NET MVC application.,"nosql,ravendb,raven,document,database,client,mvc",243184,True,3.5.5-patch-35240
+Geeks Ltd,2017-11-24T15:31:14.78Z,3,147,Olive Framework,Olive.Web,False,2018-04-17T11:59:36.63+00:00,True,False,,,2534,False,1.0.7
+Hibernating Rhinos,2017-11-24T15:30:34.977Z,43209,147,The cascade delete bundle allows for a specified set of documents and attachments to be deleted when the document that owns it is deleted. Typical usage scenarios include deleting an attachment that is referenced by a document or removing a set of child documents referenced by a parent document.,RavenDB.Bundles.CascadeDelete,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",199443,True,3.5.5-patch-35240
+Das,2017-11-24T15:30:28.15Z,147,147,NLog target for Azure Event Hub,SFA.DAS.NLog.Targets.AzureEventHub,False,2017-11-24T15:30:28.15+00:00,True,False,NLog target for Azure Event Hub,,2482,False,1.0.0.47445
+Hibernating Rhinos,2017-11-24T15:30:21.447Z,43209,147,"The Authorization Bundle extend RavenDB and add document level permissions. The Auth Bundle allows to define permissions for a specific user, a group or using arbitrary tagging. The system is design to be high performance, scalable and flexible.",RavenDB.Bundles.Authorization,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles,authorization",201814,True,3.5.5-patch-35240
+Das,2017-11-24T15:30:40.117Z,24,147,NLog target for Redis,SFA.DAS.NLog.Targets.Redis,False,2018-03-27T14:19:53.977+00:00,True,False,NLog target for Redis,,2947,False,1.0.0.47445
+Hibernating Rhinos,2017-11-24T15:30:48.38Z,43209,147,This bundle aims to allow the user to implement unique constraints in the objects (usefull for properties like email or social security number).,RavenDB.Bundles.UniqueConstraints,True,1900-01-01T00:00:00+00:00,False,False,,"nosql,ravendb,raven,document,database,bundles",215470,True,3.5.5-patch-35240
+Johan Larsson,2017-11-24T15:30:59.157Z,24,147,Roslyn analyzers for INotifyPropertyChanged.,PropertyChangedAnalyzers,False,2018-03-27T16:12:33.287+00:00,True,False,,"WPF,Roslyn,Diagnostic,Analyzer,DotnetAnalyzers",3483,False,2.5.1
+Das,2017-11-24T15:30:17.073Z,24,147,NLog Logger Wrapper,SFA.DAS.NLog.Logger,False,2018-03-27T14:19:41.57+00:00,True,False,NLog Logger Wrapper,,1828,False,1.0.0.47445
+Daniel A. Monetelli L.,2017-11-22T21:41:29.077Z,147,149,RestClient for Xamarin Forms,Monetelli.RestClient,False,2017-11-24T15:57:55.867+00:00,True,False,,"Xamarin.Forms,RestClient",230,False,1.0.0
+Michel Perfetti,2017-11-24T15:26:46.36Z,92,147,WiLinq is a workitem linq provider targeting VSTS Rest API,Wilinq,True,2018-01-18T16:19:05.367+00:00,True,False,,"Linq,WorkItem,TFS,VSTS",3166,False,1.1.0-beta0000
+Gurux Ltd,2017-11-24T15:26:57.703Z,9,147,"With Gurux DLMS/COSEM protocol component you can easily build your own AMR (Automatic Meter Reading) system for electricity consumption meters, through either TCP/IP, or Serial connection. If you are no expert in DLMS/COSEM, use our UI application, GXDLMSDirector, for the component to get started. Both the component, and its UI are OpenSource, and therefor available to anyone interested",Gurux.DLMS,False,2018-04-11T09:01:32.207+00:00,True,False,With Gurux DLMS/COSEM protocol component you can easily read your smart meters.,"DLMS,COSEM,AMI,ARM",26975,False,8.5.1711.2403
+Michel Perfetti,2017-11-24T15:26:02.437Z,92,147,Agile process template for WiLinq,Wilinq.ProcessTemplates.Agile,True,2018-01-18T16:18:23.46+00:00,True,False,,"Wilinq,Linq,WorkItem,TFS,VSTS,Process,Template,Agile",477,False,1.1.0-beta0000
+Michel Perfetti,2017-11-24T15:26:33.537Z,92,147,Scrum process template for WiLinq,Wilinq.ProcessTemplates.Scrum,True,2018-01-18T16:18:51.99+00:00,True,False,,"Wilinq,Linq,WorkItem,TFS,VSTS,Process,Template,Scrum",467,False,1.1.0-beta0000
+Michel Perfetti,2017-11-24T15:26:18.337Z,92,147,Code generator for WiLinq,Wilinq.CodeGenerator,True,2018-01-18T16:18:39.99+00:00,True,False,,"Linq,WorkItem,TFS,VSTS",274,False,1.1.0-beta0000
+"Joel Hammond-Turner,Steve Grattan",2017-11-24T15:24:55.047Z,84,147,Templated NuSpec and packaging targets file to allow easier Package'n'Publish integration with TFS (or other CI) builds,NuGet.PackageNPublish,False,2018-01-26T15:47:13.363+00:00,True,False,NuGet.PackageNPublish MSBuild targets file packaged as a NuGet package!,,33679,False,0.10.1.2
+Lykke,2017-11-24T15:24:37.74Z,51,147,Client for Lykke.Service.ClientAccount API,Lykke.Service.ClientAccount.Client,False,2018-02-28T13:15:02.34+00:00,True,False,,Lykke,7339,False,1.0.73
+Richie Lee,2017-11-24T15:24:57.983Z,122,147,Use PowerShell and Microsoft.Data.Tools.MSBuild to build and deploy SSDT-based database projects.,PoshSSDTBuildDeploy,False,2017-12-19T06:39:02.307+00:00,True,False,,,990,False,1.0.81
+ObjectivityLtd,2017-11-24T15:22:07.077Z,147,147,Cake addin for loging in to Azure Resource Manager.,Cake.Deploy.Azure.Authentication,False,2017-11-24T15:22:07.077+00:00,True,False,,"Cake,Deploy,Azure,Resource,Manager,Deployment",552,False,0.3.0
+Johan Larsson,2017-11-24T15:20:51.987Z,24,147,Roslyn analyzers for INotifyPropertyChanged.,PropertyChangedAnalyzers,False,2018-03-27T16:12:33.287+00:00,True,False,,"WPF,Roslyn,Diagnostic,Analyzer,DotnetAnalyzers",3483,False,1.2.0
+SumoSoft,2017-11-24T15:15:54.743Z,1,147,"SumoSoft Cms is an advanced Framework based on MVC5 that will let you build highly customizable websites with extreme ease. 
+      The main features include: blog, e-commerce, dynamic user permissions, advanced internationalization, 
+      IP based geo-localization, media management using both local FTP folders and Windows Azure Storage accounts, email templating, logging system",SumoSoft.Cms.Core,False,2018-04-19T11:51:37.75+00:00,True,False,SumoSoft Cms,,31971,False,5.4.7
+SumoSoft,2017-11-24T15:16:33.873Z,1,147,"SumoSoft Cms is an advanced Framework based on MVC5 that will let you build highly customizable websites with extreme ease. 
+      The main features include: blog, e-commerce, dynamic user permissions, advanced internationalization, 
+      IP based geo-localization, media management using both local FTP folders and Windows Azure Storage accounts, email templating, logging system",SumoSoft.Cms.Mvc,False,2018-04-19T11:52:22.957+00:00,True,False,SumoSoft Cms,,26908,False,5.4.7
+gfoidl,2017-11-24T15:16:46.73Z,147,147,Helper for boosting speed of .net Reflection,gfoidl.FastReflection,False,2017-11-24T17:11:21.06+00:00,True,False,,"Reflection,fast,il-generation",1416,False,1.3.0
+DottorPagliaccius,2017-11-24T15:17:10.893Z,144,147,BadgeButton custom control for Xamarin.Forms,Xamarin.CustomControls.BadgeButton,False,2017-11-27T13:44:45.553+00:00,True,False,BadgeButton custom control for Xamarin.Forms,"xamarin,pcl,xam.pcl,control,customcontrol,button,badgebutton,badge,android,xamarin.forms,ios,monoandroid,monodroid,monotouch",358,False,1.0.4
+Geeks Ltd,2017-11-24T15:17:01.223Z,2,147,Compiles M# definitions into .NET code.,MSharp,False,2018-04-18T14:14:37.973+00:00,True,False,,,13437,False,4.1.78
+Momentum,2017-11-24T15:13:23.693Z,4,147,Client for Momentum PM API,Momentum.Pm.Api,False,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.11.181
+Momentum,2017-11-24T15:13:39.673Z,4,147,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,False,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.11.181
+Raj Uppadhyay,2017-11-24T15:14:49.137Z,7,147,"This package contains the core library for runing the automated tests (Androids Apps, UWP apps, Web Apps) and executing them using Selenium/CodedUI on cross platforms.",zeusautomationsuite,False,2018-04-13T19:57:45.123+00:00,True,False,,"TestAutomation,Selenium,Appium,CodedUI,VS2015-17",2376,False,2.2.0
+Drew Seward,2017-11-24T15:10:49.977Z,147,147,A simple tool to make code signing a little less painful,Notary,False,2017-11-24T15:10:49.977+00:00,True,False,,,3386,False,0.2.0
+Geeks Ltd,2017-11-24T15:12:08.827Z,1,147,Olive Framework,Olive.Mvc,False,2018-04-19T14:51:28.91+00:00,True,False,,,5829,False,1.0.17
+Momentum,2017-11-24T15:09:21.58Z,4,147,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.12.375-beta
+Momentum,2017-11-24T15:09:06.477Z,4,147,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.12.375-beta
+RDD.Web,2017-11-24T15:03:27.37Z,26,147,Package Description,RDD.Web,True,2018-03-25T20:53:56.923+00:00,True,False,,,5018,False,2.1.0-rc1
+RDD.Infra,2017-11-24T15:03:16Z,26,147,Package Description,RDD.Infra,True,2018-03-25T20:53:46.173+00:00,True,False,,,4897,False,2.1.0-rc1
+RDD.Domain,2017-11-24T15:03:05.33Z,26,147,Package Description,RDD.Domain,True,2018-03-25T20:53:35.58+00:00,True,False,,,5014,False,2.1.0-rc1
+RDD.Application,2017-11-24T15:02:54.49Z,26,147,Package Description,RDD.Application,True,2018-03-25T20:53:25.457+00:00,True,False,,,452,False,2.1.0-rc1
+SHINFOTECH,2017-11-24T15:02:27.03Z,129,147,Package Description,Shenhua.Core,False,2017-12-12T02:32:55.297+00:00,True,False,,,646,False,2.0.1
+Drew Seward,2017-11-24T14:59:17.563Z,147,147,A simple tool to make code signing a little less painful,Notary,True,2017-11-24T15:10:49.977+00:00,True,False,,,3386,False,0.2.0-b
+Elders,2017-11-24T14:55:56.22Z,129,147,PushNotifications,push-notifications.ws.msi,True,2017-12-12T14:24:52.853+00:00,True,False,PushNotifications,,914,False,3.0.0-beta0002
+Elders,2017-11-24T14:56:33.11Z,129,147,PushNotifications,push-notifications.api.host,True,2017-12-12T14:25:33.303+00:00,True,False,PushNotifications,,958,False,3.0.0-beta0003
+Richard J. Cabral,2017-11-24T14:57:05.017Z,67,147,"Constellation is a collection of utilities for .NET CMS implementers.
+		The Foundation.Datasources namespace contains contracts for specifying whether an Item is meant to (primarily) be a context datasource,
+		a subcontent datasource (unique to the hosting page) or a reusable page component (widget). This package includes rules for testing
+		items based on inheriting from specific Templates.
+		
+		To flag an Item for use by the rules included, ensure they inherit from the appropriate Templates/Foundation/Constellation/Datasources template:
+		* Context Datasource for pages.
+		* Subcontent Datasource for content that appears exclusively on the hosting page.
+		* Widget Datasource for content that can be shared by many pages.
+		
+		You must install the included package to get the Templates required to use the rules in this library.
+
+		Configured for use with Sitecore 9.0.
+		Requires Sitecore 9.0 NuGet packages, available here: https://sitecore.myget.org/F/sc-packages/api/v3/index.json
+		Requires the installation of the included Package.",Constellation.Foundation.Datasources,False,2018-02-12T16:25:44.673+00:00,True,False,"Sitecore Helix library for classifying content based on whether the content is a page, a page fragment, and/or reusable.","Sitecore,Helix,Habitat,SXA,Foundation",599,False,9.0.0.17844
+Peachpie.RequestHandler,2017-11-24T14:50:05.013Z,20,147,Implementation of IHttpHandler (request handler) for ASP.NET Integrated Pipeline.,Peachpie.RequestHandler,True,2018-03-31T15:08:29.5+00:00,True,False,,peachpie,2015,False,0.8.0-CI00500
+Peachpie.NET.Sdk,2017-11-24T14:49:52.123Z,20,147,The MSBuild SDK containing build targets and runtime.,Peachpie.NET.Sdk,True,2018-03-31T15:08:16.767+00:00,True,False,,"php,sdk,peachpie,msbuild",8149,False,0.8.0-CI00500
+Peachpie.Runtime,2017-11-24T14:49:54.45Z,20,147,Peachpie application runtime.,Peachpie.Runtime,True,2018-03-31T15:09:30.597+00:00,True,False,,"peachpie,runtime",12425,False,0.8.0-CI00500
+Peachpie.Library.Scripting,2017-11-24T14:49:12.53Z,20,147,Support for dynamic code evaluation in Peachpie application. The package enables `eval` and `create_function` in compiled programs.,Peachpie.Library.Scripting,True,2018-03-31T15:09:05.003+00:00,True,False,,"peachpie,library,scripting",6710,False,0.8.0-CI00500
+Peachpie.Library.PDO.MySQL,2017-11-24T14:48:57.967Z,20,147,Package Description,Peachpie.Library.PDO.MySQL,True,2018-03-31T15:07:25.493+00:00,True,False,,,3206,False,0.8.0-CI00500
+dotnet-compile-php,2017-11-24T14:48:11.653Z,20,147,Command line tool enabling 'php' project compilation.,Peachpie.Compiler.Tools,True,2018-03-31T15:07:39.18+00:00,True,False,,"dotnet,compile-php",10921,False,0.8.0-CI00500
+Peachpie.Library.XmlDom,2017-11-24T14:49:41.123Z,20,147,Peachpie PHP language library functions for XML processing.,Peachpie.Library.XmlDom,True,2018-03-31T15:08:02.777+00:00,True,False,,"peachpie,library,xml,dom",3620,False,0.8.0-CI00500
+Peachpie.Library.PDO.PgSQL,2017-11-24T14:48:46.64Z,20,147,Package Description,Peachpie.Library.PDO.PgSQL,True,2018-03-31T15:08:40.33+00:00,True,False,,,3206,False,0.8.0-CI00500
+Peachpie.Library.MySql,2017-11-24T14:48:47.31Z,20,147,Peachpie PHP language MySql library functions.,Peachpie.Library.MySql,True,2018-03-31T15:08:16.907+00:00,True,False,,"peachpie,library,mysql",10095,False,0.8.0-CI00500
+Peachpie.CodeAnalysis,2017-11-24T14:48:23.983Z,20,147,Peachpie PHP language compiler platform.,Peachpie.CodeAnalysis,True,2018-03-31T15:07:26.277+00:00,True,False,,"php,peachpie,dotnet,compiler",12269,False,0.8.0-CI00500
+Peachpie.Library.PDO.SqlSrv,2017-11-24T14:49:11.64Z,20,147,Package Description,Peachpie.Library.PDO.SqlSrv,True,2018-03-31T15:08:52.957+00:00,True,False,,,3212,False,0.8.0-CI00500
+Peachpie.Library.Graphics,2017-11-24T14:48:35.59Z,20,147,Peachpie PHP language library functions for image processing.,Peachpie.Library.Graphics,True,2018-03-31T15:07:52.197+00:00,True,False,,"peachpie,library,image,gd2",3343,False,0.8.0-CI00500
+Peachpie.Library.PDO.Firebird,2017-11-24T14:48:34.233Z,20,147,Package Description,Peachpie.Library.PDO.Firebird,True,2018-03-31T15:07:12.587+00:00,True,False,,,3220,False,0.8.0-CI00500
+Peachpie.Library.PDO,2017-11-24T14:49:26.34Z,20,147,Package Description,Peachpie.Library.PDO,True,2018-03-31T15:07:50.23+00:00,True,False,,,6610,False,0.8.0-CI00500
+Peachpie.Library,2017-11-24T14:49:28.937Z,20,147,Peachpie PHP language library functions.,Peachpie.Library,True,2018-03-31T15:09:30.597+00:00,True,False,,"peachpie,library",10639,False,0.8.0-CI00500
+Peachpie.App,2017-11-24T14:48:10.14Z,20,147,Peachpie platform dependencies.,Peachpie.App,True,2018-03-31T15:07:12.587+00:00,True,False,,,10496,False,0.8.0-CI00500
+Peachpie.Library.MsSql,2017-11-24T14:48:23.31Z,20,147,Peachpie PHP language MsSql library functions.,Peachpie.Library.MsSql,True,2018-03-31T15:08:04+00:00,True,False,,"peachpie,library,mssql",7987,False,0.8.0-CI00500
+Peachpie.NETCore.Web,2017-11-24T14:49:41.59Z,20,147,Allows integration of Peachpie compiled PHP code into ASP.NET Core pipeline.,Peachpie.NETCore.Web,True,2018-03-31T15:09:43.537+00:00,True,False,,"peachpie,web",9685,False,0.8.0-CI00500
+Peachpie.Library.PDO.Sqlite,2017-11-24T14:48:58.39Z,20,147,Package Description,Peachpie.Library.PDO.Sqlite,True,2018-03-31T15:07:38.917+00:00,True,False,,,3239,False,0.8.0-CI00500
+Richie Lee,2017-11-24T14:43:07.45Z,122,147,Use PowerShell and Microsoft.Data.Tools.MSBuild to build and deploy SSDT-based database projects.,PoshSSDTBuildDeploy,False,2017-12-19T06:39:02.307+00:00,True,False,,,990,False,1.0.80
+Enguerran Boissier,2017-11-24T14:39:53.497Z,1,147,Terradue Tep .Net library,Terradue.Tep,True,2018-04-19T15:50:42.49+00:00,True,False,,,5137,False,1.1.0-ftea20171124T143937
+Momentum,2017-11-24T14:38:23.64Z,4,147,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.12.374-beta
+Drew Seward,2017-11-24T14:38:38.81Z,147,147,A simple tool to make code signing a little less painful,Notary,True,2017-11-24T15:10:49.977+00:00,True,False,,,3386,False,0.2.0-a
+Momentum,2017-11-24T14:38:40.233Z,4,147,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.12.374-beta
+Andrey Osintsev,2017-11-24T14:38:17.7Z,143,147,ASP.NET MVC integration,Hardcore.Web,False,2017-11-28T00:44:42.777+00:00,True,False,,,2167,False,1.3.8
+COWI,2017-11-24T14:38:50.827Z,43209,147,Revit handling package for COWI,CW.RevitInteractionLibrary.R2018,False,1900-01-01T00:00:00+00:00,False,False,,,1939,False,0.1.16
+COWI,2017-11-24T14:36:01.64Z,43209,147,TestLibrary for CW.API.,CW.TestLibrary,False,1900-01-01T00:00:00+00:00,False,False,,,2561,False,0.1.6
+SHINFOTECH,2017-11-24T14:36:49.577Z,129,147,Shenhua Infotech Core Product Families.,Shenhua.Core,False,2017-12-12T02:32:55.297+00:00,True,False,,".NET,Core,2.0",646,False,2.0.0
+COWI,2017-11-24T14:35:33Z,43209,147,Revit API package for COWI,CW.API.Package,False,1900-01-01T00:00:00+00:00,False,False,,,6246,False,0.1.14
+COWI,2017-11-24T14:35:46.327Z,43209,147,Revit handling package for COWI,CW.RevitInteractionLibrary.R2017,False,1900-01-01T00:00:00+00:00,False,False,,,2382,False,0.1.16
+Qarnot Computing,2017-11-24T14:34:09.14Z,100,147,CEPH RadosGW Admin API,Radosgw.AdminAPI,False,2018-01-10T17:59:20.283+00:00,True,False,,,2584,False,1.3.0
+Richard J. Cabral,2017-11-24T14:30:46.217Z,67,147,"Constellation is a collection of utilities for .NET CMS implementers.
+		The Foundation.Datasources namespace contains contracts for specifying whether an Item is meant to (primarily) be a context datasource,
+		a subcontent datasource (unique to the hosting page) or a reusable page component (widget). This package includes rules for testing
+		items based on inheriting from specific Templates.
+		
+		To flag an Item for use by the rules included, ensure they inherit from the appropriate Templates/Foundation/Constellation/Datasources template:
+		* Context Datasource for pages.
+		* Subcontent Datasource for content that appears exclusively on the hosting page.
+		* Widget Datasource for content that can be shared by many pages.
+		
+		You must install the included package to get the Templates required to use the rules in this library.
+
+		Configured for use with Sitecore 9.0.
+		Requires Sitecore 9.0 NuGet packages, available here: https://sitecore.myget.org/F/sc-packages/api/v3/index.json
+		Requires the installation of the included Package.",Constellation.Foundation.Datasources,False,2018-02-12T16:25:44.673+00:00,True,False,"Sitecore Helix library for classifying content based on whether the content is a page, a page fragment, and/or reusable.","Sitecore,Helix,Habitat,SXA,Foundation",599,False,9.0.0.17054
+Abp.AspNetZeroCore.Web,2017-11-24T14:30:14.153Z,2,147,Package Description,Abp.AspNetZeroCore.Web,False,2018-04-18T08:49:12.913+00:00,True,False,,,10997,False,1.0.8
+Lykke,2017-11-24T14:27:40.343Z,71,147,Client for Lykke.Service.ClientAssetRule API,Lykke.Service.ClientAssetRule.Client,False,2018-02-08T13:15:57.773+00:00,True,False,,Lykke,503,False,1.0.0.4
+Abp.AspNetZeroCore,2017-11-24T14:28:36.967Z,2,147,Package Description,Abp.AspNetZeroCore,False,2018-04-18T08:48:40.787+00:00,True,False,,,12188,False,1.0.8
+GameAnalytics,2017-11-24T14:23:33.36Z,147,147,GameAnalytics SDK for Mono / .Net 4.5,GameAnalytics.Mono.SDK,False,2017-11-24T14:23:33.36+00:00,True,False,,gameanalytics,2728,False,1.1.9
+GameAnalytics,2017-11-24T14:23:46.407Z,147,147,GameAnalytics SDK for UWP,GameAnalytics.UWP.SDK,False,2017-11-24T14:23:46.407+00:00,True,False,,gameanalytics,1319,False,1.1.9
+GameAnalytics,2017-11-24T14:23:59.767Z,147,147,GameAnalytics SDK for Universal Windows 8,GameAnalytics.WSA.SDK,False,2017-11-24T14:23:59.767+00:00,True,False,,gameanalytics,1172,False,1.1.9
+"Richard J. Cabral,Chris Lees,Ed Lane",2017-11-24T14:18:41.847Z,67,147,"Constellation is a collection of utilities for .NET CMS implementers.
+		The Foundation.Data namespace contains an Item extension class that allows the developer to:
+		- Get an Item's ancestor based on Template
+		- Test an Item's Template inheritance
+		- Retrieve an Item's children based on a specific Template
+		- Retrieve the URL for the Item using the currently active LinkManager configuration.
+		- Determine if the Item is in the Context Site.
+		- Find or create an Item's child given a name and a Template ID.
+
+		Configured for use with Sitecore 9.0.
+		Requires Sitecore 9.0 NuGet packages, available here: https://sitecore.myget.org/F/sc-packages/api/v3/index.json",Constellation.Foundation.Data,False,2018-02-12T14:57:46.75+00:00,True,False,"Sitecore Helix library extending Item with utilities to check ancestry, template derivation, and to retrieve Item children of a specific template.","Sitecore,Helix,Habitat,SXA,Foundation",430,False,9.0.0.16693
+nick.randell@sceneskope.com,2017-11-24T14:19:44.377Z,146,147,Package Description,SceneSkope.ServiceFabric.Remoting.Bond,True,2017-11-25T10:28:28.433+00:00,True,False,,,102,False,1.0.0-dev-00002
+Geeks Ltd,2017-11-24T14:16:54.677Z,3,147,Olive Framework,Olive.Web,False,2018-04-17T11:59:36.63+00:00,True,False,,,2535,False,1.0.6
+Stian Olafsen,2017-11-24T14:16:35.253Z,6,147,"Unleash Feature Toggle Client for .Net. It supports runtime feature toggling throug multiple activation strategies, and enables you to decouple deployment of code from release of new features.",Unleash.FeatureToggle.Client,False,2018-04-14T07:40:26.903+00:00,True,False,,"feature-toggle,client,finn.no",425,False,1.1.2
+Abp.AspNetZeroCore.Web,2017-11-24T14:12:04.507Z,2,147,Package Description,Abp.AspNetZeroCore.Web,False,2018-04-18T08:49:12.913+00:00,True,False,,,10952,False,1.0.7
+Abp.AspNetZeroCore,2017-11-24T14:12:29.773Z,2,147,Package Description,Abp.AspNetZeroCore,False,2018-04-18T08:48:40.787+00:00,True,False,,,12133,False,1.0.7
+Peter Waher,2017-11-24T14:08:41.76Z,14,147,"The Waher.Events.Persistence project creates an even sink that stores incoming (logged) events in the local object database, as defined by Waher.Persistence. Event life time in the database is defined in the constructor. Searches can be made for historical events.",Waher.Events.Persistence,False,2018-04-06T15:21:35.197+00:00,True,False,,"logger,logging,logs,events,eventlogging,eventlogs,local,persistence,object,database",718,False,1.0.4
+Peter Waher,2017-11-24T14:08:41.76Z,14,147,"The Waher.Events.Persistence project creates an even sink that stores incoming (logged) events in the local object database, as defined by Waher.Persistence. Event life time in the database is defined in the constructor. Searches can be made for historical events.",Waher.Events.Persistence,False,2018-04-06T15:21:35.197+00:00,True,False,,"logger,logging,logs,events,eventlogging,eventlogs,local,persistence,object,database",718,False,1.0.4
+TruVisibility,2017-11-24T14:04:41.263Z,127,147,Contains the classes for interaction with TruVisibility SSL Management,TruVisibility.SslManagement.Client,False,2017-12-14T14:53:09.257+00:00,True,False,,TruVisibility,2429,False,1.6.1.1
+Davyd McColl,2017-11-24T14:02:21.313Z,2,147,The Windows Service Management slice of the PeanutButter mini-suite,PeanutButter.WindowsServiceManagement,False,2018-04-18T10:04:08.5+00:00,True,False,"Provides Windows Service Management functionality:
+      * start
+      * stop
+      * pause
+      * install
+      * uninstall
+      services using wrappers around the native functions",,50000,False,1.2.204
+Davyd McColl,2017-11-24T14:02:18.983Z,2,147,"A few useful extensions for making testing against the PeanutButter.SimpleHTTPServer.HttpServer cleaner and easier to read,
+      providing extensions to:
+        - test for requests
+        - test for headers",PeanutButter.SimpleHTTPServer.Testability,False,2018-04-18T10:04:08.767+00:00,True,False,Some extensions to ease testability when using PeanutButter.SimpleHTTPServer.HttpServer in your tests.,,17066,False,1.2.204
+Davyd McColl,2017-11-24T14:02:21.53Z,2,147,The SqlCe TempDb implementation,PeanutButter.TempDb.SqlCe,False,2018-04-18T10:04:08.33+00:00,True,False,"Use this if you need an automagic temporary SqlCe database, for example in testing.",,33667,False,1.2.204
+Davyd,2017-11-24T14:02:20.64Z,2,147,The LocalDb TempDb implementation,PeanutButter.TempDb.LocalDb,False,2018-04-18T10:04:08.487+00:00,True,False,"Use this if you need an automagic temporary SqlCe database, for example in testing.",,35620,False,1.2.204
+Davyd McColl,2017-11-24T14:02:18.953Z,2,147,A basic INI file reader/writer class,PeanutButter.INI,False,2018-04-18T10:04:09.033+00:00,True,False,"Provides easy-to-use access to INI files, both reading and writing. Data is exposed via a public Dictionary of Dictionaries. 
+      Supports the global ""empty"" section, quoted values and case-insenstive section and key lookups.",,52555,False,1.2.204
+Davyd McColl,2017-11-24T14:02:19Z,2,147,"A package to essentially wrap Task.Run and variants in a runner object which can
+    be substituted or have their implementation changed according to selected task
+    scheduling strategies.",PeanutButter.Async,False,2018-04-18T10:04:08.69+00:00,True,False,"A package to essentially wrap Task.Run and variants in a runner object which can
+    be substituted. This allows your consuming code to be more easily tested, especially
+    in conjunction with PeanutButter.TestUtils.Async, which provides a synchronous
+    ITaskRunner so your tests don't have to have access to internally-used tasks
+    or other artifacts but can just test as if the code under test is synchronous",,14096,False,1.2.204
+Davyd McColl,2017-11-24T14:02:20.983Z,2,147,"Helper utility to convert Newtonsoft JObjects recursively to dictionaries,
+    most especially useful when coupled with PeanutButter.DuckTyping, which can
+    duck onto dictionaries, without having to make PeanutButter.DuckTyping depend
+    unecessarily on Newtonsoft.Json",PeanutButter.JObjectExtensions,False,2018-04-18T10:04:08.08+00:00,True,False,"Provides the ToDictionary() extension method for JObjects which converts a JObject
+    recursively to a Dictionary of Dictionaries. Keys are strings, values are boxed as
+    object but have ""proper"" underlying types. Works on collections within the JSON blob
+    too.",,5270,False,1.2.204
+davyd,2017-11-24T14:02:19.39Z,2,147,Provides the Entity POCO classes for sharing data access with the EmailSpooler.Win32Service service,EmailSpooler.Win32Service.Entity,False,2018-04-18T10:04:09.143+00:00,True,False,Provides the Entity POCO classes for sharing data access with the EmailSpooler.Win32Service service,,28413,False,1.2.204
+davyd,2017-11-24T14:02:21.797Z,2,147,"Provides the following:
+      * EntityBase
+        - a base entity class to inherit from. Provides the following fields:
+          Created (datetime)
+          LastModified (datetime?)
+          Enabled (bool)
+      * DbContextWithAutomaticTrackingFields
+        - when persisting entities which derive from EntityBase, this will automatically
+          set Created to the current timestamp on a new entity and update LastModified
+          on an updated entity
+      * Extensions to:
+        - AddRange on an IDbSet
+        - AddRange on an ICollection
+        - RemoveRange on an IDbSet
+        - RemoveRange on an ICollection
+        - Clear on IDbSet (delete all in dbset)
+        - AddNew on IDbSet and ICollection
+            - Convenience method so you can, for example, do:
+              var someItem = context.SomeCollection.FirstOrDefault(i => i.Name == ""bob"") ?? context.Collection.AddNew(e => e.Name = ""bob"");
+              which finds the first bob or adds a new one
+        - Transform, which provides a fluent manner to do what you would with Select(), but on a single result",PeanutButter.Utils.Entity,False,2018-04-18T10:04:08.847+00:00,True,False,"Provides some useful extensions for Entity-based projects as well as a base Entity class and associated base
+    DbContext which provide tracking fields (Created/LastModified) and a soft-delete field (Enabled)",,30579,False,1.2.204
+Davyd McColl,2017-11-24T14:02:07.58Z,2,147,"Test helpers to use in conjunction with PeanutButter.Async, allowing your tests to
+    treat tasks as if they were run synchronously.",PeanutButter.TestUtils.Async,False,2018-04-18T10:04:08.72+00:00,True,False,"This package, in conjunction with PeanutButter.Async, makes testing easier for
+    code using tasks where the task itself (or artifacts) is never exposed. Inject
+    an ITaskRunner, using the default (or your own) implementation at run-time, and use
+    the ImmediateTaskRunnerBuilder to build a synchronous variant which you can inject
+    at test-time",,15062,False,1.2.204
+Davyd McColl,2017-11-24T14:02:07.923Z,2,147,The SysTray component of the PeanutButter library.,PeanutButter.TrayIcon,False,2018-04-18T10:04:08.86+00:00,True,False,"A Library to facilitate easy tray icon usage, including managing tray icon animation, given frames to ""play"".",,42216,False,1.2.204
+Davyd McColl,2017-11-24T14:02:17.437Z,2,147,The Service Shell slice of the PeanutButter mini-suite,PeanutButter.ServiceShell,False,2018-04-18T10:04:09.11+00:00,True,False,"Provides a simple, easy-to-use shell base class for polling services which can install and uninstall itself. Please
+      reade the included README.txt for the (few) steps you need to do to use this project.",,50206,False,1.2.204
+Davyd McColl,2017-11-24T14:02:14.61Z,2,147,The Database Helpers component of the Peanut Butter mini-suite,PeanutButter.DatabaseHelpers,False,2018-04-18T10:04:09.127+00:00,True,False,"Provides statement builders for Select, Insert, Update and Delete, compliant with MSSQL, SqlCE, Access, and, more
+      recently, Firebird. Also contains executors (for datareader and scalar exectution) compliant with Oledb connections
+      since the primary focus was support for apps with legacy ties into Access, but the idea is to be able to extend
+      as necessary to support other engines",,51243,False,1.2.204
+Davyd McColl,2017-11-24T14:02:08.313Z,2,147,The miscellaneous utilities slice of the PeanutButter mini-suite (sans XML Utils),PeanutButter.Utils,False,2018-04-18T10:04:09.377+00:00,True,False,,,51066,False,1.2.204
+daf,2017-11-24T14:02:05.28Z,2,147,Some generic test utilites.,PeanutButter.TestUtils.Generic,False,2018-04-18T10:04:09.017+00:00,True,False,"Includes 
+      * PropertyAssert for asserting property value equality by name in tests so that you can TestCase out multiple property set/get ops
+      * ConstructorTestUtils for quick, easy testing of DI constructors
+      * EnumerableExtensions for comparing items inside different collections which have different
+          refs for DTOs, for example,
+      * DecimalExtensions for testing against decimal values with tolerances (eg when using random decimals
+          which go through a layer which truncates, such as a database)
+      * TypeExtensions, for helpers like
+          .ShouldInheritFrom / ShouldImplement
+          .Should(/Not)HaveProperty
+          .VirtualProperties (gets a string array of virtual property names)
+          .PropertyNames
+          .IntersectingProperties
+          (and more)",,47348,False,1.2.204
+Davyd McColl,2017-11-24T14:02:18.233Z,2,147,A generic Migrations Runner for FluentMigrator so you can run in migrations within your application.,PeanutButter.FluentMigrator,False,2018-04-18T10:04:08.377+00:00,True,False,"A generic Migrations Runner for FluentMigrator so you can run in migrations within your application.
+      The generic parameter is a ProcessorFactory type as exposed by FluentMigrator.Runner",,36929,False,1.2.204
+Davyd McColl,2017-11-24T14:02:16.093Z,2,147,"A package to facilitate duck-typing through an object extension DuckAs<>.
+      There is also a FuzzyDuckAs<> facility for more case-insensitive ducking.
+      At no point is there use of DynamicObjects, which hurt performance.
+      Property read/write as well as methods are ducked, with the current caveat
+      that ref and out parameters may not behave as expected.",PeanutButter.DuckTyping,False,2018-04-18T10:04:08.94+00:00,True,False,"A package to facilitate duck-typing through object extensions without using
+      dynamic objects at all.",,13809,False,1.2.204
+Davyd McColl,2017-11-24T14:02:06.36Z,2,147,"A (very simple) TCP server which you can use from within a testing environment or, if you're really ambitious, 
+      for some other reason.",PeanutButter.SimpleTcpServer,False,2018-04-18T10:04:08.923+00:00,True,False,"Sometimes you just need a short-lived TCP-based service. The PeanutButter.SimpleHTTPServer package depends on this
+      library for the lower-level TCP communications. This package is available for extension via other protocols
+      and to make installation of PeanutButter.SimpleHTTPServer easier: no need to manually reference PeanutButter.SimpleTCPServer.dll
+      any more -- at least, that's the plan (:
+      NB: unlike the rest of PeanutButter, this module is released under the Code Project Open License (CPOL) which differs from my 
+      regular license of choice (BSD) only in that it explicitly protects you from patent infringement. This license is carried through as
+      the library is a derivative work of:
+      http://www.codeproject.com/Articles/25050/Embedded-NET-HTTP-Server 
+      Thanks to user BobJanova for saving me some time (:",,21495,False,1.2.204
+Davyd McColl,2017-11-24T14:02:17.22Z,2,147,"Contains utilities for facilitating easier testing of MVC projects:
+            - JsonResultExtensions let you .Get(""(property name)"") on JsonResults
+            from an MVC controller action to easily fetch values from the Json result
+            - ControllerWithContextBuilder facilitates testing of controllers which require
+            a valid context, user, roles, etc.",PeanutButter.TestUtils.MVC,False,2018-04-18T10:04:18.283+00:00,True,False,(deprecated until I can figure out a way to effectively not tie this to a specific release of MVC),,8745,False,1.2.204
+Davyd McColl,2017-11-24T14:02:07.377Z,2,147,A base package for PeanutButter.TempDb.* packages. This provides the generic TempDb base class,PeanutButter.TempDb,False,2018-04-18T10:04:08.517+00:00,True,False,"Provides only the base generic TempDb class. Please install the specific flavour of TempDb you want instead (which
+	should pull in this package):
+	* PeanutButter.TempDb.SqlCe
+	* PeanutButter.TempDb.Sqlite
+	* PeanutButter.TempDb.LocalDb",,34641,False,1.2.204
+Davyd McColl,2017-11-24T14:02:09.39Z,2,147,"Use this project to pull in the three required Fluent Migrations to make your database able to store emails
+      that the PeanutButter.EmailSpooler.Win32Service service can spool for you. You will need to inherit from the following
+      migrations and add those inherited versions to your migration strategy:
+      * Migration_1_CreateEmail
+      * Migration_2_CreateEmailRecipient
+      * Migration_3_CreateEmailAttachment",EmailSpooler.Win32Service.DB,False,2018-04-18T10:04:08.953+00:00,True,False,"Contains the Fluent Migrations to provide the tables necessary to run EmailSpooler.Win32Service. Do not install this unless
+      you expect your project to provide a data source for the PeanutButter.EmailSpooler.Win32Service service.",,29892,False,1.2.204
+Davyd McColl,2017-11-24T14:02:07.22Z,2,147,"A (very simple) HTTP server which you can use from within a testing environment or, if you're really ambitious, for some other reason.",PeanutButter.SimpleHTTPServer,False,2018-04-18T10:04:08.44+00:00,True,False,"Sometimes you just need a short-lived HTTP server, say for testing out something which relies on a WebRequest. This library provides
+      a very bare-bones HTTP server with which you can register handlers to serve up documents or files or to do basically whatever you want.
+      NB: unlike the rest of PeanutButter, this module is released under the Code Project Open License (CPOL) which differs from my 
+      regular license of choice (BSD) only in that it explicitly protects you from patent infringement. This license is carried through as
+      the library is a derivative work of:
+      http://www.codeproject.com/Articles/25050/Embedded-NET-HTTP-Server 
+      Thanks to user BobJanova for saving me some time (:",,41748,False,1.2.204
+daf,2017-11-24T14:02:08.11Z,2,147,A really tiny Event Aggregator,PeanutButter.TinyEventAggregator,False,2018-04-18T10:04:08.487+00:00,True,False,"Provides a very simple, unthreaded Event Aggregator implementation with a few convenient extras:
+      * one-time subscription
+      * limited-time subscription
+      * the ability to suspend and resume the eventing engine. Events raised during suspension are routed
+        once the engine is resumed",,45094,False,1.2.204
+Davyd McColl,2017-11-24T14:02:08.813Z,2,147,Some utilities for using Castle.Windsor in your projects,PeanutButter.Utils.Windsor,False,2018-04-18T10:04:08.627+00:00,True,False,"Provides some commonly-replicated logic when dealing with Windsor
+      - extension method for IWindsorContainer to register all one-to-one resolutions in given assemblies
+      - extension method to register all MVC controllers from within an assembly (by ancestry class name and assembly,
+          so you don't need to import System.Web.Mvc to use other methods in this package)",,21669,False,1.2.204
+Davyd McColl,2017-11-24T14:02:17.673Z,2,147,"The miscellaneous utilities slice of the PeanutButter mini-suite (XML-specific, so you'll need to reference System.Xml.Linq)",PeanutButter.XmlUtils,False,2018-04-18T10:04:08.563+00:00,True,False,,,45228,False,1.2.204
+Davyd McColl,2017-11-24T14:02:07.44Z,2,147,The Sqlite TempDb<> implementation,PeanutButter.TempDb.Sqlite,False,2018-04-18T10:04:08.813+00:00,True,False,"Use this if you need an automagic temporary Sqlite database, for example in testing.",,31552,False,1.2.204
+Davyd McColl,2017-11-24T14:02:16.407Z,2,147,"Contains classes to help with testing when entity and a SQL Server would be involved in production:
+    * TestFixtureWithTempDb provides bootstrapping for tests which would use a temporary database (TempDBLocalDb)
+    * EntityPersistenceTestFixtureBase provides helpers for the common test of persisting and recalling entities
+      to test that mappings (automatic or manual) work as expected
+    * DbContextExtensions adds SaveChangesWithErrorReporting(), an extension method for DbContext derivatives
+      to provide more information within tests as to why a test is failing (such information is usually buried within
+      the exception maze that Entity provides)",PeanutButter.TestUtils.Entity,False,2018-04-18T10:04:08.58+00:00,True,False,"Some utilities to make testing of Entity persistence and repositories which rely on having an actual context
+    a little less tedious",,29894,False,1.2.204
+Davyd McColl,2017-11-24T14:02:09.093Z,2,147,Helpers for testing when using PeanutButter.DatabaseHelpers,PeanutButter.DatabaseHelpers.Testability,False,2018-04-18T10:04:08.783+00:00,True,False,"If you're using NSubstitute to test your project and you're using PeanutButter DatabaseHelpers' sql statement
+      builders, you may wish to test against the interfaces for these builders. However, doing so is more work than
+      it would seem at the outset as each call into the builder returns the builder so when you're trying to do
+      Received() asserts against the Nth call, NSubstitute doesn't know that the call was done against the original
+      substituted object. The BuilderFaker helper produces fake builders which you can use to test the behaviour of
+      your applications instead of having to test sql strings",,50265,False,1.2.204
+Davyd McColl,2017-11-24T14:02:09.11Z,2,147,This is the random value generators slice of the PeanutButter mini-suite,PeanutButter.RandomGenerators,False,2018-04-18T10:04:09.05+00:00,True,False,"RandomGenerators helps you with testing by providing random values not only for simple types
+      such as strings and numerics, but also with more complex types using GenericBuilder",,50999,False,1.2.204
+Devedse,2017-11-24T14:00:03.893Z,35,147,A library to more easily control image optimization from C# using https://encode.ru/threads/1589-FileOptimizer,DeveImageOptimizer,False,2018-03-16T13:46:57.343+00:00,True,False,,"image,drawing,optimization",4696,False,1.0.165
+Logiwa,2017-11-24T13:58:10.77Z,9,147,"The Logiwa.Common deployment package, built on 11/24/2017 4:57:52 PM",Logiwa.Common,False,2018-04-11T12:19:41.283+00:00,True,False,,Common,19201,False,2017.11.24.1
+spaz,2017-11-24T13:51:14.687Z,9,147,My package description.,SdkTID,False,2018-04-11T23:54:34.507+00:00,True,False,,,4752,False,1.0.0.49
+Sergey Kichuk,2017-11-24T13:49:46.593Z,45,147,Fast lightweight validation framework,FastValidator,False,2018-03-06T13:45:49.193+00:00,True,False,,"Fluent,validation,validator,fast,framework,validate",416,False,2.0.0.1
+EC English,2017-11-24T13:49:29.797Z,1,147,Service contracts for the EC English API,EcEnglish.Api.ServiceContract,True,2018-04-19T16:12:47.28+00:00,True,False,,,31087,False,1.0.2077-add-getpossible-pay
+EC English,2017-11-24T13:49:47.233Z,1,147,Owin OAuth Client for EC English,EcEnglish.Owin.OAuth,True,2018-04-19T16:13:02.06+00:00,True,False,,,30514,False,1.0.2077-add-getpossible-pay
+EC English,2017-11-24T13:49:11.343Z,1,147,Client library for api.ecenglish.com,EcEnglish.Api.Client,True,2018-04-19T16:12:31.53+00:00,True,False,,,31250,False,1.0.2077-add-getpossible-pay
+EdElliott,2017-11-24T13:45:35.163Z,147,147,A Visual Studio Test Adapter for tSQLt tests. This will find tSQLt tests in your solution and run the tests against your unit test database.,AgileSQLClub.tSQLtTestAdapter.2017,False,2017-11-24T13:45:35.163+00:00,True,False,,"tSQLt,VisualStudio,TestAdapter",57,False,0.91.0
+EdElliott,2017-11-24T13:45:35.163Z,147,147,A Visual Studio Test Adapter for tSQLt tests. This will find tSQLt tests in your solution and run the tests against your unit test database.,AgileSQLClub.tSQLtTestAdapter.2017,False,2017-11-24T13:45:35.163+00:00,True,False,,"tSQLt,VisualStudio,TestAdapter",57,False,0.91.0
+AXOOM GmbH,2017-11-24T13:43:00.087Z,135,147,Axoom.Extensions.Logging.Console,Axoom.Extensions.Logging.Console,True,2017-12-06T09:19:09.59+00:00,True,False,,,904,False,1.0.0-alpha0003
+Peter Waher,2017-11-24T13:41:11.433Z,14,147,"The Waher.Events.Persistence project creates an even sink that stores incoming (logged) events in the local object database, as defined by Waher.Persistence. Event life time in the database is defined in the constructor. Searches can be made for historical events.",Waher.Events.Persistence,False,2018-04-06T15:21:35.197+00:00,True,False,,"logger,logging,logs,events,eventlogging,eventlogs,local,persistence,object,database",718,False,1.0.3
+Flohr UG,2017-11-24T13:42:06.027Z,147,147,Frenetic-Trace is a light-weight trace visualization software. Use this package for implementation. Visit http://www.frenetic-trace.com/documentation for further details,FSS.Trace.Diagnostic.Listener.NLog,False,2017-11-24T13:42:06.027+00:00,True,False,,"Logging,Log,Tracing,Trace,Diagnostic,Error,Reporting,NLog,Target",112,False,1.1.6537.24645
+Peter Waher,2017-11-24T13:41:11.433Z,14,147,"The Waher.Events.Persistence project creates an even sink that stores incoming (logged) events in the local object database, as defined by Waher.Persistence. Event life time in the database is defined in the constructor. Searches can be made for historical events.",Waher.Events.Persistence,False,2018-04-06T15:21:35.197+00:00,True,False,,"logger,logging,logs,events,eventlogging,eventlogs,local,persistence,object,database",718,False,1.0.3
+anech@live.cn,2017-11-24T13:38:03.987Z,80,147,StackExchange.Redis、Microsoft.Extensions.Caching.Redis、MessagePack,ANECH.Framework.Caching.Redis,False,2018-01-30T11:19:50.34+00:00,True,False,,,710,False,1.0.0
+anech@live.cn,2017-11-24T13:37:17.957Z,91,147,EF Core、 UnitOfWork、 Repository、Pager etc,ANECH.Framework.Data,False,2018-01-19T11:06:31.393+00:00,True,False,,,1147,False,1.0.3
+Nick Darvey,2017-11-24T13:36:37.32Z,43209,147,A library that unites Service Fabric's config packages and ASP.NET Core's configuration.,SomethingSomethingConfig,False,1900-01-01T00:00:00+00:00,False,False,,"service-fabric,asp-net-core,config,configuration,service,fabric",902,False,2.0.0
+engelbert strauss GmbH & Co. KG,2017-11-24T13:35:17.6Z,39,147,Json based endpoint orchestration addin for cake build.,Cake.Endpoint,False,2018-03-12T15:25:03.64+00:00,True,False,,"Cake,Script,Build,Endpoint,Addin",1337,False,2.1.0
+Aykut Başan,2017-11-24T13:28:31.163Z,4,147,Core Framework,BlueBox.Core,False,2018-04-16T08:33:39.467+00:00,True,False,BlueBox Core Framework,"BlueBox,Core",2576,False,1.1.2
+"Scott Francis,David Sheets",2017-11-24T13:30:00.44Z,146,147,RevStackCore implementation of the AspNetCore Identity framework.,RevStackCore.Identity,False,2017-11-25T20:19:12.687+00:00,True,False,,,987,False,1.0.12
+"Dox Sweden AB,Jovan Paskota",2017-11-24T13:29:45.973Z,2,147,Database layer for Dox Objects,Dox.Net.MsSqlBuilder,False,2018-04-18T09:15:27.35+00:00,True,False,,Dox,22695,False,2.3.10
+Aykut Başan,2017-11-24T13:28:31.163Z,4,147,Core Framework,BlueBox.Core,False,2018-04-16T08:33:39.467+00:00,True,False,,"BlueBox,Core",2576,False,1.1.2
+Abp.AspNetZeroCore,2017-11-24T13:29:02.66Z,2,147,Package Description,Abp.AspNetZeroCore,False,2018-04-18T08:48:40.787+00:00,True,False,,,12188,False,1.0.6
+blommers,2017-11-24T13:23:23.66Z,147,147,UrdfImporter for netstandard2.0,UrdfImporter,False,2017-11-24T13:23:23.66+00:00,True,False,UrdfImporter provides a [URDF](http://wiki.ros.org/urdf) file parser for [.NET](https://www.microsoft.com/net) applications.,"Urdf,xml,importer",82,False,1.0.0
+endlesstravel,2017-11-24T13:27:39.633Z,143,147,C# Wrapper for Love2d,Love2dCS,False,2017-11-28T01:16:44.19+00:00,True,False,,,945,False,0.0.6
+Geeks ltd,2017-11-24T13:26:40.963Z,105,147,M# Framework AWS components.,MSharp.Framework.AWS,False,2018-01-05T19:09:56.563+00:00,True,False,,,2590,False,2.1.0.798
+Geeks ltd,2017-11-24T13:26:20.497Z,5,147,"M# components, data access tools and extension methods.",MSharp.Framework,False,2018-04-15T10:39:20.087+00:00,True,False,,,124350,False,2.1.0.798
+blommers,2017-11-24T13:23:23.66Z,147,147,UrdfImporter for netstandard2.0,UrdfImporter,False,2017-11-24T13:23:23.66+00:00,True,False,,"Urdf,xml,importer",82,False,1.0.0
+Momentum,2017-11-24T13:21:27.773Z,4,147,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.12.373-beta
+Momentum,2017-11-24T13:21:43.367Z,4,147,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.12.373-beta
+UrdfImporter,2017-11-20T20:23:36.693Z,43209,151,"Unofficial version of the UrdfImporter project, current package was not available and not for netstandard2.0",UrdfImporter.Unofficial,False,1900-01-01T00:00:00+00:00,False,False,"Unofficial version of the UrdfImporter project, current package was not available and not for netstandard2.0",,-1,False,1.0.0
+XuPeiYao,2017-11-24T13:19:17.95Z,89,147,針對執行緒相關的擴充方法與幫助方法,EzCoreKit.Threading,True,2018-01-21T11:05:16.027+00:00,True,False,,,1109,False,3.0.1-CI00048
+XuPeiYao,2017-11-24T13:19:04.39Z,89,147,提供Markdown文件解析,EzCoreKit.Markdown,True,2018-01-21T11:05:26.92+00:00,True,False,,,1523,False,3.0.1-CI00048
+XuPeiYao,2017-11-24T13:18:50.5Z,89,147,提供常用600多筆MIME對應查詢,EzCoreKit.MIME,True,2018-01-21T11:05:36.623+00:00,True,False,,,878,False,3.0.1-CI00048
+XuPeiYao,2017-11-24T13:18:48.763Z,89,147,提供AOP型式的RESTful API Client建置,EzCoreKit.Rest,True,2018-01-21T11:05:47.34+00:00,True,False,,,969,False,3.0.1-CI00048
+XuPeiYao,2017-11-24T13:18:39.687Z,89,147,提供ASP.net Core簡易使用Let's Encrypt服務,EzCoreKit.LetsEncrypt,True,2018-01-21T11:04:38.45+00:00,True,False,,,1963,False,3.0.1-CI00048
+XuPeiYao,2017-11-24T13:18:16.237Z,89,147,常用類型擴充方法,EzCoreKit.Extensions,True,2018-01-21T11:03:59.54+00:00,True,False,,,1100,False,3.0.1-CI00048
+XuPeiYao,2017-11-24T13:18:24.39Z,89,147,針對Linq的擴充方法,EzCoreKit.Linq,True,2018-01-21T11:04:50.37+00:00,True,False,,,1076,False,3.0.1-CI00048
+XuPeiYao,2017-11-24T13:18:28.33Z,89,147,檔案相關處理類別與擴充方法,EzCoreKit.File,True,2018-01-21T11:04:12.87+00:00,True,False,,,1025,False,3.0.1-CI00048
+XuPeiYao,2017-11-24T13:18:00.517Z,89,147,針對AspNetCore常用方法之樣板與擴充方法,EzCoreKit.AspNetCore,True,2018-01-21T11:03:32.913+00:00,True,False,,,1971,False,3.0.1-CI00048
+XuPeiYao,2017-11-24T13:17:38.173Z,89,147,為EzCoreKit.AspNetCore.x項目所有套件集合,EzCoreKit.AspNetCore.All,True,2018-01-21T11:02:57.32+00:00,True,False,,,1161,False,3.0.1-CI00048
+XuPeiYao,2017-11-24T13:18:12.58Z,89,147,提供簡單的主程序外之工作執行與管理,EzCoreKit.Jobs,True,2018-01-21T11:04:24.29+00:00,True,False,,,873,False,3.0.1-CI00048
+XuPeiYao,2017-11-24T13:17:38.83Z,89,147,針對在AspNetCore中使用WebSockets服務的擴充與提供更簡單服務建立,EzCoreKit.AspNetCore.WebSockets,True,2018-01-21T11:03:20.9+00:00,True,False,,,1108,False,3.0.1-CI00048
+XuPeiYao,2017-11-24T13:18:37.203Z,89,147,針對Reflection的擴充方法與幫助類型,EzCoreKit.Reflection,True,2018-01-21T11:05:05.95+00:00,True,False,,,1146,False,3.0.1-CI00048
+XuPeiYao,2017-11-24T13:17:49.72Z,89,147,針對AspNetCore.Mvc的常用擴充,EzCoreKit.AspNetCore.Mvc,True,2018-01-21T11:03:07.727+00:00,True,False,,,1103,False,3.0.1-CI00048
+XuPeiYao,2017-11-24T13:17:50.783Z,89,147,安全相關擴充方法與幫助類別,EzCoreKit.Cryptography,True,2018-01-21T11:03:45.243+00:00,True,False,,,1042,False,3.0.1-CI00048
+"Scott Francis,David Sheets",2017-11-24T13:08:53.403Z,146,147,RevStackCore implementation of the AspNetCore Identity framework.,RevStackCore.Identity,False,2017-11-25T20:19:12.687+00:00,True,False,,,987,False,1.0.11
+Wael Alissa,2017-11-24T12:59:19.47Z,147,147,This component enables you to promote multiple properties with constant values.,BizTalkComponents.PipelineComponents.PromoteConstantValues,False,2017-11-24T12:59:19.47+00:00,True,False,,"BizTalkComponents,pipelinecomponents",173,False,1.0.1
+Nebol Software,2017-11-24T13:00:28.933Z,43209,147,A logging framework,NebolLogger,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.24
+Flohr UG,2017-11-24T13:00:53.76Z,27,147,Frenetic-Trace is a light-weight trace visualization software. Use this package for implementation. Visit http://www.frenetic-trace.com/documentation for further details,FSS.Trace.Diagnostic.Listener,False,2018-03-24T01:34:42.467+00:00,True,False,,"Logging,Log,Tracing,Trace,Diagnostic,Error,Reporting",7765,False,1.1.6537.23400
+Wael Alissa,2017-11-24T12:59:19.47Z,147,147,This component enables you to promote multiple properties with constant values.,BizTalkComponents.PipelineComponents.PromoteConstantValues,False,2017-11-24T12:59:19.47+00:00,True,False,,"BizTalkComponents,pipelinecomponents",173,False,1.0.1
+endlesstravel,2017-11-24T12:58:25.55Z,143,147,C# Wrapper for Love2d,Love2dCS,False,2017-11-28T01:16:44.19+00:00,True,False,,,945,False,0.0.5
+Nebol Software,2017-11-24T13:00:28.933Z,43209,147,A logging framework,NebolLogger,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.24
+Mulesoft Inc,2017-11-24T12:51:31.563Z,147,147,"A RAML Parser implementation in .NET for all CLR languages. RESTful API Modeling Language (RAML) is a simple and succinct way of describing practically-RESTful APIs. It encourages reuse, enables discovery and pattern-sharing, and aims for merit-based emergence of best practices.",Raml.Parser,False,2017-11-24T12:51:31.563+00:00,True,False,,"RAML,REST,API,SCHEMA,MARKUP",18039,False,1.0.7
+Mulesoft Inc,2017-11-24T12:51:31.563Z,147,147,"A RAML Parser implementation in .NET for all CLR languages. RESTful API Modeling Language (RAML) is a simple and succinct way of describing practically-RESTful APIs. It encourages reuse, enables discovery and pattern-sharing, and aims for merit-based emergence of best practices.",Raml.Parser,False,2017-11-24T12:51:31.563+00:00,True,False,,"RAML,REST,API,SCHEMA,MARKUP",18068,False,1.0.7
+Davyd McColl,2017-11-24T12:49:38.963Z,2,147,A base package for PeanutButter.TempDb.* packages. This provides the generic TempDb base class,PeanutButter.TempDb,False,2018-04-18T10:04:08.517+00:00,True,False,"Provides only the base generic TempDb class. Please install the specific flavour of TempDb you want instead (which
+	should pull in this package):
+	* PeanutButter.TempDb.SqlCe
+	* PeanutButter.TempDb.Sqlite
+	* PeanutButter.TempDb.LocalDb",,34641,False,1.2.203
+Davyd,2017-11-24T12:49:39.667Z,2,147,The LocalDb TempDb implementation,PeanutButter.TempDb.LocalDb,False,2018-04-18T10:04:08.487+00:00,True,False,"Use this if you need an automagic temporary SqlCe database, for example in testing.",,35620,False,1.2.203
+Davyd McColl,2017-11-24T12:49:42.917Z,2,147,"A (very simple) TCP server which you can use from within a testing environment or, if you're really ambitious, 
+      for some other reason.",PeanutButter.SimpleTcpServer,False,2018-04-18T10:04:08.923+00:00,True,False,"Sometimes you just need a short-lived TCP-based service. The PeanutButter.SimpleHTTPServer package depends on this
+      library for the lower-level TCP communications. This package is available for extension via other protocols
+      and to make installation of PeanutButter.SimpleHTTPServer easier: no need to manually reference PeanutButter.SimpleTCPServer.dll
+      any more -- at least, that's the plan (:
+      NB: unlike the rest of PeanutButter, this module is released under the Code Project Open License (CPOL) which differs from my 
+      regular license of choice (BSD) only in that it explicitly protects you from patent infringement. This license is carried through as
+      the library is a derivative work of:
+      http://www.codeproject.com/Articles/25050/Embedded-NET-HTTP-Server 
+      Thanks to user BobJanova for saving me some time (:",,21495,False,1.2.203
+daf,2017-11-24T12:49:40.527Z,2,147,Some generic test utilites.,PeanutButter.TestUtils.Generic,False,2018-04-18T10:04:09.017+00:00,True,False,"Includes 
+      * PropertyAssert for asserting property value equality by name in tests so that you can TestCase out multiple property set/get ops
+      * ConstructorTestUtils for quick, easy testing of DI constructors
+      * EnumerableExtensions for comparing items inside different collections which have different
+          refs for DTOs, for example,
+      * DecimalExtensions for testing against decimal values with tolerances (eg when using random decimals
+          which go through a layer which truncates, such as a database)
+      * TypeExtensions, for helpers like
+          .ShouldInheritFrom / ShouldImplement
+          .Should(/Not)HaveProperty
+          .VirtualProperties (gets a string array of virtual property names)
+          .PropertyNames
+          .IntersectingProperties
+          (and more)",,47348,False,1.2.203
+Davyd McColl,2017-11-24T12:49:39.777Z,2,147,A generic Migrations Runner for FluentMigrator so you can run in migrations within your application.,PeanutButter.FluentMigrator,False,2018-04-18T10:04:08.377+00:00,True,False,"A generic Migrations Runner for FluentMigrator so you can run in migrations within your application.
+      The generic parameter is a ProcessorFactory type as exposed by FluentMigrator.Runner",,36929,False,1.2.203
+Davyd McColl,2017-11-24T12:49:43.15Z,2,147,The Sqlite TempDb<> implementation,PeanutButter.TempDb.Sqlite,False,2018-04-18T10:04:08.813+00:00,True,False,"Use this if you need an automagic temporary Sqlite database, for example in testing.",,31552,False,1.2.203
+davyd,2017-11-24T12:49:39.777Z,2,147,"Provides the following:
+      * EntityBase
+        - a base entity class to inherit from. Provides the following fields:
+          Created (datetime)
+          LastModified (datetime?)
+          Enabled (bool)
+      * DbContextWithAutomaticTrackingFields
+        - when persisting entities which derive from EntityBase, this will automatically
+          set Created to the current timestamp on a new entity and update LastModified
+          on an updated entity
+      * Extensions to:
+        - AddRange on an IDbSet
+        - AddRange on an ICollection
+        - RemoveRange on an IDbSet
+        - RemoveRange on an ICollection
+        - Clear on IDbSet (delete all in dbset)
+        - AddNew on IDbSet and ICollection
+            - Convenience method so you can, for example, do:
+              var someItem = context.SomeCollection.FirstOrDefault(i => i.Name == ""bob"") ?? context.Collection.AddNew(e => e.Name = ""bob"");
+              which finds the first bob or adds a new one
+        - Transform, which provides a fluent manner to do what you would with Select(), but on a single result",PeanutButter.Utils.Entity,False,2018-04-18T10:04:08.847+00:00,True,False,"Provides some useful extensions for Entity-based projects as well as a base Entity class and associated base
+    DbContext which provide tracking fields (Created/LastModified) and a soft-delete field (Enabled)",,30579,False,1.2.203
+Davyd McColl,2017-11-24T12:49:39.527Z,2,147,A basic INI file reader/writer class,PeanutButter.INI,False,2018-04-18T10:04:09.033+00:00,True,False,"Provides easy-to-use access to INI files, both reading and writing. Data is exposed via a public Dictionary of Dictionaries. 
+      Supports the global ""empty"" section, quoted values and case-insenstive section and key lookups.",,52555,False,1.2.203
+Davyd McColl,2017-11-24T12:49:40.29Z,2,147,Some utilities for using Castle.Windsor in your projects,PeanutButter.Utils.Windsor,False,2018-04-18T10:04:08.627+00:00,True,False,"Provides some commonly-replicated logic when dealing with Windsor
+      - extension method for IWindsorContainer to register all one-to-one resolutions in given assemblies
+      - extension method to register all MVC controllers from within an assembly (by ancestry class name and assembly,
+          so you don't need to import System.Web.Mvc to use other methods in this package)",,21669,False,1.2.203
+Davyd McColl,2017-11-24T12:49:38.26Z,2,147,"A few useful extensions for making testing against the PeanutButter.SimpleHTTPServer.HttpServer cleaner and easier to read,
+      providing extensions to:
+        - test for requests
+        - test for headers",PeanutButter.SimpleHTTPServer.Testability,False,2018-04-18T10:04:08.767+00:00,True,False,Some extensions to ease testability when using PeanutButter.SimpleHTTPServer.HttpServer in your tests.,,17066,False,1.2.203
+Davyd McColl,2017-11-24T12:49:28.15Z,2,147,"Use this project to pull in the three required Fluent Migrations to make your database able to store emails
+      that the PeanutButter.EmailSpooler.Win32Service service can spool for you. You will need to inherit from the following
+      migrations and add those inherited versions to your migration strategy:
+      * Migration_1_CreateEmail
+      * Migration_2_CreateEmailRecipient
+      * Migration_3_CreateEmailAttachment",EmailSpooler.Win32Service.DB,False,2018-04-18T10:04:08.953+00:00,True,False,"Contains the Fluent Migrations to provide the tables necessary to run EmailSpooler.Win32Service. Do not install this unless
+      you expect your project to provide a data source for the PeanutButter.EmailSpooler.Win32Service service.",,29892,False,1.2.203
+Davyd McColl,2017-11-24T12:49:38.633Z,2,147,"Contains utilities for facilitating easier testing of MVC projects:
+            - JsonResultExtensions let you .Get(""(property name)"") on JsonResults
+            from an MVC controller action to easily fetch values from the Json result
+            - ControllerWithContextBuilder facilitates testing of controllers which require
+            a valid context, user, roles, etc.",PeanutButter.TestUtils.MVC,False,2018-04-18T10:04:18.283+00:00,True,False,(deprecated until I can figure out a way to effectively not tie this to a specific release of MVC),,8745,False,1.2.203
+Davyd McColl,2017-11-24T12:49:30.183Z,2,147,"Contains classes to help with testing when entity and a SQL Server would be involved in production:
+    * TestFixtureWithTempDb provides bootstrapping for tests which would use a temporary database (TempDBLocalDb)
+    * EntityPersistenceTestFixtureBase provides helpers for the common test of persisting and recalling entities
+      to test that mappings (automatic or manual) work as expected
+    * DbContextExtensions adds SaveChangesWithErrorReporting(), an extension method for DbContext derivatives
+      to provide more information within tests as to why a test is failing (such information is usually buried within
+      the exception maze that Entity provides)",PeanutButter.TestUtils.Entity,False,2018-04-18T10:04:08.58+00:00,True,False,"Some utilities to make testing of Entity persistence and repositories which rely on having an actual context
+    a little less tedious",,29894,False,1.2.203
+Davyd McColl,2017-11-24T12:49:28.103Z,2,147,The Database Helpers component of the Peanut Butter mini-suite,PeanutButter.DatabaseHelpers,False,2018-04-18T10:04:09.127+00:00,True,False,"Provides statement builders for Select, Insert, Update and Delete, compliant with MSSQL, SqlCE, Access, and, more
+      recently, Firebird. Also contains executors (for datareader and scalar exectution) compliant with Oledb connections
+      since the primary focus was support for apps with legacy ties into Access, but the idea is to be able to extend
+      as necessary to support other engines",,51243,False,1.2.203
+Davyd McColl,2017-11-24T12:49:27.993Z,2,147,The Service Shell slice of the PeanutButter mini-suite,PeanutButter.ServiceShell,False,2018-04-18T10:04:09.11+00:00,True,False,"Provides a simple, easy-to-use shell base class for polling services which can install and uninstall itself. Please
+      reade the included README.txt for the (few) steps you need to do to use this project.",,50206,False,1.2.203
+Davyd McColl,2017-11-24T12:49:35.853Z,2,147,Helpers for testing when using PeanutButter.DatabaseHelpers,PeanutButter.DatabaseHelpers.Testability,False,2018-04-18T10:04:08.783+00:00,True,False,"If you're using NSubstitute to test your project and you're using PeanutButter DatabaseHelpers' sql statement
+      builders, you may wish to test against the interfaces for these builders. However, doing so is more work than
+      it would seem at the outset as each call into the builder returns the builder so when you're trying to do
+      Received() asserts against the Nth call, NSubstitute doesn't know that the call was done against the original
+      substituted object. The BuilderFaker helper produces fake builders which you can use to test the behaviour of
+      your applications instead of having to test sql strings",,50265,False,1.2.203
+Davyd McColl,2017-11-24T12:49:35.37Z,2,147,"Test helpers to use in conjunction with PeanutButter.Async, allowing your tests to
+    treat tasks as if they were run synchronously.",PeanutButter.TestUtils.Async,False,2018-04-18T10:04:08.72+00:00,True,False,"This package, in conjunction with PeanutButter.Async, makes testing easier for
+    code using tasks where the task itself (or artifacts) is never exposed. Inject
+    an ITaskRunner, using the default (or your own) implementation at run-time, and use
+    the ImmediateTaskRunnerBuilder to build a synchronous variant which you can inject
+    at test-time",,15062,False,1.2.203
+Davyd McColl,2017-11-24T12:49:38.603Z,2,147,"The miscellaneous utilities slice of the PeanutButter mini-suite (XML-specific, so you'll need to reference System.Xml.Linq)",PeanutButter.XmlUtils,False,2018-04-18T10:04:08.563+00:00,True,False,,,45228,False,1.2.203
+Davyd McColl,2017-11-24T12:49:36.15Z,2,147,"Helper utility to convert Newtonsoft JObjects recursively to dictionaries,
+    most especially useful when coupled with PeanutButter.DuckTyping, which can
+    duck onto dictionaries, without having to make PeanutButter.DuckTyping depend
+    unecessarily on Newtonsoft.Json",PeanutButter.JObjectExtensions,False,2018-04-18T10:04:08.08+00:00,True,False,"Provides the ToDictionary() extension method for JObjects which converts a JObject
+    recursively to a Dictionary of Dictionaries. Keys are strings, values are boxed as
+    object but have ""proper"" underlying types. Works on collections within the JSON blob
+    too.",,5270,False,1.2.203
+Davyd McColl,2017-11-24T12:49:38.853Z,2,147,The SqlCe TempDb implementation,PeanutButter.TempDb.SqlCe,False,2018-04-18T10:04:08.33+00:00,True,False,"Use this if you need an automagic temporary SqlCe database, for example in testing.",,33667,False,1.2.203
+Davyd McColl,2017-11-24T12:49:35.04Z,2,147,This is the random value generators slice of the PeanutButter mini-suite,PeanutButter.RandomGenerators,False,2018-04-18T10:04:09.05+00:00,True,False,"RandomGenerators helps you with testing by providing random values not only for simple types
+      such as strings and numerics, but also with more complex types using GenericBuilder",,50999,False,1.2.203
+Davyd McColl,2017-11-24T12:49:30.917Z,2,147,The Windows Service Management slice of the PeanutButter mini-suite,PeanutButter.WindowsServiceManagement,False,2018-04-18T10:04:08.5+00:00,True,False,"Provides Windows Service Management functionality:
+      * start
+      * stop
+      * pause
+      * install
+      * uninstall
+      services using wrappers around the native functions",,50000,False,1.2.203
+Davyd McColl,2017-11-24T12:49:32.777Z,2,147,"A package to essentially wrap Task.Run and variants in a runner object which can
+    be substituted or have their implementation changed according to selected task
+    scheduling strategies.",PeanutButter.Async,False,2018-04-18T10:04:08.69+00:00,True,False,"A package to essentially wrap Task.Run and variants in a runner object which can
+    be substituted. This allows your consuming code to be more easily tested, especially
+    in conjunction with PeanutButter.TestUtils.Async, which provides a synchronous
+    ITaskRunner so your tests don't have to have access to internally-used tasks
+    or other artifacts but can just test as if the code under test is synchronous",,14096,False,1.2.203
+Davyd McColl,2017-11-24T12:49:36.93Z,2,147,The SysTray component of the PeanutButter library.,PeanutButter.TrayIcon,False,2018-04-18T10:04:08.86+00:00,True,False,"A Library to facilitate easy tray icon usage, including managing tray icon animation, given frames to ""play"".",,42216,False,1.2.203
+daf,2017-11-24T12:49:28.057Z,2,147,A really tiny Event Aggregator,PeanutButter.TinyEventAggregator,False,2018-04-18T10:04:08.487+00:00,True,False,"Provides a very simple, unthreaded Event Aggregator implementation with a few convenient extras:
+      * one-time subscription
+      * limited-time subscription
+      * the ability to suspend and resume the eventing engine. Events raised during suspension are routed
+        once the engine is resumed",,45094,False,1.2.203
+davyd,2017-11-24T12:49:36.04Z,2,147,Provides the Entity POCO classes for sharing data access with the EmailSpooler.Win32Service service,EmailSpooler.Win32Service.Entity,False,2018-04-18T10:04:09.143+00:00,True,False,Provides the Entity POCO classes for sharing data access with the EmailSpooler.Win32Service service,,28413,False,1.2.203
+Davyd McColl,2017-11-24T12:49:35.73Z,2,147,"A (very simple) HTTP server which you can use from within a testing environment or, if you're really ambitious, for some other reason.",PeanutButter.SimpleHTTPServer,False,2018-04-18T10:04:08.44+00:00,True,False,"Sometimes you just need a short-lived HTTP server, say for testing out something which relies on a WebRequest. This library provides
+      a very bare-bones HTTP server with which you can register handlers to serve up documents or files or to do basically whatever you want.
+      NB: unlike the rest of PeanutButter, this module is released under the Code Project Open License (CPOL) which differs from my 
+      regular license of choice (BSD) only in that it explicitly protects you from patent infringement. This license is carried through as
+      the library is a derivative work of:
+      http://www.codeproject.com/Articles/25050/Embedded-NET-HTTP-Server 
+      Thanks to user BobJanova for saving me some time (:",,41748,False,1.2.203
+Davyd McColl,2017-11-24T12:49:38.447Z,2,147,The miscellaneous utilities slice of the PeanutButter mini-suite (sans XML Utils),PeanutButter.Utils,False,2018-04-18T10:04:09.377+00:00,True,False,,,51066,False,1.2.203
+Davyd McColl,2017-11-24T12:49:31.103Z,2,147,"A package to facilitate duck-typing through an object extension DuckAs<>.
+      There is also a FuzzyDuckAs<> facility for more case-insensitive ducking.
+      At no point is there use of DynamicObjects, which hurt performance.
+      Property read/write as well as methods are ducked, with the current caveat
+      that ref and out parameters may not behave as expected.",PeanutButter.DuckTyping,False,2018-04-18T10:04:08.94+00:00,True,False,"A package to facilitate duck-typing through object extensions without using
+      dynamic objects at all.",,13809,False,1.2.203
+Max-Planck-Institute of Biochemistry,2017-11-24T12:46:07.26Z,1,147,Absolute protein quantification PMID 25225357,PluginProteomicRuler,False,2018-04-19T14:40:23.337+00:00,True,False,,,22434,False,1.6.0.264
+"verzada,snoopie72",2017-11-24T12:47:43.423Z,46,147,Contains the necessary classes to create a FHIR server. Both the setup classes and FHIR controller is here.,FhirStarter.Flare.STU3,False,2018-03-05T08:30:01.22+00:00,True,False,"The web project adds a Global.asax file and a xslt to the web server. Should not be referenced to a library, only to a webservice.","fhir,fhirstarter,flare,stu3,ninject",2611,False,0.9.31
+Max-Planck-Institute of Biochemistry,2017-11-24T12:45:41.403Z,1,147,API for Perseus plugin development,PerseusApi,False,2018-04-19T14:40:17.773+00:00,True,False,,,22955,False,1.6.0.264
+Max-Planck-Institute of Biochemistry,2017-11-24T12:45:55.527Z,1,147,Collection of Perseus plugins,PerseusPluginLib,False,2018-04-19T14:40:20.68+00:00,True,False,,,22367,False,1.6.0.264
+Nebol Software,2017-11-24T12:43:00.103Z,43209,147,Template baseclass controllers for CRUD operations,NebolController,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.14
+Nebol Software,2017-11-24T12:43:00.103Z,43209,147,Template baseclass controllers for CRUD operations,NebolController,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0.14
+Marcin Markowski,2017-11-24T12:37:40.037Z,88,147,SimpleInjector extensions for Hexagonal Architecture components registration,ITLibrium.Hexagon.SimpleInjector,False,2018-01-22T16:35:47.75+00:00,True,False,SimpleInjector extensions for Hexagonal Architecture components registration,"Hexagonal,Architecture,DDD,.Net,Core,SimpleInjector",171,False,1.0.0
+Marcin Markowski,2017-11-24T12:36:22.42Z,147,147,Annotations for Hexagonal Architecture domain logic components,ITLibrium.Hexagon.Domain.Meta,False,2017-11-24T12:36:22.42+00:00,True,False,Annotations for Hexagonal Architecture domain logic components,"Hexagonal,Architecture,DDD,.Net,Core",103,False,1.0.0
+Marcin Markowski,2017-11-24T12:37:03.463Z,147,147,SimpleInjector extensions for Hexagonal Architecture domain logic registration,ITLibrium.Hexagon.Domain.SimpleInjector,False,2017-11-24T12:37:03.463+00:00,True,False,SimpleInjector extensions for Hexagonal Architecture domain logic registration,"Hexagonal,Architecture,.Net,Core,SimpleInjector",107,False,1.0.0
+Bastian Eicher,2017-11-24T12:41:58.547Z,63,147,"The Zero Install Publishing API provides methods for creating and modifying feed files.
+The Zero Install Publishing Tools (including the Feed Editor) are built upon this API. You can use the API to automate complex feed creation/update tasks.
+API documentation: http://0install.de/api/backend/",ZeroInstall.Publish,False,2018-02-16T15:37:25.5+00:00,True,False,,,7388,False,2.14.2
+Alexander Clare,2017-11-24T12:41:41.173Z,141,147,MVVM<BareKnuckleStyle> - Navigation infrastructure,Blue.MVVM.Navigation,True,2017-11-30T08:53:18.137+00:00,True,False,,"Blue,MVVM,Navigation,infratructure",3068,False,4.0.15-dev
+Alexander Clare,2017-11-24T12:41:07.63Z,141,147,"MVVM<BareknuckleStyle>
+higly extensible, yet lightweight implementation of INotifyPropprtyChanged",Blue.MVVM,True,2017-11-30T08:52:38.607+00:00,True,False,,"MVVM,lightweight,simple,NotifyPropertyChanged,Command",7626,False,4.0.15-dev
+Ivan Gagis,2017-11-24T12:39:13.653Z,43209,147,OpenGL 2 renderer for morda C++ GUI library,libmorda-opengl2-ren,False,1900-01-01T00:00:00+00:00,False,False,OpenGL 2 renderer for morda C++ GUI library,"native,nativepackage",2179,False,0.1.12
+Momentum,2017-11-24T12:39:34.137Z,4,147,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.12.371-beta
+Alexander Clare,2017-11-24T12:41:19.377Z,141,147,MVVM<BareKnuckleStyle>  - async first ICommand implementations,Blue.MVVM.Commands,True,2017-11-30T08:52:51.17+00:00,True,False,,"Blue,MVVM,Command,Command<T>,ICommand,ICommand<T>",1134,False,5.0.15-dev
+Momentum,2017-11-24T12:39:18.37Z,4,147,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.12.371-beta
+Alexander Clare,2017-11-24T12:41:30.017Z,141,147,MVVM<;BareKnuckleStyle> - IServiceProvider extensions,Blue.MVVM.IoC,True,2017-11-30T08:53:03.263+00:00,True,False,,"Blue,MVVM,IoC,Inversion,of,Control,DI,Depndency,Injection,IServiceProvider,Extensions",1706,False,4.0.15-dev
+Erik Bergman,2017-11-24T12:39:18.323Z,47,147,Message handler Chain,Serpent.Chain,False,2018-03-04T20:49:34.483+00:00,True,False,,"async,message,handler,tpl,weak,reference,concurrency,retry,semaphore",734,False,0.0.0.8
+Marcin Markowski,2017-11-24T12:36:22.42Z,147,147,Annotations for Hexagonal Architecture domain logic components,ITLibrium.Hexagon.Domain.Meta,False,2017-11-24T12:36:22.42+00:00,True,False,,"Hexagonal,Architecture,DDD,.Net,Core",103,False,1.0.0
+Marcin Markowski,2017-11-24T12:37:40.037Z,88,147,SimpleInjector extensions for Hexagonal Architecture components registration,ITLibrium.Hexagon.SimpleInjector,False,2018-01-22T16:35:47.75+00:00,True,False,,"Hexagonal,Architecture,DDD,.Net,Core,SimpleInjector",171,False,1.0.0
+Marcin Markowski,2017-11-24T12:37:03.463Z,147,147,SimpleInjector extensions for Hexagonal Architecture domain logic registration,ITLibrium.Hexagon.Domain.SimpleInjector,False,2017-11-24T12:37:03.463+00:00,True,False,,"Hexagonal,Architecture,.Net,Core,SimpleInjector",107,False,1.0.0
+Marcin Markowski,2017-11-24T12:35:01.85Z,147,147,SimpleInjector integration with Asp.Net Core,ITLibrium.Hexagon.Asp.SimpleInjector,False,2017-11-24T12:35:01.85+00:00,True,False,SimpleInjector integration with Asp.Net Core,"Hexagonal,Architecture,.Net,Core,Asp,Mvc,SimpleInjector",78,False,1.0.0
+Marcin Markowski,2017-11-24T12:31:47.18Z,147,147,Application layer components,ITLibrium.Hexagon.App,False,2017-11-24T12:31:47.18+00:00,True,False,Hexagonal Architecture application layer components,"Hexagonal,Architecture,.Net,Core",187,False,1.1.0
+Marcin Markowski,2017-11-24T12:33:29.263Z,147,147,Annotations for Hexagonal Architecture application layer components,ITLibrium.Hexagon.App.Meta,False,2017-11-24T12:33:29.263+00:00,True,False,Annotations for Hexagonal Architecture application layer components,"Hexagonal,Architecture,DDD,.Net,Core",103,False,1.0.0
+Marcin Markowski,2017-11-24T12:34:15.447Z,147,147,SimpleInjector extensions for Hexagonal Architecture application logic registration,ITLibrium.Hexagon.App.SimpleInjector,False,2017-11-24T12:34:15.447+00:00,True,False,SimpleInjector extensions for Hexagonal Architecture application logic registration,"Hexagonal,Architecture,CQRS,.Net,Core,SimpleInjector",83,False,1.0.0
+Marcin Markowski,2017-11-24T12:35:42.83Z,98,147,Domain layer components,ITLibrium.Hexagon.Domain,False,2018-01-12T13:01:39.107+00:00,True,False,Domain layer components,"Hexagonal,Architecture,.Net,Core",301,False,1.1.0
+Fucci Leonardo,2017-11-24T12:35:03.893Z,43209,147,"This package is private and works only in DevCity environments.
+This package contains core files for developers.",DevCity.Framework,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.5.7
+Fucci Leonardo,2017-11-24T12:35:03.893Z,43209,147,"This package is private and works only in DevCity environments.
+This package contains core files for developers.",DevCity.Framework,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.5.7
+Marcin Markowski,2017-11-24T12:33:29.263Z,147,147,Annotations for Hexagonal Architecture application layer components,ITLibrium.Hexagon.App.Meta,False,2017-11-24T12:33:29.263+00:00,True,False,,"Hexagonal,Architecture,DDD,.Net,Core",103,False,1.0.0
+Marcin Markowski,2017-11-24T12:35:42.83Z,98,147,Domain layer components,ITLibrium.Hexagon.Domain,False,2018-01-12T13:01:39.107+00:00,True,False,,"Hexagonal,Architecture,.Net,Core",301,False,1.1.0
+Marcin Markowski,2017-11-24T12:35:01.85Z,147,147,SimpleInjector integration with Asp.Net Core,ITLibrium.Hexagon.Asp.SimpleInjector,False,2017-11-24T12:35:01.85+00:00,True,False,,"Hexagonal,Architecture,.Net,Core,Asp,Mvc,SimpleInjector",78,False,1.0.0
+Marcin Markowski,2017-11-24T12:34:15.447Z,147,147,SimpleInjector extensions for Hexagonal Architecture application logic registration,ITLibrium.Hexagon.App.SimpleInjector,False,2017-11-24T12:34:15.447+00:00,True,False,,"Hexagonal,Architecture,CQRS,.Net,Core,SimpleInjector",83,False,1.0.0
+CXuesong,2017-11-18T13:50:08.277Z,44,153,"WikiClientLibrary.Wikibase is a .NET Standard & asynchronous client library for MediaWiki sites with Wikibase support, e.g. Wikidata.",CXuesong.MW.WikiClientLibrary.Wikibase,True,2018-03-07T12:47:26.537+00:00,False,False,,"MediaWiki,API,Client",741,True,0.6.0-intX2
+endlesstravel,2017-11-24T12:32:51.86Z,143,147,C# Wrapper for Love2d,Love2dCS,False,2017-11-28T01:16:44.19+00:00,True,False,,,945,False,0.0.4
+MhLabs.NotificationChannel,2017-11-24T12:32:26.067Z,147,147,Package Description,MhLabs.NotificationChannel,False,2017-11-24T12:32:26.067+00:00,True,False,,,2078,False,1.0.0
+Marcin Markowski,2017-11-24T12:31:47.18Z,147,147,Application layer components,ITLibrium.Hexagon.App,False,2017-11-24T12:31:47.18+00:00,True,False,,"Hexagonal,Architecture,.Net,Core",187,False,1.1.0
+mookid8000;jesper_dax,2017-11-24T12:30:11.547Z,101,147,DAX stuff,DAX.IO,False,2018-01-09T15:36:55.127+00:00,True,False,,,207,False,0.0.2
+CXuesong,2017-11-24T12:29:42.08Z,44,147,"WikiClientLibrary.Wikibase is a .NET Standard & asynchronous client library for MediaWiki sites with Wikibase support, e.g. Wikidata.",CXuesong.MW.WikiClientLibrary.Wikibase,True,2018-03-07T12:47:26.537+00:00,True,False,,"MediaWiki,API,Client",741,True,0.6.0-intX2a
+Ananth,2017-11-24T12:30:11.53Z,147,147,Data Access Layer,Ah.Framework.SqlClient,False,2017-11-24T12:30:11.53+00:00,True,False,This Nuget package used to add Data to database SQL.This packege replace our Data Access Layer.,,355,False,6.0.0
+"Scott Francis,David Sheets",2017-11-24T12:27:23.737Z,146,147,RevStackCore implementation of the AspNetCore Identity framework.,RevStackCore.Identity,False,2017-11-25T20:19:12.687+00:00,True,False,,,987,False,1.0.10
+Max-Planck-Institute of Biochemistry,2017-11-24T12:25:58.51Z,1,147,PerseusApi implementation,PerseusLibS,False,2018-04-20T09:10:17.28+00:00,True,False,,,69380,False,1.6.0.1381
+Picturepark.SDK.V1,2017-11-24T12:19:06.163Z,52,147,Picturepark .NET SDK: The client implementations to access the Picturepark backend.,Picturepark.SDK.V1,False,2018-02-27T16:44:39.87+00:00,True,False,,,309,False,0.50.100
+Picturepark.SDK.V1.ServiceProvider,2017-11-24T12:19:52.753Z,52,147,Picturepark .NET SDK ServiceProvider,Picturepark.SDK.V1.ServiceProvider,False,2018-02-27T16:45:26.903+00:00,True,False,,,273,False,0.50.100
+endlesstravel,2017-11-24T12:19:13.18Z,143,147,C# Wrapper for Love2d,Love2dCS,False,2017-11-28T01:16:44.19+00:00,True,False,,,945,False,0.0.3
+Picturepark.SDK.V1.CloudManager,2017-11-24T12:19:20.287Z,52,147,Picturepark .NET SDK CloudManager: Manage Picturepark backend instances.,Picturepark.SDK.V1.CloudManager,False,2018-02-27T16:44:52.09+00:00,True,False,,,288,False,0.50.100
+Picturepark.SDK.V1.Localization,2017-11-24T12:19:42.49Z,52,147,Picturepark .NET SDK Localization: Provides translations for exception codes and texts.,Picturepark.SDK.V1.Localization,False,2018-02-27T16:45:14.967+00:00,True,False,,,274,False,0.50.100
+Picturepark.SDK.V1.Contract,2017-11-24T12:19:31.147Z,52,147,Picturepark .NET SDK Contracts: The SDK's contracts (DTOs and client interfaces).,Picturepark.SDK.V1.Contract,False,2018-02-27T16:45:03.387+00:00,True,False,,,311,False,0.50.100

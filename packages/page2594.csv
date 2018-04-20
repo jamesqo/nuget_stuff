@@ -1,0 +1,1187 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+DmitryPoznyak,2017-07-16T07:39:17.85Z,421,278,Common utils for log4net,Zz.Utils.Log4net,False,2017-02-23T02:01:38.857-08:00,True,False,,,597,False,2.2.1.28166
+DmitryPoznyak,2017-07-16T07:39:07.49Z,221,278,Common utils,Zz.Utils,False,2017-09-11T12:57:50.6+00:00,True,False,,,1184,False,2.2.1.28164
+Larry Nung,2017-07-16T07:31:01.397Z,276,278,Let LevelUp.Serializer support MsgPack,LevelUp.Serializer.MsgPackCli,False,2017-07-18T02:59:32.807-07:00,True,False,,,208,False,1.0.0
+Dmitry Shechtman,2017-07-16T07:28:30.42Z,278,278,CHIMP platform generator,Net.Chdk.Meta.Generators.Platform,True,2017-07-16T00:28:30.42-07:00,True,False,,"chimp,meta,generator,platform",189,False,0.2.0-alpha
+Dmitry Shechtman,2017-07-16T07:22:31.83Z,278,278,CHIMP PS platform generators,Net.Chdk.Meta.Generators.Platform.Ps,True,2017-07-16T00:22:31.83-07:00,True,False,,"chimp,meta,generator,platform,ps",189,False,0.2.0-alpha
+abirdutta_v1.0,2017-07-15T21:46:01.75Z,278,279,"Converts SQL DataTable to JSON format.
+
+Usage: 
+
+Add the nuget package in your project.
+Use the function below.
+RiverOx.Utility.Convert.SqlToJson(DataTable, ""primaryKeyColumnName"")",RiverOx.Utility,False,2017-07-16T00:44:52.58-07:00,True,False,"Converts SQL DataTable to JSON format.
+
+Example: 
+
+SELECT 
+ta.colA0 AS colA0, -- Primary Key
+ta.colA1 AS colA1,
+tb.colB0 AS B.colB0,
+tb.colB1 AS B.colB1,
+tc.colC0 AS B.C[colC0],
+tc.colC1 AS B.C[colC1]
+td.colD0 AS D[colD0],
+td.colD1 AS D[colD1]
+
+FROM TableA ta
+LEFT JOIN TableB tb on ta.colA0 = tb.colB0
+LEFT JOIN TableC tc on tb.colB0 = tc.colC0
+LEFT JOIN TableD td on tc.colC0 = td.colD0
+
+| colA0   colA1   B.colB0  B.colB1  B.C[colC0]  B.C[colC1]   D[colD0] D[colD1]   |
+
+| 1        ARow1  BRow11   BRow12   CRow11      CRow11A      DRow11   DRow11A    |
+| 1        ARow1  BRow11   BRow12   CRow12      CRow12A      DRow12   DRow12A    |
+
+Result:
+[
+  {
+    ""colA0"": 1,
+    ""colA1"": ""ARow1"",
+    ""B"": {
+      ""colB0"": ""BRow11"",
+      ""colB1"": ""BRow12"",
+      ""C"": [
+	{""colC0"": ""CRow11"",""colC1"": ""CRow11A""},
+        {""colC0"": ""CRow12"",""colC1"": ""CRow12A""}
+      ]
+    },
+    ""D"": [
+	{""colD0"": ""DRow11"",""colD1"": ""DRow11A""}
+    ]
+  }
+]","sql,table,to,json,SQL,TABLE,TO,JSON,sqltojson,sqltabletojson",579,False,1.0.0
+Dmitry Shechtman,2017-07-16T07:19:02.62Z,278,278,CHIMP EOS platform generators,Net.Chdk.Meta.Generators.Platform.Eos,True,2017-07-16T00:19:02.62-07:00,True,False,,"chimp,meta,generator,platform,eos",100,False,0.2.0-alpha
+abirdutta_v1.0,2017-07-15T21:46:01.75Z,278,279,"Converts SQL DataTable to JSON format
+
+Usage: RiverOx.Utility.Convert.SqlToJson(DataTable, ""primaryKeyColumnName"")",RiverOx.Utility,False,2017-07-16T00:44:52.58-07:00,True,False,"Converts SQL DataTable to JSON format.
+
+Example: 
+
+SELECT 
+ta.colA0 AS colA0, -- Primary Key
+ta.colA1 AS colA1,
+tb.colB0 AS B.colB0,
+tb.colB1 AS B.colB1,
+tc.colC0 AS B.C[colC0],
+tc.colC1 AS B.C[colC1]
+td.colD0 AS D[colD0],
+td.colD1 AS D[colD1]
+
+FROM TableA ta
+LEFT JOIN TableB tb on ta.colA0 = tb.colB0
+LEFT JOIN TableC tc on tb.colB0 = tc.colC0
+LEFT JOIN TableD td on tc.colC0 = td.colD0
+
+| colA0   colA1   B.colB0  B.colB1  B.C[colC0]  B.C[colC1]   D[colD0] D[colD1]   |
+
+| 1        ARow1  BRow11   BRow12   CRow11      CRow11A      DRow11   DRow11A    |
+| 1        ARow1  BRow11   BRow12   CRow12      CRow12A      DRow12   DRow12A    |
+
+Result:
+[
+  {
+    ""colA0"": 1,
+    ""colA1"": ""ARow1"",
+    ""B"": {
+      ""colB0"": ""BRow11"",
+      ""colB1"": ""BRow12"",
+      ""C"": [
+	{""colC0"": ""CRow11"",""colC1"": ""CRow11A""},
+        {""colC0"": ""CRow12"",""colC1"": ""CRow12A""}
+      ]
+    },
+    ""D"": [
+	{""colD0"": ""DRow11"",""colD1"": ""DRow11A""}
+    ]
+  }
+]","sql,table,to,json,SQL,TABLE,TO,JSON,sqltojson,sqltabletojson",579,False,1.0.0
+Andrew M. Fahmy,2017-07-16T07:10:44.883Z,24,278,A releational object mapper,SqlMapper,False,2018-03-27T10:46:37.63+00:00,True,False,,"SQL,Mapper",2010,False,1.0.8
+Dmitry Shechtman,2017-07-16T07:09:04.317Z,278,278,CHIMP base platform generator,Net.Chdk.Meta.Generators.Platform.Base,True,2017-07-16T00:09:04.317-07:00,True,False,,"chimp,meta,generator,platform,base",99,False,0.2.0-alpha
+Andrew M. Fahmy,2017-07-16T07:08:39.813Z,24,278,Common code for SQLMapper Library,SqlMapper.Common,False,2018-03-27T09:51:41.873+00:00,True,False,,"SQL,Mapper,Common",1971,False,1.0.8
+James Haslam,2017-07-16T04:36:03.797Z,43209,278,Alexa Manager,AlexaManager,False,1899-12-31T16:00:00-08:00,False,False,,"Alexa,Manager",-1,False,1.0.2
+James Haslam,2017-07-16T04:34:02.23Z,43209,278,Alexa Manager,AlexaManager,False,1899-12-31T16:00:00-08:00,False,False,,"Alexa,Manager",-1,False,1.0.1
+James Haslam,2017-07-16T04:46:21.85Z,43209,278,Alexa Manager,AlexaManager,False,1899-12-31T16:00:00-08:00,False,False,,"Alexa,Manager",-1,False,1.0.5
+James Haslam,2017-07-16T04:42:29.61Z,43209,278,Alexa Manager,AlexaManager,False,1899-12-31T16:00:00-08:00,False,False,,"Alexa,Manager",-1,False,1.0.3
+bashrc-real,2017-07-16T06:56:02.207Z,278,278,"A library for managing shared resources in C# almost equivalent to shared_ptr
+Despite having the luxury of garbage collector, items that derive from IDisposable needs to be almost treated like a native resource. The owner must take the responsibility of calling Dispose once all the consumers of the resource are no longer using the api. But for some shared reosources their is no implicit owner and hence it becomes difficult to clean up resources in a deterministic manner. This library provides ref counted handle objects managed by a owner class which has the responsibility of calling Dispose once the ref count of the underlying object becomes 0.
+reddit page for the nuget here: https://www.reddit.com/r/csharp/comments/6ct0jv/sharedownership_in_c_equivalent_of_stdshared_ptr",SharedOwner,True,2017-07-15T23:56:02.207-07:00,True,False,,"c-sharp-library,reference-counting,reference-manager",87,False,1.0.0-CI00001
+Dmitry Shechtman,2017-07-16T06:53:01.187Z,278,278,CHIMP platform generator API,Net.Chdk.Meta.Generators.Platform.Core,True,2017-07-15T23:53:01.187-07:00,True,False,,"chimp,meta,generator,platform,core",189,False,0.2.0-alpha
+Nick Hodge,2017-07-16T06:34:01.92Z,278,278,"C# Port of the University of Aberdeen simplenlg (Natural Language Generation) engine.
+
+Incorporates Default-Lexicon.xml in Class Library (self-contained)
+
+MIT 1.1 License",SharpSimpleNLG,False,2017-07-15T23:34:01.92-07:00,True,False,C# Port of the University of Aberdeen simplenlg (Natural Language Generation) engine.,"nlg,natural,language,generation,simplenlg",1170,False,1.2.1
+Liu Jun,2017-07-06T04:43:58.383Z,43209,288,万达信息医院医保监管产品客户端库,WdHospClient,False,1900-01-01T00:00:00+00:00,False,False,,,2232,False,2.0.1.4
+Liu Jun,2017-07-16T06:31:45.9Z,43209,278,万达信息医院医保监管产品客户端库,WdHospClient,False,1900-01-01T00:00:00+00:00,False,False,,,2232,False,2.0.2
+Gennady Verdel,2017-07-16T06:20:03.117Z,125,278,LogoFX Client Bootstrapping Core containing cross-platform client bootstrapper utilities.,LogoFX.Client.Bootstrapping.Core,True,2017-12-16T09:04:59.413+00:00,True,False,LogoFX Client Bootstrapping Core containing cross-platform client bootstrapper utilities.,,6325,False,1.7.0-rc1
+Dan Siegel,2017-07-16T06:09:45.73Z,71,278,Prism Library Templates,Prism.Forms.QuickstartTemplates,True,2018-02-08T05:17:53.05+00:00,False,False,,,2614,False,1.0.0-alpha3
+Dan Siegel,2017-07-16T06:09:45.73Z,71,278,Prism Library Templates,Prism.Forms.QuickstartTemplates,True,2018-02-08T05:17:53.05+00:00,True,False,,,2614,False,1.0.0-alpha3
+Dan Siegel,2017-07-16T06:09:45.73Z,71,278,Prism Library Templates,Prism.Forms.QuickstartTemplates,True,2018-02-08T05:17:53.05+00:00,True,False,,,2614,False,1.0.0-alpha3
+"Wei ""oldrev"" Li",2017-07-16T06:06:53.88Z,119,278,An OpenDocument/OfficeOpenXML powered reporting engine,MaltReport2,False,2017-12-22T10:21:20.657+00:00,True,False,"MaltReport is an OpenDocument/OfficeOpenXML powered reporting engine for .NET and Mono, it is inspired by the excellent Relatorio Project.
+
+      MaltReport DO NOT requires MS-Office or LibreOffice to render report, instead MaltReport manipulates ODT/ODS/XLS/DOC file by itself, so it fast and reliable.
+
+      The template of your report is just a normal document created with LibreOffice or MS-Word/MS-Excel (ODT/ODS and XLS/DOC are fully supported), we can use LibreOffice and MS-Word/Excel as WYSIWYG report development tools.","report,reportengine,reporting,docx,odt,odf,openxml,opendocument",1147,False,2.1.1
+Dmitry Shechtman,2017-07-16T06:08:23.867Z,272,278,CHIMP camera metadata base providers,Net.Chdk.Meta.Providers.Camera.Base,True,2017-07-22T05:31:15.09+00:00,True,False,,"chimp,meta,provider,camera,base",366,False,0.1.1-alpha
+"Wei ""oldrev"" Li",2017-07-16T06:06:53.88Z,119,278,An OpenDocument/OfficeOpenXML powered reporting engine,MaltReport2,False,2017-12-22T10:21:20.657+00:00,True,False,"MaltReport is an OpenDocument/OfficeOpenXML powered reporting engine for .NET and Mono, it is inspired by the excellent Relatorio Project.
+
+      MaltReport DO NOT requires MS-Office or LibreOffice to render report, instead MaltReport manipulates ODT/ODS/XLS/DOC file by itself, so it fast and reliable.
+
+      The template of your report is just a normal document created with LibreOffice or MS-Word/MS-Excel (ODT/ODS and XLS/DOC are fully supported), we can use LibreOffice and MS-Word/Excel as WYSIWYG report development tools.","report,reportengine,reporting,docx,odt,odf,openxml,opendocument",1147,False,2.1.1
+lisenz,2017-07-16T06:03:29.307Z,273,278,WPF底层框架,Adai.Wpf.DesktopOS,False,2017-07-21T06:26:29.2+00:00,True,False,,,383,False,1.3.2.2
+lisenz,2017-07-16T05:58:22.23Z,273,278,轻量级API服务客户端框架,Adai.Service.Client,False,2017-07-21T06:15:42.943+00:00,True,False,,,393,False,1.3.2.2
+lisenz,2017-07-16T05:59:17.047Z,273,278,桌面应用程序核心库,Adai.OS,False,2017-07-21T06:18:20.98+00:00,True,False,,,396,False,1.3.2.2
+"Sam Harwell,Terence Parr",2017-07-16T05:56:29.227Z,12,278,"The runtime library for parsers generated by the C# target of ANTLR 4. This package supports projects targeting .NET 2.0 or newer, and built using Visual Studio 2008 or newer.",Antlr4.Runtime,True,2018-04-08T22:07:28.427+00:00,True,False,The runtime library for parsers generated by the C# target of ANTLR 4.,"antlr,antlr4,parsing",367319,True,4.6.5-beta001
+"Sam Harwell,Terence Parr",2017-07-16T05:57:19.353Z,12,278,"The C# target of the ANTLR 4 parser generator for Visual Studio 2010+ projects. This package supports projects targeting .NET 2.0 or newer, and built using Visual Studio 2010 or newer.",Antlr4,True,2018-04-08T22:08:10.617+00:00,True,False,The C# target of the ANTLR 4 parser generator for Visual Studio 2010+ projects.,"antlr,antlr4,parsing",266363,True,4.6.5-beta001
+"Sam Harwell,Terence Parr",2017-07-16T05:57:36.62Z,12,278,"The C# target of the ANTLR 4 parser generator for Visual Studio 2008 projects. This package supports projects targeting .NET 2.0 or newer, and built using Visual Studio 2008.",Antlr4.VS2008,True,2018-04-08T22:08:28.18+00:00,True,False,The C# target of the ANTLR 4 parser generator for Visual Studio 2008 projects.,"antlr,antlr4,parsing",4888,True,4.6.5-beta001
+"Sam Harwell,Terence Parr",2017-07-16T05:56:55.9Z,12,278,"The C# target of the ANTLR 4 parser generator for Visual Studio 2010+ projects. This package supports projects targeting .NET 2.0 or newer, and built using Visual Studio 2010 or newer.",Antlr4.CodeGenerator,True,2018-04-08T22:07:52.43+00:00,True,False,The C# target of the ANTLR 4 parser generator for Visual Studio 2010+ projects.,"antlr,antlr4,parsing",93056,True,4.6.5-beta001
+lisenz,2017-07-16T05:57:19.93Z,273,278,轻量级API服务端框架,Adai.Service.Server,False,2017-07-21T06:16:51.633+00:00,True,False,,,391,False,1.3.2.2
+lisenz,2017-07-16T05:55:34.707Z,273,278,数据逻辑应用层,Adai.DataStore,False,2017-07-21T06:13:31.66+00:00,True,False,,,400,False,1.3.2.2
+lisenz,2017-07-16T05:53:58.623Z,273,278,数据逻辑核心底层,Adai.DataCore,False,2017-07-21T06:11:51.797+00:00,True,False,,,405,False,1.3.2.2
+Dmitry Shechtman,2017-07-16T05:52:00.103Z,272,278,CHIMP platform metadata providers,Net.Chdk.Meta.Providers.Platform,True,2017-07-22T05:39:50.507+00:00,True,False,,"chimp,meta,provider,platform",368,False,0.2.0-alpha
+lisenz,2017-07-16T05:48:18.53Z,273,278,核心基础类库,Adai.Core,False,2017-07-21T06:09:39.603+00:00,True,False,,,500,False,1.3.2.2
+Max-Planck-Institute of Biochemistry,2017-07-16T05:37:10.72Z,1,278,PerseusApi implementation,PerseusLibS,False,2018-04-19T14:44:05.28+00:00,True,False,,,69380,False,1.6.0.1141
+"Intuit,Inc.",2017-07-13T21:12:38.867Z,43209,281,"The IPP .NET SDK for QuickBooks V3 is a set of .NET classes that make it easier to call QuickBooks APIs.  Some of the features included in this SDK are as follows:
+
+-Ability to perform single and batch processing of CRUD operations on all QuickBooks entities.
+
+-Request and Response Handler has common interface with two implemented classes to handle both synchronous and asynchronous requests.
+
+-Support for both XML and JSON Request and Response format.
+
+-Ability to configure app settings in the configuration file requiring no additional code change.
+
+-Support for Gzip and Deflate compression formats to improve performance of QuickBooks API calls.
+
+-Retry policy constructors to help apps handle transient errors.
+
+-Logging mechanisms for trace, request/response, and Azure logging.
+
+-Sync APIs that assist with data synchronization between QuickBooks Desktop and Intuit's cloud.
+
+-Query Filters that enable you to write LINQ queries to retrieve QuickBooks entities whose properties meet specified criteria.
+
+-LINQ queries for accessing QuickBooks Reports.
+
+-Sparse Update to update writable properties specified in a request and leave the others unchanged.
+
+-Change data that enables you to retrieve a list of entities modified during specified time points.
+
+Dependencies-
+.Net Framework 4.0
+NewtonSoft.Json >=10.0.3
+DevDefined.OAuth >=0.2",IppDotNetSdkForQuickBooksApiV3,False,1900-01-01T00:00:00+00:00,False,False,The IPP .NET SDK for QuickBooks V3 is a set of .NET classes that make it easier to call QuickBooks APIs.,"Intuit,Developer,Group,IPP,QuickBooks,API,V3,.NET",225904,False,3.2.1
+"Intuit,Inc.",2017-06-20T19:22:23.863Z,43209,304,"The IPP .NET SDK for QuickBooks V3 is a set of .NET classes that make it easier to call QuickBooks APIs.  Some of the features included in this SDK are as follows:
+
+-Ability to perform single and batch processing of CRUD operations on all QuickBooks entities.
+
+-Request and Response Handler has common interface with two implemented classes to handle both synchronous and asynchronous requests.
+
+-Support for both XML and JSON Request and Response format.
+
+-Ability to configure app settings in the configuration file requiring no additional code change.
+
+-Support for Gzip and Deflate compression formats to improve performance of QuickBooks API calls.
+
+-Retry policy constructors to help apps handle transient errors.
+
+-Logging mechanisms for trace, request/response, and Azure logging.
+
+-Sync APIs that assist with data synchronization between QuickBooks Desktop and Intuit's cloud.
+
+-Query Filters that enable you to write LINQ queries to retrieve QuickBooks entities whose properties meet specified criteria.
+
+-LINQ queries for accessing QuickBooks Reports.
+
+-Sparse Update to update writable properties specified in a request and leave the others unchanged.
+
+-Change data that enables you to retrieve a list of entities modified during specified time points.
+
+Dependencies-
+.Net Framework 4.0
+NewtonSoft.Json >=9.0.1
+DevDefined.OAuth >=0.2",IppDotNetSdkForQuickBooksApiV3,False,1900-01-01T00:00:00+00:00,False,False,The IPP .NET SDK for QuickBooks V3 is a set of .NET classes that make it easier to call QuickBooks APIs.,"Intuit,Developer,Group,IPP,QuickBooks,API,V3,.NET",225904,False,3.1.0
+Max-Planck-Institute of Biochemistry,2017-07-16T05:28:20.633Z,1,278,PerseusApi implementation,PerseusLibS,False,2018-04-19T14:44:05.28+00:00,True,False,,,69380,False,1.6.0.5
+Max-Planck-Institute of Biochemistry,2017-07-16T05:19:40.19Z,1,278,PerseusApi implementation,PerseusLibS,False,2018-04-19T14:44:05.28+00:00,True,False,,,69380,False,1.6.0.1140
+Andrew Arnott,2017-07-16T05:16:38.51Z,278,278,"Make your Xunit test methods self-determine to report a ""skipped"" result. Useful for such cases as ""not supported on this platform"" results or other environmental inputs.",Xunit.SkippableFact,False,2017-07-15T22:16:38.51-07:00,True,False,,"xunit,testing,skipping",77007,True,1.3.3
+Inkton.NesterWorks,2017-07-16T05:06:16.997Z,98,278,A utility to manage run-time Nest services.,Inkton.NesterWorks,False,2018-01-12T05:09:07.87+00:00,True,False,,,2179,False,1.0.3
+James Haslam,2017-07-16T04:46:21.85Z,43209,278,Alexa Manager,AlexaManager,False,1899-12-31T16:00:00-08:00,False,False,,"Alexa,Manager",-1,False,1.0.5
+James Haslam,2017-07-16T04:42:29.61Z,43209,278,Alexa Manager,AlexaManager,False,1899-12-31T16:00:00-08:00,False,False,,"Alexa,Manager",-1,False,1.0.3
+Andrew Arnott,2017-07-16T04:38:46.083Z,278,278,"Adds pairwise and combinatorial testing to Xunit. When combined with Xunit's [Theory] attribute, generates test cases that run a test under many conditions that you control via test method parameters.",Xunit.Combinatorial,False,2017-07-15T21:38:46.083-07:00,True,False,,"xunit,combinatorial,pairwise,testing",23382,True,1.2.7
+James Haslam,2017-07-16T04:36:03.797Z,43209,278,Alexa Manager,AlexaManager,False,1899-12-31T16:00:00-08:00,False,False,,"Alexa,Manager",-1,False,1.0.2
+James Haslam,2017-07-16T04:34:02.23Z,43209,278,Alexa Manager,AlexaManager,False,1899-12-31T16:00:00-08:00,False,False,,"Alexa,Manager",-1,False,1.0.1
+Lee,2017-07-16T04:27:38.857Z,162,278,MES系统接口,Realgoal.MES.IAppService,False,2017-11-09T05:19:23.913+00:00,True,False,,,18275,False,2.3.5
+TCPServer,2017-07-16T04:15:52.397Z,214,278,How to use a TCP server instead of Kestrel,TCPServer,False,2017-09-18T09:54:56.61+00:00,True,False,,,3879,False,1.0.2
+Lee,2017-07-16T04:15:14.143Z,162,278,MES系统接口,Realgoal.MES.IAppService,False,2017-11-09T05:19:23.913+00:00,True,False,,,18275,False,2.3.4
+Dmitry Shechtman,2017-07-16T03:46:16.39Z,278,278,CHIMP SDM metadata providers,Net.Chdk.Meta.Providers.Sdm,True,2017-07-16T16:53:30.903-07:00,True,False,,"chimp,meta,provider,sdm",197,False,0.2.0-alpha
+ReflectSoftware Inc.,2017-07-16T03:45:37.03Z,44,278,Plato.Messaging.RMQ deployment package,Plato.Messaging.RMQ,False,2018-03-07T19:35:41.143+00:00,True,False,,"plato,.net,services,work-manager,exceptions,dapper,redis,RabbitMQ,ActiveMQ",3327,False,2.0.68
+ReflectSoftware Inc.,2017-07-16T03:45:26.89Z,44,278,Plato.Messaging.AMQ deployment package,Plato.Messaging.AMQ,False,2018-03-07T19:35:28.783+00:00,True,False,,"plato,.net,services,work-manager,exceptions,dapper,redis,RabbitMQ,ActiveMQ",3629,False,2.0.68
+ReflectSoftware Inc.,2017-07-16T03:45:08.873Z,44,278,Plato deployment package,Plato,False,2018-03-07T19:35:03.14+00:00,True,False,,"plato,.net,services,work-manager,exceptions,dapper,redis,RabbitMQ,ActiveMQ",4108,False,2.0.68
+ReflectSoftware Inc.,2017-07-16T03:45:17.593Z,44,278,Plato.Redis deployment package,Plato.Redis,False,2018-03-07T19:35:14.97+00:00,True,False,,"plato,.net,services,work-manager,exceptions,dapper,redis,RabbitMQ,ActiveMQ",3830,False,2.0.68
+ReflectSoftware Inc.,2017-07-16T03:44:59.983Z,44,278,Plato.Dapper deployment package,Plato.Dapper,False,2018-03-07T19:34:50.407+00:00,True,False,,"plato,.net,services,work-manager,exceptions,dapper,redis,RabbitMQ,ActiveMQ",4029,False,2.0.68
+TCPServer,2017-07-16T03:44:56.797Z,214,278,How to use a TCP server instead of Kestrel,TCPServer,False,2017-09-18T09:54:56.61+00:00,True,False,,,3879,False,1.0.1
+ReflectSoftware Inc.,2017-07-16T03:44:23.687Z,44,278,Plato.Security deployment package,Plato.Security,False,2018-03-07T19:34:03.03+00:00,True,False,,"plato,.net,services,work-manager,exceptions,dapper,redis,RabbitMQ,ActiveMQ",4147,False,2.0.68
+ReflectSoftware Inc.,2017-07-16T03:44:04.403Z,44,278,Plato.Cache deployment package,Plato.Cache,False,2018-03-07T19:33:38.28+00:00,True,False,,"plato,.net,services,work-manager,exceptions,dapper,redis,RabbitMQ,ActiveMQ",4254,False,2.0.68
+ReflectSoftware Inc.,2017-07-16T03:44:51.06Z,44,278,Plato.WinAPI deployment package,Plato.WinAPI,False,2018-03-07T19:34:38.533+00:00,True,False,,"plato,.net,services,work-manager,exceptions,dapper,redis,RabbitMQ,ActiveMQ",4134,False,2.0.68
+ReflectSoftware Inc.,2017-07-16T03:44:14.31Z,44,278,Plato.Configuration deployment package,Plato.Configuration,False,2018-03-07T19:33:50.653+00:00,True,False,,"plato,.net,services,work-manager,exceptions,dapper,redis,RabbitMQ,ActiveMQ",4128,False,2.0.68
+ReflectSoftware Inc.,2017-07-16T03:44:41.827Z,44,278,Plato.Core deployment package,Plato.Core,False,2018-03-07T19:34:27.187+00:00,True,False,,"plato,.net,services,work-manager,exceptions,dapper,redis,RabbitMQ,ActiveMQ",4140,False,2.0.68
+ReflectSoftware Inc.,2017-07-16T03:44:33.31Z,44,278,Plato.Serializers deployment package,Plato.Serializers,False,2018-03-07T19:34:14.78+00:00,True,False,,"plato,.net,services,work-manager,exceptions,dapper,redis,RabbitMQ,ActiveMQ",4122,False,2.0.68
+Carl de Billy,2017-05-31T03:44:12.51Z,324,324,Yllibed Versatile Http Server,Yllibed.HttpServer,False,2017-05-30T20:44:12.51-07:00,True,False,,"Http,Server,UWP",289,False,0.9.1
+Carl de Billy,2017-05-31T03:44:03.997Z,324,324,Yllibed Core Framwork,Yllibed.Framework,False,2017-05-30T20:44:03.997-07:00,True,False,,,282,False,0.9.1
+Carl de Billy,2017-05-31T03:44:21.217Z,324,324,Json adapter for Yllibed Versatile Http Server using Newtownsoft JSON.NET,Yllibed.HttpServer.Json,False,2017-05-30T20:44:21.217-07:00,True,False,,"Http,Server,UWP,JSON",293,False,0.9.1
+Carl de Billy,2017-07-16T03:40:08.397Z,276,278,"Implementation of the Yllibed Multiplexed Encapsulated Streaming Protocol (YMESP),
+			a proprietary protocol designed to tunnel substreams into a main one. It is optimized
+			to transit on TCP ""NetworkStream"", but any stream should work.",Yllibed.StreamMultiplexer,False,2017-07-17T18:38:38.123-07:00,True,False,,stream,250,False,1.0.2
+Carl de Billy,2017-05-31T03:44:29.887Z,324,324,NancyFx adapter for Yllibed Versatile Http Server,Yllibed.HttpServer.Nancy,False,2017-05-30T20:44:29.887-07:00,True,False,,"Http,Server,UWP,Nancy,NancyFx",237,False,0.9.1
+AeonLucid,2017-07-16T03:42:23.01Z,69,278,.NET Standard 1.2 library to access the RocketLeagueStats API.,RLSApi,False,2018-02-10T00:34:58.61+00:00,True,False,,"rocket,league,stats,rlstats",934,False,1.0.0
+Karl Wan,2017-07-16T03:41:40.73Z,278,278,"A .NET wrapper for Stooq, based on .NET Standard 1.4",StooqApi,False,2017-07-15T20:41:40.73-07:00,True,False,,"Stooq,Eod,Stock",1685,False,1.0.6
+TCPServer,2017-07-16T03:42:08.057Z,214,278,How to use a TCP server instead of Kestrel,TCPServer,False,2017-09-18T09:54:56.61+00:00,True,False,,,3879,False,1.0.0.1
+Carl de Billy,2017-07-16T03:40:08.397Z,276,278,"Implementation of the Yllibed Multiplexed Encapsulated Streaming Protocol (YMESP),
+			a proprietary protocol designed to tunnel substreams into a main one. It is optimized
+			to transit on TCP ""NetworkStream"", but any stream should work.",Yllibed.StreamMultiplexer,False,2017-07-17T18:38:38.123-07:00,True,False,,stream,250,False,1.0.2
+Dmitry Shechtman,2017-07-16T03:37:38.94Z,272,278,CHIMP software metadata providers API,Net.Chdk.Meta.Providers.Software.Core,True,2017-07-22T07:27:59.043+00:00,True,False,,"chimp,meta,provider,software,core",277,False,0.2.0-alpha
+Andrew Arnott,2017-07-16T03:35:48.797Z,278,278,"Make your xunit tests more closely emulate your application by running them on STA threads, with support for various SynchronizationContexts.",Xunit.StaFact,False,2017-07-15T20:35:48.797-07:00,True,False,,"STA,xunit,test,unit,WPF",26480,True,0.2.9
+TCPServer,2017-07-16T03:36:43.593Z,214,278,Package Description,TCPServer,False,2017-09-18T09:54:56.61+00:00,True,False,,,3879,False,1.0.0
+Dmitry Shechtman,2017-07-16T03:34:53.17Z,272,278,CHIMP ZIP camera list metadata provider,Net.Chdk.Meta.Providers.CameraList.Zip,True,2017-07-22T06:06:21.333+00:00,True,False,,"chimp,meta,provider,cameralist,zip",370,False,0.2.0-alpha
+Dmitry Shechtman,2017-07-16T03:30:58.163Z,272,278,CHIMP JSON camera list metadata provider,Net.Chdk.Meta.Providers.CameraList.Json,True,2017-07-22T06:03:30.543+00:00,True,False,,"chimp,meta,provider,cameralist,json",367,False,0.2.0-alpha
+Lee,2017-07-16T03:29:59.57Z,162,278,MES系统接口,Realgoal.MES.IAppService,False,2017-11-09T05:19:23.913+00:00,True,False,,,18275,False,2.3.3
+Dmitry Shechtman,2017-07-16T03:29:21.35Z,272,278,CHIMP CSV camera list metadata provider,Net.Chdk.Meta.Providers.CameraList.Csv,True,2017-07-22T06:01:52.227+00:00,True,False,,"chimp,meta,provider,cameralist,csv",366,False,0.2.0-alpha
+Dmitry Shechtman,2017-07-16T03:28:17.05Z,278,278,CHIMP metadata base providers,Net.Chdk.Meta.Providers.Base,True,2017-07-16T14:42:59.22-07:00,True,False,,"chimp,meta,provider,base",279,False,0.2.0-alpha
+Dmitry Shechtman,2017-07-16T03:25:35.53Z,272,278,CHIMP ZIP metadata provider,Net.Chdk.Meta.Providers.Zip,True,2017-07-22T05:58:34.39+00:00,True,False,,"chimp,meta,provider,zip",278,False,0.2.0-alpha
+Catcher Wong,2017-07-16T02:26:49.017Z,194,278,A JwtBearer authentication provider for Nancy.,Nancy.Authentication.JwtBearer,False,2017-10-08T01:47:58.137+00:00,True,False,,"Nancy,Authentication,JWT",1330,False,1.0.0
+MockAttributes,2017-07-16T03:18:27.38Z,278,278,Package Description,MockAttributes,False,2017-07-15T20:18:27.38-07:00,True,False,,,240,False,1.0.1
+Dmitry Shechtman,2017-07-16T03:17:09.203Z,272,278,CHIMP camera list metadata providers,Net.Chdk.Meta.Providers.CameraList,True,2017-07-22T05:25:22.97+00:00,True,False,,"chimp,meta,provider,cameralist",276,False,0.2.0-alpha
+Dmitry Shechtman,2017-07-16T03:11:59.353Z,278,278,CHIMP metadata providers,Net.Chdk.Meta.Providers,True,2017-07-16T16:51:20.837-07:00,True,False,,"chimp,meta,provider",197,False,0.2.0-alpha
+Dmitry Shechtman,2017-07-16T02:59:59.867Z,272,278,CHIMP camera list metadata providers API,Net.Chdk.Meta.Providers.CameraList.Core,True,2017-07-22T05:17:37.223+00:00,True,False,,"chimp,meta,provider,cameralist,core",277,False,0.2.0-alpha
+Dmitry Shechtman,2017-07-16T02:54:56.577Z,278,278,CHIMP metadata providers API,Net.Chdk.Meta.Providers.Core,True,2017-07-16T14:31:14.79-07:00,True,False,,"chimp,meta,provider,core",373,False,0.2.1-alpha
+Glenn Morton,2017-07-16T02:51:21.117Z,254,278,A light weight data access library for storing entities with support for unit of work.,Stored,False,2017-08-09T16:59:11.82+00:00,True,False,,"data,database,postgres,cache,linq",6001,False,1.3.38
+Glenn Morton,2017-07-16T02:51:33.493Z,254,278,The Postgres SQL provider for the Stored data access library.,Stored.Postgres,False,2017-08-09T16:59:49.757+00:00,True,False,,"data,database,postgres,cache,linq",6104,False,1.3.38
+Rendy Del Rosario,2017-07-16T02:48:30.427Z,68,278,Upload files using multipart request across Xamarin.iOS and Xamarin.Android,Plugin.FileUploader,False,2018-02-11T21:55:05.417+00:00,True,False,Upload files using multipart request across Xamarin.iOS and Xamarin.Android,"iOS,Android,files,upload,multipart",6808,False,1.0.8
+Dmitry Shechtman,2017-07-16T02:43:38.497Z,278,278,CHIMP metadata providers API,Net.Chdk.Meta.Providers.Core,True,2017-07-16T14:31:14.79-07:00,True,False,,"chimp,meta,provider,core",373,False,0.2.0-alpha
+CapableObjects,2017-07-16T02:38:55.333Z,2,278,Descr,EcoWindowsStore,False,2018-04-18T02:42:38.66+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",141694,False,7.0.0.9402
+CapableObjects,2017-07-16T02:38:04.237Z,2,278,Descr,EcoWindowsForms,False,2018-04-18T02:38:36.54+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",143192,False,7.0.0.9402
+CapableObjects,2017-07-16T02:37:37.423Z,2,278,Descr,EcoOtherDatabasePersistenceMappers,False,2018-04-18T02:38:04.54+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",144087,False,7.0.0.9402
+CapableObjects,2017-07-16T02:38:17.567Z,2,278,Descr,EcoWebASP,False,2018-04-18T02:38:50.37+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",118270,False,7.0.0.9402
+CapableObjects,2017-07-16T02:37:51.033Z,2,278,Descr,EcoSqlServer,False,2018-04-18T02:38:20.023+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",145399,False,7.0.0.9402
+CapableObjects,2017-07-16T02:38:29.94Z,2,278,Descr,EcoWebProviders,False,2018-04-18T02:39:04.713+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",116695,False,7.0.0.9402
+CapableObjects,2017-07-16T02:38:43.287Z,2,278,Descr,EcoWebMVC,False,2018-04-18T02:42:21.33+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",116749,False,7.0.0.9402
+CapableObjects,2017-07-16T02:37:08.72Z,2,278,This contains the core assemblies - for different frameworks,EcoCore,False,2018-04-18T02:37:33.803+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",148109,False,7.0.0.9402
+CapableObjects,2017-07-16T02:37:23.283Z,2,278,Descr,EcoWpf,False,2018-04-18T02:37:48.523+00:00,True,False,,"MDriven,Framework,ModelDrivenDevelopment,ECO,CapableObjects",144767,False,7.0.0.9402
+Supperxin,2017-07-15T02:54:05.877Z,279,279,This is a package for send mail using sendcloud service,Supperxin.SendCloud,False,2017-07-14T20:01:01.82-07:00,False,False,,,253,False,1.0.0
+Catcher Wong,2017-07-16T02:26:49.017Z,194,278,A JwtBearer authentication provider for Nancy.,Nancy.Authentication.JwtBearer,False,2017-10-08T01:47:58.137+00:00,True,False,,"Nancy,Authentication,JWT",1330,False,1.0.0
+Lee,2017-07-16T02:35:11.217Z,162,278,MES系统接口,Realgoal.MES.IAppService,False,2017-11-09T05:19:23.913+00:00,True,False,,,18275,False,2.3.2
+Catcher Wong,2017-07-16T02:26:49.017Z,194,278,Package Description,Nancy.Authentication.JwtBearer,False,2017-10-08T01:47:58.137+00:00,True,False,,,1330,False,1.0.0
+Nancy.Authentication.JwtBearer,2017-07-16T02:26:49.017Z,194,278,Package Description,Nancy.Authentication.JwtBearer,False,2017-10-08T01:47:58.137+00:00,True,False,,,1330,False,1.0.0
+Alex Ashley,2017-07-16T01:58:54.24Z,278,278,Mockito-like attributes (@InjectMocks/@Mock) for .NET Core,MockAttributes,False,2017-07-15T20:18:27.38-07:00,True,False,Mockito-like attributes (@InjectMocks/@Mock) for .NET Core,,240,False,1.0.0
+Highsoft,2017-07-16T02:16:47.143Z,2,278,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highstock,False,2018-04-18T07:33:52.863+00:00,True,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",37512,False,5.0.6406.3489
+Highsoft,2017-07-16T02:16:34.737Z,2,278,"Highcharts .NET allows developers to make charts using Highcharts API with the Microsoft .NET Framework (ASP.NET MVC 4+).
+
+Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.
+
+After 30 days trial period serial key is required.",Highsoft.Highcharts,False,2018-04-18T07:33:32.88+00:00,True,False,"Official Highsoft's library.
+
+Examples, API and documentation are available on project home page.","chart,charts,charting,graph,graphs,plot,plots,diagram,diagrams,highcharts,highstock,visualisation,visualization,data-visualisation,data-visualization,line-chart,3d-chart,finance,web-forms,mvc",44242,False,5.0.6406.3495
+Dmitry Shechtman,2017-07-16T02:14:05.763Z,272,278,CHIMP PS .properties camera metadata writer,Net.Chdk.Meta.Writers.Camera.Ps.Props,True,2017-07-22T07:22:31.473+00:00,True,False,,"chimp,meta,writer,camera,ps,props",186,False,0.1.0-alpha
+Michael Lipinski based off of Mohammed Adenwala's Yelp.Api,2017-07-16T02:11:37.04Z,267,278,A library to be used by websites to interact with Yelp Fusion (v3.0) API.,Yelp.Api.Web,False,2017-07-27T22:03:29.17+00:00,True,False,,,537,False,1.3.2
+Dmitry Shechtman,2017-07-16T02:11:21.04Z,272,278,CHIMP EOS .properties camera metadata writer,Net.Chdk.Meta.Writers.Camera.Eos.Props,True,2017-07-22T07:17:42.5+00:00,True,False,,"chimp,meta,writer,camera,eos,props",187,False,0.1.0-alpha
+Rendy Del Rosario,2017-07-16T02:08:53.397Z,68,278,Upload files using multipart request across Xamarin.iOS and Xamarin.Android,Plugin.FileUploader,True,2018-02-11T21:55:05.417+00:00,True,False,Upload files using multipart request across Xamarin.iOS and Xamarin.Android,"iOS,Android,files,upload,multipart",6808,False,1.0.9-alpha
+Dmitry Shechtman,2017-07-16T02:06:45.41Z,272,278,CHIMP PS camera metadata writers,Net.Chdk.Meta.Writers.Camera.Ps,True,2017-07-22T07:11:41.77+00:00,True,False,,"chimp,meta,writer,camera,ps",186,False,0.1.0-alpha
+Dmitry Shechtman,2017-07-16T02:03:06.31Z,272,278,CHIMP EOS camera metadata writers,Net.Chdk.Meta.Writers.Camera.Eos,True,2017-07-22T07:09:09.917+00:00,True,False,,"chimp,meta,writer,camera,eos",187,False,0.1.0-alpha
+MockAttributes,2017-07-16T01:58:54.24Z,278,278,Package Description,MockAttributes,False,2017-07-15T20:18:27.38-07:00,True,False,,,240,False,1.0.0
+Dmitry Shechtman,2017-07-16T01:58:05.817Z,272,278,CHIMP .properties camera metadata writer,Net.Chdk.Meta.Writers.Camera.Props,True,2017-07-22T07:00:43.13+00:00,True,False,,"chimp,meta,writer,camera,props",186,False,0.1.0-alpha
+Dmitry Shechtman,2017-07-16T01:52:45.56Z,272,278,CHIMP PS JSON camera metadata writer,Net.Chdk.Meta.Writers.Camera.Ps.Json,True,2017-07-22T07:21:36.733+00:00,True,False,,"chimp,meta,writer,camera,ps,json",189,False,0.1.0-alpha
+Rendy Del Rosario,2017-07-16T01:49:29.96Z,68,278,Upload files using multipart request across Xamarin.iOS and Xamarin.Android,Plugin.FileUploader,True,2018-02-11T21:55:05.417+00:00,True,False,Upload files using multipart request across Xamarin.iOS and Xamarin.Android,"iOS,Android,files,upload,multipart",6808,False,1.0.8-alpha
+Dmitry Shechtman,2017-07-16T01:47:02.893Z,272,278,CHIMP EOS JSON camera metadata writer,Net.Chdk.Meta.Writers.Camera.Eos.Json,True,2017-07-22T07:13:52.967+00:00,True,False,,"chimp,meta,writer,camera,eos,json",186,False,0.1.0-alpha
+Dmitry Shechtman,2017-07-16T01:41:41.76Z,272,278,CHIMP camera metadata base writers,Net.Chdk.Meta.Writers.Camera,True,2017-07-22T06:54:23.383+00:00,True,False,,"chimp,meta,writer,camera",276,False,0.1.1-alpha
+Dmitry Shechtman,2017-07-16T01:35:33.5Z,272,278,CHIMP camera metadata base writers,Net.Chdk.Meta.Writers.Camera,True,2017-07-22T06:54:23.383+00:00,True,False,,"chimp,meta,writer,camera",276,False,0.1.0-alpha
+Rendy Del Rosario,2017-07-16T01:33:08.7Z,68,278,Upload files using multipart request across Xamarin.iOS and Xamarin.Android,Plugin.FileUploader,True,2018-02-11T21:55:05.417+00:00,True,False,Upload files using multipart request across Xamarin.iOS and Xamarin.Android,"iOS,Android,files,upload,multipart",6808,False,1.0.7-alpha
+Jinjun Xie,2017-07-16T01:14:50.83Z,278,278,"The .NET implement of the Brotli algothrim which is supported in Chrome,Firefox and latest Edge. Use the Brotli.BrotliStream class to compress/decompress the data.",Brotli.NET,False,2017-07-15T18:23:03.873-07:00,False,False,"To support dynamic compress in web applications,add the code like this in the Global.asax.cs:
+        protected void Application_PostAcquireRequestState(object sender, EventArgs e)
+        {
+                           var app = Context.ApplicationInstance;
+                String acceptEncodings = app.Request.Headers.Get(""Accept-Encoding"");
+
+                if (!String.IsNullOrEmpty(acceptEncodings))
+                {
+                    System.IO.Stream baseStream = app.Response.Filter;
+                    acceptEncodings = acceptEncodings.ToLower();
+
+                    if (acceptEncodings.Contains(""br"") || acceptEncodings.Contains(""brotli""))
+                    {
+                        app.Response.Filter = new BrotliStream(baseStream, System.IO.Compression.CompressionMode.Compress);
+                        app.Response.AppendHeader(""Content-Encoding"", ""br"");
+                    }
+                    //other encodings
+                }
+           }","Brotli,Compress,Decompress,.NET,IIS,Stream",12112,False,1.0.18
+Sergio Pedri,2017-07-16T01:26:57.457Z,61,278,"A wrapper PCL to work with Windows.UI.Composition and XAML animations, and Win2D effects",UICompositionAnimations,False,2018-02-18T12:22:08.803+00:00,True,False,,"uwp,composition,animations,xaml,csharp,windows,winrt,universal,app,ui,win2d,graphics",6123,False,2.9.1
+Dmitry Shechtman,2017-07-16T01:29:27.477Z,272,278,CHIMP PS camera metadata writers API,Net.Chdk.Meta.Writers.Camera.Ps.Core,True,2017-07-22T07:04:11.037+00:00,True,False,,"chimp,meta,writer,camera,ps,core",188,False,0.1.0-alpha
+Sergio Pedri,2017-07-16T01:26:57.457Z,61,278,"A wrapper PCL to work with Windows.UI.Composition and XAML animations, and Win2D effects",UICompositionAnimations,False,2018-02-18T12:22:08.803+00:00,True,False,,,6123,False,2.9.1
+Dmitry Shechtman,2017-07-16T01:25:43.657Z,272,278,CHIMP EOS camera metadata writers API,Net.Chdk.Meta.Writers.Camera.Eos.Core,True,2017-07-22T07:01:42.4+00:00,True,False,,"chimp,meta,writer,camera,eos,core",187,False,0.1.0-alpha
+Jinjun Xie,2017-07-16T01:23:03.873Z,278,278,"The .NET implement of the Brotli algothrim which is supported in Chrome,Firefox and latest Edge. Use the Brotli.BrotliStream class to compress/decompress the data.",Brotli.NET,False,2017-07-15T18:23:03.873-07:00,True,False,"To support dynamic compress in web applications,add the code like this in the Global.asax.cs:
+        protected void Application_PostAcquireRequestState(object sender, EventArgs e)
+        {
+                           var app = Context.ApplicationInstance;
+                String acceptEncodings = app.Request.Headers.Get(""Accept-Encoding"");
+
+                if (!String.IsNullOrEmpty(acceptEncodings))
+                {
+                    System.IO.Stream baseStream = app.Response.Filter;
+                    acceptEncodings = acceptEncodings.ToLower();
+
+                    if (acceptEncodings.Contains(""br"") || acceptEncodings.Contains(""brotli""))
+                    {
+                        app.Response.Filter = new BrotliStream(baseStream, System.IO.Compression.CompressionMode.Compress);
+                        app.Response.AppendHeader(""Content-Encoding"", ""br"");
+                    }
+                    //other encodings
+                }
+           }","Brotli,Compress,Decompress,.NET,IIS,Stream",12112,False,1.0.19
+"Rex Cardan,Ph.D.",2017-07-16T01:21:57.98Z,7,278,The wickedest C# DICOM libary in the world.,EvilDICOM,True,2018-04-13T17:35:49.35+00:00,True,False,The wickedest C# DICOM libary in the world.,"DICOM,Medical,Physics",18943,False,2.0.1.2-beta
+Dmitry Shechtman,2017-07-16T01:18:28.083Z,278,278,CHIMP PS platform generators,Net.Chdk.Meta.Generators.Platform.Ps,True,2017-07-16T00:22:31.83-07:00,True,False,,"chimp,meta,generator,platform,ps",189,False,0.1.0-alpha
+Jinjun Xie,2017-07-16T01:14:50.83Z,278,278,"The .NET implement of the Brotli algothrim which is supported in Chrome,Firefox and latest Edge. Use the Brotli.BrotliStream class to compress/decompress the data.",Brotli.NET,False,2017-07-15T18:23:03.873-07:00,True,False,"To support dynamic compress in web applications,add the code like this in the Global.asax.cs:
+        protected void Application_PostAcquireRequestState(object sender, EventArgs e)
+        {
+                           var app = Context.ApplicationInstance;
+                String acceptEncodings = app.Request.Headers.Get(""Accept-Encoding"");
+
+                if (!String.IsNullOrEmpty(acceptEncodings))
+                {
+                    System.IO.Stream baseStream = app.Response.Filter;
+                    acceptEncodings = acceptEncodings.ToLower();
+
+                    if (acceptEncodings.Contains(""br"") || acceptEncodings.Contains(""brotli""))
+                    {
+                        app.Response.Filter = new BrotliStream(baseStream, System.IO.Compression.CompressionMode.Compress);
+                        app.Response.AppendHeader(""Content-Encoding"", ""br"");
+                    }
+                    //other encodings
+                }
+           }","Brotli,Compress,Decompress,.NET,IIS,Stream",12112,False,1.0.18
+Code Effects Software,2017-07-16T01:17:55.567Z,278,278,"Code Effects is one of the fastest business rules engines that allows creation, modification, validation and evaluation of complex business rules, as well as creation and execution of complex rule-based data filters for virtually all established LINQ providers. Using its web interface, business users can create rules or filters by selecting options from a series of context-sensitive drop-down menus. This IntelliSense-like approach is unique to web-based business rule management. With Code Effects integrated into your project, the most complex business rules can be authored without any knowledge of programming languages. Detailed documentation can be found at CodeEffects.com/Doc",CodeEffects.Rule,False,2017-07-15T18:17:55.567-07:00,True,False,"The package includes the Code Effects assembly, and an XML file containing customizable vocabulary.","'Rules,Engine',MVC,ASP.NET,'Business,Rules',Rules,'MVC,rules,engine'",8711,False,4.3.6.7
+slodge,2017-07-16T01:17:40.24Z,278,278,Easy API for using AutoLayout in iOS,Cirrious.FluentLayout,False,2017-07-15T18:17:40.24-07:00,True,False,,"iOS,AutoLayout",102585,False,2.6.0
+Jinjun Xie,2017-07-16T01:14:50.83Z,278,278,"The .NET implement of the Brotli algothrim which is supported in Chrome,Firefox and latest Edge. Use the Brotli.BrotliStream class to compress/decompress the data.",Brotli.NET,False,2017-07-15T18:23:03.873-07:00,True,False,"To support dynamic compress in web applications,add the code like this in the Global.asax.cs:
+        protected void Application_PostAcquireRequestState(object sender, EventArgs e)
+        {
+                           var app = Context.ApplicationInstance;
+                String acceptEncodings = app.Request.Headers.Get(""Accept-Encoding"");
+
+                if (!String.IsNullOrEmpty(acceptEncodings))
+                {
+                    System.IO.Stream baseStream = app.Response.Filter;
+                    acceptEncodings = acceptEncodings.ToLower();
+
+                    if (acceptEncodings.Contains(""br"") || acceptEncodings.Contains(""brotli""))
+                    {
+                        app.Response.Filter = new BrotliStream(baseStream, System.IO.Compression.CompressionMode.Compress);
+                        app.Response.AppendHeader(""Content-Encoding"", ""br"");
+                    }
+                    //other encodings
+                }
+           }","Brotli,Compress,Decompress,.NET,IIS,Stream",12112,False,1.0.18
+VitalElement,2017-07-16T00:51:58.543Z,36,278,Command Line build tools for AvalonStudio.,VitalElement.AvalonBuild.ubuntu.14.04-x64,True,2018-03-15T02:31:01.963+00:00,True,False,,"AvalonStudio,AvalonBuild",9211,False,0.2.0-build3287-alpha
+Dmitry Shechtman,2017-07-16T00:51:26.667Z,278,278,CHIMP platform generator,Net.Chdk.Meta.Generators.Platform,True,2017-07-16T00:28:30.42-07:00,True,False,,"chimp,meta,generator,platform",189,False,0.1.0-alpha
+VitalElement,2017-07-16T00:51:38.48Z,36,278,Command Line build tools for AvalonStudio.,VitalElement.AvalonBuild.win7-x64,True,2018-03-15T02:30:33.727+00:00,True,False,,"AvalonStudio,AvalonBuild",9263,False,0.2.0-build3287-alpha
+Joe Gannon,2017-07-15T23:26:51.08Z,16,279,"Construktion is a library created to assist with unit testing by simplifying the 
+      arrange portion of your tests. It does this by creating objects and populating its properties with random data.",Construktion,True,2018-04-04T19:14:35.48+00:00,False,False,,,1511,False,1.0.0-beta
+Matt Howlett,2017-07-16T00:28:59.66Z,275,278,Fetch Utils,FetchUtils,False,2017-07-18T21:42:51.487-07:00,True,False,,"Fetch,Utils",285,False,0.1.0
+Rendy Del Rosario,2017-07-16T00:19:33.413Z,68,278,Upload files using multipart request across Xamarin.iOS and Xamarin.Android,Plugin.FileUploader,True,2018-02-11T21:55:05.417+00:00,True,False,Upload files using multipart request across Xamarin.iOS and Xamarin.Android,"iOS,Android,files,upload,multipart",6808,False,1.0.6-alpha
+Dmitry Shechtman,2017-07-16T00:12:40.213Z,272,278,CHIMP platform metadata providers,Net.Chdk.Meta.Providers.Platform,True,2017-07-22T05:39:50.507+00:00,True,False,,"chimp,meta,provider,platform",368,False,0.1.0-alpha
+MaitreDede,2017-07-15T23:59:33.047Z,279,279,Client for the socket interface of the PiGPIO tool for the Raspberry Pi,PiGPIO,True,2017-07-15T16:59:33.047-07:00,True,False,,"raspberrypi,gpio,pigpio",435,False,0.2.0-alpha
+MaitreDede,2017-07-15T23:59:33.047Z,279,279,Client for the socket interface of the PiGPIO tool for the Raspberry Pi,PiGPIO,True,2017-07-15T16:59:33.047-07:00,True,False,,"raspberrypi,gpio,pigpio",435,False,0.2.0-alpha
+Martin Cook,2017-07-15T19:06:41.33Z,43209,279,This package contains extensions to the System.Linq namespace.,CG.Linq,False,1900-01-01T00:00:00+00:00,False,False,,"linq,repository,stored,procedure,unit,of,work,object,context,CG.Linq,CodeGator",10040,False,0.2017.29
+Martin Cook,2017-07-15T18:28:44.97Z,43209,279,This package contains extensions to the System.Linq namespace.,CG.Linq,False,1900-01-01T00:00:00+00:00,False,False,,"linq,repository,stored,procedure,unit,of,work,object,context,CG.Linq,CodeGator",10040,False,0.2017.28
+Martin Cook,2017-07-15T23:56:02.917Z,43209,279,This package contains extensions to the System.Linq namespace.,CG.Linq,False,1900-01-01T00:00:00+00:00,False,False,,"linq,repository,unit,of,work,object,context,entity,CG.Linq,CodeGator",10040,False,0.2017.30
+Scott Mohekey,2017-07-15T23:49:28.64Z,279,279,K.I.S.S Dependency Injection framework.,Kissinjer,False,2017-07-15T16:49:28.64-07:00,True,False,,"injection,ioc",425,False,0.1.3
+iamcarbon,2017-07-15T23:43:58.643Z,78,279,Relational database service management.,Carbon.Rds,False,2018-02-01T21:08:31.85+00:00,True,False,,"cloud,carbon",3138,False,0.6.1
+Joe Gannon,2017-07-15T23:26:51.08Z,16,279,"Construktion is a library created to assist with unit testing by simplifying the 
+      arrange portion of your tests. It does this by creating objects and populating its properties with random data.",Construktion,True,2018-04-04T19:14:35.48+00:00,True,False,,,1511,False,1.0.0-beta
+iamcarbon,2017-07-15T23:26:29.72Z,78,279,Relational database service management.,Carbon.Rds,False,2018-02-01T21:08:31.85+00:00,True,False,,"cloud,carbon",3138,False,0.6.0
+Divya Sarthi MAHESHWARI,2017-07-15T23:09:58Z,54,279,Develop your code with confidence with this powerful pack of extension methods. Increased productivity and code efficiency are out of the box features.,Dot.Net.DevFast,False,2018-02-25T09:41:26.563+00:00,True,False,,"DevFast,FastDev,Extension,Dot.Net,.Net,Dot,String,Stream,TryTo,Transform,Compression",452,False,1.0.0
+Alexander Kozlenko,2017-07-15T23:11:15.063Z,23,279,A client for the RANDOM.ORG service,Community.RandomOrg,False,2018-03-28T15:37:59.733+00:00,True,False,,random.org,2568,False,1.1.0
+Drazen Zadravec,2017-07-15T23:03:23.55Z,279,279,Nequeo WebSockets component,NequeoWebSockets,False,2017-07-15T23:03:23.55+00:00,True,False,WebSocket server and client,".Net,Component,Net,WebSockets",578,False,2016.26.1.3
+DarkLink,2017-07-15T23:05:30.273Z,279,279,Distributed Message Network Library,MessageNetwork,False,2017-07-15T16:05:30.273-07:00,True,False,,"message,network,distributed,decentralized",619,False,1.0.6406.1897
+Drazen Zadravec,2017-07-15T23:03:23.55Z,279,279,Nequeo WebSockets component,NequeoWebSockets,False,2017-07-15T23:03:23.55+00:00,True,False,,".Net,Component,Net,WebSockets",578,False,2016.26.1.3
+Drazen Zadravec,2017-07-15T23:00:36.623Z,279,279,Nequeo Http component,NequeoHttp,False,2017-07-15T23:00:36.623+00:00,True,False,Http server and client,".Net,Component,Net,Http",630,False,2016.26.1.3
+Drazen Zadravec,2017-07-15T23:00:36.623Z,279,279,Nequeo Http component,NequeoHttp,False,2017-07-15T23:00:36.623+00:00,True,False,Http server and client,".Net,Component,Net,Http",630,False,2016.26.1.3
+Pidgin,2017-07-15T23:01:44.327Z,60,279,Package Description,Pidgin,False,2018-02-19T19:57:40.267+00:00,True,False,,,1218,False,1.1.0
+Drazen Zadravec,2017-07-15T22:55:18.487Z,279,279,Nequeo net component,NequeoNet,False,2017-07-15T22:55:18.487+00:00,True,False,Socket server and client base.,".Net,Component,Net",850,False,2016.26.1.2
+Drazen Zadravec,2017-07-15T22:55:18.487Z,279,279,Nequeo net component,NequeoNet,False,2017-07-15T22:55:18.487+00:00,True,False,Socket server and client base.,".Net,Component,Net",850,False,2016.26.1.2
+qdot,2017-07-15T22:48:08.817Z,20,279,Core Library for the Buttplug Sex Toy Control Protocol,Buttplug.Core,True,2018-03-31T22:07:07.897+00:00,True,False,,,6739,False,0.0.0.400-alpha
+qdot,2017-07-15T22:48:20.583Z,20,279,Client Library for the Buttplug Sex Toy Control Protocol,Buttplug.Client,True,2018-03-31T22:07:19.163+00:00,True,False,,,6534,False,0.0.0.400-alpha
+qdot,2017-07-15T22:48:49.427Z,20,279,Library for adding XInput Gamepad (Windows 7 or Later) support to Buttplug Servers,Buttplug.Server.Managers.XInputGamepadManager,True,2018-03-31T22:07:53.043+00:00,True,False,,,6203,False,0.0.0.400-alpha
+qdot,2017-07-15T22:48:39.473Z,20,279,Library for adding UWP Bluetooth (Windows 10 15063 Creators Update or Later) support to Buttplug Servers,Buttplug.Server.Managers.UWPBluetoothManager,True,2018-03-31T22:07:43.353+00:00,True,False,,,6213,False,0.0.0.400-alpha
+qdot,2017-07-15T22:48:30.537Z,20,279,Base Server Library for the Buttplug Sex Toy Control Protocol,Buttplug.Server,True,2018-03-31T22:07:29.4+00:00,True,False,,,6248,False,0.0.0.400-alpha
+Alexander Kozlenko,2017-07-09T20:46:39.177Z,23,285,Provides support for serialization and deserialization of JSON-RPC messages,System.Data.JsonRpc,False,2018-03-28T15:07:44.447+00:00,False,False,,json-rpc,3490,False,1.2.1
+Alexander Kozlenko,2017-07-15T22:42:41.573Z,23,279,Provides support for serialization and deserialization of JSON-RPC messages,System.Data.JsonRpc,False,2018-03-28T15:07:44.447+00:00,True,False,,json-rpc,3490,False,1.2.2
+"Software Logistics,LLC",2017-07-15T22:41:27.1Z,35,279,"REST Services for User, Organization, Locations and Roles Administration and Management",LagoVista.UserAdmin.Rest,True,2018-03-16T14:45:12.427+00:00,True,False,,"HomeAutomation,IoT",7813,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:41:17.443Z,35,279,"User, Organization and Location Management API for LagoVista IoT and Device Framework",LagoVista.UserAdmin.Repos,True,2018-03-16T14:44:43.66+00:00,True,False,,"HomeAutomation,IoT",7926,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:41:07.79Z,35,279,"User, Organization and Location Management Models and API for LagoVista IoT, Devices and Home Automation Framework",LagoVista.UserAdmin,True,2018-03-16T14:44:15.907+00:00,True,False,"User, Organization and Location Management Models and API for LagoVista IoT, Devices and Home Automation Framework","HomeAutomation,IoT",8455,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:40:59.13Z,35,279,Common Features and Functionality for building WebApps against the LagoVista IoT and Devices Framework,LagoVista.IoT.Web.Common,True,2018-03-16T14:43:51.063+00:00,True,False,,IoT,9993,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:40:48.49Z,35,279,"Provides a set of REST Services to Interact with Verifiers that are created as part of the LagoVista IoT, Devices and Home Automation Frameworks.  Verifiers are used to confirm that configured components work as expected.",LagoVista.IoT.Verifiers.Rest,True,2018-03-16T14:43:38.763+00:00,True,False,,"HomeAutomation,IoT",11225,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:40:39.02Z,35,279,Provides Cloud Based Repositories to store Verifiers and results of their test runs to cloud based storage.,LagoVista.IoT.Verifiers.CloudRepos,True,2018-03-16T14:43:25.107+00:00,True,False,,"LagoVista,HomeAutomation,IoT",11459,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:40:29.647Z,35,279,"Provides Managers, Interfaces, Models and Repositories for Creating and Running Verifiers in the LagoVista IoT, Devices and Home Automation Frameworks.",LagoVista.IoT.Verifiers,True,2018-03-16T14:43:11.95+00:00,True,False,,"LagoVista,HomeAutomation,IoT",11429,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:40:20.6Z,35,279,"Provides a Cloud Based Repository for Simulators for the LagoVista Devices, IoT and Home Automation Frameworks",LagoVista.IoT.Simulator.CloudRepos,True,2018-03-16T14:42:19.433+00:00,True,False,,"HomeAutomation,IoT,Cloud,LagoVista",14563,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:40:02.74Z,35,279,"Provides Interfaces, Models and Managers for Managing Simulators for the LagoVista Devices, IoT and Home Automation Frameworks",LagoVista.IoT.Simulator.Admin,True,2018-03-16T14:41:53.557+00:00,True,False,,"HomeAutomation,IoT,Cloud,LagoVista",14772,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:40:11.147Z,35,279,"Provides REST Services for Adminstering Simulators for the LagoVista Devices, IoT and Home Automation Frameworks",LagoVista.IoT.Simulator.Admin.Rest,True,2018-03-16T14:42:05.79+00:00,True,False,,"HomeAutomation,IoT,Cloud,LagoVista",14552,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:39:53.333Z,35,279,"Provides Core Functionality and Specifications in the form of Interfaces for Pipeline Modules of the Execution Engine in the LagoVista Devices, IoT and Home Automation Framework",LagoVista.IoT.Runtime.Core,True,2018-03-16T14:41:39.493+00:00,True,False,,"HomeAutomation,IoT,Cloud",15128,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:39:43.927Z,35,279,Provides a Cloud Based Repository storing Pipeline Module Configurations for the LagoVista IoT and Devices Framework,LagoVista.IoT.Pipeline.CloudRepos,True,2018-03-16T14:41:00.057+00:00,True,False,,"HomeAutomation,IoT,Cloud",14526,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:39:35.05Z,35,279,"Provides a set of REST Services for working with Pipeline Module Configurations for the LagoVista Devices, IoT and Home Automation Frameworks",LagoVista.IoT.Pipeline.Admin.Rest,True,2018-03-16T14:40:46.773+00:00,True,False,,"HomeAutomation,IoT,Cloud,LagoVista",14467,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:39:25.33Z,35,279,"Provides Interfaces, Models and Managers for Managing Pipeline Modules for the LagoVista Devices, IoT and Home Automation Frameworks",LagoVista.IoT.Pipeline.Admin,True,2018-03-16T14:40:33.62+00:00,True,False,,"HomeAutomation,IoT,Cloud,LagoVista",14667,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:39:06.923Z,35,279,Provides ASP.NET Core REST services to manage Device Message Definitions in the LagoVista IoT and Devices Framework,LagoVista.IoT.DeviceMessaging.Rest,True,2018-03-16T14:40:04.363+00:00,True,False,,"HomeAutomation,IoT",5479,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:39:16.143Z,35,279,"Provides Logging and Error Reporing Implementations for the LagoVista Devices, IoT and HOme Automation Frameworks.",LagoVista.IoT.Logging,True,2018-03-16T14:40:19.27+00:00,True,False,,"HomeAutomation,IoT,Cloud,LagoVista",8200,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:38:56.817Z,35,279,"Provides Cloud Based Repositories for storing Device Message Definitions in the LagoVista Devices, IoT and Devices Framework",LagoVista.IoT.DeviceMessaging.CloudRepos,True,2018-03-16T14:39:39.067+00:00,True,False,,"HomeAutomation,IoT,LagoVista",5489,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:38:47.237Z,35,279,"Provides Interfaces, Models and Managers for managing Device Message Definitions in the LagoVista IoT and Devices Framework",LagoVista.IoT.DeviceMessaging.Admin,True,2018-03-16T14:39:24.097+00:00,True,False,,"HomeAutomation,IoT,LagoVista",5593,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:38:37.94Z,35,279,"Provides ASP.NET Core MVC Services for Managing Devices for the LagoVista Devices, IoT and Home Automation Frameworks",LagoVista.IoT.DeviceManagement.Rest,True,2018-03-16T14:39:11.737+00:00,True,False,,"HomeAutomation,IoT,Cloud,LagoVista",9659,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:38:28.203Z,35,279,"Provides Cloud Based Repositories for creating, reading, updating and managing Devices in the the LagoVista Devices, IoT and Home Automation Frameworks",LagoVista.IoT.DeviceManagement.Repos,True,2018-03-16T14:38:59.33+00:00,True,False,,"HomeAutomation,IoT,Cloud",9787,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:38:08.39Z,35,279,"Provides REST Services For Device Administration in the LagoVista IoT, Devices and Home Automation Frameworks",LagoVista.IoT.DeviceAdmin.Rest,True,2018-03-16T14:38:19.533+00:00,True,False,,"HomeAutomation,IoT,LagoVista",8255,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:38:18.33Z,35,279,"Provides Models, Mangers and Business Rules for Managing Device Registration and Manipulation for the LagoVista Devices, IoT  and Home Automation Frameworks.",LagoVista.IoT.DeviceManagement.Core,True,2018-03-16T14:38:32.627+00:00,True,False,,"HomeAutomation,IoT,Cloud",9935,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:37:59.11Z,35,279,Provides a Cloud Based Repository for storing Device Adminsitration Data for the LagoVista IoT and Devices framework,LagoVista.IoT.DeviceAdmin.Repo,True,2018-03-16T14:38:07.267+00:00,True,False,,"HomeAutomation,IoT",19282,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:37:50.03Z,35,279,"Provides Interfaces, Models and Managers for Device Administration in the LagoVista IoT and Devices Framework",LagoVista.IoT.DeviceAdmin,True,2018-03-16T14:37:40.67+00:00,True,False,,"HomeAutomation,IoT",20257,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:37:30.11Z,35,279,Provides ASP.NET Core MVC Services for storing Deployment Administration Data for the LagoVista IoT and Devices Framework,LagoVista.IoT.Deployment.Admin.Rest,True,2018-03-16T14:37:03.247+00:00,True,False,,"HomeAutomation,IoT,Cloud",15059,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:37:40.14Z,35,279,Provides a Cloud Based Repository for storing Deployment Configuration data for the LagoVista IoT and Devices Frameworks,LagoVista.IoT.Deployment.CloudRepos,True,2018-03-16T14:37:16.187+00:00,True,False,,"HomeAutomation,IoT,Cloud",15089,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:37:20.517Z,35,279,"Provides Managers, Interfaces, Models and Repositories for Administering Deployments with the LagoVista IoT and Devices Frameworks.",LagoVista.IoT.Deployment.Admin,True,2018-03-16T14:36:50.223+00:00,True,False,,"HomeAutomation,IoT",15113,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:37:00.92Z,35,279,Common Authentication for Building Apps with the LagoVista IoT and Devices Framework,LagoVista.Core.Authentication,True,2018-03-16T14:36:10.12+00:00,True,False,,"HomeAutomation,IoT",20859,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:37:10.763Z,35,279,Common Network Functionality and Interfaces for Building Apps with the LagoVista IoT and Devices Framework,LagoVista.Core.Networking,True,2018-03-16T14:36:37.09+00:00,True,False,,"HomeAutomation,IoT",20324,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:36:32.077Z,35,279,"ASP.NET Core Identity Provider with DocumentDB and Table Storage backend for LagoVista IoT, Devices and Home Automation Frameworks",LagoVista.AspNetCore.Identity,True,2018-03-16T14:35:28.167+00:00,True,False,"ASP.NET Core Identity Provider with DocumentDB and Table Storage backend for LagoVista IoT, Devices and Home Automation Frameworks","HomeAutomation,IoT",8041,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:36:51.53Z,35,279,"Common Models, Interfaces and Functionality for the LagoVista Devices, IoT and Home Automation Frameworks",LagoVista.Core,True,2018-03-16T14:35:54.17+00:00,True,False,,"HomeAutomation,IoT,LagoVista",23053,False,1.2.59-alpha1220
+"Software Logistics,LLC",2017-07-15T22:36:41.513Z,35,279,Provides an abstact mechanism to store object graphs to cloud storage.,LagoVista.CloudStorage,True,2018-03-16T14:35:41.9+00:00,True,False,,"HomeAutomation,IoT,LagoVista",9844,False,1.2.59-alpha1220
+dmetzgar,2016-09-08T08:18:53.017Z,43209,589,Unofficial port of workflow (WF) ETW tracking provider for .NET Core,Microsoft.CoreWf.EtwTracking,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+dmetzgar,2016-09-08T08:15:51.58Z,43209,589,Unofficial port of workflow (WF) runtime to .NET Core,Microsoft.CoreWf,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Anton Kropp,2017-07-15T22:15:16.927Z,279,279,A generalized parser combinator based off of fparsec. ParsecClone works on strings as well as binary files (with bit level parsing),ParsecClone,False,2017-07-15T15:15:16.927-07:00,True,False,,"Parsing,Combinator,F#,fsharp,c#,csharp",2429,False,2.0.3
+"Dustin Metzgar,Jim Carley",2017-07-15T22:15:42.067Z,279,279,Unofficial port of the Windows Workflow Foundation (WF) ETW tracking provider to the .NET Standard,CoreWf.EtwTracking,False,2017-07-15T15:15:42.067-07:00,True,False,,".NET,Core,workflow",123,False,1.0.0
+"Dustin Metzgar,Jim Carley",2017-07-15T22:13:37.437Z,112,279,Unofficial port of the Windows Workflow Foundation (WF) to the .NET Standard,CoreWf,False,2017-12-29T19:05:27.69+00:00,True,False,,".NET,Core,workflow",762,False,1.0.0
+"Rex Cardan,Ph.D.",2017-07-15T22:09:06.99Z,7,279,The wickedest C# DICOM libary in the world.,EvilDICOM,True,2018-04-13T17:35:49.35+00:00,True,False,The wickedest C# DICOM libary in the world.,"DICOM,Medical,Physics",18943,False,2.0.1.1-beta
+abirdutta_v1.0,2017-07-15T21:46:01.75Z,278,279,"Converts SQL DataTable to JSON format
+
+Usage: RiverOx.Utility.Convert.SqlToJson(DataTable, ""primaryKeyColumnName"")",RiverOx.Utility,False,2017-07-16T00:44:52.58-07:00,True,False,"Converts SQL DataTable to JSON format.
+
+Example: 
+
+SELECT 
+ta.colA0 AS colA0, -- Primary Key
+ta.colA1 AS colA1,
+tb.colB0 AS B.colB0,
+tb.colB1 AS B.colB1,
+tc.colC0 AS B.C[colC0],
+tc.colC1 AS B.C[colC1]
+td.colD0 AS D[colD0],
+td.colD1 AS D[colD1]
+
+FROM TableA ta
+LEFT JOIN TableB tb on ta.colA0 = tb.colB0
+LEFT JOIN TableC tc on tb.colB0 = tc.colC0
+LEFT JOIN TableD td on tc.colC0 = td.colD0
+
+| colA0   colA1   B.colB0  B.colB1  B.C[colC0]  B.C[colC1]   D[colD0] D[colD1]   |
+
+| 1        ARow1  BRow11   BRow12   CRow11      CRow11A      DRow11   DRow11A    |
+| 1        ARow1  BRow11   BRow12   CRow12      CRow12A      DRow12   DRow12A    |
+
+Result:
+[
+  {
+    ""colA0"": 1,
+    ""colA1"": ""ARow1"",
+    ""B"": {
+      ""colB0"": ""BRow11"",
+      ""colB1"": ""BRow12"",
+      ""C"": [
+	{""colC0"": ""CRow11"",""colC1"": ""CRow11A""},
+        {""colC0"": ""CRow12"",""colC1"": ""CRow12A""}
+      ]
+    },
+    ""D"": [
+	{""colD0"": ""DRow11"",""colD1"": ""DRow11A""}
+    ]
+  }
+]","sql,json,SQL,JSON,sqltojson",579,False,1.0.0
+TatsuyaIshikawa ShinsukeOda KazushiKamegawa,2017-07-15T22:02:21.29Z,123,279,"LambdicSql is ultimate sql builder. Generate sql text and parameters from lambda. Target frameworks are .netframework3.5～, pcl, .netstandard1.2～.",LambdicSql.SqlServer,False,2017-12-18T00:05:59.74+00:00,True,False,,"SQL,Lambda,SqlBuilder,SqlServer,Codeer,Dapper,EntityFramework,DataBase",2200,False,0.16.0
+abirdutta_v1.0,2017-07-15T21:46:01.75Z,278,279,"Converts SQL DataTable to JSON format
+
+Usage: RiverOx.Utility.Convert.SqlToJson(DataTable, ""primaryKeyColumnName"")",RiverOx.Utility,False,2017-07-16T00:44:52.58-07:00,False,False,"Converts SQL DataTable to JSON format.
+
+Example: 
+
+SELECT 
+ta.colA0 AS colA0, -- Primary Key
+ta.colA1 AS colA1,
+tb.colB0 AS B.colB0,
+tb.colB1 AS B.colB1,
+tc.colC0 AS B.C[colC0],
+tc.colC1 AS B.C[colC1]
+td.colD0 AS D[colD0],
+td.colD1 AS D[colD1]
+
+FROM TableA ta
+LEFT JOIN TableB tb on ta.colA0 = tb.colB0
+LEFT JOIN TableC tc on tb.colB0 = tc.colC0
+LEFT JOIN TableD td on tc.colC0 = td.colD0
+
+| colA0   colA1   B.colB0  B.colB1  B.C[colC0]  B.C[colC1]   D[colD0] D[colD1]   |
+
+| 1        ARow1  BRow11   BRow12   CRow11      CRow11A      DRow11   DRow11A    |
+| 1        ARow1  BRow11   BRow12   CRow12      CRow12A      DRow12   DRow12A    |
+
+Result:
+[
+  {
+    ""colA0"": 1,
+    ""colA1"": ""ARow1"",
+    ""B"": {
+      ""colB0"": ""BRow11"",
+      ""colB1"": ""BRow12"",
+      ""C"": [
+	{""colC0"": ""CRow11"",""colC1"": ""CRow11A""},
+        {""colC0"": ""CRow12"",""colC1"": ""CRow12A""}
+      ]
+    },
+    ""D"": [
+	{""colD0"": ""DRow11"",""colD1"": ""DRow11A""}
+    ]
+  }
+]","sql,json,SQL,JSON,sqltojson",579,False,1.0.0
+abirdutta_v1.0,2017-07-15T21:46:01.75Z,278,279,"Converts SQL DataTable to JSON format
+
+Usage: RiverOx.Utility.Convert.SqlToJson(DataTable, ""primaryKeyColumnName"")",RiverOx.Utility,False,2017-07-16T00:44:52.58-07:00,False,False,"Converts SQL DataTable to JSON format.
+
+Example: 
+
+SELECT 
+ta.colA0 AS colA0, -- Primary Key
+ta.colA1 AS colA1,
+tb.colB0 AS B.colB0,
+tb.colB1 AS B.colB1,
+tc.colC0 AS B.C[colC0],
+tc.colC1 AS B.C[colC1]
+td.colD0 AS D[colD0],
+td.colD1 AS D[colD1]
+
+FROM TableA ta
+LEFT JOIN TableB tb on ta.colA0 = tb.colB0
+LEFT JOIN TableC tc on tb.colB0 = tc.colC0
+LEFT JOIN TableD td on tc.colC0 = td.colD0
+
+| colA0   colA1   B.colB0  B.colB1  B.C[colC0]  B.C[colC1]   D[colD0] D[colD1]   |
+
+| 1        ARow1  BRow11   BRow12   CRow11      CRow11A      DRow11   DRow11A    |
+| 1        ARow1  BRow11   BRow12   CRow12      CRow12A      DRow12   DRow12A    |
+
+Result:
+[
+  {
+    ""colA0"": 1,
+    ""colA1"": ""ARow1"",
+    ""B"": {
+      ""colB0"": ""BRow11"",
+      ""colB1"": ""BRow12"",
+      ""C"": [
+	{""colC0"": ""CRow11"",""colC1"": ""CRow11A""},
+        {""colC0"": ""CRow12"",""colC1"": ""CRow12A""}
+      ]
+    },
+    ""D"": [
+	{""colD0"": ""DRow11"",""colD1"": ""DRow11A""}
+    ]
+  }
+]","sql,json,SQL,JSON,sqltojson",579,False,1.0.0
+TatsuyaIshikawa ShinsukeOda,2017-07-15T21:57:13.603Z,222,279,"LambdicSql is ultimate sql builder. Generate sql text and parameters from lambda. Target frameworks are .netframework3.5～, pcl, .netstandard1.2～.",LambdicSql.SQLite,False,2017-09-10T01:35:20.637+00:00,True,False,,"SQL,Lambda,SqlBuilder,SQLite,Codeer,Dapper,EntityFramework,DataBase",538,False,0.3.0
+TatsuyaIshikawa ShinsukeOda,2017-07-15T21:54:08.143Z,222,279,"LambdicSql is ultimate sql builder. Generate sql text and parameters from lambda. Target frameworks are .netframework3.5～, pcl, .netstandard1.2～.",LambdicSql.Oracle,False,2017-09-10T01:48:23.16+00:00,True,False,,"SQL,Lambda,SqlBuilder,Oracle,Codeer,Dapper,EntityFramework,DataBase",499,False,0.3.0
+TatsuyaIshikawa ShinsukeOda,2017-07-15T21:53:17.55Z,222,279,"LambdicSql is ultimate sql builder. Generate sql text and parameters from lambda. Target frameworks are .netframework3.5～, pcl, .netstandard1.2～.",LambdicSql.Npgsql,False,2017-09-10T02:23:58.517+00:00,True,False,,"SQL,Lambda,SqlBuilder,Npgsql,Codeer,Dapper,EntityFramework,DataBase",497,False,0.3.0
+abirdutta_v1.0,2017-07-15T21:46:01.75Z,278,279,"Converts SQL DataTable to JSON format.
+
+Example: 
+
+SELECT 
+ta.colA0 AS colA0, -- Primary Key
+ta.colA1 AS colA1,
+tb.colB0 AS B.colB0,
+tb.colB1 AS B.colB1,
+tc.colC0 AS B.C[colC0],
+tc.colC1 AS B.C[colC1]
+td.colD0 AS D[colD0],
+td.colD1 AS D[colD1]
+
+
+FROM TableA ta
+LEFT JOIN TableB tb on ta.colA0 = tb.colB0
+LEFT JOIN TableC tc on tb.colB0 = tc.colC0
+LEFT JOIN TableD td on tc.colC0 = td.colD0
+
++--------------------------------------------------------------------------------------------------------------------+
+| colA0   colA1   B.colB0     B.colB1    B.C[colC0]   B.C[colC1]     D[colD0]   D[colD1]   |
++--------------------------------------------------------------------------------------------------------------------+
+| 1        ARow1  BRow11   BRow12   CRow11      CRow11A      DRow11   DRow11A  |
+| 1        ARow1  BRow11   BRow12   CRow12      CRow12A      DRow12   DRow12A  |
+| 2        ARow2  BRow21   BRow22   CRow22      CRow22A      DRow22   DRow22A  |
++--------------------------------------------------------------------------------------------------------------------+
+
+Result:
+
+[
+  {
+    ""colA0"": 1,
+    ""colA1"": ""ARow1"",
+    ""B"": {
+      ""colB0"": ""BRow11"",
+      ""colB1"": ""BRow12"",
+      ""C"": [
+        {
+          ""colC0"": ""CRow11"",
+          ""colC1"": ""CRow11A""
+        },
+        {
+          ""colC0"": ""CRow12"",
+          ""colC1"": ""CRow12A""
+        }
+      ]
+    },
+    ""D"": [
+      {
+        ""colD0"": ""DRow11"",
+        ""colD1"": ""DRow11A""
+      }
+    ]
+  },
+  {
+    ""colA0"": 2,
+    ""colA1"": ""ARow2"",
+    ""B"": {
+      ""colB0"": ""BRow21"",
+      ""colB1"": ""BRow22"",
+      ""C"": [
+        {
+          ""colC0"": ""CRow22"",
+          ""colC1"": ""CRow22A""
+        }
+      ]
+    },
+    ""D"": [
+      {
+        ""colD0"": ""DRow22"",
+        ""colD1"": ""DRow22A""
+      }
+    ]
+  }
+]",RiverOx.Utility,False,2017-07-16T00:44:52.58-07:00,False,False,Converts SQL DataTable to JSON format,"sql,json,SQL,JSON,sqltojson",579,False,1.0.0
+abirdutta_v1.0,2017-07-15T21:46:01.75Z,278,279,"Converts SQL DataTable to JSON format.
+
+Example: 
+
+SELECT 
+ta.colA0 AS colA0, -- Primary Key
+ta.colA1 AS colA1,
+tb.colB0 AS B.colB0,
+tb.colB1 AS B.colB1,
+tc.colC0 AS B.C[colC0],
+tc.colC1 AS B.C[colC1]
+td.colD0 AS D[colD0],
+td.colD1 AS D[colD1]
+
+
+FROM TableA ta
+LEFT JOIN TableB tb on ta.colA0 = tb.colB0
+LEFT JOIN TableC tc on tb.colB0 = tc.colC0
+LEFT JOIN TableD td on tc.colC0 = td.colD0
+
++--------------------------------------------------------------------------------------------------------------------+
+| colA0   colA1   B.colB0     B.colB1    B.C[colC0]   B.C[colC1]     D[colD0]   D[colD1]   |
++--------------------------------------------------------------------------------------------------------------------+
+| 1        ARow1  BRow11   BRow12   CRow11      CRow11A      DRow11   DRow11A  |
+| 1        ARow1  BRow11   BRow12   CRow12      CRow12A      DRow12   DRow12A  |
+| 2        ARow2  BRow21   BRow22   CRow22      CRow22A      DRow22   DRow22A  |
++--------------------------------------------------------------------------------------------------------------------+
+
+Result:
+
+[
+  {
+    ""colA0"": 1,
+    ""colA1"": ""ARow1"",
+    ""B"": {
+      ""colB0"": ""BRow11"",
+      ""colB1"": ""BRow12"",
+      ""C"": [
+        {
+          ""colC0"": ""CRow11"",
+          ""colC1"": ""CRow11A""
+        },
+        {
+          ""colC0"": ""CRow12"",
+          ""colC1"": ""CRow12A""
+        }
+      ]
+    },
+    ""D"": [
+      {
+        ""colD0"": ""DRow11"",
+        ""colD1"": ""DRow11A""
+      }
+    ]
+  },
+  {
+    ""colA0"": 2,
+    ""colA1"": ""ARow2"",
+    ""B"": {
+      ""colB0"": ""BRow21"",
+      ""colB1"": ""BRow22"",
+      ""C"": [
+        {
+          ""colC0"": ""CRow22"",
+          ""colC1"": ""CRow22A""
+        }
+      ]
+    },
+    ""D"": [
+      {
+        ""colD0"": ""DRow22"",
+        ""colD1"": ""DRow22A""
+      }
+    ]
+  }
+]",RiverOx.Utility,False,2017-07-16T00:44:52.58-07:00,False,False,Converts SQL DataTable to JSON format,"sql,json,SQL,JSON,sqltojson",579,False,1.0.0
+TatsuyaIshikawa ShinsukeOda,2017-07-15T21:32:18.39Z,222,279,"LambdicSql is ultimate sql builder. Generate sql text and parameters from lambda. Target frameworks are .netframework3.5～, pcl, .netstandard1.2～.",LambdicSql.MySql,False,2017-09-10T02:06:19.41+00:00,True,False,,"SQL,Lambda,SqlBuilder,MySql,Codeer,Dapper,EntityFramework,DataBase",501,False,0.3.0
+TatsuyaIshikawa ShinsukeOda,2017-07-15T21:28:03.037Z,222,279,"LambdicSql is ultimate sql builder. Generate sql text and parameters from lambda. Target frameworks are .netframework3.5～, pcl, .netstandard1.2～.",LambdicSql.DB2,False,2017-09-10T04:21:26.857+00:00,True,False,,"SQL,Lambda,SqlBuilder,DB2,Codeer,Dapper,EntityFramework,DataBase",587,False,0.4.0
+sunkaixuan,2017-07-15T21:18:11.78Z,31,279,"Asp.net Core ORM SqlSugar ORM,core 1.0,High-performance, lightweight https://github.com/sunkaixuan/SqlSugar",sqlSugarCore,False,2018-03-20T09:18:10.557+00:00,True,False,,"Asp.net,core,orm",12628,False,4.2.0.7
+Mark Whitaker,2017-07-15T21:16:22.45Z,250,279,Regular expression tools for C# developers,RegexToolbox,False,2017-08-13T09:00:08.27+00:00,True,False,,"regex,regularexpression",367,False,1.0.0
+Mark Whitaker,2017-07-15T21:16:22.45Z,250,279,Regular expression tools for C# developers,RegexToolbox,False,2017-08-13T09:00:08.27+00:00,True,False,,"regex,regularexpression",367,False,1.0.0
+Greg Ros,2017-07-15T21:12:46.94Z,279,279,"Yet another implementation of an option/optional type for .NET.
+
+An Optional type explicitly represents the type of a value that may or may not exist. While you can do this with nulls, that has many drawbacks.
+
+Some of the benefits of this library over some others include comprehensive equality support, rich debugging information, cleaner API, support for reflecting over Optionals, and more.",OptionalSharp,False,2017-07-15T14:12:46.94-07:00,True,False,Implements a powerful yet simple optional type for .NET.,"functional,optional,optional#,optionalsharp,option,immutable,null,maybe,none,monad,some",897,False,0.8.2
+Greg Ros,2017-07-15T21:13:29.833Z,279,279,Extension methods and other objects for integrating the Optional# Optional type into .NET.,OptionalSharp.More,False,2017-07-15T14:13:29.833-07:00,True,False,Extension methods and other objects for integrating OptionalSharp into .NET.,"functional,optional,optional#,optionalsharp,option,immutable,null,maybe,none,monad,some",224,False,0.8.2
+Mark Whitaker,2017-07-15T16:51:39.02Z,43209,279,Regular expression tools for C#,RegexTools,False,1899-12-31T16:00:00-08:00,False,False,,"regex,regularexpression",445,False,1.0.3
+TatsuyaIshikawa ShinsukeOda,2017-07-15T21:07:50.507Z,222,279,"LambdicSql is ultimate sql builder. Generate sql text and parameters from lambda. Target frameworks are .netframework3.5～, pcl, .netstandard1.2～.",LambdicSql.DB2,False,2017-09-10T04:21:26.857+00:00,True,False,,"SQL,Lambda,SqlBuilder,DB2,Codeer,Dapper,EntityFramework,DataBase",587,False,0.3.0
+Greg Ros,2017-07-15T21:06:23.767Z,279,279,"Yet another implementation of an option/optional type for .NET.
+
+An Optional type explicitly represents the type of a value that may or may not exist. While you can do this with nulls, that has many drawbacks.
+
+Some of the benefits of this library over some others include comprehensive equality support, rich debugging information, cleaner API, support for reflecting over Optionals, and more.",OptionalSharp,False,2017-07-15T14:12:46.94-07:00,True,False,Implements a powerful yet simple optional type for .NET.,"functional,optional,optional#,optionalsharp,option,immutable,null,maybe,none,monad,some",897,False,0.8.1
+TatsuyaIshikawa ShinsukeOda,2017-07-15T21:03:13.887Z,123,279,"LambdicSql's purpose is to generate sql text and parameters from lambda.Generate sql text and parameters by LambdicSql.And execut and map to object, recommend using dapper or sqlite-net-pcl. Target frameworks are .netframework3.5～, pcl, .netstandard1.2～.",LambdicSql,False,2017-12-18T00:01:13.627+00:00,True,False,,"SQL,Lambda,Codeer,Dapper,EntityFramework,DataBase",13219,False,0.50.0
+iamcarbon,2017-07-15T21:04:15.873Z,78,279,Relational database service management.,Carbon.Rds,False,2018-02-01T21:08:31.85+00:00,True,False,,"cloud,carbon",3138,False,0.5.0
+iamcarbon,2017-07-15T21:03:33.09Z,78,279,"Website, web library, and web component models.",Carbon.Platform.Web,False,2018-02-01T21:08:11.66+00:00,True,False,,"frontends,libraries,carbon",4739,False,1.24.0
+iamcarbon,2017-07-15T21:02:41.62Z,43209,279,Security services for Carbon.Platform,Carbon.Platform.Security,False,1900-01-01T00:00:00+00:00,False,False,,"platform,carbon",-1,False,0.9.0
+iamcarbon,2017-07-15T21:02:14.197Z,91,279,Platform management services.,Carbon.Platform.Management,False,2018-01-19T18:25:59.317+00:00,True,False,,"platform,carbon",6485,False,0.15.0
+iamcarbon,2017-07-15T21:03:13.73Z,81,279,Data access abstractions for operating a multicloud service.,Carbon.Platform.Services,False,2018-01-29T21:46:50.48+00:00,True,False,,"platform,carbon",19501,False,0.69.0
+TatsuyaIshikawa ShinsukeOda,2017-07-15T21:03:13.887Z,123,279,"LambdicSql's purpose is to generate sql text and parameters from lambda.Generate sql text and parameters by LambdicSql.And execut and map to object, recommend using dapper or sqlite-net-pcl. Target frameworks are .netframework3.5～, pcl, .netstandard1.2～.",LambdicSql,False,2017-12-18T00:01:13.627+00:00,True,False,,"SQL,Lambda,Codeer,Dapper,EntityFramework,DataBase",13219,False,0.50.0
+iamcarbon,2017-07-15T21:01:49.693Z,91,279,Simple client for the Carbon.Platform.Api.,Carbon.Platform.Client,False,2018-01-19T18:17:09.377+00:00,True,False,,"platform,carbon",8593,False,0.43.0
+iamcarbon,2017-07-15T21:01:22.21Z,91,279,Platform abstractions.,Carbon.Platform.Abstractions,False,2018-01-19T18:16:40.453+00:00,True,False,,"platform,carbon",9266,False,1.38.0
+sun kaixuan,2017-07-15T21:01:23.397Z,46,279,"SqlSugar ORM  .NET 4.0+ High-performance, lightweight http://www.codeisbug.com/Doc/8",sqlSugar,False,2018-03-05T10:13:22.237+00:00,True,False,,"asp.net,orm",30197,False,4.2.0.7
+iamcarbon,2017-07-15T21:01:03.02Z,81,279,Primitives for operating a multicloud service.,Carbon.Platform,False,2018-01-29T22:13:59.2+00:00,True,False,,"platform,carbon",20261,False,1.62.0
+iamcarbon,2017-07-15T20:59:43.847Z,16,279,Kms primitives.,Carbon.Kms,False,2018-04-04T16:09:22.15+00:00,True,False,,"platform,carbon",6417,False,0.21.0
+iamcarbon,2017-07-15T21:00:31.033Z,16,279,KMS abstractions.,Carbon.Kms.Abstractions,False,2018-04-04T16:08:38.35+00:00,True,False,,"platform,kms,carbon",4779,False,0.21.0
+iamcarbon,2017-07-15T20:58:13.17Z,17,279,TypeScript and CSS compiliers.,Carbon.Building.Web,False,2018-04-03T21:37:54.51+00:00,True,False,,"typescript,scss,carbon",1916,False,0.13.0
+iamcarbon,2017-07-15T20:58:52.077Z,91,279,CI abstractions.,Carbon.CI.Abstractions,False,2018-01-19T18:10:05.937+00:00,True,False,,"ci,carbon",3329,False,0.23.0
+iamcarbon,2017-07-15T20:58:33.717Z,81,279,Continuous intergration and deployment services.,Carbon.CI,False,2018-01-29T21:49:21.063+00:00,True,False,,"ci,cd,carbon",9671,False,0.23.0
+iamcarbon,2017-07-15T20:57:54.293Z,17,279,Build abstractions for the cloud.,Carbon.Building,False,2018-04-03T21:37:26.977+00:00,True,False,,"building,carbon",1554,False,1.2.0
+iamcarbon,2017-07-15T20:59:15.173Z,81,279,Cloud logging services.,Carbon.Cloud.Logging,False,2018-01-29T22:09:37.567+00:00,True,False,,"cloud,logging,carbon",4590,False,0.11.0
+"Patrik Svensson,Mattias Karlsson,Gary Ewan Park,Alistair Chapman,Martin Björkström and contributors",2017-07-15T20:50:45.37Z,1,279,Contains testing utilities for Cake.,Cake.Testing,False,2018-04-19T20:43:26.683+00:00,True,False,,"Cake,Script,Build",15933,False,0.21.1
+"Patrik Svensson,Mattias Karlsson,Gary Ewan Park,Alistair Chapman,Martin Björkström and contributors",2017-07-15T20:50:34.727Z,1,279,"Provides aliases (extension methods on Cake context) that support CI, build, unit tests, zip, signing, etc. for Cake.",Cake.Common,False,2018-04-19T20:43:25.153+00:00,True,False,,"Cake,Script,Build",186176,False,0.21.1
+"Patrik Svensson,Mattias Karlsson,Gary Ewan Park,Alistair Chapman,Martin Björkström and contributors",2017-07-15T20:51:12.84Z,1,279,"Cake Module providing NuGet install capabilities for i.e. preprocessor directives like #addin, #tool and #load",Cake.NuGet,False,2018-04-19T20:43:43.577+00:00,True,False,,"Cake,Script,Build",6430,False,0.21.1
+"Patrik Svensson,Mattias Karlsson,Gary Ewan Park,Alistair Chapman,Martin Björkström and contributors",2017-07-15T20:50:57.26Z,1,279,The Cake script runner.,Cake.CoreCLR,False,2018-04-19T20:43:40.903+00:00,True,False,"Cake (C# Make) is a build automation system with a C# DSL to do things like compiling code, copy files/folders, running unit tests, compress files and build NuGet packages.","Cake,Script,Build",83834,False,0.21.1
+"Patrik Svensson,Mattias Karlsson,Gary Ewan Park,Alistair Chapman,Martin Björkström and contributors",2017-07-15T20:50:21.697Z,1,279,The Cake core library.,Cake.Core,False,2018-04-19T20:43:23.28+00:00,True,False,,"Cake,Script,Build",793655,False,0.21.1
+"Patrik Svensson,Mattias Karlsson,Gary Ewan Park,Alistair Chapman,Martin Björkström and contributors",2017-07-15T20:50:04.087Z,1,279,The Cake script runner.,Cake,False,2018-04-19T20:43:20.607+00:00,True,False,"Cake (C# Make) is a build automation system with a C# DSL to do things like compiling code, copy files/folders, running unit tests, compress files and build NuGet packages.","Cake,Script,Build",1854403,False,0.21.1
+Mahmoud Al-Qudsi,2017-07-15T20:45:40.15Z,271,279,An object data cache for your UWP apps.,UwpCache,False,2017-07-23T21:36:12.647+00:00,True,False,,"uwp,uap,cache,data,object",731,False,0.2.0
+Verloka Vadim,2017-07-15T20:41:14.5Z,255,279,Lib for saving your data in Register as settings and other helpers methods,Verloka.HelperLib,False,2017-08-08T09:37:31.83+00:00,True,False,,"Register,setting,ini-parser,localization",1137,False,1.4.0
+buildguest,2017-07-15T20:40:44.513Z,182,279,Description,int-Soft.MVC.Core,True,2017-10-20T17:09:37.697+00:00,True,False,,,4882,False,1.0.0-ci-20170715-204022
+buildguest,2017-07-15T20:40:34.7Z,182,279,Description,int-Soft.DAL,True,2017-10-20T17:09:22.57+00:00,True,False,,,4880,False,1.0.0-ci-20170715-204016
+buildguest,2017-07-15T20:40:55.717Z,182,279,Description,int-Soft.MVC.Scripts,True,2017-10-20T17:09:52.163+00:00,True,False,,,4363,False,1.0.0-ci-20170715-204019
+SharpCanvas,2017-07-15T20:35:50.267Z,194,279,Package Description,SharpCanvas,False,2017-10-08T12:36:17.14+00:00,True,False,,,1580,False,1.2.0
+Gennady Verdel,2017-07-15T20:29:56.64Z,78,279,"LogoFX Bootstrapping containing interface for a bootstrapper. This interface is equally applicable at both the client and the server sides of an application.
+Also includes core bootstrapping tools.",LogoFX.Bootstrapping,True,2018-02-01T11:48:22.33+00:00,True,False,"LogoFX Bootstrapping containing interface for a bootstrapper. This interface is equally applicable at both the client and the server sides of an application.
+Also includes core bootstrapping tools.",,4644,False,1.7.0-rc1
+Roei.Sabag,2017-07-15T20:26:47.647Z,5,279,Data Contracts (DTOs) for all Gravity API Products,Gravity.Services.DataContracts,False,2018-04-15T11:19:36.71+00:00,True,False,Supports Selenium v3.4.0,"automation,crawling,crawl,selenium,appium,autoamtion,testing,test,qa,gravity,api,scrapping,scrap",2670,False,2017.7.15.1
+Jim,2017-07-15T20:25:47.16Z,28,279,"Plisky Diagnostics Library - featuring Bilge and Piffle, offering comprehensive trace and error handling facilities to applications.",Plisky.Diagnostics,False,2018-03-23T11:43:34.13+00:00,True,False,,"trace,logger,logging,logs,application,app,bilge,plisky,piffle,error,diagnostics",1461,False,2.0.0.3
+qdot,2017-07-15T20:17:51.873Z,20,279,Library for adding XInput Gamepad (Windows 7 or Later) support to Buttplug Servers,Buttplug.Server.Managers.XInputGamepadManager,True,2018-03-31T22:07:53.043+00:00,True,False,,,6203,False,0.0.0.398-alpha
+qdot,2017-07-15T20:17:42.39Z,20,279,Library for adding UWP Bluetooth (Windows 10 15063 Creators Update or Later) support to Buttplug Servers,Buttplug.Server.Managers.UWPBluetoothManager,True,2018-03-31T22:07:43.353+00:00,True,False,,,6213,False,0.0.0.398-alpha
+qdot,2017-07-15T20:17:30.217Z,20,279,Base Server Library for the Buttplug Sex Toy Control Protocol,Buttplug.Server,True,2018-03-31T22:07:29.4+00:00,True,False,,,6248,False,0.0.0.398-alpha
+qdot,2017-07-15T20:17:10.403Z,20,279,Core Library for the Buttplug Sex Toy Control Protocol,Buttplug.Core,True,2018-03-31T22:07:07.897+00:00,True,False,,,6739,False,0.0.0.398-alpha
+qdot,2017-07-15T20:17:20.67Z,20,279,Client Library for the Buttplug Sex Toy Control Protocol,Buttplug.Client,True,2018-03-31T22:07:19.163+00:00,True,False,,,6534,False,0.0.0.398-alpha
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2017-07-15T20:15:19.837Z,88,279,"Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports .Net 4.0. This package contains strong-named assemblies for legacy use cases.",MathNet.Numerics.Signed,False,2018-01-22T19:07:16.97+00:00,True,False,"Math.NET Numerics, providing methods and algorithms for numerical computations in science, engineering and every day use.","math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft,signed",64360,True,3.20.0
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2017-07-15T20:14:42.32Z,54,279,"Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports .Net 4.0, .Net 3.5 and Mono on Windows, Linux and Mac; Silverlight 5, WindowsPhone/SL 8, WindowsPhone 8.1 and Windows 8 with PCL portable profiles 7, 47, 78, 259 and 328; Android/iOS with Xamarin.",MathNet.Numerics,False,2018-02-25T13:37:24.88+00:00,True,False,"Math.NET Numerics, providing methods and algorithms for numerical computations in science, engineering and every day use.","math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft",980726,True,3.20.0
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2017-07-15T20:14:54.443Z,54,279,"Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports F# 3.0 on .Net 4.0, .Net 3.5 and Mono on Windows, Linux and Mac; Silverlight 5 and Windows 8 with PCL portable profile 47; Android/iOS with Xamarin.",MathNet.Numerics.FSharp,False,2018-02-25T13:37:47.927+00:00,True,False,"F# Modules for Math.NET Numerics, providing methods and algorithms for numerical computations in science, engineering and every day use.","fsharp,F#,math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft",118204,True,3.20.0
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2017-07-15T20:15:06.88Z,88,279,"Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports .Net 4.0. This package contains strong-named assemblies for legacy use cases.",MathNet.Numerics.FSharp.Signed,False,2018-01-22T19:07:47.127+00:00,True,False,"F# Modules for Math.NET Numerics, providing methods and algorithms for numerical computations in science, engineering and every day use.","fsharp,F#,math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft,signed",8501,True,3.20.0
+iamcarbon,2017-07-15T20:12:28.28Z,32,279,Authorization and policy primitives.,Carbon.Authorization,False,2018-03-19T22:14:31.217+00:00,True,False,,"authorization,carbon",1263,False,0.10.0
+iamcarbon,2017-07-15T20:11:43.687Z,16,279,Authentication primitives.,Carbon.Authentication,False,2018-04-04T15:50:51.1+00:00,True,False,,"authentication,carbon",7235,False,0.20.0
+iamcarbon,2017-07-15T20:12:05.95Z,43209,279,JWT provider.,Carbon.Authentication.Jwt,False,1900-01-01T00:00:00+00:00,False,False,,"jwt,rs256,hs256,carbon",-1,False,0.11.0
+chipmunk-sm dannico@linuxmail.org,2017-07-15T18:10:23.66Z,43209,279,rgbtest LCD Monitor Dead Pixel Test for Windows and Linux,rgbtest,False,1899-12-31T16:00:00-08:00,False,False,,"rgbtest,lcd,monitor,dead,pixel,test,color",-1,False,1.0.15
+Emby Team,2017-07-15T20:08:55.21Z,6,279,Contains core components required to build plugins for Emby Server.,MediaBrowser.Server.Core,False,2018-04-14T14:59:39.967+00:00,True,False,,,138326,False,3.0.707
+Emby Team,2017-07-15T20:08:56.57Z,6,279,Contains common model objects and interfaces used by all Emby solutions.,MediaBrowser.Common,False,2018-04-14T14:59:42.14+00:00,True,False,,,144350,False,3.0.707
+Emby Team,2017-07-15T20:04:45.84Z,6,279,Contains core components required to build plugins for Emby Server.,MediaBrowser.Server.Core,False,2018-04-14T14:59:39.967+00:00,True,False,,,138326,False,3.0.706
+Emby Team,2017-07-15T20:04:43.213Z,6,279,Contains common model objects and interfaces used by all Emby solutions.,MediaBrowser.Common,False,2018-04-14T14:59:42.14+00:00,True,False,,,144350,False,3.0.706
+chrisdrobison,2017-07-15T20:04:45.683Z,129,279,MongoDB storage support as key store.,AspNetCore.DataProtection.MongoDb,False,2017-12-12T23:14:02.543+00:00,True,False,,,517,False,1.0.0
+Maksim Volkau,2015-05-10T07:24:40.657Z,43209,1076,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build267
+Maksim Volkau,2015-05-07T13:23:32.1Z,43209,1079,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build266
+Maksim Volkau,2015-05-29T15:32:11.993Z,43209,1057,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build282
+Maksim Volkau,2015-05-01T13:31:24.623Z,43209,1085,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build263
+Maksim Volkau,2015-04-29T08:32:26.07Z,43209,1087,"DryIoc.Zero is fast and clean Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build258
+Maksim Volkau,2015-05-05T10:52:21.043Z,43209,1081,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build264
+Maksim Volkau,2015-04-30T15:32:33.22Z,43209,1086,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build259
+Maksim Volkau,2015-04-28T16:04:00.077Z,43209,1088,"DryIoc.Zero is fast and clean Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build260
+Maksim Volkau,2015-05-06T06:59:20.38Z,43209,1080,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build265
+Maksim Volkau,2015-04-29T08:09:04.103Z,43209,1087,"DryIoc.Zero is fast and clean Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build261
+Maksim Volkau,2015-04-30T15:54:38.747Z,43209,1086,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build262
+Maksim Volkau,2015-06-01T14:43:35.953Z,43209,1054,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build283
+Maksim Volkau,2015-06-03T08:30:01.067Z,43209,1052,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build284
+Maksim Volkau,2015-06-04T18:17:26.06Z,43209,1051,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build285
+Maksim Volkau,2015-07-21T15:46:31.367Z,43209,1004,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc2build289
+Maksim Volkau,2015-06-08T06:20:31.417Z,43209,1047,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build286
+Maksim Volkau,2015-06-19T04:46:14.887Z,43209,1036,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build287
+Maksim Volkau,2015-07-04T20:20:47.543Z,43209,1021,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build288
+Maksim Volkau,2016-01-11T13:10:37.227Z,43209,830,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build366
+Maksim Volkau,2016-01-11T13:03:52.86Z,43209,830,"DryIoc.Zero is fast and clean IoC Container working on top of compile-time generated service factories, therefore decreasing startup casts.",DryIoc.Zero,True,1900-01-01T00:00:00+00:00,False,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",-1,False,2.0.0-rc1build371
+qdot,2017-07-15T19:50:59.927Z,20,279,Core Library for the Buttplug Sex Toy Control Protocol,Buttplug.Core,True,2018-03-31T22:07:07.897+00:00,True,False,,,6739,False,0.0.0.396-alpha
+qdot,2017-07-15T19:51:26.973Z,20,279,Library for adding UWP Bluetooth (Windows 10 15063 Creators Update or Later) support to Buttplug Servers,Buttplug.Server.Managers.UWPBluetoothManager,True,2018-03-31T22:07:43.353+00:00,True,False,,,6213,False,0.0.0.396-alpha
+qdot,2017-07-15T19:51:09.253Z,20,279,Client Library for the Buttplug Sex Toy Control Protocol,Buttplug.Client,True,2018-03-31T22:07:19.163+00:00,True,False,,,6534,False,0.0.0.396-alpha
+Ben Siron,2017-07-15T19:52:27.79Z,279,279,Supplies the log4net log directory cleaner 'SelfCleaningRollingFileAppender' which periodically checks for old log files and deletes them automatically from the output log directory.,UGTS.Log4NetCleaner,False,2017-07-15T12:52:27.79-07:00,True,False,log4net self-cleaning rolling file appender,"UGTS,log4net,clean,cleaner,log,logging,delete",238,False,1.0.1
+qdot,2017-07-15T19:51:18.77Z,20,279,Base Server Library for the Buttplug Sex Toy Control Protocol,Buttplug.Server,True,2018-03-31T22:07:29.4+00:00,True,False,,,6248,False,0.0.0.396-alpha
+qdot,2017-07-15T19:51:36.35Z,20,279,Library for adding XInput Gamepad (Windows 7 or Later) support to Buttplug Servers,Buttplug.Server.Managers.XInputGamepadManager,True,2018-03-31T22:07:53.043+00:00,True,False,,,6203,False,0.0.0.396-alpha
+GraphQLCore,2017-07-15T19:46:40.15Z,279,279,GraphQLCore,GraphQLCore,True,2017-07-15T12:46:40.15-07:00,True,False,,,689,False,1.0.0-beta-0169
+Sergiy Nikolayev,2017-05-19T01:14:24.987Z,54,336,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.
+
+This package installs the canonical rules model to define rules that can be compiled into executable model used by the NRules rules engine.",NRules.RuleModel,False,2018-02-25T22:53:15.4+00:00,False,False,Canonical rules model to define rules for the NRules rules engine.,"rules,engine,inference,rete,business,dsl",10001,False,0.6.2
+Sergiy Nikolayev,2017-06-23T02:42:02.553Z,54,301,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.
+
+This package installs the canonical rules model to define rules that can be compiled into executable model used by the NRules rules engine.",NRules.RuleModel,False,2018-02-25T22:53:15.4+00:00,True,False,Canonical rules model to define rules for the NRules rules engine.,"rules,engine,inference,rete,business,dsl",10001,False,0.6.3
+Sergiy Nikolayev,2013-10-27T00:44:35.347Z,43209,1636,Business rules engine for .NET,NRules.dll,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.1.0
+Sergiy Nikolayev,2017-05-09T02:51:26.867Z,54,346,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.
+
+This package installs the canonical rules model to define rules that can be compiled into executable model used by the NRules rules engine.",NRules.RuleModel,False,2018-02-25T22:53:15.4+00:00,False,False,Canonical rules model to define rules for the NRules rules engine.,"rules,engine,inference,rete,business,dsl",10001,False,0.6.1
+Sergiy Nikolayev,2017-05-19T01:14:35.847Z,43209,336,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.
+
+This package installs the fluent DSL for authoring rules in C# with NRules. These rules can be then compiled to the canonical rules model, recognized by the NRules rules engine.",NRules.FluentDsl,False,1899-12-31T16:00:00-08:00,False,False,Fluent DSL for authoring rules in C# with the NRules rules engine.,"rules,engine,inference,rete,business,dsl",-1,False,0.6.2
+Sergiy Nikolayev,2017-06-23T02:42:25.163Z,54,301,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.
+
+This package installs the execution engine (runtime) for the NRules rules engine.",NRules.Runtime,False,2018-02-25T22:53:38.383+00:00,True,False,Execution engine (runtime) for the NRules rules engine.,"rules,engine,inference,rete,business,dsl",9971,False,0.6.3
+Sergiy Nikolayev,2017-05-19T01:14:46.3Z,54,336,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.
+
+This package installs the execution engine (runtime) for the NRules rules engine.",NRules.Runtime,False,2018-02-25T22:53:38.383+00:00,False,False,Execution engine (runtime) for the NRules rules engine.,"rules,engine,inference,rete,business,dsl",9971,False,0.6.2
+Sergiy Nikolayev,2015-06-08T02:26:37.933Z,54,1047,Autofac IoC container integration for NRules.,NRules.Integration.Autofac,False,2018-02-25T22:54:33.933+00:00,True,False,,"nrules,autofac",2983,False,0.4.1
+Sergiy Nikolayev,2017-06-23T02:42:12.803Z,54,301,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.
+
+This package installs the fluent DSL for authoring rules in C# with NRules. These rules can be then compiled to the canonical rules model, recognized by the NRules rules engine.",NRules.Fluent,False,2018-02-25T22:53:25.79+00:00,True,False,Fluent DSL for authoring rules in C# with the NRules rules engine.,"rules,engine,inference,rete,business,dsl",9223,False,0.6.3
+Sergiy Nikolayev,2017-05-13T00:59:44.133Z,54,342,Autofac IoC container integration for NRules.,NRules.Integration.Autofac,False,2018-02-25T22:54:33.933+00:00,True,False,,"nrules,autofac",2983,False,0.5.3
+Sergiy Nikolayev,2015-08-22T01:07:55.463Z,54,972,Autofac IoC container integration for NRules.,NRules.Integration.Autofac,False,2018-02-25T22:54:33.933+00:00,True,False,,"nrules,autofac",2983,False,0.4.3
+Sergiy Nikolayev,2017-05-03T02:27:37.193Z,54,352,Autofac IoC container integration for NRules.,NRules.Integration.Autofac,False,2018-02-25T22:54:33.933+00:00,True,False,,"nrules,autofac",2983,False,0.5.2
+Sergiy Nikolayev,2015-07-01T03:24:55.363Z,54,1024,Autofac IoC container integration for NRules.,NRules.Integration.Autofac,False,2018-02-25T22:54:33.933+00:00,True,False,,"nrules,autofac",2983,False,0.4.2
+Sergiy Nikolayev,2017-05-19T01:15:26.557Z,54,336,Autofac IoC container integration for NRules.,NRules.Integration.Autofac,False,2018-02-25T22:54:33.933+00:00,False,False,,"nrules,autofac",2983,False,0.6.2
+Sergiy Nikolayev,2017-04-06T03:17:40.58Z,54,379,Autofac IoC container integration for NRules.,NRules.Integration.Autofac,False,2018-02-25T22:54:33.933+00:00,True,False,,"nrules,autofac",2983,False,0.5.1
+1TCompany AB,2017-07-15T19:39:54.37Z,149,279,"ASP.NET WebApi2 integration library for OneTrueError. Attaches context information like HttpRequest, HttpMessage, RouteData
+      etc to each reported exception.
+      
+      Tracks invalid model states, 404 errors and of course all exceptions.
+      
+      OneTrueError automates exception handling. All error reports include enough context information for you to directly start correcting the issue.",OneTrueError.Client.AspNet.WebApi2,False,2017-11-22T09:12:30.117+00:00,True,False,"ASP.NET WebApi2 integration library for OneTrueError. Attaches context information like HttpRequest, HttpMessage, RouteData
+      etc to each reported exception.
+      
+      Tracks invalid model states, 404 errors and of course all exceptions.","aspnet,webapi,exception,error,404,reporting,analysis",479,False,1.0.3
+Sergiy Nikolayev,2013-10-27T19:44:45.387Z,54,1636,Business rules engine for .NET,NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,,31022,False,0.1.2
+Sergiy Nikolayev,2013-10-27T02:05:18.103Z,54,1636,Business rules engine for .NET,NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,,31022,False,0.1.1
+Sergiy Nikolayev,2017-06-23T02:42:55.693Z,54,301,Autofac IoC container integration for NRules.,NRules.Integration.Autofac,False,2018-02-25T22:54:33.933+00:00,True,False,,"nrules,autofac",2983,False,0.6.3
+Sergiy Nikolayev,2014-01-23T02:14:21.06Z,54,1548,"Business rules engine for .NET, based on the Rete matching algorithm.",NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,"business,rules,engine,dsl,inference,rete",31022,False,0.1.7
+Sergiy Nikolayev,2013-11-18T02:11:56.53Z,54,1614,"Business rules engine for .NET, based on the Rete matching algorithm.",NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,"business,rules,engine,dsl,inference,rete",31022,False,0.1.6
+Sergiy Nikolayev,2014-04-03T01:54:53.217Z,54,1478,"Business rules engine for .NET, based on the Rete matching algorithm.",NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,"business,rules,engine,dsl,inference,rete",31022,False,0.1.9
+Sergiy Nikolayev,2013-10-27T23:02:51.08Z,54,1636,Business rules engine for .NET,NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,,31022,False,0.1.3
+Sergiy Nikolayev,2013-11-07T02:28:34.677Z,54,1625,Business rules engine for .NET,NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,"rules,engine,dsl,inference,rete",31022,False,0.1.5
+Sergiy Nikolayev,2014-03-20T01:14:51.94Z,54,1492,"Business rules engine for .NET, based on the Rete matching algorithm.",NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,"business,rules,engine,dsl,inference,rete",31022,False,0.1.8
+Sergiy Nikolayev,2013-10-31T01:49:32.643Z,54,1632,Business rules engine for .NET,NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,"rules,engine,dsl,inference,rete",31022,False,0.1.4
+Maksim Volkau,2017-07-15T19:37:19.097Z,29,279,Slim IoC Container based on service factory delegates generated at compile-time by DryIoc. Compile-time delegate generation minimizes run-time IoC setup time to Zero.,DryIocZero,True,2018-03-22T22:12:33.063+00:00,True,False,,"IoC,Container,Inversion-of-Control,DI,Dependency-Injection,DRY,Service-Provider,Factory,No-Container,Pure-DI,Poor-Man-DI",12782,False,3.0.0-preview-03
+Sergiy Nikolayev,2013-10-27T19:44:45.387Z,54,1636,Business rules engine for .NET,NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,,31022,False,0.1.2
+Sergiy Nikolayev,2013-10-27T02:05:18.103Z,54,1636,Business rules engine for .NET,NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,,31022,False,0.1.1
+Sergiy Nikolayev,2013-11-18T02:11:56.53Z,54,1614,"Business rules engine for .NET, based on the Rete matching algorithm.",NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,"business,rules,engine,dsl,inference,rete",31022,False,0.1.6
+Sergiy Nikolayev,2013-11-07T02:28:34.677Z,54,1625,Business rules engine for .NET,NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,"rules,engine,dsl,inference,rete",31022,False,0.1.5
+Sergiy Nikolayev,2013-10-31T01:49:32.643Z,54,1632,Business rules engine for .NET,NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,"rules,engine,dsl,inference,rete",31022,False,0.1.4
+Sergiy Nikolayev,2013-10-27T23:02:51.08Z,54,1636,Business rules engine for .NET,NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,,31022,False,0.1.3
+Chris Keyser,2017-07-15T19:34:50.623Z,279,279,Simple-to-use interface proxying library for C#,Proxii,False,2017-07-15T12:34:50.623-07:00,True,False,,"proxy,proxii,dynamicproxy,interface,behavior,injection",2010,False,1.5.4
+Garrett Wong,2017-07-15T19:32:13.54Z,94,279,"Common utilities for application development: SMTP, LDAP, File Servers, Database, Web Servers, HTTP, TCP, Parallelization, Tasking, etc.",GW.Common.Utilities,False,2018-01-16T07:19:27.13+00:00,True,False,,"GW,GBase,Utilities,Common,Emailer",1197,False,1.0.6
+Sergiy Nikolayev,2014-01-23T02:14:21.06Z,54,1548,"Business rules engine for .NET, based on the Rete matching algorithm.",NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,"business,rules,engine,dsl,inference,rete",31022,False,0.1.7
+Sergiy Nikolayev,2014-04-03T01:54:53.217Z,54,1478,"Business rules engine for .NET, based on the Rete matching algorithm.",NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,"business,rules,engine,dsl,inference,rete",31022,False,0.1.9
+Sergiy Nikolayev,2014-03-20T01:14:51.94Z,54,1492,"Business rules engine for .NET, based on the Rete matching algorithm.",NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,"business,rules,engine,dsl,inference,rete",31022,False,0.1.8
+Sergiy Nikolayev,2014-06-20T03:04:40.017Z,54,1400,"NRules is a rules engine for .NET that is based on the Rete matching algorithm. Among other features it supports forward chaining, negative and existential assertions. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,True,False,,"business,rules,engine,dsl,inference,rete",31022,False,0.2.1
+Sergiy Nikolayev,2015-02-09T04:54:15.853Z,54,1166,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. Among other features it supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,True,False,,"business,rules,engine,dsl,inference,rete",31022,False,0.3.1
+Sergiy Nikolayev,2014-11-14T05:49:40.5Z,54,1253,"NRules is a rules engine for .NET that is based on the Rete matching algorithm. Among other features it supports forward chaining, negative and existential assertions. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,True,False,,"business,rules,engine,dsl,inference,rete",31022,False,0.2.3
+Sergiy Nikolayev,2013-10-27T01:13:39.17Z,54,1636,NRules is a rules engine for .NET that is based on the Rete matching algorithm. Rules are authored in C# using internal DSL.,NRules,False,2018-02-25T22:53:51.963+00:00,True,False,,"business,rules,engine,dsl,inference,rete",31022,False,0.1.0
+Sergiy Nikolayev,2014-12-03T03:31:55.257Z,54,1234,"NRules is a rules engine for .NET that is based on the Rete matching algorithm. Among other features it supports forward chaining, negative and existential assertions. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,True,False,,"business,rules,engine,dsl,inference,rete",31022,False,0.2.4
+Sergiy Nikolayev,2014-11-14T03:03:22.627Z,54,1253,"NRules is a rules engine for .NET that is based on the Rete matching algorithm. Among other features it supports forward chaining, negative and existential assertions. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,False,False,,"business,rules,engine,dsl,inference,rete",31022,False,0.2.2
+Sergiy Nikolayev,2015-05-04T00:35:25.347Z,54,1082,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,True,False,,"rules,engine,inference,rete,business,dsl",31022,False,0.3.3
+Sergiy Nikolayev,2015-04-03T01:59:59.007Z,54,1113,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. Among other features it supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,True,False,,"business,rules,engine,dsl,inference,rete",31022,False,0.3.2
+Sergiy Nikolayev,2015-05-16T01:35:16.95Z,54,1070,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,True,False,,"rules,engine,inference,rete,business,dsl",31022,False,0.3.4
+iamcarbon,2017-07-15T19:26:22.26Z,32,279,Security primitives.,Carbon.Security.Primitives,False,2018-03-19T22:13:00.353+00:00,True,False,,"identity,carbon",3532,False,0.21.0
+iamcarbon,2017-07-15T19:26:00.773Z,16,279,Authentication primitives.,Carbon.Authentication,False,2018-04-04T15:50:51.1+00:00,True,False,,"authentication,carbon",7235,False,0.19.0
+mikeon,2017-07-15T19:26:47.823Z,279,279,"This package requires TypeWriter:
+https://frhagn.github.io/Typewriter/
+
+After installation you may need to remove signalr-1.0.d.ts installed with signalr typings.",TypeWriter.SignalR.Proxy.Template,False,2017-07-15T12:26:47.823-07:00,True,False,Template files (.tst) for TypeWriter to generate SignalR Hub proxies.,"signalr,typewriter,proxy,template",1463,False,0.0.8
+Sergiy Nikolayev,2017-04-06T03:15:43.857Z,54,379,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,True,False,,"rules,engine,inference,rete,business,dsl",31022,False,0.5.1
+Sergiy Nikolayev,2015-07-01T03:24:08.27Z,54,1024,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,True,False,,"rules,engine,inference,rete,business,dsl",31022,False,0.4.2
+Sergiy Nikolayev,2015-08-22T01:06:49.403Z,54,972,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,True,False,,"rules,engine,inference,rete,business,dsl",31022,False,0.4.3
+Sergiy Nikolayev,2017-05-03T02:27:23.24Z,54,352,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,True,False,,"rules,engine,inference,rete,business,dsl",31022,False,0.5.2
+Sergiy Nikolayev,2017-05-13T00:59:31.177Z,54,342,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,True,False,,"rules,engine,inference,rete,business,dsl",31022,False,0.5.3
+Sergiy Nikolayev,2015-06-08T02:25:28.31Z,54,1047,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,True,False,,"rules,engine,inference,rete,business,dsl",31022,False,0.4.1
+buildguest,2017-07-15T19:23:39.66Z,182,279,Description,int-Soft.MVC.Scripts,True,2017-10-20T17:09:52.163+00:00,True,False,,,4363,False,1.0.0-ci-20170715-192303
+buildguest,2017-07-15T19:23:30.11Z,182,279,Description,int-Soft.MVC.Core,True,2017-10-20T17:09:37.697+00:00,True,False,,,4882,False,1.0.0-ci-20170715-192306
+buildguest,2017-07-15T19:23:19.533Z,182,279,Description,int-Soft.DAL,True,2017-10-20T17:09:22.57+00:00,True,False,,,4880,False,1.0.0-ci-20170715-192301
+Tomasz Żmuda,2017-07-15T19:22:33.877Z,29,279,Simple .net core library providing exclusive lock on file.,Xabe.FileLock,False,2018-03-22T17:57:26.477+00:00,True,False,,"file,lock,filelock,file-lock,locking,files,concurrency,core",413277,False,1.3.1
+Daniel Mester Pirttijärvi,2017-07-15T19:22:32.377Z,5,279,Javascript library generating identicons using SVG graphics or HTML5 canvas.,Jdenticon,False,2018-04-15T17:51:03.2+00:00,True,False,Javascript library generating identicons using SVG graphics or HTML5 canvas.,"Javascript,identicon,avatar,library",2337,False,1.7.0
+Sergiy Nikolayev,2017-06-23T02:42:34.523Z,54,301,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,True,False,NRules is an open source rules engine for .NET that is based on the Rete matching algorithm with rules authored in C# using internal DSL.,"rules,engine,inference,rete,business,dsl",31022,False,0.6.3
+Sergiy Nikolayev,2017-05-19T01:14:55.363Z,54,336,"NRules is an open source rules engine for .NET that is based on the Rete matching algorithm. NRules is an inference engine that, among other features, supports forward chaining, negative, existential and universal quantifiers. Rules are authored in C# using internal DSL.",NRules,False,2018-02-25T22:53:51.963+00:00,False,False,NRules is an open source rules engine for .NET that is based on the Rete matching algorithm with rules authored in C# using internal DSL.,"rules,engine,inference,rete,business,dsl",31022,False,0.6.2
+"Ivan Gavryliuk (@aloneguid),Richard Conway (@azurecoder)",2017-07-15T19:20:04.667Z,43209,279,A .NET library to read and write Apache Parquet files.,Parquet.Net,True,1900-01-01T00:00:00+00:00,False,False,,,23108,False,1.0.0-alpha-91
+foxbot,2017-07-15T19:08:55.083Z,231,279,Package Description,Discord.Addons.Interactive,False,2017-09-01T20:12:54.973+00:00,True,False,,"discord,discord.net",2552,False,1.0.0
+ozlem,2017-07-15T19:08:56.94Z,279,279,Description,CreatingNugetPackage,False,2017-07-15T12:08:56.94-07:00,True,False,,,108,False,1.0.0
+foxbot,2017-07-15T19:08:55.083Z,231,279,Package Description,Discord.Addons.Interactive,False,2017-09-01T20:12:54.973+00:00,True,False,,"discord,discord.net",2552,False,1.0.0
+Ben Siron,2017-07-15T18:14:33.26Z,279,279,Supplies the log4net log directory cleaner 'SelfCleaningRollingFileAppender' which periodically checks for old log files and deletes them automatically from the output log directory.,UGTS.Log4NetCleaner,False,2017-07-15T12:52:27.79-07:00,True,False,log4net self-cleaning rolling file appender,"UGTS,log4net,clean,cleaner,log,logging,delete",238,False,1.0.0
+Martin Cook,2017-07-15T19:06:41.33Z,43209,279,This package contains extensions to the System.Linq namespace.,CG.Linq,False,1900-01-01T00:00:00+00:00,False,False,,"linq,repository,stored,procedure,unit,of,work,object,context,CG.Linq,CodeGator",10040,False,0.2017.29
+Fabricio dos Santos Silva,2017-07-15T19:03:12.383Z,1,279,My package description.,UtilityFramework.Application.Core,False,2018-04-19T19:38:55.29+00:00,True,False,,,4884,False,1.0.0
+dotnet-setversion,2017-07-15T19:00:20.69Z,43209,279,Package Description,dotnet-setversion,True,1900-01-01T00:00:00+00:00,False,False,,,19398,False,1.0.1-bugfix-3-0001
+Matthew Steven Monkan,2017-07-15T18:34:27.4Z,82,279,A Strava C# client.,Pepperoni.Strava,False,2018-01-28T19:49:58.963+00:00,True,False,,strava,1024,False,0.0.3
+Martin Cook,2017-06-23T00:05:51.487Z,43209,301,This package contains extensions to the System.Linq namespace.,CG.Linq,False,1900-01-01T00:00:00+00:00,False,False,,"linq,repository,stored,procedure,unit,of,work,object,context,CG.Linq,CodeGator",10040,False,0.2017.27
+Martin Cook,2017-07-15T18:28:44.97Z,43209,279,This package contains extensions to the System.Linq namespace.,CG.Linq,False,1900-01-01T00:00:00+00:00,False,False,,"linq,repository,stored,procedure,unit,of,work,object,context,CG.Linq,CodeGator",10040,False,0.2017.28
+andrecorreia,2017-07-15T18:25:02.53Z,279,279,"A simple logger that writes to a file. DI ready.
+
+Contact me if need help.",andlogger,False,2017-07-15T18:25:02.53+00:00,True,False,,"logger,logging,logs,framework,simple",1453,False,0.8.2
+andrecorreia,2017-07-15T18:25:02.53Z,279,279,"A simple logger that writes to a file. DI ready.
+
+Contact me if need help.",andlogger,False,2017-07-15T18:25:02.53+00:00,True,False,,"logger,logging,logs,framework,simple",1453,False,0.8.2
+Joshua Burchat,2017-07-15T18:24:40.903Z,238,279,Library which allows the capability to redirect your configuration sections to another source.,YourConfigIsInAnotherCastle,False,2017-08-25T00:58:45.017+00:00,True,False,Library which allows the capability to redirect your configuration sections to another source.,"Configuration,Web.Config,App.Config",297,False,1.0.0
+zarusz,2017-07-15T18:16:54.857Z,39,279,Azure Event Hub provider for SlimMessageBus,SlimMessageBus.Host.AzureEventHub,True,2018-03-12T21:37:18.217+00:00,True,False,,"SlimMessageBus,Azure,Event,Hub,Provider,MessageBus,Facade,Abstraction",372,False,0.9.13-alpha1
+zarusz,2017-07-15T18:16:25.28Z,39,279,"A lightweight message bus interface. The goal of this library is to introduce a slim facade for messaging brokers. Use one of the extensions to add in-process, Apache Kafka or Azure Event Hub messaging.",SlimMessageBus.Host,False,2018-03-12T21:36:53.437+00:00,True,False,,"SlimMessageBus,Provider,MessageBus,Facade",1566,False,0.9.13
+zarusz,2017-07-15T18:16:44.437Z,39,279,Apache Kafka provider for SlimMessageBus,SlimMessageBus.Host.Kafka,False,2018-03-12T21:37:31.703+00:00,True,False,,"SlimMessageBus,Kafka,Provider,MessageBus,Facade,Abstraction",1850,False,0.9.13
+Ben Siron,2017-07-15T16:33:51.213Z,43209,279,"log4net extensions supporting a self-cleaning rolling file appender.
+        
+The SelfCleaningRollingFileAppender which periodically checks for old log files and deletes them automatically from the output log directory.",UGTS.Log4Net.Extensions,False,1899-12-31T16:00:00-08:00,False,False,log4net extensions supporting a self-cleaning rolling file appender,"UGTS,Log4Net,Extensions",-1,False,1.2.6
+Ben Siron,2017-07-15T18:14:33.26Z,279,279,Supplies the log4net log directory cleaner 'SelfCleaningRollingFileAppender' which periodically checks for old log files and deletes them automatically from the output log directory.,UGTS.Log4NetCleaner,False,2017-07-15T12:52:27.79-07:00,True,False,log4net self-cleaning rolling file appender,"UGTS,Log4Net,Cleaner",238,False,1.0.0
+Martin Cook,2017-07-15T18:08:23.767Z,43209,279,This package contains basic abstractions used by other CodeGator packages.,CG.Abstractions,False,1900-01-01T00:00:00+00:00,False,False,,"Abstractions,Design,Patterns,CodeGator",-1,False,0.2017.16
+Martin Cook,2017-07-15T18:12:44.93Z,43209,279,This package contains basic abstractions used by other CodeGator packages.,CG.Abstractions,False,1900-01-01T00:00:00+00:00,False,False,,"Abstractions,Design,Patterns,CodeGator",-1,False,0.2017.17
+chipmunk-sm dannico@linuxmail.org,2017-07-15T18:10:23.66Z,43209,279,rgbtest LCD Monitor Dead Pixel Test for Windows and Linux,rgbtest,False,1899-12-31T16:00:00-08:00,False,False,,"rgbtest,lcd,monitor,dead,pixel,test,color",-1,False,1.0.15
+Martin Cook,2017-07-15T16:08:35.767Z,43209,279,This package contains basic abstractions used by other CodeGator packages.,CG.Abstractions,False,1900-01-01T00:00:00+00:00,False,False,,"Abstractions,Design,Patterns,CodeGator",-1,False,0.2017.15
+Martin Cook,2017-07-15T18:08:23.767Z,43209,279,This package contains basic abstractions used by other CodeGator packages.,CG.Abstractions,False,1900-01-01T00:00:00+00:00,False,False,,"Abstractions,Design,Patterns,CodeGator",-1,False,0.2017.16
+"Dox Sweden AB,Jovan Paskota",2017-07-15T18:04:44.963Z,1,279,SharedLibrary for Dox,Dox.Core.SharedLibrary,False,2018-04-19T08:46:10+00:00,True,False,,"Dox,SharedLibrary",8829,False,2.0.9
+"Dox Sweden AB,Jovan Paskota",2017-07-15T18:04:44.963Z,1,279,SharedLibrary for Dox,Dox.Core.SharedLibrary,False,2018-04-19T08:46:10+00:00,True,False,,"Dox,SharedLibrary",8829,False,2.0.9
+buildguest,2017-07-15T18:00:49.44Z,182,279,Description,int-Soft.DAL,True,2017-10-20T17:09:22.57+00:00,True,False,,,4880,False,1.0.0-ci-20170715-180031
+buildguest,2017-07-15T18:01:00.083Z,182,279,Description,int-Soft.MVC.Core,True,2017-10-20T17:09:37.697+00:00,True,False,,,4882,False,1.0.0-ci-20170715-180036
+buildguest,2017-07-15T18:01:09.52Z,182,279,Description,int-Soft.MVC.Scripts,True,2017-10-20T17:09:52.163+00:00,True,False,,,4363,False,1.0.0-ci-20170715-180033
+qdot,2017-07-15T17:58:17.593Z,20,279,Library for adding XInput Gamepad (Windows 7 or Later) support to Buttplug Servers,Buttplug.Server.Managers.XInputGamepadManager,True,2018-03-31T22:07:53.043+00:00,True,False,,,6203,False,0.0.0.393-alpha
+qdot,2017-07-15T17:58:00.267Z,20,279,Base Server Library for the Buttplug Sex Toy Control Protocol,Buttplug.Server,True,2018-03-31T22:07:29.4+00:00,True,False,,,6248,False,0.0.0.393-alpha
+qdot,2017-07-15T17:57:40.92Z,20,279,Core Library for the Buttplug Sex Toy Control Protocol,Buttplug.Core,True,2018-03-31T22:07:07.897+00:00,True,False,,,6739,False,0.0.0.393-alpha
+qdot,2017-07-15T17:57:51.047Z,20,279,Client Library for the Buttplug Sex Toy Control Protocol,Buttplug.Client,True,2018-03-31T22:07:19.163+00:00,True,False,,,6534,False,0.0.0.393-alpha
+qdot,2017-07-15T17:58:09.063Z,20,279,Library for adding UWP Bluetooth (Windows 10 15063 Creators Update or Later) support to Buttplug Servers,Buttplug.Server.Managers.UWPBluetoothManager,True,2018-03-31T22:07:43.353+00:00,True,False,,,6213,False,0.0.0.393-alpha
+Solutions Experta Inc.,2017-07-15T17:52:58.117Z,194,279,Paymo Proxy Client API,Experta.Lib.PaymoApi.Client,True,2017-10-08T16:09:37.73+00:00,True,False,,,1299,False,0.0.9-beta
+Peter Waher,2017-07-15T17:47:18.56Z,228,279,Class library for communication using the CoAP protocol.,Waher.Networking.CoAP,False,2017-09-04T15:57:27.29+00:00,True,False,,"networking,communication,coap",626,False,1.0.0
+Peter Waher,2017-07-15T17:47:18.56Z,228,279,Class library for communication using the CoAP protocol.,Waher.Networking.CoAP,False,2017-09-04T15:57:27.29+00:00,True,False,,"networking,communication,coap",626,False,1.0.0
+Ericmas001,2017-07-15T17:47:11.513Z,168,279,Com.Ericmas001.Userbase.Models,Com.Ericmas001.Userbase.Models,False,2017-11-03T10:03:19.38+00:00,True,False,Com.Ericmas001.Userbase.Models,,482,False,0.6.3
+Ericmas001,2017-07-15T17:47:24.547Z,168,279,Com.Ericmas001.Userbase,Com.Ericmas001.Userbase,False,2017-11-03T10:03:34.07+00:00,True,False,Com.Ericmas001.Userbase,,1530,False,0.6.3
+Olfi01,2017-07-15T17:40:31.113Z,43209,279,Unlisted Lib. You shouldn't care.,Olfi01.FlomBotFactory,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0-beta01
+Olfi01,2017-07-15T17:40:31.113Z,43209,279,Unlisted Lib. You shouldn't care.,Olfi01.FlomBotFactory,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0-beta01
+iamcarbon,2017-07-15T17:32:17.273Z,8,279,Relational database management services.,Carbon.Rds.Management,False,2018-04-12T21:02:20.06+00:00,True,False,,"data,sql,carbon",2080,False,0.1.0
+iamcarbon,2017-07-15T17:31:48.023Z,5,279,SQL primitives and helpers.,Carbon.Data.Sql,False,2018-04-15T20:08:29.377+00:00,True,False,,"data,sql,MySQL,carbon",10364,False,0.29.0
+Vedran Vučetić,2017-07-15T17:21:34.333Z,258,279,"Pulse is background job engine for executing jobs in background in reliable way, resistant to host (application or machine) restarts or power loss because its baked by persistend storage.",Pulse.Core,True,2017-08-05T17:53:01.403+00:00,True,False,Core components for Pulse - background job engine.,,2277,False,1.0.38-alpha
+Vedran Vučetić,2017-07-15T17:21:53.29Z,258,279,"Pulse is background job engine for executing jobs in background in reliable way, resistant to host (application or machine) restarts or power loss because its baked by persistend storage.",PulseEngine,True,2017-08-05T17:53:18.983+00:00,True,False,Pulse - background job engine.,,1613,False,1.0.38-alpha
+Vedran Vučetić,2017-07-15T17:21:44.18Z,258,279,"Pulse is background job engine for executing jobs in background in reliable way, resistant to host (application or machine) restarts or power loss because its baked by persistend storage.",Pulse.SqlStorage,True,2017-08-05T17:53:10.28+00:00,True,False,Core components for Pulse - background job engine.,,1715,False,1.0.38-alpha
+Mikkel Jensen,2017-07-15T17:14:58.653Z,76,279,Helper for fetching and caching of data from the web,artm.fetcher,True,2018-02-03T20:46:38.387+00:00,True,False,,"mvvm,mvvmcross,xamarin,monodroid,monotouch,wp,wpdev,windowsphone,wpa81,win81,mvx",15489,False,2.8.0-unstable0010
+刘玉路,2017-07-15T17:13:12.243Z,231,279,My package description.,Muggle,False,2017-09-01T03:29:31.753+00:00,True,False,,,597,False,1.0.0
+Hugo Biarge,2017-07-15T17:09:32.41Z,242,279,NuGet package to manage authenticated requests in AspNetCore TestServer,Acheve.AspNetCore.TestHost.Security,False,2017-08-21T17:15:49.84+00:00,True,False,,"TestHost,security",8652,False,1.3.0
+yzbai@brlite.com,2017-07-15T17:05:49.763Z,87,279,Package Description,HB.Infrastructure.Redis,True,2018-01-23T10:18:59.88+00:00,True,False,,,3987,False,1.0.0-alpha-3028
+yzbai@brlite.com,2017-07-15T17:05:41.2Z,87,279,Package Description,HB.Infrastructure.MySQL,True,2018-01-23T10:18:47.803+00:00,True,False,,,3984,False,1.0.0-alpha-3028
+yzbai@brlite.com,2017-07-15T17:05:32.793Z,87,279,Package Description,HB.Infrastructure.Juhe,True,2018-01-23T10:18:08.927+00:00,True,False,,,3931,False,1.0.0-alpha-3028
+yzbai@brlite.com,2017-07-15T17:04:25.183Z,87,279,Package Description,HB.Framework.Cache,True,2018-01-23T10:15:40.733+00:00,True,False,,,4072,False,1.0.0-alpha-3028
+yzbai@brlite.com,2017-07-15T17:04:58.81Z,87,279,Package Description,HB.Framework.Identity,True,2018-01-23T10:16:58.847+00:00,True,False,,,4394,False,1.0.0-alpha-3028
+yzbai@brlite.com,2017-07-15T17:04:16.777Z,87,279,Package Description,HB.Framework.Business,True,2018-01-23T10:15:27.843+00:00,True,False,,,4193,False,1.0.0-alpha-3028
+yzbai@brlite.com,2017-07-15T17:04:08.26Z,43209,279,Package Description,HB.Framework.AuthorizationServer,True,1900-01-01T00:00:00+00:00,False,False,,,2696,False,1.0.0-alpha-3028
+yzbai@brlite.com,2017-07-15T17:04:34.293Z,87,279,Package Description,HB.Framework.Common,True,2018-01-23T10:15:53.953+00:00,True,False,,,4138,False,1.0.0-alpha-3028
+yzbai@brlite.com,2017-07-15T17:05:24.967Z,87,279,Package Description,HB.Infrastructure.Aliyun,True,2018-01-23T10:17:55.817+00:00,True,False,,,3960,False,1.0.0-alpha-3028
+yzbai@brlite.com,2017-07-15T17:04:42.043Z,87,279,Package Description,HB.Framework.Database,True,2018-01-23T10:16:21.597+00:00,True,False,,,4031,False,1.0.0-alpha-3028
+yzbai@brlite.com,2017-07-15T17:04:50.48Z,87,279,Package Description,HB.Framework.Http,True,2018-01-23T10:16:45.61+00:00,True,False,,,4024,False,1.0.0-alpha-3028
+yzbai@brlite.com,2017-07-15T17:03:58.463Z,87,279,Package Description,CommonSample,True,2018-01-23T10:15:13.89+00:00,True,False,,,3516,False,1.0.0-alpha-3028
+yzbai@brlite.com,2017-07-15T17:05:16.793Z,87,279,Package Description,HB.Framework.Services,True,2018-01-23T10:17:36.223+00:00,True,False,,,4026,False,1.0.0-alpha-3028
+yzbai@brlite.com,2017-07-15T17:05:08.013Z,87,279,Package Description,HB.Framework.KVStore,True,2018-01-23T10:17:11.753+00:00,True,False,,,4053,False,1.0.0-alpha-3028
+Ben Siron,2017-07-15T11:58:03.31Z,43209,279,"log4net extensions supporting a self-cleaning rolling file appender, and 'lambda logging'.  
+
+Provides a SelfCleaningRollingFileAppender which periodically checks for old log files and deletes them automatically from the output log directory.
+
+Lambda logging is a convenience feature where the message to log is generated by a lambda.  This defers the cost of generating the message until after it is determined that logging is enabled.  For a typical string format call, this can make the difference between 70ns and 2000ns in execution time per logging statement.  The same result can be achieved without lambda logging by calling log.Is[Level]Enabled followed by the logging call.",UGTS.Log4Net.Extensions,False,1899-12-31T16:00:00-08:00,False,False,"log4net extensions supporting a self-cleaning rolling file appender, and 'lambda logging'","UGTS,Log4Net,Extensions",-1,False,1.2.5
+Carlos Sandoval,2017-07-15T16:53:38.79Z,279,279,MongoDB persistence for  NServiceBus 6.x,NServiceBus.MongoDB,False,2017-07-15T09:53:38.79-07:00,True,False,,"nservicebus,mongodb,persistence,servicebus",11978,False,6.3.0
+Mark Whitaker,2017-07-15T16:51:39.02Z,43209,279,Regular expression tools for C#,RegexTools,False,1899-12-31T16:00:00-08:00,False,False,,"regex,regularexpression",445,False,1.0.3
+Microsoft,2017-07-15T16:38:27.923Z,43209,279,"Microsoft Visual Studio Services Client
+
+Integrate with Team Foundation Server 2017 and Visual Studio Team Services from desktop-based, ASP.NET, and other Windows applications.  Provides access to shared platform services such as account, profile, identity, security, and more via public REST APIs.",Microsoft.VisualStudio.Services.Client,True,1900-01-01T00:00:00+00:00,False,False,,"Microsoft,Team,Foundation,Server,TFS,VSO,Visual,Studio,VisualStudio,Online,REST,Account,Identity,Profile,Client,Services,Object,Model,OM,VSTS,TeamFoundation",693466,True,15.119.0-preview
+Microsoft,2017-07-15T16:38:27.923Z,43209,279,"Microsoft Visual Studio Services Client
+
+Integrate with Team Foundation Server 2017 and Visual Studio Team Services from desktop-based, ASP.NET, and other Windows applications.  Provides access to shared platform services such as account, profile, identity, security, and more via public REST APIs.",Microsoft.VisualStudio.Services.Client,True,1900-01-01T00:00:00+00:00,False,False,,"Microsoft,Team,Foundation,Server,TFS,VSO,Visual,Studio,VisualStudio,Online,REST,Account,Identity,Profile,Client,Services,Object,Model,OM,VSTS,TeamFoundation",693466,True,15.119.0-preview
+Microsoft,2017-07-15T16:44:19.697Z,10,279,"Microsoft.VisualStudio.Services.MemberEntitlementManagement.WebApi
+Integrate with Visual Studio Team Services from desktop-based, ASP.NET, and other Windows applications.  Provides access to the Member Entitlement Management Service via public REST APIs.",Microsoft.VisualStudio.Services.MemberEntitlementManagement.WebApi,True,2018-04-10T17:45:31.957+00:00,True,False,,"VSO,Visual,Studio,VisualStudio,Online,REST,Member,Entitlement,Management,Client,Object,Model,OM,VSTS",1399,True,15.119.0-preview
+Microsoft,2017-07-15T16:43:29.493Z,10,279,"Microsoft.VisualStudio.Services.ServiceHooks.WebApi
+
+Integrate with Team Foundation Server 2017 and Visual Studio Team Services from desktop-based, ASP.NET, and other Windows applications.  Provides access to the Service Hooks Service via public REST APIs.",Microsoft.VisualStudio.Services.ServiceHooks.WebApi,True,2018-04-10T17:47:19.443+00:00,True,False,,"Microsoft,Team,Foundation,Server,TFS,VSO,Visual,Studio,VisualStudio,Online,REST,Service,Hooks,ServiceHooks,Client,Object,Model,OM,VSTS,TeamFoundation",2053,True,15.119.0-preview
+Microsoft,2017-07-15T16:41:40.677Z,10,279,"Microsoft.VisualStudio.Services.Gallery.WebApi
+
+Integrate with Team Foundation Server 2017 and Visual Studio Team Services from desktop-based, ASP.NET, and other Windows applications.  Provides access to the Gallery Service via public REST APIs.",Microsoft.VisualStudio.Services.Gallery.WebApi,True,2018-04-10T17:44:30.017+00:00,True,False,,"Microsoft,Team,Foundation,Server,TFS,VSO,Visual,Studio,VisualStudio,Online,REST,Gallery,Client,Object,Model,OM,VSTS,TeamFoundation",3907,True,15.119.0-preview
+Microsoft,2017-07-15T16:42:39.087Z,10,279,"Microsoft.VisualStudio.Services.Notifications.WebApi
+
+Integrate with Team Foundation Server 2017 and Visual Studio Team Services from desktop-based, ASP.NET, and other Windows applications.  Provides access to the Notifications Service via public REST APIs.",Microsoft.VisualStudio.Services.Notifications.WebApi,True,2018-04-10T17:45:57.69+00:00,True,False,,"Microsoft,Team,Foundation,Server,TFS,VSO,Visual,Studio,VisualStudio,Online,REST,Notifications,Notification,Client,Object,Model,OM,VSTS,TeamFoundation",5271,True,15.119.0-preview
+Administrator,2017-07-15T16:43:08.29Z,105,279,Description,CoreAntasya,False,2018-01-05T08:15:09.65+00:00,True,False,,,2538,False,1.3.0
+Microsoft,2017-07-15T16:42:07.367Z,10,279,"Microsoft.VisualStudio.Services.ExtensionManagement.WebApi
+
+Integrate with Team Foundation Server 2017 and Visual Studio Team Services from desktop-based, ASP.NET, and other Windows applications.  Provides access to the Extension Management Service via public REST APIs.",Microsoft.VisualStudio.Services.ExtensionManagement.WebApi,True,2018-04-10T17:44:54.267+00:00,True,False,,"Microsoft,Team,Foundation,Server,TFS,VSO,Visual,Studio,VisualStudio,Online,REST,ExtensionManagement,Extension,Management,Client,Object,Model,OM,VSTS,TeamFoundation",3962,True,15.119.0-preview
+Christian Kratky,2017-07-15T16:42:43.71Z,9,279,MQTTnet is a .NET library for MQTT based communication. It provides a MQTT client and a MQTT server (broker).,MQTTnet,False,2018-04-11T19:24:56.31+00:00,True,False,,"MQTT,MQTTClient,MQTTServer,MQTTBroker,Broker",14422,False,2.1.4
+Microsoft,2017-07-15T16:43:03.633Z,10,279,"Microsoft Visual Studio Services Release Client
+
+Integrate with Team Foundation Server 2017 and Visual Studio Team Services from desktop-based, ASP.NET, and other Windows applications.  Provides access to the Release Service via public REST APIs.",Microsoft.VisualStudio.Services.Release.Client,True,2018-04-10T17:46:23.707+00:00,True,False,,"Microsoft,Team,Foundation,Server,TFS,VSO,Visual,Studio,VisualStudio,Online,REST,ReleaseManagement,Release,Build,Client,Object,Model,OM,VSTS",36895,True,15.119.0-preview
+Microsoft,2017-07-15T16:40:35.19Z,43209,279,"Microsoft Team Foundation Server Client
+
+Integrate with Team Foundation Server 2017 and Visual Studio Team Services from desktop-based, ASP.NET, and other Windows applications.  Provides access to version control, work item tracking, build, and more via public REST APIs.",Microsoft.TeamFoundationServer.Client,True,1900-01-01T00:00:00+00:00,False,False,,"Microsoft,Team,Foundation,Server,TFS,VSO,Visual,Studio,VisualStudio,Online,REST,Build,Git,TFVC,Test,Management,Agile,WIT,Work,Item,Tracking,Room,Version,Control,Client,Object,Model,OM,VSTS,TeamFoundation",632814,True,15.119.0-preview
+Microsoft,2017-07-15T16:41:12.723Z,10,279,"Microsoft Team Foundation Server Extended Client
+
+Integrate with Microsoft Team Foundation Server and Visual Studio Team Services from desktop-based Windows applications.  Work with and manage version control, work items, and build, and other resources from your client application.",Microsoft.TeamFoundationServer.ExtendedClient,True,2018-04-10T17:43:59.513+00:00,True,False,,"Microsoft,Team,Foundation,Server,TFS,VSO,Visual,Studio,VisualStudio,Online,SOAP,Build,Git,TFVC,Test,Management,Agile,WIT,Work,Item,Tracking,Room,Version,Control,Client,Object,Model,OM,Extended,VSTS,TeamFoundation",403001,True,15.119.0-preview
+yzbai@brlite.com,2017-07-15T16:40:31.317Z,100,279,Package Description,HB.Infrastructure.Aliyun.Acs.Sms,True,2018-01-10T06:19:16.13+00:00,True,False,,,761,False,1.0.0-alpha-3004
+Allan Ritchie,2017-07-15T16:39:58.643Z,279,279,"Speech Recognition that allows for continuous dictation, phrases, or quick confirmations.
+
+Supported Platforms
+- iOS 10+
+- Android
+- UWP
+- .NET Standard",Plugin.SpeechRecognition,True,2017-07-15T09:39:58.643-07:00,True,False,"Speech Recognition Plugin for iOS, Android, and Windows","windows,xamarin,xam.pcl,speech,recognition",1051,False,1.0.0-beta3
+Microsoft,2017-07-15T16:39:26.813Z,43209,279,"Microsoft Team Foundation Distributed Task Common Contracts
+
+Integrate with Team Foundation Server 2017 and Visual Studio Team Services from desktop-based, ASP.NET, and other Windows applications.  Provides the models used to access the Distributed Task Service via public REST APIs.",Microsoft.TeamFoundation.DistributedTask.Common.Contracts,True,1900-01-01T00:00:00+00:00,False,False,,"Microsoft,Team,Foundation,Server,TFS,VSO,Visual,Studio,VisualStudio,Online,REST,Distributed,Task,Build,Client,Object,Model,OM,VSTS,TeamFoundation,2015,2017",53626,True,15.119.0-preview
+yzbai@brlite.com,2017-07-15T16:40:23.223Z,100,279,Package Description,HB.Infrastructure.Aliyun.Acs.Core,True,2018-01-10T06:19:02.817+00:00,True,False,,,735,False,1.0.0-alpha-3004
+Microsoft,2017-07-15T16:39:56.3Z,10,279,"Microsoft Team Foundation Distributed Task Web API
+
+Integrate with Team Foundation Server 2017 and Visual Studio Team Services from desktop-based, ASP.NET, and other Windows applications.  Provides access to the Distributed Task Service via public REST APIs.",Microsoft.TeamFoundation.DistributedTask.WebApi,True,2018-04-10T17:43:06.17+00:00,True,False,,"Microsoft,Team,Foundation,Server,TFS,VSO,Visual,Studio,VisualStudio,Online,REST,Distributed,Task,Build,Client,Object,Model,OM,VSTS,TeamFoundation",6198,True,15.119.0-preview
+"Dox Sweden AB,Jovan Paskota",2017-07-15T16:34:45.997Z,196,279,Helper for downloading files from dox,Dox.Core.Download,False,2017-10-06T16:58:31.143+00:00,True,False,,"Dox,Download",3148,False,2.1.7
+Pavel Sem,2017-07-15T16:34:11.633Z,248,279,Simple library which can be used to access Strava API,Workout.Strava.Api.Client,True,2017-08-15T13:24:31.277+00:00,True,False,,,593,False,1.0.0-alpha
+Microsoft,2017-07-15T16:38:57.5Z,43209,279,"Microsoft Visual Studio Services Client (Interactive)
+
+Integrate with Visual Studio Team Services from desktop-based Windows applications that require interactive sign-in by a user.",Microsoft.VisualStudio.Services.InteractiveClient,True,1900-01-01T00:00:00+00:00,False,False,,"Microsoft,Team,Foundation,Server,TFS,Visual,Studio,VisualStudio,Online,VSO,Client,Services,Object,Model,OM,Interactive,VSTS,TeamFoundation",510032,True,15.119.0-preview
+Microsoft,2017-07-15T16:38:27.923Z,43209,279,"Microsoft Visual Studio Services Client
+
+Integrate with Team Foundation Server 2017 and Visual Studio Team Services from desktop-based, ASP.NET, and other Windows applications.  Provides access to shared platform services such as account, profile, identity, security, and more via public REST APIs.",Microsoft.VisualStudio.Services.Client,True,1900-01-01T00:00:00+00:00,False,False,,"Microsoft,Team,Foundation,Server,TFS,VSO,Visual,Studio,VisualStudio,Online,REST,Account,Identity,Profile,Client,Services,Object,Model,OM,VSTS,TeamFoundation",693466,True,15.119.0-preview
+yzbai@brlite.com,2017-07-15T16:36:53.53Z,87,279,Package Description,HB.Infrastructure.Redis,True,2018-01-23T10:18:59.88+00:00,True,False,,,3987,False,1.0.0-alpha-3025
+yzbai@brlite.com,2017-07-15T16:36:46.89Z,87,279,Package Description,HB.Infrastructure.MySQL,True,2018-01-23T10:18:47.803+00:00,True,False,,,3984,False,1.0.0-alpha-3025
+yzbai@brlite.com,2017-07-15T16:36:28.64Z,87,279,Package Description,HB.Infrastructure.Aliyun,True,2018-01-23T10:17:55.817+00:00,True,False,,,3960,False,1.0.0-alpha-3025
+yzbai@brlite.com,2017-07-15T16:36:37.357Z,87,279,Package Description,HB.Infrastructure.Juhe,True,2018-01-23T10:18:08.927+00:00,True,False,,,3931,False,1.0.0-alpha-3025
+yzbai@brlite.com,2017-07-15T16:35:45.45Z,87,279,Package Description,HB.Framework.Database,True,2018-01-23T10:16:21.597+00:00,True,False,,,4031,False,1.0.0-alpha-3025
+yzbai@brlite.com,2017-07-15T16:36:02.793Z,87,279,Package Description,HB.Framework.Identity,True,2018-01-23T10:16:58.847+00:00,True,False,,,4394,False,1.0.0-alpha-3025
+yzbai@brlite.com,2017-07-15T16:35:54.433Z,87,279,Package Description,HB.Framework.Http,True,2018-01-23T10:16:45.61+00:00,True,False,,,4024,False,1.0.0-alpha-3025
+yzbai@brlite.com,2017-07-15T16:35:18.183Z,87,279,Package Description,HB.Framework.Business,True,2018-01-23T10:15:27.843+00:00,True,False,,,4193,False,1.0.0-alpha-3025
+yzbai@brlite.com,2017-07-15T16:35:09.51Z,43209,279,Package Description,HB.Framework.AuthorizationServer,True,1900-01-01T00:00:00+00:00,False,False,,,2696,False,1.0.0-alpha-3025
+yzbai@brlite.com,2017-07-15T16:35:36.683Z,87,279,Package Description,HB.Framework.Common,True,2018-01-23T10:15:53.953+00:00,True,False,,,4138,False,1.0.0-alpha-3025
+yzbai@brlite.com,2017-07-15T16:36:11.357Z,87,279,Package Description,HB.Framework.KVStore,True,2018-01-23T10:17:11.753+00:00,True,False,,,4053,False,1.0.0-alpha-3025
+"Dox Sweden AB,Jovan Paskota",2017-07-15T16:34:45.997Z,196,279,Helper for downloading files from dox,Dox.Core.Download,False,2017-10-06T16:58:31.143+00:00,True,False,,"Dox,Download",3148,False,2.1.7
+TheNetw.org,2017-07-15T16:35:45.06Z,242,279,EduLogin.Client enables your app to interact with data entities from EduLog.in service for schools.,EduLogin.Client,False,2017-08-21T10:38:21.343+00:00,True,False,,"EduLog.in,SkolniLogin.cz,School,Client,API,TheNetw.org",1691,False,1.0.6405.33451
+yzbai@brlite.com,2017-07-15T16:35:00.9Z,87,279,Package Description,CommonSample,True,2018-01-23T10:15:13.89+00:00,True,False,,,3516,False,1.0.0-alpha-3025
+yzbai@brlite.com,2017-07-15T16:35:27.48Z,87,279,Package Description,HB.Framework.Cache,True,2018-01-23T10:15:40.733+00:00,True,False,,,4072,False,1.0.0-alpha-3025
+yzbai@brlite.com,2017-07-15T16:36:21.247Z,87,279,Package Description,HB.Framework.Services,True,2018-01-23T10:17:36.223+00:00,True,False,,,4026,False,1.0.0-alpha-3025
+Ben Siron,2017-07-15T16:33:51.213Z,43209,279,"log4net extensions supporting a self-cleaning rolling file appender.
+        
+The SelfCleaningRollingFileAppender which periodically checks for old log files and deletes them automatically from the output log directory.",UGTS.Log4Net.Extensions,False,1899-12-31T16:00:00-08:00,False,False,log4net extensions supporting a self-cleaning rolling file appender,"UGTS,Log4Net,Extensions",-1,False,1.2.6
+Pavel Sem,2017-07-15T16:34:11.633Z,248,279,Simple library which can be used to access Strava API,Workout.Strava.Api.Client,True,2017-08-15T13:24:31.277+00:00,True,False,,,593,False,1.0.0-alpha
+Mark Whitaker,2017-07-15T16:31:05.943Z,43209,279,Regular expression tools for C#,RegexTools,False,1899-12-31T16:00:00-08:00,False,False,,"regex,regularexpression",445,False,1.0.2
+yzbai@brlite.com,2017-07-15T16:27:14.827Z,87,279,Package Description,HB.Infrastructure.MySQL,True,2018-01-23T10:18:47.803+00:00,True,False,,,3984,False,1.0.0-alpha-0024
+yzbai@brlite.com,2017-07-15T16:27:22.983Z,87,279,Package Description,HB.Infrastructure.Redis,True,2018-01-23T10:18:59.88+00:00,True,False,,,3987,False,1.0.0-alpha-0024
+yzbai@brlite.com,2017-07-15T16:27:05.327Z,87,279,Package Description,HB.Infrastructure.Juhe,True,2018-01-23T10:18:08.927+00:00,True,False,,,3931,False,1.0.0-alpha-0024
+yzbai@brlite.com,2017-07-15T16:26:58.093Z,87,279,Package Description,HB.Infrastructure.Aliyun,True,2018-01-23T10:17:55.817+00:00,True,False,,,3960,False,1.0.0-alpha-0024
+yzbai@brlite.com,2017-07-15T16:26:48.75Z,87,279,Package Description,HB.Framework.Services,True,2018-01-23T10:17:36.223+00:00,True,False,,,4026,False,1.0.0-alpha-0024
+yzbai@brlite.com,2017-07-15T16:26:39.31Z,87,279,Package Description,HB.Framework.KVStore,True,2018-01-23T10:17:11.753+00:00,True,False,,,4053,False,1.0.0-alpha-0024
+yzbai@brlite.com,2017-07-15T16:26:30.233Z,87,279,Package Description,HB.Framework.Identity,True,2018-01-23T10:16:58.847+00:00,True,False,,,4394,False,1.0.0-alpha-0024
+yzbai@brlite.com,2017-07-15T16:26:12.997Z,87,279,Package Description,HB.Framework.Database,True,2018-01-23T10:16:21.597+00:00,True,False,,,4031,False,1.0.0-alpha-0024
+yzbai@brlite.com,2017-07-15T16:26:21.28Z,87,279,Package Description,HB.Framework.Http,True,2018-01-23T10:16:45.61+00:00,True,False,,,4024,False,1.0.0-alpha-0024
+yzbai@brlite.com,2017-07-15T16:26:04.077Z,87,279,Package Description,HB.Framework.Common,True,2018-01-23T10:15:53.953+00:00,True,False,,,4138,False,1.0.0-alpha-0024
+yzbai@brlite.com,2017-07-15T16:25:55.217Z,87,279,Package Description,HB.Framework.Cache,True,2018-01-23T10:15:40.733+00:00,True,False,,,4072,False,1.0.0-alpha-0024
+yzbai@brlite.com,2017-07-15T16:25:25.95Z,87,279,Package Description,CommonSample,True,2018-01-23T10:15:13.89+00:00,True,False,,,3516,False,1.0.0-alpha-0024
+yzbai@brlite.com,2017-07-15T16:25:45.81Z,87,279,Package Description,HB.Framework.Business,True,2018-01-23T10:15:27.843+00:00,True,False,,,4193,False,1.0.0-alpha-0024
+yzbai@brlite.com,2017-07-15T16:25:36.043Z,43209,279,Package Description,HB.Framework.AuthorizationServer,True,1900-01-01T00:00:00+00:00,False,False,,,2696,False,1.0.0-alpha-0024
+CXuesong,2017-07-15T16:23:50.337Z,38,279,"Wiki Client Library is a .NET Standard & asynchronous client library for MediaWiki sites.
+
+      This portable & asynchronous MediaWiki API client provides an easy and asynchronous access to commonly-used MediaWiki API. It has the following features:
+
+      * Queries and edits for pages, including standard pages, category pages, and file pages.
+      * Queries for category statistical info and its members.
+      * Queries for basic file info, and file uploading.
+      * Login/logout via simple asynchronous functions.
+      * Client code has access to CookieContainer, and have chance to persist it.
+      * Tokens are hidden in the library functions, so that client won't bother to retrieve them over and over again.
+      * Query continuations are hidden by IAsyncEnumerable, which will ease the pain when using page generators.
+      * Other miscellaneous MediaWiki API, such as OpenSearch, Page parsing, and Patrol.",CXuesong.MW.WikiClientLibrary,True,2018-03-13T09:18:29.52+00:00,True,False,,"MediaWiki,API,Client",3424,True,0.6.0-int0
+yzbai@brlite.com,2017-07-15T16:22:09.38Z,100,279,Package Description,HB.Infrastructure.Aliyun.Acs.Sms,True,2018-01-10T06:19:16.13+00:00,True,False,,,761,False,1.0.0-alpha-0003
+yzbai@brlite.com,2017-07-15T16:22:00.413Z,100,279,Package Description,HB.Infrastructure.Aliyun.Acs.Core,True,2018-01-10T06:19:02.817+00:00,True,False,,,735,False,1.0.0-alpha-0003
+Mark Whitaker,2017-07-15T16:20:53.41Z,43209,279,Regular expression tools for C#,RegexTools,False,1899-12-31T16:00:00-08:00,False,False,,"regex,regularexpression",445,False,1.0.1
+"Dox Sweden AB,Jovan Paskota",2017-07-15T16:20:08.817Z,196,279,Helper for downloading files from dox,Dox.Core.Download,False,2017-10-06T16:58:31.143+00:00,True,False,,"Dox,Download",3148,False,2.1.6
+Mark Whitaker,2017-07-15T16:20:53.41Z,43209,279,Regular expression tools for C#,RegexTools,False,1899-12-31T16:00:00-08:00,False,False,,"regex,regularexpression",445,False,1.0.1
+Kees van Spelde,2017-04-26T14:26:40.29Z,3,359,"Read Outlook MSG and EML files without using Outlook.
+
+The MSGReader supports MSG E-Mail (also signed), Contact, Appointment, Task, Sticky notes and Contact files.
+
+The EML reader supports MIME 1.0 encoded files",MSGReader,False,2018-04-17T15:57:55.89+00:00,False,False,"Read Outlook MSG and EML files without using Outlook.
+
+There are 4 languages (nl-NL, de-DE, fr-FR and en-US (default) available when you use the Reader class. You can set the language by using the SetCulture method. For example SetCulture(""nl-NL"") to set","Outlook,MSG,Signed,EML,Contact,Appointment,Task",55116,False,2.0.11
+Kees van Spelde,2017-07-15T16:16:33.123Z,3,279,"There are  5 languages (nl-NL, de-DE, fr-FR and en-US (default)) available when you use the Reader class. You can set the language by using the SetCulture method. For example SetCulture(""nl-NL"") to set dutch culture
+
+The EML reader supports MIME 1.0 encoded files",MSGReader,False,2018-04-17T15:57:55.89+00:00,True,False,"Read Outlook MSG and EML files without using Outlook.
+
+The MSGReader supports MSG E-Mail (also signed), Contact, Appointment, Task, Sticky notes and Contact files.","Outlook,MSG,Signed,EML,Contact,Appointment,Task",55116,False,2.0.13
+ap0llo,2017-07-15T16:13:52.777Z,223,279,Setup targets to create Squirrel.Windows based installers for .Net projects,Grynwald.Utilities.Squirrel.Build,False,2017-09-09T14:27:25.347+00:00,True,False,,"setup,installer,squirrel,windows",619,False,1.0.15
+"Dox Sweden AB,Jovan Paskota",2017-07-15T16:07:29.983Z,196,279,Helper for downloading files from dox,Dox.Core.Download,True,2017-10-06T16:58:31.143+00:00,True,False,,"Dox,Download",3148,False,2.1.5-preview
+Steve Syfuhs,2017-07-15T16:07:37.11Z,57,279,A Managed Code validator for Kerberos tickets,Kerberos.NET,False,2018-02-22T18:58:09.277+00:00,True,False,,"security,kerberos",1674,False,1.2.2.3
+Martin Cook,2017-07-15T16:08:35.767Z,43209,279,This package contains basic abstractions used by other CodeGator packages.,CG.Abstractions,False,1900-01-01T00:00:00+00:00,False,False,,"Abstractions,Design,Patterns,CodeGator",-1,False,0.2017.15
+Martin Cook,2017-07-13T18:51:33.457Z,43209,281,This package contains basic abstractions used by other CodeGator packages.,CG.Abstractions,False,1900-01-01T00:00:00+00:00,False,False,,"Abstractions,Design,Patterns,CodeGator",-1,False,0.2017.14
+Mustafa Salih ASLIM,2017-07-15T16:03:02.117Z,43209,279,C# AspNetCore RiotGames League Of Legends v3 API Library.,RiotGamesApi.AspNetCore.RiotApi,False,1900-01-01T00:00:00+00:00,False,False,C# AspNetCore RiotGames API V3,"RiotGames,League,Of,Legends,API,V3,Library,c#,AspNetCore,1.1,project",-1,False,1.7.15.701
+Steve Syfuhs,2017-07-15T15:47:42.763Z,57,279,A Managed Code validator for Kerberos tickets,Kerberos.NET,False,2018-02-22T18:58:09.277+00:00,False,False,,"security,kerberos",1674,False,1.2.2.1
+Steve Syfuhs,2017-07-15T15:48:11.2Z,43209,279,This package is used to add support for the AES algorithm to Kerberos.NET,Kerberos.NET-AES,False,1900-01-01T00:00:00+00:00,False,False,,"security,kerberos",-1,False,1.2.2.1
+Sergio Pedri,2017-07-15T16:05:55.81Z,61,279,"A wrapper PCL to work with Windows.UI.Composition and XAML animations, and Win2D effects",UICompositionAnimations,False,2018-02-18T12:22:08.803+00:00,True,False,,"uwp,composition,animations,xaml,csharp,windows,winrt,universal,app,ui,win2d,graphics",6123,False,2.9.0
+Steve Syfuhs,2017-07-15T16:07:37.11Z,57,279,A Managed Code validator for Kerberos tickets,Kerberos.NET,False,2018-02-22T18:58:09.277+00:00,True,False,,"security,kerberos",1674,False,1.2.2.3
+"Dox Sweden AB,Jovan Paskota",2017-07-15T16:07:29.983Z,196,279,Helper for downloading files from dox,Dox.Core.Download,True,2017-10-06T16:58:31.143+00:00,True,False,,"Dox,Download",3148,False,2.1.5-preview
+Steve Syfuhs,2017-07-15T16:08:03.987Z,43209,279,This package is used to add support for the AES algorithm to Kerberos.NET,Kerberos.NET-AES,False,1900-01-01T00:00:00+00:00,False,False,,"security,kerberos",-1,False,1.2.2.3
+Sergio Pedri,2017-07-15T16:05:55.81Z,61,279,"A wrapper PCL to work with Windows.UI.Composition and XAML animations, and Win2D effects",UICompositionAnimations,False,2018-02-18T12:22:08.803+00:00,True,False,,,6123,False,2.9.0
+Mustafa Salih ASLIM,2017-07-15T16:03:02.117Z,43209,279,C# AspNetCore cross-platform RiotGames API V3 Library.,RiotGamesApi.AspNetCore.RiotApi,False,1900-01-01T00:00:00+00:00,False,False,C# AspNetCore RiotGames API V3,"RiotGames,League,Of,Legends,API,V3,Library,c#,AspNetCore,1.1,project",-1,False,1.7.15.701
+zyx,2017-07-15T15:49:18.78Z,43209,279,My package description.,Test_zyx,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.1
+zyx,2017-07-15T15:27:48.233Z,43209,279,My package description.,Test_zyx,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+吕艳阳,2014-07-13T11:56:05.277Z,43209,1377,XCI.NET开发框架,XCI.Framework,False,1899-12-31T16:00:00-08:00,False,False,,c#,-1,False,0.1.1
+吕艳阳,2014-07-14T13:05:08.71Z,43209,1376,XCI.NET开发框架,XCI.Framework,False,1899-12-31T16:00:00-08:00,False,False,,c#,-1,False,0.1.2
+吕艳阳,2017-07-15T15:56:42.543Z,85,279,MVC工具类库.,XCI.Mvc,False,2018-01-25T04:08:28.64+00:00,True,False,MVC工具类库.,MVC工具类库,250,False,1.0.1
+Mainwave,2017-07-15T15:56:13.543Z,43209,279,Regular expression tools for C#,RegexTools,False,1899-12-31T16:00:00-08:00,False,False,,"regex,regularexpression",445,False,1.0.0
+Xamarin Inc.,2017-07-15T15:56:20.997Z,9,279,This package adds support for reading SVG files into SkiaSharp.,SkiaSharp.Svg,False,2018-04-11T11:13:56.2+00:00,True,False,,,16830,True,1.59.0
+Matthew Leibowitz,2017-07-15T15:56:09.84Z,9,279,The WeatherIcons font for SkiaSharp.Extended.Iconify.,SkiaSharp.Extended.Iconify.WeatherIcons,False,2018-04-11T11:13:43.983+00:00,True,False,,"skiasharp,xamarin,windows,ios,android,uwp",312,True,4.7.0
+Mainwave,2017-07-15T15:56:13.543Z,43209,279,Regular expression tools for C#,RegexTools,False,1899-12-31T16:00:00-08:00,False,False,,"regex,regularexpression",445,False,1.0.0
+Matthew Leibowitz,2017-07-15T15:55:59.26Z,9,279,The Typicons font for SkiaSharp.Extended.Iconify.,SkiaSharp.Extended.Iconify.Typicons,False,2018-04-11T11:13:31.84+00:00,True,False,,"skiasharp,xamarin,windows,ios,android,uwp",287,True,2.0.9
+Matthew Leibowitz,2017-07-15T15:55:48.747Z,9,279,The SimpleLineIcons font for SkiaSharp.Extended.Iconify.,SkiaSharp.Extended.Iconify.SimpleLineIcons,False,2018-04-11T11:13:19.17+00:00,True,False,,"skiasharp,xamarin,windows,ios,android,uwp",290,True,2.4.1
+Matthew Leibowitz,2017-07-15T15:55:37.917Z,9,279,The Meteocons font for SkiaSharp.Extended.Iconify.,SkiaSharp.Extended.Iconify.Meteocons,False,2018-04-11T11:13:07.293+00:00,True,False,,"skiasharp,xamarin,windows,ios,android,uwp",306,True,1.0.0
+Matthew Leibowitz,2017-07-15T15:55:26.23Z,9,279,The MaterialIcons font for SkiaSharp.Extended.Iconify.,SkiaSharp.Extended.Iconify.MaterialIcons,False,2018-04-11T11:12:54.37+00:00,True,False,,"skiasharp,xamarin,windows,ios,android,uwp",331,True,3.0.1
+Matthew Leibowitz,2017-07-15T15:55:14.633Z,9,279,The MaterialDesignIcons font for SkiaSharp.Extended.Iconify.,SkiaSharp.Extended.Iconify.MaterialDesignIcons,False,2018-04-11T11:12:41.59+00:00,True,False,,"skiasharp,xamarin,windows,ios,android,uwp",331,True,1.9.32
+Matthew Leibowitz,2017-07-15T15:54:49.447Z,9,279,The FontAwesome font for SkiaSharp.Extended.Iconify.,SkiaSharp.Extended.Iconify.FontAwesome,False,2018-04-11T11:12:14.807+00:00,True,False,,"skiasharp,xamarin,windows,ios,android,uwp",425,True,2.0.10
+Matthew Leibowitz,2017-07-15T15:55:01.04Z,9,279,The IonIcons font for SkiaSharp.Extended.Iconify.,SkiaSharp.Extended.Iconify.IonIcons,False,2018-04-11T11:12:28.213+00:00,True,False,,"skiasharp,xamarin,windows,ios,android,uwp",304,True,2.0.1
+Matthew Leibowitz,2017-07-15T15:54:38.103Z,9,279,A simple way to draw a string that contains icons inline with normal characters.,SkiaSharp.Extended.Iconify,False,2018-04-11T11:12:02.29+00:00,True,False,,"skiasharp,xamarin,windows,ios,android,uwp",534,True,1.59.0
+Xamarin Inc.,2017-07-15T15:54:27.773Z,9,279,This package adds many additional features and utilities for use with SkiaSharp.,SkiaSharp.Extended,False,2018-04-11T11:11:50.273+00:00,True,False,,,3761,True,1.59.0
+吕艳阳,2017-07-15T15:50:11.22Z,85,279,提供对文件压缩、二维码、Excel、PDF等文档的基本解析类库.,XCI.Doc,False,2018-01-25T07:31:20.063+00:00,True,False,提供对文件压缩、二维码、Excel、PDF等文档的基本解析类库.,提供对文件压缩、二维码、Excel、PDF等文档的基本解析类库,263,False,1.0.1
+zyx,2017-07-15T15:27:48.233Z,43209,279,My package description.,Test_zyx,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Steve Syfuhs,2017-07-15T15:47:42.763Z,57,279,A Managed Code validator for Kerberos tickets,Kerberos.NET,False,2018-02-22T18:58:09.277+00:00,True,False,,"security,kerberos",1674,False,1.2.2.1
+Steve Syfuhs,2017-07-15T15:48:11.2Z,43209,279,This package is used to add support for the AES algorithm to Kerberos.NET,Kerberos.NET-AES,False,1900-01-01T00:00:00+00:00,False,False,,"security,kerberos",-1,False,1.2.2.1
+zyx,2017-07-15T15:49:18.78Z,43209,279,My package description.,Test_zyx,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.1
+吕艳阳,2017-07-15T15:44:40.477Z,85,279,数据访问类库.,XCI.Data,False,2018-01-25T07:30:01.973+00:00,True,False,数据访问类库.,数据访问类库,240,False,1.0.1
+"Dox Sweden AB,Jovan Paskota",2017-07-15T15:38:11.45Z,196,279,Helper for downloading files from dox,Dox.Core.Download,False,2017-10-06T16:58:31.143+00:00,True,False,,"Dox,Download",3148,False,2.1.4
+Saritasa,2017-07-15T15:37:50.577Z,250,279,"The package is a part of Saritasa Tools project. Saritasa.Tools.EfCore1 contains implementations for unit of work, repository interfaces.",Saritasa.Tools.EFCore1,False,2017-08-13T12:11:58.373+00:00,True,False,DDD implementatons for Entity Core 1.,"uow,repository,domain,efcore6,dbcontext",1003,False,0.2.1
+"Dox Sweden AB,Jovan Paskota",2017-07-15T15:38:11.45Z,196,279,Helper for downloading files from dox,Dox.Core.Download,False,2017-10-06T16:58:31.143+00:00,True,False,,"Dox,Download",3148,False,2.1.4
+yzbai@brlite.com,2017-07-13T06:35:50.363Z,87,281,Package Description,HB.Framework.Identity,True,2018-01-23T10:16:58.847+00:00,False,False,,,4394,False,1.0.0-alpha-3
+yzbai@brlite.com,2017-07-13T07:34:18.667Z,87,281,Package Description,HB.Framework.Identity,True,2018-01-23T10:16:58.847+00:00,False,False,,,4394,False,1.0.0-alpha-4
+Saritasa,2017-07-15T15:37:50.577Z,250,279,"The package is a part of Saritasa Tools project. Saritasa.Tools.EfCore1 contains implementations for unit of work, repository interfaces.",Saritasa.Tools.EFCore1,False,2017-08-13T12:11:58.373+00:00,True,False,DDD implementatons for Entity Core 1.,"uow,repository,domain,efcore6,dbcontext",1003,False,0.2.1
+吕艳阳,2017-07-15T15:37:22.013Z,85,279,通用工具类库.,XCI.Utility,False,2018-01-25T04:07:50.203+00:00,True,False,通用工具类库.,通用工具类库,373,False,1.0.2
+yzbai@brlite.com,2017-07-13T05:55:18.05Z,43209,281,Package Description,HB.Framework.Authorization,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0-alpha-1
+yzbai@brlite.com,2017-07-13T08:49:28.38Z,43209,281,Package Description,HB.Framework.Authorization,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0-alpha-20
+yzbai@brlite.com,2017-07-14T02:54:17.473Z,43209,280,Package Description,HB.Framework.Authorization,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0-alpha-21
+吕艳阳,2017-07-15T15:29:50.143Z,85,279,通用工具类库.,XCI.Utility,False,2018-01-25T04:07:50.203+00:00,True,False,通用工具类库.,通用工具类库,373,False,1.0.1
+yzbai@brlite.com,2017-07-13T07:43:53.48Z,43209,281,Package Description,HB.Framework.Authorization,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0-alpha-4
+yzbai@brlite.com,2017-07-13T06:30:14.303Z,43209,281,Package Description,HB.Framework.Authorization,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0-alpha-2
+吕艳阳,2017-07-15T15:29:50.143Z,85,279,通用工具类库.,XCI.Utility,False,2018-01-25T04:07:50.203+00:00,True,False,通用工具类库.,通用工具类库,373,False,1.0.1
+吕艳阳,2017-07-15T15:29:50.143Z,85,279,通用工具类库.,XCI.Utility,False,2018-01-25T04:07:50.203+00:00,False,False,通用工具类库.,通用工具类库,373,False,1.0.1

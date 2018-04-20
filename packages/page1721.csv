@@ -1,0 +1,1314 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+"Mehdi Khalili,Oren Novotny",2016-07-04T01:40:54.22Z,351,655,Humanizer Locale (bg),Humanizer.Core.bg,False,2017-05-04T16:57:38.393-07:00,True,False,,,358340,True,2.1.0
+"Mehdi Khalili,Oren Novotny",2016-07-04T01:40:38.65Z,351,655,Humanizer Locale (af),Humanizer.Core.af,False,2017-05-04T16:57:36.72-07:00,True,False,,,358372,True,2.1.0
+JeffSoft,2016-07-04T01:41:01Z,304,655,针对MVC开发的一些封装,JeffSoft.Web.Mvc,False,2017-06-19T20:50:12.273-07:00,True,False,,"Tag1,Tag2",2663,False,1.0.3.4
+"Mehdi Khalili,Oren Novotny",2016-07-04T01:40:54.207Z,351,655,Humanizer Locale (ja),Humanizer.Core.ja,False,2017-05-04T16:58:47.847-07:00,True,False,,,358499,True,2.1.0
+"Mehdi Khalili,Oren Novotny",2016-07-04T01:40:47.227Z,351,655,Humanizer Locale (ar),Humanizer.Core.ar,False,2017-05-04T16:57:44.347-07:00,True,False,,,358545,True,2.1.0
+"Mehdi Khalili,Oren Novotny",2016-07-04T01:40:47.697Z,351,655,Humanizer Locale (it),Humanizer.Core.it,False,2017-05-04T16:58:47.567-07:00,True,False,,,361101,True,2.1.0
+"Mehdi Khalili,Oren Novotny",2016-07-04T01:41:00.757Z,351,655,Humanizer Locale (bn-BD),Humanizer.Core.bn-BD,False,2017-05-04T16:57:52.393-07:00,True,False,,,358147,True,2.1.0
+"Mehdi Khalili,Oren Novotny",2016-07-04T01:41:01.13Z,351,655,Humanizer Locale (nb-NO),Humanizer.Core.nb-NO,False,2017-05-04T16:58:55.753-07:00,True,False,,,359094,True,2.1.0
+"Mehdi Khalili,Oren Novotny",2016-07-04T01:40:38.353Z,351,655,Humanizer Locale (hu),Humanizer.Core.hu,False,2017-05-04T16:58:40.55-07:00,True,False,,,358080,True,2.1.0
+Ethan Zhang,2016-07-03T16:24:35.51Z,277,656,"Radial is a lightweight c# framework licensed under LGPL. It is designed to improve developers working efficiency, more convenient and efficient to build applications.It integrated with many components: 
+
+• Dependency Injection (based on Unity) 
+• Json (install Newtonsoft.Json first) 
+• Serialization (Json, Xml, Binary) 
+• Logging (based on log4net) 
+• Caching (in-memory, or install EnyimMemcached first) 
+• Persistence (install NHibernate first) 
+• Web & Network (include MVC extensions, install Microsoft.AspNet.Mvc and Microsoft.AspNet.WebApi first) 
+• Parameter (an easy way to store settings in xml or database) 
+• ExcelTools (install EPPlus first) 
+• Drawing (Captcha, ImageKits) 
+• And Others...",Radial,False,2017-07-16T23:17:22.047-07:00,False,False,,,20889,False,2.3.2.11
+Ethan Zhang,2016-07-04T01:34:22.1Z,277,655,"Radial is a lightweight c# framework licensed under LGPL. It is designed to improve developers working efficiency, more convenient and efficient to build applications.It integrated with many components: 
+
+• Dependency Injection (based on Unity) 
+• Json (install Newtonsoft.Json first) 
+• Serialization (Json, Xml, Binary) 
+• Logging (based on log4net) 
+• Caching (in-memory, or install EnyimMemcached first) 
+• Persistence (install NHibernate first) 
+• Web & Network (include MVC extensions, install Microsoft.AspNet.Mvc and Microsoft.AspNet.WebApi first) 
+• Parameter (an easy way to store settings in xml or database) 
+• ExcelTools (install EPPlus first) 
+• Drawing (Captcha, ImageKits) 
+• And Others...",Radial,False,2017-07-16T23:17:22.047-07:00,True,False,,,20889,False,2.3.2.12
+Leonard Sperry,2016-07-04T01:33:02.607Z,618,655,A library for running tasks on schedules.,Chroniton,False,2016-08-10T22:33:07.423+00:00,True,False,,"Scheduling,Tasks",4157,False,1.0.0.1
+Lee,2016-07-04T01:16:02.37Z,43209,655,基础设施 - WCF基础,ShSoft.Framework2016.Infrastructure.WCF,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.6
+Alphacloud.net,2016-07-04T01:11:50.657Z,43209,655,Autofac integration for Quartz.Net,Autofac.Extras.Quartz,True,1900-01-01T00:00:00+00:00,False,False,,"alphacloud,quartz,autofac",101098,False,3.0.0-beta-1
+Matthew S. Dippel,2016-07-04T00:54:53.89Z,643,655,"Enums and Delegates are a fundimental component of .Net, however, as of version 6.0 of the C# language, there's no way to (directly) constrain a generic parameter to System.Enum or System.Delegate. There's so many reasons to want to do so, not the least of which is the set of kludgy static methods on Enum and Delegate that would really benefit from generic implementations.
+
+This package addresses that need.  Written in C++/CLI since C# cannot declare an enum or delegate restriction, this library provides a set of well performing extension and static methods off of the ""Diagonactic.Enums"" class that provide a more readable way of performing common operations on enums and delegates, all of which can be consumed by C# code.
+
+Enum methods are stable, Delegate methods are considered ""Beta"".  As a result, the API for Delegate methods may be modified (Obsolete tags for invalid members will be added if this happens), though every effort will be made to avoid this.  Enum methods are API stable, however, methods are added occasionally.
+
+All stable methods are unit tested for all underlying types with complete code coverage.
+
+See release notes and readme.md on the Project site.
+
+Included .dll is compiled IL only in ""Any CPU"" format.",DiagonacticEnumsExtensions,False,2016-07-16T16:21:32.27+00:00,True,False,Provides a set of well performing extension and static methods for interacting with enums using *real* generic constraints on System.Enum.,Diagonactic.Enums.Delegates.Extensions,3493,False,1.1.2.2
+AppFx.solutions,2016-07-04T00:53:58.23Z,655,655,MsBuild helpers for BizTalk,AppFx.ALM.MsBuild.ServiceBus,False,2016-07-03T17:53:58.23-07:00,True,False,,"MSBuild,ServiceBus",365,False,1.0.0.305
+Lby,2016-07-04T00:47:42.27Z,653,655,Lby's Azure Storage Repositories Project.,AzureStorageLby,False,2016-07-06T03:45:59.61-07:00,True,False,,Lby,457,False,0.0.2
+The Fr8 Company,2016-07-04T00:44:15.03Z,43209,655,A set of classes to help developers easily start developing their Fr8 terminals.,Fr8.TerminalBase,True,1899-12-31T16:00:00-08:00,False,False,,,53899,False,1.0.2.11887-dev
+DND's,2016-07-04T00:40:43.983Z,650,655,Get Data operations with ef,DndsDataManager,False,2016-07-09T04:24:02.88-07:00,True,False,,,602,False,1.0.1
+Lby,2016-07-04T00:24:13.043Z,653,655,Lby's Azure Storage Repositories Project.,AzureStorageLby,False,2016-07-06T03:45:59.61-07:00,True,False,,Lby,457,False,0.0.1
+Jason Jarrett,2016-07-04T00:05:36.14Z,655,655,TypeScript Definitions (d.ts) for systemjs. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,systemjs.TypeScript.DefinitelyTyped,False,2016-07-03T17:05:36.14-07:00,True,False,,"TypeScript,JavaScript",7748,False,0.0.7
+Jason Jarrett,2016-07-04T00:05:29.69Z,655,655,TypeScript Definitions (d.ts) for redux-thunk. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,redux-thunk.TypeScript.DefinitelyTyped,False,2016-07-03T17:05:29.69-07:00,True,False,,"TypeScript,JavaScript",1236,False,0.0.7
+Jason Jarrett,2016-07-04T00:05:22.87Z,655,655,TypeScript Definitions (d.ts) for redux-saga. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,redux-saga.TypeScript.DefinitelyTyped,False,2016-07-03T17:05:22.87-07:00,True,False,,"TypeScript,JavaScript",1010,False,0.0.7
+Jason Jarrett,2016-07-04T00:05:16.64Z,655,655,TypeScript Definitions (d.ts) for redux-promise-middleware. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,redux-promise-middleware.TypeScript.DefinitelyTyped,False,2016-07-03T17:05:16.64-07:00,True,False,,"TypeScript,JavaScript",319,False,0.0.2
+Jason Jarrett,2016-07-04T00:05:03.527Z,590,655,TypeScript Definitions (d.ts) for redux-mock-store. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,redux-mock-store.TypeScript.DefinitelyTyped,False,2016-09-07T09:55:27.83-07:00,True,False,,"TypeScript,JavaScript",430,False,0.0.2
+Jason Jarrett,2016-07-04T00:05:10.4Z,583,655,TypeScript Definitions (d.ts) for redux-promise. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,redux-promise.TypeScript.DefinitelyTyped,False,2016-09-14T07:04:30.613-07:00,True,False,,"TypeScript,JavaScript",438,False,0.0.2
+Jason Jarrett,2016-07-04T00:04:57.497Z,655,655,TypeScript Definitions (d.ts) for redux-immutable. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,redux-immutable.TypeScript.DefinitelyTyped,False,2016-07-03T17:04:57.497-07:00,True,False,,"TypeScript,JavaScript",648,False,0.0.4
+Jason Jarrett,2016-07-04T00:04:50.527Z,590,655,TypeScript Definitions (d.ts) for redux-form. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,redux-form.TypeScript.DefinitelyTyped,False,2016-09-06T19:01:50.8-07:00,True,False,,"TypeScript,JavaScript",1406,False,0.0.7
+Jason Jarrett,2016-07-04T00:04:43.35Z,564,655,TypeScript Definitions (d.ts) for redux-devtools. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,redux-devtools.TypeScript.DefinitelyTyped,False,2016-10-03T07:03:46.43-07:00,True,False,,"TypeScript,JavaScript",8663,False,0.5.8
+Jason Jarrett,2016-07-04T00:04:36.757Z,655,655,TypeScript Definitions (d.ts) for redux-bootstrap. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,redux-bootstrap.TypeScript.DefinitelyTyped,False,2016-07-03T17:04:36.757-07:00,True,False,,"TypeScript,JavaScript",434,False,0.0.3
+Jason Jarrett,2016-07-04T00:04:29.18Z,655,655,TypeScript Definitions (d.ts) for redux. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,redux.TypeScript.DefinitelyTyped,False,2016-07-03T17:04:29.18-07:00,True,False,,"TypeScript,JavaScript",7596,False,0.0.7
+Jason Jarrett,2016-07-04T00:04:22.733Z,567,655,TypeScript Definitions (d.ts) for react-router-redux. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,react-router-redux.TypeScript.DefinitelyTyped,False,2016-09-30T07:06:51.297-07:00,True,False,,"TypeScript,JavaScript",991,False,0.0.4
+Jason Jarrett,2016-07-04T00:04:09.41Z,492,655,TypeScript Definitions (d.ts) for chai-dom. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,chai-dom.TypeScript.DefinitelyTyped,False,2016-12-13T22:41:57.16-08:00,True,False,,"TypeScript,JavaScript",996,False,0.0.1
+Jason Jarrett,2016-07-04T00:04:16.343Z,589,655,TypeScript Definitions (d.ts) for react-redux. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,react-redux.TypeScript.DefinitelyTyped,False,2016-09-08T13:01:17.637-07:00,True,False,,"TypeScript,JavaScript",3364,False,0.1.3
+Jason Jarrett,2016-07-04T00:03:55.02Z,655,655,TypeScript Definitions (d.ts) for adal-angular. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,adal-angular.TypeScript.DefinitelyTyped,False,2016-07-03T17:03:55.02-07:00,True,False,,"TypeScript,JavaScript",9209,False,0.0.4
+Jason Jarrett,2016-07-04T00:04:01.367Z,492,655,TypeScript Definitions (d.ts) for bezier-js. Generated based off the DefinitelyTyped repository [git commit: 53e2682d22695f52e1be1fda36de5fc377b1633b]. http://github.com/DefinitelyTyped,bezier-js.TypeScript.DefinitelyTyped,False,2016-12-13T22:29:37.077-08:00,True,False,,"TypeScript,JavaScript",2603,False,0.0.4
+Bret Copeland,2016-07-03T23:59:13.983Z,341,656,A Settings library supporting multi-tier and data center environments.,NFig,True,2017-05-14T15:53:57.69-07:00,True,False,,"Config,Settings,Tier",10626,False,2.0.1-unstable61
+Tihomir Kit (pootzko),2016-07-03T23:28:16.79Z,192,656,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,True,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.0
+算神,2016-07-03T23:56:58.04Z,640,656,LSW.Weixin.MP Class Library，基于 Senparc 微信SDK的 ASP.Net Core 移植,LSW.Weixin.MP,False,2016-07-19T20:40:00.74+00:00,True,False,,"weixin,wechat,微信,Senparc,ASP.Net,Core",7574,False,1.5.0
+The Fr8 Company,2016-07-03T23:49:31.533Z,43209,656,A set of classes to help developers easily start developing their Fr8 terminals.,Fr8.TerminalBase,True,1899-12-31T16:00:00-08:00,False,False,,,53899,False,1.0.2.11884-dev
+Nate (Natarajan Krishnan),2016-07-03T23:37:35.703Z,90,656,JSFx is a JavaScript framework / library created to ease the web development.,JSFxUI,False,2018-01-20T17:09:33.883+00:00,True,False,,"JavaScript,Framework,JSFx,UI",6551,False,2.0.0.2
+Jose Yanez,2016-07-03T23:35:29.74Z,656,656,.Net library for strongly typed access to REST Api's,Hyperbliss,False,2016-07-03T23:35:29.74+00:00,True,False,,".Net,Json,API,Rest,Restful,Newtosoft,Http,WebApi",288,False,1.0.0
+Jose Yanez,2016-07-03T23:35:29.74Z,656,656,.Net library for strongly typed access to REST Api's,Hyperbliss,False,2016-07-03T23:35:29.74+00:00,True,False,,".Net,Json,API,Rest,Restful,Newtosoft,Http,WebApi",288,False,1.0.0
+Jose Yanez,2016-07-03T23:34:06.957Z,656,656,Code generation tool for SQL Server sprocs,Dataflip,False,2016-07-03T23:34:06.957+00:00,True,False,,"Entity,EntityFramework,EF,Poco,Data,Dataflip,DataContext,SQL,SqlServer,StoredProcedure,Sprocs,Query",1678,False,1.0.21
+"Tihomir Kit (pootzko),Daniel Bohlin (poxet),Ziya SARIKAYA",2016-02-09T18:00:15.187Z,192,801,InfluxData.Net is a portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.,InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,False,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,4.2.1
+Tihomir Kit (pootzko),2016-07-03T23:28:16.79Z,192,656,"InfluxData.Net is a fast, portable .NET library to access the REST API of an InfluxDB database and Kapacitor processing tool.",InfluxData.Net,False,2017-10-10T22:47:26.273+00:00,True,False,,"influx,influxdb,influxdata,kapacitor,TICK-stack",21618,False,5.0.0
+Clayton Davis,2016-07-03T23:26:48.023Z,47,656,"A C# wrapper for the Square Connect API.  I AM NOT AFFILIATED WITH SQUARE, INC.",Claytondus.Square,False,2018-03-04T23:38:58.537+00:00,True,False,,,3672,False,0.3.1
+Claytondus.Square,2016-07-03T23:06:15.3Z,47,656,Claytondus.Square,Claytondus.Square,False,2018-03-04T23:38:58.537+00:00,True,False,,,3672,False,0.3.0
+"Scott Francis,David Sheets",2016-07-03T23:04:41.307Z,461,656,Identity and commerce administration class library.,RevStack.Admin,False,2017-01-14T01:01:32.887-08:00,True,False,,"RevStack,Commerce,Ecommerce,Identity",411,False,1.0.1
+Max Toro Q.,2016-07-03T23:03:56.72Z,27,656,XCST pages and views for ASP.NET MVC.,Xcst.Web.Mvc,False,2018-03-24T19:45:52.327+00:00,True,False,,,4406,False,0.5.1
+AppFx.solutions,2016-07-03T23:03:48.39Z,465,656,A set of msbuild tasks to support automated build for projects,AppFx.ALM.MsBuild,False,2017-01-09T16:27:34.647-08:00,True,False,,MSBuild,1960,False,1.0.0.303
+Max Toro Q.,2016-07-03T23:03:13.223Z,43209,656,XCST pages for ASP.NET. See also Xcst.Web.Mvc.,Xcst.Web,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.5.1
+Max Toro Q.,2016-07-03T23:02:50.843Z,27,656,XCST compiler API.,Xcst.Compiler,False,2018-03-24T19:35:55.187+00:00,True,False,,,4033,False,0.5.1
+Max Toro Q.,2016-07-03T23:02:22.533Z,43209,656,XCST runtime API. For compilation install the Xcst.Compiler package.,Xcst,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.5.1
+Pierre Chalamet,2016-07-03T23:01:49.33Z,196,656,full-build - smart build system for .net,full-build,False,2017-10-06T20:29:25.967+00:00,True,False,full-build - smart build system for .net,"net,partial,full,build,system,developer,productivity",38590,False,2.4.8
+"Dávid Karnok,Stephane Maldini",2016-07-03T23:01:51.173Z,623,656,"Extension methods: Flux and Mono, Schedulers and other tools.",Reactor.Core,False,2016-08-05T03:54:34.373-07:00,True,False,"Fluent reactive programming library for C# on top of Reactive-Streams, mirroring the Reactor-Core for JVM","reactive,fluent,flow,rx,backpressure",2214,False,0.5.7
+"Scott Francis,David Sheets",2016-07-03T22:57:51.44Z,461,656,Identity and commerce administration class library.,RevStack.Admin,False,2017-01-14T01:01:32.887-08:00,True,False,,"RevStack,Commerce,Ecommerce,Identity",411,False,1.0.0
+XCommon.EF,2016-07-03T22:56:34.16Z,183,656,XCommon.EF,XCommon.EF,False,2017-10-19T16:42:45.44+00:00,True,False,,,5184,False,1.0.26
+XCommon,2016-07-03T22:56:09.75Z,183,656,XCommon,XCommon,False,2017-10-19T16:42:12.503+00:00,True,False,,,7798,False,1.0.26
+XCommon.CodeGerator,2016-07-03T22:56:27.03Z,43209,656,XCommon.CodeGerator,XCommon.CodeGerator,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.26
+XCommon.Azure,2016-07-03T22:56:19.07Z,189,656,XCommon.Azure,XCommon.Azure,False,2017-10-13T19:30:05.62+00:00,True,False,,,7497,False,1.0.26
+Stephen Cleary,2016-07-03T22:46:48.543Z,223,656,Asynchronous coordination primitives.,Nito.AsyncEx.Coordination,True,2017-09-09T15:40:03.28+00:00,True,False,,,202934,True,1.0.0-delta-6
+XCommon.EF,2016-07-03T22:42:09.563Z,183,656,XCommon.EF,XCommon.EF,False,2017-10-19T16:42:45.44+00:00,True,False,,,5184,False,1.0.25
+XCommon.CodeGerator,2016-07-03T22:42:02.953Z,43209,656,XCommon.CodeGerator,XCommon.CodeGerator,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.25
+XCommon,2016-07-03T22:41:49.813Z,183,656,XCommon,XCommon,False,2017-10-19T16:42:12.503+00:00,True,False,,,7798,False,1.0.25
+XCommon.Azure,2016-07-03T22:41:56.653Z,189,656,XCommon.Azure,XCommon.Azure,False,2017-10-13T19:30:05.62+00:00,True,False,,,7497,False,1.0.25
+Affinity ID,2016-07-03T22:39:41.45Z,402,656,Migration framework for Umbraco (Core).,uMigrate.Core,False,2017-03-14T16:43:14.413-07:00,True,False,,"Umbraco,migrations",8119,False,0.15.1
+Affinity ID,2016-07-03T22:39:31.69Z,402,656,Migration framework for Umbraco (Core+UI).,uMigrate,False,2017-03-14T16:43:05.083-07:00,True,False,,"Umbraco,migrations",8287,False,0.15.1
+Pierre Chalamet,2016-07-03T22:31:08.837Z,196,656,full-build - smart build system for .net,full-build,False,2017-10-06T20:29:25.967+00:00,True,False,full-build - smart build system for .net,"net,partial,full,build,system,developer,productivity",38590,False,2.4.7
+AppFx.solutions,2016-07-03T22:28:19.86Z,465,656,A set of msbuild tasks to support automated build for projects,AppFx.ALM.MsBuild,False,2017-01-09T16:27:34.647-08:00,True,False,,MSBuild,1960,False,1.0.0.301
+The Fr8 Company,2016-07-03T22:25:46.357Z,43209,656,A set of classes to help developers easily start developing their Fr8 terminals.,Fr8.TerminalBase,True,1899-12-31T16:00:00-08:00,False,False,,,53899,False,1.0.2.11878-dev
+Bret Copeland,2016-07-03T22:23:53.63Z,341,656,A Settings library supporting multi-tier and data center environments.,NFig,True,2017-05-14T15:53:57.69-07:00,True,False,,"Config,Settings,Tier",10626,False,2.0.1-unstable60
+Pierre Chalamet,2016-07-03T22:13:36.777Z,196,656,full-build - smart build system for .net,full-build,False,2017-10-06T20:29:25.967+00:00,True,False,full-build - smart build system for .net,"net,partial,full,build,system,developer,productivity",38590,False,2.4.6
+Julian Verdurmen,2016-07-03T22:06:07.42Z,8,656,Extend NLog with targets and layout renderers for websites and webapplications on the ASP.NET Core platform.,NLog.Web.AspNetCore,False,2018-04-12T16:17:44.26+00:00,True,False,NLog for ASP.NET Core,"logging,log,session,NLog,web,aspnet,aspnetcore",621387,True,4.2.4
+Ben Gale,2016-07-03T22:04:32.63Z,70,656,Serilog event sink that writes to Azure Event Hubs.,Serilog.Sinks.AzureEventHub,False,2018-02-09T00:49:56.49+00:00,True,False,,"serilog,logging,azure",7511,True,2.0.8
+Serilog Contributors,2016-07-03T22:00:45.257Z,42,656,Serilog event sink that sends events to Datadog.,Serilog.Sinks.Datadog,False,2018-03-09T21:45:52.003+00:00,True,False,,"serilog,logging,datadog",2009,True,2.0.8
+RIGANTI,2016-05-27T12:57:22.567Z,17,693,DotVVM is an OWIN-based ASP.NET framework that allows you to write rich client applications using the MVVM pattern without writing javascript code.,DotVVM,True,2018-04-03T22:02:07.85+00:00,False,False,,"dotvvm,asp.net,mvvm,owin",19870,False,1.0.0.7-rc2
+RIGANTI,2016-07-03T21:54:40.783Z,17,656,DotVVM is an OWIN-based ASP.NET framework that allows you to write rich client applications using the MVVM pattern without writing javascript code.,DotVVM,False,2018-04-03T22:02:07.85+00:00,True,False,,"dotvvm,asp.net,mvvm,owin",19870,False,1.0.0
+RIGANTI,2016-07-03T21:54:29.947Z,17,656,"Contains base classes and interfaces of DotVVM that might be useful in a business layer.
+			DotVVM is an OWIN-based ASP.NET framework that allows you to write rich client applications using the MVVM pattern without writing javascript code.",DotVVM.Core,False,2018-04-03T22:01:47.363+00:00,True,False,,"dotvvm,asp.net,mvvm,owin",9985,False,1.0.0
+Microsoft.DotNet.Xdt.Tools,2016-07-03T21:48:36.683Z,249,656,XDT (XML Document Transform) publish tool for .NET Core CLI. Contains the dotnet-transform-xdt command for transforming XML files at publishing time.,Microsoft.DotNet.Xdt.Tools,False,2017-08-14T20:46:08.8+00:00,True,False,,"dotnetcore,xdt,transform,xml",42042,False,1.0.0
+Serilog Contributors,2016-07-03T21:50:45.22Z,266,656,The file sink for Serilog,Serilog.Sinks.Email,False,2017-07-28T22:25:45.133+00:00,True,False,,"serilog,file,io",105886,True,2.0.0
+Microsoft.DotNet.Xdt.Tools,2016-07-03T21:48:36.683Z,249,656,XDT (XML Document Transform) publish tool for .NET Core CLI. Contains the dotnet-transform-xdt command for transforming XML files at publishing time.,Microsoft.DotNet.Xdt.Tools,False,2017-08-14T20:46:08.8+00:00,True,False,,"dotnetcore,xdt,transform,xml",42042,False,1.0.0
+Michael Bostock,2016-07-03T21:43:12.437Z,2,656,"D3.js is a JavaScript library for manipulating documents based on data. D3 helps you bring data to life using HTML, SVG and CSS. D3’s emphasis on web standards gives you the full capabilities of modern browsers without tying yourself to a proprietary framework, combining powerful visualization components and a data-driven approach to DOM manipulation.",d3,False,2018-04-18T02:29:33.27+00:00,True,False,Powerful visualization components for JavaScript,"JavaScript,visualization",378049,False,4.1.0
+CeRi 1337,2016-07-03T21:42:04.253Z,655,656,Small steam libary for C#,CSharpSteam2,False,2016-07-04T12:16:23.58-07:00,True,False,,,1000,False,2.1.1
+SLaks,2016-07-03T21:38:07.69Z,656,656,Embeds Visual Studio's editor and theming system in standalone projects.,VSEmbed,False,2016-07-03T14:38:07.69-07:00,True,False,,"Roslyn,Visual-Studio",1492,False,1.6.0
+CeRi 1337,2016-07-03T14:44:55.437Z,655,656,Small steam libary for C#,CSharpSteam2,False,2016-07-04T12:16:23.58-07:00,False,False,,,1000,False,2.0.2
+CeRi 1337,2016-07-03T21:34:25.877Z,655,656,Small steam libary for C#,CSharpSteam2,False,2016-07-04T12:16:23.58-07:00,True,False,,,1000,False,2.1.0
+The Fr8 Company,2016-07-03T21:15:18.44Z,43209,656,A set of classes to help developers easily start developing their Fr8 terminals.,Fr8.TerminalBase,True,1899-12-31T16:00:00-08:00,False,False,,,53899,False,1.0.2.11873-dev
+Rico Suter,2016-07-03T20:43:31.78Z,1,656,NSwag: The Swagger API toolchain for .NET and TypeScript,NSwag.AspNetCore,False,2018-04-19T19:07:22.62+00:00,True,False,,"Swagger,Documentation,WebApi,AspNet,TypeScript,CodeGen",99691,False,3.17.0
+Rico Suter,2016-07-03T20:43:31.78Z,1,656,NSwag: The Swagger API toolchain for .NET and TypeScript,NSwag.AspNetCore,False,2018-04-19T19:07:22.62+00:00,True,False,,"Swagger,Documentation,WebApi,AspNet,TypeScript,CodeGen",99691,False,3.17.0
+dk-xamarin,2016-07-03T20:38:59.367Z,51,656,"Fork of SQLite.Net-PCL. It supports 64 bit unsigned integers (ulong) stored as blob's, and contains many performance optimizations.",DK.SQLite,False,2018-02-28T22:21:53.7+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",61697,False,1.4.0.2
+dk-xamarin,2016-07-03T20:38:51.177Z,369,656,DK: generic platform (full .net framework!),DK.Generic,False,2017-04-15T23:22:05.273-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",49446,False,1.4.0.2
+dk-xamarin,2016-07-03T20:38:43.163Z,193,656,DK: extended and improved controls for Xamarin.Forms,DK.Controls,False,2017-10-09T23:19:55.443+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",58042,False,1.4.0.2
+dk-xamarin,2016-07-03T20:38:34.49Z,362,656,DK: portable class library (no dependency on Xamarin),DK.Portable,False,2017-04-23T16:25:35.32+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51803,False,1.4.0.2
+dk-xamarin,2016-07-03T20:38:26.44Z,600,656,DK: android platform specific code for the FAB,DK.Android.FloatingActionButton,False,2016-08-28T11:34:15.083-07:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",5668,False,1.4.0.2
+dk-xamarin,2016-07-03T20:38:15.24Z,369,656,DK: android platform specific code,DK.Android,False,2017-04-16T06:22:52.547+00:00,True,False,,"Xamarin,Forms,Android,iOS,DK-Xamarin",51079,False,1.4.0.2
+Dapplo,2016-07-03T20:36:34.617Z,501,656,Dapplo.Jolokia is a Jolokia client,Dapplo.Jolokia,False,2016-12-05T08:32:08.8-08:00,True,False,A Jolokia API client library,"jolokia,jmx",3157,True,0.1.22
+Christian Del Bianco,2016-07-03T20:32:37.763Z,43209,656,"OracleTableDependency is a high-level implementation to access table record change notifications from ORACLE Database Server.
+
+This class allows you to create a dependency to detect changes on a database table. Every change will trigger a notification messages contains values for the updated, inserted or deleted record, avoid you to execute a further select to update your application data.
+
+If you want to use record change notifications without paying attention to the underlying Database infrastructure, the OracleTableDependency class is your choice.
+
+The OracleTableDependency class represents a notification dependency between an application and a Oracle table. When you use OracleTableDependency to get notifications, this componenet provides the low-level implementation creating the Queue, Trigger and Procedure.
+
+In this way OracleTableDependency class provides access to notifications without knowing anything about the underlying infrastructure. Once a record changed happens, OracleTableDependency's event subscribers are notified.",OracleTableDependency,False,1900-01-01T00:00:00+00:00,False,False,"OracleTableDependency is a high-level implementation to access table record change notifications from ORACLE Database Server. 
+
+This class allows you to create a dependency to detect changes on a database table. Every change will trigger a notification messages contains values for the updated, inserted or deleted record, avoid you to execute a further select to update your application data.","Oracle,Table,Content,Dependency",-1,False,4.6.1
+Pierre Chalamet,2016-07-03T20:26:36.27Z,196,656,full-build - smart build system for .net,full-build,False,2017-10-06T20:29:25.967+00:00,True,False,full-build - smart build system for .net,"net,partial,full,build,system,developer,productivity",38590,False,2.4.5
+Drew Burlingame,2016-07-03T20:23:46.837Z,656,656,"Makes mapping key/value stores (appSettings, environment variables, NameValueCollections...) to POCs dead simple and highly extensible.",SimpleSettings.ServiceStack,False,2016-07-03T13:23:46.837-07:00,True,False,"A multi-source, key/value configuration reader for .NET",".net,configuration,appsettings,env",1491,False,2.0.14
+Drew Burlingame,2016-07-03T20:23:41Z,656,656,"Makes mapping key/value stores (appSettings, environment variables, NameValueCollections...) to POCs dead simple and highly extensible.",SimpleSettings,False,2016-07-03T13:23:41-07:00,True,False,"A multi-source, key/value configuration reader for .NET",".net,configuration,appsettings,env",6044,False,2.0.14
+Johan Larsson,2016-07-03T20:20:38.11Z,554,656,Small lib for using WPF grid less painful.,Gu.Wpf.AutoRowGrid,False,2016-10-13T16:46:51.387+00:00,True,False,,"wpf,xaml,grid",1558,False,0.6.0
+Rico Suter,2016-07-03T20:19:05.987Z,1,656,NSwag: The Swagger API toolchain for .NET and TypeScript,NSwag.MSBuild,False,2018-04-19T19:07:14.263+00:00,True,False,,"Swagger,Documentation,WebApi,AspNet,TypeScript,CodeGen",90894,False,3.17.0
+Rico Suter,2016-07-03T20:18:56.69Z,1,656,NSwag: The Swagger API toolchain for .NET and TypeScript,NSwag.AspNet.Owin,False,2018-04-19T19:07:18.263+00:00,True,False,,"Swagger,Documentation,WebApi,AspNet,TypeScript,CodeGen",50505,False,3.17.6028.36450
+Rico Suter,2016-07-03T20:18:47.913Z,1,656,NSwag: The Swagger API toolchain for .NET and TypeScript,NSwag.AssemblyLoader,False,2018-04-19T19:07:23.573+00:00,True,False,,"Swagger,Documentation,WebApi,AspNet,TypeScript,CodeGen",37346,False,3.17.6028.36441
+Rico Suter,2016-07-03T20:18:29.83Z,1,656,NSwag: The Swagger API toolchain for .NET and TypeScript,NSwag.Annotations,False,2018-04-19T19:07:15.81+00:00,True,False,,"Swagger,Documentation,WebApi,AspNet,TypeScript,CodeGen",167842,False,3.17.6028.36441
+Rico Suter,2016-07-03T20:18:19.43Z,1,656,NSwag: The Swagger API toolchain for .NET and TypeScript,NSwag.CodeGeneration,False,2018-04-19T19:07:24.78+00:00,True,False,,"Swagger,Documentation,WebApi,AspNet,TypeScript,CodeGen",124493,False,3.17.6028.36441
+Rico Suter,2016-07-03T20:18:38.477Z,1,656,NSwag: The Swagger API toolchain for .NET and TypeScript,NSwag.Core,False,2018-04-19T19:07:29.827+00:00,True,False,,"Swagger,Documentation,WebApi,AspNet,TypeScript,CodeGen",224424,False,3.17.6028.36440
+Drew Burlingame,2016-07-03T20:17:17.16Z,656,656,"Makes mapping key/value stores (appSettings, environment variables, NameValueCollections...) to POCs dead simple and highly extensible.",SimpleSettings.ServiceStack,False,2016-07-03T13:23:46.837-07:00,True,False,"A multi-source, key/value configuration reader for .NET",".net,configuration,appsettings,env",1491,False,2.0.12
+Drew Burlingame,2016-07-03T20:17:10.973Z,656,656,"Makes mapping key/value stores (appSettings, environment variables, NameValueCollections...) to POCs dead simple and highly extensible.",SimpleSettings,False,2016-07-03T13:23:41-07:00,True,False,"A multi-source, key/value configuration reader for .NET",".net,configuration,appsettings,env",6044,False,2.0.12
+d-fens GmbH,2016-07-03T20:08:18.16Z,493,656,"biz.dfch.CS.Appclusive.Public
+========================
+
+Interfaces, Dtos and Constants of the Appclusive Framework",biz.dfch.CS.Appclusive.Public,False,2016-12-13T08:14:45.23-08:00,True,False,"Interfaces, Dtos and Constants of the Appclusive Framework","dfch,Appclusive,C#",9587,False,2.15.4
+d-fens GmbH,2016-07-03T19:50:57.347Z,493,656,"biz.dfch.CS.Appclusive.Public
+========================
+
+Interfaces, Dtos and Constants of the Appclusive Framework",biz.dfch.CS.Appclusive.Public,False,2016-12-13T08:14:45.23-08:00,False,False,"Interfaces, Dtos and Constants of the Appclusive Framework","dfch,Appclusive,C#",9587,False,2.15.3
+"aensidhe,roman-kozachenko",2016-07-03T19:53:55.723Z,86,656,Lightweight MsgPack library,msgpack.light,False,2018-01-24T17:07:12.35+00:00,True,False,,"msgpack,serialization",8466,False,0.5.5
+Scott Francis,2016-07-03T19:50:54.84Z,369,656,Asp.Net MVC class library integration with elliptical front-end technologies.,Elliptical.Mvc,False,2017-04-15T17:42:01.15-07:00,True,False,,"Elliptical,Mvc",482,False,1.0.0
+d-fens GmbH,2016-07-03T19:50:57.347Z,493,656,"biz.dfch.CS.Appclusive.Public
+========================
+
+Interfaces, Dtos and Constants of the Appclusive Framework",biz.dfch.CS.Appclusive.Public,False,2016-12-13T08:14:45.23-08:00,True,False,"Interfaces, Dtos and Constants of the Appclusive Framework","dfch,Appclusive,C#",9587,False,2.15.3
+GuardRex Corporation,2016-07-03T19:44:21.713Z,513,656,"Log exceptions to Azure Table Storage.
+Commonly used types:
+GuardRex.AzureTableStorageExceptionLogger.ExceptionLog",GuardRex.AzureTableStorageExceptionLogger,False,2016-11-23T23:38:57.86+00:00,True,False,,"logging,azure,table,storage,exception",759,False,1.0.1
+GuardRex Corporation,2016-07-03T19:44:21.713Z,513,656,"Log exceptions to Azure Table Storage.
+Commonly used types:
+GuardRex.AzureTableStorageExceptionLogger.ExceptionLog",GuardRex.AzureTableStorageExceptionLogger,False,2016-11-23T23:38:57.86+00:00,True,False,,"logging,azure,table,storage,exception",759,False,1.0.1
+Joe Audette,2016-07-03T19:38:53.263Z,248,656,Sms helper for Twilio REST API,cloudscribe.Messaging.Sms,True,2017-08-15T19:55:17.607+00:00,True,False,,"cloudscribe,messaging,sms,twilio",4186,False,1.0.0-rc20160704
+Joe Audette,2016-07-03T19:40:30.437Z,583,656,Entity Framework Core implementation of cloudscribe core commands and queries,cloudscribe.Core.Storage.EF,True,2016-09-14T17:17:16.03+00:00,True,False,,"cloudscribe,commands,queries,ef",1037,False,1.0.0-rc20160704
+Joe Audette,2016-07-03T19:39:33.743Z,1,656,"Multi-tenant MVC and WebApi application foundation with management for sites, users, roles, and geographic data.  You should only install this into an empty web application project that does not already have startup code or AspNet Identity installed. This is the main library for cloudscribe. Typically you should not install this directly but instead install the package cloudscribe.Core.Web.Integration which will also install cloudscribe.Web.Core along with the integration code needed to wire it up in your empty web application project. You are allowed to modify the integration code after it is added to your project.",cloudscribe.Core.Web,True,2018-04-19T16:09:14.333+00:00,True,False,"Multi-tenant MVC and WebApi application foundation with management for sites, users, roles, and geographic data","cloudscribe,multi-tenant,mvc6,site,management",18160,False,1.0.0-rc20160704
+Joe Audette,2016-07-03T19:40:53.58Z,39,656,experimental NoDb implementation of cloudscribe core commands and queries,cloudscribe.Core.Storage.NoDb,True,2018-03-12T14:06:25.407+00:00,True,False,,"cloudscribe,commands,queries,NoDb",5801,False,1.0.0-rc20160704
+GuardRex Corporation,2016-07-03T19:43:30.603Z,513,656,"Log contacts to Azure Table Storage.
+Commonly used types:
+GuardRex.AzureTableStorageContactLogger.ContactLog",GuardRex.AzureTableStorageContactLogger,False,2016-11-23T23:38:16.86+00:00,True,False,,"logging,azure,table,storage,contact",1913,False,1.0.1
+GuardRex Corporation,2016-07-03T19:43:30.603Z,513,656,"Log contacts to Azure Table Storage.
+Commonly used types:
+GuardRex.AzureTableStorageContactLogger.ContactLog",GuardRex.AzureTableStorageContactLogger,False,2016-11-23T23:38:16.86+00:00,True,False,,"logging,azure,table,storage,contact",1913,False,1.0.1
+Joe Audette,2016-07-03T19:40:53.58Z,39,656,experimental NoDb implementation of cloudscribe core commands and queries,cloudscribe.Core.Storage.NoDb,True,2018-03-12T14:06:25.407+00:00,True,False,,"cloudscribe,commands,queries,NoDb",5801,False,1.0.0-rc20160704
+Joe Audette,2016-07-03T19:40:30.437Z,583,656,Entity Framework Core implementation of cloudscribe core commands and queries,cloudscribe.Core.Storage.EF,True,2016-09-14T17:17:16.03+00:00,True,False,,"cloudscribe,commands,queries,ef",1037,False,1.0.0-rc20160704
+Joe Audette,2016-07-03T19:39:33.743Z,1,656,"Multi-tenant MVC and WebApi application foundation with management for sites, users, roles, and geographic data.  You should only install this into an empty web application project that does not already have startup code or AspNet Identity installed. This is the main library for cloudscribe. Typically you should not install this directly but instead install the package cloudscribe.Core.Web.Integration which will also install cloudscribe.Web.Core along with the integration code needed to wire it up in your empty web application project. You are allowed to modify the integration code after it is added to your project.",cloudscribe.Core.Web,True,2018-04-19T16:09:14.333+00:00,True,False,"Multi-tenant MVC and WebApi application foundation with management for sites, users, roles, and geographic data","cloudscribe,multi-tenant,mvc6,site,management",18160,False,1.0.0-rc20160704
+Joe Audette,2016-07-03T19:37:26.28Z,37,656,"model classes for cloudscribe core. you should not normally install this separately, it will be installed if you install cloudscribe.Core.Web",cloudscribe.Core.Models,True,2018-03-14T16:20:53.91+00:00,True,False,,"cloudscribe,models",13614,False,1.0.2-rc20160704
+Joe Audette,2016-07-03T19:37:49.51Z,37,656,asp.net identity implementation for cloudscribe web application foundation,cloudscribe.Core.Identity,True,2018-03-14T16:21:22.787+00:00,True,False,,"cloudscribe,identity",9792,False,1.0.0-rc20160704
+Joe Audette,2016-07-03T19:38:53.263Z,248,656,Sms helper for Twilio REST API,cloudscribe.Messaging.Sms,True,2017-08-15T19:55:17.607+00:00,True,False,,"cloudscribe,messaging,sms,twilio",4186,False,1.0.0-rc20160704
+Joe Audette,2016-07-03T19:38:19.79Z,39,656,cloudscribe common helpers for web applications,cloudscribe.Web.Common,True,2018-03-12T14:06:58.623+00:00,True,False,,cloudscribe,17095,False,1.0.0-rc20160704
+Joe Audette,2016-07-03T19:37:26.28Z,37,656,"model classes for cloudscribe core. you should not normally install this separately, it will be installed if you install cloudscribe.Core.Web",cloudscribe.Core.Models,True,2018-03-14T16:20:53.91+00:00,True,False,,"cloudscribe,models",13614,False,1.0.2-rc20160704
+Joe Audette,2016-07-03T19:37:49.51Z,37,656,asp.net identity implementation for cloudscribe web application foundation,cloudscribe.Core.Identity,True,2018-03-14T16:21:22.787+00:00,True,False,,"cloudscribe,identity",9792,False,1.0.0-rc20160704
+Nero Sule,2016-07-03T19:35:44.873Z,478,656,Provides a fluent way to configure your DbContext's Model,FluentModelBuilder,False,2016-12-27T16:48:52.823-08:00,True,False,,"Fluent,ModelBuilder,FluentModelBuilder,EntityFramework,EF",3455,False,1.3.1
+Nero Sule,2016-07-03T19:35:55.37Z,478,656,Extensions and conventions for Relational Entity Framework Core configuration using FluentModelBuilder,FluentModelBuilder.Relational,False,2016-12-27T16:49:02.887-08:00,True,False,,"Fluent,ModelBuilder,FluentModelBuilder,EntityFramework,EF,Relational",1051,False,1.3.1
+NoWoL,2016-07-03T19:29:25.147Z,488,656,DesertOctopus.MammothCache.Redis provides an implementation of a distributed cache using Redis for DesertOctopus.MammothCache.,DesertOctopus.MammothCache.Redis,False,2016-12-18T13:56:33.64-08:00,True,False,,"DistributedCache,Caching,Redis",1073,False,0.0.5
+NoWoL,2016-07-03T19:29:18.113Z,488,656,The DesertOctopus.MammothCache.Common assembly holds the interfaces and reusable classes for the distributed cache DesertOctopus.MammothCache.,DesertOctopus.MammothCache.Common,False,2016-12-18T13:56:25.407-08:00,True,False,,Caching,1323,False,0.0.5
+NoWoL,2016-07-03T19:29:11.42Z,488,656,Provides a distributed cache with a memory-based first level cache for fast acces to recent items.,DesertOctopus.MammothCache,False,2016-12-18T13:56:17.267-08:00,True,False,,"Caching,DistributedCache",1463,False,0.0.5
+NoWoL,2016-07-03T19:29:04.157Z,488,656,DesertOctopus is a utility class.,DesertOctopus,False,2016-12-18T13:56:08.827-08:00,True,False,,"Serialization,Serializer,Clone,Cloning,Deep",1756,False,0.0.5
+Michael L Perry,2016-07-03T19:08:47.64Z,281,656,Automatically discover view model dependencies and databind without INotifyPropertyChanged.,Assisticant,False,2017-07-13T06:41:05.547-07:00,True,False,,"mvvm,viewmodel,databinding,inotifypropertychanged,inpc,wpf,silverlight,wp7",10279,False,1.1.8
+Cragon,2016-07-03T19:07:06.87Z,43209,656,GF.Grain.Player,GF.Grain.Player,False,1899-12-31T16:00:00-08:00,False,False,GF.Grain.Player,GF.Grain.Player,-1,False,1.0.3
+qiniu,2016-07-03T19:00:43.23Z,656,656,Qiniu Cloud Storage SDK for .NET,DevZH.Qiniu,False,2016-07-03T19:00:43.23+00:00,True,False,,"Qiniu,netcore",2053,False,6.2.2.2
+qiniu,2016-07-03T19:00:43.23Z,656,656,Qiniu Cloud Storage SDK for .NET,DevZH.Qiniu,False,2016-07-03T19:00:43.23+00:00,True,False,,"Qiniu,netcore",2053,False,6.2.2.2
+Cragon,2016-07-03T18:55:33.8Z,43209,656,GF.UCenter.SDK.AppServer,GF.UCenter.SDK.AppServer,False,1899-12-31T16:00:00-08:00,False,False,GF.UCenter.SDK.AppServer,GF.UCenter.SDK.AppServer,-1,False,1.0.0
+Olaf Woudenberg,2016-07-03T18:55:50.953Z,656,656,"The SoundTouch Library is originally written by Olli Parviainen in C++. Although a .NET wrapper library is available, this library aims to be a complete rewrite in C#.",SoundTouch.Net,False,2016-07-03T11:55:50.953-07:00,True,False,,"SoundTouch,sound,stretch,tempo,pitch,rate",578,False,1.9.2.2
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2016-07-03T18:53:27Z,88,656,"Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports .Net 4.0.",MathNet.Numerics.FSharp.Signed,False,2018-01-22T19:07:47.127+00:00,True,False,"F# Modules for Math.NET Numerics, providing methods and algorithms for numerical computations in science, engineering and every day use.","fsharp,F#,math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft,signed",8501,True,3.12.0
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2016-07-03T18:53:02.063Z,88,656,"Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports .Net 4.0.",MathNet.Numerics.Signed,False,2018-01-22T19:07:16.97+00:00,True,False,"Math.NET Numerics, providing methods and algorithms for numerical computations in science, engineering and every day use.","math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft,signed",64360,True,3.12.0
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2016-07-03T18:52:11.877Z,54,656,"Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports F# 3.0 on .Net 4.0, .Net 3.5 and Mono on Windows, Linux and Mac; Silverlight 5 and Windows 8 with PCL portable profile 47; Android/iOS with Xamarin.",MathNet.Numerics.FSharp,False,2018-02-25T13:37:47.927+00:00,True,False,"F# Modules for Math.NET Numerics, providing methods and algorithms for numerical computations in science, engineering and every day use.","fsharp,F#,math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft",118204,True,3.12.0
+"Christoph Ruegg,Marcus Cuda,Jurgen Van Gael",2016-07-03T18:49:24.01Z,54,656,"Math.NET Numerics is the numerical foundation of the Math.NET project, aiming to provide methods and algorithms for numerical computations in science, engineering and every day use. Supports .Net 4.0, .Net 3.5 and Mono on Windows, Linux and Mac; Silverlight 5, WindowsPhone/SL 8, WindowsPhone 8.1 and Windows 8 with PCL portable profiles 7, 47, 78, 259 and 328; Android/iOS with Xamarin.",MathNet.Numerics,False,2018-02-25T13:37:24.88+00:00,True,False,"Math.NET Numerics, providing methods and algorithms for numerical computations in science, engineering and every day use.","math,numeric,statistics,probability,integration,interpolation,regression,solve,fit,linear,algebra,matrix,fft",980726,True,3.12.0
+Joe Audette,2016-07-03T18:44:54.353Z,6,656,An implementation of ILogger and ILoggerProvider that logs to the database using a pluggable model supporting multiple data platforms. Also proivides an MVC controller for viewing and managing the log data.,cloudscribe.Logging.Web,True,2018-04-14T15:57:43.907+00:00,True,False,,"cloudscribe,logging,database",14720,False,1.0.2-rc20160705
+Joe Audette,2016-07-03T18:44:54.353Z,6,656,An implementation of ILogger and ILoggerProvider that logs to the database using a pluggable model supporting multiple data platforms. Also proivides an MVC controller for viewing and managing the log data.,cloudscribe.Logging.Web,True,2018-04-14T15:57:43.907+00:00,True,False,,"cloudscribe,logging,database",14720,False,1.0.2-rc20160705
+Кленье Д.Н.,2016-07-03T18:42:35.72Z,652,656,Naftan.VatInvoices,Naftan.VatInvoices,False,2016-07-07T09:22:54.727+00:00,True,False,,,4198,False,1.0.0.26
+Dapplo,2016-07-03T18:38:02.94Z,7,656,A client library for accessing the Atlassian Confluence API.,Dapplo.Confluence,False,2018-04-13T20:04:11.023+00:00,True,False,A library to access a Confluence server,"Confluence,rest",12964,True,0.1.32
+Joe Audette,2016-07-03T18:32:52.943Z,6,656,An implementation of ILogger and ILoggerProvider that logs to the database using a pluggable model supporting multiple data platforms. Also proivides an MVC controller for viewing and managing the log data.,cloudscribe.Logging.Web,True,2018-04-14T15:57:43.907+00:00,True,False,,"cloudscribe,logging,database",14720,False,1.0.2-rc20160704
+"micahlmartin,jjchiw,contributors",2016-07-03T18:33:46.52Z,43,656,GELF log4net HttpAppender - graylog2. Built for log4net,Gelf4Net.HttpAppender,False,2018-03-08T22:11:30.683+00:00,True,False,,"tools,utilities,gelf,graylog,log4net",2128,False,1.0.0.3
+"micahlmartin,jjchiw,contributors",2016-07-03T18:33:33.523Z,43,656,GELF log4net UdpAppender - graylog2. Built for log4net,Gelf4Net.UdpAppender,False,2018-03-08T22:11:48.653+00:00,True,False,,"tools,utilities,gelf,graylog,log4net",7942,False,1.0.0.3
+"micahlmartin,jjchiw,contributors",2016-07-03T18:33:21.857Z,43,656,GELF log4net AmqpAppender - graylog2. Built for log4net,Gelf4Net.AmqpAppender,False,2018-03-08T22:11:14.497+00:00,True,False,,"tools,utilities,gelf,graylog,log4net",4017,False,1.0.0.3
+Joe Audette,2016-07-03T18:32:52.943Z,6,656,An implementation of ILogger and ILoggerProvider that logs to the database using a pluggable model supporting multiple data platforms. Also proivides an MVC controller for viewing and managing the log data.,cloudscribe.Logging.Web,True,2018-04-14T15:57:43.907+00:00,True,False,,"cloudscribe,logging,database",14720,False,1.0.2-rc20160704
+"micahlmartin,jjchiw,contributors",2016-07-03T18:33:06.883Z,43,656,"GELF log4net UdpAppender, AmqpAppender, HttpAppender - graylog2. Built for log4net",Gelf4Net,False,2018-03-08T22:10:57.387+00:00,True,False,,"tools,utilities,gelf,graylog,log4net",122371,False,2.0.3.15
+Johan Larsson,2016-07-03T18:31:28.693Z,554,656,Small lib for using WPF grid less painful.,Gu.Wpf.AutoRowGrid,False,2016-10-13T16:46:51.387+00:00,True,False,,"wpf,xaml,grid",1558,False,0.5.0
+NonFactors,2016-07-03T18:20:24.843Z,79,656,Lookup controls for ASP.NET MVC projects.,NonFactors.Lookup.Mvc6,False,2018-01-31T19:07:47.083+00:00,True,False,,"asp,net,mvc,lookup",3399,False,1.0.0
+NonFactors,2016-07-03T18:20:06.607Z,79,656,Mvc.Lookup core dll without content files.,NonFactors.Lookup.Core.Mvc6,False,2018-01-31T19:07:23.753+00:00,True,False,,"asp,net,mvc,lookup",3290,False,1.0.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:20:09.137Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers,False,2018-04-01T06:38:29.297+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+      There are many individual providers, this package is a meta package that has a dependency on all of them.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",248847,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:20:03.377Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Yammer,False,2018-04-01T06:38:15.89+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65533,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:19:57.143Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Yahoo,False,2018-04-01T06:38:02.653+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",66594,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:19:50.61Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Xing,False,2018-04-01T06:37:51.043+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",66404,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:19:44.593Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.WordPress,False,2018-04-01T06:37:26.937+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65386,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:19:31.74Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.VKontakte,False,2018-04-01T06:37:03.107+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",77137,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:19:37.933Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Wargaming,False,2018-04-01T06:37:14.89+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65499,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:19:25.093Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.VisualStudio,False,2018-04-01T06:36:49.577+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65519,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:19:19.01Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Vimeo,False,2018-04-01T06:36:37.23+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65348,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:19:12.603Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Untappd,False,2018-04-01T06:36:24.653+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65309,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:19:06.153Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Twitch,False,2018-04-01T06:36:01.997+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",66356,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:19:00.207Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.TripIt,False,2018-04-01T06:35:49.967+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65616,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:18:54.24Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Steam,False,2018-04-01T06:35:37.293+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",67071,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:18:47.83Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.StackExchange,False,2018-04-01T06:35:26.26+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",66042,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:18:36.123Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.SoundCloud,False,2018-04-01T06:35:02.027+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",66371,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:18:41.753Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Spotify,False,2018-04-01T06:35:13.2+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65819,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:18:29.463Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.SlackProvider,False,2018-04-01T06:34:49.323+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65746,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:18:22.863Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Shopify,False,2018-04-01T06:34:35.9+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",70549,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:18:10.86Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Reddit,False,2018-04-01T06:34:11.353+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",66140,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:18:16.717Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Salesforce,False,2018-04-01T06:34:23.01+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",76300,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:18:04.62Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.PayPal,False,2018-04-01T06:33:47.433+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",70655,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:17:58.377Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Orcid,False,2018-04-01T06:33:34.54+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65381,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:17:52.117Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.OpenID,False,2018-04-01T06:33:21.027+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",74869,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:17:45.543Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Onshape,False,2018-04-01T06:33:08.713+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65560,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:17:38.917Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.MyHeritage,False,2018-04-01T06:32:56.18+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",57136,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:17:32.663Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.LinkedIn,False,2018-04-01T06:32:44.417+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",113266,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:17:26.713Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Instagram,False,2018-04-01T06:32:33.463+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",81011,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:17:14.497Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.HealthGraph,False,2018-04-01T06:32:09.853+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65731,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:17:20.49Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Imgur,False,2018-04-01T06:32:21.68+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65707,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:17:08.98Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.GooglePlus,False,2018-04-01T06:31:57.4+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",69632,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:17:03.017Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Gitter,False,2018-04-01T06:31:45.07+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65608,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:16:51.683Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Geni,False,2018-04-01T06:31:21.04+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",64178,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:16:57.457Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.GitHub,False,2018-04-01T06:31:32.71+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",78835,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:16:45.41Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Foursquare,False,2018-04-01T06:31:11.087+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65698,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:16:38.81Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Flickr,False,2018-04-01T06:31:00.023+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65748,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:16:32.48Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Fitbit,False,2018-04-01T06:30:47.76+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65719,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:16:26.5Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.EVEOnline,False,2018-04-01T06:30:22.54+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65741,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:16:20.093Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Dropbox,False,2018-04-01T06:30:09.29+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65977,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:16:13.613Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.DoYouBuzz,False,2018-04-01T06:29:57.307+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65878,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:16:07.537Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Discord,False,2018-04-01T06:29:46.867+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65001,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:16:01.21Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.DeviantArt,False,2018-04-01T06:29:35.71+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65779,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:15:48.753Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Buffer,False,2018-04-01T06:29:11.54+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65958,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:15:54.827Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Cosign,False,2018-04-01T06:29:23.337+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65772,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:15:42.61Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Bitbucket,False,2018-04-01T06:28:48.413+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",66521,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:15:36.317Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.BattleNet,False,2018-04-01T06:28:36.43+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",66557,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:15:16.677Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.ArcGISOnline,False,2018-04-01T06:27:37.91+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65989,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:15:23.553Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Asana,False,2018-04-01T06:28:01.927+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",66175,False,2.7.0
+"Jerrie Pelser,Tommy Parnell and contributors",2016-07-03T18:15:29.73Z,19,656,Adds additional OAuth providers for OWIN to use with ASP.NET,Owin.Security.Providers.Backlog,False,2018-04-01T06:28:13.38+00:00,True,False,"Additional OAuth providers for Katana (OWIN).
+
+      Includes providers for ArcGISOnline, Asana, Backlog, Battle.net, Bitbucket, Buffer, DeviantArt, Dropbox, EVEOnline, Fitbit, Flickr, Foursquare, GitHub, Gitter, Google+, HealthGraph, Imgur, Instagram, LinkedIn, Onshape, PayPal, Reddit, Salesforce, Slack, SoundCloud, Spotify, StackExchange, TripIt, Twitch.tv, Untappd, Vimeo, Visual Studio Online, VKontakte, Wordpress, Yahoo and Yammer.
+
+      Also adds generic OpenID 2.0 providers as well implementations for Steam and Wargaming.","owin,katana,oauth,LinkedIn,Yahoo,Google+,GitHub,Reddit,Instagram,StackExchange,SalesForce,TripIt,Buffer,ArcGIS,Dropbox,Wordpress,Battle.NET,Yammer,OpenID,Steam,Twitch",65842,False,2.7.0
+wk,2016-07-03T18:06:29.317Z,626,656,Add JsonIgnore attribute,JsonIgnore.Fody,False,2016-08-02T03:29:36.933-07:00,True,False,,"ILWeaving,Fody,Cecil,JsonIgnore",1248,False,0.1.4
+dotnet-gitversion,2016-07-03T17:58:49.08Z,368,656,dotnet-gitversion,dotnet-gitversion,False,2017-04-17T15:09:46.987-07:00,True,False,,,2397,False,1.0.0
+GitVersionCore-dotnet,2016-07-03T17:58:16.323Z,656,656,GitVersionCore-dotnet,GitVersionCore-dotnet,False,2016-07-03T10:58:16.323-07:00,True,False,,,2383,False,1.0.0
+Tobias Richter,2016-06-13T19:50:30.67Z,488,676,Edit content nodes as XML directly in Umbraco UI,UmbracoXmlEdit,False,2016-12-18T13:55:02.997+00:00,True,False,Edit content nodes as XML directly in Umbraco UI,"Umbraco,CMS,XML,edit,content,plugin",1850,False,1.0.0
+"Dávid Karnok,Stephane Maldini",2016-07-03T17:40:46.217Z,623,656,"Extension methods: Flux and Mono, Schedulers and other tools.",Reactor.Core,False,2016-08-05T03:54:34.373-07:00,True,False,"Fluent reactive programming library for C# on top of Reactive-Streams, mirroring the Reactor-Core for JVM","reactive,fluent,flow,rx,backpressure",2214,False,0.5.5
+"gusev_p,ivan_816",2016-07-03T17:38:24.103Z,246,656,Linq provider for 1C,Simple1C,False,2017-08-17T15:42:50.21+00:00,True,False,,,7661,False,1.0.11
+wk,2016-07-03T17:36:05.51Z,626,656,Add JsonIgnore attribute,JsonIgnore.Fody,False,2016-08-02T03:29:36.933-07:00,True,False,,"ILWeaving,Fody,Cecil,JsonIgnore",1248,False,0.1.2
+"gusev_p,ivan_816",2016-07-03T17:31:36.427Z,246,656,Linq provider for 1C,Simple1C,False,2017-08-17T15:42:50.21+00:00,True,False,,,7661,False,1.0.10
+"DaySmart Software,Inc.",2016-07-03T17:25:37.257Z,641,656,A .Net SDK client for a logda API,Logda.SDK,False,2016-07-18T10:52:10.427-07:00,False,False,,"logda,logging,unified,centralized",1324,False,1.0.0.2
+"DaySmart Software,Inc.",2016-07-03T17:25:37.257Z,641,656,A .Net SDK client for a logda API,Logda.SDK,False,2016-07-18T10:52:10.427-07:00,True,False,,"logda,logging,unified,centralized",1324,False,1.0.0.2
+"Microsoft,jonsequitur",2016-07-03T17:19:16.97Z,127,656,Web API support for Its.Domain.,Its.Domain.Api,True,2017-12-14T06:18:50.747+00:00,True,False,,"webapi,DDD,CQRS,Its.Cqrs",10580,False,0.15.2-beta
+"Microsoft,jonsequitur",2016-07-03T17:19:33.37Z,127,656,Test conveniences for Its.Domain and related Its.Cqrs projects.,Its.Domain.Testing,True,2017-12-14T06:19:30.327+00:00,True,False,,"testing,CQRS,Its.Cqrs",12058,False,0.15.2-beta
+"Microsoft,jonsequitur",2016-07-03T17:19:00.22Z,127,656,SQL event store and read models for Its.Domain.,Its.Domain.Sql,True,2017-12-14T06:18:09.777+00:00,True,False,,"SQL,CQRS,Its.Cqrs,event-sourcing",13661,False,0.15.2-beta
+"jonsequitur,Microsoft",2016-07-03T17:18:41.487Z,127,656,Basic building blocks for building domain models using CQRS and Event Sourcing.,Its.Domain,True,2017-12-14T06:17:24.607+00:00,True,False,,"CQRS,Its.Cqrs,event-sourcing,DDD",14542,False,0.15.2-beta
+Joe Audette,2016-07-03T17:13:13.307Z,583,656,Entity Framework Core implementation of cloudscribe ILogRepository,cloudscribe.Logging.EF,True,2016-09-14T15:46:53.57+00:00,True,False,,"cloudscribe,repositories,logging",3796,False,1.0.2-rc20160703
+Joe Audette,2016-07-03T17:12:43.953Z,6,656,An implementation of ILogger and ILoggerProvider that logs to the database using a pluggable model supporting multiple data platforms. Also proivides an MVC controller for viewing and managing the log data.,cloudscribe.Logging.Web,True,2018-04-14T15:57:43.907+00:00,True,False,,"cloudscribe,logging,database",14720,False,1.0.2-rc20160703
+Bryan Apellanes,2016-07-02T22:01:20.603Z,85,657,Productivity Tools,BamCore,False,2018-01-25T03:43:43.49+00:00,True,False,,,4511,False,1.2.16
+Joe Audette,2016-07-03T17:13:47.743Z,1,656,NoDb implementation of cloudscribe ILogRepository,cloudscribe.Logging.NoDb,True,2018-04-19T20:27:41.55+00:00,True,False,,"cloudscribe,repositories,logging",6793,False,1.0.0-rc20160703
+Johan Larsson,2016-07-03T17:13:47.107Z,554,656,Small lib for using WPF grid less painful.,Gu.Wpf.AutoRowGrid,False,2016-10-13T16:46:51.387+00:00,True,False,,"wpf,xaml,grid",1558,False,0.4.0.1
+Joe Audette,2016-07-03T17:13:47.743Z,1,656,NoDb implementation of cloudscribe ILogRepository,cloudscribe.Logging.NoDb,True,2018-04-19T20:27:41.55+00:00,True,False,,"cloudscribe,repositories,logging",6793,False,1.0.0-rc20160703
+Joe Audette,2016-07-03T17:12:43.953Z,6,656,An implementation of ILogger and ILoggerProvider that logs to the database using a pluggable model supporting multiple data platforms. Also proivides an MVC controller for viewing and managing the log data.,cloudscribe.Logging.Web,True,2018-04-14T15:57:43.907+00:00,True,False,,"cloudscribe,logging,database",14720,False,1.0.2-rc20160703
+Joe Audette,2016-07-03T17:13:13.307Z,583,656,Entity Framework Core implementation of cloudscribe ILogRepository,cloudscribe.Logging.EF,True,2016-09-14T15:46:53.57+00:00,True,False,,"cloudscribe,repositories,logging",3796,False,1.0.2-rc20160703
+wk,2016-07-03T17:11:18.667Z,626,656,Add JsonIgnore attribute,JsonIgnore.Fody,False,2016-08-02T03:29:36.933-07:00,True,False,,"ILWeaving,Fody,Cecil,JsonIgnore",1248,False,0.1.1
+Cireson,2016-07-03T17:08:49.503Z,43209,656,Core,Cireson.AssetManagement.Core,True,1899-12-31T16:00:00-08:00,False,False,,ciresonCPEX,-1,False,0.1.0-rc0008
+Nohros Inc,2016-07-03T17:06:05.407Z,76,656,"This project contains several of Nohros' core .NET libraries that we use
+          in our many .NET-based projects. The common package contains the common
+          classes that are used by the others packages of the framework.",must.common,False,2018-02-03T19:46:31.53+00:00,True,False,The common package of the nohros must framework.,"csharp,framework,nohros,security",32861,False,2.2.0
+Johan Larsson,2016-07-03T17:04:47.857Z,554,656,Small lib for using WPF grid less painful.,Gu.Wpf.AutoRowGrid,False,2016-10-13T16:46:51.387+00:00,True,False,,"wpf,xaml,grid",1558,False,0.4.0
+Arthur_Khrabrov,2016-07-03T17:03:15.46Z,43209,656,VK API for .NET,VKNET.Api,False,1900-01-01T00:00:00+00:00,False,False,,"vk,api,net,vknet,vkontakte",-1,False,1.5.9
+Hannes 'saxx' Sachsenhofer,2016-07-03T17:01:13.457Z,43209,656,Client library to post errors/exceptions to an Haufwerk instance. See https://github.com/saxx/haufwerk for more information about Haufwerk.,Haufwerk.Client,False,1900-01-01T00:00:00+00:00,False,False,,"haufwerk,logging,exception",2978,False,0.0.19
+d-fens GmbH,2016-07-03T14:45:09.72Z,493,656,"biz.dfch.CS.Cimi.Client
+========================
+
+Client for the Swisscom Enterprise Cloud CIMI API
+
+d-fens GmbH, General-Guisan-Strasse 6, CH-6300 Zug, Switzerland
+
+## Download
+
+* Get it on [NuGet](https://www.nuget.org/packages/biz.dfch.CS.Cimi.Client/)
+
+* See [Releases](https://github.com/dfensgmbh/biz.dfch.CS.Cimi.Client/releases) and [Tags](https://github.com/dfensgmbh/biz.dfch.CS.Cimi.Client/tags) on [GitHub](https://github.com/dfensgmbh/biz.dfch.CS.Cimi.Client)",biz.dfch.CS.Cimi.Client,False,2016-12-13T00:36:30.38-08:00,False,False,A C#/.NET Client for the Swisscom Enterprise Cloud CIMI API,"dfch,Cimi,C#",4716,False,1.5.1
+Iftah Ben Zaken,2016-07-03T17:00:06.82Z,656,656,RavenDB JobStore support for Quartz.NET scheduler.,Quartz.Impl.RavenDB,False,2016-07-03T17:00:06.82+00:00,True,False,,"RavenDB,NoSQL,JobStore,Quartz,net,Quartz.net,quartznet,scheduler",1891,False,1.0.6
+d-fens GmbH,2016-07-03T16:59:20.5Z,493,656,"=============================
+
+Powershell client for the Swisscom Enterprise Cloud CIMI API
+	
+Module: biz.dfch.PS.Cimi.Client
+
+d-fens GmbH, General-Guisan-Strasse 6, CH-6300 Zug, Switzerland
+
+## Download
+
+* Get it on [NuGet](https://www.nuget.org/packages/biz.dfch.PS.Cimi.Client/)
+
+* See [Releases](https://github.com/dfensgmbh/biz.dfch.PS.Cimi.Client/releases) and [Tags](https://github.com/dfensgmbh/biz.dfch.PS.Cimi.Client/tags) on [GitHub](https://github.com/dfensgmbh/biz.dfch.PS.Cimi.Client)",biz.dfch.PS.Cimi.Client,False,2016-12-13T00:48:07.4-08:00,True,False,Powershell client for the Swisscom Enterprise Cloud CIMI API,"dfch,PowerShell,Cimi",2455,False,1.5.2
+Hannes 'saxx' Sachsenhofer,2016-07-03T16:51:18.43Z,43209,656,Client library to post errors/exceptions to an Haufwerk instance. See https://github.com/saxx/haufwerk for more information about Haufwerk.,Haufwerk.Client,False,1900-01-01T00:00:00+00:00,False,False,,"haufwerk,logging,exception",2978,False,0.0.18
+d-fens GmbH,2016-07-03T16:49:30.8Z,493,656,"biz.dfch.CS.Cimi.Client
+========================
+
+Client for the Swisscom Enterprise Cloud CIMI API
+
+d-fens GmbH, General-Guisan-Strasse 6, CH-6300 Zug, Switzerland
+
+## Download
+
+* Get it on [NuGet](https://www.nuget.org/packages/biz.dfch.CS.Cimi.Client/)
+
+* See [Releases](https://github.com/dfensgmbh/biz.dfch.CS.Cimi.Client/releases) and [Tags](https://github.com/dfensgmbh/biz.dfch.CS.Cimi.Client/tags) on [GitHub](https://github.com/dfensgmbh/biz.dfch.CS.Cimi.Client)",biz.dfch.CS.Cimi.Client,False,2016-12-13T00:36:30.38-08:00,True,False,A C#/.NET Client for the Swisscom Enterprise Cloud CIMI API,"dfch,Cimi,C#",4716,False,1.5.2
+Cragon,2016-07-03T16:47:06.323Z,43209,656,GF.Grain.Player,GF.Grain.Player,False,1899-12-31T16:00:00-08:00,False,False,GF.Grain.Player,GF.Grain.Player,-1,False,1.0.2
+ZZZ Projects Inc.,2016-07-03T16:44:12.6Z,21,656,"C# Expression Evaluator | Evaluate, Compile and Execute C# code and expression at runtime.
+
+* FREE Version - up to 50 characters",Z.Expressions.Eval,False,2018-03-30T15:33:00.517+00:00,True,False,"C# Expression Evaluator | Evaluate, Compile and Execute C# code and expression at runtime.
+
+* FREE Version - up to 50 characters","C#,Eval,Compile,Compiler,Execute,Expression,Roslyn",18701,False,1.0.15
+rynn.wang,2016-07-03T16:35:33.533Z,1,656,"Common library for .NET projects. Including REST Api handler, exception handler, AOP, Reflection, Extensions, Configurations, etc.",Beyova.Common,False,2018-04-19T15:08:20.933+00:00,True,False,"Common library for .NET projects. Including REST Api handler, exception handler, AOP, Reflection, Extensions, Configurations, etc.",,22438,False,3.6.4
+rynn.wang,2016-07-03T16:34:41.733Z,178,656,Elastic implement used for API Analytics. Work with Beyova.Common.,Beyova.Elastic,False,2017-10-24T16:23:57.397+00:00,True,False,Elastic implement used for API Analytics.,,3076,False,0.14.4
+rynn.wang,2016-07-03T16:34:15.643Z,27,656,"Web extension library for .NET projects. Including Windows Service based Http Service, MVC extension ,etc.",Beyova.WebExtension,False,2018-03-24T17:04:24.953+00:00,True,False,"Web extension library for .NET projects. Including Windows Service based Http Service, MVC extension ,etc.",,2248,False,2.3.3
+rynn.wang,2016-07-03T16:33:53.607Z,88,656,Common Service.,Beyova.CommonService,False,2018-01-22T05:59:42.313+00:00,True,False,Common Service.,,1903,False,1.1.2
+rynn.wang,2016-07-03T16:32:55.7Z,530,656,Common Admin Service,Beyova.CommonAdminService,False,2016-11-06T07:58:00.347-08:00,True,False,Common Admin Service - alpha,,1611,False,1.1.2
+rynn.wang,2016-07-03T16:32:36.39Z,240,656,AWS S3 extension,Beyova.AwsExtension,False,2017-08-23T16:07:57.313+00:00,True,False,AWS S3 extension,,1026,False,1.0.2
+rynn.wang,2016-07-03T16:31:54.75Z,263,656,"JPush.NET is JPush SDK for .NET. It can help you send, monitor and manage all your JPush messages by programming, following JPush official REST API. 
+(JPush.NET 是基于.NET平台的JPush服务器端的SDK。用来帮助开发者以编程的方式使用JPush官方REST API来发送、监视和管理所有的JPush推送消息。)",JPush.NET,False,2017-07-31T16:13:50.18+00:00,True,False,"JPush Server SDK for .NET.
+Docuentation: http://jpush.codeplex.com/wikipage?title=class%3a%20JPushClientV3&referringTitle=Documentation",".NET,JPush,SDK",6961,False,2.2.6
+rynn.wang,2016-07-03T16:32:13.56Z,76,656,Azure extension,Beyova.AzureExtension,False,2018-02-03T09:02:02.103+00:00,True,False,Azure extension,,3804,False,2.2.7
+路过秋天,2016-07-03T16:28:53.877Z,1,656,What's cyq.data ?： 1： It is an ORM framework. 2： It is a data access layer components. 3： It is a set of tools library.,cyqdata,False,2018-04-19T07:23:10.923+00:00,True,False,CYQ.Data is a data access layer (DAL)  that provides a way to design an application with a clean separation of code into their functional areas within an application,"CYQ.Data,ORM,ADO.NET",22149,False,5.6.1.6
+Arthur_Khrabrov,2016-07-03T16:26:20.9Z,43209,656,VK API for .NET,VKNET.Api,False,1900-01-01T00:00:00+00:00,False,False,,"vk,api,net,vknet,vkontakte",-1,False,1.5.8
+Ethan Zhang,2016-07-03T16:09:53.873Z,277,656,"Radial is a lightweight c# framework licensed under LGPL. It is designed to improve developers working efficiency, more convenient and efficient to build applications.It integrated with many components: 
+
+• Dependency Injection (based on Unity) 
+• Json (install Newtonsoft.Json first) 
+• Serialization (Json, Xml, Binary) 
+• Logging (based on log4net) 
+• Caching (in-memory, or install EnyimMemcached first) 
+• Persistence (install NHibernate first) 
+• Web & Network (include MVC extensions, install Microsoft.AspNet.Mvc and Microsoft.AspNet.WebApi first) 
+• Parameter (an easy way to store settings in xml or database) 
+• ExcelTools (install EPPlus first) 
+• Drawing (Captcha, ImageKits) 
+• And Others...",Radial,False,2017-07-16T23:17:22.047-07:00,False,False,,,20889,False,2.3.2.10
+Ethan Zhang,2016-07-03T16:24:35.51Z,277,656,"Radial is a lightweight c# framework licensed under LGPL. It is designed to improve developers working efficiency, more convenient and efficient to build applications.It integrated with many components: 
+
+• Dependency Injection (based on Unity) 
+• Json (install Newtonsoft.Json first) 
+• Serialization (Json, Xml, Binary) 
+• Logging (based on log4net) 
+• Caching (in-memory, or install EnyimMemcached first) 
+• Persistence (install NHibernate first) 
+• Web & Network (include MVC extensions, install Microsoft.AspNet.Mvc and Microsoft.AspNet.WebApi first) 
+• Parameter (an easy way to store settings in xml or database) 
+• ExcelTools (install EPPlus first) 
+• Drawing (Captcha, ImageKits) 
+• And Others...",Radial,False,2017-07-16T23:17:22.047-07:00,True,False,,,20889,False,2.3.2.11
+Cragon,2016-07-03T16:20:25.99Z,43209,656,GF.Grain.Player,GF.Grain.Player,False,1899-12-31T16:00:00-08:00,False,False,GF.Grain.Player,GF.Grain.Player,-1,False,1.0.1
+Cragon,2016-07-03T16:19:55.327Z,43209,656,GF.Gateway,GF.Gateway,False,1899-12-31T16:00:00-08:00,False,False,GF.Gateway,GF.Gateway,-1,False,1.0.2
+Johan Larsson,2016-07-03T16:15:57.637Z,554,656,Small lib for using WPF grid less painful.,Gu.Wpf.AutoRowGrid,False,2016-10-13T16:46:51.387+00:00,True,False,,"wpf,xaml,grid",1558,False,0.3.0
+wk,2016-07-03T16:12:02.953Z,626,656,Add JsonIgnore attribute,JsonIgnore.Fody,False,2016-08-02T03:29:36.933-07:00,True,False,,"ILWeaving,Fody,Cecil,JsonIgnore",1248,False,0.1.0
+Hannes 'saxx' Sachsenhofer,2016-07-03T16:11:23.283Z,43209,656,Client library to post errors/exceptions to an Haufwerk instance. See https://github.com/saxx/haufwerk for more information about Haufwerk.,Haufwerk.Client,False,1900-01-01T00:00:00+00:00,False,False,,"haufwerk,logging,exception",2978,False,0.0.17
+Ethan Zhang,2016-07-03T15:43:33.68Z,277,656,"Radial is a lightweight c# framework licensed under LGPL. It is designed to improve developers working efficiency, more convenient and efficient to build applications.It integrated with many components: 
+
+• Dependency Injection (based on Unity) 
+• Json (install Newtonsoft.Json first) 
+• Serialization (Json, Xml, Binary) 
+• Logging (based on log4net) 
+• Caching (in-memory, or install EnyimMemcached first) 
+• Persistence (install NHibernate first) 
+• Web & Network (include MVC extensions, install Microsoft.AspNet.Mvc and Microsoft.AspNet.WebApi first) 
+• Parameter (an easy way to store settings in xml or database) 
+• ExcelTools (install EPPlus first) 
+• Drawing (Captcha, ImageKits) 
+• And Others...",Radial,False,2017-07-16T23:17:22.047-07:00,False,False,,,20889,False,2.3.2.9
+Ethan Zhang,2016-07-03T16:09:53.873Z,277,656,"Radial is a lightweight c# framework licensed under LGPL. It is designed to improve developers working efficiency, more convenient and efficient to build applications.It integrated with many components: 
+
+• Dependency Injection (based on Unity) 
+• Json (install Newtonsoft.Json first) 
+• Serialization (Json, Xml, Binary) 
+• Logging (based on log4net) 
+• Caching (in-memory, or install EnyimMemcached first) 
+• Persistence (install NHibernate first) 
+• Web & Network (include MVC extensions, install Microsoft.AspNet.Mvc and Microsoft.AspNet.WebApi first) 
+• Parameter (an easy way to store settings in xml or database) 
+• ExcelTools (install EPPlus first) 
+• Drawing (Captcha, ImageKits) 
+• And Others...",Radial,False,2017-07-16T23:17:22.047-07:00,True,False,,,20889,False,2.3.2.10
+MiYABiS,2016-07-03T16:07:14.5Z,259,656,"DI&AOP framework Moca.NET
+      Web API",Moca.NETWebApi,True,2017-08-04T10:10:44.427+00:00,True,False,DI&AOP framework Moca.NET Web API,,1661,False,2.1.0-beta1
+Cragon,2016-07-03T16:04:19.773Z,43209,656,GF.Orleans.Storage.MongoDB,GF.Orleans.Storage.MongoDB,False,1899-12-31T16:00:00-08:00,False,False,GF.Orleans.Storage.MongoDB,GF.Orleans.Storage.MongoDB,-1,False,1.0.0
+Christopher J. McClellan,2016-07-03T15:29:22.613Z,656,656,DataAnnotation and Validation Framework for Winforms,Rubberduck.Winforms,False,2016-07-03T15:29:22.613+00:00,True,False,,"DataAnnotations,Winforms",779,False,0.3.0
+Johan Larsson,2016-07-03T15:46:20.927Z,554,656,Small lib for using WPF grid less painful.,Gu.Wpf.AutoRowGrid,False,2016-10-13T16:46:51.387+00:00,True,False,,"wpf,xaml,grid",1558,False,0.2.0
+Ethan Zhang,2016-07-03T15:37:17.477Z,277,656,"Radial is a lightweight c# framework licensed under LGPL. It is designed to improve developers working efficiency, more convenient and efficient to build applications.It integrated with many components: 
+
+• Dependency Injection (based on Unity) 
+• Json (install Newtonsoft.Json first) 
+• Serialization (Json, Xml, Binary) 
+• Logging (based on log4net) 
+• Caching (in-memory, or install EnyimMemcached first) 
+• Persistence (install NHibernate first) 
+• Web & Network (include MVC extensions, install Microsoft.AspNet.Mvc and Microsoft.AspNet.WebApi first) 
+• Parameter (an easy way to store settings in xml or database) 
+• ExcelTools (install EPPlus first) 
+• Drawing (Captcha, ImageKits) 
+• And Others...",Radial,False,2017-07-16T23:17:22.047-07:00,False,False,,,20889,False,2.3.2.8
+Ethan Zhang,2016-07-03T15:43:33.68Z,277,656,"Radial is a lightweight c# framework licensed under LGPL. It is designed to improve developers working efficiency, more convenient and efficient to build applications.It integrated with many components: 
+
+• Dependency Injection (based on Unity) 
+• Json (install Newtonsoft.Json first) 
+• Serialization (Json, Xml, Binary) 
+• Logging (based on log4net) 
+• Caching (in-memory, or install EnyimMemcached first) 
+• Persistence (install NHibernate first) 
+• Web & Network (include MVC extensions, install Microsoft.AspNet.Mvc and Microsoft.AspNet.WebApi first) 
+• Parameter (an easy way to store settings in xml or database) 
+• ExcelTools (install EPPlus first) 
+• Drawing (Captcha, ImageKits) 
+• And Others...",Radial,False,2017-07-16T23:17:22.047-07:00,True,False,,,20889,False,2.3.2.9
+Ethan Zhang,2016-07-03T14:10:34.453Z,277,656,"Radial is a lightweight c# framework licensed under LGPL. It is designed to improve developers working efficiency, more convenient and efficient to build applications.It integrated with many components: 
+
+• Dependency Injection (based on Unity) 
+• Json (install Newtonsoft.Json first) 
+• Serialization (Json, Xml, Binary) 
+• Logging (based on log4net) 
+• Caching (in-memory, or install EnyimMemcached first) 
+• Persistence (install NHibernate first) 
+• Web & Network (include MVC extensions, install Microsoft.AspNet.Mvc and Microsoft.AspNet.WebApi first) 
+• Parameter (an easy way to store settings in xml or database) 
+• ExcelTools (install EPPlus first) 
+• Drawing (Captcha, ImageKits) 
+• And Others...",Radial,False,2017-07-16T23:17:22.047-07:00,False,False,,,20889,False,2.3.2.6
+Ethan Zhang,2016-07-03T15:37:17.477Z,277,656,"Radial is a lightweight c# framework licensed under LGPL. It is designed to improve developers working efficiency, more convenient and efficient to build applications.It integrated with many components: 
+
+• Dependency Injection (based on Unity) 
+• Json (install Newtonsoft.Json first) 
+• Serialization (Json, Xml, Binary) 
+• Logging (based on log4net) 
+• Caching (in-memory, or install EnyimMemcached first) 
+• Persistence (install NHibernate first) 
+• Web & Network (include MVC extensions, install Microsoft.AspNet.Mvc and Microsoft.AspNet.WebApi first) 
+• Parameter (an easy way to store settings in xml or database) 
+• ExcelTools (install EPPlus first) 
+• Drawing (Captcha, ImageKits) 
+• And Others...",Radial,False,2017-07-16T23:17:22.047-07:00,True,False,,,20889,False,2.3.2.8
+Ackara,2016-07-03T15:33:33.663Z,635,656,A portable class library that allows you to generate sample data based on your object type using the Mockaroo API.,Gigobyte.Mockaroo.Core,False,2016-07-24T10:42:38.27-07:00,True,False,,"sample,data,mockaroo,rest,api",1421,False,1.2.16185
+The Fr8 Company,2016-07-03T15:33:07.013Z,43209,656,A set of classes to help developers easily start developing their Fr8 terminals.,Fr8.TerminalBase,True,1899-12-31T16:00:00-08:00,False,False,,,53899,False,1.0.2.11866-dev
+Christopher J. McClellan,2016-07-03T15:29:22.613Z,656,656,DataAnnotation and Validation Framework for Winforms,Rubberduck.Winforms,False,2016-07-03T15:29:22.613+00:00,True,False,,"DataAnnotations,Winforms",779,False,0.3.0
+Nyingi Maina,2016-07-03T15:26:43.607Z,484,656,"Inspired by MvvmCross for Xamarin.Android and Xamarin.iOS, this is a basic Mvvm library for WinForms that seeks to channel the ease, structure and clarity that simple, robust and predictable databinding brings to apps.",DashMVVM,False,2016-12-22T06:23:50.42+00:00,True,False,DashMVVM is a light-weight package that brings the structure of an Mvvm Framework to Windows Forms programming,"Windows,Forms,Mvvm,Framework,C#",2838,False,0.1.2
+Lee,2016-07-03T15:12:03.96Z,43209,656,基础设施 - WCF基础,ShSoft.Framework2016.Infrastructure.WCF,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.5
+ZZZ Projects Inc.,2016-07-03T15:13:25.507Z,11,656,EF+ Query Future | Entity Framework Combine and Execute Multiple SQL Command.,Z.EntityFramework.Plus.QueryFuture.EFCore,False,2018-04-09T21:34:43.313+00:00,True,False,EF+ Query Future | Entity Framework Combine and Execute Multiple SQL Command.,"EFCore,EF,EntityFramework",3937,False,1.3.0
+Lee,2016-07-03T15:12:03.96Z,43209,656,基础设施 - WCF基础,ShSoft.Framework2016.Infrastructure.WCF,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.5
+ZZZ Projects Inc.,2016-07-03T15:12:42.21Z,27,656,EF+ Query Filter | Entity Framework Dynamic Instance and Global Filters.,Z.EntityFramework.Plus.QueryFilter.EFCore,False,2018-03-24T19:14:57.54+00:00,True,False,EF+ Query Filter | Entity Framework Dynamic Instance and Global Filters.,"EFCore,EF,EntityFramework",4724,False,1.3.0
+Lee,2016-07-03T15:12:03.96Z,43209,656,基础设施 - WCF基础,ShSoft.Framework2016.Infrastructure.WCF,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.5
+ZZZ Projects Inc.,2016-07-03T15:12:00.107Z,206,656,EF+ Query Deferred | Entity Framework Deferring Immediate LINQ Query Execution.,Z.EntityFramework.Plus.QueryDeferred.EFCore,False,2017-09-26T16:11:27.41+00:00,True,False,EF+ Query Deferred | Entity Framework Deferring Immediate LINQ Query Execution.,"EFCore,EF,EntityFramework",3197,False,1.3.0
+sta,2016-07-03T15:12:20.247Z,43209,656,"websocket-sharp provides the WebSocket protocol client and server.
+
+It supports:
+- RFC 6455
+- WebSocket Client and Server
+- Per-message Compression extension
+- Secure Connection
+- HTTP Authentication (Basic/Digest)
+- Query String, Origin header and Cookies
+- Connecting through the HTTP Proxy server
+- .NET 3.5 or later (includes compatible)",WebSocketSharp,True,1899-12-31T16:00:00-08:00,False,False,websocket-sharp provides the WebSocket protocol client and server.,WebSocket,172557,False,1.0.3-rc11
+ZZZ Projects Inc.,2016-07-03T15:11:14.657Z,206,656,EF+ Query Cache | Entity Framework Second Level Caching.,Z.EntityFramework.Plus.QueryCache.EFCore,False,2017-09-26T16:10:06.69+00:00,True,False,EF+ Query Cache | Entity Framework Second Level Caching.,"EFCore,EF,EntityFramework,Cache",4300,False,1.3.0
+ZZZ Projects Inc.,2016-07-03T15:10:34.75Z,27,656,EF+ Batch Update | Entity Framework Batch Update Objects Without Loading Them.,Z.EntityFramework.Plus.BatchUpdate.EFCore,False,2018-03-24T19:13:55.567+00:00,True,False,EF+ Batch Update | Entity Framework Batch Update Objects Without Loading Them.,"EFCore,EF,EntityFramework,Batch",6275,False,1.3.0
+ZZZ Projects Inc.,2016-07-03T15:09:54.573Z,48,656,EF+ Batch Delete | Entity Framework Batch Delete Objects Without Loading Them.,Z.EntityFramework.Plus.BatchDelete.EFCore,False,2018-03-03T19:48:44.873+00:00,True,False,EF+ Batch Delete | Entity Framework Batch Delete Objects Without Loading Them.,"EFCore,EF,EntityFramework,Batch",6999,False,1.3.0
+Simon Schick,2016-07-03T15:07:47.533Z,46,656,CrossDownloadManager is a cross-platform library for downloading files in the background.,Xam.Plugins.DownloadManager,False,2018-03-05T05:37:20.29+00:00,True,False,CrossDownloadManager is a cross-platform library for downloading files in the background.,"xamarin,pcl,xam.pcl,windows,phone,winphone,wp8,winrt,android,xamarin.forms,ios,download,manager,files,background",16010,False,0.6.0
+ZZZ Projects Inc.,2016-07-03T15:09:13.963Z,11,656,EF+ Audit | Entity Framework Audit Trail Context and Track Changes.,Z.EntityFramework.Plus.Audit.EFCore,False,2018-04-09T21:33:57.843+00:00,True,False,EF+ Audit | Entity Framework Audit Trail Context and Track Changes.,"EFCore,EF,EntityFramework,Audit",7499,False,1.3.0
+Simon Schick,2016-07-03T15:07:47.533Z,46,656,CrossDownloadManager is a cross-platform library for downloading files in the background.,Xam.Plugins.DownloadManager,False,2018-03-05T05:37:20.29+00:00,True,False,CrossDownloadManager is a cross-platform library for downloading files in the background.,"xamarin,pcl,xam.pcl,windows,phone,winphone,wp8,winrt,android,xamarin.forms,ios,download,manager,files,background",16010,False,0.6.0
+SysSurge AS,2016-07-03T14:53:56.97Z,656,656,Slazure is a ORM/ODM type data mapper for schema-free NoSQL databases. Slazure automatically maps data entities between your code and the database data model. This package enables Slazure to work with the Microsoft Azure Table Storage. Contains Slazure Light edition component.,Azure.Storage.Slazure.Light,False,2016-07-03T14:53:56.97+00:00,True,False,"The easiest, quickest, and most flexible way of using Microsoft Azure Table Storage.","Azure,Storage,Data,Mapper,ORM,ODM",1420,False,1.4.1
+Cragon,2016-07-03T14:55:12.503Z,43209,656,GF.Gateway,GF.Gateway,False,1899-12-31T16:00:00-08:00,False,False,GF.Gateway,GF.Gateway,-1,False,1.0.1
+Cragon,2016-07-03T14:54:40.44Z,43209,656,GF.Grain.Player,GF.Grain.Player,False,1899-12-31T16:00:00-08:00,False,False,GF.Grain.Player,GF.Grain.Player,-1,False,1.0.0
+SysSurge AS,2016-07-03T14:53:56.97Z,656,656,Slazure is a ORM/ODM type data mapper for schema-free NoSQL databases. Slazure automatically maps data entities between your code and the database data model. This package enables Slazure to work with the Microsoft Azure Table Storage. Contains Slazure Light edition component.,Azure.Storage.Slazure.Light,False,2016-07-03T14:53:56.97+00:00,True,False,"The easiest, quickest, and most flexible way of using Microsoft Azure Table Storage.","Azure,Storage,Data,Mapper,ORM,ODM",1420,False,1.4.1
+Cragon,2016-07-03T14:54:05.247Z,43209,656,GF.GrainInterface.Player,GF.GrainInterface.Player,False,1899-12-31T16:00:00-08:00,False,False,GF.GrainInterface.Player,GF.GrainInterface.Player,-1,False,1.0.0
+SysSurge AS,2016-07-03T14:49:48.907Z,656,656,Slazure is a ORM/ODM type data mapper for schema-free NoSQL databases. Slazure automatically maps data entities between your code and the database data model. This package enables Slazure to work with the Microsoft Azure Table Storage.,Azure.Storage.Slazure,False,2016-07-03T14:49:48.907+00:00,True,False,"The easiest, quickest, and most flexible way of using Microsoft Azure Table Storage.","Azure,Storage,Data,Mapper,ORM,ODM",2557,False,1.4.1
+The Fr8 Company,2016-07-03T14:53:15.34Z,43209,656,A set of classes to help developers easily start developing their Fr8 terminals.,Fr8.TerminalBase,True,1899-12-31T16:00:00-08:00,False,False,,,53899,False,1.0.2.11862-dev
+ZZZ Projects Inc.,2016-07-03T14:50:35.24Z,11,656,EF+ Full Version | C# Entity Framework Utilities (Bulk Operations | Batch Delete | Batch Update | Query Cache | Query Filter | Query Future | Query Include | Audit),Z.EntityFramework.Plus.EFCore,False,2018-04-09T21:38:50.76+00:00,True,False,EF+ Full Version | C# Entity Framework Utilities (Bulk Operations | Batch Delete | Batch Update | Query Cache | Query Filter | Query Future | Query Include | Audit),"EFCore,EF,EntityFramework,Audit,Batch,Cache",106598,False,1.3.0
+SysSurge AS,2016-07-03T14:49:48.907Z,656,656,Slazure is a ORM/ODM type data mapper for schema-free NoSQL databases. Slazure automatically maps data entities between your code and the database data model. This package enables Slazure to work with the Microsoft Azure Table Storage.,Azure.Storage.Slazure,False,2016-07-03T14:49:48.907+00:00,True,False,"The easiest, quickest, and most flexible way of using Microsoft Azure Table Storage.","Azure,Storage,Data,Mapper,ORM,ODM",2557,False,1.4.1
+CeRi 1337,2016-07-03T14:35:43.813Z,655,656,Small steam libary for C#,CSharpSteam2,False,2016-07-04T12:16:23.58-07:00,False,False,,,1000,False,2.0.0
+d-fens GmbH,2016-07-03T14:45:09.72Z,493,656,"biz.dfch.CS.Cimi.Client
+========================
+
+Client for the Swisscom Enterprise Cloud CIMI API
+
+d-fens GmbH, General-Guisan-Strasse 6, CH-6300 Zug, Switzerland
+
+## Download
+
+* Get it on [NuGet](https://www.nuget.org/packages/biz.dfch.CS.Cimi.Client/)
+
+* See [Releases](https://github.com/dfensgmbh/biz.dfch.CS.Cimi.Client/releases) and [Tags](https://github.com/dfensgmbh/biz.dfch.CS.Cimi.Client/tags) on [GitHub](https://github.com/dfensgmbh/biz.dfch.CS.Cimi.Client)",biz.dfch.CS.Cimi.Client,False,2016-12-13T00:36:30.38-08:00,True,False,A C#/.NET Client for the Swisscom Enterprise Cloud CIMI API,"dfch,Cimi,C#",4716,False,1.5.1
+CeRi 1337,2016-07-03T14:44:55.437Z,655,656,Small steam libary for C#,CSharpSteam2,False,2016-07-04T12:16:23.58-07:00,True,False,,,1000,False,2.0.2
+CeRi 1337,2016-07-03T14:35:43.813Z,655,656,Small steam libary for C#,CSharpSteam2,False,2016-07-04T12:16:23.58-07:00,True,False,,,1000,False,2.0.0
+"DaySmart Software,Inc.",2016-07-03T14:30:54.253Z,641,656,A .Net SDK client for a logda API,Logda.SDK,False,2016-07-18T10:52:10.427-07:00,False,False,,"logda,logging,unified,centralized",1324,False,1.0.0.1
+Gennady Verdel,2016-07-03T14:32:28.943Z,125,656,LogoFX Client Testing Shared containing facilities for writing client integration tests which run in the same thread.,LogoFX.Client.Tests.Shared,False,2017-12-16T07:37:52.65+00:00,True,False,LogoFX Client Testing Shared containing facilities for writing client integration tests which run in the same thread.,,2928,False,1.0.7
+"DaySmart Software,Inc.",2016-07-03T14:30:54.253Z,641,656,A .Net SDK client for a logda API,Logda.SDK,False,2016-07-18T10:52:10.427-07:00,True,False,,"logda,logging,unified,centralized",1324,False,1.0.0.1
+Badgerati,2016-07-03T14:28:20.723Z,642,656,Icarus is a simple JSON data store.,Icarus.Core,False,2016-07-17T10:55:05.9-07:00,True,False,,"icarus,json,datastore,storage,data,store,encrypt",1469,False,1.3.2.7
+Shuping LIU,2016-06-29T15:26:43.313Z,43209,660,List all dependencies in a .net core project.,dotnet-list,False,1899-12-31T16:00:00-08:00,False,False,List all dependencies in a .net core project which is defined by project.json,".NET,Core,dotnet,Dependencies",-1,False,1.0.0
+edwardmeng,2016-07-03T14:20:59.953Z,43209,656,"This library makes it easy that allows you to split Startup or Shutdown steps to many difference packages into your application.
+      It is useful to keep code clean and single-responsibility principle for every package in your solution.
+      Instead of assembly the startup or shutdown codes into the Global.asax or Startup class from many packages.",Wheatech.Activation,False,1899-12-31T16:00:00-08:00,False,False,This library makes it easy that allows you to split Startup or Shutdown steps to many difference packages into your application.,"Activation,Startup,Shutdown",1577,False,1.0.4
+"MILL5,Contributors",2016-07-03T14:19:08.787Z,543,656,"yocto - a small, yet powerful, Inversion of Control (IoC) container",yocto,True,2016-10-24T16:35:44.57+00:00,True,False,"yocto - a small, yet powerful, Inversion of Control (IoC) container","ioc,di,dependencyinjection",3119,False,1.5.2-alpha2
+Nick Lucas,2016-07-03T14:17:13.077Z,607,656,RedBeanPHP-inspired data access layer,LimeBean,False,2016-08-21T11:17:34.65-07:00,True,False,,"orm,mysql,sqlite,postgres,postgresql,netcore",3025,False,1.2.5
+Ryszard Tarajkowski,2016-07-03T14:14:10.43Z,656,656,Hassle free deep object comparison assertions for NUnit.,NUnit.CompareNetObjects,False,2016-07-03T07:14:10.43-07:00,True,False,,"nunit,test,testing,tdd,assert",11243,False,0.1.9
+Ethan Zhang,2016-06-10T12:45:02.907Z,277,679,"Radial is a lightweight c# framework licensed under LGPL. It is designed to improve developers working efficiency, more convenient and efficient to build applications.It integrated with many components: 
+
+• Dependency Injection (based on Unity) 
+• Json (install Newtonsoft.Json first) 
+• Serialization (Json, Xml, Binary) 
+• Logging (based on log4net) 
+• Caching (in-memory, or install EnyimMemcached first) 
+• Persistence (install NHibernate first) 
+• Web & Network (include MVC extensions, install Microsoft.AspNet.Mvc and Microsoft.AspNet.WebApi first) 
+• Parameter (an easy way to store settings in xml or database) 
+• ExcelTools (install EPPlus first) 
+• Drawing (Captcha, ImageKits) 
+• And Others...",Radial,False,2017-07-16T23:17:22.047-07:00,False,False,,,20889,False,2.3.1.7
+Jee,2016-07-03T14:11:22.417Z,43209,656,"A multi-platform REST client powered by Fody, and heavily inspired by paulcbetts's Refit and canton7's RestEase. Supports Rx's IObservable and Task.",Rest.Fody,False,1900-01-01T00:00:00+00:00,False,False,"A multi-platform REST client powered by Fody, and heavily inspired by paulcbetts's Refit and canton7's RestEase","fody,rest,http",1949,False,1.0.4
+Nick Lucas,2016-07-03T12:14:37.993Z,607,656,RedBeanPHP-inspired data access layer,LimeBean,False,2016-08-21T11:17:34.65-07:00,False,False,,"orm,mysql,sqlite,postgres,postgresql,netcore",3025,False,1.2.4
+Ethan Zhang,2016-07-03T14:10:34.453Z,277,656,"Radial is a lightweight c# framework licensed under LGPL. It is designed to improve developers working efficiency, more convenient and efficient to build applications.It integrated with many components: 
+
+• Dependency Injection (based on Unity) 
+• Json (install Newtonsoft.Json first) 
+• Serialization (Json, Xml, Binary) 
+• Logging (based on log4net) 
+• Caching (in-memory, or install EnyimMemcached first) 
+• Persistence (install NHibernate first) 
+• Web & Network (include MVC extensions, install Microsoft.AspNet.Mvc and Microsoft.AspNet.WebApi first) 
+• Parameter (an easy way to store settings in xml or database) 
+• ExcelTools (install EPPlus first) 
+• Drawing (Captcha, ImageKits) 
+• And Others...",Radial,False,2017-07-16T23:17:22.047-07:00,True,False,,,20889,False,2.3.2.6
+Johan Larsson,2016-07-03T14:05:55.35Z,554,656,Small lib for using WPF grid less painful.,Gu.Wpf.AutoRowGrid,False,2016-10-13T16:46:51.387+00:00,True,False,,"wpf,xaml,grid",1558,False,0.1.0
+路过秋天,2016-07-03T05:00:52.04Z,1,656,CYQ.Data is a data access layer (DAL) that provides a way to design an application with a clean separation of code into their functional areas within an application,cyqdata,False,2018-04-19T07:23:10.923+00:00,False,False,CYQ.Data is a data access layer (DAL)  that provides a way to design an application with a clean separation of code into their functional areas within an application,"CYQ.Data,ORM,ADO.NET",22149,False,5.6.1.4
+Team XSockets Sweden AB,2016-07-03T14:05:39.303Z,456,656,"Supports: .NET 4.5+, Xamarin iOS x64, MonoTouch (iOS), MonoDroid (Android), WinPhone, WinStore, Universal, .NET 3.5",XSockets.Client,False,2017-01-19T13:30:37.953+00:00,True,False,,"XSockets,Websockets,Realtime,IoT",37281,False,6.2.0
+路过秋天,2016-07-03T14:04:26.223Z,1,656,CYQ.Data is a data access layer (DAL) that provides a way to design an application with a clean separation of code into their functional areas within an application,cyqdata,False,2018-04-19T07:23:10.923+00:00,True,False,CYQ.Data is a data access layer (DAL)  that provides a way to design an application with a clean separation of code into their functional areas within an application,"CYQ.Data,ORM,ADO.NET",22149,False,5.6.1.5
+"FUJIWARA,Yusuke",2016-07-03T14:03:41.307Z,124,656,"MessagePack is fast, compact, and interoperable binary serialization format.
+This package provides MessagePack serialization/deserialization APIs. This pacakge also supports Mono, Xamarin, .NET Core and Unity.",MsgPack.Cli,False,2017-12-17T11:32:20.9+00:00,True,False,,"MsgPack,MessagePack,Serialization,Formatter,Serializer",721492,False,0.7.0
+MiYABiS,2016-07-03T13:59:24.277Z,259,656,DI&AOP framework Moca.NET Web Form,Moca.NETWebForm,True,2017-08-04T10:09:22.283+00:00,True,False,DI&AOP framework Moca.NET Web Form,"AOP,DI,ASP.NET",330,False,1.0.0-beta
+Patrick van Lohuizen,2016-07-03T13:50:58.42Z,649,656,"This dll helps with the generation of typescript code. A model representing the typescript code can be build and then used to generate the actual code. the main reason this package was created is because it will be used in ""https://github.com/Patrickkk/TypedDotNet"".",TypescriptGeneration,False,2016-07-10T05:05:29.327-07:00,True,False,This dll helps with the generation of typescript code. A model representing the typescript code can be build and then used to generate the actual code.,"Typescript,Generation,.net,C#,VB",3136,False,0.5.1
+"Piotr Gankiewicz,Patryk Wąsiewicz",2016-07-03T13:44:12.057Z,654,656,Warden watcher for Port.,Warden.Watchers.Port,False,2016-07-05T16:36:16.443+00:00,True,False,,Warden,472,False,1.0.2.2
+GitTools Contributors,2016-07-03T13:44:35.65Z,656,656,Core library for GitTools,GitTools.Core-dotnet,False,2016-07-03T06:44:35.65-07:00,True,False,,"git,tools",2410,False,1.0.0
+"Piotr Gankiewicz,Patryk Wąsiewicz",2016-07-03T13:44:12.057Z,654,656,Warden watcher for Port.,Warden.Watchers.Port,False,2016-07-05T16:36:16.443+00:00,True,False,,Warden,472,False,1.0.2.2
+TatsuyaIshikawa,2016-07-03T13:41:05.607Z,123,656,Write SQL using lambda.,LambdicSql,False,2017-12-18T00:01:13.627+00:00,True,False,,"SQL,Lambda,Codeer",13219,False,0.0.8
+Test,2016-07-03T13:29:17.77Z,656,656,test,LibGit2Sharp-dotnet,False,2016-07-03T06:29:17.77-07:00,True,False,,"libgit2,git,wrapper,bindings,API,dvcs,vcs",7927,False,1.0.0
+Jeremy Lindsay,2016-07-03T13:26:14.05Z,656,656,This library contains an a class and extensions to assist in speech recognition applications.,Magellanic.Speech.Recognition,True,2016-07-03T06:26:14.05-07:00,True,False,This library contains an a class and extensions to assist in speech recognition applications.,"raspberry,pi,iot",236,False,0.0.1-alpha
+Gennady Verdel,2016-07-03T13:24:27.987Z,126,656,This package provides facilities for writing integration and end-to-end tests using xUnit.,Attest.Tests.xUnit,False,2017-12-15T19:37:46.01+00:00,True,False,This package provides facilities for writing integration and end-to-end tests using xUnit.,,2144,False,1.3.1
+Vojtech Stepancik,2016-07-03T13:22:43.163Z,43209,656,A bunch of util methods,Patha.Utils,False,1900-01-01T00:00:00+00:00,False,False,,"Vojtech,Stepancik,Utils,Patha",-1,False,1.0.1
+Gennady Verdel,2016-07-03T13:21:13.443Z,126,656,This package provides facilities for writing integration and end-to-end tests using NUnit.,Attest.Tests.NUnit,False,2017-12-15T19:34:57.913+00:00,True,False,This package provides facilities for writing integration and end-to-end tests using NUnit.,,5179,False,1.3.1
+sta,2013-10-22T07:57:45.53Z,43209,1641,A C# implementation of the WebSocket protocol client and server.,WebSocketSharp,True,1899-12-31T16:00:00-08:00,False,False,,WebSocket,172557,False,1.0.3-rc1
+Christian Del Bianco,2016-07-03T13:16:06.56Z,329,656,"SqlTableDependency is a high-level implementation to access table record change notifications from SQL Server.
+
+This class allows you to create a dependency to detect changes on a database table. Every change will trigger a notification messages contains values for the updated, inserted or deleted record, avoid you to execute a further select to update your application data.
+
+If you want to use record change notifications without paying attention to the underlying Service Broker infrastructure, the SqlTableDependency class is your choice.
+
+The SqlTableDependency class represents a notification dependency between an application and a SQL Server Table. When you use SqlTableDependency to get notifications, this componenet provides the low-level implementation creating the Queue and Service Broker.
+
+In this way SqlTableDependency class provides access to notifications without knowing anything about the underlying Service Broker infrastructure. Once a record changed happens, SqlTableDependency's event subscribers are notified.",SqlTableDependency,False,2017-05-26T11:49:51.877-07:00,True,False,"SqlTableDependency is a high-level implementation to access table record change notifications from SQL Server. 
+
+This class allows you to create a dependency to detect changes on a database table. Every change will trigger a notification messages contains values for the updated, inserted or deleted record, avoid you to execute a further select to update your application data.","SQL,Server,dependency,notifications,service,broker,queue,alerts,messages",33564,False,4.6.1
+Zeus,2016-06-28T00:35:28.367Z,1,661,Biblioteca para geração de nf-e e nfc-e.,Zeus.Net.NFe.NFCe,False,2018-04-19T13:22:41.1+00:00,True,False,,"nfc-e,nf-e,nfce,nfe",8018,False,1.0.1.154
+Zeus,2016-07-03T13:09:11.443Z,1,656,Biblioteca para geração de nf-e e nfc-e.,Zeus.Net.NFe.NFCe,False,2018-04-19T13:22:41.1+00:00,True,False,,"nfc-e,nf-e,nfce,nfe",8018,False,1.0.1.158
+Zeus,2016-07-03T13:09:11.443Z,1,656,Biblioteca para geração de nf-e e nfc-e.,Zeus.Net.NFe.NFCe,False,2018-04-19T13:22:41.1+00:00,True,False,,"nfc-e,nf-e,nfce,nfe",8018,False,1.0.1.158
+Roman Kuzmin,2016-07-03T13:07:01.69Z,656,656,"RightControl is the FarNet module for Far Manager.
+
+It alters some actions in editors, edit controls, and the command line.
+New actions are similar to what many popular editors do on stepping,
+selecting, deleting by words, and etc.
+
+---
+
+To install FarNet packages, follow these steps:
+
+https://raw.githubusercontent.com/nightroman/FarNet/master/Install-FarNet.en.txt
+
+---",FarNet.RightControl,False,2016-07-03T06:07:01.69-07:00,True,False,"RightControl is the FarNet module for Far Manager.
+
+It alters some actions in editors, edit controls, and the command line.
+New actions are similar to what many popular editors do on stepping,
+selecting, deleting by words, and etc.
+
+---
+
+To install FarNet packages, follow these steps:
+
+https://raw.githubusercontent.com/nightroman/FarNet/master/Install-FarNet.en.txt
+
+---","FarManager,FarNet,Module",1237,False,2.2.1
+"Daniel Cazzulino,kzu",2015-06-29T20:44:34.803Z,43209,1026,"Provides the best-practice, NuGet-team blessed, most reliable and performant way of performing
+			automatic NuGet package restore across MSBuild and XBuild, without causing unnecessary extra
+			restores from Visual Studio and Xamarin Studio, which handle the restore already by themselves.
+
+			The existing and obsolete import of NuGet.targets is explicitly advised against by the NuGet team.
+			This new approach leverages the built-in support in MSBuild for solution-level MSBuild imports
+			so that restoring packages is done only ONCE for an entire solution, and it's NOT used when doing
+			IDE builds.",NuGet.Restore,True,1899-12-31T16:00:00-08:00,False,False,"Provides the best-practice, NuGet-team blessed, most reliable and performant way of performing
+			automatic NuGet package restore across MSBuild and XBuild, without causing unnecessary extra
+			restores from Visual Studio and Xamarin Studio, which handle the restore already by themselves.","msbuild,nuget",-1,False,1.0.0-pre
+"Daniel Cazzulino,kzu",2015-06-29T20:51:54.04Z,43209,1026,"Provides the best-practice, NuGet-team blessed, most reliable and performant way of performing
+			automatic NuGet package restore across MSBuild and XBuild, without causing unnecessary extra
+			restores from Visual Studio and Xamarin Studio, which handle the restore already by themselves.
+
+			The existing and obsolete import of NuGet.targets is explicitly advised against by the NuGet team.
+			This new approach leverages the built-in support in MSBuild for solution-level MSBuild imports
+			so that restoring packages is done only ONCE for an entire solution, and it's NOT used when doing
+			IDE builds.",NuGet.Restore,True,1899-12-31T16:00:00-08:00,False,False,"Provides the best-practice, NuGet-team blessed, most reliable and performant way of performing
+			automatic NuGet package restore across MSBuild and XBuild, without causing unnecessary extra
+			restores from Visual Studio and Xamarin Studio, which handle the restore already by themselves.","msbuild,nuget",-1,False,1.0.1-pre
+romgerman,2016-07-03T13:06:13.09Z,43209,656,"Hitbox API wrapper for UWP 8.1
+Docs https://github.com/romgerman/HitboxUWP8/wiki",HitboxUWP8,False,1899-12-31T16:00:00-08:00,False,False,,"hitbox,api,livestream,windows,phone,uwp,win8.1,wp",-1,False,0.0.1.4
+Roman Kuzmin,2016-07-03T13:03:50.65Z,25,656,"FolderChart is the FarNet module for Far Manager.
+
+For the current directory it calculates file and directory sizes and
+shows the results as a chart in a modal window with some interaction.
+
+Requires .NET Framework 4.0
+
+---
+
+To install FarNet packages, follow these steps:
+
+https://raw.githubusercontent.com/nightroman/FarNet/master/Install-FarNet.en.txt
+
+---",FarNet.FolderChart,False,2018-03-26T15:08:26.827+00:00,True,False,"FolderChart is the FarNet module for Far Manager.
+
+For the current directory it calculates file and directory sizes and
+shows the results as a chart in a modal window with some interaction.
+
+Requires .NET Framework 4.0
+
+---
+
+To install FarNet packages, follow these steps:
+
+https://raw.githubusercontent.com/nightroman/FarNet/master/Install-FarNet.en.txt
+
+---","FarManager,FarNet,Module",1028,False,2.1.1
+Roman Kuzmin,2016-07-03T13:01:44.56Z,656,656,"Explore is the FarNet module for Far Manager.
+
+It searches in FarNet module panels and opens the result panel.
+It is invoked from the command line with the prefix ""Explore:"".
+
+---
+
+To install FarNet packages, follow these steps:
+
+https://raw.githubusercontent.com/nightroman/FarNet/master/Install-FarNet.en.txt
+
+---",FarNet.Explore,False,2016-07-03T06:01:44.56-07:00,True,False,"Explore is the FarNet module for Far Manager.
+
+It searches in FarNet module panels and opens the result panel.
+It is invoked from the command line with the prefix ""Explore:"".
+
+---
+
+To install FarNet packages, follow these steps:
+
+https://raw.githubusercontent.com/nightroman/FarNet/master/Install-FarNet.en.txt
+
+---","FarManager,FarNet,Module",889,False,2.1.1
+Roman Kuzmin,2016-07-03T12:58:32.21Z,619,656,"Drawer is the FarNet module for Far Manager.
+
+It provides a few editor color tools (drawers).
+
+---
+
+To install FarNet packages, follow these steps:
+
+https://raw.githubusercontent.com/nightroman/FarNet/master/Install-FarNet.en.txt
+
+---",FarNet.Drawer,False,2016-08-08T23:07:09.92-07:00,True,False,"Drawer is the FarNet module for Far Manager.
+
+It provides a few editor color tools (drawers).
+
+---
+
+To install FarNet packages, follow these steps:
+
+https://raw.githubusercontent.com/nightroman/FarNet/master/Install-FarNet.en.txt
+
+---","FarManager,FarNet,Module",1072,False,1.1.1
+Roman Kuzmin,2016-07-03T12:55:33.68Z,656,656,"CopyColor is the FarNet module for Far Manager.
+
+It copies selected text with colors from the editor to the clipboard
+using HTML clipboard format. This text can be pasted into Microsoft
+Word, Outlook, and some other editors.
+
+---
+
+To install FarNet packages, follow these steps:
+
+https://raw.githubusercontent.com/nightroman/FarNet/master/Install-FarNet.en.txt
+
+---",FarNet.CopyColor,False,2016-07-03T05:55:33.68-07:00,True,False,"CopyColor is the FarNet module for Far Manager.
+
+It copies selected text with colors from the editor to the clipboard
+using HTML clipboard format. This text can be pasted into Microsoft
+Word, Outlook, and some other editors.
+
+---
+
+To install FarNet packages, follow these steps:
+
+https://raw.githubusercontent.com/nightroman/FarNet/master/Install-FarNet.en.txt
+
+---","FarManager,FarNet,Module",874,False,2.1.1
+"Daniele Sassoli,Marco Bicchi",2016-07-03T12:47:57.363Z,427,656,ezPrint SDK Wrapper for .NET,ezPrint.SDK,False,2017-02-17T04:00:57.64-08:00,True,False,Wrapper .NET che permette di utilizzare l'SDK di ezPrint esponendo i metodi e gestendo il canale di comunicazione con il server di riferimento.,"SDK,Wrapper,ezPrint",4677,False,1.0.5.1
+Roman Kuzmin,2014-03-27T05:54:38.637Z,25,1485,"FolderChart is the FarNet module for Far Manager.
+
+For the current directory it calculates file and directory sizes and
+shows the results as a chart in a modal window with some interaction.
+
+Requires .NET Framework 4.0
+
+---
+
+To install and update FarNet packages, follow these steps:
+
+https://farnet.googlecode.com/svn/trunk/Install-FarNet.en.txt
+
+---",FarNet.FolderChart,False,2018-03-26T15:08:26.827+00:00,True,False,"FolderChart is the FarNet module for Far Manager.
+
+For the current directory it calculates file and directory sizes and
+shows the results as a chart in a modal window with some interaction.
+
+Requires .NET Framework 4.0
+
+---
+
+To install and update FarNet packages, follow these steps:
+
+https://farnet.googlecode.com/svn/trunk/Install-FarNet.en.txt
+
+---","FarManager,FarNet,Module",1028,False,2.1.0
+Roman Kuzmin,2014-03-27T05:46:33.33Z,656,1485,"Explore is the FarNet module for Far Manager.
+
+It searches in FarNet module panels and opens the result panel.
+It is invoked from the command line with the prefix ""Explore:"".
+
+---
+
+To install and update FarNet packages, follow these steps:
+
+https://farnet.googlecode.com/svn/trunk/Install-FarNet.en.txt
+
+---",FarNet.Explore,False,2016-07-03T06:01:44.56-07:00,True,False,"Explore is the FarNet module for Far Manager.
+
+It searches in FarNet module panels and opens the result panel.
+It is invoked from the command line with the prefix ""Explore:"".
+
+---
+
+To install and update FarNet packages, follow these steps:
+
+https://farnet.googlecode.com/svn/trunk/Install-FarNet.en.txt
+
+---","FarManager,FarNet,Module",889,False,2.1.0
+Roman Kuzmin,2014-03-27T05:23:18.28Z,656,1485,"CopyColor is the FarNet module for Far Manager.
+
+It copies selected text with colors from the editor to the clipboard
+using HTML clipboard format. This text can be pasted into Microsoft
+Word, Outlook, and some other editors.
+
+---
+
+To install and update FarNet packages, follow these steps:
+
+https://farnet.googlecode.com/svn/trunk/Install-FarNet.en.txt
+
+---",FarNet.CopyColor,False,2016-07-03T05:55:33.68-07:00,True,False,"CopyColor is the FarNet module for Far Manager.
+
+It copies selected text with colors from the editor to the clipboard
+using HTML clipboard format. This text can be pasted into Microsoft
+Word, Outlook, and some other editors.
+
+---
+
+To install and update FarNet packages, follow these steps:
+
+https://farnet.googlecode.com/svn/trunk/Install-FarNet.en.txt
+
+---","FarManager,FarNet,Module",874,False,2.1.0
+Roman Kuzmin,2014-03-27T05:40:56.307Z,619,1485,"Drawer is the FarNet module for Far Manager.
+
+It provides a few editor color tools (drawers).
+
+---
+
+To install and update FarNet packages, follow these steps:
+
+https://farnet.googlecode.com/svn/trunk/Install-FarNet.en.txt
+
+---",FarNet.Drawer,False,2016-08-08T23:07:09.92-07:00,True,False,"Drawer is the FarNet module for Far Manager.
+
+It provides a few editor color tools (drawers).
+
+---
+
+To install and update FarNet packages, follow these steps:
+
+https://farnet.googlecode.com/svn/trunk/Install-FarNet.en.txt
+
+---","FarManager,FarNet,Module",1072,False,1.1.0
+"Daniele Sassoli,Marco Bicchi",2016-07-03T12:38:04.967Z,427,656,ezPrint SDK Wrapper for .NET,ezPrint.SDK,False,2017-02-17T04:00:57.64-08:00,True,False,Wrapper .NET che permette di utilizzare l'SDK di ezPrint esponendo i metodi e gestendo il canale di comunicazione con il server di riferimento.,"SDK,Wrapper,ezPrint",4677,False,1.0.5
+Roman Kuzmin,2014-04-19T04:48:39.443Z,656,1462,"RightControl is the FarNet module for Far Manager.
+
+It alters some actions in editors, edit controls, and the command line.
+New actions are similar to what many popular editors do on stepping,
+selecting, deleting by words, and etc.
+
+---
+
+To install FarNet packages, follow these steps:
+
+https://farnet.googlecode.com/svn/trunk/Install-FarNet.en.txt
+
+---",FarNet.RightControl,False,2016-07-03T06:07:01.69-07:00,True,False,"RightControl is the FarNet module for Far Manager.
+
+It alters some actions in editors, edit controls, and the command line.
+New actions are similar to what many popular editors do on stepping,
+selecting, deleting by words, and etc.
+
+---
+
+To install FarNet packages, follow these steps:
+
+https://farnet.googlecode.com/svn/trunk/Install-FarNet.en.txt
+
+---","FarManager,FarNet,Module",1237,False,2.2.0
+Niclas Olofsson,2016-07-03T12:26:48.46Z,77,656,MiNET - a Minecraft PocketEdition Server,MiNET,False,2018-02-02T22:13:57.123+00:00,True,False,,"MiNET,Plugin,API,MCPE,Minecraft,PocketEdition",143965,False,1.0.1115
+sta,2013-10-22T07:57:45.53Z,43209,1641,A C# implementation of the WebSocket protocol client and server.,WebSocketSharp,True,1899-12-31T16:00:00-08:00,False,False,,WebSocket,172557,False,1.0.3-rc1
+Monzoom (Poul Foged),2016-07-03T12:16:01.287Z,128,656,"Start Elasticsearch from .NET for integration tests. Contains both java runtime and elasticsearch embedded in the dll. 
+    The version number follows the version of the embedded Elasticsearch. With Jvm updates and other changes only the last digit is increased.",elasticsearch-inside,True,2017-12-13T10:50:45.24+00:00,True,False,,"elasticsearch,elastic,integration,tests",24030,False,5.0.0-alpha2
+Nick Lucas,2016-07-03T12:14:37.993Z,607,656,RedBeanPHP-inspired data access layer,LimeBean,False,2016-08-21T11:17:34.65-07:00,True,False,,"orm,mysql,sqlite,postgres,postgresql,netcore",3025,False,1.2.4
+TestStack.BDDfy,2016-07-03T12:08:27.987Z,572,656,TestStack.BDDfy,TestStack.BDDfy,False,2016-09-25T08:38:35.483-07:00,True,False,,,155051,False,4.3.0
+Simon Cropp,2016-07-03T12:03:26.933Z,369,656,Wraps Marked.js (https://github.com/chjj/marked/) to make it usable from .net.,Strike.V8,False,2017-04-15T17:16:04.473-07:00,True,False,,"Marked.js,Marked,Markdown",4336,False,1.6.0
+Simon Cropp,2016-07-03T12:03:20.243Z,369,656,Wraps Marked.js (https://github.com/chjj/marked/) to make it usable from .net.,Strike.Jint.Merged,False,2017-04-15T17:15:56.75-07:00,True,False,,"Marked.js,Marked,Markdown",2576,False,1.6.0
+Simon Cropp,2016-07-03T12:03:13.97Z,369,656,Wraps Marked.js (https://github.com/chjj/marked/) to make it usable from .net.,Strike.Jint,False,2017-04-15T17:15:48.327-07:00,True,False,,"Marked.js,Marked,Markdown",2788,False,1.6.0
+Simon Cropp,2016-07-03T12:03:07.7Z,369,656,Wraps Marked.js (https://github.com/chjj/marked/) to make it usable from .net.,Strike.IE.Merged,False,2017-04-15T17:15:40.65-07:00,True,False,,"Marked.js,Marked,Markdown",6432,False,1.6.0
+Simon Cropp,2016-07-03T12:03:01.23Z,369,656,Wraps Marked.js (https://github.com/chjj/marked/) to make it usable from .net.,Strike.IE,False,2017-04-15T17:15:33.053-07:00,True,False,,"Marked.js,Marked,Markdown",4862,False,1.6.0
+"alien-mcl,tpluscode",2016-07-03T12:01:46.58Z,402,656,RomanticWeb Json-LD processor,RomanticWeb.JsonLd,False,2017-03-14T18:43:41.29+00:00,True,False,,"rdf,orm,jsonld,json-ld,json,lnked-data,semanticweb,semantic",1625,False,0.4.0
+"alien-mcl,tpluscode",2016-07-03T12:01:24.127Z,402,656,Fody weaver plugin for RomanticWeb instrumentation,RomanticWeb.Fody,False,2017-03-14T18:43:21.94+00:00,True,False,,RomanticWeb.Fody,1865,False,0.4.0
+"alien-mcl,tpluscode",2016-07-03T12:01:00.503Z,402,656,RomanticWeb integration with triple stores using dotNetRDF,RomanticWeb.dotNetRDF,False,2017-03-14T18:43:01.36+00:00,True,False,,"rdf,orm,semanticweb,semantic,sparql,linq",1829,False,0.4.0
+"alien-mcl,tpluscode",2016-07-03T12:00:22.727Z,402,656,RDF-Object Mapping for the Semantic Web,RomanticWeb,False,2017-03-14T18:42:40.353+00:00,True,False,,"rdf,orm,semanticweb,semantic,sparql,linq",2150,False,0.4.0
+Gennady Verdel,2016-07-03T11:58:41.373Z,126,656,This package provides facilities for writing integration and end-to-end tests using SpecFlow.,Attest.Tests.SpecFlow,False,2017-12-15T19:40:21.377+00:00,True,False,This package provides facilities for writing integration and end-to-end tests using SpecFlow.,,4157,False,1.3.2
+Monzoom (Poul Foged),2016-07-03T11:52:10.243Z,128,656,"Start Elasticsearch from .NET for integration tests. Contains both java runtime and elasticsearch embedded in the dll. 
+    The version number follows the version of the embedded Elasticsearch. With Jvm updates and other changes only the last digit is increased.",elasticsearch-inside,False,2017-12-13T10:50:45.24+00:00,True,False,,"elasticsearch,elastic,integration,tests",24030,False,1.7.3.1
+zhongzf@126.com,2016-07-03T11:44:26.84Z,656,656,MongoDB supported driver for MongoDB.  See http://www.mongodb.org/display/DOCS/CSharp+Language+Center for more details.,RaisingStudio.MongoDB.Driver,False,2016-07-03T11:44:26.84+00:00,True,False,,,856,False,2.2.5
+RaisingStudio.MongoDB.Driver.GridFS,2016-07-03T11:44:52.727Z,656,656,RaisingStudio.MongoDB.Driver.GridFS,RaisingStudio.MongoDB.Driver.GridFS,False,2016-07-03T11:44:52.727+00:00,True,False,,,628,False,2.2.5
+zhongzf@126.com,2016-07-03T11:43:33.803Z,656,656,MongoDB supported BSON library. See http://www.mongodb.org/display/DOCS/CSharp+Language+Center for more details.,RaisingStudio.MongoDB.Bson,False,2016-07-03T11:43:33.803+00:00,True,False,,,1235,False,2.2.5
+zhongzf@126.com,2016-07-03T11:44:03.137Z,656,656,MongoDB supported Driver Core library. See http://www.mongodb.org/display/DOCS/CSharp+Language+Center for more details.,RaisingStudio.MongoDB.Driver.Core,False,2016-07-03T11:44:03.137+00:00,True,False,,,824,False,2.2.5
+RaisingStudio.MongoDB.Driver.GridFS,2016-07-03T11:44:52.727Z,656,656,RaisingStudio.MongoDB.Driver.GridFS,RaisingStudio.MongoDB.Driver.GridFS,False,2016-07-03T11:44:52.727+00:00,True,False,,,628,False,2.2.5
+zhongzf@126.com,2016-07-03T11:44:26.84Z,656,656,MongoDB supported driver for MongoDB.  See http://www.mongodb.org/display/DOCS/CSharp+Language+Center for more details.,RaisingStudio.MongoDB.Driver,False,2016-07-03T11:44:26.84+00:00,True,False,,,856,False,2.2.5
+zhongzf@126.com,2016-07-03T11:43:33.803Z,656,656,MongoDB supported BSON library. See http://www.mongodb.org/display/DOCS/CSharp+Language+Center for more details.,RaisingStudio.MongoDB.Bson,False,2016-07-03T11:43:33.803+00:00,True,False,,,1235,False,2.2.5
+zhongzf@126.com,2016-07-03T11:44:03.137Z,656,656,MongoDB supported Driver Core library. See http://www.mongodb.org/display/DOCS/CSharp+Language+Center for more details.,RaisingStudio.MongoDB.Driver.Core,False,2016-07-03T11:44:03.137+00:00,True,False,,,824,False,2.2.5
+Irina Gudkova,2016-07-03T11:39:27.237Z,650,656,"The library implements recorder and player of HTTP requests. When recording, a request to a remote service and its live response are serialized to JSON and saved to a file (cassette), so that next time the same request is made through the player it can be served with the previously recorded response. This scenario is common for integration tests running HTTP requests in isolation.",HttpMockPlayer,False,2016-07-09T11:47:40.64+00:00,True,False,,"http,mock,json,testing",864,False,0.1.0
+Gennady Verdel,2016-07-03T11:34:14.787Z,126,656,This package provides facilities for writing integration and end-to-end tests using SpecFlow.,Attest.Tests.SpecFlow,False,2017-12-15T19:40:21.377+00:00,True,False,This package provides facilities for writing integration and end-to-end tests using SpecFlow.,,4157,False,1.3.1
+Gennady Verdel,2016-07-03T11:29:41.18Z,126,656,"This package provides facilities for writing tests, including integration and end-to-end.",Attest.Tests.Core,False,2017-12-15T19:31:24.59+00:00,True,False,"This package provides facilities for writing tests, including integration and end-to-end.",,6635,False,1.3.1
+MiYABiS,2016-07-03T11:24:05.683Z,259,656,DI&AOP framework Moca.NET Web Application,Moca.NETWebApp,True,2017-08-04T09:50:58.683+00:00,True,False,DI&AOP framework Moca.NET Web Application,"AOP,DI,ASP.NET",7415,False,2.1.0-beta
+Ackara,2016-07-03T11:20:15.42Z,635,656,A portable class library that allows you to generate sample data based on your object type using the Mockaroo API.,Gigobyte.Mockaroo.Core,False,2016-07-24T10:42:38.27-07:00,True,False,,"sample,data,mockaroo,rest,api",1421,False,1.1.16185
+Rspective,2016-06-26T16:17:31.117Z,74,663,".Net SDK for Voucherify - coupons, vouchers, promo codes http://www.voucherify.io http://www.voucherify.io",Voucherify.Client,False,2018-02-05T09:56:52.157+00:00,False,False,,"Voucher,Coupon,Discount,Voucherify,Voucherify.io,Rspective",3108,False,0.1.0
+Rspective,2016-07-03T08:40:11.133Z,74,656,".Net SDK for Voucherify - coupons, vouchers, promo codes-  http://www.voucherify.io",Voucherify.Client,False,2018-02-05T09:56:52.157+00:00,False,False,,"Voucher,Coupon,Discount,Voucherify,Voucherify.io,Rspective",3108,False,0.2.0
+Rspective,2016-07-03T11:15:57.933Z,74,656,".Net SDK for Voucherify - coupons, vouchers, promo codes-  http://www.voucherify.io",Voucherify.Client,False,2018-02-05T09:56:52.157+00:00,True,False,,"Voucher,Coupon,Discount,Voucherify,Voucherify.io,Rspective",3108,False,1.0.0
+ZHEN YUAN,2016-07-03T10:50:16.52Z,43209,656,This package is designed for calling web services.,Framework.Utilities.Services,False,1899-12-31T16:00:00-08:00,False,False,,,1971,False,1.0.5
+Copyleaks LTD,2016-07-03T10:38:12.77Z,47,656,Copyleaks is a popular advanced online plagiarism checker. This library provides access to Copyleaks cloud and scans your content for copyright infringement.,CopyleaksAPI,False,2018-03-04T10:01:41.037+00:00,True,False,,"plagiarism,copyright,copyrights,Copyleaks,infringement,checker,detector",4752,False,2.1.2
+Serj-Tm,2016-07-03T10:23:40.12Z,36,656,NitroBolt.Wui C# Server-Side React,NitroBolt.Wui,False,2018-03-15T23:55:34.303+00:00,True,False,,"Asp.Net,Server-Side,React,Wui",5424,False,2.0.27
+"Hank Beasley,Durwella LLC",2016-07-03T10:22:41.83Z,390,656,Durwella.VolumeData.Azure,Durwella.VolumeData.Azure,False,2017-03-26T02:34:59.19-07:00,True,False,,,3154,False,0.1.6
+"Hank Beasley,Durwella LLC",2016-07-03T10:22:05.5Z,136,656,Durwella.VolumeData.Core,Durwella.VolumeData.Core,False,2017-12-05T23:32:04.36+00:00,True,False,,,3693,False,0.1.6
+Cragon,2016-07-03T10:22:16.043Z,43209,656,GF.Unity.Common,GF.Unity.Common,False,1899-12-31T16:00:00-08:00,False,False,GF.Unity.Common,GF.Unity.Common,-1,False,1.0.3
+stanac,2016-07-03T10:13:06.867Z,482,656,"EasyCrypto is .NET library that helps with
+- Encryption and decryption of streams, byte arrays and strings
+- Password generating, hashing and validating
+- Generating crypto secure random bytes, integers and doubles",EasyCrypto,False,2016-12-24T22:32:28.723+00:00,True,False,,"cryptography,encryption,decryption,crypto,aes,aes256,random,password",4698,False,1.1.0
+Jason Jarrett,2016-07-03T10:03:03.387Z,656,656,TypeScript Definitions (d.ts) for spin. Generated based off the DefinitelyTyped repository [git commit: 19b6e80e68f7dec21e453c225680fe3d9899e946]. http://github.com/DefinitelyTyped,spin.TypeScript.DefinitelyTyped,False,2016-07-03T03:03:03.387-07:00,True,False,,"TypeScript,JavaScript",23079,False,0.2.9
+ArchaicSoft,2016-07-03T09:56:04.153Z,43209,656,"Contains Binary and Text/Ini(Style), file handeling as well as de/compression, and de/serialization and XmlSerialization.",ArchaicIO,False,1899-12-31T16:00:00-08:00,False,False,File and Data handeling library.,,-1,False,2.0.0
+Iris Sakura,2016-07-03T09:45:47.06Z,404,656,This library provides data-paging functionality and pager UI for ASP.NET Core MVC projects.,Sakura.AspNetCore.Mvc.PagedList,False,2017-03-12T06:37:25.663+00:00,True,False,This library provides data-paging functionality and pager UI for ASP.NET Core MVC projects.,"ASP.NET,ASP.NETCore,MVC,MVCCore,Paging,Page,Pager,Bootstrap",14948,False,2.0.4
+Iris Sakura,2016-07-03T09:45:47.06Z,404,656,This library provides data-paging functionality and pager UI for ASP.NET Core MVC projects.,Sakura.AspNetCore.Mvc.PagedList,False,2017-03-12T06:37:25.663+00:00,True,False,This library provides data-paging functionality and pager UI for ASP.NET Core MVC projects.,"ASP.NET,ASP.NETCore,MVC,MVCCore,Paging,Page,Pager,Bootstrap",14948,False,2.0.4
+Gmich,2016-07-03T09:43:31.42Z,309,656,A lightweight functional results library for synchronous chained code execution.,Gmich.Results,False,2017-06-15T02:36:57.643-07:00,True,False,,"result,functional,gmich",530,False,1.1.1
+Martin Halliday,2016-07-03T09:30:26.593Z,277,656,Owin middleware to generate visualization of the OWIN pipeline,Owin.Framework.RouteVisualizer,False,2017-07-17T06:31:28.053+00:00,True,False,Generates an SVG visualization of the OWIN pipeline. Needs Owin.Framework to work.,"OWIN,framework,svg,pipeline,visualization",1968,False,2.1.0
+Martin Halliday,2016-07-03T09:30:05.467Z,277,656,Owin middleware to document other Owin middleware,Owin.Framework.Documenter,False,2017-07-16T23:28:47.627-07:00,True,False,Generates documentation of all endpoints in a web application.,"OWIN,framework,documentation",1401,False,2.1.0
+Martin Halliday,2016-07-03T09:29:44.55Z,277,656,Owin middleware to generate analytics report,Owin.Framework.AnalysisReporter,False,2017-07-17T06:27:26.827+00:00,True,False,Generates reports in various formats from the middleware components that gather analytics data.,"OWIN,framework,analytics,report",1750,False,2.1.0
+Martin Halliday,2016-07-03T09:25:56.013Z,275,656,Owin middleware to catch and report exceptions,Owin.Framework.ExceptionReporter,False,2017-07-18T17:08:00.623-07:00,True,False,Catches exceptions in middleware and reports them via email. If calling from local machine displays detailed technical information.,"OWIN,framework,exception",1336,False,2.1.0
+bytesoftwo,2016-07-03T09:21:25.11Z,656,656,Contains SSISTester framework with samples.,SSISTester,True,2016-07-03T02:21:25.11-07:00,True,False,SSISTester is the framework that makes unit and integration testing of SSIS packages possible.,"SSIS,SQL,Server,Unit,Testing,dtsx,Packages",1493,False,3.0.0-b236
+www.github.com/HelloKitty,2016-07-03T09:17:36.81Z,656,656,Easyception is a fluent API for managing exceptions.,Easyception,False,2016-07-03T09:17:36.81+00:00,True,False,,"Easyception,Easy,Exception,EasyException,HelloKitty,Hello,Kitty,Ception",1654,False,2.0.0
+Dev Team Inc.,2016-07-03T09:14:55.247Z,191,656,Necessary libraries for custom DeploymentPlanModifier implementation.,DeploymentPlanModifierDependencies,False,2017-10-11T05:52:06.083+00:00,True,False,,"DACPAC,Deploy,DeploymentPlanModifier",339,False,0.0.1
+The Fr8 Company,2016-07-03T09:13:36.09Z,43209,656,A set of classes to help developers easily start developing their Fr8 terminals.,Fr8.TerminalBase,True,1899-12-31T16:00:00-08:00,False,False,,,53899,False,1.0.2.11859-dev
+Martin Knafve,2016-07-03T08:57:08.32Z,611,656,Bitifier.Configuration simplifies centralized configuration.,Bitifier.Configuration,False,2016-08-17T06:24:07.887-07:00,True,False,,"centralized,configuration,encryption",825,False,0.1.0
+Leonard Sperry,2016-07-03T08:53:03.94Z,618,656,A library for running tasks on schedules.,Chroniton,False,2016-08-10T22:33:07.423+00:00,True,False,,"Scheduling,Tasks",4157,False,1.0.0
+"Malcolm Crowe,Lex Li,and other contributors.",2016-07-03T08:49:48.513Z,8,656,"#SNMP (SharpSNMP) Library is an open source library for developers who target Microsoft .NET/Xamarin/Mono platforms. It's developed in C# and can be used for F#, VB.NET, Oxygene, and more.",Lextm.SharpSnmpLib,True,2018-04-12T14:28:48.867+00:00,True,False,#SNMP open source SNMP library for .NET and Mono.,snmp,51369,True,9.0.2-rc
+yojimbo87,2016-07-03T08:47:18.683Z,535,656,ArangoDB-NET is C# based driver for .NET/mono framework which implements ArangoDB REST API.,ArangoDB-NET,False,2016-11-01T02:22:51.553-07:00,True,False,,"arango,arangodb,database,document,graph,C#,.net,mono",6681,False,0.10.0
+Boris Modylevsky,2016-07-03T08:41:50.57Z,43209,656,"Toscana, which stands for TOSCA Net Analyzer, is a .NET library for validating, parsing and analyzing TOSCA YAML format.",Toscana,False,1900-01-01T00:00:00+00:00,False,False,,"cloud,orchestration,TOSCA,OASIS,YAML,yml",20802,False,0.0.0.60
+Rspective,2016-07-03T08:40:11.133Z,74,656,".Net SDK for Voucherify - coupons, vouchers, promo codes-  http://www.voucherify.io",Voucherify.Client,False,2018-02-05T09:56:52.157+00:00,True,False,,"Voucher,Coupon,Discount,Voucherify,Voucherify.io,Rspective",3108,False,0.2.0
+jjj,2016-07-03T08:33:38.713Z,656,656,My package description.,JW.Libraries.Common,False,2016-07-03T01:33:38.713-07:00,True,False,,,195,False,0.9.0
+Streamcoders.com,2016-07-03T08:22:58.81Z,361,656,Is a comprehensive library for handling audio/video codecs and streaming technologies.,Streamcoders.MediaSuite.x64,False,2017-04-24T08:51:08.597+00:00,True,False,,"audio,video,streaming,html5,rtsp,rtp,h.264,vp8",101928,False,4.0.1144
+Streamcoders.com,2016-07-03T08:22:41.383Z,361,656,Is a comprehensive library for handling audio/video codecs and streaming technologies.,Streamcoders.MediaSuite.x86,False,2017-04-24T01:50:45.473-07:00,True,False,,"audio,video,streaming,html5,rtsp,rtp,h.264,vp8",102824,False,4.0.1144
+Boris Modylevsky,2016-07-03T08:17:37.93Z,43209,656,"Toscana, which stands for TOSCA Net Analyzer, is a .NET library for validating, parsing and analyzing TOSCA YAML format.",Toscana,False,1900-01-01T00:00:00+00:00,False,False,,"cloud,orchestration,TOSCA,OASIS,YAML,yml",20802,False,0.0.0.59
+Philip Hoppe,2016-07-03T08:11:16.593Z,13,656,"Managed api for FileZilla FTP server. Primarily for automated user/group management, but all functionallity in the FileZilla Server interface is supported.",Miracle.FileZilla.Api,False,2018-04-07T13:46:08.777+00:00,True,False,,"FileZilla,FTP,server,api,create,user,users,group,groups,setting,settings,automate,automated,state",4793,False,3.0.3
+latticework,2016-07-03T08:05:17.097Z,1733,656,latticework.cs,latticework.cs,False,2013-07-22T14:32:56.307+00:00,True,False,,,312286,False,0.0.1750
+latticework,2016-07-03T08:05:17.28Z,1733,656,latticework.cs,latticework.cs,False,2013-07-22T14:32:56.307+00:00,True,False,,,312286,False,0.0.1751
+Meinrad Jean-Richard,2016-07-03T07:55:44.63Z,438,656,"This Package contains a extensible Map Control for Universal Windows Apps (Windows Phone, Desktop, Tablet, UWP etc.)
+
+			Supported Maps:
+			- OpenStreetMap
+			- Google
+			- Custom",UniversalMapControl,False,2017-02-06T12:24:59.503-08:00,True,False,,"Map,MapControl,XAML,Windows,Phone,OSM,OpenStreetMap,UWP,10,Google,Maps,Open,Street",6208,False,0.3.35
+王 玉才,2016-07-03T07:53:21.207Z,656,656,Directive for AngularJS 1.5.3 or Above Editions.,angular-exui-editabledroplist,False,2016-07-03T00:53:21.207-07:00,True,False,MIT License,"angular.js,javascript",1792,False,1.0.7
+Philip Hoppe,2016-07-03T07:47:13.853Z,13,656,"Managed api for FileZilla FTP server. Primarily for automated user/group management, but all functionallity in the FileZilla Server interface is supported.",Miracle.FileZilla.Api,False,2018-04-07T13:46:08.777+00:00,True,False,,,4793,False,3.0.2
+Trackmatic Solutions (Pty) Ltd,2016-07-03T07:40:29.1Z,4,656,.Net rest client library for Trackmatic rest api,Trackmatic.Rest.Client,False,2018-04-16T14:28:01.123+00:00,True,False,,Trackmatic,19975,False,1.0.57
+Grzegorz Cebulak,2016-07-03T07:35:53.15Z,2,656,Web layer utilities package,CommonWeb,True,2018-04-18T12:46:33.137+00:00,True,False,,"MVC,layered,web,utility",22088,False,1.0.1-alpha999
+Boris Modylevsky,2016-07-03T07:35:25.303Z,43209,656,"Toscana, which stands for TOSCA Net Analyzer, is a .NET library for validating, parsing and analyzing TOSCA YAML format.",Toscana,False,1900-01-01T00:00:00+00:00,False,False,,"cloud,orchestration,TOSCA,OASIS,YAML,yml",20802,False,0.0.0.58
+Grzegorz Cebulak,2016-07-03T07:35:25.603Z,2,656,Business layer utilities package,CommonBL,True,2018-04-18T12:30:39.863+00:00,True,False,,"business-layer,utility",10409,False,1.0.3-alpha115
+Boris Modylevsky,2016-07-03T07:30:14.623Z,43209,656,"Toscana, which stands for TOSCA Net Analyzer, is a .NET library for validating, parsing and analyzing TOSCA YAML format.",Toscana,False,1900-01-01T00:00:00+00:00,False,False,,"cloud,orchestration,TOSCA,OASIS,YAML,yml",20802,False,0.0.0.57
+Boris Modylevsky,2016-07-03T07:25:17.067Z,43209,656,"Toscana, which stands for TOSCA Net Analyzer, is a .NET library for validating, parsing and analyzing TOSCA YAML format.",Toscana,False,1900-01-01T00:00:00+00:00,False,False,,"cloud,orchestration,TOSCA,OASIS,YAML,yml",20802,False,0.0.0.56
+"Hank Beasley,Durwella LLC",2016-07-03T06:53:42.18Z,136,656,Durwella.VolumeData.Core,Durwella.VolumeData.Core,False,2017-12-05T23:32:04.36+00:00,True,False,,,3693,False,0.1.5
+"Hank Beasley,Durwella LLC",2016-07-03T06:52:42.89Z,390,656,Durwella.VolumeData.Azure,Durwella.VolumeData.Azure,False,2017-03-26T02:34:59.19-07:00,True,False,,,3154,False,0.1.5
+biks,2016-07-03T06:51:39.42Z,656,656,Logging utility,bUtility.Logging,False,2016-07-02T23:51:39.42-07:00,True,False,,"biks,utility",700,False,0.0.0.1
+ERS-PC,2016-07-03T06:47:32.58Z,61,656,Description,MatrimonyDB,False,2018-02-18T05:37:30.857+00:00,True,False,,,7139,False,1.0.4
+qiniu,2016-07-03T06:12:58.96Z,656,656,Qiniu Cloud Storage SDK for .NET,DevZH.Qiniu,False,2016-07-03T19:00:43.23+00:00,False,False,,"Qiniu,netcore",2053,False,6.2.2.1
+"vmlf01,trafaelsilva",2016-07-03T06:40:47.673Z,656,656,Simple Odoo JSON-RPC Client for .Net Core 1.0,OdooRpc.CoreCLR.Client,False,2016-07-03T06:40:47.673+00:00,True,False,,"odoo,openerp,dotnet,code,json-rpc",1174,False,1.0.0
+Gorden OU,2016-07-03T05:11:36.087Z,207,656,Contains generally useful extensions for .NET Core.,Core.Extensions,False,2017-09-25T16:44:37.003+00:00,False,False,,"dotnet,core,extension",2104,False,0.3.0
+"vmlf01,trafaelsilva",2016-07-03T06:40:47.673Z,656,656,Simple Odoo JSON-RPC Client for .Net Core 1.0,OdooRpc.CoreCLR.Client,False,2016-07-03T06:40:47.673+00:00,True,False,,"odoo,openerp,dotnet,code,json-rpc",1174,False,1.0.0
+Gorden OU,2016-07-03T06:40:37.57Z,207,656,Contains generally useful extensions for .NET Core.,Core.Extensions,False,2017-09-25T16:44:37.003+00:00,True,False,,"dotnet,core,extension",2104,False,0.3.1
+Nyingi Maina,2016-07-03T06:25:01.307Z,484,656,"Inspired by MvvmCross for Xamarin.Android and Xamarin.iOS, this is a basic Mvvm library for WinForms that seeks to channel the ease, structure and clarity that simple, robust and predictable databinding brings to apps.",DashMVVM,False,2016-12-22T06:23:50.42+00:00,True,False,DashMVVM is a light-weight package that brings the structure of an Mvvm Framework to Windows Forms programming,"Windows,Forms,Mvvm,Framework,C#",2838,False,0.1.1
+qiniu,2016-07-03T06:12:58.96Z,656,656,Qiniu Cloud Storage SDK for .NET,DevZH.Qiniu,False,2016-07-03T19:00:43.23+00:00,True,False,,"Qiniu,netcore",2053,False,6.2.2.1
+qiniu,2016-07-03T06:12:58.96Z,656,656,Qiniu Cloud Storage SDK for .NET,DevZH.Qiniu,False,2016-07-03T19:00:43.23+00:00,True,False,,"Qiniu,netcore",2053,False,6.2.2.1
+"qiniu,杜晓宇",2016-07-03T06:03:27.98Z,656,656,Qiniu Cloud Storage SDK for .NET,DevZH.Qiniu,False,2016-07-03T19:00:43.23+00:00,False,False,,"Qiniu,netcore",2053,False,6.2.2
+"qiniu,杜晓宇",2016-07-03T06:03:27.98Z,656,656,Qiniu Cloud Storage SDK for .NET,DevZH.Qiniu,False,2016-07-03T19:00:43.23+00:00,True,False,,"Qiniu,netcore",2053,False,6.2.2
+"qiniu,杜晓宇",2016-07-03T06:03:27.98Z,656,656,Qiniu Cloud Storage SDK for .NET,DevZH.Qiniu,False,2016-07-03T19:00:43.23+00:00,True,False,,"Qiniu,netcore",2053,False,6.2.2
+xrainchen,2016-07-03T03:38:30.7Z,43209,656,Zinnia.Kernel.Inject是依赖Zinnia.Kernel.Inject派生出来的一个缓存类库,Zinnia.Cache,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Jalal,2016-07-03T05:31:11.023Z,320,656,This is utility library for proggasoft projects.,Proggasoft.Utility,False,2017-06-03T23:13:28.727-07:00,True,False,,,4375,False,2.0.5521
+Gorden OU,2016-07-03T05:11:36.087Z,207,656,Contains generally useful extensions for .NET Core.,Core.Extensions,False,2017-09-25T16:44:37.003+00:00,True,False,,"dotnet,core,extension",2104,False,0.3.0
+Nate-Wilkins,2016-07-03T05:05:51.637Z,656,656,Chocolatey MSBuild Targets,Chocolatey.MSBuild.Targets,False,2016-07-02T22:05:51.637-07:00,True,False,,"chocolatey,pack,choco,nuget",349,False,0.0.2
+路过秋天,2016-07-03T05:00:52.04Z,1,656,CYQ.Data is a data access layer (DAL) that provides a way to design an application with a clean separation of code into their functional areas within an application,cyqdata,False,2018-04-19T07:23:10.923+00:00,True,False,CYQ.Data is a data access layer (DAL)  that provides a way to design an application with a clean separation of code into their functional areas within an application,"CYQ.Data,ORM,ADO.NET",22149,False,5.6.1.4
+www.github.com/HelloKitty,2016-07-03T04:58:43.863Z,656,656,Easyception is a fluent API for managing exceptions.,Easyception,False,2016-07-03T09:17:36.81+00:00,True,False,,"Easyception,Easy,Exception,EasyException,HelloKitty,Hello,Kitty,Ception",1654,False,1.0.3
+xrainchen,2016-07-03T04:53:09.557Z,43209,656,Zinnia.Cache是由Zinnia.Kernel.Inject派生出来的一个缓存类库,Zinnia.Cache,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.1
+xrainchen,2016-07-03T03:38:30.7Z,43209,656,Zinnia.Kernel.Inject是依赖Zinnia.Kernel.Inject派生出来的一个缓存类库,Zinnia.Cache,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Matthew King,2016-07-03T04:33:06.61Z,265,656,Provides functionality to customize type and property descriptors at runtime. Exposes an easy-to-use fluent interface. Primarily intended to empower PropertyGrid binding.,DynamicDescriptors,False,2017-07-29T11:21:55.223+00:00,True,False,Runtime-customizable type and property descriptors.,"dynamic,type,property,descriptor",1277,False,1.3.1
+Nate-Wilkins,2016-07-03T04:29:29.88Z,656,656,Chocolatey MSBuild Targets,Chocolatey.MSBuild.Targets,False,2016-07-02T22:05:51.637-07:00,True,False,,"chocolatey,pack,choco,nuget",349,False,0.0.1
+Lee,2016-07-03T04:25:58.67Z,43209,656,基础设施 - WCF基础,ShSoft.Framework2016.Infrastructure.WCF,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.4
+Lee,2016-07-03T04:25:58.67Z,43209,656,基础设施 - WCF基础,ShSoft.Framework2016.Infrastructure.WCF,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.4
+Lee,2016-04-06T08:58:51.327Z,43209,744,基础设施 - WCF基础,ShSoft.Framework2016.Infrastructure.WCF,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Lee,2016-04-08T01:20:54.12Z,43209,742,基础设施 - WCF基础,ShSoft.Framework2016.Infrastructure.WCF,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.1
+Lee,2016-04-08T03:51:54.21Z,43209,742,基础设施 - WCF基础,ShSoft.Framework2016.Infrastructure.WCF,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.2
+amay077,2016-07-03T04:22:39.023Z,57,656,Yet another Maps library for Xamarin.Forms that optimized for Google maps.,Xamarin.Forms.GoogleMaps,False,2018-02-22T10:35:29.703+00:00,True,False,Yet another Maps library for Xamarin.Forms that optimized for Google maps,"xamarin,forms,maps,xamarinforms,xamarinformsmaps,xamarin.forms.maps,google,googlemap",68906,False,1.3.0
+Lee,2016-04-09T06:21:40.29Z,43209,741,基础设施 - WCF基础,ShSoft.Framework2016.Infrastructure.WCF,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.3
+eli,2016-07-03T04:19:00.59Z,649,656,Get metadata about classes for manny porpouses,DndsDevTools,False,2016-07-09T19:57:12.933-07:00,True,False,,,2018,False,1.0.11
+Chillisoft,2016-07-03T04:01:51.8Z,365,656,Habanero.Smooth,Habanero.Smooth,True,2017-04-20T04:03:20.277+00:00,True,False,,,160445,False,3.9.812-prerelease
+Chillisoft,2016-07-03T04:02:12.713Z,365,656,Habanero.Testability,Habanero.Testability,True,2017-04-19T21:02:28.027-07:00,True,False,,,160014,False,3.9.812-prerelease
+Chillisoft,2016-07-03T04:01:51.353Z,365,656,Habanero.Binding,Habanero.Binding,True,2017-04-20T04:02:51.37+00:00,True,False,,,144869,False,1.2.2279-prerelease
+Chillisoft,2016-07-03T04:01:51.42Z,365,656,Habanero.Faces,Habanero.Faces,True,2017-04-19T21:02:45.06-07:00,True,False,,,165609,False,3.9.812-prerelease
+Chillisoft,2016-07-03T04:01:26.663Z,365,656,Habanero,Habanero,True,2017-04-19T21:01:31.993-07:00,True,False,,,167113,False,3.9.812-prerelease
+Lee,2016-04-20T06:32:51.867Z,43209,730,基础设施 - WCF依赖注入基础,ShSoft.Framework2016.Infrastructure.WCF.IOC,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Lee,2016-04-20T06:32:42.88Z,43209,730,基础设施 - MVC依赖注入基础,ShSoft.Framework2016.Infrastructure.MVC.IOC,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Lee,2016-04-06T08:59:05.83Z,43209,744,基础设施 - WebApi基础,ShSoft.Framework2016.Infrastructure.WebApi,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+Lee,2016-04-09T06:21:55.04Z,43209,741,基础设施 - WebApi基础,ShSoft.Framework2016.Infrastructure.WebApi,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.1
+Lee,2016-04-09T06:21:09.367Z,43209,741,基础设施 - MVC基础,ShSoft.Framework2016.Infrastructure.MVC,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.1
+eli,2016-07-03T03:49:59.25Z,649,656,Get metadata about classes for manny porpouses,DndsDevTools,False,2016-07-09T19:57:12.933-07:00,True,False,,,2018,False,1.0.10
+xrainchen,2016-07-03T03:38:30.7Z,43209,656,Zinnia.Kernel.Inject是依赖Zinnia.Kernel.Inject派生出来的一个缓存类库,Zinnia.Cache,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+AlanThinker,2016-07-03T00:08:06.663Z,43209,656,AlanThinkerNewtonsoft.Json,AlanThinkerNewtonsoft.Json,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,7.0.2
+xrainchen,2016-07-03T03:22:13.643Z,43209,656,Zinnia.Kernel.Inject是Zinnia项目注入框架的一个内核,Zinnia.Kernel.Inject,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+The Fr8 Company,2016-07-03T03:14:44.847Z,43209,656,A set of classes to help developers easily start developing their Fr8 terminals.,Fr8.TerminalBase,True,1899-12-31T16:00:00-08:00,False,False,,,53899,False,1.0.2.11855-dev
+xrainchen,2016-07-03T03:14:31.64Z,43209,656,Zinnia是Zinnia项目框架的一个基础类库,Zinnia,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.0
+MiniCoder,2016-07-03T02:59:47.717Z,205,656,集合了.Net开发中常用的工具类,MiniCoder.Coding.Utility,False,2017-09-27T09:12:49.11+00:00,True,False,,tools,554,False,1.0.0.1
+"MILL5,Contributors",2016-07-03T02:59:43.42Z,543,656,"yocto - a small, yet powerful, Inversion of Control (IoC) container",yocto,True,2016-10-24T16:35:44.57+00:00,True,False,"yocto - a small, yet powerful, Inversion of Control (IoC) container","ioc,di,dependencyinjection",3119,False,1.5.2-alpha1
+MiniCoder,2016-07-03T02:59:47.717Z,205,656,集合了.Net开发中常用的工具类,MiniCoder.Coding.Utility,False,2017-09-27T09:12:49.11+00:00,True,False,,tools,554,False,1.0.0.1
+The Fr8 Company,2016-07-03T02:38:59.72Z,43209,656,A set of classes to help developers easily start developing their Fr8 terminals.,Fr8.TerminalBase,True,1899-12-31T16:00:00-08:00,False,False,,,53899,False,1.0.2.11852-dev
+ArchaicSoft,2016-07-03T02:16:02.81Z,43209,656,"Contains object oriented, event based classes for the following:
+
+Client
+Message(Packets)
+Server(Dynamicly Sized)
+Server(Staticly Sized)
+MessagePool(PacketPooling)",ArchaicNet,False,1899-12-31T16:00:00-08:00,False,False,Tcp based universal network library.,"Network,.Net,4.0",-1,False,2.1.0
+XCommon.EF,2016-07-03T02:10:49.933Z,183,656,XCommon.EF,XCommon.EF,False,2017-10-19T16:42:45.44+00:00,True,False,,,5184,False,1.0.24
+XCommon.CodeGerator,2016-07-03T02:10:43.727Z,43209,656,XCommon.CodeGerator,XCommon.CodeGerator,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.24
+XCommon.Azure,2016-07-03T02:10:37.06Z,189,656,XCommon.Azure,XCommon.Azure,False,2017-10-13T19:30:05.62+00:00,True,False,,,7497,False,1.0.24
+XCommon,2016-07-03T02:10:30.217Z,183,656,XCommon,XCommon,False,2017-10-19T16:42:12.503+00:00,True,False,,,7798,False,1.0.24
+DND's,2016-07-03T02:05:26.29Z,650,656,My package description.,DndsDataManager,False,2016-07-09T04:24:02.88-07:00,True,False,,,602,False,1.0.0
+Kent Boogaart,2016-07-03T02:00:47.26Z,372,656,Genesis.DisconnectedUtil contains utility helpers for disconnected layers.,Genesis.DisconnectedUtil,True,2017-04-12T21:41:07.113-07:00,True,False,,".NET,mono,portable,pcl,ios,android,xamarin,helper,disconnected",1876,False,1.0.0-alpha
+Matthew King,2016-07-03T01:53:47.117Z,656,656,Simple bijective encode/decode library for .NET,Bijection,False,2016-07-02T18:53:47.117-07:00,True,False,,,323,False,1.0.0
+XCommon.EF,2016-07-03T01:50:47.75Z,183,656,XCommon.EF,XCommon.EF,False,2017-10-19T16:42:45.44+00:00,True,False,,,5184,False,1.0.23
+XCommon.CodeGerator,2016-07-03T01:50:41.72Z,43209,656,XCommon.CodeGerator,XCommon.CodeGerator,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,1.0.23
+XCommon.Azure,2016-07-03T01:50:34.777Z,189,656,XCommon.Azure,XCommon.Azure,False,2017-10-13T19:30:05.62+00:00,True,False,,,7497,False,1.0.23
+XCommon,2016-07-03T01:50:28.027Z,183,656,XCommon,XCommon,False,2017-10-19T16:42:12.503+00:00,True,False,,,7798,False,1.0.23
+Matthew King,2016-07-03T01:28:45.11Z,656,656,Lightweight guard / pre-condition / parameter validation library for .NET,NGuard,False,2016-07-02T18:28:45.11-07:00,True,False,,,419,False,1.0.1
+303248153,2016-07-03T01:24:52.783Z,213,656,"Default plugin collection for zkweb framework, this package only available for visual studio code hint.",ZKWeb.Plugins,False,2017-09-19T05:42:34.11+00:00,True,False,"Default plugin collection for zkweb framework, this package only available for visual studio code hint.",,1051,False,0.9.0
+"Dávid Karnok,Stephane Maldini",2016-07-03T01:20:50.75Z,623,656,"Extension methods: Flux and Mono, Schedulers and other tools.",Reactor.Core,False,2016-08-05T03:54:34.373-07:00,True,False,"Fluent reactive programming library for C# on top of Reactive-Streams, mirroring the Reactor-Core for JVM","reactive,fluent,flow,rx,backpressure",2214,False,0.5.2
+"Guy Eric Schalnat,Andreas Dilger,John Bowler,Glenn Randers-Pehrson,libpng contributors,Vincent Povirk",2016-07-03T01:03:56.633Z,467,656,"libpng is a library for reading and writing PNG images.
+Homepage: http://www.libpng.org/pub/png/libpng.html",libpng,False,2017-01-08T13:57:40.267-08:00,True,False,libpng is a library for reading and writing PNG images.,"png,native,CoApp,v120,v140,nativepackage",15378,False,1.6.23.1
+"Guy Eric Schalnat,Andreas Dilger,John Bowler,Glenn Randers-Pehrson,libpng contributors,Vincent Povirk",2016-07-03T01:03:31.62Z,43209,656,"Redistributable components for package 'libpng'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",libpng.redist,False,1899-12-31T16:00:00-08:00,False,False,Redistributable components for for package 'libpng',"png,native,CoApp,v120,v140,nativepackage",-1,False,1.6.23.1
+"Guy Eric Schalnat,Andreas Dilger,John Bowler,Glenn Randers-Pehrson,libpng contributors,Vincent Povirk",2016-07-03T01:03:31.62Z,43209,656,"Redistributable components for package 'libpng'. This package should only be installed as a dependency. 
+(This is not the package you are looking for).",libpng.redist,False,1899-12-31T16:00:00-08:00,False,False,Redistributable components for for package 'libpng',"png,native,CoApp,v120,v140,nativepackage",-1,False,1.6.23.1
+The Fr8 Company,2016-07-03T01:00:55.957Z,43209,656,A set of classes to help developers easily start developing their Fr8 terminals.,Fr8.TerminalBase,True,1899-12-31T16:00:00-08:00,False,False,,,53899,False,1.0.2.11842-dev
+"Dávid Karnok,Stephane Maldini",2016-07-03T00:59:49.35Z,623,656,"Extension methods: Flux and Mono, Schedulers and other tools.",Reactor.Core,False,2016-08-05T03:54:34.373-07:00,True,False,"Fluent reactive programming library for C# on top of Reactive-Streams, mirroring the Reactor-Core for JVM","reactive,fluent,flow,rx,backpressure",2214,False,0.5.1
+nicolocodev,2016-07-03T00:52:37.227Z,650,656,Superduper tiny C# scripts runner,TestCscripts,False,2016-07-09T15:09:48.253-07:00,True,False,,"CSX,Script",311,False,1.0.0
+NUnit Software,2016-07-03T00:51:52.28Z,43,656,"A package including the NUnit 3 TestAdapter for Visual Studio 2012/13/15.  With this package you don't need to install the VSIX adapter package, and you don't need to upload the adapter to your TFS server.
+        
+Note that this package ONLY contains the adapter, not the NUnit framework.  You must also get the framework. You only need one such package for a solution. 
+
+The package works with Visual Studio 2012, 2013 and 2015.",NUnit3TestAdapter,False,2018-03-08T17:05:51.503+00:00,True,False,"NUnit 3 adapter for running tests in Visual Studio. Works with NUnit 3.x, use the NUnit 2 adapter for 2.x tests.","test,visualstudio,testadapter,nunit,nunit3",3279674,True,3.4.0
+Anapsidae,2016-07-03T00:33:28.313Z,43209,656,"Allows data to be read from the feeds, simple and straight forward with no commercials",YTS.Connector,False,1899-12-31T16:00:00-08:00,False,False,.NET client for communication with the Yify Torrent API v2,,-1,False,1.0.0
+Dev Team Inc.,2016-07-02T15:51:54.07Z,655,657,Model Validation Attribute.,DevTeam.ModelValidationAttribute,False,2016-07-04T12:08:28.55+00:00,False,False,,,1204,False,0.0.3
+Anapsidae,2016-07-03T00:33:28.313Z,43209,656,"Allows data to be read from the feeds, simple and straight forward with no commercials",YTS.Connector,False,1899-12-31T16:00:00-08:00,False,False,.NET client for communication with the Yify Torrent API v2,,-1,False,1.0.0
+Dev Team Inc.,2016-07-03T00:32:43.56Z,655,656,Model Validation Attribute.,DevTeam.ModelValidationAttribute,False,2016-07-04T12:08:28.55+00:00,True,False,,,1204,False,0.0.4
+Jose Yanez,2016-07-01T03:19:29.347Z,656,658,Code generation tool for SQL Server sprocs,Dataflip,False,2016-07-03T23:34:06.957+00:00,True,False,,"Entity,EntityFramework,EF,Poco,Data,Dataflip,DataContext,SQL,SqlServer,StoredProcedure,Sprocs,Query",1678,False,1.0.20
+ArchaicSoft,2016-07-03T00:30:00.293Z,43209,656,"Contains object oriented, event based classes for the following:
+
+Client
+Message(Packets)
+Server(Dynamicly Sized)
+Server(Staticly Sized)
+MessagePool(PacketPooling)",ArchaicNet,False,1899-12-31T16:00:00-08:00,False,False,Tcp based universal network library.,"Network,.Net,4.0",-1,False,2.0.1
+Dev Team Inc.,2016-07-03T00:09:54.353Z,648,656,Image Formatter.,DevTeam.ImageFormatter,False,2016-07-11T06:41:51.993-07:00,True,False,,,1033,False,0.0.1
+AlanThinker,2016-07-03T00:08:06.663Z,43209,656,AlanThinkerNewtonsoft.Json,AlanThinkerNewtonsoft.Json,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,7.0.2
+"Adam Ralph,Bau contributors",2014-04-29T22:20:51.167Z,43209,1452,Placeholder.,Bau.AssemblyInfo,True,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.0.0-placeholder
+Dev Team Inc.,2016-07-02T23:38:40.67Z,43209,657,Image Attribute.,DevTeam.ImageAttribute,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.0.1
+Adam Ralph,2016-07-02T23:57:54.643Z,43209,657,Placeholder.,Cola,False,1899-12-31T16:00:00-08:00,False,False,Placeholder.,,-1,False,0.0.0
+Adam Ralph,2016-07-02T23:57:54.643Z,43209,657,Placeholder.,Cola,False,1899-12-31T16:00:00-08:00,False,False,Placeholder.,,-1,False,0.0.0
+长征信息,2016-07-02T23:40:13.063Z,657,657,长征软件开发基类,BasicLibrary,False,2016-07-02T23:40:13.063+00:00,True,False,,,510,False,1.2.0
+Dev Team Inc.,2016-07-02T23:38:40.67Z,43209,657,Image Attribute.,DevTeam.ImageAttribute,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.0.1
+Dev Team Inc.,2016-07-02T23:16:32.523Z,655,657,Model Action Selector.,DevTeam.ModelActionSelector,False,2016-07-04T05:54:28.45-07:00,True,False,,,359,False,0.0.1
+Paulo Rogério Martins Marques,2016-07-02T23:04:39.173Z,43209,657,"prmToolkit É um projeto responsável por dar apoio a outros projetos.
+
+# ValidateArgument
+Classe responsável por gerenciar validações de argumentos.
+
+VANTAGENS
+>Podemos realizar validações indivíduais ou em grupos
+
+>É possível levantar uma exceção ou captura-las",prmToolkit.ValidateArgument,False,1899-12-31T16:00:00-08:00,False,False,"Classe responsável por gerenciar validações de argumentos.
+
+Podemos realizar validações indivíduais ou em grupos.
+
+É possível levantar uma exceção ou captura-las.","toolkit,validate,helper,enum,function,common,comum",-1,False,1.0.7
+Paulo Rogério Martins Marques,2016-07-02T23:04:39.173Z,43209,657,"prmToolkit É um projeto responsável por dar apoio a outros projetos.
+
+# ValidateArgument
+Classe responsável por gerenciar validações de argumentos.
+
+VANTAGENS
+>Podemos realizar validações indivíduais ou em grupos
+
+>É possível levantar uma exceção ou captura-las",prmToolkit.ValidateArgument,False,1899-12-31T16:00:00-08:00,False,False,"Classe responsável por gerenciar validações de argumentos.
+
+Podemos realizar validações indivíduais ou em grupos.
+
+É possível levantar uma exceção ou captura-las.","toolkit,validate,helper,enum,function,common,comum",-1,False,1.0.7
+Oskar Sjöberg,2016-07-02T23:03:07.783Z,149,657,Upgrader keeps your database schema in sync with your source code as your development project evolves. Changes to the database schema are expressed as Upgrader Steps. Each Step that successfully have been deployed is tracked in a table. Typically you use Upgrader on application startup or in an installer.,Upgrader,False,2017-11-22T07:10:26.893+00:00,True,False,Upgrader.,upgrader,3462,False,0.3.4.2
+tofutim,2016-07-02T23:02:49.76Z,654,657,C# wrapper for Groove's api.,GrooveApi,False,2016-07-05T11:54:03.533-07:00,True,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.",groove,477,False,0.1.2
+The Fr8 Company,2016-07-02T22:47:20.317Z,43209,657,A set of classes to help developers easily start developing their Fr8 terminals.,Fr8.TerminalBase,True,1899-12-31T16:00:00-08:00,False,False,,,53899,False,1.0.2.11840-dev
+Dev Team Inc.,2016-07-02T22:46:54.56Z,655,657,Authenticated Attribute.,DevTeam.AuthenticatedAttribute,False,2016-07-04T07:17:42.893-07:00,True,False,,,367,False,0.0.1
+Clemens Fischer,2016-06-24T18:32:28.113Z,22,665,"A set of controls for WPF, Silverlight and WinRT/UWP for rendering digital maps from different providers (like OpenStreetMap and Bing Maps) and various types of map overlays.",XAML.MapControl,False,2018-03-29T17:45:20.627+00:00,False,False,,"XAML,WPF,UWP,WinRT,Silverlight,Map",27101,False,2.10.0
+Clemens Fischer,2016-07-02T22:40:32.383Z,22,657,"A set of controls for WPF, Silverlight and WinRT/UWP for rendering digital maps from different providers (like OpenStreetMap and Bing Maps) and various types of map overlays.",XAML.MapControl,False,2018-03-29T17:45:20.627+00:00,True,False,,"XAML,WPF,UWP,WinRT,Silverlight,Map",27101,False,2.11.0
+Martin Cook,2016-07-02T22:38:08.573Z,43209,657,This package contains EntityFramework extensions for the CG.Repository package.,CG.Repository.EntityFramework,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.2016.19
+Martin Cook,2016-07-02T22:33:16.703Z,43209,657,This package contains a document repository service.,CG.Repository,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.2016.19
+Martin Cook,2016-07-02T22:27:32.22Z,43209,657,This package contains WEBAPI attributes for making action-based authorization checks.,CG.Security.WebApi,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.2016.11
+Dev Team Inc.,2016-07-02T15:51:54.07Z,655,657,Model Validation Attribute.,DevTeam.ModelValidationAttribute,False,2016-07-04T12:08:28.55+00:00,True,False,,,1204,False,0.0.3
+Martin Cook,2016-07-02T22:23:10.093Z,43209,657,This package contains MVC attributes for making action-based authorization checks.,CG.Security.Mvc,False,1899-12-31T16:00:00-08:00,False,False,,,-1,False,0.2016.11
+Wlniao,2016-07-02T22:22:58.207Z,8,657,Wlniao XCore for CoreCLR Framework,Wlniao.XCore,True,2018-04-12T08:28:57.697+00:00,True,False,,"Wlniao,XCore,CoreCLR,VNext,ideploy",450880,False,1.0.0-beta-71211
+Dev Team Inc.,2016-07-02T15:51:54.07Z,655,657,Model Validation Attribute.,DevTeam.ModelValidationAttribute,False,2016-07-04T12:08:28.55+00:00,False,False,,,1204,False,0.0.3
+Oskar Sjöberg,2016-07-02T22:21:26.96Z,149,657,Upgrader keeps your database schema in sync with your source code as your development project evolves. Changes to the database schema are expressed as Upgrader Steps. Each Step that successfully have been deployed is tracked in a table. Typically you use Upgrader on application startup or in an installer.,Upgrader,False,2017-11-22T07:10:26.893+00:00,True,False,Upgrader.,upgrader,3462,False,0.3.4
+Dev Team Inc.,2016-07-02T22:21:12.33Z,655,657,Require SSL Attribute.,DevTeam.RequireSSLAttribute,False,2016-07-04T05:40:40.87-07:00,True,False,,,336,False,0.0.1
+"Dávid Karnok,Stephane Maldini",2016-07-02T22:10:19.843Z,623,657,"Extension methods: Flux and Mono, Schedulers and other tools.",Reactor.Core,False,2016-08-05T03:54:34.373-07:00,True,False,"Fluent reactive programming library for C# on top of Reactive-Streams, mirroring the Reactor-Core for JVM","reactive,fluent,flow,rx,backpressure",2214,False,0.5.0
+Martin Halliday,2016-07-02T22:09:03.58Z,63,657,A much better URL rewriter than the one that comes with IIS and fully backwards compatible,UrlRewrite.Net,False,2018-02-16T02:12:56.8+00:00,True,False,"All the features of the standard IIS rewrite module and fully backwards compatible, plus...
+
+      * Rules can contain lists of other rules
+      * No need for expensive regex and clunky back references
+      * Many times faster
+      * Much more readable syntax
+      * Integrate custom application logic
+      * Store your rewrite rules in a database or fetch them from a web service","IIS,rewrite,url-rewriter,urlrewrite",4948,False,1.2.0
+Bryan Apellanes,2016-07-02T22:05:23.903Z,85,657,Basic user account management system for use with Bam,Bam.Net.UserAccounts,False,2018-01-25T03:48:54.393+00:00,True,False,,,10689,False,1.2.16
+Bryan Apellanes,2016-07-02T22:05:31.047Z,85,657,Yaml extensions for Bam,Bam.Net.Yaml,False,2018-01-25T03:49:06.69+00:00,True,False,,,10653,False,1.2.16
+Bryan Apellanes,2016-07-02T22:05:16.5Z,85,657,Simple unit testing and assertion tools for use with Bam,Bam.Net.Testing,False,2018-01-25T03:48:40.283+00:00,True,False,,,10653,False,1.2.16
+Bryan Apellanes,2016-07-02T22:05:09.547Z,85,657,Bam extensions to Argotic based rss and atom feeds,Bam.Net.Syndication,False,2018-01-25T03:48:26.58+00:00,True,False,,,10560,False,1.2.16
+Bryan Apellanes,2016-07-02T22:05:02.56Z,633,657,"Tools for programmatically interacting with command line git 
+	and TFS source control",Bam.Net.SourceControl,False,2016-07-26T08:00:18.003-07:00,True,False,,,6955,False,1.2.16
+Bryan Apellanes,2016-07-02T22:04:49.17Z,85,657,"System for simply and easily exposing pocos as RESTful webservices
+	with automatic generation of both .Net and Javascript clients",Bam.Net.ServiceProxy,False,2018-01-25T03:48:00.47+00:00,True,False,,,10695,False,1.2.16
+Bryan Apellanes,2016-07-02T22:04:56.08Z,85,657,"Tests for System for simply and easily exposing pocos as RESTful webservices
+	with automatic generation of both .Net and Javascript clients",Bam.Net.ServiceProxy.Tests,False,2018-01-25T03:49:19.3+00:00,True,False,,,5223,False,1.2.16
+Bryan Apellanes,2016-07-02T22:04:41.197Z,85,657,"Core Bam server allowing applications to self host outside of
+	IIS.  Simplifies distributed computing",Bam.Net.Server,False,2018-01-25T03:47:47.47+00:00,True,False,,,10873,False,1.2.16
+Bryan Apellanes,2016-07-02T22:03:45.327Z,85,657,Schema.Org generated classes representing schema.org things,Bam.Net.Schema.Org,False,2018-01-25T03:47:33.827+00:00,True,False,,,10770,False,1.2.16
+Bryan Apellanes,2016-07-02T22:03:37.65Z,85,657,"Legacy configuration encryption provider.  
+	New projects should consider using the Vault class in
+	Bam.Net.Encryption",Bam.Net.Profiguration,False,2018-01-25T03:47:21.233+00:00,True,False,,,10612,False,1.2.16
+Bryan Apellanes,2016-07-02T22:03:23.21Z,85,657,Basic email composer for Bam,Bam.Net.Messaging,False,2018-01-25T03:46:54.84+00:00,True,False,,,10713,False,1.2.16
+Bryan Apellanes,2016-07-02T22:03:08.567Z,85,657,EcmaScript.Net extensions for server side javascript execution,Bam.Net.Javascript,False,2018-01-25T03:46:30.543+00:00,True,False,,,10712,False,1.2.16
+Bryan Apellanes,2016-07-02T22:03:16.05Z,85,657,Supplemental data access object based loggers for Bam,Bam.Net.Logging,False,2018-01-25T03:46:42.653+00:00,True,False,,,10542,False,1.2.16
+Bryan Apellanes,2016-07-02T22:03:30.593Z,85,657,"Network related tools.  Dfs, smb, ping, dns",Bam.Net.Net,False,2018-01-25T03:47:07.013+00:00,True,False,,,10651,False,1.2.16
+Bryan Apellanes,2016-07-02T22:03:02.07Z,85,657,Basic dependency injection container used by the Bam framework,Bam.Net.Incubation,False,2018-01-25T03:46:18.027+00:00,True,False,,,10126,False,1.2.16

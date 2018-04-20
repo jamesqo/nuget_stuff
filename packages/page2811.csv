@@ -1,0 +1,897 @@
+authors,created,days_abandoned,days_alive,description,id,is_prerelease,last_updated,listed,missing_info,summary,tags,total_downloads,verified,version
+buildguest,2017-09-22T18:52:51.433Z,210,210,Description,STU.Common.DataAccess,False,2017-09-22T18:56:42.27+00:00,True,False,,,229,False,1.0.7
+"Daniel Luberda,Fabien Molinet",2017-09-22T18:52:23.057Z,22,210,"Xamarin Library to load images quickly and easily on Xamarin.Forms.
+
+Ensure you call CachedImageRenderer.Init() on each platform!!!
+
+Features:
+
+- Xamarin.iOS, Xamarin.Android, Xamarin.Forms, Xamarin.Mac and Windows (WinRT, UWP) support
+- Configurable disk and memory caching
+- Multiple image views using the same image source (url, path, resource) will use only one bitmap which is cached in memory (less memory usage)
+- Deduplication of similar download/load requests. *(If 100 similar requests arrive at same time then one real loading will be performed while 99 others will wait).*
+- Error and loading placeholders support
+- Images can be automatically downsampled to specified size (less memory usage)
+- Fluent API which is inspired by Picasso naming
+- SVG / WebP / GIF support
+- Image loading Fade-In animations support
+- Can retry image downloads (RetryCount, RetryDelay)
+- Android bitmap optimization. Saves 50% of memory by trying not to use transparency channel when possible.
+- Transformations support
+- BlurredTransformation
+- CircleTransformation, RoundedTransformation, CornersTransformation, CropTransformation
+- ColorSpaceTransformation, GrayscaleTransformation, SepiaTransformation, TintTransformation
+- FlipTransformation, RotateTransformation
+- Supports custom transformations (native platform `ITransformation` implementations)",Xamarin.FFImageLoading.Forms,True,2018-03-29T13:47:57.66+00:00,True,False,Xamarin Forms plugin to load images quickly and easily.,"xamarin,forms,xamarin.forms,mac,windows,android,ios,bitmap,image,cache,webp,quick,easy,lru,load,loading,save",495661,False,2.2.16-pre-529
+Daniel Luberda,2017-09-22T18:52:33.543Z,22,210,SVG support for FFImageLoading library.,Xamarin.FFImageLoading.Svg,True,2018-03-29T13:48:10.38+00:00,True,False,Xamarin SVG support for FFImageLoading.,"xamarin,android,ios,bitmap,image,svg",87881,False,2.2.16-pre-529
+"Daniel Luberda,Fabien Molinet",2017-09-22T18:52:11.12Z,22,210,"Xamarin Library to load images quickly and easily.
+
+Features:
+
+- Xamarin.iOS, Xamarin.Android, Xamarin.Forms, Xamarin.Mac and Windows (WinRT, UWP) support
+- Configurable disk and memory caching
+- Multiple image views using the same image source (url, path, resource) will use only one bitmap which is cached in memory (less memory usage)
+- Deduplication of similar download/load requests. *(If 100 similar requests arrive at same time then one real loading will be performed while 99 others will wait).*
+- Error and loading placeholders support
+- Images can be automatically downsampled to specified size (less memory usage)
+- Fluent API which is inspired by Picasso naming
+- SVG / WebP / GIF support
+- Image loading Fade-In animations support
+- Can retry image downloads (RetryCount, RetryDelay)
+- Android bitmap optimization. Saves 50% of memory by trying not to use transparency channel when possible.
+- Transformations support
+- BlurredTransformation
+- CircleTransformation, RoundedTransformation, CornersTransformation, CropTransformation
+- ColorSpaceTransformation, GrayscaleTransformation, SepiaTransformation, TintTransformation
+- FlipTransformation, RotateTransformation
+- Supports custom transformations (native platform `ITransformation` implementations)",Xamarin.FFImageLoading,True,2018-03-29T13:47:42.8+00:00,True,False,Xamarin library to load images quickly and easily on Xamarin.iOS / Xamarin.Android / Xamarin.Mac / Windows,"xamarin,android,ios,mac,windows,image,cache,caching,memory,bitmap,lru,load,loading,save,effects,photo",629971,False,2.2.16-pre-529
+Daniel Luberda,2017-09-22T18:52:49.73Z,22,210,Xamarin.Forms SVG support for FFImageLoading library.,Xamarin.FFImageLoading.Svg.Forms,True,2018-03-29T13:48:21.427+00:00,True,False,Xamarin.Forms SVG support for FFImageLoading.,"xamarin,android,ios,windows,mac,bitmap,image,svg",73312,False,2.2.16-pre-529
+"Daniel Luberda,Molinet Fabien",2017-09-22T18:53:01.87Z,22,210,"Transformations for FFImageLoading library.
+
+- BlurredTransformation
+- CircleTransformation, RoundedTransformation, CornersTransformation, CropTransformation
+- ColorSpaceTransformation, GrayscaleTransformation, SepiaTransformation, TintTransformation
+- FlipTransformation, RotateTransformation
+- Supports custom transformations (native platform `ITransformation` implementations)
+
+These transformations can be consumed from FFImageLoading and FFImageLoading.Forms (Xamarin Forms).
+Don't forget to add the package in all platform specific projects. This way the correct native implementation is injected.",Xamarin.FFImageLoading.Transformations,True,2018-03-29T13:48:34.49+00:00,True,False,Xamarin image transformations for FFImageLoading.,"xamarin,android,ios,mac,windows,bitmap,image,webp,transformation,blur,round,circle,effects,corners",347119,False,2.2.16-pre-529
+OCIO,2017-09-22T18:50:00.503Z,207,210,UI Automation Framework using SpecFlow and Selenium WebDriver,SweetPotatoUI,False,2017-09-25T20:03:43.51+00:00,True,False,,"UI,Test,Automation",2613,False,0.0.80
+Nathan Voxland,2017-09-22T18:46:29.433Z,3,210,"LiquiBase is an open source, database-independent library for tracking, managing and applying database changes. It is built on simple premise: All database changes are stored in a human readable yet trackable form and checked into source control.",Liquibase.Cli,False,2018-04-17T09:13:25.65+00:00,True,False,,"liquibase,database,migration",295,False,3.3.5
+OCIO,2017-09-22T18:50:00.503Z,207,210,UI Automation Framework using SpecFlow and Selenium WebDriver,SweetPotatoUI,False,2017-09-25T20:03:43.51+00:00,True,False,,"UI,Test,Automation",2613,False,0.0.80
+SourceCode.Chasm.IO.Json,2017-09-22T18:48:14.157Z,100,210,CAS - Content Addressable Storage (Json).,SourceCode.Chasm.IO.Json,True,2018-01-10T20:24:11.58+00:00,True,False,,"cas,content,storage,sha1,git,json",5910,False,1.0.0-preview1-00038
+SourceCode.Chasm.IO.Bond,2017-09-22T18:48:03.813Z,203,210,CAS - Content Addressable Storage (Bond).,SourceCode.Chasm.IO.Bond,True,2017-09-29T17:28:52.08+00:00,True,False,,"cas,content,storage,sha1,git,bond",1102,False,1.0.0-preview1-00038
+SourceCode.Chasm,2017-09-22T18:47:52.437Z,100,210,CAS - Content Addressable Storage.,SourceCode.Chasm,True,2018-01-10T20:22:53.423+00:00,True,False,,"cas,content,storage,sha1,git",6209,False,1.0.0-preview1-00038
+SourceCode.Chasm.IO.Proto,2017-09-22T18:48:25.237Z,100,210,CAS - Content Addressable Storage (Protobuf).,SourceCode.Chasm.IO.Proto,True,2018-01-10T20:24:22.563+00:00,True,False,,"cas,content,storage,sha1,git,proto",5525,False,1.0.0-preview1-00038
+Dan Siegel,2017-09-22T18:48:35.487Z,71,210,Prism Library Templates,Prism.Forms.QuickstartTemplates,False,2018-02-08T05:17:53.05+00:00,True,False,,,2614,False,1.0.2
+Nathan Voxland,2017-09-22T18:46:29.433Z,3,210,"LiquiBase is an open source, database-independent library for tracking, 
+            managing and applying database changes. It is built on a simple premise: 
+            All database changes are stored in a human readable yet trackable 
+            form and checked into source control.",Liquibase.Cli,False,2018-04-17T09:13:25.65+00:00,True,False,,"liquibase,database,migration",295,False,3.3.5
+buildguest,2017-09-22T18:45:41.683Z,4,210,Description,ShowingVault.DotNet.Sdk,False,2018-04-16T15:22:22.27+00:00,True,False,,,5096,False,0.4.12.27
+buildguest,2017-09-22T18:44:08.13Z,4,210,Description,ShowingVault.DotNet.Sdk,True,2018-04-16T15:22:22.27+00:00,True,False,,,5096,False,0.4.8.22-prerelease
+laredoza,2017-09-22T18:42:20.33Z,17,210,"A MongoDb implementation of the Orleans Providers. This includes the Membership (IMembershipTable and IGatewayListProvider), Reminder (IReminderTable), MongoStatisticsPublisher and IStorageProvider providers.",Orleans.Providers.MongoDB,True,2018-04-03T14:39:13.97+00:00,True,False,,"Orleans,OrleansProviders,MongoDB",5646,False,0.1.5-preview
+Interesting Pty Ltd,2017-09-22T18:39:32.293Z,43209,210,"Advanced Images for Kentico CMS
+- Allows for images to be dynamically cropped via query string.
+- Allows for image to change quality of thumbnail created dynamically via query string.
+- Thumbnails with scaling/cropping/quality changes are cached on disk for performance.
+- Media Request Protection feature that restricts image processing to server-generated requests, ensuring that the server only spends resources and disk space on valid image scaling/cropping/quality requests. Disk space attacks and DDOS attacks have been considered.
+- Works with secured media libraries.",AdvancedImages,False,1900-01-01T00:00:00+00:00,False,False,,,161,False,1.0.1
+iRely LLC.,2017-09-22T18:37:23.977Z,176,210,iRely.Reports.Helper,iRely.Reports.Helper,True,2017-10-26T04:36:43.8+00:00,True,False,,,73201,False,17.42.6474.32875-alpha
+Orn Kristjansson,2017-09-22T18:38:22.07Z,10,210,Slacker Unit Test Runner,SlackerRunner,False,2018-04-10T00:21:16.16+00:00,True,False,,"Slacker,Tests",7023,False,2.4.0.1
+iRely LLC.,2017-09-22T18:36:18.943Z,43209,210,iRely.Common,iRely.Common,True,1900-01-01T00:00:00+00:00,False,False,,,222555,False,17.42.6474.32681-alpha
+OrleansTestKit,2017-09-22T18:32:48.387Z,3,210,A testing framework for Microsoft Orleans that does not use a real silo,OrleansTestKit,False,2018-04-17T22:55:43.48+00:00,True,False,,,1851,False,0.1.3
+Momentum,2017-09-22T18:30:58.6Z,4,210,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.11.5755-beta
+Momentum,2017-09-22T18:31:12.977Z,4,210,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.11.5755-beta
+Orn Kristjansson,2017-09-22T18:27:04.077Z,10,210,Slacker Unit Test Runner,SlackerRunner,False,2018-04-10T00:21:16.16+00:00,True,False,,"Slacker,Tests",7023,False,2.3.0.39
+OCIO,2017-09-22T17:40:43.237Z,207,210,UI Automation Framework using SpecFlow and Selenium WebDriver,SweetPotatoUI,False,2017-09-25T20:03:43.51+00:00,True,False,,"UI,Test,Automation",2613,False,0.0.79
+Jonas Frost,2017-09-22T18:19:34.903Z,210,210,"If you like the .then() .tap() methods from your favourite javascript promise library, then is for you. Simply put, it adds Then() Tap() Catch() extensions to tasks.",Then,False,2017-09-22T18:19:34.903+00:00,True,False,Promise like task extensions such as Then() Tap() and Catch(),"Then,Tap,Catch",562,False,1.0.3
+Solutia Consulting,2017-09-22T15:43:25.983Z,65,210,"Generates the following assets:
+			* SQL Server 2016 Stored Procedures for CRUD activiity (all Stored procs return JSON data via SQL Server 2016's FOR JSON capability)
+			* Repository code for converting raw JSON to concrete implementations of C# Interface (using Json.Net)
+			* Business Library allowing for business rules to be applied to data
+			* Sample WebApi endpoints
+			* Angular 4+ models for translating raw JSON data into JavaScript models (future development effort)
+
+			This code generator allows you to spend time in the following areas crafting your application:
+			* crafting stored procedures to surface database data matching the data needs imposed by a C# Interface
+			* crafting WebApi endpoints (you can use code generated samples as a starting point)
+			* crafting your front-end experience
+			
+			Utilizing this code generator increases your productivity and produces consistent, reliable results",SolutiaConsulting.CodeGenerator,False,2018-02-14T21:06:35.54+00:00,False,False,Generates code assets from database tier through presentation tier based solely upon a C# Interface.,"code,generation",2742,False,3.0.4.18
+Dan Siegel,2017-09-22T18:22:13.473Z,18,210,Prism Unity Plugin for Xamarin Forms to provide Popup Navigation,Prism.Plugin.Popups.Unity,True,2018-04-02T20:29:04.687+00:00,True,False,,,6891,False,2.0.0-pre3
+Dan Siegel,2017-09-22T18:22:01.957Z,43209,210,Prism Ninject Plugin for Xamarin Forms to provide Popup Navigation,Prism.Plugin.Popups.Ninject,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.0-pre3
+Dan Siegel,2017-09-22T18:21:50.22Z,18,210,Prism DryIoc Plugin for Xamarin Forms to provide Popup Navigation,Prism.Plugin.Popups.DryIoc,True,2018-04-02T20:29:12.283+00:00,True,False,,,3124,False,2.0.0-pre3
+Dan Siegel,2017-09-22T18:21:42.207Z,180,210,Provides reusable extensions for Prism Forms projects.,Prism.Forms.Extensions,True,2017-10-22T17:42:17.417+00:00,True,False,,"prism,mvvm,uwp,xamarin.forms,ios,android",822,False,1.0.0-pre2
+Jonas Frost,2017-09-22T18:19:34.903Z,210,210,"If you like the .then() .tap() methods from your favourite javascript promise library, then is for you. Simply put, it adds Then() Tap() Catch() extensions to tasks.",Then,False,2017-09-22T18:19:34.903+00:00,True,False,,"Then,Tap,Catch",562,False,1.0.3
+Dan Siegel,2017-09-22T18:14:27.36Z,18,210,Prism Autofac Plugin for Xamarin Forms to provide Popup Navigation,Prism.Plugin.Popups.Autofac,True,2018-04-02T20:29:23.25+00:00,True,False,,,6119,False,2.0.0-pre3
+laredoza,2017-09-22T16:33:25.113Z,17,210,"A MongoDb implementation of the Orleans Providers. This includes the Membership (IMembershipTable and IGatewayListProvider), Reminder (IReminderTable), MongoStatisticsPublisher and IStorageProvider providers.",Orleans.Providers.MongoDB,True,2018-04-03T14:39:13.97+00:00,False,False,,"Orleans,OrleansProviders,MongoDB",5646,False,0.1.3-preview
+OEC,2017-09-22T18:12:54.997Z,204,210,"OEC API library encapsulates network communication between client application and OEC Servers and provided object-oriented access to OEC functionality through exposed components (objects), their properties, methods and events.",OECAPI,False,2017-09-28T18:08:26.87+00:00,True,False,,"trading,OEC,openecry,futures,options,forex",2745,False,3.5.14.39
+laredoza,2017-09-22T18:13:07.7Z,17,210,"A MongoDb implementation of the Orleans Providers. This includes the Membership (IMembershipTable and IGatewayListProvider), Reminder (IReminderTable), MongoStatisticsPublisher and IStorageProvider providers.",Orleans.Providers.MongoDB,True,2018-04-03T14:39:13.97+00:00,True,False,,"Orleans,OrleansProviders,MongoDB",5646,False,0.1.4-preview
+LA_U598087,2017-09-22T18:07:28.297Z,207,210,A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.,TeCi,False,2017-09-25T13:59:24.453+00:00,True,False,"A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.",Test,92,False,1.0.0
+Paulo Hauck,2017-09-22T18:04:00.853Z,210,210,"A library to build Cron expressions easily, useful to be used with CronSchedulers like Quartz.Net",QuartzCronGeneratorLibrary,False,2017-09-22T18:04:00.853+00:00,True,False,"A library to build Cron expressions easily, useful to be used with CronSchedulers like Quartz.Net","CronMaker,Quartz.Cron,QuartzCronGenerator",515,False,0.9.1
+oitdevelopers,2017-09-22T18:00:03.14Z,210,210,"IReadOnlyRepository, ReadOnlyRepository",STU.Common.DataAccess,False,2017-09-22T18:56:42.27+00:00,True,False,,,229,False,1.0.6
+Quartz Software SRL,2017-09-22T18:07:12.36Z,8,210,Provides the Kephas adapters for the Npgsql library.,Kephas.Npgsql,True,2018-04-12T23:18:13.667+00:00,True,False,Provides the Kephas adapters for the Npgsql library.,"kephas,framework,npgsql,postgresql,adapter,quartz-software",3579,False,4.0.0-beta1
+Quartz Software SRL,2017-09-22T18:06:57.093Z,24,210,"Provides Kephas web components for integration with OWIN.
+        Check the documentation and the samples from https://github.com/quartz-software/kephas/wiki and https://github.com/quartz-software/kephas/tree/master/Samples.
+        Kephas Framework (""stone"" in aramaic) is a very ambitious project aiming to deliver a framework for an application ecosystem.",Kephas.Web.Owin,True,2018-03-27T09:24:56.567+00:00,True,False,"Provides Kephas web components for integration with OWIN.
+        Check the documentation and the samples from https://github.com/quartz-software/kephas/wiki and https://github.com/quartz-software/kephas/tree/master/Samples.
+        Kephas Framework (""stone"" in aramaic) is a very ambitious project aiming to deliver a framework for an application ecosystem.","kephas,framework,web,owin,quartz-software",5211,False,4.0.0-beta1
+Quartz Software SRL,2017-09-22T18:05:12.103Z,8,210,Provides the endpoints for the data flow.,Kephas.Data.Endpoints,True,2018-04-12T23:16:43.5+00:00,True,False,Provides the endpoints for the data flow.,"kephas,framework,data,endpoints,quartz-software",2514,False,4.0.0-beta1
+,,-1,-1,,CommLib,,,,True,,,,,1.0.0.32
+Quartz Software SRL,2017-09-22T18:06:11.89Z,8,210,"Provides a common infrastructure for code analysis, conversion, and generation.",Kephas.CodeAnalysis,True,2018-04-12T23:17:34.597+00:00,True,False,"Provides a common infrastructure for code analysis, conversion, and generation.","kephas,framework,code,analysis,quartz-software",2965,False,4.0.0-beta1
+Nikolay Zahariev,2017-09-22T18:05:23.823Z,71,210,Framework for user profile management,Zahasoft.Identity,False,2018-02-08T19:34:55.72+00:00,True,False,,,2036,False,3.0.0
+Quartz Software SRL,2017-09-22T18:05:40.73Z,8,210,"Provides composable messaging infrastructure in form of request/response service layer.
+            Check the documentation and the samples from https://github.com/quartz-software/kephas/wiki and https://github.com/quartz-software/kephas/tree/master/Samples.
+            Kephas Framework (""stone"" in aramaic) is a very ambitious project aiming to deliver a framework for an application ecosystem.",Kephas.Messaging,True,2018-04-12T23:17:09.783+00:00,True,False,Provides composable messaging infrastructure in form of request/response service layer.,"kephas,framework,messaging,request,response,service,layer,quartz-software",6371,False,4.0.0-beta1
+Quartz Software SRL,2017-09-22T18:05:56.107Z,8,210,"Provides the model for messaging, including the Message classifier and Messaging scope dimension.",Kephas.Messaging.Model,True,2018-04-12T23:17:21.377+00:00,True,False,"Provides the model for messaging, including the Message classifier and Messaging scope dimension.","kephas,framework,messaging,model,quartz-software",3798,False,4.0.0-beta1
+Quartz Software SRL,2017-09-22T18:06:42.937Z,179,210,Provides mail services implementation using the System.Net classes.,Kephas.Mail.Services,True,2017-10-23T08:23:38.063+00:00,True,False,"Kephas Framework (""stone"" in aramaic) is a very ambitious project aiming to deliver a framework for an application ecosystem.","kephas,framework,mail,smtp,quartz-software",2078,False,4.0.0-beta1
+Quartz Software SRL,2017-09-22T18:05:26.777Z,8,210,"Kephas Framework (""stone"" in aramaic) is a very ambitious project aiming to deliver a framework for an application ecosystem.",Kephas.Serialization.Json,True,2018-04-12T23:16:55.8+00:00,True,False,"Kephas Framework (""stone"" in aramaic) is a very ambitious project aiming to deliver a framework for an application ecosystem.","kephas,framework,serialization,json,quartz-software",6053,False,4.0.0-beta1
+Quartz Software SRL,2017-09-22T18:04:58.4Z,8,210,Provides functionality for data import/export (input/output).,Kephas.Data.IO,True,2018-04-12T23:16:30.94+00:00,True,False,Provides functionality for data import/export (input/output).,"kephas,framework,data,input,output,import,export,quartz-software",2974,False,4.0.0-beta1
+Quartz Software SRL,2017-09-22T18:06:27.467Z,8,210,Provides the abstract infrastructure for mailing.,Kephas.Mail,True,2018-04-12T23:17:48.003+00:00,True,False,"Kephas Framework (""stone"" in aramaic) is a very ambitious project aiming to deliver a framework for an application ecosystem.","kephas,framework,mail,quartz-software",5127,False,4.0.0-beta1
+Quartz Software SRL,2017-09-22T18:04:44.34Z,8,210,Provides the data context and the associated commands for in-memory data store.,Kephas.Data.InMemory,True,2018-04-12T23:16:17.437+00:00,True,False,Provides the data context and the associated commands for in-memory data store.,"kephas,framework,data,in-memory,store,quartz-software",3636,False,4.0.0-beta1
+Quartz Software SRL,2017-09-22T18:04:30.917Z,8,210,"Provides the model for data, including the Entity classifier and the related scope dimensions.",Kephas.Data.Model,True,2018-04-12T23:15:52.47+00:00,True,False,"Provides the model for data, including the Entity classifier and the related scope dimensions.","kephas,framework,data,model,quartz-software",3906,False,4.0.0-beta1
+Stack,2017-09-22T18:04:17.947Z,192,210,"The Web.Mvc assembly, containing types for web communication, like building RESTful APIs.",Stack.Web.Mvc,False,2017-10-10T14:23:41.53+00:00,True,False,,,2280,False,1.2.7
+Quartz Software SRL,2017-09-22T18:04:17.057Z,8,210,Provides the client infrastructure for the data flow.,Kephas.Data.Client,True,2018-04-12T23:15:39.907+00:00,True,False,Provides the client infrastructure for the data flow.,"kephas,framework,data,client,quartz-software",3729,False,4.0.0-beta1
+Interesting Pty Ltd,2017-09-22T18:04:10.4Z,43209,210,"- Allows for images to be dynamically cropped via query string.
+- Allows for image to change quality of thumbnail created dynamically via query string.
+- Thumbnails with scaling/cropping/quality changes are cached on disk for performance.
+- Media Request Protection feature that restricts image processing to server-generated requests, ensuring that the server only spends resources and disk space on valid image scaling/cropping/quality requests. Disk space attacks and DDOS attacks have been considered.
+- Works with secured media libraries.",AdvancedImages,False,1900-01-01T00:00:00+00:00,False,False,,,161,False,1.0.0
+Paulo Hauck,2017-09-22T18:04:00.853Z,210,210,"A library to build Cron expressions easily, useful to be used with CronSchedulers like Quartz.Net",QuartzCronGeneratorLibrary,False,2017-09-22T18:04:00.853+00:00,True,False,,"CronMaker,Quartz.Cron,QuartzCronGenerator",515,False,0.9.1
+Quartz Software SRL,2017-09-22T18:03:58.477Z,8,210,"Provides abstractions for managing data: retrieving, persisting, querying, so on.",Kephas.Data,True,2018-04-12T23:15:26.53+00:00,True,False,"Provides abstractions for managing data: retrieving, persisting, querying, so on.","kephas,framework,data,quartz-software",5826,False,4.0.0-beta1
+Stack,2017-09-22T18:04:01.54Z,192,210,"The Web assembly, containing types for web communication, like consuming RESTful APIs.",Stack.Web,False,2017-10-10T14:23:30.317+00:00,True,False,,,3137,False,1.2.7
+Stack,2017-09-22T18:02:55.24Z,192,210,"The Data assembly, containing types related to the configuration & communication with a persistence service, like a database.",Stack.Data,False,2017-10-10T14:22:28.233+00:00,True,False,,,3191,False,1.2.7
+WeiGe,2017-09-22T18:02:34.833Z,43209,210,"update/delete entity without load entity from database,run raw sql to any entity.",AspNetCore.EntityFrameworkCore.SqlServer.Plus.2,False,1900-01-01T00:00:00+00:00,False,False,,"AspNetCore,.Net,Core,EF,EntityFrameworkCore,Sql,Server",-1,False,2.0.0.20
+Stack,2017-09-22T18:03:35.4Z,192,210,"The Data.Sqlite assembly, containing types related to the configuration of a Sqlite persistence services.",Stack.Data.Sqlite,False,2017-10-10T14:23:04.747+00:00,True,False,,,2245,False,1.2.7
+Joe Audette,2017-09-22T18:02:32.613Z,18,210,Bootstrap 3 views for cloudscribe.Core.Web,cloudscribe.Core.Web.Views.Bootstrap3,False,2018-04-02T20:00:11.777+00:00,True,False,,"cloudscribe.Core,Bootstrap3",8256,False,2.0.9
+Quartz Software SRL,2017-09-22T18:03:45.46Z,8,210,"Provides abstract multi-dimensional modeling artifacts like classifiers, value types, and other model elements.
+            Check the documentation and the samples from https://github.com/quartz-software/kephas/wiki and https://github.com/quartz-software/kephas/tree/master/Samples.
+            Kephas Framework (""stone"" in aramaic) is a very ambitious project aiming to deliver a framework for an application ecosystem.",Kephas.Model,True,2018-04-12T23:15:12.373+00:00,True,False,"Provides abstract multi-dimensional modeling artifacts like classifiers, value types, and other model elements.","kephas,framework,abstract,modeling,multi-dimensional,quartz-software",5903,False,4.0.0-beta1
+Joe Audette,2017-09-22T18:03:04.413Z,1,210,"Multi-tenant web application foundation with management for sites, users, roles, claims, and geographic data.",cloudscribe.Core.Web,False,2018-04-19T16:09:14.333+00:00,True,False,,"cloudscribe,multi-tenant,asp.net,core,site,management",18160,False,2.0.10
+Joe Audette,2017-09-22T18:03:34.07Z,1,210,MVC Controllers for cloudscribe.Core.Web,cloudscribe.Core.Web.Mvc,False,2018-04-19T16:09:32.88+00:00,True,False,,,9772,False,2.0.16
+Quartz Software SRL,2017-09-22T18:03:31.617Z,24,210,"Provides platform specific infrastructure: assembly loaders, application runtime services, other.
+            Check the documentation and the samples from https://github.com/quartz-software/kephas/wiki and https://github.com/quartz-software/kephas/tree/master/Samples.
+            Kephas Framework (""stone"" in aramaic) is a very ambitious project aiming to deliver a framework for an application ecosystem.",Kephas.Platform,True,2018-03-27T09:21:21.49+00:00,True,False,"Provides platform specific infrastructure: assembly loaders, application runtime services, other.","kephas,framework,platform,net,quartz-software",3410,False,4.0.0-beta1
+Stack,2017-09-22T18:03:48.773Z,192,210,"The Data.SqlServer assembly, containing types related to the configuration of a SqlServer persistence services.",Stack.Data.SqlServer,False,2017-10-10T14:23:17.663+00:00,True,False,,,2286,False,1.2.7
+Quartz Software SRL,2017-09-22T18:02:36.177Z,8,210,"Provides services, classes and interfaces used in localization, including localization of type information.
+            Check the documentation and the samples from https://github.com/quartz-software/kephas/wiki and https://github.com/quartz-software/kephas/tree/master/Samples.
+            Kephas Framework (""stone"" in aramaic) is a very ambitious project aiming to deliver a framework for an application ecosystem.",Kephas.Localization,True,2018-04-12T23:14:20.293+00:00,True,False,"Provides services, classes and interfaces used in localization, including localization of type information.","kephas,framework,localization,quartz-software",3081,False,4.0.0-beta1
+Stack,2017-09-22T18:02:38.317Z,192,210,"The Stack assembly, containing most of the main types, configurations & other vital facilities.",Stack,False,2017-10-10T14:22:16.207+00:00,True,False,,,3253,False,1.2.7
+Quartz Software SRL,2017-09-22T18:03:04.57Z,8,210,"Provides the log4net 2 (and later) logging services implementation.
+        Check the documentation and the samples from https://github.com/quartz-software/kephas/wiki and https://github.com/quartz-software/kephas/tree/master/Samples.
+        Kephas Framework (""stone"" in aramaic) is a very ambitious project aiming to deliver a framework for an application ecosystem.",Kephas.Logging.Log4Net,True,2018-04-12T23:14:47.013+00:00,True,False,"Provides the log4net 2 (and later) logging services implementation.
+        Check the documentation and the samples from https://github.com/quartz-software/kephas/wiki and https://github.com/quartz-software/kephas/tree/master/Samples.
+        Kephas Framework (""stone"" in aramaic) is a very ambitious project aiming to deliver a framework for an application ecosystem.","kephas,framework,logging,log4net,quartz-software",5501,False,4.0.0-beta1
+Quartz Software SRL,2017-09-22T18:03:18.257Z,8,210,"Provides the composition services implementation using the System.Composition framework.
+            Check the documentation and the samples from https://github.com/quartz-software/kephas/wiki and https://github.com/quartz-software/kephas/tree/master/Samples.
+            Kephas Framework (""stone"" in aramaic) is a very ambitious project aiming to deliver a framework for an application ecosystem.",Kephas.Composition.Mef,True,2018-04-12T23:14:59.857+00:00,True,False,Provides the composition services implementation using the System.Composition framework.,"kephas,framework,composition,mef,quartz-software",6785,False,4.0.0-beta1
+Stack,2017-09-22T18:03:20.977Z,192,210,"The Data.PostgreSql assembly, containing types related to the configuration of a PostgreSQL persistence services.",Stack.Data.PostgreSql,False,2017-10-10T14:22:53.173+00:00,True,False,,,2307,False,1.2.7
+Quartz Software SRL,2017-09-22T18:02:19.77Z,8,210,"Provides a common infrastructure for all the other Kephas Framework components: ambient services, dynamic reflection, composition, application bootstrapping, and others.
+            Check the documentation and the samples from https://github.com/quartz-software/kephas/wiki and https://github.com/quartz-software/kephas/tree/master/Samples.
+            Kephas Framework (""stone"" in aramaic) is a very ambitious project aiming to deliver a framework for an application ecosystem.",Kephas.Core,True,2018-04-12T23:14:07.62+00:00,True,False,"Provides a common infrastructure for all the other Kephas Framework components: ambient services, dynamic reflection, composition, application bootstrapping, and others.","kephas,framework,core,quartz-software",7074,False,4.0.0-beta1
+Stack,2017-09-22T18:03:08.037Z,192,210,"The Migrations assembly, containing types which upgrade the state of a persistence service, like a database.",Stack.Data.Migrations,False,2017-10-10T14:22:40.79+00:00,True,False,,,3177,False,1.2.7
+Quartz Software SRL,2017-09-22T18:02:50.77Z,8,210,"Provides the NLog implementation of logging abstractions.
+            Check the documentation and the samples from https://github.com/quartz-software/kephas/wiki and https://github.com/quartz-software/kephas/tree/master/Samples.
+            Kephas Framework (""stone"" in aramaic) is a very ambitious project aiming to deliver a framework for an application ecosystem.",Kephas.Logging.NLog,True,2018-04-12T23:14:34.153+00:00,True,False,Provides the NLog implementation of logging abstractions.,"kephas,framework,logging,nlog,quartz-software",6714,False,4.0.0-beta1
+buildguest,2017-09-22T16:46:45.347Z,43209,210,Description,DataAccess.ReadOnlyRepository,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0-CI-20170922-164628
+iRely LLC.,2017-09-22T17:59:45.513Z,43209,210,iRely.Common,iRely.Common,True,1900-01-01T00:00:00+00:00,False,False,,,222555,False,17.32.6474.31075-alpha
+buildguest,2017-09-22T18:00:03.14Z,210,210,Description,STU.Common.DataAccess,False,2017-09-22T18:56:42.27+00:00,True,False,,,229,False,1.0.6
+AlexaCore.Testing,2017-09-22T17:57:35.51Z,9,210,Package Description,AlexaCore.Testing,False,2018-04-11T20:13:02.217+00:00,True,False,,,2011,False,1.0.1.11
+iRely LLC.,2017-09-22T17:59:28.717Z,176,210,iRely.Reports.Helper,iRely.Reports.Helper,True,2017-10-26T04:36:43.8+00:00,True,False,,,73201,False,17.32.6474.31372-alpha
+Lucas Christinson,2017-09-22T17:59:20.92Z,171,210,WPF Direct2D Surface,WPF.Direct2D.Surface,True,2017-10-31T19:34:35.147+00:00,True,False,,,2057,False,1.0.0.22-beta
+iRely LLC.,2017-09-22T17:56:36.913Z,43209,210,iRely.Common,iRely.Common,True,1900-01-01T00:00:00+00:00,False,False,,,222555,False,17.12.6474.30756-alpha
+boro2g,2017-09-22T17:57:23.523Z,9,210,Some helpers for streamlining Alexa C# Lambda functions,AlexaCore,False,2018-04-11T20:12:47.67+00:00,True,False,,"alexa,lambda",5182,False,1.0.1.11
+buildguest,2017-09-22T17:30:21.977Z,43209,210,Description,DataAccess.ReadOnlyRepository,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0-CI-20170922-173006
+buildguest,2017-09-22T17:34:06.173Z,43209,210,Description,DataAccess.ReadOnlyRepository,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.2
+buildguest,2017-09-22T17:18:24.933Z,43209,210,Description,DataAccess.ReadOnlyRepository,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0-CI-20170922-171809
+buildguest,2017-09-22T17:24:32.73Z,43209,210,Description,DataAccess.ReadOnlyRepository,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0-CI-20170922-172417
+Autofac Contributors,2017-09-22T17:50:34.79Z,185,210,Autofac extension for using the Microsoft Enterprise Library Common Service Locator with Autofac.,Autofac.Extras.CommonServiceLocator,False,2017-10-17T12:40:39.91+00:00,True,False,,"autofac,di,ioc,dependencyinjection,aspnet,aspnetcore",288115,False,4.1.0
+Joe McBride,2017-09-22T17:47:46.393Z,24,210,GraphQL for .NET,GraphQL,True,2018-03-27T04:55:04.63+00:00,True,False,,"GraphQL,json,api",95787,False,2.0.0-alpha-793
+buildguest,2017-09-22T17:24:32.73Z,43209,210,Description,DataAccess.ReadOnlyRepository,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0-CI-20170922-172417
+buildguest,2017-09-22T16:46:45.347Z,43209,210,Description,DataAccess.ReadOnlyRepository,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0-CI-20170922-164628
+Microsoft,2017-09-15T19:14:01.95Z,3,217,"Microsoft Cognitive Toolkit Libraries, GPU Build",CNTK.GPU,False,2018-04-17T18:55:35.367+00:00,True,False,This NuGet package provides CNTK native and managed library running on GPU devices. It requires Visual Studio 2015 Update 3. The API documentation is available at https://docs.microsoft.com/cognitive-toolkit/CNTK-Library-Evaluation-on-Windows,"Microsoft,Cognitive,Toolkit,CNTK,deep,learning,CLR,managed,C#,native,C++",53750,False,2.2.0
+buildguest,2017-09-22T17:18:24.933Z,43209,210,Description,DataAccess.ReadOnlyRepository,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0-CI-20170922-171809
+buildguest,2017-09-22T17:30:21.977Z,43209,210,Description,DataAccess.ReadOnlyRepository,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0-CI-20170922-173006
+buildguest,2017-09-22T17:34:06.173Z,43209,210,Description,DataAccess.ReadOnlyRepository,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.2
+James Craig,2017-09-22T17:44:49.51Z,77,210,Aspectus is an AOP library that allows you to inject cross cutting concerns in an easy manner.,Aspectus,False,2018-02-02T16:54:12.503+00:00,True,False,,AOP,4690,False,2.0.17
+Adem Catamak,2017-09-22T17:45:59.327Z,210,210,Basic Api Requirements with Owin,ReadyApi.Host,False,2017-09-22T22:35:14.74+00:00,True,False,,"api,basic,requirements",129,False,1.0.1
+Bmillis,2017-09-22T17:40:43.237Z,207,210,Description,SweetPotatoUI,False,2017-09-25T20:03:43.51+00:00,True,False,,,2613,False,0.0.79
+Adem Catamak,2017-09-22T17:41:47.927Z,43209,210,Basic Api Requirements with Owin,ReadyApi.Model,False,1900-01-01T00:00:00+00:00,False,False,,ReadyApi.Model,-1,False,1.0.3
+sharpiro,2017-02-27T00:57:25.27Z,43209,417,Description,SharpiroTweeter,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.1.0
+sharpiro,2017-02-27T01:03:03.3Z,43209,417,SharpiroTweeter,SharpiroTweeter,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.1.1
+SharpiroTweeter,2017-02-27T01:40:44.757Z,43209,417,Package Description,SharpiroTweeter,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.1.2
+sharpiro,2017-02-27T02:57:14.107Z,43209,417,SharpiroTweeter,SharpiroTweeter,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.1.3
+sharpiro,2017-02-27T03:31:15.437Z,43209,417,SharpiroTweeter,SharpiroTweeter,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.1.4
+takenet,2017-09-22T17:35:51.397Z,1,210,Iris common data types package,Takenet.Iris.Common,False,2018-04-19T20:20:12.39+00:00,True,False,,"Iris,Lime",46396,False,1.9.112
+buildguest,2017-09-22T17:34:06.173Z,43209,210,Description,DataAccess.ReadOnlyRepository,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.2
+Fredrik Löwenhamn,2017-09-22T17:27:18.97Z,63,210,Framework to create web apps with GraphQL and RethinkDb,GraphQlRethinkDbLibrary,False,2018-02-16T13:32:32.53+00:00,True,False,,"graphql,rethinkdb",1535,False,1.0.4
+buildguest,2017-09-22T17:30:21.977Z,43209,210,Description,DataAccess.ReadOnlyRepository,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0-CI-20170922-173006
+Fredrik Löwenhamn,2017-09-22T17:27:18.97Z,63,210,Framework to create web apps with GraphQL and RethinkDb,GraphQlRethinkDbLibrary,False,2018-02-16T13:32:32.53+00:00,True,False,,"graphql,rethinkdb",1535,False,1.0.4
+Adem Catamak,2017-09-22T17:27:03.72Z,38,210,Shortcuts and General Extensions,Alternatives,False,2018-03-13T23:33:08.493+00:00,True,False,,"alternatives,shortcut,utilities,extensions",3319,False,1.0.7.1
+Ken Domino,2017-09-22T17:27:00.063Z,2,210,"A C# wrapper API of LLVM-C for Windows (x86, x64), Ubuntu (x64).",swigged.llvm,False,2018-04-18T17:21:01.78+00:00,True,False,,"LLVM,SWIG,native,C#,compilers,bindings,pinvoke,Windows,Ubuntu",2520,False,5.0.2
+buildguest,2017-09-22T17:25:41.56Z,1,210,Description,I2M.Client45.Test,False,2018-04-20T01:20:53.76+00:00,True,False,,,18777,False,2017.9.22.1
+Integrity Marketing Group,2017-09-22T17:25:54.36Z,1,210,I2M is Integrity's platform to create a highly scalable service orientated architecture,IntegrityMarketingGroup.I2M.Client,False,2018-04-20T01:20:55.62+00:00,True,False,,"I2M,Integrity,IntegrityMarketingGroup",20202,False,2017.9.22.1
+buildguest,2017-09-22T17:24:32.73Z,43209,210,Description,DataAccess.ReadOnlyRepository,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0-CI-20170922-172417
+OCIO,2017-09-22T17:15:51.053Z,207,210,UI Automation Framework using SpecFlow and Selenium WebDriver,SweetPotatoUI,False,2017-09-25T20:03:43.51+00:00,True,False,,"UI,Test,Automation",2613,False,0.0.78
+Google Inc.,2017-09-22T17:18:44.437Z,71,210,"The Google APIs Client Library is a runtime client for working with Google Services.
+
+The ASP.NET MVC extension library contains an auth controller and an authorization code MVC App to make the OAuth2 ""dance"" easier.
+
+Supported Platforms:
+- .NET Framework 4.5+",Google.Apis.Auth.Mvc,True,2018-02-08T11:06:38.253+00:00,True,False,,Google,129801,True,1.30.0-beta01
+buildguest,2017-09-22T17:18:24.933Z,43209,210,Description,DataAccess.ReadOnlyRepository,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0-CI-20170922-171809
+Google Inc.,2017-09-22T17:18:22.84Z,71,210,"The Google APIs Client Library is a runtime client for working with Google services.
+
+This package includes auth components like user-credential, authorization code flow, etc. for making authenticated calls using the OAuth2 spec.
+
+Supported Platforms:
+- .NET Framework 4.5+
+- NetStandard1.3, providing .NET Core support
+- UWP (Univeral Windows Platform)",Google.Apis.Auth,True,2018-02-08T11:06:26.533+00:00,True,False,,Google,3514776,True,1.30.0-beta01
+Google Inc.,2017-09-22T17:17:53.417Z,71,210,"The Google APIs Client Library is a runtime client for working with Google services.
+The library supports service requests, media upload and download, etc.
+    
+Supported Platforms:
+- .NET Framework 4.5+
+- NetStandard1.3, providing .NET Core support
+- UWP (Univeral Windows Platform)",Google.Apis,True,2018-02-08T11:06:13.173+00:00,True,False,,Google,3611600,True,1.30.0-beta01
+Bmillis,2017-09-22T17:15:51.053Z,207,210,Description,SweetPotatoUI,False,2017-09-25T20:03:43.51+00:00,True,False,,,2613,False,0.0.78
+MikaelGRA,2017-09-22T17:12:36.17Z,6,210,An easy-to-use client for InfluxDB that supports simple query to object mapping.,Vibrant.InfluxDB.Client,False,2018-04-14T18:07:42.43+00:00,True,False,,"influxdb,nosql,timeseries,data",7484,False,3.2.0
+Rico Suter,2017-09-22T17:11:43.45Z,1,210,"JSON Schema draft v4 reader, generator and validator for .NET",NJsonSchema.CodeGeneration.TypeScript,False,2018-04-19T17:28:14.44+00:00,True,False,,"json,schema,validation,generator,.net",45849,False,9.6.4
+Rico Suter,2017-09-22T17:11:29.95Z,1,210,"JSON Schema draft v4 reader, generator and validator for .NET",NJsonSchema.CodeGeneration.CSharp,False,2018-04-19T17:28:12.52+00:00,True,False,,"json,schema,validation,generator,.net",58427,False,9.6.4
+Rico Suter,2017-09-22T17:11:16.48Z,1,210,"JSON Schema draft v4 reader, generator and validator for .NET",NJsonSchema.CodeGeneration,False,2018-04-19T17:28:11.333+00:00,True,False,,"json,schema,validation,generator,.net",181929,False,9.6.4
+Rico Suter,2017-09-22T17:11:05.48Z,1,210,"JSON Schema draft v4 reader, generator and validator for .NET",NJsonSchema,False,2018-04-19T17:28:09.957+00:00,True,False,,"json,schema,validation,generator,.net",552059,False,9.6.4
+Mien Wu,2017-09-22T17:03:58.59Z,180,210,Sdao.API.Common,Sdao.API.Common,False,2017-10-22T09:06:57.307+00:00,True,False,Sdao.API.Common,,1257,False,0.3.7
+John Mott,2017-09-11T13:38:00.567Z,43209,221,The ShapeTemplateLib is a .NET library for accessing the Meshola API to generate meshes.,Meshola.Library.ShapeTemplateLib,False,1900-01-01T00:00:00+00:00,False,False,,3dMesh,-1,False,1.0.0
+Mien Wu,2017-09-22T17:03:58.59Z,180,210,Sdao.API.Common,Sdao.API.Common,False,2017-10-22T09:06:57.307+00:00,True,False,,,1257,False,0.3.7
+OEC,2017-09-22T16:46:25.143Z,204,210,"OEC API library encapsulates network communication between client application and OEC Servers and provided object-oriented access to OEC functionality through exposed components (objects), their properties, methods and events.",OECAPI,False,2017-09-28T18:08:26.87+00:00,False,False,,"trading,OEC,openecry,futures,options,forex",2745,False,3.5.14.38
+laredoza,2017-09-02T11:29:32.48Z,17,230,"A MongoDb implementation of the Orleans Providers. This includes the Membership (IMembershipTable and IGatewayListProvider), Reminder (IReminderTable), MongoStatisticsPublisher and IStorageProvider providers.",Orleans.Providers.MongoDB,True,2018-04-03T14:39:13.97+00:00,True,False,,"Orleans,OrleansProviders,MongoDB",5646,False,0.1.2-preview
+Mday,2017-09-22T17:00:55.24Z,211,210,Logging Implementation using NLog,MRD.Common.Logging,False,2017-09-21T20:50:09.607+00:00,True,False,,,149,False,1.0.0
+Mday,2017-09-22T17:01:19.583Z,210,210,Generic Repository,MRD.Common.Repository,False,2017-09-22T17:01:19.583+00:00,True,False,,,75,False,1.0.0
+Armin Reiter,2017-09-22T16:58:46.203Z,210,210,.net library that reads data from the azure rest billing (ratecard and usage) apis and calculates the costs. (.net standard 1.4 and .net framework 4.5 and higher),CodeHollow.AzureBillingApi,False,2017-09-22T16:58:46.203+00:00,True,False,,"azure,billing,billingapi,windowsazure,microsoftazure,managementapi,azuremanagementapi",1319,False,1.1.0.6
+SpiceyWolf,2016-11-02T16:10:29.973Z,534,534,"Modified/Stripped down version of DockPanelSuite that is getting bug fixes, (hopefully) optimizations, code standardization etc. Does not have theme settings anymore, it has one STATIC theme set which should optimize it over time of cleaning it.",ArchaicSoft.DockPanel,False,2016-11-02T16:10:29.973+00:00,True,False,,,2583,False,1.3.0
+OCIO,2017-09-22T16:48:46.18Z,207,210,UI Automation Framework using SpecFlow and Selenium WebDriver,SweetPotatoUI,False,2017-09-25T20:03:43.51+00:00,True,False,,"UI,Test,Automation",2613,False,0.0.77
+LEI Hongfaan,2017-09-22T16:53:07.58Z,153,210,Defines some operations to support Int128.,UltimateOrb.Mathematics.DoubleArithmetic.Core,True,2017-11-18T11:53:50.41+00:00,True,False,,Int128,2363,False,1.0.1-alpha
+Solutia Consulting,2017-09-22T16:51:07.543Z,65,210,"Generates the following assets:
+			* SQL Server 2016 Stored Procedures for CRUD activiity (all Stored procs return JSON data via SQL Server 2016's FOR JSON capability)
+			* Repository code for converting raw JSON to concrete implementations of C# Interface (using Json.Net)
+			* Business Library allowing for business rules to be applied to data
+			* Sample WebApi endpoints
+			* Angular 4+ models for translating raw JSON data into JavaScript models (future development effort)
+
+			This code generator allows you to spend time in the following areas crafting your application:
+			* crafting stored procedures to surface database data matching the data needs imposed by a C# Interface
+			* crafting WebApi endpoints (you can use code generated samples as a starting point)
+			* crafting your front-end experience
+			
+			Utilizing this code generator increases your productivity and produces consistent, reliable results",SolutiaConsulting.CodeGenerator,False,2018-02-14T21:06:35.54+00:00,True,False,Generates code assets from database tier through presentation tier based solely upon a C# Interface.,"code,generation",2742,False,3.0.4.19
+James Craig,2017-09-22T16:50:47.51Z,64,210,Inflatable is a simple ORM.,Inflatable,False,2018-02-15T21:07:42.427+00:00,True,False,,"ORM,SQL",2679,False,1.0.11
+OEC,2017-09-22T16:46:25.143Z,204,210,"OEC API library encapsulates network communication between client application and OEC Servers and provided object-oriented access to OEC functionality through exposed components (objects), their properties, methods and events.",OECAPI,False,2017-09-28T18:08:26.87+00:00,True,False,,"trading,OEC,openecry,futures,options,forex",2745,False,3.5.14.38
+Ryan Wilson,2017-09-22T16:50:01.23Z,29,210,Memory Adaptor For LitterBox Caching,LitterBox.Memory,False,2018-03-22T19:57:08.923+00:00,True,False,,"csharp,memory,caching,litterbox",1495,False,4.0.0
+Ryan Wilson,2017-09-22T16:49:42.18Z,29,210,DocumentDB Adaptor For LitterBox Caching,LitterBox.DocumentDB,False,2018-03-22T19:53:22.2+00:00,True,False,,"csharp,memory,caching,litterbox,documentdb",398,False,1.0.0
+Ryan Wilson,2017-09-22T16:50:21.823Z,29,210,Redis Adaptor For LitterBox Caching,LitterBox.Redis,False,2018-03-22T19:57:41.643+00:00,True,False,,"csharp,memory,caching,litterbox,redis",1434,False,4.0.0
+Bmillis,2017-09-22T16:48:46.18Z,207,210,Description,SweetPotatoUI,False,2017-09-25T20:03:43.51+00:00,True,False,,,2613,False,0.0.77
+Ryan Wilson,2017-09-22T16:49:22.663Z,29,210,LitterBox Caching Base,LitterBox,False,2018-03-22T19:52:45.51+00:00,True,False,,"csharp,memory,caching,litterbox",1136,False,4.0.0
+OEC,2017-09-22T16:46:25.143Z,204,210,"OEC API library encapsulates network communication between client application and OEC Servers and provided object-oriented access to OEC functionality through exposed components (objects), their properties, methods and events.",OECAPI,False,2017-09-28T18:08:26.87+00:00,True,False,,"trading,OEC,openecry,futures,options,forex",2745,False,3.5.14.38
+buildguest,2017-09-22T16:46:45.347Z,43209,210,Description,DataAccess.ReadOnlyRepository,True,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0-CI-20170922-164628
+LEI Hongfaan,2017-09-22T16:15:51.84Z,153,210,Defines some operations to support Int128.,UltimateOrb.Mathematics.DoubleArithmetic.Core,False,2017-11-18T11:53:50.41+00:00,True,False,Defines some operations to support Int128.,Int128,2363,False,1.0.0
+Yongyuth Janloy,2017-09-22T16:42:43.383Z,210,210,"MVC DLL NuGet
+
+1. Edit Site.css
+2. Loadingoverlay",MVC_PPC_Theme_ByTom,False,2017-09-22T16:42:43.383+00:00,True,False,"EPPlus 4.1.0
+notNet 4.5
+jQuery 3.1.1
+Bootstrap Material Design
+Bootstrap 3.3.7
+Font Awesone 4.7.0
+Linq.js
+
+*** not set connectionstring","aspnet,aspnetmvc,mvc",488,False,1.4.1
+Braspag,2017-09-22T16:38:48Z,39,210,Implementação do Sdk Api Pagador,Braspag.ApiDotNetSdk,False,2018-03-12T14:09:13.19+00:00,True,False,,,1351,False,2.9.13
+Braspag,2017-09-22T16:38:48Z,39,210,Implementação do Sdk Api Pagador,Braspag.ApiDotNetSdk,False,2018-03-12T14:09:13.19+00:00,True,False,,,1351,False,2.9.13
+laredoza,2017-09-22T16:33:25.113Z,17,210,"A MongoDb implementation of the Orleans Providers. This includes the Membership (IMembershipTable and IGatewayListProvider), Reminder (IReminderTable), MongoStatisticsPublisher and IStorageProvider providers.",Orleans.Providers.MongoDB,True,2018-04-03T14:39:13.97+00:00,True,False,,"Orleans,OrleansProviders,MongoDB",5646,False,0.1.3-preview
+Yongyuth Janloy,2017-09-22T16:35:33.743Z,210,210,"MVC DLL NuGet
+
+1. Edit Site.css
+2. Loadingoverlay",MVC_PPC_Theme_ByTom,False,2017-09-22T16:42:43.383+00:00,True,False,"EPPlus 4.1.0
+notNet 4.5
+jQuery 3.1.1
+Bootstrap Material Design
+Bootstrap 3.3.7
+Font Awesone 4.7.0
+Linq.js
+
+*** not set connectionstring","aspnet,aspnetmvc,mvc",488,False,1.4.0
+laredoza,2017-09-22T16:33:25.113Z,17,210,"A MongoDb implementation of the Orleans Providers. This includes the Membership (IMembershipTable and IGatewayListProvider), Reminder (IReminderTable), MongoStatisticsPublisher and IStorageProvider providers.",Orleans.Providers.MongoDB,True,2018-04-03T14:39:13.97+00:00,True,False,,"Orleans,OrleansProviders,MongoDB",5646,False,0.1.3-preview
+James Craig,2017-09-22T16:32:22.063Z,66,210,Data.Modeler helps to model database schemas using C#.,Data.Modeler,False,2018-02-13T21:15:46.363+00:00,True,False,,"SQL,Databases,Schema,Modeling",2046,False,1.0.26
+John Mott,2017-09-22T16:25:37.3Z,43209,210,The ShapeTemplateLib is a .NET library for accessing the Meshola API to generate meshes.,Meshola.Library.ShapeTemplateLib,False,1900-01-01T00:00:00+00:00,False,False,,3dMesh,-1,False,1.1.0
+Karl M. Speer,2017-09-22T16:29:54.153Z,179,210,"This generates items for the Dungeons and Dragons 3.5 system. One can generate treasure or individual items such as coins, goods, weapons, armor, and magical items.",DnDGen.TreasureGen,False,2017-10-23T16:03:30.447+00:00,True,False,This generates items for the Dungeons and Dragons 3.5 system.,"item,equipment,treasure,generator,dice,dungeons,dragons,d20,dnd,3.5,equip,gen",3397,False,8.1.1
+Adem Catamak,2017-09-22T16:29:15.84Z,38,210,Shortcuts and General Extensions,Alternatives,False,2018-03-13T23:33:08.493+00:00,True,False,,"alternatives,shortcut,utilities,extensions",3319,False,1.0.7
+Karl M. Speer,2017-09-22T16:30:04.903Z,179,210,This is a Ninject-based bootstrapper for TreasureGen,DnDGen.TreasureGen.Domain,False,2017-10-23T16:03:43.9+00:00,True,False,This is a Ninject-based bootstrapper for TreasureGen,"item,equipment,generator,dice,dungeons,dragons,d20,dnd,3.5,equip,gen,common,bootstrap,ninject,inject,dependency,ioc",3569,False,8.1.1
+Built to Roam Pty Ltd,2017-09-22T07:52:18.44Z,210,210,This library contains a number of helper methods and functions that make building applications on a variety of platforms easier,BuildIt.Synchronization,True,2017-09-22T16:23:31.873+00:00,False,False,,"BuildIt,Synchronization",3083,False,1.1.0.100-beta
+Built to Roam Pty Ltd,2016-10-10T01:15:52.513Z,210,557,This library contains a number of helper methods and functions that make building applications on a variety of platforms easier,BuildIt.Synchronization,True,2017-09-22T16:23:31.873+00:00,False,False,,BuildIt,3083,False,0.1.6.34-beta
+Built to Roam Pty Ltd,2017-01-19T23:45:34.253Z,210,456,This library contains a number of helper methods and functions that make building applications on a variety of platforms easier,BuildIt.Synchronization,False,2017-09-22T16:23:31.873+00:00,False,False,,BuildIt,3083,False,1.0.0.53
+Built to Roam Pty Ltd,2017-08-28T13:32:22.03Z,210,235,This library contains a number of helper methods and functions that make building applications on a variety of platforms easier,BuildIt.Synchronization,True,2017-09-22T16:23:31.873+00:00,False,False,,"BuildIt,Synchronization",3083,False,1.1.0.78-beta
+Built to Roam Pty LTd,2015-12-16T00:50:41.69Z,210,856,Description,BuildIt.Synchronization,False,2017-09-22T16:23:31.873+00:00,False,False,,,3083,False,0.1.1.4
+Built to Roam Pty LTd,2016-01-18T06:51:18.07Z,210,823,Synchronization framework,BuildIt.Synchronization,False,2017-09-22T16:23:31.873+00:00,False,False,,BuildIt,3083,False,0.1.3
+Built to Roam Pty LTd,2015-10-28T06:07:49.8Z,210,905,Description,BuildIt.Synchronization,False,2017-09-22T16:23:31.873+00:00,False,False,,,3083,False,0.1.1
+Built to Roam Pty Ltd,2016-09-19T03:51:01.35Z,210,578,Synchronization framework,BuildIt.Synchronization,True,2017-09-22T16:23:31.873+00:00,False,False,,,3083,False,0.1.5.5-beta
+Built to Roam Pty Ltd,2016-09-15T06:38:44.243Z,210,582,Synchronization framework,BuildIt.Synchronization,True,2017-09-22T16:23:31.873+00:00,False,False,,,3083,False,0.1.5.1-beta
+Built to Roam Pty Ltd,2017-01-19T05:00:12.153Z,210,456,This library contains a number of helper methods and functions that make building applications on a variety of platforms easier,BuildIt.Synchronization,True,2017-09-22T16:23:31.873+00:00,False,False,,BuildIt,3083,False,1.0.0.52-beta
+John Mott,2017-09-22T16:25:37.3Z,43209,210,The ShapeTemplateLib is a .NET library for accessing the Meshola API to generate meshes.,Meshola.Library.ShapeTemplateLib,False,1900-01-01T00:00:00+00:00,False,False,,3dMesh,-1,False,1.1.0
+Google Inc.,2017-09-22T16:24:55Z,71,210,"The Google APIs Core Library contains the Google APIs HTTP layer, JSON support, Data-store, logging and so on.
+
+Supported Platforms:
+- .NET Framework 4.5+
+- NetStandard1.3, providing .NET Core support",Google.Apis.Core,True,2018-02-08T11:06:50.363+00:00,True,False,,Google,3674879,True,1.30.0-beta01
+Built to Roam Pty Ltd,2017-09-22T16:23:31.873Z,210,210,This library contains a number of helper methods and functions that make building applications on a variety of platforms easier,BuildIt.Synchronization,False,2017-09-22T16:23:31.873+00:00,True,False,,"BuildIt,Synchronization",3083,False,1.1.0.100
+SumoSoft,2017-09-22T16:22:12.12Z,1,210,"SumoSoft Cms is an advanced Framework based on MVC5 that will let you build highly customizable websites with extreme ease. 
+      The main features include: blog, e-commerce, dynamic user permissions, advanced internationalization, 
+      IP based geo-localization, media management using both local FTP folders and Windows Azure Storage accounts, email templating, logging system",SumoSoft.Cms.Core,False,2018-04-19T11:51:37.75+00:00,True,False,SumoSoft Cms,,31961,False,4.4.6
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:22:22.057Z,16,210,Provides loggic facilities for Microsoft Azure Application Insights.,LogMagic.Microsoft.Azure.ApplicationInsights,False,2018-04-04T11:46:57.997+00:00,True,False,,"application-insights,logging",6453,False,2.5.53
+"tvn-cosine,birdie",2017-09-22T16:22:40.167Z,210,210,a .net wrapper for Tesseract Ocr.,birdie.tesseract.net,True,2017-09-22T16:22:40.167+00:00,True,False,a .net wrapper for Tesseract Ocr.,"dotNet,OCR,tesseract",147,False,4.0.0.7-pre2
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:22:11.323Z,16,210,"Like many other libraries for .NET, LogMagic provides diagnostic logging into files, the console, and elsewhere. It's probably the easiest framework to setup, has a clean API, extremely extensible.
+LogMagic also supports a relatively new paradigm of structured logging.",LogMagic,False,2018-04-04T11:46:35.573+00:00,True,False,,,22399,False,2.5.53
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:22:44.87Z,16,210,Integrates LogMagic with Storage.Net,LogMagic.Storage.Net,True,2018-04-04T11:47:56.233+00:00,True,False,,,2990,False,1.0.0-alpha-53
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:22:33.31Z,16,210,LogMagic Azure Service Fabric integration support. This package extracts context information from the running service and injects as enriched properties. It also supports correlating proxies helping to carry context information between service fabric native services and actors.,LogMagic.Microsoft.Azure.ServiceFabric,False,2018-04-04T11:47:20.2+00:00,True,False,,"azure-service-fabric,logging",5085,False,5.6.204.53
+Georg Haaser,2017-09-22T16:21:17.087Z,8,210,F# embedded shaders,FShade.SpirV,False,2018-04-12T13:42:20.17+00:00,True,False,,,1023,False,3.2.7
+LEI Hongfaan,2017-09-22T16:15:51.84Z,153,210,Defines some operations to support Int128.,UltimateOrb.Mathematics.DoubleArithmetic.Core,False,2017-11-18T11:53:50.41+00:00,True,False,Defines some operations to support Int128.,Int128,2363,False,1.0.0
+Georg Haaser,2017-09-22T16:21:01.413Z,8,210,F# embedded shaders,FShade.Imperative,False,2018-04-12T13:42:25.34+00:00,True,False,,,1031,False,3.2.7
+Georg Haaser,2017-09-22T16:20:48.507Z,8,210,F# embedded shaders,FShade.GLSL,False,2018-04-12T13:42:51.123+00:00,True,False,,,1012,False,3.2.7
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:20:38.913Z,16,210,Integrates LogMagic with Storage.Net,LogMagic.Storage.Net,True,2018-04-04T11:47:56.233+00:00,True,False,,,2990,False,1.0.0-alpha-51
+Georg Haaser,2017-09-22T16:20:42.617Z,8,210,F# embedded shaders,FShade.Core,False,2018-04-12T13:43:21.233+00:00,True,False,,,988,False,3.2.7
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:20:28.18Z,16,210,LogMagic Azure Service Fabric integration support. This package extracts context information from the running service and injects as enriched properties. It also supports correlating proxies helping to carry context information between service fabric native services and actors.,LogMagic.Microsoft.Azure.ServiceFabric,False,2018-04-04T11:47:20.2+00:00,True,False,,"azure-service-fabric,logging",5085,False,5.6.204.51
+Georg Haaser,2017-09-22T16:20:29.57Z,8,210,F# embedded shaders,FShade,False,2018-04-12T13:40:14.24+00:00,True,False,,,2925,False,3.2.7
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:19:27.207Z,16,210,Integrates LogMagic with Storage.Net,LogMagic.Storage.Net,True,2018-04-04T11:47:56.233+00:00,True,False,,,2990,False,1.0.0-alpha-50
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:20:17.46Z,16,210,Provides loggic facilities for Microsoft Azure Application Insights.,LogMagic.Microsoft.Azure.ApplicationInsights,False,2018-04-04T11:46:57.997+00:00,True,False,,"application-insights,logging",6453,False,2.5.51
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:19:03.223Z,16,210,Provides loggic facilities for Microsoft Azure Application Insights.,LogMagic.Microsoft.Azure.ApplicationInsights,False,2018-04-04T11:46:57.997+00:00,True,False,,"application-insights,logging",6453,False,2.5.50
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:19:12.91Z,16,210,LogMagic Azure Service Fabric integration support. This package extracts context information from the running service and injects as enriched properties. It also supports correlating proxies helping to carry context information between service fabric native services and actors.,LogMagic.Microsoft.Azure.ServiceFabric,False,2018-04-04T11:47:20.2+00:00,True,False,,"azure-service-fabric,logging",5085,False,5.6.204.50
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:20:05.867Z,16,210,"Like many other libraries for .NET, LogMagic provides diagnostic logging into files, the console, and elsewhere. It's probably the easiest framework to setup, has a clean API, extremely extensible.
+LogMagic also supports a relatively new paradigm of structured logging.",LogMagic,False,2018-04-04T11:46:35.573+00:00,True,False,,,22399,False,2.5.51
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:18:49.97Z,16,210,"Like many other libraries for .NET, LogMagic provides diagnostic logging into files, the console, and elsewhere. It's probably the easiest framework to setup, has a clean API, extremely extensible.
+LogMagic also supports a relatively new paradigm of structured logging.",LogMagic,False,2018-04-04T11:46:35.573+00:00,True,False,,,22399,False,2.5.50
+Cameron Taggart,2017-09-22T16:18:16.86Z,77,210,"SourceLink: Source Code On Demand
+      Source Link your Portable PDB files to allow source code to be downloaded on demand",SourceLink.Test,False,2018-02-02T19:38:40.267+00:00,True,False,,"sourcelink,pdb,symbols,git,sourceindexing,debugging,sourceserver,build",5964,False,2.3.1
+Cameron Taggart,2017-09-22T16:18:06.737Z,77,210,"SourceLink: Source Code On Demand
+      Source Link your Portable PDB files to allow source code to be downloaded on demand",SourceLink.Embed.PaketFiles,False,2018-02-02T19:38:28.437+00:00,True,False,,"sourcelink,pdb,symbols,git,sourceindexing,debugging,sourceserver,build",18257,False,2.3.1
+Cameron Taggart,2017-09-22T16:17:54.203Z,77,210,"SourceLink: Source Code On Demand
+      Source Link your Portable PDB files to allow source code to be downloaded on demand",SourceLink.Embed.AllSourceFiles,False,2018-02-02T19:38:16.95+00:00,True,False,,"sourcelink,pdb,symbols,git,sourceindexing,debugging,sourceserver,build",35385,False,2.3.1
+Cameron Taggart,2017-09-22T16:17:42.78Z,77,210,"SourceLink: Source Code On Demand
+      Source Link your Portable PDB files to allow source code to be downloaded on demand",SourceLink.Create.GitHub,False,2018-02-02T19:37:52.717+00:00,True,False,,"sourcelink,pdb,symbols,git,sourceindexing,debugging,sourceserver,build",27675,False,2.3.1
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:17:47.517Z,16,210,Integrates LogMagic with Storage.Net,LogMagic.Storage.Net,True,2018-04-04T11:47:56.233+00:00,True,False,,,2990,False,1.0.0-alpha-49
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:17:36.53Z,16,210,LogMagic Azure Service Fabric integration support. This package extracts context information from the running service and injects as enriched properties. It also supports correlating proxies helping to carry context information between service fabric native services and actors.,LogMagic.Microsoft.Azure.ServiceFabric,False,2018-04-04T11:47:20.2+00:00,True,False,,"azure-service-fabric,logging",5085,False,5.6.204.49
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:17:25.373Z,16,210,Provides loggic facilities for Microsoft Azure Application Insights.,LogMagic.Microsoft.Azure.ApplicationInsights,False,2018-04-04T11:46:57.997+00:00,True,False,,"application-insights,logging",6453,False,2.5.49
+Cameron Taggart,2017-09-22T16:17:32.28Z,77,210,"SourceLink: Source Code On Demand
+      Source Link your Portable PDB files to allow source code to be downloaded on demand",SourceLink.Create.CommandLine,False,2018-02-02T19:37:39.933+00:00,True,False,,"sourcelink,pdb,symbols,git,sourceindexing,debugging,sourceserver,build",117371,False,2.3.1
+Cameron Taggart,2017-09-22T16:17:18.157Z,77,210,"SourceLink: Source Code On Demand
+      Source Link your Portable PDB files to allow source code to be downloaded on demand",SourceLink.Create.BitBucketServer,False,2018-02-02T19:37:28.967+00:00,True,False,,"sourcelink,pdb,symbols,git,sourceindexing,debugging,sourceserver,build",969,False,2.3.1
+Cameron Taggart,2017-09-22T16:16:39.967Z,77,210,"SourceLink: Source Code On Demand
+      Source Link your Portable PDB files to allow source code to be downloaded on demand",dotnet-sourcelink-git,False,2018-02-02T19:36:41.323+00:00,True,False,,"sourcelink,pdb,symbols,git,sourceindexing,debugging,sourceserver,build",26548,False,2.3.1
+Cameron Taggart,2017-09-22T16:17:05.593Z,77,210,"SourceLink: Source Code On Demand
+      Source Link your Portable PDB files to allow source code to be downloaded on demand",SourceLink.Create.BitBucket,False,2018-02-02T19:37:16.09+00:00,True,False,,"sourcelink,pdb,symbols,git,sourceindexing,debugging,sourceserver,build",1878,False,2.3.1
+LEI Hongfaan,2017-09-22T16:15:51.84Z,153,210,Defines some operations to support Int128.,UltimateOrb.Mathematics.DoubleArithmetic.Core,False,2017-11-18T11:53:50.41+00:00,True,False,,,2363,False,1.0.0
+Cameron Taggart,2017-09-22T16:16:50.593Z,77,210,"SourceLink: Source Code On Demand
+      Source Link your Portable PDB files to allow source code to be downloaded on demand",dotnet-sourcelink,False,2018-02-02T19:36:53.107+00:00,True,False,,"sourcelink,pdb,symbols,git,sourceindexing,debugging,sourceserver,build",29329,False,2.3.1
+Ivan Gavryliuk (@aloneguid),2017-09-22T16:17:10.64Z,16,210,"Like many other libraries for .NET, LogMagic provides diagnostic logging into files, the console, and elsewhere. It's probably the easiest framework to setup, has a clean API, extremely extensible.
+LogMagic also supports a relatively new paradigm of structured logging.",LogMagic,False,2018-04-04T11:46:35.573+00:00,True,False,,,22399,False,2.5.49
+Skills.gq,2017-09-22T16:13:47.32Z,165,210,Superset of DevExpress.Xpo,Skills.Xpo,False,2017-11-06T15:59:33.31+00:00,True,False,,,1871,False,1.0.0.16
+"Ross McKinlay,Colin Bull",2017-09-22T16:15:08.633Z,4,210,Type providers for SQL database access.,SQLProvider,False,2018-04-16T19:20:53.603+00:00,True,False,Type providers for SQL database access.,"F#,fsharp,typeprovider,sql,sqlserver",47463,False,1.1.10
+"tvn-cosine,birdie",2017-09-22T16:12:28.24Z,210,210,a .net wrapper for Tesseract Ocr.,birdie.tesseract.net,True,2017-09-22T16:22:40.167+00:00,True,False,a .net wrapper for Tesseract Ocr.,"dotNet,OCR,tesseract",147,False,4.0.0.7-pre1
+MundiPagg,2017-09-22T16:06:48.367Z,3,210,Mundipagg API,MundiAPI.PCL,False,2018-04-17T19:03:43.18+00:00,True,False,,,2479,False,0.8.0
+buildguest,2017-09-22T16:03:59.873Z,4,210,Description,BumperLane.Public.Api.Client,False,2018-04-16T12:25:45.507+00:00,True,False,,,14261,False,0.15.3.117
+buildguest,2017-09-22T16:04:13.377Z,15,210,Description,BumperLane.Public.Api.V2.ClientModule,False,2018-04-05T18:47:05.347+00:00,True,False,,,8756,False,0.15.3.117
+buildguest,2017-09-22T16:04:24.19Z,15,210,Description,BumperLane.Public.Service.Contracts,False,2018-04-05T18:47:41.3+00:00,True,False,,,13366,False,0.15.3.117
+buildguest,2017-09-22T16:01:31.243Z,15,210,Description,BumperLane.Public.Api.V2.ClientModule,True,2018-04-05T18:47:05.347+00:00,True,False,,,8756,False,0.15.2.116-prerelease
+buildguest,2017-09-22T16:01:19.307Z,4,210,Description,BumperLane.Public.Api.Client,True,2018-04-16T12:25:45.507+00:00,True,False,,,14261,False,0.15.2.116-prerelease
+StandardConfiguration,2017-09-22T16:02:39.28Z,204,210,Default configuration helper for using commandline to create Configuration with optional ini file in app's folder,NicolasDorier.StandardConfiguration,False,2017-09-28T08:59:23.61+00:00,True,False,,,2149,False,1.0.0.9
+buildguest,2017-09-22T16:01:44.807Z,15,210,Description,BumperLane.Public.Service.Contracts,True,2018-04-05T18:47:41.3+00:00,True,False,,,13366,False,0.15.2.116-prerelease
+Google Inc.,2017-09-22T16:00:21.397Z,43209,210,Recommended Google client library to access the v1beta2 Google Cloud Video Intelligence API.,Google.Cloud.VideoIntelligence.V1Beta2,True,1900-01-01T00:00:00+00:00,False,False,,"VideoIntelligence,Google,Cloud",833,True,1.0.0-beta02
+Google Inc.,2017-09-22T16:00:09.74Z,43209,210,Recommended Google client library to access the v1beta1 Google Cloud Video Intelligence API.,Google.Cloud.VideoIntelligence.V1Beta1,True,1900-01-01T00:00:00+00:00,False,False,,"VideoIntelligence,Google,Cloud",729,True,1.0.0-beta06
+ChargeBee Inc,2017-09-22T15:59:48.723Z,22,210,Client library for easily integrating with the ChargeBee service,ChargeBee,False,2018-03-29T15:20:01.003+00:00,True,False,,,34952,False,2.4.2
+Steve Lauer,2017-09-22T15:35:14.137Z,210,210,"Data Access Library that simplifies data access to a Microsoft SQL server.  Wraps SqlConnection the SqlCommand into a series of objects and methods that provide more straightforward usage.  
+	GetObject<T>() provides functionality to fill an object via reflection in a lightweight manner.",Iag.Unity.DataAccess.dll,False,2017-09-22T15:35:14.137+00:00,True,False,,"C#,Data,Access,SqlCommand,SqlConnection,Sql,StoredProcedure,ORM,Object-Relational,Mapping",1702,False,1.0.9.3
+Steve Smith (@ardalis),2017-09-22T15:53:00.723Z,137,210,A simple package with guard clause helper methods. See docs for how to extend using your own extension methods.,Ardalis.GuardClauses,False,2017-12-04T21:26:27.183+00:00,True,False,A simple package with guard clause helper methods. See docs for how to extend using your own extension methods.,guard,10732,False,1.0.3
+EmL Solutions,2017-09-22T15:56:40.407Z,2,210,EmL DataRepository Base classes using Entity Framework 6.,Eml.DataRepository,False,2018-04-18T20:35:49.36+00:00,True,False,,"DataRepository,EmL,Solutions",8822,False,1.0.0.10
+Hypermedia.JsonApi.Client,2017-09-22T15:55:57.247Z,106,210,Package Description,Hypermedia.JsonApi.Client,True,2018-01-04T13:47:01.85+00:00,True,False,,,6309,False,2.3.0-Beta1
+FacebookApi.Core,2017-09-22T15:52:33.55Z,43209,210,Package Description,FacebookApi.Core,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.3.0
+Steve Smith (@ardalis),2017-09-22T15:53:00.723Z,137,210,A simple package with guard clause helper methods. See docs for how to extend using your own extension methods.,Ardalis.GuardClauses,False,2017-12-04T21:26:27.183+00:00,True,False,,guard,10732,False,1.0.3
+FacebookApi.Core,2017-09-22T15:52:33.55Z,43209,210,Package Description,FacebookApi.Core,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.3.0
+刘扬 (Mikodev),2017-09-22T15:54:06.163Z,3,210,"基于键值对形式的二进制数据包生成解析工具, 方便在网络上传输数据.
+Binary packet generation tool based on key-value pair form, designed for data transmission over network.",Mikodev.Exchange,False,2018-04-17T14:43:12.63+00:00,True,False,,"binary,packet,dynamic,serialize",4309,False,1.1.4
+Karl M. Speer,2017-09-22T15:52:53.16Z,210,210,This provides the Ninject module loader for the RollGen package.,DnDGen.RollGen.Domain,False,2017-09-22T15:52:53.16+00:00,True,False,This provides the Ninject module loader for the RollGen package.,"dice,dungeons,dragons,d20,dnd,adnd,ioc,ninject,dependency,inject,injection",3596,False,13.4.2
+Karl M. Speer,2017-09-22T15:52:38.943Z,210,210,"This gives a basic, fluid interface for rolling dice from the D20 system - commonly known to work with Dungeons and Dragons.  Die included are d2, d3, d4, d6, d8, d10, d12, d20, Percentile (d100), and custom die rolls.",DnDGen.RollGen,False,2017-09-22T15:52:38.943+00:00,True,False,"This gives a basic, fluid interface for rolling dice from the D20 system.","dice,dungeons,dragons,d20,dnd,adnd,ioc,ninject,dependency,inject,injection",3653,False,13.4.2
+Steve Smith (@ardalis),2017-09-22T15:39:29.223Z,137,210,A simple package with guard clause helper methods. See docs for how to extend using your own extension methods.,Ardalis.GuardClauses,False,2017-12-04T21:26:27.183+00:00,True,False,A simple package with guard clause helper methods that can easily be extended with your own extension methods.,guard,10732,False,1.0.2
+Steve Lauer,2017-09-22T15:35:14.137Z,210,210,"Data Access Library that simplifies data access to a Microsoft SQL server.  Wraps SqlConnection the SqlCommand into a series of objects and methods that provide more straightforward usage.  
+	GetObject<T>() provides functionality to fill an object via reflection in a lightweight manner.",Iag.Unity.DataAccess.dll,False,2017-09-22T15:35:14.137+00:00,False,False,,"C#,Data,Access,SqlCommand,SqlConnection,Sql,StoredProcedure,ORM,Object-Relational,Mapping",1702,False,1.0.9.3
+Solutia Consulting,2017-09-20T14:35:03.41Z,65,212,"Generates the following assets:
+			* SQL Server 2016 Stored Procedures for CRUD activiity (all Stored procs return JSON data via SQL Server 2016's FOR JSON capability)
+			* Repository code for converting raw JSON to concrete implementations of C# Interface (using Json.Net)
+			* Business Library allowing for business rules to be applied to data
+			* Sample WebApi endpoints
+			* Angular 4+ models for translating raw JSON data into JavaScript models (future development effort)
+
+			This code generator allows you to spend time in the following areas crafting your application:
+			* crafting stored procedures to surface database data matching the data needs imposed by a C# Interface
+			* crafting WebApi endpoints (you can use code generated samples as a starting point)
+			* crafting your front-end experience
+			
+			Utilizing this code generator increases your productivity and produces consistent, reliable results",SolutiaConsulting.CodeGenerator,False,2018-02-14T21:06:35.54+00:00,False,False,Generates code assets from database tier through presentation tier based solely upon a C# Interface.,"code,generation",2742,False,3.0.4.16
+Daniel Redondo,2017-09-22T15:42:42.187Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Serialization.MsgPack,False,2018-04-19T13:24:19.32+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6370,False,0.2.26
+Solutia Consulting,2017-09-22T15:43:25.983Z,65,210,"Generates the following assets:
+			* SQL Server 2016 Stored Procedures for CRUD activiity (all Stored procs return JSON data via SQL Server 2016's FOR JSON capability)
+			* Repository code for converting raw JSON to concrete implementations of C# Interface (using Json.Net)
+			* Business Library allowing for business rules to be applied to data
+			* Sample WebApi endpoints
+			* Angular 4+ models for translating raw JSON data into JavaScript models (future development effort)
+
+			This code generator allows you to spend time in the following areas crafting your application:
+			* crafting stored procedures to surface database data matching the data needs imposed by a C# Interface
+			* crafting WebApi endpoints (you can use code generated samples as a starting point)
+			* crafting your front-end experience
+			
+			Utilizing this code generator increases your productivity and produces consistent, reliable results",SolutiaConsulting.CodeGenerator,False,2018-02-14T21:06:35.54+00:00,True,False,Generates code assets from database tier through presentation tier based solely upon a C# Interface.,"code,generation",2742,False,3.0.4.18
+Daniel Redondo,2017-09-22T15:43:08.547Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Serialization.WSerializer,False,2018-04-19T13:24:32.773+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6820,False,0.2.26
+Daniel Redondo,2017-09-22T15:43:35.563Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Triggers,False,2018-04-19T13:24:39.667+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6798,False,0.2.26
+Daniel Redondo,2017-09-22T15:42:29.403Z,1,210,"TWCore Framework.
+      A multipurpose framework library for .net core",TWCore.Object,False,2018-04-19T13:24:10.21+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",5290,False,0.2.26
+Daniel Redondo,2017-09-22T15:43:47.75Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Web,False,2018-04-19T13:24:42.883+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6671,False,0.2.26
+Daniel Redondo,2017-09-22T15:43:21.72Z,43209,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Services.Windows,False,1900-01-01T00:00:00+00:00,False,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",-1,False,0.2.26
+Daniel Redondo,2017-09-22T15:42:55.357Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Serialization.PWSerializer,False,2018-04-19T13:24:29.023+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6784,False,0.2.26
+Daniel Redondo,2017-09-22T15:41:08.493Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Messaging.RabbitMQ,False,2018-04-19T13:23:44.727+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6673,False,0.2.26
+Daniel Redondo,2017-09-22T15:40:56.197Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Messaging.NSQ,False,2018-04-19T13:23:41.29+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6426,False,0.2.26
+Daniel Redondo,2017-09-22T15:41:37.103Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Net.HttpServer,False,2018-04-19T13:23:51.633+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6907,False,0.2.26
+Daniel Redondo,2017-09-22T15:41:22.62Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Net.Browser,False,2018-04-19T13:23:47.96+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6497,False,0.2.26
+Daniel Redondo,2017-09-22T15:40:26.103Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Geo,False,2018-04-19T13:23:30.617+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6584,False,0.2.26
+Daniel Redondo,2017-09-22T15:41:50.857Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Net.Rpc,False,2018-04-19T13:23:55.227+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",7656,False,0.2.26
+Daniel Redondo,2017-09-22T15:42:15.747Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Numerics,False,2018-04-19T13:24:07.29+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6263,False,0.2.26
+Daniel Redondo,2017-09-22T15:42:02.967Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Net.Rpc.Http,False,2018-04-19T13:24:00.18+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6579,False,0.2.26
+Daniel Redondo,2017-09-22T15:40:42.087Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Messaging,False,2018-04-19T13:23:34.1+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6759,False,0.2.26
+Daniel Redondo,2017-09-22T15:40:11.993Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Data.SqlServer,False,2018-04-19T13:23:27.24+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6629,False,0.2.26
+Daniel Redondo,2017-09-22T15:39:58.303Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Data.SQLite,False,2018-04-19T13:23:23.897+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6418,False,0.2.26
+Daniel Redondo,2017-09-22T15:39:45.85Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Data.PostgreSQL,False,2018-04-19T13:23:20.037+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6418,False,0.2.26
+Daniel Redondo,2017-09-22T15:39:32.367Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Data.MySql,False,2018-04-19T13:23:15.96+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6456,False,0.2.26
+Steve Smith (@ardalis),2017-09-22T15:39:29.223Z,137,210,A simple package with guard clause helper methods. Guard class is partial so you can extend it in your own projects if desired.,Ardalis.GuardClauses,False,2017-12-04T21:26:27.183+00:00,True,False,,guard,10732,False,1.0.2
+Daniel Redondo,2017-09-22T15:37:40.097Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore,False,2018-04-19T13:22:43.16+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",7826,False,0.2.26
+Daniel Redondo,2017-09-22T15:38:07.783Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Bot.Telegram,False,2018-04-19T13:22:52.943+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6725,False,0.2.26
+Daniel Redondo,2017-09-22T15:39:00.74Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Collections,False,2018-04-19T13:23:09.63+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6508,False,0.2.26
+Daniel Redondo,2017-09-22T15:37:54.567Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Bot,False,2018-04-19T13:22:48.817+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6771,False,0.2.26
+Daniel Redondo,2017-09-22T15:38:20.863Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Cache,False,2018-04-19T13:22:57.1+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6839,False,0.2.26
+Daniel Redondo,2017-09-22T15:38:33.94Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Cache.Client,False,2018-04-19T13:23:00.943+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6860,False,0.2.26
+Daniel Redondo,2017-09-22T15:38:47.707Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Cache.Server,False,2018-04-19T13:23:05.537+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6802,False,0.2.26
+Daniel Redondo,2017-09-22T15:39:16.007Z,1,210,"TWCore Framework.
+A multipurpose framework library for .net core",TWCore.Data,False,2018-04-19T13:23:12.74+00:00,True,False,,"TWCore,Tony,Wanhjör,Daniel,Redondo,Framework",6757,False,0.2.26
+laredoza,2017-09-22T15:32:16.863Z,17,210,"A MongoDb implementation of the Orleans Providers. This includes the Membership (IMembershipTable and IGatewayListProvider), Reminder (IReminderTable), MongoStatisticsPublisher and IStorageProvider providers.",Orleans.Providers.MongoDB,False,2018-04-03T14:39:13.97+00:00,True,False,,"Orleans,OrleansProviders,MongoDB",5646,False,0.1.2
+Steve Lauer,2017-09-22T15:35:14.137Z,210,210,"Data Access Library that simplifies data access to a Microsoft SQL server.  Wraps SqlConnection the SqlCommand into a series of objects and methods that provide more straightforward usage.  
+	GetObject<T>() provides functionality to fill an object via reflection in a lightweight manner.",Iag.Unity.DataAccess.dll,False,2017-09-22T15:35:14.137+00:00,True,False,,"C#,Data,Access,SqlCommand,SqlConnection,Sql,StoredProcedure,ORM,Object-Relational,Mapping",1702,False,1.0.9.3
+Fabian Lohauß,2017-09-22T15:35:50.467Z,130,210,OrchestrationFactory Automation,Microsoft.OrchestrationFactory.Automation,False,2017-12-11T10:26:02.963+00:00,True,False,,"OrchestrationFactory,Orchestrator,Automation",3343,False,4.1.922.124
+XComponent team,2017-09-22T15:34:48.7Z,36,210,.Net Reactive Client Api to interact with XComponent microservices,ReactiveXComponent.Net,True,2018-03-15T15:09:14.53+00:00,True,False,,"xcomponent,reactive,microservices,api",7203,False,2.0.0-rcv019
+forcewake,2017-09-22T15:34:41.603Z,120,210,FlatFile.FixedLength.Attributes is extension for FlatFile.FixedLength package for attribute-based mapping,FlatFile.FixedLength.Attributes,False,2017-12-21T15:17:14.567+00:00,True,False,,"FlatFile,plain,reader,parser,schema,flat,csv,parse,read",18452,False,0.2.43
+forcewake,2017-09-22T15:34:30.15Z,120,210,FlatFile.FixedLength is fast-working open-source library for reading/writing fixed-length plain files,FlatFile.FixedLength,False,2017-12-21T15:17:03.66+00:00,True,False,,"FlatFile,plain,reader,parser,schema,flat,csv,parse,read,fixed,fixedLength",22105,False,0.2.43
+forcewake,2017-09-22T15:34:17.777Z,120,210,FlatFile.Delimited.Attributes is extension for FlatFile.Delimited package for attribute-based mapping,FlatFile.Delimited.Attributes,False,2017-12-21T15:16:52.783+00:00,True,False,,"FlatFile,plain,reader,parser,schema,flat,csv,parse,read",17111,False,0.2.43
+forcewake,2017-09-22T15:34:06.54Z,120,210,FlatFile.Delimited is fast-working open-source library for delimeted plain files such as cvs and etc.,FlatFile.Delimited,False,2017-12-21T15:16:38.62+00:00,True,False,,"FlatFile,plain,reader,parser,schema,flat,csv,parse,read",18659,False,0.2.43
+forcewake,2017-09-22T15:33:32.053Z,120,210,FlatFile is fast-working open-source library for reading/writing plain files,FlatFile,False,2017-12-21T15:16:02.183+00:00,True,False,,"FlatFile,plain,reader,parser,schema,flat,csv,parse,read,fixed,fixedLength",16647,False,0.2.43
+forcewake,2017-09-22T15:33:44.367Z,120,210,Core library for FlatFile assemblies,FlatFile.Core,False,2017-12-21T15:16:13.607+00:00,True,False,,"FlatFile,plain,reader,parser,schema,flat,csv,parse,read,fixed,fixedLength",23990,False,0.2.43
+laredoza,2017-09-22T15:32:16.863Z,17,210,"A MongoDb implementation of the Orleans Providers. This includes the Membership (IMembershipTable and IGatewayListProvider), Reminder (IReminderTable), MongoStatisticsPublisher and IStorageProvider providers.",Orleans.Providers.MongoDB,False,2018-04-03T14:39:13.97+00:00,True,False,,"Orleans,OrleansProviders,MongoDB",5646,False,0.1.2
+James Craig,2017-09-22T15:32:26.177Z,66,210,Data.Modeler helps to model database schemas using C#.,Data.Modeler,False,2018-02-13T21:15:46.363+00:00,True,False,,"SQL,Databases,Schema,Modeling",2046,False,1.0.24
+forcewake,2017-09-22T15:33:55.32Z,120,210,Core library for FlatFile.[name].Attributes assemblies,FlatFile.Core.Attributes,False,2017-12-21T15:16:26.48+00:00,True,False,,"FlatFile,plain,reader,parser,schema,flat,csv,parse,read,fixed,fixedLength",19406,False,0.2.43
+Steve Lauer,2017-09-22T15:24:13.473Z,210,210,"Data Access Library that simplifies data access to a Microsoft SQL server.  Wraps SqlConnection the SqlCommand into a series of objects and methods that provide more straightforward usage.  
+	GetObject<T>() provides functionality to fill an object via reflection in a lightweight manner.",Iag.Unity.DataAccess.dll,False,2017-09-22T15:35:14.137+00:00,False,False,,"C#,Data,Access,SqlCommand,SqlConnection,Sql,StoredProcedure,ORM,Object-Relational,Mapping",1702,False,1.0.9.2
+Momentum,2017-09-22T15:30:09.517Z,4,210,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.11.5754-beta
+Momentum,2017-09-22T15:30:26.127Z,4,210,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.11.5754-beta
+Steve Lauer,2017-09-22T15:24:13.473Z,210,210,"Data Access Library that simplifies data access to a Microsoft SQL server.  Wraps SqlConnection the SqlCommand into a series of objects and methods that provide more straightforward usage.  
+	GetObject<T>() provides functionality to fill an object via reflection in a lightweight manner.",Iag.Unity.DataAccess.dll,False,2017-09-22T15:35:14.137+00:00,False,False,,"C#,Data,Access,SqlCommand,SqlConnection,Sql,StoredProcedure,ORM,Object-Relational,Mapping",1702,False,1.0.9.2
+David Orbelian,2017-09-22T15:21:12.39Z,210,210,Collections for MicroNetCore.,MicroNetCore.Collections,True,2017-09-22T15:21:12.39+00:00,True,False,Collections for MicroNetCore.,Collection,96,False,0.0.1-alpha
+Steve Lauer,2017-09-22T15:24:13.473Z,210,210,"Data Access Library that simplifies data access to a Microsoft SQL server.  Wraps SqlConnection the SqlCommand into a series of objects and methods that provide more straightforward usage.  
+	GetObject<T>() provides functionality to fill an object via reflection in a lightweight manner.",Iag.Unity.DataAccess.dll,False,2017-09-22T15:35:14.137+00:00,True,False,,"C#,Data,Access,SqlCommand,SqlConnection,Sql,StoredProcedure,ORM,Object-Relational,Mapping",1702,False,1.0.9.2
+Joe Audette,2017-09-22T15:19:53.92Z,15,210,MVC Controllers for cloudscribe.SimpleContent.Web,cloudscribe.SimpleContent.Web.Mvc,False,2018-04-05T20:15:40.16+00:00,True,False,,"cloudscribe,blog,cms,MVC,ASP.NET,Core",4554,False,2.0.3
+Joe Audette,2017-09-22T15:19:24.51Z,15,210,Bootstrap 3 views for cloudscribe.SimpleContent.Web,cloudscribe.SimpleContent.Web.Views.Bootstrap3,False,2018-04-05T20:14:32.113+00:00,True,False,,"cloudscribe,SimpleContent,Bootstrap3",5745,False,2.0.3
+"Andrew Blakely,HelloKitty",2017-09-22T15:20:17.827Z,132,210,"Provides high-performance Reinterpret_Cast style extension methods for primitives, primitive arrays and strings. Allows you to convert from bytes or to bytes faster than any thing in .NET through a generic API.
+
+Fastest and most generic conversions to and from bytes.",Reinterpret.Net,False,2017-12-09T04:05:24.733+00:00,True,False,,"reinterpret,marshal,cast,reinterpretcast,reinterpret_cast,memcopy,mem,copy,marshalling,performance,Reinterpret.Net,Andrew,Blakely",1054,False,1.0.27
+David Orbelian,2017-09-22T15:21:12.39Z,210,210,Collections for MicroNetCore.,MicroNetCore.Collections,True,2017-09-22T15:21:12.39+00:00,True,False,,Collection,96,False,0.0.1-alpha
+Steve Lauer,2017-09-22T15:11:36.06Z,210,210,"Data Access Library that simplifies data access to a Microsoft SQL server.  Wraps SqlConnection the SqlCommand into a series of objects and methods that provide more straightforward usage.  
+	GetObject<T>() provides functionality to fill an object via reflection in a lightweight manner.",Iag.Unity.DataAccess.dll,False,2017-09-22T15:35:14.137+00:00,False,False,,"C#,Data,Access,SqlCommand,SqlConnection,Sql,StoredProcedure,ORM,Object-Relational,Mapping",1702,False,1.0.9.1
+Mike Weller,2017-09-22T15:16:29.427Z,122,210,PNGDecrush is a C# library for reversing the optimization process that is applied to PNG files in an iOS project.,PNGDecrush,True,2017-12-19T20:42:00.01+00:00,True,False,,,1597,False,1.0.1-r21
+James Craig,2017-09-22T15:15:18.38Z,64,210,Inflatable is a simple ORM.,Inflatable,False,2018-02-15T21:07:42.427+00:00,True,False,,"ORM,SQL",2679,False,1.0.10
+Edo Reshef,2017-09-22T15:13:52.937Z,195,210,A disk persistent List<byte[]>,DiskList,False,2017-10-07T14:14:11.04+00:00,True,False,,,395,False,1.0.4
+Steve Lauer,2017-09-22T15:11:36.06Z,210,210,"Data Access Library that simplifies data access to a Microsoft SQL server.  Wraps SqlConnection the SqlCommand into a series of objects and methods that provide more straightforward usage.  
+	GetObject<T>() provides functionality to fill an object via reflection in a lightweight manner.",Iag.Unity.DataAccess.dll,False,2017-09-22T15:35:14.137+00:00,True,False,,"C#,Data,Access,SqlCommand,SqlConnection,Sql,StoredProcedure,ORM,Object-Relational,Mapping",1702,False,1.0.9.1
+Ivan Gavryliuk (@aloneguid),2017-09-22T15:12:50.577Z,16,210,Integrates LogMagic with Storage.Net,LogMagic.Storage.Net,True,2018-04-04T11:47:56.233+00:00,True,False,,,2990,False,1.0.0-alpha-47
+Ivan Gavryliuk (@aloneguid),2017-09-22T15:12:36.64Z,16,210,LogMagic Azure Service Fabric integration support. This package extracts context information from the running service and injects as enriched properties. It also supports correlating proxies helping to carry context information between service fabric native services and actors.,LogMagic.Microsoft.Azure.ServiceFabric,False,2018-04-04T11:47:20.2+00:00,True,False,,"azure-service-fabric,logging",5085,False,5.6.204.47
+Ivan Gavryliuk (@aloneguid),2017-09-22T15:12:15.873Z,16,210,Provides loggic facilities for Microsoft Azure Application Insights.,LogMagic.Microsoft.Azure.ApplicationInsights,False,2018-04-04T11:46:57.997+00:00,True,False,,"application-insights,logging",6453,False,2.5.47
+Ivan Gavryliuk (@aloneguid),2017-09-22T15:12:05.013Z,16,210,"Like many other libraries for .NET, LogMagic provides diagnostic logging into files, the console, and elsewhere. It's probably the easiest framework to setup, has a clean API, extremely extensible.
+LogMagic also supports a relatively new paradigm of structured logging.",LogMagic,False,2018-04-04T11:46:35.573+00:00,True,False,,,22399,False,2.5.47
+Ivan Gavryliuk (@aloneguid),2017-09-22T15:09:01.21Z,16,210,Integrates LogMagic with Storage.Net,LogMagic.Storage.Net,True,2018-04-04T11:47:56.233+00:00,True,False,,,2990,False,1.0.0-alpha-46
+Ivan Gavryliuk (@aloneguid),2017-09-22T15:08:47.943Z,16,210,LogMagic Azure Service Fabric integration support. This package extracts context information from the running service and injects as enriched properties. It also supports correlating proxies helping to carry context information between service fabric native services and actors.,LogMagic.Microsoft.Azure.ServiceFabric,False,2018-04-04T11:47:20.2+00:00,True,False,,"azure-service-fabric,logging",5085,False,5.6.204.46
+Ivan Gavryliuk (@aloneguid),2017-09-22T15:08:21.037Z,16,210,"Like many other libraries for .NET, LogMagic provides diagnostic logging into files, the console, and elsewhere. It's probably the easiest framework to setup, has a clean API, extremely extensible.
+LogMagic also supports a relatively new paradigm of structured logging.",LogMagic,False,2018-04-04T11:46:35.573+00:00,True,False,,,22399,False,2.5.46
+Ivan Gavryliuk (@aloneguid),2017-09-22T15:08:33.303Z,16,210,Provides loggic facilities for Microsoft Azure Application Insights.,LogMagic.Microsoft.Azure.ApplicationInsights,False,2018-04-04T11:46:57.997+00:00,True,False,,"application-insights,logging",6453,False,2.5.46
+Steve Lauer,2017-09-22T15:03:10.603Z,210,210,Data Access Library that simplifies data access to a Microsoft SQL server.  Wraps SqlConnection the SqlCommand into a series of objects and methods that provide more straightforward usage.,Iag.Unity.DataAccess.dll,False,2017-09-22T15:35:14.137+00:00,False,False,Data Access Library that simplifies data access to a Microsoft SQL server.  Wraps SqlConnection the SqlCommand into a series of objects and methods that provide more straightforward usage.,"C#,Data,Access,SqlCommand,SqlConnection,Sql,StoredProcedure,ORM,Object-Relational,Mapping",1702,False,1.0.9
+Steve Lauer,2017-09-22T15:03:10.603Z,210,210,Data Access Library that simplifies data access to a Microsoft SQL server.  Wraps SqlConnection the SqlCommand into a series of objects and methods that provide more straightforward usage.,Iag.Unity.DataAccess.dll,False,2017-09-22T15:35:14.137+00:00,True,False,Data Access Library that simplifies data access to a Microsoft SQL server.  Wraps SqlConnection the SqlCommand into a series of objects and methods that provide more straightforward usage.,"C#,Data,Access,SqlCommand,SqlConnection,Sql,StoredProcedure,ORM,Object-Relational,Mapping",1702,False,1.0.9
+Naruto TAKAHASHI,2017-09-22T14:41:55.627Z,198,210,"Speck Simon are lightweight block ciphers: those block ciphers are efficiently and provide high performance across a range of devices. This package includes classes that allow you to encrypt and decrypt using native libraries that are using SIMD such as AVX2, NEON.",SimonSpeckNet,True,2017-10-04T13:56:10.44+00:00,False,False,,"simon,speck,cryptography,crypto,security,encryption,lightweight,symmetric,Xamarin,iOS,Android,macOS,linux",469,False,0.1.1-alpha
+Naruto TAKAHASHI,2017-09-22T14:48:33.263Z,198,210,"Speck Simon are lightweight block ciphers: those block ciphers are efficiently and provide high performance across a range of devices. This package includes classes that allow you to encrypt and decrypt using native libraries that are using SIMD such as AVX2, NEON.",SimonSpeckNet,True,2017-10-04T13:56:10.44+00:00,False,False,,"simon,speck,cryptography,crypto,security,encryption,lightweight,symmetric,Xamarin,iOS,Android,macOS,linux",469,False,0.1.2-alpha
+"sergeyter,quamotion",2017-09-22T15:06:04.313Z,210,210,libjpeg-turbo is a JPEG image codec that uses processor instructions to accelerate JPEG compression and decompression.,Quamotion.TurboJpegWrapper,True,2017-09-22T15:06:04.313+00:00,True,False,,,1979,False,1.0.3-r118
+Paket team,2017-09-22T15:04:14.92Z,2,210,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket,False,2018-04-18T10:23:50.3+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",834968,False,5.100.2
+Paket team,2017-09-22T15:04:19.187Z,2,210,A dependency manager for .NET with support for NuGet packages and git repositories.,Paket.Core,False,2018-04-18T10:23:20.457+00:00,True,False,A dependency manager for .NET with support for NuGet packages and git repositories.,"nuget,bundler,F#",298246,False,5.100.2
+Google Inc.,2017-09-22T15:03:43.48Z,42,210,"Recommended Google client library to access the Stackdriver Monitoring API, which manages your Stackdriver Monitoring data and configurations. Most projects must be associated with a Stackdriver account, with a few exceptions as noted on the individual method pages.",Google.Cloud.Monitoring.V3,False,2018-03-09T09:46:00.967+00:00,True,False,,"Monitoring,Stackdriver,Google,Cloud",7902,True,1.0.0
+"James F. Bellinger,Frederik Carlier",2017-09-22T15:02:23.777Z,210,210,"Integrates RemoteViewing with ASP.NET Core, allowing you to host a noVNC server.",Quamotion.RemoteViewing.AspNetCore,True,2017-09-22T15:02:23.777+00:00,True,False,,"VNC,RFB,remote,desktop,client,server,Hextile,Copyrect,Zlib,asp,aspnet,aspnetcore,noVNC",1126,False,1.0.8-r89
+Naruto TAKAHASHI,2017-09-22T15:03:09.34Z,198,210,"Speck Simon are lightweight block ciphers: those block ciphers are efficiently and provide high performance across a range of devices. This package includes classes that allow you to encrypt and decrypt using native libraries that are using SIMD such as AVX2, NEON.",SimonSpeckNet,False,2017-10-04T13:56:10.44+00:00,True,False,,"simon,speck,cryptography,crypto,security,encryption,lightweight,symmetric,Xamarin,iOS,Android,macOS,linux",469,False,0.1.2
+"James F. Bellinger,Frederik Carlier",2017-09-22T15:02:58.777Z,210,210,"RemoteViewing is a .NET-native VNC client and server library. It supports Raw, Hextile, Copyrect, and Zlib encodings.",Quamotion.RemoteViewing,True,2017-09-22T15:02:58.777+00:00,True,False,,"VNC,RFB,remote,desktop,client,server,Hextile,Copyrect,Zlib",4686,False,1.0.8-r89
+"James F. Bellinger,Frederik Carlier",2017-09-22T15:02:41.057Z,210,210,"RemoteViewing is a .NET-native VNC client and server library. It supports Raw, Hextile, Copyrect, and Zlib encodings.",Quamotion.RemoteViewing.Windows.Forms,True,2017-09-22T15:02:41.057+00:00,True,False,,"VNC,RFB,remote,desktop,client,server,Hextile,Copyrect,Zlib",2016,False,1.0.8-r89
+Steve Lauer,2017-09-22T15:03:10.603Z,210,210,"Data Access Library that simplifies data access to a Microsoft SQL server.  Wraps SqlConnection the SqlCommand into a series of objects and methods that provide more straightforward usage.  
+	GetObject<T>() provided functionality to fill an object via reflection in a lightweight manner.",Iag.Unity.DataAccess.dll,False,2017-09-22T15:35:14.137+00:00,True,False,,"C#,Data,Access,SqlCommand,SqlConnection,Sql,StoredProcedure,ORM,Object-Relational,Mapping",1702,False,1.0.9
+Naruto TAKAHASHI,2017-09-22T14:23:09.887Z,198,210,"Speck Simon are lightweight block ciphers: those block ciphers are efficiently and provide high performance across a range of devices. This package includes classes that allow you to encrypt and decrypt using native libraries that are using SIMD such as AVX2, NEON.",SimonSpeckNet,True,2017-10-04T13:56:10.44+00:00,False,False,,"simon,speck,cryptography,crypto,security,encryption,lightweight,symmetric,Xamarin,iOS,Android,macOS,linux",469,False,0.1.0-alpha
+James Craig,2017-09-22T15:00:32.617Z,66,210,Data.Modeler helps to model database schemas using C#.,Data.Modeler,False,2018-02-13T21:15:46.363+00:00,True,False,,"SQL,Databases,Schema,Modeling",2046,False,1.0.23
+n_wit,2017-09-22T14:58:41.033Z,210,210,Simple Embedded IronPython shell,Alinga.Scripting,False,2017-09-22T14:58:41.033+00:00,True,False,,,93,False,1.0.0
+Joe Audette,2017-09-22T14:55:36.7Z,15,210,MVC Controllers for cloudscribe.SimpleContent.Web,cloudscribe.SimpleContent.Web.Mvc,False,2018-04-05T20:15:40.16+00:00,True,False,,"cloudscribe,blog,cms,MVC,ASP.NET,Core",4554,False,2.0.2
+FMdotNet__DataAPI,2017-09-22T14:53:20.867Z,210,210,.NET 2 standard library wrapper around the new FMS16 Data API.,FMdotNet__DataAPI,False,2017-09-22T14:53:20.867+00:00,True,False,.NET 2 standard library wrapper around the new FMS16 Data API.,,172,False,1.0.1
+Joe Audette,2017-09-22T14:55:02.963Z,15,210,"A simple, yet flexible content and blog engine for ASP.NET Core that can work with or without a database",cloudscribe.SimpleContent.Web,False,2018-04-05T20:15:08.897+00:00,True,False,,"cloudscribe,blog",15343,False,2.0.2
+FMdotNet__DataAPI,2017-09-22T14:53:20.867Z,210,210,Package Description,FMdotNet__DataAPI,False,2017-09-22T14:53:20.867+00:00,True,False,,,172,False,1.0.1
+Joe Audette,2017-09-22T14:54:30.417Z,15,210,Bootstrap 3 views for cloudscribe.SimpleContent.Web,cloudscribe.SimpleContent.Web.Views.Bootstrap3,False,2018-04-05T20:14:32.113+00:00,True,False,,"cloudscribe,SimpleContent,Bootstrap3",5745,False,2.0.2
+Naruto TAKAHASHI,2017-09-22T14:48:33.263Z,198,210,"Speck Simon are lightweight block ciphers: those block ciphers are efficiently and provide high performance across a range of devices. This package includes classes that allow you to encrypt and decrypt using native libraries that are using SIMD such as AVX2, NEON.",SimonSpeckNet,True,2017-10-04T13:56:10.44+00:00,True,False,,"simon,speck,cryptography,crypto,security,encryption,lightweight,symmetric,Xamarin,iOS,Android,macOS,linux",469,False,0.1.2-alpha
+StandardConfiguration,2017-09-22T14:48:23.81Z,204,210,Default configuration helper for using commandline to create Configuration with optional ini file in app's folder,NicolasDorier.StandardConfiguration,False,2017-09-28T08:59:23.61+00:00,True,False,,,2149,False,1.0.0.8
+"Dox Sweden AB,Jovan Paskota",2017-09-22T14:41:03.873Z,1,210,Object library for dox,Dox.Core.Object,False,2018-04-19T09:09:56.513+00:00,True,False,,"Dox,Objects",5915,False,2.1.8
+"Dox Sweden AB,Jovan Paskota",2017-09-22T14:44:50.163Z,2,210,Database layer for Dox Objects,Dox.Net.MsSqlBuilder,False,2018-04-18T09:15:27.35+00:00,True,False,,Dox,22695,False,2.1.8
+Naruto TAKAHASHI,2017-09-22T14:41:55.627Z,198,210,"Speck Simon are lightweight block ciphers: those block ciphers are efficiently and provide high performance across a range of devices. This package includes classes that allow you to encrypt and decrypt using native libraries that are using SIMD such as AVX2, NEON.",SimonSpeckNet,True,2017-10-04T13:56:10.44+00:00,True,False,,"simon,speck,cryptography,crypto,security,encryption,lightweight,symmetric,Xamarin,iOS,Android,macOS,linux",469,False,0.1.1-alpha
+Nexmo,2017-09-22T14:40:57.453Z,46,210,Official C#/.NET wrapper for the Nexmo API,Nexmo.Csharp.Client,True,2018-03-05T22:50:02.01+00:00,True,False,,"SMS,voice,telephony,phone,nexmo",17610,False,3.0.0-pre2
+"Dox Sweden AB,Jovan Paskota",2017-09-22T14:41:03.873Z,1,210,Object library for dox,Dox.Core.Object,False,2018-04-19T09:09:56.513+00:00,True,False,,"Dox,Objects",5915,False,2.1.8
+"Dox Sweden AB,Jovan Paskota",2017-09-22T14:36:06.85Z,1,210,Database Layer for https://www.dox.se,Dox.Core.MsSqlBuilder,False,2018-04-19T11:57:43.093+00:00,True,False,,"Dox,Database,SQL,Server",1708,False,2.0.5
+frohikey,2017-09-22T14:39:48.433Z,199,210,Azure Search on friendly steroids.,Shushu,False,2017-10-03T16:16:02.023+00:00,True,False,,"azure,azure-search",538,False,1.0.0
+Mark van Renswoude,2017-09-22T14:38:24.323Z,182,210,SimpleInjector integration package for Tapeti,X2Software.Tapeti.SimpleInjector,True,2017-10-20T09:33:31.287+00:00,True,False,,"rabbitmq,tapeti,simpleinjector",3577,False,0.4.0-unstable0012
+Mark van Renswoude,2017-09-22T14:37:58.4Z,182,210,DataAnnotations validation extension for Tapeti,X2Software.Tapeti.DataAnnotations,True,2017-10-20T09:33:06.85+00:00,True,False,,"rabbitmq,tapeti,dataannotations",2800,False,0.4.0-unstable0012
+Mark van Renswoude,2017-09-22T14:37:45.62Z,182,210,Controller-based framework for RabbitMQ microservice architectures,X2Software.Tapeti,True,2017-10-20T09:32:45.803+00:00,True,False,,"rabbitmq,tapeti",3669,False,0.4.0-unstable0012
+"Menno van Lavieren,Mark van Renswoude",2017-09-22T14:38:10.603Z,182,210,Flow extension for Tapeti,X2Software.Tapeti.Flow,True,2017-10-20T09:33:19.867+00:00,True,False,,"rabbitmq,tapeti,flow",3526,False,0.4.0-unstable0012
+Cosmin Sontu,2017-09-22T14:36:44.633Z,25,210,SpecDrill - An opinionated automated testing framework based on Selenium WebDriver,SpecDrill,False,2018-03-26T16:20:26.167+00:00,True,False,,"SpecDrill,SpecFlow,Selenium,WebDriver,Automation,BDD,ATDD",2926,False,1.0.18
+Mark van Renswoude,2017-09-22T14:37:32.71Z,182,210,Annotations for Tapeti,X2Software.Tapeti.Annotations,True,2017-10-20T09:32:56.537+00:00,True,False,,"rabbitmq,tapeti",3009,False,0.4.0-unstable0012
+"Dox Sweden AB,Jovan Paskota",2017-09-22T14:36:06.85Z,1,210,Database Layer for https://www.dox.se,Dox.Core.MsSqlBuilder,False,2018-04-19T11:57:43.093+00:00,True,False,,"Dox,Database,SQL,Server",1708,False,2.0.5
+CoreCompat.Selenium.WebDriver,2017-09-22T14:28:32.617Z,210,210,"Selenium is a set of different software tools each with a different approach to supporting browser automation. These tools are highly flexible, allowing many options for locating and manipulating elements within a browser, and one of its key features is the support for automating multiple browser platforms. This package contains the .NET bindings for the newer, more concise and object-based Selenium WebDriver API, which uses native OS-level events to manipulate the browser, bypassing the JavaScript sandbox, and does not require the Selenium Server to automate the browser.",CoreCompat.Selenium.WebDriver,True,2017-09-22T14:28:32.617+00:00,True,False,,"Selenium,WebDriver,browser,automation",36842,False,3.5.3-beta001
+EmL Solutions,2017-09-22T14:27:24.49Z,210,210,Decorate your controllers with ExplicitDisposeAttribute to automatically dispose objects via ActionFilterAttribute.OnActionExecuted.,Eml.ExplicitDispose.Mvc,False,2017-09-22T14:27:24.49+00:00,True,False,,"Eml.ExplicitDispose.Mvc,EmL,Solutions",570,False,1.0.0.1
+sfanuget scottcowan,2017-09-22T14:26:47.3Z,4,210,a client to call the the DAS Assessment Organisation service,SFA.DAS.AssessmentOrgs.Api.Client,False,2018-04-16T13:34:41.36+00:00,True,False,SFA Endpoint Assement Organisations API Client,,13224,False,0.10.93
+sfanuget scottcowan,2017-09-22T14:26:28.423Z,4,210,a client to call the the DAS Providers service,SFA.DAS.Providers.Api.Client,False,2018-04-16T13:34:54.377+00:00,True,False,SFA Training Providers API Client,,12895,False,0.10.93
+sfanuget scottcowan,2017-09-22T14:26:07.91Z,43209,210,a client to call the the DAS Apprenticeship Programmes and Providers service,SFA.DAS.Apprenticeships.Api.Client,False,1900-01-01T00:00:00+00:00,False,False,SFA Apprenticeship Programmes and Providers API Client,,18874,False,0.10.93
+James Craig,2017-09-22T14:28:00.77Z,66,210,Data.Modeler helps to model database schemas using C#.,Data.Modeler,False,2018-02-13T21:15:46.363+00:00,True,False,,"SQL,Databases,Schema,Modeling",2046,False,1.0.22
+Stig Schmidt Nielsson,2015-02-22T10:39:11.947Z,1153,1153,"XmlRpcLight is based on XmlRpc by Cook Computing, but without the http web parts and without dependency on System.Web.",XmlRpcLight,False,2015-02-22T10:39:11.947+00:00,True,False,,XmlRpc,3032,False,1.0.0
+Stig Schmidt Nielsson,2017-09-22T14:04:15.803Z,210,210,"C# extension methods for querying, managing and migrating Postgres databases.",PostgresExtensions,False,2017-09-22T14:04:15.803+00:00,True,False,"C# extension methods for querying, managing and migrating Postgres databases.","C#,Postgres,Npgsql,Extensions",165,False,1.0.0
+Stig Schmidt Nielsson,2015-09-21T15:06:38.683Z,942,942,Common utility and extension methods.,Ssn.Utils,False,2015-09-21T15:06:38.683+00:00,True,False,,,696,False,2.0.0
+Chris Darrigo,2017-09-22T14:24:59.407Z,43209,210,Client for asynchronous messaging via Sql Server Broker Services.,Smart.Messaging.SqlServerBrokerServices.Client.Core,False,1900-01-01T00:00:00+00:00,False,False,,"Messaging,SqlServer,MessageBroker,core",2308,False,1.0.19
+Raphael Batista Saldanha,2016-09-14T19:45:19.477Z,43209,583,My package description.,Veremos,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.1
+Raphael Batista Saldanha,2016-09-14T19:52:35.45Z,43209,583,My package description.,Veremos,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.2
+Raphael Batista Saldanha,2016-09-14T20:10:50.963Z,43209,583,My package description.,Veremos,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.5
+Raphael Batista Saldanha,2016-09-14T19:59:01.563Z,43209,583,My package description.,Veremos,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.3
+Raphael Batista Saldanha,2016-09-14T20:08:47.513Z,43209,583,My package description.,Veremos,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,0.0.4
+Naruto TAKAHASHI,2017-09-22T14:23:09.887Z,198,210,"Speck Simon are lightweight block ciphers: those block ciphers are efficiently and provide high performance across a range of devices. This package includes classes that allow you to encrypt and decrypt using native libraries that are using SIMD such as AVX2, NEON.",SimonSpeckNet,True,2017-10-04T13:56:10.44+00:00,True,False,,"simon,speck,cryptography,crypto,security,encryption,lightweight,symmetric,Xamarin,iOS,Android,macOS,linux",469,False,0.1.0-alpha
+Stig Schmidt Nielsson,2017-09-22T14:04:15.803Z,210,210,"C# extension methods for querying, managing and migrating Postgres databases.",PostgresExtensions,False,2017-09-22T14:04:15.803+00:00,True,False,"C# extension methods for querying, managing and migrating Postgres databases.","C#,Postgres,Npgsql,Extensions",165,False,1.0.0
+Philipp Gerull,2017-09-22T14:20:52.1Z,179,210,"[Open Source] Vaser is a powerful high-performance event based network engine library for C# .Net. It is possible to start multiple servers in one program and use the same network code for all servers. In the baselayer network communication are all strings are omitted, instead it is based on a unique binary identifier, which the CPU and memory relieves massively.
+Crossplattform: Windows Desktop, iOS, Android, UWP, NetCore.",Vaser,False,2017-10-23T21:51:25.587+00:00,True,False,"[Open Source] Vaser is a powerful high-performance event based network engine library for C# .Net, which enables developers a robust way to send and receive encrypted data over the network.","Network,TCP,Stream,cryptography,Server,Client,Peer-to-Peer,Kerberos,SSL,X509,Event,Eventbased,QoS,Xamarin,iOS,NetCore,UWP,Android,Universal",3977,False,1.1.22
+takenet,2017-09-22T14:19:32.863Z,1,210,Iris common data types package,Takenet.Iris.Common,False,2018-04-19T20:20:12.39+00:00,True,False,,"Iris,Lime",46396,False,1.9.111
+BI.MarketingCloud.DataExtensions,2017-09-22T14:17:14.25Z,39,210,Package Description,BI.MarketingCloud.DataExtensions,False,2018-03-12T06:39:01.993+00:00,True,False,,,877,False,1.4.0
+n_wit,2017-09-22T14:17:19.11Z,210,210,Winforms utilities,Alinga.Winforms,False,2017-09-22T14:17:19.11+00:00,True,False,,,88,False,1.0.0
+Zelis.Core.HttpServiceClient,2017-09-22T14:18:28.533Z,143,210,Package Description,Zelis.Core.HttpServiceClient,False,2017-11-28T20:58:41.243+00:00,True,False,,,1041,False,1.3.0
+DeftSoftSteven,2017-09-22T14:15:23.967Z,172,210,enterprise data extractor for PDF word or excel,DeftSoft.eExtractor,False,2017-10-30T17:57:43.77+00:00,True,False,,"Extractor,File,PDF,enterprise",552,False,0.1.0.3
+Alinga,2017-09-22T14:10:46.347Z,203,210,Numerical state sequencing library,Alinga.StateSequencing,False,2017-09-29T15:43:15.9+00:00,True,False,,,149,False,1.0.0
+Momentum,2017-09-22T14:09:55.563Z,4,210,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.11.5753-beta
+Momentum,2017-09-22T14:09:39.47Z,4,210,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.11.5753-beta
+"James F. Bellinger,Frederik Carlier",2017-09-22T14:08:21.077Z,210,210,"Integrates RemoteViewing with ASP.NET Core, allowing you to host a noVNC server.",Quamotion.RemoteViewing.AspNetCore,True,2017-09-22T15:02:23.777+00:00,True,False,,"VNC,RFB,remote,desktop,client,server,Hextile,Copyrect,Zlib,asp,aspnet,aspnetcore,noVNC",1126,False,1.0.8-r84
+"James F. Bellinger,Frederik Carlier",2017-09-22T14:07:09.59Z,210,210,"RemoteViewing is a .NET-native VNC client and server library. It supports Raw, Hextile, Copyrect, and Zlib encodings.",Quamotion.RemoteViewing,True,2017-09-22T15:02:58.777+00:00,True,False,,"VNC,RFB,remote,desktop,client,server,Hextile,Copyrect,Zlib",4686,False,1.0.8-r84
+"James F. Bellinger,Frederik Carlier",2017-09-22T14:07:29.34Z,210,210,"RemoteViewing is a .NET-native VNC client and server library. It supports Raw, Hextile, Copyrect, and Zlib encodings.",Quamotion.RemoteViewing.Windows.Forms,True,2017-09-22T15:02:41.057+00:00,True,False,,"VNC,RFB,remote,desktop,client,server,Hextile,Copyrect,Zlib",2016,False,1.0.8-r84
+"Dox Sweden AB,Jovan Paskota",2017-09-22T14:02:28.05Z,210,210,Description,Concode.Common.Mail,False,2017-09-22T14:02:28.05+00:00,True,False,,,511,False,1.0.4
+Stig Schmidt Nielsson,2017-09-22T14:04:15.803Z,210,210,"C# extension methods for querying, managing and migrating Postgres databases.",PostgresExtensions,False,2017-09-22T14:04:15.803+00:00,True,False,,"C#,Postgres,Npgsql,Extensions",165,False,1.0.0
+Chris Darrigo,2017-09-22T14:02:37.283Z,43209,210,Client for asynchronous messaging via Sql Server Broker Services.,Smart.Messaging.SqlServerBrokerServices.Client.Core,False,1900-01-01T00:00:00+00:00,False,False,,"Messaging,SqlServer,MessageBroker,core",2308,False,1.0.18
+Max Stepanskiy,2017-09-22T14:02:29.067Z,210,210,.Net Enterprise Micro-ORM,Nemo,False,2017-09-22T14:02:29.067+00:00,True,False,,"ORM,micro-ORM,data-mapper,sql-mapper",10400,False,2.4.5
+Joe Audette,2017-09-22T14:01:19.797Z,110,210,an ASP.NET Core viewcomponent for menus and breadcrumbs,cloudscribe.Web.Navigation,False,2017-12-31T15:02:21.933+00:00,True,False,,"cloudscribe,mvc6,mvcsitemapprovider,navigation,menus,breadcrumbs,bootstrap",24636,False,2.0.1
+Microsoft,2017-09-22T14:02:28.05Z,210,210,Description,Concode.Common.Mail,False,2017-09-22T14:02:28.05+00:00,True,False,,,511,False,1.0.4
+"Dox Sweden AB,Jovan Paskota",2017-09-22T13:55:21.487Z,1,210,Object library for dox,Dox.Core.Object,False,2018-04-19T09:09:56.513+00:00,True,False,,"Dox,Objects",5915,False,2.1.7
+VirtoCommerce,2017-09-22T13:59:39.2Z,571,210,Common e-commerce implementations,VirtoCommerce.CoreModule.Data,False,2016-09-26T08:17:18.09+00:00,True,False,,,6030,False,2.24.12
+VirtoCommerce,2017-09-22T14:00:07.67Z,43209,210,Common e-commerce domain functionality,VirtoCommerce.Domain,False,1900-01-01T00:00:00+00:00,False,False,,,19304,False,2.24.12
+Artem Dudarev,2017-09-22T13:59:53.327Z,121,210,Search provider tests,VirtoCommerce.CoreModule.Search.Tests,False,2017-12-20T18:51:10.143+00:00,True,False,,,1271,False,2.24.12
+"Dox Sweden AB,Jovan Paskota",2017-09-22T14:00:07.967Z,14,210,Api Builder for Dox,Dox.Core.ApiBuilder,False,2018-04-06T12:14:14.757+00:00,True,False,,"Dox,API,Builder,https://api.dox.se",4760,False,2.2.7
+Darryl G. Whitmore,2017-09-22T13:54:42.343Z,210,210,A web scraping framework for .Net,CoreCompat.NScrape,True,2017-09-22T13:54:42.343+00:00,True,False,,"html,scrape,scraper,scraping,crawler,crawling,htmlagilitypack,htmlagility,agility",1402,False,0.4.0-r6
+"The Android Open Source Project,Ryan Conrad,Quamotion",2017-09-22T13:55:15.783Z,14,210,SharpAdbClient is a .NET library that allows .NET and .NET Core applications to communicate with Android devices.,SharpAdbClient,True,2018-04-06T21:15:55.943+00:00,True,False,,".net45,android,adb,netcore",18321,False,2.2.0-beta425
+"Dox Sweden AB,Jovan Paskota",2017-09-22T13:55:21.487Z,1,210,Object library for dox,Dox.Core.Object,False,2018-04-19T09:09:56.513+00:00,True,False,,"Dox,Objects",5915,False,2.1.7
+Chris Darrigo,2017-09-22T13:55:44.863Z,43209,210,Client for asynchronous messaging via Sql Server Broker Services.,Smart.Messaging.SqlServerBrokerServices.Client.Core,False,1900-01-01T00:00:00+00:00,False,False,,"Messaging,SqlServer,MessageBroker,core",2308,False,1.0.17
+Alfa Irawan,2017-09-22T13:37:53.993Z,43209,210,Siloam System,Siloam.System,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.3
+"Dox Sweden AB,Jovan Paskota",2017-09-22T13:47:33.377Z,1,210,SharedLibrary for Dox,Dox.Core.SharedLibrary,False,2018-04-19T08:46:10+00:00,True,False,,"Dox,SharedLibrary",8829,False,2.1.5
+Stack,2017-09-22T13:49:54.803Z,192,210,"The Stack assembly, containing most of the main types, configurations & other vital facilities.",Stack,False,2017-10-10T14:22:16.207+00:00,True,False,,,3253,False,1.2.6
+Stack,2017-09-22T13:50:20.773Z,192,210,"The Migrations assembly, containing types which upgrade the state of a persistence service, like a database.",Stack.Data.Migrations,False,2017-10-10T14:22:40.79+00:00,True,False,,,3177,False,1.2.6
+Stack,2017-09-22T13:50:45.883Z,192,210,"The Data.Sqlite assembly, containing types related to the configuration of a Sqlite persistence services.",Stack.Data.Sqlite,False,2017-10-10T14:23:04.747+00:00,True,False,,,2245,False,1.2.6
+Stack,2017-09-22T13:51:11.18Z,192,210,"The Web assembly, containing types for web communication, like consuming RESTful APIs.",Stack.Web,False,2017-10-10T14:23:30.317+00:00,True,False,,,3137,False,1.2.6
+Stack,2017-09-22T13:50:32.693Z,192,210,"The Data.PostgreSql assembly, containing types related to the configuration of a PostgreSQL persistence services.",Stack.Data.PostgreSql,False,2017-10-10T14:22:53.173+00:00,True,False,,,2307,False,1.2.6
+Chris Darrigo,2017-09-22T13:50:51.617Z,43209,210,Client for asynchronous messaging via Sql Server Broker Services.,Smart.Messaging.SqlServerBrokerServices.Client.Core,False,1900-01-01T00:00:00+00:00,False,False,,"Messaging,SqlServer,MessageBroker,core",2308,False,1.0.16
+Stack,2017-09-22T13:51:22.71Z,192,210,"The Web.Mvc assembly, containing types for web communication, like building RESTful APIs.",Stack.Web.Mvc,False,2017-10-10T14:23:41.53+00:00,True,False,,,2280,False,1.2.6
+Stack,2017-09-22T13:51:00.43Z,192,210,"The Data.SqlServer assembly, containing types related to the configuration of a SqlServer persistence services.",Stack.Data.SqlServer,False,2017-10-10T14:23:17.663+00:00,True,False,,,2286,False,1.2.6
+Stack,2017-09-22T13:50:08.427Z,192,210,"The Data assembly, containing types related to the configuration & communication with a persistence service, like a database.",Stack.Data,False,2017-10-10T14:22:28.233+00:00,True,False,,,3191,False,1.2.6
+trendyol ocinbat,2017-09-22T13:49:45.49Z,198,210,A simple application wrapper.,Trendyol.App.RestClient,False,2017-10-04T12:18:23+00:00,True,False,A simple application wrapper.,"trendyol,boilerplate",328,False,1.1.0
+trendyol ocinbat,2017-09-22T13:49:15.88Z,100,210,A simple application wrapper.,Trendyol.App.WebApi,False,2018-01-10T13:45:52.393+00:00,True,False,A simple application wrapper.,"trendyol,boilerplate",4594,False,2.4.3
+Amir Arayeshi,2017-09-22T13:49:19.63Z,81,210,.Net Orm Toolkit Core Library,ORMToolkit.Core,True,2018-01-29T09:50:01.19+00:00,True,False,,"ORM,Micro-Orm,.Net,SQL,Oracle,SQLite",2156,False,1.0.33-beta
+trendyol ocinbat,2017-09-22T13:49:01.457Z,76,210,A simple application wrapper.,Trendyol.App,False,2018-02-03T23:09:20.93+00:00,True,False,A simple application wrapper.,"trendyol,boilerplate",3885,False,2.4.3
+MhLabs.Lambda.ApiGatewayAuthorizer,2017-09-22T13:48:41.283Z,162,210,Package Description,MhLabs.Lambda.ApiGatewayAuthorizer,False,2017-11-09T09:38:13.893+00:00,True,False,,,13179,False,1.0.15
+"Dox Sweden AB,Jovan Paskota",2017-09-22T13:47:33.377Z,1,210,SharedLibrary for Dox,Dox.Core.SharedLibrary,False,2018-04-19T08:46:10+00:00,True,False,,"Dox,SharedLibrary",8829,False,2.1.5
+Alfa Irawan,2017-09-22T13:37:53.993Z,43209,210,Siloam System,Siloam.System,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.3
+DeftSoftSteven,2017-09-22T13:44:50.51Z,172,210,enterprise data extractor for PDF word or excel,DeftSoft.eExtractor,False,2017-10-30T17:57:43.77+00:00,True,False,,"Extractor,File,PDF,enterprise",552,False,0.1.0.2
+trendyol ocinbat,2017-09-22T13:43:32.85Z,76,210,A simple application wrapper.,Trendyol.App,False,2018-02-03T23:09:20.93+00:00,True,False,A simple application wrapper.,"trendyol,boilerplate",3885,False,2.4.0
+Alfa Irawan,2017-09-22T13:37:53.993Z,43209,210,Siloam System,Siloam.System,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.3
+Alfa Irawan,2017-09-22T13:37:53.993Z,43209,210,Siloam System,Siloam.System,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.3
+James Craig,2017-09-22T13:39:52.483Z,66,210,Data.Modeler helps to model database schemas using C#.,Data.Modeler,False,2018-02-13T21:15:46.363+00:00,True,False,,"SQL,Databases,Schema,Modeling",2046,False,1.0.21
+Mike Weller,2017-09-22T13:36:04.443Z,122,210,PNGDecrush is a C# library for reversing the optimization process that is applied to PNG files in an iOS project.,PNGDecrush,True,2017-12-19T20:42:00.01+00:00,True,False,,,1597,False,1.0.1-r20
+Microsoft,2017-09-22T13:35:01.423Z,43209,210,Include this package in any WinObjC project that you wish to be added to a final NuGet package,WinObjC.Packaging,True,1900-01-01T00:00:00+00:00,False,False,An extension of NuGet.Build.Packaging with WinObjC additions.,WinObjC.Packaging,7535,False,0.2.170610-dev-20170922000001
+SprayChronicle.Testing,2017-09-22T13:34:51.063Z,3,210,Package Description,SprayChronicle.Testing,True,2018-04-17T19:21:10.673+00:00,True,False,,,8185,False,0.1.0-build-29
+Microsoft,2017-09-22T13:34:33.033Z,43209,210,WinObjC.Language,WinObjC.Language,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Language,WinObjC.Language,9452,False,0.2.170610-dev-20170922000001
+Microsoft,2017-09-22T13:34:45.453Z,43209,210,WinObjC.Logging,WinObjC.Logging,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Logging,WinObjC.Logging,8351,False,0.2.170610-dev-20170922000001
+Microsoft,2017-09-22T13:33:01.84Z,43209,210,WinObjC.Frameworks.ThirdParty,WinObjC.Frameworks.ThirdParty,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks.ThirdParty,WinObjC.Frameworks.ThirdParty,7347,False,0.2.170610-dev-20170922000001
+Alinga,2017-09-22T13:33:29.11Z,177,210,.net utility functions,Alinga.Common,False,2017-10-25T11:18:48.25+00:00,True,False,,,147,False,1.0.0
+SprayChronicle.Server.Http,2017-09-22T13:34:22.25Z,3,210,Package Description,SprayChronicle.Server.Http,True,2018-04-17T19:19:20.357+00:00,True,False,,,8494,False,0.1.0-build-29
+Microsoft,2017-09-22T13:32:22.793Z,43209,210,WinObjC.Frameworks,WinObjC.Frameworks,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks,WinObjC.Frameworks,7965,False,0.2.170610-dev-20170922000001
+Microsoft,2017-09-22T13:33:44.623Z,43209,210,WinObjC.Frameworks.UWP.Core,WinObjC.Frameworks.UWP.Core,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks.UWP.Core,WinObjC.Frameworks.UWP.Core,7731,False,0.2.170610-dev-20170922000001
+dmanning23,2017-09-22T13:34:13.03Z,23,210,Several helpful extensions methods for the Vector2 class in MonoGame,Vector2Extensions,False,2018-03-28T07:37:13.733+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",1411,False,1.0.8
+Microsoft,2017-09-22T13:32:36.013Z,43209,210,WinObjC.Frameworks.Core,WinObjC.Frameworks.Core,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks.Core,WinObjC.Frameworks.Core,7394,False,0.2.170610-dev-20170922000001
+Microsoft,2017-09-22T13:33:32.297Z,43209,210,WinObjC.Frameworks.UWP,WinObjC.Frameworks.UWP,True,1900-01-01T00:00:00+00:00,False,False,WinObjC.Frameworks.UWP,WinObjC.Frameworks.UWP,6801,False,0.2.170610-dev-20170922000001
+David Bond,2017-09-22T13:27:13.407Z,43209,210,ScienceLogic EM7 library.  Uses the REST API to access data.,ScienceLogic.Em7.Api,False,1900-01-01T00:00:00+00:00,False,False,,"sciencelogic,EM7",-1,False,1.0.1
+"Dox Sweden AB,Jovan Paskota",2017-09-22T13:25:52.37Z,14,210,Api Builder for Dox,Dox.Core.ApiBuilder,False,2018-04-06T12:14:14.757+00:00,True,False,,"Dox,API,Builder,https://api.dox.se",4760,False,2.2.6
+Momentum,2017-09-22T13:30:49.163Z,4,210,Client for Momentum PM API,Momentum.Pm.Api,True,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.11.5752-beta
+SprayChronicle.Server,2017-09-22T13:31:04.477Z,3,210,Package Description,SprayChronicle.Server,True,2018-04-17T19:17:45.367+00:00,True,False,,,7777,False,0.1.0-build-29
+James Craig,2017-09-22T13:31:53.307Z,66,210,Data.Modeler helps to model database schemas using C#.,Data.Modeler,False,2018-02-13T21:15:46.363+00:00,True,False,,"SQL,Databases,Schema,Modeling",2046,False,1.0.19
+Momentum,2017-09-22T13:31:03.417Z,4,210,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,True,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.11.5752-beta
+SprayChronicle.QueryHandling,2017-09-22T13:28:28.363Z,3,210,Package Description,SprayChronicle.QueryHandling,True,2018-04-17T19:18:53.997+00:00,True,False,,,8055,False,0.1.0-build-29
+David Bond,2017-09-22T13:27:13.407Z,43209,210,ScienceLogic EM7 library.  Uses the REST API to access data.,ScienceLogic.Em7.Api,False,1900-01-01T00:00:00+00:00,False,False,,"sciencelogic,EM7",-1,False,1.0.1
+David Bond,2017-09-22T13:27:13.407Z,43209,210,ScienceLogic EM7 library.  Uses the REST API to access data.,ScienceLogic.Em7.Api,False,1900-01-01T00:00:00+00:00,False,False,,"sciencelogic,EM7",-1,False,1.0.1
+OnTime Group,2017-09-22T13:22:51.99Z,30,210,Package Description,OnTime.Base,False,2018-03-21T17:23:20.807+00:00,True,False,,,1448,False,1.0.3
+"Dox Sweden AB,Jovan Paskota",2017-09-22T13:23:31.68Z,210,210,Description,Concode.Common.Mail,False,2017-09-22T14:02:28.05+00:00,True,False,,Dox,511,False,1.0.3
+OnTime Group,2017-09-22T13:23:24.397Z,142,210,Package Description,OnTime.Providers.Quartz,False,2017-11-29T12:41:29.263+00:00,True,False,,,773,False,1.0.1
+SprayChronicle.Persistence.Mongo,2017-09-22T13:25:59.497Z,3,210,Package Description,SprayChronicle.Persistence.Mongo,True,2018-04-17T19:18:56.603+00:00,True,False,,,8510,False,0.1.0-build-29
+SprayChronicle.Projecting,2017-09-22T13:26:05.67Z,140,210,Package Description,SprayChronicle.Projecting,True,2017-12-01T19:43:12.593+00:00,True,False,,,4866,False,0.1.0-build-29
+"Dox Sweden AB,Jovan Paskota",2017-09-22T13:25:52.37Z,14,210,Api Builder for Dox,Dox.Core.ApiBuilder,False,2018-04-06T12:14:14.757+00:00,True,False,,"Dox,API,Builder,https://api.dox.se",4760,False,2.2.6
+SprayChronicle.Persistence.Ouro,2017-09-22T13:26:55.28Z,3,210,Package Description,SprayChronicle.Persistence.Ouro,True,2018-04-17T19:19:31.42+00:00,True,False,,,9908,False,0.1.0-build-29
+SprayChronicle.CommandHandling,2017-09-22T13:23:53.507Z,3,210,Package Description,SprayChronicle.CommandHandling,True,2018-04-17T19:16:02.63+00:00,True,False,,,9971,False,0.1.0-build-29
+OnTime.Base,2017-09-22T13:22:51.99Z,30,210,Package Description,OnTime.Base,False,2018-03-21T17:23:20.807+00:00,True,False,,,1448,False,1.0.3
+SprayChronicle.EventHandling,2017-09-22T13:23:49.1Z,3,210,Package Description,SprayChronicle.EventHandling,True,2018-04-17T19:16:01.677+00:00,True,False,,,10603,False,0.1.0-build-29
+SprayChronicle.Persistence.Memory,2017-09-22T13:23:09.21Z,3,210,Package Description,SprayChronicle.Persistence.Memory,True,2018-04-17T19:15:57.99+00:00,True,False,,,7852,False,0.1.0-build-29
+Microsoft,2017-09-22T13:23:31.68Z,210,210,Description,Concode.Common.Mail,False,2017-09-22T14:02:28.05+00:00,True,False,,,511,False,1.0.3
+SprayChronicle.EventSourcing,2017-09-22T13:23:53.087Z,3,210,Package Description,SprayChronicle.EventSourcing,True,2018-04-17T19:15:59.037+00:00,True,False,,,8247,False,0.1.0-build-29
+SprayChronicle.MessageHandling,2017-09-22T13:23:54.65Z,3,210,Package Description,SprayChronicle.MessageHandling,True,2018-04-17T19:16:00.19+00:00,True,False,,,7457,False,0.1.0-build-29
+OnTime.Providers.Quartz,2017-09-22T13:23:24.397Z,142,210,Package Description,OnTime.Providers.Quartz,False,2017-11-29T12:41:29.263+00:00,True,False,,,773,False,1.0.1
+dmanning23,2017-09-22T13:24:20.29Z,23,210,Several helpful extensions methods for the Vector2 class in MonoGame,Vector2Extensions,False,2018-03-28T07:37:13.733+00:00,True,False,,"pcl,windows,phone,winphone,android,ios,universal,monogame",1411,False,1.0.7
+Jasper H. Bojsen,2017-08-26T07:45:24.89Z,44,237,Behaviors for Xamarin.Forms .NET Standard 1.3/2.0,Behaviors.XamarinForms,True,2018-03-07T16:20:20.007+00:00,False,False,,"xamarin,xamarin.forms,behaviors,netstandard,netstandard13,netstandard20",2118,False,2.4.0-pre1b
+Jasper H. Bojsen,2017-08-26T08:11:20Z,44,237,Behaviors for Xamarin.Forms .NET Standard 1.3/2.0,Behaviors.XamarinForms,True,2018-03-07T16:20:20.007+00:00,False,False,,"xamarin,xamarin.forms,behaviors,netstandard,netstandard13,netstandard20",2118,False,2.4.0-pre1c
+Alfa Irawan,2017-09-22T13:20:10.827Z,43209,210,Siloam System,Siloam.System,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.2
+Jasper H. Bojsen,2017-09-22T13:22:00.957Z,44,210,Behaviors for Xamarin.Forms .NET Standard 1.3/2.0,Behaviors.XamarinForms,True,2018-03-07T16:20:20.007+00:00,True,False,,"xamarin,xamarin.forms,behaviors,netstandard,netstandard13,netstandard20",2118,False,2.4.0-pre3
+Momentum,2017-09-22T13:19:59.56Z,4,210,Client for Momentum PM Portal-API,Momentum.Pm.PortalApi,False,2018-04-16T03:00:50.57+00:00,True,False,,"Momentum,PM,Fastighetssystem",687587,False,5.10.261
+Alfa Irawan,2017-09-22T13:20:10.827Z,43209,210,Siloam System,Siloam.System,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,2.0.2
+Momentum,2017-09-22T13:19:44.047Z,4,210,Client for Momentum PM API,Momentum.Pm.Api,False,2018-04-16T03:00:31.727+00:00,True,False,,"Momentum,PM,Fastighetssystem",593830,False,5.10.261
+Ivan Gavryliuk (@aloneguid),2017-09-22T13:18:20.4Z,4,210,"Extension to Storage.Net providing integration with Microsoft Azure Storage for blobs, tables and queues.",Storage.Net.Microsoft.Azure.EventHub,False,2018-04-16T12:37:46.94+00:00,True,False,,,4724,False,3.0.45
+Ivan Gavryliuk (@aloneguid),2017-09-22T13:19:07.933Z,4,210,Provides Storage.Net integration with Azure Service Fabric. This library implements Reliable Storage as Blobs and Messages.,Storage.Net.Microsoft.ServiceFabric,False,2018-04-16T12:38:32.91+00:00,True,False,,,5106,False,2.6.204.45
+Ivan Gavryliuk (@aloneguid),2017-09-22T13:18:32.357Z,4,210,Extension to Storage.Net providing integration with Microsoft Azure Key vault as a blob storage.,Storage.Net.Microsoft.Azure.KeyVault,False,2018-04-16T12:37:58.3+00:00,True,False,,,3620,False,2.0.45
+Ivan Gavryliuk (@aloneguid),2017-09-22T13:19:19.89Z,161,210,Package Description,Storage.Net.WebHDFS,False,2017-11-10T15:07:53.32+00:00,True,False,,,1330,False,5.1.45
+Ivan Gavryliuk (@aloneguid),2017-09-22T13:18:56.357Z,4,210,"Extension to Storage.Net providing integration with Microsoft Azure Storage for blobs, tables and queues.",Storage.Net.Microsoft.Azure.Storage,False,2018-04-16T12:38:21.99+00:00,True,False,,,4970,False,3.0.45
+Ivan Gavryliuk (@aloneguid),2017-09-22T13:18:44.7Z,4,210,"Extension to Storage.Net providing integration with Microsoft Azure Storage for blobs, tables and queues.",Storage.Net.Microsoft.Azure.ServiceBus,False,2018-04-16T12:38:10.473+00:00,True,False,,,4647,False,3.0.45
+Ivan Gavryliuk (@aloneguid),2017-09-22T13:18:09.183Z,4,210,Provides Azure Data Lake Store integration for Storage.Net library,Storage.Net.Microsoft.Azure.DataLake.Store,False,2018-04-16T12:37:35.393+00:00,True,False,,,5805,False,3.0.45
+Sean McLellan,2017-09-22T13:17:30.993Z,41,210,.Net Core based runtime to interact with an running instance of Chrome via the ChromeDevTools protocol.,BaristaLabs.ChromeDevTools.Runtime,False,2018-03-10T17:21:01.7+00:00,True,False,,"ChromeDevTools,.Net,Core",873,False,61.0.3163.100
+Ivan Gavryliuk (@aloneguid),2017-09-22T13:17:56.93Z,4,210,Extension to Storage.Net providing integration with Amazon S3 blobs.,Storage.Net.Amazon.Aws,False,2018-04-16T12:37:23.41+00:00,True,False,,,7449,False,5.1.45
+Ivan Gavryliuk (@aloneguid),2017-09-22T13:17:42.93Z,4,210,"Storage.Net abstracts storage implementation like blobs, tables and messages from the .NET Application Developer. It's aimed to provide a generic interface regardless on which storage provider you are using. It also provides both synchronous and asynchronous alternatives of all methods and implements it to the best effort possible. Supports .NET 4.5.1 and .NET Standard 1.6.",Storage.Net,False,2018-04-16T12:37:11.923+00:00,True,False,,,15898,False,5.1.45
+"LVYAS,",2017-09-22T13:13:18.937Z,43209,210,Description,Allscripts.Analytics.Submission.Processing,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+LV,2017-09-22T10:39:14.63Z,210,210,A package,LV.TestLib,False,2017-09-22T10:39:14.63+00:00,True,False,,TestLib,87,False,1.0.0
+"LVYAS,",2017-09-22T13:13:18.937Z,43209,210,Description,Allscripts.Analytics.Submission.Processing,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+SprayChronicle.Server.Http,2017-09-22T13:13:37.67Z,3,210,Package Description,SprayChronicle.Server.Http,True,2018-04-17T19:19:20.357+00:00,True,False,,,8494,False,0.1.0-build-28
+LVYAS,2017-09-22T13:13:18.937Z,43209,210,Description,Allscripts.Analytics.Submission.Processing,False,1900-01-01T00:00:00+00:00,False,False,,,-1,False,1.0.0
+SprayChronicle.Testing,2017-09-22T13:13:19.047Z,3,210,Package Description,SprayChronicle.Testing,True,2018-04-17T19:21:10.673+00:00,True,False,,,8185,False,0.1.0-build-28
+SprayChronicle.Server,2017-09-22T13:11:15.04Z,3,210,Package Description,SprayChronicle.Server,True,2018-04-17T19:17:45.367+00:00,True,False,,,7777,False,0.1.0-build-28
+Mike Weller,2017-09-22T13:12:13.607Z,122,210,PNGDecrush is a C# library for reversing the optimization process that is applied to PNG files in an iOS project.,PNGDecrush,True,2017-12-19T20:42:00.01+00:00,True,False,,,1597,False,1.0.0-r18
+SprayChronicle.QueryHandling,2017-09-22T13:10:26.587Z,3,210,Package Description,SprayChronicle.QueryHandling,True,2018-04-17T19:18:53.997+00:00,True,False,,,8055,False,0.1.0-build-28
+SprayChronicle.Persistence.Ouro,2017-09-22T13:10:45.68Z,3,210,Package Description,SprayChronicle.Persistence.Ouro,True,2018-04-17T19:19:31.42+00:00,True,False,,,9908,False,0.1.0-build-28
+SprayChronicle.Persistence.Mongo,2017-09-22T13:10:07.9Z,3,210,Package Description,SprayChronicle.Persistence.Mongo,True,2018-04-17T19:18:56.603+00:00,True,False,,,8510,False,0.1.0-build-28
+Joe Audette,2017-09-22T13:08:29.537Z,1,210,MVC Controllers for cloudscribe.Core.Web,cloudscribe.Core.Web.Mvc,False,2018-04-19T16:09:32.88+00:00,True,False,,,9772,False,2.0.15
+SprayChronicle.Projecting,2017-09-22T13:10:01.35Z,140,210,Package Description,SprayChronicle.Projecting,True,2017-12-01T19:43:12.593+00:00,True,False,,,4866,False,0.1.0-build-28
+SprayChronicle.CommandHandling,2017-09-22T13:08:37.24Z,3,210,Package Description,SprayChronicle.CommandHandling,True,2018-04-17T19:16:02.63+00:00,True,False,,,9971,False,0.1.0-build-28
+Joe Audette,2017-09-22T13:08:02.44Z,18,210,Bootstrap 3 views for cloudscribe.Core.Web,cloudscribe.Core.Web.Views.Bootstrap3,False,2018-04-02T20:00:11.777+00:00,True,False,,"cloudscribe.Core,Bootstrap3",8256,False,2.0.8
+SprayChronicle.EventSourcing,2017-09-22T13:08:19.83Z,3,210,Package Description,SprayChronicle.EventSourcing,True,2018-04-17T19:15:59.037+00:00,True,False,,,8247,False,0.1.0-build-28
+Jasper H. Bojsen,2017-09-22T13:09:34.553Z,12,210,"A simple and light Websocket client. 
+Xamarin cross-platform.
+Can be set to ignore SSL/TLS server certificate issues. 
+Observe incoming message using Reactive Extensions (Rx)",WebsocketClientLite.PCL,False,2018-04-08T18:27:35.203+00:00,True,False,,"netstandard,pcl,netcore,ios,android,xamarin,uwp,websocket,rx,ssl,tls",8334,False,4.1.1
+Kenneth Skovhede,2017-09-22T13:08:53.77Z,190,210,FasterHashing library,FasterHashing,False,2017-10-12T11:03:40.86+00:00,True,False,,"Hashing,MD5,SHA1,SHA256,SHA384,SHA512",3328,False,1.0.0
+SprayChronicle.Persistence.Memory,2017-09-22T13:07:13.08Z,3,210,Package Description,SprayChronicle.Persistence.Memory,True,2018-04-17T19:15:57.99+00:00,True,False,,,7852,False,0.1.0-build-28
+SprayChronicle.MessageHandling,2017-09-22T13:07:45.673Z,3,210,Package Description,SprayChronicle.MessageHandling,True,2018-04-17T19:16:00.19+00:00,True,False,,,7457,False,0.1.0-build-28
+SprayChronicle.EventHandling,2017-09-22T13:07:41.737Z,3,210,Package Description,SprayChronicle.EventHandling,True,2018-04-17T19:16:01.677+00:00,True,False,,,10603,False,0.1.0-build-28
+Hung Vo,2017-09-22T13:01:25.13Z,121,210,Provide a new way to work with mssql database version,DatabaseMigrateExt,False,2017-12-20T15:18:48.22+00:00,True,False,,"fluent,migrator,database,version",2216,False,1.0.0.3
+Karl M. Speer,2017-09-22T13:01:31.347Z,179,210,This generates characters for the Dungeons and Dragons 3.5 system.  One can generate characters at random or within certain parameters.  Characters are equipped.,CharacterGen,False,2017-10-23T22:31:32.937+00:00,True,False,This generates characters for the Dungeons and Dragons 3.5 system.,"npc,character,equipment,treasure,generator,dice,dungeons,dragons,d20,dnd,3.5,gen",4911,False,10.0.0
+Hung Vo,2017-09-22T13:01:25.13Z,121,210,Provide a new way to work with mssql database version,DatabaseMigrateExt,False,2017-12-20T15:18:48.22+00:00,True,False,,"fluent,migrator,database,version",2216,False,1.0.0.3
+Karl M. Speer,2017-09-22T13:01:43.55Z,179,210,This is a Ninject-based bootstrapper for CharacterGen,CharacterGen.Domain,False,2017-10-23T22:31:44.78+00:00,True,False,This is a Ninject-based bootstrapper for CharacterGen,"npc,character,equipment,treasure,generator,dice,dungeons,dragons,d20,dnd,3.5,gen,ninject,ioc,domain",2838,False,10.0.0
+Neomode,2017-09-22T13:01:21.003Z,9,210,Package for MaxiPago integration,Neomode.MaxiPago.Integration,False,2018-04-11T12:15:36.603+00:00,True,False,,,2136,False,0.0.9
+Neomode,2017-09-22T13:02:18.193Z,9,210,Package for MaxiPago integration,Neomode.MaxiPago.Jobs,False,2018-04-11T12:16:05.323+00:00,True,False,,,1121,False,0.0.9
+Chris Darrigo,2017-09-22T12:55:13.363Z,43209,210,Client for asynchronous messaging via Sql Server Broker Services.,Smart.Messaging.SqlServerBrokerServices.Client.Core,False,1900-01-01T00:00:00+00:00,False,False,Smart.Messaging.SqlServerBrokerServices.Client.Core,"Messaging,SqlServer,MessageBroker,core",2308,False,1.0.15
+Philippe Pare,2017-09-22T12:55:16.863Z,210,210,Libraries for ActiveX Terminal Services,AxMsTsc,False,2017-09-22T12:55:16.863+00:00,True,False,,"Ax,Ms,Tsc,Interop",307,False,1.1.3
+"Mnording,Klarna",2017-09-22T12:58:24.433Z,210,210,Core klarna dependencies used in other libraries.,Mnording.Klarna.Core,False,2017-09-22T12:58:24.433+00:00,True,False,,,1210,False,3.3.0
+"Mnording,Klarna",2017-09-22T12:58:24.433Z,210,210,Core klarna dependencies used in other libraries.,Mnording.Klarna.Core,False,2017-09-22T12:58:24.433+00:00,True,False,,,1210,False,3.3.0
+Chris Darrigo,2017-09-22T12:55:13.363Z,43209,210,Client for asynchronous messaging via Sql Server Broker Services.,Smart.Messaging.SqlServerBrokerServices.Client.Core,False,1900-01-01T00:00:00+00:00,False,False,,"Messaging,SqlServer,MessageBroker,core",2308,False,1.0.15
+Intercom,2017-09-22T12:56:18.647Z,9,210,The official Intercom API client library for .NET,Intercom.Dotnet.Client,False,2018-04-11T13:45:49.47+00:00,True,False,The official Intercom API client library for .NET,,45126,False,1.0.30
+sercan.gurbuz,2017-09-22T12:54:32.737Z,17,210,Rota SPA framework powered by angularJs and typescript,rota.spa,False,2018-04-03T05:39:27.663+00:00,True,False,,"rota,spa,angularjs,bimar,typescript",6278,False,1.2.2
+Philippe Pare,2017-09-22T12:55:16.863Z,210,210,Libraries for ActiveX Terminal Services,AxMsTsc,False,2017-09-22T12:55:16.863+00:00,True,False,,"Ax,Ms,Tsc,Interop",307,False,1.1.3
+Microsoft,2017-09-22T12:54:50.427Z,210,210,The required assemblies for Microsoft.AnalysisServices,Microsoft.AnalysisServices.Unofficial,False,2017-09-22T12:54:50.427+00:00,True,False,,"Microsoft,AnalysisServices",575,False,13.0.4001.1
+Zelis.Core.HttpServiceClient,2017-09-22T12:54:20.237Z,143,210,Package Description,Zelis.Core.HttpServiceClient,False,2017-11-28T20:58:41.243+00:00,True,False,,,1041,False,1.2.0
+"Dox Sweden AB,Jovan Paskota",2017-09-22T12:47:46.347Z,1,210,Object library for dox,Dox.Core.Object,False,2018-04-19T09:09:56.513+00:00,True,False,,"Dox,Objects",5915,False,2.1.6
+Adam Simon,2017-09-22T12:50:10.243Z,209,210,A full-featured file logger implementation for the Microsoft.Extensions.Logging framework.,Karambolo.Extensions.Logging.File,False,2017-09-23T11:31:46.91+00:00,True,False,,"filelogger,logger,logging",715,False,1.0.0
+"Dox Sweden AB,Jovan Paskota",2017-09-22T12:47:46.347Z,1,210,Object library for dox,Dox.Core.Object,False,2018-04-19T09:09:56.513+00:00,True,False,,"Dox,Objects",5915,False,2.1.6
+ObjectivityLtd,2017-09-22T12:48:25.333Z,43209,210,Cake addin to get Azure WebApp Publishing Credentials .,Cake.Deploy.Azure.Management.WebSites,False,1900-01-01T00:00:00+00:00,False,False,,,599,False,0.2.0
+DotNetProjects,2017-09-22T12:45:44.687Z,210,210,A fork of WPF Extended Toolkit AvalonDock,DotNetProjects.AvalonDock.Themes.VS2010,False,2017-09-22T12:45:44.687+00:00,True,False,,,113,False,3.2.0
+DotNetProjects,2017-09-22T12:45:58.717Z,158,210,A fork of WPF Extended Toolkit,DotNetProjects.Extended.Wpf.Toolkit,False,2017-11-13T14:27:23.073+00:00,True,False,,,7101,False,3.2.46
+DotNetProjects,2017-09-22T12:45:31.14Z,210,210,A fork of WPF Extended Toolkit AvalonDock,DotNetProjects.AvalonDock.Themes.Metro,False,2017-09-22T12:45:31.14+00:00,True,False,,,130,False,3.2.0
+M. Rybnikov,2017-09-22T12:43:22.353Z,99,210,LightningDb facades to easily build an embedded event stream and a document store. By default JIL serialization is build in.,LightningStore,False,2018-01-11T13:17:04.207+00:00,True,False,,,1352,False,0.3.1
+Crossroads Church,2017-09-21T19:19:02.353Z,8,211,C# .Net common components for use in various Crossroads web applications.  This contains some common shared components needed by many or all of these applications.,Crossroads.Web.Common,False,2018-04-12T14:05:32.527+00:00,True,False,,,5175,False,1.1.1
+DevDigital,2017-09-22T12:44:05.557Z,43,210,Create standardised responses for .NET RESTful APIs.,AutoResponse.Owin,False,2018-03-08T12:18:26.643+00:00,True,False,,,1550,False,0.6.1
+DevDigital,2017-09-22T12:43:50.54Z,43,210,Provides standard Web API 2 responses.,AutoResponse.WebApi2.Autofac,False,2018-03-08T12:18:49.147+00:00,True,False,,,2235,False,0.6.1
+DotNetProjects,2017-09-22T12:44:54.887Z,158,210,A fork of WPF Extended Toolkit AvalonDock,DotNetProjects.AvalonDock,False,2017-11-13T14:27:08.627+00:00,True,False,,,2836,False,3.2.46
+M. Rybnikov,2017-09-22T12:43:22.353Z,99,210,LightningDb facades to easily build an embedded event stream and a document store. By default JIL serialization is build in.,LightningStore,False,2018-01-11T13:17:04.207+00:00,True,False,,,1352,False,0.3.1
+DotNetProjects,2017-09-22T12:45:12.12Z,210,210,A fork of WPF Extended Toolkit AvalonDock,DotNetProjects.AvalonDock.Themes.Aero,False,2017-09-22T12:45:12.12+00:00,True,False,,,125,False,3.2.0
+DevDigital,2017-09-22T12:44:17.04Z,43,210,Create standardised responses for .NET RESTful APIs.,AutoResponse.Core,False,2018-03-08T12:18:15.487+00:00,True,False,,,1816,False,0.6.1
+Karsten N. Strand,2017-09-22T12:43:13.163Z,210,210,Pomona helper library for NH4 querying.,Pomona.NHibernate4,False,2017-09-22T12:43:13.163+00:00,True,False,,"rest,linq,mapping,dto,odata,query",5822,False,1.1.1
+DevDigital,2017-09-22T12:44:28.01Z,43,210,Create standardised responses for .NET RESTful APIs.,AutoResponse.Client,False,2018-03-08T12:18:04.487+00:00,True,False,,,1603,False,0.6.1
+Markus Jarderot,2017-09-22T12:44:14.76Z,122,210,A library for parsing Android binary XML format. You could use it to parse AndroidManifest.xml inside the APK files.,AndroidXml,True,2017-12-19T20:46:45.837+00:00,True,False,,,4592,False,1.0.54-r89
+DevDigital,2017-09-22T12:43:37.353Z,43,210,Provides standard Web API 2 responses.,AutoResponse.WebApi2,False,2018-03-08T12:18:37.143+00:00,True,False,,,2244,False,0.6.1
+Jasper H. Bojsen (inspired by socket-for.pcl by Ryan Davis),2017-09-22T12:31:19.76Z,29,210,"Socket PCL Xamarin Cross platform for iOS, Windows 10 (UWP) and Android",SocketLite.PCL,False,2018-03-22T13:11:56.24+00:00,False,False,,"Socket,tcp,udp,xamarin,PCL,ios,android,uwp,windows10,netstandard,netstandard20",19760,False,4.1.0
+Karsten N. Strand,2017-09-22T12:42:59.227Z,210,210,Pomona helper library for NH3 querying.,Pomona.NHibernate3,False,2017-09-22T12:42:59.227+00:00,True,False,,"rest,linq,mapping,dto,odata,query",7875,False,1.1.1
+Karsten N. Strand,2017-09-22T12:42:45.21Z,210,210,Support for integration with MiniProfiler,Pomona.Profiling.MiniProfiler,False,2017-09-22T12:42:45.21+00:00,True,False,,"rest,linq,mapping,dto,odata,query",10562,False,1.1.1
+Karsten N. Strand,2017-09-22T12:42:33.257Z,210,210,Pomona simple scheduling library.,Pomona.Scheduler,False,2017-09-22T12:42:33.257+00:00,True,False,,"rest,linq,mapping,dto,odata,query",14637,False,1.1.1
+Jasper H. Bojsen (inspired by socket-for.pcl by Ryan Davis),2017-09-22T12:42:30.333Z,29,210,"Socket PCL Xamarin Cross platform for iOS, Windows 10 (UWP) and Android",SocketLite.PCL,False,2018-03-22T13:11:56.24+00:00,True,False,,"Socket,tcp,udp,xamarin,PCL,ios,android,uwp,windows10,netstandard,netstandard20",19760,False,4.1.1
+Karsten N. Strand,2017-09-22T12:42:20.617Z,210,210,Pomona security extensions.,Pomona.Security,False,2017-09-22T12:42:20.617+00:00,True,False,,"rest,linq,mapping,dto,odata,query",14732,False,1.1.1
+Karsten N. Strand,2017-09-22T12:41:25.8Z,210,210,Core library for exposing a web service through Pomona.,Pomona,False,2017-09-22T12:41:25.8+00:00,True,False,,"rest,linq,mapping,dto,odata,query",36388,False,1.1.1
+Karsten N. Strand,2017-09-22T12:41:53.723Z,210,210,Help library for tests,Pomona.TestHelpers,False,2017-09-22T12:41:53.723+00:00,True,False,,"REST,linq,mapping",32615,False,1.1.1
+DotNetProjects,2017-09-22T12:41:04.33Z,158,210,A fork of WPF Extended Toolkit AvalonDock,DotNetProjects.AvalonDock,False,2017-11-13T14:27:08.627+00:00,True,False,,,2836,False,3.2.45
+Karsten N. Strand,2017-09-22T12:41:39.457Z,210,210,Pomona shared library between server and client.,Pomona.Common,False,2017-09-22T12:41:39.457+00:00,True,False,,"rest,linq,mapping,dto,odata,query",37000,False,1.1.1
+Karsten N. Strand,2017-09-22T12:42:08.583Z,210,210,Pomona client for testing code integrating against a pomona client,Pomona.TestingClient,False,2017-09-22T12:42:08.583+00:00,True,False,,"REST,linq,mapping",20609,False,1.1.1
+gfoidl,2017-09-22T12:09:38.37Z,72,210,"Provides several data-compression algorithms:
+
+* error band elimination
+* swinging door algorithm",gfoidl.DataCompression,False,2018-02-07T12:43:22.907+00:00,True,False,Swinging Door Algorithm,"data,compression,swinging-door-algorithm,dead-band-filtering,swinging-door,swinging",396,False,1.0.0
+"Johannes Giske,Knowit Experience Bergen",2017-09-22T12:39:55.5Z,171,210,A header menu,KXB.Spark.HorizontalHeaderMenu,False,2017-10-31T13:57:40.993+00:00,True,False,,"KXB,KXB.Spark",483,False,0.0.1
+Primero Systems Inc.,2017-09-22T12:38:40.997Z,43209,210,Messages functions for Primero Systems projects.,PBS.OS.Packages.Messages,False,1900-01-01T00:00:00+00:00,False,False,,"Primero,Systems,Messages",-1,False,2.0.2
+DotNetProjects,2017-09-22T12:37:44.543Z,158,210,A fork of WPF Extended Toolkit,DotNetProjects.Extended.Wpf.Toolkit,False,2017-11-13T14:27:23.073+00:00,True,False,,,7101,False,3.2.44
+DotNetProjects,2017-09-22T12:37:31.543Z,158,210,A fork of WPF Extended Toolkit AvalonDock,DotNetProjects.AvalonDock,False,2017-11-13T14:27:08.627+00:00,True,False,,,2836,False,3.2.44
+Jasper H. Bojsen (inspired by socket-for.pcl by Ryan Davis),2017-09-22T12:31:19.76Z,29,210,"Socket PCL Xamarin Cross platform for iOS, Windows 10 (UWP) and Android",SocketLite.PCL,False,2018-03-22T13:11:56.24+00:00,True,False,,"Socket,tcp,udp,xamarin,PCL,ios,android,uwp,windows10,netstandard,netstandard20",19760,False,4.1.0
+Advanced Energy,2017-09-07T15:31:18.973Z,84,225,"Communication library for AdvancedEnergy HV PSU products. Currently supports only EG353 and HP E-Beam (A603), XRG70-603PFXC",AdvancedEnergy.Power.Protocol,True,2018-01-26T17:01:47.59+00:00,False,False,,"EG353,High,Voltage,PSU,HV,AdvancedEnergy,HiTek",2315,False,1.0.3-alpha05
+Advanced Energy,2017-06-22T11:28:06.79Z,84,302,Communication library for AdvancedEnergy HV PSU products. Currently supports only EG353 and HP E-Beam (A603),AdvancedEnergy.Power.Protocol,True,2018-01-26T17:01:47.59+00:00,False,False,,"EG353,High,Voltage,PSU,HV,AdvancedEnergy,HiTek",2315,False,1.0.3-alpha03
+Cem Basaranoglu,2017-09-18T10:04:45.267Z,43209,214,A basic cache invalidator,Hepsiburada.Core.CacheInvalidationManager,False,1900-01-01T00:00:00+00:00,False,False,,"cache,invalidation,redis,inmemory",-1,False,1.0.0
+Advanced Energy,2017-09-22T12:26:10.297Z,84,210,"Communication library for AdvancedEnergy HV PSU products. Currently supports only EG353 and HP E-Beam (A603), XRG70-603PFXC",AdvancedEnergy.Power.Protocol,True,2018-01-26T17:01:47.59+00:00,True,False,,"EG353,High,Voltage,PSU,HV,AdvancedEnergy,HiTek",2315,False,1.0.3-alpha06
+takenet,2017-09-22T12:26:53Z,1,210,Iris common data types package,Takenet.Iris.Common,False,2018-04-19T20:20:12.39+00:00,True,False,,"Iris,Lime",46396,False,1.9.110
+Karl M. Speer,2017-09-22T12:26:34.58Z,143,210,"This provides common, core objects for the generators, including the Percentile and Collection selectors, with dependencies",DnDGen.Core,False,2017-11-28T21:58:33.357+00:00,True,False,"This provides common, core objects for the generators, including the Percentile and Collection selectors, with dependencies","dungeons,dragons,d20,dnd,3.5,generator,dndgen,selector,mapper,table,schema,percentile,collection,collections,percentiles",2174,False,2.4.0
+gfoidl,2017-09-22T12:09:38.37Z,72,210,"Provides several data-compression algorithms:
+
+* error band elimination
+* swinging door algorithm",gfoidl.DataCompression,False,2018-02-07T12:43:22.907+00:00,True,False,Swinging Door Algorithm,"'Data,compression','Swinging,door,algorithm','Dead,band,filtering',door',band'",396,False,1.0.0
+"Daniel Luberda,Fabien Molinet",2017-09-22T11:48:18.24Z,22,210,"Xamarin Library to load images quickly and easily.
+
+Features:
+
+- Xamarin.iOS, Xamarin.Android, Xamarin.Forms, Xamarin.Mac and Windows (WinRT, UWP) support
+- Configurable disk and memory caching
+- Multiple image views using the same image source (url, path, resource) will use only one bitmap which is cached in memory (less memory usage)
+- Deduplication of similar download/load requests. *(If 100 similar requests arrive at same time then one real loading will be performed while 99 others will wait).*
+- Error and loading placeholders support
+- Images can be automatically downsampled to specified size (less memory usage)
+- Fluent API which is inspired by Picasso naming
+- SVG / WebP / GIF support
+- Image loading Fade-In animations support
+- Can retry image downloads (RetryCount, RetryDelay)
+- Android bitmap optimization. Saves 50% of memory by trying not to use transparency channel when possible.
+- Transformations support
+- BlurredTransformation
+- CircleTransformation, RoundedTransformation, CornersTransformation, CropTransformation
+- ColorSpaceTransformation, GrayscaleTransformation, SepiaTransformation, TintTransformation
+- FlipTransformation, RotateTransformation
+- Supports custom transformations (native platform `ITransformation` implementations)",Xamarin.FFImageLoading,True,2018-03-29T13:47:42.8+00:00,False,False,Xamarin library to load images quickly and easily on Xamarin.iOS / Xamarin.Android / Xamarin.Mac / Windows,"xamarin,android,ios,mac,windows,image,cache,caching,memory,bitmap,lru,load,loading,save,effects,photo",629971,False,2.2.15-pre-525
+Daniel Luberda,2017-09-22T11:48:42.303Z,22,210,SVG support for FFImageLoading library.,Xamarin.FFImageLoading.Svg,True,2018-03-29T13:48:10.38+00:00,False,False,Xamarin SVG support for FFImageLoading.,"xamarin,android,ios,bitmap,image,svg",87881,False,2.2.15-pre-525
+"Daniel Luberda,Fabien Molinet",2017-09-22T11:48:30.803Z,22,210,"Xamarin Library to load images quickly and easily on Xamarin.Forms.
+
+Ensure you call CachedImageRenderer.Init() on each platform!!!
+
+Features:
+
+- Xamarin.iOS, Xamarin.Android, Xamarin.Forms, Xamarin.Mac and Windows (WinRT, UWP) support
+- Configurable disk and memory caching
+- Multiple image views using the same image source (url, path, resource) will use only one bitmap which is cached in memory (less memory usage)
+- Deduplication of similar download/load requests. *(If 100 similar requests arrive at same time then one real loading will be performed while 99 others will wait).*
+- Error and loading placeholders support
+- Images can be automatically downsampled to specified size (less memory usage)
+- Fluent API which is inspired by Picasso naming
+- SVG / WebP / GIF support
+- Image loading Fade-In animations support
+- Can retry image downloads (RetryCount, RetryDelay)
+- Android bitmap optimization. Saves 50% of memory by trying not to use transparency channel when possible.
+- Transformations support
+- BlurredTransformation
+- CircleTransformation, RoundedTransformation, CornersTransformation, CropTransformation
+- ColorSpaceTransformation, GrayscaleTransformation, SepiaTransformation, TintTransformation
+- FlipTransformation, RotateTransformation
+- Supports custom transformations (native platform `ITransformation` implementations)",Xamarin.FFImageLoading.Forms,True,2018-03-29T13:47:57.66+00:00,False,False,Xamarin Forms plugin to load images quickly and easily.,"xamarin,forms,xamarin.forms,mac,windows,android,ios,bitmap,image,cache,webp,quick,easy,lru,load,loading,save",495661,False,2.2.15-pre-525
+"Daniel Luberda,Molinet Fabien",2017-09-22T11:49:07.133Z,22,210,"Transformations for FFImageLoading library.
+
+- BlurredTransformation
+- CircleTransformation, RoundedTransformation, CornersTransformation, CropTransformation
+- ColorSpaceTransformation, GrayscaleTransformation, SepiaTransformation, TintTransformation
+- FlipTransformation, RotateTransformation
+- Supports custom transformations (native platform `ITransformation` implementations)
+
+These transformations can be consumed from FFImageLoading and FFImageLoading.Forms (Xamarin Forms).
+Don't forget to add the package in all platform specific projects. This way the correct native implementation is injected.",Xamarin.FFImageLoading.Transformations,True,2018-03-29T13:48:34.49+00:00,False,False,Xamarin image transformations for FFImageLoading.,"xamarin,android,ios,mac,windows,bitmap,image,webp,transformation,blur,round,circle,effects,corners",347119,False,2.2.15-pre-525
+Daniel Luberda,2017-09-22T11:48:56.133Z,22,210,Xamarin.Forms SVG support for FFImageLoading library.,Xamarin.FFImageLoading.Svg.Forms,True,2018-03-29T13:48:21.427+00:00,False,False,Xamarin.Forms SVG support for FFImageLoading.,"xamarin,android,ios,windows,mac,bitmap,image,svg",73312,False,2.2.15-pre-525
+Daniel Luberda,2017-09-22T12:21:35.067Z,22,210,Xamarin.Forms SVG support for FFImageLoading library.,Xamarin.FFImageLoading.Svg.Forms,False,2018-03-29T13:48:21.427+00:00,True,False,Xamarin.Forms SVG support for FFImageLoading.,"xamarin,android,ios,windows,mac,bitmap,image,svg",73312,False,2.2.15
+Daniel Luberda,2017-09-22T12:21:22.8Z,22,210,SVG support for FFImageLoading library.,Xamarin.FFImageLoading.Svg,False,2018-03-29T13:48:10.38+00:00,True,False,Xamarin SVG support for FFImageLoading.,"xamarin,android,ios,bitmap,image,svg",87881,False,2.2.15
+"Daniel Luberda,Fabien Molinet",2017-09-22T12:20:53.52Z,22,210,"Xamarin Library to load images quickly and easily.
+
+Features:
+
+- Xamarin.iOS, Xamarin.Android, Xamarin.Forms, Xamarin.Mac and Windows (WinRT, UWP) support
+- Configurable disk and memory caching
+- Multiple image views using the same image source (url, path, resource) will use only one bitmap which is cached in memory (less memory usage)
+- Deduplication of similar download/load requests. *(If 100 similar requests arrive at same time then one real loading will be performed while 99 others will wait).*
+- Error and loading placeholders support
+- Images can be automatically downsampled to specified size (less memory usage)
+- Fluent API which is inspired by Picasso naming
+- SVG / WebP / GIF support
+- Image loading Fade-In animations support
+- Can retry image downloads (RetryCount, RetryDelay)
+- Android bitmap optimization. Saves 50% of memory by trying not to use transparency channel when possible.
+- Transformations support
+- BlurredTransformation
+- CircleTransformation, RoundedTransformation, CornersTransformation, CropTransformation
+- ColorSpaceTransformation, GrayscaleTransformation, SepiaTransformation, TintTransformation
+- FlipTransformation, RotateTransformation
+- Supports custom transformations (native platform `ITransformation` implementations)",Xamarin.FFImageLoading,False,2018-03-29T13:47:42.8+00:00,True,False,Xamarin library to load images quickly and easily on Xamarin.iOS / Xamarin.Android / Xamarin.Mac / Windows,"xamarin,android,ios,mac,windows,image,cache,caching,memory,bitmap,lru,load,loading,save,effects,photo",629971,False,2.2.15
+"Daniel Luberda,Fabien Molinet",2017-09-22T12:21:06.083Z,22,210,"Xamarin Library to load images quickly and easily on Xamarin.Forms.
+
+Ensure you call CachedImageRenderer.Init() on each platform!!!
+
+Features:
+
+- Xamarin.iOS, Xamarin.Android, Xamarin.Forms, Xamarin.Mac and Windows (WinRT, UWP) support
+- Configurable disk and memory caching
+- Multiple image views using the same image source (url, path, resource) will use only one bitmap which is cached in memory (less memory usage)
+- Deduplication of similar download/load requests. *(If 100 similar requests arrive at same time then one real loading will be performed while 99 others will wait).*
+- Error and loading placeholders support
+- Images can be automatically downsampled to specified size (less memory usage)
+- Fluent API which is inspired by Picasso naming
+- SVG / WebP / GIF support
+- Image loading Fade-In animations support
+- Can retry image downloads (RetryCount, RetryDelay)
+- Android bitmap optimization. Saves 50% of memory by trying not to use transparency channel when possible.
+- Transformations support
+- BlurredTransformation
+- CircleTransformation, RoundedTransformation, CornersTransformation, CropTransformation
+- ColorSpaceTransformation, GrayscaleTransformation, SepiaTransformation, TintTransformation
+- FlipTransformation, RotateTransformation
+- Supports custom transformations (native platform `ITransformation` implementations)",Xamarin.FFImageLoading.Forms,False,2018-03-29T13:47:57.66+00:00,True,False,Xamarin Forms plugin to load images quickly and easily.,"xamarin,forms,xamarin.forms,mac,windows,android,ios,bitmap,image,cache,webp,quick,easy,lru,load,loading,save",495661,False,2.2.15
+"Daniel Luberda,Molinet Fabien",2017-09-22T12:21:50.473Z,22,210,"Transformations for FFImageLoading library.
+
+- BlurredTransformation
+- CircleTransformation, RoundedTransformation, CornersTransformation, CropTransformation
+- ColorSpaceTransformation, GrayscaleTransformation, SepiaTransformation, TintTransformation
+- FlipTransformation, RotateTransformation
+- Supports custom transformations (native platform `ITransformation` implementations)
+
+These transformations can be consumed from FFImageLoading and FFImageLoading.Forms (Xamarin Forms).
+Don't forget to add the package in all platform specific projects. This way the correct native implementation is injected.",Xamarin.FFImageLoading.Transformations,False,2018-03-29T13:48:34.49+00:00,True,False,Xamarin image transformations for FFImageLoading.,"xamarin,android,ios,mac,windows,bitmap,image,webp,transformation,blur,round,circle,effects,corners",347119,False,2.2.15
