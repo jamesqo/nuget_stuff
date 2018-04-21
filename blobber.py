@@ -71,8 +71,8 @@ def gen_blobs(df, tagger, args, blobs_root, vectors_root):
 
     if not args.reuse_vectors:
         trans = FeatureTransformer(tags_vocab=tagger.vocab_,
-                                mode='chunked',
-                                output_fmt=VEC_FMT)
+                                   mode='chunked',
+                                   output_fmt=VEC_FMT)
         fnames = trans.fit_transform(df)
 
     chunknos = get_chunknos(df)
