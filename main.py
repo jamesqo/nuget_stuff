@@ -10,16 +10,16 @@ import sys
 from argparse import ArgumentParser
 from datetime import datetime
 
+from blobber import gen_blobs
 from data_prep import load_packages
 from ml import FeatureTransformer, Recommender
-from serializers import RecSerializer
-
-from utils.logging import log_call, StyleAdapter
+from utils.logging import StyleAdapter
 
 LOG = StyleAdapter(logging.getLogger(__name__))
 
 BLOBS_ROOT = os.path.join('.', 'blobs')
 PACKAGES_ROOT = os.path.join('.', 'packages')
+VECTORS_ROOT = os.path.join('.', 'vectors')
 ETAGS_FNAME = 'etags.log'
 
 def parse_args():
@@ -31,6 +31,15 @@ def parse_args():
         dest='generate_blobs'
     )
     parser.add_argument(
+        '-c', '--chunk-size',
+        metavar='SIZE',
+        help="set number of catalog pages per training batch",
+        action='store',
+        dest='pages_per_chunk',
+        type=int,
+        default=100
+    )
+    parser.add_argument(
         '-d', '--debug',
         help="print debug information",
         action='store_const',
@@ -39,10 +48,16 @@ def parse_args():
         default=logging.WARNING
     )
     parser.add_argument(
-        '-f', '--force-refresh',
+        '--force-refresh-packages',
         help="fetch packages for page X even if pageX.csv already exists",
         action='store_true',
-        dest='force_refresh'
+        dest='force_refresh_packages'
+    )
+    parser.add_argument(
+        '--force-refresh-vectors',
+        help="always compute vectors during blob generation. use in conjunction with -b",
+        action='store_true',
+        dest='force_refresh_vectors'
     )
     parser.add_argument(
         '--include-weights',
@@ -66,6 +81,13 @@ def parse_args():
         help="refresh package database",
         action='store_true',
         dest='refresh_packages'
+    )
+    parser.add_argument(
+        '--reuse-vectors',
+        help="during blob generation, assume vector files are present and skip feature transformation. " \
+             "use in conjunction with -b.",
+        action='store_true',
+        dest='reuse_vectors'
     )
     parser.add_argument(
         '-s', '--page-start',
@@ -114,36 +136,6 @@ def print_recs(df, recs):
     # print() can't handle certain characters because it uses the console's encoding.
     sys.stdout.buffer.write(output.encode('utf-8'))
 
-def gen_blobs(df, tagger):
-    log_call()
-    os.makedirs(BLOBS_ROOT, exist_ok=True)
-
-    trans = FeatureTransformer(tags_vocab=tagger.vocab_)
-    feats = trans.fit_transform(df)
-
-    magic = Recommender(n_recs=5)
-    magic.fit(feats, df)
-
-    assert all(~df['pageno'].isna())
-    for pageno in sorted(set(df['pageno'])):
-        LOG.debug("Generating blobs for page #{}".format(pageno))
-
-        subdf = df[df['pageno'] == pageno]
-        subfeats = feats[subdf.index]
-        recs_dict = magic.predict(subfeats, subdf)
-
-        ids = list(subdf['id'])
-        for id_ in ids:
-            dirname = os.path.join(BLOBS_ROOT, 'page{}'.format(pageno))
-            os.makedirs(dirname, exist_ok=True)
-
-            hexid = id_.encode('utf-8').hex()
-            fname = os.path.join(dirname, '{}.json'.format(hexid))
-
-            recs = recs_dict[id_]
-            writer = RecSerializer(fname)
-            writer.writerecs(id_, recs)
-
 async def main():
     args = parse_args()
     logging.basicConfig(level=args.log_level)
@@ -151,13 +143,17 @@ async def main():
     df, tagger = await load_packages(PACKAGES_ROOT, args)
 
     if args.generate_blobs:
-        gen_blobs(df, tagger)
+        gen_blobs(df,
+                  tagger,
+                  args,
+                  blobs_root=BLOBS_ROOT,
+                  vectors_root=VECTORS_ROOT)
     else:
         trans = FeatureTransformer(tags_vocab=tagger.vocab_)
         feats = trans.fit_transform(df)
 
         magic = Recommender(n_recs=5)
-        magic.fit(feats, df)
+        magic.fit(feats, df, feats, df)
         recs = magic.predict(feats, df)
 
         print_recs(df, recs)

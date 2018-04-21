@@ -7,7 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import normalize
 
 from utils.logging import log_call, StyleAdapter
-from utils.sklearn import linear_kernel
+from utils.sklearn import extract_vocab, linear_kernel
 
 LOG = StyleAdapter(logging.getLogger(__name__))
 
@@ -17,23 +17,28 @@ DEFAULT_WEIGHTS = {
     'etags': 8,
 }
 
-def _authors_matrix(X):
+MODES = ('onego', 'chunked')
+
+_AUTHORS_KWARGS = dict(ngram_range=(2, 2))
+_DESCRIPTION_KWARGS = dict(ngram_range=(1, 3),
+                           stop_words='english')
+
+def _authors_matrix(X, vocab):
     log_call()
-    vectorizer = TfidfVectorizer(ngram_range=(2, 2))
+    vectorizer = TfidfVectorizer(vocabulary=vocab, **_AUTHORS_KWARGS)
     return vectorizer.fit_transform(X['authors'])
 
-def _description_matrix(X):
+def _description_matrix(X, vocab):
     log_call()
-    vectorizer = TfidfVectorizer(ngram_range=(1, 3),
-                                 stop_words='english')
+    vectorizer = TfidfVectorizer(vocabulary=vocab, **_DESCRIPTION_KWARGS)
     return vectorizer.fit_transform(X['description'])
 
-def _etags_matrix(X, tags_vocab):
+def _etags_matrix(X, vocab):
     log_call()
 
-    m, t = X.shape[0], len(tags_vocab)
+    m, t = X.shape[0], len(vocab)
     tag_weights = sparse.lil_matrix((m, t))
-    index_map = {tag: index for index, tag in enumerate(tags_vocab)}
+    index_map = {tag: index for index, tag in enumerate(vocab)}
 
     for rowidx, etags in enumerate(X['etags']):
         if etags:
@@ -64,21 +69,53 @@ def _hstack_with_weights(matrices, weights):
     return sparse.hstack(matrices, format='csr')
 
 class FeatureTransformer(object):
-    def __init__(self, tags_vocab, weights=None):
+    def __init__(self,
+                 tags_vocab,
+                 weights=None,
+                 mode='onego',
+                 chunkmgr=None):
+        if mode not in MODES:
+            raise ValueError("Unrecognized mode {}".format(repr(mode)))
+        if mode == 'chunked' and (chunkmgr is None):
+            raise ValueError("'chunkmgr' is non-optional for mode {}".format(repr(mode)))
+
         self.tags_vocab = tags_vocab
         self.weights = weights or DEFAULT_WEIGHTS
+        self.mode = mode
+        self.chunkmgr = chunkmgr
 
+        self.authors_vocab_ = None
+        self.description_vocab_ = None
         self.matrices_ = None
         self.weights_ = None
 
-    def fit_transform(self, X):
+    def fit(self, X):
+        self.authors_vocab_ = extract_vocab(X['authors'], **_AUTHORS_KWARGS)
+        self.description_vocab_ = extract_vocab(X['description'], **_DESCRIPTION_KWARGS)
+        return self
+
+    def transform(self, X):
+        if self.mode == 'onego':
+            return self._transform(X)
+        elif self.mode == 'chunked':
+            chunknos = sorted(set(X['chunkno']))
+            for chunkno in chunknos:
+                feats = self._transform(X)
+                self.chunkmgr.save(chunkno, feats)
+            return chunknos
+        raise RuntimeError("Unreachable")
+
+    def _transform(self, X):
         matrices_and_weights = [
-            (_authors_matrix(X), self.weights['authors']),
-            (_description_matrix(X), self.weights['description']),
+            (_authors_matrix(X, self.authors_vocab_), self.weights['authors']),
+            (_description_matrix(X, self.description_vocab_), self.weights['description']),
             (_etags_matrix(X, self.tags_vocab), self.weights['etags']),
         ]
         self.matrices_, self.weights_ = zip(*matrices_and_weights)
         return _hstack_with_weights(self.matrices_, self.weights_)
+
+    def fit_transform(self, X):
+        return self.fit(X).transform(X)
 
 DEFAULT_PENALTIES = {
     'freshness': .1,
@@ -116,50 +153,90 @@ class Recommender(object):
                  n_recs,
                  penalties=None,
                  min_dpd=5,
-                 min_dpd_ratio=250):
+                 min_dpd_ratio=250,
+                 mode='onego',
+                 n_total=None,
+                 n_pred=None):
+        if mode not in MODES:
+            raise ValueError("Unrecognized mode {}".format(repr(mode)))
+        if mode == 'chunked' and (n_total is None or n_pred is None):
+            raise ValueError("'n_total' and 'n_pred' are non-optional for mode {}".format(repr(mode)))
+
         self.n_recs = n_recs
         self.penalties = penalties or DEFAULT_PENALTIES
         self.min_dpd = min_dpd
         self.min_dpd_ratio = min_dpd_ratio
+        self.mode = mode
+        self.n_total = n_total
+        self.n_pred = n_pred
 
-        self.metrics_ = None
         self.penalties_ = None
-        self.scales_ = None
+        if mode == 'onego':
+            self.metrics_ = None
+            self.scales_ = None
+            self.similarities_ = None
+        elif mode == 'chunked':
+            self.metrics_ = [np.zeros(n_total), np.zeros(n_total)]
+            self.scales_ = np.zeros(n_total)
+            self.similarities_ = None
 
-        self._X = None
-        self._df = None
-        self._ids = None
-        self._dpds = None
-        self._scale_mat = None
+        self._ids = []
+        self._dpds = []
+        self._n_filled = 0
 
-    def fit(self, X, df):
+    def fit(self, X, df, X_pred, df_pred):
+        assert self.mode == 'onego'
+        self.metrics_, self.penalties_, self.scales_, self.similarities_ = self._fit(X, df, X_pred, df_pred)
+
+        self._ids = list(df['id'])
+        self._dpds = list(df['downloads_per_day'])
+        return self
+
+    def partial_fit(self, X, df, X_pred, df_pred):
+        assert self.mode == 'chunked'
+        metrics, self.penalties_, scales, similarities = self._fit(X, df, X_pred, df_pred)
+
+        n_filled, m_part = self._n_filled, X.shape[0]
+        indices = slice(n_filled, n_filled + m_part)
+
+        for mets, newmets in zip(self.metrics_, metrics):
+            mets[indices] = newmets
+        self.scales_[indices] = scales
+        self.similarities_ = similarities if self.similarities_ is None \
+                             else sparse.hstack(self.similarities_, similarities)
+
+        self._n_filled += m_part
+
+        self._ids.extend(df['id'])
+        self._dpds.extend(df['downloads_per_day'])
+
+    def _fit(self, X, df, X_pred, df_pred): # pylint: disable=W0613
         log_call()
-        assert sparse.issparse(X)
+        assert sparse.isspmatrix_csr(X)
 
         metrics_and_penalties = [
             (_freshness_vector(df), self.penalties['freshness']),
             (_popularity_vector(df), self.penalties['popularity']),
         ]
-        self.metrics_, self.penalties_ = zip(*metrics_and_penalties)
-        scale_vectors = _apply_penalties(self.metrics_, self.penalties_)
-        self.scales_ = np.multiply(*scale_vectors)
+        metrics, penalties = zip(*metrics_and_penalties)
+        scale_vectors = _apply_penalties(metrics, penalties)
+        scales = np.multiply(*scale_vectors)
 
-        self._X = X
-        self._df = df
-        self._ids = list(df['id'])
-        self._dpds = list(df['downloads_per_day'])
-        self._scale_mat = sparse.diags(self.scales_)
-        return self
+        similarities = linear_kernel(X_pred, X, dense_output=False)
+        similarities *= sparse.diags(scales)
+
+        return metrics, penalties, scales, similarities
 
     def predict(self, X, df):
         log_call()
 
-        similarities = linear_kernel(X, self._X, dense_output=False)
-        similarities *= self._scale_mat
+        if self.mode == 'chunked':
+            assert self._n_filled == self.n_total
+            assert X.shape[0] == self.n_pred
 
         result = {}
         m = X.shape[0]
-        csr = similarities.tocsr()
+        csr = self.similarities_.tocsr()
 
         ids, dpds = list(df['id']), list(df['downloads_per_day'])
         for index in range(m):

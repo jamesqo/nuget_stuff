@@ -12,7 +12,6 @@ from datetime import datetime
 from nuget_api import can_ignore_exception, NugetCatalogClient, NugetContext
 from serializers import PackageSerializer
 from tagger import SmartTagger
-
 from utils.iter import aenumerate, aislice
 from utils.logging import log_call, StyleAdapter
 
@@ -49,7 +48,7 @@ async def write_packages(packages_root, args):
             assert page_start + i == pageno
 
             fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
-            if not args.force_refresh and os.path.isfile(fname):
+            if not args.force_refresh_packages and os.path.isfile(fname):
                 LOG.debug("{} exists, skipping".format(fname))
                 continue
 
@@ -102,7 +101,7 @@ def read_packages(packages_root, args):
         ]
         for features, default in features_and_defaults:
             for feature in features:
-                assert all(~df[feature].isna())
+                #assert all(~df[feature].isna())
                 df.loc[df[feature] == default, feature] = math.nan
         return df
 
@@ -111,10 +110,15 @@ def read_packages(packages_root, args):
     start, end = args.page_start, args.page_start + (args.page_limit or sys.maxsize)
 
     for pageno in range(start, end):
+        LOG.debug("Loading packages for page #{}".format(pageno))
         fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
-        pagedf = pd.read_csv(fname, dtype=SCHEMA, na_filter=False, parse_dates=DATE_FEATURES)
-        pagedf['pageno'] = pageno
-        pagedfs.append(pagedf)
+        try:
+            pagedf = pd.read_csv(fname, dtype=SCHEMA, na_filter=False, parse_dates=DATE_FEATURES)
+            pagedf['pageno'] = pageno
+            pagedfs.append(pagedf)
+        except FileNotFoundError:
+            LOG.debug("{} not found, stopping".format(fname))
+            break
 
     df = pd.concat(pagedfs, ignore_index=True)
 
@@ -128,6 +132,12 @@ def read_packages(packages_root, args):
     finally:
         pd.options.mode.chained_assignment = 'warn'
 
+    return df
+
+def add_chunkno(df, args):
+    log_call()
+    assert args.pages_per_chunk > 0
+    df['chunkno'] = np.floor(df['pageno'] / args.pages_per_chunk).astype(np.int32)
     return df
 
 def add_downloads_per_day(df):
@@ -164,6 +174,7 @@ async def load_packages(packages_root, args):
         await write_packages(packages_root, args)
     df = read_packages(packages_root, args)
 
+    df = add_chunkno(df, args)
     df = add_downloads_per_day(df)
     df, tagger = add_etags(df)
 
