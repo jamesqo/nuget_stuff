@@ -22,8 +22,6 @@ CATALOG_TYPE = 'Catalog/3.0.0'
 REGISTRATION_TYPE = 'RegistrationsBaseUrl'
 SEARCH_TYPE = 'SearchQueryService'
 
-WINDOWS = platform.system() == 'Windows'
-
 UTC_TOMORROW = datetime.fromordinal(
     (datetime.utcnow().date() + timedelta(days=1)).toordinal()
 ).replace(tzinfo=pytz.utc)

@@ -5,6 +5,8 @@ import shutil
 from chunkmgr import ChunkManager
 from ml import FeatureTransformer, Recommender
 from serializers import RecSerializer
+from utils.path import extended_path
+from utils.platform import is_windows
 from utils.logging import log_call, StyleAdapter
 
 LOG = StyleAdapter(logging.getLogger(__name__))
@@ -49,6 +51,8 @@ def gen_blobs_for_page(pageno, df, feats, parentdf, blobs_root, chunkmgr):
     for id_ in ids:
         hexid = id_.encode('utf-8').hex()
         blob_fname = os.path.join(dirname, '{}.json'.format(hexid))
+        if is_windows:
+            blob_fname = extended_path(blob_fname)
 
         recs = recs_dict[id_]
         writer = RecSerializer(blob_fname)
@@ -78,9 +82,15 @@ def gen_blobs(df, tagger, args, blobs_root, vectors_root):
     for pageno in pagenos(df):
         pagedf = get_page(df, pageno)
         pagefeats = trans.transform(pagedf)
-        gen_blobs_for_page(pageno=pageno,
-                           df=pagedf,
-                           feats=pagefeats,
-                           parentdf=df,
-                           blobs_root=blobs_root,
-                           chunkmgr=chunkmgr)
+        try:
+            gen_blobs_for_page(pageno=pageno,
+                               df=pagedf,
+                               feats=pagefeats,
+                               parentdf=df,
+                               blobs_root=blobs_root,
+                               chunkmgr=chunkmgr)
+        except:
+            dirname = os.path.join(blobs_root, 'page{}'.format(pageno))
+            LOG.debug("Exception thrown, removing {}", dirname)
+            shutil.rmtree(dirname, ignore_errors=True)
+            raise
