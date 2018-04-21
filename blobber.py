@@ -65,6 +65,7 @@ def gen_blobs(df, tagger, args, blobs_root, vectors_root):
     os.makedirs(blobs_root, exist_ok=True)
     os.makedirs(vectors_root, exist_ok=True)
 
+    # TODO: This needs to use the same authors/description vocab as on the whole dataset.
     trans = FeatureTransformer(tags_vocab=tagger.vocab_)
 
     if not args.reuse_vectors:
