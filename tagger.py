@@ -22,7 +22,7 @@ def _is_hackword(term):
     return not ENGLISH.check(term)
 
 def _parse_tags(text):
-    # Why `tag2` is necessary: see https://github.com/NuGet/NuGetGallery/issues/5836
+    # Why `tag2` is necessary: see https://github.com/NuGet/NuGetGallery/issues/5836.
     # Some tag values mistakenly have newlines in them, e.g. 1 tag named 'foo\r\nbar'
     # when the user actually meant to create 2 tags named 'foo' and 'bar'.
     return [tag2.strip() for tag in text.split(',') if tag.strip()

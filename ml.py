@@ -103,6 +103,7 @@ class FeatureTransformer(object):
                 feats = self._transform(X)
                 self.chunkmgr.save(chunkno, feats)
             return chunknos
+        raise RuntimeError("Unreachable")
 
     def _transform(self, X):
         matrices_and_weights = [
@@ -115,6 +116,11 @@ class FeatureTransformer(object):
 
     def fit_transform(self, X):
         return self.fit(X).transform(X)
+
+DEFAULT_PENALTIES = {
+    'freshness': .1,
+    'popularity': .1,
+}
 
 def _freshness_vector(X):
     log_call()
@@ -141,11 +147,6 @@ def _apply_penalties(metrics, penalties):
 
     min_scales = [(1 - p) for p in penalties]
     return [1 * m + min_scale * (1 - m) for m, min_scale in zip(metrics, min_scales)]
-
-DEFAULT_PENALTIES = {
-    'freshness': .1,
-    'popularity': .1,
-}
 
 class Recommender(object):
     def __init__(self,
@@ -198,8 +199,8 @@ class Recommender(object):
         n_filled, m_part = self._n_filled, X.shape[0]
         indices = slice(n_filled, n_filled + m_part)
 
-        for vec, newvec in zip(self.metrics_, metrics):
-            vec[indices] = newvec
+        for mets, newmets in zip(self.metrics_, metrics):
+            mets[indices] = newmets
         self.scales_[indices] = scales
         self.similarities_ = similarities if self.similarities_ is None \
                              else sparse.hstack(self.similarities_, similarities)

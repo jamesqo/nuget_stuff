@@ -55,22 +55,22 @@ def gen_blobs_for_page(pageno, df, feats, parentdf, blobs_root, chunkmgr):
 
 def gen_blobs(df, tagger, args, blobs_root, vectors_root):
     log_call()
-    os.makedirs(blobs_root, exist_ok=True)
-    os.makedirs(vectors_root, exist_ok=True)
 
     chunk_fmt = os.path.join(vectors_root, 'chunk{}.npz')
     chunkmgr = ChunkManager(chunk_fmt)
 
-    if not args.force_refresh_vectors:
+    if not args.force_refresh_vectors and os.path.isdir(vectors_root):
         trans = FeatureTransformer(tags_vocab=tagger.vocab_)
         trans.fit(df)
     else:
+        os.makedirs(vectors_root, exist_ok=True)
         trans = FeatureTransformer(tags_vocab=tagger.vocab_,
                                    mode='chunked',
                                    chunkmgr=chunkmgr)
         trans.fit_transform(df)
         trans.mode = 'onego'
 
+    os.makedirs(blobs_root, exist_ok=True)
     for pageno in pagenos(df):
         pagedf = get_page(df, pageno)
         pagefeats = trans.transform(pagedf)
