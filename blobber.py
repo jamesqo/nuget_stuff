@@ -26,7 +26,11 @@ def pagenos(df):
     return sorted(set(df['pageno']))
 
 def gen_blobs_for_page(pageno, df, feats, parentdf, args, blobs_root, chunkmgr):
-    LOG.debug("Generating blobs for page #{}", pageno)
+    dirname = os.path.join(blobs_root, 'page{}'.format(pageno))
+    if not args.force_refresh_blobs and os.path.isdir(dirname):
+        LOG.debug("Blobs for page #{} already exist in {}, skipping", pageno, dirname)
+        return
+    LOG.debug("Generating blobs for page #{} in {}", pageno, dirname)
 
     M, m = parentdf.shape[0], df.shape[0] # Good
     magic = Recommender(n_recs=5, # TODO: This should be a command-line option
@@ -44,12 +48,7 @@ def gen_blobs_for_page(pageno, df, feats, parentdf, args, blobs_root, chunkmgr):
 
     recs_dict = magic.predict(feats, df)
 
-    dirname = os.path.join(blobs_root, 'page{}'.format(pageno))
-    if not args.force_refresh_blobs and os.path.isdir(dirname):
-        LOG.debug("Blobs for page #{} already exist in {}, skipping", pageno, dirname)
-        return
     os.makedirs(dirname, exist_ok=True)
-
     ids = list(df['id'])
     for id_ in ids:
         hexid = id_.encode('utf-8').hex()
