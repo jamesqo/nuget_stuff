@@ -1,5 +1,6 @@
 import logging
 import os
+import shutil
 
 from chunkmgr import ChunkManager
 from ml import FeatureTransformer, Recommender
@@ -26,7 +27,7 @@ def gen_blobs_for_page(pageno, df, feats, parentdf, blobs_root, chunkmgr):
     LOG.debug("Generating blobs for page #{}".format(pageno))
 
     M, m = parentdf.shape[0], df.shape[0] # Good
-    magic = Recommender(n_recs=5,
+    magic = Recommender(n_recs=5, # TODO: This should be a command-line option
                         mode='chunked',
                         n_total=M,
                         n_pred=m)
@@ -63,6 +64,7 @@ def gen_blobs(df, tagger, args, blobs_root, vectors_root):
         trans = FeatureTransformer(tags_vocab=tagger.vocab_)
         trans.fit(df)
     else:
+        shutil.rmtree(vectors_root, ignore_errors=True)
         os.makedirs(vectors_root, exist_ok=True)
         trans = FeatureTransformer(tags_vocab=tagger.vocab_,
                                    mode='chunked',
@@ -70,6 +72,7 @@ def gen_blobs(df, tagger, args, blobs_root, vectors_root):
         trans.fit_transform(df)
         trans.mode = 'onego'
 
+    shutil.rmtree(blobs_root, ignore_errors=True)
     os.makedirs(blobs_root, exist_ok=True)
     for pageno in pagenos(df):
         pagedf = get_page(df, pageno)
