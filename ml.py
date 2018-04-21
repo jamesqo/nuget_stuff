@@ -11,23 +11,34 @@ from utils.sklearn import linear_kernel
 
 LOG = StyleAdapter(logging.getLogger(__name__))
 
-def _authors_matrix(X):
+DEFAULT_WEIGHTS = {
+    'authors': 1,
+    'description': 2,
+    'etags': 8,
+}
+
+MODES = ('onego', 'chunked')
+
+_AUTHORS_KWARGS = dict(ngram_range=(2, 2))
+_DESCRIPTION_KWARGS = dict(ngram_range=(1, 3),
+                           stop_words='english')
+
+def _authors_matrix(X, vocab):
     log_call()
-    vectorizer = TfidfVectorizer(ngram_range=(2, 2))
+    vectorizer = TfidfVectorizer(vocabulary=vocab, **_AUTHORS_KWARGS)
     return vectorizer.fit_transform(X['authors'])
 
-def _description_matrix(X):
+def _description_matrix(X, vocab):
     log_call()
-    vectorizer = TfidfVectorizer(ngram_range=(1, 3),
-                                 stop_words='english')
+    vectorizer = TfidfVectorizer(vocabulary=vocab, **_DESCRIPTION_KWARGS)
     return vectorizer.fit_transform(X['description'])
 
-def _etags_matrix(X, tags_vocab):
+def _etags_matrix(X, vocab):
     log_call()
 
-    m, t = X.shape[0], len(tags_vocab)
+    m, t = X.shape[0], len(vocab)
     tag_weights = sparse.lil_matrix((m, t))
-    index_map = {tag: index for index, tag in enumerate(tags_vocab)}
+    index_map = {tag: index for index, tag in enumerate(vocab)}
 
     for rowidx, etags in enumerate(X['etags']):
         if etags:
@@ -57,14 +68,6 @@ def _hstack_with_weights(matrices, weights):
 
     return sparse.hstack(matrices, format='csr')
 
-DEFAULT_WEIGHTS = {
-    'authors': 1,
-    'description': 2,
-    'etags': 8,
-}
-
-MODES = ('onego', 'chunked')
-
 class FeatureTransformer(object):
     def __init__(self,
                  tags_vocab,
@@ -81,23 +84,30 @@ class FeatureTransformer(object):
         self.mode = mode
         self.chunkmgr = chunkmgr
 
+        self.authors_vocab_ = None
+        self.description_vocab_ = None
         self.matrices_ = None
         self.weights_ = None
 
-    def fit_transform(self, X):
+    def fit(self, X):
+        self.authors_vocab_ = extract_vocab(X['authors'], **_AUTHORS_KWARGS)
+        self.description_vocab_ = extract_vocab(X['description'], **_DESCRIPTION_KWARGS)
+        return self
+
+    def transform(self, X):
         if self.mode == 'onego':
-            return self._fit_transform(X)
+            return self._transform(X)
         elif self.mode == 'chunked':
             chunknos = sorted(set(X['chunkno']))
             for chunkno in chunknos:
-                feats = self._fit_transform(X)
+                feats = self._transform(X)
                 self.chunkmgr.save(chunkno, feats)
             return chunknos
 
-    def _fit_transform(self, X):
+    def _transform(self, X):
         matrices_and_weights = [
-            (_authors_matrix(X), self.weights['authors']),
-            (_description_matrix(X), self.weights['description']),
+            (_authors_matrix(X, self.authors_vocab_), self.weights['authors']),
+            (_description_matrix(X, self.description_vocab_), self.weights['description']),
             (_etags_matrix(X, self.tags_vocab), self.weights['etags']),
         ]
         self.matrices_, self.weights_ = zip(*matrices_and_weights)
