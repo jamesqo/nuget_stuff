@@ -61,7 +61,7 @@ def gen_blobs(df, tagger, args, blobs_root, vectors_root):
     chunk_fmt = os.path.join(vectors_root, 'chunk{}.npz')
     chunkmgr = ChunkManager(chunk_fmt)
 
-    if args.reuse_vectors:
+    if not args.force_refresh_vectors:
         trans = FeatureTransformer(tags_vocab=tagger.vocab_)
         trans.fit(df)
     else:

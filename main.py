@@ -48,10 +48,16 @@ def parse_args():
         default=logging.WARNING
     )
     parser.add_argument(
-        '-f', '--force-refresh',
+        '--force-refresh-packages',
         help="fetch packages for page X even if pageX.csv already exists",
         action='store_true',
-        dest='force_refresh'
+        dest='force_refresh_packages'
+    )
+    parser.add_argument(
+        '--force-refresh-vectors',
+        help="always compute vectors during blob generation. use in conjunction with -b",
+        action='store_true',
+        dest='force_refresh_vectors'
     )
     parser.add_argument(
         '--include-weights',
