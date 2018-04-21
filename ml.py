@@ -100,8 +100,9 @@ class FeatureTransformer(object):
         elif self.mode == 'chunked':
             chunknos = sorted(set(X['chunkno']))
             for chunkno in chunknos:
-                feats = self._transform(X)
-                self.chunkmgr.save(chunkno, feats)
+                chunk = X[X['chunkno'] == chunkno]
+                chunkfeats = self._transform(chunk)
+                self.chunkmgr.save(chunkno, chunkfeats)
             return chunknos
         raise RuntimeError("Unreachable")
 
