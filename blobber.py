@@ -1,9 +1,8 @@
 import logging
 import os
 
+from chunkmgr import ChunkManager
 from ml import FeatureTransformer, Recommender
-from scipy import sparse
-
 from serializers import RecSerializer
 from utils.logging import log_call, StyleAdapter
 
@@ -15,37 +14,37 @@ def get_chunk(df, chunkno):
 def get_page(df, pageno):
     return df[df['pageno'] == pageno]
 
-def get_chunknos(df):
+def chunknos(df):
     assert all(~df['chunkno'].isna())
     return sorted(set(df['chunkno']))
 
-def get_pagenos(df):
+def pagenos(df):
     assert all(~df['pageno'].isna())
     return sorted(set(df['pageno']))
 
-def gen_blob(DF, pageno, pagedf, pagefeats, blobs_root, getvecs):
+def gen_blobs_for_page(pageno, df, feats, parentdf, blobs_root, chunkmgr):
     LOG.debug("Generating blobs for page #{}".format(pageno))
 
-    M, m = DF.shape[0], pagedf.shape[0] # Good
+    M, m = parentdf.shape[0], df.shape[0] # Good
     magic = Recommender(n_recs=5,
                         mode='chunked',
                         n_total=M,
                         n_pred=m)
 
-    for chunkno in get_chunknos(DF):
-        df_fit, feats_fit = get_chunk(DF, chunkno), getvecs(chunkno)
+    for chunkno in chunknos(parentdf):
+        df_fit, feats_fit = get_chunk(parentdf, chunkno), chunkmgr.load(chunkno)
 
         magic.partial_fit(X=feats_fit,
                           df=df_fit,
-                          X_pred=pagefeats,
-                          df_pred=pagedf)
+                          X_pred=feats,
+                          df_pred=df)
 
-    recs_dict = magic.predict(pagefeats, pagedf)
+    recs_dict = magic.predict(feats, df)
 
     dirname = os.path.join(blobs_root, 'page{}'.format(pageno))
     os.makedirs(dirname, exist_ok=True)
 
-    ids = list(pagedf['id'])
+    ids = list(df['id'])
     for id_ in ids:
         hexid = id_.encode('utf-8').hex()
         blob_fname = os.path.join(dirname, '{}.json'.format(hexid))
@@ -55,34 +54,30 @@ def gen_blob(DF, pageno, pagedf, pagefeats, blobs_root, getvecs):
         writer.writerecs(id_, recs)
 
 def gen_blobs(df, tagger, args, blobs_root, vectors_root):
-    VEC_FMT = os.path.join(vectors_root, 'chunk{chunkno}.npz')
-
-    # TODO: Refactor so that FeatureTransformer.fit_transform() returns 'ChunkReference' objects.
-    def getvecs(chunkno):
-        return sparse.load_npz(VEC_FMT.format(chunkno=chunkno))
-
     log_call()
     os.makedirs(blobs_root, exist_ok=True)
     os.makedirs(vectors_root, exist_ok=True)
 
-    # TODO: This needs to use the same authors/description vocab as on the whole dataset.
-    trans = FeatureTransformer(tags_vocab=tagger.vocab_)
+    chunk_fmt = os.path.join(vectors_root, 'chunk{}.npz')
+    chunkmgr = ChunkManager(chunk_fmt)
 
-    if not args.reuse_vectors:
-        trans2 = FeatureTransformer(tags_vocab=tagger.vocab_,
-                                    mode='chunked',
-                                    output_fmt=VEC_FMT)
-        fnames = trans2.fit_transform(df)
-        assert len(fnames) == len(get_chunknos(df))
+    if args.reuse_vectors:
+        trans = FeatureTransformer(tags_vocab=tagger.vocab_)
+        trans.fit(df)
+    else:
+        trans = FeatureTransformer(tags_vocab=tagger.vocab_,
+                                   mode='chunked',
+                                   chunkmgr=chunk_fmt)
+        fnames = trans.fit_transform(df)
+        assert len(fnames) == len(chunknos(df))
+        trans.mode = 'onego'
 
-    pagenos = get_pagenos(df)
-
-    for pageno in pagenos:
+    for pageno in pagenos(df):
         pagedf = get_page(df, pageno)
         pagefeats = trans.fit_transform(pagedf)
-        gen_blob(DF=df,
-                 pageno=pageno,
-                 pagedf=pagedf,
-                 pagefeats=pagefeats,
-                 blobs_root=blobs_root,
-                 getvecs=getvecs)
+        gen_blobs_for_page(pageno=pageno,
+                           df=pagedf,
+                           feats=pagefeats,
+                           parentdf=df,
+                           blobs_root=blobs_root,
+                           chunkmgr=chunkmgr)
