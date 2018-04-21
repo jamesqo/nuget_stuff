@@ -73,7 +73,7 @@ def gen_blobs(df, tagger, args, blobs_root, vectors_root):
 
     for pageno in pagenos(df):
         pagedf = get_page(df, pageno)
-        pagefeats = trans.fit_transform(pagedf)
+        pagefeats = trans.transform(pagedf)
         gen_blobs_for_page(pageno=pageno,
                            df=pagedf,
                            feats=pagefeats,
