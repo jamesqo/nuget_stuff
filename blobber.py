@@ -25,11 +25,8 @@ def pagenos(df):
     assert all(~df['pageno'].isna())
     return sorted(set(df['pageno']))
 
-def gen_blobs_for_page(pageno, df, feats, parentdf, args, blobs_root, chunkmgr):
+def gen_blobs_for_page(pageno, df, feats, parentdf, blobs_root, chunkmgr):
     dirname = os.path.join(blobs_root, 'page{}'.format(pageno))
-    if not args.force_refresh_blobs and os.path.isdir(dirname):
-        LOG.debug("Blobs for page #{} already exist in {}, skipping", pageno, dirname)
-        return
     LOG.debug("Generating blobs for page #{} in {}", pageno, dirname)
 
     M, m = parentdf.shape[0], df.shape[0] # Good
@@ -83,6 +80,11 @@ def gen_blobs(df, tagger, args, blobs_root, vectors_root):
         shutil.rmtree(blobs_root, ignore_errors=True)
     os.makedirs(blobs_root, exist_ok=True)
     for pageno in pagenos(df):
+        dirname = os.path.join(blobs_root, 'page{}'.format(pageno))
+        if not args.force_refresh_blobs and os.path.isdir(dirname):
+            LOG.debug("Blobs for page #{} already exist in {}, skipping", pageno, dirname)
+            return
+
         pagedf = get_page(df, pageno)
         pagefeats = trans.transform(pagedf)
         try:
@@ -90,11 +92,9 @@ def gen_blobs(df, tagger, args, blobs_root, vectors_root):
                                df=pagedf,
                                feats=pagefeats,
                                parentdf=df,
-                               args=args,
                                blobs_root=blobs_root,
                                chunkmgr=chunkmgr)
         except:
-            dirname = os.path.join(blobs_root, 'page{}'.format(pageno))
             LOG.debug("Exception thrown, removing {}", dirname)
             shutil.rmtree(dirname, ignore_errors=True)
             raise
