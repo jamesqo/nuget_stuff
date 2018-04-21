@@ -58,9 +58,10 @@ def gen_blob(DF, chunkno, df, feats, blobs_root, getvecs):
             writer = RecSerializer(blob_fname)
             writer.writerecs(id_, recs)
 
-def gen_blobs(df, tagger, blobs_root, vectors_root):
+def gen_blobs(df, tagger, args, blobs_root, vectors_root):
     VEC_FMT = os.path.join(vectors_root, 'chunk{chunkno}.npz')
 
+    # TODO: Refactor so that FeatureTransformer.fit_transform() returns 'ChunkReference' objects.
     def getvecs(chunkno):
         return sparse.load_npz(VEC_FMT.format(chunkno=chunkno))
 
@@ -68,10 +69,11 @@ def gen_blobs(df, tagger, blobs_root, vectors_root):
     os.makedirs(blobs_root, exist_ok=True)
     os.makedirs(vectors_root, exist_ok=True)
 
-    trans = FeatureTransformer(tags_vocab=tagger.vocab_,
-                               mode='chunked',
-                               output_fmt=VEC_FMT)
-    fnames = trans.fit_transform(df)
+    if not args.reuse_vectors:
+        trans = FeatureTransformer(tags_vocab=tagger.vocab_,
+                                mode='chunked',
+                                output_fmt=VEC_FMT)
+        fnames = trans.fit_transform(df)
 
     chunknos = get_chunknos(df)
     assert len(chunknos) == len(fnames)

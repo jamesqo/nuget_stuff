@@ -77,6 +77,13 @@ def parse_args():
         dest='refresh_packages'
     )
     parser.add_argument(
+        '--reuse-vectors',
+        help="during blob generation, assume vector files are present and skip feature transformation. " \
+             "use in conjunction with -b.",
+        action='store_true',
+        dest='reuse_vectors'
+    )
+    parser.add_argument(
         '-s', '--page-start',
         metavar='START',
         help="start loading from page START. " \
@@ -132,6 +139,7 @@ async def main():
     if args.generate_blobs:
         gen_blobs(df,
                   tagger,
+                  args,
                   blobs_root=BLOBS_ROOT,
                   vectors_root=VECTORS_ROOT)
     else:
