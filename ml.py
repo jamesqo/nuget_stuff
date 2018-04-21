@@ -179,7 +179,7 @@ class Recommender(object):
         elif mode == 'chunked':
             self.metrics_ = [np.zeros(n_total), np.zeros(n_total)]
             self.scales_ = np.zeros(n_total)
-            self.similarities_ = None
+            self.similarities_ = sparse.csr_matrix((n_pred, 0))
 
         self._ids = []
         self._dpds = []
@@ -203,8 +203,7 @@ class Recommender(object):
         for mets, newmets in zip(self.metrics_, metrics):
             mets[indices] = newmets
         self.scales_[indices] = scales
-        self.similarities_ = similarities if self.similarities_ is None \
-                             else sparse.hstack(self.similarities_, similarities)
+        self.similarities_ = sparse.hstack([self.similarities_, similarities])
 
         self._n_filled += m_part
 
