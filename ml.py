@@ -7,7 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import normalize
 
 from utils.logging import log_call, StyleAdapter
-from utils.sklearn import linear_kernel
+from utils.sklearn import extract_vocab, linear_kernel
 
 LOG = StyleAdapter(logging.getLogger(__name__))
 
@@ -112,6 +112,9 @@ class FeatureTransformer(object):
         ]
         self.matrices_, self.weights_ = zip(*matrices_and_weights)
         return _hstack_with_weights(self.matrices_, self.weights_)
+
+    def fit_transform(self, X):
+        return self.fit(X).transform(X)
 
 def _freshness_vector(X):
     log_call()

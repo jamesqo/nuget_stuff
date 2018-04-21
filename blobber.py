@@ -67,9 +67,8 @@ def gen_blobs(df, tagger, args, blobs_root, vectors_root):
     else:
         trans = FeatureTransformer(tags_vocab=tagger.vocab_,
                                    mode='chunked',
-                                   chunkmgr=chunk_fmt)
-        fnames = trans.fit_transform(df)
-        assert len(fnames) == len(chunknos(df))
+                                   chunkmgr=chunkmgr)
+        trans.fit_transform(df)
         trans.mode = 'onego'
 
     for pageno in pagenos(df):
