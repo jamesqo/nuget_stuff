@@ -14,7 +14,7 @@ class ChunkManager(object):
         assert sparse.isspmatrix_csr(feats)
 
         fname = self.fname_fmt.format(chunkno)
-        LOG.debug("Saving vectors for chunk #{} to {}".format(chunkno, fname))
+        LOG.debug("Saving vectors for chunk #{} to {}", chunkno, fname)
         sparse.save_npz(fname, feats)
 
     def load(self, chunkno):

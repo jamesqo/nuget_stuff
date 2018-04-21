@@ -49,7 +49,7 @@ async def write_packages(packages_root, args):
 
             fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
             if not args.force_refresh_packages and os.path.isfile(fname):
-                LOG.debug("{} exists, skipping".format(fname))
+                LOG.debug("{} exists, skipping", fname)
                 continue
 
             LOG.debug("Fetching packages for page #{}", pageno)
@@ -64,7 +64,7 @@ async def write_packages(packages_root, args):
                             raise result
                         writer.write(package)
             except:
-                LOG.debug("Exception thrown, deleting {}".format(fname))
+                LOG.debug("Exception thrown, deleting {}", fname)
                 with contextlib.suppress(FileNotFoundError):
                     os.remove(fname)
                 raise
@@ -110,14 +110,14 @@ def read_packages(packages_root, args):
     start, end = args.page_start, args.page_start + (args.page_limit or sys.maxsize)
 
     for pageno in range(start, end):
-        LOG.debug("Loading packages for page #{}".format(pageno))
+        LOG.debug("Loading packages for page #{}", pageno)
         fname = os.path.join(packages_root, 'page{}.csv'.format(pageno))
         try:
             pagedf = pd.read_csv(fname, dtype=SCHEMA, na_filter=False, parse_dates=DATE_FEATURES)
             pagedf['pageno'] = pageno
             pagedfs.append(pagedf)
         except FileNotFoundError:
-            LOG.debug("{} not found, stopping".format(fname))
+            LOG.debug("{} not found, stopping", fname)
             break
 
     df = pd.concat(pagedfs, ignore_index=True)

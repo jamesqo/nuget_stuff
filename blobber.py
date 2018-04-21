@@ -24,7 +24,7 @@ def pagenos(df):
     return sorted(set(df['pageno']))
 
 def gen_blobs_for_page(pageno, df, feats, parentdf, blobs_root, chunkmgr):
-    LOG.debug("Generating blobs for page #{}".format(pageno))
+    LOG.debug("Generating blobs for page #{}", pageno)
 
     M, m = parentdf.shape[0], df.shape[0] # Good
     magic = Recommender(n_recs=5, # TODO: This should be a command-line option
@@ -61,6 +61,7 @@ def gen_blobs(df, tagger, args, blobs_root, vectors_root):
     chunkmgr = ChunkManager(chunk_fmt)
 
     if not args.force_refresh_vectors and os.path.isdir(vectors_root):
+        LOG.debug("Using existing vectors from {}", vectors_root)
         trans = FeatureTransformer(tags_vocab=tagger.vocab_)
         trans.fit(df)
     else:
