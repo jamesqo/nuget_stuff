@@ -48,6 +48,12 @@ def parse_args():
         default=logging.WARNING
     )
     parser.add_argument(
+        '--force-refresh-blobs',
+        help="generate blobs for page X even if the corresponding directory already exists",
+        action='store_true',
+        dest='force_refresh_blobs'
+    )
+    parser.add_argument(
         '--force-refresh-packages',
         help="fetch packages for page X even if pageX.csv already exists",
         action='store_true',

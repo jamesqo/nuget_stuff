@@ -25,7 +25,7 @@ def pagenos(df):
     assert all(~df['pageno'].isna())
     return sorted(set(df['pageno']))
 
-def gen_blobs_for_page(pageno, df, feats, parentdf, blobs_root, chunkmgr):
+def gen_blobs_for_page(pageno, df, feats, parentdf, args, blobs_root, chunkmgr):
     LOG.debug("Generating blobs for page #{}", pageno)
 
     M, m = parentdf.shape[0], df.shape[0] # Good
@@ -45,6 +45,9 @@ def gen_blobs_for_page(pageno, df, feats, parentdf, blobs_root, chunkmgr):
     recs_dict = magic.predict(feats, df)
 
     dirname = os.path.join(blobs_root, 'page{}'.format(pageno))
+    if not args.force_refresh_blobs and os.path.isdir(dirname):
+        LOG.debug("Blobs for page #{} already exist in {}, skipping", pageno, dirname)
+        return
     os.makedirs(dirname, exist_ok=True)
 
     ids = list(df['id'])
@@ -77,7 +80,8 @@ def gen_blobs(df, tagger, args, blobs_root, vectors_root):
         trans.fit_transform(df)
         trans.mode = 'onego'
 
-    shutil.rmtree(blobs_root, ignore_errors=True)
+    if args.force_refresh_blobs:
+        shutil.rmtree(blobs_root, ignore_errors=True)
     os.makedirs(blobs_root, exist_ok=True)
     for pageno in pagenos(df):
         pagedf = get_page(df, pageno)
@@ -87,6 +91,7 @@ def gen_blobs(df, tagger, args, blobs_root, vectors_root):
                                df=pagedf,
                                feats=pagefeats,
                                parentdf=df,
+                               args=args,
                                blobs_root=blobs_root,
                                chunkmgr=chunkmgr)
         except:
