@@ -83,7 +83,7 @@ def gen_blobs(df, tagger, args, blobs_root, vectors_root):
         dirname = os.path.join(blobs_root, 'page{}'.format(pageno))
         if not args.force_refresh_blobs and os.path.isdir(dirname):
             LOG.debug("Blobs for page #{} already exist in {}, skipping", pageno, dirname)
-            return
+            continue
 
         pagedf = get_page(df, pageno)
         pagefeats = trans.transform(pagedf)
