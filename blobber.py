@@ -23,40 +23,36 @@ def get_pagenos(df):
     assert all(~df['pageno'].isna())
     return sorted(set(df['pageno']))
 
-def gen_blob(DF, chunkno, df, feats, blobs_root, getvecs):
-    M, m = DF.shape[0], df.shape[0] # Good
+def gen_blob(DF, pageno, pagedf, pagefeats, blobs_root, getvecs):
+    LOG.debug("Generating blobs for page #{}".format(pageno))
+
+    M, m = DF.shape[0], pagedf.shape[0] # Good
     magic = Recommender(n_recs=5,
                         mode='chunked',
                         n_total=M,
                         n_pred=m)
 
-    for chunkno2 in get_chunknos(DF):
-        if chunkno2 == chunkno:
-            df_fit, feats_fit = df, feats
-        else:
-            df_fit, feats_fit = get_chunk(DF, chunkno2), getvecs(chunkno2)
+    for chunkno in get_chunknos(DF):
+        df_fit, feats_fit = get_chunk(DF, chunkno), getvecs(chunkno)
 
         magic.partial_fit(X=feats_fit,
                           df=df_fit,
-                          X_pred=feats,
-                          df_pred=df)
+                          X_pred=pagefeats,
+                          df_pred=pagedf)
 
-    recs_dict = magic.predict(feats, df)
+    recs_dict = magic.predict(pagefeats, pagedf)
 
-    pagenos = sorted(set(df['pageno']))
-    for pageno in pagenos:
-        pagedf = get_page(df, pageno)
-        dirname = os.path.join(blobs_root, 'page{}'.format(pageno))
-        os.makedirs(dirname, exist_ok=True)
+    dirname = os.path.join(blobs_root, 'page{}'.format(pageno))
+    os.makedirs(dirname, exist_ok=True)
 
-        ids = list(pagedf['id'])
-        for id_ in ids:
-            hexid = id_.encode('utf-8').hex()
-            blob_fname = os.path.join(dirname, '{}.json'.format(hexid))
+    ids = list(pagedf['id'])
+    for id_ in ids:
+        hexid = id_.encode('utf-8').hex()
+        blob_fname = os.path.join(dirname, '{}.json'.format(hexid))
 
-            recs = recs_dict[id_]
-            writer = RecSerializer(blob_fname)
-            writer.writerecs(id_, recs)
+        recs = recs_dict[id_]
+        writer = RecSerializer(blob_fname)
+        writer.writerecs(id_, recs)
 
 def gen_blobs(df, tagger, args, blobs_root, vectors_root):
     VEC_FMT = os.path.join(vectors_root, 'chunk{chunkno}.npz')
@@ -69,20 +65,23 @@ def gen_blobs(df, tagger, args, blobs_root, vectors_root):
     os.makedirs(blobs_root, exist_ok=True)
     os.makedirs(vectors_root, exist_ok=True)
 
+    trans = FeatureTransformer(tags_vocab=tagger.vocab_)
+
     if not args.reuse_vectors:
-        trans = FeatureTransformer(tags_vocab=tagger.vocab_,
-                                   mode='chunked',
-                                   output_fmt=VEC_FMT)
-        fnames = trans.fit_transform(df)
+        trans2 = FeatureTransformer(tags_vocab=tagger.vocab_,
+                                    mode='chunked',
+                                    output_fmt=VEC_FMT)
+        fnames = trans2.fit_transform(df)
+        assert len(fnames) == len(get_chunknos(df))
 
-    chunknos = get_chunknos(df)
-    assert len(chunknos) == len(fnames)
+    pagenos = get_pagenos(df)
 
-    for chunkno in chunknos:
-        chunkdf, chunkfeats = get_chunk(df, chunkno), getvecs(chunkno)
+    for pageno in pagenos:
+        pagedf = get_page(df, pageno)
+        pagefeats = trans.fit_transform(pagedf)
         gen_blob(DF=df,
-                 chunkno=chunkno,
-                 df=chunkdf,
-                 feats=chunkfeats,
+                 pageno=pageno,
+                 pagedf=pagedf,
+                 pagefeats=pagefeats,
                  blobs_root=blobs_root,
                  getvecs=getvecs)
