@@ -52,16 +52,11 @@ def predict_for_part(df, feats, parentdf, chunkmgr):
     split = m // 2
     assert split > 0
 
-    df1, feats1 = df.loc[:split], feats[:split, :]
-    df2, feats2 = df.loc[split + 1:], feats[split + 1:, :]
+    df1, feats1 = df.iloc[:split], feats[:split]
+    df2, feats2 = df.iloc[split + 1:], feats[split + 1:]
 
     # TODO: Ensure the gc is picking up on the fact that we're no longer using df/feats.
     gc.collect()
-
-    if df1.shape[0] == 0:
-        print(df.shape)
-        print(df.loc[:split].shape)
-        print(df1.shape)
 
     recs1 = predict_for_part(df1, feats1, parentdf, chunkmgr)
     recs2 = predict_for_part(df2, feats2, parentdf, chunkmgr)
