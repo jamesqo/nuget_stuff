@@ -44,21 +44,29 @@ def predict_for_part(df, feats, parentdf, chunkmgr):
 
         return magic.predict(feats, df)
     except MemoryError:
-        LOG.debug("Encountered MemoryError, splitting DataFrame into 2 parts")
-        if m < 2:
-            raise RuntimeError("Can't split DataFrame anymore")
-        split = m // 2
+        # NOTE: To avoid lots of nested 'During handling ... another exception occurred' messages
+        # in the stack trace, we need to exit the except block before recursing.
+        pass
 
-        df1, feats1 = df.loc[:split], feats[:split, :]
-        df2, feats2 = df.loc[split:], feats[split:, :]
+    LOG.debug("Encountered MemoryError, splitting DataFrame into 2 parts")
+    split = m // 2
+    assert split > 0
 
-        # TODO: Ensure the gc is picking up on the fact that we're no longer using df/feats.
-        gc.collect()
+    df1, feats1 = df.loc[:split], feats[:split, :]
+    df2, feats2 = df.loc[split + 1:], feats[split + 1:, :]
 
-        recs1 = predict_for_part(df1, feats1, parentdf, chunkmgr)
-        recs2 = predict_for_part(df2, feats2, parentdf, chunkmgr)
-        recs1.update(recs2)
-        return recs1
+    # TODO: Ensure the gc is picking up on the fact that we're no longer using df/feats.
+    gc.collect()
+
+    if df1.shape[0] == 0:
+        print(df.shape)
+        print(df.loc[:split].shape)
+        print(df1.shape)
+
+    recs1 = predict_for_part(df1, feats1, parentdf, chunkmgr)
+    recs2 = predict_for_part(df2, feats2, parentdf, chunkmgr)
+    recs1.update(recs2)
+    return recs1
 
 def gen_blobs_for_page(pageno, df, feats, parentdf, blobs_root, chunkmgr):
     dirname = os.path.join(blobs_root, 'page{}'.format(pageno))
