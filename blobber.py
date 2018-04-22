@@ -53,7 +53,7 @@ def predict_for_part(df, feats, parentdf, chunkmgr):
     assert split > 0
 
     df1, feats1 = df.iloc[:split], feats[:split]
-    df2, feats2 = df.iloc[split + 1:], feats[split + 1:]
+    df2, feats2 = df.iloc[split:], feats[split:]
 
     # TODO: Ensure the gc is picking up on the fact that we're no longer using df/feats.
     gc.collect()
