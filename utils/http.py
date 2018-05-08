@@ -3,7 +3,7 @@ import asyncio
 import json
 import logging
 
-from aiohttp import ClientSession
+from aiohttp import ClientSession, TCPConnector
 from json.decoder import JSONDecodeError
 
 from utils.logging import StyleAdapter
@@ -11,11 +11,13 @@ from utils.logging import StyleAdapter
 LOG = StyleAdapter(logging.getLogger(__name__))
 
 class JSONClient(object):
-    def __init__(self):
+    def __init__(self, **connector_kwargs):
         self._sess = None
+        self._connector_kwargs = connector_kwargs
 
     async def __aenter__(self):
-        self._sess = await ClientSession().__aenter__()
+        connector = TCPConnector(**self._connector_kwargs)
+        self._sess = await ClientSession(connector=connector).__aenter__()
         return self
 
     async def __aexit__(self, type_, value, traceback):

@@ -127,12 +127,14 @@ class NugetSearchClient(NugetClient):
         return await NugetSearchResults(search_url, self._ctx).load()
 
 class NugetContext(object):
-    def __init__(self, endpoint_url=PROD_INDEX):
+    def __init__(self, endpoint_url=PROD_INDEX, connector_kwargs=None):
         self.client = None
         self.endpoint_url = endpoint_url
+        self.connector_kwargs = connector_kwargs or dict()
 
     async def __aenter__(self):
-        self.client = await RetryClient(JSONClient(), ok_filter).__aenter__()
+        json_client = JSONClient(**self.connector_kwargs)
+        self.client = await RetryClient(json_client, ok_filter).__aenter__()
         return self
 
     async def __aexit__(self, type_, value, traceback):
