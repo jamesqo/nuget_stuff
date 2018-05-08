@@ -13,14 +13,10 @@ from datetime import datetime
 from blobber import gen_blobs
 from data_prep import load_packages
 from ml import FeatureTransformer, Recommender
+from nuget_api import check_endpoint, PROD
 from utils.logging import StyleAdapter
 
 LOG = StyleAdapter(logging.getLogger(__name__))
-
-BLOBS_ROOT = os.path.join('.', 'blobs')
-PACKAGES_ROOT = os.path.join('.', 'packages')
-VECTORS_ROOT = os.path.join('.', 'vectors')
-ETAGS_FNAME = 'etags.log'
 
 def parse_args():
     parser = ArgumentParser()
@@ -46,6 +42,14 @@ def parse_args():
         dest='log_level',
         const=logging.DEBUG,
         default=logging.WARNING
+    )
+    parser.add_argument(
+        '-e', '--endpoint',
+        metavar='ENDPOINT',
+        help="specify nuget api endpoint (DEV|INT|PROD, default PROD)",
+        action='store',
+        dest='api_endpoint',
+        default=PROD
     )
     parser.add_argument(
         '--force-refresh-blobs',
@@ -108,11 +112,11 @@ def parse_args():
     parser.add_argument(
         '-t', '--tag-dump',
         metavar='FILE',
-        help="dump enriched tags to FILE (default: {})".format(ETAGS_FNAME),
+        help="dump enriched tags to FILE (default: etags.log)",
         action='store',
         dest='etags_fname',
         nargs='?',
-        const=ETAGS_FNAME
+        const='etags.log'
     )
     return parser.parse_args()
 
@@ -143,17 +147,26 @@ def print_recs(df, recs):
     sys.stdout.buffer.write(output.encode('utf-8'))
 
 async def main():
+    def get_paths(endpoint):
+        blobs_root = os.path.join('.', endpoint, 'blobs')
+        packages_root = os.path.join('.', endpoint, 'packages')
+        vectors_root = os.path.join('.', endpoint, 'vectors')
+        return blobs_root, packages_root, vectors_root
+
     args = parse_args()
     logging.basicConfig(level=args.log_level)
 
-    df, tagger = await load_packages(PACKAGES_ROOT, args)
+    endpoint = check_endpoint(args.api_endpoint)
+    blobs_root, packages_root, vectors_root = get_paths(endpoint)
+
+    df, tagger = await load_packages(packages_root, args)
 
     if args.generate_blobs:
         gen_blobs(df,
                   tagger,
                   args,
-                  blobs_root=BLOBS_ROOT,
-                  vectors_root=VECTORS_ROOT)
+                  blobs_root=blobs_root,
+                  vectors_root=vectors_root)
     else:
         trans = FeatureTransformer(tags_vocab=tagger.vocab_)
         feats = trans.fit_transform(df)

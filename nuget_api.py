@@ -16,7 +16,12 @@ from utils.logging import StyleAdapter
 
 LOG = StyleAdapter(logging.getLogger(__name__))
 
-DEFAULT_INDEX = 'https://api.nuget.org/v3/index.json'
+DEV, INT, PROD = 'DEV', 'INT', 'PROD'
+VALID_ENDPOINTS = (DEV, INT, PROD)
+
+DEV_INDEX = 'https://apidev.nugettest.org/v3/index.json'
+INT_INDEX = 'https://apiint.nugettest.org/v3/index.json'
+PROD_INDEX = 'https://api.nuget.org/v3/index.json'
 
 CATALOG_TYPE = 'Catalog/3.0.0'
 REGISTRATION_TYPE = 'RegistrationsBaseUrl'
@@ -37,6 +42,24 @@ def ok_filter(exc):
 def can_ignore_exception(exc):
     return ok_filter(exc) or isinstance(exc, ClientError)
 
+def check_endpoint(endpoint):
+    if endpoint not in VALID_ENDPOINTS:
+        raise ValueError(
+            "Invalid endpoint {}. Expected one of: {}".format(
+                repr(endpoint),
+                VALID_ENDPOINTS))
+    return endpoint
+
+def get_endpoint_url(endpoint):
+    check_endpoint(endpoint)
+
+    if endpoint == DEV:
+        return DEV_INDEX
+    elif endpoint == INT:
+        return INT_INDEX
+    assert endpoint == PROD
+    return PROD_INDEX
+
 class NullPackageSearchInfo(object):
     def __init__(self):
         self.id = ''
@@ -55,8 +78,8 @@ class NugetClient(object):
         await self.load_index()
         return self
 
-    async def load_index(self, index_url=DEFAULT_INDEX):
-        index_json = await self._ctx.client.get(index_url)
+    async def load_index(self):
+        index_json = await self._ctx.client.get(self._ctx.endpoint_url)
         nodes = index_json['resources']
         endpoint_url = next(node['@id'] for node in nodes if node['@type'] == self._type)
         self._endpoint_url = endpoint_url.rstrip('/')
@@ -104,8 +127,9 @@ class NugetSearchClient(NugetClient):
         return await NugetSearchResults(search_url, self._ctx).load()
 
 class NugetContext(object):
-    def __init__(self):
+    def __init__(self, endpoint_url=PROD_INDEX):
         self.client = None
+        self.endpoint_url = endpoint_url
 
     async def __aenter__(self):
         self.client = await RetryClient(JSONClient(), ok_filter).__aenter__()

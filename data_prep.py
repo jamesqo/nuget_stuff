@@ -9,7 +9,7 @@ import sys
 
 from datetime import datetime
 
-from nuget_api import can_ignore_exception, NugetCatalogClient, NugetContext
+from nuget_api import can_ignore_exception, get_endpoint_url, NugetCatalogClient, NugetContext
 from serializers import PackageSerializer
 from tagger import SmartTagger
 from utils.iter import aenumerate, aislice
@@ -38,7 +38,9 @@ SCHEMA = {
 async def write_packages(packages_root, args):
     log_call()
     os.makedirs(packages_root, exist_ok=True)
-    async with NugetContext() as ctx:
+
+    endpoint_url = get_endpoint_url(args.api_endpoint)
+    async with NugetContext(endpoint_url=endpoint_url) as ctx:
         client = await NugetCatalogClient(ctx).load()
         page_start, page_end = args.page_start, args.page_start + (args.page_limit or sys.maxsize)
         pages = aislice(client.load_pages(), page_start, page_end)
